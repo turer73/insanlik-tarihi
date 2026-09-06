@@ -1,0 +1,382 @@
+<title>Ölçekli Zaman Çizelgesi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..800,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --bg:#EBE9E3; --surface:#F6F4EF; --surface-2:#DFDCD4; --raised:#FFFFFF;
+  --ink:#15181A; --ink-2:#4A5054; --ink-3:#787F84;
+  --rule:#C8C5BC; --rule-soft:#D8D5CC;
+  --accent:#2E4A63; --accent-ink:#1E344A; --accent-soft:#D9E1E9;
+  --ok:#2C6B45; --ok-bg:#D8E8DE;
+  --warn:#8A6410; --warn-bg:#F0E4C6;
+  --info:#2A5580; --info-bg:#D7E3F0;
+  --bad:#9A3527; --bad-bg:#F2DBD6;
+  --none:#5E6468; --none-bg:#DEDCD6;
+  --special:#5D3C7E; --special-bg:#E4DAEE;
+  --display:"Fraunces",Georgia,serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111417; --surface:#181C1F; --surface-2:#232830; --raised:#1D2226;
+    --ink:#E4E6E8; --ink-2:#A3AAB0; --ink-3:#767D83;
+    --rule:#2C3238; --rule-soft:#232930;
+    --accent:#7FA8CC; --accent-ink:#9CC0DE; --accent-soft:#16242F;
+    --ok:#6FBF90; --ok-bg:#14291E; --warn:#D6AC55; --warn-bg:#2B2412;
+    --info:#7FAAD8; --info-bg:#16232F; --bad:#E08476; --bad-bg:#2E1815;
+    --none:#9AA1A6; --none-bg:#24282C; --special:#B597D6; --special-bg:#241B30;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111417; --surface:#181C1F; --surface-2:#232830; --raised:#1D2226;
+  --ink:#E4E6E8; --ink-2:#A3AAB0; --ink-3:#767D83;
+  --rule:#2C3238; --rule-soft:#232930;
+  --accent:#7FA8CC; --accent-ink:#9CC0DE; --accent-soft:#16242F;
+  --ok:#6FBF90; --ok-bg:#14291E; --warn:#D6AC55; --warn-bg:#2B2412;
+  --info:#7FAAD8; --info-bg:#16232F; --bad:#E08476; --bad-bg:#2E1815;
+  --none:#9AA1A6; --none-bg:#24282C; --special:#B597D6; --special-bg:#241B30;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.01em;text-wrap:balance}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+.top{border-bottom:1px solid var(--rule);background:var(--surface);padding:1.4rem clamp(1rem,3vw,2rem) 1.2rem}
+.top__in{max-width:1400px;margin-inline:auto;display:flex;flex-direction:column;gap:1rem}
+.top h1{font-size:clamp(1.5rem,3vw,2.05rem);font-weight:700}
+.top .lede{font-size:.94rem;color:var(--ink-2);max-width:80ch;margin:0}
+.top .lede b{color:var(--ink)}
+
+/* true proportion strip */
+.prop{border:1px solid var(--rule);background:var(--raised);padding:.85rem 1rem}
+.prop h3{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.55rem}
+.propbar{display:flex;height:26px;border:1px solid var(--rule);overflow:hidden}
+.propbar div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;overflow:hidden;border-right:1px solid var(--rule)}
+.propbar div:last-child{border-right:0}
+.p-pre{flex:0 0 88.1%;background:var(--surface-2);color:var(--ink-3)}
+.p-phan{flex:0 0 11.9%;background:var(--accent-soft);color:var(--accent-ink)}
+.prop p{margin:.6rem 0 0;font-size:.85rem;color:var(--ink-2);max-width:80ch}
+.prop b{color:var(--ink)}
+.hair{display:inline-block;width:2px;height:.9em;background:var(--bad);vertical-align:-.1em;margin-inline:.2em}
+
+.shell{max-width:1400px;margin-inline:auto;padding:1.1rem clamp(1rem,3vw,2rem) 3rem;display:flex;flex-direction:column;gap:1rem}
+
+.ctrl{display:flex;flex-wrap:wrap;gap:1.1rem 1.6rem;align-items:flex-start}
+.cg{display:flex;flex-direction:column;gap:.35rem}
+.cg h3{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:.28rem}
+.chip{font-family:var(--mono);font-size:.7rem;font-weight:500;padding:.26rem .55rem;border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);white-space:nowrap;display:inline-flex;gap:.35rem;align-items:center}
+.chip:hover{border-color:var(--ink-3);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.chip .n{font-size:.64rem;opacity:.7}
+.chip.s-established[aria-pressed="true"]{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.chip.s-contested[aria-pressed="true"]{background:var(--warn-bg);border-color:var(--warn);color:var(--warn)}
+.chip.s-minority[aria-pressed="true"]{background:var(--info-bg);border-color:var(--info);color:var(--info)}
+.chip.s-refuted[aria-pressed="true"]{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.chip.s-unknown[aria-pressed="true"]{background:var(--none-bg);border-color:var(--none);color:var(--none)}
+.chip.s-unmeasurable[aria-pressed="true"]{background:var(--special-bg);border-color:var(--special);color:var(--special)}
+
+.warn{border-left:2px solid var(--warn);background:var(--warn-bg);padding:.6rem .85rem;font-size:.86rem;color:var(--ink)}
+.warn b{font-weight:700}
+
+/* chart */
+.chart{border:1px solid var(--rule);background:var(--raised);overflow-x:auto}
+.chartin{min-width:820px}
+.axis{position:sticky;top:0;z-index:3;background:var(--surface);border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:230px 1fr}
+.axis__pad{border-right:1px solid var(--rule)}
+.axis__scale{position:relative;height:34px}
+.tick{position:absolute;top:0;bottom:0;border-left:1px solid var(--rule-soft)}
+.tick span{position:absolute;top:9px;left:5px;font-family:var(--mono);font-size:.65rem;color:var(--ink-3);white-space:nowrap}
+.tick.major{border-left-color:var(--rule)}
+.tick.major span{color:var(--ink-2);font-weight:600}
+
+.hist{display:grid;grid-template-columns:230px 1fr;border-bottom:1px solid var(--rule);background:var(--surface)}
+.hist__lbl{border-right:1px solid var(--rule);padding:.5rem .8rem;display:flex;align-items:flex-end}
+.hist__lbl span{font-family:var(--mono);font-size:.62rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.hist__plot{position:relative;height:56px}
+.hbar{position:absolute;bottom:0;background:var(--accent);opacity:.42}
+.hbar:hover{opacity:.75}
+
+.row{display:grid;grid-template-columns:230px 1fr;border-bottom:1px solid var(--rule-soft)}
+.row:last-child{border-bottom:0}
+.row:hover .row__lbl,.row:hover .row__track{background:var(--surface)}
+.row.sel .row__lbl,.row.sel .row__track{background:var(--accent-soft)}
+.row__lbl{border-right:1px solid var(--rule);padding:.38rem .7rem;display:flex;flex-direction:column;gap:.05rem;min-width:0}
+.row__lbl b{font-size:.78rem;font-weight:600;color:var(--ink);line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row__lbl span{font-family:var(--mono);font-size:.6rem;color:var(--ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row__track{position:relative;height:34px;cursor:pointer}
+.bar{position:absolute;top:9px;height:16px;min-width:4px;border-radius:1px}
+.bar.est{background:var(--ok)} .bar.con{background:var(--warn)} .bar.min{background:var(--info)}
+.bar.ref{background:var(--bad)} .bar.unk{background:var(--none)} .bar.unm{background:var(--special)}
+.bar.pt{width:5px;border-radius:50%;height:10px;top:12px}
+.bar.fuzzy{opacity:.55;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.45) 0 3px,transparent 3px 6px)}
+.rowdate{position:absolute;top:10px;font-family:var(--mono);font-size:.62rem;color:var(--ink-3);white-space:nowrap;pointer-events:none}
+
+.det{border:1px solid var(--accent);background:var(--accent-soft);padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.6rem}
+.det .badge{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.18rem .45rem;align-self:flex-start}
+.b-established{background:var(--ok-bg);color:var(--ok)} .b-contested{background:var(--warn-bg);color:var(--warn)}
+.b-minority{background:var(--info-bg);color:var(--info)} .b-refuted{background:var(--bad-bg);color:var(--bad)}
+.b-unknown{background:var(--none-bg);color:var(--none)} .b-unmeasurable{background:var(--special-bg);color:var(--special)}
+.det h3{font-size:1.1rem}
+.det p{margin:0;font-size:.92rem;color:var(--ink-2);max-width:82ch}
+.det .pop{border-left:2px solid var(--warn);padding-left:.75rem}
+.det .pop i{font-family:var(--display);font-style:italic;color:var(--ink);font-size:.96rem}
+.det .meta{display:flex;flex-wrap:wrap;gap:.25rem .9rem;font-family:var(--mono);font-size:.66rem;color:var(--ink-3)}
+.det .close{align-self:flex-start;font-family:var(--mono);font-size:.68rem;color:var(--ink-3);text-decoration:underline;text-underline-offset:3px}
+
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-family:var(--mono);font-size:.68rem;color:var(--ink-3);align-items:center}
+.legend .k{display:inline-flex;align-items:center;gap:.3rem}
+.legend .sw{width:14px;height:8px;display:inline-block}
+.count{font-family:var(--mono);font-size:.74rem;color:var(--ink-3)}
+.count b{color:var(--ink)}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<header class="top">
+  <div class="top__in">
+    <h1>Ölçekli Zaman Çizelgesi</h1>
+    <p class="lede">Veri tabanındaki <b>her bulgu</b>, ilgili olduğu tarihsel aralık boyunca uzanan bir çubuk olarak yerleştirildi. Renk, iddianın kanıt karşısındaki durumunu gösteriyor. Çubuk kesikliyse tarih <b>tartışmalı ya da yaklaşık</b> demektir.</p>
+
+    <div class="prop">
+      <h3>Önce dürüst oran — Dünya'nın 4,54 milyar yılı, doğrusal</h3>
+      <div class="propbar">
+        <div class="p-pre">Kambriyen öncesi — 4 milyar yıl</div>
+        <div class="p-phan">Fanerozoik</div>
+      </div>
+      <p>Bu çubukta Permiyen yok oluşu sağ kenardan <b>%5,5</b>, Chicxulub <b>%1,5</b> içeride. İnsanlığın yazılı arşivi ise <span class="hair"></span> — <b>bir pikselin binde biri</b> kadar. Çizilemez. Aşağıdaki görünümler bu yüzden ekseni büküyor; <b>bükmek zorunda kalmak da bulgunun kendisi.</b></p>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <div class="ctrl">
+    <div class="cg">
+      <h3>Ölçek</h3>
+      <div class="chips" id="f-scale"></div>
+    </div>
+    <div class="cg">
+      <h3>Sıralama</h3>
+      <div class="chips" id="f-sort"></div>
+    </div>
+    <div class="cg">
+      <h3>Durum</h3>
+      <div class="chips" id="f-status"></div>
+    </div>
+    <div class="cg">
+      <h3>Bölge</h3>
+      <div class="chips" id="f-region"></div>
+    </div>
+  </div>
+
+  <div class="warn" id="scalewarn" hidden></div>
+  <div class="count" id="count"></div>
+  <div class="det" id="det" hidden></div>
+
+  <div class="chart">
+    <div class="chartin">
+      <div class="axis"><div class="axis__pad"></div><div class="axis__scale" id="axis"></div></div>
+      <div class="hist"><div class="hist__lbl"><span>yoğunluk</span></div><div class="hist__plot" id="hist"></div></div>
+      <div id="rows"></div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="k"><i class="sw" style="background:var(--ok)"></i>yerleşik</span>
+    <span class="k"><i class="sw" style="background:var(--warn)"></i>tartışmalı</span>
+    <span class="k"><i class="sw" style="background:var(--info)"></i>azınlık</span>
+    <span class="k"><i class="sw" style="background:var(--bad)"></i>çürütülmüş</span>
+    <span class="k"><i class="sw" style="background:var(--none)"></i>bilinmiyor</span>
+    <span class="k"><i class="sw" style="background:var(--special)"></i>ölçülemez</span>
+    <span class="k">kesikli çubuk = tarih tartışmalı/yaklaşık</span>
+  </div>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('data').textContent).filter(function(r){
+    return r.period && typeof r.period.earliest === 'number';
+  });
+  var NOW = 2026;
+  var ST = {established:'yerleşik',contested:'tartışmalı',minority:'azınlık',refuted:'çürütülmüş',unknown:'bilinmiyor',unmeasurable:'ölçülemez'};
+  var CLS = {established:'est',contested:'con',minority:'min',refuted:'ref',unknown:'unk',unmeasurable:'unm'};
+
+  var SCALES = {
+    civ:  {label:'Uygarlıklar', min:-10000, max:NOW, log:false,
+           note:'MÖ 10.000 – bugün, doğrusal. Bulguların çoğu bu aralıkta.'},
+    human:{label:'İnsan', min:-120000, max:NOW, log:false,
+           note:'MÖ 120.000 – bugün, doğrusal. Toba ve buzul çağı olaylarını içerir; uygarlık tarihi sağ uçta sıkışır.'},
+    deep: {label:'Derin zaman', min:-4540000000, max:NOW, log:true,
+           note:'Logaritmik. DİKKAT: log ekseni yakın geçmişi ŞİŞİRİR — insanlık tarihi burada gerçekte olduğundan çok daha geniş görünür.'}
+  };
+
+  var S = {scale:'civ', sort:'time', status:new Set(), region:new Set(), sel:null};
+
+  function pos(y, sc){
+    var s = SCALES[sc];
+    if(!s.log) return (y - s.min) / (s.max - s.min);
+    var bp = Math.max(1, NOW - y), maxbp = NOW - s.min;
+    return 1 - Math.log10(bp) / Math.log10(maxbp);
+  }
+  function clamp(v){ return Math.max(0, Math.min(1, v)); }
+  function fmtY(y){
+    if(y === undefined || y === null) return '';
+    var a = Math.abs(y);
+    if(a >= 1e6) return (y<0?'MÖ ':'MS ') + (a/1e6).toFixed(a>=1e7?0:1).replace('.',',') + ' My';
+    if(a >= 10000) return (y<0?'MÖ ':'MS ') + a.toLocaleString('tr-TR');
+    return (y<0?'MÖ ':'MS ') + a;
+  }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function reg(r){ return (r.subject && r.subject.modern_country) || '—'; }
+
+  function inScale(r){
+    var s = SCALES[S.scale];
+    var e = r.period.earliest, l = r.period.latest === undefined ? e : r.period.latest;
+    return l >= s.min && e <= s.max;
+  }
+  function passes(r, skip){
+    if(!inScale(r)) return false;
+    if(skip!=='status' && S.status.size && !S.status.has(r.status)) return false;
+    if(skip!=='region' && S.region.size && !S.region.has(reg(r))) return false;
+    return true;
+  }
+  function rows(){
+    var out = D.filter(function(r){ return passes(r,null); });
+    if(S.sort==='time') out.sort(function(a,b){ return a.period.earliest - b.period.earliest || (a.period.latest||0)-(b.period.latest||0); });
+    else if(S.sort==='region') out.sort(function(a,b){ return reg(a).localeCompare(reg(b),'tr') || a.period.earliest-b.period.earliest; });
+    else out.sort(function(a,b){
+      var o=['established','contested','minority','refuted','unknown','unmeasurable'];
+      return o.indexOf(a.status)-o.indexOf(b.status) || a.period.earliest-b.period.earliest; });
+    return out;
+  }
+
+  function axis(){
+    var s = SCALES[S.scale], el = document.getElementById('axis'), h='';
+    var ticks;
+    if(S.scale==='civ') ticks=[-10000,-8000,-6000,-4000,-3000,-2000,-1000,0,1000,2000];
+    else if(S.scale==='human') ticks=[-120000,-100000,-80000,-60000,-40000,-20000,-10000,0,2000];
+    else ticks=[-4540000000,-1000000000,-100000000,-10000000,-1000000,-100000,-10000,-1000,-100,NOW];
+    ticks.forEach(function(t,i){
+      if(t===0) t = 1;
+      var p = clamp(pos(t,S.scale))*100;
+      if(p<0||p>100) return;
+      var major = (S.scale==='civ' && (t===-10000||t===-3200||t===1||t===2000)) || i===0 || i===ticks.length-1;
+      h += '<div class="tick'+(major?' major':'')+'" style="left:'+p.toFixed(3)+'%"><span>'+esc(fmtY(t===1?1:t))+'</span></div>';
+    });
+    if(S.scale==='civ'){
+      var pw = clamp(pos(-3200,'civ'))*100;
+      h += '<div class="tick major" style="left:'+pw.toFixed(3)+'%"><span>yazı</span></div>';
+    }
+    el.innerHTML = h;
+  }
+
+  function hist(list){
+    var el = document.getElementById('hist'), N=48, buckets=new Array(N).fill(0);
+    list.forEach(function(r){
+      var e=clamp(pos(r.period.earliest,S.scale)), l=clamp(pos(r.period.latest===undefined?r.period.earliest:r.period.latest,S.scale));
+      var a=Math.floor(e*N), b=Math.floor(l*N);
+      for(var i=Math.min(a,b);i<=Math.max(a,b);i++) if(i>=0&&i<N) buckets[i]++;
+    });
+    var mx = Math.max.apply(null,buckets)||1, h='';
+    buckets.forEach(function(v,i){
+      if(!v) return;
+      h += '<div class="hbar" title="'+v+' bulgu" style="left:'+(i/N*100).toFixed(3)+'%;width:'+(100/N*0.86).toFixed(3)+'%;height:'+(v/mx*100).toFixed(1)+'%"></div>';
+    });
+    el.innerHTML = h;
+  }
+
+  function draw(){
+    var list = rows();
+    axis(); hist(list);
+    var fuzzy = {disputed:1, approximate:1, unknown:1};
+    document.getElementById('rows').innerHTML = list.map(function(r){
+      var e = r.period.earliest, l = r.period.latest===undefined? e : r.period.latest;
+      var p1 = clamp(pos(e,S.scale)), p2 = clamp(pos(l,S.scale));
+      var left = Math.min(p1,p2)*100, w = Math.abs(p2-p1)*100;
+      var isPt = w < 0.35;
+      var cls = 'bar '+CLS[r.status] + (isPt?' pt':'') + (fuzzy[r.period.precision]?' fuzzy':'');
+      var style = isPt ? 'left:'+left.toFixed(3)+'%' : 'left:'+left.toFixed(3)+'%;width:'+w.toFixed(3)+'%';
+      var dateTxt = fmtY(e) + (l!==e? ' – '+fmtY(l) : '');
+      var dl = left + (isPt?0.6:w+0.6);
+      var flip = dl > 78;
+      var dstyle = flip ? 'right:'+(100-left+0.6).toFixed(3)+'%' : 'left:'+dl.toFixed(3)+'%';
+      return '<div class="row'+(S.sel===r.id?' sel':'')+'" data-id="'+esc(r.id)+'">'
+        + '<div class="row__lbl"><b title="'+esc(r.claim)+'">'+esc((r.subject&&r.subject.site)||r.topic[0])+'</b>'
+        + '<span>'+esc(r.period.era_label||r.id)+'</span></div>'
+        + '<div class="row__track"><div class="'+cls+'" style="'+style+'"></div>'
+        + '<div class="rowdate" style="'+dstyle+'">'+esc(dateTxt)+'</div></div></div>';
+    }).join('') || '<div style="padding:2rem;text-align:center;color:var(--ink-3)">Bu ölçek ve filtrelerde kayıt yok.</div>';
+
+    document.getElementById('count').innerHTML = '<b>'+list.length+'</b> / '+D.length+' bulgu gösteriliyor · sıralama: '
+      + (S.sort==='time'?'kronolojik':S.sort==='region'?'bölge':'durum');
+    var w = document.getElementById('scalewarn');
+    if(S.scale==='deep'){ w.hidden=false; w.innerHTML='<b>Ölçek uyarısı:</b> '+SCALES.deep.note; }
+    else { w.hidden=false; w.innerHTML='<b>'+SCALES[S.scale].label+':</b> '+SCALES[S.scale].note; }
+    chips();
+    detail();
+  }
+
+  function chipHtml(k,v,lbl,cls,n){
+    return '<button class="chip'+(cls||'')+'" data-k="'+k+'" data-v="'+esc(v)+'" aria-pressed="'+
+      (k==='scale'? S.scale===v : k==='sort'? S.sort===v : S[k].has(v))+'">'+esc(lbl)+
+      (n!==undefined?'<span class="n">'+n+'</span>':'')+'</button>';
+  }
+  function chips(){
+    document.getElementById('f-scale').innerHTML = Object.keys(SCALES).map(function(k){
+      return chipHtml('scale',k,SCALES[k].label); }).join('');
+    document.getElementById('f-sort').innerHTML =
+      chipHtml('sort','time','kronolojik') + chipHtml('sort','region','bölge') + chipHtml('sort','status','durum');
+    var inS = D.filter(function(r){ return passes(r,'status'); });
+    var cs = {}; inS.forEach(function(r){ cs[r.status]=(cs[r.status]||0)+1; });
+    document.getElementById('f-status').innerHTML = Object.keys(ST).filter(function(k){return cs[k]||S.status.has(k);})
+      .map(function(k){ return chipHtml('status',k,ST[k],' s-'+k,cs[k]||0); }).join('');
+    var inR = D.filter(function(r){ return passes(r,'region'); });
+    var cr = {}; inR.forEach(function(r){ cr[reg(r)]=(cr[reg(r)]||0)+1; });
+    document.getElementById('f-region').innerHTML = Object.keys(cr).sort(function(a,b){return cr[b]-cr[a]||a.localeCompare(b,'tr');})
+      .map(function(k){ return chipHtml('region',k,k,'',cr[k]); }).join('');
+  }
+
+  function detail(){
+    var el = document.getElementById('det');
+    var r = D.filter(function(x){return x.id===S.sel;})[0];
+    if(!r){ el.hidden=true; return; }
+    el.hidden=false;
+    var m=[];
+    if(r.subject&&r.subject.site) m.push(esc(r.subject.site));
+    if(r.subject&&r.subject.modern_country) m.push(esc(r.subject.modern_country));
+    m.push(fmtY(r.period.earliest)+(r.period.latest!==r.period.earliest?' – '+fmtY(r.period.latest):''));
+    if(r.period.precision) m.push('kesinlik: '+esc(r.period.precision));
+    if((r.period.dating_method||[]).length) m.push('yöntem: '+esc(r.period.dating_method.join(', ')));
+    if((r.languages||[]).length) m.push('dil: '+esc(r.languages.join(', ')));
+    el.innerHTML = '<span class="badge b-'+r.status+'">'+ST[r.status]+'</span>'
+      + '<h3>'+esc(r.claim)+'</h3>'
+      + '<div class="meta">'+m.join(' · ')+'</div>'
+      + (r.popular_claim ? '<div class="pop"><i>'+esc(r.popular_claim)+'</i>'
+          + (r.divergence?'<p style="margin-top:.35rem">'+esc(r.divergence)+'</p>':'')+'</div>' : '')
+      + '<button class="close" data-close="1">kapat</button>';
+  }
+
+  document.addEventListener('click', function(e){
+    var c = e.target.closest('.chip');
+    if(c){
+      var k=c.dataset.k, v=c.dataset.v;
+      if(k==='scale') S.scale=v; else if(k==='sort') S.sort=v;
+      else { S[k].has(v)?S[k].delete(v):S[k].add(v); }
+      draw(); return;
+    }
+    if(e.target.dataset.close){ S.sel=null; draw(); return; }
+    var row = e.target.closest('.row');
+    if(row){ S.sel = (S.sel===row.dataset.id? null : row.dataset.id); draw(); }
+  });
+
+  draw();
+})();
+</script>

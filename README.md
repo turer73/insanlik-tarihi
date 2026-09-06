@@ -108,3 +108,21 @@ kayıtları; oraya zorla veri koymak yanlış olur.
 
 `counter_evidence` %42'de — doğrulayıcı bunu yalnızca `contested` ve `minority`
 kayıtlar için zorunlu tutuyor, `established` kayıtlarda boş olması normaldir.
+
+## Araçlar
+
+```bash
+node scripts/build-tools.mjs [cikti-dizini]
+```
+
+`tools/*.template.html` şablonlarına `data/findings.bundle.json` verisini gömüp
+yayına hazır tek dosyalık HTML üretir. Şablonlarda `__DATA__` yer tutucusu bulunur.
+
+- **zaman-cizelgesi.html** — her bulgu, `period.earliest`–`period.latest` aralığı
+  boyunca ölçekli bir çubuk. Üç ölçek (Uygarlıklar / İnsan / Derin zaman),
+  kronolojik-bölge-durum sıralaması, yoğunluk histogramı. Log ölçek seçildiğinde
+  yakın geçmişi şişirdiği uyarısı gösterilir.
+- **bulgu-veri-tabani.html** — kayıt tarayıcı; durum, disiplin, bölge, sapma türü
+  ve kaynak katmanına göre filtreleme.
+
+İkisi de veri tabanından üretilir; yeni bulgu eklendiğinde yeniden çalıştırmak yeter.

@@ -1,0 +1,346 @@
+<title>Bulgu Veri Tabanı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..800,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --bg:#EBE9E3; --surface:#F6F4EF; --surface-2:#DFDCD4; --raised:#FFFFFF;
+  --ink:#15181A; --ink-2:#4A5054; --ink-3:#787F84;
+  --rule:#C8C5BC; --rule-soft:#D8D5CC;
+  --accent:#2E4A63; --accent-ink:#1E3purple; --accent-ink:#1E344A; --accent-soft:#D9E1E9;
+  --ok:#2C6B45; --ok-bg:#D8E8DE;
+  --warn:#8A6410; --warn-bg:#F0E4C6;
+  --info:#2A5580; --info-bg:#D7E3F0;
+  --bad:#9A3527; --bad-bg:#F2DBD6;
+  --none:#5E6468; --none-bg:#DEDCD6;
+  --special:#5D3C7E; --special-bg:#E4DAEE;
+  --display:"Fraunces",Georgia,serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111417; --surface:#181C1F; --surface-2:#232830; --raised:#1D2226;
+    --ink:#E4E6E8; --ink-2:#A3AAB0; --ink-3:#767D83;
+    --rule:#2C3238; --rule-soft:#232930;
+    --accent:#7FA8CC; --accent-ink:#9CC0DE; --accent-soft:#16242F;
+    --ok:#6FBF90; --ok-bg:#14291E;
+    --warn:#D6AC55; --warn-bg:#2B2412;
+    --info:#7FAAD8; --info-bg:#16232F;
+    --bad:#E08476; --bad-bg:#2E1815;
+    --none:#9AA1A6; --none-bg:#24282C;
+    --special:#B597D6; --special-bg:#241B30;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111417; --surface:#181C1F; --surface-2:#232830; --raised:#1D2226;
+  --ink:#E4E6E8; --ink-2:#A3AAB0; --ink-3:#767D83;
+  --rule:#2C3238; --rule-soft:#232930;
+  --accent:#7FA8CC; --accent-ink:#9CC0DE; --accent-soft:#16242F;
+  --ok:#6FBF90; --ok-bg:#14291E;
+  --warn:#D6AC55; --warn-bg:#2B2412;
+  --info:#7FAAD8; --info-bg:#16232F;
+  --bad:#E08476; --bad-bg:#2E1815;
+  --none:#9AA1A6; --none-bg:#24282C;
+  --special:#B597D6; --special-bg:#241B30;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.01em;text-wrap:balance}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+.top{border-bottom:1px solid var(--rule);background:var(--surface);padding:1.4rem clamp(1rem,3vw,2rem) 1.1rem}
+.top__in{max-width:1320px;margin-inline:auto;display:flex;flex-direction:column;gap:.9rem}
+.top h1{font-size:clamp(1.5rem,3vw,2.05rem);font-weight:700}
+.top .lede{font-size:.94rem;color:var(--ink-2);max-width:78ch;margin:0}
+.top .lede b{color:var(--ink)}
+.kpis{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(112px,1fr))}
+.kpi{background:var(--surface);padding:.6rem .8rem;display:flex;flex-direction:column;gap:.05rem}
+.kpi b{font-family:var(--display);font-size:1.35rem;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi span{font-size:.72rem;color:var(--ink-3);line-height:1.25}
+
+.shell{max-width:1320px;margin-inline:auto;padding:1.2rem clamp(1rem,3vw,2rem) 3rem;display:grid;gap:1.4rem;grid-template-columns:1fr}
+@media(min-width:1000px){.shell{grid-template-columns:250px 1fr;align-items:start}}
+
+.side{display:flex;flex-direction:column;gap:1.1rem;position:sticky;top:1rem}
+@media(max-width:999px){.side{position:static}}
+.fgroup{display:flex;flex-direction:column;gap:.4rem}
+.fgroup h3{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:.3rem}
+.chip{display:inline-flex;align-items:center;gap:.35rem;font-family:var(--mono);font-size:.71rem;font-weight:500;
+  padding:.26rem .5rem;border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);white-space:nowrap}
+.chip:hover{border-color:var(--ink-3);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.chip .n{font-size:.66rem;opacity:.72;font-variant-numeric:tabular-nums}
+.chip.s-established[aria-pressed="true"]{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.chip.s-contested[aria-pressed="true"]{background:var(--warn-bg);border-color:var(--warn);color:var(--warn)}
+.chip.s-minority[aria-pressed="true"]{background:var(--info-bg);border-color:var(--info);color:var(--info)}
+.chip.s-refuted[aria-pressed="true"]{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.chip.s-unknown[aria-pressed="true"]{background:var(--none-bg);border-color:var(--none);color:var(--none)}
+.chip.s-unmeasurable[aria-pressed="true"]{background:var(--special-bg);border-color:var(--special);color:var(--special)}
+
+.q{width:100%;padding:.5rem .65rem;border:1px solid var(--rule);background:var(--raised);color:var(--ink);
+  font-family:var(--mono);font-size:.8rem}
+.q::placeholder{color:var(--ink-3)}
+.reset{align-self:flex-start;font-family:var(--mono);font-size:.7rem;color:var(--ink-3);text-decoration:underline;text-underline-offset:3px}
+.reset:hover{color:var(--ink)}
+
+.main{display:flex;flex-direction:column;gap:.75rem;min-width:0}
+.count{font-family:var(--mono);font-size:.75rem;color:var(--ink-3);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.count b{color:var(--ink)}
+
+.rec{border:1px solid var(--rule);background:var(--raised);display:flex;flex-direction:column}
+.rec__hd{display:grid;gap:.5rem .8rem;grid-template-columns:1fr;padding:.85rem 1rem;text-align:left;width:100%}
+@media(min-width:660px){.rec__hd{grid-template-columns:auto 1fr auto;align-items:start}}
+.rec__hd:hover{background:var(--surface)}
+.badge{font-family:var(--mono);font-size:.64rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:.2rem .45rem;white-space:nowrap;align-self:start}
+.b-established{background:var(--ok-bg);color:var(--ok)}
+.b-contested{background:var(--warn-bg);color:var(--warn)}
+.b-minority{background:var(--info-bg);color:var(--info)}
+.b-refuted{background:var(--bad-bg);color:var(--bad)}
+.b-unknown{background:var(--none-bg);color:var(--none)}
+.b-unmeasurable{background:var(--special-bg);color:var(--special)}
+.rec__claim{font-size:.95rem;color:var(--ink);min-width:0;font-weight:500}
+.rec__meta{display:flex;flex-wrap:wrap;gap:.3rem .7rem;font-family:var(--mono);font-size:.66rem;color:var(--ink-3);margin-top:.3rem}
+.rec__meta .dot{color:var(--rule)}
+.rec__tog{font-family:var(--mono);font-size:.68rem;color:var(--ink-3);white-space:nowrap;align-self:center}
+.rec.open .rec__tog{color:var(--accent-ink)}
+
+.rec__body{border-top:1px solid var(--rule-soft);padding:1rem;display:flex;flex-direction:column;gap:.95rem}
+.blk{display:flex;flex-direction:column;gap:.35rem}
+.blk h4{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-variation-settings:normal}
+.blk p{margin:0;font-size:.9rem;color:var(--ink-2);max-width:78ch}
+.blk ul{margin:0;padding-left:1.05rem;font-size:.88rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.3rem;max-width:78ch}
+.pop{border-left:2px solid var(--warn);background:var(--warn-bg);padding:.6rem .8rem;display:flex;flex-direction:column;gap:.35rem}
+.pop .pc{font-family:var(--display);font-style:italic;font-size:.94rem;color:var(--ink);font-variation-settings:"opsz" 14,"SOFT" 40}
+.pop .dv{margin:0;font-size:.87rem;color:var(--ink-2)}
+.dtypes{display:flex;flex-wrap:wrap;gap:.25rem;margin-top:.15rem}
+.dtype{font-family:var(--mono);font-size:.62rem;padding:.14rem .38rem;background:var(--surface-2);color:var(--ink-2)}
+
+.facts{display:grid;gap:.5rem .9rem;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.fact{display:flex;flex-direction:column;gap:.05rem}
+.fact span{font-family:var(--mono);font-size:.61rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.fact b{font-size:.86rem;font-weight:600;color:var(--ink)}
+.fact small{font-size:.78rem;color:var(--ink-2);font-weight:400}
+
+.srcs{display:flex;flex-direction:column;gap:.45rem}
+.src{display:grid;gap:.15rem .6rem;grid-template-columns:auto 1fr;align-items:baseline;font-size:.85rem}
+.tier{font-family:var(--mono);font-size:.6rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:.14rem .38rem;white-space:nowrap;align-self:start}
+.t-primary{background:var(--special-bg);color:var(--special)}
+.t-peer-reviewed{background:var(--ok-bg);color:var(--ok)}
+.t-institutional{background:var(--info-bg);color:var(--info)}
+.t-popular{background:var(--warn-bg);color:var(--warn)}
+.t-unreliable{background:var(--bad-bg);color:var(--bad)}
+.src__t{color:var(--ink-2);min-width:0}
+.src__t b{color:var(--ink);font-weight:600}
+.src__t a{color:var(--accent-ink)}
+.src__t em{font-style:normal;color:var(--ink-3);font-size:.92em}
+
+.people{display:flex;flex-wrap:wrap;gap:.35rem}
+.person{font-size:.82rem;border:1px solid var(--rule);padding:.22rem .5rem;color:var(--ink-2)}
+.person b{color:var(--ink);font-weight:600}
+.person .role{font-family:var(--mono);font-size:.63rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em}
+
+.usedin{display:flex;flex-wrap:wrap;gap:.3rem}
+.slug{font-family:var(--mono);font-size:.68rem;background:var(--accent-soft);color:var(--accent-ink);padding:.18rem .42rem}
+.vol{font-family:var(--mono);font-size:.63rem;color:var(--warn);font-weight:700}
+.empty{border:1px dashed var(--rule);padding:2rem 1rem;text-align:center;color:var(--ink-3);font-size:.9rem}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<header class="top">
+  <div class="top__in">
+    <h1>Bulgu Veri Tabanı</h1>
+    <p class="lede">Bu veri tabanının kaydı bir <b>gerçek</b> değil, <b>bir iddianın kanıt karşısındaki durumu</b>dur. Her kayıt varsa popüler hâlini ve neden saptığını da taşır. Kaynaklar katmanlı: turizm ve içerik siteleri kaydediliyor ama <b>iddianın kanıtı sayılmıyor</b> — yalnızca popüler iddianın kendisini belgeliyorlar.</p>
+    <div class="kpis" id="kpis"></div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="side">
+    <div class="fgroup">
+      <h3>Ara</h3>
+      <input class="q" id="q" type="search" placeholder="iddia, konu, id...">
+    </div>
+    <div class="fgroup"><h3>Durum</h3><div class="chips" id="f-status"></div></div>
+    <div class="fgroup"><h3>Disiplin</h3><div class="chips" id="f-disc"></div></div>
+    <div class="fgroup"><h3>Bölge</h3><div class="chips" id="f-region"></div></div>
+    <div class="fgroup"><h3>Sapma türü</h3><div class="chips" id="f-dtype"></div></div>
+    <div class="fgroup"><h3>Kaynak katmanı</h3><div class="chips" id="f-tier"></div></div>
+    <button class="reset" id="reset">filtreleri temizle</button>
+  </aside>
+
+  <main class="main">
+    <div class="count" id="count"></div>
+    <div id="list"></div>
+  </main>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('data').textContent);
+  var STATUS_TR = {established:'yerleşik', contested:'tartışmalı', minority:'azınlık', refuted:'çürütülmüş', unknown:'bilinmiyor', unmeasurable:'ölçülemez'};
+  var TIER_TR = {primary:'birincil', 'peer-reviewed':'hakemli', institutional:'kurumsal', popular:'popüler', unreliable:'güvenilmez'};
+  var ROLE_TR = {proposer:'öneren', refuter:'çürüten', excavator:'kazı yön.', translator:'çeviren', editor:'editör', discoverer:'bulan', critic:'eleştiren', surveyor:'tarayan', analyst:'analiz'};
+  var DT_TR = {'eski-ceviri':'eski çeviri','guncellenmemis':'güncellenmemiş','turizm-kopyalamasi':'turizm kopyalaması','ideolojik-secim':'ideolojik seçim','medya-abartisi':'medya abartısı','somurge-anlatisi':'sömürge anlatısı','kategori-hatasi':'kategori hatası','hayatta-kalma-yanliligi':'hayatta kalma yanlılığı','provenans-yoklugu':'provenans yokluğu'};
+
+  var F = {status:new Set(), disc:new Set(), region:new Set(), dtype:new Set(), tier:new Set()}, Q='';
+  var open = new Set();
+
+  function yr(y){ if(y===undefined||y===null) return ''; return y<0 ? 'MÖ '+(-y) : 'MS '+y; }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function vals(r, key){
+    if(key==='status') return [r.status];
+    if(key==='disc') return r.disciplines||[];
+    if(key==='region') return r.subject && r.subject.modern_country ? [r.subject.modern_country] : [];
+    if(key==='dtype') return r.divergence_type||[];
+    if(key==='tier') return (r.sources||[]).map(function(s){return s.tier;});
+    return [];
+  }
+  function passes(r, skip){
+    for(var k in F){
+      if(k===skip || !F[k].size) continue;
+      var v = vals(r,k), hit=false;
+      for(var i=0;i<v.length;i++) if(F[k].has(v[i])) { hit=true; break; }
+      if(!hit) return false;
+    }
+    if(Q){
+      var hay = [r.id, r.claim, r.popular_claim, r.divergence, (r.topic||[]).join(' '),
+                 r.subject&&r.subject.site, r.subject&&r.subject.region,
+                 (r.people||[]).map(function(p){return p.name;}).join(' '),
+                 (r.languages||[]).join(' ')].join(' ').toLocaleLowerCase('tr');
+      if(hay.indexOf(Q)<0) return false;
+    }
+    return true;
+  }
+  function filtered(skip){ return D.filter(function(r){ return passes(r, skip); }); }
+
+  function buildFacet(el, key, order){
+    var pool = filtered(key), counts = {};
+    pool.forEach(function(r){ vals(r,key).forEach(function(v){ counts[v]=(counts[v]||0)+1; }); });
+    F[key].forEach(function(v){ if(!(v in counts)) counts[v]=0; });
+    var keys = Object.keys(counts);
+    keys.sort(order || function(a,b){ return counts[b]-counts[a] || a.localeCompare(b,'tr'); });
+    el.innerHTML = keys.map(function(v){
+      var lbl = key==='status'?STATUS_TR[v] : key==='tier'?TIER_TR[v] : key==='dtype'?(DT_TR[v]||v) : v;
+      var cls = 'chip' + (key==='status'?' s-'+v:'');
+      return '<button class="'+cls+'" data-k="'+key+'" data-v="'+esc(v)+'" aria-pressed="'+F[key].has(v)+'">'+esc(lbl)+'<span class="n">'+counts[v]+'</span></button>';
+    }).join('');
+  }
+
+  function card(r){
+    var isOpen = open.has(r.id);
+    var s = r.subject||{}, p = r.period||{};
+    var meta = [];
+    if(s.site) meta.push(esc(s.site));
+    if(p.earliest!==undefined) meta.push(yr(p.earliest)+(p.latest!==undefined&&p.latest!==p.earliest?' – '+yr(p.latest):''));
+    if(p.era_label) meta.push(esc(p.era_label));
+    if((r.disciplines||[]).length) meta.push(esc(r.disciplines.join(', ')));
+    meta.push('<span class="mono">'+esc(r.id)+'</span>');
+    if(r.volatile) meta.push('<span class="vol">değişken</span>');
+
+    var h = '<article class="rec'+(isOpen?' open':'')+'" data-id="'+esc(r.id)+'">'
+      + '<button class="rec__hd" data-toggle="'+esc(r.id)+'" aria-expanded="'+isOpen+'">'
+      + '<span class="badge b-'+r.status+'">'+STATUS_TR[r.status]+'</span>'
+      + '<span><span class="rec__claim">'+esc(r.claim)+'</span>'
+      + '<span class="rec__meta">'+meta.join(' <span class="dot">·</span> ')+'</span></span>'
+      + '<span class="rec__tog">'+(isOpen?'kapat −':'aç +')+'</span></button>';
+
+    if(!isOpen) return h+'</article>';
+
+    h += '<div class="rec__body">';
+
+    if(r.popular_claim){
+      h += '<div class="pop"><h4 style="color:var(--warn)">Popüler hâli</h4><span class="pc">'+esc(r.popular_claim)+'</span>';
+      if(r.divergence) h += '<p class="dv">'+esc(r.divergence)+'</p>';
+      if((r.divergence_type||[]).length) h += '<div class="dtypes">'+r.divergence_type.map(function(d){return '<span class="dtype">'+esc(DT_TR[d]||d)+'</span>';}).join('')+'</div>';
+      h += '</div>';
+    }
+
+    var facts = [];
+    if(s.site_native) facts.push(['özgün ad', esc(s.site_native), '']);
+    if(s.region) facts.push(['bölge', esc(s.region), esc(s.modern_country||'')]);
+    if(s.coordinates) facts.push(['konum', '<span class="mono">'+s.coordinates.lat.toFixed(3)+', '+s.coordinates.lon.toFixed(3)+'</span>', '']);
+    if(p.precision) facts.push(['tarih kesinliği', esc(p.precision), esc((p.dating_method||[]).join(', '))]);
+    if((r.languages||[]).length) facts.push(['birincil dil', esc(r.languages.join(', ')), '']);
+    if(r.confidence) facts.push(['kayıt güveni', esc(r.confidence), '']);
+    facts.push(['son kontrol', '<span class="mono">'+esc(r.checked)+'</span>', '']);
+    if(facts.length) h += '<div class="blk"><h4>Künye</h4><div class="facts">'+facts.map(function(f){
+      return '<div class="fact"><span>'+f[0]+'</span><b>'+f[1]+'</b>'+(f[2]?'<small>'+f[2]+'</small>':'')+'</div>'; }).join('')+'</div></div>';
+
+    if((r.people||[]).length) h += '<div class="blk"><h4>Kişiler</h4><div class="people">'+r.people.map(function(pp){
+      return '<span class="person"><b>'+esc(pp.name)+'</b> <span class="role">'+esc(ROLE_TR[pp.role]||pp.role)+'</span>'
+        +(pp.year?' <span class="mono" style="font-size:.7rem">'+pp.year+'</span>':'')
+        +(pp.affiliation?'<br><small style="color:var(--ink-3)">'+esc(pp.affiliation)+'</small>':'')+'</span>'; }).join('')+'</div></div>';
+
+    if((r.evidence||[]).length) h += '<div class="blk"><h4>Lehte kanıt</h4><ul>'+r.evidence.map(function(e){return '<li>'+esc(e)+'</li>';}).join('')+'</ul></div>';
+    if((r.counter_evidence||[]).length) h += '<div class="blk"><h4>Aleyhte kanıt</h4><ul>'+r.counter_evidence.map(function(e){return '<li>'+esc(e)+'</li>';}).join('')+'</ul></div>';
+    if((r.open_questions||[]).length) h += '<div class="blk"><h4>Açık sorular</h4><ul>'+r.open_questions.map(function(e){return '<li>'+esc(e)+'</li>';}).join('')+'</ul></div>';
+
+    h += '<div class="blk"><h4>Kaynaklar</h4><div class="srcs">'+(r.sources||[]).map(function(sc){
+      var t = '<b>'+esc(sc.title)+'</b>';
+      if((sc.authors||[]).length) t = esc(sc.authors.join('; '))+' — '+t;
+      if(sc.year) t += ' <span class="mono">('+sc.year+')</span>';
+      if(sc.container) t += ', <em>'+esc(sc.container)+'</em>';
+      if(sc.publisher) t += ', '+esc(sc.publisher);
+      if(sc.institution) t += ' · '+esc(sc.institution);
+      if(sc.language) t += ' <em>['+esc(sc.language)+']</em>';
+      if(sc.doi) t += ' <span class="mono" style="font-size:.75rem">doi:'+esc(sc.doi)+'</span>';
+      if(sc.url) t += ' <a href="'+esc(sc.url)+'" target="_blank" rel="noopener">bağlantı</a>';
+      if(sc.note) t += '<br><em>'+esc(sc.note)+'</em>';
+      return '<div class="src"><span class="tier t-'+sc.tier+'">'+(TIER_TR[sc.tier]||sc.tier)+'</span><span class="src__t">'+t+'</span></div>';
+    }).join('')+'</div></div>';
+
+    if((r.used_in||[]).length) h += '<div class="blk"><h4>Kullanıldığı yazılar</h4><div class="usedin">'+r.used_in.map(function(u){return '<span class="slug">'+esc(u)+'</span>';}).join('')+'</div></div>';
+
+    return h+'</div></article>';
+  }
+
+  function render(){
+    var rows = filtered(null);
+    document.getElementById('list').innerHTML = rows.length
+      ? rows.map(card).join('')
+      : '<div class="empty">Bu filtrelerle kayıt yok.</div>';
+    document.getElementById('count').innerHTML = '<span><b>'+rows.length+'</b> / '+D.length+' kayıt</span>'
+      + '<span>' + (rows.filter(function(r){return r.popular_claim;}).length) + ' tanesinde popüler hâlden sapma kayıtlı</span>';
+    buildFacet(document.getElementById('f-status'),'status', function(a,b){
+      var o=['established','contested','minority','refuted','unknown','unmeasurable']; return o.indexOf(a)-o.indexOf(b); });
+    buildFacet(document.getElementById('f-disc'),'disc');
+    buildFacet(document.getElementById('f-region'),'region');
+    buildFacet(document.getElementById('f-dtype'),'dtype');
+    buildFacet(document.getElementById('f-tier'),'tier', function(a,b){
+      var o=['primary','peer-reviewed','institutional','popular','unreliable']; return o.indexOf(a)-o.indexOf(b); });
+  }
+
+  function kpis(){
+    var st = {}; D.forEach(function(r){ st[r.status]=(st[r.status]||0)+1; });
+    var srcs = D.reduce(function(a,r){ return a+(r.sources||[]).length; },0);
+    var pop = D.filter(function(r){return r.popular_claim;}).length;
+    var vol = D.filter(function(r){return r.volatile;}).length;
+    var items = [[D.length,'bulgu'],[srcs,'kaynak'],[pop,'popüler sapma'],
+      [st.contested||0,'tartışmalı'],[st.unmeasurable||0,'ölçülemez'],[vol,'değişken · yeniden kontrol']];
+    document.getElementById('kpis').innerHTML = items.map(function(i){
+      return '<div class="kpi"><b>'+i[0]+'</b><span>'+i[1]+'</span></div>'; }).join('');
+  }
+
+  document.addEventListener('click', function(e){
+    var c = e.target.closest('.chip');
+    if(c){ var k=c.dataset.k, v=c.dataset.v; F[k].has(v)?F[k].delete(v):F[k].add(v); render(); return; }
+    var t = e.target.closest('[data-toggle]');
+    if(t){ var id=t.dataset.toggle; open.has(id)?open.delete(id):open.add(id); render(); return; }
+    if(e.target.id==='reset'){ for(var k2 in F) F[k2].clear(); Q=''; document.getElementById('q').value=''; render(); }
+  });
+  document.getElementById('q').addEventListener('input', function(e){
+    Q = e.target.value.trim().toLocaleLowerCase('tr'); render(); });
+
+  kpis(); render();
+})();
+</script>
