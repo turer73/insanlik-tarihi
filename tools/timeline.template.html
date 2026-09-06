@@ -104,10 +104,39 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .hbar{position:absolute;bottom:0;background:var(--accent);opacity:.42}
 .hbar:hover{opacity:.75}
 
+/* guide / crosshair */
+.plot{position:relative}
+.guide{position:absolute;top:0;bottom:0;width:1px;background:var(--bad);pointer-events:none;z-index:4;
+  left:calc(230px + (100% - 230px) * var(--p,0));opacity:.55}
+.guide.lock{opacity:1;width:2px;margin-left:-1px}
+.guide::before{content:"";position:absolute;top:0;left:-3px;width:7px;height:7px;background:var(--bad)}
+.guidelbl{position:absolute;top:0;z-index:5;pointer-events:none;
+  left:calc(230px + (100% - 230px) * var(--p,0));transform:translateX(6px);
+  font-family:var(--mono);font-size:.66rem;font-weight:700;color:#fff;background:var(--bad);
+  padding:.12rem .35rem;white-space:nowrap;margin-top:3px}
+.guidelbl.flip{transform:translateX(calc(-100% - 6px))}
+.row.dim{opacity:.22}
+.row.dim .row__lbl b{font-weight:500}
+
+.coincide{border:1px solid var(--bad);background:var(--bad-bg);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.55rem}
+.coincide h3{font-size:1.02rem}
+.coincide .yr{font-family:var(--mono);font-weight:700;color:var(--bad)}
+.coincide ul{margin:0;padding-left:1.1rem;display:flex;flex-direction:column;gap:.3rem;font-size:.9rem;color:var(--ink-2);max-height:220px;overflow:auto}
+.coincide li b{color:var(--ink)}
+.coincide li span{font-family:var(--mono);font-size:.68rem;color:var(--ink-3)}
+.coincide .close{align-self:flex-start;font-family:var(--mono);font-size:.68rem;color:var(--ink-3);text-decoration:underline;text-underline-offset:3px}
+.hint{font-family:var(--mono);font-size:.68rem;color:var(--ink-3)}
+
 .row{display:grid;grid-template-columns:230px 1fr;border-bottom:1px solid var(--rule-soft)}
 .row:last-child{border-bottom:0}
 .row:hover .row__lbl,.row:hover .row__track{background:var(--surface)}
 .row.sel .row__lbl,.row.sel .row__track{background:var(--accent-soft)}
+.row__lbl .art{color:var(--accent-ink);font-weight:700}
+.det .arts{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.2rem}
+.det .arts a{font-family:var(--mono);font-size:.72rem;background:var(--raised);border:1px solid var(--accent);
+  color:var(--accent-ink);padding:.28rem .55rem;text-decoration:none;display:inline-flex;gap:.35rem;align-items:center}
+.det .arts a:hover{background:var(--accent);color:var(--raised)}
+.det .noart{font-family:var(--mono);font-size:.7rem;color:var(--ink-3)}
 .row__lbl{border-right:1px solid var(--rule);padding:.38rem .7rem;display:flex;flex-direction:column;gap:.05rem;min-width:0}
 .row__lbl b{font-size:.78rem;font-weight:600;color:var(--ink);line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row__lbl span{font-family:var(--mono);font-size:.6rem;color:var(--ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -178,13 +207,19 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 
   <div class="warn" id="scalewarn" hidden></div>
   <div class="count" id="count"></div>
+  <p class="hint">Çubuğa tıkla → bulgu ayrıntısı ve yazı bağlantısı. Çubuk dışında bir yere tıkla → <b>dikey kılavuz</b> kilitlenir ve o tarihte çakışan bulgular kalır.</p>
+  <div class="coincide" id="coincide" hidden></div>
   <div class="det" id="det" hidden></div>
 
   <div class="chart">
     <div class="chartin">
-      <div class="axis"><div class="axis__pad"></div><div class="axis__scale" id="axis"></div></div>
-      <div class="hist"><div class="hist__lbl"><span>yoğunluk</span></div><div class="hist__plot" id="hist"></div></div>
-      <div id="rows"></div>
+      <div class="plot" id="plot">
+        <div class="guide" id="guide" hidden></div>
+        <div class="guidelbl" id="guidelbl" hidden></div>
+        <div class="axis"><div class="axis__pad"></div><div class="axis__scale" id="axis"></div></div>
+        <div class="hist"><div class="hist__lbl"><span>yoğunluk</span></div><div class="hist__plot" id="hist"></div></div>
+        <div id="rows"></div>
+      </div>
     </div>
   </div>
 
@@ -200,11 +235,13 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 </div>
 
 <script id="data" type="application/json">__DATA__</script>
+<script id="articles" type="application/json">__ARTICLES__</script>
 <script>
 (function(){
   var D = JSON.parse(document.getElementById('data').textContent).filter(function(r){
     return r.period && typeof r.period.earliest === 'number';
   });
+  var ART = JSON.parse(document.getElementById('articles').textContent);
   var NOW = 2026;
   var ST = {established:'yerleşik',contested:'tartışmalı',minority:'azınlık',refuted:'çürütülmüş',unknown:'bilinmiyor',unmeasurable:'ölçülemez'};
   var CLS = {established:'est',contested:'con',minority:'min',refuted:'ref',unknown:'unk',unmeasurable:'unm'};
@@ -218,7 +255,24 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
            note:'Logaritmik. DİKKAT: log ekseni yakın geçmişi ŞİŞİRİR — insanlık tarihi burada gerçekte olduğundan çok daha geniş görünür.'}
   };
 
-  var S = {scale:'civ', sort:'time', status:new Set(), region:new Set(), sel:null};
+  var S = {scale:'civ', sort:'time', status:new Set(), region:new Set(), sel:null, guide:null};
+
+  // ---- kılavuz: konum -> yıl (pos'un tersi) ----
+  function unpos(p, sc){
+    var s = SCALES[sc];
+    if(!s.log) return Math.round(s.min + p * (s.max - s.min));
+    var maxbp = NOW - s.min;
+    return Math.round(NOW - Math.pow(10, (1 - p) * Math.log10(maxbp)));
+  }
+  function spans(r, y){
+    var e = r.period.earliest, l = r.period.latest === undefined ? e : r.period.latest;
+    var lo = Math.min(e,l), hi = Math.max(e,l);
+    if(lo === hi){ // nokta olay: ölçeğin binde beşi kadar tolerans
+      var s = SCALES[S.scale], tol = Math.abs(s.max - s.min) * 0.005;
+      return Math.abs(y - lo) <= tol;
+    }
+    return y >= lo && y <= hi;
+  }
 
   function pos(y, sc){
     var s = SCALES[sc];
@@ -308,10 +362,13 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
       var dl = left + (isPt?0.6:w+0.6);
       var flip = dl > 78;
       var dstyle = flip ? 'right:'+(100-left+0.6).toFixed(3)+'%' : 'left:'+dl.toFixed(3)+'%';
-      return '<div class="row'+(S.sel===r.id?' sel':'')+'" data-id="'+esc(r.id)+'">'
-        + '<div class="row__lbl"><b title="'+esc(r.claim)+'">'+esc((r.subject&&r.subject.site)||r.topic[0])+'</b>'
+      var hasArt = (r.used_in||[]).some(function(u){ return ART[u]; });
+      var dim = (S.guide !== null && !spans(r, S.guide)) ? ' dim' : '';
+      return '<div class="row'+(S.sel===r.id?' sel':'')+dim+'" data-id="'+esc(r.id)+'">'
+        + '<div class="row__lbl"><b title="'+esc(r.claim)+'">'+esc((r.subject&&r.subject.site)||r.topic[0])
+        + (hasArt?' <span class="art">↗</span>':'')+'</b>'
         + '<span>'+esc(r.period.era_label||r.id)+'</span></div>'
-        + '<div class="row__track"><div class="'+cls+'" style="'+style+'"></div>'
+        + '<div class="row__track"><div class="'+cls+'" data-bar="1" style="'+style+'"></div>'
         + '<div class="rowdate" style="'+dstyle+'">'+esc(dateTxt)+'</div></div></div>';
     }).join('') || '<div style="padding:2rem;text-align:center;color:var(--ink-3)">Bu ölçek ve filtrelerde kayıt yok.</div>';
 
@@ -322,6 +379,30 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     else { w.hidden=false; w.innerHTML='<b>'+SCALES[S.scale].label+':</b> '+SCALES[S.scale].note; }
     chips();
     detail();
+    guideUI(list);
+  }
+
+  function guideUI(list){
+    var g = document.getElementById('guide'), gl = document.getElementById('guidelbl'), co = document.getElementById('coincide');
+    if(S.guide === null){ g.hidden = true; gl.hidden = true; co.hidden = true; return; }
+    var p = clamp(pos(S.guide, S.scale));
+    g.hidden = false; gl.hidden = false;
+    g.classList.add('lock');
+    g.style.setProperty('--p', p);
+    gl.style.setProperty('--p', p);
+    gl.classList.toggle('flip', p > 0.82);
+    gl.textContent = fmtY(S.guide);
+
+    var hit = list.filter(function(r){ return spans(r, S.guide); });
+    co.hidden = false;
+    co.innerHTML = '<h3>Bu tarihte çakışan bulgular — <span class="yr">'+esc(fmtY(S.guide))+'</span> · '+hit.length+' kayıt</h3>'
+      + (hit.length
+        ? '<ul>'+hit.map(function(r){
+            return '<li><b>'+esc((r.subject&&r.subject.site)||r.topic[0])+'</b> — '+esc(r.claim)
+              + '<br><span>'+esc(fmtY(r.period.earliest))+(r.period.latest!==r.period.earliest?' – '+esc(fmtY(r.period.latest)):'')
+              + ' · '+esc(r.period.era_label||'')+'</span></li>'; }).join('')+'</ul>'
+        : '<p style="margin:0;font-size:.9rem;color:var(--ink-2)">Bu tarihte aktif bulgu yok.</p>')
+      + '<button class="close" data-unguide="1">kılavuzu kaldır</button>';
   }
 
   function chipHtml(k,v,lbl,cls,n){
@@ -356,25 +437,63 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     if(r.period.precision) m.push('kesinlik: '+esc(r.period.precision));
     if((r.period.dating_method||[]).length) m.push('yöntem: '+esc(r.period.dating_method.join(', ')));
     if((r.languages||[]).length) m.push('dil: '+esc(r.languages.join(', ')));
+    var arts = (r.used_in||[]).filter(function(u){ return ART[u]; });
     el.innerHTML = '<span class="badge b-'+r.status+'">'+ST[r.status]+'</span>'
       + '<h3>'+esc(r.claim)+'</h3>'
       + '<div class="meta">'+m.join(' · ')+'</div>'
       + (r.popular_claim ? '<div class="pop"><i>'+esc(r.popular_claim)+'</i>'
           + (r.divergence?'<p style="margin-top:.35rem">'+esc(r.divergence)+'</p>':'')+'</div>' : '')
+      + (arts.length
+          ? '<div class="arts">'+arts.map(function(u){
+              return '<a href="'+esc(ART[u].url)+'" target="_blank" rel="noopener">'
+                + esc(ART[u].no ? String(ART[u].no).padStart(2,'0')+' · '+ART[u].title : ART[u].title)+' ↗</a>'; }).join('')+'</div>'
+          : '<span class="noart">Bu bulgu henüz bir yazıda kullanılmadı.</span>')
       + '<button class="close" data-close="1">kapat</button>';
+  }
+
+  function trackYear(e){
+    var plot = document.getElementById('plot');
+    var rect = plot.getBoundingClientRect();
+    var x = e.clientX - rect.left - 230;
+    var w = rect.width - 230;
+    if(w <= 0) return null;
+    return unpos(Math.max(0, Math.min(1, x / w)), S.scale);
   }
 
   document.addEventListener('click', function(e){
     var c = e.target.closest('.chip');
     if(c){
       var k=c.dataset.k, v=c.dataset.v;
-      if(k==='scale') S.scale=v; else if(k==='sort') S.sort=v;
+      if(k==='scale'){ S.scale=v; S.guide=null; } else if(k==='sort') S.sort=v;
       else { S[k].has(v)?S[k].delete(v):S[k].add(v); }
       draw(); return;
     }
     if(e.target.dataset.close){ S.sel=null; draw(); return; }
-    var row = e.target.closest('.row');
-    if(row){ S.sel = (S.sel===row.dataset.id? null : row.dataset.id); draw(); }
+    if(e.target.dataset.unguide){ S.guide=null; draw(); return; }
+    if(e.target.closest('.det') || e.target.closest('.coincide')) return;
+
+    // çubuğa tıklama -> bulgu seç; çubuk dışı iz -> kılavuzu kilitle
+    if(e.target.dataset.bar){
+      var row = e.target.closest('.row');
+      S.sel = (S.sel===row.dataset.id? null : row.dataset.id);
+      draw(); return;
+    }
+    var track = e.target.closest('.row__track, .hist__plot, .axis__scale');
+    if(track){
+      var y = trackYear(e);
+      if(y !== null){ S.guide = (S.guide === y ? null : y); draw(); }
+      return;
+    }
+    var lbl = e.target.closest('.row__lbl');
+    if(lbl){
+      var r2 = lbl.closest('.row');
+      S.sel = (S.sel===r2.dataset.id? null : r2.dataset.id);
+      draw();
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && S.guide !== null){ S.guide = null; draw(); }
   });
 
   draw();

@@ -1,0 +1,42 @@
+{
+  "olu-deniz-parsomenleri": {
+    "title": "Ölü Deniz Parşömenleri",
+    "url": "https://claude.ai/code/artifact/d7dec1a3-0e12-4226-9a0a-03630c92ce5f",
+    "no": 1
+  },
+  "tufan-bilmecesi": {
+    "title": "Tufan Bilmecesi",
+    "url": "https://claude.ai/code/artifact/609394d5-3aaf-40bc-9495-2397ed27f7ab",
+    "no": 2
+  },
+  "hatirlamadigimiz-felaketler": {
+    "title": "Hatırlamadığımız Felaketler",
+    "url": "https://claude.ai/code/artifact/4bce12d1-2a77-4bea-a88e-3bb8ba56a8c2",
+    "no": 3
+  },
+  "babil": {
+    "title": "Babil: Şehir ve Sembol",
+    "url": "https://claude.ai/code/artifact/a2073b91-08eb-41b4-8908-35035515504e",
+    "no": 4
+  },
+  "ayni-cumlede": {
+    "title": "Aynı Cümlede Anılanlar",
+    "url": "https://claude.ai/code/artifact/9d8e7de4-1d58-4857-8968-70238ac85e92",
+    "no": 5
+  },
+  "petra": {
+    "title": "Petra: Görünmeyen Şehir",
+    "url": "https://claude.ai/code/artifact/1a7f00f8-e0c0-4f58-b1f2-92f4f19a34d9",
+    "no": 6
+  },
+  "shushtar": {
+    "title": "Şuşter: Aktarımın Kanıtı",
+    "url": "https://claude.ai/code/artifact/e20cfe5c-126e-4524-afd9-bf079cc8e5f0",
+    "no": 7
+  },
+  "stonehenge": {
+    "title": "Stonehenge: Taşın Yolu",
+    "url": "https://claude.ai/code/artifact/d2efaa47-d4dc-4f28-83f3-b37779e31c5d",
+    "no": 8
+  }
+}

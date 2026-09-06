@@ -122,6 +122,12 @@ yayına hazır tek dosyalık HTML üretir. Şablonlarda `__DATA__` yer tutucusu 
   boyunca ölçekli bir çubuk. Üç ölçek (Uygarlıklar / İnsan / Derin zaman),
   kronolojik-bölge-durum sıralaması, yoğunluk histogramı. Log ölçek seçildiğinde
   yakın geçmişi şişirdiği uyarısı gösterilir.
+  - **Çubuğa tıkla** → bulgu ayrıntısı + `used_in` üzerinden yazı bağlantıları.
+  - **Çubuk dışına tıkla** → dikey kılavuz kilitlenir, o tarihte aktif olmayan
+    satırlar soluklaşır ve çakışan bulgular listelenir. `Esc` kaldırır.
+  - Yazı bağlantıları `data/articles.json` dosyasından gelir; şablona
+    `__ARTICLES__` yer tutucusuyla gömülür. Yeni yazı yayımlandığında bu dosyaya
+    slug + URL eklenmelidir, yoksa bulgu "henüz bir yazıda kullanılmadı" görünür.
 - **bulgu-veri-tabani.html** — kayıt tarayıcı; durum, disiplin, bölge, sapma türü
   ve kaynak katmanına göre filtreleme.
 
