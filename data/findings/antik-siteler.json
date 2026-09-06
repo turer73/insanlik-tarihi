@@ -548,7 +548,8 @@
     ],
     "checked": "2026-09-06",
     "used_in": [
-      "ayni-cumlede"
+      "ayni-cumlede",
+      "angkor"
     ]
   },
   {
@@ -2062,6 +2063,243 @@
     "checked": "2026-09-06",
     "used_in": [
       "stonehenge"
+    ]
+  },
+  {
+    "id": "angkor-cokus-nedensellik-yonu",
+    "claim": "Angkor'un idari çekirdeğindeki gerileme, sözde çöküşten yüz yıldan fazla önce başlamıştı; altyapı çöktüğü için gitmediler, gittikleri için altyapı çöktü.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "angkor",
+      "khmer",
+      "cokus-anlatisi",
+      "yontem"
+    ],
+    "subject": {
+      "site": "Angkor Thom hendeği",
+      "region": "Siem Reap, Khmer İmparatorluğu",
+      "modern_country": "Kamboçya",
+      "coordinates": {
+        "lat": 13.4413,
+        "lon": 103.8595
+      }
+    },
+    "period": {
+      "earliest": 1300,
+      "latest": 1431,
+      "era_label": "Geç Angkor dönemi",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "languages": [
+      "Kmerce"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "jeoarkeoloji",
+      "iklim-bilimi"
+    ],
+    "people": [
+      {
+        "name": "Penny, Dan",
+        "role": "analyst",
+        "affiliation": "University of Sydney",
+        "year": 2019
+      }
+    ],
+    "popular_claim": "Angkor 1431'de Ayutthaya istilasıyla veya su sisteminin çökmesiyle aniden terk edildi.",
+    "divergence": "Sediment karotları yanma, orman tahribatı ve erozyon göstergelerinin 14. yüzyılın ilk on yıllarından itibaren azaldığını gösteriyor. Angkor Thom hendeği 14. yüzyıl sonunda artık bakılmıyor. Yani 1431 istilası zaten büyük ölçüde boşalmış bir merkeze geldi. Çöküş anlatısı bir tarih ve tek bir fail istiyor; kanıt yavaş bir kayma veriyor.",
+    "divergence_type": [
+      "medya-abartisi",
+      "kategori-hatasi"
+    ],
+    "evidence": [
+      "Angkor Thom hendeğinden alınan sondaj karotlarının paleoekolojik analizi.",
+      "Yanma izleri, orman tahribatı ve toprak erozyonu göstergeleri 14. yüzyıl başından itibaren düşüyor.",
+      "Hendek 14. yüzyıl sonunda bakımsız kalıyor - bakım örgütlenmesi artık işlemiyor.",
+      "Su ağı otomatik çalışmaz; kanal temizliği ve bent onarımı sürekli örgütlü emek ister."
+    ],
+    "counter_evidence": [
+      "Kanıt TEK BİR HENDEKTEN geliyor ve kentin idari çekirdeğini temsil ediyor; çevredeki geniş yerleşimde nüfusun ne zaman azaldığı ayrı bir soru.",
+      "Seçkinlerin neden gittiği bilinmiyor - deniz ticareti, siyasi kayma ve dinî değişim öne sürülüyor, hiçbiri kanıtlanmadı."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Penny, Dan"
+        ],
+        "year": 2019,
+        "title": "Geoarchaeological evidence from Angkor, Cambodia, reveals a gradual decline rather than a catastrophic 15th-century collapse",
+        "container": "PNAS",
+        "doi": "10.1073/pnas.1821460116",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1821460116",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "institutional",
+        "type": "press-release",
+        "year": 2019,
+        "title": "New research casts doubt on cause of Angkor's collapse",
+        "institution": "University of Sydney",
+        "url": "https://www.sydney.edu.au/news-opinion/news/2019/02/26/new-research-casts-doubt-on-cause-of-angkor-s-collapse.html",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Seçkinler neden gitti?",
+      "Çevre yerleşimde nüfus ne zaman azaldı?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "angkor"
+    ]
+  },
+  {
+    "id": "angkor-kuraklik-agac-halkalari",
+    "claim": "14. ve 15. yüzyıllarda Angkor bölgesini iki büyük kuraklık ve aralarında şiddetli muson dönemleri vurdu.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "angkor",
+      "iklim",
+      "agac-halkasi"
+    ],
+    "subject": {
+      "site": "Angkor",
+      "region": "Siem Reap",
+      "modern_country": "Kamboçya",
+      "coordinates": {
+        "lat": 13.4125,
+        "lon": 103.8667
+      }
+    },
+    "period": {
+      "earliest": 1300,
+      "latest": 1450,
+      "era_label": "Geç Angkor",
+      "precision": "range",
+      "dating_method": [
+        "dendrochronology"
+      ]
+    },
+    "disciplines": [
+      "iklim-bilimi",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Buckley, Brendan M.",
+        "role": "analyst",
+        "affiliation": "Columbia University, Lamont-Doherty",
+        "year": 2010
+      }
+    ],
+    "popular_claim": "Kuraklık Angkor'un çöküşüne sebep oldu.",
+    "divergence": "Kuraklıklar ölçülmüş ve gerçek. Ama çalışmanın kendi yazarı iklimi tek sebep saymayı reddediyor: şehir zaten toplumsal, ekonomik ve siyasi baskı altındaydı. Popüler aktarım bu ihtiyatı düşürüyor.",
+    "divergence_type": [
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "Güney Vietnam servi ağacı halkalarından ~750 yıllık hidroiklim yeniden kurgusu.",
+      "14. yüzyıl ortasındaki kuraklık bölgede sekiz yüzyılın en uzun süreli kuraklığı.",
+      "15. yüzyıl başındaki ikinci kuraklık daha kısa ama daha sert; kayıttaki en kurak yıl 1403.",
+      "Mekanizma: kuraklıkta kanallar siltle tıkanır, ardından gelen sert muson yılları su kontrol yapılarına zarar verir."
+    ],
+    "counter_evidence": [
+      "Çalışmanın yazarı iklimin tek sebep olmadığını açıkça belirtiyor.",
+      "2019 sediment kanıtı gerilemenin kuraklıklardan ÖNCE başladığını gösteriyor; kuraklığın payı belirlenemiyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Buckley, Brendan M."
+        ],
+        "year": 2010,
+        "title": "Climate as a contributing factor in the demise of Angkor, Cambodia",
+        "container": "PNAS",
+        "doi": "10.1073/pnas.0910827107",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.0910827107",
+        "language": "en",
+        "accessed": "2026-09-06"
+      }
+    ],
+    "open_questions": [
+      "Kuraklıkların çöküşteki payı ne kadar - ağırlık belirlenemiyor."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "angkor"
+    ]
+  },
+  {
+    "id": "angkor-hic-kaybolmadi",
+    "claim": "Angkor Wat hiçbir zaman terk edilmedi; Budist manastırı olarak sürekli kullanıldı ve 16.-17. yüzyıl ziyaretçi kayıtları mevcut.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "angkor",
+      "kesif-anlatisi",
+      "somurgecilik"
+    ],
+    "subject": {
+      "site": "Angkor Wat",
+      "region": "Siem Reap",
+      "modern_country": "Kamboçya",
+      "coordinates": {
+        "lat": 13.4125,
+        "lon": 103.8667
+      }
+    },
+    "period": {
+      "earliest": 1150,
+      "latest": 1900,
+      "era_label": "Kesintisiz kullanımdan sömürge keşif anlatısına",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Kmerce",
+      "Portekizce",
+      "Japonca"
+    ],
+    "disciplines": [
+      "tarih",
+      "arkeoloji"
+    ],
+    "popular_claim": "Angkor Wat cangılda unutulmuş, 19. yüzyılda Fransızlar tarafından keşfedilmiş bir tapınaktır.",
+    "divergence": "Anlatı 19. yüzyıl Fransız sömürge keşif edebiyatının ürünü. Yerli bir bilgiye keşif demek, o bilgiyi yok saymanın kibar biçimi - aynı kalıp Petra ve Machu Picchu için de kullanıldı.",
+    "divergence_type": [
+      "somurge-anlatisi"
+    ],
+    "evidence": [
+      "Yapı Budist manastırı olarak sürekli kullanıldı; hac ziyaretleri kesilmedi.",
+      "16. ve 17. yüzyıllarda Portekizli ve Japon ziyaretçilerin kayıtları var.",
+      "17. yüzyıldan kalma bir Japon çizimi mevcut."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Angkor sonrası Kamboçya ve ziyaretçi kayıtları literatürü",
+        "language": "en"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "angkor",
+      "ayni-cumlede"
     ]
   }
 ]
