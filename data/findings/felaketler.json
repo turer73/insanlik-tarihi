@@ -24,7 +24,8 @@
     ],
     "checked": "2026-09-06",
     "used_in": [
-      "hatirlamadigimiz-felaketler"
+      "hatirlamadigimiz-felaketler",
+      "milankovic"
     ],
     "period": {
       "earliest": -2600000,
@@ -87,7 +88,8 @@
     "checked": "2026-09-06",
     "volatile": true,
     "used_in": [
-      "hatirlamadigimiz-felaketler"
+      "hatirlamadigimiz-felaketler",
+      "milankovic"
     ],
     "period": {
       "earliest": -1200000,

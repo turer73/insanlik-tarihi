@@ -1,0 +1,108 @@
+[
+  {
+    "id": "iskenderiye-tek-yangin-yok",
+    "claim": "İskenderiye Kütüphanesi tek bir yangında yok edildi.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": ["iskenderiye", "kutuphane", "kaynak-elestirisi"],
+    "subject": { "site": "İskenderiye Kütüphanesi ve Mouseion", "region": "Nil Deltası, Helenistik Mısır", "modern_country": "Mısır", "coordinates": { "lat": 31.2001, "lon": 29.9187 } },
+    "period": { "earliest": -300, "latest": 700, "era_label": "Ptolemaios'tan erken İslam dönemine", "precision": "range", "dating_method": ["historical-record", "textual"] },
+    "languages": ["Grekçe", "Mısırca", "Latince"],
+    "disciplines": ["tarih", "filoloji", "bilim-tarihi"],
+    "popular_claim": "İskenderiye Kütüphanesi bir gecede yakıldı ve insanlık büyük bir hazineyi bir anda kaybetti.",
+    "divergence": "Dört ayrı yangın anlatısı var ve hiçbiri kütüphanenin sonu değil. Her anlatı, anlatıldığı dönemin DÜŞMANINI suçluyor - Roma karşıtları Sezar'ı, Hristiyanlık karşıtları piskoposu, İslam karşıtları halifeyi. Kütüphanenin ölümü herkesin kendi tezini astığı bir çengele dönüşmüş.",
+    "divergence_type": ["ideolojik-secim", "medya-abartisi"],
+    "evidence": [
+      "MÖ 48 Sezar yangını gerçek ama büyük olasılıkla limandaki depoları ve ikincil koleksiyonları etkiledi.",
+      "Strabon yangından yaklaşık yirmi yıl sonra İskenderiye'yi ziyaret edip Mouseion'u ve kütüphanesini tarif ediyor - felaket boyutunda bir kayıptan söz etmiyor.",
+      "MS 270'lerdeki kentsel yıkım Mouseion'un işlevini yitirmesinde rol oynamış olabilir.",
+      "MS 391 Serapeion yıkımı gerçek bir olay ama oradaki koleksiyonun içeriği bilinmiyor.",
+      "Halife Ömer anlatısı olaydan ~500 yıl sonra ortaya çıkıyor ve dönemin diğer efsaneleriyle kalıp benzerlikleri taşıyor; uzmanlar arasında kurgu olduğu yönünde geniş uzlaşı var."
+    ],
+    "counter_evidence": ["Strabon'un sessizliğinden çıkarım, genelde zayıf bir araçtır; burada gücü, yazarın tam o konuyu ayrıntılı anlatıyor olmasından geliyor."],
+    "sources": [
+      { "tier": "peer-reviewed", "type": "article", "title": "The Destruction of the Library of Alexandria: A Reassessment", "language": "en", "accessed": "2026-09-06" },
+      { "tier": "institutional", "type": "webpage", "title": "Library of Alexandria - The destruction of the library", "institution": "Open University / OpenLearn", "url": "https://www.open.edu/openlearn/history-the-arts/library-alexandria/content-section-3", "language": "en", "accessed": "2026-09-06" },
+      { "tier": "primary", "type": "book", "authors": ["Strabon"], "title": "Geographika", "language": "grc" }
+    ],
+    "open_questions": ["Mouseion tam olarak ne zaman işlevini yitirdi?", "Serapeion koleksiyonunda ne vardı?"],
+    "checked": "2026-09-06",
+    "used_in": ["iskenderiye"]
+  },
+  {
+    "id": "iskenderiye-asil-sebep-kopyalanmama",
+    "claim": "Antik metinlerin kaybının başlıca sebebi yangın değil, papirüsün ömrü ve yeniden kopyalanmama kararıdır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": ["iskenderiye", "metin-aktarimi", "hayatta-kalma-yanliligi"],
+    "subject": { "site": "İskenderiye Kütüphanesi", "region": "Helenistik Akdeniz", "modern_country": "Mısır", "coordinates": { "lat": 31.2001, "lon": 29.9187 } },
+    "period": { "earliest": -300, "latest": 900, "era_label": "Rulodan kodekse geçiş dönemi dahil", "precision": "range", "dating_method": ["textual", "historical-record"] },
+    "languages": ["Grekçe", "Latince"],
+    "disciplines": ["filoloji", "tarih", "metin-elestirisi"],
+    "popular_claim": "Bir yangın olmasaydı antik bilgi korunurdu ve bugün yüzyıllar ileride olurduk.",
+    "divergence": "Papirüs kırılgandır ve Mısır ikliminde bile birkaç yüzyıl ömrü vardır. Bir metnin hayatta kalması için yıpranmadan önce ELLE YENİDEN YAZILMASI gerekir - pahalı, yavaş, emek yoğun. Kimse her şeyi kopyalamaz; kâtipler okutulan ve aranan metinleri seçer. Rulodan kodekse geçiş ikinci bir eleme anıdır.",
+    "divergence_type": ["hayatta-kalma-yanliligi", "medya-abartisi"],
+    "evidence": [
+      "Öklid'in Elemanlar'ı ayakta çünkü yüzyıllar boyunca öğretildi ve kopyalandı.",
+      "Aristarkhos'un güneş merkezli metni kayıp - fikir yanlış sayıldığı için kopyalanmadı; sadece Arşimet'in aktarımıyla biliniyor.",
+      "Eratosthenes'in ve Herophilos'un eserleri kayıp, bulguları alıntılarla biliniyor.",
+      "Elimizdeki antik külliyat rastgele hayatta kalanlar değil, seçilerek aktarılanlardır."
+    ],
+    "sources": [
+      { "tier": "peer-reviewed", "type": "book", "title": "Antik metin aktarımı ve elyazması geleneği literatürü", "language": "en" }
+    ],
+    "open_questions": ["Kaybedilen metinlerin değeri ölçülemez - kayıp listesinin kendisi (Kallimakhos'un Pinakes'i) kayıp."],
+    "checked": "2026-09-06",
+    "used_in": ["iskenderiye"]
+  },
+  {
+    "id": "iskenderiye-metin-elestirisi-dogdu",
+    "claim": "Metin eleştirisi disiplini İskenderiye'de, Homeros nüshalarının karşılaştırılmasıyla doğdu.",
+    "status": "established",
+    "confidence": "high",
+    "topic": ["iskenderiye", "metin-elestirisi", "yontem-tarihi"],
+    "subject": { "site": "İskenderiye Mouseion", "region": "Helenistik Mısır", "modern_country": "Mısır", "coordinates": { "lat": 31.2001, "lon": 29.9187 } },
+    "period": { "earliest": -280, "latest": -140, "era_label": "Ptolemaios dönemi filolojisi", "precision": "range", "dating_method": ["textual"] },
+    "languages": ["Grekçe"],
+    "disciplines": ["filoloji", "metin-elestirisi", "bilim-tarihi"],
+    "evidence": [
+      "Kâtipler Homeros'un farklı nüshalarını karşılaştırıp hangi okumanın daha eski olduğunu belirlemeye çalıştı.",
+      "İşaretleme sistemleri, varyant notları ve eleştirel baskı fikri burada gelişti.",
+      "Kallimakhos'un Pinakes'i (120 kitaplık katalog) kütüphane biliminin erken örneğidir - kendisi kayıp, parçalarla biliniyor."
+    ],
+    "sources": [
+      { "tier": "peer-reviewed", "type": "book", "title": "Helenistik filoloji ve Homeros metin eleştirisi literatürü", "language": "en" }
+    ],
+    "open_questions": ["Pinakes'in yapısı ve kapsamı tam olarak bilinmiyor - yalnızca alıntı parçaları var."],
+    "checked": "2026-09-06",
+    "used_in": ["iskenderiye"]
+  },
+  {
+    "id": "milankovic-100bin-yil-problemi",
+    "claim": "Buzul çağı kaydına hâkim olan ~100 bin yıllık ritmin sebebi açıklanmıştır.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": ["milankovic", "iklim", "buzul-caglari", "acik-problem"],
+    "period": { "earliest": -1000000, "latest": 2026, "era_label": "Geç Pleyistosen'den bugüne", "precision": "range", "dating_method": ["isotopic", "astronomical"] },
+    "disciplines": ["iklim-bilimi", "astronomi", "jeoloji"],
+    "popular_claim": "Buzul çağları Milanković döngüleriyle açıklanmıştır ve konu kapanmıştır.",
+    "divergence": "Üç periyodun kayıtta bulunması sağlam bir sonuç. Ama kayda HÂKİM olan 100 bin yıllık ritim, üç döngünün EN ZAYIFINA (basıklık) ait - basıklığın güneşlenmeye doğrudan etkisi binde bir düzeyinde. En zayıf sinyalin kaydı yönetmesi açıklanmadı.",
+    "divergence_type": ["guncellenmemis"],
+    "evidence": [
+      "1976'da derin deniz çökel karotlarındaki oksijen izotop kayıtları beklenen üç periyodu (~100 bin, ~41 bin, ~23 bin yıl) doğrudan gösterdi.",
+      "Periyotlar gökmekaniğinden ÖNCEDEN hesaplanmıştı; çökel verisi bağımsız bir ölçümdü."
+    ],
+    "counter_evidence": [
+      "Basıklığın güneşlenmeye doğrudan etkisi çok küçük; buzul çağını açıklamaya yetmez.",
+      "Orta Pleyistosen Geçişi'nde (~1,2-0,8 My) ritim 41 binden 100 bine atladı ama yörünge zorlaması değişmedi - nedeni bilinmiyor.",
+      "Doğrusal olmayan geri besleme açıklamaları var ama uzlaşılmış bir çözüm yok."
+    ],
+    "sources": [
+      { "tier": "peer-reviewed", "type": "article", "authors": ["Hays, James D.", "Imbrie, John", "Shackleton, Nicholas"], "year": 1976, "title": "Variations in the Earth's Orbit: Pacemaker of the Ice Ages", "container": "Science", "language": "en" }
+    ],
+    "open_questions": ["100 bin yıl problemi", "Orta Pleyistosen Geçişi'nin sebebi"],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": ["milankovic", "hatirlamadigimiz-felaketler"]
+  }
+]

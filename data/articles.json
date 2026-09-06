@@ -73,5 +73,15 @@
     "title": "Persepolis: Arşiv Konuşunca",
     "url": "https://claude.ai/code/artifact/c3405fd4-f99b-4f2f-bdc1-aedf9db2235c",
     "no": 15
+  },
+  "iskenderiye": {
+    "title": "İskenderiye: Yanmadı, Kopyalanmadı",
+    "url": "https://claude.ai/code/artifact/533139a1-13df-4b47-b4e5-f5232bf964cf",
+    "no": 16
+  },
+  "milankovic": {
+    "title": "Milanković Döngüleri",
+    "url": "https://claude.ai/code/artifact/0c0fdc32-c573-430a-9fdd-da13fe8ea5df",
+    "no": 17
   }
 }
