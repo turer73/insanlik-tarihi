@@ -390,7 +390,8 @@
     ],
     "checked": "2026-09-06",
     "used_in": [
-      "ayni-cumlede"
+      "ayni-cumlede",
+      "machu-picchu"
     ]
   },
   {
@@ -454,7 +455,8 @@
     ],
     "checked": "2026-09-06",
     "used_in": [
-      "ayni-cumlede"
+      "ayni-cumlede",
+      "machu-picchu"
     ]
   },
   {
@@ -2597,6 +2599,302 @@
     "checked": "2026-09-06",
     "used_in": [
       "tas-tepeler"
+    ]
+  },
+  {
+    "id": "machu-picchu-dna-cok-kokenli-hizmetliler",
+    "claim": "Machu Picchu'ya gömülü hizmetliler İnka İmparatorluğu'nun her yanından ve Amazon havzasından gelen soy hatları taşıyor; farklı kökenlerden bireyler birlikte çocuk sahibi olmuş ve birlikte gömülmüş.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "machu-picchu",
+      "inka",
+      "antik-dna",
+      "mitma"
+    ],
+    "subject": {
+      "site": "Machu Picchu",
+      "site_native": "Huayna Picchu",
+      "region": "Urubamba Vadisi, And Dağları",
+      "modern_country": "Peru",
+      "coordinates": {
+        "lat": -13.1631,
+        "lon": -72.545
+      }
+    },
+    "period": {
+      "earliest": 1420,
+      "latest": 1540,
+      "era_label": "İnka İmparatorluğu",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "isotopic"
+      ]
+    },
+    "languages": [
+      "Keçuvaca"
+    ],
+    "disciplines": [
+      "genetik",
+      "arkeoloji",
+      "antropoloji"
+    ],
+    "people": [
+      {
+        "name": "Salazar, Lucy",
+        "role": "analyst",
+        "affiliation": "Yale University",
+        "year": 2023
+      }
+    ],
+    "popular_claim": "Machu Picchu bir İnka şehriydi ve orada İnkalar yaşıyordu.",
+    "divergence": "Site etnik olarak İnka bir yerleşim değildi. 34 bireyin genom verisi, hizmetli (yanacona) topluluğunun son derece heterojen olduğunu gösteriyor - And yaylaları, Peru kıyıları, ve Peru/Kolombiya/Ekvador Amazon bölgeleri. Bu, İnka mitma uygulamasının (nüfusların bilinçli yer değiştirmesi) maddi kanıtı.",
+    "divergence_type": [
+      "guncellenmemis",
+      "kategori-hatasi"
+    ],
+    "evidence": [
+      "34 bireyin genom çapında verisi üretildi.",
+      "Hizmetlilerin yaklaşık üçte biri belirgin ölçüde Amazon soyu taşıyor.",
+      "Farklı soy gruplarından bireyler birlikte çocuk sahibi olmuş ve yan yana gömülmüş.",
+      "Soy hatları en az dört ayrı coğrafi bölgeye uzanıyor."
+    ],
+    "counter_evidence": [
+      "Örneklem 34 birey ve YALNIZCA hizmetli mezarlarından geliyor; kraliyet ailesi buraya gömülmüyordu.",
+      "Sonuçlar malikâne personeli için güçlü, İnka toplumunun geneli için genellenemez."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Salazar, Lucy"
+        ],
+        "year": 2023,
+        "title": "Insights into the genetic histories and lifeways of Machu Picchu's occupants",
+        "container": "Science Advances",
+        "doi": "10.1126/sciadv.adg3377",
+        "url": "https://www.science.org/doi/10.1126/sciadv.adg3377",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "institutional",
+        "type": "press-release",
+        "year": 2023,
+        "title": "First DNA analysis of Machu Picchu residents offers insight into Inca society",
+        "institution": "UC Santa Cruz",
+        "url": "https://news.ucsc.edu/2023/07/machu-picchu-genomics/",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Kraliyet ailesi nereye gömülüyordu?"
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "machu-picchu"
+    ]
+  },
+  {
+    "id": "machu-picchu-kayip-sehir-unvani-yanlis",
+    "claim": "\"İnkaların Kayıp Şehri\" unvanı Machu Picchu'ya aittir.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "machu-picchu",
+      "vilcabamba",
+      "adlandirma",
+      "kesif-anlatisi"
+    ],
+    "subject": {
+      "site": "Machu Picchu / Vilcabamba (Espíritu Pampa)",
+      "region": "Urubamba ve Vilcabamba vadileri",
+      "modern_country": "Peru",
+      "coordinates": {
+        "lat": -13.1631,
+        "lon": -72.545
+      }
+    },
+    "period": {
+      "earliest": 1536,
+      "latest": 1912,
+      "era_label": "İnka direnişinden Bingham seferine",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "İspanyolca",
+      "Keçuvaca"
+    ],
+    "disciplines": [
+      "tarih",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Bingham, Hiram",
+        "role": "discoverer",
+        "affiliation": "Yale University",
+        "year": 1911,
+        "lifespan": "1875-1956"
+      }
+    ],
+    "popular_claim": "Machu Picchu, İnkaların İspanyollardan sakladığı kayıp başkentti.",
+    "divergence": "Unvan Vilcabamba'ya aittir - İnkaların İspanyollara karşı son direniş merkezi. Bingham'ın aradığı da oydu ve gerçek Vilcabamba'yı (Espíritu Pampa) gördü ama önemsiz bularak geçti. Unvanı yanlış siteye verdi ve ad yapıştı.",
+    "divergence_type": [
+      "somurge-anlatisi",
+      "guncellenmemis"
+    ],
+    "counter_evidence": [
+      "Vilcabamba İspanyol kayıtlarında belgelidir ve Espíritu Pampa'daki sonraki kazılar onu doğruladı.",
+      "Machu Picchu İspanyol istilası sırasında zaten terk edilmişti; direniş merkezi değildi.",
+      "Machu Picchu bir şehir değil, Pachacuti için yapılmış kraliyet malikânesiydi."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Bingham, Hiram"
+        ],
+        "title": "1911-1912 Peru sefer kayıtları",
+        "language": "en"
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Espíritu Pampa kazıları ve Vilcabamba tarihi literatürü",
+        "language": "en"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "machu-picchu"
+    ]
+  },
+  {
+    "id": "machu-picchu-gorunmeyen-insaat",
+    "claim": "Machu Picchu'daki inşaat emeğinin büyük bölümü drenaj, temel ve teras dolgusu olarak yer altında kaldı.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "machu-picchu",
+      "muhendislik",
+      "drenaj"
+    ],
+    "subject": {
+      "site": "Machu Picchu",
+      "region": "Urubamba Vadisi",
+      "modern_country": "Peru",
+      "coordinates": {
+        "lat": -13.1631,
+        "lon": -72.545
+      }
+    },
+    "period": {
+      "earliest": 1420,
+      "latest": 1540,
+      "era_label": "İnka İmparatorluğu",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "muhendislik",
+      "arkeoloji"
+    ],
+    "popular_claim": "Machu Picchu'nun etkileyici tarafı taş duvarlarıdır.",
+    "divergence": "Site dik, çok yağış alan ve sismik olarak aktif bir sırtta. Asıl mühendislik sorunu duvar örmek değil, yapının kaymasını ve suyun temelleri oymasını engellemek. Teraslar tarım için değil öncelikle YAMACI TUTMAK için; altlarında kaba taş, çakıl ve kum katmanlarından oluşan drenaj yatakları var.",
+    "divergence_type": [
+      "hayatta-kalma-yanliligi",
+      "turizm-kopyalamasi"
+    ],
+    "evidence": [
+      "Sitede yüzlerce drenaj kanalı ve yüzey suyu tahliye noktası bulunuyor.",
+      "Terasların altında katmanlı drenaj yatakları var.",
+      "Yapı beş yüz yıldır dik ve yağışlı bir yamaçta ayakta."
+    ],
+    "counter_evidence": [
+      "Yer altı emeğinin oranı için verilen ~%60 değeri bir mühendislik TAHMİNİDİR, sayım değil.",
+      "Oranın kesinliği tartışmalı; yönü (görünmeyenin görünenden büyük olduğu) daha sağlam."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Machu Picchu su ve inşaat sistemleri üzerine mühendislik incelemeleri",
+        "language": "en"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "machu-picchu"
+    ]
+  },
+  {
+    "id": "machu-picchu-harcsiz-duvar-sismik",
+    "claim": "İnka harçsız taş duvarları deprem sırasında kırılmak yerine yer değiştirip yeniden oturarak enerji harcar.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "machu-picchu",
+      "inka",
+      "sismik-tasarim"
+    ],
+    "subject": {
+      "site": "Machu Picchu",
+      "region": "And Dağları",
+      "modern_country": "Peru",
+      "coordinates": {
+        "lat": -13.1631,
+        "lon": -72.545
+      }
+    },
+    "period": {
+      "earliest": 1420,
+      "latest": 1540,
+      "era_label": "İnka İmparatorluğu",
+      "precision": "range",
+      "dating_method": [
+        "typology",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "muhendislik",
+      "mimarlik",
+      "arkeoloji"
+    ],
+    "popular_claim": "İnkalar taşları kesme teknolojisini bilinmeyen bir yöntemle elde etti.",
+    "divergence": "Duvarlar demir aletlerle değil, daha sert taş çekiçler ve aşındırmayla şekillendirildi. Cevap gizemli teknoloji değil, zaman ve iş gücü. Sismik davranış ise tasarımın sonucu: harçsız örgü rijit değil, bloklar birbirine göre az miktarda hareket edip enerjiyi sürtünmeyle harcıyor.",
+    "divergence_type": [
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "Duvarlar hafifçe içe eğimli; kapı ve pencereler yamuk - ikisi de yatay sarsıntıda devrilme eğilimini azaltır.",
+      "Harçsız örgüde kırılma yerine yer değiştirme oluyor.",
+      "Deprem kuşağında yüzyıllarca inşa eden bir toplum, ayakta kalan çözümleri tutup yıkılanları bırakıyor - yineleyerek optimuma yaklaşma."
+    ],
+    "counter_evidence": [
+      "Sismik davranışın niceliksel ölçümü sınırlı; açıklama büyük ölçüde mühendislik akıl yürütmesine dayanıyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "İnka taş işçiliği ve sismik davranış literatürü",
+        "language": "en"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "machu-picchu"
     ]
   }
 ]
