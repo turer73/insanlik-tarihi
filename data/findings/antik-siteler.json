@@ -3233,9 +3233,29 @@
     "counter_evidence": [
       "Hesabın kaynağı bulunamadı.",
       "Havalandırma ölçülmediği için kapasitenin fizyolojik üst sınırı da hesaplanamıyor.",
-      "Sitenin tamamı ziyarete açık değil; hacim tahmini eksik veriye dayanıyor."
+      "Sitenin tamamı ziyarete açık değil; hacim tahmini eksik veriye dayanıyor.",
+      "Hakemli literatur sitenin fiziksel parametrelerini veriyor ama kapasite hesabi icermiyor."
     ],
     "sources": [
+      {
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Derinkuyu underground city - site parametreleri",
+        "container": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Derinkuyu_underground_city",
+        "language": "en",
+        "accessed": "2026-09-06",
+        "note": "Sitenin derinlik ve kat bilgisi icin; kapasite rakami icin degil."
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Geomechanical Evaluation of Derinkuyu Antique Underground City",
+        "container": "Rock Mechanics and Rock Engineering",
+        "doi": "10.1007/s00603-012-0301-7",
+        "language": "en",
+        "note": "Sitenin fiziksel parametreleri; kapasite hesabi icermez."
+      },
       {
         "tier": "unreliable",
         "type": "webpage",
