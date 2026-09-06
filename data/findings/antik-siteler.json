@@ -1488,7 +1488,7 @@
   },
   {
     "id": "shushtar-band-e-kaisar-teknoloji-transferi",
-    "claim": "Şuşter'deki Band-e Kaisar, Roma mühendisliğinin Sasani İran'ına belgelenmiş biçimde aktarıldığı bir yapıdır.",
+    "claim": "Roma yapı tekniği 3. yüzyılda Sasani İran'a aktarıldı ve Band-e Kaisar'da kullanıldı; aktarım vakayinamelerle değil, tekniğin kendisiyle kanıtlanır.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -1532,18 +1532,33 @@
         "role": "excavator",
         "affiliation": "Sasani hanedanı",
         "year": 260
+      },
+      {
+        "name": "Taberî",
+        "role": "proposer",
+        "affiliation": "-",
+        "year": 900,
+        "lifespan": "839-923"
+      },
+      {
+        "name": "Mes'ûdî",
+        "role": "proposer",
+        "affiliation": "-",
+        "year": 950,
+        "lifespan": "~896-956"
       }
     ],
     "popular_claim": "Antik uygarlıkların benzer mühendislik çözümleri gizemli bir ortak kaynağa işaret eder.",
-    "divergence": "Burada mekanizma gizemli değil, BELGELİ: I. Şapur 260'ta imparator Valerianus'u ordusuyla esir aldı ve Roma askerleri ~500 m uzunluğundaki köprü-bendin inşasında çalıştırıldı. Bu, üç mekanizmadan TEMAS'ın ders kitabı örneği - bağımsız icat değil.",
+    "divergence": "Popüler anlatı Romalı esirlerin yaptığı hikâyesine dayanır; o hikâyenin kaynakları 600 yıl sonraki edebî vakayinamelerdir. Aktarımı kanıtlayan şey hikâye değil, yerel mimariye yabancı bir tekniğin belirli bir tarihte birdenbire belirmesidir. Sonuç sağlam ama dayanak farklı.",
     "divergence_type": [
       "kategori-hatasi"
     ],
     "evidence": [
-      "Yapı Roma savak (weir) tasarımını taşıyor ve İran'da köprü ile bendi birleştiren ilk örnektir.",
-      "Valerianus'un 260'ta esir alınması ve Roma esirlerinin inşaatta kullanılması tarihsel kayıtlarda geçiyor.",
-      "Sistem Mizan Bendi ile birlikte Karun suyunu sulama kanallarına yönlendiriyordu.",
-      "Gargar kanalı tünellerle su değirmenlerini besliyor; su, çarkları döndürdükten sonra onlarca yapay şelaleyle merkezi havuza dökülüyor."
+      "BELİRLEYİCİ KANIT: Roma betonu ve harç tekniği yerel mimariye tamamen yabancıydı; aynı teknik aynı dönemin yakın yapılarında da görülüyor.",
+      "Kemerli köprü-bent birleşimi İran'da bu yapıyla başlıyor ve yaklaşık MS 1000'e kadar standart uygulama hâline geliyor.",
+      "Yapı ~500 m, 40'tan fazla kemer; savak duvarı 9-10 m, ayaklar 5-6,4 m - imparatorluk içindeki tipik Roma köprülerinden belirgin kalın, çünkü aynı zamanda bent işlevi görüyor.",
+      "Temeller düz hat yerine sağlam kum taşı katmanlarını arayan kıvrımlı bir güzergâh izliyor; memba tarafı büyük taş levhalarla oyulmaya karşı korunmuş.",
+      "Valerianus'un 260'ta Edessa'da esir alınması tarihsel bir olaydır."
     ],
     "sources": [
       {
@@ -1565,13 +1580,30 @@
         "language": "en",
         "accessed": "2026-09-06",
         "note": "Ara kaynak; birincil Sasani ve Roma kayıtlarıyla değiştirilmeli."
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "title": "Band-e Kaisar ve Sasani dönemi köprü-bent mühendisliği üzerine yapı tarihi literatürü",
+        "language": "en",
+        "note": "Roma betonu ve harç kullanımının yerel mimariye yabancılığı bu literatürde tespit edilir."
       }
     ],
     "open_questions": [
-      "Roma mühendislerinin tasarımdaki payı ile yerel Sasani katkısının oranı ayrıştırılamıyor."
+      "Roma payı ile Sasani payı ayrıştırılamıyor - tasarım kararları, arazi uyarlaması ve işletme mantığının ne kadarı yerel?",
+      "Kaç esir ne kadar süre çalıştı - güvenilir sayı yok.",
+      "Bent suyu ne kadar yükseltiyordu - uzlaşı 3-4 m ama 7-10 m diyen tahminler de var."
     ],
     "checked": "2026-09-06",
-    "used_in": []
+    "used_in": [
+      "shushtar"
+    ],
+    "counter_evidence": [
+      "Esir işçi anlatısının başlıca kaynakları Taberî ve Mes'ûdî - 9. ve 10. yüzyıl, yani olaydan ~600 yıl sonra.",
+      "Bu kaynakların anlatımı edebî ve öykücü; literatür bu ayrıntıların körü körüne kabul edilemeyeceğini belirtiyor.",
+      "Yetmiş bin esir gibi rakamlar tam olarak bu geç ve edebî kaynak ailesinden geliyor.",
+      "Yer adları ve zanaat gelenekleri hikâyeyle uyumlu ama tek başına kanıt sayılmaz."
+    ]
   },
   {
     "id": "shushtar-darius-kokeni",
@@ -1623,7 +1655,8 @@
     "counter_evidence": [
       "Ayakta olan yapıların büyük bölümü Sasani dönemine (3. yy) tarihleniyor.",
       "Band-e Kaisar kesin olarak 260-270 arasına ait.",
-      "Erken evre için doğrudan arkeolojik tarihleme sınırlı."
+      "Erken evre için doğrudan arkeolojik tarihleme sınırlı.",
+      "Kompleksin 3-7 yılda tamamlandığı bilgisi de aynı geç ve edebî kaynak ailesinden geliyor."
     ],
     "sources": [
       {
@@ -1641,6 +1674,8 @@
     ],
     "checked": "2026-09-06",
     "volatile": true,
-    "used_in": []
+    "used_in": [
+      "shushtar"
+    ]
   }
 ]
