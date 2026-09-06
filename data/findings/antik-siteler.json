@@ -878,7 +878,9 @@
       "Bizans öncesi bir çekirdek var mı - yöntem bu soruya cevap veremiyor."
     ],
     "checked": "2026-09-06",
-    "used_in": []
+    "used_in": [
+      "kapadokya"
+    ]
   },
   {
     "id": "kapadokya-mardin-baglantisi",
@@ -926,7 +928,9 @@
       }
     ],
     "checked": "2026-09-06",
-    "used_in": []
+    "used_in": [
+      "kapadokya"
+    ]
   },
   {
     "id": "antik-kanon-turizm-kategorisi",
@@ -3115,6 +3119,204 @@
     "used_in": [
       "chichen-itza",
       "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "kapadokya-havalandirma-olculmemis",
+    "claim": "Derinkuyu'nun havalandırma sisteminin performansı ölçülmüş veya modellenmiştir.",
+    "status": "unknown",
+    "confidence": "medium",
+    "topic": [
+      "kapadokya",
+      "derinkuyu",
+      "arastirma-acigi",
+      "muhendislik"
+    ],
+    "subject": {
+      "site": "Derinkuyu yer altı şehri",
+      "region": "Kapadokya",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 38.3735,
+        "lon": 34.7345
+      }
+    },
+    "period": {
+      "earliest": 400,
+      "latest": 2026,
+      "era_label": "Bizans kullanımından bugüne",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "muhendislik",
+      "arkeoloji"
+    ],
+    "popular_claim": "Derinkuyu'nun havalandırma sistemi olağanüstü verimlidir ve 85 metre derinlikte binlerce kişiye yıl boyunca temiz hava sağlıyordu.",
+    "divergence": "İddia her tanıtımda ve belgeselde tekrarlanıyor ama ÖLÇÜLMÜŞ bir karşılığı yok. Hava debisi, akış hızı ve kat başına hava değişim oranı için hakemli bir çalışma bulunamadı. Var olan ciddi mühendislik çalışması sitenin JEOMEKANİK KARARLILIĞINA odaklanıyor; kapsamında sıcaklık, nem ve hava basıncı izlemesi var ama amacı havalandırma performansı değil.",
+    "divergence_type": [
+      "turizm-kopyalamasi",
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "Baca etkisi fiziksel olarak gerçek ve mekanizması bilinen bir olgu.",
+      "Yaklaşık 52 havalandırma bacası bildiriliyor; bazıları aynı zamanda kuyu işlevi görüyor.",
+      "Sistemin mevsimlik yön değişimine rağmen çalışması tasarım gerektirir."
+    ],
+    "counter_evidence": [
+      "Havalandırmaya adanmış hakemli ölçüm veya CFD çalışması bulunamadı.",
+      "Mevcut mühendislik literatürü jeomekanik kararlılık üzerine; havalandırma performansı kapsamda değil.",
+      "Kapasite iddiası (20.000 kişi) da bu ölçüm boşluğu nedeniyle üst sınırdan doğrulanamıyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Geomechanical Evaluation of Derinkuyu Antique Underground City and its Implications in Geoengineering",
+        "container": "Rock Mechanics and Rock Engineering",
+        "doi": "10.1007/s00603-012-0301-7",
+        "url": "https://link.springer.com/article/10.1007/s00603-012-0301-7",
+        "language": "en",
+        "accessed": "2026-09-06",
+        "note": "Konusu kararlılık; sicaklik, nem ve hava basinci izlemesi iceriyor ama havalandirma performansi degil."
+      }
+    ],
+    "open_questions": [
+      "Antik pasif havalandırma modern standartlara göre nasıl performans gösteriyor?",
+      "Bu ölçüm mevcut teknolojiyle yapılabilir ve pahalı değil - neden yapılmadı?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "kapadokya"
+    ]
+  },
+  {
+    "id": "kapadokya-kapasite-rakami",
+    "claim": "Derinkuyu 20.000 kişi barındırabiliyordu.",
+    "status": "unknown",
+    "confidence": "medium",
+    "topic": [
+      "kapadokya",
+      "derinkuyu",
+      "dayanaksiz-rakam"
+    ],
+    "subject": {
+      "site": "Derinkuyu yer altı şehri",
+      "region": "Kapadokya",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 38.3735,
+        "lon": 34.7345
+      }
+    },
+    "period": {
+      "earliest": 400,
+      "latest": 1000,
+      "era_label": "Bizans",
+      "precision": "range",
+      "dating_method": [
+        "typology",
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji"
+    ],
+    "popular_claim": "Derinkuyu 20.000 kişiyi hayvanlarıyla birlikte barındırabiliyordu.",
+    "divergence": "Rakam yüzlerce kaynakta tekrarlanıyor ama hesabın nereden geldiği hiçbir yerde gösterilmiyor. Bir sayı yeterince tekrarlanınca kaynak aranmaz oluyor.",
+    "divergence_type": [
+      "turizm-kopyalamasi"
+    ],
+    "counter_evidence": [
+      "Hesabın kaynağı bulunamadı.",
+      "Havalandırma ölçülmediği için kapasitenin fizyolojik üst sınırı da hesaplanamıyor.",
+      "Sitenin tamamı ziyarete açık değil; hacim tahmini eksik veriye dayanıyor."
+    ],
+    "sources": [
+      {
+        "tier": "unreliable",
+        "type": "webpage",
+        "title": "Turizm ve içerik sitelerinde tekrarlanan kapasite rakamı",
+        "language": "tr",
+        "note": "Kanıt olarak değil, popüler iddianın kaynağı olarak kaydedildi."
+      }
+    ],
+    "open_questions": [
+      "Rakamın ilk kaynağı ne?"
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "kapadokya"
+    ]
+  },
+  {
+    "id": "kapadokya-sigina-insandan",
+    "claim": "Kapadokya yer altı şehirleri insan saldırılarından korunmak için yapılmış sığınaklardır.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "kapadokya",
+      "derinkuyu",
+      "islev"
+    ],
+    "subject": {
+      "site": "Kapadokya yer altı yerleşimleri",
+      "region": "Kapadokya",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 38.3735,
+        "lon": 34.7345
+      }
+    },
+    "period": {
+      "earliest": 600,
+      "latest": 1000,
+      "era_label": "Arap-Bizans sınır savaşları dönemi",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "typology"
+      ]
+    },
+    "languages": [
+      "Grekçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "tarih"
+    ],
+    "popular_claim": "Yer altı şehirleri büyük bir kıyametten ya da gökten gelen bir tehditten korunmak için yapıldı.",
+    "divergence": "Tasarımın kendisi insan tehdidine işaret ediyor. En büyük genişleme dönemi Arap-Bizans sınır savaşlarına denk geliyor ve bu tesadüf değil.",
+    "divergence_type": [
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "Dar geçitler tek sıra geçişe zorluyor.",
+      "Katlar tek tek kapatılabiliyor.",
+      "Yuvarlanan taş kapılar YALNIZCA İÇERİDEN açılabiliyor.",
+      "Su kaynağı yüzeye bağlanmamış - kuşatmacı zehirleyemesin diye.",
+      "Belgelenebilen en yoğun kullanım Bizans dönemi, Arap akınlarıyla çakışıyor."
+    ],
+    "counter_evidence": [
+      "Bizans öncesi kullanım varsa amacı bilinmiyor; tasarım kanıtı geç dönem yapıları için geçerli."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Derinkuyu underground city",
+        "container": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Derinkuyu_underground_city",
+        "language": "en",
+        "accessed": "2026-09-06"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "kapadokya"
     ]
   }
 ]
