@@ -624,7 +624,8 @@
     ],
     "checked": "2026-09-06",
     "used_in": [
-      "ayni-cumlede"
+      "ayni-cumlede",
+      "petra"
     ]
   },
   {
@@ -1254,6 +1255,392 @@
       "Özgün fresk sayısı ve programın bütünü ne kadardı?"
     ],
     "checked": "2026-09-06",
+    "used_in": []
+  },
+  {
+    "id": "petra-yari-dolu-boru-tasarimi",
+    "claim": "Petra'nın seramik boru hatları bilerek yarı dolu ve kritik akışa yakın çalışacak biçimde tasarlandı; bu sızıntıyı en aza indirirken verilen eğimde debiyi en üste çıkarır.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "petra",
+      "nabatiler",
+      "hidrolik",
+      "muhendislik-tarihi"
+    ],
+    "subject": {
+      "site": "Petra - Siq boru hattı",
+      "site_native": "Raqmu",
+      "region": "Nabati Krallığı, Edom",
+      "modern_country": "Ürdün",
+      "coordinates": {
+        "lat": 30.3285,
+        "lon": 35.4444
+      }
+    },
+    "period": {
+      "earliest": -100,
+      "latest": 300,
+      "era_label": "Nabati - Erken Roma",
+      "precision": "range",
+      "dating_method": [
+        "typology",
+        "stratigraphy"
+      ]
+    },
+    "languages": [
+      "Nabatice"
+    ],
+    "disciplines": [
+      "muhendislik",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Ortloff, Charles R.",
+        "role": "analyst",
+        "affiliation": "CFD Consultants International",
+        "year": 2020
+      }
+    ],
+    "popular_claim": "Petra'nın su sistemi basitçe kanallar ve sarnıçlardan ibaretti.",
+    "divergence": "Popüler anlatı sistemi 'su topluyorlardı' düzeyinde bırakıyor. Hakemli hidrolik literatürü ise farklı bölümlerde farklı akış rejimleri (Fr<1, Fr=1, Fr>1) kullanan bilinçli bir tasarım gösteriyor.",
+    "divergence_type": [
+      "turizm-kopyalamasi",
+      "guncellenmemis"
+    ],
+    "evidence": [
+      "Ain Musa kaynağından şehre uzanan hat 2 km'yi aşıyor ve Siq'in kuzey duvarında yükseltilmiş kanalda taşınıyor.",
+      "Hat, kaynağın debisinin yalnızca bir bölümünü alacak biçimde boyutlandırılmış - fazlası hattı zorlardı.",
+      "Siq, Ain Braq ve Wadi Mataha hatlarının üçü de farklı hidrolik çözümler kullanıyor.",
+      "Zurraba deposunun kapasitesi yaklaşık 10.000 m3."
+    ],
+    "counter_evidence": [
+      "Akış rejimleri doğrudan ölçülmedi; hesaplamalı akışkanlar dinamiği (CFD) ile yeniden kuruldu - güçlü ama bir model.",
+      "Boru bölümlerinin döşenme tarihleri kesin ayrıştırılamıyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ortloff, Charles R."
+        ],
+        "year": 2020,
+        "title": "Hydraulic Engineering at 100 BC-AD 300 Nabataean Petra (Jordan)",
+        "container": "Water",
+        "volume": "12(12):3498",
+        "url": "https://www.mdpi.com/2073-4441/12/12/3498",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ortloff, Charles R."
+        ],
+        "year": 2005,
+        "title": "The Water Supply and Distribution System of the Nabataean City of Petra (Jordan), 300 BC - AD 300",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Sistem kaç kuşakta gelişti - bitmiş sistem elimizde, taslakları yok."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "petra"
+    ]
+  },
+  {
+    "id": "petra-nufus-tahmini",
+    "claim": "Petra'nın nüfusu yaklaşık 30.000 kişiydi.",
+    "status": "unknown",
+    "confidence": "medium",
+    "topic": [
+      "petra",
+      "nufus-tahmini"
+    ],
+    "subject": {
+      "site": "Petra",
+      "region": "Nabati Krallığı",
+      "modern_country": "Ürdün",
+      "coordinates": {
+        "lat": 30.3285,
+        "lon": 35.4444
+      }
+    },
+    "period": {
+      "earliest": -100,
+      "latest": 106,
+      "era_label": "Nabati doruğu",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "tarih"
+    ],
+    "popular_claim": "Petra'da 30.000 kişi yaşıyordu.",
+    "divergence": "Rakam sayım kaydına değil, su sistemi kapasitesi ve yerleşim alanı üzerinden yapılan hesaba dayanıyor. Popüler kaynaklarda tahmin olduğu belirtilmeden veriliyor.",
+    "divergence_type": [
+      "turizm-kopyalamasi"
+    ],
+    "evidence": [
+      "Su sistemi kapasitesi bu büyüklükte bir nüfusu kesintisiz besleyebilecek düzeyde."
+    ],
+    "counter_evidence": [
+      "Nüfus sayımı kaydı yok.",
+      "Literatürde daha düşük değerler de savunuluyor.",
+      "Şehrin büyük bölümü hâlâ kazılmadı; yerleşim alanı tahmini eksik veriye dayanıyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ortloff, Charles R."
+        ],
+        "year": 2020,
+        "title": "Hydraulic Engineering at 100 BC-AD 300 Nabataean Petra (Jordan)",
+        "container": "Water",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Kazı ilerledikçe tahmin nasıl değişecek?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "petra"
+    ]
+  },
+  {
+    "id": "petra-sel-baraji-yeniden-kuruldu",
+    "claim": "Siq girişindeki modern sel barajı, 1963'teki ölümcül ani selden sonra Nabati barajının temeli üzerine yeniden inşa edildi.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "petra",
+      "hidrolik",
+      "sel-kontrolu"
+    ],
+    "subject": {
+      "site": "Petra - Siq girişi",
+      "region": "Nabati Krallığı",
+      "modern_country": "Ürdün",
+      "coordinates": {
+        "lat": 30.3285,
+        "lon": 35.4444
+      }
+    },
+    "period": {
+      "earliest": -100,
+      "latest": 1964,
+      "era_label": "Nabati tasarımından modern yeniden inşaya",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "muhendislik",
+      "arkeoloji"
+    ],
+    "evidence": [
+      "Nabatiler Siq'e giren seli yan vadiye çeviren baraj ve bypass tüneli yapmıştı.",
+      "1963'te Siq'te yaşanan ani sel çok sayıda ziyaretçinin ölümüne yol açtı.",
+      "Baraj sonrasında Nabati temeli üzerine yeniden kuruldu."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ortloff, Charles R."
+        ],
+        "year": 2020,
+        "title": "Hydraulic Engineering at 100 BC-AD 300 Nabataean Petra (Jordan)",
+        "container": "Water",
+        "language": "en"
+      },
+      {
+        "tier": "institutional",
+        "type": "report",
+        "title": "Petra Arkeolojik Parkı sel yönetimi kayıtları",
+        "institution": "Ürdün Eski Eserler Genel Müdürlüğü",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "1963 selindeki can kaybı sayısı kaynaklarda değişiyor; kesin rakam doğrulanmadı."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "petra"
+    ]
+  },
+  {
+    "id": "shushtar-band-e-kaisar-teknoloji-transferi",
+    "claim": "Şuşter'deki Band-e Kaisar, Roma mühendisliğinin Sasani İran'ına belgelenmiş biçimde aktarıldığı bir yapıdır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "shushtar",
+      "iran",
+      "hidrolik",
+      "teknoloji-transferi"
+    ],
+    "subject": {
+      "site": "Şuşter Tarihî Hidrolik Sistemi",
+      "site_native": "Band-e Kaisar",
+      "region": "Huzistan, Karun nehri",
+      "modern_country": "İran",
+      "coordinates": {
+        "lat": 32.0455,
+        "lon": 48.8506
+      }
+    },
+    "period": {
+      "earliest": 260,
+      "latest": 270,
+      "era_label": "Sasani, I. Şapur dönemi",
+      "precision": "approximate",
+      "dating_method": [
+        "historical-record",
+        "typology"
+      ]
+    },
+    "languages": [
+      "Orta Farsça",
+      "Latince"
+    ],
+    "disciplines": [
+      "muhendislik",
+      "arkeoloji",
+      "tarih"
+    ],
+    "people": [
+      {
+        "name": "I. Şapur",
+        "role": "excavator",
+        "affiliation": "Sasani hanedanı",
+        "year": 260
+      }
+    ],
+    "popular_claim": "Antik uygarlıkların benzer mühendislik çözümleri gizemli bir ortak kaynağa işaret eder.",
+    "divergence": "Burada mekanizma gizemli değil, BELGELİ: I. Şapur 260'ta imparator Valerianus'u ordusuyla esir aldı ve Roma askerleri ~500 m uzunluğundaki köprü-bendin inşasında çalıştırıldı. Bu, üç mekanizmadan TEMAS'ın ders kitabı örneği - bağımsız icat değil.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "evidence": [
+      "Yapı Roma savak (weir) tasarımını taşıyor ve İran'da köprü ile bendi birleştiren ilk örnektir.",
+      "Valerianus'un 260'ta esir alınması ve Roma esirlerinin inşaatta kullanılması tarihsel kayıtlarda geçiyor.",
+      "Sistem Mizan Bendi ile birlikte Karun suyunu sulama kanallarına yönlendiriyordu.",
+      "Gargar kanalı tünellerle su değirmenlerini besliyor; su, çarkları döndürdükten sonra onlarca yapay şelaleyle merkezi havuza dökülüyor."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "report",
+        "year": 2009,
+        "title": "Shushtar Historical Hydraulic System - Dünya Mirası kaydı (1315)",
+        "institution": "UNESCO",
+        "url": "https://whc.unesco.org/en/list/1315/",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Band-e Kaisar",
+        "container": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Band-e_Kaisar",
+        "language": "en",
+        "accessed": "2026-09-06",
+        "note": "Ara kaynak; birincil Sasani ve Roma kayıtlarıyla değiştirilmeli."
+      }
+    ],
+    "open_questions": [
+      "Roma mühendislerinin tasarımdaki payı ile yerel Sasani katkısının oranı ayrıştırılamıyor."
+    ],
+    "checked": "2026-09-06",
+    "used_in": []
+  },
+  {
+    "id": "shushtar-darius-kokeni",
+    "claim": "Şuşter hidrolik sistemi Büyük Darius döneminde, MÖ 5. yüzyılda kuruldu.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "shushtar",
+      "iran",
+      "tarihleme"
+    ],
+    "subject": {
+      "site": "Şuşter Tarihî Hidrolik Sistemi",
+      "region": "Huzistan, Karun nehri",
+      "modern_country": "İran",
+      "coordinates": {
+        "lat": 32.0455,
+        "lon": 48.8506
+      }
+    },
+    "period": {
+      "earliest": -500,
+      "latest": 300,
+      "era_label": "Ahameniş - Sasani",
+      "precision": "disputed",
+      "dating_method": [
+        "historical-record",
+        "typology"
+      ]
+    },
+    "languages": [
+      "Eski Farsça",
+      "Orta Farsça"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "tarih",
+      "muhendislik"
+    ],
+    "popular_claim": "Şuşter sistemi 2.500 yıllıktır ve Darius tarafından yaptırılmıştır.",
+    "divergence": "İlk kanalların Ahameniş dönemine uzandığı kabul ediliyor, ama BUGÜNKÜ BİÇİMİ 3. yüzyıl Sasani dönemine ait. Turistik anlatı en eski tarihi alıp bütün yapıya uyguluyor - Kapadokya'daki Hitit iddiasıyla aynı kalıp.",
+    "divergence_type": [
+      "turizm-kopyalamasi",
+      "kategori-hatasi"
+    ],
+    "evidence": [
+      "Erken kanalların Ahameniş dönemine uzandığı yönünde kayıt var."
+    ],
+    "counter_evidence": [
+      "Ayakta olan yapıların büyük bölümü Sasani dönemine (3. yy) tarihleniyor.",
+      "Band-e Kaisar kesin olarak 260-270 arasına ait.",
+      "Erken evre için doğrudan arkeolojik tarihleme sınırlı."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "report",
+        "year": 2009,
+        "title": "Shushtar Historical Hydraulic System - Dünya Mirası kaydı",
+        "institution": "UNESCO",
+        "url": "https://whc.unesco.org/en/list/1315/",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Ahameniş evresinin ölçeği ve güzergâhı nedir?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
     "used_in": []
   }
 ]
