@@ -287,7 +287,8 @@
     "checked": "2026-09-06",
     "volatile": true,
     "used_in": [
-      "ayni-cumlede"
+      "ayni-cumlede",
+      "stonehenge"
     ]
   },
   {
@@ -1676,6 +1677,391 @@
     "volatile": true,
     "used_in": [
       "shushtar"
+    ]
+  },
+  {
+    "id": "stonehenge-sarsen-west-woods",
+    "claim": "Stonehenge'in 52 sarseninden 50'si aynı jeokimyasal imzayı taşır ve West Woods, Wiltshire'dan (~25 km) gelir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "stonehenge",
+      "britanya",
+      "tas-kaynagi",
+      "jeokimya"
+    ],
+    "subject": {
+      "site": "Stonehenge",
+      "region": "Wiltshire, Salisbury Ovası",
+      "modern_country": "Birleşik Krallık",
+      "coordinates": {
+        "lat": 51.1789,
+        "lon": -1.8262
+      }
+    },
+    "period": {
+      "earliest": -2500,
+      "latest": -2200,
+      "era_label": "Geç Neolitik, sarsen evresi",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "jeoloji"
+    ],
+    "people": [
+      {
+        "name": "Nash, David J.",
+        "role": "analyst",
+        "affiliation": "University of Brighton",
+        "year": 2020
+      }
+    ],
+    "evidence": [
+      "52 sarsenden 50'si tutarlı bir kimyasal imza taşıyor - ortak kaynak.",
+      "Kaynak Stonehenge'in ~25 km kuzeyindeki West Woods olarak belirlendi.",
+      "50/52 oranı taşların rastgele toplanmadığını, bilinçli seçildiğini gösteriyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Nash, David J."
+        ],
+        "year": 2020,
+        "title": "Origins of the sarsen megaliths at Stonehenge",
+        "container": "Science Advances",
+        "doi": "10.1126/sciadv.abc0133",
+        "url": "https://www.science.org/doi/10.1126/sciadv.abc0133",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "institutional",
+        "type": "press-release",
+        "year": 2020,
+        "title": "New research reveals origin of Stonehenge's great sarsen stones",
+        "institution": "University College London",
+        "url": "https://www.ucl.ac.uk/news/2020/jul/new-research-reveals-origin-stonehenges-great-sarsen-stones",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Kalan iki sarsenin kaynağı belirlenmedi."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "stonehenge"
+    ]
+  },
+  {
+    "id": "stonehenge-preseli-ocak-kaniti",
+    "claim": "Carn Goedog ve Craig Rhos-y-felin'de mavitaşların insan eliyle çıkarıldığı taş ocakları bulunmuştur.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "stonehenge",
+      "galler",
+      "mavitas",
+      "ocak-tartismasi"
+    ],
+    "subject": {
+      "site": "Preseli Tepeleri - Carn Goedog ve Craig Rhos-y-felin",
+      "region": "Pembrokeshire, Batı Galler",
+      "modern_country": "Birleşik Krallık",
+      "coordinates": {
+        "lat": 51.9964,
+        "lon": -4.7167
+      }
+    },
+    "period": {
+      "earliest": -3400,
+      "latest": -3000,
+      "era_label": "Orta Neolitik",
+      "precision": "approximate",
+      "dating_method": [
+        "radiocarbon"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "jeoloji"
+    ],
+    "people": [
+      {
+        "name": "Parker Pearson, Mike",
+        "role": "proposer",
+        "affiliation": "University College London",
+        "year": 2015
+      }
+    ],
+    "popular_claim": "Stonehenge'in mavitaşları Galler'deki taş ocaklarından çıkarıldı; ocaklar bulundu.",
+    "divergence": "Kayanın Preseli'den geldiği jeolojik eşleştirmeyle sağlam. Ama o kayanın İNSAN ELİYLE ÇIKARILDIĞI ayrı bir iddiadır ve doğrudan kanıtı tartışmalıdır. Popüler aktarımda iki iddia tek cümlede birleşiyor ve kesinlik olduğundan büyük görünüyor.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "guncellenmemis"
+    ],
+    "evidence": [
+      "Jeolojik eşleştirme mavitaşları Preseli Tepeleri'ne kesin biçimde bağlıyor.",
+      "İki noktada Neolitik tarihli aktivite izleri bulundu."
+    ],
+    "counter_evidence": [
+      "Her iki sitede de gerçek bir ocak işletmesine dair doğrudan kanıt bulunup bulunmadığı tartışmalıdır.",
+      "Kayanın oradan gelmesi, oradan çıkarıldığını kanıtlamaz - doğal parçalanma ve buzul taşıması da mümkün."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Parker Pearson, Mike"
+        ],
+        "title": "The origins of Stonehenge: on the track of the bluestones",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Ocak işletmesinin doğrudan kanıtı bulunabilir mi?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "stonehenge"
+    ]
+  },
+  {
+    "id": "stonehenge-waun-mawn-sokulmus-cember",
+    "claim": "Mavitaşlar önce Galler'de Waun Mawn'da bir çember olarak dikildi, sonra sökülüp Stonehenge'e taşındı.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "stonehenge",
+      "galler",
+      "waun-mawn"
+    ],
+    "subject": {
+      "site": "Waun Mawn",
+      "region": "Preseli, Pembrokeshire",
+      "modern_country": "Birleşik Krallık",
+      "coordinates": {
+        "lat": 51.9789,
+        "lon": -4.7736
+      }
+    },
+    "period": {
+      "earliest": -3000,
+      "latest": -2900,
+      "era_label": "Geç Neolitik",
+      "precision": "disputed",
+      "dating_method": [
+        "radiocarbon",
+        "thermoluminescence"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Parker Pearson, Mike",
+        "role": "proposer",
+        "affiliation": "University College London",
+        "year": 2021
+      }
+    ],
+    "popular_claim": "Stonehenge aslında Galler'den taşınmış daha eski bir çemberdir; efsane doğru çıktı.",
+    "divergence": "Hipotez ciddiye alınmayı hak ediyor ama kanıtlanmış değil. Basında 'efsane doğrulandı' çerçevesiyle aktarıldı; yayımlanmış akademik itirazlar aynı görünürlüğü almadı.",
+    "divergence_type": [
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "Waun Mawn MÖ 3000 dolayına tarihleniyor - Stonehenge'in ilk inşasından hemen önce.",
+      "Çapı Stonehenge'in çevreleyen hendeğiyle aynı.",
+      "İkisi de yaz gündönümü doğuşuna yönelmiş.",
+      "Galler ocak tarihleri (~MÖ 3400-3200) ile mavitaşların Stonehenge'e dikilme tarihi (~MÖ 2900) arasında 300-500 yıllık boşluk var; hipotez bu boşluğu açıklıyor."
+    ],
+    "counter_evidence": [
+      "Çap ve yönelim benzerliği tek başına belirleyici değil; benzer ölçüler bağımsız olarak da ortaya çıkabilir.",
+      "Hipotezin yayımlanmış akademik eleştirileri var.",
+      "Waun Mawn'daki taş çukurlarının sayısı ve dizilimi tam bir çember için yeterince açık değil."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Parker Pearson, Mike"
+        ],
+        "year": 2021,
+        "title": "The original Stonehenge? A dismantled stone circle in the Preseli Hills of west Wales",
+        "container": "Antiquity",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Waun Mawn taşlarının Stonehenge'dekilerle doğrudan eşleştirilmesi mümkün mü?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "stonehenge"
+    ]
+  },
+  {
+    "id": "stonehenge-sunak-tasi-insan-tasimasi",
+    "claim": "Sunak Taşı insan eliyle taşındı; Son Buzul Çağı buz akışı modelleri kaynak bölgeden Stonehenge'e doğrudan bir buzul güzergâhı öngörmüyor.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "stonehenge",
+      "sunak-tasi",
+      "buzul-tasimasi",
+      "yontem"
+    ],
+    "subject": {
+      "site": "Stonehenge - Sunak Taşı",
+      "region": "Wiltshire",
+      "modern_country": "Birleşik Krallık",
+      "coordinates": {
+        "lat": 51.1789,
+        "lon": -1.8262
+      }
+    },
+    "period": {
+      "earliest": -3000,
+      "latest": -2500,
+      "era_label": "Geç Neolitik",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "jeoloji",
+      "arkeoloji",
+      "iklim-bilimi"
+    ],
+    "popular_claim": "Stonehenge'in taşlarını buzullar getirdi, insanlar sadece yerde bulduklarını dikti.",
+    "divergence": "Buzul taşıması gerçek bir olgu ve uzun süredir savunulan bir azınlık görüşü. 2026 modellemesi ise kaynak bölgeden doğrudan bir buz güzergâhı bulamıyor - bu, insan taşımasını GEREKTİRİYOR. Ama araştırmacılar buzul ihtimalini tümüyle dışlayamadıklarını da açıkça yazıyor.",
+    "divergence_type": [
+      "guncellenmemis"
+    ],
+    "evidence": [
+      "Son Buzul Çağı buz akışı modelleri kuzeydoğu İskoçya'dan Salisbury Ovası'na doğrudan güzergâh öngörmüyor.",
+      "Taşın aşamalı taşındığı öneriliyor: karadan çekme ile nehir ve kıyı taşımacılığının birleşimi.",
+      "Taş ~6.000 kg ve mesafe ~700 km."
+    ],
+    "counter_evidence": [
+      "Çalışmanın kendisi buzul taşımasını kesin olarak dışlayamadığını belirtiyor.",
+      "Taşıma güzergâhı ve yöntemi için doğrudan arkeolojik kanıt yok."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "year": 2026,
+        "title": "From Highlands to Henge: Refining the Provenance and Transport Pathways of Stonehenge's Altar Stone",
+        "container": "Journal of Quaternary Science",
+        "doi": "10.1002/jqs.70080",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jqs.70080",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Clarke, Anthony J. I.",
+          "Kirkland, Christopher L.",
+          "Bevins, Richard E.",
+          "Ixer, Rob A."
+        ],
+        "year": 2024,
+        "title": "A Scottish provenance for the Altar Stone of Stonehenge",
+        "container": "Nature",
+        "doi": "10.1038/s41586-024-07652-1",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Taşıma güzergâhı neresiydi?",
+      "Kaynak lokasyon kuzeydoğu İskoçya içinde daraltılabilir mi?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "stonehenge"
+    ],
+    "supersedes": []
+  },
+  {
+    "id": "stonehenge-islevi-bilinmiyor",
+    "claim": "Stonehenge'in ne amaçla inşa edildiği bilinmemektedir.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "stonehenge",
+      "yontem",
+      "niyet-sorunu"
+    ],
+    "subject": {
+      "site": "Stonehenge",
+      "region": "Wiltshire",
+      "modern_country": "Birleşik Krallık",
+      "coordinates": {
+        "lat": 51.1789,
+        "lon": -1.8262
+      }
+    },
+    "period": {
+      "earliest": -3000,
+      "latest": -1500,
+      "era_label": "Geç Neolitik - Erken Tunç Çağı",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "antropoloji"
+    ],
+    "popular_claim": "Stonehenge bir güneş takvimi / tapınak / gözlemevidir.",
+    "divergence": "Öne sürülen işlevlerin hepsi makul ve hiçbiri kanıtlanabilir değil. Yazısız bir toplumun NİYETİNİ soruyoruz ve niyeti taşıyan hiçbir kayıt yok. Maddi sorular (kaynak, mesafe, tarih) cevaplandı; anlam sorusu duruyor.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "Yapı gündönümü ekseniyle hizalanmış - bu ölçülebilir bir olgu.",
+      "İnşa evreleri MÖ ~3000'den ~1500'e uzanıyor; işlev de değişmiş olabilir.",
+      "Sitede gömü kalıntıları var, ama tek başına işlevi belirlemiyor."
+    ],
+    "counter_evidence": [
+      "Tapınak, takvim, mezarlık, şifa merkezi ve siyasi birleşme anıtı - hepsi öne sürüldü, hiçbiri dışlanamadı.",
+      "Toplum yazısız; niyeti doğrudan aktaran kaynak yok."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Stonehenge inşa evreleri ve işlev tartışması literatürü",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Bu soru muhtemelen hiç kapanmayacak - yazısız niyet doğrudan erişilemez."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "stonehenge"
     ]
   }
 ]
