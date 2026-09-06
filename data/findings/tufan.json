@@ -31,6 +31,39 @@
     "checked": "2026-09-06",
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "period": {
+      "earliest": -1700,
+      "latest": 1918,
+      "era_label": "Metin geleneği ve modern derleme",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Akadca",
+      "Sümerce",
+      "İbranice"
+    ],
+    "disciplines": [
+      "filoloji",
+      "antropoloji",
+      "metin-elestirisi"
+    ],
+    "people": [
+      {
+        "name": "Frazer, James George",
+        "role": "proposer",
+        "affiliation": "University of Cambridge",
+        "year": 1918,
+        "lifespan": "1854-1941"
+      }
+    ],
+    "divergence_type": [
+      "ideolojik-secim",
+      "kategori-hatasi"
     ]
   },
   {
@@ -60,6 +93,37 @@
     "checked": "2026-09-06",
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "site": "Mısır külliyatı",
+      "region": "Nil Vadisi",
+      "modern_country": "Mısır"
+    },
+    "period": {
+      "earliest": -2600,
+      "latest": -1100,
+      "era_label": "Eski - Yeni Krallık",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Mısırca"
+    ],
+    "disciplines": [
+      "filoloji",
+      "tarih"
+    ],
+    "people": [
+      {
+        "name": "Hornung, Erik",
+        "role": "editor",
+        "affiliation": "Universität Basel",
+        "year": 1982,
+        "lifespan": "1933-2022"
+      }
     ]
   },
   {
@@ -88,6 +152,38 @@
     "checked": "2026-09-06",
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "site": "Sarı Irmak havzası",
+      "region": "Kuzey Çin Ovası",
+      "modern_country": "Çin"
+    },
+    "period": {
+      "earliest": -2000,
+      "latest": -300,
+      "era_label": "Efsanevi Xia - Savaşan Devletler (metin)",
+      "precision": "range",
+      "dating_method": [
+        "textual"
+      ]
+    },
+    "languages": [
+      "Klasik Çince"
+    ],
+    "disciplines": [
+      "filoloji",
+      "antropoloji"
+    ],
+    "people": [
+      {
+        "name": "Lewis, Mark Edward",
+        "role": "analyst",
+        "affiliation": "Stanford University",
+        "year": 2006
+      }
+    ],
+    "divergence_type": [
+      "kategori-hatasi"
     ]
   },
   {
@@ -118,6 +214,36 @@
     "checked": "2026-09-06",
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "region": "Mezopotamya - Levant",
+      "modern_country": "Irak / İsrail-Filistin"
+    },
+    "period": {
+      "earliest": -1200,
+      "latest": -500,
+      "era_label": "Orta Assur - Sürgün sonrası",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "paleography"
+      ]
+    },
+    "languages": [
+      "Akadca",
+      "İbranice"
+    ],
+    "disciplines": [
+      "filoloji",
+      "metin-elestirisi"
+    ],
+    "people": [
+      {
+        "name": "George, Andrew R.",
+        "role": "editor",
+        "affiliation": "SOAS, University of London",
+        "year": 2003
+      }
     ]
   },
   {
@@ -146,6 +272,41 @@
     "checked": "2026-09-06",
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "region": "Mezopotamya",
+      "modern_country": "Irak"
+    },
+    "period": {
+      "earliest": -1700,
+      "latest": -1600,
+      "era_label": "Eski Babil",
+      "precision": "approximate",
+      "dating_method": [
+        "paleography",
+        "textual"
+      ]
+    },
+    "languages": [
+      "Akadca"
+    ],
+    "disciplines": [
+      "filoloji"
+    ],
+    "people": [
+      {
+        "name": "Lambert, Wilfred G.",
+        "role": "editor",
+        "affiliation": "University of Birmingham",
+        "year": 1969,
+        "lifespan": "1926-2011"
+      },
+      {
+        "name": "Millard, Alan R.",
+        "role": "editor",
+        "affiliation": "University of Liverpool",
+        "year": 1969
+      }
     ]
   },
   {
@@ -175,6 +336,43 @@
     "checked": "2026-09-06",
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "site": "Popol Vuh elyazması",
+      "region": "K'iche' bölgesi, Yukarı Guatemala",
+      "modern_country": "Guatemala"
+    },
+    "period": {
+      "earliest": 1555,
+      "latest": 1701,
+      "era_label": "Sömürge dönemi",
+      "precision": "approximate",
+      "dating_method": [
+        "historical-record",
+        "textual"
+      ]
+    },
+    "languages": [
+      "K'iche' Mayacası",
+      "İspanyolca"
+    ],
+    "disciplines": [
+      "filoloji",
+      "antropoloji",
+      "tarih"
+    ],
+    "people": [
+      {
+        "name": "Ximénez, Francisco",
+        "role": "translator",
+        "affiliation": "Dominiken misyonu",
+        "year": 1701,
+        "lifespan": "1666-1729"
+      }
+    ],
+    "divergence_type": [
+      "provenans-yoklugu",
+      "somurge-anlatisi"
     ]
   },
   {
@@ -202,6 +400,42 @@
     "checked": "2026-09-06",
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "site": "Ur",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 30.9626,
+        "lon": 46.1031
+      }
+    },
+    "period": {
+      "earliest": -3500,
+      "latest": -2500,
+      "era_label": "Ubeyd - Erken Hanedanlar",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "jeoarkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Woolley, Leonard",
+        "role": "excavator",
+        "affiliation": "British Museum / Penn Museum",
+        "year": 1929,
+        "lifespan": "1880-1960"
+      }
+    ],
+    "divergence_type": [
+      "guncellenmemis",
+      "medya-abartisi"
     ]
   },
   {
@@ -236,6 +470,44 @@
     "volatile": true,
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "site": "Karadeniz havzası",
+      "region": "Karadeniz - Boğazlar",
+      "modern_country": "Türkiye ve çevresi",
+      "coordinates": {
+        "lat": 43.4,
+        "lon": 34.3
+      }
+    },
+    "period": {
+      "earliest": -5600,
+      "latest": -5500,
+      "era_label": "Erken Holosen",
+      "precision": "approximate",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "jeoloji",
+      "jeoarkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Ryan, William B. F.",
+        "role": "proposer",
+        "affiliation": "Columbia University, Lamont-Doherty",
+        "year": 1997
+      },
+      {
+        "name": "Pitman, Walter C.",
+        "role": "proposer",
+        "affiliation": "Columbia University, Lamont-Doherty",
+        "year": 1997,
+        "lifespan": "1931-2019"
+      }
     ]
   },
   {
@@ -266,6 +538,26 @@
     "checked": "2026-09-06",
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "region": "Kuzey Hindistan, Ganj havzası",
+      "modern_country": "Hindistan"
+    },
+    "period": {
+      "earliest": -700,
+      "latest": 500,
+      "era_label": "Geç Vedik - Purana dönemi",
+      "precision": "range",
+      "dating_method": [
+        "textual"
+      ]
+    },
+    "languages": [
+      "Sanskritçe"
+    ],
+    "disciplines": [
+      "filoloji",
+      "antropoloji"
     ]
   },
   {
@@ -295,6 +587,41 @@
     "volatile": true,
     "used_in": [
       "tufan-bilmecesi"
+    ],
+    "subject": {
+      "region": "Avustralya kıyıları",
+      "modern_country": "Avustralya"
+    },
+    "period": {
+      "earliest": -7000,
+      "latest": 2016,
+      "era_label": "Holosen deniz yükselmesi - modern derleme",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Aborjin dilleri"
+    ],
+    "disciplines": [
+      "antropoloji",
+      "jeoloji"
+    ],
+    "people": [
+      {
+        "name": "Nunn, Patrick D.",
+        "role": "proposer",
+        "affiliation": "University of the Sunshine Coast",
+        "year": 2016
+      },
+      {
+        "name": "Reid, Nicholas",
+        "role": "proposer",
+        "affiliation": "University of New England",
+        "year": 2016
+      }
     ]
   }
 ]

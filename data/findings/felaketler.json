@@ -25,6 +25,44 @@
     "checked": "2026-09-06",
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "period": {
+      "earliest": -2600000,
+      "latest": 2026,
+      "era_label": "Kuvaterner",
+      "precision": "range",
+      "dating_method": [
+        "isotopic",
+        "astronomical",
+        "radiocarbon"
+      ]
+    },
+    "disciplines": [
+      "iklim-bilimi",
+      "astronomi",
+      "jeoloji"
+    ],
+    "people": [
+      {
+        "name": "Milanković, Milutin",
+        "role": "proposer",
+        "affiliation": "Belgrad Üniversitesi",
+        "year": 1920,
+        "lifespan": "1879-1958"
+      },
+      {
+        "name": "Hays, James D.",
+        "role": "analyst",
+        "affiliation": "Lamont-Doherty",
+        "year": 1976
+      },
+      {
+        "name": "Shackleton, Nicholas",
+        "role": "analyst",
+        "affiliation": "University of Cambridge",
+        "year": 1976,
+        "lifespan": "1937-2006"
+      }
     ]
   },
   {
@@ -50,6 +88,20 @@
     "volatile": true,
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "period": {
+      "earliest": -1200000,
+      "latest": -800000,
+      "era_label": "Orta Pleyistosen Geçişi",
+      "precision": "range",
+      "dating_method": [
+        "isotopic",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "iklim-bilimi",
+      "jeoloji"
     ]
   },
   {
@@ -78,6 +130,23 @@
     "checked": "2026-09-06",
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "period": {
+      "earliest": -444000000,
+      "latest": -66000000,
+      "era_label": "Paleozoik - Mezozoik sonu",
+      "precision": "range",
+      "dating_method": [
+        "isotopic",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "paleontoloji",
+      "jeoloji"
+    ],
+    "divergence_type": [
+      "medya-abartisi"
     ]
   },
   {
@@ -106,6 +175,38 @@
     "volatile": true,
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "subject": {
+      "site": "Chicxulub krateri",
+      "region": "Yucatán",
+      "modern_country": "Meksika",
+      "coordinates": {
+        "lat": 21.4,
+        "lon": -89.516
+      }
+    },
+    "period": {
+      "earliest": -66043000,
+      "latest": -66000000,
+      "era_label": "Kretase-Paleojen sınırı",
+      "precision": "approximate",
+      "dating_method": [
+        "isotopic",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "paleontoloji",
+      "jeoloji"
+    ],
+    "people": [
+      {
+        "name": "Alvarez, Luis W.",
+        "role": "proposer",
+        "affiliation": "UC Berkeley",
+        "year": 1980,
+        "lifespan": "1911-1988"
+      }
     ]
   },
   {
@@ -143,6 +244,31 @@
     "volatile": true,
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "period": {
+      "earliest": -12900,
+      "latest": -11700,
+      "era_label": "Genç Dryas",
+      "precision": "approximate",
+      "dating_method": [
+        "radiocarbon",
+        "isotopic"
+      ]
+    },
+    "disciplines": [
+      "jeoloji",
+      "iklim-bilimi"
+    ],
+    "people": [
+      {
+        "name": "Firestone, Richard B.",
+        "role": "proposer",
+        "affiliation": "Lawrence Berkeley National Laboratory",
+        "year": 2007
+      }
+    ],
+    "divergence_type": [
+      "medya-abartisi"
     ]
   },
   {
@@ -177,6 +303,43 @@
     "checked": "2026-09-06",
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "subject": {
+      "site": "Toba Kalderası",
+      "region": "Kuzey Sumatra",
+      "modern_country": "Endonezya",
+      "coordinates": {
+        "lat": 2.6845,
+        "lon": 98.8756
+      }
+    },
+    "period": {
+      "earliest": -74000,
+      "latest": -73000,
+      "era_label": "Geç Pleyistosen",
+      "precision": "approximate",
+      "dating_method": [
+        "isotopic",
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "genetik",
+      "arkeoloji",
+      "jeoloji"
+    ],
+    "people": [
+      {
+        "name": "Ambrose, Stanley H.",
+        "role": "proposer",
+        "affiliation": "University of Illinois",
+        "year": 1998
+      }
+    ],
+    "divergence_type": [
+      "guncellenmemis",
+      "medya-abartisi"
     ]
   },
   {
@@ -206,6 +369,43 @@
     "checked": "2026-09-06",
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "subject": {
+      "site": "L'Anse aux Meadows",
+      "region": "Newfoundland",
+      "modern_country": "Kanada",
+      "coordinates": {
+        "lat": 51.9639,
+        "lon": -55.5322
+      }
+    },
+    "period": {
+      "earliest": 993,
+      "latest": 1021,
+      "era_label": "Viking Kuzey Atlantik",
+      "precision": "exact",
+      "dating_method": [
+        "dendrochronology",
+        "radiocarbon"
+      ]
+    },
+    "disciplines": [
+      "astronomi",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Miyake, Fusa",
+        "role": "discoverer",
+        "affiliation": "Nagoya University",
+        "year": 2012
+      },
+      {
+        "name": "Kuitems, Margot",
+        "role": "analyst",
+        "affiliation": "Rijksuniversiteit Groningen",
+        "year": 2021
+      }
     ]
   },
   {
@@ -241,6 +441,73 @@
     "checked": "2026-09-06",
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "period": {
+      "earliest": 1596,
+      "latest": 1963,
+      "era_label": "Gözlemden kanıta",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "jeoloji",
+      "bilim-tarihi"
+    ],
+    "people": [
+      {
+        "name": "Ortelius, Abraham",
+        "role": "proposer",
+        "affiliation": "-",
+        "year": 1596,
+        "lifespan": "1527-1598"
+      },
+      {
+        "name": "Wegener, Alfred",
+        "role": "proposer",
+        "affiliation": "Universität Graz",
+        "year": 1912,
+        "lifespan": "1880-1930"
+      },
+      {
+        "name": "Jeffreys, Harold",
+        "role": "critic",
+        "affiliation": "University of Cambridge",
+        "year": 1924,
+        "lifespan": "1891-1989"
+      },
+      {
+        "name": "Tharp, Marie",
+        "role": "surveyor",
+        "affiliation": "Lamont Geological Observatory",
+        "year": 1952,
+        "lifespan": "1920-2006"
+      },
+      {
+        "name": "Hess, Harry",
+        "role": "proposer",
+        "affiliation": "Princeton University",
+        "year": 1962,
+        "lifespan": "1906-1969"
+      },
+      {
+        "name": "Vine, Frederick",
+        "role": "analyst",
+        "affiliation": "University of Cambridge",
+        "year": 1963,
+        "lifespan": "1939-2024"
+      },
+      {
+        "name": "Matthews, Drummond",
+        "role": "analyst",
+        "affiliation": "University of Cambridge",
+        "year": 1963,
+        "lifespan": "1931-1997"
+      }
+    ],
+    "divergence_type": [
+      "medya-abartisi"
     ]
   },
   {
@@ -268,6 +535,38 @@
     "checked": "2026-09-06",
     "used_in": [
       "hatirlamadigimiz-felaketler"
+    ],
+    "subject": {
+      "site": "Channeled Scablands",
+      "region": "Doğu Washington",
+      "modern_country": "ABD",
+      "coordinates": {
+        "lat": 47.1,
+        "lon": -118.5
+      }
+    },
+    "period": {
+      "earliest": -15000,
+      "latest": -13000,
+      "era_label": "Geç Pleyistosen buzul selleri",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "jeoloji",
+      "bilim-tarihi"
+    ],
+    "people": [
+      {
+        "name": "Bretz, J Harlen",
+        "role": "proposer",
+        "affiliation": "University of Chicago",
+        "year": 1923,
+        "lifespan": "1882-1981"
+      }
     ]
   },
   {
@@ -294,6 +593,23 @@
     "used_in": [
       "hatirlamadigimiz-felaketler",
       "ayni-cumlede"
+    ],
+    "period": {
+      "earliest": -3200,
+      "latest": 2026,
+      "era_label": "Yazının icadından bugüne",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "radiocarbon"
+      ]
+    },
+    "languages": [
+      "Sümerce"
+    ],
+    "disciplines": [
+      "tarih",
+      "arkeoloji"
     ]
   }
 ]

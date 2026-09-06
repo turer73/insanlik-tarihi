@@ -25,6 +25,35 @@
     "checked": "2026-09-06",
     "used_in": [
       "olu-deniz-parsomenleri"
+    ],
+    "subject": {
+      "site": "Kumran mağaraları",
+      "region": "Yehuda Çölü, Ölü Deniz kuzeybatı kıyısı",
+      "modern_country": "Batı Şeria (fiilî İsrail idaresi)",
+      "coordinates": {
+        "lat": 31.7414,
+        "lon": 35.4594
+      }
+    },
+    "period": {
+      "earliest": -250,
+      "latest": 68,
+      "era_label": "Helenistik - Erken Roma",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "paleography"
+      ]
+    },
+    "languages": [
+      "İbranice",
+      "Aramice",
+      "Grekçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji",
+      "metin-elestirisi"
     ]
   },
   {
@@ -57,6 +86,44 @@
     "checked": "2026-09-06",
     "used_in": [
       "olu-deniz-parsomenleri"
+    ],
+    "subject": {
+      "site": "Kumran mağaraları",
+      "region": "Yehuda Çölü, Ölü Deniz kuzeybatı kıyısı",
+      "modern_country": "Batı Şeria (fiilî İsrail idaresi)",
+      "coordinates": {
+        "lat": 31.7414,
+        "lon": 35.4594
+      }
+    },
+    "period": {
+      "earliest": -125,
+      "latest": -100,
+      "era_label": "Geç Helenistik",
+      "precision": "approximate",
+      "dating_method": [
+        "paleography",
+        "radiocarbon"
+      ]
+    },
+    "languages": [
+      "İbranice",
+      "Grekçe"
+    ],
+    "disciplines": [
+      "metin-elestirisi",
+      "filoloji"
+    ],
+    "people": [
+      {
+        "name": "Tov, Emanuel",
+        "role": "editor",
+        "affiliation": "Kudüs İbrani Üniversitesi",
+        "year": 1990
+      }
+    ],
+    "divergence_type": [
+      "kategori-hatasi"
     ]
   },
   {
@@ -103,6 +170,66 @@
     "volatile": false,
     "used_in": [
       "olu-deniz-parsomenleri"
+    ],
+    "subject": {
+      "site": "Kumran mağaraları",
+      "region": "Yehuda Çölü, Ölü Deniz kuzeybatı kıyısı",
+      "modern_country": "Batı Şeria (fiilî İsrail idaresi)",
+      "coordinates": {
+        "lat": 31.7414,
+        "lon": 35.4594
+      }
+    },
+    "period": {
+      "earliest": -150,
+      "latest": 68,
+      "era_label": "Hasmoni - Erken Roma",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy",
+        "paleography"
+      ]
+    },
+    "languages": [
+      "İbranice",
+      "Aramice"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji",
+      "tarih"
+    ],
+    "people": [
+      {
+        "name": "de Vaux, Roland",
+        "role": "excavator",
+        "affiliation": "École Biblique, Kudüs",
+        "year": 1951,
+        "lifespan": "1903-1971"
+      },
+      {
+        "name": "Schiffman, Lawrence",
+        "role": "proposer",
+        "affiliation": "New York University",
+        "year": 1994
+      },
+      {
+        "name": "Golb, Norman",
+        "role": "proposer",
+        "affiliation": "University of Chicago",
+        "year": 1995,
+        "lifespan": "1928-2020"
+      },
+      {
+        "name": "Magness, Jodi",
+        "role": "analyst",
+        "affiliation": "University of North Carolina",
+        "year": 2002
+      }
+    ],
+    "divergence_type": [
+      "guncellenmemis"
     ]
   },
   {
@@ -130,6 +257,39 @@
     "checked": "2026-09-06",
     "used_in": [
       "olu-deniz-parsomenleri"
+    ],
+    "subject": {
+      "site": "Kumran mağaraları",
+      "region": "Yehuda Çölü, Ölü Deniz kuzeybatı kıyısı",
+      "modern_country": "Batı Şeria (fiilî İsrail idaresi)",
+      "coordinates": {
+        "lat": 31.7414,
+        "lon": 35.4594
+      }
+    },
+    "period": {
+      "earliest": 1,
+      "latest": 100,
+      "era_label": "Erken Roma",
+      "precision": "century",
+      "dating_method": [
+        "paleography"
+      ]
+    },
+    "languages": [
+      "İbranice"
+    ],
+    "disciplines": [
+      "filoloji",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Baker, H. Wright",
+        "role": "analyst",
+        "affiliation": "Manchester College of Technology",
+        "year": 1955
+      }
     ]
   },
   {
@@ -165,6 +325,45 @@
     "checked": "2026-09-06",
     "used_in": [
       "olu-deniz-parsomenleri"
+    ],
+    "subject": {
+      "site": "Museum of the Bible koleksiyonu",
+      "region": "Washington DC",
+      "modern_country": "ABD"
+    },
+    "period": {
+      "earliest": 2002,
+      "latest": 2020,
+      "era_label": "Modern antika piyasası",
+      "precision": "range",
+      "dating_method": [
+        "isotopic",
+        "radiocarbon"
+      ]
+    },
+    "languages": [
+      "İbranice"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "people": [
+      {
+        "name": "Loll, Colette",
+        "role": "analyst",
+        "affiliation": "Art Fraud Insights",
+        "year": 2020
+      },
+      {
+        "name": "Justnes, Årstein",
+        "role": "critic",
+        "affiliation": "University of Agder",
+        "year": 2016
+      }
+    ],
+    "divergence_type": [
+      "provenans-yoklugu"
     ]
   },
   {
@@ -197,6 +396,50 @@
     "checked": "2026-09-06",
     "used_in": [
       "olu-deniz-parsomenleri"
+    ],
+    "subject": {
+      "site": "Kumran mağaraları",
+      "region": "Yehuda Çölü, Ölü Deniz kuzeybatı kıyısı",
+      "modern_country": "Batı Şeria (fiilî İsrail idaresi)",
+      "coordinates": {
+        "lat": 31.7414,
+        "lon": 35.4594
+      }
+    },
+    "period": {
+      "earliest": -50,
+      "latest": 68,
+      "era_label": "Erken Roma",
+      "precision": "approximate",
+      "dating_method": [
+        "paleography"
+      ]
+    },
+    "languages": [
+      "Grekçe"
+    ],
+    "disciplines": [
+      "filoloji",
+      "metin-elestirisi"
+    ],
+    "people": [
+      {
+        "name": "O'Callaghan, José",
+        "role": "proposer",
+        "affiliation": "Pontificio Istituto Biblico",
+        "year": 1972,
+        "lifespan": "1922-2001"
+      },
+      {
+        "name": "Thiede, Carsten Peter",
+        "role": "proposer",
+        "affiliation": "-",
+        "year": 1992,
+        "lifespan": "1952-2004"
+      }
+    ],
+    "divergence_type": [
+      "ideolojik-secim"
     ]
   },
   {
@@ -225,6 +468,28 @@
     "volatile": true,
     "used_in": [
       "olu-deniz-parsomenleri"
+    ],
+    "subject": {
+      "site": "Kumran mağaraları",
+      "region": "Yehuda Çölü, Ölü Deniz kuzeybatı kıyısı",
+      "modern_country": "Batı Şeria (fiilî İsrail idaresi)",
+      "coordinates": {
+        "lat": 31.7414,
+        "lon": 35.4594
+      }
+    },
+    "period": {
+      "earliest": 1947,
+      "latest": 2026,
+      "era_label": "Modern",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "hukuk",
+      "tarih"
     ]
   },
   {
@@ -257,6 +522,59 @@
     "checked": "2026-09-06",
     "used_in": [
       "olu-deniz-parsomenleri"
+    ],
+    "subject": {
+      "site": "Kumran mağaraları",
+      "region": "Yehuda Çölü, Ölü Deniz kuzeybatı kıyısı",
+      "modern_country": "Batı Şeria (fiilî İsrail idaresi)",
+      "coordinates": {
+        "lat": 31.7414,
+        "lon": 35.4594
+      }
+    },
+    "period": {
+      "earliest": 1953,
+      "latest": 2011,
+      "era_label": "Modern yayın tarihi",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "bilim-tarihi",
+      "filoloji"
+    ],
+    "people": [
+      {
+        "name": "Tov, Emanuel",
+        "role": "editor",
+        "affiliation": "DJD baş editörlüğü",
+        "year": 1990
+      },
+      {
+        "name": "Wacholder, Ben-Zion",
+        "role": "analyst",
+        "affiliation": "Hebrew Union College",
+        "year": 1991,
+        "lifespan": "1924-2011"
+      },
+      {
+        "name": "Abegg, Martin",
+        "role": "analyst",
+        "affiliation": "Hebrew Union College",
+        "year": 1991
+      },
+      {
+        "name": "Shanks, Hershel",
+        "role": "critic",
+        "affiliation": "Biblical Archaeology Society",
+        "year": 1991,
+        "lifespan": "1930-2021"
+      }
+    ],
+    "divergence_type": [
+      "medya-abartisi"
     ]
   }
 ]

@@ -989,5 +989,271 @@
     "used_in": [
       "ayni-cumlede"
     ]
+  },
+  {
+    "id": "sigiriya-kale-mi-saray-mi",
+    "claim": "Sigiriya, kardeşinden korkan Kral Kaşyapa'nın inşa ettiği bir savunma kalesiydi.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "sigiriya",
+      "sri-lanka",
+      "kaynak-elestirisi"
+    ],
+    "subject": {
+      "site": "Sigiriya",
+      "site_native": "Sīhagiri (Aslan Kayası)",
+      "region": "Matale, Orta Eyalet",
+      "modern_country": "Sri Lanka",
+      "coordinates": {
+        "lat": 7.957,
+        "lon": 80.7603
+      }
+    },
+    "period": {
+      "earliest": 477,
+      "latest": 495,
+      "era_label": "Anuradhapura dönemi, Kaşyapa I saltanatı",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "stratigraphy",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Pali",
+      "Sinhala"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "tarih",
+      "mimarlik"
+    ],
+    "people": [
+      {
+        "name": "Bandaranayake, Senake",
+        "role": "analyst",
+        "affiliation": "University of Kelaniya",
+        "year": 1986,
+        "lifespan": "1938-2015"
+      },
+      {
+        "name": "Kaşyapa I",
+        "role": "excavator",
+        "affiliation": "Anuradhapura hanedanı",
+        "year": 477
+      }
+    ],
+    "popular_claim": "Sigiriya, babasını öldüren Kaşyapa'nın kardeşi Moggallana'dan korkarak yaptırdığı bir sığınak-kaledir.",
+    "divergence": "Anlatının tek kaynağı Culavamsa - olaydan yüzyıllar sonra derlenmiş, açık ahlaki ve manastır yanlısı bir gündemi olan bir vakayiname. Arkeoloji ise savunmadan çok gösteriye işaret ediyor: su bahçeleri, fıskiyeler, freskler, tören eksenli planlama.",
+    "divergence_type": [
+      "eski-ceviri",
+      "guncellenmemis"
+    ],
+    "evidence": [
+      "Culavamsa Kaşyapa'nın baba katli, korku ve sonunda yenilgi anlatısını verir.",
+      "Zirvede saray kalıntıları ve kaya yamacında dik erişim var."
+    ],
+    "counter_evidence": [
+      "Yerleşim planı - simetrik su bahçeleri, kaya bahçeleri, teraslar - savunma değil tören ve gösteri mimarisi.",
+      "Culavamsa'nın ilgili bölümleri olaydan çok sonra, manastır çevresinde derlendi; Kaşyapa'yı olumsuz gösteren bir çerçevesi var.",
+      "Kayada Kaşyapa öncesi (yaklaşık MÖ 3. yy'dan itibaren) ve sonrası Budist manastır kullanımı izleri var; site tek amaçlı değil."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "type": "manuscript",
+        "title": "Culavamsa",
+        "language": "pi",
+        "note": "Mahavamsa'nın devamı; ilgili bölümler olaydan yüzyıllar sonra derlendi."
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Bandaranayake, Senake"
+        ],
+        "year": 1986,
+        "title": "The Rock and Wall Paintings of Sri Lanka",
+        "language": "en"
+      },
+      {
+        "tier": "institutional",
+        "type": "report",
+        "year": 1982,
+        "title": "Sigiriya Antik Kenti - Dünya Mirası kaydı",
+        "institution": "UNESCO",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Site birincil olarak saray mı, tören merkezi mi, kale mi - tek amaçlı olmayabilir.",
+      "Kaşyapa öncesi manastır evresinin ölçeği belirsiz."
+    ],
+    "checked": "2026-09-06",
+    "used_in": []
+  },
+  {
+    "id": "sigiriya-ayna-duvari-grafiti",
+    "claim": "Sigiriya'nın Ayna Duvarı'ndaki grafitiler, MS 8.-10. yüzyıl ziyaretçilerinin yazdığı 1.800'den fazla dizeden oluşur ve erken Sinhala şiirinin en büyük külliyatıdır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "sigiriya",
+      "sri-lanka",
+      "epigrafi",
+      "erken-turizm"
+    ],
+    "subject": {
+      "site": "Sigiriya - Ayna Duvarı",
+      "site_native": "Katapatha Pavura",
+      "region": "Matale, Orta Eyalet",
+      "modern_country": "Sri Lanka",
+      "coordinates": {
+        "lat": 7.957,
+        "lon": 80.7603
+      }
+    },
+    "period": {
+      "earliest": 700,
+      "latest": 1000,
+      "era_label": "Geç Anuradhapura",
+      "precision": "range",
+      "dating_method": [
+        "paleography",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Sinhala"
+    ],
+    "disciplines": [
+      "epigrafi",
+      "filoloji",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Paranavitana, Senarath",
+        "role": "editor",
+        "affiliation": "Seylan Arkeoloji Dairesi",
+        "year": 1956,
+        "lifespan": "1896-1972"
+      }
+    ],
+    "popular_claim": "Sigiriya asırlarca unutulmuş, terk edilmiş bir kayalıktı.",
+    "divergence": "Tam tersi: duvarın kendisi sitenin en az iki yüzyıl boyunca DÜZENLİ ZİYARET EDİLDİĞİNİN kanıtı. Ziyaretçiler freskler hakkında şiir yazmış, birbirlerinin dizelerine cevap vermiş.",
+    "divergence_type": [
+      "hayatta-kalma-yanliligi",
+      "guncellenmemis"
+    ],
+    "evidence": [
+      "Cilalı sıva duvara kazınmış 1.800'den fazla dize okundu ve yayımlandı.",
+      "Dizeler büyük ölçüde fresklerdeki figürlere hitap ediyor; bazıları önceki yazılara cevap niteliğinde.",
+      "Külliyat erken Sinhala dilinin ve şiir geleneğinin başlıca kaynağıdır."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Paranavitana, Senarath"
+        ],
+        "year": 1956,
+        "title": "Sigiri Graffiti",
+        "publisher": "Oxford University Press",
+        "language": "en",
+        "note": "Duvar yazılarının standart edisyonu, iki cilt."
+      },
+      {
+        "tier": "institutional",
+        "type": "report",
+        "year": 1982,
+        "title": "Sigiriya Antik Kenti - Dünya Mirası kaydı",
+        "institution": "UNESCO",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Ziyaretçilerin toplumsal profili - saray çevresi mi, hac trafiği mi, karışık mı?"
+    ],
+    "checked": "2026-09-06",
+    "used_in": []
+  },
+  {
+    "id": "sigiriya-fresk-kimlikleri",
+    "claim": "Sigiriya fresklerindeki kadın figürlerinin kimliği belirlenmiştir.",
+    "status": "unknown",
+    "confidence": "medium",
+    "topic": [
+      "sigiriya",
+      "sri-lanka",
+      "ikonografi"
+    ],
+    "subject": {
+      "site": "Sigiriya freskleri",
+      "region": "Matale, Orta Eyalet",
+      "modern_country": "Sri Lanka",
+      "coordinates": {
+        "lat": 7.957,
+        "lon": 80.7603
+      }
+    },
+    "period": {
+      "earliest": 477,
+      "latest": 495,
+      "era_label": "Kaşyapa I saltanatı",
+      "precision": "approximate",
+      "dating_method": [
+        "typology",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sinhala"
+    ],
+    "disciplines": [
+      "sanat-tarihi",
+      "arkeoloji"
+    ],
+    "popular_claim": "Freskler Kaşyapa'nın cariyelerini betimler.",
+    "divergence": "Rakip yorumlar var ve hiçbiri kanıtlanmadı: gök perileri (apsara), bulut kızları, dinsel bağış sahneleri, ya da saray kadınları. Turistik anlatı en romantik olanı seçiyor.",
+    "divergence_type": [
+      "turizm-kopyalamasi"
+    ],
+    "counter_evidence": [
+      "Figürlerin ikonografisi hem dinsel hem seküler okumaya açık.",
+      "Ayna Duvarı dizeleri figürlere hitap eder ama kimliklerini tanımlamaz.",
+      "Özgün fresklerin çok büyük bölümü kayıp; günümüze ulaşan sayı yirmi civarında, bu da bağlam okumasını zorlaştırıyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Bandaranayake, Senake"
+        ],
+        "year": 1986,
+        "title": "The Rock and Wall Paintings of Sri Lanka",
+        "language": "en"
+      },
+      {
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Paranavitana, Senarath"
+        ],
+        "year": 1956,
+        "title": "Sigiri Graffiti",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Figürler dinsel mi seküler mi?",
+      "Özgün fresk sayısı ve programın bütünü ne kadardı?"
+    ],
+    "checked": "2026-09-06",
+    "used_in": []
   }
 ]

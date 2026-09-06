@@ -29,6 +29,37 @@
     "used_in": [
       "babil",
       "ayni-cumlede"
+    ],
+    "subject": {
+      "site": "Babil",
+      "site_native": "Bāb-ilim",
+      "region": "Mezopotamya, Fırat kıyısı",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 32.5422,
+        "lon": 44.4211
+      }
+    },
+    "period": {
+      "earliest": -1800,
+      "latest": -500,
+      "era_label": "Eski Babil - Sürgün dönemi",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Akadca",
+      "İbranice"
+    ],
+    "disciplines": [
+      "dilbilim",
+      "filoloji"
+    ],
+    "divergence_type": [
+      "ideolojik-secim"
     ]
   },
   {
@@ -64,6 +95,47 @@
     "checked": "2026-09-06",
     "used_in": [
       "babil"
+    ],
+    "subject": {
+      "site": "Etemenanki zigguratı",
+      "site_native": "É-temen-an-ki",
+      "region": "Mezopotamya, Fırat kıyısı",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 32.5422,
+        "lon": 44.4211
+      }
+    },
+    "period": {
+      "earliest": -604,
+      "latest": -323,
+      "era_label": "Yeni Babil - Helenistik",
+      "precision": "disputed",
+      "dating_method": [
+        "none",
+        "textual"
+      ]
+    },
+    "languages": [
+      "Akadca",
+      "Sümerce"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "mimarlik"
+    ],
+    "people": [
+      {
+        "name": "Koldewey, Robert",
+        "role": "excavator",
+        "affiliation": "Deutsche Orient-Gesellschaft",
+        "year": 1899,
+        "lifespan": "1855-1925"
+      }
+    ],
+    "divergence_type": [
+      "guncellenmemis",
+      "medya-abartisi"
     ]
   },
   {
@@ -89,6 +161,41 @@
     "checked": "2026-09-06",
     "used_in": [
       "babil"
+    ],
+    "subject": {
+      "site": "Etemenanki zigguratı",
+      "site_native": "É-temen-an-ki",
+      "region": "Mezopotamya, Fırat kıyısı",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 32.5422,
+        "lon": 44.4211
+      }
+    },
+    "period": {
+      "earliest": -331,
+      "latest": -323,
+      "era_label": "Helenistik geçiş",
+      "precision": "approximate",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Grekçe"
+    ],
+    "disciplines": [
+      "tarih",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Büyük İskender",
+        "role": "excavator",
+        "affiliation": "Makedonya Krallığı",
+        "year": -331,
+        "lifespan": "MÖ 356-323"
+      }
     ]
   },
   {
@@ -129,6 +236,41 @@
     "volatile": true,
     "used_in": [
       "babil"
+    ],
+    "subject": {
+      "site": "Enmerkar ve Aratta Beyi",
+      "region": "Sümer",
+      "modern_country": "Irak"
+    },
+    "period": {
+      "earliest": -2100,
+      "latest": -1700,
+      "era_label": "Ur III - Eski Babil (nüsha)",
+      "precision": "approximate",
+      "dating_method": [
+        "paleography",
+        "textual"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "İbranice"
+    ],
+    "disciplines": [
+      "filoloji",
+      "dilbilim"
+    ],
+    "people": [
+      {
+        "name": "Kramer, Samuel Noah",
+        "role": "proposer",
+        "affiliation": "University of Pennsylvania",
+        "year": 1968,
+        "lifespan": "1897-1990"
+      }
+    ],
+    "divergence_type": [
+      "eski-ceviri"
     ]
   },
   {
@@ -172,6 +314,53 @@
     "used_in": [
       "babil",
       "ayni-cumlede"
+    ],
+    "subject": {
+      "site": "Ninova (önerilen yer)",
+      "region": "Yukarı Mezopotamya, Dicle kıyısı",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 36.3599,
+        "lon": 43.1526
+      }
+    },
+    "period": {
+      "earliest": -704,
+      "latest": -681,
+      "era_label": "Yeni Asur, Sennacherib dönemi",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "epigraphic",
+        "stratigraphy"
+      ]
+    },
+    "languages": [
+      "Akadca",
+      "Grekçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji",
+      "tarih"
+    ],
+    "people": [
+      {
+        "name": "Dalley, Stephanie",
+        "role": "proposer",
+        "affiliation": "University of Oxford",
+        "year": 2013
+      },
+      {
+        "name": "Koldewey, Robert",
+        "role": "excavator",
+        "affiliation": "Deutsche Orient-Gesellschaft",
+        "year": 1899,
+        "lifespan": "1855-1925"
+      }
+    ],
+    "divergence_type": [
+      "guncellenmemis"
     ]
   },
   {
@@ -196,6 +385,27 @@
     "checked": "2026-09-06",
     "used_in": [
       "babil"
+    ],
+    "subject": {
+      "region": "Mezopotamya",
+      "modern_country": "Irak"
+    },
+    "period": {
+      "earliest": -3000,
+      "latest": 2026,
+      "era_label": "Sümer'den bugüne",
+      "precision": "range",
+      "dating_method": [
+        "textual"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca"
+    ],
+    "disciplines": [
+      "matematik",
+      "bilim-tarihi"
     ]
   },
   {
@@ -223,6 +433,45 @@
     "checked": "2026-09-06",
     "used_in": [
       "babil"
+    ],
+    "subject": {
+      "site": "Babil",
+      "site_native": "Bāb-ilim",
+      "region": "Mezopotamya, Fırat kıyısı",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 32.5422,
+        "lon": 44.4211
+      }
+    },
+    "period": {
+      "earliest": -350,
+      "latest": -50,
+      "era_label": "Geç Babil astronomisi",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "astronomical"
+      ]
+    },
+    "languages": [
+      "Akadca"
+    ],
+    "disciplines": [
+      "astronomi",
+      "matematik",
+      "bilim-tarihi"
+    ],
+    "people": [
+      {
+        "name": "Ossendrijver, Mathieu",
+        "role": "analyst",
+        "affiliation": "Humboldt-Universität zu Berlin",
+        "year": 2016
+      }
+    ],
+    "divergence_type": [
+      "guncellenmemis"
     ]
   },
   {
@@ -251,6 +500,44 @@
     "used_in": [
       "babil",
       "ayni-cumlede"
+    ],
+    "subject": {
+      "site": "Babil",
+      "site_native": "Bāb-ilim",
+      "region": "Mezopotamya, Fırat kıyısı",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 32.5422,
+        "lon": 44.4211
+      }
+    },
+    "period": {
+      "earliest": -450,
+      "latest": -425,
+      "era_label": "Klasik Yunan",
+      "precision": "approximate",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Grekçe"
+    ],
+    "disciplines": [
+      "tarih",
+      "filoloji"
+    ],
+    "people": [
+      {
+        "name": "Herodotos",
+        "role": "proposer",
+        "affiliation": "-",
+        "year": -440,
+        "lifespan": "MÖ ~484-425"
+      }
+    ],
+    "divergence_type": [
+      "medya-abartisi"
     ]
   },
   {
@@ -283,6 +570,39 @@
     "used_in": [
       "babil",
       "ayni-cumlede"
+    ],
+    "subject": {
+      "site": "İştar Kapısı",
+      "site_native": "Bāb-ilim",
+      "region": "Mezopotamya, Fırat kıyısı",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 32.5422,
+        "lon": 44.4211
+      }
+    },
+    "period": {
+      "earliest": 1899,
+      "latest": 2026,
+      "era_label": "Modern kazı ve mülkiyet",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "hukuk",
+      "sanat-tarihi",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Koldewey, Robert",
+        "role": "excavator",
+        "affiliation": "Deutsche Orient-Gesellschaft",
+        "year": 1899,
+        "lifespan": "1855-1925"
+      }
     ]
   },
   {
@@ -308,6 +628,32 @@
     "checked": "2026-09-06",
     "used_in": [
       "babil"
+    ],
+    "subject": {
+      "site": "Babil",
+      "site_native": "Bāb-ilim",
+      "region": "Mezopotamya, Fırat kıyısı",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 32.5422,
+        "lon": 44.4211
+      }
+    },
+    "period": {
+      "earliest": 1980,
+      "latest": 2019,
+      "era_label": "Modern tahribat ve koruma",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "hukuk"
+    ],
+    "divergence_type": [
+      "ideolojik-secim"
     ]
   }
 ]

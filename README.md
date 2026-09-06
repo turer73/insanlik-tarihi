@@ -89,9 +89,22 @@ ayrıca alan doldurma oranı raporu verir.
 İşaretli tam sayı: negatif = MÖ, pozitif = MS. **Sıfır yılı yoktur** —
 doğrulayıcı `0` girilirse hata verir. MÖ 9500 → `-9500`.
 
-## Bilinen eksik
+## Doldurma durumu
 
-`olu-deniz`, `tufan`, `felaketler` ve `babil` dosyaları şemanın ilk sürümünde
-yazıldı; `subject`, `period`, `people`, `languages`, `coordinates` alanları
-henüz doldurulmadı. Doğrulayıcının "alan doldurma oranı" raporu bu borcu
-gösterir. Kayıtlar geçerli ama **zengin değil**.
+`scripts/enrich-2026-09.mjs` ile ilk sürümde yazılmış 38 kayda 179 alan eklendi.
+Güncel doldurma oranı (doğrulayıcı raporundan):
+
+| alan | oran |
+|---|---|
+| `period` | %100 |
+| `disciplines` | %100 |
+| `subject` | %85 |
+| `people` | %74 |
+| `divergence_type` | %66 |
+| `languages` | %64 |
+
+Boş kalanlar çoğunlukla yer/dil bağı olmayan yöntem ve bilim-sosyolojisi
+kayıtları; oraya zorla veri koymak yanlış olur.
+
+`counter_evidence` %42'de — doğrulayıcı bunu yalnızca `contested` ve `minority`
+kayıtlar için zorunlu tutuyor, `established` kayıtlarda boş olması normaldir.
