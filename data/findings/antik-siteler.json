@@ -1,0 +1,993 @@
+[
+  {
+    "id": "aten-altin-sehir-yayin-gecikmesi",
+    "claim": "Luksor'da 2021'de duyurulan 'Aten'in Yükselişi' yerleşimi, basın duyurusunun kapsamına denk hakemli yayınla desteklenmemiştir.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "aten-altin-sehir",
+      "misir",
+      "yayin-etigi"
+    ],
+    "subject": {
+      "site": "Aten'in Yükselişi (Altın Şehir)",
+      "site_native": "Tehen Aten",
+      "region": "Yukarı Mısır, Teb batı yakası",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 25.72,
+        "lon": 32.6
+      }
+    },
+    "period": {
+      "earliest": -1391,
+      "latest": -1323,
+      "era_label": "Yeni Krallık, 18. Hanedan",
+      "precision": "approximate",
+      "dating_method": [
+        "textual",
+        "typology",
+        "stratigraphy"
+      ]
+    },
+    "languages": [
+      "Mısırca"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "tarih"
+    ],
+    "people": [
+      {
+        "name": "Hawass, Zahi",
+        "role": "excavator",
+        "affiliation": "Mısır Turizm ve Eski Eserler Bakanlığı",
+        "year": 2021
+      }
+    ],
+    "popular_claim": "Üç bin yıl kumlar altında saklanmış, Tutankhamun'dan beri Mısır'ın en büyük keşfi olan bir altın şehir bulundu.",
+    "divergence": "Yerleşim gerçek ve önemli; sorun ölçek ve çerçeveleme. 'Mısır'ın Pompeisi' ve 'en büyük keşif' nitelemeleri basın bültenlerinden geliyor, hakemli literatürden değil. Ayrıca yaş ~3.400 yıl, ~3.000 değil.",
+    "divergence_type": [
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "Amenhotep III dönemine ait geniş bir işlik/konut alanı; fırınlar, mühürler, çömlekçilik.",
+      "Ay ve Tutankhamun dönemine uzanan kullanım izleri."
+    ],
+    "counter_evidence": [
+      "Kazının kapsamlı bilimsel yayını, basın duyurusunun hızına ve iddiasına yetişmedi.",
+      "Bölge daha önce de yüzey araştırmalarına konu olmuştu; 'tamamen bilinmiyordu' çerçevesi abartılı."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "press-release",
+        "authors": [
+          "Hawass, Zahi"
+        ],
+        "year": 2021,
+        "title": "Luksor'da Aten'in Yükselişi yerleşiminin duyurulması",
+        "institution": "Mısır Turizm ve Eski Eserler Bakanlığı",
+        "language": "ar"
+      },
+      {
+        "tier": "unreliable",
+        "type": "webpage",
+        "year": 2026,
+        "title": "Kayıp kentler listesi",
+        "url": "https://listelist.com/kayip-kentler/",
+        "language": "tr",
+        "note": "Kanıt olarak değil, popüler iddianın Türkçe biçimini belgelemek için kaydedildi."
+      }
+    ],
+    "open_questions": [
+      "Yerleşimin gerçek yayılımı ve nüfusu nedir - kapsamlı yayın bekleniyor."
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": []
+  },
+  {
+    "id": "heracleion-yavas-batti",
+    "claim": "Thonis-Herakleion tek bir felaketle değil, yüzyıllara yayılan zemin çökmesi ve deniz seviyesi yükselmesiyle sular altında kaldı.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "heracleion",
+      "misir",
+      "sualti-arkeolojisi"
+    ],
+    "subject": {
+      "site": "Thonis-Herakleion",
+      "site_native": "Thonis",
+      "region": "Nil Deltası, Ebu Kir Körfezi",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 31.3,
+        "lon": 30.1
+      }
+    },
+    "period": {
+      "earliest": -700,
+      "latest": 800,
+      "era_label": "Geç Dönem - Bizans",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "textual",
+        "radiocarbon"
+      ]
+    },
+    "languages": [
+      "Mısırca",
+      "Grekçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "jeoarkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Goddio, Franck",
+        "role": "discoverer",
+        "affiliation": "IEASM - Avrupa Sualtı Arkeolojisi Enstitüsü",
+        "year": 2000
+      }
+    ],
+    "popular_claim": "Şehir bir gecede denize gömüldü.",
+    "divergence": "Batış kademeliydi: zemin çökmesi, toprağın sıvılaşması ve deniz seviyesi yükselmesi yüzyıllar boyunca sürdü. 'Bir gecede yutuldu' anlatısı Atlantis çağrışımı taşıdığı için medyada tercih ediliyor.",
+    "divergence_type": [
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "2001'de bulunan Thonis steli (I. Nektanebo fermanı) Thonis ile Herakleion'un aynı şehir olduğunu kanıtladı.",
+      "İskenderiye kurulmadan (MÖ 331) önce Mısır'ın başlıca Akdeniz limanıydı.",
+      "Sualtı jeoarkeolojisi kademeli çökme ve sıvılaşma izleri gösteriyor."
+    ],
+    "counter_evidence": [
+      "Sürecin bazı aşamalarında deprem veya tsunaminin hızlandırıcı rol oynamış olabileceği tartışılıyor."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "type": "inscription",
+        "year": -380,
+        "title": "Thonis steli (I. Nektanebo fermanı)",
+        "language": "egy",
+        "note": "Thonis = Herakleion özdeşliğini kuran buluntu."
+      },
+      {
+        "tier": "institutional",
+        "type": "report",
+        "authors": [
+          "Goddio, Franck"
+        ],
+        "title": "IEASM Ebu Kir Körfezi sualtı araştırmaları",
+        "institution": "IEASM / Hilti Vakfı",
+        "language": "en",
+        "note": "Özel finansmanlı; medya sunumu yoğun biçimde üretilmiş."
+      },
+      {
+        "tier": "unreliable",
+        "type": "webpage",
+        "title": "Sular altına gömülmüş 10 antik şehir ve yerleşim",
+        "url": "https://arkeofili.com/sular-altina-gomulmus-10-antik-sehir-ve-yerlesim/",
+        "language": "tr",
+        "note": "Popüler Türkçe çerçeveyi belgelemek için."
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": []
+  },
+  {
+    "id": "stonehenge-sunak-tasi-iskocya",
+    "claim": "Stonehenge'in Sunak Taşı kuzeydoğu İskoçya kökenlidir, Galler'deki Preseli Tepeleri'nden değil.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "stonehenge",
+      "britanya",
+      "tas-kaynagi"
+    ],
+    "subject": {
+      "site": "Stonehenge",
+      "region": "Wiltshire, Salisbury Ovası",
+      "modern_country": "Birleşik Krallık",
+      "coordinates": {
+        "lat": 51.1789,
+        "lon": -1.8262
+      }
+    },
+    "period": {
+      "earliest": -3000,
+      "latest": -1500,
+      "era_label": "Geç Neolitik - Erken Tunç Çağı",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "languages": [],
+    "disciplines": [
+      "arkeoloji",
+      "jeoloji"
+    ],
+    "people": [
+      {
+        "name": "Clarke, Anthony J. I.",
+        "role": "analyst",
+        "affiliation": "Curtin University",
+        "year": 2024
+      },
+      {
+        "name": "Bevins, Richard E.",
+        "role": "critic",
+        "affiliation": "Aberystwyth University",
+        "year": 2024
+      }
+    ],
+    "popular_claim": "Stonehenge'in bütün mavitaşları Galler'deki Preseli Tepeleri'nden gelir.",
+    "divergence": "2024'e kadar Sunak Taşı da bir kumtaşı olarak mavitaş grubuna dahil edilip Galler kökenli sayılıyordu. Jeokimyasal analiz bunu değiştirdi; popüler ve turistik kaynaklar güncellenmedi.",
+    "divergence_type": [
+      "guncellenmemis",
+      "turizm-kopyalamasi"
+    ],
+    "evidence": [
+      "Taş içindeki zirkon, apatit ve rutil tanelerinin yaş ve kimyası Laurentia kökenli kristalin bir kaynağa işaret ediyor.",
+      "Mesafe ~250 km yerine ~750 km'ye çıkıyor."
+    ],
+    "counter_evidence": [
+      "Aynı yıl yayımlanan bir çalışma taşın Orkney Anakarası kumtaşlarıyla tam eşleşmediğini gösterdi; kaynak İskoçya'nın kuzeydoğusunda geniş bir alan olabilir.",
+      "Taşların insan eliyle mi buzullarla mı taşındığı konusunda azınlıkta ama sürmekte olan bir itiraz var."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Clarke, Anthony J. I.",
+          "Kirkland, Christopher L.",
+          "Bevins, Richard E.",
+          "Ixer, Rob A."
+        ],
+        "year": 2024,
+        "title": "A Scottish provenance for the Altar Stone of Stonehenge",
+        "container": "Nature",
+        "doi": "10.1038/s41586-024-07652-1",
+        "url": "https://www.nature.com/articles/s41586-024-07652-1",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "institutional",
+        "type": "press-release",
+        "year": 2024,
+        "title": "Stonehenge Altar Stone came from Scotland, not Wales",
+        "institution": "University College London",
+        "url": "https://www.ucl.ac.uk/news/2024/aug/stonehenge-altar-stone-came-scotland-not-wales",
+        "language": "en"
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Nash, David J."
+        ],
+        "year": 2020,
+        "title": "Sarsen taşlarının West Woods, Wiltshire kaynağı",
+        "container": "Science Advances",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Tam kaynak lokasyon belirlenmedi.",
+      "Taşıma mekanizması (insan vs buzul) çözülmedi."
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "machu-picchu-gercek-adi",
+    "claim": "İnkaların siteye verdiği ad büyük olasılıkla Huayna Picchu'ydu; Machu Picchu adı Bingham'ın seçimiyle yerleşti.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "machu-picchu",
+      "and-daglari",
+      "adlandirma"
+    ],
+    "subject": {
+      "site": "Machu Picchu",
+      "site_native": "Huayna Picchu",
+      "region": "Urubamba Vadisi, And Dağları",
+      "modern_country": "Peru",
+      "coordinates": {
+        "lat": -13.1631,
+        "lon": -72.545
+      }
+    },
+    "period": {
+      "earliest": 1420,
+      "latest": 1540,
+      "era_label": "İnka İmparatorluğu",
+      "precision": "approximate",
+      "dating_method": [
+        "radiocarbon",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Keçuvaca",
+      "İspanyolca"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "tarih",
+      "dilbilim"
+    ],
+    "people": [
+      {
+        "name": "Amado Gonzales, Donato",
+        "role": "proposer",
+        "affiliation": "Peru Kültür Bakanlığı",
+        "year": 2022
+      },
+      {
+        "name": "Bauer, Brian S.",
+        "role": "proposer",
+        "affiliation": "University of Illinois Chicago",
+        "year": 2022
+      },
+      {
+        "name": "Bingham, Hiram",
+        "role": "discoverer",
+        "affiliation": "Yale University",
+        "year": 1911,
+        "lifespan": "1875-1956"
+      }
+    ],
+    "popular_claim": "Site adı İnkalardan gelir ve Bingham kayıp şehri keşfetmiştir.",
+    "divergence": "Bingham'ın rehberinden aldığı ad en yüksek dağın adıydı. Ayrıca 'keşif' yoktu: yerel halk siteyi biliyor ve tarım için kullanıyordu, ad Bingham gelmeden yedi yıl önce bir atlasta geçiyordu.",
+    "divergence_type": [
+      "somurge-anlatisi",
+      "guncellenmemis"
+    ],
+    "evidence": [
+      "Bingham'ın saha notları, dönem haritaları ve yüzyıllık arazi kayıtları tarandı.",
+      "1904 tarihli bir atlasta 'Huayna Picchu' adlı İnka yerleşimi geçiyor.",
+      "Bingham'a Cusco'dan ayrılmadan önce harabelerin yerini söylediler; 1912'de bir arazi sahibinin oğlu adı Huayna Picchu olarak verdi."
+    ],
+    "counter_evidence": [
+      "Kanıt arşiv belgelerine dayanıyor; yerinde bir yazıt yok, dolayısıyla kesinlik sınırlı."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Amado Gonzales, Donato",
+          "Bauer, Brian S."
+        ],
+        "year": 2022,
+        "title": "The Ancient Inca Town Named Huayna Picchu",
+        "container": "Ñawpa Pacha: Journal of Andean Archaeology",
+        "language": "en"
+      },
+      {
+        "tier": "institutional",
+        "type": "press-release",
+        "year": 2022,
+        "title": "Study reconsiders name of Peru's Machu Picchu",
+        "institution": "University of Illinois Chicago",
+        "url": "https://www.newswise.com/articles/study-reconsiders-name-of-peru-s-machu-picchu",
+        "language": "en"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "machu-picchu-kayip-degildi",
+    "claim": "Machu Picchu hiçbir zaman kayıp değildi; yerel halk siteyi biliyor ve kullanıyordu.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "machu-picchu",
+      "kesif-anlatisi"
+    ],
+    "subject": {
+      "site": "Machu Picchu",
+      "region": "Urubamba Vadisi",
+      "modern_country": "Peru",
+      "coordinates": {
+        "lat": -13.1631,
+        "lon": -72.545
+      }
+    },
+    "period": {
+      "earliest": 1911,
+      "latest": 1912,
+      "era_label": "Modern keşif dönemi",
+      "precision": "exact",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "İspanyolca",
+      "Keçuvaca"
+    ],
+    "disciplines": [
+      "tarih",
+      "arkeoloji"
+    ],
+    "popular_claim": "Bingham 1911'de cangılda kaybolmuş bir şehri keşfetti.",
+    "divergence": "Yerli bilgiye 'keşif' demek, o bilgiyi yok saymanın kibar biçimi. Aynı kalıp Angkor ve Petra için de kullanıldı.",
+    "divergence_type": [
+      "somurge-anlatisi"
+    ],
+    "evidence": [
+      "Yerinde rehberlik eden kişi bölgede yaşayan bir çiftçiydi.",
+      "Site tarım için kullanılıyordu.",
+      "Ad, Bingham'dan yedi yıl önce yayımlanmış bir atlasta geçiyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Amado Gonzales, Donato",
+          "Bauer, Brian S."
+        ],
+        "year": 2022,
+        "title": "The Ancient Inca Town Named Huayna Picchu",
+        "container": "Ñawpa Pacha",
+        "language": "en"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "angkor-lidar-nufus",
+    "claim": "LiDAR taramaları Angkor'un doruk nüfusunu 100-200 binden 750-900 bine çıkardı; sanayi öncesi dünyanın bilinen en büyük yerleşim kompleksidir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "angkor",
+      "guneydogu-asya",
+      "kentlesme"
+    ],
+    "subject": {
+      "site": "Angkor",
+      "region": "Kmer İmparatorluğu, Siem Reap",
+      "modern_country": "Kamboçya",
+      "coordinates": {
+        "lat": 13.4125,
+        "lon": 103.8667
+      }
+    },
+    "period": {
+      "earliest": 802,
+      "latest": 1431,
+      "era_label": "Kmer İmparatorluğu",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "radiocarbon",
+        "typology"
+      ]
+    },
+    "languages": [
+      "Kmerce",
+      "Sanskritçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "mimarlik"
+    ],
+    "people": [
+      {
+        "name": "Evans, Damian",
+        "role": "surveyor",
+        "affiliation": "École française d'Extrême-Orient",
+        "year": 2012
+      }
+    ],
+    "popular_claim": "Angkor Wat cangılda unutulmuş bir tapınaktır.",
+    "divergence": "Angkor hiç kaybolmadı - Budist manastırı olarak sürekli kullanıldı, 16.-17. yy'da Portekizli ve Japon ziyaretçi kayıtları var. 'Unutulmuş tapınak' anlatısı 19. yy Fransız sömürge keşif edebiyatının ürünü. Ayrıca görünen tapınak, şehrin küçük ve dayanıklı bir parçası.",
+    "divergence_type": [
+      "somurge-anlatisi",
+      "hayatta-kalma-yanliligi"
+    ],
+    "evidence": [
+      "2012 ve sonrası LiDAR taramaları 3.000 km2'den fazla alanı haritaladı.",
+      "Tapınakların çevresinde yollar, kanallar, havuzlar ve konut alanlarından oluşan kentsel yayılma ortaya çıktı.",
+      "17. yy'dan kalma bir Japon çizimi mevcut."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Evans, Damian",
+          "Fletcher, Roland"
+        ],
+        "year": 2013,
+        "title": "Uncovering archaeological landscapes at Angkor using lidar",
+        "container": "PNAS",
+        "doi": "10.1073/pnas.1306539110",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1306539110",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Evans, Damian"
+        ],
+        "year": 2007,
+        "title": "A comprehensive archaeological map of the world's largest preindustrial settlement complex at Angkor, Cambodia",
+        "container": "PNAS",
+        "doi": "10.1073/pnas.0702525104",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Nüfus tahmininin aralığı geniş; hane yoğunluğu varsayımlarına duyarlı."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "petra-hazine-bir-mezar",
+    "claim": "Petra'nın 'Hazine' adıyla bilinen yapısı bir anıt mezardır ve ünlü kayaya oyulmuş cepheler esasen nekropolü oluşturur.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "petra",
+      "nabatiler",
+      "adlandirma"
+    ],
+    "subject": {
+      "site": "Petra",
+      "site_native": "El-Hazne (yapı)",
+      "region": "Nabati Krallığı, Edom",
+      "modern_country": "Ürdün",
+      "coordinates": {
+        "lat": 30.3285,
+        "lon": 35.4444
+      }
+    },
+    "period": {
+      "earliest": -100,
+      "latest": 106,
+      "era_label": "Nabati doruğu - Roma ilhakı",
+      "precision": "range",
+      "dating_method": [
+        "typology",
+        "historical-record",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Nabatice",
+      "Grekçe",
+      "Arapça"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "mimarlik",
+      "epigrafi"
+    ],
+    "people": [
+      {
+        "name": "Burckhardt, Johann Ludwig",
+        "role": "discoverer",
+        "affiliation": "-",
+        "year": 1812,
+        "lifespan": "1784-1817"
+      }
+    ],
+    "popular_claim": "Petra kayalara oyulmuş bir şehirdir ve Hazine bir hazine binasıdır.",
+    "divergence": "Ad, tepedeki urnada firavun hazinesi saklandığına dair Bedevi anlatısından geliyor (urnadaki kurşun izleri o denemelerden). Şehrin kendisi - sütunlu cadde, tapınaklar, evler - serbest duran yapılardan oluşuyordu; ziyaretçiler nekropolü gezip şehri gördüğünü sanıyor.",
+    "divergence_type": [
+      "turizm-kopyalamasi",
+      "hayatta-kalma-yanliligi"
+    ],
+    "evidence": [
+      "El-Hazne mimari tipolojisi anıt mezar; muhtemelen kral IV. Aretas için.",
+      "Bölgedeki Bedeviler siteyi biliyor ve kullanıyordu; Burckhardt'ın yaptığı Avrupa'ya haber vermekti."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Nabati arkeolojisi ve Petra mimarisi literatürü",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "El-Hazne'nin kime ait olduğu kesinleşmedi.",
+      "Petra'nın su sistemi kapasitesi ve nüfus tahmini hâlâ tartışmalı."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "chichen-itza-restorasyon-payi",
+    "claim": "El Castillo piramidinin turistlerin fotoğrafladığı yüzü 20. yüzyılda yeniden inşa edilmiştir; diğer yüzler harabe hâlindedir.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "chichen-itza",
+      "mezoamerika",
+      "restorasyon"
+    ],
+    "subject": {
+      "site": "Chichén Itzá",
+      "site_native": "Kukulkán Tapınağı (El Castillo)",
+      "region": "Yucatán, Maya bölgesi",
+      "modern_country": "Meksika",
+      "coordinates": {
+        "lat": 20.6829,
+        "lon": -88.5686
+      }
+    },
+    "period": {
+      "earliest": 800,
+      "latest": 1200,
+      "era_label": "Terminal Klasik - Erken Postklasik",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "typology",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Maya hiyeroglifi",
+      "Yucatek Mayacası"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "mimarlik",
+      "sanat-tarihi"
+    ],
+    "people": [
+      {
+        "name": "Carnegie Institution ekibi",
+        "role": "excavator",
+        "affiliation": "Carnegie Institution of Washington",
+        "year": 1930
+      }
+    ],
+    "popular_claim": "El Castillo, bin yıllık hâliyle ayakta duran bir Maya piramididir.",
+    "divergence": "İkonik görüntü hem hayatta kalanın hem de 20. yüzyılda yeniden inşa edilenin görüntüsü. Turizm fotoğrafçılığı hep restore edilmiş yüzü gösteriyor.",
+    "divergence_type": [
+      "turizm-kopyalamasi",
+      "hayatta-kalma-yanliligi"
+    ],
+    "evidence": [
+      "1920'ler-30'larda Carnegie Institution ve sonrasında INAH kapsamlı restorasyon yaptı.",
+      "Yapının yalnızca bir yüzü tam restore edildi."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "report",
+        "title": "Carnegie Institution ve INAH restorasyon kayıtları",
+        "institution": "INAH",
+        "language": "es"
+      }
+    ],
+    "open_questions": [
+      "Ekinoks yılan gölgesi etkisinin kasıtlı tasarım mı yoksa tesadüf mü olduğu tartışmalı; restorasyonun etkiyi ne ölçüde belirginleştirdiği de açık."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "gobekli-karahan-kronoloji",
+    "claim": "Göbekli Tepe ile Karahan Tepe arasındaki kronolojik öncelik belirlenmiştir.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "gobekli-tepe",
+      "karahan-tepe",
+      "tas-tepeler"
+    ],
+    "subject": {
+      "site": "Göbekli Tepe / Karahan Tepe",
+      "region": "Şanlıurfa, Yukarı Mezopotamya",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 37.2233,
+        "lon": 38.9224
+      }
+    },
+    "period": {
+      "earliest": -9750,
+      "latest": -8000,
+      "era_label": "Çanak Çömleksiz Neolitik A-B",
+      "precision": "disputed",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "languages": [],
+    "disciplines": [
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Schmidt, Klaus",
+        "role": "excavator",
+        "affiliation": "Alman Arkeoloji Enstitüsü",
+        "year": 1995,
+        "lifespan": "1953-2014"
+      },
+      {
+        "name": "Karul, Necmi",
+        "role": "excavator",
+        "affiliation": "İstanbul Üniversitesi / Taş Tepeler",
+        "year": 2021
+      }
+    ],
+    "popular_claim": "Göbekli Tepe dünyanın en eski tapınağı ve bölgedeki benzersiz yapıdır.",
+    "divergence": "Karahan Tepe yüzey alanı olarak daha büyük ve kronoloji çözülmemiş. Göbekli Tepe'nin özel konumu kronolojik ya da boyutsal değil, arkeolojik: 1995'te ilk kazılan olduğu için modelin kırıldığı yer orası oldu.",
+    "divergence_type": [
+      "guncellenmemis",
+      "turizm-kopyalamasi"
+    ],
+    "evidence": [
+      "Taş Tepeler projesi bölgede ~12 çağdaş site tespit etti.",
+      "Karahan Tepe alan olarak Göbekli Tepe'den büyük."
+    ],
+    "counter_evidence": [
+      "Kaynaklarda Karahan Tepe alanı için 10 ile 32,5 hektar arasında çelişkili değerler dolaşıyor; çoğu tur ve haber sitesi.",
+      "İki site de yaklaşık %5 oranında kazılmış - karşılaştırma iki buzdağının görünen uçlarını ölçmek gibi.",
+      "Bazı kaynaklar Karahan'ı MÖ 9750'ye koyup Göbekli'den eski sayıyor, bazıları tersini söylüyor."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Karahan Tepe",
+        "container": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Karahan_Tepe",
+        "language": "en",
+        "accessed": "2026-09-06",
+        "note": "Ara kaynak; birincil kazı yayınlarıyla değiştirilmeli."
+      },
+      {
+        "tier": "institutional",
+        "type": "report",
+        "title": "Taş Tepeler projesi",
+        "institution": "T.C. Kültür ve Turizm Bakanlığı",
+        "language": "tr"
+      }
+    ],
+    "open_questions": [
+      "Hangi site daha eski?",
+      "Karahan Tepe'nin gerçek çağdaş yerleşim alanı nedir?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "kapadokya-tarihlenemez",
+    "claim": "Kapadokya yer altı şehirlerinin oyulma tarihi belirlenebilir.",
+    "status": "unmeasurable",
+    "confidence": "high",
+    "topic": [
+      "kapadokya",
+      "derinkuyu",
+      "tarihleme-sorunu"
+    ],
+    "subject": {
+      "site": "Derinkuyu ve Kapadokya yer altı yerleşimleri",
+      "region": "Kapadokya",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 38.3735,
+        "lon": 34.7345
+      }
+    },
+    "period": {
+      "earliest": -800,
+      "latest": 1000,
+      "era_label": "Frig(?) - Bizans",
+      "precision": "disputed",
+      "dating_method": [
+        "none",
+        "typology",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Grekçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "mimarlik"
+    ],
+    "popular_claim": "Yer altı şehirleri Hititler döneminde, yaklaşık MÖ 2000'de kazılmaya başlandı.",
+    "divergence": "Kayaya oyulmuş mimaride stratigrafi yoktur - malzeme biriktirilmez, çıkarılır. Boşluğun kendisini tarihleyecek bir şey yok. İçeride bulunan eşya, o boşluğun ne zaman oyulduğunu söylemez.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "turizm-kopyalamasi"
+    ],
+    "evidence": [
+      "Belgelenebilen kullanım Bizans dönemi (5.-10. yy): kiliseler, haçlar, mimari formlar.",
+      "En büyük genişleme Arap-Bizans sınır savaşları dönemine denk geliyor."
+    ],
+    "counter_evidence": [
+      "Hitit iddiası yalnızca içeride bulunan eserlere dayanıyor - kanıt değeri düşük.",
+      "Frig iddiası bir makullük argümanı, doğrudan kanıt değil.",
+      "Sık alıntılanan Ksenophon tanıklığı Ermenistan'ı tarif ediyor, Kapadokya'yı değil."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Derinkuyu underground city",
+        "container": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Derinkuyu_underground_city",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "primary",
+        "type": "book",
+        "authors": [
+          "Ksenophon"
+        ],
+        "title": "Anabasis IV",
+        "language": "grc",
+        "note": "Yer altı evlerini tarif eder ama konum Ermenistan."
+      }
+    ],
+    "open_questions": [
+      "Bizans öncesi bir çekirdek var mı - yöntem bu soruya cevap veremiyor."
+    ],
+    "checked": "2026-09-06",
+    "used_in": []
+  },
+  {
+    "id": "kapadokya-mardin-baglantisi",
+    "claim": "Kapadokya yer altı şehirleri tünellerle Mardin'e kadar uzanır.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "kapadokya",
+      "mardin",
+      "sehir-efsanesi"
+    ],
+    "subject": {
+      "region": "Kapadokya - Yukarı Mezopotamya",
+      "modern_country": "Türkiye"
+    },
+    "period": {
+      "precision": "unknown",
+      "dating_method": [
+        "none"
+      ]
+    },
+    "languages": [],
+    "disciplines": [
+      "jeoloji",
+      "arkeoloji"
+    ],
+    "popular_claim": "Yer altı şehirleri Kayseri ve Mardin'e kadar birbirine bağlıdır.",
+    "divergence": "Jeolojik olarak imkânsız. Kapadokya kazısını mümkün kılan volkanik tüf Mardin'e uzanmıyor; Mardin kireçtaşı. Aradaki ~500 km'nin büyük kısmında o kaya yok.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "counter_evidence": [
+      "Mardin'deki yer altı yapıları (Midyat/Matiate) farklı kayada, bağımsız gelişmiş ayrı bir gelenektir - yakınsama, bağlantı değil.",
+      "Derinkuyu-Kaymaklı arasındaki 9 km tünel iddiasında bile yalnızca kısa bölümler kazılmış; uçtan uca doğrulanmış geçit yok."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Derinkuyu underground city",
+        "container": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Derinkuyu_underground_city",
+        "language": "en",
+        "accessed": "2026-09-06"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": []
+  },
+  {
+    "id": "antik-kanon-turizm-kategorisi",
+    "claim": "'Dünyanın en etkileyici antik yapıları' listeleri bir arkeoloji kategorisi değil, turizm kategorisidir.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "yontem",
+      "kanon",
+      "bilim-iletisimi"
+    ],
+    "period": {
+      "earliest": 1800,
+      "latest": 2026,
+      "era_label": "Modern kanon oluşumu",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [],
+    "disciplines": [
+      "bilim-tarihi",
+      "antropoloji"
+    ],
+    "popular_claim": "Bu yapılar ortak bir 'antik gizem' kategorisine aittir.",
+    "divergence": "Seçkiyi üç şey belirliyor: erişilebilirlik, 19. yüzyıl keşif rotaları ve fotojeniklik. Aralarında 11.000 yıl var; Machu Picchu matbaaya Stonehenge'den yakın.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "somurge-anlatisi",
+      "turizm-kopyalamasi"
+    ],
+    "evidence": [
+      "Listedeki her site bugün turistik olarak erişilebilir; savaş bölgelerindekiler kanona girmiyor (Babil ancak 2019'da UNESCO listesine girdi).",
+      "Petra 1812, Angkor 1860'lar, Machu Picchu 1911 - hepsi Avrupa'nın keşif anlatısına girdiklerinde ünlendi.",
+      "Altısı da tek fotoğrafta anlaşılıyor; dağınık yerleşimler ve höyükler listelerde yok."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Urry, John"
+        ],
+        "year": 1990,
+        "title": "The Tourist Gaze",
+        "publisher": "Sage",
+        "language": "en",
+        "note": "Turistik bakisin kanon olusturma mekanizmasi."
+      },
+      {
+        "tier": "institutional",
+        "type": "report",
+        "title": "UNESCO Dunya Mirasi listeleme kriterleri ve cografi dengesizlik tartismasi",
+        "institution": "UNESCO",
+        "language": "en"
+      },
+      {
+        "tier": "unreliable",
+        "type": "webpage",
+        "title": "Türkçe seyahat ve içerik sitelerindeki antik yapı listeleri",
+        "language": "tr",
+        "note": "Kanıt olarak değil, incelenen olgunun kendisi olarak kaydedildi."
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "ayni-cumlede"
+    ]
+  }
+]

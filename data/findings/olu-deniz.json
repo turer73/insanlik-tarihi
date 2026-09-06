@@ -1,0 +1,262 @@
+[
+  {
+    "id": "dss-ester-haric-tum-kitaplar",
+    "claim": "Kumran'da İbranice Kutsal Kitap'ın Ester dışında her kitabından en az bir elyazması parçası bulundu.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "olu-deniz-parsomenleri",
+      "kumran",
+      "metin-elestirisi"
+    ],
+    "evidence": [
+      "Yayımlanmış DJD ciltlerinde kitap bazında envanter mevcut.",
+      "Mezmurlar ~36, Tesniye ~30, Yeşaya ~21 nüsha ile en çok kopyalananlar."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Discoveries in the Judaean Desert serisi, Oxford"
+      }
+    ],
+    "open_questions": [
+      "Ester'in yokluğu tesadüf mü, kasıtlı mı, yoksa kazı örneklemi mi - karara bağlanmadı."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "olu-deniz-parsomenleri"
+    ]
+  },
+  {
+    "id": "dss-isaiah-53-11-isik-varyanti",
+    "claim": "Yeşaya 53:11'de Masoretik metinde bulunmayan 'ışık' kelimesi, Kumran'daki üç ayrı Yeşaya nüshasında ve Septuaginta'da vardır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "olu-deniz-parsomenleri",
+      "metin-elestirisi",
+      "varyant"
+    ],
+    "popular_claim": "Parşömenler Kutsal Kitap'ın değiştirildiğini kanıtladı.",
+    "divergence": "Varyant gerçek ama sonucu tersine işaret ediyor: Masoretik gelenekte bir kelime DÜŞMÜŞ, sonradan eklenmemiş. Aktarımın genel sadakati bu bulguyla zedelenmiyor.",
+    "evidence": [
+      "1QIsaa, 1QIsab ve 4QIsad üç bağımsız tanık.",
+      "Grekçe çeviri de aynı fazlalığı taşıyor - bağımsız dördüncü tanık.",
+      "Bugün ciddi eleştirel çevirilerin çoğu bu ayette Kumran'ı izliyor."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "1QIsaa - Büyük Yeşaya Parşömeni, Kitap Tapınağı"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Emanuel Tov, metin eleştirisi çalışmaları"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "olu-deniz-parsomenleri"
+    ]
+  },
+  {
+    "id": "dss-essene-kimligi",
+    "claim": "Kumran topluluğu Essene tipi bir mezhepti.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "olu-deniz-parsomenleri",
+      "kumran",
+      "kimlik"
+    ],
+    "popular_claim": "Parşömenleri Esseniler yazdı.",
+    "divergence": "Çoğunluk görüşü bu yönde ama 'kesin' değil; popüler kaynaklar tartışmayı hiç aktarmıyor.",
+    "evidence": [
+      "Yaşlı Plinius'un tarif ettiği Essene yerleşiminin coğrafyası birebir tutuyor.",
+      "Josephus ve Philon'un anlattığı âdetler 1QS kurallarıyla örtüşüyor.",
+      "Yerleşimde olağandışı sayıda miqveh ve mürekkep hokkalı oda."
+    ],
+    "counter_evidence": [
+      "Parşömenlerin hiçbirinde 'Essene' kelimesi geçmiyor; topluluk kendine Yahad diyor.",
+      "4. mağara içeriği tek bir mezhep kütüphanesi için fazla çeşitli, çelişkili halakhik pozisyonlar bir arada.",
+      "Paleografi birçok elyazmasının başka yerde yazıldığını gösteriyor.",
+      "De Vaux'nun kazı raporu bütünüyle yayımlanmadı - yorumun dayandığı verinin bir kısmı denetlenemiyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Lawrence Schiffman - Sadduki hipotezi"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Norman Golb - Kudüs kütüphanesi hipotezi"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Jodi Magness - Kumran arkeolojisi"
+      }
+    ],
+    "open_questions": [
+      "Kütüphanenin ne kadarı yerinde üretildi, ne kadarı dışarıdan geldi?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": false,
+    "used_in": [
+      "olu-deniz-parsomenleri"
+    ]
+  },
+  {
+    "id": "dss-bakir-parsomen-hazine-bulunamadi",
+    "claim": "Bakır Parşömen'de (3Q15) tarif edilen 64 hazine yerinin hiçbiri bulunamadı.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "olu-deniz-parsomenleri",
+      "bakir-parsomen"
+    ],
+    "evidence": [
+      "Tarifler bugün var olmayan yerel işaretlere dayanıyor.",
+      "Son kayıt, belgenin bir kopyasının gömüldüğü yeri tarif ediyor; o da bulunamadı."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "3Q15, Ürdün Arkeoloji Müzesi, Amman"
+      }
+    ],
+    "open_questions": [
+      "Metin gerçek bir envanter mi, savaş dönemi kayıt mı, yoksa folklorik mi - toplam miktar antik dünya ölçeğinde inanılmayacak kadar büyük."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "olu-deniz-parsomenleri"
+    ]
+  },
+  {
+    "id": "dss-museum-of-the-bible-sahte",
+    "claim": "Museum of the Bible'ın satın aldığı 16 Ölü Deniz parçasının tamamı modern sahteciliktir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "olu-deniz-parsomenleri",
+      "sahtecilik",
+      "provenans"
+    ],
+    "evidence": [
+      "Mürekkep yüzeydeki çatlaklara akmış - yani yazı, deri yıprandıktan SONRA yazılmış.",
+      "Malzeme antik parşömen değil, muhtemelen Roma dönemi yazısız deri.",
+      "Bazı parçalarda modern hayvansal tutkal ve amber kalıntısı.",
+      "2018'de Almanya'daki BAM beş parçayı, 2020'de bağımsız inceleme 16'sının tamamını sahte ilan etti."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "title": "Colette Loll / Art Fraud Insights raporu, Mart 2020"
+      },
+      {
+        "tier": "institutional",
+        "title": "BAM (Bundesanstalt für Materialforschung), 2018"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Årstein Justnes, The Lying Pen of Scribes projesi"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "olu-deniz-parsomenleri"
+    ]
+  },
+  {
+    "id": "dss-7q5-markos-iddiasi",
+    "claim": "7Q5 parçası Markos İncili'nden bir bölümdür.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "olu-deniz-parsomenleri",
+      "yeni-ahit"
+    ],
+    "popular_claim": "Kumran'da Yeni Ahit parçası bulundu.",
+    "divergence": "1972'de öne sürülen bir iddia popüler apolojetik literatürde kanıtlanmış gibi dolaşıyor.",
+    "counter_evidence": [
+      "Parçada yirmiden az harf var.",
+      "Okunabilir tek tam kelime yok.",
+      "Eşleştirme bir harf düzeltmesine dayanıyor.",
+      "Uzmanların ezici çoğunluğu reddediyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "José O'Callaghan (1972) - özgün iddia"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Alan geneli reddi; papirolojik değerlendirmeler"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "olu-deniz-parsomenleri"
+    ]
+  },
+  {
+    "id": "dss-mulkiyet-ihtilafi",
+    "claim": "Ölü Deniz Parşömenleri'nin mülkiyeti hukuken çözülmemiştir.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "olu-deniz-parsomenleri",
+      "mulkiyet",
+      "miras-hukuku"
+    ],
+    "evidence": [
+      "Parşömenler 1947-56'da Ürdün yönetimindeki Batı Şeria ve Doğu Kudüs'te bulundu.",
+      "İsrail 1967'de Rockefeller Müzesi'ni ele geçirdiğinde koleksiyonu devraldı.",
+      "Ürdün ve Filistin Yönetimi iade talep ediyor.",
+      "Uluslararası sergiler zaman zaman hukuki itirazla karşılaşıyor."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "title": "İsrail Eski Eserler Kurumu (IAA)"
+      }
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "olu-deniz-parsomenleri"
+    ]
+  },
+  {
+    "id": "dss-yayin-tikanmasi",
+    "claim": "4. mağara materyalinin büyük kısmı keşiften kırk yıl sonra hâlâ yayımlanmamıştı; tıkanma 1991'de kırıldı.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "olu-deniz-parsomenleri",
+      "bilim-sosyolojisi"
+    ],
+    "popular_claim": "Vatikan ya da kilise parşömenleri sakladı.",
+    "divergence": "Gecikme gerçekti ama sebebi örtbas değil, akademik tekel ve kurumsal hantallıktı. Yayımlanan metinlerde Hristiyanlığı sarsan bir şey çıkmadı.",
+    "evidence": [
+      "1953'te sekiz kişilik kapalı bir ekibe verildi; yayın hakkı öğrencilere miras kalıyordu.",
+      "1990'da Emanuel Tov baş editör oldu ve ekibi genişletti.",
+      "1991'de üç kırılma: Wacholder-Abegg konkordanstan rekonstrüksiyon, Huntington Kütüphanesi mikrofilmleri açtı, Biblical Archaeology Society fotoğraf baskısı yayımladı.",
+      "DJD serisi 40 ciltle 2009'da esasen tamamlandı."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "title": "Discoveries in the Judaean Desert yayın tarihçesi"
+      },
+      {
+        "tier": "institutional",
+        "title": "Leon Levy Dead Sea Scrolls Digital Library, 2011"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "olu-deniz-parsomenleri"
+    ]
+  }
+]

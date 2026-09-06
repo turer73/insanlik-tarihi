@@ -1,0 +1,300 @@
+[
+  {
+    "id": "tufan-evrensel-degil",
+    "claim": "Nuh tipi tufan anlatısı (yok edici, uyarılan kurtulan, gemi, kuş testi) evrensel değildir; Yakındoğu'ya özgü bir metin kümesidir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "tufan",
+      "karsilastirmali-mitoloji"
+    ],
+    "popular_claim": "Bütün antik uygarlıklarda tufan anlatısı vardır.",
+    "divergence": "İddia 19. yüzyılda misyoner derlemeleri ve karşılaştırmalı folklor çalışmalarıyla DERLENDİ. Bir anlatı aranırsa bulunur; belirsiz su anlatıları 'tufan miti' olarak sınıflandı. Derleyenlerin önemli kısmı din adamıydı ve Tekvin'in evrensel bir hatıraya dayandığını göstermek teolojik olarak değerliydi.",
+    "evidence": [
+      "Mısır'da tufan miti yok.",
+      "Japonya'da (Kojiki, Nihon Shoki) yok.",
+      "Sahra altı Afrika'da belirgin biçimde seyrek.",
+      "Çin'inki yapısal olarak farklı bir anlatı.",
+      "Amerika kıtası kayıtları fetih sonrası."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Stephanie Dalley, Myths from Mesopotamia"
+      },
+      {
+        "tier": "unreliable",
+        "note": "Kaynak olarak değil, popüler iddianın kökeni olarak kaydedildi.",
+        "title": "James Frazer, Folk-Lore in the Old Testament (1918)"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-misirda-yok",
+    "claim": "Mısır mitolojisinde insanlığı yok eden bir tufan anlatısı yoktur.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "tufan",
+      "misir"
+    ],
+    "evidence": [
+      "Üç bin yıllık devasa yazılı külliyatta böyle bir anlatı bulunmuyor.",
+      "En yakın metin Gök İneği Kitabı'ndaki İnsanlığın Yok Edilişi - ama araç su değil, kırmızıya boyanmış bira; insanlık boğularak değil, tanrıça sarhoş edilerek KURTARILIYOR.",
+      "İlksel su kavramı (Nun) var ama bu kozmogoni; Tabut Metni'ndeki Atum ifadesi GELECEĞE dair, geçmişte yaşanmış bir tufana değil."
+    ],
+    "counter_evidence": [],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Erik Hornung, Gök İneği Kitabı çalışması"
+      }
+    ],
+    "open_questions": [
+      "Yıllık Nil taşkını kültürünün merkezinde olmasına rağmen neden yok - kültürel açıklama net değil."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-cin-yapisi-ters",
+    "claim": "Çin'in Gun-Yu anlatısı yapısal olarak Nuh tipi tufan anlatısı değildir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "tufan",
+      "cin"
+    ],
+    "popular_claim": "Çin'de de tufan miti vardır.",
+    "divergence": "Teknik olarak doğru, analitik olarak yanıltıcı. 'Tufan' etiketi yapısal farkı gizliyor.",
+    "evidence": [
+      "Gemi yok, kanal var - Yu suyu dizginlemek yerine denize akıtıyor.",
+      "Ceza yok; su tanrısal hüküm değil çözülecek problem.",
+      "İnsanlık yok olmuyor, yerinde kalıyor.",
+      "Sonuç kurtuluş değil hanedan ve yönetme meşruiyeti."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Mark Edward Lewis, The Flood Myths of Early China"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-kus-testi-bagimlilik-kaniti",
+    "claim": "Kuş salma motifi, Gılgamış XI ile Tekvin arasındaki metinsel bağımlılığın filolojik kanıtıdır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "tufan",
+      "mezopotamya",
+      "metin-elestirisi"
+    ],
+    "evidence": [
+      "Karanın çıkıp çıkmadığını anlamak için sırayla kuş salmak bir olayın değil, bir ANLATININ parçası - keyfî edebî çözüm.",
+      "Keyfî ayrıntılar bağımsız olarak iki kez icat edilmez.",
+      "Tekvin'de sıra değişmiş (kuzgun sonra güvercin) ama mantık aynı; zeytin yaprağı Levant'ın kendi katkısı."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Gılgamış Destanı XI. tablet"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Andrew George, Gılgamış eleştirel edisyonu"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-atrahasis-sebep-gurultu",
+    "claim": "Atrahasis'te tufanın sebebi ahlaki bozulma değil, insanların gürültüsünün Enlil'in uykusunu kaçırmasıdır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "tufan",
+      "mezopotamya"
+    ],
+    "evidence": [
+      "Metin doğrudan böyle diyor: insanlığın uğultusu ağır geldi, uyku kaçtı.",
+      "Tekvin aynı olay örgüsünü alıp ahlaki çerçeveye oturtuyor - ödünç alıp yeniden anlamlandırma."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Atrahasis, I. tablet"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "W. G. Lambert ve A. R. Millard, Atrahasis edisyonu"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-popol-vuh-fetih-sonrasi",
+    "claim": "Popol Vuh'un tufan bölümü bağımsız Kolomb öncesi kanıt sayılamaz.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "tufan",
+      "mezoamerika",
+      "provenans"
+    ],
+    "popular_claim": "Mayalarda da tufan miti vardı.",
+    "divergence": "Metin ~1555'te, Latin alfabesiyle, Hristiyanlaşmış K'iche' yazarlarca, fetihten ~30 yıl sonra yazıldı. Uzmanların çoğu metnin ciddi Kolomb öncesi malzeme taşıdığında hemfikir, ama TUFAN ÖĞESİ kirlenme kuşkusunun en yüksek olduğu yer.",
+    "counter_evidence": [
+      "Metnin bütünü uydurma değil; birçok bölüm Kolomb öncesi ikonografiyle örtüşüyor."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Popol Vuh, Ximénez kopyası (~1701)"
+      }
+    ],
+    "open_questions": [
+      "Kolomb öncesi bir tufan geleneği var mıydı - fetih öncesi kaynak olmadığı için cevaplanamıyor."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-ur-katmani-tek-olay-degil",
+    "claim": "Mezopotamya'daki arkeolojik tufan katmanları tek bir küresel olaya değil, tekrar eden yerel taşkınlara işaret eder.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "tufan",
+      "jeoarkeoloji",
+      "mezopotamya"
+    ],
+    "popular_claim": "Woolley Ur'da Nuh Tufanı'nın kanıtını buldu.",
+    "divergence": "Woolley 1929'da metrelerce alüvyon katmanı bulup Tufan olarak duyurdu. Sonraki kazılar Kiş, Şuruppak ve Uruk'ta da katmanlar buldu - ama FARKLI TARİHLERDE. Duyuru popüler kültürde kaldı, düzeltme kalmadı.",
+    "evidence": [
+      "Farklı sitelerde farklı tarihli katmanlar.",
+      "Mezopotamya bir taşkın ovası; şehirler defalarca sular altında kaldı."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Leonard Woolley, Ur kazıları (1929)"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-karadeniz-felaket-hipotezi",
+    "claim": "Akdeniz ~7.600 yıl önce Boğaz'ı yarıp Karadeniz'i ani biçimde doldurdu.",
+    "status": "minority",
+    "confidence": "medium",
+    "topic": [
+      "tufan",
+      "jeoloji",
+      "karadeniz"
+    ],
+    "evidence": [
+      "Ryan ve Pitman (1997) sediment ve fauna değişimine dayanarak öne sürdü.",
+      "Popüler kültürde geniş kabul gördü."
+    ],
+    "counter_evidence": [
+      "Sonraki jeolojik çalışmalar su seviyesi yükselişinin çok daha KADEMELİ olduğuna işaret etti.",
+      "Felaket versiyonu bugün azınlık görüşü."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Ryan & Pitman (1997)"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Sonraki jeolojik itirazlar, ör. Giosan vd."
+      }
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-manu-bagimsizligi",
+    "claim": "Hindistan'daki Manu ve balık anlatısı Mezopotamya'dan bağımsız olarak doğmuştur.",
+    "status": "unknown",
+    "confidence": "medium",
+    "topic": [
+      "tufan",
+      "hindistan"
+    ],
+    "evidence": [
+      "Śatapatha Brāhmaṇa (~MÖ 700) ve sonraki Puranalar'da mevcut."
+    ],
+    "counter_evidence": [
+      "İndus-Mezopotamya ticaret bağlantısı vardı; aktarım fiziksel olarak mümkün.",
+      "Doğrudan metinsel bağımlılık kanıtı yok - kuş testi gibi keyfî bir ortak ayrıntı bulunmuyor."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Śatapatha Brāhmaṇa 1.8.1"
+      }
+    ],
+    "open_questions": [
+      "Karara bağlanmamış; her iki yön de savunulabilir."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  },
+  {
+    "id": "tufan-avustralya-deniz-seviyesi-hafizasi",
+    "claim": "Bazı Aborjin sözlü gelenekleri ~7.000 yıl öncesine ait kıyı çizgisi değişimini koruyor olabilir.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "tufan",
+      "avustralya",
+      "sozlu-gelenek"
+    ],
+    "evidence": [
+      "Nunn ve Reid (2016) çok sayıda gelenekte deniz yükselmesi motifi tespit etti ve jeolojik kıyı verileriyle eşleştirdi."
+    ],
+    "counter_evidence": [
+      "Sözlü aktarımın 7.000 yıl bilgi taşıyabileceği tartışmalı.",
+      "Eşleştirme sonradan yapılan bir yorum; test edilebilirliği sınırlı."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Nunn & Reid, Australian Geographer (2016)"
+      }
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "tufan-bilmecesi"
+    ]
+  }
+]

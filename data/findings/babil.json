@@ -1,0 +1,313 @@
+[
+  {
+    "id": "babil-ad-etimolojisi",
+    "claim": "Akadca Bab-ilim 'Tanrı'nın Kapısı' demektir; Tekvin'in bunu İbranice balal ('karıştırmak') fiiline bağlaması dilbilimsel değil polemik bir kelime oyunudur.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "babil",
+      "dilbilim",
+      "polemik"
+    ],
+    "popular_claim": "Babil, 'karışıklık' anlamına gelir.",
+    "divergence": "Düşman bir metnin kasıtlı kelime oyunu, üç bin yıl sonra şehrin dünya çapında bilinen anlamı oldu. Etimoloji yanlış ama yanlışlığı kaza değil.",
+    "evidence": [
+      "Akadca Bab-ilim ile İbranice balal arasında dilbilimsel akrabalık yok; yalnızca sesçe benziyorlar.",
+      "Tekvin 11:9 bağlantıyı açıkça kuruyor."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Tekvin 11:1-9"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Akadca sözlük ve Asurbilim literatürü"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "babil",
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "babil-etemenanki-yuksekligi",
+    "claim": "Etemenanki zigguratının yüksekliği belirlenebilir.",
+    "status": "unmeasurable",
+    "confidence": "high",
+    "topic": [
+      "babil",
+      "etemenanki",
+      "olcum"
+    ],
+    "popular_claim": "Babil Kulesi 91 metre yüksekliğindeydi.",
+    "divergence": "İki kaynak %50 farkla çelişiyor ve yapı bugün yok olduğu için yeni ölçüm mümkün değil. Popüler kaynaklar hangisi etkileyiciyse onu yazıyor.",
+    "evidence": [
+      "1913 arazi ölçümü ve temel izlerinden ~61 m tahmini.",
+      "Esagila Tableti ~91 m ve yedi kat veriyor."
+    ],
+    "counter_evidence": [
+      "Esagila Tableti Helenistik dönemden kalma bir kopya; yapı zaten harabeyken yazılmış ve ideal ölçüler vermiş olabilir.",
+      "Yapı tuğlaları yüzyıllar boyunca sökülüp götürüldü; yerinde suyla dolmuş bir çukur var."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Robert Koldewey, Babil kazıları (1899-1917)"
+      },
+      {
+        "tier": "primary",
+        "title": "Esagila Tableti"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "babil"
+    ]
+  },
+  {
+    "id": "babil-kuleyi-iskender-sokturdu",
+    "claim": "Etemenanki'nin kalıntısı, onu yeniden inşa etmek isteyen Büyük İskender tarafından söktürüldü.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "babil",
+      "etemenanki",
+      "iskender"
+    ],
+    "evidence": [
+      "İskender zemini yeni yapı için temizletti.",
+      "MÖ 323'te Babil'de öldü; yeniden inşa hiç başlamadı."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Klasik dönem kaynakları (Strabon, Arrianos)"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "babil"
+    ]
+  },
+  {
+    "id": "babil-nudimmud-paraleli",
+    "claim": "Sümerce 'Enmerkar ve Aratta Beyi' metnindeki Nudimmud pasajı Babil Kulesi'ndeki dil karışması motifinin öncülüdür.",
+    "status": "refuted",
+    "confidence": "medium",
+    "topic": [
+      "babil",
+      "sumer",
+      "karsilastirmali-mitoloji",
+      "ceviri-tartismasi"
+    ],
+    "popular_claim": "Babil Kulesi hikâyesinin çok daha eski bir Sümer versiyonu vardır.",
+    "divergence": "Kramer'in 20. yüzyıl ortası okuması pasajı bir BOZMA eylemi sayıp Tekvin ile eşleştirdi ve popüler kaynaklara yerleşti. Oxford ETCSL'deki standart çeviride pasaj dillerin BİRLEŞMESİNİ diliyor - anlam ters yönde.",
+    "evidence": [
+      "ETCSL çevirisi: bütün halklar Enlil'e tek bir dille seslensin; Enki konuşmayı değiştirsin ve insanlığın konuşması gerçekten tek olsun.",
+      "Pasaj dilek kipinde ve altın çağ betimlemesi içinde geçiyor."
+    ],
+    "counter_evidence": [
+      "Sümerce fiilin kipi ve zamanı üzerinde uzmanlar arasında görüş farkı sürüyor; tartışma tamamen kapanmış değil."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "url": "https://etcsl.orinst.ox.ac.uk/section1/tr1823.htm",
+        "title": "ETCSL 1.8.2.3, Enmerkar and the lord of Aratta, satır 134-155"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Samuel Noah Kramer - eski okuma"
+      }
+    ],
+    "open_questions": [
+      "Fiil kipi tartışması nasıl çözülecek - yeni tablet parçası gerekebilir."
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "babil"
+    ]
+  },
+  {
+    "id": "babil-asma-bahceler-ninova",
+    "claim": "Asma Bahçeler Babil'de değil Ninova'daydı ve Sennacherib tarafından yaptırıldı.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "babil",
+      "ninova",
+      "asma-bahceler"
+    ],
+    "popular_claim": "Asma Bahçeler Nebukadnezar tarafından Babil'de yaptırıldı.",
+    "divergence": "Dünyanın yedi harikasından yeri en şüpheli olanı; popüler anlatı hiç sorgulanmadan tekrarlanıyor.",
+    "evidence": [
+      "Hiçbir Babil metni bahçelerden söz etmiyor - Nebukadnezar'ın uzun inşaat yazıtları dahil.",
+      "Sennacherib Ninova'daki bahçesini ve ~50 km uzaktan su getiren sistemi kendi kaydetti.",
+      "Koldewey Babil'i 18 yıl kazdı ve ikna edici bir kalıntı bulamadı.",
+      "Ninova'da su kemeri kalıntıları ve su yükseltme düzeneğine dair betimlemeler var."
+    ],
+    "counter_evidence": [
+      "İki şehirde de bahçenin arkeolojik kanıtı yok - tez sorunu çözmüyor, yer değiştiriyor.",
+      "Eleştirmenler Dalley'in Klasik kaynakları seçici okuduğunu söylüyor.",
+      "Antik yazarların 'Babil' demesi tümüyle yok sayılamaz; ad bölgeyi geniş anlamda karşılıyor olabilir."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Stephanie Dalley, The Mystery of the Hanging Garden of Babylon (Oxford, 2013)"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Dalley'e yöneltilen metodolojik eleştiriler"
+      }
+    ],
+    "open_questions": [
+      "Bahçelerin tümüyle edebi bir abartı olma ihtimali masadan kalkmadı."
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "babil",
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "babil-60lik-sistem-bugun",
+    "claim": "Bugün kullandığımız 60 dakikalık saat ve 360 derecelik çember Mezopotamya'nın altmışlık taban sisteminden gelir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "babil",
+      "matematik",
+      "sureklilik"
+    ],
+    "evidence": [
+      "Sümer kökenli altmışlık taban, Babil matematiğiyle sistemleşti ve Yunan astronomisi üzerinden aktarıldı."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Mezopotamya matematiği literatürü"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "babil"
+    ]
+  },
+  {
+    "id": "babil-yamuk-yontemi",
+    "claim": "Babilli gökbilimciler Jüpiter'in konumunu hız-zaman grafiğinin altındaki alanı yamuk olarak hesaplayarak buluyordu.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "babil",
+      "astronomi",
+      "matematik"
+    ],
+    "popular_claim": "Bu geometrik yöntem 14. yüzyıl Oxford'unda doğdu.",
+    "divergence": "2016'da çivi yazılı tabletlerde gösterildi; yöntem yaklaşık 1.400 yıl daha eski çıktı.",
+    "evidence": [
+      "Çivi yazılı tabletlerde hesap adımları izlenebiliyor.",
+      "Astronomi Günlükleri ~MÖ 7. yy'dan MÖ 1. yy'a, yaklaşık 700 yıl kesintisiz gözlem kaydı içeriyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Mathieu Ossendrijver, Science (2016)"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "babil"
+    ]
+  },
+  {
+    "id": "babil-herodot-gitti-mi",
+    "claim": "Herodot Babil'i kendi gözleriyle gördü.",
+    "status": "unknown",
+    "confidence": "medium",
+    "topic": [
+      "babil",
+      "kaynak-elestirisi",
+      "herodot"
+    ],
+    "popular_claim": "Herodot'un Babil betimlemesi görgü tanıklığıdır.",
+    "divergence": "Verdiği sur ölçüleri fiziksel olarak mümkün değil ve arkeolojik kalıntılarla uyuşmuyor; betimlemelerinde şehri görmüş birinden beklenmeyecek hatalar var.",
+    "counter_evidence": [
+      "Ölçüler dönemin hiçbir yapı tekniğiyle uyuşmuyor.",
+      "Muhtemelen ikinci elden, zaten büyütülmüş anlatılara dayandı."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Herodot, Tarihler I"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "babil",
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "babil-istar-kapisi-berlin",
+    "claim": "İştar Kapısı Berlin'deki Pergamon Müzesi'ndedir ve Irak iadesini talep etmektedir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "babil",
+      "mulkiyet",
+      "miras-hukuku"
+    ],
+    "evidence": [
+      "Koldewey kazısından çıkan sırlı tuğlalar Almanya'ya götürüldü, 1930'larda yeniden kuruldu.",
+      "Müzede sergilenen yalnızca küçük ön kapı; büyük olan depoda.",
+      "Babil UNESCO Dünya Mirası listesine ancak 2019'da girdi."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "title": "Pergamon Museum, Berlin"
+      },
+      {
+        "tier": "institutional",
+        "title": "UNESCO Dünya Mirası, Babil (2019)"
+      }
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "babil",
+      "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "babil-modern-tahribat",
+    "claim": "Babil sahası 1980'lerdeki yeniden inşa ve 2003 sonrası askerî üs nedeniyle geri dönülmez hasar gördü.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "babil",
+      "miras-tahribati"
+    ],
+    "evidence": [
+      "Saddam Hüseyin Nebukadnezar'ın sarayının kalıntıları üzerine, kendi adı damgalı tuğlalarla inşa ettirdi.",
+      "2003-2004'te koalisyon güçleri doğrudan alanın üzerine üs kurdu.",
+      "UNESCO raporunda arkeolojik tabakayı kesen hendekler, kum torbalarına doldurulan arkeolojik dolgu, ezilen 2.600 yıllık tuğla döşemeler ve İştar Kapısı kabartmalarında tahribat belgelendi."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "title": "UNESCO Babil hasar raporu (2009)"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "babil"
+    ]
+  }
+]

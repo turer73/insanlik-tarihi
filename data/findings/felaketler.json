@@ -1,0 +1,299 @@
+[
+  {
+    "id": "felaket-milankovic-donguleri",
+    "claim": "Buzul çağlarının ritmini Dünya'nın yörünge ve eksen salınımları (Milanković döngüleri) sürüyor.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "iklim",
+      "buzul-caglari",
+      "astronomi"
+    ],
+    "evidence": [
+      "Basıklık ~100 bin ve ~413 bin yıl, eğiklik ~41 bin yıl, presesyon ~19-23 bin yıl.",
+      "1976'da derin deniz çökel karotlarındaki izotop kayıtları bu periyotları doğrudan gösterdi."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Hays, Imbrie & Shackleton, Science (1976) - 'Pacemaker of the Ice Ages'"
+      }
+    ],
+    "open_questions": [
+      "100 bin yıllık sinyal fiziksel olarak en zayıf zorlama olmasına rağmen kaydı yönetiyor - '100 bin yıl problemi' açık."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-orta-pleyistosen-gecisi",
+    "claim": "Buzul çağı döngüleri ~1,2-0,8 milyon yıl önce 41 bin yıldan 100 bin yıla geçti; nedeni bilinmiyor.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "iklim",
+      "buzul-caglari"
+    ],
+    "evidence": [
+      "Geçiş çökel kayıtlarında net biçimde görülüyor.",
+      "Yörünge zorlaması değişmedi; değişen şey iklimin verdiği yanıt."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Orta Pleyistosen Geçişi literatürü"
+      }
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-yok-olus-volkanizma",
+    "claim": "Beş büyük kitlesel yok oluşun en az üçü, muhtemelen dördü büyük magmatik bölgelerle (LIP) örtüşür; göktaşı istisnadır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "yok-olus",
+      "volkanizma",
+      "jeoloji"
+    ],
+    "popular_claim": "Kitlesel yok oluşları göktaşları yaptı.",
+    "divergence": "Chicxulub sinematik olduğu için popüler kültürde yok oluşun prototipi oldu; volkanizma-karbon döngüsü mekanizması görünmez kaldı.",
+    "evidence": [
+      "Permiyen-Triyas (~252 My): Sibirya Trapları, kömür ve evaporit yataklarına sokularak CO2, kükürt ve halokarbon saldı; deniz türlerinin ~%81'i.",
+      "Triyas-Jura (~201 My): CAMP volkanizması.",
+      "K-Pg (~66 My): Chicxulub ile birlikte Dekkan Trapları."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Büyük Magmatik Bölgeler ve yok oluş korelasyonu literatürü"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-chicxulub-dekkan-paylari",
+    "claim": "K-Pg yok oluşunda Chicxulub çarpması ile Dekkan volkanizmasının katkı payları belirlenmiştir.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "yok-olus",
+      "k-pg"
+    ],
+    "evidence": [
+      "Çarpmanın kesin etkisi iridyum katmanı ve krater ile sabit.",
+      "Dekkan volkanizması ekosistemi önceden zayıflatmış olabilir."
+    ],
+    "counter_evidence": [
+      "İki olayın tarihlendirme hassasiyeti sınırda; hangisinin ne kadar katkı yaptığı ayrıştırılamıyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Alvarez vd. (1980) - iridyum katmanı"
+      }
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-genc-dryas-carpma-hipotezi",
+    "claim": "Genç Dryas soğuması bir kuyruklu yıldız hava patlamasıyla başladı.",
+    "status": "minority",
+    "confidence": "high",
+    "topic": [
+      "iklim",
+      "genc-dryas",
+      "tartismali-hipotez"
+    ],
+    "popular_claim": "Bilim bunu reddediyor çünkü yeni fikirleri hep reddeder.",
+    "divergence": "Popüler yapımlar bu hipotezi Wegener ve Bretz vakalarının yanına aynı kesinlikte koyuyor. Fark şu: o ikisi mekanizma bulununca kazandı; bu hipotezin bulguları bağımsız laboratuvarlarda tekrarlanamadı.",
+    "evidence": [
+      "Platin anomalisi gerçek ve ilginç.",
+      "Firestone vd. (2007) nanoelmas, platin ve 'siyah örtü' kanıtı sundu."
+    ],
+    "counter_evidence": [
+      "Nanoelmas tespitleri bağımsız laboratuvarlarda tutarlı sonuç vermedi.",
+      "On yılı aşkın süredir tekrarlanabilirlik sorunu sürüyor.",
+      "Ana akım açıklama hâlâ erime suyunun Atlantik dolaşımını bozması."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Firestone vd. (2007) - özgün hipotez"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Tekrarlanabilirlik eleştirileri"
+      }
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-toba-darbogazi",
+    "claim": "Toba süpervolkanı (~74.000 yıl önce) insan nüfusunda ciddi bir darboğaz yarattı.",
+    "status": "refuted",
+    "confidence": "medium",
+    "topic": [
+      "yok-olus",
+      "insan-evrimi",
+      "volkanizma"
+    ],
+    "popular_claim": "Toba insanlığı birkaç bin kişiye düşürdü.",
+    "divergence": "1998'de öne sürülen hipotez popüler bilim yayınlarında yerleşti; zayıflatan arkeolojik kanıtlar aynı yaygınlıkta aktarılmadı.",
+    "evidence": [
+      "Ambrose (1998) genetik darboğaz verileriyle ilişkilendirdi."
+    ],
+    "counter_evidence": [
+      "Afrika'da (Pinnacle Point, Malavi Gölü karotları) patlama boyunca süren yerleşim izleri bulundu.",
+      "İddia büyük ölçüde zayıfladı."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Ambrose (1998) - özgün hipotez"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Sonraki arkeolojik süreklilik kanıtları"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-miyake-993-tarihleme",
+    "claim": "993 CE Miyake olayının ağaç halkalarındaki imzası, Kanada'daki Viking yerleşimini tam olarak 1021 yılına tarihledi.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "gunes",
+      "tarihleme-yontemi",
+      "vikingler"
+    ],
+    "evidence": [
+      "993-994 aşırı güneş parçacık olayı dünya çapında ağaç halkalarında eşzamanlı karbon-14 imzası bıraktı.",
+      "L'Anse aux Meadows keresteğinde imza bulunup halkalar sayıldı."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Kuitems vd., Nature (2021)"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Fusa Miyake vd. (2012) - olayın keşfi"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-wegener-mekanizma-dersi",
+    "claim": "Wegener'in kıta sürüklenmesi kuramı ~50 yıl reddedildi çünkü kanıtı iyi ama mekanizması yanlıştı.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "bilim-sosyolojisi",
+      "levha-tektonigi"
+    ],
+    "popular_claim": "Bilim çevresi Wegener'i sırf aykırı olduğu için susturdu.",
+    "divergence": "Reddedenler haksız değildi: Wegener kıtaların okyanus kabuğunu yararak ilerlediğini savunuyordu ve fizikçiler bunun imkânsız olduğunu gösterdi. Wegener eksiği kendisi de biliyordu.",
+    "evidence": [
+      "Kanıtları sağlamdı: fosil dağılımı, dağ kuşakları, tropik bölgelerde buzul çökelleri, Antarktika'da kömür.",
+      "1963'te manyetik şeritler mekanizmayı verince tartışma 33 yılda kapandı.",
+      "Ortelius 1596'da, Bacon 1620'de kıyı uyumuna dikkat çekmişti - gözlem 400 yıl eskiydi."
+    ],
+    "sources": [
+      {
+        "tier": "primary",
+        "title": "Wegener, Die Entstehung der Kontinente und Ozeane (1915)"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Vine & Matthews, Nature (1963)"
+      },
+      {
+        "tier": "peer-reviewed",
+        "title": "Hess (1962), 'History of Ocean Basins'"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-bretz-missoula",
+    "claim": "Washington eyaletindeki Channeled Scablands'i tekrarlanan buzul gölü taşkınları oydu; Bretz ~40 yıl reddedildi.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "bilim-sosyolojisi",
+      "jeoloji",
+      "buzul-selleri"
+    ],
+    "evidence": [
+      "Bretz 1923'te önerdi; jeolojinin 'yavaş ve kademeli' doktrini felaket açıklamalarını dışlıyordu.",
+      "Suyun kaynağı sonradan bulundu: Montana'da buz barajı arkasındaki dev buzul gölü, defalarca patlamış.",
+      "Her taşkında ~2.500 km3'e varan su.",
+      "Bretz 1979'da 96 yaşında mesleğin en büyük madalyasını aldı."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "J Harlen Bretz (1923) ve sonraki doğrulama literatürü"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "hatirlamadigimiz-felaketler"
+    ]
+  },
+  {
+    "id": "felaket-insan-arsivi-5200-yil",
+    "claim": "İnsanlığın yazılı tanıklık arşivi ~5.200 yıldır ve bu yazıda ele alınan hiçbir jeolojik felakete yetişmez.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "yontem",
+      "derin-zaman"
+    ],
+    "evidence": [
+      "Yazı Uruk'ta ~MÖ 3200'de başlıyor.",
+      "En yakın olay 8,2 bin yıl olayı - yazıdan ~3.000 yıl önce.",
+      "Göbekli Tepe (~MÖ 9500) Genç Dryas bittikten ~200 yıl SONRA inşa edildi."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "title": "Yazının kökeni ve buz karotu kronolojisi literatürü"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "hatirlamadigimiz-felaketler",
+      "ayni-cumlede"
+    ]
+  }
+]
