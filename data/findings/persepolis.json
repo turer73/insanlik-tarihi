@@ -4,18 +4,65 @@
     "claim": "Persepolis'i köleler inşa etmedi; Kale Tabletleri ücretli, tayınla ödenen ve kadınları da içeren örgütlü bir işgücü belgeliyor.",
     "status": "established",
     "confidence": "high",
-    "topic": ["persepolis", "iran", "ahamenis", "emek-tarihi"],
-    "subject": { "site": "Persepolis", "site_native": "Pārsa", "region": "Fars, Ahameniş İmparatorluğu", "modern_country": "İran", "coordinates": { "lat": 29.9354, "lon": 52.8916 } },
-    "period": { "earliest": -518, "latest": -330, "era_label": "Ahameniş, I. Darius'tan İskender'e", "precision": "range", "dating_method": ["textual", "epigraphic", "stratigraphy"] },
-    "languages": ["Elamca", "Eski Farsça", "Akadca", "Aramice"],
-    "disciplines": ["arkeoloji", "filoloji", "tarih"],
+    "topic": [
+      "persepolis",
+      "iran",
+      "ahamenis",
+      "emek-tarihi"
+    ],
+    "subject": {
+      "site": "Persepolis",
+      "site_native": "Pārsa",
+      "region": "Fars, Ahameniş İmparatorluğu",
+      "modern_country": "İran",
+      "coordinates": {
+        "lat": 29.9354,
+        "lon": 52.8916
+      }
+    },
+    "period": {
+      "earliest": -518,
+      "latest": -330,
+      "era_label": "Ahameniş, I. Darius'tan İskender'e",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "epigraphic",
+        "stratigraphy"
+      ]
+    },
+    "languages": [
+      "Elamca",
+      "Eski Farsça",
+      "Akadca",
+      "Aramice"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji",
+      "tarih"
+    ],
     "people": [
-      { "name": "I. Darius", "role": "excavator", "affiliation": "Ahameniş hanedanı", "year": -518 },
-      { "name": "Chicago Doğu Enstitüsü kazı heyeti", "role": "discoverer", "affiliation": "University of Chicago", "year": 1933 }
+      {
+        "name": "I. Darius",
+        "role": "excavator",
+        "affiliation": "Ahameniş hanedanı",
+        "year": -518
+      },
+      {
+        "name": "Chicago Doğu Enstitüsü kazı heyeti",
+        "role": "discoverer",
+        "affiliation": "University of Chicago",
+        "year": 1933
+      }
     ],
     "popular_claim": "Persepolis ve benzeri Pers anıtları köle emeğiyle inşa edildi.",
     "divergence": "Köle imgesi büyük ölçüde Yunan kaynaklarının Pers tasvirinden ve modern popüler kültürden geliyor. 1933-38'de bulunan Kale ve Hazine tabletleri ise devlet ekonomisinde herkesin sabit bir tayın ölçeğinde olduğunu gösteriyor - bir kısmı tek kişinin tüketemeyeceği miktarda, yani fiilen mal cinsinden maaş.",
-    "divergence_type": ["ideolojik-secim", "medya-abartisi", "guncellenmemis"],
+    "divergence_type": [
+      "ideolojik-secim",
+      "medya-abartisi",
+      "guncellenmemis"
+    ],
     "evidence": [
       "Tabletler erkek ve kadın işçilere yapılan tayın ve ücret ödemelerini tek tek kaydediyor.",
       "Ödemeler gümüş ve gıda tayını olarak yapılıyor; ölçek beceriye göre değişiyor.",
@@ -27,27 +74,84 @@
       "Tabletler yalnızca devlet sektörünü kaydediyor; kayıt dışı emek görünmüyor."
     ],
     "sources": [
-      { "tier": "primary", "type": "dataset", "title": "Persepolis Kale Tabletleri arşivi", "institution": "Institute for the Study of Ancient Cultures, University of Chicago", "url": "https://isac.uchicago.edu/research/publications/oip/persepolis-fortification-tablets", "language": "en", "accessed": "2026-09-06", "note": "2100'den fazla metin yayımlandı." },
-      { "tier": "peer-reviewed", "type": "article", "title": "PERSEPOLIS ADMINISTRATIVE ARCHIVES", "container": "Encyclopaedia Iranica", "url": "https://www.iranicaonline.org/articles/persepolis-admin-archive/", "language": "en", "accessed": "2026-09-06" },
-      { "tier": "peer-reviewed", "type": "article", "title": "PERSEPOLIS ELAMITE TABLETS", "container": "Encyclopaedia Iranica", "url": "https://www.iranicaonline.org/articles/persepolis-elamite-tablets/", "language": "en" }
+      {
+        "tier": "primary",
+        "type": "dataset",
+        "title": "Persepolis Kale Tabletleri arşivi",
+        "institution": "Institute for the Study of Ancient Cultures, University of Chicago",
+        "url": "https://isac.uchicago.edu/research/publications/oip/persepolis-fortification-tablets",
+        "language": "en",
+        "accessed": "2026-09-06",
+        "note": "2100'den fazla metin yayımlandı."
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "PERSEPOLIS ADMINISTRATIVE ARCHIVES",
+        "container": "Encyclopaedia Iranica",
+        "url": "https://www.iranicaonline.org/articles/persepolis-admin-archive/",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "PERSEPOLIS ELAMITE TABLETS",
+        "container": "Encyclopaedia Iranica",
+        "url": "https://www.iranicaonline.org/articles/persepolis-elamite-tablets/",
+        "language": "en"
+      }
     ],
-    "open_questions": ["İşgücünün ne kadarı gönüllü, ne kadarı zorunlu hizmetti - tayın kaydı bu ayrımı vermiyor."],
+    "open_questions": [
+      "İşgücünün ne kadarı gönüllü, ne kadarı zorunlu hizmetti - tayın kaydı bu ayrımı vermiyor."
+    ],
     "checked": "2026-09-06",
-    "used_in": []
+    "used_in": [
+      "persepolis"
+    ]
   },
   {
     "id": "persepolis-yangin-kasitli-miydi",
     "claim": "Persepolis MÖ 330'da İskender tarafından bilinçli bir siyasi karar sonucu yakıldı.",
     "status": "contested",
     "confidence": "high",
-    "topic": ["persepolis", "iskender", "kaynak-elestirisi"],
-    "subject": { "site": "Persepolis", "site_native": "Pārsa", "region": "Fars", "modern_country": "İran", "coordinates": { "lat": 29.9354, "lon": 52.8916 } },
-    "period": { "earliest": -330, "latest": -330, "era_label": "İskender'in Pers seferi", "precision": "exact", "dating_method": ["historical-record", "stratigraphy"] },
-    "languages": ["Grekçe"],
-    "disciplines": ["tarih", "arkeoloji"],
+    "topic": [
+      "persepolis",
+      "iskender",
+      "kaynak-elestirisi"
+    ],
+    "subject": {
+      "site": "Persepolis",
+      "site_native": "Pārsa",
+      "region": "Fars",
+      "modern_country": "İran",
+      "coordinates": {
+        "lat": 29.9354,
+        "lon": 52.8916
+      }
+    },
+    "period": {
+      "earliest": -330,
+      "latest": -330,
+      "era_label": "İskender'in Pers seferi",
+      "precision": "exact",
+      "dating_method": [
+        "historical-record",
+        "stratigraphy"
+      ]
+    },
+    "languages": [
+      "Grekçe"
+    ],
+    "disciplines": [
+      "tarih",
+      "arkeoloji"
+    ],
     "popular_claim": "İskender, sarhoş bir şölende Thaïs adlı kadının kışkırtmasıyla sarayı ateşe verdi.",
     "divergence": "Antik kaynaklar ikiye ayrılıyor ve ikisi de aynı anda doğru olamaz. Popüler anlatı hep dramatik olanı seçiyor; oysa bu, kaynakların hangisine güveneceğimize dair çözülmemiş bir sorun.",
-    "divergence_type": ["medya-abartisi"],
+    "divergence_type": [
+      "medya-abartisi"
+    ],
     "evidence": [
       "Arkeoloji büyük bir yangını kesin biçimde doğruluyor - yanık tabaka ve ısı hasarı belirgin.",
       "Bir kaynak grubu yakmayı Yunanistan'ın intikamı olarak alınmış bilinçli bir siyasi karar diye anlatıyor."
@@ -58,62 +162,181 @@
       "İki anlatı da İskender'in imajını farklı yönde biçimlendirme amacı taşıyabilir."
     ],
     "sources": [
-      { "tier": "primary", "type": "book", "authors": ["Arrianos"], "title": "Anabasis Alexandri", "language": "grc" },
-      { "tier": "primary", "type": "book", "authors": ["Diodoros Sikelos"], "title": "Bibliotheca Historica XVII", "language": "grc" },
-      { "tier": "primary", "type": "book", "authors": ["Plutarkhos"], "title": "İskender'in Hayatı", "language": "grc" }
+      {
+        "tier": "primary",
+        "type": "book",
+        "authors": [
+          "Arrianos"
+        ],
+        "title": "Anabasis Alexandri",
+        "language": "grc"
+      },
+      {
+        "tier": "primary",
+        "type": "book",
+        "authors": [
+          "Diodoros Sikelos"
+        ],
+        "title": "Bibliotheca Historica XVII",
+        "language": "grc"
+      },
+      {
+        "tier": "primary",
+        "type": "book",
+        "authors": [
+          "Plutarkhos"
+        ],
+        "title": "İskender'in Hayatı",
+        "language": "grc"
+      }
     ],
-    "open_questions": ["Yangın kasıtlı mı, kazara mı - arkeoloji yangını doğruluyor ama niyeti okuyamıyor."],
+    "open_questions": [
+      "Yangın kasıtlı mı, kazara mı - arkeoloji yangını doğruluyor ama niyeti okuyamıyor."
+    ],
     "checked": "2026-09-06",
-    "used_in": []
+    "used_in": [
+      "persepolis"
+    ]
   },
   {
     "id": "persepolis-tabletlerin-mulkiyeti",
     "claim": "1933-38'de bulunan Persepolis tabletlerinin büyük bölümü hâlâ İran dışında ve mülkiyet süreci kapanmadı.",
     "status": "unknown",
     "confidence": "medium",
-    "topic": ["persepolis", "mulkiyet", "miras-hukuku"],
-    "subject": { "site": "Persepolis arşivi", "region": "Fars", "modern_country": "İran", "coordinates": { "lat": 29.9354, "lon": 52.8916 } },
-    "period": { "earliest": 1933, "latest": 2026, "era_label": "Modern kazı ve mülkiyet süreci", "precision": "range", "dating_method": ["historical-record"] },
-    "languages": ["Elamca"],
-    "disciplines": ["hukuk", "arkeoloji"],
-    "people": [{ "name": "Chicago Doğu Enstitüsü kazı heyeti", "role": "discoverer", "affiliation": "University of Chicago", "year": 1933 }],
+    "topic": [
+      "persepolis",
+      "mulkiyet",
+      "miras-hukuku"
+    ],
+    "subject": {
+      "site": "Persepolis arşivi",
+      "region": "Fars",
+      "modern_country": "İran",
+      "coordinates": {
+        "lat": 29.9354,
+        "lon": 52.8916
+      }
+    },
+    "period": {
+      "earliest": 1933,
+      "latest": 2026,
+      "era_label": "Modern kazı ve mülkiyet süreci",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Elamca"
+    ],
+    "disciplines": [
+      "hukuk",
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Chicago Doğu Enstitüsü kazı heyeti",
+        "role": "discoverer",
+        "affiliation": "University of Chicago",
+        "year": 1933
+      }
+    ],
     "evidence": [
       "Tabletler 1933-34 ve 1936-38 kazılarında bulundu ve incelenmek üzere Chicago'ya götürüldü.",
       "Koleksiyonun büyük bölümü hâlâ Chicago'da; 2100'den fazla metin orada yayımlandı.",
       "Bir kısmı partiler hâlinde İran'a iade edildi."
     ],
     "sources": [
-      { "tier": "institutional", "type": "webpage", "title": "Persepolis Fortification Tablets", "institution": "Institute for the Study of Ancient Cultures, University of Chicago", "url": "https://isac.uchicago.edu/research/publications/oip/persepolis-fortification-tablets", "language": "en", "accessed": "2026-09-06" }
+      {
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Persepolis Fortification Tablets",
+        "institution": "Institute for the Study of Ancient Cultures, University of Chicago",
+        "url": "https://isac.uchicago.edu/research/publications/oip/persepolis-fortification-tablets",
+        "language": "en",
+        "accessed": "2026-09-06"
+      }
     ],
-    "open_questions": ["Kalan tabletlerin iadesi ve yayın hakları nasıl çözülecek?"],
+    "open_questions": [
+      "Kalan tabletlerin iadesi ve yayın hakları nasıl çözülecek?"
+    ],
     "checked": "2026-09-06",
     "volatile": true,
-    "used_in": []
+    "used_in": [
+      "persepolis"
+    ]
   },
   {
     "id": "persepolis-toren-baskenti",
     "claim": "Persepolis imparatorluğun idari başkenti değil, tören başkentiydi.",
     "status": "established",
     "confidence": "medium",
-    "topic": ["persepolis", "ahamenis", "yonetim"],
-    "subject": { "site": "Persepolis", "site_native": "Pārsa", "region": "Fars", "modern_country": "İran", "coordinates": { "lat": 29.9354, "lon": 52.8916 } },
-    "period": { "earliest": -518, "latest": -330, "era_label": "Ahameniş", "precision": "range", "dating_method": ["textual", "epigraphic", "stratigraphy"] },
-    "languages": ["Eski Farsça", "Elamca", "Akadca"],
-    "disciplines": ["tarih", "arkeoloji", "mimarlik"],
+    "topic": [
+      "persepolis",
+      "ahamenis",
+      "yonetim"
+    ],
+    "subject": {
+      "site": "Persepolis",
+      "site_native": "Pārsa",
+      "region": "Fars",
+      "modern_country": "İran",
+      "coordinates": {
+        "lat": 29.9354,
+        "lon": 52.8916
+      }
+    },
+    "period": {
+      "earliest": -518,
+      "latest": -330,
+      "era_label": "Ahameniş",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "epigraphic",
+        "stratigraphy"
+      ]
+    },
+    "languages": [
+      "Eski Farsça",
+      "Elamca",
+      "Akadca"
+    ],
+    "disciplines": [
+      "tarih",
+      "arkeoloji",
+      "mimarlik"
+    ],
     "popular_claim": "Persepolis Pers İmparatorluğu'nun başkentiydi.",
     "divergence": "İmparatorluğun gündelik yönetimi Susa, Babil ve Ekbatana üzerinden yürüyordu. Persepolis törensel ve simgesel bir merkezdi; yapı programı da bunu gösteriyor.",
-    "divergence_type": ["kategori-hatasi", "turizm-kopyalamasi"],
+    "divergence_type": [
+      "kategori-hatasi",
+      "turizm-kopyalamasi"
+    ],
     "evidence": [
       "Apadana kabartmaları imparatorluğun halklarını armağan sunarken gösteriyor - idari değil törensel bir sahne.",
       "İdari yazışma ve yönetim kayıtları büyük ölçüde diğer merkezlerde yoğunlaşıyor.",
       "Yapı programı temsil ve tören ölçeğinde kurulmuş."
     ],
-    "counter_evidence": ["Kale Tabletleri sitede ciddi bir idari faaliyet de olduğunu gösteriyor; 'yalnızca tören' ayrımı fazla keskin olabilir."],
-    "sources": [
-      { "tier": "peer-reviewed", "type": "article", "title": "PERSEPOLIS ADMINISTRATIVE ARCHIVES", "container": "Encyclopaedia Iranica", "url": "https://www.iranicaonline.org/articles/persepolis-admin-archive/", "language": "en" }
+    "counter_evidence": [
+      "Kale Tabletleri sitede ciddi bir idari faaliyet de olduğunu gösteriyor; 'yalnızca tören' ayrımı fazla keskin olabilir."
     ],
-    "open_questions": ["Törensel işlevin takvimdeki yeri - Nevruz bağlantısı sık öne sürülür ama doğrudan kanıtı tartışmalıdır."],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "PERSEPOLIS ADMINISTRATIVE ARCHIVES",
+        "container": "Encyclopaedia Iranica",
+        "url": "https://www.iranicaonline.org/articles/persepolis-admin-archive/",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Törensel işlevin takvimdeki yeri - Nevruz bağlantısı sık öne sürülür ama doğrudan kanıtı tartışmalıdır."
+    ],
     "checked": "2026-09-06",
-    "used_in": []
+    "used_in": [
+      "persepolis"
+    ]
   }
 ]
