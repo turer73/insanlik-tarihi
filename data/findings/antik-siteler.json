@@ -794,7 +794,8 @@
     "checked": "2026-09-06",
     "volatile": true,
     "used_in": [
-      "ayni-cumlede"
+      "ayni-cumlede",
+      "tas-tepeler"
     ]
   },
   {
@@ -2300,6 +2301,302 @@
     "used_in": [
       "angkor",
       "ayni-cumlede"
+    ]
+  },
+  {
+    "id": "gobekli-tepe-yerlesim-mi-tapinak-mi",
+    "claim": "Göbekli Tepe kimsenin yaşamadığı saf bir tören alanıydı.",
+    "status": "refuted",
+    "confidence": "medium",
+    "topic": [
+      "gobekli-tepe",
+      "tas-tepeler",
+      "model-revizyonu"
+    ],
+    "subject": {
+      "site": "Göbekli Tepe",
+      "region": "Şanlıurfa, Yukarı Mezopotamya",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 37.2233,
+        "lon": 38.9224
+      }
+    },
+    "period": {
+      "earliest": -9500,
+      "latest": -8000,
+      "era_label": "Çanak Çömleksiz Neolitik A-B",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Schmidt, Klaus",
+        "role": "proposer",
+        "affiliation": "Alman Arkeoloji Enstitüsü",
+        "year": 1995,
+        "lifespan": "1953-2014"
+      },
+      {
+        "name": "Karul, Necmi",
+        "role": "excavator",
+        "affiliation": "İstanbul Üniversitesi / Taş Tepeler",
+        "year": 2021
+      }
+    ],
+    "popular_claim": "Göbekli Tepe dünyanın ilk tapınağıdır; önce tapınak geldi, sonra şehir.",
+    "divergence": "Bu 1990'ların yorumuydu ve kazının kendisi tarafından zayıflatıldı. 2014 sonrası sarnıçlar, çok sayıda öğütme taşı ve konut olabilecek yapılar bulundu; 2025-26'da kuzey kesimde iç düzenleri konut gibi okunan yapılar açıldı. Popüler aktarım eski cümleyi tekrarlamaya devam ediyor.",
+    "divergence_type": [
+      "guncellenmemis",
+      "turizm-kopyalamasi"
+    ],
+    "evidence": [
+      "Sarnıçlar ve yoğun öğütme taşı buluntusu.",
+      "2025-26 sezonunda ana alanın kuzeyinde iç düzenleri konut gibi okunan yapılar açıldı; erozyon üst duvarları aşındırdığı için plana hızla ulaşıldı.",
+      "Jeofizik kuzey alanda daha çok yapı gösteriyor."
+    ],
+    "counter_evidence": [
+      "Anıtsal çevreler açıkça tören işlevi taşıyor; 'yalnızca yerleşim' de doğru değil.",
+      "Yeni kesimlerin ayrıntılı bilimsel yayını henüz gelmedi; yorum ön niteliktedir."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "report",
+        "title": "Taş Tepeler projesi kazı sezonu duyuruları",
+        "institution": "T.C. Kültür ve Turizm Bakanlığı / İstanbul Üniversitesi",
+        "language": "tr",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "popular",
+        "type": "webpage",
+        "year": 2026,
+        "title": "Göbeklitepe yerleşim bulguları haberleri",
+        "language": "en",
+        "note": "Sezon duyurularının aktarımı; birincil yayınla değiştirilmeli."
+      }
+    ],
+    "open_questions": [
+      "Yerleşim ve tören işlevlerinin oranı nedir?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "tas-tepeler"
+    ]
+  },
+  {
+    "id": "karahan-tepe-basamakli-yapi",
+    "claim": "Karahan Tepe'de merkezî bir odak çevresinde üç sıra basamaklı taş sekilikten oluşan, ~17 m çapında dairesel bir yapı açığa çıkarıldı.",
+    "status": "established",
+    "confidence": "low",
+    "topic": [
+      "karahan-tepe",
+      "tas-tepeler",
+      "2025-sezonu"
+    ],
+    "subject": {
+      "site": "Karahan Tepe",
+      "region": "Şanlıurfa, Tektek Dağları",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 37.1,
+        "lon": 39.29
+      }
+    },
+    "period": {
+      "earliest": -9750,
+      "latest": -8000,
+      "era_label": "Çanak Çömleksiz Neolitik",
+      "precision": "disputed",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "mimarlik"
+    ],
+    "people": [
+      {
+        "name": "Karul, Necmi",
+        "role": "excavator",
+        "affiliation": "İstanbul Üniversitesi",
+        "year": 2025
+      }
+    ],
+    "evidence": [
+      "Taban doğrudan ana kayaya oyulmuş.",
+      "Merkezî odak çevresinde üç sıra basamaklı sekilik - tiyatro oturma düzenini andırıyor.",
+      "Karahan Tepe, Neolitik dünyada bilinen en yoğun insan yüzü tasvirlerinden birini barındırıyor."
+    ],
+    "counter_evidence": [
+      "Bulgu sezon duyuruları ve haber aktarımları üzerinden dolaşıyor; ayrıntılı hakemli yayın henüz yok.",
+      "Ölçüler ve 'amfitiyatro' benzetmesi ön niteliktedir; yayın çıktığında değişebilir.",
+      "Yapının işlevi bilinmiyor - toplanma, tören ve karar alma önerileri var, hiçbiri kanıtlanmadı."
+    ],
+    "sources": [
+      {
+        "tier": "institutional",
+        "type": "report",
+        "year": 2025,
+        "title": "Karahan Tepe 2025 kazı sezonu bulguları",
+        "institution": "Taş Tepeler projesi",
+        "language": "tr"
+      },
+      {
+        "tier": "popular",
+        "type": "webpage",
+        "year": 2026,
+        "title": "Karahan Tepe basamaklı yapı aktarımları",
+        "language": "en",
+        "note": "Birincil yayınla değiştirilmeli."
+      }
+    ],
+    "open_questions": [
+      "Yapının işlevi nedir?",
+      "Ayrıntılı yayın ne zaman gelecek?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "tas-tepeler"
+    ]
+  },
+  {
+    "id": "gobekli-tepe-kasitli-gomulme",
+    "claim": "Göbekli Tepe'nin yapıları kasten toprakla doldurulup gömüldü.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "gobekli-tepe",
+      "tas-tepeler",
+      "yorum-tartismasi"
+    ],
+    "subject": {
+      "site": "Göbekli Tepe",
+      "region": "Şanlıurfa",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 37.2233,
+        "lon": 38.9224
+      }
+    },
+    "period": {
+      "earliest": -9500,
+      "latest": -8000,
+      "era_label": "Çanak Çömleksiz Neolitik",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "jeoarkeoloji"
+    ],
+    "popular_claim": "Yapılar bilerek gömüldüğü için bu kadar iyi korundu.",
+    "divergence": "Kasıtlı doldurma uzun süre standart açıklamaydı ve popüler anlatıya yerleşti. Sonraki çalışmalar yamaç erozyonu ve doğal dolgu ihtimalini ciddi biçimde gündeme getirdi.",
+    "divergence_type": [
+      "guncellenmemis"
+    ],
+    "evidence": [
+      "Yapıların dolgu içinde ve iyi korunmuş hâlde bulunması."
+    ],
+    "counter_evidence": [
+      "Yamaç erozyonu ve doğal dolgu aynı sonucu üretebilir.",
+      "2025-26'da kuzey kesimde erozyonun üst duvarları zaten aşındırdığı gözlendi.",
+      "Tartışma kapanmış değil."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Göbekli Tepe dolgu oluşumu üzerine tartışma literatürü",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Dolgu kasıtlı mı doğal mı - ayrıştırılabilir mi?"
+    ],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": [
+      "tas-tepeler"
+    ]
+  },
+  {
+    "id": "gobekli-tepe-43-sutun-kuyruklu-yildiz",
+    "claim": "Göbekli Tepe'nin 43 numaralı sütunundaki kabartmalar MÖ ~10.950'de bir kuyruklu yıldız çarpmasını kaydeder.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "gobekli-tepe",
+      "sozde-arkeoloji",
+      "curutme"
+    ],
+    "subject": {
+      "site": "Göbekli Tepe - 43 numaralı sütun",
+      "region": "Şanlıurfa",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 37.2233,
+        "lon": 38.9224
+      }
+    },
+    "period": {
+      "earliest": -9500,
+      "latest": 2017,
+      "era_label": "Yapının tarihi ve modern iddia",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "historical-record"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "astronomi"
+    ],
+    "popular_claim": "Akbaba Taşı bir kuyruklu yıldız çarpmasının astronomik kaydıdır.",
+    "divergence": "2017'de öne sürüldü ve popüler yapımlarda kanıtlanmış gibi dolaşıyor. Sitenin kendi kazı ekibi yayımlanmış bir yanıt verdi.",
+    "divergence_type": [
+      "medya-abartisi"
+    ],
+    "counter_evidence": [
+      "Hayvan-takımyıldız eşleştirmesi keyfîdir.",
+      "Sütunun bulunduğu yapı iddia edilen tarihten sonraya aittir.",
+      "Yöntem hemen hemen her kabartma kümesine uygulanıp bir sonuç üretebilir."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "year": 2017,
+        "title": "Sweatman ve Tsikritsis iddiası",
+        "language": "en",
+        "note": "Kanıt olarak değil, iddianın kaynağı olarak kaydedildi."
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Göbekli Tepe kazı ekibinin yayımlanmış yanıtı",
+        "institution": "Alman Arkeoloji Enstitüsü",
+        "language": "en"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "tas-tepeler"
     ]
   }
 ]
