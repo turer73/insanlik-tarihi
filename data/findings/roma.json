@@ -1,0 +1,164 @@
+[
+  {
+    "id": "roma-buz-karotu-ekonomi",
+    "claim": "Roma ekonomisinin yükseliş ve krizleri Grönland buz karotlarındaki kurşun kirliliğinde yıllık çözünürlükte okunabilir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": ["roma", "ekonomi-tarihi", "buz-karotu", "yontem"],
+    "subject": { "site": "Kuzey Grönland buz karotu", "region": "Arktik / Akdeniz havzası", "modern_country": "Grönland (Danimarka)", "coordinates": { "lat": 75.1, "lon": -42.32 } },
+    "period": { "earliest": -1100, "latest": 800, "era_label": "Geç Demir Çağı'ndan erken Ortaçağ'a", "precision": "range", "dating_method": ["isotopic", "stratigraphy", "historical-record"] },
+    "disciplines": ["iklim-bilimi", "tarih", "jeoloji"],
+    "people": [{ "name": "McConnell, Joseph R.", "role": "analyst", "affiliation": "Desert Research Institute", "year": 2018 }],
+    "popular_claim": "Antik ekonomiler hakkında bilgimiz yalnızca yazılı kaynaklara dayanır.",
+    "divergence": "Kurşun kaydı tarihsel metinlerden BAĞIMSIZ bir ekonomik göstergedir. Tarihçilerin anlatısına, vergi kayıtlarına veya bir yazarın abartısına dayanmaz - fiziksel bir kayıttır ve tarihçilerin anlattığı krizlerle örtüşür.",
+    "divergence_type": ["guncellenmemis"],
+    "evidence": [
+      "423 metrelik buz karotu yıllık katman sayımıyla tarihlendi; kayıt MÖ 1100'den MS 800'e uzanıyor.",
+      "Kurşun, gümüş üretimi için yapılan kurşun cevheri izabesinden atmosfere salınıyor.",
+      "Kirlilik refah dönemlerinde yükseliyor - Fenike yayılması, sonra Roma; zirve imparatorluk döneminde.",
+      "Savaşlar ve büyük salgınlar eğride düşüş olarak görünüyor."
+    ],
+    "counter_evidence": [
+      "Gösterge kısmidir: gümüş üretimiyle ilişkisi güçlü ama tarım, tekstil ve hizmetler bu kayıtta görünmez.",
+      "Kurşun taşınımı atmosferik koşullara bağlıdır; kaynak bölge ayrıştırması dolaylıdır."
+    ],
+    "sources": [
+      { "tier": "peer-reviewed", "type": "article", "authors": ["McConnell, Joseph R."], "year": 2018, "title": "Lead pollution recorded in Greenland ice indicates European emissions tracked plagues, wars, and imperial expansion during antiquity", "container": "PNAS", "doi": "10.1073/pnas.1721818115", "url": "https://www.pnas.org/doi/10.1073/pnas.1721818115", "language": "en", "accessed": "2026-09-06" }
+    ],
+    "checked": "2026-09-06",
+    "used_in": ["roma-etki"]
+  },
+  {
+    "id": "roma-kursun-kita-olcegi-zehirlenme",
+    "claim": "Roma dönemi madencilik ve izabesi Avrupa çapında atmosferik kurşun kirliliğine ve yükselmiş kan kurşun düzeylerine yol açtı.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": ["roma", "kirlilik", "saglik-tarihi"],
+    "subject": { "region": "Avrupa / Akdeniz havzası", "modern_country": "Avrupa geneli" },
+    "period": { "earliest": -100, "latest": 200, "era_label": "Roma İmparatorluğu doruğu", "precision": "range", "dating_method": ["isotopic", "stratigraphy"] },
+    "disciplines": ["iklim-bilimi", "tarih", "antropoloji"],
+    "popular_claim": "Roma'nın mirası yollar, hukuk ve mühendisliktir.",
+    "divergence": "Aynı buz karotu hem Roma'nın ekonomik zirvesini hem de bıraktığı kıta ölçekli kurşun kirliliğini kaydediyor. Bir ekonominin başarı göstergesi ile biraktigi hasar cogu zaman ayni egridir.",
+    "divergence_type": ["guncellenmemis"],
+    "evidence": [
+      "Buz karotu ölçümleri Roma döneminde Avrupa çapında yükselmiş atmosferik kurşun gösteriyor.",
+      "Kurşun bir nörotoksindir; yeterli düzeyde özellikle çocuklarda bilişsel etkiye yol açar."
+    ],
+    "counter_evidence": [
+      "Bilişsel etkinin büyüklüğü MODELLENMIŞ bir tahmindir, doğrudan ölçüm değil - ve tartışmalıdır.",
+      "Roma dönemi kurşun düzeyleri modern sanayi çağının çok altındadır; bulgunun anlamı 'antik dünya bugünden kirliydi' değil.",
+      "Kan kurşun düzeyi tahminleri atmosferik veriden türetilir; iskelet ölçümleriyle bölgesel doğrulama sınırlıdır."
+    ],
+    "sources": [
+      { "tier": "peer-reviewed", "type": "article", "title": "Pan-European atmospheric lead pollution, enhanced blood lead levels, and cognitive decline from Roman-era mining and smelting", "container": "PNAS", "doi": "10.1073/pnas.2419630121", "url": "https://www.pnas.org/doi/10.1073/pnas.2419630121", "language": "en", "accessed": "2026-09-06" }
+    ],
+    "open_questions": ["Bilişsel etkinin büyüklüğü nasıl doğrulanabilir?"],
+    "checked": "2026-09-06",
+    "volatile": true,
+    "used_in": ["roma-etki"]
+  },
+  {
+    "id": "roma-yollari-modern-refah",
+    "claim": "MS 117'deki Roma yol yoğunluğu, günümüz yol yoğunluğunu ve 2010-2020 ekonomik etkinliğini öngörür - ama yalnızca yolların kullanılmaya devam ettiği bölgelerde.",
+    "status": "established",
+    "confidence": "high",
+    "topic": ["roma", "altyapi", "yol-agi", "kalicilik"],
+    "subject": { "region": "Roma İmparatorluğu toprakları (MS 117)", "modern_country": "Avrupa, Kuzey Afrika, Yakındoğu" },
+    "period": { "earliest": 117, "latest": 2020, "era_label": "Roma doruğundan bugüne", "precision": "range", "dating_method": ["historical-record"] },
+    "disciplines": ["tarih", "muhendislik", "arkeoloji"],
+    "people": [
+      { "name": "Dalgaard, Carl-Johan", "role": "analyst", "affiliation": "University of Copenhagen", "year": 2022 },
+      { "name": "Olsson, Ola", "role": "analyst", "affiliation": "University of Gothenburg", "year": 2022 },
+      { "name": "Selaya, Pablo", "role": "analyst", "affiliation": "University of Copenhagen", "year": 2022 }
+    ],
+    "popular_claim": "Roma yolları etkileyici mühendislik eserleriydi.",
+    "divergence": "Asıl bulgu mühendislikte değil KALICILIKTA - ve kalıcılığın koşullu olmasında. Çalışmanın içinde bir DOĞAL DENEY var: tekerlekli araç kullanımının birinci binyıldan modern döneme kadar bırakıldığı bölgelerde (taşımacılık deve kervanlarına geçti) yollar bakılmadı ve kalıcılık etkisi anlamsızlığa kadar zayıflıyor. Aynı imparatorluk, aynı güzergâh seçimi, farklı sonuç.",
+    "divergence_type": ["guncellenmemis"],
+    "evidence": [
+      "Yüksek Roma yol yoğunluğu, yüksek modern yol yoğunluğu ve 2010-2020'de daha fazla ekonomik etkinlikle örtüşüyor.",
+      "500 CE'de daha fazla yerleşim oluşumu ile de örtüşüyor.",
+      "Erken ortaçağ ve modern dönemde pazar kasabalarının ortaya çıkışı, etkiyi sürdüren mekanizma olarak belirlendi.",
+      "KONTROL GRUBU: tekerleğin bırakıldığı bölgelerde kalıcılık kayboluyor - etkiyi taşıyan şey Romalıların yer seçimi değil, sonraki kuşakların bakımı."
+    ],
+    "counter_evidence": ["Tekerleğin bırakılması rastgele bir olay değil; o bölgelerin başka farkları da olabilir."],
+    "sources": [
+      { "tier": "peer-reviewed", "type": "article", "authors": ["Dalgaard, Carl-Johan", "Kaarsen, Nicolai", "Olsson, Ola", "Selaya, Pablo"], "year": 2022, "title": "Roman roads to prosperity: Persistence and non-persistence of public infrastructure", "container": "Journal of Comparative Economics", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0147596722000269", "language": "en", "accessed": "2026-09-06" }
+    ],
+    "checked": "2026-09-06",
+    "used_in": ["roma-etki"]
+  },
+  {
+    "id": "roma-hukuk-kesintili-zincir",
+    "claim": "Roma hukuku Batı'ya kesintisiz aktarılmadı; beş yüzyıl kullanım dışı kaldıktan sonra 11. yüzyılda yeniden bulunup öğretilmeye başlandı.",
+    "status": "established",
+    "confidence": "high",
+    "topic": ["roma", "hukuk-tarihi", "aktarim"],
+    "subject": { "site": "Bologna hukuk okulu", "region": "İtalya / Avrupa", "modern_country": "İtalya", "coordinates": { "lat": 44.4949, "lon": 11.3426 } },
+    "period": { "earliest": 529, "latest": 1926, "era_label": "Corpus Juris Civilis'ten modern medeni kanunlara", "precision": "range", "dating_method": ["historical-record", "textual"] },
+    "languages": ["Latince"],
+    "disciplines": ["hukuk", "tarih", "filoloji"],
+    "popular_claim": "Roma hukuku Roma'dan bugüne kesintisiz aktarıldı.",
+    "divergence": "Zincirin ortasında beş yüz yıllık bir boşluk var. Metin Batı'da fiilen işlemedi; bir kopyası ayakta kaldığı ve 11. yüzyılda birileri onu yeniden OKUMAYA, ÖĞRETMEYE ve UYGULAMAYA karar verdiği için geri döndü. Miras düz bir çizgiyle gelmedi - kaybolup yeniden seçildi.",
+    "divergence_type": ["guncellenmemis"],
+    "evidence": [
+      "Corpus Juris Civilis 529-534'te Justinianus döneminde derlendi.",
+      "6.-11. yüzyıllarda Batı'da büyük ölçüde kullanım dışı kaldı.",
+      "~1070'lerde İtalya'da Digesta nüshası yeniden bulundu ve incelenmeye başlandı.",
+      "1088'de Bologna'da hukuk öğretimi kurumsallaştı.",
+      "Fransız (1804) ve Alman (1900) medeni kanunları bu gelenekten kodlandı; Türk Medeni Kanunu (1926) İsviçre Medeni Kanunu esas alınarak kabul edildi."
+    ],
+    "counter_evidence": ["Bologna sonrası yüzyıllar metni yalnızca aktarmadı, yeniden yorumladı; bugünkü medeni hukuk Roma hukuku değil, ondan TÜRETİLMİŞ bir yapıdır."],
+    "sources": [{ "tier": "peer-reviewed", "type": "book", "title": "Roma hukukunun aktarımı ve ius commune literatürü", "language": "en" }],
+    "checked": "2026-09-06",
+    "used_in": ["roma-etki"]
+  },
+  {
+    "id": "roma-bati-maddi-gerileme",
+    "claim": "Batı Roma topraklarında 5.-7. yüzyıllarda ölçülebilir bir maddi gerileme yaşandı.",
+    "status": "established",
+    "confidence": "high",
+    "topic": ["roma", "gec-antikcag", "maddi-kultur"],
+    "subject": { "region": "Batı Roma toprakları, özellikle Britanya", "modern_country": "Batı Avrupa" },
+    "period": { "earliest": 400, "latest": 700, "era_label": "Geç Antikçağ", "precision": "range", "dating_method": ["stratigraphy", "typology", "radiocarbon"] },
+    "disciplines": ["arkeoloji", "tarih"],
+    "popular_claim": "Roma'nın sonunda çöküş değil dönüşüm yaşandı; 'karanlık çağ' diye bir şey yoktu.",
+    "divergence": "Bu yaklaşim bazi yonlerden duzelticidir ama maddi gostergeler Bati'da gercek bir dususu gosterir. Gostergeler metinlere degil NESNELERE dayanir: sayilan comlek parcasi, olculen kemik, tarihlenen batik.",
+    "divergence_type": ["guncellenmemis"],
+    "evidence": [
+      "Akdeniz batık gemi sayısı MÖ 1. - MS 1. yüzyıl zirvesinden sonra belirgin düşüyor - ticaret hacminin daralması.",
+      "Standart çarkta üretilmiş kaliteli sofra çömleği ortadan kalkıyor; yer yer çarksız el yapımına dönülüyor.",
+      "Çatı kiremidi bazı bölgelerde tamamen kayboluyor.",
+      "Sığır kemiklerinde boyut küçülmesi.",
+      "Kurşun kirliliğinin Roma düzeyine dönüşü yüzyıllar sürüyor."
+    ],
+    "counter_evidence": [
+      "Düşüş her yerde aynı değil - Britanya'da sert, İtalya ve Akdeniz'de daha ılımlı. Tek bir 'Batı' eğrisi yanıltıcı olur.",
+      "Bu bulgu, sonraki bin yılın 'karanlık' sayılıp sayılamayacağı sorusundan AYRI bir sorudur; ikisi karıştırılmamalıdır."
+    ],
+    "sources": [{ "tier": "peer-reviewed", "type": "book", "title": "Geç Antikçağ maddi kültür ve ekonomi arkeolojisi literatürü", "language": "en" }],
+    "open_questions": ["Bölgesel farklar nasıl ölçülür - tek bir Batı eğrisi çizilebilir mi?"],
+    "checked": "2026-09-06",
+    "used_in": ["roma-etki"]
+  },
+  {
+    "id": "roma-476-uzlasimdir",
+    "claim": "Roma İmparatorluğu 476'da yıkıldı.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": ["roma", "donem-bolumleme", "tarih-yazimi"],
+    "subject": { "region": "Batı ve Doğu Roma", "modern_country": "İtalya / Türkiye" },
+    "period": { "earliest": 476, "latest": 1453, "era_label": "Batı'da imparatorluğun sonundan Konstantinopolis'in düşüşüne", "precision": "exact", "dating_method": ["historical-record"] },
+    "disciplines": ["tarih"],
+    "popular_claim": "Roma 476'da yıkıldı ve uygarlık çöktü.",
+    "divergence": "476'da Batı'daki son imparator tahttan indirildi - gerçek bir olay ama dönemin insanları için 'bir uygarlığın sonu' değil. Doğu Roma İmparatorluğu 1453'e kadar yaşadı; kendilerine Romalı diyorlardı ve hukukları Roma hukukuydu. 476 kesiği Batı Avrupa'dan bakan bir bölümlemedir - kullanışlı ama nötr değil.",
+    "divergence_type": ["kategori-hatasi", "ideolojik-secim"],
+    "counter_evidence": [
+      "Doğu Roma bin yıl daha sürdü.",
+      "Batı'da imparatorluk zaten uzun süredir parçalanıyordu; 476 tek bir kırılma noktası değil.",
+      "Hangi bölgeyi merkeze aldığınıza göre 'son' başka bir tarihe düşer."
+    ],
+    "sources": [{ "tier": "peer-reviewed", "type": "book", "title": "Geç Roma ve Bizans tarih yazımı literatürü", "language": "en" }],
+    "checked": "2026-09-06",
+    "used_in": ["roma-etki"]
+  }
+]
