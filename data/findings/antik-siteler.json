@@ -704,7 +704,8 @@
     ],
     "checked": "2026-09-06",
     "used_in": [
-      "ayni-cumlede"
+      "ayni-cumlede",
+      "chichen-itza"
     ]
   },
   {
@@ -2895,6 +2896,225 @@
     "checked": "2026-09-06",
     "used_in": [
       "machu-picchu"
+    ]
+  },
+  {
+    "id": "chichen-itza-kurban-hepsi-erkek",
+    "claim": "Chichén Itzá'da 1967'de bulunan chultún'daki kurban edilen çocukların tamamı erkekti; aralarında yakın akrabalık ve iki çift tek yumurta ikizi vardı.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "chichen-itza",
+      "maya",
+      "antik-dna",
+      "kurban"
+    ],
+    "subject": {
+      "site": "Chichén Itzá - chultún",
+      "region": "Yucatán",
+      "modern_country": "Meksika",
+      "coordinates": {
+        "lat": 20.6829,
+        "lon": -88.5686
+      }
+    },
+    "period": {
+      "earliest": 600,
+      "latest": 1100,
+      "era_label": "Geç Klasik - Erken Postklasik",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "isotopic"
+      ]
+    },
+    "languages": [
+      "Yucatek Mayacası"
+    ],
+    "disciplines": [
+      "genetik",
+      "arkeoloji",
+      "antropoloji"
+    ],
+    "popular_claim": "Chichén Itzá'da Kutsal Cenote'ye bâkire kızlar kurban edilirdi.",
+    "divergence": "Anlatı yüz yıl ayakta kaldı çünkü ÇÜRÜTÜLEMEDİ DEĞİL, TEST EDİLEMEDİ - çocuk iskeletlerinde cinsiyet fiziksel incelemeyle güvenilir biçimde belirlenemez, cinsiyet farkını gösteren kemik özellikleri ergenlikte oluşur. Boşluk 20. yüzyıl başının beklentisiyle dolduruldu. Genomik yöntem gelince anlatı tek bir yayınla kapandı.",
+    "divergence_type": [
+      "ideolojik-secim",
+      "somurge-anlatisi",
+      "guncellenmemis"
+    ],
+    "evidence": [
+      "Chultún 1967'de havaalanı pisti inşaatı sırasında, Kutsal Cenote'nin ~300 m kuzeydoğusunda bulundu.",
+      "Odada 100'den fazla küçük çocuğun kalıntısı vardı; ağaç kabuğu ve kireç tozu tabakasıyla örtülü.",
+      "Genom verisi bireylerin tamamının erkek olduğunu gösterdi.",
+      "Yakın akrabalık ilişkileri ve iki çift tek yumurta ikizi tespit edildi - seçim rastgele değil.",
+      "Sonraki anatomik incelemeler zaten daha büyük juvenillerin çoğunun erkek olabileceğini belirtmişti."
+    ],
+    "counter_evidence": [
+      "Sonuç BU CHULTUN topluluğu için kesin; Kutsal Cenote'den çıkarılan kalıntılar ayrı bir kümedir ve doğrudan genellenemez.",
+      "İkiz seçiminin gerekçesi (Popol Vuh İkiz Kahramanlar bağlantısı) güçlü bir yorumdur, kanıtlanmış değildir."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "article",
+        "year": 2024,
+        "title": "Ancient genomes reveal insights into ritual life at Chichén Itzá",
+        "container": "Nature",
+        "doi": "10.1038/s41586-024-07509-7",
+        "url": "https://www.nature.com/articles/s41586-024-07509-7",
+        "language": "en",
+        "accessed": "2026-09-06"
+      },
+      {
+        "tier": "institutional",
+        "type": "press-release",
+        "year": 2024,
+        "title": "Ancient Maya genomes reveal ritual sacrifice at Chichén Itzá",
+        "institution": "Max-Planck-Gesellschaft",
+        "url": "https://www.mpg.de/22037367/0606-evan-ancient-maya-genomes-150495-x",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Neden ikizler seçildi?",
+      "Kutsal Cenote kalıntıları aynı örüntüyü gösterir mi?"
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "chichen-itza"
+    ]
+  },
+  {
+    "id": "chichen-itza-ekinoks-kasitli-mi",
+    "claim": "El Castillo'nun ekinoks gölge etkisi bilinçli olarak tasarlanmıştır.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "chichen-itza",
+      "arkeoastronomi",
+      "niyet-sorunu"
+    ],
+    "subject": {
+      "site": "Chichén Itzá - El Castillo",
+      "site_native": "Kukulkán Tapınağı",
+      "region": "Yucatán",
+      "modern_country": "Meksika",
+      "coordinates": {
+        "lat": 20.6829,
+        "lon": -88.5686
+      }
+    },
+    "period": {
+      "earliest": 800,
+      "latest": 1200,
+      "era_label": "Terminal Klasik - Erken Postklasik",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "typology"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "astronomi",
+      "mimarlik"
+    ],
+    "popular_claim": "Mayalar piramidi, yılda tam iki gün merdivende yılan gölgesi oluşacak şekilde tasarladı.",
+    "divergence": "Gölge etkisi gerçek ve gözlemlenebilir. Ama 'kasıtlı mıydı' bir NİYET sorusudur ve niyet ölçülemez. Üç itiraz var: etki ekinoks gününe sıkışmış değil, haftalar boyunca benzer biçimde görülüyor; ne Maya ne sömürge kaynaklarında bu yapıda ekinoks töreni tarif ediliyor; ve gölgeyi oluşturan kuzey yüzü ağır biçimde yeniden inşa edildi.",
+    "divergence_type": [
+      "turizm-kopyalamasi",
+      "medya-abartisi"
+    ],
+    "evidence": [
+      "Maya mimarisinde astronomik yönelim yaygın ve belgeli bir uygulamadır.",
+      "Gölge etkisi gerçek ve her yıl gözlemleniyor."
+    ],
+    "counter_evidence": [
+      "Etki gün-eşitliğine özgü değil; haftalar boyunca benzer biçimde görülebiliyor.",
+      "Maya ve sömürge kaynaklarında bu yapıda ekinoks töreni tarif edilmiyor.",
+      "Gölgeyi oluşturan kuzey yüzü 20. yüzyılda yeniden inşa edildi; bugünkü keskinliğin ne kadarı özgün bilinmiyor.",
+      "Modern 'ekinoks etkinliği' 20. yüzyılın son çeyreğinde kitlesel turistik olaya dönüştü."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Mezoamerika arkeoastronomi ve El Castillo yönelim literatürü",
+        "language": "en"
+      },
+      {
+        "tier": "institutional",
+        "type": "report",
+        "title": "El Castillo restorasyon kayıtları",
+        "institution": "INAH",
+        "language": "es"
+      }
+    ],
+    "open_questions": [
+      "Niyet sorusu muhtemelen hiç kapanmayacak - yazılı kaynak yok ve restorasyon araya girdi."
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "chichen-itza"
+    ]
+  },
+  {
+    "id": "maya-yok-olmadi",
+    "claim": "Maya uygarlığı çöktü ve Mayalar ortadan kayboldu.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "maya",
+      "chichen-itza",
+      "cokus-anlatisi"
+    ],
+    "subject": {
+      "region": "Yucatán ve Maya bölgesi",
+      "modern_country": "Meksika, Guatemala, Belize, Honduras"
+    },
+    "period": {
+      "earliest": 800,
+      "latest": 2026,
+      "era_label": "Terminal Klasik'ten bugüne",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Yucatek Mayacası",
+      "K'iche' Mayacası"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "antropoloji",
+      "dilbilim"
+    ],
+    "popular_claim": "Mayalar gizemli biçimde yok oldu.",
+    "divergence": "İki ayrı hata birleşiyor. Birincisi: 'Maya çöküşü' güney ova kentlerinin 9. yy'da terk edilmesini anlatır - ama Chichén Itzá tam da o dönemden SONRA yükselir. İkincisi ve daha ağırı: Maya halkı yok olmadı; bugün milyonlarca Maya yaşıyor ve otuzdan fazla Maya dili konuşuluyor. Ortadan kalkan belirli bir siyasi düzendi, bir halk değil.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "somurge-anlatisi"
+    ],
+    "counter_evidence": [
+      "Chichén Itzá Terminal Klasik ve Erken Postklasik'te yükseliyor - sözde çöküşten sonra.",
+      "Meksika, Guatemala, Belize ve Honduras'ta milyonlarca Maya yaşıyor.",
+      "Otuzdan fazla Maya dili hâlâ konuşuluyor."
+    ],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Maya arkeolojisi ve Postklasik dönem literatürü",
+        "language": "en"
+      }
+    ],
+    "checked": "2026-09-06",
+    "used_in": [
+      "chichen-itza",
+      "ayni-cumlede"
     ]
   }
 ]

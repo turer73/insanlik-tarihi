@@ -58,5 +58,10 @@
     "title": "Machu Picchu: Dört Yanlış",
     "url": "https://claude.ai/code/artifact/fa4cce2a-0499-486f-b92e-340a535b86c9",
     "no": 12
+  },
+  "chichen-itza": {
+    "title": "Chichén Itzá: Test Edilebilen ve Edilemeyen",
+    "url": "https://claude.ai/code/artifact/685badda-ffa0-4452-bc06-f35e62f7ea8d",
+    "no": 13
   }
 }
