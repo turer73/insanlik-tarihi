@@ -1,0 +1,445 @@
+<title>Şuşter: Aktarımın Kanıtı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E8E7E1; --surface:#F3F2EC; --surface-2:#DCDBD3;
+  --ink:#151815; --ink-2:#4A4F49; --ink-3:#767C75;
+  --rule:#C4C3BA; --rule-soft:#D5D4CB;
+  --accent:#2F6B3E; --accent-ink:#22522F; --accent-soft:#D8E6DB;
+  --stone:#8A7345; --stone-ink:#6E5B33; --stone-soft:#EDE5D2;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111310; --surface:#191C18; --surface-2:#242821;
+    --ink:#E4E7E1; --ink-2:#A5ABA3; --ink-3:#767C75;
+    --rule:#2C312A; --rule-soft:#222720;
+    --accent:#78C08A; --accent-ink:#93D2A3; --accent-soft:#152618;
+    --stone:#C7AC80; --stone-ink:#D8C199; --stone-soft:#2A2418;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111310; --surface:#191C18; --surface-2:#242821;
+  --ink:#E4E7E1; --ink-2:#A5ABA3; --ink-3:#767C75;
+  --rule:#2C312A; --rule-soft:#222720;
+  --accent:#78C08A; --accent-ink:#93D2A3; --accent-soft:#152618;
+  --stone:#C7AC80; --stone-ink:#D8C199; --stone-soft:#2A2418;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1.05em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.5rem,7vw,4.7rem);line-height:.98;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:13ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.42;color:var(--ink-2);max-width:48ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(155px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:1rem 1.15rem;display:flex;flex-direction:column;gap:.2rem}
+.stat__num{font-family:var(--display);font-size:1.8rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.s{color:var(--stone-ink)}
+.stat__lbl{font-size:.83rem;color:var(--ink-3);line-height:1.35}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.75rem,6vw,4.5rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.75rem}
+.sec__head h2{font-size:clamp(1.7rem,3.4vw,2.45rem);line-height:1.08}
+.sec__head .kicker{font-size:1.02rem;color:var(--ink-2);max-width:56ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.9rem 1.15rem;font-size:.94rem;color:var(--ink);max-width:var(--measure)}
+.note.s{border-color:var(--stone);background:var(--stone-soft)}
+
+/* opposite problems */
+.opp{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:720px){.opp{grid-template-columns:1fr 1fr}}
+.op{background:var(--bg);padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.55rem}
+.op .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.op h3{font-size:1.14rem}
+.op .prob{font-family:var(--display);font-size:1.3rem;color:var(--accent-ink);font-variation-settings:"opsz" 14,"SOFT" 30;font-weight:600}
+.op p{margin:0;font-size:.94rem;color:var(--ink-2)}
+.op ul{margin:.15rem 0 0;padding-left:1.05rem;font-size:.91rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.3rem}
+.op.b{background:var(--accent-soft)}
+
+/* evidence weighing */
+.weigh{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.wg{background:var(--bg);padding:1.35rem 1.45rem;display:grid;gap:.5rem 1.2rem;grid-template-columns:1fr}
+@media(min-width:780px){.wg{grid-template-columns:minmax(150px,.6fr) 1.9fr;align-items:start}}
+.wg__k{display:flex;flex-direction:column;gap:.25rem}
+.wg__k b{font-size:.98rem;font-weight:700}
+.wg__k .verdict{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:.18rem .42rem;align-self:flex-start}
+.v-weak{background:var(--stone-soft);color:var(--stone-ink)}
+.v-strong{background:var(--accent-soft);color:var(--accent-ink)}
+.wg__b p{margin:0 0 .55rem;font-size:.94rem;color:var(--ink-2);max-width:66ch}
+.wg__b p:last-child{margin-bottom:0}
+.wg__b b{color:var(--ink)}
+.wg.decisive{background:var(--accent-soft)}
+.wg.decisive .wg__b p{color:var(--ink)}
+
+/* spec table */
+.tablewrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:520px}
+caption{text-align:left;font-size:.84rem;color:var(--ink-3);padding:.75rem 1rem;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--rule)}
+td{padding:.62rem 1rem;border-bottom:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+td.k{color:var(--ink);font-weight:600;white-space:nowrap}
+td.v{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink)}
+
+/* lifecycle */
+.tl{display:grid;grid-template-columns:minmax(92px,auto) 1fr;gap:0 1.4rem;margin-top:1.5rem;max-width:840px}
+.tl__date{font-family:var(--mono);font-size:.8rem;font-weight:600;color:var(--ink-2);padding:.8rem 0 .1rem;text-align:right;font-variant-numeric:tabular-nums;border-top:1px solid var(--rule-soft)}
+.tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.4rem;position:relative}
+.tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.tl__body.s::before{background:var(--stone)}
+.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(245px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
+.card h4{font-size:1.08rem}
+.card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card.no .tag{color:var(--stone-ink)}
+.card.yes .tag{color:var(--accent-ink)}
+.card p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.7rem 1.8rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.42rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.15rem 1.3rem;display:grid;gap:.3rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1.02rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+.foot{padding-block:2.5rem 3.5rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.88rem;color:var(--ink-3);max-width:70ch;margin:0 0 .7rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 07 · Sasani İran</span>
+    <p class="eyebrow">Hidrolik mühendislik · teknoloji aktarımı · kanıt değerlendirmesi</p>
+    <h1>Şuşter: Aktarımın Kanıtı</h1>
+    <p class="hero__lede">Petra kıtlığı çözdü; Şuşter <strong>bolluğu ve gücü</strong> çözdü. Ama asıl önemi başka: bu, antik dünyada <strong>teknoloji aktarımının belgelenebildiği</strong> ender yerlerden biri — ve kanıt, herkesin anlattığı hikâyeden gelmiyor.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">~500 m</span><span class="stat__lbl">Band-e Kaisar'ın uzunluğu, 40'tan fazla kemer</span></div>
+      <div class="stat"><span class="stat__num s">9–10 m</span><span class="stat__lbl">savak duvarının kalınlığı — Roma köprülerinden çok kalın</span></div>
+      <div class="stat"><span class="stat__num">32</span><span class="stat__lbl">değirmen, tünellerden düşen suyla çalışan</span></div>
+      <div class="stat"><span class="stat__num s">~600 yıl</span><span class="stat__lbl">olayla, olayı anlatan kaynaklar arasındaki fark</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#zit">İki zıt problem</a>
+    <a href="#sistem">Sistem</a>
+    <a href="#band">Band-e Kaisar</a>
+    <a href="#kanit">Kanıt tartması</a>
+    <a href="#dongu">Aktarımın ömrü</a>
+    <a href="#darius">Darius iddiası</a>
+    <a href="#cerceve">Çerçeve için anlamı</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="zit" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Karşılaştırma</p>
+    <h2>Aynı disiplin, zıt problemler</h2>
+    <p class="kicker">Petra ve Şuşter yan yana konunca, hidrolik mühendisliğinin tek bir sorunun değil bir <i>sorun ailesinin</i> cevabı olduğu görülüyor.</p>
+  </div>
+
+  <div class="opp">
+    <div class="op">
+      <span class="tag">Petra · Ürdün</span>
+      <span class="prob">Kıtlık</span>
+      <h3>Suyu getir ve kaybetme</h3>
+      <p>Yılda 150 mm yağış. Sorun, var olmayan suyu bulmak ve bir damlasını bile ziyan etmemek.</p>
+      <ul>
+        <li>Uzak kaynaklardan kilometrelerce boru hattı</li>
+        <li>Sızıntıyı en aza indiren yarı dolu akış</li>
+        <li>Yüzlerce sarnıç, mevsimlik yağmuru yakalama</li>
+        <li>Fazlası tehlike: seli şehirden uzaklaştıran tünel</li>
+      </ul>
+    </div>
+    <div class="op b">
+      <span class="tag">Şuşter · İran</span>
+      <span class="prob">Bolluk</span>
+      <h3>Suyu böl, yavaşlat, çalıştır</h3>
+      <p>Karun, bölgenin en güçlü nehri. Sorun su bulmak değil; <b>kontrol etmek, yönlendirmek ve gücünü işe koşmak.</b></p>
+      <ul>
+        <li>Nehri yükselten ve saptıran bentler</li>
+        <li>Gargar kanalı: nehirden ayrılıp 50 km sonra birleşiyor</li>
+        <li>Bu ayrılma bir <b>yapay ada</b> yaratıyor</li>
+        <li>Düşen su 32 değirmeni döndürüyor</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Dikkat edilecek nokta: Şuşter'de su yalnızca taşınmıyor, <b>enerjiye çevriliyor.</b> Tüneller suyu kaya içinden geçirip değirmen çarklarının üstüne dikey olarak düşürüyor; çarkları döndürdükten sonra onlarca yapay şelaleyle merkezi bir havuza dökülüyor. Yani sistem aynı suyu <b>üç kez</b> kullanıyor: yükselt, çalıştır, sula.</p>
+</section>
+
+<section id="sistem" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Bileşenler</p>
+    <h2>Bir nehri şehre dönüştürmek</h2>
+  </div>
+
+  <div class="prose">
+    <p>Şuşter Tarihî Hidrolik Sistemi tek bir yapı değil, birbirine bağlı bir <b>ağ</b>: bentler, kanallar, tüneller, köprüler, değirmenler ve şelaleler. Merkezinde Karun nehrinin ikiye ayrılması var — asıl yatak ve insan eliyle açılmış <b>Gargar kanalı</b>. Kanal elli kilometre sonra nehre yeniden katılıyor, ve arada kalan alan bir adaya dönüşüyor.</p>
+    <p>Bu ayrım tek başına şehri mümkün kılıyor: kontrollü kol üzerine yeni bir kent kurulabiliyor, ovaya sulama verilebiliyor, ve düşü kullanan değirmen kompleksi kurulabiliyor. Yeraltı kanalları (kanat mantığıyla) suyu evlerin ve yapıların özel depolarına taşıyor.</p>
+    <p>Petra'da sistemin amacı <b>hayatta kalmaktı</b>; Şuşter'de amaç <b>üretim</b>. Aynı mühendislik dili, tamamen farklı bir cümle kuruyor.</p>
+  </div>
+</section>
+
+<section id="band" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Yapı</p>
+    <h2>Band-e Kaisar: köprü mü, bent mi?</h2>
+    <p class="kicker">İkisi birden — ve İran'da bu ikisini birleştiren ilk yapı.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Yapının ölçüleri. Kalınlık değerleri, yapının neden sıradan bir köprü olmadığını gösteriyor.</caption>
+      <tbody>
+        <tr><td class="k">Toplam uzunluk</td><td class="v">~500 m</td><td>Karun'u boydan boya geçiyor</td></tr>
+        <tr><td class="k">Kemer sayısı</td><td class="v">40+</td><td>Açıklıklar yaklaşık 6,6–9 m</td></tr>
+        <tr><td class="k">Savak duvarı kalınlığı</td><td class="v">9–10 m</td><td>Üstündeki köprüyü taşımak için</td></tr>
+        <tr><td class="k">Ayak kalınlığı</td><td class="v">5–6,4 m</td><td>Su geçişini neredeyse yarıya düşürüyor</td></tr>
+        <tr><td class="k">Malzeme</td><td class="v">—</td><td>Kesme kum taşı, <b>Roma betonu</b>, harç, demir kenetler</td></tr>
+        <tr><td class="k">Su yükseltme</td><td class="v">~3–4 m</td><td>Uzlaşı değeri; 7–10 m diyen tahminler de var</td></tr>
+        <tr><td class="k">Tarih</td><td class="v">~260–270</td><td>I. Şapur dönemi</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p>Tablodaki iki satır ayrıca dikkat çekici: <b>ayaklar ve savak duvarı, imparatorluk içindeki tipik Roma köprülerinden belirgin biçimde kalın.</b> Sebebi işlevsel — bu yapı yalnızca üstünden geçilen bir köprü değil, aynı zamanda nehri yükselten bir <b>bent</b>. Su basıncına dayanması gerekiyor.</p>
+    <p>Temeller de öyle: düz bir hat yerine <b>sağlam kum taşı katmanlarını arayan kıvrımlı bir güzergâh</b> izliyor, ve memba tarafı büyük taş levhalarla döşenerek oyulmaya karşı korunmuş. Bunlar bir köprü ustasının değil, <b>su işleri mühendisinin</b> kararları.</p>
+  </div>
+</section>
+
+<section id="kanit" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Yöntem</p>
+    <h2>Romalıların yaptığını nereden biliyoruz?</h2>
+    <p class="kicker">Bu yazının asıl konusu bu. Çünkü herkesin anlattığı hikâye, kanıtın <i>zayıf</i> tarafı.</p>
+  </div>
+
+  <div class="prose">
+    <p>Yaygın anlatı şöyle: I. Şapur, MS 260'ta Edessa Savaşı'nda Roma imparatoru Valerianus'u <b>tüm ordusuyla</b> esir aldı — kimi anlatılarda yetmiş bin kişiye varan, mühendislik birliğini de içeren bir kuvvet. Bu esirler Şuşter'de çalıştırıldı ve Band-e Kaisar'ı inşa etti.</p>
+    <p>Hikâye güzel. Peki ne kadar sağlam? Kanıtı tek tek tartalım.</p>
+  </div>
+
+  <div class="weigh">
+    <div class="wg">
+      <div class="wg__k"><b>Vakayinameler</b><span class="verdict v-weak">Zayıf</span></div>
+      <div class="wg__b">
+        <p>Esir işçi anlatısını veren başlıca kaynaklar <b>Taberî ve Mes'ûdî</b> — yani <b>9. ve 10. yüzyıl</b> tarihçileri. Olayla aralarında yaklaşık <b>altı yüz yıl</b> var.</p>
+        <p>Üstelik bu kaynakların anlatım tarzı edebî ve öykücü; uzmanlar bu tür ayrıntıların <b>körü körüne kabul edilemeyeceğini</b> belirtiyor. "Yetmiş bin esir" gibi rakamlar da tam olarak bu türden.</p>
+      </div>
+    </div>
+
+    <div class="wg">
+      <div class="wg__k"><b>Yer adları ve gelenek</b><span class="verdict v-weak">Destekleyici</span></div>
+      <div class="wg__b">
+        <p>Bölgede Roma kökenine işaret eden yer adları ve bir aşiret adı var; bazı zanaatlerin Romalı yerleşimcilere atfedilmesi de bir gelenek olarak sürüyor.</p>
+        <p>Bunlar hikâyeyle <b>uyumlu</b> ama tek başına kanıt sayılmaz — yer adları başka yollarla da doğabilir.</p>
+      </div>
+    </div>
+
+    <div class="wg decisive">
+      <div class="wg__k"><b>Yapının kendisi</b><span class="verdict v-strong">Belirleyici</span></div>
+      <div class="wg__b">
+        <p>Asıl kanıt taşta duruyor: yapıda kullanılan <b>Roma betonu ve harç tekniği, yerel mimariye tamamen yabancıydı.</b> Aynı teknik, aynı dönemde yapılmış yakın yapılarda da görülüyor.</p>
+        <p>Bu, hiçbir vakayinameye ihtiyaç duymayan bir kanıt türü: <b>bir toplum, o güne dek kullanmadığı bir yapı tekniğini birdenbire kullanmaya başlıyorsa, tekniği bir yerden almıştır.</b> Ve kemerli köprü-bent birleşimi de İran'da bu yapıyla başlıyor.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Sonuç önemli:</b> aktarım <b>kanıtlanıyor</b> — ama anlatıyla değil, <b>tekniğin kendisiyle.</b> Valerianus'un esir alınması tarihsel bir olay; esirlerin bu şantiyede çalıştığı ise makul ama vakayinamelere dayanan bir ayrıntı. Yapının Roma tekniğiyle inşa edildiği ise <b>doğrudan gözlemlenebilir.</b></p>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p>Bu ayrım, bu sitenin tekrar eden dersinin belki en net hâli: <b>bir iddianın doğru olması, onu anlatan hikâyenin güvenilir olmasını gerektirmiyor.</b> Hikâye zayıfken sonuç sağlam olabilir — yeter ki sonucu taşıyan başka ve bağımsız bir kanıt hattı bulunsun.</p>
+  </div>
+</section>
+
+<section id="dongu" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Ömür</p>
+    <h2>Aktarım burada bitmiyor: kök salıyor</h2>
+    <p class="kicker">Teknoloji aktarımının tam hikâyesi, aktarımın kendisi değil — sonrasında ne olduğu.</p>
+  </div>
+
+  <div class="tl">
+    <div class="tl__row">
+      <div class="tl__date">MS 260</div>
+      <div class="tl__body s"><h4>Edessa: Valerianus esir alınıyor</h4><p>Bir Roma imparatorunun savaşta esir düştüğü ender olay. Roma bilgisi, Sasani şantiyelerine giden yolu buluyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">~260–270</div>
+      <div class="tl__body"><h4>Band-e Kaisar inşa ediliyor</h4><p>Roma betonu, kesme taş ve demir kenetlerle; köprü ve bent tek yapıda birleşiyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">3.–4. yy</div>
+      <div class="tl__body"><h4>Sistem büyüyor</h4><p>Gargar kanalı, tüneller, değirmen kompleksi ve sulama ağı Sasani dönemi boyunca gelişiyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">4.–10. yy</div>
+      <div class="tl__body"><h4>Yerlileşme</h4><p>Köprü-bent birleşimi <b>İran hidrolik mühendisliğinin standart uygulaması</b> hâline geliyor ve yaklaşık MS 1000'e kadar sürüyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">~10. yy</div>
+      <div class="tl__body"><h4>Şiraz'daki Band-e Emir</h4><p>Bu geleneğin doruk örneklerinden biri. Yedi yüz yıl sonra, alınan teknik artık <b>yerel bir dil.</b></p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2009</div>
+      <div class="tl__body s"><h4>UNESCO Dünya Mirası</h4><p>Sistem "yaratıcı dehanın başyapıtı" ölçütüyle listeye giriyor.</p></div>
+    </div>
+  </div>
+
+  <p class="note s" style="margin-top:1.5rem">Aktarımın <b>tam döngüsü</b> burada görünüyor: teknik dışarıdan geliyor, yerel koşula uyarlanıyor, yayılıyor, ve sonunda "yerli" sayılacak kadar içselleşiyor. Yedi yüz yıl sonra kimse Band-e Emir'e bakıp "bu Roma tekniği" demiyor — çünkü artık değil.</p>
+</section>
+
+<section id="darius" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Tarihleme</p>
+    <h2>"2.500 yıllık" iddiası</h2>
+  </div>
+
+  <div class="prose">
+    <p>Şuşter hakkında en sık tekrarlanan cümlelerden biri, sistemin <b>Büyük Darius döneminde, MÖ 5. yüzyılda</b> kurulduğu. Bu kısmen doğru, ama olduğu gibi aktarıldığında yanıltıcı.</p>
+    <p>Doğru olan: bölgedeki erken kanalların Ahameniş dönemine uzandığı kabul ediliyor. Yanıltıcı olan: <b>bugün ayakta olan ve UNESCO'nun listelediği yapıların büyük bölümü 3. yüzyıl Sasani dönemine ait.</b> Band-e Kaisar zaten kesin olarak 260–270 arasında.</p>
+    <p>Bu tam olarak Kapadokya'daki kalıbın aynısı: <b>en eski olası tarih alınıp bütün yapıya uygulanıyor.</b> Yer altı şehirleri için "Hititler MÖ 2000'de kazdı" ne kadar sağlamsa, Şuşter için "Darius yaptırdı" da o kadar sağlam.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card yes">
+      <span class="tag">Sağlam</span>
+      <h4>Sasani çekirdeği</h4>
+      <p>Band-e Kaisar, değirmen kompleksi ve tünellerin büyük bölümü <b>3. yüzyıl</b>. Yapı tekniği ve tarihsel kayıtla destekleniyor.</p>
+    </div>
+    <div class="card no">
+      <span class="tag">Zayıf</span>
+      <h4>Ahameniş evresi</h4>
+      <p>Erken kanallar için doğrudan arkeolojik tarihleme <b>sınırlı</b>. Ölçeği ve güzergâhı belirsiz.</p>
+    </div>
+    <div class="card no">
+      <span class="tag">Dikkat</span>
+      <h4>"3–7 yılda bitti"</h4>
+      <p>Kompleksin çok kısa sürede tamamlandığı bilgisi <b>tarihsel metinlere</b> dayanıyor — yani aynı geç ve edebî kaynak ailesine. Mühendislik ölçeğiyle karşılaştırıldığında ihtiyatla karşılanmalı.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cerceve" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Sonuç</p>
+    <h2>Bu site neden önemli</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Üç mekanizma çerçevesi için</p>
+    <h3>Şuşter, "temas"ın belgelenebildiği ender vaka</h3>
+    <p>Bu sitede tekrarlanan bir soru var: iki uygarlık benzer bir şey ürettiğinde bunun sebebi <b>ortak köken</b> mi, <b>temas</b> mı, yoksa <b>bağımsız icat</b> mı?</p>
+    <p>Şimdiye kadar incelediğimiz vakaların çoğu üçüncü kutuya düştü. Mısır ve Maya piramitleri: bağımsız icat. Kapadokya ve Mardin'in yer altı yapıları: yakınsama. Petra'nın hidroliği: yerel birikim.</p>
+    <p><b>Şuşter ise ikinci kutunun temiz örneği.</b> Ve temiz olmasının sebebi hikâyesi değil, yapısı: yerel mimariye yabancı bir teknik, belirli bir tarihte, belirli bir yerde birdenbire beliriyor — ve sonra yayılıyor.</p>
+    <p>Çerçevenin işe yaradığını gösteren şey tam olarak bu: <b>her benzerliği reddetmiyor.</b> Aktarım gerçekten olduğunda, onu da gösterebiliyor.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Roma payı ile Sasani payı nasıl ayrışıyor?</p>
+      <p class="oq__a">Teknik Roma kökenli ama tasarım kararlarının, arazi uyarlamasının ve işletme mantığının ne kadarı yerel — <b>ayrıştırılamıyor.</b> "Romalılar yaptı" da "Sasaniler yaptı" da eksik cevaplar.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Kaç esir, ne kadar süre çalıştı?</p>
+      <p class="oq__a">Vakayinamelerdeki rakamlar (yetmiş bine varan tahminler) altı yüz yıl sonraki edebî kaynaklardan geliyor. <b>Güvenilir bir sayı yok.</b></p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Ahameniş evresi ne kadar büyüktü?</p>
+      <p class="oq__a">Erken kanalların varlığı kabul ediliyor ama <b>ölçeği ve güzergâhı belirsiz.</b> Sasani inşaatı erken izleri büyük ölçüde örtmüş olabilir.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Bent suyu ne kadar yükseltiyordu?</p>
+      <p class="oq__a">Sulama amacı için <b>3–4 m</b> uzlaşı değeri, ama 7–10 m diyen tahminler de var. Kaynaklarda bent adlandırmaları da karışıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Sistem ne kadar süre çalıştı?</p>
+      <p class="oq__a">Kompleksin bölümleri çok uzun süre işlevini sürdürdü ve bir kısmı modern döneme kadar kullanıldı; ama <b>kesintisiz mi çalıştığı, hangi dönemlerde onarım gördüğü</b> ayrıntılı biçimde belgelenmiş değil.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Yapısal ölçüler ve Roma tekniğine dair değerlendirme, Band-e Kaisar üzerine mühendislik tarihi literatürüne; sistemin bütünü ve tarihlemesi UNESCO Dünya Mirası dosyasına dayanır.</p>
+    <p><b>Kanıt ayrımı yazının konusudur, süsü değil.</b> Esir işçi anlatısının kaynakları olan Taberî ve Mes'ûdî 9.–10. yüzyıl tarihçileridir ve edebî anlatım biçimleri nedeniyle ihtiyatla değerlendirilmeleri gerektiği literatürde belirtilir. Roma betonu ve harç tekniğinin yerel mimariye yabancı olması ise bundan bağımsız bir kanıt hattıdır; yazının vardığı sonuç bu ikinci hatta dayanır.</p>
+    <p><b>Sayılar yaklaşıktır.</b> Su yükseltme değeri (3–4 m), esir sayısı ve inşa süresi tartışmalıdır ve metin içinde öyle işaretlenmiştir.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil: Şehir ve Sembol · Aynı Cümlede Anılanlar · Petra: Görünmeyen Şehir.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

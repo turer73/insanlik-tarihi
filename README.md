@@ -1,7 +1,9 @@
 # İnsanlık Tarihi — Bulgu Veri Tabanı
 
 Tarih, bilim, sanat ve teknoloji konularında özgün Türkçe derin incelemeler için kurulan
-araştırma altyapısı. Bu depo **yazıları değil, yazıların dayandığı bulguları** tutar.
+araştırma altyapısı. Depo iki şeyi birlikte tutar: **yayımlanan yazılar** (`articles/`)
+ve **yazıların dayandığı bulgular** (`data/findings/`). İkisi `used_in` / `articles.json`
+üzerinden birbirine bağlıdır.
 
 ## Neden veri tabanı
 
@@ -132,3 +134,35 @@ yayına hazır tek dosyalık HTML üretir. Şablonlarda `__DATA__` yer tutucusu 
   ve kaynak katmanına göre filtreleme.
 
 İkisi de veri tabanından üretilir; yeni bulgu eklendiğinde yeniden çalıştırmak yeter.
+
+## Dizin yapısı
+
+| yol | içerik |
+|---|---|
+| `articles/` | Yayımlanan yazıların HTML kaynağı (tek dosya, bağımsız çalışır) |
+| `data/findings/` | Konu bazlı bulgu dosyaları — veri tabanının kendisi |
+| `data/articles.json` | slug → başlık/URL/sıra kaydı |
+| `schema/` | `finding.schema.json` — kaydın sözleşmesi (JSON Schema 2020-12) |
+| `scripts/` | `validate.mjs` (bağımlılıksız doğrulayıcı), `build-tools.mjs`, tek seferlik göç betikleri |
+| `tools/` | Zaman çizelgesi ve bulgu tarayıcısının şablonları (`__DATA__` yer tutuculu) |
+| `dist/` | Şablonlara veri enjekte edilmiş, yayımlanabilir hâl |
+
+## Çalıştırma
+
+Bağımlılık yok, kurulum yok. Node 18+ yeterli.
+
+```bash
+node scripts/validate.mjs      # şema + gönderme bütünlüğü + içerik kuralları
+node scripts/build-tools.mjs   # dist/ altına iki aracı üretir
+```
+
+Doğrulayıcı yalnızca şemaya bakmaz; **içerik kurallarını** da uygular:
+`contested`/`minority` bir kaydın `counter_evidence` alanı boşsa uyarır,
+`popular_claim` varsa `divergence` ister ve yalnızca `popular`/`unreliable`
+kaynağa dayanan bir kaydı **hata** sayar — iddianın bir çıpası olmalıdır.
+
+## Neden git, neden SQL değil
+
+Bir bulgunun `status` alanı değiştiğinde önemli olan yeni değer değil,
+**değişmiş olması**. `UPDATE` bu tarihi siler; commit tutar. Kayıt sayısı
+SQL gerektirecek mertebede değil ve muhtemelen hiç olmayacak.

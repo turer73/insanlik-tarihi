@@ -1,0 +1,603 @@
+<title>Hatırlamadığımız Felaketler</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E7E5DE; --surface:#F3F1EB; --surface-2:#DDDAD1;
+  --ink:#161A19; --ink-2:#4C524F; --ink-3:#767B77;
+  --rule:#C6C3B9; --rule-soft:#D5D2C8;
+  --accent:#B0431B; --accent-ink:#8E3413; --accent-soft:#F2DDD2;
+  --ice:#3D6B87; --ice-ink:#2B5169; --ice-soft:#DAE5EC;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121513; --surface:#1A1E1C; --surface-2:#242926;
+    --ink:#E6E3DA; --ink-2:#A8ADA7; --ink-3:#7B807B;
+    --rule:#2E332F; --rule-soft:#242A26;
+    --accent:#E5875A; --accent-ink:#F0A17B; --accent-soft:#33190F;
+    --ice:#8FB8D0; --ice-ink:#A9CBDE; --ice-soft:#182530;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121513; --surface:#1A1E1C; --surface-2:#242926;
+  --ink:#E6E3DA; --ink-2:#A8ADA7; --ink-3:#7B807B;
+  --rule:#2E332F; --rule-soft:#242A26;
+  --accent:#E5875A; --accent-ink:#F0A17B; --accent-soft:#33190F;
+  --ice:#8FB8D0; --ice-ink:#A9CBDE; --ice-soft:#182530;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);
+  font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
+  font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1.05em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);
+  background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.5rem,7vw,4.7rem);line-height:.98;font-weight:700;
+  font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:15ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.42;
+  color:var(--ink-2);max-width:47ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;
+  text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.75rem,6vw,4.5rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.75rem}
+.sec__head h2{font-size:clamp(1.7rem,3.4vw,2.45rem);line-height:1.08}
+.sec__head .kicker{font-size:1.02rem;color:var(--ink-2);max-width:56ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.9rem 1.15rem;
+  font-size:.94rem;color:var(--ink);max-width:var(--measure)}
+.note.ice{border-color:var(--ice);background:var(--ice-soft)}
+
+/* three archives */
+.arch{display:flex;flex-direction:column;gap:1px;background:var(--rule);
+  border:1px solid var(--rule);margin-top:1.5rem}
+.ar{background:var(--bg);padding:1.25rem 1.35rem;display:grid;gap:.3rem 1.2rem;grid-template-columns:1fr}
+@media(min-width:760px){.ar{grid-template-columns:minmax(150px,.7fr) minmax(120px,.5fr) 1.6fr;align-items:baseline}}
+.ar h3{font-size:1.1rem}
+.ar__len{font-family:var(--mono);font-size:1.05rem;font-weight:600;color:var(--accent-ink);
+  font-variant-numeric:tabular-nums}
+.ar__what{margin:0;font-size:.94rem;color:var(--ink-2)}
+.ar:nth-child(2) .ar__len{color:var(--ice-ink)}
+.ar:nth-child(3) .ar__len{color:var(--ink-2)}
+
+/* linear proportion bar */
+.linbar{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.3rem 1.4rem}
+.linbar h4{font-size:1rem;margin-bottom:.9rem}
+.lb{display:flex;height:46px;border:1px solid var(--rule);overflow:hidden}
+.lb__seg{display:flex;align-items:center;justify-content:center;font-family:var(--mono);
+  font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;overflow:hidden;white-space:nowrap;
+  border-right:1px solid var(--rule)}
+.lb__deep{flex:0 0 88.1%;background:var(--surface-2);color:var(--ink-3)}
+.lb__phan{flex:0 0 11.9%;background:var(--accent-soft);color:var(--accent-ink)}
+.lb__seg:last-child{border-right:0}
+.lb__ticks{display:flex;margin-top:.5rem;font-family:var(--mono);font-size:.7rem;color:var(--ink-3);
+  justify-content:space-between;font-variant-numeric:tabular-nums}
+.linbar p{margin:.9rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:64ch}
+.linbar b{color:var(--ink)}
+.hair{display:inline-block;width:2px;height:.95em;background:var(--accent);vertical-align:-.12em;margin-inline:.2em}
+
+/* log ladder */
+.ladder{display:flex;flex-direction:column;gap:1px;background:var(--rule);
+  border:1px solid var(--rule);margin-top:1.5rem}
+.rung{background:var(--bg);padding:1.35rem 1.4rem;display:grid;gap:.6rem 1.4rem;grid-template-columns:1fr}
+@media(min-width:860px){.rung{grid-template-columns:minmax(160px,.62fr) 1.9fr;align-items:start}}
+.rung__scale{display:flex;flex-direction:column;gap:.2rem}
+.rung__mag{font-family:var(--mono);font-size:1.15rem;font-weight:600;color:var(--accent-ink);
+  font-variant-numeric:tabular-nums;line-height:1.15}
+.rung__drv{font-family:var(--mono);font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3)}
+.rung__body h3{font-size:1.14rem;margin-bottom:.4rem}
+.rung__body p{margin:0 0 .7rem;font-size:.95rem;color:var(--ink-2);max-width:62ch}
+.rung__body p:last-child{margin-bottom:0}
+.rung__body b{color:var(--ink)}
+.evts{list-style:none;margin:.55rem 0 0;padding:0;display:flex;flex-direction:column;gap:.4rem;max-width:62ch}
+.evts li{display:grid;gap:.1rem .9rem;grid-template-columns:1fr}
+@media(min-width:640px){.evts li{grid-template-columns:minmax(112px,auto) 1fr;align-items:baseline}}
+.evts .w{font-family:var(--mono);font-size:.76rem;font-weight:600;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.evts .d{font-size:.92rem;color:var(--ink-2)}
+.evts .d b{color:var(--ink)}
+.rung.human{background:var(--accent-soft)}
+.rung.human .rung__mag{color:var(--accent-ink)}
+.rung.human .rung__body p{color:var(--ink)}
+
+/* epistemology table */
+.tablewrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:660px}
+caption{text-align:left;font-size:.84rem;color:var(--ink-3);padding:.75rem 1rem;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-3);text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--rule)}
+td{padding:.65rem 1rem;border-bottom:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+td.rowh{color:var(--ink);font-weight:600;white-space:nowrap}
+td.yrs{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ok{color:var(--accent-ink);font-weight:700}
+.pending{color:var(--ice-ink);font-weight:700}
+
+/* quote */
+.q{border-left:2px solid var(--accent);padding:.2rem 0 .2rem 1.3rem;margin-top:1.4rem;max-width:60ch}
+.q p{font-family:var(--display);font-size:1.1rem;line-height:1.6;color:var(--ink);margin:0 0 .5rem;
+  font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0}
+.q cite{font-family:var(--mono);font-size:.74rem;color:var(--ink-3);font-style:normal}
+
+/* method cards */
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
+.card h4{font-size:1.08rem}
+.card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-3)}
+.card p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.card.ice .tag{color:var(--ice-ink)}
+
+.verdict{border:1px solid var(--accent);background:var(--accent-soft);padding:1.7rem 1.8rem;
+  margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem;max-width:74ch}
+.verdict .eyebrow{color:var(--accent-ink)}
+.verdict h3{font-size:1.42rem}
+.verdict p{margin:0}
+.verdict b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.15rem 1.3rem;display:grid;gap:.3rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(210px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1.02rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+.foot{padding-block:2.5rem 3.5rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.88rem;color:var(--ink-3);max-width:70ch;margin:0 0 .7rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 03 · Derin Zaman</span>
+    <p class="eyebrow">Levha tektoniği · yok oluşlar · buzul döngüleri · yöntem</p>
+    <h1>Hatırlamadığımız Felaketler</h1>
+    <p class="hero__lede">Dünya gerçekten döngüsel ve yıkıcı felaketler yaşadı — kıtalar birleşip dağıldı, türlerin dörtte üçü birkaç kez silindi, buzullar geldi gitti. <strong>Ve neredeyse hiçbirini kimse görmedi.</strong> Bu yazı, görmediğimiz bir geçmişi nasıl bildiğimiz hakkında.</p>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#arsiv">Üç arşiv</a>
+    <a href="#oran">Gerçek oran</a>
+    <a href="#merdiven">Ölçek merdiveni</a>
+    <a href="#wegener">Wegener</a>
+    <a href="#bretz">Bretz</a>
+    <a href="#dryas">Genç Dryas</a>
+    <a href="#yontem">Yöntem</a>
+    <a href="#bugun">Bugün</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="arsiv" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Başlangıç noktası</p>
+    <h2>Üç ayrı arşivimiz var ve uzunlukları çok farklı</h2>
+    <p class="kicker">"İnsanlık büyük bir felaketi hatırlıyor" cümlesini test etmek için önce hatırlamanın neye dayandığını ayırmak gerekiyor.</p>
+  </div>
+
+  <div class="arch">
+    <div class="ar">
+      <h3>Tanıklık arşivi</h3>
+      <span class="ar__len">~5.200 yıl</span>
+      <p class="ar__what">Okuyabildiğimiz her şey. Yazı MÖ ~3200'de Uruk'ta başlıyor. İnsanların ne <b>düşündüğünü</b> buradan biliyoruz — ve yalnızca buradan.</p>
+    </div>
+    <div class="ar">
+      <h3>Maddi arşiv</h3>
+      <span class="ar__len">~11.500 yıl</span>
+      <p class="ar__what">Görebildiğimiz en eski anıtlar. Göbekli Tepe ve Taş Tepeler siteleri. Ne <b>yaptıklarını</b> gösteriyor — ama üzerindeki hayvan kabartmalarını okuyamıyoruz. Yazı değiller.</p>
+    </div>
+    <div class="ar">
+      <h3>Yeniden kurulan arşiv</h3>
+      <span class="ar__len">4,54 milyar yıl</span>
+      <p class="ar__what">Hiç kimsenin görmediği, tümüyle <b>çıkarsanmış</b> geçmiş. Buz karotları, ağaç halkaları, manyetik şeritler, izotop oranları, iridyum katmanı.</p>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Bu yazının tezi şu ayrımda: <b>maddi arşiv tanıklık arşivinin iki katı, ama ikisi de gezegenin arşivinin yanında ölçülemez.</b> Ve bu yazıda anlatılacak felaketlerin tamamı — istisnasız — üçüncü arşivde.</p>
+</section>
+
+<section id="oran" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Ölçek</p>
+    <h2>Önce dürüst oran, sonra bükülmüş eksen</h2>
+    <p class="kicker">Bu tür yazılarda hep logaritmik grafik kullanılır — ama logaritmik eksen yakın geçmişi <i>şişirir</i>. Önce gerçek oranı görelim.</p>
+  </div>
+
+  <div class="linbar">
+    <h4>Dünya'nın 4,54 milyar yılı — doğrusal ölçek</h4>
+    <div class="lb">
+      <div class="lb__seg lb__deep">Kambriyen öncesi — 4 milyar yıl</div>
+      <div class="lb__seg lb__phan">Fanerozoik</div>
+    </div>
+    <div class="lb__ticks">
+      <span>4,54 milyar yıl önce</span>
+      <span>541 My</span>
+      <span>bugün</span>
+    </div>
+    <p>Bu çubukta Permiyen yok oluşu sağ kenardan <b>%5,5</b> içeride, Chicxulub göktaşı <b>%1,5</b> içeride. Buzul çağları çubuğun son <b>binde yarımında</b>. İnsanlığın yazılı arşivi ise <span class="hair"></span> — bu çizgiden de ince. Ekranınızda <b>bir pikselin binde biri</b> kadar yer kaplıyor. Çizilemez.</p>
+    <p><b>Yani logaritmik eksen bir kolaylık değil, bir zorunluluk.</b> Kendi tarihimizi görebilmek için zamanı bükmek zorundayız — ve bunu yapmak zorunda oluşumuz zaten yazının cevabı.</p>
+  </div>
+</section>
+
+<section id="merdiven" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Merdiven</p>
+    <h2>Ölçek merdiveni: her basamak bir altındakini mümkün kılıyor</h2>
+    <p class="kicker">Yukarıdan aşağı inen bir zincir. Tektonik sahneyi kuruyor, iklim o sahnede oynuyor, güneş en üstte gürültü yapıyor.</p>
+  </div>
+
+  <div class="ladder">
+
+    <div class="rung">
+      <div class="rung__scale">
+        <span class="rung__mag">100 My</span>
+        <span class="rung__drv">Motor · manto ve levhalar</span>
+      </div>
+      <div class="rung__body">
+        <h3>Levha tektoniği ve süper kıta döngüsü</h3>
+        <p>Kıtalar yılda birkaç santimetre hareket ediyor — tırnak uzama hızında. Bu yavaşlıkla, 400–600 milyon yılda bir <b>birleşip dağılıyorlar</b>. Buna Wilson döngüsü deniyor ve gezegenin bilinen en uzun ritmi.</p>
+        <ul class="evts">
+          <li><span class="w">~1,8 milyar</span><span class="d">Columbia (Nuna) süper kıtası</span></li>
+          <li><span class="w">~1,1 milyar</span><span class="d">Rodinia; ~750 My'de dağılıyor</span></li>
+          <li><span class="w">~335 My</span><span class="d"><b>Pangaea birleşiyor</b> — tek kara, tek okyanus</span></li>
+          <li><span class="w">~175 My</span><span class="d">Pangaea dağılmaya başlıyor; Atlantik açılıyor</span></li>
+          <li><span class="w">+200–250 My</span><span class="d">Bir sonraki süper kıta. Modeller: Amasya, Pangaea Ultima, Aurica</span></li>
+        </ul>
+        <p style="margin-top:.8rem">Bu basamak neden en üstte: <b>kıtaların nerede durduğu iklimi belirliyor.</b> Kutupta kara varsa buz birikebilir; yoksa birikemez. Okyanus geçitleri açık mı kapalı mı, ısının dağılımını değiştiriyor.</p>
+      </div>
+    </div>
+
+    <div class="rung">
+      <div class="rung__scale">
+        <span class="rung__mag">10 My</span>
+        <span class="rung__drv">Volkanizma · karbon döngüsü</span>
+      </div>
+      <div class="rung__body">
+        <h3>Kitlesel yok oluşlar — ve göktaşının istisna oluşu</h3>
+        <p>Popüler anlatı yok oluşları göktaşıyla özdeşleştirir. <b>Gerçek tersine:</b> beş büyük yok oluşun en az üçü, muhtemelen dördü <b>büyük magmatik bölgelerle</b> (dev bazalt püskürmeleriyle) örtüşüyor. Göktaşı bir kez oldu — ve tam da bu yüzden ünlü.</p>
+        <ul class="evts">
+          <li><span class="w">~444 My</span><span class="d">Ordovisiyen–Silüriyen — buzullaşma sürücülü</span></li>
+          <li><span class="w">~372 My</span><span class="d">Geç Devoniyen</span></li>
+          <li><span class="w">~252 My</span><span class="d"><b>Permiyen–Triyas: Büyük Ölüm.</b> Deniz türlerinin ~%81'i. Sibirya Trapları kömür ve evaporit yataklarına sokuldu → CO₂, kükürt, halokarbon → ısınma, okyanus oksijensizliği, asitlenme</span></li>
+          <li><span class="w">~201 My</span><span class="d">Triyas–Jura — CAMP volkanizması, Pangaea'nın yarılmasıyla</span></li>
+          <li><span class="w">~66 My</span><span class="d">Kretase–Paleojen — Chicxulub çarpması <b>ve</b> Dekkan Trapları; payları hâlâ tartışılıyor</span></li>
+        </ul>
+        <p style="margin-top:.8rem">Aynı basamakta okyanus geçitleri: <b>Drake Geçidi</b> ~34 My'de açılınca Antarktika Sirkumpolar Akıntısı kuruldu ve Antarktika buzullaştı. <b>Panama Kıstağı</b> ~3 My'de kapanınca Atlantik dolaşımı yeniden düzenlendi. Coğrafya iklimi kesip biçiyor.</p>
+      </div>
+    </div>
+
+    <div class="rung">
+      <div class="rung__scale">
+        <span class="rung__mag">100 bin yıl</span>
+        <span class="rung__drv">Yörünge · Milanković</span>
+      </div>
+      <div class="rung__body">
+        <h3>Buzul çağları — "dünyanın döngüsü" dediğimiz şey</h3>
+        <p>Dünya'nın yörüngesi ve ekseni düzenli olarak salınıyor, ve bu salınım kutuplara düşen güneş ışığını değiştiriyor:</p>
+        <ul class="evts">
+          <li><span class="w">~100 bin yıl</span><span class="d">Basıklık — yörüngenin ne kadar eliptik olduğu (bir de ~413 bin yıllık bileşen)</span></li>
+          <li><span class="w">~41 bin yıl</span><span class="d">Eğiklik — eksen eğiminin 22,1° ile 24,5° arasında salınması</span></li>
+          <li><span class="w">~23 bin yıl</span><span class="d">Presesyon — eksenin topaç gibi yalpalaması</span></li>
+        </ul>
+        <p style="margin-top:.8rem">1976'da derin deniz çökel karotlarındaki izotop kayıtları bu üç periyodu doğrudan gösterdi. Teori 19. yüzyıldan beri ortadaydı; <b>kanıt okyanus tabanından geldi.</b></p>
+        <p><b>Ve dürüst bir boşluk:</b> ~1,2–0,8 milyon yıl önce buzul çağlarının ritmi 41 bin yıldan 100 bin yıla atladı. Buna Orta Pleyistosen Geçişi deniyor ve <b>nedeni bilinmiyor.</b> Üstelik 100 bin yıllık basıklık sinyali fiziksel olarak en zayıf olan; buna rağmen kaydı o yönetiyor. Buzul döngüleri çözülmüş bir konu değil.</p>
+      </div>
+    </div>
+
+    <div class="rung">
+      <div class="rung__scale">
+        <span class="rung__mag">1.000 yıl</span>
+        <span class="rung__drv">Buz · erime suyu · okyanus dolaşımı</span>
+      </div>
+      <div class="rung__body">
+        <h3>Ani iklim sıçramaları ve gerçek tufanlar</h3>
+        <p>Bu basamak, insanların <b>var olduğu</b> ama <b>yazmadığı</b> dönem. Yaşandı, tanık vardı, kayıt yok.</p>
+        <ul class="evts">
+          <li><span class="w">26,5–19 bin</span><span class="d">Son Buzul Maksimumu</span></li>
+          <li><span class="w">~15–13 bin</span><span class="d"><b>Missoula Selleri</b> — buz barajı defalarca patladı, her seferinde ~2.500 km³'e varan su Washington'ı süpürdü ve Channeled Scablands'i oydu</span></li>
+          <li><span class="w">~14,6 bin</span><span class="d"><b>Erime Darbesi 1A</b> — deniz seviyesi 400–500 yılda ~16–25 m yükseldi. Hızlı: yılda ~4 cm. Ama bir su duvarı değil</span></li>
+          <li><span class="w">12,9–11,7 bin</span><span class="d"><b>Genç Dryas</b> — Kuzey Atlantik'te ani soğuma; <b>bitişinde</b> Grönland buz karotları on yıllar içinde ~10°C ısınma gösteriyor</span></li>
+          <li><span class="w">~8,2 bin</span><span class="d">8,2 bin yıl olayı — Agassiz gölünün son boşalması, ani soğuma</span></li>
+        </ul>
+        <p style="margin-top:.8rem"><b>Karşılaştırma için:</b> Göbekli Tepe MÖ ~9500'de, yani Genç Dryas bittikten ~200 yıl <i>sonra</i> inşa edildi. İnsanlığın gördüğümüz en eski anıtı bile bu listedeki hiçbir olaya tanık değil.</p>
+      </div>
+    </div>
+
+    <div class="rung">
+      <div class="rung__scale">
+        <span class="rung__mag">yıl · an</span>
+        <span class="rung__drv">Güneş</span>
+      </div>
+      <div class="rung__body">
+        <h3>Güneş olayları — felaket değil, takvim</h3>
+        <p>"Güneş patlaması" merakının en verimli sonucu, beklenenin tam tersi çıktı.</p>
+        <ul class="evts">
+          <li><span class="w">1859</span><span class="d"><b>Carrington Olayı</b> — gözlenmiş en büyük jeomanyetik fırtına; telgraf hatları çöktü. Bugün olsa şebeke ve uydu hasarı</span></li>
+          <li><span class="w">774–775</span><span class="d"><b>Miyake olayı</b> — 2012'de Japon sedir ağacı halkalarında karbon-14 sıçraması olarak bulundu, buz karotlarında doğrulandı. Carrington'ın onlarca katı</span></li>
+          <li><span class="w">993–994</span><span class="d">İkinci Miyake olayı — ve asıl ödül burada</span></li>
+        </ul>
+        <p style="margin-top:.8rem">993 olayı bütün dünyada ağaç halkalarına aynı anda bir <b>imza</b> bıraktı. Araştırmacılar Kanada'daki Viking yerleşiminin kerestesinde bu imzayı bulup halkaları saydılar ve ağaçların kesim yılını <b>tam olarak 1021</b> diye belirlediler. Bir güneş fırtınası, Avrupalıların Amerika'ya ilk ayak basışını yıl hassasiyetiyle tarihledi.</p>
+        <p><b>Ama dürüst olalım:</b> Miyake olayları sel yapmaz, tür söndürmez, uygarlık yıkmaz. Radyasyon ve teknoloji riskidir — jeolojik değil.</p>
+      </div>
+    </div>
+
+    <div class="rung human">
+      <div class="rung__scale">
+        <span class="rung__mag">5.200 yıl</span>
+        <span class="rung__drv">İnsan · tanıklık</span>
+      </div>
+      <div class="rung__body">
+        <h3>Ve yazılı arşivin tamamı</h3>
+        <p>Yukarıdaki bütün merdivende, insanlığın yazdığı her şey <b>en alt basamağın da altında</b> kalıyor. Uruk'tan bugüne, bütün tabletler, papirüsler, kitaplar ve bu sayfa dahil.</p>
+        <p>Merdivendeki tek bir olay bile yazıya yetişemedi. En yakını 8,2 bin yıl olayı — ve o bile yazının icadından <b>üç bin yıl</b> önce.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="wegener" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Nasıl öğrendik I</p>
+    <h2>Dört yüz yıl gözümüzün önündeydi</h2>
+    <p class="kicker">Kıta hareketi sadece hatırlanmadı — haritada görünüyordu ve inanmadık.</p>
+  </div>
+
+  <div class="prose">
+    <p>Abraham Ortelius 1596'da atlasına bakıp Amerika'nın Avrupa ve Afrika'dan "koparılmış" olabileceğini yazdı. Francis Bacon 1620'de kıyı uyumuna dikkat çekti. Yani gözlem <b>dört yüz yıldan eski.</b></p>
+    <p>Alfred Wegener 1912'de kanıtlarla geldi — ve bir meteorologdu, jeolog değil. Bu, sonradan önemli olacaktı. Elindekiler: iki kıtada aynı fosiller, birbirinin devamı olan dağ kuşakları, bugün tropik olan bölgelerde buzul çökelleri, Antarktika'da kömür yatakları.</p>
+  </div>
+
+  <div class="q">
+    <p>"Güney Amerika'nın doğu kıyısı, Afrika'nın batı kıyısına tam olarak oturuyor mu — sanki bir zamanlar birleşiklermiş gibi? Bu, peşine düşmem gereken bir fikir."</p>
+    <cite>Wegener'den Else Köppen'e mektup, Aralık 1911 · Almanca aslından çeviri</cite>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><b>Ve reddedildi. Reddedenler aptal değildi.</b> Wegener'in <i>mekanizması</i> yanlıştı: kıtaların okyanus kabuğunu yararak ilerlediğini öne sürüyordu, ve dönemin fizikçileri bunun imkânsız olduğunu gösterdi. Kanıt iyiydi, mekanizma yoktu, ve bilim mekanizmasız kanıtı yutmadı.</p>
+    <p>En dürüst tarafı şu: <b>Wegener bunu biliyordu.</b> Kitabının son baskısında, sürüklenme kuramının henüz kendi Newton'unu bulamadığını yazdı. Bir sahtekârın değil, eksiğini bilen birinin cümlesi.</p>
+    <p>1930 Kasımında, elli yaşına bastığı gün, Grönland buzunda mahsur kalmış bir kampa erzak götürürken öldü. Haklı çıktığını görmedi.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card ice">
+      <span class="tag">1950'ler</span>
+      <h4>Marie Tharp haritayı çiziyor</h4>
+      <p>Okyanus tabanı derinlik verilerini elle haritalarken Atlantik ortasında bir <b>yarık vadi</b> olduğunu fark etti. Çalışma arkadaşı ilk tepkisinde bunu "kız işi laf" diye geçiştirdi. Tharp haklıydı; o yarık, tabanın ayrıldığı yerdi.</p>
+    </div>
+    <div class="card ice">
+      <span class="tag">1962</span>
+      <h4>Hess mekanizmayı öneriyor</h4>
+      <p>Harry Hess okyanus tabanının sırtlarda üretilip iki yana yayıldığını öne sürdü. Kendi makalesini temkinle "bir jeo-şiir denemesi" diye niteledi — kanıtın henüz yetmediğini biliyordu.</p>
+    </div>
+    <div class="card ice">
+      <span class="tag">1963</span>
+      <h4>Manyetik şeritler kesin kanıtı veriyor</h4>
+      <p>Sırtın iki yanındaki kayaların manyetik yönelimi, <b>ayna simetrisinde şeritler</b> oluşturuyordu. Okyanus tabanı, Dünya'nın manyetik alan terslenmelerini kaydeden bir teyp bandıymış. Wegener'in ölümünden 33 yıl sonra tartışma bitti.</p>
+    </div>
+  </div>
+</section>
+
+<section id="bretz" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Nasıl öğrendik II</p>
+    <h2>Kırk yıl alay edilen adam</h2>
+  </div>
+
+  <div class="prose">
+    <p>J Harlen Bretz 1923'te, Washington eyaletindeki tuhaf araziyi — dev kuru şelaleler, devasa çakıl dalgacıkları, kazınmış bazalt — açıklamak için tek bir sebep önerdi: <b>akıl almaz büyüklükte bir sel.</b></p>
+    <p>Kırk yıl reddedildi. Sebebi kanıt değil, <b>doktrindi</b>: jeoloji o dönem "yavaş ve kademeli"ye o kadar bağlıydı ki felaket açıklamaları neredeyse dinî bir sapma sayılıyordu. Bretz'in eksiği de gerçekti — suyun <i>nereden</i> geldiğini gösteremiyordu.</p>
+    <p>Cevap sonradan bulundu: Montana'da, bir buz barajının arkasında biriken dev bir buzul gölü. Baraj defalarca patladı, göl defalarca doldu. Tek bir sel değil, <b>onlarca sel.</b></p>
+  </div>
+
+  <div class="q">
+    <p>"Bütün düşmanlarım öldü — hava atacak kimsem kalmadı."</p>
+    <cite>Bretz, 1979'da 96 yaşında mesleğin en büyük madalyasını alırken · aktarılan söz</cite>
+  </div>
+
+  <p class="note ice" style="margin-top:1.5rem">Bu iki hikâye birlikte okunmalı. İkisinde de ana akım uzun süre yanıldı, ikisinde de aykırı görüş kazandı. Ama <b>ikisi de mekanizma bulunduğunda kazandı</b> — Wegener taban yayılmasıyla, Bretz buzul göletiyle. Kazandıran şey ısrar değil, <b>eksik parçanın bulunmasıydı.</b></p>
+</section>
+
+<section id="dryas" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Nasıl öğrenmedik</p>
+    <h2>Üçüncü vaka: henüz kazanmamış olan</h2>
+    <p class="kicker">Yukarıdaki iki hikâye "ana akım yanılabilir" diyor. Bu üçüncüsü "ama her aykırı iddia da haklı değil" diyor. İkisi birlikte olmadan tablo eksik.</p>
+  </div>
+
+  <div class="prose">
+    <p>2007'de bir grup araştırmacı, Genç Dryas soğumasının bir <b>kuyruklu yıldız hava patlamasıyla</b> başladığını öne sürdü. Kanıt olarak nanoelmaslar, platin anomalisi ve "siyah örtü" denen çökel katmanı gösterildi.</p>
+    <p>Bu bir sahtekârlık değil — gerçek araştırmacıların gerçek hipotezi. Ve platin anomalisi <b>gerçekten ilginç.</b> Ama on yılı aşkın süredir bulguların tekrarlanabilirliği tartışmalı; nanoelmas tespitleri bağımsız laboratuvarlarda tutarlı sonuç vermedi. Ana akım açıklama hâlâ erime suyunun Atlantik dolaşımını bozması.</p>
+    <p><b>Durum:</b> azınlık görüşü. Ölmedi, kanıtlanmadı.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Aykırı üç iddia, üç farklı sonuç. Ayıran şey ısrar değil, mekanizma ve tekrarlanabilir kanıt.</caption>
+      <thead>
+        <tr><th scope="col">Kim</th><th scope="col">İddia</th><th scope="col">Direnç</th><th scope="col">Sonuç</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rowh">Wegener</td><td>Kıtalar hareket ediyor</td><td class="yrs">~50 yıl</td>
+          <td><span class="ok">Kanıtlandı</span> — manyetik şeritler mekanizmayı verdi</td>
+        </tr>
+        <tr>
+          <td class="rowh">Bretz</td><td>Dev bir sel araziyi oydu</td><td class="yrs">~40 yıl</td>
+          <td><span class="ok">Kanıtlandı</span> — buzul gölü suyun kaynağını verdi</td>
+        </tr>
+        <tr>
+          <td class="rowh">Genç Dryas çarpma hipotezi</td><td>Kuyruklu yıldız iklimi çevirdi</td><td class="yrs">2007'den beri</td>
+          <td><span class="pending">Azınlık</span> — bulgular bağımsız olarak tekrarlanamadı</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p>Popüler yapımlarda üçüncü satır sık sık birinci ve ikinci satırın yanına, aynı kesinlikte konuluyor: "bakın, bilim yeni fikirleri hep reddeder." Tablonun cevabı bu retoriğe: <b>evet reddetti, ve iki kez yanıldı — ama yanıldığını gösteren şey ısrar değil kanıt oldu.</b></p>
+  </div>
+</section>
+
+<section id="yontem" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Asıl hikâye</p>
+    <h2>Hatırlamıyoruz. Yeniden kuruyoruz.</h2>
+    <p class="kicker">Yazının başındaki sorunun gerçek cevabı burada — ve "ortak hatıra"dan çok daha etkileyici.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Buz karotları</span>
+      <h4>Yıl yıl atmosfer</h4>
+      <p>Grönland ve Antarktika'da buz, her yıl bir katman biriktiriyor ve içine <b>o yılın havasını</b> kabarcık olarak hapsediyor. İzotop oranları sıcaklığı, kabarcıklar CO₂'yi, kül katmanları volkanik patlamaları veriyor. 800 bin yıl geriye kesintisiz.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Ağaç halkaları</span>
+      <h4>Yıl hassasiyetinde takvim</h4>
+      <p>Her halka bir yıl. Örtüşen örneklerle zincir binlerce yıl geriye uzatılabiliyor. Miyake olaylarının bulunduğu yer burası — ve L'Anse aux Meadows'un 1021'e tarihlenmesini sağlayan da bu.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Manyetik şeritler</span>
+      <h4>Okyanus tabanı bir teyp</h4>
+      <p>Sırtta katılaşan bazalt, o anki manyetik alanın yönünü donduruyor. Alan terslendikçe şeritler oluşuyor — sırtın iki yanında <b>ayna simetrisinde</b>. Levha hareketinin hem kanıtı hem kronometresi.</p>
+    </div>
+    <div class="card">
+      <span class="tag">İridyum katmanı</span>
+      <h4>66 milyon yıllık ince çizgi</h4>
+      <p>Dünya kabuğunda nadir, göktaşlarında bol bir element. Kretase–Paleojen sınırında dünyanın her yerinde aynı ince katman. Chicxulub krateri <b>sonradan</b> bulundu — önce katman, sonra çukur.</p>
+    </div>
+    <div class="card ice">
+      <span class="tag">Çökel varvları</span>
+      <h4>Göl tabanında yıllar</h4>
+      <p>Mevsimsel tortu farkları, göl tabanında ağaç halkası gibi çiftler oluşturuyor. Buzul göllerinin doluş-boşalış ritmini buradan okuyoruz.</p>
+    </div>
+    <div class="card ice">
+      <span class="tag">İzotop oranları</span>
+      <h4>Termometre ve kronometre</h4>
+      <p>Oksijen-18/16 oranı geçmiş sıcaklığı, karbon-14 son ~50 bin yılı, uranyum-kurşun milyarlarca yılı veriyor. Dünya'nın 4,54 milyar yaşı bu yöntemle ölçüldü.</p>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <p class="eyebrow">Yazının cevabı</p>
+    <h3>Felaketler gerçek, döngüler gerçek — hatıra değil</h3>
+    <p>Merdivendeki her basamak ölçülmüş, tarihlenmiş, birden fazla bağımsız yöntemle doğrulanmış olaylar içeriyor. Hiçbiri spekülasyon değil. <b>Ama hiçbiri de hatırlanmıyor.</b> İnsan tanıklığı bu olayların en yenisine bile üç bin yıl geç kaldı.</p>
+    <p>Ve tam da bu yüzden bunları biliyor oluşumuz, hatırlıyor olmamızdan çok daha büyük bir başarı. Missoula Selleri'ni kimse anlatmadı — <b>araziyi okuyup çıkardık.</b> Manyetik terslenmeleri kimse görmedi — <b>bazaltta bulduk.</b> Chicxulub'u kimse yaşamadı — <b>önce bir ince çizgi, sonra bir krater.</b></p>
+    <p>Antik metinlerde felaket hatırası aramak, elimizdeki çok daha güçlü aracı küçümsemek oluyor: <b>gezegenin kendi tuttuğu kayıtları okuyabiliyoruz</b>, ve o kayıtlar insan belleğinden milyon kat uzun.</p>
+  </div>
+</section>
+
+<section id="bugun" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Ve şimdi</p>
+    <h2>Merdivenin bugüne bakan yüzü</h2>
+  </div>
+
+  <div class="prose">
+    <p>Bu yazının başında sorulan soru geçmişe bakıyordu. Dürüst cevabı bugüne bakıyor.</p>
+    <p>Beş büyük yok oluşun en yıkıcısı olan Permiyen'i öldüren mekanizma göktaşı değildi: <b>atmosfere hızla karbon salınması</b>, ardından ısınma, okyanusun oksijenini yitirmesi ve asitlenmesi. Sibirya Trapları kömür ve tuz yataklarının içine sokulduğu için bu kadar öldürücü oldu.</p>
+    <p>Bugün karbon döngüsüne yaptığımız şey, <b>mekanizma olarak aynı aileye ait.</b> Tek fark ölçek ve hız — ve hız tarafında fark bizim aleyhimize: tahminlere göre bugünkü salınım hızı, jeolojik kayıttaki en hızlı doğal karbon salınımı olaylarından bile kat kat yüksek.</p>
+    <p>Bunu bir kıyamet cümlesi olarak değil, <b>merdivenin sonucu</b> olarak yazıyorum: gezegenin kayıtlarını okuyabilen tek tür olmanın anlamı, kendi yaptığımızın hangi basamağa denk düştüğünü de görebilmek. Permiyen'den öğrendiğimiz şey bir kehanet değil, <b>bir mekanizma.</b></p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Buzul döngüleri neden 41 binden 100 bine atladı?</p>
+      <p class="oq__a">Orta Pleyistosen Geçişi (~1,2–0,8 My). Yörünge zorlaması değişmedi, ama iklimin ona verdiği yanıt değişti. <b>Nedeni bilinmiyor.</b> Üstelik 100 bin yıllık sinyal fiziksel olarak en zayıf olanı — buna "100 bin yıl problemi" deniyor ve açık.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Chicxulub mu öldürdü, Dekkan Trapları mı?</p>
+      <p class="oq__a">İkisi de 66 milyon yıl civarında. Göktaşının kesin etkisi var; ama Dekkan volkanizması zaten ekosistemi zayıflatmış olabilir. Payların oranı <b>hâlâ tartışılıyor</b> ve tarihlendirme hassasiyeti sınırda.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Genç Dryas'ı ne başlattı?</p>
+      <p class="oq__a">Erime suyunun Atlantik dolaşımını bozması en yaygın açıklama, ama suyun tam olarak <b>hangi güzergâhtan</b> boşaldığı netleşmedi. Çarpma hipotezi bu boşlukta yaşıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Toba insanlığı gerçekten darboğaza soktu mu?</p>
+      <p class="oq__a">1998'de öne sürüldü, çok popüler oldu. Sonraki arkeolojik kanıtlar — Afrika'da patlama boyunca süren yerleşim izleri — iddiayı <b>büyük ölçüde zayıflattı.</b> Popüler bir "gerçeğin" nasıl eridiğine dair iyi bir örnek.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Bir sonraki süper kıta nasıl olacak?</p>
+      <p class="oq__a">Modeller çelişiyor: Atlantik mi kapanacak (Pangaea Ultima), Pasifik mi (Novopangaea), yoksa kıtalar kutupta mı toplanacak (Amasya)? 200 milyon yıl sonrası için <b>rakip senaryolar</b> var, tek cevap yok.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Çok sayıda kaynak taranarak Türkçe yazılmıştır.</p>
+    <p><b>Alıntılar</b> (Wegener'in mektubu, Bretz'in sözü, Hess'in nitelemesi) asıllarından bu sayfa için çevrilmiştir. Bretz'e atfedilen söz aktarıma dayanır ve birebir kaydı yoktur; bu tür sözlerin zamanla cilalandığını hesaba katın.</p>
+    <p><b>Tarihler ve sayılar yaklaşıktır</b> ve ölçüm yöntemi geliştikçe değişir. Yüzdelerin çoğu (yok oluş oranları gibi) tahmin aralıklarının orta değerleridir. Tartışmalı olduğunu belirttiğim her yer gerçekten tartışmalıdır — Chicxulub–Dekkan payları, Genç Dryas'ın tetikleyicisi, Panama Kıstağı'nın kapanma tarihi ve 100 bin yıl problemi dahil.</p>
+    <p><b>Bu yazı, üçlemenin sonuncusu.</b> Öncekiler: metinler ne diyor (Ölü Deniz Parşömenleri) ve mit nereden geliyor (Tufan Bilmecesi). Bu yazı gezegenin gerçekte ne yaptığını ele alıyor.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) map[el.id] = a;
+  });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

@@ -1,0 +1,427 @@
+<title>Stonehenge: Taşın Yolu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E8E6E6; --surface:#F3F1F2; --surface-2:#DCD9DB;
+  --ink:#17151A; --ink-2:#4C4852; --ink-3:#7A757F;
+  --rule:#C5C1C6; --rule-soft:#D6D2D7;
+  --accent:#5B4A7A; --accent-ink:#463862; --accent-soft:#E1DAEC;
+  --sarsen:#7A7159; --sarsen-ink:#615A46; --sarsen-soft:#E8E3D5;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131215; --surface:#1A181D; --surface-2:#252229;
+    --ink:#E5E2E8; --ink-2:#A8A3AE; --ink-3:#797481;
+    --rule:#302C36; --rule-soft:#26232B;
+    --accent:#B0A0D4; --accent-ink:#C4B7E2; --accent-soft:#1F1930;
+    --sarsen:#C3B893; --sarsen-ink:#D5CBAB; --sarsen-soft:#28241A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131215; --surface:#1A181D; --surface-2:#252229;
+  --ink:#E5E2E8; --ink-2:#A8A3AE; --ink-3:#797481;
+  --rule:#302C36; --rule-soft:#26232B;
+  --accent:#B0A0D4; --accent-ink:#C4B7E2; --accent-soft:#1F1930;
+  --sarsen:#C3B893; --sarsen-ink:#D5CBAB; --sarsen-soft:#28241A;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1.05em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.6rem,7.2vw,4.9rem);line-height:.97;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:13ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.42;color:var(--ink-2);max-width:47ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(152px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:1rem 1.15rem;display:flex;flex-direction:column;gap:.2rem}
+.stat__num{font-family:var(--display);font-size:1.8rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.s{color:var(--sarsen-ink)}
+.stat__lbl{font-size:.83rem;color:var(--ink-3);line-height:1.35}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.75rem,6vw,4.5rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.75rem}
+.sec__head h2{font-size:clamp(1.7rem,3.4vw,2.45rem);line-height:1.08}
+.sec__head .kicker{font-size:1.02rem;color:var(--ink-2);max-width:56ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.9rem 1.15rem;font-size:.94rem;color:var(--ink);max-width:var(--measure)}
+.note.s{border-color:var(--sarsen);background:var(--sarsen-soft)}
+
+/* distance chart */
+.dist{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.4rem 1.5rem;overflow-x:auto}
+.dist h4{font-size:1.02rem;margin-bottom:.3rem}
+.dist .sub{font-size:.88rem;color:var(--ink-3);margin:0 0 1.4rem;max-width:66ch}
+.dl{display:flex;flex-direction:column;gap:1.2rem;min-width:560px}
+.dr{display:grid;grid-template-columns:150px 1fr;gap:.4rem .9rem;align-items:center}
+.dr__lbl{display:flex;flex-direction:column;gap:.05rem;text-align:right}
+.dr__lbl b{font-size:.9rem;font-weight:700}
+.dr__lbl span{font-family:var(--mono);font-size:.67rem;color:var(--ink-3)}
+.dr__track{position:relative;height:30px;display:flex;align-items:center}
+.dr__track::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--rule)}
+.dbar{position:relative;height:14px;background:var(--accent);border-radius:1px}
+.dbar.s{background:var(--sarsen)}
+.dnum{position:absolute;left:calc(var(--w) + .6rem);top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--ink);white-space:nowrap}
+.dwt{position:absolute;left:.5rem;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:.66rem;color:#fff;mix-blend-mode:difference;white-space:nowrap}
+.dist .legend{margin:1.3rem 0 0;font-size:.93rem;color:var(--ink-2);max-width:68ch}
+.dist .legend b{color:var(--ink)}
+
+/* discovery timeline */
+.tl{display:grid;grid-template-columns:minmax(80px,auto) 1fr;gap:0 1.4rem;margin-top:1.5rem;max-width:860px}
+.tl__date{font-family:var(--mono);font-size:.8rem;font-weight:600;color:var(--ink-2);padding:.8rem 0 .1rem;text-align:right;font-variant-numeric:tabular-nums;border-top:1px solid var(--rule-soft)}
+.tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.4rem;position:relative}
+.tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.tl__body.s::before{background:var(--sarsen)}
+.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
+.tl__body .st{font-family:var(--mono);font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.14rem .4rem;margin-left:.4rem;vertical-align:2px}
+.st-ok{background:var(--accent-soft);color:var(--accent-ink)}
+.st-con{background:var(--sarsen-soft);color:var(--sarsen-ink)}
+
+/* two hypotheses */
+.hyp{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:760px){.hyp{grid-template-columns:1fr 1fr}}
+.hy{background:var(--bg);padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.6rem}
+.hy .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.hy h3{font-size:1.16rem}
+.hy p{margin:0;font-size:.94rem;color:var(--ink-2)}
+.hy ul{margin:.1rem 0 0;padding-left:1.05rem;font-size:.91rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.32rem}
+.hy .verdict{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.2rem .45rem;align-self:flex-start;margin-top:.2rem}
+.v-lead{background:var(--accent-soft);color:var(--accent-ink)}
+.v-alive{background:var(--sarsen-soft);color:var(--sarsen-ink)}
+.hy.lead{background:var(--accent-soft)}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(245px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
+.card h4{font-size:1.08rem}
+.card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.7rem 1.8rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.42rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.15rem 1.3rem;display:grid;gap:.3rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1.02rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+.foot{padding-block:2.5rem 3.5rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.88rem;color:var(--ink-3);max-width:70ch;margin:0 0 .7rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 08 · Neolitik Britanya</span>
+    <p class="eyebrow">Jeokimya · buzul modellemesi · süren tartışma</p>
+    <h1>Stonehenge: Taşın Yolu</h1>
+    <p class="hero__lede">Son beş yılda taşların nereden geldiğini <strong>kilometre hassasiyetinde</strong> öğrendik — ve bir tanesi herkesi şaşırttı. Ama aynı beş yılda <strong>neden yapıldığına</strong> dair hiçbir şey öğrenmedik. Bu yazı o boşluğun hikâyesi.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num s">~25 km</span><span class="stat__lbl">sarsenlerin yolu — en ağır taşlar, en kısa mesafe</span></div>
+      <div class="stat"><span class="stat__num">~250 km</span><span class="stat__lbl">mavitaşlar, Galler'deki Preseli Tepeleri'nden</span></div>
+      <div class="stat"><span class="stat__num">~700 km</span><span class="stat__lbl">Sunak Taşı — 2024'e kadar bilinmiyordu</span></div>
+      <div class="stat"><span class="stat__num s">6.000 kg</span><span class="stat__lbl">Sunak Taşı'nın ağırlığı</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#mesafe">Üç mesafe</a>
+    <a href="#sarsen">Sarsenler</a>
+    <a href="#mavitas">Mavitaşlar</a>
+    <a href="#bosluk">Tarih boşluğu</a>
+    <a href="#sunak">Sunak Taşı</a>
+    <a href="#buzul">İnsan mı, buzul mu</a>
+    <a href="#neden">Neden bilmiyoruz</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="mesafe" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Tuhaflık</p>
+    <h2>En ağır taşlar en kısa yolu geldi</h2>
+    <p class="kicker">Stonehenge tek tip bir yapı değil. Üç ayrı taş türü, üç ayrı kaynak, ve aralarındaki mesafe farkı otuz kat.</p>
+  </div>
+
+  <div class="dist">
+    <h4>Taş türüne göre kaynak mesafesi — gerçek oranda</h4>
+    <p class="sub">Çubuk uzunlukları mesafeyle orantılı. Üzerlerindeki değer taşların ağırlığı.</p>
+
+    <div class="dl">
+      <div class="dr">
+        <div class="dr__lbl"><b>Sarsenler</b><span>West Woods, Wiltshire</span></div>
+        <div class="dr__track">
+          <div class="dbar s" style="--w:3.6%;width:3.6%"><span class="dwt">25–30 t</span><span class="dnum">~25 km</span></div>
+        </div>
+      </div>
+      <div class="dr">
+        <div class="dr__lbl"><b>Mavitaşlar</b><span>Preseli Tepeleri, Galler</span></div>
+        <div class="dr__track">
+          <div class="dbar" style="--w:35.7%;width:35.7%"><span class="dwt">2–4 t</span><span class="dnum">~250 km</span></div>
+        </div>
+      </div>
+      <div class="dr">
+        <div class="dr__lbl"><b>Sunak Taşı</b><span>Orcadian Havzası, İskoçya</span></div>
+        <div class="dr__track">
+          <div class="dbar" style="--w:100%;width:100%"><span class="dwt">6 t</span></div>
+          <span class="dnum" style="position:static;transform:none;margin-left:.6rem">~700 km</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="legend"><b>Tabloyu tersine okuyun:</b> yapıdaki en ağır taşlar — bazıları otuz tonu aşan sarsenler — yalnızca yirmi beş kilometre taşındı. Buna karşılık altı tonluk tek bir kumtaşı, yedi yüz kilometre yol yaptı. <b>Mesafe, taşıma zorluğuyla ölçeklenmiyor.</b> Demek ki taşın <i>nereden geldiği</i>, ne kadar ağır olduğundan daha önemliydi. Neyin önemli olduğunu ise bilmiyoruz.</p>
+  </div>
+</section>
+
+<section id="sarsen" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — 2020</p>
+    <h2>Sarsenler: elli iki taştan ellisi aynı yerden</h2>
+  </div>
+
+  <div class="prose">
+    <p>Stonehenge'in siluetini oluşturan dev bloklara <b>sarsen</b> deniyor — sertleşmiş kumtaşı. Nereden geldikleri yüzyıllarca bilinmiyordu.</p>
+    <p>2020'de yayımlanan jeokimyasal çalışma bunu çözdü: <b>52 sarsenden 50'si aynı kimyasal imzayı taşıyor</b>, yani ortak bir kaynaktan geliyorlar. Kaynak, Stonehenge'in yaklaşık 25 kilometre kuzeyindeki <b>West Woods, Wiltshire</b>.</p>
+    <p>Bu bulgunun değeri iki katmanlı. Birincisi soruyu kapatıyor. İkincisi ve daha ilginci: <b>50/52 oranı</b>, taşların rastgele toplanmadığını, bilinçli olarak tek bir yerden seçildiğini gösteriyor. Kalan ikisi ise ayrı bir soru olarak duruyor.</p>
+  </div>
+</section>
+
+<section id="mavitas" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Galler</p>
+    <h2>Mavitaşlar ve "ocak" kelimesinin sorunu</h2>
+    <p class="kicker">Kaynak bölge sağlam biliniyor. Ama "orada taş ocağı vardı" cümlesi göründüğü kadar sağlam değil.</p>
+  </div>
+
+  <div class="prose">
+    <p>Daha küçük olan <b>mavitaşlar</b> (her biri 2–4 ton) Galler'in batısındaki <b>Preseli Tepeleri</b>'nden geliyor — yaklaşık 250 kilometre. Bu, jeolojik eşleştirmeyle uzun süredir biliniyor.</p>
+    <p>Sonraki adım iki noktanın <b>taş ocağı</b> olarak tanımlanmasıydı: <b>Carn Goedog</b> ve <b>Craig Rhos-y-felin</b>. Bu buluntular geniş yankı buldu.</p>
+    <p><b>Ama dürüst olmak gerekir:</b> bu iki noktada gerçek bir ocak işletmesine dair doğrudan kanıt bulunup bulunmadığı tartışmalıdır. Kayanın oradan geldiği ile <b>oradan insan eliyle çıkarıldığı</b> farklı iddialardır, ve ikincisi birincisi kadar sağlam değildir. Popüler aktarımda bu ayrım genellikle kayboluyor.</p>
+  </div>
+
+  <p class="note s" style="margin-top:1.5rem">Bu, bu sitenin tekrar eden ayrımı: <b>bir taşın kaynağını belirlemek jeokimyanın işidir ve kesin sonuç verir; o taşın nasıl çıkarıldığını belirlemek arkeolojinin işidir ve çok daha zordur.</b> İkisi aynı cümlede birleştirilince kesinlik olduğundan büyük görünüyor.</p>
+</section>
+
+<section id="bosluk" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Boşluk</p>
+    <h2>Üç yüz yıllık gecikme ve "sökülmüş çember" fikri</h2>
+  </div>
+
+  <div class="prose">
+    <p>Galler'deki kaynak alanlarında elde edilen tarihler <b>MÖ 3400 ve 3200</b> civarına işaret ediyor. Oysa mavitaşlar Stonehenge'e <b>MÖ 2900 dolaylarında</b> dikiliyor.</p>
+    <p>Arada üç ila beş yüzyıl var. Taşlar bu sürede neredeydi?</p>
+    <p>Bir hipotez şunu öneriyor: taşlar önce <b>Galler'de başka bir çember olarak dikildi</b>, sonra sökülüp Salisbury Ovası'na taşındı. Aday site <b>Waun Mawn</b>: MÖ 3000 dolayına tarihleniyor, <b>çapı Stonehenge'in çevreleyen hendeğiyle aynı</b>, ve <b>yaz gündönümü doğuşuna yönelmiş.</b></p>
+    <p>Fikir çekici — hatta dokuz yüz yıllık bir efsanenin, Stonehenge'in daha eski bir çemberden getirildiği anlatısının, bir gerçeklik çekirdeği taşıyabileceği öne sürüldü.</p>
+    <p><b>Ama hipotez tartışmalıdır ve yayımlanmış eleştirileri vardır.</b> Çap ve yönelim benzerlikleri güçlü ama tek başına belirleyici değil; benzer ölçüler bağımsız olarak da ortaya çıkabilir. Bu yazının duruşu: <b>ciddiye alınması gereken bir hipotez, kanıtlanmış bir sonuç değil.</b></p>
+  </div>
+</section>
+
+<section id="sunak" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — 2024</p>
+    <h2>Sunak Taşı: elli yıllık varsayımın çökmesi</h2>
+    <p class="kicker">Bir kumtaşı, sırf kumtaşı olduğu için yanlış gruba konmuştu.</p>
+  </div>
+
+  <div class="prose">
+    <p><b>Sunak Taşı</b>, çemberin merkezinde yatan altı tonluk bir kumtaşı bloğu. Onlarca yıl boyunca mavitaş grubuna dahil edilip <b>Galler kökenli</b> sayıldı — çünkü diğer mavitaşlarla birlikte bulunuyordu ve bir kumtaşıydı.</p>
+    <p>2024'te bu varsayım test edildi. Taşın içindeki <b>zirkon, apatit ve rutil</b> tanelerinin yaşı ve kimyası ölçüldü. Sonuç beklenmedikti: taş, kuzeydoğu İskoçya'daki <b>Orcadian Havzası</b>'ndan geliyordu.</p>
+    <p>Mesafe 250 kilometreden <b>yaklaşık 700 kilometreye</b> çıktı. Ve bu, Neolitik Britanya'da hiç beklenmeyen bir ölçekte bağlantı demekti.</p>
+  </div>
+
+  <div class="tl">
+    <div class="tl__row">
+      <div class="tl__date">2020</div>
+      <div class="tl__body s"><h4>Sarsenler West Woods'a bağlanıyor<span class="st st-ok">Yerleşik</span></h4><p>Jeokimyasal imza 52 taştan 50'sini tek kaynağa götürüyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2021</div>
+      <div class="tl__body"><h4>Waun Mawn: sökülmüş çember hipotezi<span class="st st-con">Tartışmalı</span></h4><p>Aynı çap, aynı yönelim, MÖ 3000. Güçlü bir öneri ama yayımlanmış itirazları var.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2024</div>
+      <div class="tl__body"><h4>Sunak Taşı Galler'den değil, İskoçya'dan<span class="st st-ok">Yerleşik</span></h4><p>Zirkon, apatit ve rutil analizi. Elli yıllık grup varsayımı çöküyor; mesafe ~700 km.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2024</div>
+      <div class="tl__body"><h4>Kaynak daraltılamıyor<span class="st st-con">Tartışmalı</span></h4><p>Aynı yıl başka bir çalışma taşın Orkney Anakarası kumtaşlarıyla tam eşleşmediğini gösteriyor. Kaynak, kuzeydoğu İskoçya'da geniş bir alan.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2026</div>
+      <div class="tl__body"><h4>Buzul güzergâhı modellemesi<span class="st st-ok">Yeni</span></h4><p>Son Buzul Çağı buz akışı modelleri, kaynak bölgeden Stonehenge'e <b>doğrudan bir buzul güzergâhı öngörmüyor.</b> Sonuç: taşın insan eliyle taşınmış olması gerekiyor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="buzul" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Yöntem</p>
+    <h2>İnsan mı taşıdı, buzul mu?</h2>
+    <p class="kicker">Bu tartışma yüz yıldan eski ve hâlâ kapanmadı. Ama nasıl karara bağlandığı, sonucun kendisinden öğretici.</p>
+  </div>
+
+  <div class="hyp">
+    <div class="hy lead">
+      <span class="tag">Hipotez A</span>
+      <h3>İnsan taşıması</h3>
+      <p>Taşlar Neolitik topluluklar tarafından, muhtemelen aşamalı olarak — karadan çekme ile nehir ve kıyı taşımacılığı birleştirilerek — getirildi.</p>
+      <ul>
+        <li>2026 modellemesi kaynak bölgeden doğrudan buzul güzergâhı <b>bulamıyor</b></li>
+        <li>Sarsenlerin 50/52 tek kaynaktan gelmesi bilinçli seçim gösteriyor</li>
+        <li>Britanya'da taş taşıma geleneği başka sitelerde de var</li>
+      </ul>
+      <span class="verdict v-lead">Şu an önde</span>
+    </div>
+    <div class="hy">
+      <span class="tag">Hipotez B</span>
+      <h3>Buzul taşıması</h3>
+      <p>Taşlar buzullarla sürüklenip Salisbury Ovası civarına bırakıldı; insanlar yalnızca yerde bulduklarını dikti.</p>
+      <ul>
+        <li>Buzul erratikleri gerçek ve yaygın bir olgu</li>
+        <li>Yüzlerce kilometre taş çekmenin lojistiği ağır bir varsayım</li>
+        <li>2026 çalışması bile buzul taşımasını <b>tümüyle dışlayamadığını</b> söylüyor</li>
+      </ul>
+      <span class="verdict v-alive">Azınlık, ama canlı</span>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p>Dikkat edilecek nokta, tartışmanın <b>nasıl</b> ilerlediği. Kimse Stonehenge'e gidip taşın nasıl geldiğini göremiyor. Bunun yerine soru <b>başka bir alana taşınıyor</b>: buz tabakasının nasıl aktığını modelleyip, o güzergâhın var olup olmadığına bakılıyor.</p>
+    <p>Yani arkeolojik bir soru, <b>buzul jeolojisiyle</b> cevaplanıyor. Bu, sitenin "nasıl biliyoruz" damarının iyi bir örneği: doğrudan gözlemin imkânsız olduğu yerde, dolaylı ama test edilebilir bir yol bulunuyor.</p>
+    <p>Ve sonuç dürüstçe verilmiş: modelleme insan taşımasını <b>gerektiriyor</b>, ama araştırmacılar buzul ihtimalini kesin olarak dışlayamadıklarını da yazıyor. Kapanmış değil, <b>ağırlık kaydı.</b></p>
+  </div>
+</section>
+
+<section id="neden" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Asıl boşluk</p>
+    <h2>Nereden geldiğini biliyoruz. Neden yapıldığını bilmiyoruz.</h2>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Bildiğimiz</span>
+      <h4>Kaynak ve mesafe</h4>
+      <p>Üç taş türünün kökeni jeokimyasal olarak belirlendi. Bu, <b>ölçülebilir</b> bir soru ve büyük ölçüde çözüldü.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Bildiğimiz</span>
+      <h4>İnşa evreleri ve yönelim</h4>
+      <p>Yapı yaklaşık MÖ 3000'den MÖ 1500'e kadar evrelerle kuruldu; gündönümü ekseniyle hizalanmış. <b>Bu da ölçülebilir.</b></p>
+    </div>
+    <div class="card">
+      <span class="tag">Bilmediğimiz</span>
+      <h4>Ne için</h4>
+      <p>Tapınak mı, takvim mi, mezarlık mı, şifa merkezi mi, siyasi birleşme anıtı mı? Hepsi öne sürüldü. <b>Yazı yok, hiçbiri kanıtlanamıyor.</b></p>
+    </div>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Sonuç</p>
+    <h3>Yöntem ilerledi, anlam yerinde duruyor</h3>
+    <p>Son beş yılda Stonehenge hakkında öğrendiklerimiz olağanüstü: elli iki taştan ellisinin ortak kaynağı, bir taşın yedi yüz kilometrelik yolculuğu, buz tabakası modelleriyle sınanan taşıma senaryoları.</p>
+    <p>Bunların hepsi <b>maddi sorulara</b> verilen cevaplar — ve maddi sorular cevaplanabilir sorulardır. Buna karşılık <b>"neden"</b> sorusu, yazısız bir toplumun niyetini sormak demektir. Elimizde niyeti taşıyan hiçbir kayıt yok.</p>
+    <p>Bu, bilginin nasıl ilerlediğine dair sade bir ders veriyor: <b>ilerleme, cevaplanabilir soruların olduğu yerde oluyor.</b> Stonehenge'i çözdüğümüzü söyleyenler genellikle cevaplanan soruyla cevaplanmayanı karıştırıyor.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Sunak Taşı tam olarak nereden?</p>
+      <p class="oq__a">Kuzeydoğu İskoçya kesin ama <b>nokta belirlenmedi</b> — Orkney'den Aberdeenshire'a uzanan geniş bir alan söz konusu. Orkney Anakarası kumtaşlarıyla tam eşleşmiyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Nasıl taşındı?</p>
+      <p class="oq__a">2026 modellemesi insan taşımasına işaret ediyor ama <b>güzergâh ve yöntem bilinmiyor.</b> Karadan çekme, nehir ve kıyı taşımacılığının birleşimi öneriliyor; doğrudan kanıt yok.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Galler'deki noktalar gerçekten taş ocağı mıydı?</p>
+      <p class="oq__a">Kayanın oradan geldiği sağlam; <b>insan eliyle çıkarıldığına dair doğrudan kanıt tartışmalı.</b> İki iddia sık sık birbirine karıştırılıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Waun Mawn gerçekten sökülüp taşındı mı?</p>
+      <p class="oq__a">Çap ve yönelim uyumu çarpıcı ama <b>tek başına belirleyici değil.</b> Hipotezin yayımlanmış eleştirileri var; karara bağlanmadı.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Ne için yapıldı?</p>
+      <p class="oq__a">Yazısız bir toplumun niyeti. Öne sürülen tüm işlevler makul, hiçbiri kanıtlanabilir değil. <b>Bu soru muhtemelen hiç kapanmayacak.</b></p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Kalan iki sarsen nereden?</p>
+      <p class="oq__a">52 taştan 50'si West Woods imzası taşıyor. Diğer ikisinin kaynağı <b>ayrı bir soru olarak açık.</b></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Sarsen kaynağı için 2020 tarihli jeokimyasal çalışmaya, Sunak Taşı için 2024 tarihli <i>Nature</i> makalesine ve 2026'da <i>Journal of Quaternary Science</i>'ta yayımlanan buzul güzergâh modellemesine dayanır.</p>
+    <p><b>Bu konu aktif olarak değişiyor.</b> Sunak Taşı tartışması 2024'ten beri sürüyor ve bu yazı 2026 Eylül itibarıyla bilinenleri yansıtıyor. Kaynak lokasyonun daraltılması ve taşıma mekanizması üzerine yeni yayınlar bekleniyor; okuduğunuz bazı ifadeler eskimiş olabilir.</p>
+    <p><b>Ayrımlara dikkat edildi:</b> kayanın kaynağı (jeokimya, kesin) ile taşın çıkarılma biçimi (arkeoloji, zor) farklı iddialardır ve metinde ayrı tutulmuştur. Waun Mawn hipotezi tartışmalı olarak işaretlenmiştir.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil · Aynı Cümlede Anılanlar · Petra · Şuşter.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

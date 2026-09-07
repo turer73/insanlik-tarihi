@@ -1,0 +1,557 @@
+<title>Babil: Şehir ve Sembol</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E7E5DE; --surface:#F3F1EB; --surface-2:#DDDAD1;
+  --ink:#161A19; --ink-2:#4C524F; --ink-3:#767B77;
+  --rule:#C6C3B9; --rule-soft:#D5D2C8;
+  --accent:#0B7C8C; --accent-ink:#065E6B; --accent-soft:#D2E7EA;
+  --gold:#8A6A15; --gold-ink:#6E5410; --gold-soft:#EFE4C6;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121513; --surface:#1A1E1C; --surface-2:#242926;
+    --ink:#E6E3DA; --ink-2:#A8ADA7; --ink-3:#7B807B;
+    --rule:#2E332F; --rule-soft:#242A26;
+    --accent:#4FC0D0; --accent-ink:#78D3E0; --accent-soft:#0E2A2F;
+    --gold:#D2AE55; --gold-ink:#E3C378; --gold-soft:#2B2411;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121513; --surface:#1A1E1C; --surface-2:#242926;
+  --ink:#E6E3DA; --ink-2:#A8ADA7; --ink-3:#7B807B;
+  --rule:#2E332F; --rule-soft:#242A26;
+  --accent:#4FC0D0; --accent-ink:#78D3E0; --accent-soft:#0E2A2F;
+  --gold:#D2AE55; --gold-ink:#E3C378; --gold-soft:#2B2411;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);
+  font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
+  font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1.05em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);
+  background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.6rem,7.2vw,4.9rem);line-height:.97;font-weight:700;
+  font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:14ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.42;
+  color:var(--ink-2);max-width:47ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:1rem 1.15rem;display:flex;flex-direction:column;gap:.2rem}
+.stat__num{font-family:var(--display);font-size:1.8rem;font-weight:700;line-height:1.05;
+  font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.g{color:var(--gold-ink)}
+.stat__lbl{font-size:.83rem;color:var(--ink-3);line-height:1.35}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;
+  text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.75rem,6vw,4.5rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.75rem}
+.sec__head h2{font-size:clamp(1.7rem,3.4vw,2.45rem);line-height:1.08}
+.sec__head .kicker{font-size:1.02rem;color:var(--ink-2);max-width:56ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.9rem 1.15rem;
+  font-size:.94rem;color:var(--ink);max-width:var(--measure)}
+.note.g{border-color:var(--gold);background:var(--gold-soft)}
+
+/* name comparison */
+.namecmp{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:1fr;margin-top:1.5rem;max-width:64ch}
+@media(min-width:640px){.namecmp{grid-template-columns:1fr 1fr}}
+.nc{background:var(--bg);padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.5rem}
+.nc__lang{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3)}
+.nc__word{font-family:var(--mono);font-size:1.3rem;font-weight:600;color:var(--accent-ink)}
+.nc.enemy .nc__word{color:var(--gold-ink)}
+.nc__mean{font-family:var(--display);font-size:1.15rem;color:var(--ink);
+  font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0}
+.nc p{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+/* passages */
+.psg{border:1px solid var(--rule);background:var(--bg);padding:1.5rem 1.6rem;margin-top:1.5rem}
+.psg__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem .85rem;padding-bottom:.9rem;
+  margin-bottom:1.15rem;border-bottom:1px solid var(--rule-soft)}
+.psg__sig{font-family:var(--mono);font-size:.82rem;font-weight:600;color:var(--accent-ink);
+  background:var(--accent-soft);padding:.16rem .45rem;white-space:nowrap}
+.psg__sig.g{background:var(--gold-soft);color:var(--gold-ink)}
+.psg__ref{font-family:var(--mono);font-size:.73rem;color:var(--ink-3)}
+.psg__head h3{font-size:1.14rem;flex:1 1 12ch;min-width:0}
+.txt{font-family:var(--display);font-size:1.07rem;line-height:1.78;color:var(--ink);
+  font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0;max-width:62ch;
+  display:flex;flex-direction:column;gap:.8em}
+.txt p{margin:0}
+.txt b{font-weight:700}
+.lac{color:var(--ink-3);font-family:var(--mono);font-size:.82em;font-variation-settings:normal}
+.psg__note{margin-top:1.2rem;padding-top:.9rem;border-top:1px solid var(--rule-soft);max-width:64ch;
+  display:flex;flex-direction:column;gap:.5rem}
+.psg__note > span{font-family:var(--mono);font-size:.67rem;font-weight:600;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3)}
+.psg__note p{margin:0;font-size:.92rem;color:var(--ink-2);font-family:var(--body)}
+.psg__note b{color:var(--ink)}
+
+/* two readings */
+.readings{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:1fr;margin-top:1.3rem;max-width:64ch}
+@media(min-width:680px){.readings{grid-template-columns:1fr 1fr}}
+.rd{background:var(--bg);padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.45rem}
+.rd h4{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-3);font-variation-settings:normal}
+.rd p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.rd .verdictline{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;margin-top:.2rem}
+.rd.old .verdictline{color:var(--gold-ink)}
+.rd.now{background:var(--accent-soft)}
+.rd.now h4{color:var(--accent-ink)}
+.rd.now .verdictline{color:var(--accent-ink)}
+
+/* timeline */
+.tl{display:grid;grid-template-columns:minmax(104px,auto) 1fr;gap:0 1.4rem;margin-top:1.5rem;max-width:860px}
+.tl__date{font-family:var(--mono);font-size:.8rem;font-weight:600;color:var(--ink-2);
+  padding:.8rem 0 .1rem;text-align:right;font-variant-numeric:tabular-nums;border-top:1px solid var(--rule-soft)}
+.tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);
+  padding-left:1.4rem;position:relative}
+.tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;
+  border-radius:50%;background:var(--accent)}
+.tl__body.bad::before{background:var(--gold)}
+.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
+
+/* cards */
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(245px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
+.card h4{font-size:1.08rem}
+.card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-3)}
+.card.g .tag{color:var(--gold-ink)}
+.card p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+/* evidence for/against */
+.fa{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));margin-top:1.3rem}
+.fa h4{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:.5rem;font-variation-settings:normal}
+.fa ul{margin:0;padding-left:1.05rem;font-size:.93rem;color:var(--ink-2);
+  display:flex;flex-direction:column;gap:.42rem}
+.fa ul b{color:var(--ink)}
+
+.verdict{border:1px solid var(--accent);background:var(--accent-soft);padding:1.7rem 1.8rem;
+  margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem;max-width:74ch}
+.verdict .eyebrow{color:var(--accent-ink)}
+.verdict h3{font-size:1.42rem}
+.verdict p{margin:0}
+.verdict b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.15rem 1.3rem;display:grid;gap:.3rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1.02rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+.foot{padding-block:2.5rem 3.5rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.88rem;color:var(--ink-3);max-width:70ch;margin:0 0 .7rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 04 · Mezopotamya</span>
+    <p class="eyebrow">Etemenanki · sürgün · asma bahçeler · 60'lık sayı sistemi</p>
+    <h1>Babil: Şehir ve Sembol</h1>
+    <p class="hero__lede">Babil gerçekten vardı, kulesi gerçekten vardı, ve ikisi de bugün sanıldığından çok farklıydı. <strong>Şehrin başına gelen en büyük felaket yıkılması değil, sembole dönüşmesi oldu</strong> — ve sembol, gerçek başarıyı gömdü.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">18 yıl</span><span class="stat__lbl">Koldewey'in kazısı — asma bahçe bulunamadı</span></div>
+      <div class="stat"><span class="stat__num g">0</span><span class="stat__lbl">bahçelerden söz eden Babil metni</span></div>
+      <div class="stat"><span class="stat__num">~700 yıl</span><span class="stat__lbl">kesintisiz astronomi kaydı</span></div>
+      <div class="stat"><span class="stat__num">60</span><span class="stat__lbl">saatinizin dakikası hâlâ Babil'den</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#ad">Ad bir hakaret</a>
+    <a href="#kule">Kule</a>
+    <a href="#surgun">Neden nefret</a>
+    <a href="#sumer">Ters çıkan paralel</a>
+    <a href="#bahce">Asma bahçeler</a>
+    <a href="#herodot">Yunan abartısı</a>
+    <a href="#gomulen">Gömülen başarı</a>
+    <a href="#bugun">Üç modern katman</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="ad" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Kelime oyunu</p>
+    <h2>Şehrin adı bir hakarete çevrildi</h2>
+    <p class="kicker">Ve bu bir çeviri hatası değil, kasıtlı bir polemikti.</p>
+  </div>
+
+  <div class="namecmp">
+    <div class="nc">
+      <span class="nc__lang">Akadca — şehrin kendi adı</span>
+      <span class="nc__word">Bāb-ilim</span>
+      <span class="nc__mean">"Tanrı'nın Kapısı"</span>
+      <p>Babilliler şehirlerini böyle adlandırdı: göklerin yeryüzüne açıldığı eşik. Gururlu, teolojik bir isim.</p>
+    </div>
+    <div class="nc enemy">
+      <span class="nc__lang">İbranice — düşmanın okuması</span>
+      <span class="nc__word">bālal</span>
+      <span class="nc__mean">"karıştırmak"</span>
+      <p>Tekvin 11:9 adı bu fiile bağlar: "Bu yüzden oraya Babil adı verildi, çünkü RAB bütün dünyanın dilini orada karıştırdı."</p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p>Bu etimoloji <b>yanlıştır</b> — ve yanlışlığı kaza değil. Akadca <i>Bāb-ilim</i> ile İbranice <i>bālal</i> arasında dilbilimsel bir akrabalık yok; sadece kulağa benziyorlar. Metin, düşman bir imparatorluğun kendine verdiği övünç adını alıp <b>"karışıklık"</b> anlamına getiriyor.</p>
+    <p>Yani Babil Kulesi anlatısının merkezindeki kelime oyunu, bir dil bilgisi değil <b>bir silah.</b> Ve etkili oldu: üç bin yıl sonra dünyanın çoğu, o şehrin adının "karışıklık" demek olduğunu sanıyor.</p>
+  </div>
+
+  <p class="note g" style="margin-top:1.5rem">Buna karşılık, aynı Tekvin pasajındaki bir başka ayrıntı metnin yazarının bölgeyi <b>gerçekten tanıdığını</b> gösteriyor: "Taş yerine tuğla, harç yerine zift kullandılar." Mezopotamya'da yapı taşı yoktur; gerçekten de kerpiç tuğla ve bitümle inşa edilir. Yazar Babil'e düşmandı ama cahil değildi.</p>
+</section>
+
+<section id="kule" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Yapı</p>
+    <h2>Kule gerçekti ve adı Etemenanki'ydi</h2>
+    <p class="kicker">Marduk'a adanmış ziggurat. Temelleri kazıldı, ölçüldü — ve ölçümler birbirini tutmuyor.</p>
+  </div>
+
+  <div class="prose">
+    <p>Sümerce adı <span class="mono">É-temen-an-ki</span>: "göğün ve yeraltının temel evi." Babil'in ana tapınak alanında, Marduk'un tapınağı Esagila'nın hemen yanında duruyordu. Defalarca yıkıldı ve yeniden yapıldı; bildiğimiz son büyük inşası Nabopolassar ve oğlu II. Nebukadnezar döneminde, MÖ 7.–6. yüzyılda.</p>
+    <p>Robert Koldewey 1899'dan 1917'ye kadar <b>on sekiz yıl</b> Babil'i kazdı ve zigguratın temellerini ortaya çıkardı. Bugün yerinde yapı yok — yüzyıllar boyunca tuğlaları sökülüp götürüldü; geriye suyla dolmuş bir çukur kaldı.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Ölçüm A · 1913</span>
+      <h4>~61 metre</h4>
+      <p>Arazi ölçümü ve temel izlerinden yapılan tahmin. Kazının kendi verisine dayanıyor.</p>
+    </div>
+    <div class="card g">
+      <span class="tag">Ölçüm B · Esagila Tableti</span>
+      <h4>~91 metre</h4>
+      <p>Yedi katlı, tabanı da ~91 m kare. Ama tablet <b>Helenistik dönemden kalma bir kopya</b> — yapı zaten harabeyken yazılmış olabilir, ve ideal ölçüler vermiş olabilir.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Sonuç</span>
+      <h4>Bilinmiyor</h4>
+      <p>Aradaki fark %50. Popüler kaynaklar hangisi etkileyiciyse onu yazıyor. Dürüst cevap: <b>yüksekliği kesin olarak bilmiyoruz.</b></p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p><b>Ve kuleyi kim bitirdi:</b> Büyük İskender. Etemenanki'yi yeniden inşa etmek istedi ve yeni yapı için zemini temizlemek üzere kalıntının sökülmesini emretti. Sonra, MÖ 323'te Babil'de öldü. Yeniden inşa hiç başlamadı.</p>
+    <p>Babil Kulesi'ni ortadan kaldıran şey bir tanrının gazabı değil, <b>onu diriltme girişimiydi.</b></p>
+  </div>
+</section>
+
+<section id="surgun" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Sebep</p>
+    <h2>Tevrat Babil'den neden bu kadar nefret ediyor</h2>
+    <p class="kicker">Bu, mitolojik bir husumet değil. Tarihsel, belgelenmiş ve kişisel.</p>
+  </div>
+
+  <div class="tl">
+    <div class="tl__row">
+      <div class="tl__date">MÖ 689</div>
+      <div class="tl__body bad"><h4>Asur kralı Sennacherib Babil'i yıkıyor</h4><p>Şehri yerle bir edip Fırat'ın sularını üzerine salıyor. Babil'in "ezeli imparatorluk" imajının aksine, kendisi de defalarca yıkıldı.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MÖ 626</div>
+      <div class="tl__body"><h4>Nabopolassar Yeni Babil'i kuruyor</h4><p>Asur'un çöküşüyle Babil yeniden yükseliyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MÖ 605–562</div>
+      <div class="tl__body"><h4>II. Nebukadnezar</h4><p>Zirve. İştar Kapısı, Alay Yolu, Etemenanki'nin son inşası. Tevrat'ın "Babil"i bu Babil.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MÖ 587/586</div>
+      <div class="tl__body bad"><h4>Kudüs yıkılıyor, Babil Sürgünü başlıyor</h4><p>Tapınak yerle bir ediliyor, Yahuda'nın yönetici sınıfı Babil'e sürülüyor. <b>İbranice Kutsal Kitap'ın büyük bölümü bu sürgün deneyiminin gölgesinde derlendi.</b></p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MÖ 539</div>
+      <div class="tl__body"><h4>Pers kralı Kyros Babil'i alıyor</h4><p>Sürgünün sonu. Kyros, Tevrat'ta olumlu anılan tek yabancı hükümdar — sebebi açık.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MÖ 323</div>
+      <div class="tl__body"><h4>İskender Babil'de ölüyor</h4><p>Şehir yavaşça sönüyor; yakınlarda kurulan Seleukeia nüfusu çekiyor.</p></div>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p>Bu kronoloji okununca Babil Kulesi anlatısının tonu yerine oturuyor. Metni yazan ya da son biçimini veren topluluk, <b>tapınağı yıkılmış, sürgüne götürülmüş, ve o şehrin devasa zigguratını kendi gözleriyle görmüş</b> bir topluluktu.</p>
+    <p>Kibirli bir kule yapıp cezalandırılan insanlar hikâyesi, o durumdaki bir topluluk için sıradan bir mit değil — <b>galip gelenin er geç düşeceğine dair bir teselli.</b> Ve bir ihtimal daha var: Etemenanki sürgün döneminde de tamir görüyordu. Sürgünler, "tamamlanmamış kule"yi gerçekten görmüş olabilirler.</p>
+  </div>
+</section>
+
+<section id="sumer" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Doğrulanan bir şüphe</p>
+    <h2>Ünlü "Sümer paraleli" okununca tersine dönüyor</h2>
+    <p class="kicker">Bu yazıyı hazırlarken doğrulamadan yazmayacağımı söylediğim maddeydi. Doğruladım, ve sonuç beklediğimden net.</p>
+  </div>
+
+  <div class="prose">
+    <p>Popüler kaynaklarda sık geçen bir iddia var: Babil Kulesi'ndeki "dillerin karışması" motifinin çok daha eski bir Sümer örneği varmış. Kaynak, <b>"Enmerkar ve Aratta Beyi"</b> adlı Sümerce metnin içindeki "Nudimmud'un Büyüsü" pasajı.</p>
+    <p>Pasajı okuyalım:</p>
+  </div>
+
+  <div class="psg">
+    <div class="psg__head">
+      <span class="psg__sig">Enmerkar</span>
+      <span class="psg__ref">Nudimmud'un Büyüsü · Sümerce metinden çeviri</span>
+      <h3>Enki ağızdaki konuşmayı değiştiriyor</h3>
+    </div>
+    <div class="txt">
+      <p>O gün ki yılan yok, akrep yok, sırtlan yok, aslan yok; ne köpek var ne kurt; ne korku var ne titreme — insanın rakibi yoktur.</p>
+      <p>O vakit Şubur ve çok dilli Hamazi ülkeleri, ve görkemin <i>me</i>'lerinin büyük dağı Sümer, ve kendisine yakışan her şeye sahip Akad, ve güven içinde dinlenen Martu ülkesi — bütün evren, iyi korunan halklar — <b>hepsi Enlil'e tek bir dille seslensin.</b></p>
+      <p>Çünkü o vakit, bereketin ve sarsılmaz kararların efendisi Enki <span class="lac">[…]</span> onların ağzındaki konuşmayı değiştirecek, oraya koyduğu kadarını — <b>ve böylece insanlığın konuşması gerçekten tek olacak.</b></p>
+    </div>
+    <div class="psg__note">
+      <span>Ne dikkat çekiyor</span>
+      <p>Pasaj bir <b>dilek</b> kipinde ve yönü açık: "hepsi tek bir dille seslensin", "insanlığın konuşması gerçekten tek olacak." Yani burada anlatılan şey dillerin <b>karışması değil, birleşmesi.</b></p>
+    </div>
+  </div>
+
+  <div class="readings">
+    <div class="rd old">
+      <h4>Eski okuma · Kramer, 20. yy ortası</h4>
+      <p>Enki'nin "ağızdaki konuşmayı değiştirmesi" bir <b>bozma</b> eylemi olarak okundu ve doğrudan Tekvin 11 ile eşleştirildi. "Sümer'in Babil Kulesi'si" formülü buradan çıktı ve popüler kaynaklara yerleşti.</p>
+      <span class="verdictline">Yaygın ama aşılmış</span>
+    </div>
+    <div class="rd now">
+      <h4>Bugünkü standart çeviri · ETCSL</h4>
+      <p>Oxford'un Sümerce metin külliyatındaki çeviri pasajı bir <b>birleşme</b> temennisi olarak veriyor: bütün halklar Enlil'e tek dille seslensin, Enki konuşmayı tek kılsın.</p>
+      <span class="verdictline">Anlam tersine dönüyor</span>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><b>Sonuç:</b> "Babil Kulesi'nin Sümer öncülü" diye dolaşan paralel, elimizdeki standart çeviriye göre <b>zıt yönde bir metin.</b> Tekvin dillerin dağılmasını bir ceza olarak anlatıyor; Sümerce metin dillerin birleşmesini bir altın çağ dileği olarak anlatıyor.</p>
+    <p>Dürüst olmak gerekirse tartışma tamamen kapanmış değil — Sümerce fiilin kipi ve zamanı üzerinde uzmanlar arasında görüş farkı sürüyor. Ama <b>kanıt yükü artık paralel iddiasında.</b> "Aynı hikâye Sümer'de de var" cümlesi, mevcut çeviriyle desteklenmiyor.</p>
+    <p>Bu, bu sitenin tekrar eden dersi: <b>bir paralel duyduğunuzda asıl metne bakın.</b> Çoğu zaman benzerlik, metinde değil onu aktaran cümlededir.</p>
+  </div>
+</section>
+
+<section id="bahce" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Yer sorunu</p>
+    <h2>Asma Bahçeler muhtemelen Babil'de değildi</h2>
+    <p class="kicker">Dünyanın yedi harikasından, yeri en şüpheli olanı. Ve bu bir komplo teorisi değil, ciddi bir Asurbilim tezi.</p>
+  </div>
+
+  <div class="prose">
+    <p>Asurbilimci <b>Stephanie Dalley</b>, 2013'te yayımladığı çalışmada bahçelerin Babil'de değil <b>Ninova'da</b> olduğunu, ve Nebukadnezar değil Asur kralı <b>Sennacherib</b> tarafından yaptırıldığını savundu. Gelenek sonradan yanlış şehre yapışmış.</p>
+  </div>
+
+  <div class="fa">
+    <div>
+      <h4>Tezin lehine</h4>
+      <ul>
+        <li><b>Hiçbir Babil metni bahçelerden söz etmiyor.</b> Nebukadnezar inşaatlarını uzun uzun anlatan yazıtlar bıraktı — İştar Kapısı, surlar, tapınaklar. Bahçe yok.</li>
+        <li>Sennacherib ise Ninova'daki görkemli bahçesini <b>kendi kaydetti</b>, ve suyu ~50 km uzaktaki dağ kaynaklarından getiren su sistemini anlattı.</li>
+        <li>Koldewey Babil'i <b>on sekiz yıl</b> kazdı ve bahçeye dair ikna edici bir kalıntı bulamadı.</li>
+        <li>Ninova'da su kemeri kalıntıları ve su yükseltme düzeneğine dair betimlemeler var.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Tezin aleyhine</h4>
+      <ul>
+        <li><b>İki şehirde de bahçenin arkeolojik kanıtı yok.</b> Ninova'ya taşımak sorunu çözmüyor, yer değiştiriyor.</li>
+        <li>Eleştirmenler Dalley'in Klasik dönem kaynaklarını <b>seçici okuduğunu</b> söylüyor — tezi destekleyenleri öne çıkarıp diğerlerini geri planda bıraktığı yönünde metodolojik itirazlar var.</li>
+        <li>Antik yazarların Babil demesi tümüyle yok sayılamaz; "Babil" bazen bölgeyi geniş anlamda karşılıyor olabilir.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Dürüst durum:</b> güçlü ve ciddiye alınan bir hipotez, <b>ama çözülmüş değil.</b> Kesin olan tek şey şu: Babil'de asma bahçe bulunamadı, ve Babilliler kendi bahçelerinden hiç bahsetmedi. Yedi harikadan yerini bilmediğimiz tek yapı bu.</p>
+</section>
+
+<section id="herodot" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Abartı</p>
+    <h2>Babil'i büyüten ikinci kaynak: Yunan merakı</h2>
+  </div>
+
+  <div class="prose">
+    <p>Babil'in "akıl almaz ölçekte şehir" imajının büyük kısmı Herodot'tan geliyor. Verdiği ölçüler ise <b>fiziksel olarak mümkün değil</b> — anlattığı sur yüksekliği ve kalınlığı, dönemin hiçbir yapı tekniğiyle uyuşmuyor, ve arkeolojik kalıntılarla da uyuşmuyor.</p>
+    <p>Herodot'un Babil'e gerçekten gidip gitmediği <b>uzun süredir tartışmalı.</b> Betimlemelerinde şehri görmüş birinden beklenmeyecek hatalar var. Muhtemelen ikinci elden anlatılara dayandı — ve o anlatılar zaten büyütülmüştü.</p>
+    <p>Böylece Babil iki yönden birden efsaneleşti: <b>düşmanları onu ahlaksızlıkla</b>, <b>hayranları ölçüyle</b> abarttı. İkisi de gerçek şehri gölgede bıraktı.</p>
+  </div>
+</section>
+
+<section id="gomulen" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Asıl mesele</p>
+    <h2>Sembolün altında kalan: Babil gerçekte ne yaptı</h2>
+    <p class="kicker">"Ahlaksızlık şehri" imajının gömdüğü şey, antik dünyanın en uzun soluklu bilimsel programı.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Hâlâ kullanıyoruz</span>
+      <h4>60'lık sayı sistemi</h4>
+      <p>Saatinizin <b>60 dakikası</b>, dakikanın 60 saniyesi, çemberin <b>360 derecesi</b> — hepsi Mezopotamya'nın altmışlık tabanından geliyor. Bugün dünyada zamanı ve açıyı ölçen herkes, farkında olmadan Babil sistemini kullanıyor.</p>
+    </div>
+    <div class="card">
+      <span class="tag">~MÖ 7. yy – MÖ 1. yy</span>
+      <h4>Astronomi Günlükleri</h4>
+      <p>Gökyüzü olaylarının, hava durumunun, nehir seviyesinin ve fiyatların <b>yaklaşık yedi yüz yıl boyunca kesintisiz</b> tutulmuş kaydı. Modern çağa kadar insanlık tarihindeki en uzun sürekli bilimsel gözlem dizisi.</p>
+    </div>
+    <div class="card g">
+      <span class="tag">2016'da fark edildi</span>
+      <h4>Yamuk yöntemi</h4>
+      <p>Babilli gökbilimcilerin Jüpiter'in konumunu hesaplarken <b>hız–zaman grafiğinin altındaki alanı</b> yamuk olarak hesapladıkları çivi yazılı tabletlerde gösterildi. Bu geometrik yöntemin 14. yüzyıl Oxford'unda doğduğu sanılıyordu — <b>bin dört yüz yıl önce</b> yapılmış.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p>Buna Plimpton 322 tabletini de ekleyin: MÖ ~1800'e tarihlenen, Pisagor üçlüleriyle ilişkili sayı dizileri içeren bir tablet. Ne işe yaradığı hâlâ tartışılıyor — trigonometri tablosu mu, öğretmen için problem listesi mi — ama <b>tartışmanın kendisi</b> Babil matematiğinin düzeyini gösteriyor.</p>
+    <p>Ve Yunan astronomisi bu birikimin üzerine kuruldu: Hipparkhos gibi isimler Babil gözlem verilerini <b>doğrudan kullandı.</b> Batı bilim tarihinin başlangıç noktası olarak anlatılan zincirin ilk halkası, aslında "ahlaksızlık şehri"nin arşivinde.</p>
+  </div>
+</section>
+
+<section id="bugun" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Üç modern katman</p>
+    <h2>Şehrin başına 20. yüzyılda gelenler</h2>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">1899–1917 → Berlin</span>
+      <h4>İştar Kapısı taşındı</h4>
+      <p>Koldewey'in kazısından çıkan sırlı mavi tuğlalar Almanya'ya götürüldü ve 1930'larda Pergamon Müzesi'nde yeniden kuruldu. Bugün Berlin'de duruyor; müzedeki yalnızca <b>küçük ön kapı</b> — büyük olan depoda. Irak iadesini talep ediyor. <b>Ölü Deniz Parşömenleri'ndeki mülkiyet tartışmasının birebir aynısı.</b></p>
+    </div>
+    <div class="card g">
+      <span class="tag">1980'ler</span>
+      <h4>Saddam'ın tuğlaları</h4>
+      <p>Saddam Hüseyin, Nebukadnezar'ın sarayının kalıntıları <b>üzerine</b> yeniden inşa ettirdi — ve tıpkı Nebukadnezar gibi, tuğlalara kendi adını damgalattı. Arkeolojik tabakayı geri dönülmez biçimde bozan bir "restorasyon".</p>
+    </div>
+    <div class="card g">
+      <span class="tag">2003–2004</span>
+      <h4>Sitenin üstüne askerî üs</h4>
+      <p>İşgal sonrası koalisyon güçleri doğrudan alanın üzerine üs kurdu. UNESCO'nun raporladığı hasar arasında arkeolojik tabakayı kesen hendekler, kum torbalarına doldurulan arkeolojik dolgu, ağır araçların ezdiği 2.600 yıllık tuğla döşemeler ve İştar Kapısı kabartmalarındaki tahribat var.</p>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Babil, UNESCO Dünya Mirası listesine <b>ancak 2019'da</b> girebildi — Irak'ın yıllar süren çabasından sonra. Yani insanlık, dört bin yıllık şehri korumaya almak için 21. yüzyılın ikinci on yılını bekledi.</p>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Cevap</p>
+    <h2>Şehir ve sembol</h2>
+  </div>
+
+  <div class="verdict">
+    <p class="eyebrow">Bilmecenin çözümü</p>
+    <h3>Babil'in başına gelen en büyük şey yıkılması değil, anlamının çalınması oldu</h3>
+    <p><b>Adı</b> düşman bir metinde "karışıklık"a çevrildi. <b>Kulesi</b> onu onarmaya çalışan bir fatih tarafından söküldü. <b>Bahçesi</b> muhtemelen hiç orada olmadı ama adını taşıdı. <b>Ölçüleri</b> hiç gitmemiş olabilecek bir Yunan tarafından abartıldı. <b>Kapısı</b> Berlin'e gitti, <b>toprağı</b> önce sahte bir restorasyonla, sonra bir askerî üsle bozuldu.</p>
+    <p>Bütün bunların altında kalan şey ise şu: yedi yüz yıl boyunca gökyüzünü kesintisiz kaydeden, Jüpiter'in hareketini geometriyle hesaplayan, ve zamanı ölçme biçimimizi bugün hâlâ belirleyen bir uygarlık.</p>
+    <p><b>Babil'in gerçek mirası kulesi değil, arşivi.</b> Kule yıkıldı; arşiv, saatinize her baktığınızda çalışmaya devam ediyor.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">10 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Etemenanki ne kadar yüksekti?</p>
+      <p class="oq__a">Arazi ölçümü ~61 m, Helenistik tablet ~91 m diyor. Aradaki fark %50 ve kapanmadı. Yapı bugün yok olduğu için <b>yeni bir ölçüm de mümkün değil.</b></p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Asma bahçeler nerede — ya da var mıydı?</p>
+      <p class="oq__a">Ninova tezi güçlü ama iki şehirde de kanıt yok. Bahçelerin tümüyle edebi bir abartı olma ihtimali de <b>masadan kalkmış değil.</b></p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Nudimmud pasajının fiili tam olarak ne diyor?</p>
+      <p class="oq__a">Standart çeviri "birleşme" yönünde, ama Sümerce fiil kipi üzerinde uzman görüş farkı sürüyor. <b>Kesin kapanmış bir tartışma değil</b> — sadece kanıt yükü artık paralel iddiasında.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Herodot Babil'e gitti mi?</p>
+      <p class="oq__a">Bilinmiyor. Betimlemelerindeki hatalar gitmediğine işaret ediyor, ama kanıtlanmış değil. Antik tarihçilerin ne kadarını gördükleri genel olarak zor bir soru.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Plimpton 322 ne işe yarıyordu?</p>
+      <p class="oq__a">Pisagor üçlüleriyle ilişkisi net, amacı değil. Trigonometri tablosu, öğretmen problem listesi ve sayı kuramı alıştırması <b>rakip yorumlar olarak duruyor.</b></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Çok sayıda kaynak taranarak Türkçe yazılmıştır.</p>
+    <p><b>Antik metin çevirileri</b> (Nudimmud'un Büyüsü, Tekvin 11) Sümerce ve İbranice asıllarından bu sayfa için yapılmış <b>çalışma çevirileridir</b>; yayımlanmış telifli bilimsel çeviriler kullanılmamıştır. Nudimmud pasajının anlamı için Oxford ETCSL külliyatındaki standart okuma esas alınmış, eski Kramer okumasıyla farkı ayrıca gösterilmiştir. <span class="mono">[…]</span> metindeki kopukluğu gösterir.</p>
+    <p><b>Tartışmalı olduğunu belirttiğim her yer gerçekten tartışmalıdır</b> — Etemenanki'nin yüksekliği, asma bahçelerin yeri, Nudimmud fiilinin kipi, Herodot'un seyahati ve Plimpton 322'nin işlevi dahil. Tarihler ve ölçüler yaklaşıktır.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri (metinler ne diyor), Tufan Bilmecesi (mit nereden geliyor), Hatırlamadığımız Felaketler (gezegen gerçekte ne yaptı).</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) map[el.id] = a;
+  });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

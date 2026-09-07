@@ -1,0 +1,418 @@
+<title>Kapadokya: Ölçülmemiş Harika</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#EBE6E1; --surface:#F5F1ED; --surface-2:#DED7D0;
+  --ink:#191512; --ink-2:#4E4741; --ink-3:#7B736B;
+  --rule:#C8C0B8; --rule-soft:#D8D1C9;
+  --accent:#3A2F2A; --accent-ink:#241C18; --accent-soft:#DDD4CB;
+  --air:#5A7285; --air-ink:#41576A; --air-soft:#DCE4EA;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131110; --surface:#1B1817; --surface-2:#26221F;
+    --ink:#E9E4DE; --ink-2:#ABA49C; --ink-3:#7C746C;
+    --rule:#332C27; --rule-soft:#28221E;
+    --accent:#D9C4B4; --accent-ink:#E8D7C9; --accent-soft:#2B221C;
+    --air:#8FA9BC; --air-ink:#A9C0D0; --air-soft:#171F26;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131110; --surface:#1B1817; --surface-2:#26221F;
+  --ink:#E9E4DE; --ink-2:#ABA49C; --ink-3:#7C746C;
+  --rule:#332C27; --rule-soft:#28221E;
+  --accent:#D9C4B4; --accent-ink:#E8D7C9; --accent-soft:#2B221C;
+  --air:#8FA9BC; --air-ink:#A9C0D0; --air-soft:#171F26;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--air-soft);color:var(--ink)}
+a{color:var(--air-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--air);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--air-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.5rem,7vw,4.7rem);line-height:.98;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:13ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--ink-2);max-width:48ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--air-ink);border:1px solid var(--air);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.15rem}
+.stat__num{font-family:var(--display);font-size:1.7rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.a{color:var(--air-ink)}
+.stat__lbl{font-size:.81rem;color:var(--ink-3);line-height:1.3}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--air-ink);background:var(--air-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:58ch;margin:0}
+.note{border-left:2px solid var(--air);background:var(--air-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.d{border-color:var(--accent);background:var(--accent-soft)}
+
+/* method failure */
+.mf{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:760px){.mf{grid-template-columns:1fr 1fr}}
+.m{background:var(--bg);padding:1.35rem 1.45rem;display:flex;flex-direction:column;gap:.55rem}
+.m .tag{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.m h3{font-size:1.12rem}
+.m p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.m .x{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.2rem .5rem;align-self:flex-start;background:var(--accent-soft);color:var(--accent-ink)}
+.m.air .x{background:var(--air-soft);color:var(--air-ink)}
+
+/* stack diagram */
+.stack{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.3rem 1.4rem;overflow-x:auto}
+.stack h4{font-size:1rem;margin-bottom:.3rem}
+.stack .sub{font-size:.87rem;color:var(--ink-3);margin:0 0 1.2rem;max-width:64ch}
+.shaft{display:grid;grid-template-columns:110px 1fr 110px;gap:0;min-width:520px;border:1px solid var(--rule)}
+.col{display:flex;flex-direction:column}
+.lvl{border-bottom:1px solid var(--rule-soft);padding:.55rem .7rem;font-family:var(--mono);font-size:.68rem;color:var(--ink-3);display:flex;align-items:center;gap:.4rem;min-height:44px}
+.lvl:last-child{border-bottom:0}
+.col.mid .lvl{background:var(--surface-2);color:var(--ink-2);justify-content:center;font-weight:600}
+.col.in{background:var(--air-soft)}
+.col.in .lvl{color:var(--air-ink);font-weight:600}
+.col.out{background:var(--accent-soft)}
+.col.out .lvl{color:var(--accent-ink);font-weight:600;justify-content:flex-end}
+.stack p{margin:1rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:66ch}
+.stack b{color:var(--ink)}
+
+/* numbers table */
+.tablewrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:600px}
+caption{text-align:left;font-size:.84rem;color:var(--ink-3);padding:.75rem 1rem;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--rule)}
+td{padding:.62rem 1rem;border-bottom:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+td.k{color:var(--ink);font-weight:600}
+td.v{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink)}
+.q{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.14rem .4rem;white-space:nowrap}
+.q-ok{background:var(--air-soft);color:var(--air-ink)}
+.q-no{background:var(--accent-soft);color:var(--accent-ink)}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
+.card h4{font-size:1.06rem}
+.card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card.a .tag{color:var(--air-ink)}
+.card p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--air);background:var(--air-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--air-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:70ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 14 · Kapadokya</span>
+    <p class="eyebrow">Tarihlenemeyen mimari · baca etkisi · ölçülmemiş iddia</p>
+    <h1>Kapadokya: Ölçülmemiş Harika</h1>
+    <p class="hero__lede">Bu site iki yöntemi birden atlatıyor. Arkeolojinin ana aracı <strong>burada çalışmıyor</strong>; mühendisliğin ana aracı ise <strong>hiç uygulanmamış.</strong> Sonuç: milyonların gezdiği, hakkında en az şey bilinen yerlerden biri.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">~85 m</span><span class="stat__lbl">Derinkuyu'nun derinliği</span></div>
+      <div class="stat"><span class="stat__num a">~52</span><span class="stat__lbl">havalandırma bacası (bildirilen)</span></div>
+      <div class="stat"><span class="stat__num">200+</span><span class="stat__lbl">bölgedeki yer altı yerleşimi</span></div>
+      <div class="stat"><span class="stat__num a">0</span><span class="stat__lbl">havalandırmaya adanmış hakemli ölçüm çalışması</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#iki-yontem">İki yöntem</a>
+    <a href="#stratigrafi">Neden tarihlenemiyor</a>
+    <a href="#tuf">Tüf gerçeği</a>
+    <a href="#baca">Baca etkisi</a>
+    <a href="#olculmemis">Ölçülmemiş olan</a>
+    <a href="#rakamlar">Rakamlar</a>
+    <a href="#bilinen">Ne biliyoruz</a>
+    <a href="#efsane">İki şehir efsanesi</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="iki-yontem" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Durum</p>
+    <h2>İki aracın da işe yaramadığı yer</h2>
+  </div>
+
+  <div class="mf">
+    <div class="m">
+      <span class="x">Yapısal engel</span>
+      <h3>Arkeolojinin aracı burada çalışmıyor</h3>
+      <p>Kazı biliminin temeli <b>stratigrafi</b>dir: katmanlar birikir, alttaki üsttekinden eskidir, ve tarihleme bu sıraya dayanır.</p>
+      <p>Kayaya oyulmuş mimaride bu <b>tersine döner</b> — malzeme biriktirilmez, <b>çıkarılır.</b> Boşluğun kendisini tarihleyecek hiçbir şey yoktur. Bu geçici bir eksiklik değil, <b>yöntemin sınırı.</b></p>
+    </div>
+    <div class="m air">
+      <span class="x">İhmal</span>
+      <h3>Mühendisliğin aracı hiç uygulanmamış</h3>
+      <p>Sitenin en çok övülen özelliği <b>havalandırma sistemi.</b> Her tanıtımda, her belgeselde geçer: seksen beş metre derinlikte kendiliğinden çalışan hava dolaşımı.</p>
+      <p>Bu iddianın <b>ölçülmüş bir karşılığı yok.</b> Derinkuyu havalandırmasına adanmış, hava debisi ve akış rejimi ölçen hakemli bir çalışma bulunamadı. Sistem <b>anlatılıyor</b>, sınanmıyor.</p>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Bu ikisi bir araya gelince ortaya tuhaf bir durum çıkıyor: <b>Kapadokya yer altı şehirleri hakkında elimizdeki bilgi, ziyaretçi sayısıyla ters orantılı.</b> Yılda milyonlarca kişi geziyor; hakkında söylenenlerin büyük kısmı ise ne tarihlenmiş ne ölçülmüş.</p>
+</section>
+
+<section id="stratigrafi" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Tarihleme</p>
+    <h2>Elimizdeki iki dolaylı yol ve ikisinin de sorunu</h2>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Yol 1</span>
+      <h4>İçeride bulunan eşya</h4>
+      <p>Bir odada Hitit dönemine ait bir nesne bulunması, <b>o odanın ne zaman oyulduğunu söylemez.</b> Nesne bin yıl sonra oraya girmiş biri tarafından da bırakılmış olabilir. Boşluk, içine konan şeyden bağımsızdır.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Yol 2</span>
+      <h4>Mimari üslup</h4>
+      <p>Yalnızca üslubu tanınabilir öğeler için işe yarar: kilise nişleri, haçlar, belirli mekân düzenleri. Bunlar da <b>zaten geç dönem</b> — Bizans. Basit bir depo odasının üslubu yoktur.</p>
+    </div>
+    <div class="card a">
+      <span class="tag">Sonuç</span>
+      <h4>İddiaların ağırlığı</h4>
+      <p><b>Bizans (5.–10. yy):</b> belgelenebilir, kiliseler ve tarihsel bağlamla destekli. <b>Frig (MÖ 8. yy):</b> makullük argümanı. <b>Hitit (MÖ 2. binyıl):</b> yalnızca eşya buluntusuna dayanıyor — kanıt değeri düşük.</p>
+    </div>
+  </div>
+
+  <p class="note d" style="margin-top:1.5rem">Sık alıntılanan <b>Ksenophon tanıklığı</b> için ayrı bir uyarı: <i>Anabasis</i>'te yer altı evleri, kuyu gibi girişler, hayvanlar ve arpa şarabı gerçekten anlatılıyor — ama tarif edilen yer <b>Ermenistan</b>, Kapadokya değil. Türkçe ve İngilizce popüler kaynaklarda bu ikisi düzenli olarak birbirine karıştırılıyor.</p>
+</section>
+
+<section id="tuf" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Malzeme</p>
+    <h2>Tüf gerçeği: bir gizemi kaldırır, diğerini kaldırmaz</h2>
+  </div>
+
+  <div class="prose">
+    <p>Kapadokya kayası <b>volkanik tüf</b> — sıkışmış volkanik kül. Yeni kesildiğinde yumuşaktır, havayla temas edince sertleşir. Demir aletle, hatta sert ağaçla işlenebilir.</p>
+    <p>Bu tek bilgi <b>"bunu nasıl oydular?"</b> sorusunu çözer. Granit oymuyorlardı. Ve bölgede <b>iki yüzden fazla</b> yer altı yerleşimi olması da bunu doğruluyor: karşımızdaki şey bir mucize değil, <b>bölgesel bir inşa geleneği.</b></p>
+    <p><b>Ama tüf, havalandırmayı açıklamaz.</b> Kaya yumuşak olsa da hava akışı yumuşamıyor. Seksen beş metre derinlikte, binlerce insan ve hayvan için hava dolaşımı sağlamak <b>malzemeden bağımsız</b> bir problem — ve asıl övgüyü hak eden yer burası.</p>
+  </div>
+</section>
+
+<section id="baca" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Fizik</p>
+    <h2>Baca etkisi nasıl çalışır</h2>
+    <p class="kicker">Hareketli parça yok, enerji girişi yok. Çalıştıran şey <b>sıcaklık farkı.</b></p>
+  </div>
+
+  <div class="stack">
+    <h4>Basitleştirilmiş kesit — kış koşulu</h4>
+    <p class="sub">Yer altı sıcaklığı yıl boyunca yaklaşık sabit kalır; yüzey ise mevsimle değişir. Aradaki fark bir basınç farkı yaratır ve hava kendiliğinden hareket eder.</p>
+    <div class="shaft">
+      <div class="col in">
+        <div class="lvl">↓ soğuk hava girer</div>
+        <div class="lvl">↓</div>
+        <div class="lvl">↓</div>
+        <div class="lvl">↓ dibe iner</div>
+      </div>
+      <div class="col mid">
+        <div class="lvl">1. kat</div>
+        <div class="lvl">3. kat</div>
+        <div class="lvl">5. kat</div>
+        <div class="lvl">~85 m derinlik</div>
+      </div>
+      <div class="col out">
+        <div class="lvl">↑ ısınan hava çıkar</div>
+        <div class="lvl">↑</div>
+        <div class="lvl">↑</div>
+        <div class="lvl">↑ yükselir</div>
+      </div>
+    </div>
+    <p><b>Zor kısmı şu:</b> yazın yön tersine döner — dışarısı sıcak, yer altı serin olur. Yani sistemin <b>iki mevsimde de</b> çalışması gerekiyor, ve bunun için baca yerleşimi, kesit ve kat bağlantıları birlikte doğru olmalı.</p>
+    <p>Bazı bacalar aynı zamanda <b>kuyu</b> işlevi görüyor — su kaynağı yüzeye bağlanmadığı için kuşatmacı zehirleyemiyor. Yani aynı düşey boşluk hem hava hem su hem savunma çözüyor.</p>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Ve burada seride tekrar eden mekanizma: <b>termodinamik bilmelerine gerek yoktu.</b> Baca aç, cereyanı hisset, işe yarayan yerde devam et. Petra'nın yarı dolu borularında ve İnka duvarlarında da aynı süreç: <b>teori yok, yineleme var.</b></p>
+</section>
+
+<section id="olculmemis" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Boşluk</p>
+    <h2>Peki bu sistem gerçekten ne kadar iyi?</h2>
+    <p class="kicker">Bu yazıyı hazırlarken cevaplamaya çalıştığım soru buydu. Cevap: <b>bilinmiyor.</b></p>
+  </div>
+
+  <div class="prose">
+    <p>Derinkuyu havalandırmasına adanmış, hava debisini, akış hızını ve kat başına hava değişim oranını ölçen ya da modelleyen <b>hakemli bir çalışma bulamadım.</b> Popüler kaynaklarda sistemin çalıştığı sürekli tekrarlanıyor; nasıl ve ne kadar iyi çalıştığına dair <b>sayı yok.</b></p>
+    <p>Var olan ciddi mühendislik çalışması farklı bir soruya bakıyor: sitenin <b>jeomekanik kararlılığı.</b> O çalışma kapsamında sıcaklık, nem ve hava basıncı izlenmiş, akustik emisyon ve elektriksel potansiyel ölçüm sistemleri kurulmuş — ama amaç <b>kayanın uzun vadeli davranışı</b>, havalandırma performansı değil.</p>
+    <p>Yani ortada gerçek bir bilimsel çalışma var ama <b>başka bir konuda.</b> Havalandırma iddiası hâlâ betimlemeye dayanıyor.</p>
+  </div>
+
+  <p class="note d" style="margin-top:1.5rem"><b>Bu bir eleştiri değil, bir boşluk tespiti.</b> Ve bence bu serinin bulduğu en somut araştırma açığı: mevcut ölçüm teknolojisiyle yapılabilir, pahalı değil, ve sonucu doğrudan ilginç olurdu. <b>Antik bir pasif havalandırma sistemi, modern standartlara göre nasıl performans gösteriyor?</b> Bunu kimse ölçmemiş.</p>
+</section>
+
+<section id="rakamlar" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Sayılar</p>
+    <h2>Dolaşan rakamların durumu</h2>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Kapadokya yer altı şehirleri hakkında yaygın olarak tekrarlanan sayılar ve dayanakları.</caption>
+      <thead><tr><th>İddia</th><th>Değer</th><th>Dayanak</th><th>Durum</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Derinkuyu derinliği</td><td class="v">~85 m</td><td>Ölçülebilir, site erişilebilir</td><td><span class="q q-ok">Sağlam</span></td></tr>
+        <tr><td class="k">Bölgedeki yerleşim sayısı</td><td class="v">200+</td><td>Yüzey araştırmaları</td><td><span class="q q-ok">Sağlam</span></td></tr>
+        <tr><td class="k">Havalandırma bacası sayısı</td><td class="v">~52</td><td>Betimsel kaynaklar</td><td><span class="q q-ok">Bildirilen</span></td></tr>
+        <tr><td class="k">Kat sayısı</td><td class="v">8 açık / 18 iddia</td><td>Ziyarete açık kısım ölçülü; toplam iddia belirsiz</td><td><span class="q q-no">Kısmen</span></td></tr>
+        <tr><td class="k">Kapasite</td><td class="v">20.000 kişi</td><td>Her yerde tekrarlanıyor, hesabın kaynağı bulunamadı</td><td><span class="q q-no">Dayanaksız</span></td></tr>
+        <tr><td class="k">Yan kanal sayısı</td><td class="v">15.000</td><td>Blog ve içerik siteleri</td><td><span class="q q-no">Güvenilmez</span></td></tr>
+        <tr><td class="k">Derinkuyu–Kaymaklı tüneli</td><td class="v">9 km</td><td>Yalnızca kısa bölümler kazıldı</td><td><span class="q q-no">Doğrulanmadı</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Tablonun alt yarısı bu projenin tekrar eden uyarısı: <b>bir sayı yeterince tekrarlanınca kaynak aranmaz oluyor.</b> "20.000 kişi" cümlesini yüzlerce yerde bulabilirsiniz; hesabın nereden geldiğini hiçbir yerde bulamıyorsunuz.</p>
+</section>
+
+<section id="bilinen" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Sağlam zemin</p>
+    <h2>Ne biliyoruz</h2>
+  </div>
+
+  <div class="prose">
+    <p>Belirsizlikleri saydıktan sonra, sağlam olanı da net söylemek gerekir.</p>
+    <p><b>Belgelenmiş kullanım Bizans dönemidir</b> — kabaca 5. ile 10. yüzyıllar arası. Bunu kiliseler, haçlar, mimari formlar ve tarihsel bağlam destekliyor. En büyük genişleme dönemi <b>Arap-Bizans sınır savaşlarına</b> denk geliyor, ve bu tesadüf değil: yer altı şehirleri <b>akın sığınağıdır.</b></p>
+    <p>Tasarım da bunu söylüyor: dar geçitler tek sıra geçişe zorlar, katlar tek tek kapatılabilir, ve <b>yuvarlanan taş kapılar yalnızca içeriden</b> açılabilir. Bunlar depremden değil, <b>insandan</b> korunmak için yapılmış çözümler.</p>
+    <p>Yani "kıyametten sığınak" anlatısının aksine, kanıtın işaret ettiği şey çok daha sıradan ve çok daha iyi belgelenmiş: <b>komşudan kaçmak.</b></p>
+  </div>
+</section>
+
+<section id="efsane" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Düzeltme</p>
+    <h2>Kayseri ve Mardin'e uzanan tüneller</h2>
+  </div>
+
+  <div class="prose">
+    <p>Yaygın bir iddia: yer altı şehirleri tünellerle Kayseri'ye, hatta Mardin'e kadar birbirine bağlı.</p>
+    <p><b>Mardin iddiası jeolojik olarak imkânsız.</b> Kapadokya kazısını mümkün kılan volkanik tüf oraya uzanmıyor; Mardin kireçtaşı. Aradaki yaklaşık beş yüz kilometrenin büyük kısmında o kaya yok. Bağlı bir tünel ağı fiziksel olarak kurulamaz.</p>
+    <p>Mardin'de yer altı yapıları <b>var</b> — Midyat'taki Matiate gibi. Ama bunlar Kapadokya'nın devamı değil, <b>farklı kayada bağımsız olarak gelişmiş ayrı bir gelenek.</b></p>
+    <p>Ve bu aslında daha ilginç bir gerçek: insanlar aynı sorunu farklı jeolojide bağımsız olarak çözmüş. <b>Bağlantı değil, yakınsama.</b> Serinin üç mekanizma çerçevesinde bu, Mısır ve Maya piramitleriyle aynı kutuya düşüyor.</p>
+    <p>Derinkuyu ile Kaymaklı arasındaki <b>9 kilometrelik tünel</b> iddiası ise farklı bir kategoride: mümkün ama <b>doğrulanmamış.</b> Yalnızca kısa bölümler kazıldı; uçtan uca haritalanmış bir geçit yok.</p>
+  </div>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Sonuç</p>
+    <h2>Ne öğrendik</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının sonucu</p>
+    <h3>Bilinmeyen iki farklı sebepten bilinmiyor olabilir</h3>
+    <p><b>Tarihleme sorunu yapısaldır.</b> Kayaya oyma mimaride stratigrafi yoktur ve bu değişmeyecek. Yeni bir teknik gelmedikçe Derinkuyu'nun ne zaman oyulmaya başlandığı bilinemez — bu bir ihmal değil, <b>yöntemin sınırı.</b></p>
+    <p><b>Havalandırma sorunu ise ihmaldir.</b> Ölçülebilir, modellenebilir, ve muhtemelen kolay. Ama kimse yapmamış. Yüz yıldır övülen bir sistem hakkında <b>tek bir performans sayımız yok.</b></p>
+    <p>İkisini ayırmak önemli: birine "bilinmiyor" demek dürüstlük, diğerine "bilinmiyor" demek <b>bir araştırma daveti.</b></p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">10 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Ne zaman oyulmaya başlandı?</p>
+      <p class="oq__a"><b>Yöntem cevap veremiyor.</b> Bizans kullanımı belgeli; öncesi için doğrudan tarihleme imkânı yok.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Havalandırma ne kadar iyi çalışıyor?</p>
+      <p class="oq__a"><b>Ölçülmemiş.</b> Hava debisi, akış hızı ve kat başına hava değişimi için hakemli bir çalışma bulunamadı. Mevcut mühendislik çalışması jeomekanik kararlılığa bakıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Gerçekten 20.000 kişi barınabilir miydi?</p>
+      <p class="oq__a">Rakam her yerde tekrarlanıyor ama <b>hesabın kaynağı bulunamadı.</b> Havalandırma ölçülmediği için üst sınır da hesaplanamıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Derinkuyu ve Kaymaklı bağlı mı?</p>
+      <p class="oq__a">Mümkün, ama <b>doğrulanmadı.</b> Yalnızca kısa bölümler kazılmış durumda.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Bizans öncesi bir çekirdek var mı?</p>
+      <p class="oq__a">Olabilir — ama <b>gösterilemez.</b> Frig iddiası makullük argümanı, Hitit iddiası eşya buluntusuna dayanıyor.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir.</p>
+    <p><b>Bu yazının merkezinde bir olumsuz bulgu var.</b> Derinkuyu havalandırmasının performansını ölçen ya da modelleyen hakemli bir çalışma aranmış ve <b>bulunamamıştır.</b> Bu, böyle bir çalışmanın kesinlikle olmadığı anlamına gelmez — erişilemeyen ya da Türkçe yerel yayınlarda kalmış olabilir. Ama yaygın olarak atıf yapılan bir kaynak yok, ve iddia betimlemeye dayanıyor. Var olan ciddi mühendislik çalışması sitenin <b>jeomekanik kararlılığına</b> odaklanır; kapsamında sıcaklık, nem ve hava basıncı izlemesi vardır ama amacı havalandırma performansı değildir.</p>
+    <p><b>Sayı tablosu bilerek konmuştur.</b> "20.000 kişi" ve "15.000 yan kanal" gibi değerler yaygın biçimde tekrarlanmakta ama dayanağı gösterilememektedir; tabloda bu durum işaretlidir.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil · Aynı Cümlede Anılanlar · Petra · Şuşter · Stonehenge · Sümer · Angkor · Taş Tepeler · Machu Picchu · Chichén Itzá.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

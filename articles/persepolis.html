@@ -1,0 +1,381 @@
+<title>Persepolis: Arşiv Konuşunca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E9E7E3; --surface:#F4F2EE; --surface-2:#DDD9D3;
+  --ink:#161816; --ink-2:#4A4E4B; --ink-3:#767A77;
+  --rule:#C5C2BC; --rule-soft:#D6D3CD;
+  --accent:#1B8C87; --accent-ink:#126B67; --accent-soft:#D2E9E7;
+  --stone:#8C7B63; --stone-ink:#6F6150; --stone-soft:#EBE4D8;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121413; --surface:#191C1A; --surface-2:#242724;
+    --ink:#E4E7E4; --ink-2:#A4A9A5; --ink-3:#757A76;
+    --rule:#2C302D; --rule-soft:#232724;
+    --accent:#5FC7C1; --accent-ink:#82D8D3; --accent-soft:#0E2A28;
+    --stone:#C6B392; --stone-ink:#D6C7AB; --stone-soft:#272219;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121413; --surface:#191C1A; --surface-2:#242724;
+  --ink:#E4E7E4; --ink-2:#A4A9A5; --ink-3:#757A76;
+  --rule:#2C302D; --rule-soft:#232724;
+  --accent:#5FC7C1; --accent-ink:#82D8D3; --accent-soft:#0E2A28;
+  --stone:#C6B392; --stone-ink:#D6C7AB; --stone-soft:#272219;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.5rem,7vw,4.7rem);line-height:.98;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:13ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--ink-2);max-width:48ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.15rem}
+.stat__num{font-family:var(--display);font-size:1.7rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.s{color:var(--stone-ink)}
+.stat__lbl{font-size:.81rem;color:var(--ink-3);line-height:1.3}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:58ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.s{border-color:var(--stone);background:var(--stone-soft)}
+
+/* two sources */
+.src2{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:780px){.src2{grid-template-columns:1fr 1fr}}
+.sc{background:var(--bg);padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.6rem}
+.sc .tag{font-family:var(--mono);font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.sc h3{font-size:1.14rem}
+.sc p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.sc ul{margin:.1rem 0 0;padding-left:1.05rem;font-size:.91rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.32rem}
+.sc ul b{color:var(--ink)}
+.sc.arch{background:var(--accent-soft)}
+.sc.arch .tag{color:var(--accent-ink)}
+
+/* ration figure */
+.rat{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem}
+.rat h4{font-size:1rem;margin-bottom:.35rem}
+.rat .sub{font-size:.87rem;color:var(--ink-3);margin:0 0 1.1rem;max-width:64ch}
+.rows{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.rw{background:var(--bg);padding:.75rem .9rem;display:grid;gap:.2rem .9rem;grid-template-columns:1fr}
+@media(min-width:620px){.rw{grid-template-columns:minmax(160px,auto) 1fr;align-items:baseline}}
+.rw b{font-size:.9rem;font-weight:700;color:var(--ink)}
+.rw span{font-size:.9rem;color:var(--ink-2)}
+.rw.hl{background:var(--accent-soft)}
+.rw.hl span{color:var(--ink)}
+.rat p.leg{margin:1rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:66ch}
+.rat b{color:var(--ink)}
+
+/* fire split */
+.fire{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:760px){.fire{grid-template-columns:1fr 1fr}}
+.fr{background:var(--bg);padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.5rem}
+.fr .who{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.fr h3{font-size:1.08rem}
+.fr p{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
+.card h4{font-size:1.06rem}
+.card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card.s .tag{color:var(--stone-ink)}
+.card p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:70ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 15 · Ahameniş</span>
+    <p class="eyebrow">Kale Tabletleri · Yunan kaynak eleştirisi · mülkiyet</p>
+    <h1>Persepolis: Arşiv Konuşunca</h1>
+    <p class="hero__lede">Persepolis'i iki bin yıl boyunca <strong>düşmanlarının kaleminden</strong> tanıdık. Sonra 1933'te, sarayın duvarları arasında <strong>Pers tarafının kendi kayıtları</strong> bulundu — ve tablo değişti.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">MÖ 518</span><span class="stat__lbl">I. Darius yapımı başlatıyor</span></div>
+      <div class="stat"><span class="stat__num s">1933–38</span><span class="stat__lbl">Kale ve Hazine tabletlerinin bulunuşu</span></div>
+      <div class="stat"><span class="stat__num">2.100+</span><span class="stat__lbl">yayımlanmış tablet metni</span></div>
+      <div class="stat"><span class="stat__num s">MÖ 330</span><span class="stat__lbl">yangın</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#iki-kaynak">İki kaynak</a>
+    <a href="#tayin">Tayın kayıtları</a>
+    <a href="#kadinlar">Kadın işçiler</a>
+    <a href="#baskent">Tören başkenti</a>
+    <a href="#yangin">Yangın</a>
+    <a href="#mulkiyet">Tabletler nerede</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="iki-kaynak" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Kaynak sorunu</p>
+    <h2>Persia'yı kim anlattı?</h2>
+    <p class="kicker">Bu, Persepolis hakkındaki her şeyin önündeki soru — ve cevabı uzun süre tek taraflıydı.</p>
+  </div>
+
+  <div class="src2">
+    <div class="sc">
+      <span class="tag">MÖ 5. yy'dan itibaren</span>
+      <h3>Yunan kaynakları</h3>
+      <p>Batı'nın Pers imgesi büyük ölçüde Yunan yazarlarından geldi — ve onlar Perslerle <b>savaşan tarafın</b> yazarlarıydı.</p>
+      <ul>
+        <li>Despotluk, aşırılık, kölelik vurgusu</li>
+        <li>Özgür Yunan / köle Doğu karşıtlığı, <b>siyasi bir çerçeve</b></li>
+        <li>Bu imge Rönesans'tan modern sinemaya kadar taşındı</li>
+      </ul>
+    </div>
+    <div class="sc arch">
+      <span class="tag">1933'ten itibaren</span>
+      <h3>Kale ve Hazine tabletleri</h3>
+      <p>Persepolis kazılarında, sarayın kendi <b>idari arşivi</b> bulundu. Bunlar edebiyat değil, <b>muhasebe</b> — ve tam da bu yüzden değerli.</p>
+      <ul>
+        <li>Kimin ne aldığı, ne kadar, ne zaman</li>
+        <li>Propaganda amacı yok — <b>iç kullanım kaydı</b></li>
+        <li>Pers yönetimi üzerine elimizdeki <b>en büyük tutarlı belge kümesi</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Bu ayrım seride tekrar ediyor. Şuşter'de Roma esiri anlatısı altı yüz yıl sonraki vakayinamelerden geliyordu ve asıl kanıt <b>taşın kendisiydi.</b> Burada da benzer: anlatı düşmandan, kanıt <b>muhasebeden.</b> Ve muhasebe yalan söylemek için tutulmaz.</p>
+</section>
+
+<section id="tayin" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Bulgu</p>
+    <h2>Persepolis'i köleler inşa etmedi</h2>
+  </div>
+
+  <div class="prose">
+    <p>Tabletlerin gösterdiği en net şey bu. Devlet ekonomisinde çalışan herkes <b>sabit bir tayın ölçeğinde</b> yer alıyordu. Ödemeler gümüş ve gıda tayını olarak yapılıyor, miktar <b>beceriye ve konuma göre</b> değişiyordu.</p>
+    <p>Ve bir ayrıntı bunun "karın tokluğu" olmadığını gösteriyor: <b>bazı tayınlar tek bir kişinin tüketebileceğinden fazla.</b> Yani bu bir yemek dağıtımı değil, <b>mal cinsinden ödenen bir maaş.</b></p>
+  </div>
+
+  <div class="rat">
+    <h4>Tabletlerin kaydettiği türden bilgi</h4>
+    <p class="sub">Arşiv edebi bir metin değil; her satır bir işlem. Kaydın biçimi şu unsurları içeriyor:</p>
+    <div class="rows">
+      <div class="rw"><b>Alıcı</b><span>İşçinin ya da işçi grubunun adı ve statüsü</span></div>
+      <div class="rw"><b>Miktar</b><span>Tahıl, şarap veya bira; ölçü birimiyle</span></div>
+      <div class="rw"><b>Dönem</b><span>Hangi ay, hangi saltanat yılı</span></div>
+      <div class="rw"><b>Yetkili</b><span>Ödemeyi onaylayan görevlinin adı</span></div>
+      <div class="rw hl"><b>Ölçek</b><span>Beceriye ve konuma göre değişen <b>kademeli</b> tayın düzeyi</span></div>
+    </div>
+    <p class="leg">Bu yapı tek başına bir şey söylüyor: <b>ödeme kayıt altına alınıyorsa, ödeme vardır.</b> Köle emeğinin muhasebesi bu ayrıntıda tutulmaz — çünkü karşılığı yoktur.</p>
+  </div>
+
+  <p class="note s" style="margin-top:1.5rem"><b>Ama fazlasını da söylememek gerekir.</b> Ücretli olmak modern anlamda özgür emek demek değil: işgücünün bir bölümü zorunlu hizmette ya da bağımlı statüde olabilir. Ayrıca tabletler yalnızca <b>devlet sektörünü</b> kaydediyor — kayıt dışı emek bu arşivde görünmez. Bulgu "kölelik yoktu" değil, <b>"bu şantiyede çalışanlar ödeniyordu."</b></p>
+</section>
+
+<section id="kadinlar" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Ayrıntı</p>
+    <h2>Ve kadın işçiler kayıtlarda</h2>
+  </div>
+
+  <div class="prose">
+    <p>Tabletler kadın ve erkek işçilere yapılan ödemeleri <b>ayrı ayrı</b> kaydediyor. Kadınlar imparatorluk ekonomisinde tayın alan, adı geçen, konumu belirtilen çalışanlar olarak görünüyorlar.</p>
+    <p>Daha da dikkat çekici olan: <b>bazı kadın işçiler, benzer konumdaki erkeklerden daha yüksek tayın alıyor.</b> Yani ölçek cinsiyete göre otomatik olarak belirlenmiyor; <b>beceri ve konum</b> belirleyici.</p>
+    <p>Bu, Yunan kaynaklarından türeyen "haremde kapalı Pers kadını" imgesiyle uyuşmuyor. Ve uyuşmamasının sebebi tabletlerin bir tez savunması değil — <b>onlar sadece kimin ne aldığını yazıyor.</b></p>
+  </div>
+</section>
+
+<section id="baskent" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — İşlev</p>
+    <h2>Başkent değil, tören merkezi</h2>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Yaygın bilgi</span>
+      <h4>"Pers İmparatorluğu'nun başkenti"</h4>
+      <p>Turistik anlatının standart cümlesi. Yapının ölçeği bunu destekler gibi görünüyor.</p>
+    </div>
+    <div class="card s">
+      <span class="tag">Gerçek</span>
+      <h4>Yönetim başka yerdeydi</h4>
+      <p>İmparatorluğun gündelik idaresi büyük ölçüde <b>Susa, Babil ve Ekbatana</b> üzerinden yürüyordu. Persepolis törensel ve simgesel bir merkezdi.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Kanıt</span>
+      <h4>Yapı programı bunu söylüyor</h4>
+      <p>Apadana kabartmaları imparatorluğun halklarını <b>armağan sunarken</b> gösteriyor — idari değil, <b>törensel</b> bir sahne. Yapı temsil ölçeğinde kurulmuş.</p>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Dürüstlük payı: Kale Tabletleri sitede <b>ciddi bir idari faaliyet de</b> olduğunu gösteriyor. "Yalnızca tören" ayrımı fazla keskin olabilir. Doğrusu şu: <b>imparatorluğun idari merkezi değildi, ama idaresiz de değildi.</b></p>
+</section>
+
+<section id="yangin" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — MÖ 330</p>
+    <h2>Yangın: arkeoloji doğruluyor, niyeti okuyamıyor</h2>
+    <p class="kicker">Kalıntılarda yanık tabaka ve ısı hasarı belirgin. Yangının <b>olduğu</b> tartışmasız. <b>Neden</b> olduğu tartışmalı.</p>
+  </div>
+
+  <div class="fire">
+    <div class="fr">
+      <span class="who">Anlatı A</span>
+      <h3>Bilinçli siyasi karar</h3>
+      <p>Bir kaynak grubu, yakmayı Yunanistan'ın intikamı olarak alınmış <b>planlı bir karar</b> diye anlatır. Bu okuma İskender'i hesaplı bir stratejist gösterir.</p>
+    </div>
+    <div class="fr">
+      <span class="who">Anlatı B</span>
+      <h3>Şölende alınmış ani karar</h3>
+      <p>Başka bir kaynak grubu olayı bir ziyafet sırasında, <b>sarhoş ve ani</b> bir kararla anlatır. Bu okuma İskender'i savrulan bir figür gösterir.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.7rem">
+    <p>İkisi aynı anda doğru olamaz. Ve seçim yapmak için elimizde <b>tanık yok</b> — antik yazarların hiçbiri olaya tanık değildi, anlatılar yüzyıllar sonra derlendi. Üstelik her iki anlatı da İskender'in imajını <b>farklı yönde biçimlendirme</b> amacı taşıyabilir.</p>
+    <p>Popüler aktarım hep dramatik olanı seçiyor — şölen, sarhoşluk, bir kadının kışkırtması. Oysa bu, kaynakların hangisine güveneceğimize dair <b>çözülmemiş bir sorun.</b></p>
+    <p>Ve buradaki sınır bu sitede tanıdık: <b>arkeoloji yangını doğrular, niyeti okuyamaz.</b> Chichén Itzá'nın ekinoks gölgesinde, Stonehenge'in amacında ve Göbekli Tepe'nin kabartmalarında karşılaştığımız aynı duvar.</p>
+  </div>
+</section>
+
+<section id="mulkiyet" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Bugün</p>
+    <h2>Ve tabletler nerede?</h2>
+  </div>
+
+  <div class="prose">
+    <p>Arşiv 1933–34 ve 1936–38 kazılarında bulundu ve <b>incelenmek üzere</b> Chicago'ya götürüldü. Orada üzerinde çalışıldı, çözüldü ve yayımlandı — <b>2.100'den fazla metin</b> bilim dünyasına bu sayede açıldı.</p>
+    <p>Koleksiyonun büyük bölümü hâlâ orada. Bir kısmı partiler hâlinde İran'a iade edildi, ama süreç kapanmadı.</p>
+    <p>Bu, seride üçüncü kez karşımıza çıkan bir durum: <b>Ölü Deniz Parşömenleri</b>'nin mülkiyeti çözülmedi, <b>Babil'in İştar Kapısı</b> Berlin'de, ve şimdi Persepolis arşivi Chicago'da. Üçünde de aynı gerilim var — <b>bilgiye erişim ile mülkiyet arasındaki gerilim.</b></p>
+    <p>Ve bu gerilim gerçek: tabletler götürülmeseydi belki bu kadar hızlı yayımlanmazlardı. Ama <b>"iyi sonuç verdi" ile "hakkıydı" aynı şey değil</b> — ve bu ayrımı yapmak, cevabı vermekten daha önemli.</p>
+  </div>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Sonuç</p>
+    <h2>Ne öğrendik</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının sonucu</p>
+    <h3>Muhasebe kaydı, destandan daha güvenilir bir tarih kaynağı</h3>
+    <p>Persepolis'in ünü <b>taşlarından</b> ve <b>yangınından</b> geliyor. Ama onu gerçekten anlatan şey, sarayın duvarları arasında bulunan <b>sıkıcı idari tabletlerdi.</b></p>
+    <p>Çünkü o tabletler <b>kimseyi ikna etmek için yazılmadı.</b> Yunan yazarların bir tezi vardı; Pers yazıtlarının da propaganda amacı vardı. Ama bir kâtibin "şu işçiye şu ay şu kadar arpa verildi" kaydında <b>gizli gündem yok</b> — ve tam da bu yüzden en sağlam kaynak o.</p>
+    <p>Sümer yazısının muhasebe için icat edildiğini yazmıştık. Persepolis aynı dersi ikinci kez veriyor: <b>tarihin en güvenilir belgeleri, tarih yazmak için tutulmamış olanlardır.</b></p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">İşgücünün ne kadarı gönüllüydü?</p>
+      <p class="oq__a">Tayın kaydı ödemeyi gösteriyor ama <b>statüyü göstermiyor.</b> Zorunlu hizmet ile ücretli çalışma bu kayıtlarda ayrışmıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Yangın kasıtlı mıydı?</p>
+      <p class="oq__a">Arkeoloji yangını doğruluyor, <b>niyeti okuyamıyor.</b> Kaynaklar ikiye ayrılıyor ve hiçbiri tanık değil.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Sitenin törensel işlevi takvimde nereye oturuyordu?</p>
+      <p class="oq__a">Nevruz bağlantısı sık öne sürülür ama <b>doğrudan kanıtı tartışmalıdır.</b></p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Arşivin tamamı yayımlandı mı?</p>
+      <p class="oq__a">Hayır. 2.100'den fazla metin yayımlandı ama koleksiyon <b>çok daha büyük</b>; çalışma sürüyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Mülkiyet nasıl çözülecek?</p>
+      <p class="oq__a"><b>Açık.</b> Kısmi iadeler yapıldı, süreç tamamlanmadı.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Tablet bulguları Persepolis idari arşivi üzerine yapılan yayınlara ve arşivi barındıran kurumun kayıtlarına dayanır.</p>
+    <p><b>Bulgunun kapsamı sınırlıdır ve metinde öyle belirtilmiştir.</b> Tayın kayıtları ödemeyi gösterir, statüyü göstermez; ücretli olmak modern anlamda özgür emek demek değildir. Ayrıca arşiv yalnızca devlet sektörünü kaydeder — kayıt dışı emek görünmez. Bulgu "kölelik yoktu" değil, "bu şantiyede çalışanlar ödeniyordu" biçimindedir.</p>
+    <p><b>Yangın bölümü taraf tutmaz.</b> Arkeoloji yangını doğrular; kasıtlı olup olmadığı antik kaynaklarda çelişkilidir ve bu yazı bir tercih yapmaz.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil · Aynı Cümlede Anılanlar · Petra · Şuşter · Stonehenge · Sümer · Angkor · Taş Tepeler · Machu Picchu · Chichén Itzá · Kapadokya.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

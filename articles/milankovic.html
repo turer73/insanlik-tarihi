@@ -1,0 +1,439 @@
+<title>Milanković Döngüleri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E9E8EA; --surface:#F3F3F5; --surface-2:#DBDBE0;
+  --ink:#15161A; --ink-2:#494C55; --ink-3:#767A84;
+  --rule:#C3C3CA; --rule-soft:#D4D4DA;
+  --accent:#25355C; --accent-ink:#1A2745; --accent-soft:#D9DEEA;
+  --sun:#B8862E; --sun-ink:#8F681F; --sun-soft:#F2E6CC;
+  --ice:#4E7E96; --ice-soft:#DAE7ED;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111216; --surface:#181A1F; --surface-2:#23252C;
+    --ink:#E4E5E9; --ink-2:#A3A7B1; --ink-3:#757984;
+    --rule:#2C2F37; --rule-soft:#22252B;
+    --accent:#8CA3D4; --accent-ink:#A8BBE4; --accent-soft:#141B2C;
+    --sun:#DCB160; --sun-ink:#E8C486; --sun-soft:#2A2113;
+    --ice:#8FB6C9; --ice-soft:#16222A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111216; --surface:#181A1F; --surface-2:#23252C;
+  --ink:#E4E5E9; --ink-2:#A3A7B1; --ink-3:#757984;
+  --rule:#2C2F37; --rule-soft:#22252B;
+  --accent:#8CA3D4; --accent-ink:#A8BBE4; --accent-soft:#141B2C;
+  --sun:#DCB160; --sun-ink:#E8C486; --sun-soft:#2A2113;
+  --ice:#8FB6C9; --ice-soft:#16222A;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.4rem}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);line-height:.98;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:14ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--ink-2);max-width:50ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.4rem,5vw,3.9rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem}
+.sec__head h2{font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:58ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.s{border-color:var(--sun);background:var(--sun-soft)}
+
+/* cycle cards */
+.cyc{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.4rem}
+@media(min-width:900px){.cyc{grid-template-columns:repeat(3,1fr)}}
+.cy{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.7rem}
+.cy__hd{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.cy__p{font-family:var(--mono);font-size:.74rem;font-weight:700;color:var(--sun-ink);background:var(--sun-soft);padding:.16rem .45rem;white-space:nowrap}
+.cy h3{font-size:1.12rem}
+.cy figure{margin:0;background:var(--surface);border:1px solid var(--rule-soft);padding:.6rem}
+.cy svg{display:block;width:100%;height:auto}
+.cy p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.cy p b{color:var(--ink)}
+.cy .eff{font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+
+/* interactive sum */
+.lab{margin-top:1.4rem;border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem;display:flex;flex-direction:column;gap:1rem}
+.lab h4{font-size:1.02rem}
+.lab .sub{font-size:.88rem;color:var(--ink-3);margin:0;max-width:66ch}
+.toggles{display:flex;flex-wrap:wrap;gap:.4rem}
+.tg{font-family:var(--mono);font-size:.72rem;font-weight:600;padding:.34rem .6rem;border:1px solid var(--rule);background:var(--bg);color:var(--ink-3);display:inline-flex;gap:.4rem;align-items:center}
+.tg:hover{border-color:var(--ink-3);color:var(--ink)}
+.tg[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.tg i{width:12px;height:3px;display:inline-block;background:currentColor}
+.plot{background:var(--bg);border:1px solid var(--rule);padding:.5rem;overflow-x:auto}
+.plot svg{display:block;width:100%;min-width:560px;height:auto}
+.readout{font-family:var(--mono);font-size:.76rem;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:.3rem 1.2rem}
+.readout b{color:var(--ink)}
+.lab .caption{font-size:.88rem;color:var(--ink-2);max-width:68ch;margin:0}
+.lab .caption b{color:var(--ink)}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.4rem}
+.card{background:var(--bg);padding:1.2rem 1.28rem;display:flex;flex-direction:column;gap:.45rem}
+.card h4{font-size:1.05rem}
+.card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card.s .tag{color:var(--sun-ink)}
+.card p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.55rem 1.65rem;margin-top:1.4rem;display:flex;flex-direction:column;gap:.8rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.34rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.4rem}
+.oq{background:var(--bg);padding:1.05rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.3rem 3.2rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:70ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">Açıklayıcı · İklim</span>
+    <p class="eyebrow">Yörünge mekaniği · buz karotları · çözülmemiş problem</p>
+    <h1>Milanković Döngüleri</h1>
+    <p class="hero__lede">Buzul çağlarını Dünya'nın yörüngesindeki üç ayrı salınım sürüyor. Ama asıl mesele toplam ısı değil — <strong>kuzeyde yazın karın erimemesi.</strong> Ve bir de kimsenin çözemediği bir problem var.</p>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#uc">Üç döngü</a>
+    <a href="#kilit">Asıl mekanizma</a>
+    <a href="#lab">Üst üste binme</a>
+    <a href="#kanit">Nasıl kanıtlandı</a>
+    <a href="#problem">Çözülmemiş problem</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="uc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Bileşenler</p>
+    <h2>Üç ayrı salınım, üç ayrı periyot</h2>
+    <p class="kicker">Dünya'nın yörüngesi ve ekseni sabit değil. Üç farklı biçimde, üç farklı ritimde salınıyorlar.</p>
+  </div>
+
+  <div class="cyc">
+
+    <article class="cy">
+      <div class="cy__hd"><span class="cy__p">~100.000 yıl</span><h3>Basıklık</h3></div>
+      <figure aria-label="Yörünge şekli: neredeyse dairesel ile hafif eliptik arasında salınır">
+        <svg viewBox="0 0 200 120" role="img">
+          <ellipse cx="100" cy="60" rx="78" ry="46" fill="none" stroke="var(--rule)" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <ellipse cx="88" cy="60" rx="80" ry="34" fill="none" stroke="var(--accent)" stroke-width="2"/>
+          <circle cx="122" cy="60" r="7" fill="var(--sun)"/>
+          <circle cx="10" cy="60" r="3.5" fill="var(--ice)"/>
+          <text x="122" y="82" font-family="monospace" font-size="8" fill="var(--sun-ink)" text-anchor="middle">Güneş</text>
+        </svg>
+      </figure>
+      <span class="eff">Yörüngenin şekli</span>
+      <p>Yörünge neredeyse <b>daireden</b> hafif <b>elipse</b> geçer ve geri döner. Ayrıca ~413.000 yıllık daha uzun bir bileşeni var.</p>
+      <p><b>Doğrudan etkisi çok küçüktür</b> — yıllık toplam güneş enerjisini binde bir düzeyinde değiştirir. Asıl işlevi başkadır: <b>presesyonun gücünü ayarlar.</b></p>
+    </article>
+
+    <article class="cy">
+      <div class="cy__hd"><span class="cy__p">~41.000 yıl</span><h3>Eğiklik</h3></div>
+      <figure aria-label="Eksen eğimi 22,1 ile 24,5 derece arasında salınır">
+        <svg viewBox="0 0 200 120" role="img">
+          <line x1="20" y1="105" x2="180" y2="105" stroke="var(--rule)" stroke-width="1.5"/>
+          <circle cx="100" cy="62" r="26" fill="none" stroke="var(--rule)" stroke-width="1.5"/>
+          <line x1="100" y1="105" x2="100" y2="18" stroke="var(--rule-soft)" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <line x1="88" y1="100" x2="112" y2="24" stroke="var(--accent)" stroke-width="2.2"/>
+          <line x1="94" y1="100" x2="106" y2="24" stroke="var(--ice)" stroke-width="1.6" stroke-dasharray="4 3"/>
+          <text x="150" y="40" font-family="monospace" font-size="8" fill="var(--ink-3)">22,1°–24,5°</text>
+        </svg>
+      </figure>
+      <span class="eff">Eksenin eğimi</span>
+      <p>Eksen eğimi <b>22,1° ile 24,5°</b> arasında gider gelir. Şu an ~23,4° ve azalıyor.</p>
+      <p>Etkisi doğrudan: <b>mevsim zıtlığını</b> belirler. Eğim arttıkça yazlar daha sıcak, kışlar daha soğuk olur. Yüksek enlemlerde etkisi en güçlü.</p>
+    </article>
+
+    <article class="cy">
+      <div class="cy__hd"><span class="cy__p">~23.000 yıl</span><h3>Presesyon</h3></div>
+      <figure aria-label="Eksen topaç gibi yalpalar; hangi mevsimin Güneşe en yakın noktada olduğu değişir">
+        <svg viewBox="0 0 200 120" role="img">
+          <ellipse cx="100" cy="30" rx="34" ry="11" fill="none" stroke="var(--rule)" stroke-width="1.4" stroke-dasharray="3 3"/>
+          <line x1="100" y1="100" x2="76" y2="30" stroke="var(--accent)" stroke-width="2.2"/>
+          <line x1="100" y1="100" x2="124" y2="30" stroke="var(--ice)" stroke-width="1.6" stroke-dasharray="4 3"/>
+          <circle cx="76" cy="30" r="3.5" fill="var(--accent)"/>
+          <circle cx="124" cy="30" r="3" fill="var(--ice)"/>
+          <ellipse cx="100" cy="100" rx="22" ry="8" fill="none" stroke="var(--rule)" stroke-width="1.4"/>
+          <text x="100" y="118" font-family="monospace" font-size="8" fill="var(--ink-3)" text-anchor="middle">yalpalama</text>
+        </svg>
+      </figure>
+      <span class="eff">Eksenin yalpalaması</span>
+      <p>Eksen bir topaç gibi yalpalar. Sonuç: <b>hangi mevsimin</b> Dünya'nın Güneş'e en yakın olduğu noktaya denk geldiği değişir.</p>
+      <p>Bugün kuzey yarımküre <b>kışın</b> Güneş'e daha yakın. On bir bin yıl sonra bu tersine dönecek.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="kilit" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Kilit fikir</p>
+    <h2>Mesele toplam ısı değil — kuzeyde yaz</h2>
+    <p class="kicker">Çoğu anlatımın atladığı nokta bu, ve teorinin çalışmasının tek sebebi.</p>
+  </div>
+
+  <div class="prose">
+    <p>Sezgi şöyle der: Dünya daha az güneş alırsa soğur, buzullar gelir. <b>Ama üç döngünün toplam enerjiye etkisi çok küçük</b> — buzul çağını açıklayacak kadar değil.</p>
+    <p>Milanković'in asıl katkısı, doğru değişkeni bulmasıydı: <b>kuzey yarımkürede yüksek enlemlerde yaz mevsiminde düşen güneş ışığı.</b></p>
+    <p>Sebebi şu: buz tabakası kışın yağan karın <b>yazın tamamen erimemesiyle</b> büyür. Kış zaten her yıl soğuk; belirleyici olan <b>yazın ne kadar sıcak olduğu.</b> Yaz yeterince serin geçerse kar kalır, ertesi yıl üstüne biner, ve buz birikmeye başlar.</p>
+    <p>Bir kez birikince <b>geri besleme</b> devreye girer: beyaz yüzey güneş ışığını yansıtır, bölge daha da soğur, buz daha çok büyür. Yörünge küçük bir itki verir; <b>geri besleme onu büyütür.</b></p>
+  </div>
+
+  <p class="note s" style="margin-top:1.4rem">Bu yüzden Milanković döngülerine <b>"tempo tutucu" (pacemaker)</b> denir, "motor" değil. Yörünge ritmi belirler; ısıyı asıl taşıyan şey buz-albedo ve karbon döngüsü geri beslemeleridir. <b>Yörünge tek başına buzul çağı yapamaz.</b></p>
+</section>
+
+<section id="lab" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Deneyin</p>
+    <h2>Üç döngü üst üste binince</h2>
+    <p class="kicker">Kapatıp açın. Özellikle <b>basıklığı kapatınca</b> ne olduğuna dikkat edin — sonuç şaşırtıcı.</p>
+  </div>
+
+  <div class="lab">
+    <h4>Kuzey yaz güneşlenmesi — şematik</h4>
+    <p class="sub">Bu <b>gerçek veri değil</b>, üç ideal sinüsün toplamı. Amaç: basit ritimlerin üst üste binince nasıl karmaşık bir eğri ürettiğini göstermek.</p>
+
+    <div class="toggles" id="toggles"></div>
+
+    <div class="plot">
+      <svg id="chart" viewBox="0 0 700 240" role="img" aria-label="Üç yörünge döngüsünün toplamını gösteren şematik eğri"></svg>
+    </div>
+
+    <div class="readout" id="readout"></div>
+
+    <p class="caption"><b>Fark ettiniz mi:</b> basıklığı kapattığınızda presesyonun dalgası <b>sabit genlikte</b> akar. Açtığınızda ise presesyon dalgası <b>büyüyüp küçülür</b> — çünkü basıklık, presesyonun etkisini <b>çarpan</b> gibi ayarlar. Yörünge daireye yaklaştığında, hangi mevsimin Güneş'e yakın olduğu önemsizleşir.</p>
+    <p class="caption">İşte bu yüzden basıklık, doğrudan etkisi binde bir düzeyinde olmasına rağmen kayıtlarda görünür: <b>kendisi ısıtmaz, presesyonun sesini açıp kapatır.</b></p>
+  </div>
+</section>
+
+<section id="kanit" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Doğrulama</p>
+    <h2>Nasıl kanıtlandı</h2>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">1920'ler</span>
+      <h4>Hesap önce geldi</h4>
+      <p>Milutin Milanković, elde ve yıllar süren bir çalışmayla geçmiş güneşlenme değerlerini hesapladı. Ortada <b>test edecek veri yoktu</b> — teori kanıtsız kaldı.</p>
+    </div>
+    <div class="card">
+      <span class="tag">1976</span>
+      <h4>Okyanus tabanı konuştu</h4>
+      <p>Derin deniz çökel karotlarındaki <b>oksijen izotop oranları</b> geçmiş buz hacmini kaydediyordu. Kayıt analiz edilince içinden <b>tam da beklenen üç periyot</b> çıktı: ~100 bin, ~41 bin, ~23 bin yıl.</p>
+    </div>
+    <div class="card s">
+      <span class="tag">Neden güçlü</span>
+      <h4>Öngörü, sonradan uydurma değil</h4>
+      <p>Periyotlar <b>gökmekaniğinden önceden hesaplanmıştı.</b> Çökelden çıkan sayılar bağımsız bir ölçümdü. İki bağımsız hattın buluşması, kanıtın gücünü belirler.</p>
+    </div>
+  </div>
+</section>
+
+<section id="problem" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Açık yara</p>
+    <h2>100 bin yıl problemi</h2>
+    <p class="kicker">Teori büyük ölçüde çalışıyor. Ama tam ortasında, elli yıldır çözülemeyen bir çelişki var.</p>
+  </div>
+
+  <div class="prose">
+    <p>Son yaklaşık bir milyon yılda buzul çağı kaydına <b>100 bin yıllık ritim hâkim.</b> Sorun şu: <b>basıklık, üç döngünün en zayıfı.</b> Güneşlenmeye doğrudan etkisi neredeyse yok.</p>
+    <p>Yani <b>en zayıf sinyal, kaydı yönetiyor.</b> Bu, teorinin en rahatsız edici tarafı.</p>
+    <p>Açıklama önerileri var — geri beslemelerin doğrusal olmayan davranışı, buz tabakasının kritik kalınlığa ulaşınca çökmesi, karbon döngüsünün rolü. Ama <b>uzlaşılmış bir çözüm yok.</b></p>
+    <p>İkinci ve bağlantılı sorun daha da net: <b>Orta Pleyistosen Geçişi.</b> Yaklaşık 1,2–0,8 milyon yıl önce buzul döngülerinin ritmi <b>41 bin yıldan 100 bin yıla atladı.</b> Yörünge zorlamasında hiçbir şey değişmedi — değişen şey iklimin ona verdiği yanıttı. <b>Nedeni bilinmiyor.</b></p>
+  </div>
+
+  <p class="note" style="margin-top:1.4rem">Bu iki açık soru, teoriyi çürütmüyor — üç periyodun kayıtta bulunması sağlam bir sonuç. Ama <b>"buzul çağları çözüldü" cümlesi doğru değil.</b> Ritim biliniyor; ritmin neden o ritim olduğu bilinmiyor.</p>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Özet</p>
+    <h2>Kısaca</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Milanković döngüleri, tek paragrafta</p>
+    <h3>Yörünge ritmi verir, geri besleme sesi yükseltir</h3>
+    <p>Dünya'nın yörüngesi <b>~100 bin yılda</b> şeklini, ekseni <b>~41 bin yılda</b> eğimini, <b>~23 bin yılda</b> yönünü değiştirir. Bu üçü toplam güneş enerjisini neredeyse hiç değiştirmez — ama <b>kuzeyde yaz güneşlenmesini</b> belirgin biçimde değiştirir.</p>
+    <p>Yaz yeterince serin geçerse kış karı erimez, birikir, ve <b>beyaz yüzey daha çok soğutur.</b> Küçük bir yörünge itkisi, geri beslemeyle buzul çağına dönüşür.</p>
+    <p>Ve bir çelişki: kayda hâkim olan <b>100 bin yıllık ritim</b>, üç döngünün en zayıfına ait. <b>Neden böyle olduğu hâlâ bilinmiyor.</b></p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Neden 100 bin yıllık ritim hâkim?</p>
+      <p class="oq__a">Basıklığın doğrudan etkisi çok zayıf. <b>Uzlaşılmış bir açıklama yok</b> — doğrusal olmayan geri beslemeler ve buz tabakası dinamiği öneriliyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Orta Pleyistosen Geçişi neden oldu?</p>
+      <p class="oq__a">~1,2–0,8 My önce ritim 41 binden 100 bine atladı; <b>yörünge zorlaması değişmedi.</b> Neden bilinmiyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">CO₂ sebep mi, sonuç mu?</p>
+      <p class="oq__a">Buzul döngülerinde karbondioksit hem <b>yanıt verir hem güçlendirir</b> — geri besleme halkasının parçasıdır. Neden-sonuç sırası ayrıntıda hâlâ tartışılıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Şimdi hangi evredeyiz?</p>
+      <p class="oq__a">Eksen eğimi azalıyor ve yörünge şu an <b>düşük basıklıkta</b> — yani doğal eğilim yavaş bir soğumaya işaret ediyor. Ama bu ölçek <b>on binlerce yıllıktır</b> ve bugünkü hızlı ısınmayla karıştırılmamalıdır; ikisi farklı zaman ölçeklerinde çalışır.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu bir açıklayıcıdır</b>, özgün olarak Türkçe yazılmıştır. Periyot değerleri ve eğim aralığı standart gökmekanik hesaplarından; doğrulama, derin deniz çökel karotlarındaki izotop kayıtlarının analizinden gelir.</p>
+    <p><b>Görsel şematiktir, veri değildir.</b> Etkileşimli eğri üç ideal sinüsün toplamıdır ve yalnızca <b>üst üste binme ilkesini</b> göstermek içindir. Gerçek güneşlenme eğrileri daha karmaşıktır; buradaki amaç sayı vermek değil, <b>basıklığın presesyonu nasıl modüle ettiğini</b> görünür kılmaktır.</p>
+    <p><b>100 bin yıl problemi ve Orta Pleyistosen Geçişi açık sorunlardır</b> ve metinde öyle belirtilmiştir. Teorinin temel öngörüsü (üç periyodun kayıtta bulunması) doğrulanmıştır; ritmin ağırlık dağılımı doğrulanmamıştır.</p>
+    <p><b>İlgili yazı:</b> Hatırlamadığımız Felaketler — bu döngülerin ölçek merdivenindeki yeri.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var C = {
+    prec: {on:true, per:23,  amp:34, color:'var(--accent)', label:'Presesyon', p:'~23 bin'},
+    obl:  {on:true, per:41,  amp:20, color:'var(--ice)',    label:'Eğiklik',   p:'~41 bin'},
+    ecc:  {on:true, per:100, amp:1,  color:'var(--sun)',    label:'Basıklık',  p:'~100 bin'}
+  };
+  var W=700,H=240,PAD=34, SPAN=500; // 500 bin yil
+
+  function envelope(t){ return C.ecc.on ? (0.45 + 0.55*Math.sin(2*Math.PI*t/C.ecc.per)) : 1; }
+  function value(t){
+    var v=0;
+    if(C.prec.on) v += C.prec.amp * envelope(t) * Math.sin(2*Math.PI*t/C.prec.per);
+    if(C.obl.on)  v += C.obl.amp  * Math.sin(2*Math.PI*t/C.obl.per + 0.9);
+    return v;
+  }
+  function path(fn, step){
+    var d='';
+    for(var i=0;i<=SPAN;i+=(step||2)){
+      var x = PAD + (i/SPAN)*(W-2*PAD);
+      var y = H/2 - fn(i);
+      d += (i===0?'M':'L') + x.toFixed(1) + ' ' + y.toFixed(1);
+    }
+    return d;
+  }
+
+  function draw(){
+    var s = document.getElementById('chart'), h='';
+    // izgara
+    for(var k=0;k<=5;k++){
+      var x = PAD + (k/5)*(W-2*PAD);
+      h += '<line x1="'+x.toFixed(1)+'" y1="18" x2="'+x.toFixed(1)+'" y2="'+(H-26)+'" stroke="var(--rule-soft)" stroke-width="1"/>';
+      h += '<text x="'+x.toFixed(1)+'" y="'+(H-10)+'" font-family="monospace" font-size="10" fill="var(--ink-3)" text-anchor="middle">'+(k*100)+'</text>';
+    }
+    h += '<line x1="'+PAD+'" y1="'+(H/2)+'" x2="'+(W-PAD)+'" y2="'+(H/2)+'" stroke="var(--rule)" stroke-width="1"/>';
+    h += '<text x="'+(W/2)+'" y="16" font-family="monospace" font-size="10" fill="var(--ink-3)" text-anchor="middle">bin yıl önce →</text>';
+
+    // basiklik zarfi
+    if(C.ecc.on && C.prec.on){
+      h += '<path d="'+path(function(t){ return C.prec.amp*envelope(t); },4)+'" fill="none" stroke="var(--sun)" stroke-width="1.2" stroke-dasharray="4 4" opacity=".85"/>';
+      h += '<path d="'+path(function(t){ return -C.prec.amp*envelope(t); },4)+'" fill="none" stroke="var(--sun)" stroke-width="1.2" stroke-dasharray="4 4" opacity=".85"/>';
+    }
+    // toplam
+    var any = C.prec.on || C.obl.on;
+    if(any) h += '<path d="'+path(value,1.5)+'" fill="none" stroke="var(--accent)" stroke-width="2.1" stroke-linejoin="round"/>';
+    else h += '<text x="'+(W/2)+'" y="'+(H/2-8)+'" font-family="monospace" font-size="12" fill="var(--ink-3)" text-anchor="middle">Tüm döngüler kapalı</text>';
+
+    s.innerHTML = h;
+
+    var on = Object.keys(C).filter(function(k){return C[k].on;});
+    document.getElementById('readout').innerHTML =
+      '<span>Etkin: <b>'+(on.length?on.map(function(k){return C[k].label;}).join(' + '):'yok')+'</b></span>'
+      + '<span>Yatay eksen: <b>500 bin yıl</b></span>'
+      + (C.ecc.on && C.prec.on ? '<span style="color:var(--sun-ink)">Kesikli çizgi: basıklık zarfı</span>' : '');
+    tog();
+  }
+
+  function tog(){
+    document.getElementById('toggles').innerHTML = Object.keys(C).map(function(k){
+      return '<button class="tg" data-k="'+k+'" aria-pressed="'+C[k].on+'">'
+        + '<i style="background:'+C[k].color+'"></i>'+C[k].label+' <span style="opacity:.65">'+C[k].p+'</span></button>';
+    }).join('');
+  }
+
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('.tg');
+    if(!b) return;
+    C[b.dataset.k].on = !C[b.dataset.k].on;
+    draw();
+  });
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          links.forEach(function(a){ a.classList.remove('is-active'); });
+          if (map[en.target.id]) map[en.target.id].classList.add('is-active');
+        }
+      });
+    }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+    Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+  }
+
+  draw();
+})();
+</script>

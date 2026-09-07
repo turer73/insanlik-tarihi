@@ -1,0 +1,1246 @@
+<title>Ölü Deniz Parşömenleri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E7E5DE;
+  --surface:#F3F1EB;
+  --surface-2:#DDDAD1;
+  --ink:#161A19;
+  --ink-2:#4C524F;
+  --ink-3:#767B77;
+  --rule:#C6C3B9;
+  --rule-soft:#D5D2C8;
+  --accent:#1F6355;
+  --accent-ink:#12463C;
+  --accent-soft:#D4E2DC;
+  --bronze:#7C5D22;
+  --bronze-soft:#E9DFC7;
+  --shadow:0 1px 2px rgba(22,26,25,.06), 0 8px 24px -12px rgba(22,26,25,.18);
+
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+
+  --measure:68ch;
+  --wrap:1180px;
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121513;
+    --surface:#1A1E1C;
+    --surface-2:#242926;
+    --ink:#E6E3DA;
+    --ink-2:#A8ADA7;
+    --ink-3:#7B807B;
+    --rule:#2E332F;
+    --rule-soft:#242A26;
+    --accent:#64BFA4;
+    --accent-ink:#8FD5BF;
+    --accent-soft:#1B2C27;
+    --bronze:#C79E52;
+    --bronze-soft:#2C2517;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121513;
+  --surface:#1A1E1C;
+  --surface-2:#242926;
+  --ink:#E6E3DA;
+  --ink-2:#A8ADA7;
+  --ink-3:#7B807B;
+  --rule:#2E332F;
+  --rule-soft:#242A26;
+  --accent:#64BFA4;
+  --accent-ink:#8FD5BF;
+  --accent-soft:#1B2C27;
+  --bronze:#C79E52;
+  --bronze-soft:#2C2517;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.0625rem;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+
+::selection{background:var(--accent-soft);color:var(--ink)}
+
+a{color:var(--accent-ink);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
+  font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1.05em}
+.prose p:last-child{margin-bottom:0}
+
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3);margin:0;
+}
+
+/* ---------- hero ---------- */
+.hero{
+  border-bottom:1px solid var(--rule);
+  padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);
+  background:
+    radial-gradient(120% 90% at 88% 0%, var(--accent-soft) 0%, transparent 58%);
+}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{
+  font-size:clamp(2.7rem,7.5vw,5.1rem);
+  line-height:.96;font-weight:700;
+  font-variation-settings:"SOFT" 8,"WONK" 1;
+  letter-spacing:-.025em;
+  max-width:16ch;
+}
+.hero__lede{
+  font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);
+  line-height:1.42;color:var(--ink-2);max-width:44ch;font-weight:400;
+  font-variation-settings:"SOFT" 30,"WONK" 0;
+}
+.hero__lede strong{color:var(--ink);font-weight:600}
+
+.stats{
+  display:grid;gap:1px;background:var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
+  border:1px solid var(--rule);margin-top:.75rem;
+}
+.stat{background:var(--bg);padding:1rem 1.15rem;display:flex;flex-direction:column;gap:.2rem}
+.stat__num{font-family:var(--display);font-size:1.85rem;font-weight:700;line-height:1.05;
+  font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__lbl{font-size:.83rem;color:var(--ink-3);line-height:1.35}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:20;
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{
+  flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;
+  letter-spacing:.05em;text-transform:uppercase;text-decoration:none;
+  color:var(--ink-3);padding:.5rem .7rem;border-radius:3px;white-space:nowrap;
+}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+/* ---------- sections ---------- */
+section{padding-block:clamp(2.75rem,6vw,4.5rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.75rem}
+.sec__head h2{font-size:clamp(1.7rem,3.4vw,2.45rem);line-height:1.08}
+.sec__head .kicker{font-size:1.02rem;color:var(--ink-2);max-width:56ch;margin:0}
+
+.note{
+  border-left:2px solid var(--accent);background:var(--accent-soft);
+  padding:.9rem 1.15rem;font-size:.94rem;color:var(--ink);max-width:var(--measure);
+}
+.note .mono{font-weight:600}
+
+/* ---------- three content groups ---------- */
+.groups{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.group{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.55rem}
+.group__pct{font-family:var(--mono);font-size:.8rem;font-weight:600;color:var(--accent-ink)}
+.group h3{font-size:1.16rem}
+.group p{margin:0;font-size:.95rem;color:var(--ink-2)}
+.group ul{margin:.2rem 0 0;padding-left:1.05rem;font-size:.9rem;color:var(--ink-2);
+  display:flex;flex-direction:column;gap:.28rem}
+
+/* ---------- timeline ---------- */
+.tl{display:grid;grid-template-columns:minmax(88px,auto) 1fr;gap:0 1.4rem;margin-top:1.5rem;
+  max-width:860px}
+.tl__row{display:contents}
+.tl__date{
+  font-family:var(--mono);font-size:.82rem;font-weight:600;color:var(--ink-2);
+  padding:.85rem 0 .1rem;text-align:right;font-variant-numeric:tabular-nums;
+  border-top:1px solid var(--rule-soft);
+}
+.tl__body{
+  padding:.85rem 0 .95rem;border-top:1px solid var(--rule-soft);
+  border-left:2px solid var(--rule);padding-left:1.4rem;position:relative;
+}
+.tl__body::before{
+  content:"";position:absolute;left:-5px;top:1.32rem;width:8px;height:8px;
+  border-radius:50%;background:var(--accent);
+}
+.tl__body h4{font-size:1rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.tl__gap .tl__date{color:var(--ink-3);font-weight:400}
+.tl__gap .tl__body{border-left-style:dashed;border-left-color:var(--rule);padding-block:1.1rem}
+.tl__gap .tl__body::before{display:none}
+.tl__gap p{font-size:.86rem;color:var(--ink-3);font-style:italic}
+.tl__era{
+  grid-column:1/-1;font-family:var(--mono);font-size:.7rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+  padding:1.5rem 0 .35rem;
+}
+.tl__era:first-child{padding-top:0}
+
+/* ---------- caves table ---------- */
+.tablewrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:660px;font-size:.93rem}
+caption{text-align:left;font-size:.85rem;color:var(--ink-3);padding:.75rem 1rem;
+  border-bottom:1px solid var(--rule)}
+th{
+  font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-3);text-align:left;
+  padding:.7rem 1rem;border-bottom:1px solid var(--rule);white-space:nowrap;
+}
+td{padding:.62rem 1rem;border-bottom:1px solid var(--rule-soft);vertical-align:middle;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+td.cave{font-family:var(--mono);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+td.year{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.find{color:var(--ink)}
+td.find .mono{font-size:.86em;color:var(--accent-ink);font-weight:600}
+.barcell{min-width:180px}
+.bar{display:flex;align-items:center;gap:.6rem}
+.bar__track{flex:1;height:7px;background:var(--surface-2);position:relative;min-width:60px}
+.bar__fill{position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--accent)}
+.bar__n{font-family:var(--mono);font-size:.82rem;font-weight:600;color:var(--ink);
+  font-variant-numeric:tabular-nums;min-width:3.4em;text-align:right}
+tr.hilite td{background:var(--accent-soft)}
+tr.hilite:hover td{background:var(--accent-soft)}
+tr.hilite td.cave{color:var(--accent-ink)}
+
+/* ---------- manuscripts ---------- */
+.mss{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(288px,1fr));margin-top:1.5rem}
+.ms{background:var(--bg);padding:1.35rem 1.4rem;display:flex;flex-direction:column;gap:.6rem}
+.ms__sig{font-family:var(--mono);font-size:.88rem;font-weight:600;color:var(--accent-ink)}
+.ms h3{font-size:1.2rem;line-height:1.2}
+.ms__meta{display:flex;flex-wrap:wrap;gap:.35rem .9rem;font-family:var(--mono);
+  font-size:.74rem;color:var(--ink-3);font-variant-numeric:tabular-nums;
+  padding-bottom:.15rem}
+.ms p{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+/* ---------- hypotheses ---------- */
+.hyp-main{
+  border:1px solid var(--accent);background:var(--accent-soft);
+  padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;
+}
+.hyp-main .eyebrow{color:var(--accent-ink)}
+.hyp-main h3{font-size:1.4rem}
+.hyp-main p{margin:0;max-width:62ch}
+.evid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:.4rem}
+.evid h4{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:.5rem;font-variation-settings:normal}
+.evid ul{margin:0;padding-left:1.05rem;font-size:.92rem;color:var(--ink-2);
+  display:flex;flex-direction:column;gap:.4rem}
+
+.alts{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:1.5rem}
+.alt{background:var(--bg);padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.45rem}
+.alt h4{font-size:1.02rem}
+.alt__who{font-family:var(--mono);font-size:.73rem;color:var(--ink-3)}
+.alt p{margin:0;font-size:.9rem;color:var(--ink-2)}
+
+/* ---------- myths ---------- */
+.myths{display:flex;flex-direction:column;gap:1px;background:var(--rule);
+  border:1px solid var(--rule);margin-top:1.5rem}
+.myth{background:var(--bg);padding:1.15rem 1.3rem;display:grid;gap:.3rem .9rem;
+  grid-template-columns:minmax(0,1fr)}
+@media(min-width:720px){.myth{grid-template-columns:minmax(210px,.9fr) 1.6fr;align-items:start}}
+.myth__claim{
+  font-family:var(--display);font-size:1.02rem;color:var(--ink-3);
+  font-variation-settings:"SOFT" 40,"WONK" 0;font-style:italic;
+}
+.myth__real{margin:0;font-size:.95rem;color:var(--ink-2)}
+.myth__real b{color:var(--ink);font-weight:700}
+
+/* ---------- forgery ---------- */
+.caution{
+  border:1px solid var(--bronze);background:var(--bronze-soft);
+  padding:1.4rem 1.5rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.7rem;
+}
+.caution .eyebrow{color:var(--bronze)}
+.caution h3{font-size:1.22rem}
+.caution p{margin:0;max-width:62ch;font-size:.96rem;color:var(--ink-2)}
+.caution ol{margin:.2rem 0 0;padding-left:1.2rem;font-size:.94rem;color:var(--ink-2);
+  display:flex;flex-direction:column;gap:.4rem;max-width:62ch}
+
+/* ---------- where ---------- */
+.places{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(255px,1fr));margin-top:1.5rem}
+.place{background:var(--bg);padding:1.2rem 1.3rem;display:flex;flex-direction:column;gap:.4rem}
+.place h4{font-size:1.05rem}
+.place__loc{font-family:var(--mono);font-size:.73rem;color:var(--ink-3)}
+.place p{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+/* ---------- footer ---------- */
+.foot{padding-block:2.5rem 3.5rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.88rem;color:var(--ink-3);max-width:70ch;margin:0 0 .7rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+/* ---------- passages / çeviriler ---------- */
+.warnbox{
+  border:1px solid var(--bronze);border-left-width:3px;background:var(--bronze-soft);
+  padding:1.25rem 1.4rem;margin-top:1.5rem;max-width:var(--measure);
+  display:flex;flex-direction:column;gap:.6rem;
+}
+.warnbox .eyebrow{color:var(--bronze)}
+.warnbox h3{font-size:1.1rem}
+.warnbox p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.warnbox ul{margin:0;padding-left:1.1rem;font-size:.92rem;color:var(--ink-2);
+  display:flex;flex-direction:column;gap:.35rem}
+.warnbox code{font-family:var(--mono);font-size:.86em;color:var(--ink)}
+
+.passages{display:flex;flex-direction:column;gap:1px;background:var(--rule);
+  border:1px solid var(--rule);margin-top:1.75rem}
+.psg{background:var(--bg);padding:1.6rem 1.6rem 1.75rem}
+.psg__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem .85rem;
+  padding-bottom:.9rem;margin-bottom:1.15rem;border-bottom:1px solid var(--rule-soft)}
+.psg__sig{font-family:var(--mono);font-size:.85rem;font-weight:600;color:var(--accent-ink);
+  background:var(--accent-soft);padding:.16rem .45rem;white-space:nowrap}
+.psg__ref{font-family:var(--mono);font-size:.74rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.psg__head h3{font-size:1.18rem;flex:1 1 14ch;min-width:0}
+
+.txt{
+  font-family:var(--display);font-size:1.075rem;line-height:1.78;color:var(--ink);
+  font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0;font-weight:400;
+  max-width:62ch;display:flex;flex-direction:column;gap:.85em;
+}
+.txt p{margin:0}
+.txt .sp{display:block;padding-left:1.6em;text-indent:-1.6em}
+.lac{color:var(--ink-3);font-family:var(--mono);font-size:.82em;
+  font-variation-settings:normal;padding-inline:.12em}
+.heb{font-family:var(--mono);font-size:.86em;color:var(--accent-ink);font-weight:600;
+  font-variation-settings:normal;white-space:nowrap}
+
+.psg__note{
+  margin-top:1.25rem;padding-top:.95rem;border-top:1px solid var(--rule-soft);
+  max-width:64ch;display:flex;flex-direction:column;gap:.5rem;
+}
+.psg__note > span{font-family:var(--mono);font-size:.68rem;font-weight:600;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+.psg__note p{margin:0;font-size:.92rem;color:var(--ink-2);font-family:var(--body)}
+.psg__note b{color:var(--ink)}
+
+/* penal code */
+.penal{width:100%;min-width:0;border-collapse:collapse;font-size:.94rem;max-width:62ch}
+.penal th{padding:.45rem .8rem .45rem 0;border-bottom:1px solid var(--rule)}
+.penal td{padding:.5rem .8rem .5rem 0;border-bottom:1px solid var(--rule-soft);
+  color:var(--ink);vertical-align:top}
+.penal td:last-child{padding-right:0;text-align:right;white-space:nowrap;
+  font-family:var(--mono);font-size:.84rem;font-weight:600;color:var(--accent-ink)}
+.penal tr:last-child td{border-bottom:0}
+.penal td.sev:last-child{color:var(--bronze)}
+
+/* inscriptions list */
+.inscr{list-style:none;margin:0;padding:0;max-width:62ch;
+  display:flex;flex-direction:column;gap:.7rem}
+.inscr li{display:grid;gap:.15rem .9rem;grid-template-columns:1fr}
+@media(min-width:640px){.inscr li{grid-template-columns:minmax(150px,.85fr) 1.4fr;align-items:baseline}}
+.inscr .on{font-size:.88rem;color:var(--ink-3);font-family:var(--body)}
+.inscr .say{font-family:var(--display);font-size:1.02rem;color:var(--ink);
+  font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0}
+.inscr .say::before{content:"\201C"}
+.inscr .say::after{content:"\201D"}
+
+/* copper scroll inventory */
+.inv{list-style:none;margin:0;padding:0;max-width:64ch;
+  display:flex;flex-direction:column;gap:.9rem}
+.inv li{display:grid;gap:.2rem .9rem;grid-template-columns:auto 1fr;align-items:baseline}
+.inv .n{font-family:var(--mono);font-size:.78rem;font-weight:600;color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
+.inv .e{font-family:var(--display);font-size:1.02rem;line-height:1.6;color:var(--ink);
+  font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0}
+.inv .e b{color:var(--accent-ink);font-weight:600}
+.inv li.last .n{color:var(--bronze)}
+
+/* variant comparison */
+.vcmp{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:1fr;max-width:64ch}
+@media(min-width:680px){.vcmp{grid-template-columns:1fr 1fr}}
+.vcol{background:var(--bg);padding:1.05rem 1.15rem;display:flex;flex-direction:column;gap:.5rem}
+.vcol h4{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);font-variation-settings:normal}
+.vcol p{margin:0;font-family:var(--display);font-size:1.04rem;line-height:1.6;color:var(--ink);
+  font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0}
+.vcol .datum{font-family:var(--mono);font-size:.75rem;color:var(--ink-3)}
+.vcol.win{background:var(--accent-soft)}
+.vcol.win h4{color:var(--accent-ink)}
+.vcol mark{background:transparent;color:var(--accent-ink);font-weight:700;
+  border-bottom:2px solid var(--accent);padding-bottom:1px}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <p class="eyebrow">Qumran · Yehuda Çölü · MÖ 250 – MS 68</p>
+    <h1>Ölü Deniz Parşömenleri</h1>
+    <p class="hero__lede">1947'de Ölü Deniz'in kuzeybatı kıyısındaki bir mağarada küpler bulundu. On yıl içinde çıkan yaklaşık bin elyazması, elimizdeki <strong>en eski İbranice Kutsal Kitap metnini bir anda bin yıl geriye çekti</strong> — ve o metnin bin yıl boyunca şaşırtıcı bir sadakatle kopyalandığını kanıtladı.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">~900</span><span class="stat__lbl">ayırt edilebilen elyazması</span></div>
+      <div class="stat"><span class="stat__num">~25.000</span><span class="stat__lbl">parça — çoğu tırnak büyüklüğünde</span></div>
+      <div class="stat"><span class="stat__num">11</span><span class="stat__lbl">mağara (+ 2017'de yağmalanmış 12.'si)</span></div>
+      <div class="stat"><span class="stat__num">1.000 yıl</span><span class="stat__lbl">keşiften önceki en eski nüshadan daha yaşlı</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#icerik">Ne bulundu</a>
+    <a href="#zaman">Zaman çizelgesi</a>
+    <a href="#magaralar">Mağaralar</a>
+    <a href="#metinler">Yıldız metinler</a>
+    <a href="#ceviri">Metinlerden çeviriler</a>
+    <a href="#neden">Neden önemli</a>
+    <a href="#kim">Kim yazdı</a>
+    <a href="#yayin">Kırk yıllık tıkanma</a>
+    <a href="#sahte">Sahtecilik dalgası</a>
+    <a href="#yanlis">Yaygın yanlışlar</a>
+    <a href="#nerede">Nerede görülür</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="icerik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — İçerik</p>
+    <h2>Tek bir kitap değil, bir kütüphane</h2>
+    <p class="kicker">Parşömenler türdeş bir koleksiyon değil. Kabaca üç yığına ayrılıyorlar ve bu ayrım, "kim yazdı" tartışmasının da temelini oluşturuyor.</p>
+  </div>
+
+  <div class="prose">
+    <p>Malzemenin ezici çoğunluğu deri (parşömen), bir kısmı papirüs, biri bakır levha. Dil dağılımı: ağırlıklı olarak İbranice, önemli bir azınlık Aramice, az sayıda Grekçe metin. Karbon-14 ölçümleri ve paleografi birlikte kabaca <span class="mono">MÖ 250 – MS 68</span> aralığını veriyor — yani beş asra yayılan bir birikim, tek bir anın ürünü değil.</p>
+  </div>
+
+  <div class="groups">
+    <div class="group">
+      <span class="group__pct">≈ %25</span>
+      <h3>Kutsal Kitap nüshaları</h3>
+      <p>İbranice Kutsal Kitap'ın <b>Ester dışında</b> her kitabından en az bir parça çıktı.</p>
+      <ul>
+        <li>Mezmurlar — ~36 nüsha (en çok kopyalanan)</li>
+        <li>Tesniye — ~30 nüsha</li>
+        <li>Yeşaya — ~21 nüsha</li>
+      </ul>
+    </div>
+    <div class="group">
+      <span class="group__pct">≈ %25</span>
+      <h3>Kanon dışı Yahudi metinleri</h3>
+      <p>Sonradan hiçbir kanona girmemiş ya da yalnız bazı kiliselerde kalmış eserler.</p>
+      <ul>
+        <li>1. Enoch — Aramice aslı ilk kez burada görüldü</li>
+        <li>Yubileler Kitabı</li>
+        <li>Tobit, Ben Sira (Sirak)</li>
+      </ul>
+    </div>
+    <div class="group">
+      <span class="group__pct">≈ %30</span>
+      <h3>Mezhep metinleri</h3>
+      <p>Başka hiçbir yerde bilinmeyen, kendine <span class="mono">Yaḥad</span> ("Birlik") diyen bir topluluğun kendi yazıları.</p>
+      <ul>
+        <li>Topluluk Kuralı, Savaş Parşömeni</li>
+        <li>Peşerler (güncel-tarihe uyarlanmış tefsirler)</li>
+        <li>İlahiler, halakhik mektuplar</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Kalan pay tefillin/mezuza parçaları, takvim metinleri, astrolojik ve büyüsel yazılar, ticari belgeler ve kimliği belirlenemeyen parçalar. Oranlar yaklaşıktır; "mezhep metni" sayımı hangi eserin mezhebe ait sayıldığına göre değişir.</p>
+</section>
+
+<section id="zaman" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Kronoloji</p>
+    <h2>İki ayrı hikâye, arada 1.879 yıl</h2>
+    <p class="kicker">Parşömenlerin bir yazılma-saklanma tarihi var, bir de bulunma-yayımlanma tarihi. İkincisi en az birincisi kadar olaylı geçti.</p>
+  </div>
+
+  <div class="tl">
+    <div class="tl__era">Antik dönem — yazım ve saklanma</div>
+
+    <div class="tl__row">
+      <div class="tl__date">~MÖ 250</div>
+      <div class="tl__body"><h4>En eski parçaların yazımı</h4><p>Koleksiyonun en yaşlı katmanı. Bu tarihte henüz Qumran yerleşimi yok — metinler başka yerde yazıldı.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">~MÖ 100</div>
+      <div class="tl__body"><h4>Qumran yerleşimi kuruluyor</h4><p>Kuruluş tarihi tartışmalı: de Vaux MÖ 130'lara, Jodi Magness MÖ 100–50 arasına koyar.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">~MÖ 125</div>
+      <div class="tl__body"><h4>Büyük Yeşaya Parşömeni yazılıyor</h4><p>Koleksiyonun en ünlü parçası. Paleografik tarihleme; C-14 daha geniş bir aralık veriyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MÖ 31</div>
+      <div class="tl__body"><h4>Deprem</h4><p>Josephus'un kaydettiği büyük deprem. De Vaux yerleşimde buna bağladığı bir terk dönemi tespit etti; bu okuma da tartışılıyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MS 68</div>
+      <div class="tl__body"><h4>Roma X. Lejyonu Qumran'ı yıkıyor</h4><p>Birinci Yahudi İsyanı sırasında. Parşömenlerin mağaralara bu sırada ya da hemen öncesinde konulduğu düşünülüyor.</p></div>
+    </div>
+
+    <div class="tl__row tl__gap">
+      <div class="tl__date">⋮</div>
+      <div class="tl__body"><p>1.879 yıl — mağaralar kapalı, hiç kimse aramıyor.</p></div>
+    </div>
+
+    <div class="tl__era">Modern dönem — keşif, kavga, dijitalleşme</div>
+
+    <div class="tl__row">
+      <div class="tl__date">1947</div>
+      <div class="tl__body"><h4>1. mağara</h4><p>Ta'amireh aşiretinden bedeviler ilk yedi parşömeni buluyor. Anlatılan hikâye — kaybolan keçiyi ararken mağaraya atılan taş, kırılan küp sesi — birden çok versiyonda dolaşıyor; ayrıntısı doğrulanamıyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">1947–48</div>
+      <div class="tl__body"><h4>Koleksiyon ikiye bölünüyor</h4><p>Üç parşömeni Eleazar Sukenik satın alıyor. Dördü Süryani metropoliti Mar Athanasius Samuel'e geçip ABD'ye götürülüyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">1949–56</div>
+      <div class="tl__body"><h4>2–11. mağaralar</h4><p>Bedeviler ve arkeologlar arasında fiilî bir yarış. En zengini <span class="mono">4. mağara</span> (1952): tek başına elyazmalarının yaklaşık üçte ikisi.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">1951–56</div>
+      <div class="tl__body"><h4>Roland de Vaux Qumran'ı kazıyor</h4><p>Yerleşimi bir mezhep merkezi olarak yorumluyor. Kazı raporunun tamamı hiçbir zaman yayımlanmadı — sonraki tartışmaların bir kaynağı bu.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">1954</div>
+      <div class="tl__body"><h4>Wall Street Journal ilanı</h4><p>Mar Samuel dört parşömeni küçük ilanla satışa çıkarıyor. Yigael Yadin aracı üzerinden 250.000 dolara alıyor; parşömenler İsrail'e dönüyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">1955–56</div>
+      <div class="tl__body"><h4>Bakır Parşömen testereyle açılıyor</h4><p>Oksitlenip kırılganlaştığı için açılamıyordu. Manchester'da 23 şeride kesildi — geri dönüşü olmayan ama başka seçeneği olmayan bir müdahale.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">1991</div>
+      <div class="tl__body"><h4>Yayın tekeli kırılıyor</h4><p>Üç kırılma aynı yıl. Kırk yıl sonra metinler nihayet herkese açık.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2009</div>
+      <div class="tl__body"><h4>DJD serisi tamamlanıyor</h4><p><i>Discoveries in the Judaean Desert</i>, 40 cilt — resmî bilimsel yayın.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2011</div>
+      <div class="tl__body"><h4>Leon Levy Dijital Kütüphanesi</h4><p>Yüksek çözünürlüklü, çok spektrumlu görüntüler ücretsiz çevrimiçi. Alan fiilen herkese açılıyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2020</div>
+      <div class="tl__body"><h4>Museum of the Bible: 16/16 sahte</h4><p>Bağımsız inceleme, müzenin satın aldığı parçaların tamamının modern sahtecilik olduğunu açıklıyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">2021</div>
+      <div class="tl__body"><h4>Nahal Hever — 60 yıl sonra yeni parçalar</h4><p>"Dehşet Mağarası"nda Grekçe Küçük Peygamberler parçaları. Qumran koleksiyonundan ayrı, ama aynı çöl ve aynı dönem.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="magaralar" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Dağılım</p>
+    <h2>On bir mağara, ama aslında bir tanesi</h2>
+    <p class="kicker">4. mağara tek başına koleksiyonun yaklaşık üçte ikisini verdi — ve en kötü korunmuş olanıydı. Kırk yıllık yayın tıkanmasının konusu da tam olarak bu mağaranın on beş bin parçasıydı.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Mağara başına elyazması sayıları yaklaşıktır; parçaların birleştirilmesi sürdükçe sayımlar değişir.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Mağara</th>
+          <th scope="col">Buluş</th>
+          <th scope="col" class="barcell">Elyazması</th>
+          <th scope="col">Öne çıkanlar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cave">1</td><td class="year">1947</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:12%"></div></div><span class="bar__n">~70</span></div></td>
+          <td class="find"><span class="mono">1QIsaᵃ</span> Yeşaya · <span class="mono">1QS</span> Topluluk Kuralı · <span class="mono">1QM</span> Savaş · <span class="mono">1QpHab</span></td>
+        </tr>
+        <tr>
+          <td class="cave">2</td><td class="year">1952</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:6%"></div></div><span class="bar__n">~33</span></div></td>
+          <td class="find">Yubileler, Ben Sira parçaları</td>
+        </tr>
+        <tr>
+          <td class="cave">3</td><td class="year">1952</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:3%"></div></div><span class="bar__n">~15</span></div></td>
+          <td class="find"><span class="mono">3Q15</span> Bakır Parşömen</td>
+        </tr>
+        <tr class="hilite">
+          <td class="cave">4</td><td class="year">1952</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:100%"></div></div><span class="bar__n">~575</span></div></td>
+          <td class="find">~15.000 parça · <span class="mono">4QMMT</span> · <span class="mono">4QSamᵃ</span> · peşerlerin çoğu</td>
+        </tr>
+        <tr>
+          <td class="cave">5</td><td class="year">1952</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:4%"></div></div><span class="bar__n">~25</span></div></td>
+          <td class="find">Kutsal Kitap parçaları</td>
+        </tr>
+        <tr>
+          <td class="cave">6</td><td class="year">1952</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:5%"></div></div><span class="bar__n">~31</span></div></td>
+          <td class="find">Çoğu papirüs üzerine</td>
+        </tr>
+        <tr>
+          <td class="cave">7</td><td class="year">1955</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:3%"></div></div><span class="bar__n">~19</span></div></td>
+          <td class="find">Yalnızca Grekçe — tartışmalı <span class="mono">7Q5</span> burada</td>
+        </tr>
+        <tr>
+          <td class="cave">8</td><td class="year">1955</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:1%"></div></div><span class="bar__n">~5</span></div></td>
+          <td class="find">Tefillin, mezuza</td>
+        </tr>
+        <tr>
+          <td class="cave">9</td><td class="year">1955</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:1%"></div></div><span class="bar__n">1</span></div></td>
+          <td class="find">Tek papirüs parçası</td>
+        </tr>
+        <tr>
+          <td class="cave">10</td><td class="year">1955</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:1%"></div></div><span class="bar__n">1</span></div></td>
+          <td class="find">Yazılı çömlek parçası (ostrakon) — parşömen değil</td>
+        </tr>
+        <tr>
+          <td class="cave">11</td><td class="year">1956</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"><div class="bar__fill" style="--w:5%"></div></div><span class="bar__n">~31</span></div></td>
+          <td class="find"><span class="mono">11QTᵃ</span> Tapınak Parşömeni · <span class="mono">11QPsᵃ</span> Mezmurlar</td>
+        </tr>
+        <tr>
+          <td class="cave">12</td><td class="year">2017</td>
+          <td class="barcell"><div class="bar"><div class="bar__track"></div><span class="bar__n">0</span></div></td>
+          <td class="find">Yağmalanmış: kırık küpler, 1950'lerden kalma kazma sapı, tek boş parşömen</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="metinler" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Yıldız metinler</p>
+    <h2>Altı parşömen, altı ayrı sebep</h2>
+    <p class="kicker">Siglalar bir adres sistemidir: <span class="mono">1QIsaᵃ</span> = 1. mağara, Qumran, Yeşaya, o mağaradan çıkan ilk nüsha.</p>
+  </div>
+
+  <div class="mss">
+    <article class="ms">
+      <span class="ms__sig">1QIsaᵃ</span>
+      <h3>Büyük Yeşaya Parşömeni</h3>
+      <div class="ms__meta"><span>~MÖ 125</span><span>734 cm</span><span>54 sütun</span><span>17 deri levha</span></div>
+      <p>Yeşaya'nın altmış altı bölümünün tamamı, neredeyse eksiksiz. Bilinen en eski tam Kutsal Kitap kitabı elyazması ve koleksiyonun tek başına en önemli parçası. Bin yıl sonraki Masoretik Yeşaya ile arasındaki farkların ezici çoğunluğu imla düzeyinde.</p>
+    </article>
+
+    <article class="ms">
+      <span class="ms__sig">3Q15</span>
+      <h3>Bakır Parşömen</h3>
+      <div class="ms__meta"><span>MS 1. yy</span><span>bakır levha</span><span>64 kayıt</span></div>
+      <p>Deri değil, dövme bakıra kazınmış. Altmış dört gizli hazine yeri sayıyor — bazı okumalara göre tonlarca altın ve gümüş. Tarifler yerel işaretlere dayanıyor ("merdivenlerden kırk arşın…") ve o işaretler kayıp. <b>Hiçbiri bulunamadı.</b> Envanter mi, folklor mu, hâlâ bilinmiyor.</p>
+    </article>
+
+    <article class="ms">
+      <span class="ms__sig">11QTᵃ</span>
+      <h3>Tapınak Parşömeni</h3>
+      <div class="ms__meta"><span>~MÖ 1. yy</span><span>815 cm</span><span>en uzunu</span></div>
+      <p>Alternatif bir Tora — üstelik Tanrı'nın ağzından birinci tekil şahısla. Devasa bir tapınak planı, saflık kuralları, bir "kral yasası". Yadin 1967'de Betlehemli antikacı Kando'nun evinden çıkardı; yıllarca ayakkabı kutusunda durmuştu.</p>
+    </article>
+
+    <article class="ms">
+      <span class="ms__sig">1QS</span>
+      <h3>Topluluk Kuralı</h3>
+      <div class="ms__meta"><span>~MÖ 100</span><span>11 sütun</span><span>Yaḥad tüzüğü</span></div>
+      <p>Topluluğun iç hukuku: iki yıllık kabul süreci, mülkün ortaklaştırılması, oturma düzeni, ceza tarifesi — arkadaşına yalan söylemek altı ay dışlanma, toplantıda uyuklamak otuz gün. "İki Ruh" öğretisi de burada.</p>
+    </article>
+
+    <article class="ms">
+      <span class="ms__sig">1QM</span>
+      <h3>Savaş Parşömeni</h3>
+      <div class="ms__meta"><span>~MÖ 1. yy</span><span>19 sütun</span><span>harekât planı</span></div>
+      <p>Işık Oğulları ile Karanlık Oğulları arasındaki kırk yıllık son savaşın askerî talimatnamesi: tabur düzeni, sancakların üstüne yazılacak metinler, kâhinlerin borazan işaretleri. Kozmik bir kıyamet, piyade tüzüğü diliyle yazılmış.</p>
+    </article>
+
+    <article class="ms">
+      <span class="ms__sig">1QpHab</span>
+      <h3>Habakkuk Peşeri</h3>
+      <div class="ms__meta"><span>~MÖ 1. yy</span><span>13 sütun</span><span>tefsir</span></div>
+      <p>Habakkuk'u ayet ayet alıp topluluğun kendi güncel siyasetine uyguluyor: "Bunun yorumu şudur…" Sahneye <b>Doğruluk Öğretmeni</b>, <b>Kötü Kâhin</b> ve <b>Yalancı Adam</b> çıkıyor. Topluluğun tarihine dair en iyi kaynağımız — ve isim vermediği için en büyük bilmecemiz.</p>
+    </article>
+  </div>
+</section>
+
+<section id="ceviri" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Çeviriler</p>
+    <h2>Metinlerden</h2>
+    <p class="kicker">On iki pasaj — mezhep tüzüğünden savaş talimatnamesine, kanon dışı bir mezmurdan bir hazine envanterine. Hepsi İbranice ve Aramice asıllarından, bu sayfa için çevrildi.</p>
+  </div>
+
+  <div class="warnbox">
+    <p class="eyebrow">Çeviri hakkında — okumadan önce</p>
+    <h3>Bunlar çalışma çevirisidir, eleştirel edisyon değil</h3>
+    <p>Aşağıdaki metinler antik İbranice ve Aramice asıllarından bu sayfa için çevrildi. Yayımlanmış bilimsel çeviriler (Vermes, García Martínez, Wise–Abegg–Cook) telif altındadır ve kullanılmadı; bu da şu anlama gelir: elinizdeki metin bir okuma yardımıdır, alıntılanabilir bir bilimsel kaynak değil.</p>
+    <ul>
+      <li><code>[…]</code> parşömende <b>okunamayan veya kopmuş</b> bir yeri gösterir.</li>
+      <li><code>[köşeli parantez içindeki kelime]</code> uzmanların <b>tamamlama önerisidir</b>, metinde fiilen yoktur.</li>
+      <li>Okuması gerçekten tartışmalı yerleri her pasajın altındaki notta ayrıca belirttim.</li>
+      <li>Bölüm/satır numaraları standart edisyon numaralandırmasıdır; bazı metinlerde (özellikle <span class="mono">1QH</span>) eski ve yeni numaralandırma farklıdır.</li>
+    </ul>
+    <p>Ciddi çalışma için <i>Discoveries in the Judaean Desert</i> serisine ve deadseascrolls.org.il üzerindeki yüksek çözünürlüklü görüntülere bakın.</p>
+  </div>
+
+  <div class="passages">
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">1QS</span>
+        <span class="psg__ref">sütun 3:13 – 4:1, 4:23–25</span>
+        <h3>İki Ruh öğretisi</h3>
+      </div>
+      <div class="txt">
+        <p>Maskil için: Işık Oğulları'nın hepsine insanoğullarının doğasını öğretmek ve anlatmak — ruhlarının bütün türlerini, işaretlerini, işlerini, kuşaklarını ve ziyaretlerinin vaktini.</p>
+        <p>Var olan ve olacak her şey bilgilerin Tanrısı'ndandır. Onlar var olmadan önce O bütün tasarımlarını hazırladı; ve var olduklarında, kendilerine belirlenen görevi O'nun yüce tasarımına göre yerine getirirler, ve hiçbir şey değiştirilemez.</p>
+        <p>O, insanı dünyaya egemen olsun diye yarattı ve ona iki ruh koydu — ziyaret vaktine dek içlerinde yürüsün diye. Bunlar gerçeğin ruhu ile eğriliğin ruhudur. Gerçeğin soyu ışığın kaynağından, eğriliğin soyu karanlığın pınarındandır.</p>
+        <p>Işıklar Prensi'nin elinde bütün doğruluk oğullarının egemenliği vardır; ışık yollarında yürürler. Karanlık Meleği'nin elinde eğrilik oğullarının bütün egemenliği vardır; karanlık yollarında yürürler.</p>
+        <p>[…] Şimdiye dek gerçeğin ve eğriliğin ruhları insanın yüreğinde çekişir; bilgelikte ve akılsızlıkta yürürler. Kişinin gerçekten payı ne kadarsa doğruluğu o kadardır, ve eğrilikten payı ne kadarsa kötülüğü o kadar.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Bu, antik Yahudilikte bilinen en keskin <b>ikici (düalist)</b> metin — ama ikiciliği mutlak değil: iki ruh da Tanrı tarafından yaratılmış ve süresi belirlenmiş. Son cümledeki ayrıntı özellikle önemli: iyi ve kötü <b>insanlar</b> değil, her insanın içindeki <b>oranlar</b> anlatılıyor. Pers dinî düşüncesinin etkisi uzun süredir tartışılıyor, kanıtlanmış değil.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">1QS</span>
+        <span class="psg__ref">sütun 6:24 – 7:18</span>
+        <h3>Ceza tarifesi</h3>
+      </div>
+      <div class="txt">
+        <p>Ve bunlar, ortak soruşturmada hükmedecekleri kurallardır — duruma göre:</p>
+      </div>
+      <table class="penal">
+        <thead>
+          <tr><th scope="col">Suç</th><th scope="col">Ceza</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Mal konusunda bile bile yalan söylemek</td><td class="sev">1 yıl + yiyeceğin ¼'ü</td></tr>
+          <tr><td>Bir kâhine saygısızca karşılık vermek</td><td class="sev">1 yıl</td></tr>
+          <tr><td>Arkadaşına inatla karşılık vermek, öfkeyle konuşmak</td><td class="sev">1 yıl</td></tr>
+          <tr><td>Arkadaşını iftirayla karalamak</td><td class="sev">1 yıl</td></tr>
+          <tr><td>Komşusunun önünde çıplaklığını açmak</td><td>6 ay</td></tr>
+          <tr><td>Toplantıda uyuyakalmak</td><td>30 gün</td></tr>
+          <tr><td>Aptalca, yüksek sesle gülmek</td><td>30 gün</td></tr>
+          <tr><td>Toplantının ortasına tükürmek</td><td>30 gün</td></tr>
+          <tr><td>Giysisinin altından elini çıkarıp çıplaklığının görünmesi</td><td>30 gün</td></tr>
+          <tr><td>Arkadaşının sözünü kesmek</td><td>10 gün</td></tr>
+          <tr><td>Bir toplantıda üç kereye kadar izinsiz kalkıp gitmek</td><td>10 gün</td></tr>
+          <tr><td>Sol eliyle işaret yapmak</td><td>10 gün</td></tr>
+          <tr><td>Topluluğun düzenine karşı homurdanmak</td><td class="sev">Kalıcı ihraç</td></tr>
+          <tr><td>Topluluğun tümünü karalamak</td><td class="sev">Kalıcı ihraç</td></tr>
+          <tr><td>Tanrı'nın Adı'nı ağza almak — okurken ya da dua ederken bile</td><td class="sev">Kalıcı ihraç</td></tr>
+        </tbody>
+      </table>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Listenin kendisi topluluk hakkında herhangi bir teolojik metinden fazlasını söylüyor: bu insanlar <b>birbirlerinin yanında oturuyor</b>, ve bu zor. Uyuklamak, sözü kesmek, yüksek sesle gülmek — hepsi ortak toplantıyı bozan davranışlar. Cezalar ölçülü ve kademeli; asıl ağır olanlar mülke, otoriteye ve İsim'e dokunanlar. Son satır sayfanın başka bir yerinde de karşınıza çıkacak: bu yüzden bazı parşömenlerde Tanrı'nın adı, çevresindeki metinden farklı olarak <b>eski İbrani harfleriyle</b> yazılmıştır — okuyanın kazara telaffuz etmemesi için.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">1QM</span>
+        <span class="psg__ref">sütun 1:1–3</span>
+        <h3>Savaşın açılışı</h3>
+      </div>
+      <div class="txt">
+        <p>Maskil için: Savaş Düzeni.</p>
+        <p>Işık Oğulları'nın ilk saldırısı, Karanlık Oğulları'nın payına — Beliyal'in ordusuna — karşı başlatılacak: Edom, Moav ve Ammonoğulları taburuna; Filist'te oturanların ordusuna; ve Aşur Kittimleri'nin taburlarına. Antlaşmayı bozanlar da onların yanında, onlara yardımcı olacak.</p>
+        <p>[…] Ve bu, tüm Beliyal payı için sonsuz yıkımın vaktidir. Bu, Tanrı'nın kurtardığı bütün halk için sıkıntı zamanı olacak — ve o zamandan bu yana, kurtuluşları tamamlanana dek İsrail için bir benzeri olmamıştır.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p><b>Kittim</b> genellikle Romalılar için kullanılan örtülü ad kabul edilir — metnin tarihlendirilmesinde en önemli ipucu bu. Ama burada "Aşur Kittimleri" deniyor, ve 1QpHab'de başka türlü kullanılıyor; yani ad her zaman aynı düşmanı göstermiyor olabilir. Dikkat edin: Kudüs'ün gerçek düşmanı, kozmik bir kıyamet planının içine <b>coğrafi bir savaş düzeni olarak</b> yerleştirilmiş.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">1QM</span>
+        <span class="psg__ref">sütun 3–4</span>
+        <h3>Sancaklara ve borazanlara yazılacaklar</h3>
+      </div>
+      <div class="txt">
+        <p>Parşömen, savaşa götürülecek her nesnenin üzerine hangi yazının kazınacağını tek tek belirtiyor:</p>
+      </div>
+      <ul class="inscr">
+        <li><span class="on">Topluluğu çağırma borazanlarına</span><span class="say">Tanrı'nın Çağırdıkları</span></li>
+        <li><span class="on">Komutanları çağırma borazanlarına</span><span class="say">Tanrı'nın Prensleri</span></li>
+        <li><span class="on">Halkın başındaki büyük sancağa</span><span class="say">Tanrı'nın Halkı</span></li>
+        <li><span class="on">Savaşa giderken taşınan sancaklara</span><span class="say">Tanrı'nın Gerçeği · Tanrı'nın Doğruluğu · Tanrı'nın Görkemi · Tanrı'nın Hükmü</span></li>
+        <li><span class="on">Öldürülenlerin borazanlarına</span><span class="say">Savaşta Tanrı'nın Güçlü Eli — hainliğin bütün ölülerini yere sermek için</span></li>
+        <li><span class="on">Zaferden dönüş sancaklarına</span><span class="say">Tanrı'nın Büyük İşleri</span></li>
+        <li><span class="on">Toplanma borazanlarına</span><span class="say">Tanrı Topladı</span></li>
+      </ul>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Yukarıdakiler temsilî bir seçkidir — parşömen düzinelerce yazıt sayar, her biri farklı bir askerî ana ait. Metnin tuhaflığı da burada: kıyamet savaşı, <b>bir piyade talimatnamesi diliyle</b> yazılmış. Tabur derinlikleri, mızrak boyları, yaş sınırları, kâhinlerin borazan işaretleri. Roma lejyon düzeninden esinlendiği öne sürülmüştür — savaşılacak düşmanın taktik kitabıyla yazılmış bir savaş planı.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">1QpHab</span>
+        <span class="psg__ref">sütun 7:1–14</span>
+        <h3>Öğretmen'e açılan sır — ve gecikmiş son</h3>
+      </div>
+      <div class="txt">
+        <p>Tanrı, Habakkuk'a son kuşağın başına geleceklerini yazmasını söyledi — ama çağın tamamlanışını ona bildirmedi.</p>
+        <p>"Okuyan koşarak okuyabilsin diye" dediğine gelince: bunun yorumu <b>Doğruluk Öğretmeni</b>'ne dairdir — Tanrı, kulları peygamberlerin sözlerindeki bütün sırları ona bildirmiştir.</p>
+        <p>"Çünkü görüm belirlenmiş vakit içindir; sona doğru soluk soluğa koşar ve yalan söylemez."</p>
+        <p>Bunun yorumu şudur: son çağ <b>uzayacak</b>, ve peygamberlerin söylediği her şeyi aşacak — çünkü Tanrı'nın sırları şaşırtıcıdır.</p>
+        <p>"Gecikirse bekle onu; çünkü mutlaka gelecek, geç kalmayacak."</p>
+        <p>Bunun yorumu, gerçeğin adamlarına — Tora'yı yerine getirenlere — dairdir: son çağ üzerlerine uzadığında elleri gerçeğe hizmetten gevşemeyecek olanlar. Çünkü Tanrı'nın bütün çağları, bilgeliğinin sırlarında onlar için belirlediği ölçüye tam vaktinde varır.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Bu pasaj iki sebeple çok önemli. Birincisi <b>yöntem</b>: peşer, kutsal metni tarihsel bağlamında okumaz — onu kendi güncel anına dair şifrelenmiş bir kehanet sayar, ve şifreyi çözme yetkisini tek bir kişiye verir. İkincisi <b>içerik</b>: bu, beklenen sonun gelmemesine getirilmiş bilinen en erken açık gerekçelerden biri. Gecikme bir hata değil, sırrın parçası ilan ediliyor. Aynı akıl yürütme birkaç on yıl sonra erken Hristiyan metinlerinde de karşımıza çıkacak.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">1QpHab</span>
+        <span class="psg__ref">sütun 11:4–8</span>
+        <h3>Kefaret Günü'ndeki kovalama</h3>
+      </div>
+      <div class="txt">
+        <p>Bunun yorumu <b>Kötü Kâhin</b>'e dairdir: öfkesinin kızgınlığıyla Doğruluk Öğretmeni'ni yutmak için, onun sürgün evine dek kovaladı. Ve Kefaret Günü'nün dinlenme vaktinde, onları yutmak ve oruç gününde — dinlenmelerinin şabatında — tökezletmek için önlerinde belirdi.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Kısacık, ama bir çıkarım taşıyor: Kudüs'ün başkâhini olması muhtemel biri, <b>Yom Kippur günü yolculuk edip</b> Öğretmen'in sürgün yerine varıyor. Kendi takvimine göre o gün Yom Kippur olsaydı bunu yapamazdı. Yani iki grup <b>farklı takvim</b> kullanıyordu — Qumran metinleri 364 günlük güneş takvimini savunur, tapınak ise ay–güneş takvimini kullanıyordu. Bayramların farklı günlere düşmesi, kopuşun soyut bir teoloji tartışması değil, gündelik hayatı bölen somut bir mesele olduğunu gösterir.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">11QTᵃ</span>
+        <span class="psg__ref">sütun 29:7–10</span>
+        <h3>Tanrı birinci tekil şahısla konuşuyor</h3>
+      </div>
+      <div class="txt">
+        <p>Ve ben onların Tanrısı olacağım, onlar da benim halkım olacaklar. Ve sonsuza dek onlarla oturacağım.</p>
+        <p>Tapınağımı görkemimle kutsayacağım — görkemimi onun üzerine kondurarak — <b>yaratılış gününe</b> dek: o gün tapınağımı ben kendim yaratacak ve bütün günler boyunca kendim için kuracağım, Yakup'la Beytel'de kestiğim antlaşma uyarınca.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Tapınak Parşömeni'nin bütün retorik hamlesi bu: Tora'nın Tanrı hakkında <i>üçüncü şahısla</i> konuştuğu yerler <b>birinci tekile çevrilmiş</b>, ve Musa aradan çıkarılmış. Metin kendini bir yorum olarak değil, <b>doğrudan vahyin kendisi</b> olarak sunuyor. Ayrıca dikkat: burada iki tapınak var — insanların şimdi kuracağı ve Tanrı'nın sonunda kendi eliyle yaratacağı. Sürgün sonrası tapınağın meşruiyetine dair sessiz ama sert bir yargı.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">CD</span>
+        <span class="psg__ref">Şam Belgesi, 1:5–11</span>
+        <h3>Üç yüz doksan yıl, ve körlerin yolu</h3>
+      </div>
+      <div class="txt">
+        <p>Ve öfke çağında — onları Babil kralı Nevukadnessar'ın eline teslim edişinden <b>üç yüz doksan yıl</b> sonra — onları ziyaret etti, ve İsrail'den ve Harun'dan bir dikim kökü filizlendirdi: ülkesini miras alsınlar ve toprağının bereketiyle beslensinler diye.</p>
+        <p>Kendi suçlarını anladılar ve suçlu adamlar olduklarını bildiler. Ama <b>yirmi yıl</b> boyunca kör gibiydiler — yolunu el yordamıyla arayanlar gibi.</p>
+        <p>Ve Tanrı işlerini gördü, çünkü O'nu bütün yürekleriyle aramışlardı. Ve onlara bir <b>Doğruluk Öğretmeni</b> çıkardı, yüreğinin yolunda onlara rehberlik etsin diye.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Topluluğun kendi kuruluş anlatısı — ve elimizdeki tek tarihlendirme denemesi. 390 + 20 yıl hesaplanırsa MÖ 2. yüzyıl ortası çıkar, ki Makkabi dönemine denk gelir. <b>Ama sayılar muhtemelen şematik:</b> 390, Hezekiel 4:5'ten alınma sembolik bir rakam. Bu yüzden hesabın kendisi tartışmalı, ve topluluğun doğuş tarihi kesin değil. Şam Belgesi ayrıca ilginç bir şekilde Qumran'dan <i>önce</i> biliniyordu — 1896'da Kahire'deki bir sinagog deposunda ortaçağ kopyaları bulunmuştu; kimse ne olduğunu anlayamamıştı. Qumran'dan parçaları çıkınca yerine oturdu.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">11QPsᵃ</span>
+        <span class="psg__ref">sütun 28 · 151. Mezmur</span>
+        <h3>Kanonda olmayan bir mezmur</h3>
+      </div>
+      <div class="txt">
+        <p>Halleluya. Yişay oğlu Davud'un.</p>
+        <p class="sp">Kardeşlerimden küçüktüm, babamın oğullarından gençtim.<br>Beni sürüsüne çoban etti, oğlaklarına yönetici.</p>
+        <p class="sp">Ellerim bir kaval yaptı, parmaklarım bir lir;<br>ve RAB'be onur verdim. İçimden dedim ki:</p>
+        <p class="sp">Dağlar O'na tanıklık etmez, tepeler bildirmez.<br>Ağaçlar sözlerimi yüceltti, sürü de işlerimi.</p>
+        <p class="sp">Çünkü kim bildirebilir, kim söyleyebilir,<br>kim anlatabilir her şeyin Efendisi'nin işlerini?</p>
+        <p class="sp">Tanrı hepsini gördü — hepsini O gördü;<br>O işitti, O kulak verdi.</p>
+        <p class="sp">Peygamberini gönderdi beni meshetsin diye:<br>Şmuel'i, beni yüceltsin diye.</p>
+        <p class="sp">Kardeşlerim onu karşılamaya çıktılar:<br>güzel endamlı, güzel görünüşlü, boyları uzun, saçları güzel —<br>RAB Tanrı onları seçmedi.</p>
+        <p class="sp">Gönderdi, beni sürünün ardından aldı,<br>kutsal yağla meshetti,<br>beni halkına önder etti, antlaşmasının çocuklarına yönetici.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Bu mezmur İbranice Kutsal Kitap'ta yoktur. Grekçe Septuaginta'da ve Doğu kiliselerinde bilinirdi, ama İbranice aslı olduğuna inanılmıyordu — 11QPsᵃ çıkana kadar. Yani burada gördüğünüz şey, <b>bir çevirinin arkasındaki kayıp asıl</b>. Ayrıca 11QPsᵃ mezmurları kanonik sıradan farklı diziyor ve başka kanon dışı parçalar da içeriyor; bu, Mezmurlar kitabının MS 1. yüzyılda henüz kapanmadığının en güçlü kanıtı.</p>
+        <p><b>Tartışmalı satır:</b> "Ağaçlar sözlerimi yüceltti" — fiilin okunuşu net değil; bazı uzmanlar "ağaçlar sözlerimi taşısın" ya da soru kipinde okumayı öneriyor. Anlam kabaca aynı kalıyor: doğa Tanrı'ya tanıklık edemez, ama Davud'un ezgisi eder.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">4QMMT</span>
+        <span class="psg__ref">C bölümü, 26–32</span>
+        <h3>"Tora'nın işlerinden bir kısmı"</h3>
+      </div>
+      <div class="txt">
+        <p>Davud'u an: sevgi dolu bir adamdı — ve o da birçok sıkıntıdan kurtuldu, ve bağışlandı.</p>
+        <p>Biz de sana <b>Tora'nın işlerinden bir kısmını</b> yazdık: senin ve halkın için iyi olacağını düşündüklerimizi. Çünkü sende sağduyu ve Tora bilgisi gördük.</p>
+        <p>Bütün bunları düşün, ve O'ndan iste — öğüdünü doğrultsun, kötü düşünceyi ve Beliyal'in öğüdünü senden uzaklaştırsın. Öyle ki çağın sonunda, sözlerimizin bir kısmını doğru bulmakla sevinesin.</p>
+        <p>Ve O'nun önünde doğru ve iyi olanı yaptığında, <b>bu sana doğruluk sayılacak</b> — senin ve İsrail'in iyiliği için.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Metnin adı ilk cümlesinden geliyor: <span class="heb">miqṣat maʿaśe ha-Torah</span> — "Tora'nın işlerinden bir kısmı". Bu ifade, Pavlus'un mektuplarındaki "yasanın işleri" (<span class="heb">erga nomou</span>) tartışmasıyla aynı kalıp, ve kapanış cümlesi doğrudan Yaratılış 15:6'ya — İbrahim'in imanının "doğruluk sayılması"na — gönderme yapıyor. Pavlus tam da bu ayeti kullanarak ters yönde argüman kurar. 4QMMT'nin yayımlanması (1994) bu yüzden Yeni Ahit çalışmalarını da sarstı: Pavlus'un karşı çıktığı pozisyonun somut, Yahudi, İsa'dan önceki bir örneği elimize geçmişti.</p>
+        <p><b>Uyarı:</b> Mektubun kime yazıldığı bilinmiyor. "Sen" kim, tartışmalı; metnin bir mektup mu yoksa kurgusal bir hitap mı olduğu bile kesin değil.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">3Q15</span>
+        <span class="psg__ref">Bakır Parşömen · seçilmiş kayıtlar</span>
+        <h3>Hazine envanteri</h3>
+      </div>
+      <div class="txt">
+        <p>Altmış dört kayıttan birkaçı. Biçim baştan sona aynı: <b>yer, ölçü, içerik, ağırlık.</b></p>
+      </div>
+      <ul class="inv">
+        <li><span class="n">1</span><span class="e">Akor Vadisi'ndeki harabede, doğuya çıkan merdivenlerin altında, kırk arşın: bir gümüş sandık ve kapları — <b>on yedi talent</b>.</span></li>
+        <li><span class="n">2</span><span class="e">Anıt mezarda, üçüncü taş sırasında: <b>yüz altın külçe</b>.</span></li>
+        <li><span class="n">7</span><span class="e">Kohlit'teki avluda, güneye bakan gömü yerinde, alttaki iki delikte: adak kapları.</span></li>
+        <li><span class="n">24</span><span class="e">Sekhakha vadisinin başındaki su kanalında, kuzeyden kazın, üç arşın: <b>kırk iki talent</b>.</span></li>
+        <li class="last"><span class="n">64</span><span class="e">Kuzeydeki çukurda, kuzeye açılan bir delikte, ağzına gömülü: <b>bu belgenin bir kopyası</b> — açıklaması, ölçüleri ve her bir kaydın dökümüyle birlikte.</span></li>
+      </ul>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Son kayıt, metnin en çok konuşulan cümlesi: hazine haritasının bir <b>kopyasını gömdüğünü</b> söyleyen, kendine gönderme yapan bir hazine haritası. O kopya da hiç bulunamadı.</p>
+        <p>Toplam miktar bazı okumalara göre birkaç bin talent altın ve gümüş — antik dünya ölçeğinde <b>inanılmayacak kadar büyük</b> bir servet. Bu yüzden metnin gerçek bir tapınak envanteri mi, savaş sırasında kaçırılan mal kayıtları mı, yoksa tümüyle folklorik bir "gömülü hazine" anlatısı mı olduğu tartışılıyor. Tariflerin tamamı yerel işaretlere dayanıyor ve o işaretler iki bin yıl önce kayboldu; yani metin okunabilir olsa bile kullanılamaz.</p>
+        <p><b>Çeviri notu:</b> Bakır Parşömen'in yazımı düzensiz, birçok yer adı başka hiçbir kaynakta geçmiyor. Yukarıdaki yer adlarının okunuşu ve ölçü birimleri uzmanlar arasında tartışmalıdır.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">1QIsaᵃ</span>
+        <span class="psg__ref">Yeşaya 53:11 · varyant</span>
+        <h3>Tek kelime: "ışık"</h3>
+      </div>
+      <div class="txt">
+        <p>Metin eleştirisinin ne demek olduğunu tek bir örnekte görmek isterseniz, bu odur. Aynı ayetin iki tanığı:</p>
+      </div>
+      <div class="vcmp">
+        <div class="vcol">
+          <h4>Masoretik metin</h4>
+          <p>"Canının sıkıntısından ötürü görecek, doyacak."</p>
+          <span class="datum">Halep / Leningrad kodeksleri · MS 930–1008</span>
+        </div>
+        <div class="vcol win">
+          <h4>Qumran + Septuaginta</h4>
+          <p>"Canının sıkıntısından sonra <mark>ışık</mark> görecek, doyacak."</p>
+          <span class="datum">1QIsaᵃ · 1QIsaᵇ · 4QIsaᵈ · Grekçe çeviri · MÖ 2.–1. yy</span>
+        </div>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Tek bir kelime: <span class="heb">ʾor</span> — "ışık". Masoretik metinde yok; Qumran'daki üç ayrı Yeşaya nüshasında ve ondan bağımsız olarak Grekçe çeviride var. Üç bağımsız tanığın aynı fazlalıkta buluşması, kelimenin <b>sonradan eklenmediğini, Masoretik gelenekte düştüğünü</b> gösteriyor.</p>
+        <p>Sonuç somut: <b>bugünkü ciddi çevirilerin çoğu bu ayette artık Masoretik metni değil, Qumran'ı izliyor.</b> Cümlenin anlamı da değişiyor — "sıkıntısını görecek"ten "sıkıntıdan sonra ışık görecek"e. Parşömenlerin metin eleştirisine katkısı, işte bunun binlerce kez tekrarlanmış hâli.</p>
+      </div>
+    </article>
+
+    <article class="psg">
+      <div class="psg__head">
+        <span class="psg__sig">1QHᵃ</span>
+        <span class="psg__ref">sütun 11:19–23 (eski numaralandırma 3:19–23)</span>
+        <h3>Şükran ilahisi</h3>
+      </div>
+      <div class="txt">
+        <p>Sana şükrederim, Efendim, çünkü canımı çukurdan kurtardın;<br>Şeol'ün yıkımından beni sonsuz yüksekliğe çıkardın.</p>
+        <p>Ve sınırı olmayan bir düzlükte yürüyorum.</p>
+        <p>Ve bildim ki, topraktan yarattığın için umut vardır —<br>sonsuz meclis için.</p>
+        <p>Ve eğrilmiş ruhu büyük suçtan arındırdın:<br>kutsalların ordusuyla birlikte yerini alsın,<br>ve gökler oğullarının topluluğuyla birliğe girsin diye.</p>
+      </div>
+      <div class="psg__note">
+        <span>Ne dikkat çekiyor</span>
+        <p>Hodayot ("Şükranlar") koleksiyonundaki ilahilerin çoğu aynı kalıpla başlar: <span class="heb">odekha adonai ki</span> — "Sana şükrederim, Efendim, çünkü…". Buradaki teolojik iddia dikkat çekici: kurtuluş <b>ölümden sonraya ertelenmiyor</b>, şimdi gerçekleşmiş sayılıyor — topluluğun üyesi meleklerin ordusuna <i>şu anda</i> katılmış durumda. Bazı ilahilerin doğrudan Doğruluk Öğretmeni'nin ağzından yazılmış olabileceği öne sürülür; kanıtlanmış değil, ve "ben" kimliğinin kişisel mi kurumsal mı olduğu tartışmalıdır.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="neden" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Metin eleştirisi</p>
+    <h2>Birbirine ters görünen iki bulgu</h2>
+    <p class="kicker">Bu, parşömenlerin en sağlam ve en az tartışmalı katkısı. Aynı zamanda en çok yanlış anlaşılanı.</p>
+  </div>
+
+  <div class="prose">
+    <p>Keşiften önce İbranice Kutsal Kitap'ın en eski tam tanıkları <b>Halep Kodeksi</b> (~MS 930) ve <b>Leningrad Kodeksi</b> (MS 1008) idi. Yani metnin yazıldığı dönemle en eski nüsha arasında bin yıldan fazla karanlık vardı. Parşömenler bu boşluğu bir hamlede kapattı.</p>
+    <p>Ortaya çıkan tablo iki bulguyu aynı anda içeriyor ve ikisi birbiriyle çelişmiyor:</p>
+  </div>
+
+  <div class="groups">
+    <div class="group">
+      <span class="group__pct">BULGU 1</span>
+      <h3>İstikrar</h3>
+      <p>1QIsaᵃ ile bin yıl sonraki Masoretik Yeşaya arasındaki farkların ezici çoğunluğu yazım varyantı — <i>plene</i>/eksik imla, harf tercihleri. Anlamı değiştiren fark azınlıkta. Kopyalama zinciri titizdi.</p>
+    </div>
+    <div class="group">
+      <span class="group__pct">BULGU 2</span>
+      <h3>Çoğulluk</h3>
+      <p>Ama ortada tek bir "standart metin" yoktu. En az üç aile yan yana dolaşıyordu: proto-Masoretik, proto-Samaritan, ve Septuaginta'nın çevrildiği İbranice metne yakın olanlar. <span class="mono">4QSamᵃ</span> bunun en net örneği — Masoretik Samuel'den belirgin biçimde ayrılıp Grekçe çeviriye yaklaşıyor.</p>
+    </div>
+    <div class="group">
+      <span class="group__pct">SONUÇ</span>
+      <h3>Kanon henüz kapanmamıştı</h3>
+      <p><span class="mono">11QPsᵃ</span> mezmurları farklı sırada veriyor ve kanonda olmayan birkaç mezmur ekliyor (151. Mezmur dahil). Standartlaşma MS 1. yüzyıldan sonra geldi; öncesinde akışkanlık normaldi.</p>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Kısacası parşömenler "metin değiştirilmiş" demiyor. Aktarımın sadık olduğunu, ama <b>standartlaşmanın</b> sanılandan geç olduğunu söylüyorlar. Bu ikisi farklı iddialar.</p>
+</section>
+
+<section id="kim" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Tartışma</p>
+    <h2>Kim yazdı, kim sakladı?</h2>
+    <p class="kicker">Yetmiş yıldır sürüyor ve kapanmadı. Aşağıda çoğunluk görüşü ve ona yöneltilen ciddi itirazlar, ağırlıklarına göre.</p>
+  </div>
+
+  <div class="hyp-main">
+    <p class="eyebrow">Çoğunluk görüşü</p>
+    <h3>Essene tipi bir mezhep topluluğu — kendi adıyla <span class="mono">Yaḥad</span></h3>
+    <p>Qumran'da yaşayan, Kudüs tapınağının yönetimini gayrimeşru sayıp çöle çekilmiş, mülkü ortaklaştıran, katı bir arınma düzeni olan bir topluluk. Klasik kaynakların "Essene" dediği gruba çok yakın.</p>
+
+    <div class="evid">
+      <div>
+        <h4>Lehine</h4>
+        <ul>
+          <li>Yaşlı Plinius (<i>Doğa Tarihi</i> 5.73) Ölü Deniz'in batı kıyısında, Ein Gedi'nin yukarısında bir Essene yerleşimi tarif ediyor — coğrafya birebir tutuyor.</li>
+          <li>Josephus ve İskenderiyeli Philon'un anlattığı âdetler (mülk ortaklığı, uzun kabul süreci, günlük arınma) <span class="mono">1QS</span>'in kurallarıyla örtüşüyor.</li>
+          <li>Yerleşimde olağandışı sayıda <i>miqveh</i> (arınma havuzu) ve mürekkep hokkalarının çıktığı bir oda.</li>
+          <li>Yakındaki mezarlığın düzeni ve yönü dönemin genel Yahudi pratiğinden ayrışıyor.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Aleyhine</h4>
+        <ul>
+          <li>Parşömenlerin <b>hiçbirinde "Essene" kelimesi geçmiyor.</b> Topluluk kendine hep <span class="mono">Yaḥad</span> diyor.</li>
+          <li>4. mağaranın içeriği tek bir mezhebin kütüphanesi için fazla çeşitli — birbiriyle çelişen halakhik pozisyonlar bir arada.</li>
+          <li>Paleografi, birçok elyazmasının farklı yerlerde ve farklı ellerde yazıldığını gösteriyor; hepsi Qumran'da üretilmedi.</li>
+          <li>De Vaux'nun kazı raporu bütünüyle yayımlanmadı — yorumun dayandığı verinin bir kısmı hâlâ denetlenemiyor.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <p class="eyebrow" style="margin-top:2rem">Ciddi alternatifler</p>
+  <div class="alts">
+    <div class="alt">
+      <h4>Sadduki hipotezi</h4>
+      <span class="alt__who">Lawrence Schiffman</span>
+      <p><span class="mono">4QMMT</span>'de savunulan halakhik pozisyonlar, rabbinik kaynakların Sadukilere atfettikleriyle örtüşüyor. Topluluk Essene değil, tapınak rahipliğinden kopmuş bir Sadduki kolu olabilir.</p>
+    </div>
+    <div class="alt">
+      <h4>Kudüs kütüphanesi</h4>
+      <span class="alt__who">Norman Golb</span>
+      <p>Parşömenler Qumran'da yazılmadı. MS 70 kuşatması yaklaşırken Kudüs'teki kütüphanelerden toplanıp çöle kaçırıldı. İçeriğin çelişkili çeşitliliğini bu açıklar; Qumran ise bir kale.</p>
+    </div>
+    <div class="alt">
+      <h4>Yerleşim dinî değil</h4>
+      <span class="alt__who">Donceel-Voûte · Hirschfeld · Magen</span>
+      <p>Qumran bir villa, çömlek atölyesi ya da ticaret durağıydı. "Yazı odası" masası aslında bir yemek sedirinin parçası; havuzlar çömlekçilik için su deposu.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p><b>Dürüst durum:</b> alanın çoğunluğu hâlâ Essene'ye yakın bir mezhep topluluğu diyor ve Golb'un uç versiyonu geniş kabul görmedi. Ama "kesinlikle Essene" diyen bir konum da bugün savunulabilir değil. Muhtemelen doğru cevap karma: Qumran'da yaşayan bir topluluk vardı, kütüphane hem onların hem dışarıdan gelen metinlerin karışımıydı.</p>
+  </div>
+</section>
+
+<section id="yayin" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Yayın</p>
+    <h2>Kırk yıl boyunca kapalı kalan on beş bin parça</h2>
+    <p class="kicker">Parşömenlerin modern hikâyesinin en utanç verici bölümü, ve komployla hiç ilgisi yok.</p>
+  </div>
+
+  <div class="prose">
+    <p>1953'te 4. mağara materyalinin tamamı, sekiz kişilik küçük ve uluslararası bir ekibe verildi. Ekip kapalıydı: dışarıdan kimse görüntülere erişemiyor, üyeler öldükçe yayın hakkı öğrencilerine <i>miras</i> kalıyordu. 1980'lerin sonunda materyalin büyük bölümü hâlâ yayımlanmamıştı — keşiften kırk yıl sonra. Basın buna "parşömen karteli" adını taktı.</p>
+    <p>Kilit 1991'de, üç ayrı hamleyle aynı yıl içinde kırıldı:</p>
+  </div>
+
+  <div class="groups">
+    <div class="group">
+      <span class="group__pct">1</span>
+      <h3>Konkordanstan geri kurma</h3>
+      <p>Ben-Zion Wacholder ve Martin Abegg, ekibin kendi iç kullanımı için bastığı kelime dizininden hareketle metinleri bilgisayarla yeniden kurdu ve yayımladı. Teknik olarak "sızdırma" bile değildi.</p>
+    </div>
+    <div class="group">
+      <span class="group__pct">2</span>
+      <h3>Huntington Kütüphanesi</h3>
+      <p>Elindeki güvenlik amaçlı mikrofilm setini, ekibin itirazına rağmen herkesin kullanımına açtığını duyurdu.</p>
+    </div>
+    <div class="group">
+      <span class="group__pct">3</span>
+      <h3>Fotoğraf baskısı</h3>
+      <p>Biblical Archaeology Society, Hershel Shanks'in yönetiminde yayımlanmamış fotoğrafların bir baskısını çıkardı. Dava açıldı, ama kapı artık kapanmıyordu.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.5rem">
+    <p>Öncesinde 1990'da <b>Emanuel Tov</b> baş editörlüğe getirilmiş ve ekibi onlarca araştırmacıya genişletmişti — asıl yapısal çözüm buydu. <i>Discoveries in the Judaean Desert</i> serisi 40 ciltle 2009'da esasen tamamlandı; 2011'de Leon Levy Dijital Kütüphanesi görüntüleri ücretsiz açtı.</p>
+    <p>Gecikmenin sebebi bir örtbas değildi: tekelleşme, mükemmeliyetçilik ve akademik hantallıktı. Ama sonuç aynıydı — bir kuşak boyunca alan birkaç kişinin insafına kaldı, ve boşluğu her türden spekülasyon doldurdu.</p>
+  </div>
+</section>
+
+<section id="sahte" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Sahtecilik</p>
+    <h2>2002 sonrası ortaya çıkan yetmiş parçanın neredeyse hepsi sahte</h2>
+    <p class="kicker">Kazı kaydı olmayan bir parça, ne kadar ikna edici görünürse görünsün, kanıt değildir. Bu ders pahalıya öğrenildi.</p>
+  </div>
+
+  <div class="prose">
+    <p>2002'den itibaren antika piyasasında birdenbire "yeni Ölü Deniz parçaları" belirmeye başladı. Hiçbirinin kazı kaydı yoktu; hepsi aynı belirsiz aile koleksiyonu anlatılarına dayanıyordu. Müzeler ve özel koleksiyoncular yüksek fiyatlarla aldı. Washington'daki <b>Museum of the Bible</b> on altı parça satın aldı ve sergiledi.</p>
+  </div>
+
+  <div class="caution">
+    <p class="eyebrow">Nasıl anlaşıldı</p>
+    <h3>Mürekkep, olması gerekenin tersi yönde davranıyordu</h3>
+    <ol>
+      <li>Malzeme antik parşömen değil, büyük ihtimalle Roma dönemine ait <b>yazısız deri</b> — muhtemelen ayakkabı ya da sandalet parçası. Yani C-14 "eski" diyordu ama nesne bir elyazması değildi.</li>
+      <li>Mürekkep yüzeydeki çatlaklara <b>akmıştı</b>. Antik bir metinde yazı önce yazılır, deri sonra çatlar. Burada sıra tersti: yazı, deri yıprandıktan sonra yazılmıştı.</li>
+      <li>Bazı parçalarda modern hayvansal tutkal ve amber kalıntısı bulundu — eskitme amaçlı.</li>
+      <li>Harf biçimleri, yayımlanmış fotoğraflardaki iyi bilinen pasajları fazlasıyla yakından izliyordu.</li>
+    </ol>
+    <p>Ekim 2018'de Almanya'daki BAM enstitüsü beş parçayı sahte ilan etti. Mart 2020'de Colette Loll yönetimindeki bağımsız inceleme, <b>on altısının tamamının modern sahtecilik</b> olduğunu açıkladı. Årstein Justnes'in "The Lying Pen of Scribes" projesi, 2002 sonrası piyasaya çıkan parçaların neredeyse tamamı için aynı sonuca vardı.</p>
+  </div>
+</section>
+
+<section id="yanlis" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">10 — Düzeltme</p>
+    <h2>Yaygın yanlışlar</h2>
+    <p class="kicker">Kırk yıllık yayın boşluğu, doldurulmayı bekleyen bir alan bıraktı. Doldu.</p>
+  </div>
+
+  <div class="myths">
+    <div class="myth">
+      <p class="myth__claim">"Parşömenlerde İsa'dan bahsediliyor."</p>
+      <p class="myth__real"><b>Hayır.</b> Hiçbir parşömende İsa, havariler, Nasıra ya da Hristiyanlık geçmez. Metinlerin büyük kısmı zaten İsa'dan öncesine ait. "Doğruluk Öğretmeni" figürü İsa'dan en az bir asır önce yaşamış birine işaret ediyor.</p>
+    </div>
+    <div class="myth">
+      <p class="myth__claim">"7Q5 parçası Markos İncili'nden."</p>
+      <p class="myth__real"><b>Kabul görmedi.</b> 1972'de José O'Callaghan öne sürdü, Carsten Peter Thiede savundu. Parçada yirmiden az harf var ve okunabilir tek tam kelime yok — iddia bir harf düzeltmesine dayanıyor. Uzmanların ezici çoğunluğu reddediyor.</p>
+    </div>
+    <div class="myth">
+      <p class="myth__claim">"Vatikan ya da kilise metinleri sakladı."</p>
+      <p class="myth__real"><b>Gecikme gerçekti, sebebi değil.</b> Tıkanma akademik tekel, mükemmeliyetçilik ve kurumsal hantallıktı. 1991'den sonra her şey yayımlandı ve Hristiyanlığı sarsan hiçbir şey çıkmadı.</p>
+    </div>
+    <div class="myth">
+      <p class="myth__claim">"Kutsal Kitap'ın sonradan değiştirildiğini kanıtladılar."</p>
+      <p class="myth__real"><b>Tam tersini gösterdiler.</b> Bin yıllık kopyalama zinciri şaşırtıcı derecede sadıktı. Gösterdikleri şey farklı: standartlaşmadan <i>önce</i> birden fazla metin geleneği yan yana yaşıyordu.</p>
+    </div>
+    <div class="myth">
+      <p class="myth__claim">"Hepsi Qumran'da, o topluluk tarafından yazıldı."</p>
+      <p class="myth__real"><b>Hayır.</b> Yazı elleri ve dil özellikleri, birçok elyazmasının başka yerlerde yazılıp buraya getirildiğini gösteriyor. Koleksiyon bir üretim değil, bir <i>birikim</i>.</p>
+    </div>
+    <div class="myth">
+      <p class="myth__claim">"Bakır Parşömen'deki hazine bulundu."</p>
+      <p class="myth__real"><b>Hiçbiri bulunamadı.</b> Altmış dört tarifin tamamı, bugün var olmayan yerel işaretlere dayanıyor. Metnin gerçek bir envanter mi yoksa bir efsane mi olduğu bile tartışmalı.</p>
+    </div>
+  </div>
+</section>
+
+<section id="nerede" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">11 — Bugün</p>
+    <h2>Nerede görülür, kime ait</h2>
+  </div>
+
+  <div class="places">
+    <div class="place">
+      <h4>Kitap Tapınağı</h4>
+      <span class="place__loc">İsrail Müzesi · Kudüs</span>
+      <p>Beyaz parabolik kubbesi ve tam karşısındaki siyah bazalt duvarıyla, <span class="mono">1QM</span>'deki <b>Işık Oğulları / Karanlık Oğulları</b> karşıtlığına bilinçli bir gönderme. Yeşaya Parşömeni ışığa dayanamadığı için genellikle tıpkıbasımı sergilenir.</p>
+    </div>
+    <div class="place">
+      <h4>Rockefeller Müzesi</h4>
+      <span class="place__loc">İsrail Eski Eserler Kurumu · Kudüs</span>
+      <p>Koleksiyonun büyük kısmı burada, iklim kontrollü depoda. Sergi değil, çalışma ve koruma merkezi.</p>
+    </div>
+    <div class="place">
+      <h4>Ürdün Arkeoloji Müzesi</h4>
+      <span class="place__loc">Amman</span>
+      <p>Bakır Parşömen'in kesilmiş şeritleri burada. Ürdün, koleksiyonun geri kalanı üzerinde de hak iddia ediyor.</p>
+    </div>
+    <div class="place">
+      <h4>Leon Levy Dijital Kütüphanesi</h4>
+      <span class="place__loc">deadseascrolls.org.il · ücretsiz</span>
+      <p>Çok spektrumlu, yüksek çözünürlüklü görüntüler. Kızılötesi görüntüleme, kararmış deride çıplak gözle okunamayan yazıyı ortaya çıkarıyor. Google ortaklığıyla yapılan sürüm tam metin aramaya da izin veriyor.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p><b>Mülkiyet tartışması çözülmedi.</b> Parşömenler 1947–56 arasında, o dönem Ürdün yönetimindeki Batı Şeria ve Doğu Kudüs'te bulundu. İsrail 1967'de Rockefeller Müzesi'ni ele geçirdiğinde koleksiyonu devraldı. Ürdün ve Filistin Yönetimi iadesini talep ediyor; İsrail koleksiyonun kendi kültürel mirası olduğunu savunuyor. Uluslararası sergiler zaman zaman bu yüzden hukuki itirazla karşılaşıyor.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu sayfa hakkında.</b> Bir özet ve giriş metnidir, akademik kaynak değildir. Elyazması sayıları, yüzdeler ve tarihler yaklaşıktır — parçaların birleştirilmesi sürdükçe sayımlar, C-14 kalibrasyonu güncellendikçe tarihler değişir. Tartışmalı konularda (Qumran'ın işlevi, topluluğun kimliği, yerleşimin kuruluş tarihi) çoğunluk görüşü ile itirazlar ayrı ayrı belirtilmiştir.</p>
+    <p><b>İleri okuma için birincil kaynaklar:</b> <i>Discoveries in the Judaean Desert</i> serisi (40 cilt, Oxford) resmî bilimsel yayındır. Görüntüler için Leon Levy Dead Sea Scrolls Digital Library. Genel giriş için Emanuel Tov'un metin eleştirisi çalışmaları ve Jodi Magness'in Qumran arkeolojisi üzerine kitapları.</p>
+    <p><b>Çeviriler hakkında.</b> "Metinlerden" bölümündeki pasajlar İbranice ve Aramice asıllarından bu sayfa için çevrildi. Yayımlanmış bilimsel çeviriler telif altındadır ve kullanılmamıştır. Antik metinlerin kendisi kamu malıdır; buradaki Türkçe karşılıklar bir <b>okuma yardımıdır, eleştirel edisyon değildir</b> — akademik alıntı için DJD ciltlerindeki edisyon metinlerini kullanın. Okuması tartışmalı yerler pasaj notlarında ayrıca belirtilmiştir.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) map[el.id] = a;
+  });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

@@ -1,0 +1,654 @@
+<title>Tufan Bilmecesi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E7E5DE;
+  --surface:#F3F1EB;
+  --surface-2:#DDDAD1;
+  --ink:#161A19;
+  --ink-2:#4C524F;
+  --ink-3:#767B77;
+  --rule:#C6C3B9;
+  --rule-soft:#D5D2C8;
+  --accent:#1B4A8A;
+  --accent-ink:#143A6E;
+  --accent-soft:#D7E1F0;
+  --ochre:#9C4A2F;
+  --ochre-ink:#7E3620;
+  --ochre-soft:#F0DFD6;
+
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --measure:68ch;
+  --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121513;--surface:#1A1E1C;--surface-2:#242926;
+    --ink:#E6E3DA;--ink-2:#A8ADA7;--ink-3:#7B807B;
+    --rule:#2E332F;--rule-soft:#242A26;
+    --accent:#7FA9E8;--accent-ink:#9CC0F5;--accent-soft:#182338;
+    --ochre:#D9906F;--ochre-ink:#E8A98D;--ochre-soft:#2E1D16;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121513;--surface:#1A1E1C;--surface-2:#242926;
+  --ink:#E6E3DA;--ink-2:#A8ADA7;--ink-3:#7B807B;
+  --rule:#2E332F;--rule-soft:#242A26;
+  --accent:#7FA9E8;--accent-ink:#9CC0F5;--accent-soft:#182338;
+  --ochre:#D9906F;--ochre-ink:#E8A98D;--ochre-soft:#2E1D16;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);
+  font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
+  font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1.05em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3);margin:0}
+
+/* hero */
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);
+  background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.7rem,7.5vw,5rem);line-height:.96;font-weight:700;
+  font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:14ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.42;
+  color:var(--ink-2);max-width:46ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:1rem 1.15rem;display:flex;flex-direction:column;gap:.2rem}
+.stat__num{font-family:var(--display);font-size:1.85rem;font-weight:700;line-height:1.05;
+  font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.no{color:var(--ochre)}
+.stat__lbl{font-size:.83rem;color:var(--ink-3);line-height:1.35}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;
+  text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.75rem,6vw,4.5rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.75rem}
+.sec__head h2{font-size:clamp(1.7rem,3.4vw,2.45rem);line-height:1.08}
+.sec__head .kicker{font-size:1.02rem;color:var(--ink-2);max-width:56ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.9rem 1.15rem;
+  font-size:.94rem;color:var(--ink);max-width:var(--measure)}
+
+/* exhibit label */
+.exh{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.7rem;
+  font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.25rem .6rem;
+  background:var(--accent-soft);color:var(--accent-ink);align-self:flex-start}
+.exh.ko{background:var(--ochre-soft);color:var(--ochre-ink)}
+
+/* comparison table */
+.tablewrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+caption{text-align:left;font-size:.84rem;color:var(--ink-3);padding:.75rem 1rem;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-3);text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--rule);vertical-align:bottom}
+td{padding:.6rem 1rem;border-bottom:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+th.rowh,td.rowh{color:var(--ink);font-weight:600;white-space:nowrap;background:var(--surface)}
+.cmp{min-width:820px}
+.cmp th:not(:first-child){color:var(--accent-ink)}
+.cmp th.bible{color:var(--ochre-ink)}
+tr.key td{background:var(--accent-soft)}
+tr.key:hover td{background:var(--accent-soft)}
+tr.key td.rowh{background:var(--accent-soft);color:var(--accent-ink)}
+
+/* distribution */
+.dist{min-width:700px}
+.badge{display:inline-block;font-family:var(--mono);font-size:.66rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;white-space:nowrap}
+.b-yes{background:var(--accent-soft);color:var(--accent-ink)}
+.b-no{background:var(--ochre-soft);color:var(--ochre-ink)}
+.b-mix{background:var(--surface-2);color:var(--ink-2)}
+
+/* passages */
+.psg{border:1px solid var(--rule);background:var(--bg);padding:1.5rem 1.6rem;margin-top:1.5rem}
+.psg__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem .85rem;padding-bottom:.9rem;
+  margin-bottom:1.15rem;border-bottom:1px solid var(--rule-soft)}
+.psg__sig{font-family:var(--mono);font-size:.82rem;font-weight:600;color:var(--accent-ink);
+  background:var(--accent-soft);padding:.16rem .45rem;white-space:nowrap}
+.psg__sig.ko{background:var(--ochre-soft);color:var(--ochre-ink)}
+.psg__ref{font-family:var(--mono);font-size:.73rem;color:var(--ink-3)}
+.psg__head h3{font-size:1.14rem;flex:1 1 12ch;min-width:0}
+.txt{font-family:var(--display);font-size:1.07rem;line-height:1.78;color:var(--ink);
+  font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0;max-width:62ch;
+  display:flex;flex-direction:column;gap:.8em}
+.txt p{margin:0}
+.txt b{font-weight:700}
+.lac{color:var(--ink-3);font-family:var(--mono);font-size:.82em;font-variation-settings:normal}
+.psg__note{margin-top:1.2rem;padding-top:.9rem;border-top:1px solid var(--rule-soft);max-width:64ch;
+  display:flex;flex-direction:column;gap:.5rem}
+.psg__note > span{font-family:var(--mono);font-size:.67rem;font-weight:600;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3)}
+.psg__note p{margin:0;font-size:.92rem;color:var(--ink-2);font-family:var(--body)}
+.psg__note b{color:var(--ink)}
+
+/* timeline */
+.tl{display:grid;grid-template-columns:minmax(96px,auto) 1fr;gap:0 1.4rem;margin-top:1.5rem;max-width:840px}
+.tl__date{font-family:var(--mono);font-size:.8rem;font-weight:600;color:var(--ink-2);
+  padding:.8rem 0 .1rem;text-align:right;font-variant-numeric:tabular-nums;border-top:1px solid var(--rule-soft)}
+.tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);
+  padding-left:1.4rem;position:relative}
+.tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;
+  border-radius:50%;background:var(--accent)}
+.tl__body.late::before{background:var(--ochre)}
+.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
+
+/* cards */
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.55rem}
+.card h3,.card h4{font-size:1.1rem}
+.card p{margin:0;font-size:.94rem;color:var(--ink-2)}
+.card .tag{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-3)}
+.card.ko .tag{color:var(--ochre-ink)}
+.card ul{margin:.1rem 0 0;padding-left:1.05rem;font-size:.9rem;color:var(--ink-2);
+  display:flex;flex-direction:column;gap:.3rem}
+
+/* verdict */
+.verdict{border:1px solid var(--accent);background:var(--accent-soft);padding:1.7rem 1.8rem;
+  margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem;max-width:74ch}
+.verdict .eyebrow{color:var(--accent-ink)}
+.verdict h3{font-size:1.45rem}
+.verdict p{margin:0}
+.verdict ol{margin:.2rem 0 0;padding-left:1.2rem;display:flex;flex-direction:column;gap:.55rem}
+.verdict li b{color:var(--ink)}
+
+/* open questions */
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.15rem 1.3rem;display:grid;gap:.3rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(200px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1.02rem;color:var(--ink);
+  font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+.foot{padding-block:2.5rem 3.5rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.88rem;color:var(--ink-3);max-width:70ch;margin:0 0 .7rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 02 · Antik Dünya</span>
+    <p class="eyebrow">Karşılaştırmalı mitoloji · metin eleştirisi · jeoarkeoloji</p>
+    <h1>Tufan Bilmecesi</h1>
+    <p class="hero__lede">"Bütün antik uygarlıklarda bir tufan anlatısı vardır" cümlesini hepimiz duyduk. Kaynaklara tek tek bakınca ortaya çıkan şey daha ilginç: <strong>anlatı evrensel değil</strong> — ve bulunmadığı yerler, bulunduğu yerlerden daha çok şey öğretiyor.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">4</span><span class="stat__lbl">Mezopotamya–İbrani kümesinde birbirinin devamı olan metin</span></div>
+      <div class="stat"><span class="stat__num no">0</span><span class="stat__lbl">Mısır'da tufan miti — her yıl taşan bir nehrin üstünde</span></div>
+      <div class="stat"><span class="stat__num">1872</span><span class="stat__lbl">Nuh'tan eski tufan metninin okunduğu yıl</span></div>
+      <div class="stat"><span class="stat__num">~2.700</span><span class="stat__lbl">yıl: Gılgamış tableti ile Popol Vuh'un yazıya geçişi arası</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#iddia">İddia nereden geliyor</a>
+    <a href="#kume">Kanıt A — Küme</a>
+    <a href="#kus">Kuş testi</a>
+    <a href="#smith">1872</a>
+    <a href="#misir">Kanıt B — Mısır</a>
+    <a href="#cin">Kanıt C — Çin</a>
+    <a href="#kirlenme">Kirlenme sorunu</a>
+    <a href="#dagilim">Dağılım</a>
+    <a href="#gercek">Gerçek bir tufan?</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="iddia" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — İddianın kökeni</p>
+    <h2>"Herkeste var" cümlesi bulunmadı, derlendi</h2>
+    <p class="kicker">Ve derleyenlerin çoğunun, bulmayı umdukları bir sonuç vardı.</p>
+  </div>
+
+  <div class="prose">
+    <p>Tufan anlatısının evrenselliği fikri 19. yüzyılda şekillendi. İki kaynaktan besleniyordu: dünyanın dört bir yanına dağılmış <b>misyonerlerin derlemeleri</b> ve bunları bir araya getiren karşılaştırmalı folklor çalışmaları. En etkilisi James Frazer'ın <i>Folk-Lore in the Old Testament</i> (1918) adlı derlemesiydi — düzinelerce toplumdan "tufan anlatısı" yan yana dizilmişti.</p>
+    <p>Sorun derlemenin niyetinde değil, <b>yönteminde</b>. Bir anlatı arıyorsanız bulursunuz. "Sizde büyük su baskını hikâyesi var mı?" diye sorulan bir topluluk, elindeki herhangi bir su anlatısını o kalıba oturtur. Kaydeden kişi de belirsiz bir anlatıyı "tufan miti" olarak sınıflandırır. Buna bir de şu eklenir: derleyenlerin önemli bir kısmı <b>din adamıydı</b> ve Tekvin anlatısının evrensel bir hatıraya dayandığını göstermek, teolojik olarak değerli bir sonuçtu.</p>
+    <p>Bu, elde edilen verinin tamamını çürütmez. Ama şu soruyu zorunlu kılar: <b>elimizdeki "tufan mitleri" listesinin ne kadarı gerçekten bağımsız?</b> Bu yazı o soruyu üç sınavdan geçiriyor.</p>
+  </div>
+</section>
+
+<section id="kume" class="wrap">
+  <div class="sec__head">
+    <span class="exh">Kanıt A · benzerliğin gerçek olduğu yer</span>
+    <h2>Mezopotamya kümesi</h2>
+    <p class="kicker">Dört metin, aynı olay örgüsü, aynı sıra. Burada benzerlik gerçek — ve mekanizması da biliniyor: birbirlerinden geliyorlar.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table class="cmp">
+      <caption>Anlatı öğelerinin karşılaştırması. Tarihler metinlerin bilinen en eski nüshalarına aittir; anlatıların sözlü kökeni daha eskiye gidebilir.</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="rowh">Öğe</th>
+          <th scope="col">Ziusudra<br><span class="mono" style="font-weight:400">Sümer · ~MÖ 1600</span></th>
+          <th scope="col">Atrahasis<br><span class="mono" style="font-weight:400">Akad · ~MÖ 1700</span></th>
+          <th scope="col">Utnapiştim<br><span class="mono" style="font-weight:400">Gılgamış XI · ~MÖ 1200</span></th>
+          <th scope="col" class="bible">Nuh<br><span class="mono" style="font-weight:400">Tekvin · ~MÖ 6. yy</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rowh">Tufanın sebebi</td>
+          <td>Tanrıların kararı <span class="lac">[metin kopuk]</span></td>
+          <td>İnsanlar çoğaldı, <b>gürültü</b> yaptı; Enlil uyuyamadı</td>
+          <td>Tanrıların kararı; gerekçe belirtilmez</td>
+          <td>İnsanın <b>ahlaki bozulması</b></td>
+        </tr>
+        <tr>
+          <td class="rowh">Uyarılan kişi</td>
+          <td>Ziusudra, kral-rahip</td>
+          <td>Atrahasis ("çok bilge")</td>
+          <td>Utnapiştim</td>
+          <td>Nuh</td>
+        </tr>
+        <tr>
+          <td class="rowh">Uyarı biçimi</td>
+          <td>Enki duvardan fısıldar</td>
+          <td>Enki <b>duvara</b> konuşur — yemini böyle atlatır</td>
+          <td>Ea duvara konuşur</td>
+          <td>Tanrı doğrudan konuşur</td>
+        </tr>
+        <tr>
+          <td class="rowh">Gemi</td>
+          <td>Büyük tekne</td>
+          <td>Yuvarlak tekne, ölçüler verilir</td>
+          <td>Küp biçimli, yedi katlı</td>
+          <td>Dikdörtgen, üç katlı, ölçüler verilir</td>
+        </tr>
+        <tr>
+          <td class="rowh">Süre</td>
+          <td>7 gün 7 gece</td>
+          <td>7 gün 7 gece</td>
+          <td>6 gün 7 gece</td>
+          <td>40 gün yağmur; 150 gün su</td>
+        </tr>
+        <tr>
+          <td class="rowh">Karaya oturma</td>
+          <td><span class="lac">[kopuk]</span></td>
+          <td><span class="lac">[kopuk]</span></td>
+          <td><b>Nimuş Dağı</b></td>
+          <td><b>Ararat dağları</b></td>
+        </tr>
+        <tr class="key">
+          <td class="rowh">Kuş salma</td>
+          <td><span class="lac">[kopuk]</span></td>
+          <td><span class="lac">[kopuk]</span></td>
+          <td><b>Güvercin → kırlangıç → kuzgun</b></td>
+          <td><b>Kuzgun → güvercin ×3</b></td>
+        </tr>
+        <tr>
+          <td class="rowh">İniş sonrası</td>
+          <td>Kurban sunar</td>
+          <td>Kurban sunar</td>
+          <td>Kurban sunar; tanrılar <b>kokuya üşüşür</b></td>
+          <td>Kurban sunar; Tanrı <b>hoş kokuyu duyar</b></td>
+        </tr>
+        <tr>
+          <td class="rowh">Sonuç</td>
+          <td>Ziusudra'ya ölümsüzlük</td>
+          <td>Nüfus denetimi getirilir</td>
+          <td>Utnapiştim'e ölümsüzlük</td>
+          <td>Antlaşma; gökkuşağı</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Dikkat edilecek fark: Mezopotamya versiyonlarında tufanın sebebi <b>ahlak değil</b> — Atrahasis'te tanrılar insanların gürültüsünden rahatsız oluyor. Tekvin bu olay örgüsünü alıp <b>ahlaki bir çerçeveye</b> oturtuyor. Kopyalama değil, yeniden yorumlama.</p>
+</section>
+
+<section id="kus" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Belirleyici kanıt</p>
+    <h2>Kuş testi neden her şeyi bitiriyor</h2>
+    <p class="kicker">Ortak hatıra iddiasını çürüten şey benzerliğin varlığı değil, benzerliğin <i>ne kadar keyfi</i> olduğu.</p>
+  </div>
+
+  <div class="prose">
+    <p>Bir tufanı hatırlayan iki ayrı toplum, bağımsız olarak "çok yağmur yağdı, su yükseldi, bazıları kurtuldu" diyebilir. Bu şaşırtıcı değil — olay buysa, anlatı da bu olur.</p>
+    <p>Ama <b>karanın çıkıp çıkmadığını anlamak için sırayla kuş salma fikri</b> bir olayın parçası değil, bir <i>anlatının</i> parçası. Keyfî bir edebî çözüm. Ve keyfî ayrıntılar bağımsız olarak iki kez icat edilmez.</p>
+  </div>
+
+  <div class="psg">
+    <div class="psg__head">
+      <span class="psg__sig">Gılgamış XI</span>
+      <span class="psg__ref">Akadca aslından çeviri · ~145–155. satırlar</span>
+      <h3>Utnapiştim kuşları salıyor</h3>
+    </div>
+    <div class="txt">
+      <p>Yedinci gün geldiğinde bir güvercin çıkarıp saldım. Güvercin gitti ve döndü: konacak bir yer görünmedi ona, geri geldi.</p>
+      <p>Bir kırlangıç çıkarıp saldım. Kırlangıç gitti ve döndü: konacak bir yer görünmedi ona, geri geldi.</p>
+      <p>Bir kuzgun çıkarıp saldım. Kuzgun gitti, ve suların çekildiğini gördü. Yedi, döndü durdu, gakladı — <b>ve geri gelmedi.</b></p>
+    </div>
+    <div class="psg__note">
+      <span>Karşılaştırma</span>
+      <p>Tekvin 8:6–12'de sıra değişmiş ama mantık aynı: önce kuzgun salınır ve dönmez, sonra güvercin üç kez — ilkinde boş döner, ikincisinde <b>zeytin yaprağıyla</b>, üçüncüsünde hiç dönmez. Zeytin yaprağı Mezopotamya versiyonlarında yok; Levant'ın kendi katkısı.</p>
+      <p><b>Sonuç:</b> "kuşla kara arama" motifi, iki metnin ortak bir kaynaktan geldiğinin filolojik kanıtıdır. İki toplumun aynı gerçek olayı hatırlamasının değil.</p>
+    </div>
+  </div>
+
+  <div class="psg">
+    <div class="psg__head">
+      <span class="psg__sig">Atrahasis</span>
+      <span class="psg__ref">Akadca aslından çeviri · I. tablet</span>
+      <h3>Tufanın asıl sebebi: gürültü</h3>
+    </div>
+    <div class="txt">
+      <p>Ülke genişledi, halk çoğaldı. Ülke bir boğa gibi böğürüyordu.</p>
+      <p>Tanrı bu uğultudan rahatsız oldu. Enlil onların gürültüsünü duydu ve büyük tanrılara dedi:</p>
+      <p>"İnsanlığın gürültüsü bana ağır geldi. Onların uğultusundan <b>uykum kaçtı.</b>"</p>
+    </div>
+    <div class="psg__note">
+      <span>Ne dikkat çekiyor</span>
+      <p>Bu, Tekvin'in anlatısıyla arasındaki en derin fark. Mezopotamya'da tanrılar <b>rahatsız</b>; Tekvin'de Tanrı <b>öfkeli ve haklı</b>. Aynı olay örgüsü, tümüyle farklı bir teoloji. Bir anlatının ödünç alınıp yeniden anlamlandırılması böyle görünür — ve bu, kopyalamadan çok daha ilginç bir süreçtir.</p>
+    </div>
+  </div>
+</section>
+
+<section id="smith" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Keşif</p>
+    <h2>3 Aralık 1872</h2>
+  </div>
+  <div class="prose">
+    <p>British Museum'da <b>George Smith</b> adında, on dört yaşında okulu bırakıp banknot gravürcülüğü öğrenmiş, çivi yazısını kendi kendine sökmüş bir adam çalışıyordu. Ninova'dan gelen tablet parçalarını temizlerken bir metin okudu: bir gemi, bir dağ, salınan kuşlar.</p>
+    <p>Nuh anlatısının bir versiyonunu, <b>Tekvin'den yüzyıllarca eski</b> bir tablette bulmuştu.</p>
+    <p>3 Aralık 1872'de Society of Biblical Archaeology önünde sundu; salonda başbakan Gladstone da vardı. Haber ertesi gün gazetelerdeydi. <i>Daily Telegraph</i> eksik parçaları aramak için Smith'i Ninova'ya gönderecek parayı verdi — ve inanılmaz biçimde, Smith gidip aradığı parçayı buldu.</p>
+    <p style="color:var(--ink-3);font-size:.94rem"><b>Dürüstlük notu:</b> Smith'in heyecandan üstünü çıkarıp odada koşturduğu anlatısı çok tekrarlanır. Kaynağı Wallis Budge'ın yıllar sonraki aktarımıdır ve büyük ihtimalle süslenmiştir. Keşfin kendisi tartışmasız; sahne muhtemelen değil.</p>
+  </div>
+</section>
+
+<section id="misir" class="wrap">
+  <div class="sec__head">
+    <span class="exh ko">Kanıt B · tezi yıkan örnek</span>
+    <h2>Mısır'da tufan yok</h2>
+    <p class="kicker">Her yıl taşan bir nehrin kıyısında kurulmuş, üç bin yıl sürmüş, yazılı geleneği devasa bir uygarlık — ve bir tufan miti yok.</p>
+  </div>
+
+  <div class="prose">
+    <p>Bu, "insanlık gerçek bir tufanı hatırlıyor" tezinin karşılayamadığı tek başına en ağır itiraz. Mısır medeniyeti <b>her yıl</b> bir su baskını yaşadı — Nil'in <i>akhet</i> taşkını, tarımın ve takvimin temeliydi. Su ve felaket kavramlarına fazlasıyla aşinaydılar. Buna rağmen Mısır mitolojisinde insanlığı yok eden bir tufan anlatısı bulunmuyor.</p>
+    <p>En yakın metin, insanlığın yok edilişini anlatıyor — ama araç su değil.</p>
+  </div>
+
+  <div class="psg">
+    <div class="psg__head">
+      <span class="psg__sig ko">Gök İneği Kitabı</span>
+      <span class="psg__ref">Mısırca aslından çeviri · İnsanlığın Yok Edilişi bölümü</span>
+      <h3>Kırmızı bira</h3>
+    </div>
+    <div class="txt">
+      <p>Ra insanların kendisine karşı fesat kurduğunu öğrenir ve Hathor'u — Sekhmet biçiminde — onları yok etmek üzere gönderir. Tanrıça işe koyulur, ve durmaz.</p>
+      <p>Bunun üzerine Ra buyurur: bira yapılsın, ve içine <b>kırmızı toprak boyası</b> katılsın. Yedi bin küp hazırlanır ve tarlalara dökülür; ülke üç karış derinliğinde <span class="lac">[kırmızı sıvıyla]</span> kaplanır.</p>
+      <p>Tanrıça sabah geldiğinde bunu gördü, ve yüzü onun içinde güzeldi. İçti; ve yüreğine hoş geldi. Sarhoş döndü, <b>ve insanlığı artık tanımadı.</b></p>
+    </div>
+    <div class="psg__note">
+      <span>Ne dikkat çekiyor</span>
+      <p>İnsanlık yok edilmekten kurtuluyor — bir gemiyle değil, <b>tanrıçayı kan sanıp sarhoş olacağı kırmızı biraya boğarak.</b> Anlatının "büyük bir sıvı ülkeyi kaplar" öğesi bile var, ama işlevi tam tersi: yok etmek değil, yok edişi durdurmak.</p>
+      <p>Mısır'da ilksel su kavramı <b>vardır</b> (<span class="mono">Nun</span>) ve bir Tabut Metni'nde Atum, dünyayı en sonunda o suya geri döndüreceğini söyler. Ama bu bir <b>gelecek</b> ifadesidir, geçmişte yaşanmış bir tufan değil. Bilinen Mısır külliyatında Nuh tipi bir anlatı yoktur.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cin" class="wrap">
+  <div class="sec__head">
+    <span class="exh ko">Kanıt C · yapısı ters olan örnek</span>
+    <h2>Çin'de tufan var — ama hikâye başka bir hikâye</h2>
+    <p class="kicker">Gemi yok, seçilmiş kurtulan yok, ceza yok, insanlık yok olmuyor. Kahraman suyu <b>kürekle</b> yeniyor.</p>
+  </div>
+
+  <div class="prose">
+    <p>Çin'in büyük su anlatısı <b>Gun ve Yu</b> mitidir. Sular ülkeyi basar. Gun, suyu <i>bentle durdurmayı</i> dener ve başarısız olur — bunun bedelini canıyla öder. Oğlu <b>Büyük Yu</b> yöntemi değiştirir: suyu tutmaz, <b>kanallar kazıp denize akıtır.</b> On üç yıl çalışır; anlatıya göre evinin önünden üç kez geçer ve içeri girmez. Sonunda suları dizginler, ülkeyi dokuz bölgeye ayırır ve Xia hanedanını kurar.</p>
+    <p>Anlatının ne <b>hakkında</b> olduğuna bakın: bu bir ceza ve kurtuluş miti değil. Bir <b>mühendislik ve meşru yönetim</b> mitidir. Su, tanrısal bir hüküm değil çözülmesi gereken bir problemdir; kahraman itaatiyle değil <b>yöntemiyle</b> ve emeğiyle kazanır; yönetme hakkını da bu iş sayesinde elde eder.</p>
+    <p>Yani "Çin'de de tufan miti var" cümlesi teknik olarak doğru, analitik olarak yanıltıcıdır. Aynı kategoriye koyduğunuz anda, kategoriyi anlamsızlaştırmış olursunuz.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Mezopotamya–İbrani</span>
+      <h4>Ceza ve seçilmiş kurtulan</h4>
+      <ul>
+        <li>Tanrılar insanlığı yok etmeye karar verir</li>
+        <li>Bir kişi uyarılır, gemi yapar</li>
+        <li>İnsanlık silinir, tek aile kalır</li>
+        <li>Sonuç: kurban, antlaşma, yeni başlangıç</li>
+      </ul>
+    </div>
+    <div class="card ko">
+      <span class="tag">Çin</span>
+      <h4>Problem ve mühendislik</h4>
+      <ul>
+        <li>Sular yükselir; ceza değil, durum</li>
+        <li>Gemi yok, kanal var</li>
+        <li>İnsanlık yok olmaz, yerinde kalır</li>
+        <li>Sonuç: hanedan ve yönetme meşruiyeti</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag">Bir dipnot</span>
+      <h4>Gerçek bir sel olabilir</h4>
+      <p>2016'da bir grup araştırmacı, Sarı Irmak'ta Jishi Boğazı'nda <b>MÖ ~1920 civarında</b> gerçek bir set patlaması seli için jeolojik kanıt sundu ve bunu Yu anlatısıyla ilişkilendirdi. İddia tartışmalı — hem tarihlendirme hem de mitle bağ kurulması eleştirildi. Yine de somut bir yerel selin bir anlatıyı besleyebileceğini göstermesi bakımından kayda değer.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kirlenme" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Yöntem sorunu</p>
+    <h2>Listenin ne kadarı misyonerden geri geliyor?</h2>
+    <p class="kicker">Amerika kıtası anlatılarında bu, kaçınılması imkânsız bir sorudur.</p>
+  </div>
+
+  <div class="tl">
+    <div class="tl__row">
+      <div class="tl__date">~MÖ 1700</div>
+      <div class="tl__body"><h4>Atrahasis yazıya geçer</h4><p>Elimizdeki en eski tam Akadca tufan anlatısı.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">~MÖ 1200</div>
+      <div class="tl__body"><h4>Gılgamış standart sürümü</h4><p>XI. tablet, Utnapiştim anlatısını içerir.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">~MÖ 600–500</div>
+      <div class="tl__body"><h4>Tekvin anlatısı derlenir</h4><p>Sürgün dönemi ve sonrası; iki farklı kaynağın birleştirildiği metin eleştirisinde standart görüştür.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MS 1492</div>
+      <div class="tl__body late"><h4>Amerika kıtasıyla temas</h4><p>Bu tarihten sonra kaydedilen her yerli anlatı, misyoner teması <b>sonrasına</b> aittir.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MS ~1555</div>
+      <div class="tl__body late"><h4>Popol Vuh yazıya geçirilir</h4><p>K'iche' Mayaca, <b>Latin alfabesiyle</b>, Hristiyanlaştırılmış yazarlarca — İspanyol fethinden ~30 yıl sonra.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MS 1918</div>
+      <div class="tl__body late"><h4>Frazer derlemeyi yayımlar</h4><p>Bu koleksiyonların büyük kısmı misyoner kayıtlarına dayanır.</p></div>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p>Popol Vuh'ta ahşap insanların yok edilişi anlatılır — reçine yağmuru, kendilerine saldıran eşyalar ve hayvanlar, ve bir su baskını. Metnin <b>tümü</b> uydurma değildir; uzmanların çoğunluğu ciddi ölçüde Kolomb öncesi malzeme taşıdığında hemfikir. Ama tufan öğesi tam olarak <b>kirlenme kuşkusunun en yüksek olduğu yerdir</b>: Hristiyanlaşmış yazarlar, İncil anlatısını bilen bir kültürel ortamda, Avrupa alfabesiyle yazıyordu.</p>
+    <p>Aynı sorun Aztek anlatıları (Nahui-Atl, "4-Su" çağının selle bitişi, oyulmuş bir kütükte kurtulan Tata ve Nena) ve 19. yüzyılda Kuzey Amerika'da derlenen anlatılar için de geçerlidir. Kuzey Amerika'da yaygın olan motif aslında <b>tufan değil "dalgıç" motifidir</b>: ilksel sudan bir hayvan dibe dalıp çamur çıkarır ve dünya ondan yapılır. Bu bir <i>yaratılış</i> anlatısıdır, bir yok ediş anlatısı değil — ama listelere sık sık tufan diye girer.</p>
+    <p><b>Bu bölüm "yerli anlatılar sahtedir" demiyor.</b> Dediği şu: fetih sonrası kaydedilmiş bir anlatıyı bağımsız kanıt saymak, kanıtın ne olduğunu bilmemektir. Bağımsızlık iddiası için fetih öncesi bir kaynak gerekir — ve tufan özelinde elimizde yoktur.</p>
+  </div>
+</section>
+
+<section id="dagilim" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Envanter</p>
+    <h2>Nerede var, nerede yok</h2>
+    <p class="kicker">Üç durumlu dürüst sınıflandırma. "Tufan" derken Nuh tipi anlatıyı kastediyoruz: yok edici, kurtulan bir grup olan, anlatısal bir su felaketi.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table class="dist">
+      <thead>
+        <tr>
+          <th scope="col" class="rowh">Gelenek</th>
+          <th scope="col">Durum</th>
+          <th scope="col">Not</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="rowh">Mezopotamya</td><td><span class="badge b-yes">Var</span></td><td>Kaynak küme. Üç ayrı metin, birbirinin devamı.</td></tr>
+        <tr><td class="rowh">İbrani / Tekvin</td><td><span class="badge b-yes">Var</span></td><td>Mezopotamya kümesinden türediği filolojik olarak gösterilmiş.</td></tr>
+        <tr><td class="rowh">Yunan</td><td><span class="badge b-yes">Var</span></td><td>Deukalion ve Pyrrha. Yakındoğu etkisi güçlü ihtimal, kanıtlanmış değil.</td></tr>
+        <tr><td class="rowh">Hindistan</td><td><span class="badge b-mix">Var — bağımsızlığı tartışmalı</span></td><td>Manu ve balık (Śatapatha Brāhmaṇa, ~MÖ 700). Mezopotamya etkisi mi, bağımsız mı — açık soru.</td></tr>
+        <tr><td class="rowh">Çin</td><td><span class="badge b-mix">Var — yapısı farklı</span></td><td>Gun–Yu. Ceza yok, gemi yok, insanlık yok olmuyor. Kategori olarak ayrı.</td></tr>
+        <tr><td class="rowh">Mısır</td><td><span class="badge b-no">Yok</span></td><td>Yıllık taşkın kültürünün merkezinde, ama tufan miti yok.</td></tr>
+        <tr><td class="rowh">Japonya</td><td><span class="badge b-no">Yok</span></td><td>Kojiki ve Nihon Shoki'de tufan anlatısı bulunmaz.</td></tr>
+        <tr><td class="rowh">Sahra altı Afrika</td><td><span class="badge b-no">Seyrek</span></td><td>Karşılaştırmalı folklor literatüründe belirgin biçimde az. Evrensellik iddiası için ciddi bir boşluk.</td></tr>
+        <tr><td class="rowh">Mezoamerika</td><td><span class="badge b-mix">Kayıt fetih sonrası</span></td><td>Popol Vuh (~1555) ve Aztek kaynakları temas sonrası. Bağımsız kanıt sayılamaz.</td></tr>
+        <tr><td class="rowh">Kuzey Amerika</td><td><span class="badge b-mix">Çoğu farklı motif</span></td><td>Baskın motif "dalgıç" yaratılışı; tufan olarak sınıflanması çoğu zaman derleyicinin tercihi.</td></tr>
+        <tr><td class="rowh">Avustralya</td><td><span class="badge b-mix">Farklı tip</span></td><td>Deniz seviyesi yükselmesi anlatıları var; ceza-tufanı tipi değil. Aşağıya bakın.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="gercek" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Jeoloji</p>
+    <h2>Peki gerçek bir tufan var mıydı?</h2>
+    <p class="kicker">Küresel olan: hayır. Yerel ve yıkıcı olan: defalarca.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">1929 · Ur</span>
+      <h4>"Tufanı buldum"</h4>
+      <p>Leonard Woolley, Ur'da kazarken metrelerce kalınlıkta temiz bir <b>alüvyon katmanı</b> buldu ve bunu Tufan olarak duyurdu. Sonraki kazılar Kiş, Şuruppak ve Uruk'ta da benzer katmanlar buldu — ama <b>farklı tarihlerde.</b> Yani tek bir olay değil, tekrar eden yerel taşkınlar. Mezopotamya bir taşkın ovasıdır; şehirler defalarca sular altında kaldı.</p>
+    </div>
+    <div class="card">
+      <span class="tag">1997 · Karadeniz</span>
+      <h4>Felaket hipotezi</h4>
+      <p>Ryan ve Pitman, Akdeniz'in ~7.600 yıl önce Boğaz'ı yarıp Karadeniz'i ani biçimde doldurduğunu öne sürdü ve tufan anlatılarına bağladı. Popüler oldu. Sonraki jeolojik çalışmalar yükselişin çok daha <b>kademeli</b> olduğuna işaret etti; felaket versiyonu bugün azınlık görüşü.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Buzul sonrası</span>
+      <h4>Gerçek ama yavaş</h4>
+      <p>Son buzul çağının bitişiyle deniz seviyesi yaklaşık <b>120 metre</b> yükseldi — ama bu on bin yıla yayıldı. Yılda santimetreler. Kıyı toplulukları için gerçek ve kalıcı bir kayıp, ama bir "su duvarı" değil. Nesiller boyu aktarılan bir yer-kaybı hatırası üretebilir; bir gemi anlatısı üretmesi için sebep yok.</p>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Bu üçü birlikte tutarlı bir tablo veriyor: <b>tufan anlatılarını üreten şey tek bir küresel olay değil, tekrar eden yerel felaketlerdir.</b> Nehir ovasında şehir kurarsanız, birkaç yüzyılda bir şehriniz sular altında kalır. Bu, hikâye üretmek için fazlasıyla yeterlidir — ve neden anlatının en gelişkin hâlinin tam olarak bir taşkın ovasında ortaya çıktığını da açıklar.</p>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Cevap</p>
+    <h2>Bilmecenin çözümü</h2>
+  </div>
+
+  <div class="verdict">
+    <p class="eyebrow">Sorulan soru: bütün antik uygarlıklarda gerçekten geçiyor mu?</p>
+    <h3>Hayır. Elimizdeki liste dört ayrı şeyin üst üste binmesinden oluşuyor.</h3>
+    <ol>
+      <li><b>Gerçek bir metin ailesi.</b> Mezopotamya–İbrani kümesi hakiki bir akrabalıktır ve mekanizması bilinir: metinsel aktarım. Kuş salma motifi bunun kanıtıdır.</li>
+      <li><b>Yapısal olarak farklı anlatıların aynı kutuya konması.</b> Çin'in Yu anlatısı bir mühendislik mitidir; Kuzey Amerika'nın baskın motifi bir yaratılış anlatısıdır. "Tufan" etiketi bunları benzer göstermez, sadece gizler.</li>
+      <li><b>Fetih sonrası kayıtların bağımsız sayılması.</b> Mezoamerika örnekleri misyoner temasından sonra, Avrupa alfabesiyle yazıldı. Kanıt değeri bu yüzden düşüktür.</li>
+      <li><b>Yerel felaketlerin gerçekliği.</b> Taşkın ovalarında yaşayan toplumlar gerçekten sular altında kaldı — defalarca ve bağımsız olarak. Bu, bağımsız su anlatılarının neden yaygın olduğunu açıklar; neden <i>aynı olay örgüsünün</i> yaygın olmadığını da.</li>
+    </ol>
+    <p>Ve tezi kesin biçimde bitiren şey <b>Mısır</b>: yıllık bir taşkının üzerine kurulmuş, üç bin yıl yazı üretmiş bir uygarlık, tufan miti üretmedi. Eğer insanlık ortak bir felaketi hatırlıyor olsaydı, hatırlamayı en çok bekleyeceğimiz yerde bir boşluk olmazdı.</p>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p>Sonucun ilginç tarafı şu: <b>evrensellik iddiası çürüyünce elimizde kalan şey daha değerli.</b> Elimizde, dört bin yıl boyunca bir anlatının nasıl aktarıldığını, nasıl yeniden yorumlandığını, gürültüden rahatsız olan tanrılardan ahlaki hüküm veren tek bir Tanrı'ya nasıl dönüştüğünü <b>adım adım izleyebildiğimiz</b> bir metin zinciri var. Bu, muğlak bir "ortak hatıra"dan çok daha somut ve çok daha etkileyici bir şey.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Hindistan'ın Manu anlatısı bağımsız mı?</p>
+      <p class="oq__a">Śatapatha Brāhmaṇa'daki balık ve gemi anlatısı, Mezopotamya'dan gelmiş olabilir de olmayabilir de. Ticaret bağlantısı vardı (İndus–Mezopotamya), ama doğrudan metinsel kanıt yok. <b>Karara bağlanmamış bir soru.</b></p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Avustralya anlatıları gerçek deniz yükselmesini mi hatırlıyor?</p>
+      <p class="oq__a">2016'da Nunn ve Reid, bazı Aborjin geleneklerinin ~7.000 yıl öncesine ait kıyı çizgisi değişimini koruyor olabileceğini öne sürdü. Çarpıcı bir iddia; sözlü aktarımın bu süreyi taşıyabileceği tartışmalı. Doğrulanırsa, "tufan hatırası" tartışmasının en sağlam örneği olur — ama Nuh tipi bir anlatı değil.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Sahra altı Afrika'da neden bu kadar seyrek?</p>
+      <p class="oq__a">Derleme yanlılığı mı (daha az kaydedildi), coğrafya mı (büyük taşkın ovası daha az), yoksa gerçek bir kültürel farklılık mı — net değil. Evrensellik iddiası için ciddi bir sorun olduğu ise açık.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Ziusudra ve Atrahasis'in kopuk yerlerinde ne yazıyordu?</p>
+      <p class="oq__a">Kuş salma ve dağa oturma bölümleri bu iki metinde kırık. Motifin Sümerce versiyonda da bulunup bulunmadığını bilmiyoruz. Yeni bir tablet parçası çıkarsa zinciri bir halka daha geriye taşıyabilir.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Çok sayıda kaynak taranarak Türkçe yazılmıştır.</p>
+    <p><b>Antik metin çevirileri</b> (Gılgamış XI, Atrahasis, Gök İneği Kitabı) Akadca ve Mısırca asıllarından bu sayfa için yapılmış <b>çalışma çevirileridir</b>; yayımlanmış telifli bilimsel çeviriler kullanılmamıştır. Akademik alıntı için eleştirel edisyonlara başvurun. <span class="mono">[…]</span> tabletteki kopukluğu gösterir.</p>
+    <p><b>Sayılar ve tarihler yaklaşıktır.</b> Metin tarihleri bilinen en eski nüshalara aittir; sözlü kökenleri daha eskiye gidebilir. Tartışmalı olduğunu belirttiğim her yer gerçekten tartışmalıdır — Karadeniz hipotezi, Jishi Boğazı seli, Manu anlatısının bağımsızlığı ve Avustralya deniz seviyesi iddiası dahil.</p>
+    <p><b>İleri okuma:</b> Andrew George'un Gılgamış eleştirel edisyonu; Stephanie Dalley, <i>Myths from Mesopotamia</i>; W. G. Lambert ve A. R. Millard'ın Atrahasis edisyonu; Erik Hornung'un Gök İneği Kitabı çalışması; Mark Edward Lewis, <i>The Flood Myths of Early China</i>.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) map[el.id] = a;
+  });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

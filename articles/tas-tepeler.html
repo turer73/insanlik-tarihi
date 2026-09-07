@@ -1,0 +1,401 @@
+<title>Taş Tepeler: Yüzde Beş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E8E7E4; --surface:#F3F2EF; --surface-2:#DCDAD6;
+  --ink:#161819; --ink-2:#4A4F52; --ink-3:#767B7E;
+  --rule:#C4C3BE; --rule-soft:#D5D4CF;
+  --accent:#4A5D6E; --accent-ink:#374857; --accent-soft:#DCE3E9;
+  --soil:#8A6440; --soil-ink:#6E4F31; --soil-soft:#EDE2D5;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121315; --surface:#191B1D; --surface-2:#242629;
+    --ink:#E5E7E8; --ink-2:#A4AAAD; --ink-3:#757B7E;
+    --rule:#2D3033; --rule-soft:#23262A;
+    --accent:#9BB4C8; --accent-ink:#B4C8D8; --accent-soft:#18232C;
+    --soil:#C8A277; --soil-ink:#D8B792; --soil-soft:#291F14;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121315; --surface:#191B1D; --surface-2:#242629;
+  --ink:#E5E7E8; --ink-2:#A4AAAD; --ink-3:#757B7E;
+  --rule:#2D3033; --rule-soft:#23262A;
+  --accent:#9BB4C8; --accent-ink:#B4C8D8; --accent-soft:#18232C;
+  --soil:#C8A277; --soil-ink:#D8B792; --soil-soft:#291F14;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.6rem,7.2vw,4.9rem);line-height:.97;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:13ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--ink-2);max-width:48ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(148px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.15rem}
+.stat__num{font-family:var(--display);font-size:1.7rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.s{color:var(--soil-ink)}
+.stat__lbl{font-size:.81rem;color:var(--ink-3);line-height:1.3}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:58ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.s{border-color:var(--soil);background:var(--soil-soft)}
+
+/* excavated bar */
+.dug{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.3rem 1.4rem}
+.dug h4{font-size:1rem;margin-bottom:.9rem}
+.dugbar{display:flex;height:52px;border:1px solid var(--rule)}
+.dugbar .in{flex:0 0 5%;background:var(--accent);display:flex;align-items:center;justify-content:center}
+.dugbar .out{flex:1;background:var(--surface-2);display:flex;align-items:center;padding-left:.9rem}
+.dugbar .in span{font-family:var(--mono);font-size:.6rem;font-weight:700;color:var(--bg);writing-mode:vertical-rl;text-orientation:mixed}
+.dugbar .out span{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.dug p{margin:.9rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:66ch}
+.dug b{color:var(--ink)}
+
+/* revision cards */
+.rev{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:860px){.rev{grid-template-columns:repeat(3,1fr)}}
+.rv{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.5rem}
+.rv .yr{font-family:var(--mono);font-size:.72rem;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);padding:.14rem .42rem;align-self:flex-start}
+.rv h3{font-size:1.06rem}
+.rv p{margin:0;font-size:.91rem;color:var(--ink-2)}
+.rv.now{background:var(--accent-soft)}
+
+/* comparison table */
+.tablewrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:600px}
+caption{text-align:left;font-size:.84rem;color:var(--ink-3);padding:.75rem 1rem;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--rule)}
+td{padding:.62rem 1rem;border-bottom:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+td.k{color:var(--ink);font-weight:600;white-space:nowrap}
+td.v{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.bad{color:var(--soil-ink);font-weight:600}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
+.card h4{font-size:1.06rem}
+.card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card.s .tag{color:var(--soil-ink)}
+.card p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.deb{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.4rem}
+.db{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.35rem 1.1rem;grid-template-columns:1fr}
+@media(min-width:760px){.db{grid-template-columns:minmax(200px,.8fr) 1.8fr;align-items:start}}
+.db__c{font-family:var(--display);font-style:italic;font-size:.99rem;color:var(--ink-3);font-variation-settings:"SOFT" 40}
+.db__r{margin:0;font-size:.92rem;color:var(--ink-2)}
+.db__r b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:70ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 11 · Yukarı Mezopotamya</span>
+    <p class="eyebrow">Çanak Çömleksiz Neolitik · süren kazı · bilmediğimizin boyutu</p>
+    <h1>Taş Tepeler: Yüzde Beş</h1>
+    <p class="hero__lede">Göbekli Tepe otuz yıldır kazılıyor ve <strong>yüzde beşi açıldı.</strong> Karahan Tepe daha büyük ve o da yüzde beş. Bu yazı, bulunanlar kadar <strong>bulunmayanların büyüklüğü</strong> hakkında — çünkü model bu sürede zaten iki kez değişti.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">~%5</span><span class="stat__lbl">Göbekli Tepe'de otuz yılda kazılan oran</span></div>
+      <div class="stat"><span class="stat__num s">12</span><span class="stat__lbl">Taş Tepeler projesindeki çağdaş site</span></div>
+      <div class="stat"><span class="stat__num">MÖ ~9500</span><span class="stat__lbl">en eski çevreler — yazıdan 6.300 yıl önce</span></div>
+      <div class="stat"><span class="stat__num s">17 m</span><span class="stat__lbl">Karahan Tepe'deki basamaklı yapının çapı</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#yuzde">Yüzde beş</a>
+    <a href="#revizyon">İki revizyon</a>
+    <a href="#karahan">Karahan Tepe</a>
+    <a href="#kronoloji">Hangisi eski</a>
+    <a href="#rakam">Rakamlar tutmuyor</a>
+    <a href="#agda">Tek site değil, ağ</a>
+    <a href="#curutme">Kuyruklu yıldız iddiası</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="yuzde" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Ölçek</p>
+    <h2>Kesin konuşulan bir konuda elimizdeki veri</h2>
+  </div>
+
+  <div class="dug">
+    <h4>Göbekli Tepe — kazılan / kazılmayan</h4>
+    <div class="dugbar">
+      <div class="in"><span>%5</span></div>
+      <div class="out"><span>toprak altında · jeofizik daha çok yapı gösteriyor</span></div>
+    </div>
+    <p>Otuz yıllık kazının sonucu bu. Ve durum Karahan Tepe'de de aynı: <b>yaklaşık yüzde beş.</b> Yani "Göbekli Tepe şudur", "Karahan Tepe daha eskidir", "orası bir tapınaktı" gibi cümlelerin hepsi, <b>iki buzdağının görünen uçlarına</b> bakılarak kuruluyor.</p>
+  </div>
+
+  <p class="note" style="margin-top:1.4rem">Bu bir eleştiri değil — kazı yavaş olmak <b>zorunda</b>. Hızlı kazı bağlamı yok eder; bir kez çıkardığın tabakayı geri koyamazsın. Ama bu yavaşlığın bir sonucu var: <b>elimizdeki tablo eksik olduğunu bilerek okunmalı.</b></p>
+</section>
+
+<section id="revizyon" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Model değişimi</p>
+    <h2>Otuz yılda iki kez fikir değiştirdik</h2>
+    <p class="kicker">Ve ikisi de yeni kanıt geldiği için oldu — tam olarak olması gerektiği gibi.</p>
+  </div>
+
+  <div class="rev">
+    <div class="rv">
+      <span class="yr">1995–2014</span>
+      <h3>"İlk tapınak"</h3>
+      <p>Kazının ilk yorumu: burası kimsenin yaşamadığı, yalnızca tören için kullanılan bir kutsal alan. Meşhur formül buradan çıktı: <b>önce tapınak geldi, sonra şehir.</b> Model şuydu — tarım → artı ürün → yerleşiklik → anıt. Göbekli Tepe bu sırayı tersine çeviriyordu.</p>
+    </div>
+    <div class="rv">
+      <span class="yr">2014 sonrası</span>
+      <h3>Yerleşim izleri</h3>
+      <p>Sonraki kazı sezonları sarnıçlar, çok sayıda öğütme taşı ve konut olabilecek yapılar buldu. "Burada kimse yaşamıyordu" iddiası <b>zayıfladı.</b></p>
+    </div>
+    <div class="rv now">
+      <span class="yr">2025–26</span>
+      <h3>Kuzeyde ev planları</h3>
+      <p>Ana alanın kuzeyinde açılan yeni kesimde, iç düzenleri <b>konut gibi okunan</b> yapılar çıktı. Erozyon üst duvarları zaten aşındırdığı için plana ve yer yer taban seviyesine hızla ulaşıldı. Jeofizik, aynısından <b>daha çok</b> olduğunu gösteriyor.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.7rem">
+    <p>Bugünkü eğilim: Göbekli Tepe saf bir tapınak değil, <b>anıtsal mimarisi olan bir yerleşim.</b> Bu, sitenin önemini azaltmıyor — aksine, "kimsenin yaşamadığı gizemli kutsal alan" imgesinden çok daha ilginç bir şey söylüyor: <b>insanlar burada yaşıyor ve aynı zamanda on tonluk sütunlar dikiyordu.</b></p>
+    <p>Ve "avcı-toplayıcılar yaptı" cümlesi de fazla basit. Tarım öncesi, evet — ama yabani tahılı yoğun biçimde işleyen, muhtemelen yerleşik ya da yarı yerleşik bir topluluk. Evcil einkorn buğdayının genetik kökeni olan Karacadağ oradan otuz kilometre uzakta. <b>Tarımın eşiğinde duruyorlar, tarımdan imkânsız derecede önce değil.</b></p>
+  </div>
+</section>
+
+<section id="karahan" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — 2025 sezonu</p>
+    <h2>Karahan Tepe'de basamaklı yapı</h2>
+  </div>
+
+  <div class="prose">
+    <p>Karahan Tepe'de açığa çıkarılan yapı, bu yazının en taze bulgusu: <b>yaklaşık 17 metre çapında</b>, tabanı doğrudan ana kayaya oyulmuş, dairesel bir alan. Merkezî bir odak noktasının çevresinde <b>üç sıra basamaklı taş sekilik</b> dönüyor — bir tiyatro oturma düzeni gibi.</p>
+    <p>Kazı ekibi mekânı bir <b>amfitiyatro veya odeon</b> çağrıştırıcı olarak tarif ediyor. Ayrıca Karahan Tepe, Neolitik dünyada bilinen <b>en yoğun insan yüzü tasvirlerinden</b> birini barındırıyor.</p>
+    <p>Bunun ne anlama geldiği açık değil. Toplanma yeri mi, tören mekânı mı, karar alma alanı mı — <b>bilmiyoruz.</b> Ama şu söylenebilir: on bir bin yıl önce, yazıdan altı bin yıl önce, insanlar <b>oturarak birlikte bir şeye baktıkları</b> bir mekân inşa etmiş.</p>
+  </div>
+
+  <p class="note s" style="margin-top:1.4rem"><b>Kaynak uyarısı:</b> Bu bulgular kazı sezonu duyuruları ve haber aktarımları üzerinden dolaşıyor; ayrıntılı bilimsel yayın henüz bu hızda gelmiyor. Ölçüler ve yorumlar <b>ön niteliktedir</b> ve yayın çıktığında değişebilir. Bu yazı onları "kesin" değil, <b>"bildirilen"</b> olarak veriyor.</p>
+</section>
+
+<section id="kronoloji" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Tarihleme</p>
+    <h2>Hangisi daha eski? Bilinmiyor.</h2>
+  </div>
+
+  <div class="prose">
+    <p>Bu, popüler yazılarda en sık kesin konuşulan ve gerçekte en belirsiz olan sorulardan biri. Kaynaklar birbirini tutmuyor:</p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Aynı iki site için farklı kaynaklarda dolaşan tarihler. Hepsi aynı anda doğru olamaz.</caption>
+      <thead><tr><th>Kaynak grubu</th><th>Göbekli Tepe</th><th>Karahan Tepe</th><th>Sonuç</th></tr></thead>
+      <tbody>
+        <tr><td class="k">A</td><td class="v">MÖ 9600</td><td class="v">MÖ 9400</td><td>Göbekli daha eski</td></tr>
+        <tr><td class="k">B</td><td class="v">MÖ 9500</td><td class="v">MÖ 9750</td><td class="bad">Karahan daha eski</td></tr>
+        <tr><td class="k">C</td><td class="v">—</td><td class="v">—</td><td>"İlişki hâlâ araştırılıyor"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note" style="margin-top:1.4rem">Dürüst cevap: <b>her iki site de Çanak Çömleksiz Neolitik A–B aralığında ve öncelik belirlenmedi.</b> İkisi de %5 kazılı olduğu sürece, "en eski" iddiası hangi kesimin kazıldığına bağlı kalır — sitenin kendisine değil.</p>
+</section>
+
+<section id="rakam" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Ölçüm</p>
+    <h2>Alan rakamları üç kat oynuyor</h2>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Karahan Tepe'nin alanı için farklı kaynaklarda geçen değerler.</caption>
+      <thead><tr><th>Değer</th><th>Neyi sayıyor olabilir</th></tr></thead>
+      <tbody>
+        <tr><td class="v">~10 ha</td><td>Höyüğün kendisi</td></tr>
+        <tr><td class="v">~13–14 ha</td><td>Yüzey buluntusunun yayıldığı alan</td></tr>
+        <tr><td class="v">~15 ha</td><td>Taş ocakları dahil</td></tr>
+        <tr><td class="v bad">~32,5 ha</td><td>Belirsiz — muhtemelen koruma sınırı</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p>Bu tablo tek başına bir uyarı. Aynı site için dolaşan rakamlar arasında <b>üç kat fark</b> var, ve kaynakların çoğu kazı raporu değil <b>tur şirketi ve haber sitesi.</b> Rakamlar birbirinden kopyalanarak büyüyor.</p>
+    <p>Kesin olan tek şey: <b>Karahan Tepe yüzey alanı olarak Göbekli Tepe'den büyük.</b> Bu bütün kaynaklarda tutarlı. Ama "ne kadar büyük" sorusunun bugün güvenilir bir cevabı yok — ve "daha büyük yerleşim" demek için nüfus, çağdaş kullanım ve yapı yoğunluğu gerekir; hiçbiri elimizde değil.</p>
+  </div>
+</section>
+
+<section id="agda" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Bağlam</p>
+    <h2>Anomali değil, bölgesel kültür</h2>
+  </div>
+
+  <div class="prose">
+    <p>Göbekli Tepe uzun süre <b>tek başına duran, açıklanamaz bir yapı</b> olarak anlatıldı. 2021'den beri süren Taş Tepeler projesi bölgede yaklaşık <b>on iki çağdaş site</b> tespit etti: Karahan Tepe, Sayburç, Sefer Tepe, Çakmak Tepe, Harbetsuvan ve diğerleri.</p>
+    <p>Bu, iki şeyi aynı anda yapıyor. Bir yandan <b>gizemi çözüyor</b>: ortada tek bir anomali değil, yaygın bir inşa geleneği var. Öte yandan <b>ölçeği büyütüyor</b>: tarım öncesi bir toplumun, bölge çapında, kuşaklar boyunca sürdürdüğü anıtsal bir program söz konusu.</p>
+    <p>Ve Göbekli Tepe'nin özel konumu kronolojik ya da boyutsal değil — <b>arkeolojik.</b> 1995'te ilk kazılan olduğu için modelin kırıldığı yer orası oldu. En eski olduğu için değil, <b>ilk açıldığı için</b> ünlü.</p>
+  </div>
+</section>
+
+<section id="curutme" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Düzeltme</p>
+    <h2>43 numaralı sütun ve kuyruklu yıldız iddiası</h2>
+  </div>
+
+  <div class="deb">
+    <div class="db">
+      <p class="db__c">"Akbaba Taşı'ndaki kabartmalar MÖ 10.950'de bir kuyruklu yıldız çarpmasını kaydediyor."</p>
+      <p class="db__r">2017'de öne sürüldü: hayvan figürleri takımyıldız sayılıp bir tarih okundu. <b>Sitenin kendi kazı ekibi yayımlanmış bir yanıt verdi.</b> İtirazlar: hayvan–takımyıldız eşleştirmesi keyfî; sütunun bulunduğu yapı iddia edilen tarihten sonraya ait; ve yöntem hemen hemen <b>her kabartma kümesine</b> uygulanıp bir "sonuç" verebilir.</p>
+    </div>
+    <div class="db">
+      <p class="db__c">"Göbekli Tepe kayıp bir ileri uygarlığın kanıtı."</p>
+      <p class="db__r">Sitede metal yok, çanak çömlek yok, tekerlek yok, yazı yok. Yapılan şey <b>taş, insan emeği ve örgütlenmeyle</b> açıklanabiliyor — ve on iki çağdaş site, bunun bölgesel bir gelenek olduğunu gösteriyor. <b>Kayıp uygarlık, açıklanamayan bir boşluk gerektirir; burada boşluk kapanıyor.</b></p>
+    </div>
+    <div class="db">
+      <p class="db__c">"Göbekli Tepe kasten gömüldü, bu yüzden bu kadar iyi korundu."</p>
+      <p class="db__r">Kasıtlı doldurma uzun süre standart açıklamaydı. Sonraki çalışmalar <b>yamaç erozyonu ve doğal dolgu</b> ihtimalini ciddi biçimde gündeme getirdi. Bugün bu <b>tartışmalı</b> bir konu — kesin bir "kasten gömdüler" cümlesi kurulamaz.</p>
+    </div>
+  </div>
+
+  <p class="note s" style="margin-top:1.4rem">Bunları yazmamın sebebi savunma değil, <b>orantı.</b> On bir bin beş yüz yıl önce, yazısız insanlar on tonluk sütunlar dikip üzerlerine hayvan kabartmaları yaptı ve bunu bölge çapında on iki yerde yaptı. <b>Bunu inanılmaz kılmak için kuyruklu yıldıza ihtiyaç yok</b> — ihtiyaç duyulduğunu düşünmek, gerçek buluntuya haksızlık.</p>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Sonuç</p>
+    <h2>Bilmediğimizin boyutu</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının tezi</p>
+    <h3>Otuz yılda iki kez fikir değiştirdik ve daha yüzde beşteyiz</h3>
+    <p>"İlk tapınak" formülü otuz yıl boyunca her yerde tekrarlandı ve <b>kazının kendisi tarafından zayıflatıldı.</b> Bugünkü tablo: anıtsal mimarisi olan bir yerleşim, bölge çapında on iki site, ve çözülmemiş bir kronoloji.</p>
+    <p>Bu, arkeolojinin başarısızlığı değil — <b>çalışma biçimi.</b> Yeni kesim açılır, model düzeltilir. Sorun, popüler aktarımın bu döngüyü takip etmemesinde: 1990'ların cümlesi hâlâ dolaşıyor, düzeltme dolaşmıyor.</p>
+    <p>Ve asıl soru şu: <b>yüzde beşten bu kadar değiştiyse, kalan yüzde doksan beş neyi değiştirecek?</b> Bugün kesin konuştuğumuz her cümle, bu ihtimalin altında okunmalı.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Göbekli Tepe yerleşim mi, tören alanı mı?</p>
+      <p class="oq__a">Bugünkü eğilim "ikisi birden" yönünde ama <b>karar verilmedi.</b> Konut olarak okunan yapılar yeni açıldı; yayın bekleniyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Hangi site daha eski?</p>
+      <p class="oq__a">Kaynaklar çelişiyor. <b>Öncelik belirlenmedi</b> ve %5 kazı oranında belirlenmesi zor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Karahan Tepe gerçekte ne kadar büyük?</p>
+      <p class="oq__a">10 ile 32,5 hektar arasında değerler dolaşıyor. <b>Güvenilir tek bir rakam yok.</b> Kesin olan yalnızca Göbekli Tepe'den büyük olduğu.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Basamaklı yapı ne işe yarıyordu?</p>
+      <p class="oq__a">Toplanma, tören, karar alma — hepsi öneri. <b>Bilinmiyor</b>, ve ayrıntılı yayın henüz yok.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Sütunlardaki hayvanlar ne anlatıyor?</p>
+      <p class="oq__a">Yazı yok. İkonografi yorumlanabilir ama <b>doğrulanamaz</b>; niyet doğrudan erişilemez. Stonehenge'deki aynı sınır burada da geçerli.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Yapılar kasten mi gömüldü?</p>
+      <p class="oq__a">Uzun süre standart açıklamaydı; <b>doğal dolgu ihtimali ciddi biçimde tartışılıyor.</b> Kapanmış değil.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir.</p>
+    <p><b>Kaynak kalitesi uyarısı — bu yazı için özellikle önemli.</b> Taş Tepeler aktif bir kazı alanıdır ve bulgular çoğunlukla sezon duyuruları, basın aktarımları ve proje iletişimi üzerinden dolaşır; ayrıntılı hakemli yayın bu hızda gelmez. 2025–26 bulguları (kuzey kesimdeki konut planları, Karahan Tepe'deki ~17 m çaplı basamaklı yapı) burada <b>"bildirilen"</b> olarak verilmiştir, "kanıtlanmış" olarak değil. Ölçüler ve yorumlar yayın çıktığında değişebilir.</p>
+    <p><b>Alan ve tarih rakamları çelişkilidir</b> ve bu çelişki metin içinde gizlenmemiş, tablo hâlinde gösterilmiştir. Kaynakların önemli bir bölümü tur ve haber sitesidir; bu, rakamların birbirinden kopyalanarak büyümesinin başlıca sebebidir.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil · Aynı Cümlede Anılanlar · Petra · Şuşter · Stonehenge · Sümer · Angkor.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

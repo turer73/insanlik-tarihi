@@ -1,0 +1,410 @@
+<title>Chichén Itzá: Test Edilebilen ve Edilemeyen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E9E8E4; --surface:#F4F3EF; --surface-2:#DCDAD5;
+  --ink:#161719; --ink-2:#4A4D52; --ink-3:#777A7F;
+  --rule:#C5C3BE; --rule-soft:#D6D4CF;
+  --accent:#1D7FA6; --accent-ink:#146382; --accent-soft:#D4E6EE;
+  --lime:#8A8172; --lime-ink:#6D6558; --lime-soft:#E9E5DC;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121315; --surface:#191B1D; --surface-2:#242628;
+    --ink:#E5E6E8; --ink-2:#A5A8AC; --ink-3:#767980;
+    --rule:#2D2F32; --rule-soft:#232528;
+    --accent:#66B9D9; --accent-ink:#88CBE5; --accent-soft:#0E2831;
+    --lime:#C4BAA6; --lime-ink:#D5CCBB; --lime-soft:#26241D;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121315; --surface:#191B1D; --surface-2:#242628;
+  --ink:#E5E6E8; --ink-2:#A5A8AC; --ink-3:#767980;
+  --rule:#2D2F32; --rule-soft:#232528;
+  --accent:#66B9D9; --accent-ink:#88CBE5; --accent-soft:#0E2831;
+  --lime:#C4BAA6; --lime-ink:#D5CCBB; --lime-soft:#26241D;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.3rem,6.2vw,4.2rem);line-height:1;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:16ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--ink-2);max-width:48ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(148px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.15rem}
+.stat__num{font-family:var(--display);font-size:1.7rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.l{color:var(--lime-ink)}
+.stat__lbl{font-size:.81rem;color:var(--ink-3);line-height:1.3}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:58ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.l{border-color:var(--lime);background:var(--lime-soft)}
+
+/* before after */
+.ba{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:760px){.ba{grid-template-columns:1fr 1fr}}
+.b{background:var(--bg);padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.6rem}
+.b .tag{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.b h3{font-size:1.14rem}
+.b p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.b ul{margin:.1rem 0 0;padding-left:1.05rem;font-size:.91rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.32rem}
+.b ul b{color:var(--ink)}
+.b.after{background:var(--accent-soft)}
+.b.after .tag{color:var(--accent-ink)}
+
+/* testability split */
+.test{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:760px){.test{grid-template-columns:1fr 1fr}}
+.ts{background:var(--bg);padding:1.35rem 1.45rem;display:flex;flex-direction:column;gap:.55rem}
+.ts .badge{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;align-self:flex-start}
+.ts.yes .badge{background:var(--accent-soft);color:var(--accent-ink)}
+.ts.no .badge{background:var(--lime-soft);color:var(--lime-ink)}
+.ts h3{font-size:1.1rem}
+.ts p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.ts .res{font-family:var(--display);font-size:1.02rem;color:var(--ink);border-left:2px solid var(--accent);padding-left:.7rem;font-variation-settings:"opsz" 14,"SOFT" 40}
+.ts.no .res{border-left-color:var(--lime)}
+
+/* restoration bar */
+.restore{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.3rem 1.4rem}
+.restore h4{font-size:1rem;margin-bottom:.85rem}
+.faces{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.face{background:var(--bg);padding:.9rem .8rem;display:flex;flex-direction:column;gap:.2rem;text-align:center}
+.face b{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.face span{font-size:.84rem;color:var(--ink-2)}
+.face.done{background:var(--accent-soft)}
+.face.done b{color:var(--accent-ink)}
+.face.done span{color:var(--ink);font-weight:600}
+.restore p{margin:.95rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:66ch}
+.restore b{color:var(--ink)}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
+.card h4{font-size:1.06rem}
+.card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card.l .tag{color:var(--lime-ink)}
+.card p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:70ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 13 · Maya</span>
+    <p class="eyebrow">Antik DNA · arkeoastronomi · restorasyon</p>
+    <h1>Chichén Itzá: Test Edilebilen ve Edilemeyen</h1>
+    <p class="hero__lede">2024'te bir DNA çalışması, <strong>yüz yıllık bir anlatıyı devirdi.</strong> Aynı sitedeki başka bir ünlü iddia ise hâlâ ayakta — çünkü onu <strong>test edecek bir yöntem yok.</strong> Bu yazı, o farkın hikâyesi.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">1967</span><span class="stat__lbl">yeraltı odasının bulunduğu yıl — havaalanı pisti inşaatında</span></div>
+      <div class="stat"><span class="stat__num l">100+</span><span class="stat__lbl">odada bulunan çocuk kalıntısı</span></div>
+      <div class="stat"><span class="stat__num">%100</span><span class="stat__lbl">genomu çözülen bireylerin erkek oranı</span></div>
+      <div class="stat"><span class="stat__num l">2</span><span class="stat__lbl">tespit edilen tek yumurta ikizi çifti</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#oda">Yeraltı odası</a>
+    <a href="#dna">Genomlar ne dedi</a>
+    <a href="#bakire">Bâkire miti nereden geldi</a>
+    <a href="#ikiz">İkizler ve Popol Vuh</a>
+    <a href="#ekinoks">Ekinoks yılanı</a>
+    <a href="#restorasyon">Fotoğraftaki yüz</a>
+    <a href="#ayrim">Test edilebilirlik</a>
+    <a href="#yokolmadi">Mayalar yok olmadı</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="oda" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Buluntu</p>
+    <h2>Havaalanı pisti kazılırken bulunan oda</h2>
+  </div>
+
+  <div class="prose">
+    <p>1967'de, Kutsal Cenote'nin yaklaşık 300 metre kuzeydoğusunda bir havaalanı pisti inşa edilirken yer altında bir oda bulundu. Bu bir <b>chultún</b> — normalde içme suyu depolamak için insan eliyle oyulmuş bir sarnıç.</p>
+    <p>İçinde su yoktu. <b>Yüzden fazla küçük çocuğun</b> dağılmış kalıntıları vardı; büyük ölçüde bozulmamış ağaç kabuğu ve kireç tozu tabakasıyla örtülmüş, yanlarında hayvan kemikleri ve seramik nesneler bulunuyordu. Bitişikteki mağarada da benzer kalıntılar çıktı.</p>
+    <p>Elli yedi yıl boyunca bu kalıntıların <b>kim olduğu</b> bilinmiyordu. Çocuk iskeletlerinde cinsiyet, fiziksel inceleme ile güvenilir biçimde belirlenemez — kemiklerin cinsiyet farkını gösteren özellikleri ergenlikte oluşur.</p>
+  </div>
+</section>
+
+<section id="dna" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — 2024</p>
+    <h2>Genomlar ne dedi</h2>
+  </div>
+
+  <div class="ba">
+    <div class="b">
+      <span class="tag">2024 öncesi — yaygın inanç</span>
+      <h3>"Kutsal Cenote'ye bâkire kızlar atılırdı"</h3>
+      <p>Yüz yılı aşkın süredir tekrarlanan anlatı: Chichén Itzá'da kurban edilenler, tanrılara sunulan genç kızlardı.</p>
+      <ul>
+        <li>Popüler kültürde neredeyse evrensel</li>
+        <li>Belgesel, roman ve tur anlatımlarının standardı</li>
+        <li><b>Test edilememişti</b> — çocuk iskeletlerinde cinsiyet fiziksel olarak belirlenemiyordu</li>
+      </ul>
+    </div>
+    <div class="b after">
+      <span class="tag">2024 · Nature</span>
+      <h3>Hepsi erkekti</h3>
+      <p>Odadaki bireylerin genom verisi üretildi ve sonuç net çıktı.</p>
+      <ul>
+        <li>Ritüel olarak kurban edilen bireylerin <b>tamamı erkek</b></li>
+        <li>Aralarında <b>yakın akrabalık</b> ilişkileri var</li>
+        <li><b>İki çift tek yumurta ikizi</b> tespit edildi</li>
+        <li>Uygulama rastgele değil, <b>seçiciydi</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Dikkat: bu bulgu <b>bu odadaki topluluk</b> için kesin. Kutsal Cenote'nin kendisinden çıkarılan kalıntılar ayrı bir küme ve orada da erkek ve çocuk ağırlığına işaret eden anatomik değerlendirmeler var — ama <b>her kurban bağlamını</b> aynı sonuca genellemek doğru olmaz.</p>
+</section>
+
+<section id="bakire" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Köken</p>
+    <h2>Bâkire miti nereden geldi?</h2>
+  </div>
+
+  <div class="prose">
+    <p>Anlatının kaynağı 20. yüzyılın başında Kutsal Cenote'nin taranmasına ve o dönemin varsayımlarına uzanıyor. Cenote'den binlerce nesne ve insan kalıntısı çıkarıldı; ortaya çıkan anlatı <b>"tanrılara sunulan güzel bâkireler"</b> oldu ve hızla yerleşti.</p>
+    <p>Bu anlatının iki dayanağı vardı ve ikisi de zayıftı. Birincisi, sömürge dönemi kaynaklarındaki dolaylı ifadeler. İkincisi, kalıntıların cinsiyetinin <b>belirlenememesi</b> — yani boşluk, dönemin beklentisiyle dolduruldu.</p>
+    <p>Sonraki anatomik incelemeler zaten kuşku uyandırmıştı: kalıntıların büyük kısmı çocuktu ve daha büyük olanların çoğunun erkek olabileceği belirtiliyordu. <b>2024 çalışması kuşkuyu kesinliğe çevirdi.</b></p>
+  </div>
+
+  <p class="note l" style="margin-top:1.4rem">Buradaki kalıp bu sitede tekrar ediyor: <b>kanıtın sessiz kaldığı yerde, anlatan kişinin varsayımı devreye giriyor.</b> Woolley Ur'daki hizmetlilerin zehir içtiğini düşünmüştü; Bingham "kayıp şehir" demişti; burada da boşluğu dönemin hayal gücü doldurdu. Üçü de yeni bir yöntem gelince düzeldi.</p>
+</section>
+
+<section id="ikiz" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Anlam</p>
+    <h2>İkizler ve Popol Vuh</h2>
+  </div>
+
+  <div class="prose">
+    <p>Bulgunun en çarpıcı yanı sayılar değil, <b>örüntü</b>: kurban edilenler yakın akrabaydı ve aralarında <b>iki çift tek yumurta ikizi</b> vardı. Bu, tesadüfle açıklanamayacak kadar seçici bir tercih.</p>
+    <p>Araştırmacılar bunu Maya köken anlatısındaki <b>İkiz Kahramanlar</b> temasıyla ilişkilendiriyor — Popol Vuh'ta yeraltı dünyasına inip sınavlardan geçen ikiz kardeşler. Yani kurban seçimi, mitolojik bir örüntünün <b>ritüelde tekrarlanması</b> olabilir.</p>
+    <p>Burada bir iç bağlantı var: Popol Vuh'un fetih sonrası yazıya geçirilmiş bir metin olduğunu ve <b>tufan bölümünde kirlenme kuşkusunun yüksek olduğunu</b> daha önce yazmıştık. İkiz teması ise farklı: metnin Kolomb öncesi Maya ikonografisiyle örtüşen ve bağımsız kanıtı olan bölümlerinden. <b>Bir metnin bazı kısımlarına güvenip bazılarına güvenmemek tutarsızlık değil</b> — her bölüm kendi kanıtıyla değerlendirilir.</p>
+  </div>
+</section>
+
+<section id="ekinoks" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Test edilemeyen</p>
+    <h2>Ekinoks yılanı: etki gerçek, niyet tartışmalı</h2>
+  </div>
+
+  <div class="prose">
+    <p>El Castillo'nun kuzey merdiveninde, yılda iki kez, basamakların gölgesi <b>kıvrılan bir yılan gövdesi</b> oluşturur ve merdivenin altındaki taş yılan başına bağlanır. Gösteri gerçektir; her yıl on binlerce kişi izler.</p>
+    <p>Soru şu: <b>bu kasıtlı bir tasarım mıydı?</b></p>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Lehine</span>
+      <h4>Maya mimarisi hizalanır</h4>
+      <p>Maya yapılarında astronomik yönelim <b>yaygın ve belgeli</b> bir uygulamadır. Takvim, gök cisimleri ve mimari birbirine bağlıdır. Böyle bir etkinin tasarlanmış olması <b>hiç şaşırtıcı değil.</b></p>
+    </div>
+    <div class="card l">
+      <span class="tag">Aleyhine</span>
+      <h4>Etki tam gün-eşitliğine özgü değil</h4>
+      <p>Gölge oluşumu ekinoks gününe sıkışmış bir olay değil; <b>haftalar boyunca</b> benzer biçimde görülebiliyor. "Yılda tam iki gün" çerçevesi olduğundan keskin.</p>
+    </div>
+    <div class="card l">
+      <span class="tag">Aleyhine</span>
+      <h4>Kaynak yok, restorasyon var</h4>
+      <p>Ne Maya ne de sömürge kaynaklarında bu yapıda bir <b>ekinoks töreni</b> tarif ediliyor. Üstelik gölgeyi oluşturan <b>kuzey yüzü ağır biçimde yeniden inşa edildi.</b> Bugünkü keskinliğin ne kadarı özgün?</p>
+    </div>
+  </div>
+
+  <p class="note l" style="margin-top:1.5rem">Modern "ekinoks etkinliği" <b>20. yüzyılın son çeyreğinde</b> kitlesel bir turistik olaya dönüştü. Bu, olayın uydurma olduğu anlamına gelmiyor — ama bugün gördüğümüz <b>gösterinin çerçevesi</b> büyük ölçüde modern.</p>
+</section>
+
+<section id="restorasyon" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Görüntü</p>
+    <h2>Fotoğrafladığınız yüz yeniden inşa edildi</h2>
+  </div>
+
+  <div class="restore">
+    <h4>El Castillo — dört yüzün durumu</h4>
+    <div class="faces">
+      <div class="face done"><b>Kuzey</b><span>Tam restore</span></div>
+      <div class="face"><b>Doğu</b><span>Kısmi / harabe</span></div>
+      <div class="face"><b>Güney</b><span>Kısmi / harabe</span></div>
+      <div class="face"><b>Batı</b><span>Kısmi / harabe</span></div>
+    </div>
+    <p>İkonik görüntü — düzgün basamaklar, keskin kenarlar, temiz geometri — <b>kuzey yüzünün</b> görüntüsüdür. Diğer yüzler hâlâ büyük ölçüde harabe hâlinde. Restorasyon 1920'ler ve 30'larda başladı, sonrasında sürdü.</p>
+    <p>Bu iki şey demek. Birincisi: turizm fotoğrafçılığı <b>hep aynı yüzü</b> gösteriyor, ve o yüz yirminci yüzyıl işi. İkincisi ve daha önemlisi: <b>ekinoks gölgesinin keskinliği</b> de o yeniden inşa edilmiş basamakların ürünü. Özgün hâlin ne kadar net bir gölge verdiğini bilmiyoruz.</p>
+  </div>
+</section>
+
+<section id="ayrim" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Yöntem</p>
+    <h2>Bu yazının asıl konusu</h2>
+    <p class="kicker">Aynı sitede iki ünlü iddia. Biri yüz yıl sonra çöktü, diğeri ayakta duruyor. Fark, iddiaların doğruluğunda değil — <b>test edilebilirliğinde.</b></p>
+  </div>
+
+  <div class="test">
+    <div class="ts yes">
+      <span class="badge">Test edilebilir</span>
+      <h3>"Kurban edilenler kızdı"</h3>
+      <p>Bu bir <b>olgu iddiası</b>: bireylerin biyolojik cinsiyeti. Uygun yöntem geldiğinde kesin cevap verir.</p>
+      <p class="res">Yöntem geldi. Cevap: <b>hayır, hepsi erkekti.</b> Yüz yıllık anlatı bir yayınla kapandı.</p>
+    </div>
+    <div class="ts no">
+      <span class="badge">Test edilemez</span>
+      <h3>"Ekinoks gölgesi kasıtlıydı"</h3>
+      <p>Bu bir <b>niyet iddiası</b>: inşa edenlerin ne amaçladığı. Gölge ölçülebilir, niyet ölçülemez.</p>
+      <p class="res">Yazılı kaynak yok, restorasyon araya girdi. <b>Muhtemelen hiç kapanmayacak.</b></p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.7rem">
+    <p>Bu ayrım seride tekrar ediyor. Stonehenge'de taşların kaynağını öğrendik ama <b>neden yapıldığını</b> öğrenemedik. Göbekli Tepe'de sütunları ölçebiliyoruz, kabartmaların <b>ne anlattığını</b> okuyamıyoruz. Machu Picchu'da kimlerin yaşadığını DNA söyledi, <b>malikânenin işlevini</b> söyleyemedi.</p>
+    <p>Kural basit ve acımasız: <b>yazısız toplumlarda maddi sorular cevaplanır, niyet soruları cevaplanmaz.</b> İlerleme birinci gruptadır. Ve "çözüldü" diyen anlatılar genellikle iki grubu birbirine karıştırır.</p>
+  </div>
+</section>
+
+<section id="yokolmadi" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Düzeltme</p>
+    <h2>Ve Mayalar yok olmadı</h2>
+  </div>
+
+  <div class="prose">
+    <p>"Maya çöküşü" ifadesi, güney ova kentlerinin 9. yüzyılda terk edilmesini anlatır. Ama Chichén Itzá tam da <b>o dönemden sonra</b> yükselir — Terminal Klasik ve Erken Postklasik. Yani "Mayalar çöktü" cümlesi, çöküşten sonra parlayan bir merkezle aynı anda doğru olamaz.</p>
+    <p>Daha önemlisi: <b>Maya halkı yok olmadı.</b> Bugün Meksika, Guatemala, Belize ve Honduras'ta milyonlarca Maya yaşıyor ve otuzdan fazla Maya dili konuşuluyor. Ortadan kalkan şey belirli bir <b>siyasi düzen</b>di, bir halk değil.</p>
+    <p>"Kayıp uygarlık" çerçevesi burada da aynı işi görüyor: yaşayan insanları geçmişe kilitliyor. Angkor'da "cangılda unutulmuş tapınak", Machu Picchu'da "kayıp şehir", burada "yok olan Mayalar" — <b>üçü de aynı anlatı alışkanlığı.</b></p>
+  </div>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Sonuç</p>
+    <h2>Ne öğrendik</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının sonucu</p>
+    <h3>Bazı mitler yanlış oldukları için değil, sınanamadıkları için yaşar</h3>
+    <p>Bâkire kurban anlatısı yüz yıl boyunca ayakta kaldı — <b>kimse onu çürütemediği için değil, kimse test edemediği için.</b> Çocuk iskeletlerinde cinsiyet fiziksel olarak belirlenemiyordu; boşluk vardı ve boşluğu beklenti doldurdu. Yöntem gelince anlatı tek bir yayınla çöktü.</p>
+    <p>Ekinoks gölgesi ise başka bir kategoride. Etki gerçek, ölçülebilir, gözle görülür. Ama <b>"kasıtlı mıydı"</b> sorusu bir niyet sorusudur ve niyet ölçülemez. Bu yüzden o tartışma muhtemelen hiç kapanmayacak — ve <b>kapanmaması bir başarısızlık değil</b>, sorunun türünün sonucu.</p>
+    <p>İyi tarih yazımı, bu iki soru tipini ayırt etmekle başlar.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">10 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Neden ikizler seçildi?</p>
+      <p class="oq__a">Popol Vuh'taki İkiz Kahramanlar bağlantısı güçlü bir <b>yorum</b> ama kanıtlanmış değil. Seçimin gerekçesini anlatan bir metin yok.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Bulgu tüm kurban bağlamlarına genellenebilir mi?</p>
+      <p class="oq__a">Hayır. Sonuç <b>bu chultún topluluğu</b> için kesin. Kutsal Cenote'den çıkan kalıntılar ayrı bir küme ve ayrı değerlendirilmeli.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Ekinoks gölgesi kasıtlı mıydı?</p>
+      <p class="oq__a"><b>Bilinmiyor ve muhtemelen bilinemeyecek.</b> Yazılı kaynak yok; üstelik gölgeyi oluşturan yüz yeniden inşa edildi, bu da özgün keskinliği ölçmeyi imkânsızlaştırıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Restorasyon ne kadarını değiştirdi?</p>
+      <p class="oq__a">El Castillo'nun yalnızca <b>kuzey yüzü tam restore</b>. Diğer yüzler harabe. Yeniden inşanın geometriyi ne ölçüde keskinleştirdiği ayrıntılı olarak belgelenmiş değil.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Toltek etkisi hangi yönde?</p>
+      <p class="oq__a">Eski model Tula'dan gelen bir Toltek istilası varsayıyordu. Bugün etkinin <b>yönü ve niteliği tartışmalı</b>; ortak bir Mezoamerika üslubu olma ihtimali de masada.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Kurban bulguları <i>Nature</i>'da 2024'te yayımlanan antik genom çalışmasına dayanır; restorasyon ve arkeoastronomi değerlendirmesi ilgili literatüre ve kurumsal kayıtlara dayanır.</p>
+    <p><b>Genellemeye dikkat.</b> DNA sonuçları 1967'de bulunan chultún topluluğu için geçerlidir. Kutsal Cenote'den çıkarılan kalıntılar ayrı bir kümedir ve aynı sonuca doğrudan genellenemez; metin içinde de böyle belirtilmiştir.</p>
+    <p><b>Ekinoks bölümü bir yargı içermiyor.</b> Gölge etkisinin gerçekliği tartışmalı değildir; <b>kasıtlı olup olmadığı</b> tartışmalıdır ve bu yazı taraf tutmuyor. Restorasyonun etkiyi ne ölçüde belirginleştirdiği ayrı ve açık bir sorudur.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil · Aynı Cümlede Anılanlar · Petra · Şuşter · Stonehenge · Sümer · Angkor · Taş Tepeler · Machu Picchu.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

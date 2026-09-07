@@ -1,0 +1,420 @@
+<title>Roma: Bakılan Miras</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#EAE7E6; --surface:#F4F2F1; --surface-2:#DDD8D7;
+  --ink:#181416; --ink-2:#4E4749; --ink-3:#7B7476;
+  --rule:#C7C1C0; --rule-soft:#D7D2D1;
+  --accent:#5A1B48; --accent-ink:#451136; --accent-soft:#EBD8E4;
+  --trav:#8E8271; --trav-ink:#71675A; --trav-soft:#EDE8DF;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131113; --surface:#1B181A; --surface-2:#262124;
+    --ink:#E8E3E5; --ink-2:#ABA4A7; --ink-3:#7C7578;
+    --rule:#332C31; --rule-soft:#282227;
+    --accent:#D48FBC; --accent-ink:#E3A9CD; --accent-soft:#2C0F23;
+    --trav:#C3B69F; --trav-ink:#D4C9B5; --trav-soft:#26221A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131113; --surface:#1B181A; --surface-2:#262124;
+  --ink:#E8E3E5; --ink-2:#ABA4A7; --ink-3:#7C7578;
+  --rule:#332C31; --rule-soft:#282227;
+  --accent:#D48FBC; --accent-ink:#E3A9CD; --accent-soft:#2C0F23;
+  --trav:#C3B69F; --trav-ink:#D4C9B5; --trav-soft:#26221A;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.2rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.4rem}
+.hero h1{font-size:clamp(2.6rem,7.2vw,4.8rem);line-height:.97;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:13ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--ink-2);max-width:49ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.15rem}
+.stat__num{font-family:var(--display);font-size:1.7rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.t{color:var(--trav-ink)}
+.stat__lbl{font-size:.81rem;color:var(--ink-3);line-height:1.3}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:58ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.t{border-color:var(--trav);background:var(--trav-soft)}
+
+/* trace cards */
+.traces{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.tr{background:var(--bg);padding:1.3rem 1.4rem;display:grid;gap:.55rem 1.2rem;grid-template-columns:1fr}
+@media(min-width:840px){.tr{grid-template-columns:auto minmax(190px,.8fr) 1.8fr;align-items:start}}
+.tr__n{font-family:var(--mono);font-size:.72rem;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);padding:.16rem .42rem;align-self:start;white-space:nowrap}
+.tr__t{display:flex;flex-direction:column;gap:.2rem}
+.tr__t b{font-size:1.06rem;font-family:var(--display);font-weight:600;font-variation-settings:"SOFT" 25}
+.tr__t span{font-family:var(--mono);font-size:.67rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.tr__b p{margin:0 0 .55rem;font-size:.93rem;color:var(--ink-2);max-width:68ch}
+.tr__b p:last-child{margin-bottom:0}
+.tr__b b{color:var(--ink)}
+
+/* natural experiment */
+.exp{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:760px){.exp{grid-template-columns:1fr 1fr}}
+.ex{background:var(--bg);padding:1.35rem 1.45rem;display:flex;flex-direction:column;gap:.55rem}
+.ex .tag{font-family:var(--mono);font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.ex h3{font-size:1.1rem}
+.ex p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.ex .res{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.22rem .5rem;align-self:flex-start;margin-top:.15rem}
+.ex.keep{background:var(--accent-soft)}
+.ex.keep .tag{color:var(--accent-ink)}
+.ex.keep .res{background:var(--bg);color:var(--accent-ink)}
+.ex.drop .res{background:var(--trav-soft);color:var(--trav-ink)}
+
+/* chain */
+.chain{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem;max-width:74ch}
+.cl{background:var(--bg);padding:.9rem 1.1rem;display:grid;gap:.2rem .9rem;grid-template-columns:1fr}
+@media(min-width:640px){.cl{grid-template-columns:minmax(110px,auto) 1fr;align-items:baseline}}
+.cl b{font-family:var(--mono);font-size:.74rem;font-weight:700;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.cl span{font-size:.93rem;color:var(--ink-2)}
+.cl.tr-end{background:var(--accent-soft)}
+.cl.tr-end span{color:var(--ink);font-weight:600}
+
+/* decline table */
+.tablewrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:560px}
+caption{text-align:left;font-size:.84rem;color:var(--ink-3);padding:.75rem 1rem;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--rule)}
+td{padding:.62rem 1rem;border-bottom:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+td.k{color:var(--ink);font-weight:600;white-space:nowrap}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
+.card h4{font-size:1.06rem}
+.card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card.t .tag{color:var(--trav-ink)}
+.card p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:70ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 18 · Roma I</span>
+    <p class="eyebrow">Buz karotu · ekonometri · hukuk aktarımı</p>
+    <h1>Roma: Bakılan Miras</h1>
+    <p class="hero__lede">Roma'nın etkisi bir icat listesi değil — <strong>bugün hâlâ ölçülebilen</strong> dört iz. Ve hepsinde aynı kural işliyor: <strong>kullanılmaya devam eden kaldı, edilmeyen gitti.</strong> Tek istisna da tam olarak istemediğimiz şey.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">MÖ 1100</span><span class="stat__lbl">buz karotu kaydının başladığı yıl</span></div>
+      <div class="stat"><span class="stat__num t">117</span><span class="stat__lbl">imparatorluğun en geniş olduğu yıl — yol haritası bu tarihe ait</span></div>
+      <div class="stat"><span class="stat__num">2010–20</span><span class="stat__lbl">Roma yol yoğunluğunun hâlâ öngördüğü ekonomik etkinlik dönemi</span></div>
+      <div class="stat"><span class="stat__num t">1926</span><span class="stat__lbl">Türk Medeni Kanunu — aynı hukuk zincirinin ucu</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#iz">Dört iz</a>
+    <a href="#buz">Buzdaki ekonomi</a>
+    <a href="#kursun">Aynı verinin karanlık yüzü</a>
+    <a href="#yol">Yollar ve doğal deney</a>
+    <a href="#hukuk">Hukuk zinciri</a>
+    <a href="#dusus">Ama düşüş gerçekti</a>
+    <a href="#476">476 bir uzlaşım</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="iz" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Yaklaşım</p>
+    <h2>"Romalılar bize ne verdi" listesi yazmayacağız</h2>
+    <p class="kicker">Onun yerine dört <b>ölçülebilir iz</b>: bugün hâlâ sayı üretebilen dört kanal.</p>
+  </div>
+
+  <div class="traces">
+    <div class="tr">
+      <span class="tr__n">01</span>
+      <div class="tr__t"><b>Buzdaki kurşun</b><span>Fizik</span></div>
+      <div class="tr__b"><p>Grönland buzunda Roma dönemi gümüş-kurşun izabesinin bıraktığı kirlilik, <b>yıllık çözünürlükte</b> okunabiliyor. Ekonomi yükselince kurşun yükseliyor, kriz gelince düşüyor.</p></div>
+    </div>
+    <div class="tr">
+      <span class="tr__n">02</span>
+      <div class="tr__t"><b>Yollar</b><span>Ekonometri</span></div>
+      <div class="tr__b"><p>MS 117'deki Roma yol yoğunluğu, <b>2010–2020 arasındaki ekonomik etkinliği</b> hâlâ öngörüyor — ama yalnızca belirli bir koşulda.</p></div>
+    </div>
+    <div class="tr">
+      <span class="tr__n">03</span>
+      <div class="tr__t"><b>Hukuk</b><span>Kurumlar</span></div>
+      <div class="tr__b"><p>Justinianus'un derlemesinden bugünkü medeni kanunlara kesintisiz izlenebilir bir aktarım zinciri var — <b>Türkiye dahil.</b></p></div>
+    </div>
+    <div class="tr">
+      <span class="tr__n">04</span>
+      <div class="tr__t"><b>Dil</b><span>Kültür</span></div>
+      <div class="tr__b"><p>Latince'den türeyen diller bugün <b>yaklaşık bir milyar</b> insan tarafından konuşuluyor; bilim ve hukuk sözlüğü hâlâ Latince taşıyor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="buz" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Fizik</p>
+    <h2>Roma ekonomisi Grönland buzuna yazıldı</h2>
+  </div>
+
+  <div class="prose">
+    <p>Roma, para basmak için gümüşe muhtaçtı. Gümüş, kurşun cevherinden izabeyle çıkarılır — ve bu işlem atmosfere kurşun salar. O kurşunun bir kısmı kuzeye taşınıp <b>Grönland buzuna</b> çöktü ve orada kaldı.</p>
+    <p>2018'de yayımlanan bir çalışma, 423 metrelik bir buz karotunu <b>yıllık katman sayımıyla</b> tarihleyip MÖ 1100'den MS 800'e uzanan bir kurşun kaydı çıkardı. Sonuç: kurşun eğrisi, <b>Akdeniz ekonomisinin nabzını tutuyor.</b></p>
+    <p>Kurşun refah dönemlerinde yükseliyor — Fenike yayılması, sonra Roma. <b>Zirve imparatorluk döneminde.</b> Ve düşüşler tesadüf değil: savaşlar ve büyük salgınlar eğride görünüyor.</p>
+  </div>
+
+  <p class="note" style="margin-top:1.4rem">Bunun neden önemli olduğunu vurgulamak gerek: bu, <b>tarihsel metinlerden bağımsız</b> bir ekonomik gösterge. Tarihçilerin anlatısına, vergi kayıtlarına ya da bir yazarın abartısına dayanmıyor. <b>Fiziksel bir kayıt</b> — ve o kayıt tarihçilerin anlattığı krizlerle örtüşüyor. İki bağımsız hattın buluşması, kanıtın gücünü belirler.</p>
+</section>
+
+<section id="kursun" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Aynı veri, karanlık yüz</p>
+    <h2>Aynı kurşun bir kıtayı zehirledi</h2>
+  </div>
+
+  <div class="prose">
+    <p>Buz karotu Roma'nın refahını ölçüyor. Sonraki çalışmalar aynı verinin <b>başka bir şeyi</b> daha ölçtüğünü gösterdi: Roma dönemi madencilik ve izabesinin yaydığı kurşun, <b>Avrupa çapında atmosferik kirliliğe</b> ve yükselmiş kan kurşun düzeylerine yol açtı.</p>
+    <p>Ve kurşun bir nörotoksindir. Yeterli düzeyde, özellikle çocuklarda <b>bilişsel gerilemeye</b> neden olur. Yani imparatorluğun ekonomik zirvesi, aynı zamanda bir kıta ölçeğinde ölçülebilir bir <b>zehirlenme</b> bırakmış.</p>
+    <p>Bu, "Roma bize ne verdi" sorusunun rahatsız edici cevabı. Ve bugüne bir yankısı var: <b>bir ekonominin başarı göstergesi ile bıraktığı hasar, çoğu zaman aynı eğridir.</b></p>
+  </div>
+
+  <p class="note t" style="margin-top:1.4rem"><b>Ölçek uyarısı:</b> Roma dönemi kurşun düzeyleri, modern sanayi çağının çok altındadır. Bulgunun anlamı "antik dünya bugünden kirliydi" değil — <b>endüstri öncesi bir ekonominin bile kıta ölçeğinde iz bırakabildiğidir.</b> Bilişsel etkinin büyüklüğü ise tahmine dayanır ve tartışmalıdır.</p>
+</section>
+
+<section id="yol" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Ekonometri</p>
+    <h2>Yollar: iki bin yıllık bir kararın bugünkü izi</h2>
+    <p class="kicker">Ve bu çalışmanın içinde <b>doğal bir deney</b> var — asıl güçlü tarafı o.</p>
+  </div>
+
+  <div class="prose">
+    <p>Bir araştırma ekibi, imparatorluğun en geniş olduğu <b>MS 117</b> tarihli yol ağını haritalayıp bugünkü verilerle karşılaştırdı. Bulgu: Roma yol yoğunluğunun yüksek olduğu yerlerde bugün de <b>yol yoğunluğu yüksek</b>, ve <b>2010–2020 ekonomik etkinliği</b> daha fazla.</p>
+    <p>İlk itiraz açık: <b>Romalılar zaten iyi yerlere yol yapmıştır.</b> Yani bağlantı yolun kendisinden değil, konumun avantajından geliyor olabilir. Bu ciddi bir itiraz ve çalışmanın cevabı zarif.</p>
+  </div>
+
+  <div class="exp">
+    <div class="ex keep">
+      <span class="tag">Deney grubu</span>
+      <h3>Avrupa — tekerlek kullanımı sürdü</h3>
+      <p>Yollar kullanılmaya devam etti, dolayısıyla <b>bakıldı.</b> Ortaçağda pazar kasabaları bu ağ üzerinde oluştu ve ağı canlı tuttu.</p>
+      <span class="res">Roma yolları bugünkü refahı öngörüyor</span>
+    </div>
+    <div class="ex drop">
+      <span class="tag">Kontrol grubu</span>
+      <h3>Tekerleğin terk edildiği bölgeler</h3>
+      <p>Bazı bölgelerde tekerlekli araç kullanımı birinci binyıldan modern döneme kadar <b>bırakıldı</b> — taşımacılık deve kervanlarına geçti. Yollar aynı yerde duruyordu ama <b>bakılmadı.</b></p>
+      <span class="res">Bağlantı anlamsızlığa kadar zayıflıyor</span>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.7rem">
+    <p>Kontrol grubu meseleyi çözüyor. <b>Aynı imparatorluk, aynı mühendislik, aynı güzergâh seçimi</b> — ama tekerleğin bırakıldığı yerde kalıcılık kayboluyor. Demek ki etkiyi taşıyan şey Romalıların yer seçimi değil, <b>sonraki bin beş yüz yıl boyunca birinin o yolu kullanmaya ve onarmaya devam etmesi.</b></p>
+    <p>Bu bulgu, bu serideki iki yazıyla doğrudan aynı şeyi söylüyor. <b>Angkor'da</b> su ağı çökmüştü çünkü onu her yıl temizleyen örgütlenme dağılmıştı. <b>İskenderiye'de</b> metinler kaybolmuştu çünkü kimse yeniden kopyalamamıştı. Burada da aynı: <b>altyapı bir nesne değil, bir alışkanlıktır.</b></p>
+  </div>
+</section>
+
+<section id="hukuk" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Kurumlar</p>
+    <h2>Hukuk: kesintili ama izlenebilir bir zincir</h2>
+    <p class="kicker">Roma'nın en derin mirası muhtemelen bu — ve aktarımı düz bir çizgi değil, <b>kaybolup yeniden bulunan</b> bir hat.</p>
+  </div>
+
+  <div class="chain">
+    <div class="cl"><b>529–534</b><span>Justinianus, Roma hukukunu derletiyor: <b>Corpus Juris Civilis.</b> Yüzyıllık içtihat tek bir bütünde toplanıyor.</span></div>
+    <div class="cl"><b>6.–11. yy</b><span>Batı'da metin büyük ölçüde <b>kullanım dışı</b> kalıyor. Bilinmiyor değil ama işleyen hukuk değil.</span></div>
+    <div class="cl"><b>~1070'ler</b><span>İtalya'da <b>Digesta</b> nüshası yeniden bulunuyor ve incelenmeye başlanıyor.</span></div>
+    <div class="cl"><b>1088</b><span><b>Bologna</b>'da hukuk öğretimi kurumsallaşıyor — Avrupa'nın ilk üniversitesi sayılan yapı buradan doğuyor.</span></div>
+    <div class="cl"><b>12.–18. yy</b><span>Üniversiteler üzerinden yayılıyor; Avrupa'da ortak bir hukuk dili (<i>ius commune</i>) oluşuyor.</span></div>
+    <div class="cl"><b>1804 · 1900</b><span>Fransız ve Alman medeni kanunları bu gelenekten kodlanıyor; sömürge ve model yoluyla dünyaya yayılıyor.</span></div>
+    <div class="cl tr-end"><b>1926</b><span>Türk Medeni Kanunu, İsviçre Medeni Kanunu esas alınarak kabul ediliyor — <b>aynı zincirin ucu.</b></span></div>
+  </div>
+
+  <div class="prose" style="margin-top:1.7rem">
+    <p>Zincirin en öğretici yeri <b>ortadaki boşluk.</b> Metin beş yüz yıl boyunca fiilen işlemedi. Yollar gibi o da <b>bakımsız kaldı</b> — ve yollardan farklı olarak, geri döndü. Çünkü bir kopyası ayakta kalmıştı ve birileri onu <b>yeniden okumaya, öğretmeye ve uygulamaya</b> karar verdi.</p>
+    <p>Yani hukuk mirası Roma'dan bize düz bir çizgiyle gelmedi. <b>Kaybolup yeniden seçildi.</b> Ve bu seçim 11. yüzyılda Bologna'da yapıldı, MS 534'te Konstantinopolis'te değil.</p>
+  </div>
+</section>
+
+<section id="dusus" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Dürüstlük payı</p>
+    <h2>Ama Batı'da düşüş gerçekti</h2>
+    <p class="kicker">Son yıllarda "çöküş yoktu, dönüşüm vardı" yaklaşımı yaygınlaştı. Maddi kanıt bu yumuşatmayı <b>tam olarak desteklemiyor.</b></p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Batı Roma topraklarında 5.–7. yüzyıllarda ölçülebilen maddi gerileme göstergeleri.</caption>
+      <thead><tr><th>Gösterge</th><th>Ne oluyor</th><th>Ne anlama geliyor</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Batık gemi sayısı</td><td>Akdeniz'de MÖ 1. – MS 1. yüzyıl zirvesinden sonra belirgin düşüş</td><td>Ticaret hacminin daralması</td></tr>
+        <tr><td class="k">Çömlek kalitesi</td><td>Standart, çarkta üretilmiş kaliteli sofra takımı ortadan kalkıyor; yer yer <b>çarksız</b> el yapımına dönülüyor</td><td>Uzmanlaşmış üretim ve dağıtım ağının çözülmesi</td></tr>
+        <tr><td class="k">Çatı kiremidi</td><td>Bazı bölgelerde tamamen kayboluyor</td><td>Sıradan yapı standardının düşmesi</td></tr>
+        <tr><td class="k">Hayvan kemiği boyutu</td><td>Sığır boyutlarında küçülme</td><td>Hayvancılık ve besleme düzeyinde gerileme</td></tr>
+        <tr><td class="k">Kurşun kirliliği</td><td>Roma düzeyine dönüş yüzyıllar sürüyor</td><td>Madencilik ve para ekonomisinin daralması</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.7rem">
+    <p>Bu göstergeler <b>metinlere değil nesnelere</b> dayanıyor — kazıda sayılan çömlek parçası, ölçülen kemik, tarihlenen batık. Ve hepsi aynı yöne işaret ediyor: Batı'da, özellikle <b>Britanya gibi uçlarda</b>, gerileme sert oldu.</p>
+    <p>Bu, ilerideki bir tartışma için de not düşülmeli: <b>"Karanlık Çağ diye bir şey yoktu" cümlesi olduğu gibi doğru değil.</b> Maddi bir çöküş yaşandı ve ölçülebiliyor. Ayrı ve ondan bağımsız bir soru ise, o çöküşün <b>sebebinin ne olduğu</b> ve sonraki bin yılın "karanlık" sayılıp sayılamayacağıdır. O tartışmayı bu serinin ilerideki yazısında ele alacağız — <b>ama iki soruyu birbirine karıştırmadan.</b></p>
+  </div>
+</section>
+
+<section id="476" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Çerçeve</p>
+    <h2>"Roma 476'da yıkıldı" bir uzlaşımdır</h2>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Ne oldu</span>
+      <h4>Batı'da imparator kaldırıldı</h4>
+      <p>476'da Batı'daki son imparator tahttan indirildi. Bu <b>gerçek bir olay</b>, ama dönemin insanları için "bir uygarlığın sonu" değil — Batı'da imparatorluk zaten uzun süredir parçalanıyordu.</p>
+    </div>
+    <div class="card t">
+      <span class="tag">Ne olmadı</span>
+      <h4>Doğu bin yıl daha sürdü</h4>
+      <p>Doğu Roma İmparatorluğu <b>1453'e kadar</b> yaşadı. Kendilerine "Romalı" diyorlardı, hukukları Roma hukukuydu. 476'yı "Roma'nın sonu" saymak, <b>bin yılı silmek</b> demek.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Neden böyle</span>
+      <h4>Batı merkezli bir tarih yazımı</h4>
+      <p>Tarih ders kitaplarındaki 476 kesiği, <b>Batı Avrupa'dan bakan</b> bir bölümlemedir. Kullanışlıdır ama nötr değildir — hangi bölgeyi merkeze aldığınıza göre "son" başka bir tarihe düşer.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Sonuç</p>
+    <h2>Ne öğrendik</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının sonucu</p>
+    <h3>Roma'dan kalan şey, birilerinin bakmaya devam ettiği şeydir</h3>
+    <p>Yollar kaldı — <b>tekerlek kullanılan yerde.</b> Hukuk kaldı — <b>biri onu yeniden okuyup öğrettiği için.</b> Dil kaldı — <b>insanlar konuşmayı sürdürdüğü için.</b> Üçünde de belirleyici olan Roma'nın yaptığı değil, <b>sonrakilerin sürdürdüğü.</b></p>
+    <p>Ve bir istisna var, ki yazının en sert ironisi: <b>hiç kimsenin bakımına ihtiyaç duymadan kalan tek şey, kurşun.</b> Grönland buzunda iki bin yıldır duruyor, kimse onu korumadı, kimse onu istemedi. <b>Bir uygarlığın en dayanıklı izi, bıraktığı zehir oldu.</b></p>
+    <p>Bu, serinin tekrar eden dersinin en keskin hâli: <b>kalıcılık bir nesnenin özelliği değil, bir ilişkinin sonucudur.</b> Angkor'un kanalları, İskenderiye'nin metinleri, Roma'nın yolları — üçü de aynı sebepten kaldı ya da gitti.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Kurşun eğrisi ekonomiyi ne kadar iyi temsil ediyor?</p>
+      <p class="oq__a">Gümüş üretimiyle ilişkisi güçlü, ama <b>ekonominin tamamı değil</b> — tarım, tekstil ve hizmetler bu kayıtta görünmez. Gösterge güçlü ama kısmi.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Kurşunun bilişsel etkisi ne kadardı?</p>
+      <p class="oq__a">Kan kurşun düzeylerinin yükseldiği ölçüme dayanıyor; <b>bilişsel etkinin büyüklüğü modellenmiş bir tahmindir</b> ve tartışmalıdır.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Yollar–refah bağı nedensel mi?</p>
+      <p class="oq__a">Doğal deney (tekerleğin bırakıldığı bölgeler) nedenselliği güçlü biçimde destekliyor. Ama tekerleğin bırakılması da <b>rastgele bir olay değil</b> — o bölgelerin başka farkları da olabilir.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Batı'daki düşüş her yerde aynı mıydı?</p>
+      <p class="oq__a">Hayır. <b>Britanya'da sert, İtalya ve Akdeniz'de daha ılımlı.</b> Tek bir "Batı" eğrisi çizmek yanıltıcı olur.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Hukuk zincirinde ne kadarı Roma, ne kadarı sonraki yorum?</p>
+      <p class="oq__a">Bologna'dan sonraki yüzyıllar metni yalnızca aktarmadı, <b>yeniden yorumladı.</b> Bugünkü medeni hukuk Roma hukuku değil, <b>Roma hukukundan türetilmiş</b> bir yapıdır.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Buz karotu bulguları PNAS'ta yayımlanan kurşun kirliliği çalışmalarına; yol–refah bulgusu <i>Journal of Comparative Economics</i>'te yayımlanan çalışmaya; maddi gerileme göstergeleri Geç Antikçağ arkeolojisi literatürüne dayanır.</p>
+    <p><b>Bu yazı ne övgü ne yergidir.</b> Aynı buz karotu hem Roma'nın ekonomik zirvesini hem de bıraktığı kıta ölçekli kurşun kirliliğini kaydeder; ikisi de metne alınmıştır. Kurşunun bilişsel etkisine dair sonuç modellenmiş bir tahmindir ve tartışmalıdır; Roma dönemi düzeyleri modern sanayi çağının çok altındadır.</p>
+    <p><b>Maddi gerileme bölümü bilerek konmuştur.</b> "Çöküş yoktu, dönüşüm vardı" yaklaşımı bazı yönlerden düzeltici olsa da, Batı'daki maddi göstergeler gerçek bir düşüş gösterir — ve bu, bu serinin ileride ele alacağı "Karanlık Çağ" tartışmasından <b>ayrı</b> bir sorudur.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil · Aynı Cümlede Anılanlar · Petra · Şuşter · Stonehenge · Sümer · Angkor · Taş Tepeler · Machu Picchu · Chichén Itzá · Kapadokya · Persepolis · İskenderiye · Milanković Döngüleri.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

@@ -1,0 +1,442 @@
+<title>Petra: Görünmeyen Şehir</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E9E5E1; --surface:#F4F0EC; --surface-2:#DED8D3;
+  --ink:#181413; --ink-2:#4F4744; --ink-3:#7B7370;
+  --rule:#C8C0BA; --rule-soft:#D7D0CA;
+  --accent:#9E4155; --accent-ink:#7E2E40; --accent-soft:#F0DDE2;
+  --water:#3F6474; --water-ink:#2C4B58; --water-soft:#DAE4E8;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141111; --surface:#1C1817; --surface-2:#272120;
+    --ink:#E7E2DF; --ink-2:#ABA3A0; --ink-3:#7E7673;
+    --rule:#332C2B; --rule-soft:#282221;
+    --accent:#E08A9C; --accent-ink:#EDA5B4; --accent-soft:#33161E;
+    --water:#8FB6C4; --water-ink:#A9CAD5; --water-soft:#16242A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141111; --surface:#1C1817; --surface-2:#272120;
+  --ink:#E7E2DF; --ink-2:#ABA3A0; --ink-3:#7E7673;
+  --rule:#332C2B; --rule-soft:#282221;
+  --accent:#E08A9C; --accent-ink:#EDA5B4; --accent-soft:#33161E;
+  --water:#8FB6C4; --water-ink:#A9CAD5; --water-soft:#16242A;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1.05em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);
+  background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.6rem,7.2vw,4.9rem);line-height:.97;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:13ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.42;color:var(--ink-2);max-width:47ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(158px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:1rem 1.15rem;display:flex;flex-direction:column;gap:.2rem}
+.stat__num{font-family:var(--display);font-size:1.8rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.w{color:var(--water-ink)}
+.stat__lbl{font-size:.83rem;color:var(--ink-3);line-height:1.35}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.75rem,6vw,4.5rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.75rem}
+.sec__head h2{font-size:clamp(1.7rem,3.4vw,2.45rem);line-height:1.08}
+.sec__head .kicker{font-size:1.02rem;color:var(--ink-2);max-width:56ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.9rem 1.15rem;font-size:.94rem;color:var(--ink);max-width:var(--measure)}
+.note.w{border-color:var(--water);background:var(--water-soft)}
+
+/* seen vs real */
+.svr{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:720px){.svr{grid-template-columns:1fr 1fr}}
+.sv{background:var(--bg);padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.6rem}
+.sv h3{font-size:1.16rem}
+.sv .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.sv p{margin:0;font-size:.95rem;color:var(--ink-2)}
+.sv ul{margin:.15rem 0 0;padding-left:1.05rem;font-size:.92rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.32rem}
+.sv.real{background:var(--water-soft)}
+.sv.real .tag{color:var(--water-ink)}
+
+/* flow diagram */
+.flow{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.4rem 1.5rem;overflow-x:auto}
+.flow h4{font-size:1.02rem;margin-bottom:.3rem}
+.flow .sub{font-size:.88rem;color:var(--ink-3);margin:0 0 1.2rem;max-width:64ch}
+.pipes{display:flex;flex-direction:column;gap:1.15rem;min-width:520px}
+.pipe{display:grid;grid-template-columns:132px 1fr;gap:.5rem .9rem;align-items:center}
+.pipe__lbl{display:flex;flex-direction:column;gap:.05rem;text-align:right}
+.pipe__lbl b{font-size:.9rem;font-weight:700}
+.pipe__lbl span{font-family:var(--mono);font-size:.68rem;color:var(--ink-3)}
+.tube{position:relative;height:44px;border:2px solid var(--rule);background:var(--bg);display:flex;align-items:flex-end;overflow:hidden}
+.fill{width:100%;background:var(--water-soft);border-top:2px solid var(--water)}
+.tube.full .fill{height:100%;background:var(--accent-soft);border-top-color:var(--accent)}
+.tube.part .fill{height:62%}
+.tube.crit .fill{height:52%}
+.tube__note{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.04em;color:var(--ink-2)}
+.tube.full .tube__note{color:var(--accent-ink)}
+.tube.crit .tube__note{color:var(--water-ink)}
+.flow .legend{margin:1.1rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:66ch}
+.flow .legend b{color:var(--ink)}
+
+/* three systems */
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(245px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
+.card h4{font-size:1.08rem}
+.card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--water-ink)}
+.card p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+/* timeline */
+.tl{display:grid;grid-template-columns:minmax(96px,auto) 1fr;gap:0 1.4rem;margin-top:1.5rem;max-width:840px}
+.tl__date{font-family:var(--mono);font-size:.8rem;font-weight:600;color:var(--ink-2);padding:.8rem 0 .1rem;text-align:right;font-variant-numeric:tabular-nums;border-top:1px solid var(--rule-soft)}
+.tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.4rem;position:relative}
+.tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.tl__body.w::before{background:var(--water)}
+.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
+
+.verdict{border:1px solid var(--water);background:var(--water-soft);padding:1.7rem 1.8rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem;max-width:74ch}
+.verdict .eyebrow{color:var(--water-ink)}
+.verdict h3{font-size:1.42rem}
+.verdict p{margin:0}
+.verdict b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.15rem 1.3rem;display:grid;gap:.3rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1.02rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+.foot{padding-block:2.5rem 3.5rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.88rem;color:var(--ink-3);max-width:70ch;margin:0 0 .7rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 06 · Nabatiler</span>
+    <p class="eyebrow">Hidrolik mühendislik · kayaya oyma mimari · ticaret yolları</p>
+    <h1>Petra: Görünmeyen Şehir</h1>
+    <p class="hero__lede">Petra'nın fotoğrafı çekilen yüzü bir <strong>mezarlıktır</strong>. Asıl şehir ayakta değil — ve asıl başarısı da hiç görünmüyor: yılda 150 milimetre yağış alan bir çölde <strong>otuz bin kişiyi yaşatan bir su sistemi.</strong></p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num w">150 mm</span><span class="stat__lbl">yıllık yağış — küçük bir köye ancak yeter</span></div>
+      <div class="stat"><span class="stat__num">~30.000</span><span class="stat__lbl">kesintisiz su verilen nüfus (tahmin)</span></div>
+      <div class="stat"><span class="stat__num w">~2 km</span><span class="stat__lbl">Siq boyunca uzanan seramik boru hattı</span></div>
+      <div class="stat"><span class="stat__num w">~10.000 m³</span><span class="stat__lbl">Zurraba deposunun kapasitesi</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#mezarlik">Mezarlığı şehir sanmak</a>
+    <a href="#hazne">Hazine bir mezar</a>
+    <a href="#su">Asıl başarı</a>
+    <a href="#yaridolu">Yarı dolu boru</a>
+    <a href="#uc-sistem">Üç sistem</a>
+    <a href="#sel">Sel</a>
+    <a href="#teorisiz">Teorisiz mühendislik</a>
+    <a href="#neden">Neden burada</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="mezarlik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Bakış hatası</p>
+    <h2>Ziyaretçilerin çoğu nekropolü gezip şehri gördüğünü sanıyor</h2>
+    <p class="kicker">Petra "kayalara oyulmuş şehir" diye bilinir. Oyulmuş olan kısım büyük ölçüde şehir değil.</p>
+  </div>
+
+  <div class="svr">
+    <div class="sv">
+      <span class="tag">Görülen — ve fotoğraflanan</span>
+      <h3>Kayaya oyulmuş cepheler</h3>
+      <p>Kum taşı kayalıklara oyulmuş, sütunlu, alınlıklı anıtsal yüzler. Bunlar büyük ölçüde <b>mezar</b>. Bazıları tören ve anma mekânı; bir kısmı da dinsel işlevli.</p>
+      <ul>
+        <li>Kayaya oyulanların ezici çoğunluğu <b>ölülere</b> ait</li>
+        <li>Kaya yumuşak kum taşı — oyulabilir ama aşınır</li>
+        <li>Cepheler ayakta çünkü <b>kayanın kendisi</b> ayakta</li>
+      </ul>
+    </div>
+    <div class="sv real">
+      <span class="tag">Olan — ve büyük ölçüde yok olan</span>
+      <h3>Serbest duran bir şehir</h3>
+      <p>Petra'nın yaşanan kısmı normal binalardan oluşuyordu: sütunlu cadde, tapınaklar, çarşı, evler, hamamlar, tiyatro. Bunlar <b>inşa edildi</b>, oyulmadı — ve depremler ile taş yağmasıyla büyük ölçüde gitti.</p>
+      <ul>
+        <li>Şehir merkezi vadi tabanında, cephelerin arasında değil</li>
+        <li>Ayakta kalanlar temeller ve birkaç sütun</li>
+        <li>Şehrin nüfusu binlerce; mezar cepheleri ise seçkinlere ait</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Bu, sitenin daha önce kurduğu <b>hayatta kalma yanlılığının</b> ders kitabı örneği: karşılaştırdığımız şey inşa edilenler değil, çürümeyenler. Petra'da mezarlar ayakta çünkü kayanın içindeler; şehir gitti çünkü üstüne inşa edilmişti.</p>
+</section>
+
+<section id="hazne" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Ad</p>
+    <h2>"Hazine" bir hazine değil</h2>
+  </div>
+
+  <div class="prose">
+    <p>Petra'nın en ünlü yapısı <b>El-Hazne</b> — "Hazine" — adıyla bilinir. Ad yapının işleviyle ilgili değil: bir Bedevi anlatısına göre cephenin tepesindeki taş urnanın içine bir firavun hazinesi saklanmıştı. Urnadaki <b>kurşun izleri</b> o hazineyi düşürmeye çalışanlardan kalma.</p>
+    <p>Yapı gerçekte bir <b>anıt mezardır</b>, muhtemelen kral IV. Aretas için. Yani dünyanın en çok fotoğraflanan "hazine binası", bir mezar — ve adı, onu yağmalamaya çalışan insanların ürettiği bir efsaneden geliyor.</p>
+    <p>Bu ad hikâyesi tek başına küçük bir ayrıntı gibi görünebilir. Ama Petra'ya dair yaygın bilginin ne kadarının <b>ziyaretçilerin ürettiği anlatıya</b> dayandığını gösteriyor — ve bu kalıp, sitenin geri kalanında da işliyor.</p>
+  </div>
+</section>
+
+<section id="su" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Asıl mesele</p>
+    <h2>Yılda 150 milimetre yağışta otuz bin kişi</h2>
+    <p class="kicker">Petra'nın gerçek başarısı taş oymacılığı değil. Onu ayakta tutan şey, görünmeyen ve büyük ölçüde toprak altında olan bir su altyapısıydı.</p>
+  </div>
+
+  <div class="prose">
+    <p>Rakamı bir yere oturtalım: <b>yılda 150 mm yağış</b>, küçük bir köyü zorlanarak besleyecek miktardır. Konya Ovası'nın yarısı, İstanbul'un beşte biri kadar. Petra bu iklimde on binlerce kişilik, kesintisiz su verilen bir kent yönetti — üstelik su yalnızca içme için değil, hamamlar ve süs havuzları için de kullanılıyordu.</p>
+    <p>Bunu mümkün kılan şey <b>tek bir icat değil</b>, birlikte çalışan bir sistemdi: uzaktaki kaynaklardan boru hatları, mevsimlik yağmuru yakalayan kanallar, yüzlerce sarnıç, barajlar ve seli şehirden uzaklaştıran bypass tünelleri. Yani hem <b>getirme</b>, hem <b>depolama</b>, hem de <b>fazlasından korunma</b> aynı anda çözülmüştü.</p>
+  </div>
+</section>
+
+<section id="yaridolu" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Kilit fikir</p>
+    <h2>Boruyu neden bilerek yarı dolu akıttılar?</h2>
+    <p class="kicker">Petra'nın hidrolik mühendisliğinin en zarif kararı, sezgiye ters gelen bir tercihte saklı.</p>
+  </div>
+
+  <div class="prose">
+    <p>Ain Musa kaynağından şehre uzanan seramik boru hattı, Siq'in kuzey duvarı boyunca yükseltilmiş bir kanalda taşınıyordu ve <b>iki kilometreden uzundu</b>. İlk sezgi şu olur: boruyu tıka basa doldur, maksimum su gelsin.</p>
+    <p>Nabatiler bunu yapmadı — ve haklıydılar.</p>
+  </div>
+
+  <div class="flow">
+    <h4>Aynı boru, üç farklı akış rejimi</h4>
+    <p class="sub">Su seviyesi ve eğim değiştikçe borunun içindeki davranış değişir. Nabati hattı, farklı bölümlerde farklı rejimler kullanacak biçimde tasarlanmıştı.</p>
+
+    <div class="pipes">
+      <div class="pipe">
+        <div class="pipe__lbl"><b>Tam dolu</b><span>basınçlı</span></div>
+        <div class="tube full"><div class="fill"></div><span class="tube__note">her ekten sızıntı · basınç dalgalanması</span></div>
+      </div>
+      <div class="pipe">
+        <div class="pipe__lbl"><b>Yarı dolu</b><span>serbest yüzeyli</span></div>
+        <div class="tube part"><div class="fill"></div><span class="tube__note">basınç atmosferik · ek yerleri güvende</span></div>
+      </div>
+      <div class="pipe">
+        <div class="pipe__lbl"><b>Kritik akış</b><span>Fr = 1</span></div>
+        <div class="tube crit"><div class="fill"></div><span class="tube__note">verilen eğimde maksimum debi</span></div>
+      </div>
+    </div>
+
+    <p class="legend"><b>Mantık şu:</b> tam dolu bir boru basınç altındadır ve her ek yerinden sızar — üstelik seramik borularda basınç dalgalanması eki patlatır. Yarı dolu akan boruda ise içerideki basınç <b>atmosferik</b> kalır; ek yerleri zorlanmaz, sızıntı düşer. Ama sadece azaltmakla kalmadılar: eğimi ve su seviyesini, akışın <b>kritik noktaya</b> geldiği yerde tuttular — o noktada verilen eğimden elde edilebilecek <b>en yüksek debi</b> alınır. Yani hem sızıntıyı en aza indirip hem de taşınan suyu en üste çıkardılar.</p>
+  </div>
+
+  <p class="note w" style="margin-top:1.5rem">Bu değerlendirmenin kaynağı önemli: hattın iç davranışı doğrudan ölçülmedi, <b>hesaplamalı akışkanlar dinamiği (CFD)</b> ile yeniden kuruldu. Yani elimizdeki şey bir model — güçlü bir model, ama Nabati mühendisin zihnine doğrudan erişim değil.</p>
+</section>
+
+<section id="uc-sistem" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Çeşitlilik</p>
+    <h2>Üç hat, üç ayrı çözüm</h2>
+    <p class="kicker">Aynı şablonu tekrar etmediler. Her hat kendi arazi koşuluna göre farklı bir hidrolik teknoloji kullanıyor.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <span class="tag">Siq hattı</span>
+      <h4>Ain Musa'dan şehre</h4>
+      <p>Kaynaktan gelen suyu, kanyonun kuzey duvarı boyunca yükseltilmiş kanalda taşıyıp Sütunlu Cadde'ye ulaştırır. Uzunluğu iki kilometreyi aşar ve kaynağın <b>debisinin ancak bir bölümünü</b> alacak şekilde boyutlandırılmıştır — fazlası hattı zorlardı.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Ain Braq hattı</span>
+      <h4>Farklı arazi, farklı rejim</h4>
+      <p>Ayrı bir kaynak, ayrı bir güzergâh ve akış kontrolü için farklı bir çözüm. Üç hattın <b>aynı sorunu üç farklı yöntemle</b> çözmesi, tek bir usta reçetesinin kopyalanmadığını gösteriyor.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Wadi Mataha hattı</span>
+      <h4>Tasarım kararları izlenebiliyor</h4>
+      <p>Bu hat üzerinde yapılan çalışma, mühendislerin <b>hangi seçenekler arasında karar verdiğini</b> yeniden kurmaya çalışıyor: eğim, kesit, malzeme ve sızıntı arasında yapılan ödünleşimler.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:1.75rem">
+    <p>Depolama tarafında ise ölçek büyüyor: <b>Zurraba deposu tek başına yaklaşık 10.000 m³</b> kapasiteli. Bunun yanında şehre dağılmış yüzlerce sarnıç, kayaya oyulmuş su hazneleri ve yamaçlardaki yağmur toplama kanalları var. Sistem, yağışın olduğu kısa mevsimde <b>alabildiğince çok yakalayıp</b> yılın geri kalanına yaymak üzerine kurulu.</p>
+  </div>
+</section>
+
+<section id="sel" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Ters problem</p>
+    <h2>Susuz bir şehrin asıl tehlikesi: fazla su</h2>
+  </div>
+
+  <div class="prose">
+    <p>Petra'nın girişi olan <b>Siq</b>, yer yer birkaç metreye daralan, yüksek duvarlı bir yarıktır. Kışın ani sağanaklar yukarıdaki geniş havzadan toplanan suyu bu dar kanala boşaltır. Yılda 150 mm yağış alan bir yer, o yağışın büyük kısmını <b>birkaç saatte</b> alabilir.</p>
+    <p>Nabatiler bu yüzden yalnızca su toplamadı, <b>suyu şehirden uzaklaştırdı</b>: Siq girişine baraj yapıp seli yan bir vadiye çeviren bir <b>bypass tüneli</b> açtılar. Yani aynı mühendislik zihniyeti, hem kıtlığı hem de fazlalığı çözüyordu.</p>
+    <p>Bu tasarımın ne kadar gerekli olduğunu modern bir olay gösterdi: <b>1963'te Siq'te yaşanan bir ani sel</b> çok sayıda ziyaretçinin ölümüne yol açtı. Sonrasında girişteki baraj yeniden inşa edildi — <b>Nabati barajının temeli üzerine.</b> İki bin yıl sonra, aynı sorun için aynı çözüm yeniden kuruldu.</p>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Bir mühendislik çözümünün ne kadar doğru olduğunu ölçmenin en sert yolu budur: <b>terk edildiğinde sorun geri döner, ve çözüm aynı yerde yeniden kurulur.</b></p>
+</section>
+
+<section id="teorisiz" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Nasıl</p>
+    <h2>Akışkanlar mekaniği teorisi olmadan optimuma yaklaşmak</h2>
+  </div>
+
+  <div class="prose">
+    <p>Yukarıda anlatılan "kritik akış" kavramı modern hidroliğin diliyle tanımlanır ve dayandığı ölçüt <b>19. yüzyılda</b> formüle edilmiştir. Nabatilerin böyle bir teorisi yoktu. Boyutsuz sayı yoktu, denklem yoktu, laboratuvar yoktu.</p>
+    <p>O hâlde nasıl?</p>
+    <p><b>Yineleyerek.</b> Bir hat döşenir, sızıntı görülür, eğim değiştirilir, kesit daraltılır, tekrar bakılır. Bir kuşak boyunca bu döngü yeterince tekrarlanırsa, çözüm teorik optimuma <b>yaklaşır</b> — çünkü arazi ve malzeme, işe yaramayan her denemeyi acımasızca eler. Aynı süreç Kapadokya'nın havalandırma bacalarında da işledi: kimse baca etkisini hesaplamadı, cereyanı hissedip devam etti.</p>
+    <p>Bu, "antik insanlar bizim bilmediğimiz bir bilgiye sahipti" demek <b>değil</b>. Tam tersini söylüyor: teorisiz ama disiplinli deneme, uzun sürede teorinin vardığı yere varabilir. Etkileyici olan gizli bilgi değil, <b>biriken emek.</b></p>
+  </div>
+</section>
+
+<section id="neden" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Bağlam</p>
+    <h2>Neden orada bir şehir vardı</h2>
+  </div>
+
+  <div class="tl">
+    <div class="tl__row">
+      <div class="tl__date">MÖ 4.–1. yy</div>
+      <div class="tl__body"><h4>Nabatiler ticaret yollarını tutuyor</h4><p>Arabistan'dan gelen tütsü ve baharat yolları üzerinde konumlanan Nabatiler, kervan ticaretinin denetiminden zenginleşti.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MÖ 1. yy</div>
+      <div class="tl__body w"><h4>Su altyapısı ölçek kazanıyor</h4><p>Boru hatları, barajlar ve depolar bugün bildiğimiz sistemi oluşturuyor. <b>Suyu yönetebilmek</b>, çölün ortasında bir başkent kurabilmenin ön koşulu.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MS 1. yy</div>
+      <div class="tl__body"><h4>Doruk</h4><p>El-Hazne'nin de içinde olduğu anıtsal cephelerin büyük kısmı bu döneme ait.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MS 106</div>
+      <div class="tl__body"><h4>Roma ilhakı</h4><p>Nabati Krallığı Roma'nın Arabia Petraea eyaletine katılıyor. Şehir bir süre daha canlı kalıyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">MS 363</div>
+      <div class="tl__body"><h4>Büyük deprem</h4><p>Bölgeyi vuran deprem yapıların önemli kısmını yıkıyor. Ticaret yolları da zamanla deniz rotalarına kayıyor.</p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">1812</div>
+      <div class="tl__body"><h4>Burckhardt Avrupa'ya haber veriyor</h4><p>Sıkça "yeniden keşif" denir. Bölgedeki Bedeviler siteyi biliyor ve kullanıyordu; yapılan şey <b>Avrupa'ya bildirmekti.</b></p></div>
+    </div>
+    <div class="tl__row">
+      <div class="tl__date">1989</div>
+      <div class="tl__body"><h4>Sinema etkisi</h4><p>El-Hazne'nin bir Hollywood filminde kullanılması, Petra'nın küresel tanınırlığını sıçratıyor — ve kanona giriş biçimini belirliyor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Cevap</p>
+    <h2>Petra neyle ayakta durdu</h2>
+  </div>
+
+  <div class="verdict">
+    <p class="eyebrow">Sonuç</p>
+    <h3>Görünen şey mezarlar; şehri ayakta tutan şey borular</h3>
+    <p>Petra'nın ünü <b>oyulmuş cephelerden</b> geliyor, ve o cepheler büyük ölçüde mezar. Şehrin kendisi — yaşanan, çalışan, ticaret yapan kısım — inşa edilmişti ve gitti.</p>
+    <p>Onu mümkün kılan şey ise ne taş işçiliğiydi ne de mimari: <b>çölde suyu getiren, depolayan ve fazlasını uzaklaştıran bir altyapı.</b> Yarı dolu akan seramik borular, kritik eğimde tutulmuş hatlar, on bin metreküplük depolar, seli yan vadiye çeviren tüneller.</p>
+    <p>Ve bunların hiçbiri fotoğrafa girmiyor. <b>Petra'nın en etkileyici tarafı, tam da görünmeyen tarafı.</b></p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">10 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Nüfus gerçekten 30.000 miydi?</p>
+      <p class="oq__a">Yaygın olarak verilen rakam bu, ama <b>bir tahmin</b> — su sistemi kapasitesi ve yerleşim alanı üzerinden hesaplanıyor, sayım kaydı yok. Literatürde daha düşük değerler de savunuluyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">El-Hazne kimin mezarı?</p>
+      <p class="oq__a">IV. Aretas en güçlü aday ama <b>kesinleşmedi</b>. Yapıda kimliği açıkça veren bir yazıt yok.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Hatların iç akışı gerçekten böyle miydi?</p>
+      <p class="oq__a">Akış rejimleri doğrudan ölçümle değil, <b>CFD modelleriyle</b> yeniden kuruldu. Model sonuçları tutarlı ama bir yeniden kurgudur; boruların hangi bölümünün ne zaman döşendiği de tam olarak tarihlenemiyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Sistem kaç kuşakta gelişti?</p>
+      <p class="oq__a">"Yineleyerek optimuma yaklaşma" açıklaması makul ama <b>süreç doğrudan belgelenmiş değil</b> — elimizde bitmiş sistem var, taslakları yok.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Şehrin ne kadarı kazıldı?</p>
+      <p class="oq__a">Petra'nın büyük bölümü hâlâ toprak altında. Uydu görüntüleri ve jeofizik çalışmalar yüzeyde görünmeyen yapılar göstermeye devam ediyor; <b>kentin planı hakkında bildiğimiz eksik.</b></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Hidrolik bölümü, Petra su sistemleri üzerine hakemli mühendislik literatürüne dayanır; başlıca kaynak Charles R. Ortloff'un Nabati boru hatları ve depolama sistemleri üzerine çalışmalarıdır.</p>
+    <p><b>Sayılar yaklaşıktır ve bir kısmı tahmindir.</b> Nüfus (~30.000), depo kapasitesi (~10.000 m³) ve hat uzunlukları literatürde verilen değerlerdir; nüfus özellikle tartışmalıdır. Akış rejimlerine dair sonuçlar hesaplamalı modellerden gelir, doğrudan ölçümden değil — bu ayrım yazının içinde de belirtilmiştir.</p>
+    <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil: Şehir ve Sembol · Aynı Cümlede Anılanlar.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

@@ -1,0 +1,596 @@
+<title>Kanıt Ne Kadar Uzakta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+
+<style>
+:root{
+  --bg:#E5E6EA; --surface:#F1F2F5; --surface-2:#D6D8DF; --raised:#FBFBFC;
+  --ink:#13151C; --ink-2:#474C5C; --ink-3:#767C8D;
+  --rule:#C0C3CE; --rule-soft:#D2D5DE;
+  --accent:#3B4680; --accent-ink:#2C3566; --accent-soft:#DBDEEF;
+  --flag:#9C382F; --flag-ink:#7E2A22; --flag-soft:#F0DAD6;
+  --ok:#2C6248; --ok-soft:#D6E5DC;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1116; --surface:#171A21; --surface-2:#212530; --raised:#1B1F27;
+    --ink:#E4E6EC; --ink-2:#A5AAB8; --ink-3:#767C8C;
+    --rule:#2A2F3B; --rule-soft:#21252F;
+    --accent:#8E9AD8; --accent-ink:#A6B1E4; --accent-soft:#1A1E33;
+    --flag:#DE8478; --flag-ink:#E89C91; --flag-soft:#2C1512;
+    --ok:#6BB894; --ok-soft:#13251D;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1116; --surface:#171A21; --surface-2:#212530; --raised:#1B1F27;
+  --ink:#E4E6EC; --ink-2:#A5AAB8; --ink-3:#767C8C;
+  --rule:#2A2F3B; --rule-soft:#21252F;
+  --accent:#8E9AD8; --accent-ink:#A6B1E4; --accent-soft:#1A1E33;
+  --flag:#DE8478; --flag-ink:#E89C91; --flag-soft:#2C1512;
+  --ok:#6BB894; --ok-soft:#13251D;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5rem) clamp(2rem,4vw,3rem);background:linear-gradient(180deg,var(--accent-soft) 0%,transparent 72%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.35rem}
+.series{font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.02;font-weight:700;font-variation-settings:"SOFT" 6,"WONK" 1;letter-spacing:-.028em;max-width:15ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--ink-2);max-width:50ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+
+.split{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:.5rem;max-width:920px}
+@media(min-width:720px){.split{grid-template-columns:1fr 1fr}}
+.sp{background:var(--bg);padding:1.15rem 1.3rem;display:flex;flex-direction:column;gap:.4rem}
+.sp .q{font-family:var(--display);font-size:1.14rem;color:var(--ink);font-variation-settings:"SOFT" 24,"WONK" 0}
+.sp .a{font-size:.92rem;color:var(--ink-2);margin:0}
+.sp .badge{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:.18rem .45rem;align-self:flex-start}
+.sp.yes{background:var(--accent-soft)}
+.sp.yes .badge{background:var(--accent);color:var(--raised)}
+.sp.no .badge{background:var(--flag-soft);color:var(--flag-ink)}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:60ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.f{border-color:var(--flag);background:var(--flag-soft)}
+.note b{font-weight:700}
+
+/* distance ladder */
+.ladder{border:1px solid var(--rule);background:var(--raised);margin-top:1.5rem;overflow-x:auto}
+.ladder__in{min-width:700px}
+.lax{display:grid;grid-template-columns:minmax(190px,220px) 1fr;border-bottom:1px solid var(--rule);background:var(--surface)}
+.lax__pad{border-right:1px solid var(--rule);padding:.5rem .8rem;display:flex;align-items:flex-end}
+.lax__pad span{font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.lax__scale{position:relative;height:32px}
+.ltick{position:absolute;top:0;bottom:0;border-left:1px solid var(--rule-soft)}
+.ltick span{position:absolute;top:9px;left:5px;font-family:var(--mono);font-size:.64rem;color:var(--ink-3);white-space:nowrap}
+.lrow{display:grid;grid-template-columns:minmax(190px,220px) 1fr;border-bottom:1px solid var(--rule-soft)}
+.lrow:last-child{border-bottom:0}
+.lrow__lbl{border-right:1px solid var(--rule);padding:.5rem .8rem;display:flex;flex-direction:column;gap:.05rem;min-width:0}
+.lrow__lbl b{font-size:.82rem;font-weight:700;line-height:1.25}
+.lrow__lbl span{font-family:var(--mono);font-size:.62rem;color:var(--ink-3)}
+.lrow__track{position:relative;height:44px}
+.lbar{position:absolute;top:14px;left:0;height:15px;background:var(--accent);display:flex;align-items:center;justify-content:flex-end;padding-right:.4rem}
+.lbar.weak{background:var(--ink-3)}
+.lbar.ctrl{background:var(--flag)}
+.lbar em{font-family:var(--mono);font-size:.63rem;font-weight:700;font-style:normal;color:var(--raised);white-space:nowrap}
+.lnote{position:absolute;top:16px;font-family:var(--mono);font-size:.65rem;color:var(--ink-3);white-space:nowrap}
+.lrow.ctrlrow{background:var(--flag-soft)}
+.lkey{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;font-family:var(--mono);font-size:.68rem;color:var(--ink-3);margin-top:.75rem;align-items:center}
+.lkey .k{display:inline-flex;align-items:center;gap:.35rem}
+.lkey .sw{width:15px;height:8px;display:inline-block}
+
+/* source cards */
+.srcs{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.src{background:var(--bg);padding:1.15rem 1.3rem;display:grid;gap:.45rem 1.2rem;grid-template-columns:1fr}
+@media(min-width:840px){.src{grid-template-columns:minmax(200px,.9fr) 1.9fr;align-items:start}}
+.src__l{display:flex;flex-direction:column;gap:.3rem}
+.src__l b{font-family:var(--display);font-size:1.04rem;font-variation-settings:"SOFT" 26,"WONK" 0}
+.src__l .yr{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.src__l .w{font-family:var(--mono);font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.16rem .42rem;align-self:flex-start}
+.w-strong{background:var(--ok-soft);color:var(--ok)}
+.w-mid{background:var(--accent-soft);color:var(--accent-ink)}
+.w-weak{background:var(--flag-soft);color:var(--flag-ink)}
+.src p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.src p+p{margin-top:.4rem}
+.src p b{color:var(--ink)}
+.src q{font-family:var(--display);font-style:italic;color:var(--ink);quotes:"“" "”"}
+
+/* stacked consensus bar */
+.cons{border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem;margin-top:1.5rem}
+.cons h4{font-size:1.04rem;margin-bottom:.25rem}
+.cons .sub{font-size:.88rem;color:var(--ink-3);margin:0 0 1.05rem;max-width:66ch}
+.stack{display:flex;height:44px;border:1px solid var(--rule);overflow:hidden}
+.stack div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.68rem;font-weight:700;overflow:hidden;border-right:1px solid var(--rule)}
+.stack div:last-child{border-right:0}
+.s1{flex:0 0 7.7%;background:var(--ok);color:#fff}
+.s2{flex:0 0 11.5%;background:var(--ok-soft);color:var(--ok)}
+.s3{flex:0 0 38.5%;background:var(--accent);color:var(--raised)}
+.s4{flex:0 0 17.3%;background:var(--accent-soft);color:var(--accent-ink)}
+.s5{flex:0 0 25%;background:var(--flag);color:#fff}
+.conskey{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-top:0;font-size:.87rem}
+.ck{background:var(--bg);padding:.5rem .8rem;display:grid;grid-template-columns:auto 1fr;gap:.2rem .8rem;align-items:baseline}
+.ck b{font-family:var(--mono);font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;min-width:2.4ch}
+.ck span{color:var(--ink-2)}
+.cons p.leg{margin:1.05rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:68ch}
+.cons p.leg b{color:var(--ink)}
+
+/* comparison table */
+.tblwrap{overflow-x:auto;border:1px solid var(--rule);margin-top:1.5rem;background:var(--raised)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:.9rem}
+th,td{text-align:left;padding:.65rem .85rem;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+thead th{background:var(--surface);font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule);position:sticky;top:0}
+tbody th{font-family:var(--body);font-weight:700;color:var(--ink);font-size:.88rem;width:1%;white-space:nowrap}
+td{color:var(--ink-2)}
+td b{color:var(--ink)}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+td .num{font-family:var(--mono);font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink)}
+
+/* three claims */
+.claims{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.cl{background:var(--bg);padding:1.2rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
+.cl__h{display:flex;flex-wrap:wrap;gap:.6rem;align-items:baseline}
+.cl__n{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--flag-ink);background:var(--flag-soft);padding:.18rem .45rem}
+.cl h4{font-size:1.06rem}
+.cl p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.cl p b{color:var(--ink)}
+.cl .ans{border-left:2px solid var(--accent);padding-left:.8rem}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(220px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:72ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 20 · Roma III</span>
+    <p class="eyebrow">Kaynak eleştirisi · mesafe · eşik sorusu</p>
+    <h1>Kanıt Ne Kadar Uzakta</h1>
+    <p class="hero__lede">Bu yazı bir tek şeyi ölçüyor: <strong>bir kaynağın anlattığı olaya olan uzaklığını.</strong> Çünkü "İsa var mıydı" sorusunun cevabı inançla değil, <strong>mesafeyle</strong> belirlenir — ve mesafe ölçülebilir bir şeydir.</p>
+
+    <div class="split">
+      <div class="sp yes">
+        <span class="badge">Bu yazının sorusu</span>
+        <p class="q">1. yüzyılda Yahudiye'de, Pilatus tarafından idam edilmiş böyle bir kişi yaşadı mı?</p>
+        <p class="a">Tarihsel bir soru. Kaynakları var, yöntemi var, cevabı var.</p>
+      </div>
+      <div class="sp no">
+        <span class="badge">Bu yazının sorusu değil</span>
+        <p class="q">Ona atfedilen mucizeler gerçekleşti mi? Anlatılanlar doğru mu?</p>
+        <p class="a">Tarih yöntemi bu soruya ulaşmaz. Bu yazıdan buna dair bir sonuç çıkarılamaz — <b>iki soruyu birleştirmek her iki taraftaki tartışmanın da en yaygın hatasıdır.</b></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#esik">Eşik sorusu</a>
+    <a href="#mesafe">Mesafe merdiveni</a>
+    <a href="#kayitlar">Kayıtlar tek tek</a>
+    <a href="#josephus">Josephus tartışması</a>
+    <a href="#tacitus">Tacitus'un hatası</a>
+    <a href="#oyun">Roma'nın oyunu mu?</a>
+    <a href="#kontrol">Kontrol vakası</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="esik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Yöntem</p>
+    <h2>Önce eşiği belirlemek gerekiyor</h2>
+    <p class="kicker">"Kanıt yeterli mi" diye sormadan önce şunu sormak lazım: <b>1. yüzyılda taşrada yaşamış, seçkin olmayan bir kişi için normalde ne kadar kanıt olur?</b></p>
+  </div>
+
+  <div class="prose">
+    <p>Cevap rahatsız edici: <b>neredeyse hiç.</b> Roma İmparatorluğu'nun 60 milyon civarındaki nüfusundan geriye adı kalmış insan sayısı, toplamın binde birinin çok altındadır. Yazı bilen azınlıktı; yazdığı korunan daha da azınlık. Bir taşra vaizinin adının herhangi bir yerde geçmesi <b>beklenmedik</b> bir durumdur, beklenen değil.</p>
+    <p>Bu yüzden "çağdaş bir Roma kaydı yok" itirazı, kulağa güçlü gelse de <b>yanlış eşiği kullanır.</b> Aynı ölçüt uygulandığında Hillel, Honi, Vaftizci Yahya, Theudas ve döneminde ün kazanmış diğer figürlerin çoğu da "yok" sayılmak zorunda kalır. Bir imparator için beklenen kanıt düzeyini bir taşralıdan istemek, ölçüm hatasıdır.</p>
+    <p>Doğru soru şu: <b>bu kişi hakkındaki kayıtlar, aynı dönemin benzer figürleriyle karşılaştırıldığında nerede duruyor?</b> Ve bunu ölçmenin en dürüst yolu tek bir değişkeni kullanmak: <b>kaynak, anlattığı olaydan kaç yıl sonra yazılmış?</b></p>
+  </div>
+</section>
+
+<section id="mesafe" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Ölçüm</p>
+    <h2>Mesafe merdiveni</h2>
+    <p class="kicker">Her çubuk, o kaynağın olaya olan uzaklığını gösteriyor. Kısa çubuk = yakın tanıklık. Karşılaştırma için en altta bir <b>kontrol vakası</b> var.</p>
+  </div>
+
+  <div class="ladder">
+    <div class="ladder__in">
+      <div class="lax">
+        <div class="lax__pad"><span>Kaynak</span></div>
+        <div class="lax__scale">
+          <div class="ltick" style="left:0%"><span>olay (~30)</span></div>
+          <div class="ltick" style="left:20%"><span>+25 yıl</span></div>
+          <div class="ltick" style="left:40%"><span>+50</span></div>
+          <div class="ltick" style="left:60%"><span>+75</span></div>
+          <div class="ltick" style="left:80%"><span>+100</span></div>
+        </div>
+      </div>
+
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Pavlus'un mektupları</b><span>y. 50-60 · Grekçe</span></div>
+        <div class="lrow__track"><div class="lbar" style="width:19%"><em>~23 yıl</em></div><div class="lnote" style="left:calc(19% + .6rem)">birinci ağızdan tanıklık</div></div>
+      </div>
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Markos</b><span>y. 70 · anlatı</span></div>
+        <div class="lrow__track"><div class="lbar" style="width:32%"><em>~40 yıl</em></div><div class="lnote" style="left:calc(32% + .6rem)">en erken anlatı</div></div>
+      </div>
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Matta / Luka</b><span>y. 80-90 · anlatı</span></div>
+        <div class="lrow__track"><div class="lbar" style="width:44%"><em>~55 yıl</em></div><div class="lnote" style="left:calc(44% + .6rem)">Markos'a bağlı</div></div>
+      </div>
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Josephus, Ant. 20</b><span>93-94 · Yahudi tarihçi</span></div>
+        <div class="lrow__track"><div class="lbar" style="width:51%"><em>~63 yıl</em></div><div class="lnote" style="left:calc(51% + .6rem)">taraf değil · az tartışmalı</div></div>
+      </div>
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Josephus, Ant. 18</b><span>93-94 · Testimonium</span></div>
+        <div class="lrow__track"><div class="lbar" style="width:51%"><em>~63 yıl</em></div><div class="lnote" style="left:calc(51% + .6rem)">müdahale görmüş — aşağıda</div></div>
+      </div>
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Yuhanna</b><span>y. 90-110 · anlatı</span></div>
+        <div class="lrow__track"><div class="lbar" style="width:60%"><em>~70 yıl</em></div><div class="lnote" style="left:calc(60% + .6rem)">teolojik olarak en gelişmiş</div></div>
+      </div>
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Genç Plinius</b><span>y. 112 · vali mektubu</span></div>
+        <div class="lrow__track"><div class="lbar weak" style="width:66%"><em>~82 yıl</em></div><div class="lnote" style="left:calc(66% + .6rem)">Hristiyanları belgeliyor</div></div>
+      </div>
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Tacitus, Annales 15.44</b><span>y. 116 · Romalı tarihçi</span></div>
+        <div class="lrow__track"><div class="lbar" style="width:69%"><em>~86 yıl</em></div><div class="lnote" style="left:calc(69% + .6rem)">bağımsız Roma kaydı</div></div>
+      </div>
+      <div class="lrow">
+        <div class="lrow__lbl"><b>Suetonius, Claudius 25</b><span>y. 121 · "Chrestus"</span></div>
+        <div class="lrow__track"><div class="lbar weak" style="width:73%"><em>~91 yıl</em></div><div class="lnote" style="left:calc(73% + .6rem)">belirsiz · zayıf</div></div>
+      </div>
+
+      <div class="lrow ctrlrow">
+        <div class="lrow__lbl"><b>KONTROL: Philostratos</b><span>y. 220'ler · Tyanalı Apollonius</span></div>
+        <div class="lrow__track"><div class="lbar ctrl" style="width:100%"><em>~125 yıl</em></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lkey">
+    <span class="k"><i class="sw" style="background:var(--accent)"></i>iddiaya doğrudan tanıklık eden kayıt</span>
+    <span class="k"><i class="sw" style="background:var(--ink-3)"></i>dolaylı veya zayıf</span>
+    <span class="k"><i class="sw" style="background:var(--flag)"></i>karşılaştırma için kontrol vakası</span>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Merdivenin gösterdiği:</b> en yakın kayıt ~23 yıl uzakta ve <b>birinci ağızdan.</b> Aynı dönemin bir başka mucize anlatıcısı için elimizdeki tek kaynak ise ~125 yıl uzakta. Bu fark, "iki figür de aynı derecede efsanevi" ve "kanıt tartışılmaz" tezlerinin <b>ikisini birden</b> zayıflatıyor.</p>
+</section>
+
+<section id="kayitlar" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Kayıtlar</p>
+    <h2>Elimizde tam olarak ne var</h2>
+    <p class="kicker">Her kaydın <b>ne söylediğini</b> ve <b>ne kadar ağırlık taşıdığını</b> ayrı ayrı işaretliyoruz.</p>
+  </div>
+
+  <div class="srcs">
+    <div class="src">
+      <div class="src__l">
+        <b>Pavlus, Galatyalılar 1:19</b>
+        <span class="yr">y. 50'ler · ~23 yıl sonra</span>
+        <span class="w w-strong">en güçlü tekil kayıt</span>
+      </div>
+      <div>
+        <p>Pavlus, Kudüs'e gittiğini ve <q>Rab'bin kardeşi Yakup</q> ile görüştüğünü <b>birinci ağızdan</b> yazıyor. Bu, hem bir Hristiyan kaynağı hem de bir <b>tanışma beyanı</b>: yazar, konusu olan kişinin kardeşiyle oturduğunu söylüyor.</p>
+        <p>Değerini yükselten şey mesafenin kısalığı ve iddianın türü: bu bir mucize anlatısı değil, <b>sıradan bir biyografik ayrıntı</b> — ve uydurulması hâlinde onu tanıyan insanlar hayattayken çürütülebilecek bir ayrıntı.</p>
+      </div>
+    </div>
+
+    <div class="src">
+      <div class="src__l">
+        <b>Josephus, Eskiçağ Tarihi 20.200</b>
+        <span class="yr">93-94 · ~63 yıl sonra</span>
+        <span class="w w-strong">az tartışmalı</span>
+      </div>
+      <div>
+        <p>Yahudi tarihçi, MS 62'de idam edilen bir Yakup'tan söz ederken onu <q>Mesih denilen İsa'nın kardeşi</q> diye tanımlıyor. Kısa, geçerken söylenmiş, <b>övgü içermeyen</b> bir ifade.</p>
+        <p>Tam da bu yüzden güçlü: bir Hristiyan müdahalesi olsaydı <b>bundan çok daha fazlasını söylerdi.</b> Aşağıdaki tartışmalı pasajın aksine, bu satır alanda geniş kabul görür.</p>
+      </div>
+    </div>
+
+    <div class="src">
+      <div class="src__l">
+        <b>Josephus, Eskiçağ Tarihi 18.63</b>
+        <span class="yr">93-94 · Testimonium Flavianum</span>
+        <span class="w w-weak">müdahale görmüş</span>
+      </div>
+      <div>
+        <p>Uzun ve övgü dolu bir pasaj. Sorun açık: bir Yahudi tarihçinin kaleminden <q>O, Mesih'ti</q> cümlesi çıkmaz. Bu cümlenin sonradan eklendiği <b>neredeyse evrensel olarak kabul edilir.</b></p>
+        <p>Asıl tartışma pasajın <b>tamamının</b> mı yoksa bir kısmının mı eklendiği. Bunu aşağıda sayılarla açıyoruz — çünkü bu tartışma, "bilimsel uzlaşı" denen şeyin gerçekte neye benzediğinin iyi bir örneği.</p>
+      </div>
+    </div>
+
+    <div class="src">
+      <div class="src__l">
+        <b>Tacitus, Annales 15.44</b>
+        <span class="yr">y. 116 · ~86 yıl sonra</span>
+        <span class="w w-mid">bağımsız · sahih</span>
+      </div>
+      <div>
+        <p>64 yangınının ardından Neron'un suçu Hristiyanlara yüklemesini anlatırken, adın kaynağı olan kişinin <b>Tiberius döneminde vali Pontius Pilatus tarafından idam edildiğini</b> yazıyor.</p>
+        <p>Bir Romalı senatör-tarihçinin, açıkça <b>küçümseyerek</b> yazdığı bir pasaj. Pasajın sahihliği ve bağımsız bir Roma kaydı olarak değeri alanda geniş kabul görüyor. Bir sonraki bölümde bu pasajın <b>bir hatası</b>nın nasıl kanıt ürettiğini göreceğiz.</p>
+      </div>
+    </div>
+
+    <div class="src">
+      <div class="src__l">
+        <b>Genç Plinius, Mektuplar 10.96</b>
+        <span class="yr">y. 112 · vali yazışması</span>
+        <span class="w w-weak">konu dışı kayıt</span>
+      </div>
+      <div>
+        <p>Bitinya valisi Plinius, Hristiyanlara ne yapacağını Traianus'a soruyor; onların şafakta toplanıp <b>Christus'a bir tanrıya söyler gibi ilahi söylediklerini</b> aktarıyor.</p>
+        <p>Bu belge <b>Hristiyanların varlığını</b> ve ibadet biçimini kanıtlar; İsa'nın tarihselliğine dair bağımsız bir tanıklık <b>değildir.</b> Sık sık yanlış yerde kullanılır — burada doğru yerine koyuyoruz.</p>
+      </div>
+    </div>
+
+    <div class="src">
+      <div class="src__l">
+        <b>Suetonius, Claudius 25.4</b>
+        <span class="yr">y. 121 · "Chrestus"</span>
+        <span class="w w-weak">belirsiz</span>
+      </div>
+      <div>
+        <p>Claudius'un Yahudileri Roma'dan kovmasını, <q>Chrestus'un kışkırtmasıyla</q> çıkan huzursuzluğa bağlıyor. <b>Chrestus</b> o dönemde yaygın bir köle adıdır ve pasaj başka birinden söz ediyor olabilir.</p>
+        <p>Kanıt değeri <b>düşük.</b> Bu listede yer alması, savunucu literatürde sık kullanıldığı için — güçlü olduğu için değil.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="josephus" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Uzlaşı neye benzer</p>
+    <h2>Testimonium: bir tartışmayı sayılarla görmek</h2>
+    <p class="kicker">"Bilim insanları hemfikir" cümlesi çok kullanılıyor. Bu pasaj, o cümlenin altını açmak için iyi bir vaka.</p>
+  </div>
+
+  <div class="cons">
+    <h4>Bir literatür taramasında değerlendirilen 52 akademisyenin dağılımı</h4>
+    <p class="sub">Josephus'un 18. kitaptaki pasajı hakkında alınan pozisyonlar. Bu bir <b>anket değil</b>, yayımlanmış görüşlerin bir derlemesi — yani alanın tamamının sayımı sayılamaz.</p>
+    <div class="stack">
+      <div class="s1">4</div>
+      <div class="s2">6</div>
+      <div class="s3">20</div>
+      <div class="s4">9</div>
+      <div class="s5">13</div>
+    </div>
+    <div class="conskey">
+      <div class="ck"><b>4</b><span>Pasaj tamamen özgün</span></div>
+      <div class="ck"><b>6</b><span>Büyük ölçüde özgün</span></div>
+      <div class="ck"><b>20</b><span>Özgün, <b>bazı</b> eklemelerle</span></div>
+      <div class="ck"><b>9</b><span>Özgün, <b>birçok</b> eklemeyle</span></div>
+      <div class="ck"><b>13</b><span>Tamamı sonradan eklenmiş</span></div>
+    </div>
+    <p class="leg"><b>Okunuşu:</b> ortadaki iki grup (29 kişi, %56) bir <b>özgün çekirdek + Hristiyan müdahalesi</b> modelinde birleşiyor. Ama %25'lik bir azınlık pasajın tamamının sahte olduğunu savunuyor — <b>ve bu azınlık küçümsenecek kadar küçük değil.</b> "Uzlaşı" burada oybirliği değil, <b>bir eğilim</b> demek.</p>
+    <p class="leg">Çekirdek modelini destekleyen somut bir bulgu var: <b>9.-10. yüzyıla ait Arapça ve Süryanice aktarımlar</b> pasajı büyük ölçüde aynı biçimde veriyor ama en şüpheli iki ifadeyi — <q>O, Mesih'ti</q> ve <q>eğer ona insan denebilirse</q> — <b>içermiyor.</b> Yani metnin müdahaleden önceki hâline dair bağımsız bir iz var.</p>
+  </div>
+
+  <p class="note f" style="margin-top:1.5rem"><b>Dürüstlük payı:</b> bu alanda <b>kurumsal bir yanlılık riski</b> vardır — Yeni Ahit çalışmaları akademisyenlerinin önemli bir bölümü dinî kurumlarda çalışır. Bunu görmezden gelmek yanlış olur. Ama tersi de doğru: Pilatus tarafından çarmıha gerilme maddesi, <b>dinî bağlantısı olmayan, Yahudi ve ateist tarihçiler tarafından da</b> kabul edilir. Yanlılık argümanı bu maddeyi tek başına düşürmüyor.</p>
+</section>
+
+<section id="tacitus" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Ters kanıt</p>
+    <h2>Tacitus'un hatası, pasajı güçlendiriyor</h2>
+    <p class="kicker">Bir metindeki <b>yanlışlık</b>, bazen o metnin sahihliğinin en iyi kanıtıdır.</p>
+  </div>
+
+  <div class="prose">
+    <p>Tacitus, Pilatus'u <b><i>procurator</i></b> unvanıyla anıyor. Ama 1961'de <b>Kayseriye (Caesarea Maritima)</b>'da bulunan taş yazıtta Pilatus'un unvanı <b><i>praefectus</i></b> — yani "vali" değil, farklı bir idari sınıf. Pilatus'un görev yaptığı dönemde Yahudiye valileri <i>praefectus</i>'tu; <i>procurator</i> unvanı <b>sonraki bir dönemin</b> kullanımıdır.</p>
+    <p>Bu bir hata. Ve tam da bu yüzden değerli: <b>Tacitus bu bilgiyi bir Roma arşiv kaydından kopyalamış olsaydı, doğru unvanı yazardı.</b> Yanlış unvanı yazması, kendi döneminin dilini kullandığını — yani pasajı <b>kendisinin kaleme aldığını</b> gösteriyor. Sonradan araya sokulmuş bir Hristiyan eklemesinin, hem küçümseyici bir üslup tutturup hem de bu tür bir idari anakronizm yapması beklenmez.</p>
+    <p>İkinci bir iz aynı yönü gösteriyor: pasajı taşıyan en eski elyazmasında sözcük <b><i>chrestianos</i></b> biçiminde yazılmış, sonradan <i>christianos</i> olarak düzeltilmiş. <i>Chrestus</i> yaygın bir köle adıydı — <b>dışarıdan bakan, adı tam bilmeyen birinin yazımı.</b> Bir Hristiyan kopyacı kendi dininin adını yanlış yazmaz.</p>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">Bu, serinin tekrar eden yöntem dersi: <b>bir kaydın kusuru, çoğu zaman kusursuzluğundan daha bilgilendiricidir.</b> Persepolis yazısında arşiv tabletlerinin sıradanlığı aynı işi görmüştü — kimse propaganda için işçi tayınını kaydetmez.</p>
+</section>
+
+<section id="oyun" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — İddia</p>
+    <h2>"Roma'nın uydurması" tezi</h2>
+    <p class="kicker">Ciddiye alınması gereken bir soru, çünkü Roma'nın dini siyaseten kullandığı <b>doğru.</b> Ama tezin üç somut sorunu var — ve üçü de test edilebilir.</p>
+  </div>
+
+  <div class="claims">
+    <div class="cl">
+      <div class="cl__h"><span class="cl__n">Sorun 1</span><h4>Kronoloji ters işliyor</h4></div>
+      <p>Roma'nın Hristiyanlıkla ittifakı <b>313</b>'te başlar, devlet dini ilanı <b>380</b>'dedir. Hareket o tarihte zaten <b>yaklaşık üç yüz yıllıktır</b> ve imparatorluk nüfusunun kayda değer bir bölümünü kapsamaktadır.</p>
+      <p class="ans">Bir yönetim aracı olarak uydurulmuş olsaydı, <b>uyduranın onu üç yüz yıl boyunca kullanmaması</b> gerekirdi. Roma bir kitle yaratmadı; var olan bir kitleye katıldı.</p>
+    </div>
+
+    <div class="cl">
+      <div class="cl__h"><span class="cl__n">Sorun 2</span><h4>Kendi uydurduğunu neden idam etsin?</h4></div>
+      <p>Roma, bu dönem boyunca Hristiyanlara <b>dönem dönem zulmetti</b> — mülk müsaderesi, idam, sistematik dalgalar. Ölçeği tartışmalı ama gerçekliği değil.</p>
+      <p class="ans">Bir devletin, kontrol amacıyla kendi imal ettiği inancın mensuplarını yüzyıllarca kovuşturması <b>açıklanması güç bir davranıştır.</b> Tez bunu açıklamak zorunda ve açıklamıyor.</p>
+    </div>
+
+    <div class="cl">
+      <div class="cl__h"><span class="cl__n">Sorun 3</span><h4>Uydurulan hikâye bu olmazdı</h4></div>
+      <p>Merkezdeki figür <b>bir Roma valisi tarafından çarmıha gerilmiş</b> bir taşralıdır. Çarmıh, Roma'nın <b>asilere ve kölelere</b> ayırdığı, kasıtlı olarak aşağılayıcı bir infaz biçimiydi.</p>
+      <p class="ans">Roma'nın itaat üretmek için tasarlayacağı bir anlatının merkezine, <b>kendi idam ettiği bir mahkûmu</b> koyması beklenmez. Bu ayrıntı uydurmacılığın aleyhine çalışır — çünkü <b>uyduran taraf için utanç vericidir.</b></p>
+    </div>
+  </div>
+
+  <p class="note f" style="margin-top:1.5rem"><b>Ne diyoruz, ne demiyoruz:</b> "Roma uydurdu" tezi akademik literatürde <b>kabul görmüyor</b> ve yukarıdaki üç sorunu çözmüyor. Bu, Roma'nın Hristiyanlığı sonradan <b>biçimlendirmediği</b> anlamına gelmez — tersine, bir önceki yazının bütün tezi Roma'nın onu derinlemesine biçimlendirdiğidir. <b>Sonradan biçimlendirmek</b> ile <b>baştan icat etmek</b> aynı şey değildir; tez tam bu ikisini karıştırıyor.</p>
+</section>
+
+<section id="kontrol" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Karşılaştırma</p>
+    <h2>Kontrol vakası: Tyanalı Apollonius</h2>
+    <p class="kicker">Aynı yüzyıl, benzer coğrafya, aynı türden mucize anlatıları. <b>Kanıt durumu aynı mı?</b></p>
+  </div>
+
+  <div class="tblwrap">
+    <table>
+      <thead>
+        <tr><th scope="col">Ölçüt</th><th scope="col">Tyanalı Apollonius</th><th scope="col">İsa</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">En erken anlatı</th>
+          <td>Philostratos, <span class="num">y. 220'ler</span> — <b>~125 yıl</b> sonra</td>
+          <td>Pavlus <span class="num">y. 50'ler</span> (<b>~23 yıl</b>), Markos <span class="num">y. 70</span> (<b>~40 yıl</b>)</td>
+        </tr>
+        <tr>
+          <th scope="row">Anlatı sayısı</th>
+          <td>Pratikte <b>tek bir eser</b></td>
+          <td>Dört anlatı + mektuplar (ama Matta ve Luka Markos'a bağlı — <b>tam bağımsız değil</b>)</td>
+        </tr>
+        <tr>
+          <th scope="row">Kim ısmarladı</th>
+          <td><b>Julia Domna</b> — imparatoriçe. Saray hamiliğinde yazılmış.</td>
+          <td>Hamilik kaydı yok; ilk metinler <b>iktidar dışı</b> bir çevreden.</td>
+        </tr>
+        <tr>
+          <th scope="row">İddia edilen tanık</th>
+          <td>Ninovalı <b>Damis</b>'in anıları — çoğunluk görüşü: <b>edebî kurgu</b></td>
+          <td>Pavlus <b>birinci ağızdan</b> yazıyor ve kardeşiyle görüştüğünü söylüyor</td>
+        </tr>
+        <tr>
+          <th scope="row">Taraf olmayan kayıt</th>
+          <td>Cassius Dio'da kısa bir anma; Tyana'da sikke ve tapınak izleri</td>
+          <td>Josephus (Yahudi), Tacitus (Romalı, <b>küçümseyerek</b>)</td>
+        </tr>
+        <tr>
+          <th scope="row">Varlığı hakkında</th>
+          <td>Muhtemelen yaşadı — <b>ayrıntılar büyük ölçüde ulaşılamaz</b></td>
+          <td>Yaşadığı ve Pilatus döneminde idam edildiği <b>alanın geniş kabulü</b></td>
+        </tr>
+        <tr>
+          <th scope="row">Mucize anlatıları</th>
+          <td colspan="2"><b>İkisi için de aynı durumda:</b> geç, teolojik amaçlı, tarih yönteminin ulaşamayacağı iddialar. Kanıt farkı <b>varlık</b> sorusundadır, <b>mucize</b> sorusunda değil.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Paralelin tarihi de ilginç:</b> bu karşılaştırmayı ilk kuran modern bir yazar değil. <b>Yaklaşık 303 yılında</b>, Diocletianus zulmünün yöneticilerinden bir Roma valisi olan <b>Sossianus Hierocles</b>, tam bu tezi savunan bir metin yazdı; <b>Eusebios</b> ona bir reddiye yazdı. Ve Hierocles'in metni bize <b>yalnızca Eusebios'un alıntıları üzerinden</b> ulaştı — bir polemiği sadece karşı tarafın aktardığı kadarıyla okuyoruz. <b>Hayatta kalma yanlılığının ders kitabı örneği.</b></p>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Sonuç</p>
+    <h2>Ne söylenebilir</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının sonucu</p>
+    <h3>Varlık sorusu cevaplanabilir; içerik sorusu cevaplanamaz</h3>
+    <p><b>Varlık:</b> 1. yüzyılda Yahudiye'de yaşamış ve Pilatus döneminde idam edilmiş böyle bir kişinin varlığı, sıradan tarihsel eşikte <b>karşılanmıştır.</b> En yakın kayıt ~23 yıl uzaklıkta ve birinci ağızdan; iki ayrı taraf-olmayan tarihçi bağımsız olarak değiniyor; Tacitus'un yaptığı idari hata pasajın sonradan eklenmediğini gösteriyor.</p>
+    <p><b>Ölçek:</b> Bu, dönemin seçkin olmayan figürlerinin <b>çok üstünde</b>, herhangi bir imparatorun <b>çok altında</b> bir kanıt düzeyidir. İkisiyle de karıştırılmamalı.</p>
+    <p><b>Cevaplanamayan:</b> Anlatılan olayların ne kadarının gerçekleştiği. Mucize iddiaları tarih yönteminin <b>kapsamı dışındadır</b> — bu yazı onlar hakkında ne olumlu ne olumsuz bir şey söylüyor.</p>
+    <p><b>"Roma'nın oyunu"</b> tezi, kronoloji, zulüm ve çarmıh ayrıntısı olmak üzere <b>üç ayrı yerden</b> kırılıyor. Ama bir önceki yazının tezi hâlâ geçerli: <b>Roma onu icat etmedi, sonradan biçimlendirdi.</b> Farkı görmek bu bloğun bütün meselesi.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Testimonium'un özgün hâli neydi?</p>
+      <p class="oq__a"><b>Bilinmiyor.</b> Arapça ve Süryanice aktarımlar müdahaleden önceki hâle dair bir iz veriyor, ama kesin metin elde yok. %25'lik bir azınlık pasajın tamamının sahte olduğunu savunuyor ve bu görüş yaşayan bir görüş.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Anlatılar ne kadar bağımsız?</p>
+      <p class="oq__a">Matta ve Luka Markos'u kaynak alıyor — yani "dört bağımsız tanık" ifadesi <b>yanlıştır.</b> Kaç ayrı geleneğin izini sürebildiğimiz alanda tartışmalıdır.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">İdam yılı hangisi?</p>
+      <p class="oq__a">30 veya 33 — <b>kesinleşmedi.</b> Bu yazıdaki mesafe hesapları ~30 kabul edilerek yapılmıştır; 33 alınırsa her çubuk üç yıl kısalır, sıralama değişmez.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Alan yanlı mı?</p>
+      <p class="oq__a">Kurumsal yanlılık riski <b>gerçektir</b> ve bu yazı onu saklamıyor. Ama Pilatus maddesi dinî bağlantısı olmayan tarihçilerce de kabul edilir; yanlılık argümanı bu maddeyi tek başına düşürmez.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Neden çağdaş bir kayıt yok?</p>
+      <p class="oq__a">Çünkü dönemin <b>hiçbir</b> taşra figürü için yok. Doğru soru "neden yok" değil, <b>"bu dönem için normal olan nedir"</b> — ve normal olan, hiç kayıt olmamasıdır.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir</b> ve bir inanç değerlendirmesi yapmaz. Ele aldığı şey yalnızca <b>kaynak eleştirisidir</b>: hangi metin ne zaman yazıldı, kim yazdı, ne kadar müdahale gördü. Metinlerden yapılan kısa aktarımlar özgün dillerden çalışma çevirisidir; yayımlanmış telifli çeviriler kullanılmamıştır.</p>
+    <p><b>Sayısal dağılım bir anket değildir.</b> Testimonium bölümündeki 52 kişilik dağılım, yayımlanmış görüşlerin bir literatür derlemesinden gelir; alanın tamamının sayımı olarak okunamaz ve metinde böyle işaretlenmiştir.</p>
+    <p><b>Tarihler yaklaşıktır.</b> Mesafe hesapları idam yılı ~30 kabul edilerek yapılmıştır; metinlerin yazım tarihleri de alanda aralıklarla verilir. Çubukların gösterdiği şey kesin yıllar değil, <b>büyüklük mertebesi ve sıralamadır.</b></p>
+    <p><b>Serinin ilgili yazıları:</b> Hristiyanlık ve Roma: Kim Kimi Dönüştürdü · Roma: Bakılan Miras · İskenderiye: Yanmadı, Kopyalanmadı · Persepolis: Arşiv Konuşunca.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>
