@@ -1004,6 +1004,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "isa-tarihsellik-esigi",
     "claim": "1. yüzyılda Yahudiye'de yaşamış ve Pilatus döneminde idam edilmiş bir İsa'nın varlığı, sıradan tarihsel eşikte karşılanmıştır.",
     "status": "established",
@@ -1046,46 +1047,58 @@
     ],
     "people": [
       {
-        "name": "Pavlus (Tarsuslu)",
-        "role": "editor",
-        "year": 55
+        "name": "Meier, John P.",
+        "role": "analyst",
+        "affiliation": "University of Notre Dame",
+        "year": 1991
       },
       {
-        "name": "Flavius Josephus",
+        "name": "Ehrman, Bart D.",
         "role": "analyst",
-        "year": 93,
-        "lifespan": "y. 37-100"
-      },
-      {
-        "name": "Publius Cornelius Tacitus",
-        "role": "analyst",
-        "year": 116,
-        "lifespan": "y. 56-120"
+        "affiliation": "University of North Carolina at Chapel Hill",
+        "year": 2012
       }
     ],
     "popular_claim": "İsa hakkında çağdaş hiçbir kayıt yoktur; dolayısıyla var olduğu söylenemez.",
-    "divergence": "İtiraz yanlış EŞİĞİ kullanıyor. 1. yüzyılda seçkin olmayan bir taşra figürü için normal olan, HİÇ kayıt olmamasıdır - imparatorluk nüfusunun binde birinden azının adı bilinir. Aynı ölçüt Hillel'e, Vaftizci Yahya'ya ve dönemin diğer figürlerine uygulandığında onları da yok saymak gerekir. Doğru soru 'çağdaş kayıt var mı' değil, 'benzer figürlerle karşılaştırıldığında bu kayıtlar nerede duruyor'.",
+    "divergence": "İtiraz yanlış EŞİĞİ kullanıyor: 1. yüzyılda seçkin olmayan bir taşra figürü için normal olan, HİÇ kayıt olmamasıdır. Doğru soru 'çağdaş kayıt var mı' değil, 'benzer figürlerle karşılaştırıldığında bu kayıtlar nerede duruyor'. VE KURUMSAL YANLILIK İTİRAZI BURADA SOMUT OLARAK KARŞILANIR: varlık maddesinde hemfikir olan iki standart eserden birinin yazarı KATOLİK RAHİP, ötekininki AGNOSTİKTİR. İkincisi kitabını doğrudan varlığı reddeden konuma cevap olarak yazmıştır. Yani uzlaşı tek bir inanç çevresinin ürünü değildir.",
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "En yakın kayıt Pavlus'un mektupları (y. 50'ler, olaydan ~23 yıl sonra) ve BİRİNCİ AĞIZDAN: Galatyalılar 1:19'da 'Rab'bin kardeşi Yakup' ile görüştüğünü yazıyor - mucize değil, sıradan biyografik ayrıntı.",
-      "Josephus, Eskiçağ Tarihi 20.200'de (93-94) Yakup'u 'Mesih denilen İsa'nın kardeşi' diye tanımlıyor; kısa, geçerken söylenmiş, övgüsüz - bu yüzden müdahale şüphesi düşük.",
-      "Tacitus, Annales 15.44 (y. 116) Tiberius döneminde vali Pontius Pilatus tarafından idam edildiğini yazıyor; bağımsız ve açıkça küçümseyici bir Roma kaydı.",
-      "Pilatus döneminde çarmıha gerilme maddesi, dinî bağlantısı olmayan, Yahudi ve ateist tarihçilerce de kabul edilir - kurumsal yanlılık argümanı bu maddeyi tek başına düşürmüyor."
-    ],
-    "counter_evidence": [
-      "Anlatılar tam bağımsız değil: Matta ve Luka Markos'u kaynak alıyor. 'Dört bağımsız tanık' ifadesi yanlıştır.",
-      "Bütün erken kaynaklar taraf olan kaynaklardır; taraf olmayan iki kayıt (Josephus, Tacitus) olaydan 60-90 yıl sonradır.",
-      "Yeni Ahit çalışmaları alanında kurumsal yanlılık riski gerçektir; akademisyenlerin önemli bölümü dinî kurumlarda çalışır.",
-      "İdam yılı 30 mu 33 mü kesinleşmemiştir."
-    ],
-    "open_questions": [
-      "Anlatılarda kaç ayrı bağımsız geleneğin izi sürülebilir? Alanda tartışmalı.",
-      "İdam yılı 30 mu 33 mü?"
-    ],
     "sources": [
       {
+        "id": "meier-1991-marginal-jew-1",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Meier, John P."
+        ],
+        "year": 1991,
+        "title": "A Marginal Jew: Rethinking the Historical Jesus, Volume 1: The Roots of the Problem and the Person",
+        "publisher": "Doubleday",
+        "container": "Anchor Bible Reference Library",
+        "isbn": "9780385264259",
+        "pages": "x+484",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Tarihsel İsa yöntembiliminin standart başvuru eseri. Yazar Katolik rahiptir. Künye doğrulandı, tam metin okunmadı."
+      },
+      {
+        "id": "ehrman-2012-did-jesus-exist",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ehrman, Bart D."
+        ],
+        "year": 2012,
+        "title": "Did Jesus Exist? The Historical Argument for Jesus of Nazareth",
+        "publisher": "HarperOne",
+        "isbn": "9780062204608",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Yazar agnostiktir ve mitçi konumu doğrudan ele alır. Künye doğrulandı, tam metin okunmadı."
+      },
+      {
+        "id": "pavlus-galatyalilar-1-19",
         "tier": "primary",
         "type": "edition",
         "authors": [
@@ -1093,10 +1106,12 @@
         ],
         "year": 55,
         "title": "Galatyalılara Mektup 1:18-19",
+        "publisher": "—",
         "language": "grc",
         "note": "Birinci ağızdan tanışma beyanı; en erken kayıt."
       },
       {
+        "id": "josephus-ant-20-200",
         "tier": "primary",
         "type": "edition",
         "authors": [
@@ -1104,10 +1119,12 @@
         ],
         "year": 93,
         "title": "Antiquitates Judaicae 20.200",
+        "publisher": "—",
         "language": "grc",
         "note": "Yakup pasajı; Testimonium'un aksine geniş kabul görür."
       },
       {
+        "id": "tacitus-annales-15-44",
         "tier": "primary",
         "type": "edition",
         "authors": [
@@ -1115,24 +1132,148 @@
         ],
         "year": 116,
         "title": "Annales 15.44",
+        "publisher": "—",
         "language": "la",
-        "note": "Bağımsız Roma kaydı; sahihliği alanda geniş kabul görür."
+        "note": "Bağımsız Roma kaydı."
       },
       {
+        "id": "tacitus-on-jesus-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "Tacitus on Jesus",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Tacitus_on_Jesus",
         "language": "en",
         "accessed": "2026-09-07",
-        "note": "Ara kaynak; alanın uzlaşı durumunun özeti için."
+        "note": "Ara kaynak; alanın uzlaşı durumunun özeti."
       }
+    ],
+    "evidence": [
+      {
+        "id": "meier-yontem",
+        "text": "Tarihsel İsa yöntembiliminin standart başvuru eseri, sağlam tarihsel bilginin sınırlı olduğunu kabul ederek farklı inançlardan insanların temel tarihsel olgularda uzlaşabileceğini savunur.",
+        "citations": [
+          {
+            "source_ref": "meier-1991-marginal-jew-1",
+            "locator": "Cilt 1, yöntem bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ehrman-cevap",
+        "text": "Agnostik bir metin eleştirmeni, varlığı reddeden konuma doğrudan cevap veren bir kitap yazmış ve tarihsel İsa'yı savunmuştur.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2012-did-jesus-exist",
+            "locator": "Kitabın tezi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "pavlus-tanisma",
+        "text": "En yakın kayıt Pavlus'un mektuplarıdır (y. 50'ler, ~23 yıl sonra) ve BİRİNCİ AĞIZDANDIR: 'Rab'bin kardeşi Yakup' ile görüştüğünü yazar - mucize değil, sıradan biyografik ayrıntı.",
+        "citations": [
+          {
+            "source_ref": "pavlus-galatyalilar-1-19",
+            "locator": "Galatyalılar 1:18-19",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "josephus-yakup",
+        "text": "Josephus, 93-94'te Yakup'u 'Mesih denilen İsa'nın kardeşi' diye tanımlar; kısa, geçerken söylenmiş, övgüsüz.",
+        "citations": [
+          {
+            "source_ref": "josephus-ant-20-200",
+            "locator": "Kitap 20, 200. paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tacitus-kaydi",
+        "text": "Tacitus, y. 116'da Tiberius döneminde vali Pontius Pilatus tarafından idam edildiğini yazar; bağımsız ve açıkça küçümseyici bir Roma kaydıdır.",
+        "citations": [
+          {
+            "source_ref": "tacitus-annales-15-44",
+            "locator": "15. kitap, 44. bölüm",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "dort-tanik-yanlis",
+        "text": "Anlatılar tam bağımsız değildir: Matta ve Luka Markos'u kaynak alır. 'Dört bağımsız tanık' ifadesi YANLIŞTIR.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2012-did-jesus-exist",
+            "locator": "Kaynak bağımlılığı tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "taraf-kaynaklar",
+        "text": "Bütün erken kaynaklar taraf olan kaynaklardır; taraf olmayan iki kayıt olaydan 60-90 yıl sonradır.",
+        "citations": [
+          {
+            "source_ref": "tacitus-on-jesus-wikipedia",
+            "locator": "Tarihlendirme bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yanlilik-riski",
+        "text": "Yeni Ahit çalışmaları alanında kurumsal yanlılık riski gerçektir; bu kayıt onu Katolik/agnostik eşleşmesiyle karşılar ama tamamen ortadan kaldırmaz.",
+        "citations": [
+          {
+            "source_ref": "meier-1991-marginal-jew-1",
+            "locator": "Yöntem ve sınırlar",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "yil-belirsiz",
+        "text": "İdam yılı 30 mu 33 mü kesinleşmemiştir.",
+        "citations": [
+          {
+            "source_ref": "tacitus-on-jesus-wikipedia",
+            "locator": "Kronoloji",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tam-metin-okunmadi",
+        "text": "Bu kayıtta iki standart eserin de tam metni okunmamıştır; künyeler ve tezler doğrulanmıştır.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2012-did-jesus-exist",
+            "locator": "Kaynak erişim düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Anlatılarda kaç ayrı bağımsız geleneğin izi sürülebilir? Alanda tartışmalı.",
+      "İdam yılı 30 mu 33 mü?"
     ],
     "checked": "2026-09-07",
     "used_in": [
       "isa-tarihsellik"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "İki hakemli çıpa eklendi; Katolik/agnostik eşleşmesi yanlılık itirazına somut cevap. Tam metinler okunmadı."
+    }
   },
   {
     "id": "testimonium-flavianum-mudahale",
@@ -1227,6 +1368,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "tacitus-procurator-anakronizmi",
     "claim": "Tacitus'un Pilatus'a yanlış unvan (procurator) vermesi, pasajın sonradan eklenmediğini gösteren bir kanıttır.",
     "status": "established",
@@ -1264,33 +1406,20 @@
     ],
     "people": [
       {
-        "name": "Publius Cornelius Tacitus",
+        "name": "Tacitus, Publius Cornelius",
         "role": "editor",
         "year": 116,
         "lifespan": "y. 56-120"
       }
     ],
     "popular_claim": "Tacitus'un pasajı sonradan Hristiyanlarca eklenmiştir.",
-    "divergence": "Pasajın içindeki HATA, ekleme tezinin aleyhine çalışıyor. Tacitus Pilatus'u 'procurator' diye anıyor; oysa Kayseriye yazıtı unvanın 'praefectus' olduğunu gösteriyor - procurator sonraki bir dönemin kullanımıdır. Tacitus bir Roma arşiv kaydından kopyalasaydı doğru unvanı yazardı. Yanlış unvan, kendi döneminin dilini kullandığını, yani pasajı KENDİSİNİN kaleme aldığını gösteriyor. Sonradan araya sokulmuş bir Hristiyan eklemesinin hem küçümseyici üslup tutturup hem bu tür bir idari anakronizm yapması beklenmez.",
+    "divergence": "Pasajın içindeki HATA, ekleme tezinin aleyhine çalışıyor. Tacitus Pilatus'u 'procurator' diye anıyor; Kayseriye yazıtı unvanın 'praefectus' olduğunu gösteriyor. Bir Roma arşiv kaydından kopyalansaydı doğru unvan yazılırdı. Yanlış unvan, yazarın kendi döneminin dilini kullandığını gösteriyor. İkinci iz: en eski elyazmasında sözcük 'chrestianos' yazılmış, sonradan düzeltilmiş - adı tam bilmeyen birinin yazımı.",
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Tacitus, Annales 15.44'te Pilatus'un unvanını 'procurator' olarak veriyor.",
-      "1961'de Kayseriye'de bulunan yazıt Pilatus'un unvanının 'praefectus' olduğunu gösteriyor - farklı bir idari sınıf.",
-      "Pasajı taşıyan en eski elyazmasında sözcük 'chrestianos' biçiminde yazılmış, sonradan 'christianos' olarak düzeltilmiş. Chrestus yaygın bir köle adıydı; bu, adı tam bilmeyen dışarıdan birinin yazımıdır. Bir Hristiyan kopyacı kendi dininin adını yanlış yazmaz.",
-      "Pasajın üslubu Hristiyanlara açıkça düşmanca - bir Hristiyan eklemesinden beklenmez."
-    ],
-    "counter_evidence": [
-      "Tacitus'un anakronizmi kasıtsız bir kolaylık da olabilir; Romalı yazarlar geçmiş dönem unvanlarını kendi dönemlerinin terimleriyle vermeye eğilimliydi. Bu, argümanı zayıflatmaz ama tek başına belirleyici de kılmaz.",
-      "Tacitus'un bilgisinin kaynağı belirsiz: Roma arşivi mi, kendi döneminde Hristiyanlar hakkında bilinenler mi? Büyük olasılıkla ikincisi - bu durumda pasaj bağımsız bir kanıt değil, 2. yüzyıl başında bilinenin kaydıdır.",
-      "Elimizdeki metin tek bir elyazması koluna dayanıyor."
-    ],
-    "open_questions": [
-      "Tacitus bilgiyi nereden aldı? Roma arşivi olduğuna dair kanıt yok."
-    ],
     "sources": [
       {
+        "id": "tacitus-annales-15-44",
         "tier": "primary",
         "type": "edition",
         "authors": [
@@ -1298,32 +1427,142 @@
         ],
         "year": 116,
         "title": "Annales 15.44",
-        "language": "la"
+        "publisher": "—",
+        "language": "la",
+        "note": "Bağımsız Roma kaydı."
       },
       {
+        "id": "pilatus-yaziti-caesarea",
         "tier": "primary",
         "type": "inscription",
         "year": 30,
-        "title": "Pilatus yazıtı (Kayseriye)",
+        "title": "Pilatus yazıtı (Caesarea Maritima)",
+        "publisher": "—",
         "language": "la",
-        "note": "Pilatus'un unvanını 'praefectus' olarak veren tek çağdaş fiziksel kanıt."
+        "note": "1961'de Antonio Frova başkanlığındaki İtalyan heyetince bulundu; İsrail Müzesi."
       },
       {
+        "id": "ehrman-2012-did-jesus-exist",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ehrman, Bart D."
+        ],
+        "year": 2012,
+        "title": "Did Jesus Exist? The Historical Argument for Jesus of Nazareth",
+        "publisher": "HarperOne",
+        "isbn": "9780062204608",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Yazar agnostiktir ve mitçi konumu doğrudan ele alır. Künye doğrulandı, tam metin okunmadı."
+      },
+      {
+        "id": "tacitus-on-jesus-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "Tacitus on Jesus",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Tacitus_on_Jesus",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak; alanın uzlaşı durumunun özeti."
       }
+    ],
+    "evidence": [
+      {
+        "id": "procurator-unvani",
+        "text": "Tacitus, Annales 15.44'te Pilatus'un unvanını 'procurator' olarak verir.",
+        "citations": [
+          {
+            "source_ref": "tacitus-annales-15-44",
+            "locator": "15. kitap, 44. bölüm",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "praefectus-yaziti",
+        "text": "Kayseriye yazıtı Pilatus'un unvanının 'praefectus' olduğunu gösterir - farklı bir idari sınıf.",
+        "citations": [
+          {
+            "source_ref": "pilatus-yaziti-caesarea",
+            "locator": "Yazıt metni",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "dusmanca-uslup",
+        "text": "Pasajın üslubu Hristiyanlara açıkça düşmancadır; bir Hristiyan eklemesinden beklenmez.",
+        "citations": [
+          {
+            "source_ref": "tacitus-on-jesus-wikipedia",
+            "locator": "Üslup ve sahihlik bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sahihlik-kabulu",
+        "text": "Pasajın sahihliği ve bağımsız bir Roma kaydı olarak değeri alanda geniş kabul görür.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2012-did-jesus-exist",
+            "locator": "Hristiyan olmayan kaynaklar bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "kolaylik-ihtimali",
+        "text": "Tacitus'un anakronizmi kasıtsız bir kolaylık da olabilir; Romalı yazarlar geçmiş dönem unvanlarını kendi dönemlerinin terimleriyle vermeye eğilimliydi.",
+        "citations": [
+          {
+            "source_ref": "tacitus-on-jesus-wikipedia",
+            "locator": "Anakronizm tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kaynak-belirsiz",
+        "text": "Tacitus'un bilgisinin kaynağı belirsizdir: Roma arşivi mi, kendi döneminde bilinenler mi? Büyük olasılıkla ikincisi - bu durumda pasaj bağımsız kanıt değil, 2. yüzyıl başında bilinenin kaydıdır.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2012-did-jesus-exist",
+            "locator": "Tacitus değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tek-elyazmasi",
+        "text": "Elimizdeki metin tek bir elyazması koluna dayanır.",
+        "citations": [
+          {
+            "source_ref": "tacitus-on-jesus-wikipedia",
+            "locator": "Elyazması geleneği",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Tacitus bilgiyi nereden aldı? Roma arşivi olduğuna dair kanıt yok."
     ],
     "checked": "2026-09-07",
     "used_in": [
       "isa-tarihsellik"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Hakemli çıpa eklendi; tam metin okunmadı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "pilatus-yaziti-kayseriye",
     "claim": "Pontius Pilatus'un varlığını ve unvanını doğrudan belgeleyen tek çağdaş fiziksel kanıt, 1961'de Kayseriye'de bulunan taş yazıttır.",
     "status": "established",
@@ -1372,43 +1611,126 @@
       }
     ],
     "popular_claim": "Pontius Pilatus yalnızca İncillerden bilinen, tarihsel varlığı belirsiz bir figürdür.",
-    "divergence": "Yazıt, İncil metinlerinden tamamen bağımsız bir fiziksel kanıttır ve Pilatus'un hem varlığını hem unvanını doğrudan belgeler. Ayrıca metinlerin verdiği 'procurator' unvanının yanlış, doğrusunun 'praefectus' olduğunu göstererek kaynak eleştirisinde ikinci bir iş yapar.",
+    "divergence": "Yazıt, İncil metinlerinden TAMAMEN BAĞIMSIZ bir fiziksel kanıttır ve Pilatus'un hem varlığını hem unvanını doğrudan belgeler. Ayrıca metinlerin verdiği 'procurator' unvanının yanlış, doğrusunun 'praefectus' olduğunu göstererek kaynak eleştirisinde ikinci bir iş yapar.",
     "divergence_type": [
       "guncellenmemis"
     ],
-    "evidence": [
-      "Kayseriye tiyatrosunda, ikincil kullanımda bir basamak taşı olarak bulundu - yani özgün bağlamından çıkarılmış, sonradan yeniden kullanılmış.",
-      "Korunan metin Tiberius'a adanmış bir yapıyı ve Pilatus'un adını ve unvanını içeriyor.",
-      "Unvan 'praefectus' okunuyor; bu, Yahudiye'nin Pilatus dönemindeki idari statüsüyle uyumlu."
-    ],
-    "counter_evidence": [
-      "Yazıt kırık ve eksiktir; okumanın bazı bölümleri tamamlamaya dayanır.",
-      "İkincil kullanımda bulunduğu için özgün konumu ve tam tarihi kesin değildir."
-    ],
     "sources": [
       {
+        "id": "pilatus-yaziti-caesarea",
         "tier": "primary",
         "type": "inscription",
         "year": 30,
         "title": "Pilatus yazıtı (Caesarea Maritima)",
+        "publisher": "—",
         "language": "la",
         "note": "1961'de Antonio Frova başkanlığındaki İtalyan heyetince bulundu; İsrail Müzesi."
       },
       {
+        "id": "ehrman-2012-did-jesus-exist",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ehrman, Bart D."
+        ],
+        "year": 2012,
+        "title": "Did Jesus Exist? The Historical Argument for Jesus of Nazareth",
+        "publisher": "HarperOne",
+        "isbn": "9780062204608",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Yazar agnostiktir ve mitçi konumu doğrudan ele alır. Künye doğrulandı, tam metin okunmadı."
+      },
+      {
+        "id": "pilate-stone-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "Pilate stone",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Pilate_stone",
         "language": "en",
         "accessed": "2026-09-07",
         "note": "Ara kaynak; birincil epigrafik yayınla değiştirilmeli."
       }
     ],
+    "evidence": [
+      {
+        "id": "ikincil-kullanim",
+        "text": "Yazıt, Kayseriye tiyatrosunda ikincil kullanımda bir basamak taşı olarak bulundu - özgün bağlamından çıkarılıp sonradan yeniden kullanılmış.",
+        "citations": [
+          {
+            "source_ref": "pilate-stone-wikipedia",
+            "locator": "Buluntu bağlamı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yazit-metni",
+        "text": "Korunan metin Tiberius'a adanmış bir yapıyı ve Pilatus'un adını ve unvanını içerir; unvan 'praefectus' okunur.",
+        "citations": [
+          {
+            "source_ref": "pilatus-yaziti-caesarea",
+            "locator": "Yazıt metni",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tartisma-disi",
+        "text": "Pilatus'un tarihselliği, tarihsel İsa literatüründe tartışma konusu değildir.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2012-did-jesus-exist",
+            "locator": "Arka plan bölümü",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "kirik-yazit",
+        "text": "Yazıt kırık ve eksiktir; okumanın bazı bölümleri tamamlamaya dayanır.",
+        "citations": [
+          {
+            "source_ref": "pilate-stone-wikipedia",
+            "locator": "Okuma ve tamamlama",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ozgun-konum-belirsiz",
+        "text": "İkincil kullanımda bulunduğu için özgün konumu ve tam tarihi kesin değildir.",
+        "citations": [
+          {
+            "source_ref": "pilate-stone-wikipedia",
+            "locator": "Buluntu bağlamı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "epigrafik-yayin-gorulmedi",
+        "text": "Yazıtın epigrafik yayını bu kayıtta doğrudan görülmemiştir; ara kaynak üzerinden kullanılmıştır.",
+        "citations": [
+          {
+            "source_ref": "pilate-stone-wikipedia",
+            "locator": "Kaynak düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
     "checked": "2026-09-07",
     "used_in": [
       "isa-tarihsellik"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Birincil epigrafik yayın hâlâ görülmedi; ara kaynak düzeyinde."
+    }
   },
   {
     "id": "roma-hristiyanligi-uydurdu-tezi",
@@ -2839,9 +3161,9 @@
   {
     "schema_version": 2,
     "id": "cadi-avi-donemi",
-    "claim": "Avrupa'daki büyük cadı avı dalgası Ortaçağ'a değil, erken modern döneme (yaklaşık 1560-1630) aittir.",
+    "claim": "Avrupa'daki büyük cadı avı dalgası Ortaçağ'a değil, erken modern döneme aittir.",
     "status": "established",
-    "confidence": "medium",
+    "confidence": "high",
     "topic": [
       "kilise",
       "erken-modern",
@@ -2869,13 +3191,37 @@
       "tarih",
       "antropoloji"
     ],
+    "people": [
+      {
+        "name": "Levack, Brian P.",
+        "role": "analyst",
+        "affiliation": "University of Texas at Austin",
+        "year": 2016
+      }
+    ],
     "popular_claim": "Cadı yakma Ortaçağ karanlığının simgesidir ve milyonlarca kadın yakılmıştır.",
-    "divergence": "İki hata birden: DÖNEM ve SAYI. Yoğunlaşma 16. yüzyıl ortası ile 17. yüzyıl başıdır - yani Rönesans ve Reform SONRASI, hem Katolik hem Protestan bölgelerde. Daha erken dönemde kilise hukuku gece uçuşu gibi inançları hurafe sayan bir metni esas alıyordu; sertleşme sonradan geldi. Modern tahminler on binler mertebesindedir; 'milyonlar' rakamı 19.-20. yüzyıl polemiğinin ürünüdür.",
+    "divergence": "İki hata birden: DÖNEM ve SAYI. Alanın standart monografisi cadı avının büyük çağını 1450-1750 aralığına yerleştirir - yani Rönesans ve Reform SONRASI, hem Katolik hem Protestan bölgelerde. Sayı için verdiği tahmin, Avrupa geneli ve yaklaşık iki yüz yıl için YAKLAŞIK 45.000 İDAMDIR. 'Milyonlar' rakamı 19.-20. yüzyıl polemiğinin ürünüdür ve gerçek tahminin iki mertebe üstündedir.",
     "divergence_type": [
       "medya-abartisi",
       "kategori-hatasi"
     ],
     "sources": [
+      {
+        "id": "levack-2016-witch-hunt",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Levack, Brian P."
+        ],
+        "year": 2016,
+        "title": "The Witch-Hunt in Early Modern Europe",
+        "publisher": "Routledge",
+        "isbn": "9781138808102",
+        "volume": "4. baskı",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Alanın standart monografisi. Avrupa geneli için ~45.000 idam tahmini verir; kapsam 1450-1750. Künye doğrulandı, tam metin okunmadı."
+      },
       {
         "id": "witch-trials-wikipedia",
         "tier": "institutional",
@@ -2885,12 +3231,34 @@
         "url": "https://en.wikipedia.org/wiki/Witch_trials_in_the_early_modern_period",
         "language": "en",
         "accessed": "2026-09-07",
-        "note": "Ara kaynak. Hakemli çıpa (ör. Levack) BULUNAMADI/eklenmedi; kaydın başlıca zayıflığı."
+        "note": "Ara kaynak."
       }
     ],
     "evidence": [
       {
-        "id": "1560-1630",
+        "id": "1450-1750-kapsam",
+        "text": "Alanın standart monografisi cadı avının büyük çağını 1450-1750 aralığında ele alır; kitapta kronoloji ve coğrafya için ayrı bir bölüm vardır.",
+        "citations": [
+          {
+            "source_ref": "levack-2016-witch-hunt",
+            "locator": "Kapsam ve 'The chronology and geography of witch-hunting' bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "45-bin-tahmini",
+        "text": "Avrupa geneli için yaklaşık iki yüz yıllık dönemde tahmin edilen idam sayısı yaklaşık 45.000'dir (asılarak ya da yakılarak).",
+        "citations": [
+          {
+            "source_ref": "levack-2016-witch-hunt",
+            "locator": "İdam sayısı tahmini",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "1560-1630-zirve",
         "text": "Yargılamaların yoğunlaştığı dönem yaklaşık 1560-1630'dur; hem Katolik hem Protestan bölgelerde yaşandı.",
         "citations": [
           {
@@ -2914,12 +3282,12 @@
     ],
     "counter_evidence": [
       {
-        "id": "sayilar-tartismali",
-        "text": "Toplam idam sayısı için verilen aralıklar tartışmalıdır; bu kayıt kesin rakam değil mertebe verir.",
+        "id": "tahmin-sayim-degil",
+        "text": "45.000 bir TAHMİNDİR, sayım değil; kayıt eksikliği ve bölgesel farklar nedeniyle aralık verilir.",
         "citations": [
           {
-            "source_ref": "witch-trials-wikipedia",
-            "locator": "Sayı tahminleri bölümü",
+            "source_ref": "levack-2016-witch-hunt",
+            "locator": "İdam sayısı tahmini",
             "support_type": "counter"
           }
         ]
@@ -2936,29 +3304,27 @@
         ]
       },
       {
-        "id": "en-zayif-kayit",
-        "text": "BU KAYIT TEK ARA KAYNAĞA DAYANIYOR. Alanın standart hakemli monografileri (ör. Levack) taranmadı; kümenin en zayıf kaydıdır.",
+        "id": "tam-metin-okunmadi",
+        "text": "Bu kayıtta monografinin tam metni okunmamıştır; künye, kapsam ve tahmin rakamı doğrulanmıştır.",
         "citations": [
           {
-            "source_ref": "witch-trials-wikipedia",
-            "locator": "Kaynak düzeyi",
+            "source_ref": "levack-2016-witch-hunt",
+            "locator": "Kaynak erişim düzeyi",
             "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Toplam idam sayısı nedir? Aralıklar tartışmalı.",
-      "Hakemli monografi taraması yapılmalı."
+      "Bölgesel dağılımın ayrıntılı haritası bu kayıtta çıkarılmadı."
     ],
     "checked": "2026-09-07",
-    "volatile": true,
     "used_in": [
       "mit-ve-sicil"
     ],
     "review": {
       "status": "draft",
-      "notes": "KÜMENİN EN ZAYIF KAYDI: tek ara kaynak, hakemli çıpa yok."
+      "notes": "Hakemli çıpa eklendi (Levack 2016) ve rakam belirsizlikten çıktı: 'on binler' -> ~45.000."
     }
   }
 ]
