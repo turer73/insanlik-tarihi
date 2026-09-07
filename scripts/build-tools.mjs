@@ -15,6 +15,7 @@ import {
 import { spawnSync } from "node:child_process";
 import { join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { normalizeFindingForTools } from "./lib/normalize-for-tools.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const args = process.argv.slice(2);
@@ -66,8 +67,11 @@ const bundleJson = JSON.stringify(bundle);
 writeFileSync(join(ROOT, "data", "findings.bundle.json"), `${bundleJson}\n`);
 console.log(`bundle  ${bundle.length} kayıt / ${files.length} dosya`);
 
+// Araçlar, geçiş sürecinde v1 düz metin ve v2 kaynak bağlantılı kanıtları birlikte okuyabilir.
+const toolBundleJson = JSON.stringify(bundle.map(normalizeFindingForTools));
+
 // JSON, script etiketi içinde güvenli tutulur.
-const data = bundleJson.replace(/<\//g, "<\\/");
+const data = toolBundleJson.replace(/<\//g, "<\\/");
 const articles = readFileSync(join(ROOT, "data", "articles.json"), "utf8").replace(/<\//g, "<\\/");
 
 const jobs = [
