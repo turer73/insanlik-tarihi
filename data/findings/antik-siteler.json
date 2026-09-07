@@ -3646,6 +3646,18 @@
             "support_type": "context"
           }
         ]
+      },
+      {
+        "id": "atama-tarihi-celiskisi",
+        "text": "TARİH ÇELİŞKİSİ (2026-09-07): Karul'un kazı başkanlığına ne zaman geldiği kaynaklarda tutarsız - bir kaynak Göbekli Tepe 2016 / Karahan Tepe 2021 derken, başka bir kaynak ikisi için de 2020 verir. Bu kayıt çelişkiyi gizlemiyor; resmî atama belgesiyle çözülmelidir.",
+        "citations": [
+          {
+            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
+            "locator": "Kazı tarihçesi bölümü",
+            "support_type": "counter",
+            "note": "Bu kaynak 2016/2021 verir; başka bir Türkçe haber kaynağı ikisi için de 2020 der."
+          }
+        ]
       }
     ],
     "checked": "2026-09-07",
@@ -3655,7 +3667,10 @@
     "review": {
       "status": "draft",
       "notes": "Ara kaynak düzeyinde; resmî proje yayınlarıyla doğrulanmalı."
-    }
+    },
+    "open_questions": [
+      "Karul'un atama tarihleri nedir? Kaynaklar çelişiyor."
+    ]
   },
   {
     "schema_version": 2,
@@ -3796,7 +3811,7 @@
       "mimarlik"
     ],
     "subject": {
-      "site": "Karahan Tepe - Havuzlu Yapı",
+      "site": "Karahan Tepe - Havuzlu Yapı (AB yapısı)",
       "region": "Şanlıurfa, Yukarı Mezopotamya",
       "modern_country": "Türkiye",
       "coordinates": {
@@ -3821,13 +3836,39 @@
       "arkeoloji",
       "mimarlik"
     ],
+    "people": [
+      {
+        "name": "Karul, Necmi",
+        "role": "excavator",
+        "affiliation": "İstanbul Üniversitesi",
+        "year": 2021
+      }
+    ],
     "popular_claim": "Karahan Tepe 'ikinci Göbekli Tepe'dir.",
-    "divergence": "Yapım mantığı FARKLIDIR ve bu, 'ikinci Göbekli Tepe' nitelemesini yanıltıcı kılar. Göbekli Tepe'nin T biçimli dikilitaşları serbest durur - getirilip dikilmiştir. Karahan Tepe'nin Havuzlu Yapısı ise ana kayaya oyulmuştur: oval planlı, iç yüzeyinde fallik biçimli kabartma sütunlar ve üst kenarda mekâna bakan bir insan başı/büst heykeli. Sütunlar kayanın içinden çıkarılmıştır. Yapı inşa edilmemiş, OYULMUŞTUR. İki site aynı geleneğin parçası olabilir ama biri ötekinin kopyası değildir.",
+    "divergence": "Yapım mantığı FARKLIDIR ve bu, 'ikinci Göbekli Tepe' nitelemesini yanıltıcı kılar. Göbekli Tepe'nin T biçimli dikilitaşları serbest durur - getirilip dikilmiştir. Karahan Tepe'nin Havuzlu Yapısı ise ana kayaya oyulmuştur: oval planlı, iç yüzeyinde fallik biçimli kabartma sütunlar ve üst kenarda mekâna bakan bir insan başı/büst heykeli. Sütunlar kayanın içinden çıkarılmıştır. Yapı inşa edilmemiş, OYULMUŞTUR. ADLANDIRMA NOTU: popüler kaynaklarda 'Havuzlu Yapı' denen mekân, kazı başkanının yayınında 'AB yapısı' olarak geçer; iki ad aynı yapıyı işaret eder.",
     "divergence_type": [
       "medya-abartisi",
       "turizm-kopyalamasi"
     ],
     "sources": [
+      {
+        "id": "karul-2021-buried-buildings",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Karul, Necmi"
+        ],
+        "year": 2021,
+        "title": "Buried Buildings at Pre-Pottery Neolithic Karahantepe",
+        "container": "Türk Arkeoloji ve Etnografya Dergisi",
+        "volume": "82",
+        "pages": "21-31",
+        "publisher": "T.C. Kültür ve Turizm Bakanlığı",
+        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/issue/63476/909296",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Kazı başkanının kendi hakemli yayını. ISSN 1302-9231. Bu kayıtta makalenin ÖZETİ okunmuştur, tam metni değil; locator'lar özet düzeyindedir."
+      },
       {
         "id": "turkiye-turizm-ansiklopedisi-karahantepe",
         "tier": "institutional",
@@ -3837,21 +3878,21 @@
         "url": "https://turkiyeturizmansiklopedisi.com/karahantepe",
         "language": "tr",
         "accessed": "2026-09-07",
-        "note": "Türkçe ansiklopedik ara kaynak. Karbon tarihleri ve Havuzlu Yapı betimlemesi buradan alındı; birincil kazı yayınıyla değiştirilmelidir."
-      },
-      {
-        "id": "karahan-tepe-wikipedia-en",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Karahan Tepe",
-        "institution": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Karahan_Tepe",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; alan ve kazılan oran rakamları için."
+        "note": "Türkçe ansiklopedik ara kaynak."
       }
     ],
     "evidence": [
+      {
+        "id": "ab-yapisi-yayinda",
+        "text": "Kazı başkanının yayını, yerleşimdeki gömülü yapıları sunarken özellikle AB yapısına odaklanır.",
+        "citations": [
+          {
+            "source_ref": "karul-2021-buried-buildings",
+            "locator": "Özet",
+            "support_type": "direct"
+          }
+        ]
+      },
       {
         "id": "havuzlu-yapi-tanimi",
         "text": "Havuzlu Yapı ana kayaya oyulmuş, oval planlıdır; iç yüzeyi fallik biçimli sütunlarla bezeli ve üst kenarında bir baş/büst heykeli bulunur.",
@@ -3859,17 +3900,6 @@
           {
             "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
             "locator": "Havuzlu Yapı bölümü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "kayaya-oyma-mimari",
-        "text": "Karahan Tepe kayaya oyulmuş mimari öğeleri yerinde korunmuş bir Çanak Çömleksiz Neolitik yerleşimidir.",
-        "citations": [
-          {
-            "source_ref": "karahan-tepe-wikipedia-en",
-            "locator": "Mimari bölümü",
             "support_type": "direct"
           }
         ]
@@ -3888,16 +3918,19 @@
         ]
       },
       {
-        "id": "t-sutunlar-da-var",
-        "text": "Karahan Tepe'de T biçimli dikilitaşlar da bulunmaktadır; yapım mantığı farkı mutlak bir ayrım değildir.",
+        "id": "betimleme-ara-kaynak",
+        "text": "Yapının ayrıntılı betimlemesi hâlâ ara kaynaklıdır; birincil yayının yalnızca özeti okunmuştur.",
         "citations": [
           {
-            "source_ref": "karahan-tepe-wikipedia-en",
-            "locator": "Mimari bölümü",
-            "support_type": "counter"
+            "source_ref": "karul-2021-buried-buildings",
+            "locator": "Kaynak erişim düzeyi",
+            "support_type": "context"
           }
         ]
       }
+    ],
+    "open_questions": [
+      "'Havuzlu Yapı' ile 'AB yapısı' adlandırmaları literatürde nasıl ayrışıyor?"
     ],
     "checked": "2026-09-07",
     "used_in": [
@@ -3905,7 +3938,149 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Ara kaynak düzeyinde; kazı yayınıyla doğrulanmalı."
+      "notes": "Birincil yayın eklendi ama yalnızca özet okundu; ayrıntılı betimleme hâlâ ara kaynaklı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "karahantepe-kasitli-doldurma",
+    "claim": "Karahantepe'de açığa çıkarılan yapılar kasten doldurulmuştur; kazı başkanı bunları 'özel yapı' olarak tanımlar.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "karahan-tepe",
+      "tas-tepeler",
+      "arkeoloji",
+      "gomulme"
+    ],
+    "subject": {
+      "site": "Karahantepe",
+      "region": "Şanlıurfa, Yukarı Mezopotamya",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 37.1,
+        "lon": 39.3
+      }
+    },
+    "period": {
+      "earliest": -9400,
+      "latest": -8000,
+      "era_label": "Çanak Çömleksiz Neolitik",
+      "precision": "range",
+      "dating_method": [
+        "radiocarbon",
+        "stratigraphy"
+      ]
+    },
+    "languages": [
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji"
+    ],
+    "people": [
+      {
+        "name": "Karul, Necmi",
+        "role": "excavator",
+        "affiliation": "İstanbul Üniversitesi",
+        "year": 2021
+      }
+    ],
+    "popular_claim": "Neolitik yapılar zamanla toprak altında kalmıştır.",
+    "divergence": "Karahantepe'de doldurma DOĞAL BİRİKİM DEĞİL, kasıtlı bir uygulamadır. Kazı başkanının hakemli yayınında yerleşimdeki açığa çıkarılmış yapıların tamamı, KASTEN DOLDURULMUŞ olmaları bakımından 'özel yapı' olarak tanımlanır. Makale AB yapısına odaklanır ve bulguları, Yakın Doğu ve Anadolu'da erken Neolitik'ten geç Neolitik'e uzanan 'yapı gömme' tartışmasına bağlar.",
+    "divergence_type": [
+      "guncellenmemis"
+    ],
+    "sources": [
+      {
+        "id": "karul-2021-buried-buildings",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Karul, Necmi"
+        ],
+        "year": 2021,
+        "title": "Buried Buildings at Pre-Pottery Neolithic Karahantepe",
+        "container": "Türk Arkeoloji ve Etnografya Dergisi",
+        "volume": "82",
+        "pages": "21-31",
+        "publisher": "T.C. Kültür ve Turizm Bakanlığı",
+        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/issue/63476/909296",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Kazı başkanının kendi hakemli yayını. ISSN 1302-9231. Bu kayıtta makalenin ÖZETİ okunmuştur, tam metni değil; locator'lar özet düzeyindedir."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "kasitli-doldurma-tanimi",
+        "text": "Kazı başkanının yayınında, yerleşimde açığa çıkarılan yapıların tamamı kasten doldurulmuş olmaları bakımından 'özel yapı' olarak tanımlanır.",
+        "citations": [
+          {
+            "source_ref": "karul-2021-buried-buildings",
+            "locator": "Özet",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ab-yapisi-odak",
+        "text": "Makale, yeni açığa çıkarılan gömülü yapıları sunar ve özellikle AB yapısına odaklanır.",
+        "citations": [
+          {
+            "source_ref": "karul-2021-buried-buildings",
+            "locator": "Özet",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bolgesel-tartisma",
+        "text": "Bulgular, Yakın Doğu ve Anadolu'da erken Neolitik'ten geç Neolitik'e uzanan yapı gömme tartışmasına bağlanır.",
+        "citations": [
+          {
+            "source_ref": "karul-2021-buried-buildings",
+            "locator": "Özet",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "gobekli-icin-gecerli-degil",
+        "text": "Bu kayıt KARAHANTEPE hakkındadır. Göbekli Tepe'de kasıtlı gömme hâlâ tartışmalıdır (bkz. gobekli-tepe-kasitli-gomulme); bir sitedeki uygulama ötekini kanıtlamaz.",
+        "citations": [
+          {
+            "source_ref": "karul-2021-buried-buildings",
+            "locator": "Özet, karşılaştırmalı bölüm",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "tam-metin-okunmadi",
+        "text": "Bu kayıtta makalenin yalnızca özeti okunmuştur; tam metindeki gerekçelendirme ve stratigrafik kanıt incelenmemiştir.",
+        "citations": [
+          {
+            "source_ref": "karul-2021-buried-buildings",
+            "locator": "Kaynak erişim düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Doldurmanın gerekçesi nedir - tören, kapatma, yeniden inşa hazırlığı? Tam metin incelenmeli.",
+      "Göbekli Tepe'deki durum Karahantepe'dekiyle aynı mı? Ayrı soru, ayrı kanıt gerekir."
+    ],
+    "checked": "2026-09-07",
+    "used_in": [
+      "tas-tepeler"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Birincil hakemli kaynağa dayanıyor ama yalnızca özet okundu; tam metin incelemesi bekliyor."
     }
   }
 ]
