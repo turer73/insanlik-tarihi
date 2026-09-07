@@ -1,0 +1,29 @@
+/* İnsanlık Tarihi — ortak makale görsel katmanı */
+.it-archive-back{
+  position:fixed;left:clamp(.7rem,2vw,1.4rem);top:clamp(.7rem,2vw,1.2rem);z-index:80;
+  display:inline-flex;align-items:center;gap:.45rem;padding:.55rem .78rem;border:1px solid var(--rule,#c8c1ba);
+  border-radius:999px;background:color-mix(in srgb,var(--bg,#ebe7e1) 88%,transparent);backdrop-filter:blur(12px);
+  color:var(--ink-2,#4e4849);font-family:var(--mono,ui-monospace,monospace);font-size:.66rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px rgba(20,18,18,.08)
+}
+.it-archive-back:hover{color:var(--ink,#181518);border-color:var(--accent,#6b2d4a);transform:translateY(-1px)}
+.it-story-visual{width:100%;margin:clamp(.4rem,1vw,.8rem) 0 0;display:grid;gap:.65rem}
+.it-story-visual__frame{position:relative;width:100%;aspect-ratio:16/7.4;overflow:hidden;border:1px solid var(--rule,#c8c1ba);background:var(--surface-2,#ded8d0);box-shadow:0 24px 65px rgba(20,18,18,.12)}
+.it-story-visual__frame::after{content:'';position:absolute;inset:12px;border:1px solid rgba(255,255,255,.28);pointer-events:none}
+.it-story-visual__frame .it-art-svg{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.015)}
+.it-story-visual figcaption{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;color:var(--ink-3,#7b7476);font-size:.76rem;line-height:1.45}
+.it-story-visual figcaption b{font-family:var(--mono,ui-monospace,monospace);font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent-ink,var(--accent,#6b2d4a));white-space:nowrap}
+.it-story-visual figcaption span{max-width:66ch;text-align:right}
+.it-section-visual{position:relative;max-width:var(--wrap,1180px);margin:clamp(1.8rem,4vw,3rem) auto 0;padding-inline:clamp(1.25rem,4vw,3rem);overflow:hidden}
+.it-section-visual__frame{position:relative;height:clamp(150px,22vw,250px);overflow:hidden;border-block:1px solid var(--rule,#c8c1ba);background:var(--surface-2,#ded8d0)}
+.it-section-visual__frame::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,10,.5),transparent 50%,rgba(8,12,10,.18));pointer-events:none}
+.it-section-visual .it-art-svg{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.18) translateY(var(--it-crop-y,0));filter:saturate(.82) contrast(1.04)}
+.it-section-visual__label{position:absolute;left:clamp(2.4rem,7vw,6rem);bottom:clamp(1rem,3vw,2rem);z-index:2;color:#fff;max-width:30ch;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.it-section-visual__label b{display:block;font-family:var(--mono,ui-monospace,monospace);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:.38rem}
+.it-section-visual__label span{font-family:var(--display,Georgia,serif);font-size:clamp(1.15rem,2.5vw,1.8rem);line-height:1.08}
+.it-visual-disclaimer{max-width:var(--measure,68ch);margin:1rem 0 0;padding:.72rem .9rem;border-left:2px solid var(--accent,#6b2d4a);background:color-mix(in srgb,var(--accent-soft,#ebd9e1) 70%,transparent);font-size:.8rem;color:var(--ink-2,#4e4849)}
+@media(max-width:760px){
+  .it-archive-back{position:absolute}.it-story-visual__frame{aspect-ratio:4/3}.it-story-visual figcaption{display:block}.it-story-visual figcaption span{display:block;text-align:left;margin-top:.25rem}
+  .it-section-visual{padding-inline:0}.it-section-visual__frame{height:175px}.it-section-visual__label{left:1.2rem;right:1.2rem}
+}
+@media(prefers-reduced-motion:reduce){.it-archive-back{transition:none}}
