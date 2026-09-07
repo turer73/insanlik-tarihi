@@ -12,7 +12,7 @@
     "validate:strict": "node scripts/validate.mjs --strict",
     "validate:example": "node scripts/validate.mjs examples/finding.v2.json --strict",
     "build": "node scripts/build-tools.mjs",
-    "test": "node scripts/test-tool-normalization.mjs && node scripts/test-audit-template.mjs",
+    "test": "node scripts/test-tool-normalization.mjs && node scripts/test-audit-template.mjs && node scripts/test-static-tools.mjs",
     "check": "node scripts/validate.mjs && node scripts/validate.mjs examples/finding.v2.json --strict && npm test && node scripts/build-tools.mjs --skip-validate && git diff --exit-code -- data/findings.bundle.json dist"
   }
 }
