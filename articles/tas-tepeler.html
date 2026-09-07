@@ -10,6 +10,8 @@
   --rule:#C4C3BE; --rule-soft:#D5D4CF;
   --accent:#4A5D6E; --accent-ink:#374857; --accent-soft:#DCE3E9;
   --soil:#8A6440; --soil-ink:#6E4F31; --soil-soft:#EDE2D5;
+  --raised:#FBFAF8;
+  --err:#9A3527; --err-ink:#7C2A1E; --err-soft:#F1DDD8;
   --display:"Fraunces",Georgia,"Times New Roman",serif;
   --body:"Karla","Helvetica Neue",Arial,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
@@ -22,6 +24,8 @@
     --rule:#2D3033; --rule-soft:#23262A;
     --accent:#9BB4C8; --accent-ink:#B4C8D8; --accent-soft:#18232C;
     --soil:#C8A277; --soil-ink:#D8B792; --soil-soft:#291F14;
+    --raised:#1B1D1F;
+    --err:#DE8878; --err-ink:#E9A18F; --err-soft:#2A1512;
   }
 }
 :root[data-theme="dark"]{
@@ -30,6 +34,8 @@
   --rule:#2D3033; --rule-soft:#23262A;
   --accent:#9BB4C8; --accent-ink:#B4C8D8; --accent-soft:#18232C;
   --soil:#C8A277; --soil-ink:#D8B792; --soil-soft:#291F14;
+  --raised:#1B1D1F;
+  --err:#DE8878; --err-ink:#E9A18F; --err-soft:#2A1512;
 }
 
 *,*::before,*::after{box-sizing:border-box}
@@ -70,6 +76,35 @@ section:last-of-type{border-bottom:0}
 .sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:58ch;margin:0}
 .note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
 .note.s{border-color:var(--soil);background:var(--soil-soft)}
+.note.e{border-color:var(--err);background:var(--err-soft)}
+
+/* duzeltme kutusu */
+.errata{border:1px solid var(--err);background:var(--err-soft);padding:1.3rem 1.45rem;display:flex;flex-direction:column;gap:.7rem;max-width:80ch;margin-top:.4rem}
+.errata .tag{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--err);color:#fff;padding:.2rem .5rem;align-self:flex-start}
+.errata h3{font-size:1.1rem}
+.errata p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.errata p b{color:var(--ink)}
+.errata .was{font-family:var(--display);font-style:italic;font-size:1rem;color:var(--ink);border-left:2px solid var(--err);padding-left:.85rem}
+
+/* iki site yan yana */
+.sites{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:760px){.sites{grid-template-columns:1fr 1fr}}
+.si{background:var(--bg);padding:1.2rem 1.35rem;display:flex;flex-direction:column;gap:.55rem}
+.si .nm{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;align-self:flex-start}
+.si.g .nm{background:var(--accent);color:var(--raised)}
+.si.k .nm{background:var(--soil);color:var(--raised)}
+.si dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.35rem .9rem;font-size:.9rem}
+.si dt{font-family:var(--mono);font-size:.68rem;color:var(--ink-3);white-space:nowrap;padding-top:.15rem}
+.si dd{margin:0;color:var(--ink)}
+.si dd small{display:block;color:var(--ink-3);font-size:.8rem}
+
+/* kurumsal cerceve kartlari */
+.finds{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.fd{background:var(--bg);padding:1.1rem 1.3rem;display:grid;gap:.3rem 1.2rem;grid-template-columns:1fr}
+@media(min-width:820px){.fd{grid-template-columns:minmax(165px,auto) 1.9fr;align-items:start}}
+.fd__l{font-family:var(--mono);font-size:.67rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.2rem .5rem;align-self:start;background:var(--surface-2);color:var(--ink-2)}
+.fd p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.fd p b{color:var(--ink)}
 
 /* excavated bar */
 .dug{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.3rem 1.4rem}
@@ -141,10 +176,10 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <header class="hero">
   <div class="wrap hero__inner">
-    <span class="series">İnceleme 11 · Yukarı Mezopotamya</span>
+    <span class="series">İnceleme 11 · Yukarı Mezopotamya · revize edildi</span>
     <p class="eyebrow">Çanak Çömleksiz Neolitik · süren kazı · bilmediğimizin boyutu</p>
     <h1>Taş Tepeler: Yüzde Beş</h1>
-    <p class="hero__lede">Göbekli Tepe otuz yıldır kazılıyor ve <strong>yüzde beşi açıldı.</strong> Karahan Tepe daha büyük ve o da yüzde beş. Bu yazı, bulunanlar kadar <strong>bulunmayanların büyüklüğü</strong> hakkında — çünkü model bu sürede zaten iki kez değişti.</p>
+    <p class="hero__lede">Göbekli Tepe otuz yıldır kazılıyor ve <strong>yüzde beşi açıldı.</strong> Karahan Tepe'de de oran aynı. Bu yazı, bulunanlar kadar <strong>bulunmayanların büyüklüğü</strong> hakkında — çünkü model bu sürede zaten iki kez değişti.</p>
 
     <div class="stats">
       <div class="stat"><span class="stat__num">~%5</span><span class="stat__lbl">Göbekli Tepe'de otuz yılda kazılan oran</span></div>
@@ -152,14 +187,25 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
       <div class="stat"><span class="stat__num">MÖ ~9500</span><span class="stat__lbl">en eski çevreler — yazıdan 6.300 yıl önce</span></div>
       <div class="stat"><span class="stat__num s">17 m</span><span class="stat__lbl">Karahan Tepe'deki basamaklı yapının çapı</span></div>
     </div>
+
+    <div class="errata">
+      <span class="tag">Düzeltme · 2026-09-07</span>
+      <h3>Bu yazının önceki sürümünde yanlış bir cümle vardı</h3>
+      <p class="was">"Kesin olan tek şey: Karahan Tepe yüzey alanı olarak Göbekli Tepe'den büyük. Bu bütün kaynaklarda tutarlı."</p>
+      <p><b>Doğru değil.</b> Ve hata, tam da bu yazının uyardığı şeydi: Karahan Tepe için dolaşan <b>dört farklı rakamı</b> tablo hâline getirip "hangi rakam neyi sayıyor" diye sordum, ama <b>aynı soruyu Göbekli Tepe için sormadım.</b> Karahan'ın değişken aralığını, Göbekli'nin tek ve denetlenmemiş bir rakamıyla karşılaştırdım.</p>
+      <p>Göbekli Tepe'nin rakamları da oynuyor: höyük <b>~9 ha</b>, geniş site tahmini <b>~12 ha</b>, koruma alanı çok daha büyük. Karahan Tepe <b>~10 ha</b> (taş ocaklarıyla ~15 ha). <b>İkisi aynı mertebede</b> ve "hangisi daha büyük" sorusunun bugünkü veriyle temiz bir cevabı yok.</p>
+      <p><b>Ne değişmedi:</b> bölgede Göbekli Tepe'yle karşılaştırılabilir ölçekte başka merkezler olduğu. <b>Ne değişti:</b> "daha büyük" cümlesinin dayanağı. Bu sürümde ayrıca kurumsal çerçeve, Havuzlu Yapı ayrıntıları ve karbon tarihleri eklendi.</p>
+    </div>
   </div>
 </header>
 
 <nav class="nav" aria-label="Bölümler">
   <div class="wrap nav__scroll">
     <a href="#yuzde">Yüzde beş</a>
+    <a href="#kim">Kim kazıyor</a>
     <a href="#revizyon">İki revizyon</a>
     <a href="#karahan">Karahan Tepe</a>
+    <a href="#havuz">Havuzlu Yapı</a>
     <a href="#kronoloji">Hangisi eski</a>
     <a href="#rakam">Rakamlar tutmuyor</a>
     <a href="#agda">Tek site değil, ağ</a>
@@ -189,9 +235,34 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <p class="note" style="margin-top:1.4rem">Bu bir eleştiri değil — kazı yavaş olmak <b>zorunda</b>. Hızlı kazı bağlamı yok eder; bir kez çıkardığın tabakayı geri koyamazsın. Ama bu yavaşlığın bir sonucu var: <b>elimizdeki tablo eksik olduğunu bilerek okunmalı.</b></p>
 </section>
 
+<section id="kim" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Kurumsal çerçeve</p>
+    <h2>Kim kazıyor, hangi çatı altında</h2>
+    <p class="kicker">Önceki sürümde eksik kalan kısım: <b>işi kimin yürüttüğü.</b> Bir bilginin nereden geldiği, nasıl okunacağını belirler.</p>
+  </div>
+
+  <div class="finds">
+    <div class="fd">
+      <span class="fd__l">Proje</span>
+      <div><p><b>Taş Tepeler</b>, Kültür ve Turizm Bakanlığı tarafından başlatılan <b>Şanlıurfa Neolitik Çağ Araştırma Projesi</b>'nin kısa adıdır. Bölgedeki Neolitik yerleşimleri tek bir araştırma çatısı altında toplar.</p></div>
+    </div>
+    <div class="fd">
+      <span class="fd__l">Yürütücü</span>
+      <div><p>Koordinatör ve Karahan Tepe kazı başkanı <b>Prof. Dr. Necmi Karul</b> (İstanbul Üniversitesi). Karul <b>2016'da Göbekli Tepe</b>, <b>2021'de Karahan Tepe</b> kazı başkanlığına getirildi.</p></div>
+    </div>
+    <div class="fd">
+      <span class="fd__l">Takvim</span>
+      <div><p>Karahan Tepe'de <b>2017'de iki yıllık yüzey araştırması</b> başladı; sistemli kazı <b>2019</b>'da açıldı. Yani elimizdeki verinin büyük bölümü <b>son beş-altı yılın</b> ürünü ve hâlâ akıyor.</p></div>
+    </div>
+  </div>
+
+  <p class="note s" style="margin-top:1.4rem"><b>Neden bu bölüm eklendi:</b> önceki sürüm siteleri anlatıyordu ama <b>bilginin nereden geldiğini</b> anlatmıyordu. <b>Beş yıllık bir kazıdan otuz yıllık kesinlikte cümle çıkmaz</b> — ve bu yazının düzeltmeye ihtiyaç duymasının sebeplerinden biri de buydu.</p>
+</section>
+
 <section id="revizyon" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">02 — Model değişimi</p>
+    <p class="eyebrow">03 — Model değişimi</p>
     <h2>Otuz yılda iki kez fikir değiştirdik</h2>
     <p class="kicker">Ve ikisi de yeni kanıt geldiği için oldu — tam olarak olması gerektiği gibi.</p>
   </div>
@@ -222,7 +293,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <section id="karahan" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">03 — 2025 sezonu</p>
+    <p class="eyebrow">04 — 2025 sezonu</p>
     <h2>Karahan Tepe'de basamaklı yapı</h2>
   </div>
 
@@ -232,12 +303,19 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <p>Bunun ne anlama geldiği açık değil. Toplanma yeri mi, tören mekânı mı, karar alma alanı mı — <b>bilmiyoruz.</b> Ama şu söylenebilir: on bir bin yıl önce, yazıdan altı bin yıl önce, insanlar <b>oturarak birlikte bir şeye baktıkları</b> bir mekân inşa etmiş.</p>
   </div>
 
+  <h3 id="havuz" style="font-size:1.24rem;margin-top:2rem">Havuzlu Yapı — sitenin simgesi</h3>
+  <div class="prose" style="margin-top:.8rem">
+    <p><b>Ana kayaya oyulmuş</b>, oval planlı bir yapı. İç yüzeyinde <b>fallik biçimli</b> kabartma sütunlar var; üst kenarda <b>bir insan başı / büst</b> heykeli mekâna bakar hâlde duruyor.</p>
+    <p>Buradaki teknik ayrıntı önemli: sütunlar <b>getirilip dikilmemiş, kayanın içinden çıkarılmış.</b> Yapı inşa edilmemiş, <b>oyulmuş.</b> Bu, Göbekli Tepe'nin serbest duran T biçimli dikilitaşlarından <b>farklı bir yapım mantığıdır</b> — iki sitenin birbirinin kopyası olmadığını gösterir. "İkinci Göbekli Tepe" nitelemesi bu yüzden yanıltıcı.</p>
+    <p><b>Yorum konusunda dikkat:</b> "fallik" bir <b>biçim betimlemesidir, işlev yorumu değildir.</b> Sütunların ne anlattığı — bereket mi, atalar mı, başka bir şey mi — bilinmiyor ve bu yazı bir yorum önermiyor.</p>
+  </div>
+
   <p class="note s" style="margin-top:1.4rem"><b>Kaynak uyarısı:</b> Bu bulgular kazı sezonu duyuruları ve haber aktarımları üzerinden dolaşıyor; ayrıntılı bilimsel yayın henüz bu hızda gelmiyor. Ölçüler ve yorumlar <b>ön niteliktedir</b> ve yayın çıktığında değişebilir. Bu yazı onları "kesin" değil, <b>"bildirilen"</b> olarak veriyor.</p>
 </section>
 
 <section id="kronoloji" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">04 — Tarihleme</p>
+    <p class="eyebrow">05 — Tarihleme</p>
     <h2>Hangisi daha eski? Bilinmiyor.</h2>
   </div>
 
@@ -257,13 +335,43 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     </table>
   </div>
 
-  <p class="note" style="margin-top:1.4rem">Dürüst cevap: <b>her iki site de Çanak Çömleksiz Neolitik A–B aralığında ve öncelik belirlenmedi.</b> İkisi de %5 kazılı olduğu sürece, "en eski" iddiası hangi kesimin kazıldığına bağlı kalır — sitenin kendisine değil.</p>
+  <div class="prose" style="margin-top:1.6rem">
+    <p><b>Bu sürümde eklenen:</b> Karahan Tepe için Türkçe kaynaklarda verilen karbon tarihleri <b>MÖ 9400–9200</b> aralığında. Bu aralık, Göbekli Tepe'nin erken evresinin (yaklaşık MÖ 9500–8000) <b>içine düşüyor.</b></p>
+    <p>Yani mevcut karbon verisiyle ikisi <b>çağdaş</b> görünüyor — biri ötekinden belirgin biçimde eski değil. Türkçe popüler içerikte yaygın olan <b>"Karahan Tepe Göbekli Tepe'den daha eski"</b> cümlesi <b>desteklenmiyor.</b></p>
+    <p>Ayrıca dolaşımda bir gözlem var: Karahan Tepe'nin, Göbekli Tepe'nin terk edildiği dönemde kullanımda kalmış olabileceği. <b>Bu yazıda doğrulanmadı.</b></p>
+  </div>
+
+  <p class="note e" style="margin-top:1.4rem"><b>Kaynak uyarısı:</b> bu karbon aralığı <b>ikincil Türkçe kaynaklardan</b> alınmıştır; kazı ekibinin birincil tarihleme yayınıyla doğrulanmamıştır. İlgili veri tabanı kaydı bu yüzden <b>taslak</b> olarak işaretlendi.</p>
+
+  <p class="note" style="margin-top:1rem">Yine de dürüst cevap değişmiyor: <b>her iki site de Çanak Çömleksiz Neolitik A–B aralığında ve kesin öncelik belirlenmedi.</b> İkisi de %5 kazılı olduğu sürece, "en eski" iddiası hangi kesimin kazıldığına bağlı kalır — sitenin kendisine değil.</p>
 </section>
 
 <section id="rakam" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">05 — Ölçüm</p>
-    <h2>Alan rakamları üç kat oynuyor</h2>
+    <p class="eyebrow">06 — Ölçüm</p>
+    <h2>Hangi hektar</h2>
+    <p class="kicker">Önceki sürümün hatası buradaydı. Bu kez <b>iki siteye de aynı soru</b> soruluyor.</p>
+  </div>
+
+  <div class="sites">
+    <div class="si g">
+      <span class="nm">Göbekli Tepe</span>
+      <dl>
+        <dt>höyük</dt><dd>~9 ha<small>~300 m çap, ~15 m yükseklik</small></dd>
+        <dt>geniş site</dt><dd>~12 ha<small>bazı kaynaklarda</small></dd>
+        <dt>jeoradar</dt><dd>~9 ha<small>~90.000 m², ~200 dikilitaş işareti</small></dd>
+        <dt>koruma alanı</dt><dd>çok daha büyük<small>yerleşim alanı ölçmüyor</small></dd>
+      </dl>
+    </div>
+    <div class="si k">
+      <span class="nm">Karahan Tepe</span>
+      <dl>
+        <dt>yerleşim</dt><dd>~10 ha</dd>
+        <dt>+ taş ocakları</dt><dd>~5 ha<small>toplam ~15 ha</small></dd>
+        <dt>kazılan</dt><dd>~%5<small>2023 itibarıyla</small></dd>
+        <dt>üst değer</dt><dd>~32,5 ha<small>kaynağı belirsiz</small></dd>
+      </dl>
+    </div>
   </div>
 
   <div class="tablewrap">
@@ -281,13 +389,15 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
   <div class="prose" style="margin-top:1.6rem">
     <p>Bu tablo tek başına bir uyarı. Aynı site için dolaşan rakamlar arasında <b>üç kat fark</b> var, ve kaynakların çoğu kazı raporu değil <b>tur şirketi ve haber sitesi.</b> Rakamlar birbirinden kopyalanarak büyüyor.</p>
-    <p>Kesin olan tek şey: <b>Karahan Tepe yüzey alanı olarak Göbekli Tepe'den büyük.</b> Bu bütün kaynaklarda tutarlı. Ama "ne kadar büyük" sorusunun bugün güvenilir bir cevabı yok — ve "daha büyük yerleşim" demek için nüfus, çağdaş kullanım ve yapı yoğunluğu gerekir; hiçbiri elimizde değil.</p>
+    <p><b>Ve önceki sürümün hatası şuydu:</b> bu tabloyu kurup "rakamlar farklı şeyleri sayıyor olabilir" dedikten sonra, o dağınık aralığı Göbekli Tepe'nin <b>tek ve denetlenmemiş</b> bir rakamıyla karşılaştırıp "Karahan daha büyük" sonucuna vardı. <b>Şüphe tek tarafa uygulandı.</b></p>
+    <p>Yukarıdaki iki sütun aynı soruyu ikisine birden soruyor ve cevap şu: <b>höyük ~9 ha'ya karşı yerleşim ~10 ha — aynı mertebede.</b> Fark, ölçüm belirsizliğinin içinde kalıyor. En yüksek rakamlar ise (Göbekli'de koruma alanı, Karahan'da ~32,5 ha) <b>yerleşim alanı ölçmüyor</b> ve birbirleriyle karşılaştırılamaz.</p>
+    <p>Üstelik "daha büyük yerleşim" demek için alan yetmez: <b>nüfus, çağdaş kullanım ve yapı yoğunluğu</b> gerekir. Hiçbiri elimizde değil.</p>
   </div>
 </section>
 
 <section id="agda" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">06 — Bağlam</p>
+    <p class="eyebrow">07 — Bağlam</p>
     <h2>Anomali değil, bölgesel kültür</h2>
   </div>
 
@@ -300,7 +410,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <section id="curutme" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">07 — Düzeltme</p>
+    <p class="eyebrow">08 — Düzeltme</p>
     <h2>43 numaralı sütun ve kuyruklu yıldız iddiası</h2>
   </div>
 
@@ -324,7 +434,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <section id="sonuc" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">08 — Sonuç</p>
+    <p class="eyebrow">09 — Sonuç</p>
     <h2>Bilmediğimizin boyutu</h2>
   </div>
 
@@ -339,7 +449,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <section id="acik" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">09 — Bitmemiş işler</p>
+    <p class="eyebrow">10 — Bitmemiş işler</p>
     <h2>Dürüstçe: bilmediklerimiz</h2>
   </div>
 
@@ -350,11 +460,11 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     </div>
     <div class="oq">
       <p class="oq__q">Hangi site daha eski?</p>
-      <p class="oq__a">Kaynaklar çelişiyor. <b>Öncelik belirlenmedi</b> ve %5 kazı oranında belirlenmesi zor.</p>
+      <p class="oq__a">Karbon aralıkları <b>çağdaş olduklarına</b> işaret ediyor (Karahan MÖ 9400–9200, Göbekli'nin erken evresinin içinde). Ama bu rakamlar ikincil kaynaktan; <b>birincil yayınla doğrulanmadı</b> ve %5 kazı oranında kesin öncelik belirlemek zor.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Karahan Tepe gerçekte ne kadar büyük?</p>
-      <p class="oq__a">10 ile 32,5 hektar arasında değerler dolaşıyor. <b>Güvenilir tek bir rakam yok.</b> Kesin olan yalnızca Göbekli Tepe'den büyük olduğu.</p>
+      <p class="oq__a">10 ile 32,5 hektar arasında değerler dolaşıyor ve <b>güvenilir tek bir rakam yok.</b> Göbekli Tepe'ninkiler de oynuyor (~9–12 ha). <b>İkisi aynı mertebede;</b> "hangisi büyük" sorusunun bugünkü veriyle temiz cevabı yok.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Basamaklı yapı ne işe yarıyordu?</p>
@@ -375,6 +485,8 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <footer class="foot">
   <div class="wrap">
+    <p><b>Bu yazı 2026-09-07'de revize edildi.</b> Önceki sürümdeki hatalı bir karşılaştırma cümlesi düzeltildi ve düzeltme <b>silinmeyip görünür bırakıldı.</b> Kurumsal çerçeve, Havuzlu Yapı ayrıntıları ve karbon tarihleri bu sürümde eklendi; kaynak tabanı Türkçe kaynaklarla genişletildi.</p>
+    <p><b>Türkçe kaynak durumu.</b> Bu sürüm Türkçe hakemli bir jeomorfoloji çalışması, Kültür ve Turizm Bakanlığı'nın Taş Tepeler proje bilgisi ve Türkçe ansiklopedik kaynaklarla desteklenmiştir. <b>Kazı ekibinin birincil yayınları ve TÜBA-AR gibi hakemli arkeoloji dergileri henüz taranmamıştır;</b> bu sürümde eklenen karbon tarihleri ikincil kaynaklıdır ve ilgili kayıtlar taslak olarak işaretlenmiştir.</p>
     <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir.</p>
     <p><b>Kaynak kalitesi uyarısı — bu yazı için özellikle önemli.</b> Taş Tepeler aktif bir kazı alanıdır ve bulgular çoğunlukla sezon duyuruları, basın aktarımları ve proje iletişimi üzerinden dolaşır; ayrıntılı hakemli yayın bu hızda gelmez. 2025–26 bulguları (kuzey kesimdeki konut planları, Karahan Tepe'deki ~17 m çaplı basamaklı yapı) burada <b>"bildirilen"</b> olarak verilmiştir, "kanıtlanmış" olarak değil. Ölçüler ve yorumlar yayın çıktığında değişebilir.</p>
     <p><b>Alan ve tarih rakamları çelişkilidir</b> ve bu çelişki metin içinde gizlenmemiş, tablo hâlinde gösterilmiştir. Kaynakların önemli bir bölümü tur ve haber sitesidir; bu, rakamların birbirinden kopyalanarak büyümesinin başlıca sebebidir.</p>
