@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   validate-and-build:
-    name: validate and reproduce generated files
+    name: validate, reproduce and build site
     runs-on: ubuntu-latest
 
     steps:
@@ -23,5 +23,16 @@ jobs:
         with:
           node-version: 20
 
-      - name: Validate data and reproduce build
+      - name: Validate data and reproduce generated files
         run: npm run check
+
+      - name: Build production website
+        run: npm run build:site
+
+      - name: Verify production output
+        run: |
+          test -f site/index.html
+          test -f site/sitemap.xml
+          test -f site/feed.xml
+          test -f site/articles/iskenderiye.html
+          test -f site/dist/zaman-cizelgesi.html
