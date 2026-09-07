@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="İnsanlık Tarihi bulgularını uygarlık, insan ve derin zaman ölçeklerinde karşılaştırın.">
 <title>Ölçekli Zaman Çizelgesi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +47,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:var(--display);margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.01em;text-wrap:balance}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -137,15 +143,16 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   color:var(--accent-ink);padding:.28rem .55rem;text-decoration:none;display:inline-flex;gap:.35rem;align-items:center}
 .det .arts a:hover{background:var(--accent);color:var(--raised)}
 .det .noart{font-family:var(--mono);font-size:.7rem;color:var(--ink-3)}
-.row__lbl{border-right:1px solid var(--rule);padding:.38rem .7rem;display:flex;flex-direction:column;gap:.05rem;min-width:0}
+.row__lbl{border-right:1px solid var(--rule);padding:.38rem .7rem;display:flex;flex-direction:column;gap:.05rem;min-width:0;text-align:left;width:100%}
 .row__lbl b{font-size:.78rem;font-weight:600;color:var(--ink);line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row__lbl span{font-family:var(--mono);font-size:.6rem;color:var(--ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row__track{position:relative;height:34px;cursor:pointer}
-.bar{position:absolute;top:9px;height:16px;min-width:4px;border-radius:1px}
+.bar{position:absolute;top:9px;height:16px;min-width:4px;border-radius:1px;padding:0;cursor:pointer}
 .bar.est{background:var(--ok)} .bar.con{background:var(--warn)} .bar.min{background:var(--info)}
 .bar.ref{background:var(--bad)} .bar.unk{background:var(--none)} .bar.unm{background:var(--special)}
 .bar.pt{width:5px;border-radius:50%;height:10px;top:12px}
 .bar.fuzzy{opacity:.55;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.45) 0 3px,transparent 3px 6px)}
+.row__lbl[aria-pressed="true"],.bar[aria-pressed="true"]{box-shadow:inset 0 0 0 2px var(--accent)}
 .rowdate{position:absolute;top:10px;font-family:var(--mono);font-size:.62rem;color:var(--ink-3);white-space:nowrap;pointer-events:none}
 
 .det{border:1px solid var(--accent);background:var(--accent-soft);padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.6rem}
@@ -168,6 +175,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
+</head>
+<body>
 
 <header class="top">
   <div class="top__in">
@@ -242,7 +251,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     return r.period && typeof r.period.earliest === 'number';
   });
   var ART = JSON.parse(document.getElementById('articles').textContent);
-  var NOW = 2026;
+  var NOW = new Date().getFullYear();
   var ST = {established:'yerleşik',contested:'tartışmalı',minority:'azınlık',refuted:'çürütülmüş',unknown:'bilinmiyor',unmeasurable:'ölçülemez'};
   var CLS = {established:'est',contested:'con',minority:'min',refuted:'ref',unknown:'unk',unmeasurable:'unm'};
 
@@ -267,9 +276,12 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   function spans(r, y){
     var e = r.period.earliest, l = r.period.latest === undefined ? e : r.period.latest;
     var lo = Math.min(e,l), hi = Math.max(e,l);
-    if(lo === hi){ // nokta olay: ölçeğin binde beşi kadar tolerans
-      var s = SCALES[S.scale], tol = Math.abs(s.max - s.min) * 0.005;
-      return Math.abs(y - lo) <= tol;
+    if(lo === hi){
+      // Nokta olaylarda tarih aralığını yapay biçimde büyütme. Eşleşme,
+      // veri ölçeğine göre değil ekrandaki altı piksellik seçme alanına göre yapılır.
+      var plot = document.getElementById('plot');
+      var trackWidth = plot ? Math.max(1, plot.getBoundingClientRect().width - 230) : 820;
+      return Math.abs(pos(y, S.scale) - pos(lo, S.scale)) <= 6 / trackWidth;
     }
     return y >= lo && y <= hi;
   }
@@ -359,16 +371,17 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
       var cls = 'bar '+CLS[r.status] + (isPt?' pt':'') + (fuzzy[r.period.precision]?' fuzzy':'');
       var style = isPt ? 'left:'+left.toFixed(3)+'%' : 'left:'+left.toFixed(3)+'%;width:'+w.toFixed(3)+'%';
       var dateTxt = fmtY(e) + (l!==e? ' – '+fmtY(l) : '');
+      var ariaLabel = esc('Bulgu ayrıntısı: '+r.claim+' · '+dateTxt);
       var dl = left + (isPt?0.6:w+0.6);
       var flip = dl > 78;
       var dstyle = flip ? 'right:'+(100-left+0.6).toFixed(3)+'%' : 'left:'+dl.toFixed(3)+'%';
       var hasArt = (r.used_in||[]).some(function(u){ return ART[u]; });
       var dim = (S.guide !== null && !spans(r, S.guide)) ? ' dim' : '';
       return '<div class="row'+(S.sel===r.id?' sel':'')+dim+'" data-id="'+esc(r.id)+'">'
-        + '<div class="row__lbl"><b title="'+esc(r.claim)+'">'+esc((r.subject&&r.subject.site)||r.topic[0])
+        + '<button type="button" class="row__lbl" aria-pressed="'+(S.sel===r.id)+'"><b title="'+esc(r.claim)+'">'+esc((r.subject&&r.subject.site)||r.topic[0])
         + (hasArt?' <span class="art">↗</span>':'')+'</b>'
-        + '<span>'+esc(r.period.era_label||r.id)+'</span></div>'
-        + '<div class="row__track"><div class="'+cls+'" data-bar="1" style="'+style+'"></div>'
+        + '<span>'+esc(r.period.era_label||r.id)+'</span></button>'
+        + '<div class="row__track"><button type="button" class="'+cls+'" data-bar="1" aria-pressed="'+(S.sel===r.id)+'" aria-label="'+ariaLabel+'" style="'+style+'"></button>'
         + '<div class="rowdate" style="'+dstyle+'">'+esc(dateTxt)+'</div></div></div>';
     }).join('') || '<div style="padding:2rem;text-align:center;color:var(--ink-3)">Bu ölçek ve filtrelerde kayıt yok.</div>';
 
@@ -499,3 +512,5 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   draw();
 })();
 </script>
+</body>
+</html>

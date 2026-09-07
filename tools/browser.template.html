@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="İnsanlık Tarihi bulgularını durum, disiplin, bölge ve kaynak katmanına göre tarayın.">
 <title>Bulgu Veri Tabanı</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,7 +14,7 @@
   --bg:#EBE9E3; --surface:#F6F4EF; --surface-2:#DFDCD4; --raised:#FFFFFF;
   --ink:#15181A; --ink-2:#4A5054; --ink-3:#787F84;
   --rule:#C8C5BC; --rule-soft:#D8D5CC;
-  --accent:#2E4A63; --accent-ink:#1E3purple; --accent-ink:#1E344A; --accent-soft:#D9E1E9;
+  --accent:#2E4A63; --accent-ink:#1E344A; --accent-soft:#D9E1E9;
   --ok:#2C6B45; --ok-bg:#D8E8DE;
   --warn:#8A6410; --warn-bg:#F0E4C6;
   --info:#2A5580; --info-bg:#D7E3F0;
@@ -47,7 +53,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:var(--display);margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.01em;text-wrap:balance}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
@@ -154,6 +160,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
+</head>
+<body>
 
 <header class="top">
   <div class="top__in">
@@ -344,3 +352,5 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   kpis(); render();
 })();
 </script>
+</body>
+</html>

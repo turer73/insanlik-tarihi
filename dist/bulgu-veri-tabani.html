@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="İnsanlık Tarihi bulgularını durum, disiplin, bölge ve kaynak katmanına göre tarayın.">
 <title>Bulgu Veri Tabanı</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +53,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:var(--display);margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.01em;text-wrap:balance}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
@@ -154,6 +160,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
+</head>
+<body>
 
 <header class="top">
   <div class="top__in">
@@ -344,3 +352,5 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   kpis(); render();
 })();
 </script>
+</body>
+</html>
