@@ -1310,6 +1310,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "prometheus-pramantha-etimolojisi",
     "claim": "Prometheus adı Sanskritçe pramantha (ateş burgusu) sözcüğünden gelir ve bu, Hint-Avrupa ortak kökeninin kanıtıdır.",
     "status": "refuted",
@@ -1349,59 +1350,99 @@
         "role": "proposer",
         "year": 1870,
         "lifespan": "1823-1900"
-      },
-      {
-        "name": "Watkins, Calvert",
-        "role": "critic",
-        "affiliation": "Harvard University",
-        "year": 2000,
-        "lifespan": "1933-2013"
       }
     ],
     "popular_claim": "Prometheus adının Sanskritçe ateş burgusu pramantha ile aynı kökten geldiği kanıtlanmıştır.",
-    "divergence": "İddia 19. yüzyılda önerildi ve o günden beri 'kesin kanıt' olarak dolaşıyor. Çekici çünkü hem ses hem anlam uyuyor GİBİ: ateş getiren figürün adı, ateş yakan aletin adı. Ama BİÇİMSEL OLARAK OTURMUYOR - Sanskritçe pramantha gerçekten 'ateş burgusu' demektir ve 'şiddetle karıştırmak' anlamındaki bir kökten gelir, ancak Yunanca Promētheus ile düzenli ses karşılıkları kurulamıyor. Yunanca içi türetme ise sorunsuz çalışıyor: pro- (önce) + *mēthos (düşünmek/öğrenmek) = 'önceden düşünen'. Kardeşinin adının Epimetheus ('sonradan düşünen') olması bu okumayı destekliyor - ikisi bir çift oluşturuyor.",
+    "divergence": "İddia 19. yüzyılda önerildi ve o günden beri 'kesin kanıt' olarak dolaşıyor. Çekici çünkü hem ses hem anlam uyuyor gibi. Ama biçimsel olarak oturmuyor; Yunanca içi türetme ise sorunsuz çalışıyor ve kardeş adı Epimetheus ile bir çift oluşturuyor.",
     "divergence_type": [
       "eski-ceviri",
       "guncellenmemis",
       "medya-abartisi"
     ],
-    "evidence": [
-      "Antik dönemden beri ad 'önceden düşünen' olarak yorumlanır: pro- + mathein/mēthos.",
-      "Epimetheus ('sonradan düşünen') ile oluşturduğu çift, Yunanca içi türetmeyi destekler.",
-      "Sanskritçe türetme 19. yüzyıl karşılaştırmalı mitoloji geleneğinden gelir ve biçimsel karşılık sorunludur."
-    ],
-    "counter_evidence": [
-      "Alternatif bir öneri, ikinci öğenin 'çalmak' anlamındaki bir kökten gelebileceğini savunur - bu da tartışmalıdır.",
-      "Etimoloji tartışması kapanmış değildir; Yunanca içi türetme baskın görüştür ama ikinci öğe için öneriler sürüyor.",
-      "Bu kayıt Sanskritçe bağlantısının YERLEŞİK OLMADIĞINI söyler; kesin olarak imkânsız olduğunu değil."
-    ],
-    "open_questions": [
-      "İkinci öğenin kökeni kesin olarak belirlendi mi? Hayır."
-    ],
     "sources": [
       {
+        "id": "etymonline-prometheus",
         "tier": "institutional",
         "type": "webpage",
         "title": "Prometheus - Etymology, Origin & Meaning",
         "container": "Online Etymology Dictionary",
+        "institution": "Online Etymology Dictionary",
         "url": "https://www.etymonline.com/word/prometheus",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Sözlük maddesi; Yunanca içi türetme ve alternatif öneri için kullanıldı."
       },
       {
+        "id": "cybalist-pramantha",
         "tier": "institutional",
         "type": "webpage",
         "title": "Pramantha/Prometheus: a false etymology?",
+        "institution": "Cybalist dilbilim listesi arşivi",
         "url": "https://wrdingham.co.uk/cybalist/msg/169/75.html",
         "language": "en",
         "accessed": "2026-09-07",
-        "note": "Biçimsel uyuşmazlık tartışması."
+        "note": "Dilbilim tartışma arşivi; biçimsel uyuşmazlık gerekçesi için kullanıldı. Hakemli değil - bu yüzden yalnız dayanak değil."
       }
+    ],
+    "evidence": [
+      {
+        "id": "yunanca-turetme",
+        "text": "Ad antik dönemden beri 'önceden düşünen' olarak yorumlanır: pro- (önce) + mathein/mēthos (öğrenmek, düşünmek).",
+        "citations": [
+          {
+            "source_ref": "etymonline-prometheus",
+            "locator": "Madde gövdesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bicimsel-uyusmazlik",
+        "text": "Sanskritçe pramantha 'ateş burgusu' demektir ve 'şiddetle karıştırmak' anlamındaki bir kökten gelir, ancak Yunanca Promētheus ile biçimsel olarak tam örtüşmez.",
+        "citations": [
+          {
+            "source_ref": "cybalist-pramantha",
+            "locator": "Tartışma iletisi gövdesi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "calmak-onerisi",
+        "text": "Alternatif bir öneri ikinci öğenin 'çalmak' anlamındaki bir kökten gelebileceğini savunur; bu da tartışmalıdır.",
+        "citations": [
+          {
+            "source_ref": "etymonline-prometheus",
+            "locator": "Madde gövdesi, alternatif öneri",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "kapsam-siniri",
+        "text": "Bu kayıt Sanskritçe bağlantısının yerleşik olmadığını söyler; kesin olarak imkânsız olduğunu değil.",
+        "citations": [
+          {
+            "source_ref": "cybalist-pramantha",
+            "locator": "Tartışma iletisi gövdesi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "İkinci öğenin kökeni kesin olarak belirlendi mi? Hayır."
     ],
     "checked": "2026-09-07",
     "used_in": [
       "calinan-ates"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Locator'lar sayfa gövdesi düzeyindedir. Hakemli dilbilim kaynağıyla değiştirilmeli; cybalist arşivi hakemli değildir ve tek dayanak olarak kullanılmamıştır."
+    }
   },
   {
     "id": "hilebaz-kategorisi-uretilmis",
@@ -1568,6 +1609,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "and-ulker-elnino-tahmini",
     "claim": "And çiftçilerinin Ülker'in parlaklığına bakarak yaptığı ekim tahmini, uydu verileriyle doğrulanmış işleyen bir iklim tahminidir.",
     "status": "established",
@@ -1616,24 +1658,14 @@
       }
     ],
     "popular_claim": "Gökyüzüne bakarak tarım takvimi kurmak bilim öncesi bir inanç pratiğidir.",
-    "divergence": "Bu vakada değil: uygulama GERÇEKTEN BİLGİ TAŞIYAN bir sinyalin okunmasıdır ve modern aletle sınanıp doğrulanmıştır. Zincir şudur: haziranda Ülker soluk görünüyorsa, yüksek irtifada ince bulut ve su buharı artmış demektir; bu El Niño yılının erken işaretidir; El Niño ekim mevsiminde daha az yağış ve düşük hasat getirir. Çiftçiler çıplak gözle, AYLAR ÖNCESİNDEN, işleyen bir tahmin yapıyorlar - meteorolojinin ancak sonradan adlandırdığı bir iklim olayını okuyarak.",
+    "divergence": "Bu vakada değil: uygulama gerçekten bilgi taşıyan bir sinyalin okunmasıdır ve modern aletle sınanıp doğrulanmıştır. Zincir şudur: haziranda Ülker soluk görünüyorsa yüksek irtifada ince bulut ve su buharı artmış demektir; bu El Niño yılının erken işaretidir; El Niño ekim mevsiminde daha az yağış ve düşük hasat getirir. Çiftçiler çıplak gözle, aylar öncesinden, işleyen bir tahmin yapıyorlar.",
     "divergence_type": [
       "somurge-anlatisi",
       "guncellenmemis"
     ],
-    "evidence": [
-      "Çiftçiler haziranda kümenin görünürlüğüne bakarak patates ekimini erteleyip ertelemeyeceklerine karar veriyor.",
-      "Uydu verileri (bulut miktarı ve su buharı ölçümleri) görünürlükteki azalma ile El Niño arasındaki bağı doğruladı.",
-      "Bulgu Nature'a gönderilen bir mektupta yayımlandı."
-    ],
-    "counter_evidence": [
-      "Bu kayıt mekanizmayı doğrular; geleneksel yöntemin İSABET ORANINI vermez. Modern tahminle karşılaştırmalı başarım ayrı bir sorudur."
-    ],
-    "open_questions": [
-      "Geleneksel yöntemin isabet oranı modern tahminle karşılaştırıldığında nedir?"
-    ],
     "sources": [
       {
+        "id": "orlove-chiang-cane-2000",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1644,22 +1676,84 @@
         "year": 2000,
         "title": "Forecasting Andean rainfall and crop yield from the influence of El Niño on Pleiades visibility",
         "container": "Nature",
-        "language": "en"
+        "volume": "403",
+        "pages": "68-71",
+        "doi": "10.1038/47456",
+        "url": "https://www.nature.com/articles/47456",
+        "language": "en",
+        "note": "Künye (DOI, cilt, sayfa) doğrulandı. Locator'lar özet düzeyindedir; tam metin sayfa doğrulaması yapılmamıştır."
       },
       {
+        "id": "ucdavis-2000-basin",
         "tier": "institutional",
         "type": "press-release",
         "title": "Andean Farmers Accurately Time Rains, Planting, By The Stars",
-        "institution": "UC Davis",
+        "institution": "University of California, Davis",
         "url": "https://www.ucdavis.edu/news/andean-farmers-accurately-time-rains-planting-stars",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Kurumsal özet; mekanizma zincirinin okunabilir aktarımı için kullanıldı."
       }
+    ],
+    "evidence": [
+      {
+        "id": "ekim-karari",
+        "text": "Çiftçiler haziranda Ülker'in görünürlüğüne bakarak patates ekimini erteleyip ertelemeyeceklerine karar veriyor.",
+        "citations": [
+          {
+            "source_ref": "ucdavis-2000-basin",
+            "locator": "Basın bülteni gövdesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bulut-su-buhari",
+        "text": "Kümenin sönük görünmesi, yüksek irtifadaki bulut miktarı ve su buharı artışıyla açıklanıyor.",
+        "citations": [
+          {
+            "source_ref": "ucdavis-2000-basin",
+            "locator": "Basın bülteni gövdesi, mekanizma bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "elnino-baglantisi",
+        "text": "Sönük görünürlük, azalan yağış ve düşük hasat El Niño ile ilişkilendirildi; bağlantı uydu verileriyle denetlendi.",
+        "citations": [
+          {
+            "source_ref": "orlove-chiang-cane-2000",
+            "locator": "Başlık ve özet",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "isabet-orani-yok",
+        "text": "Bu kayıt mekanizmayı doğrular; geleneksel yöntemin isabet oranını vermez. Modern tahminle karşılaştırmalı başarım ayrı bir sorudur.",
+        "citations": [
+          {
+            "source_ref": "orlove-chiang-cane-2000",
+            "locator": "Başlık ve özet",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Geleneksel yöntemin isabet oranı modern tahminle karşılaştırıldığında nedir?"
     ],
     "checked": "2026-09-07",
     "used_in": [
       "herkesin-saati"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Locator'lar özet ve basın bülteni gövdesi düzeyindedir; tam metin sayfa doğrulaması yapılmamıştır."
+    }
   },
   {
     "id": "yedi-kiz-kardes-derin-koken",

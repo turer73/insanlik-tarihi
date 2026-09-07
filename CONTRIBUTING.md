@@ -96,6 +96,66 @@ Yeni kayıtlar mümkünse `review` alanı taşımalıdır:
 - `editor-reviewed`: yapı, kaynak künyesi ve çıkarım zinciri kontrol edildi.
 - `expert-reviewed`: konu uzmanı içerik değerlendirmesi yaptı.
 
+## Yeni kayıt yazmak
+
+Yeni bulgular `scripts/lib/finding.mjs` kurucularıyla yazılır. Elle nesne
+yazmayın: kurucu, doğrulayıcının bulacağı hataları veri **yazılırken** söyler —
+bağlam hâlâ elinizdeyken, dosya işlendikten gün sonra değil.
+
+```js
+import { source, cite, ev, finding, commit } from "./lib/finding.mjs";
+
+const kaynak = source("yazar-2020", {
+  tier: "peer-reviewed", type: "article",
+  authors: ["Yazar, Bir"], year: 2020,
+  title: "Makale başlığı", container: "Dergi",
+  doi: "10.1000/ornek",            // hakemli kaynakta DOI/URL/ISBN zorunlu
+});
+
+const kayit = finding({
+  id: "bulgu-kimligi",
+  claim: "Tek cümlelik iddia.",
+  status: "contested",
+  topic: ["konu"],
+  checked: "2026-09-07",
+  sources: [kaynak],
+  evidence: [
+    ev("Kanıt cümlesi.", cite("yazar-2020", "Özet, madde 2")),
+  ],
+  counter_evidence: [
+    ev("Zayıflatan kanıt.", cite("yazar-2020", "s. 114", "counter")),
+  ],
+});
+
+commit("data/findings/konu.json", [kayit]);
+```
+
+Kurucunun reddettiği şeyler:
+
+| durum | sebep |
+|---|---|
+| `cite()` locator'sız | kaynağın neresini okuduğunuzu söyleyemiyorsanız o kanıt hazır değil |
+| var olmayan kaynağa atıf | `source_ref`, kayıttaki bir `sources[].id` ile eşleşmeli |
+| düz metin kanıt | sürüm 2'de kanıt `ev()` ile kurulur |
+| hakemli kaynakta DOI/URL/ISBN yok | künyeyi doğrulayın, uydurmayın |
+| kurumsal kaynakta `institution` yok | kurumu adlandırın |
+| yalnızca `popular` / `unreliable` kaynak | iddianın bir çıpası olmalı |
+| yinelenen kaynak veya kanıt kimliği | kimlikler kayıt içinde tekildir |
+
+`review` verilmezse varsayılan `draft` olur — bu kasıtlıdır. Bir kaydın
+incelendiğini söylemek ayrı bir iştir ve kendiliğinden olmaz.
+
+### Göç hakkında
+
+Sürüm 1 kayıtları toplu olarak çevrilmez. Sürüm 2 her kanıt için bir
+**locator** ister; bütün kayıtlara locator uydurmak bu projenin varlık sebebine
+aykırı olurdu. Göç kayıt kayıt, kaynağın gerçekten hangi kısmını okuduğumuzu
+söyleyebildiğimiz yerde yapılır. Örnek: `scripts/migrate-mitoloji-v2.mjs`.
+
+Locator özet düzeyindeyse (tam metin sayfası doğrulanmadıysa) bunu kaynağın
+`note` alanına ve `review.notes` içine yazın. Belirsiz bir locator yazmak,
+locator yazmamaktan kötüdür.
+
 ## Yerel kontrol
 
 Node.js 18 veya üzeri yeterlidir; bağımlılık kurulumu gerekmez.
