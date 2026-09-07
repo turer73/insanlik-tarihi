@@ -2,11 +2,18 @@ import { access, cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/pro
 import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
+import { tarihler, sonDegisiklik, ilkYayin, enYeni } from './lib/lastmod.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'site');
 const ORIGIN = 'https://kanitatlasi.com';
-const TODAY = new Date().toISOString().slice(0, 10);
+// YEREL tarih, UTC değil: git'in %cs biçimi commit'i yapanın saat dilimindeki
+// günü verir. UTC kullanmak, gün dönümüne yakın saatlerde yerel derleme ile
+// CI'nin bir gün kaymasına yol açardı.
+const TODAY = ((d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`)(new Date());
+
+// Dosya başına gerçek tarihler. Ayrıntı ve neden için scripts/lib/lastmod.mjs.
+const TARIH = tarihler(ROOT, TODAY);
 
 const escapeHtml = value => String(value)
   .replaceAll('&', '&amp;')
@@ -268,18 +275,42 @@ function notFoundPage() {
 }
 
 function sitemap(articles) {
+  // Ana sayfa listeyi gösterir: yazılardan biri veya sayfanın kendisi
+  // değiştiyse ana sayfa da değişmiştir.
+  const anaSayfa = enYeni(TARIH, [
+    'index.html',
+    'data/articles.json',
+    'assets/app.js',
+    'assets/styles-core.css',
+    'assets/styles-components.css',
+    ...articles.map(article => `articles/${article.slug}.html`)
+  ]);
+
   const urls = [
-    { loc: `${ORIGIN}/`, priority: '1.0', changefreq: 'weekly' },
-    ...articles.map(article => ({ loc: `${ORIGIN}/articles/${article.slug}.html`, priority: article.featured ? '0.9' : '0.7', changefreq: 'monthly' })),
-    { loc: `${ORIGIN}/dist/zaman-cizelgesi.html`, priority: '0.8', changefreq: 'monthly' },
-    { loc: `${ORIGIN}/dist/bulgu-veri-tabani.html`, priority: '0.8', changefreq: 'weekly' },
-    { loc: `${ORIGIN}/dist/kanit-denetimi.html`, priority: '0.7', changefreq: 'weekly' }
+    { loc: `${ORIGIN}/`, priority: '1.0', changefreq: 'weekly', lastmod: anaSayfa },
+    ...articles.map(article => ({
+      loc: `${ORIGIN}/articles/${article.slug}.html`,
+      priority: article.featured ? '0.9' : '0.7',
+      changefreq: 'monthly',
+      lastmod: sonDegisiklik(TARIH, `articles/${article.slug}.html`)
+    })),
+    { loc: `${ORIGIN}/dist/zaman-cizelgesi.html`, priority: '0.8', changefreq: 'monthly', lastmod: sonDegisiklik(TARIH, 'dist/zaman-cizelgesi.html') },
+    { loc: `${ORIGIN}/dist/bulgu-veri-tabani.html`, priority: '0.8', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/bulgu-veri-tabani.html') },
+    { loc: `${ORIGIN}/dist/kanit-denetimi.html`, priority: '0.7', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/kanit-denetimi.html') }
   ];
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(item => `  <url><loc>${item.loc}</loc><lastmod>${TODAY}</lastmod><changefreq>${item.changefreq}</changefreq><priority>${item.priority}</priority></url>`).join('\n')}\n</urlset>\n`;
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(item => `  <url><loc>${item.loc}</loc><lastmod>${item.lastmod}</lastmod><changefreq>${item.changefreq}</changefreq><priority>${item.priority}</priority></url>`).join('\n')}\n</urlset>\n`;
 }
 
+// RSS tarihleri RFC-822 ister; elimizdeki YYYY-MM-DD gün hassasiyetinde.
+const rfc822 = gun => new Date(`${gun}T00:00:00Z`).toUTCString();
+
 function rss(articles) {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kanıt Atlası</title><link>${ORIGIN}/</link><description>İnsanlık tarihi, arkeoloji, bilim ve inanç üzerine kanıt odaklı Türkçe araştırma dosyaları.</description><language>tr-TR</language><lastBuildDate>${new Date().toUTCString()}</lastBuildDate><atom:link href="${ORIGIN}/feed.xml" rel="self" type="application/rss+xml"/>${[...articles].sort((a,b)=>b.no-a.no).map(article => `<item><title>${escapeHtml(article.title)}</title><link>${ORIGIN}/articles/${article.slug}.html</link><guid isPermaLink="true">${ORIGIN}/articles/${article.slug}.html</guid><category>${escapeHtml(article.category)}</category><description>${escapeHtml(article.summary)}</description></item>`).join('')}</channel></rss>\n`;
+  // lastBuildDate "kanalın içeriği en son ne zaman değişti" demektir, "bu
+  // dosya ne zaman üretildi" değil. Derleme saatini yazmak, sitemap'teki
+  // lastmod hatasının aynısıydı: her derlemede yeni bir tarih, hiçbir sinyal.
+  const enSonDegisiklik = enYeni(TARIH, articles.map(article => `articles/${article.slug}.html`));
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kanıt Atlası</title><link>${ORIGIN}/</link><description>İnsanlık tarihi, arkeoloji, bilim ve inanç üzerine kanıt odaklı Türkçe araştırma dosyaları.</description><language>tr-TR</language><lastBuildDate>${rfc822(enSonDegisiklik)}</lastBuildDate><atom:link href="${ORIGIN}/feed.xml" rel="self" type="application/rss+xml"/>${[...articles].sort((a,b)=>b.no-a.no).map(article => `<item><title>${escapeHtml(article.title)}</title><link>${ORIGIN}/articles/${article.slug}.html</link><guid isPermaLink="true">${ORIGIN}/articles/${article.slug}.html</guid><pubDate>${rfc822(ilkYayin(TARIH, `articles/${article.slug}.html`))}</pubDate><category>${escapeHtml(article.category)}</category><description>${escapeHtml(article.summary)}</description></item>`).join('')}</channel></rss>\n`;
 }
 
 async function brandToolPages() {
