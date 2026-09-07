@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "id": "milankovic-hays-1976-spektral-tepeler",
+  "claim": "Hays, Imbrie ve Shackleton'ın 1976 çalışması, Güney Yarımküre deniz tabanı çökel kayıtlarında 23 bin, 42 bin ve yaklaşık 100 bin yıllık üç iklimsel spektral tepe saptadı.",
+  "status": "established",
+  "confidence": "high",
+  "topic": [
+    "milankovic",
+    "iklim",
+    "spektral-analiz",
+    "yontem"
+  ],
+  "period": {
+    "earliest": -450000,
+    "latest": -1,
+    "era_label": "Son 450 bin yıllık çökel kaydı",
+    "precision": "range",
+    "dating_method": [
+      "isotopic",
+      "stratigraphy",
+      "astronomical"
+    ]
+  },
+  "disciplines": [
+    "iklim-bilimi",
+    "jeoloji",
+    "astronomi"
+  ],
+  "people": [
+    {
+      "name": "Hays, James D.",
+      "role": "analyst",
+      "affiliation": "Lamont-Doherty Geological Observatory",
+      "year": 1976
+    },
+    {
+      "name": "Imbrie, John",
+      "role": "analyst",
+      "affiliation": "Brown University",
+      "year": 1976
+    },
+    {
+      "name": "Shackleton, Nicholas J.",
+      "role": "analyst",
+      "affiliation": "University of Cambridge",
+      "year": 1976
+    }
+  ],
+  "evidence": [
+    {
+      "id": "veri-kapsami",
+      "text": "Çalışma, Güney Yarımküre okyanus tabanı çökel kayıtlarında son yaklaşık 450 bin yıla ait üç küresel iklim göstergesini izledi.",
+      "citations": [
+        {
+          "source_ref": "hays-imbrie-shackleton-1976",
+          "locator": "Özet, madde 1",
+          "support_type": "direct"
+        }
+      ]
+    },
+    {
+      "id": "uc-spektral-tepe",
+      "text": "İklimsel değişkenlik 23 bin, 42 bin ve yaklaşık 100 bin yıllık üç belirgin spektral tepede yoğunlaştı.",
+      "citations": [
+        {
+          "source_ref": "hays-imbrie-shackleton-1976",
+          "locator": "Özet, madde 2",
+          "support_type": "direct"
+        }
+      ]
+    },
+    {
+      "id": "yorunge-eslesmesi",
+      "text": "42 bin yıllık bileşen eksen eğikliğiyle, 23 ve 19 bin yıllık bileşenler presesyonla, yaklaşık 100 bin yıllık bileşen ise yörünge basıklığıyla ilişkilendirildi.",
+      "citations": [
+        {
+          "source_ref": "hays-imbrie-shackleton-1976",
+          "locator": "Özet, maddeler 3-5",
+          "support_type": "direct"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hays-imbrie-shackleton-1976",
+      "tier": "peer-reviewed",
+      "type": "article",
+      "authors": [
+        "Hays, James D.",
+        "Imbrie, John",
+        "Shackleton, Nicholas J."
+      ],
+      "year": 1976,
+      "title": "Variations in the Earth's Orbit: Pacemaker of the Ice Ages",
+      "container": "Science",
+      "publisher": "American Association for the Advancement of Science",
+      "volume": "194(4270)",
+      "pages": "1121-1132",
+      "doi": "10.1126/science.194.4270.1121",
+      "url": "https://www.science.org/doi/10.1126/science.194.4270.1121",
+      "language": "en",
+      "accessed": "2026-09-07",
+      "note": "Kanıt konumları, makale özetindeki numaralı sonuç maddelerine dayanır."
+    }
+  ],
+  "open_questions": [
+    "Makalenin doğrusal olmayan bir iklim yanıtı gerektirdiğini belirttiği yaklaşık 100 bin yıllık baskın bileşen hangi mekanizmalarla ortaya çıkıyor?"
+  ],
+  "checked": "2026-09-07",
+  "used_in": [
+    "milankovic",
+    "hatirlamadigimiz-felaketler"
+  ],
+  "review": {
+    "status": "draft",
+    "notes": "Bibliyografik kimlikler ve kaynak konumları doğrulandı; konu uzmanı incelemesi bekliyor."
+  }
+}
