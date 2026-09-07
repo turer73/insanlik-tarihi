@@ -506,7 +506,7 @@
       }
     ],
     "popular_claim": "Angkor Wat cangılda unutulmuş bir tapınaktır.",
-    "divergence": "Angkor hiç kaybolmadı - Budist manastırı olarak sürekli kullanıldı, 16.-17. yy'da Portekizli ve Japon ziyaretçi kayıtları var. 'Unutulmuş tapınak' anlatısı 19. yy Fransız sömürge keşif edebiyatının ürünü. Ayrıca görünen tapınak, şehrin küçük ve dayanıklı bir parçası.",
+    "divergence": "Angkor hiç kaybolmadı - Budist manastırı olarak sürekli kullanıldı, 16.-17. yy'da Portekizli ve Japon ziyaretçi kayıtları var. 'Unutulmuş tapınak' anlatısı 19. yy Fransız sömürge keşif edebiyatının ürünü. Ayrıca görünen tapınak, şehrin küçük ve dayanıklı bir parçası. AYRICA (2026-09-07 denetimi): 'en büyük' superlatifi, Angkor için taranan peyzajı ölçer; karşılaştırıldığı yerleşimler için aynı ölçütün kullanıldığı doğrulanmamıştır.",
     "divergence_type": [
       "somurge-anlatisi",
       "hayatta-kalma-yanliligi"
@@ -546,13 +546,19 @@
       }
     ],
     "open_questions": [
-      "Nüfus tahmininin aralığı geniş; hane yoğunluğu varsayımlarına duyarlı."
+      "Nüfus tahmininin aralığı geniş; hane yoğunluğu varsayımlarına duyarlı.",
+      "Superlatif karşılaştırmada öteki yerleşimler için hangi alan ölçülüyor? İki taraf aynı ölçütle karşılaştırılmadan 'en büyük' iddiası kapanmaz."
     ],
-    "checked": "2026-09-06",
+    "checked": "2026-09-07",
     "used_in": [
       "ayni-cumlede",
       "angkor"
-    ]
+    ],
+    "counter_evidence": [
+      "ÖLÇÜM KATEGORİSİ UYARISI: 'en büyük yerleşim kompleksi' iddiasında Angkor için ölçülen şey, LiDAR ile TARANAN PEYZAJDIR (3.000 km²'yi aşan alan) - kompakt bir kent çekirdeği değil. Karşılaştırıldığı yerleşimler için hangi alanın ölçüldüğü (kent çekirdeği mi, tarımsal hinterland dahil mi) kaynaklarda tutarlı biçimde belirtilmez. İki tarafın aynı şeyi ölçtüğü doğrulanmadan superlatif kesin sayılmamalıdır.",
+      "Yayılmış, düşük yoğunluklu bir kentleşme ile yoğun bir kent çekirdeğini alan üzerinden karşılaştırmak kategori hatasına açıktır; nüfus yoğunluğu ve yapı yoğunluğu ayrı ölçütlerdir."
+    ],
+    "volatile": true
   },
   {
     "id": "petra-hazine-bir-mezar",
