@@ -174,12 +174,22 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .count b{color:var(--ink)}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+
+/* Siteye geri donus - araclar tek basina da acilabildigi icin
+   her zaman gorunur ve mutlak adres kullanir. */
+.geri{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.72rem;
+  font-weight:600;letter-spacing:.05em;text-decoration:none;color:var(--ink-3);
+  border:1px solid var(--rule);padding:.35rem .65rem;margin-bottom:.9rem;align-self:flex-start;
+  transition:color .15s ease,border-color .15s ease,background .15s ease}
+.geri:hover{color:var(--accent-ink);border-color:var(--accent);background:var(--accent-soft)}
+.geri:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="top__in">
+    <a class="geri" href="https://kanitatlasi.com/">&#8592; Kanıt Atlası</a>
     <h1>Ölçekli Zaman Çizelgesi</h1>
     <p class="lede">Veri tabanındaki <b>her bulgu</b>, ilgili olduğu tarihsel aralık boyunca uzanan bir çubuk olarak yerleştirildi. Renk, iddianın kanıt karşısındaki durumunu gösteriyor. Çubuk kesikliyse tarih <b>tartışmalı ya da yaklaşık</b> demektir.</p>
 

@@ -97,12 +97,21 @@
       summary{grid-template-columns:auto 1fr}.chev{grid-column:2}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  </style>
+  
+/* Siteye geri donus */
+.geri{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.72rem;
+  font-weight:600;letter-spacing:.05em;text-decoration:none;color:var(--muted);
+  border:1px solid var(--rule);padding:.35rem .65rem;margin-bottom:.9rem;
+  transition:color .15s ease,border-color .15s ease,background .15s ease}
+.geri:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+.geri:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+</style>
 </head>
 <body>
 <a class="skip" href="#content">İçeriğe geç</a>
 <header>
   <div class="wrap hero">
+    <a class="geri" href="https://kanitatlasi.com/">&#8592; Kanıt Atlası</a>
     <div class="eyebrow">İnsanlık Tarihi · araştırma altyapısı</div>
     <h1>Kanıt denetimi</h1>
     <p class="lede">Bu araç yalnızca <strong>şema v2</strong> kayıtlarını gösterir. Amaç, her kanıtın hangi kaynağa, o kaynağın neresine ve ne tür bir destek ilişkisiyle bağlandığını tek ekranda denetlemektir.</p>

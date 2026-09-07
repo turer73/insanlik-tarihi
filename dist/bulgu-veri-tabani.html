@@ -159,12 +159,22 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .empty{border:1px dashed var(--rule);padding:2rem 1rem;text-align:center;color:var(--ink-3);font-size:.9rem}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+
+/* Siteye geri donus - araclar tek basina da acilabildigi icin
+   her zaman gorunur ve mutlak adres kullanir. */
+.geri{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.72rem;
+  font-weight:600;letter-spacing:.05em;text-decoration:none;color:var(--ink-3);
+  border:1px solid var(--rule);padding:.35rem .65rem;margin-bottom:.9rem;align-self:flex-start;
+  transition:color .15s ease,border-color .15s ease,background .15s ease}
+.geri:hover{color:var(--accent-ink);border-color:var(--accent);background:var(--accent-soft)}
+.geri:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="top__in">
+    <a class="geri" href="https://kanitatlasi.com/">&#8592; Kanıt Atlası</a>
     <h1>Bulgu Veri Tabanı</h1>
     <p class="lede">Bu veri tabanının kaydı bir <b>gerçek</b> değil, <b>bir iddianın kanıt karşısındaki durumu</b>dur. Her kayıt varsa popüler hâlini ve neden saptığını da taşır. Kaynaklar katmanlı: turizm ve içerik siteleri kaydediliyor ama <b>iddianın kanıtı sayılmıyor</b> — yalnızca popüler iddianın kendisini belgeliyorlar.</p>
     <div class="kpis" id="kpis"></div>
