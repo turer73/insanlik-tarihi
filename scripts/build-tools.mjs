@@ -101,13 +101,6 @@ for (const job of jobs) {
   const absoluteSource = join(ROOT, job.sourcePath);
   let template = readFileSync(absoluteSource, "utf8");
 
-  // Eski tarayıcı şablonundaki tekil CSS yazım hatasına karşı geriye dönük
-  // güvenlik ağı. Şablon doğrudan düzeltildiğinde bu dönüşüm kaldırılabilir.
-  template = template.replace(
-    "--accent-ink:#1E3purple; --accent-ink:#1E344A;",
-    "--accent-ink:#1E344A;",
-  );
-
   if (!template.includes(job.placeholder)) {
     console.error(`${job.sourcePath}: ${job.placeholder} yer tutucusu yok`);
     process.exit(1);
