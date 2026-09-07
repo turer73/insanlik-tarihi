@@ -81,7 +81,9 @@
 
     "disciplines": {
       "type": "array",
-      "items": { "enum": ["arkeoloji", "filoloji", "epigrafi", "metin-elestirisi", "jeoloji", "jeoarkeoloji", "iklim-bilimi", "astronomi", "genetik", "dilbilim", "tarih", "sanat-tarihi", "mimarlik", "muhendislik", "antropoloji", "bilim-tarihi", "hukuk", "matematik", "paleontoloji"] },
+      "items": { "enum": ["arkeoloji", "filoloji", "epigrafi", "metin-elestirisi", "jeoloji", "jeoarkeoloji", "iklim-bilimi", "astronomi", "genetik", "dilbilim", "tarih", "sanat-tarihi", "mimarlik", "muhendislik", "antropoloji", "bilim-tarihi", "hukuk", "matematik", "paleontoloji",
+          "sosyoloji",
+          "demografi"] },
       "description": "İddiayı hangi disiplin(ler) karara bağlıyor."
     },
 
