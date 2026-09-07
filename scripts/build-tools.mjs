@@ -95,7 +95,31 @@ const jobs = [
     placeholder: "__CANONICAL_DATA__",
     payload: canonicalData,
   },
+  {
+    sourcePath: "tools/index.template.html",
+    outputName: "index.html",
+    placeholder: "__DATA__",
+    // Dizin ön kapıdır; bütün bundle'ı taşımasın. Yalnızca özet için
+    // gereken alanlar gönderilir - kayıt gövdeleri değil.
+    payload: JSON.stringify(
+      bundle.map((r) => ({
+        status: r.status,
+        used_in: r.used_in ?? [],
+        topic: r.topic ?? [],
+        checked: r.checked,
+        sources: (r.sources ?? []).map((s) => ({ tier: s.tier })),
+      })),
+    ).replace(/<\//g, "<\\/"),
+  },
 ];
+
+// Dizin sayfası araçlara bağlanır. Bağlantılar burada tutulur çünkü
+// yayımlanan araç adresleri veri değil, dağıtım bilgisidir.
+const TOOL_URLS = {
+  __URL_BROWSER__: "https://claude.ai/code/artifact/072e2131-f536-4562-a5c7-15e23e514962",
+  __URL_TIMELINE__: "https://claude.ai/code/artifact/9461b46a-21c5-4628-824d-4d1ada311182",
+  __URL_AUDIT__: "https://claude.ai/code/artifact/4a868450-f472-4dc0-8237-90cf323dd672",
+};
 
 for (const job of jobs) {
   const absoluteSource = join(ROOT, job.sourcePath);
@@ -117,6 +141,15 @@ for (const job of jobs) {
   }
   if (template.includes("__ARTICLES__")) {
     console.error(`${job.sourcePath}: çözülememiş __ARTICLES__ yer tutucusu kaldı`);
+    process.exit(1);
+  }
+
+  for (const [token, url] of Object.entries(TOOL_URLS)) {
+    template = template.split(token).join(url);
+  }
+  const kalan = Object.keys(TOOL_URLS).find((token) => template.includes(token));
+  if (kalan) {
+    console.error(`${job.sourcePath}: çözülememiş ${kalan} yer tutucusu kaldı`);
     process.exit(1);
   }
 

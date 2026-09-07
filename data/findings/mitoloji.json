@@ -1924,5 +1924,451 @@
       "calinan-ates",
       "herkesin-saati"
     ]
+  },
+  {
+    "schema_version": 2,
+    "id": "halk-takvimi-iki-yarim-yapisi",
+    "claim": "Anadolu halk takvimi yılı dört mevsime değil, 8 Kasım ve 6 Mayıs'ta menteşelenen iki yarıma böler ve kış yarısını sayılı dilimlere ayırır.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "halk-takvimi",
+      "anadolu",
+      "takvim",
+      "ulker"
+    ],
+    "subject": {
+      "site": "Anadolu halk takvimi",
+      "region": "Anadolu",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 39,
+        "lon": 35
+      }
+    },
+    "period": {
+      "earliest": 1000,
+      "latest": 2026,
+      "era_label": "Belgelenebilir kullanımdan bugüne",
+      "precision": "approximate",
+      "dating_method": [
+        "historical-record",
+        "textual"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "Arapça",
+      "Farsça"
+    ],
+    "disciplines": [
+      "antropoloji",
+      "astronomi",
+      "tarih"
+    ],
+    "popular_claim": "Halk takvimi dört mevsime dayanır ve yıl gündönümlerinde döner.",
+    "divergence": "Halk takvimi dört mevsim kullanmaz, İKİ YARIM kullanır: Kasım (kış, 8 Kasım'dan itibaren 179 gün) ve Hızır (yaz, 6 Mayıs'tan itibaren 186 gün). Menteşeler gündönümü ya da ekinoks DEĞİLDİR; ekinokslardan yaklaşık kırk beş gün sonra, yani ekinoksla gündönümünün ortasına düşer. Sebep ölçülebilir: ılıman kuşakta toprak güneşten yaklaşık altı hafta geriden ısınır ve soğur. Takvim güneşi değil toprağı izliyor. Ayrıca dilimlerin adları mevsim değil SAYI belirtir - kırk, elli.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "guncellenmemis"
+    ],
+    "sources": [
+      {
+        "id": "halk-takvimi-halkbilimi-derleme",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Halk Takvimi ve Meteorolojisi",
+        "institution": "Doğu Karadeniz Kültür Envanteri Projesi",
+        "url": "https://karadeniz.gov.tr/halk-takvimi-ve-meteorolojisi-7/",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Kurumsal kültür envanteri derlemesi. Derleme düzeyindedir; hakemli halkbilimi literatürü taranmamıştır."
+      },
+      {
+        "id": "gzt-halk-takvimi-2024",
+        "tier": "popular",
+        "type": "webpage",
+        "title": "Halk takviminde kasım, zemheri, hamsin ve oğlak kışı",
+        "institution": "GZT",
+        "url": "https://www.gzt.com/kultur/halk-takviminde-kasim-zemheri-hamsin-ve-oglak-kisi-koylunun-zamani-okuma-bicimi-3547377",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Popüler kültür yazısı. Dilim adları ve gün sayıları için kullanıldı; tek dayanak değildir."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "iki-yarim",
+        "text": "Yıl iki yarıma bölünür: Kasım (kış) 8 Kasım'da, Hızır (yaz) 6 Mayıs'ta başlar; kış yarısı 179 gündür.",
+        "citations": [
+          {
+            "source_ref": "halk-takvimi-halkbilimi-derleme",
+            "locator": "Halk takvimi bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kis-dilimleri",
+        "text": "Kış yarısı sayılı dilimlere ayrılır: kasım 45 gün, erbain (zemheri, kara kış) 40 gün, hamsin 50 gün.",
+        "citations": [
+          {
+            "source_ref": "gzt-halk-takvimi-2024",
+            "locator": "Yazı gövdesi, dilim tanımları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "hamsin-zemheri-deyisi",
+        "text": "Halk ölçüsü dilimleri karşılaştırır: 'Hamsin, zemheriden kemsin' - elli gün kırk günden hafiftir.",
+        "citations": [
+          {
+            "source_ref": "gzt-halk-takvimi-2024",
+            "locator": "Yazı gövdesi, deyiş",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "bolgesel-degisim",
+        "text": "'Anadolu halk takvimi' tekil bir şey değildir; bölgeden bölgeye dilim adları, tarihler ve uygulamalar değişir. Buradaki anlatım kaba bir taramadır.",
+        "citations": [
+          {
+            "source_ref": "halk-takvimi-halkbilimi-derleme",
+            "locator": "Bölgesel derleme kapsamı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "aritmetik-acik",
+        "text": "Gün sayıları toplamı (45+40+50) 135 eder ve kış yarısının 179 gününü doldurmaz; kalan yaklaşık 44 günlük dilimin adlandırması kaynaklarda tutarlı değildir.",
+        "citations": [
+          {
+            "source_ref": "gzt-halk-takvimi-2024",
+            "locator": "Yazı gövdesi, gün sayıları",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Bölgesel varyasyonların haritası çıkarılmadı.",
+      "Kalan ~44 günlük dilim kaynaklarda nasıl adlandırılıyor?"
+    ],
+    "checked": "2026-09-07",
+    "used_in": [
+      "yilin-iki-kapisi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Derleme ve popüler düzey kaynaklara dayanıyor; hakemli Türkçe halkbilimi literatürü taranmadı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "halk-takvimi-ulker-mentesesi",
+    "claim": "Halk takviminin iki menteşe tarihi, Ülker'in akşam göğündeki görünürlük eşiklerine denk gelir.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "halk-takvimi",
+      "ulker",
+      "arkeoastronomi",
+      "anadolu"
+    ],
+    "subject": {
+      "site": "Anadolu halk takvimi",
+      "region": "Anadolu",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 39,
+        "lon": 35
+      }
+    },
+    "period": {
+      "earliest": 1000,
+      "latest": 2026,
+      "era_label": "Belgelenebilir kullanımdan bugüne",
+      "precision": "disputed",
+      "dating_method": [
+        "astronomical",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Türkçe"
+    ],
+    "disciplines": [
+      "astronomi",
+      "antropoloji"
+    ],
+    "popular_claim": "Halk takviminin tarihleri binlerce yıllık kadim gök bilgisine dayanır.",
+    "divergence": "Eşleşme bugün gerçekten temiz: Ülker 5 Mayıs'ı 6 Mayıs'a bağlayan akşamdan itibaren görünmez oluyor ve 6 Kasım akşamı geri dönüyor; takvimin kapıları 6 Mayıs ve 8 Kasım. AMA 'binlerce yıllık' iddiası ölçülebilir bir engelle karşılaşıyor: DEVİNİM (presesyon) bir yıldızın yılın hangi gününde göründüğünü yaklaşık her 72 yılda bir gün kaydırır - bin yılda on dört gün. Bugün 6 Kasım'a denk gelen olay bin yıl önce ekim sonundaydı. Üstelik Türkiye 1926'da Rumî'den Miladî takvime geçti ve tarihler yeniden yazıldı. Eşleşmenin ne zaman kurulduğu ÇÖZÜLMEMİŞTİR.",
+    "divergence_type": [
+      "medya-abartisi",
+      "guncellenmemis"
+    ],
+    "sources": [
+      {
+        "id": "ulker-vikipedi-tr",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Ülker (yıldız kümesi)",
+        "institution": "Vikipedi",
+        "url": "https://tr.wikipedia.org/wiki/%C3%9Clker_(y%C4%B1ld%C4%B1z_k%C3%BCmesi)",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak; görünürlük eşiği tarihleri için kullanıldı. Astronomik hesapla bağımsız doğrulama yapılmamıştır."
+      },
+      {
+        "id": "halk-takvimi-halkbilimi-derleme",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Halk Takvimi ve Meteorolojisi",
+        "institution": "Doğu Karadeniz Kültür Envanteri Projesi",
+        "url": "https://karadeniz.gov.tr/halk-takvimi-ve-meteorolojisi-7/",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Kurumsal kültür envanteri derlemesi. Derleme düzeyindedir; hakemli halkbilimi literatürü taranmamıştır."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "gorunurluk-esikleri",
+        "text": "Ülker, 5 Mayıs'ı 6 Mayıs'a bağlayan akşamdan itibaren görünmez oluyor; 6 Kasım akşamı gün batımından sonra yeniden ortaya çıkıyor.",
+        "citations": [
+          {
+            "source_ref": "ulker-vikipedi-tr",
+            "locator": "Görünürlük ve halk takvimi bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kasim-ulker-baglantisi",
+        "text": "Türkçe halkbilimi derlemeleri Kasım dönemini Ülker ile işaretlenmiş olarak tarif eder.",
+        "citations": [
+          {
+            "source_ref": "halk-takvimi-halkbilimi-derleme",
+            "locator": "Halk takvimi ve yıldızlar bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "devinim-itirazi",
+        "text": "Devinim, yıldız görünürlük tarihlerini yaklaşık 72 yılda bir gün kaydırır; bugünkü eşleşme geçmişe uzatılamaz.",
+        "citations": [
+          {
+            "source_ref": "ulker-vikipedi-tr",
+            "locator": "Küme konumu ve gözlem bilgileri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "iki-gun-farki",
+        "text": "Gök olayı 6 Kasım, takvim tarihi 8 Kasım; iki günlük fark açıklanmamıştır.",
+        "citations": [
+          {
+            "source_ref": "halk-takvimi-halkbilimi-derleme",
+            "locator": "Kasım tarihinin verilişi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "hesap-dogrulanmadi",
+        "text": "Görünürlük eşiği tarihleri ara kaynaktan alınmıştır; bağımsız astronomik hesapla doğrulanmamıştır.",
+        "citations": [
+          {
+            "source_ref": "ulker-vikipedi-tr",
+            "locator": "Kaynak düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Eşleşme ne zaman kuruldu? Takvim gökyüzüne göre yeniden ayarlandı mı, yoksa eşleşme kısmen tesadüf mü?",
+      "6 Kasım ile 8 Kasım arasındaki iki günlük fark neden var?"
+    ],
+    "checked": "2026-09-07",
+    "volatile": true,
+    "used_in": [
+      "yilin-iki-kapisi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Astronomik eşleşme bağımsız hesapla doğrulanmadı; devinim itirazı çözülmedi. Bu kayıt bir soru işaretiyle birlikte tutulmaktadır."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "halk-takvimi-uc-katman",
+    "claim": "Anadolu halk takvimi tek bir kökenden gelmez: yapısı bağımsız icat, dilim adları temas, on iki hayvanlı döngüsü miras kaynaklıdır.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "halk-takvimi",
+      "anadolu",
+      "yontem",
+      "karsilastirmali-mitoloji"
+    ],
+    "subject": {
+      "site": "Anadolu halk takvimi",
+      "region": "Anadolu ve İç Asya",
+      "modern_country": "Türkiye"
+    },
+    "period": {
+      "earliest": 1000,
+      "latest": 2026,
+      "era_label": "Kâşgarlı'dan bugüne",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "Arapça",
+      "Farsça"
+    ],
+    "disciplines": [
+      "dilbilim",
+      "antropoloji",
+      "tarih"
+    ],
+    "popular_claim": "Halk takvimi kadim Türk gök bilgisinin devamıdır. (Karşı popüler iddia: tamamen Arap-Fars takviminden alınmadır.)",
+    "divergence": "İki popüler iddia da tek bir köken arıyor ve ikisi de eksik. Takvim ÜÇ KATMANLIDIR ve her katmanın cevabı farklıdır. (1) YAPI - yılı ekinoks-gündönümü ortalarında ikiye bölmek ve menteşeyi Ülker'e bağlamak Anadolu'ya özgü değildir; Hesiodos'ta da vardır. Aynı enlem, aynı gökyüzü, aynı ihtiyaç: bağımsız icat. (2) SÖZCÜKLER - erbain (kırk), hamsin (elli), zemherir (şiddetli soğuk) Arapça; 'Ruz-ı Kasım'daki ruz Farsça; Hıdırellez, Hızır ile İlyas'ın birleşmesi. İskeleti adlandıran katman baştan sona alınmış: temas. (3) SAYIM - on iki hayvanlı yıl döngüsü Kâşgarlı Mahmud'un 11. yüzyıl sözlüğünde kayıtlı, yani Anadolu'dan önce var: miras. Sonuç: bir kültürel öğeyi tek kutuya koyan her analiz yanılır.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "ideolojik-secim"
+    ],
+    "sources": [
+      {
+        "id": "divanu-lugatit-turk",
+        "tier": "primary",
+        "type": "manuscript",
+        "authors": [
+          "Kâşgarlı Mahmud"
+        ],
+        "year": 1074,
+        "title": "Dîvânu Lugâti't-Türk",
+        "language": "tr",
+        "note": "11. yüzyıl sözlüğü; on iki hayvanlı yıl döngüsünün erken kaydı. Besim Atalay çevirisi üzerinden bilinir; bu kayıtta metin doğrudan görülmemiştir."
+      },
+      {
+        "id": "halk-takvimi-halkbilimi-derleme",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Halk Takvimi ve Meteorolojisi",
+        "institution": "Doğu Karadeniz Kültür Envanteri Projesi",
+        "url": "https://karadeniz.gov.tr/halk-takvimi-ve-meteorolojisi-7/",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Kurumsal kültür envanteri derlemesi. Derleme düzeyindedir; hakemli halkbilimi literatürü taranmamıştır."
+      },
+      {
+        "id": "gzt-halk-takvimi-2024",
+        "tier": "popular",
+        "type": "webpage",
+        "title": "Halk takviminde kasım, zemheri, hamsin ve oğlak kışı",
+        "institution": "GZT",
+        "url": "https://www.gzt.com/kultur/halk-takviminde-kasim-zemheri-hamsin-ve-oglak-kisi-koylunun-zamani-okuma-bicimi-3547377",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Popüler kültür yazısı. Dilim adları ve gün sayıları için kullanıldı; tek dayanak değildir."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "hayvan-dongusu-miras",
+        "text": "On iki hayvanlı yıl döngüsü 11. yüzyılda Kâşgarlı Mahmud'un sözlüğünde kayıtlıdır; Anadolu'ya gelmeden önce vardı.",
+        "citations": [
+          {
+            "source_ref": "divanu-lugatit-turk",
+            "locator": "On iki hayvanlı yıl döngüsü maddesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "arapca-sozcukler",
+        "text": "Kış dilimlerinin adları Arapça sayılardır: erbain kırk, hamsin elli; zemheri şiddetli soğuk anlamındadır.",
+        "citations": [
+          {
+            "source_ref": "gzt-halk-takvimi-2024",
+            "locator": "Dilim adlarının açıklaması",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yapi-bagimsiz-icat",
+        "text": "Yılın iki yarıma bölünmesi ve gök menteşesi ılıman kuşağın tarım toplumlarında yaygındır; aynı çözüm Hesiodos'ta da görülür.",
+        "citations": [
+          {
+            "source_ref": "halk-takvimi-halkbilimi-derleme",
+            "locator": "Halk takvimi ve gök cisimleri bölümü",
+            "support_type": "inference"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "katmanlar-ic-ice",
+        "text": "Katman ayrımı analitiktir; pratikte katmanlar iç içedir ve bir öğenin hangi katmana ait olduğu her zaman net değildir.",
+        "citations": [
+          {
+            "source_ref": "halk-takvimi-halkbilimi-derleme",
+            "locator": "Derleme kapsamı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "cin-baglantisi-acik",
+        "text": "On iki hayvanlı döngünün Çin takvim geleneğiyle ilişkisi ayrıca tartışmalıdır ve bu kayıtta ele alınmamıştır.",
+        "citations": [
+          {
+            "source_ref": "divanu-lugatit-turk",
+            "locator": "On iki hayvanlı yıl döngüsü maddesi",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "metin-dogrudan-gorulmedi",
+        "text": "Kâşgarlı'nın metni bu kayıtta doğrudan görülmemiş, ikincil aktarım üzerinden kullanılmıştır.",
+        "citations": [
+          {
+            "source_ref": "divanu-lugatit-turk",
+            "locator": "Kaynak erişim düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "On iki hayvanlı döngünün Çin takvimiyle ilişkisi nedir? Ayrı bir inceleme konusu.",
+      "Katmanlar arasında geçiş noktaları ne zaman oldu?"
+    ],
+    "checked": "2026-09-07",
+    "used_in": [
+      "yilin-iki-kapisi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Kâşgarlı metni doğrudan görülmedi; birincil edisyonla değiştirilmelidir."
+    }
   }
 ]

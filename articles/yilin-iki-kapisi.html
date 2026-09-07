@@ -1,0 +1,405 @@
+<title>Yılın İki Kapısı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+
+<style>
+:root{
+  --bg:#EEEAE1; --surface:#F7F4ED; --surface-2:#DFDACF; --raised:#FDFBF7;
+  --ink:#191509; --ink-2:#4F4938; --ink-3:#7E7767;
+  --rule:#C9C2B2; --rule-soft:#D8D2C4;
+  --accent:#8A6A1E; --accent-ink:#6C5213; --accent-soft:#F0E5C8;
+  --slate:#2C3A46; --slate-ink:#1E2A34; --slate-soft:#D9E0E6;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131108; --surface:#1B1810; --surface-2:#262117; --raised:#1E1B12;
+    --ink:#EBE6D9; --ink-2:#ACA593; --ink-3:#7E7767;
+    --rule:#302A1D; --rule-soft:#252016;
+    --accent:#D6B15E; --accent-ink:#E2C37C; --accent-soft:#241D0C;
+    --slate:#8FA6B6; --slate-ink:#A6BAC8; --slate-soft:#161E25;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131108; --surface:#1B1810; --surface-2:#262117; --raised:#1E1B12;
+  --ink:#EBE6D9; --ink-2:#ACA593; --ink-3:#7E7767;
+  --rule:#302A1D; --rule-soft:#252016;
+  --accent:#D6B15E; --accent-ink:#E2C37C; --accent-soft:#241D0C;
+  --slate:#8FA6B6; --slate-ink:#A6BAC8; --slate-soft:#161E25;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em;color:var(--ink-2)}
+.prose p b{color:var(--ink)}
+.prose p:last-child{margin-bottom:0}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(2.8rem,6.5vw,4.6rem) clamp(2rem,4vw,3rem);background:linear-gradient(168deg,var(--accent-soft) 0%,transparent 60%)}
+.hero__in{display:flex;flex-direction:column;gap:1.3rem}
+.series{font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.hero h1{font-size:clamp(2.4rem,7vw,4.5rem);line-height:1;font-weight:700;font-variation-settings:"SOFT" 6,"WONK" 1;letter-spacing:-.03em}
+.hero .lede{font-family:var(--display);font-size:clamp(1.13rem,2.1vw,1.48rem);line-height:1.42;color:var(--ink-2);max-width:53ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero .lede b{color:var(--ink);font-weight:600}
+
+.gates{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;max-width:900px;margin-top:.4rem}
+@media(min-width:700px){.gates{grid-template-columns:1fr 1fr}}
+.gt{background:var(--bg);padding:1.15rem 1.3rem;display:flex;flex-direction:column;gap:.3rem}
+.gt .d{font-family:var(--mono);font-size:1.5rem;font-weight:700;letter-spacing:-.01em}
+.gt h3{font-size:1.06rem}
+.gt p{margin:0;font-size:.9rem;color:var(--ink-2)}
+.gt p b{color:var(--ink)}
+.gt.k{background:var(--slate-soft)} .gt.k .d{color:var(--slate-ink)}
+.gt.h{background:var(--accent-soft)} .gt.h .d{color:var(--accent-ink)}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:62ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.s{border-color:var(--slate);background:var(--slate-soft)}
+.note b{font-weight:700}
+
+/* year bar */
+.year{border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:1rem;overflow-x:auto}
+.year h4{font-size:1.06rem}
+.yin{min-width:640px;display:flex;flex-direction:column;gap:.35rem}
+.ybar{display:flex;height:52px;border:1px solid var(--rule)}
+.ybar div{display:flex;flex-direction:column;justify-content:center;padding:.4rem .7rem;border-right:1px solid var(--rule);gap:.05rem;overflow:hidden}
+.ybar div:last-child{border-right:0}
+.ybar b{font-family:var(--display);font-size:.98rem;font-weight:700;white-space:nowrap;font-variation-settings:"SOFT" 24}
+.ybar span{font-family:var(--mono);font-size:.66rem;white-space:nowrap}
+.y-kis{background:var(--slate-soft);color:var(--slate-ink)} .y-kis span{color:var(--ink-3)}
+.y-yaz{background:var(--accent-soft);color:var(--accent-ink)} .y-yaz span{color:var(--ink-3)}
+.ybar2{display:flex;height:46px;border:1px solid var(--rule)}
+.ybar2 div{display:flex;flex-direction:column;justify-content:center;padding:.35rem .6rem;border-right:1px solid var(--rule);gap:.05rem;overflow:hidden}
+.ybar2 div:last-child{border-right:0}
+.ybar2 b{font-size:.86rem;font-weight:700;color:var(--ink);white-space:nowrap}
+.ybar2 span{font-family:var(--mono);font-size:.62rem;color:var(--ink-3);white-space:nowrap}
+.s1{background:var(--surface-2)} .s2{background:var(--raised)} .s3{background:var(--surface-2)} .s4{background:var(--raised)}
+.yspacer{flex:186;background:transparent;border-right:0!important}
+.year p{margin:0;font-size:.93rem;color:var(--ink-2);max-width:72ch}
+.year p b{color:var(--ink)}
+
+/* hinge */
+.hinge{border:1px solid var(--accent);background:var(--accent-soft);padding:1.5rem 1.6rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem}
+.hinge .badge{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--accent);color:var(--raised);padding:.2rem .5rem;align-self:flex-start}
+.hinge h3{font-size:1.3rem}
+.hinge p{margin:0;color:var(--ink-2);max-width:72ch}
+.hinge p b{color:var(--ink)}
+.match{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr}
+@media(min-width:700px){.match{grid-template-columns:1fr 1fr}}
+.mt{background:var(--raised);padding:.9rem 1.05rem;display:flex;flex-direction:column;gap:.25rem}
+.mt .lbl{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.mt .a{font-size:.93rem;color:var(--ink)}
+.mt .a b{color:var(--accent-ink)}
+
+/* layers */
+.lay{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.ly{background:var(--bg);padding:1.2rem 1.35rem;display:grid;gap:.4rem 1.2rem;grid-template-columns:1fr}
+@media(min-width:840px){.ly{grid-template-columns:minmax(160px,auto) 1.9fr;align-items:start}}
+.ly__l{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.2rem .5rem;align-self:start}
+.ly__l.z{color:var(--slate-ink);background:var(--slate-soft)}
+.ly__l.t{color:var(--accent-ink);background:var(--accent-soft)}
+.ly__l.o{color:var(--ink-2);background:var(--surface-2)}
+.ly h4{font-size:1.04rem;margin-bottom:.15rem}
+.ly p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.ly p+p{margin-top:.4rem}
+.ly p b{color:var(--ink)}
+.ly .verdict{font-family:var(--mono);font-size:.72rem;font-weight:700;color:var(--ink);border-top:1px solid var(--rule-soft);padding-top:.45rem;margin-top:.5rem}
+
+/* self-criticism */
+.self{border:1px solid var(--slate);background:var(--slate-soft);padding:1.45rem 1.55rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.8rem}
+.self .badge{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--slate);color:var(--raised);padding:.2rem .5rem;align-self:flex-start}
+.self h3{font-size:1.18rem}
+.self p{margin:0;color:var(--ink-2);max-width:72ch}
+.self p b{color:var(--ink)}
+.selfnum{font-family:var(--display);font-size:2.3rem;font-weight:700;color:var(--slate-ink);line-height:1;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0;color:var(--ink-2)}
+.verdictbox p b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(245px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:72ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__in">
+    <span class="series">İnceleme 27 · Mitoloji VI</span>
+    <p class="eyebrow">Anadolu halk takvimi · üç katman · yerel sınama</p>
+    <h1>Yılın İki Kapısı</h1>
+    <p class="lede">Anadolu halk takviminde yıl gündönümlerinde değil, <b>6 Mayıs ve 8 Kasım'da</b> dönüyor. Bu iki tarihin neden seçildiği sorusunun cevabı gökyüzünde — ve <b>takvimin üç ayrı katmanı, üç ayrı cevap veriyor.</b></p>
+
+    <div class="gates">
+      <div class="gt k">
+        <span class="d">8 Kasım</span>
+        <h3>Ruz-ı Kasım — kışın kapısı</h3>
+        <p>Kış yarısı başlar. Sözleşmeler, kiralar, çobanlık düzeni <b>bu tarihe göre</b> kurulurdu.</p>
+      </div>
+      <div class="gt h">
+        <span class="d">6 Mayıs</span>
+        <h3>Hıdırellez — yazın kapısı</h3>
+        <p>Yaz yarısı başlar. Hızır ile İlyas'ın buluştuğu gün; <b>2017'de UNESCO listesine</b> girdi.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#yapi">Yılın yapısı</a>
+    <a href="#mentese">Menteşe: Ülker</a>
+    <a href="#donmus">Donmuş tarihler</a>
+    <a href="#katman">Üç katman</a>
+    <a href="#eksik">Bu yazı neden geç kaldı</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="yapi" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Yapı</p>
+    <h2>İki yarım, dört dilim</h2>
+    <p class="kicker">Halk takvimi dört mevsim kullanmaz. <b>İki yarım</b> kullanır — ve kış yarısı kendi içinde sayılı dilimlere bölünür.</p>
+  </div>
+
+  <div class="year">
+    <h4>Halk yılının bölünmesi</h4>
+    <div class="yin">
+      <div class="ybar">
+        <div class="y-kis" style="flex:179"><b>Kasım — kış yarısı</b><span>8 Kasım → 6 Mayıs · 179 gün</span></div>
+        <div class="y-yaz" style="flex:186"><b>Hızır — yaz yarısı</b><span>6 Mayıs → 8 Kasım · 186 gün</span></div>
+      </div>
+      <div class="ybar2">
+        <div class="s1" style="flex:45"><b>kasım</b><span>45 gün</span></div>
+        <div class="s2" style="flex:40"><b>erbain / zemheri</b><span>40 gün · kara kış</span></div>
+        <div class="s3" style="flex:50"><b>hamsin</b><span>50 gün</span></div>
+        <div class="s4" style="flex:44"><b>bahara doğru</b><span>~44 gün</span></div>
+        <div class="yspacer" style="flex:186"></div>
+      </div>
+    </div>
+    <p><b>Dikkat edilecek şey:</b> dilimlerin adları <b>sayı</b>. <span style="font-family:var(--mono)">Erbain</span> kırk, <span style="font-family:var(--mono)">hamsin</span> elli demek. Yani bu takvim mevsimleri tarif etmiyor — <b>gün sayıyor.</b> Bir çiftçi ya da çoban için işe yarayan şey de budur: "kırkı çıktı mı" sorusunun kesin bir cevabı vardır, "ilkbahar geldi mi" sorusunun yoktur.</p>
+    <p>Halk arasındaki ölçü cümlesi bu sayıları karşılaştırır: <b>"Hamsin, zemheriden kemsin"</b> — elli gün, kırk günden daha hafiftir.</p>
+  </div>
+
+  <p class="note s" style="margin-top:1.5rem"><b>Ve burada ilk bulgu var:</b> yılı ikiye bölen bu iki tarih <b>gündönümü ya da ekinoks değil.</b> 6 Mayıs ve 8 Kasım, ekinokslardan yaklaşık <b>kırk beş gün sonra</b> düşer — yani ekinoksla gündönümünün <b>tam ortasına.</b> Bu keyfî bir seçim değil: ılıman kuşakta toprağın gerçekten ısındığı ve gerçekten soğuduğu noktalar, güneşin döndüğü noktalar değil, <b>ondan yaklaşık altı hafta sonrasıdır.</b> Takvim güneşi değil, <b>toprağı</b> izliyor.</p>
+</section>
+
+<section id="mentese" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Menteşe</p>
+    <h2>İki kapıyı da aynı yıldız kümesi işaretliyor</h2>
+    <p class="kicker">Bir önceki yazının konusu buraya yerel bir sınamayla dönüyor.</p>
+  </div>
+
+  <div class="hinge">
+    <span class="badge">belgelenmiş eşleşme</span>
+    <h3>Ülker akşam göğünden 5/6 Mayıs'ta kayboluyor, 6 Kasım'da geri geliyor</h3>
+    <div class="match">
+      <div class="mt">
+        <span class="lbl">Gökyüzü</span>
+        <span class="a">Ülker <b>5 Mayıs'ı 6 Mayıs'a bağlayan akşamdan</b> itibaren görünmez oluyor.</span>
+      </div>
+      <div class="mt">
+        <span class="lbl">Takvim</span>
+        <span class="a">Yaz yarısı <b>6 Mayıs</b>'ta başlıyor — Hıdırellez.</span>
+      </div>
+      <div class="mt">
+        <span class="lbl">Gökyüzü</span>
+        <span class="a">Ülker <b>6 Kasım akşamı</b> gün batımından sonra yeniden görünüyor.</span>
+      </div>
+      <div class="mt">
+        <span class="lbl">Takvim</span>
+        <span class="a">Kış yarısı <b>8 Kasım</b>'da başlıyor — Ruz-ı Kasım. <b>İki gün fark.</b></span>
+      </div>
+    </div>
+    <p>Yani halk takviminin iki menteşesi de <b>aynı yıldız kümesinin görünürlük eşiklerine</b> denk geliyor. Türkçe kaynaklar Kasım dönemini zaten <b>Ülker'le işaretlenmiş</b> olarak tarif ediyor.</p>
+    <p><b>Ve bu, iki bin yedi yüz yıl önce Hesiodos'un yaptığının aynısı.</b> O da aynı kümenin doğuşuna ve batışına göre orak ve saban zamanı vermişti. Farklı dil, farklı halk, farklı bin yıl — <b>aynı küme, aynı iş.</b></p>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Serinin ölçütüyle:</b> bu benzerlik <b>zorunlu uçta.</b> Ortak köken gerekmiyor; aynı enlem kuşağında yaşayan, aynı gökyüzüne bakan ve aynı sorunu — ne zaman ekeceğini, sürüyü ne zaman salacağını — çözmek zorunda olan herkes aynı işareti bulur. Bir önceki yazının sonucu, burada <b>Türkçe konuşan bir toplulukta yeniden çıkıyor.</b></p>
+</section>
+
+<section id="donmus" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Çatlak</p>
+    <h2>Ama tarihler donmuş</h2>
+    <p class="kicker">Eşleşme bugün temiz görünüyor. <b>Bu, geçmişte de temiz olduğu anlamına gelmiyor</b> — ve sebebi basit aritmetik.</p>
+  </div>
+
+  <div class="prose">
+    <p><b>Devinim (presesyon).</b> Dünya'nın ekseni yalpalıyor ve bu, bir yıldızın yılın hangi gününde doğup battığını <b>yaklaşık her 72 yılda bir gün</b> kaydırıyor. Bin yılda on dört gün. İki bin yılda yirmi sekiz.</p>
+    <p>Yani bugün 6 Kasım'a denk gelen Ülker olayı, <b>bin yıl önce ekim ayının sonlarına denk geliyordu.</b> Takvimdeki tarih ise 8 Kasım'a çakılı.</p>
+    <p><b>Üstelik takvimin kendisi de değişti.</b> Türkiye 1926'da Rumî takvimden Miladî takvime geçti; halk takviminin tarihleri bu geçiş sırasında yeniden yazıldı. Bugün gördüğümüz "8 Kasım", eski bir tarihin <b>yeni takvimdeki karşılığıdır.</b></p>
+    <p><b>Sonuç dürüstçe şu:</b> gökyüzü eşleşmesi bugün var, ama <b>bu eşleşmenin ne kadar süredir var olduğu ve ne zaman kurulduğu bu yazıda çözülmedi.</b> İki olasılık da açık: takvim bir noktada gökyüzüne göre yeniden ayarlanmış olabilir, ya da eşleşme kısmen tesadüf olabilir. <b>Yıldız adda kaldı, tarih takvime çakıldı.</b></p>
+  </div>
+
+  <p class="note s" style="margin-top:1.5rem"><b>Bunu neden gizlemiyoruz:</b> "binlerce yıllık kadim gök bilgisi" cümlesi kurmak kolaydı ve yazıyı güçlü gösterirdi. Ama <b>devinim aritmetiği bunu ölçülebilir biçimde zorlaştırıyor</b> ve ölçülebilir bir itirazı görmezden gelmek, bu projenin karşı çıktığı şeyin ta kendisi. <b>Bu, kaydedilmiş bir açık sorudur.</b></p>
+</section>
+
+<section id="katman" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Asıl bulgu</p>
+    <h2>Üç katman, üç ayrı cevap</h2>
+    <p class="kicker">"Bu takvim nereden geliyor?" sorusu yanlış kurulmuş. Doğru soru: <b>hangi katmanından bahsediyoruz?</b></p>
+  </div>
+
+  <div class="lay">
+    <div class="ly">
+      <span class="ly__l z">Katman 1 · Yapı</span>
+      <div>
+        <h4>İki yarım ve gök menteşesi</h4>
+        <p>Yılı ekinoks-gündönümü ortalarında ikiye bölmek ve menteşeyi Ülker'e bağlamak — bu, <b>Anadolu'ya özgü değil.</b> Hesiodos'ta var, Avrupa'nın kuzeyindeki mevsim bölümlerinde var, ılıman kuşağın tarım toplumlarında yaygın.</p>
+        <p>Sebep basit: <b>aynı enlem, aynı gökyüzü, aynı ihtiyaç.</b> Toprak güneşin döndüğü gün değil, ondan altı hafta sonra ısınır.</p>
+        <p class="verdict">→ BAĞIMSIZ İCAT · benzerlik beklenir, açıklanmaya ihtiyaç duymaz</p>
+      </div>
+    </div>
+
+    <div class="ly">
+      <span class="ly__l t">Katman 2 · Sözcükler</span>
+      <div>
+        <h4>Erbain, hamsin, zemheri</h4>
+        <p>Kış dilimlerinin adları Türkçe değil <b>Arapça:</b> <i>erbain</i> kırk, <i>hamsin</i> elli, <i>zemherir</i> şiddetli soğuk. "Ruz-ı Kasım"daki <i>ruz</i> ise <b>Farsça</b> gün demek. Hıdırellez'in kendisi de <b>Hızır ile İlyas</b>'ın birleşmesinden geliyor — Yakın Doğu kökenli bir figür çifti.</p>
+        <p>Yani takvimin <b>iskeletini adlandıran katman</b> baştan sona alınmış. Bu, tartışmasız bir <b>temas</b> kanıtı: sözcükler yolculuk etti ve ödünç alınabilecek en kolay şey sözcüktür.</p>
+        <p class="verdict">→ TEMAS · Arapça ve Farsça üzerinden alınmış</p>
+      </div>
+    </div>
+
+    <div class="ly">
+      <span class="ly__l o">Katman 3 · Sayım</span>
+      <div>
+        <h4>On iki hayvanlı yıl döngüsü</h4>
+        <p>Türk geleneğinde yılları <b>hayvan adlarıyla</b> sayan on iki yıllık bir döngü var ve bu, <b>Kâşgarlı Mahmud'un 11. yüzyılda yazdığı sözlükte</b> kayıtlı. Yani Anadolu'ya gelmeden önce vardı.</p>
+        <p>Bu katman öncekilerle <b>aynı kaynaktan gelmiyor:</b> İç Asya'da paylaşılan bir sistem ve Çin takvim geleneğiyle bağlantısı ayrıca tartışılan bir konu.</p>
+        <p class="verdict">→ MİRAS · göçle taşınmış, yerinde doğmamış</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Bu bölümün asıl söylediği:</b> tek bir halk takvimi, serinin üç açıklamasının <b>üçünü birden</b> barındırıyor. Yapı bağımsız icat, sözcükler temas, hayvan döngüsü miras. <b>"Bu gelenek nereden geliyor" sorusunun tek bir cevabı yok — çünkü gelenek tek bir şey değil.</b> Bir kültürel öğeyi tek bir kutuya koymaya çalışan her analiz bu yüzden yanılıyor.</p>
+</section>
+
+<section id="eksik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Kendi hakkımızda</p>
+    <h2>Bu yazı neden yirmi yedinciye kaldı</h2>
+  </div>
+
+  <div class="self">
+    <span class="badge">kendi kusurumuz</span>
+    <span class="selfnum">7 / 258</span>
+    <h3>Veri tabanındaki 258 kaynak künyesinden yalnızca yedisi Türkçe</h3>
+    <p>Ve o yedinin bir kısmı <b>kanıt olarak değil</b>, popüler iddianın Türkçe biçimini belgelemek için kaydedilmiş güvenilmez kaynaklar.</p>
+    <p>Bu, Türkçe yayımlanan ve Anadolu'yu konu edinen bir proje için <b>savunulabilir bir durum değil.</b> Göbekli Tepe, Kapadokya, Şuşter, Tyana — hepsi bu coğrafyada ve hepsi ağırlıklı olarak İngilizce kaynaklarla yazıldı. Erişimi en kolay olan literatür en az kullanılan oldu.</p>
+    <p>Bir önceki yazı bunu kendi açık sorularına yazmıştı: <b>"Ülker'in Türk halk takvimindeki yeri ayrıntılı incelenmedi; yerel kaynak erişimi kolay olduğu için ayrı bir çalışmayı hak ediyor."</b> Bu yazı o borcun ilk taksitidir — <b>tamamı değil.</b></p>
+  </div>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Sonuç</p>
+    <h2>Ne söylenebilir</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının sonucu</p>
+    <h3>Tek gelenek, üç ayrı köken</h3>
+    <p><b>Yapı:</b> Anadolu halk yılı gündönümlerinde değil, ekinoksla gündönümünün ortasında dönüyor — çünkü toprak güneşten <b>altı hafta geriden</b> geliyor. Bu ılıman kuşağın ortak çözümü, bir kültürün buluşu değil.</p>
+    <p><b>Menteşe:</b> her iki kapı da Ülker'in görünürlük eşiklerine denk geliyor — 5/6 Mayıs'ta kayboluş, 6 Kasım'da dönüş. Hesiodos'un 2.700 yıl önce aynı kümeyle yaptığı işin aynısı. <b>Ama tarihler donmuş:</b> devinim 72 yılda bir gün kaydırıyor ve 1926 takvim değişikliği araya girdi. Eşleşmenin ne zaman kurulduğu <b>çözülmedi.</b></p>
+    <p><b>Katmanlar:</b> yapı <b>bağımsız icat</b>, dilimlerin adları (erbain, hamsin, zemheri, ruz) <b>temas</b>, on iki hayvanlı döngü <b>miras.</b> Aynı takvimde üçü birden.</p>
+    <p>Ve serinin en kullanışlı dersi burada netleşiyor: <b>"bu gelenek nereden geliyor" sorusu, gelenek tek bir şey olmadığı için tek bir cevap kabul etmiyor.</b> Katmanı belirtmeden sorulan her köken sorusu yanlış kurulmuştur.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Ülker eşleşmesi ne zaman kuruldu?</p>
+      <p class="oq__a"><b>Çözülmedi</b> — ve bu yazının en büyük açığı. Devinim 72 yılda bir gün kaydırır; bugünkü temiz eşleşme geçmişe uzatılamaz. Takvim yeniden ayarlandı mı, yoksa eşleşme kısmen tesadüf mü?</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">8 Kasım mı, 6 Kasım mı?</p>
+      <p class="oq__a">Gök olayı 6 Kasım, takvim tarihi 8 Kasım. <b>İki günlük fark açıklanmadı.</b> Rumî-Miladî geçişinin kalıntısı olabilir, yerel varyasyon olabilir.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Bölgesel farklar ne kadar?</p>
+      <p class="oq__a"><b>Bu yazı tek bir "Anadolu halk takvimi" varmış gibi yazıldı ve bu bir basitleştirmedir.</b> Karadeniz, İç Anadolu ve Doğu'da dilim adları ve tarihler değişiyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">On iki hayvanlı döngünün Çin bağlantısı?</p>
+      <p class="oq__a"><b>Tartışmalı.</b> Kimin kimden aldığı ya da ortak bir İç Asya kaynağı olup olmadığı bu yazıda ele alınmadı — kendi başına bir inceleme konusu.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Kaynaklar yeterli mi?</p>
+      <p class="oq__a"><b>Hayır.</b> Bu yazı halkbilimi derlemelerine ve ansiklopedik kaynaklara dayanıyor; birincil saha kaydı ve hakemli Türkçe halkbilimi literatürü <b>henüz taranmadı.</b> Kayıtlar bu yüzden taslak olarak işaretlendi.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir.</b> Halk takviminin yapısı ve dilim adları Türkçe halkbilimi derlemelerine; Ülker'in görünürlük eşikleri Türkçe astronomi ve halk takvimi kaynaklarına dayanır.</p>
+    <p><b>Kaynak tabanı bu yazıda bilerek kayıtlıdır.</b> Kullanılan Türkçe kaynaklar ağırlıklı olarak derleme ve ansiklopedik düzeydedir; hakemli halkbilimi literatürü ve birincil saha kaydı henüz taranmamıştır. İlgili bulgular <span style="font-family:var(--mono)">draft</span> olarak işaretlenmiştir.</p>
+    <p><b>"Anadolu halk takvimi" tekil bir şey değildir.</b> Bölgeden bölgeye dilim adları, tarihler ve uygulamalar değişir; buradaki anlatım kaba bir taramadır ve metinde böyle işaretlenmiştir.</p>
+    <p><b>Serinin ilgili yazıları:</b> Herkesin Saati · Gökteki Ayı · Çalınan Ateş.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>
