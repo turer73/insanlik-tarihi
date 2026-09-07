@@ -108,5 +108,15 @@
     "title": "Gökteki Ayı",
     "url": "https://claude.ai/code/artifact/a2fb40a3-262f-432a-8e9f-761c2cba4c03",
     "no": 22
+  },
+  "gec-kalan-haberci": {
+    "title": "Geç Kalan Haberci",
+    "url": "https://claude.ai/code/artifact/2ef33243-7b7d-407d-8899-e92be785254d",
+    "no": 23
+  },
+  "kendi-kaniti": {
+    "title": "Kendi Kanıtı",
+    "url": "https://claude.ai/code/artifact/5415187f-86e8-4846-afe7-878dd23840ea",
+    "no": 24
   }
 }

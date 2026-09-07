@@ -1,0 +1,466 @@
+<title>Kendi Kanıtı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+
+<style>
+:root{
+  --bg:#EAE7E6; --surface:#F4F2F1; --surface-2:#DAD5D4; --raised:#FCFBFB;
+  --ink:#16110F; --ink-2:#4E4644; --ink-3:#7C7472;
+  --rule:#C4BDBB; --rule-soft:#D5CFCD;
+  --accent:#6E2B33; --accent-ink:#571F26; --accent-soft:#EEDBDD;
+  --steel:#3F5A6B; --steel-ink:#2F4655; --steel-soft:#DAE3E9;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#120E0D; --surface:#1A1413; --surface-2:#251D1C; --raised:#1D1716;
+    --ink:#E8E2E0; --ink-2:#A9A19F; --ink-3:#7C7472;
+    --rule:#2E2523; --rule-soft:#241C1B;
+    --accent:#D98A90; --accent-ink:#E5A2A7; --accent-soft:#2B1214;
+    --steel:#8FB2C6; --steel-ink:#A6C4D5; --steel-soft:#111F27;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#120E0D; --surface:#1A1413; --surface-2:#251D1C; --raised:#1D1716;
+  --ink:#E8E2E0; --ink-2:#A9A19F; --ink-3:#7C7472;
+  --rule:#2E2523; --rule-soft:#241C1B;
+  --accent:#D98A90; --accent-ink:#E5A2A7; --accent-soft:#2B1214;
+  --steel:#8FB2C6; --steel-ink:#A6C4D5; --steel-soft:#111F27;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(2.8rem,6.5vw,4.6rem) clamp(2rem,4vw,3rem);background:linear-gradient(172deg,var(--accent-soft) 0%,transparent 62%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.3rem}
+.series{font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);line-height:1;font-weight:700;font-variation-settings:"SOFT" 6,"WONK" 1;letter-spacing:-.03em}
+.hero__lede{font-family:var(--display);font-size:clamp(1.13rem,2.1vw,1.48rem);line-height:1.42;color:var(--ink-2);max-width:53ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+
+.gap2{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;max-width:940px;margin-top:.4rem}
+@media(min-width:760px){.gap2{grid-template-columns:1fr 1fr}}
+.g2{background:var(--bg);padding:1.2rem 1.35rem;display:flex;flex-direction:column;gap:.45rem}
+.g2 .n{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .45rem;align-self:flex-start}
+.g2 h3{font-size:1.08rem}
+.g2 p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.g2 p b{color:var(--ink)}
+.g2.pop{background:var(--steel-soft)}
+.g2.pop .n{background:var(--steel);color:var(--raised)}
+.g2.aca{background:var(--accent-soft)}
+.g2.aca .n{background:var(--accent);color:var(--raised)}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:62ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.s{border-color:var(--steel);background:var(--steel-soft)}
+.note b{font-weight:700}
+
+/* three attempts */
+.att{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:820px){.att{grid-template-columns:repeat(3,1fr)}}
+.at{background:var(--bg);padding:1.2rem 1.3rem;display:flex;flex-direction:column;gap:.4rem}
+.at .yr{font-family:var(--mono);font-size:1.15rem;font-weight:700;color:var(--accent-ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.at h4{font-size:1.02rem}
+.at .who{font-family:var(--mono);font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)}
+.at p{margin:0;font-size:.9rem;color:var(--ink-2)}
+.at .cnt{font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--steel-ink);background:var(--steel-soft);padding:.2rem .5rem;align-self:flex-start;margin-top:.15rem}
+
+/* criticisms */
+.crit{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.cr{background:var(--bg);padding:1.1rem 1.3rem;display:grid;gap:.3rem 1.2rem;grid-template-columns:1fr}
+@media(min-width:800px){.cr{grid-template-columns:minmax(190px,auto) 1.9fr;align-items:start}}
+.cr__t{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);padding:.2rem .5rem;align-self:start}
+.cr p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.cr p b{color:var(--ink)}
+
+/* falsifiability demo */
+.demo{border:1px solid var(--steel);background:var(--steel-soft);padding:1.35rem 1.45rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem}
+.demo h4{font-size:1.08rem}
+.demo>p{margin:0;font-size:.93rem;color:var(--ink);max-width:70ch}
+.demo>p b{font-weight:700}
+.dl{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.dr{background:var(--raised);padding:.55rem .85rem;display:grid;gap:.1rem .9rem;grid-template-columns:1fr}
+@media(min-width:620px){.dr{grid-template-columns:minmax(190px,.8fr) 1.2fr;align-items:baseline}}
+.dr b{font-family:var(--display);font-size:.95rem;color:var(--ink);font-variation-settings:"SOFT" 30,"WONK" 0}
+.dr span{font-family:var(--mono);font-size:.83rem;color:var(--steel-ink)}
+
+/* counterexamples */
+.cx{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:1.5rem}
+.c1{background:var(--bg);padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.35rem}
+.c1 .lbl{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.c1 h4{font-size:1rem}
+.c1 p{margin:0;font-size:.89rem;color:var(--ink-2)}
+.c1 p b{color:var(--ink)}
+.c1 .fail{font-family:var(--mono);font-size:.68rem;color:var(--accent-ink);border-top:1px solid var(--rule-soft);padding-top:.4rem;margin-top:.15rem}
+
+/* loop */
+.loop{border:1px solid var(--accent);background:var(--accent-soft);padding:1.4rem 1.5rem 1.2rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:1rem}
+.loop h3{font-size:1.28rem}
+.loop svg{width:100%;height:auto;display:block;max-width:660px;margin-inline:auto}
+.loop svg text{font-family:var(--body);font-size:10px;fill:var(--ink);font-weight:700}
+.loop svg text.sub{font-family:var(--mono);font-size:8px;fill:var(--ink-2);font-weight:400}
+.loop svg .box{fill:var(--raised);stroke:var(--accent);stroke-width:1.2}
+.loop svg .arw{stroke:var(--accent);stroke-width:1.6;fill:none}
+.loop svg .arwbad{stroke:var(--steel);stroke-width:1.6;fill:none;stroke-dasharray:5 3}
+.loop svg .head{fill:var(--accent)}
+.loop svg .headbad{fill:var(--steel)}
+.loop p{margin:0;font-size:.94rem;color:var(--ink);max-width:72ch}
+.loop p b{font-weight:700}
+
+/* propp contrast */
+.pp{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:820px){.pp{grid-template-columns:1fr 1fr}}
+.p1{background:var(--bg);padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.55rem}
+.p1 .tag{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .45rem;align-self:flex-start}
+.p1 h3{font-size:1.1rem}
+.p1 p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.p1 p b{color:var(--ink)}
+.p1.good{background:var(--steel-soft)}
+.p1.good .tag{background:var(--steel);color:var(--raised)}
+.p1.bad .tag{background:var(--accent-soft);color:var(--accent-ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(240px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:72ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 24 · Mitoloji III</span>
+    <p class="eyebrow">Kahraman kalıbı · yanlışlanabilirlik · geri besleme</p>
+    <h1>Kendi Kanıtı</h1>
+    <p class="hero__lede">"Kahramanın Yolculuğu" dünyanın bütün mitlerinde bulunan evrensel bir kalıp olarak biliniyor. Folklor alanı bunu <strong>neredeyse oybirliğiyle reddediyor.</strong> Ama asıl ilginç kısım şu: <strong>kalıp bugün gerçekten her yerde</strong> — ve orada olmasının sebebi <strong>teorinin kendisi.</strong></p>
+
+    <div class="gap2">
+      <div class="g2 pop">
+        <span class="n">Yaygın bilgi</span>
+        <h3>"Bilim, tüm mitlerin ortak iskeletini buldu"</h3>
+        <p>Ayrılış, sınav, dönüş. Her kültürde aynı. <b>Yazarlık kitaplarından senaryo kurslarına</b> kadar kurulu bir bilgi olarak aktarılıyor.</p>
+      </div>
+      <div class="g2 aca">
+        <span class="n">Alanın konumu</span>
+        <h3>Folklorcular kalıbı reddediyor</h3>
+        <p>Akademik folklorcular ve antikçağ edebiyatı uzmanları teoriyi <b>neredeyse oybirliğiyle</b> reddediyor — başlıca gerekçe <b>kaynak seçme yanlılığı.</b></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#uc">Üç deneme</a>
+    <a href="#itiraz">İtirazlar</a>
+    <a href="#demo">Her şeye uyuyor</a>
+    <a href="#uymayanlar">Uymayanlar</a>
+    <a href="#dongu">Geri besleme</a>
+    <a href="#propp">İyi versiyonu</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="uc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Soyağacı</p>
+    <h2>Üç deneme, üç farklı liste</h2>
+    <p class="kicker">Kalıp fikri Campbell'la başlamadı. Ve öncekilerle kıyaslandığında <b>kendi başına bir bulgu</b> ortaya çıkıyor.</p>
+  </div>
+
+  <div class="att">
+    <div class="at">
+      <span class="yr">1909</span>
+      <span class="who">Otto Rank</span>
+      <h4>Kahramanın doğuşu</h4>
+      <p>Psikanalitik çerçeve. Odak <b>doğum anlatılarında:</b> terk edilen çocuk, hayvan ya da yoksul tarafından büyütülme, kimliğin geri kazanılması.</p>
+      <span class="cnt">dar odak</span>
+    </div>
+    <div class="at">
+      <span class="yr">1936</span>
+      <span class="who">Lord Raglan</span>
+      <h4>Yirmi iki maddelik ölçek</h4>
+      <p>Kahramanlara <b>puan veren</b> bir liste. Bir figür kaç maddeyi karşılıyorsa o kadar "kahraman" sayılıyor.</p>
+      <span class="cnt">22 madde</span>
+    </div>
+    <div class="at">
+      <span class="yr">1949</span>
+      <span class="who">Joseph Campbell</span>
+      <h4>Tek-mit (monomit)</h4>
+      <p>Jung etkisinde. <b>Ayrılış — erginlenme — dönüş</b> ana ekseni ve alt aşamalar. Evrensellik iddiası burada en yüksek.</p>
+      <span class="cnt">17 aşama</span>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Ve işte kendi başına bir bulgu:</b> aynı malzemeye bakan üç analist, <b>üç farklı liste</b> çıkardı — biri doğuma, biri yirmi iki maddeye, biri on yedi aşamaya. Eğer kalıp gerçekten <b>verinin içinde</b> olsaydı, üç bağımsız analistin <b>yakınsaması</b> beklenirdi. Yakınsamadılar. Bu, kalıbın verinin içinde değil, <b>bakanın elinde</b> olduğuna dair ilk işaret.</p>
+</section>
+
+<section id="itiraz" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Gerekçe</p>
+    <h2>Folklorcular neden reddediyor</h2>
+  </div>
+
+  <div class="crit">
+    <div class="cr">
+      <span class="cr__t">Kaynak seçme yanlılığı</span>
+      <div><p>Kalıp, <b>yalnızca kalıba uyan anlatılar seçilerek</b> kuruldu. Uymayan — ve en az onlar kadar geçerli — anlatılar dışarıda bırakıldı. Bu, evrensellik iddiasının altını doğrudan oyuyor: <b>seçtiğiniz örneklerden çıkardığınız kalıp, o seçimin kendisidir.</b></p></div>
+    </div>
+    <div class="cr">
+      <span class="cr__t">Yanlışlanamazlık</span>
+      <div><p>Aşamalar <b>o kadar soyut</b> ki mecazi okumaya izin verildiğinde neredeyse her anlatı uyuyor. Bir teori her şeyi açıklıyorsa, <b>hiçbir şeyi ayırt etmiyor</b> demektir. Bunu bir sonraki bölümde göstereceğiz.</p></div>
+    </div>
+    <div class="cr">
+      <span class="cr__t">Belirli gelenekleri ayrıcalıklı kılma</span>
+      <div><p>Kalıp, belirli kültürel geleneklerin anlatı biçimini <b>ölçüt hâline getiriyor</b> ve başkalarını buna göre eksik gösteriyor. Bu, karşılaştırmalı mitolojinin 19. yüzyıldan taşıdığı bir sorun — ve bir önceki yazıda "iki aile" tezinde gördüğümüzün <b>aynısı.</b></p></div>
+    </div>
+    <div class="cr">
+      <span class="cr__t">Yanlış birim</span>
+      <div><p>"Kahraman miti" doğal bir tür gibi ele alınıyor. Oysa mitler <b>işlevlerine göre</b> çeşitlenir: kimi köken açıklar, kimi töreni gerekçelendirir, kimi sadece eğlendirir. Hepsini tek iskelete bağlamak <b>kategoriyi baştan kuruyor.</b></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="demo" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Gösterim</p>
+    <h2>"Her şeye uyuyor" ne demek</h2>
+    <p class="kicker">Bu itirazı iddia olarak bırakmak yerine <b>göstermek</b> daha dürüst. Sıradan bir işi kalıba oturtuyoruz.</p>
+  </div>
+
+  <div class="demo">
+    <h4>Anlatı: markete ekmek almaya gitmek</h4>
+    <div class="dl">
+      <div class="dr"><b>Sıradan dünya</b><span>Ev. Ekmek yok.</span></div>
+      <div class="dr"><b>Maceraya çağrı</b><span>Dolabı açıp durumu görmek.</span></div>
+      <div class="dr"><b>Çağrının reddi</b><span>"Yarın alırım."</span></div>
+      <div class="dr"><b>Akıl hocasıyla karşılaşma</b><span>Ev arkadaşının "market 8'de kapanıyor" demesi.</span></div>
+      <div class="dr"><b>Eşiğin aşılması</b><span>Kapıdan çıkmak.</span></div>
+      <div class="dr"><b>Sınavlar, müttefikler, düşmanlar</b><span>Trafik, kuyruk, kartın okumaması.</span></div>
+      <div class="dr"><b>En derin mağara</b><span>Kasa.</span></div>
+      <div class="dr"><b>Ödül</b><span>Ekmek.</span></div>
+      <div class="dr"><b>İksirle dönüş</b><span>Eve varmak.</span></div>
+    </div>
+    <p><b>Bu bir şaka değil, bir test.</b> Kalıp, hiçbir mitolojik içeriği olmayan bir işe <b>sorunsuz oturuyor.</b> Bir çerçeve markete gitmeyi de Odysseia'yı da eşit kolaylıkla açıklıyorsa, <b>o çerçeve anlatılar hakkında bir şey söylemiyor</b> — sadece olayları bir sıraya dizmenin genel biçimini tarif ediyor.</p>
+    <p>Yanlışlanabilirlik ölçütü tam olarak budur: <b>bir iddianın değeri, neyi dışarıda bıraktığıyla ölçülür.</b> Bu kalıp hiçbir şeyi dışarıda bırakmıyor.</p>
+  </div>
+</section>
+
+<section id="uymayanlar" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Karşı örnek</p>
+    <h2>Kalıba uymayanlar</h2>
+    <p class="kicker">Ve bunlar kenarda kalmış tuhaf anlatılar değil — <b>elimizdeki en merkezî metinlerden bazıları.</b></p>
+  </div>
+
+  <div class="cx">
+    <div class="c1">
+      <span class="lbl">Mezopotamya</span>
+      <h4>Gılgamış eli boş döner</h4>
+      <p>Yolculuk var, sınav var, ödül bile var: gençlik otunu <b>denizin dibinden çıkarır.</b> Sonra bir yılan onu <b>çalar.</b></p>
+      <p class="fail">Eksik aşama: <b>iksirle dönüş yok</b></p>
+    </div>
+    <div class="c1">
+      <span class="lbl">Kuzey Amerika · Batı Afrika</span>
+      <h4>Düzenbaz anlatıları</h4>
+      <p>Çakal, Anansi ve benzerlerinin anlatıları <b>bölüm bölümdür</b> — bir yay çizmez. Kahraman dönüşmez, ders almaz, çoğu zaman <b>kaybeder</b> ve bu bir sonraki bölümü etkilemez.</p>
+      <p class="fail">Eksik olan: <b>yayın kendisi</b></p>
+    </div>
+    <div class="c1">
+      <span class="lbl">Avustralya</span>
+      <h4>Ayrılış-dönüş ekseni yok</h4>
+      <p>Bir önceki yazıda gördüğümüz gibi, atasal varlıklar <b>geçmişte kalmış</b> değil, hâlâ mevcut. Ayrılıp dönmek için <b>ayrılmış bir zaman gerekiyor</b> — ve o yok.</p>
+      <p class="fail">Kalıbın önkoşulu: <b>düz zaman</b></p>
+    </div>
+    <div class="c1">
+      <span class="lbl">Yöntem notu</span>
+      <h4>Aynı alet sorunu</h4>
+      <p>Kahraman kalıbı <b>düz bir zaman çizgisi varsayıyor.</b> Zamanı böyle örgütlemeyen gelenekler testten otomatik olarak sıfır alıyor — <b>anlatıları eksik olduğu için değil, sorunun onlara uymadığı için.</b></p>
+      <p class="fail">Bir önceki yazının bulgusu, <b>burada tekrar ediyor</b></p>
+    </div>
+  </div>
+</section>
+
+<section id="dongu" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Mekanizma</p>
+    <h2>Kalıp kendi kanıtını nasıl üretti</h2>
+    <p class="kicker">Bu yazının asıl bulgusu burada — ve bu, mitoloji hakkında olduğu kadar <b>kanıtın nasıl imal edildiği</b> hakkında.</p>
+  </div>
+
+  <div class="loop">
+    <h3>Dört adımlı bir kapalı devre</h3>
+    <svg viewBox="0 0 660 250" role="img" aria-label="Dört kutulu kapalı bir döngü: teori, senaryo şablonu, filmler, ve filmlerin teoriye kanıt olarak gösterilmesi">
+      <g>
+        <rect class="box" x="20" y="20" width="180" height="62" rx="2"/>
+        <text x="110" y="44" text-anchor="middle">1 · Teori (1949)</text>
+        <text class="sub" x="110" y="62" text-anchor="middle">Seçilmiş mitlerden</text>
+        <text class="sub" x="110" y="73" text-anchor="middle">bir kalıp çıkarılır</text>
+
+        <rect class="box" x="460" y="20" width="180" height="62" rx="2"/>
+        <text x="550" y="44" text-anchor="middle">2 · Şablon (1980'ler)</text>
+        <text class="sub" x="550" y="62" text-anchor="middle">Kalıp senaryo yazımı için</text>
+        <text class="sub" x="550" y="73" text-anchor="middle">bir reçeteye çevrilir</text>
+
+        <rect class="box" x="460" y="168" width="180" height="62" rx="2"/>
+        <text x="550" y="192" text-anchor="middle">3 · Ürün</text>
+        <text class="sub" x="550" y="210" text-anchor="middle">Filmler şablona göre</text>
+        <text class="sub" x="550" y="221" text-anchor="middle">yazılır — kalıba tam uyar</text>
+
+        <rect class="box" x="20" y="168" width="180" height="62" rx="2"/>
+        <text x="110" y="192" text-anchor="middle">4 · Kanıt (!)</text>
+        <text class="sub" x="110" y="210" text-anchor="middle">"Bakın, her hikâyede var"</text>
+        <text class="sub" x="110" y="221" text-anchor="middle">denip teoriye kanıt sayılır</text>
+      </g>
+
+      <path class="arw" d="M200 51 L450 51"/>
+      <polygon class="head" points="450,51 440,46 440,56"/>
+      <path class="arw" d="M550 82 L550 158"/>
+      <polygon class="head" points="550,158 545,148 555,148"/>
+      <path class="arw" d="M460 199 L210 199"/>
+      <polygon class="head" points="210,199 220,194 220,204"/>
+      <path class="arwbad" d="M110 168 L110 92"/>
+      <polygon class="headbad" points="110,92 105,102 115,102"/>
+      <text class="sub" x="126" y="132" style="fill:var(--steel-ink);font-weight:700">döngü kapanır</text>
+    </svg>
+    <p><b>Kritik adım dördüncüsü.</b> Üçüncü adımdaki filmler kalıba uyuyor — ama bunun sebebi kalıbın evrensel olması <b>değil</b>, filmlerin <b>kalıba göre yazılmış olması.</b> Çıktıyı girdinin kanıtı saymak, döngüyü kapatıyor.</p>
+    <p>Ve bu mekanizma serinin başka yerlerinde de karşımıza çıktı: turizm anlatısının kendi kanıtını üretmesi, popüler kaynakların birbirini kopyalayarak "çok kaynak" görünümü yaratması. <b>Aynı hata, farklı alan.</b></p>
+  </div>
+
+  <p class="note s" style="margin-top:1.5rem"><b>Dürüstlük payı — ve önemli:</b> bu, kalıbın <b>işe yaramadığı</b> anlamına gelmez. Senaryo aracı olarak <b>fiilen çalışıyor</b>; iyi yapılandırılmış hikâyeler üretiyor. Buradaki itiraz <b>araca değil, iddiaya:</b> "işe yarayan bir anlatı reçetesi" ile "dünya mitolojisinin keşfedilmiş yapısı" <b>aynı şey değil.</b> Birincisi doğru, ikincisi desteklenmiyor — ve ikisi sürekli birbirine karıştırılıyor.</p>
+</section>
+
+<section id="propp" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Karşılaştırma</p>
+    <h2>Aynı fikrin iyi yapılmış hâli</h2>
+    <p class="kicker">Anlatılarda gerçek düzenlilikler <b>var.</b> Farkı yaratan şey fikir değil, <b>kapsam disiplini.</b></p>
+  </div>
+
+  <div class="pp">
+    <div class="p1 good">
+      <span class="tag">1928 · sınanabilir</span>
+      <h3>Tanımlı bir külliyat üzerine iddia</h3>
+      <p>Rus halk masalları üzerine yapılan bir çözümleme, anlatıları <b>işlevlere</b> ayırdı ve bu işlevlerin belirli bir sırayla tekrarlandığını gösterdi.</p>
+      <p><b>Kritik fark:</b> iddia <b>belirli bir derlemedeki belirli bir masal türü</b> hakkındaydı. Külliyat açıkça tanımlı olduğu için iddia <b>test edilebilir:</b> o derlemeye bakıp uymayan masal aranabilir.</p>
+    </div>
+    <div class="p1 bad">
+      <span class="tag">1949 · sınanamaz</span>
+      <h3>Her şey üzerine iddia</h3>
+      <p>Monomit ise <b>dünyanın bütün mitolojisi</b> hakkında konuşuyor. Külliyat tanımlı değil; hangi anlatıların dahil olduğu <b>baştan belirlenmemiş.</b></p>
+      <p><b>Sonuç:</b> uymayan bir anlatı bulunduğunda teori düşmüyor — o anlatı ya kapsam dışı sayılıyor ya da mecazi okumayla uydurluyor. <b>Yanlışlayacak bir gözlem tanımlanamıyor.</b></p>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Ders şu:</b> "tüm insanlıkta ortak" iddiası kulağa daha büyük gelir ama <b>bilgi değeri daha düşüktür.</b> Kapsamı daraltmak iddiayı zayıflatmaz — <b>sınanabilir kılar.</b> Bu serinin bütün veri tabanı bu ilke üzerine kurulu: her kayıt <b>hangi kanıtın onu çürüteceğini</b> söyleyebilmeli.</p>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Sonuç</p>
+    <h2>Ne öğrendik</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının sonucu</p>
+    <h3>Kalıp mitolojide bulunmadı; anlatı üretimine yerleştirildi</h3>
+    <p><b>Desteklenmeyen:</b> "Kahramanın Yolculuğu dünyanın bütün mitlerinde bulunan evrensel bir yapıdır." Folklor alanı bunu neredeyse oybirliğiyle reddediyor; ana gerekçe <b>kaynak seçme yanlılığı.</b> Aynı malzemeye bakan üç analistin üç farklı liste çıkarması da bunu destekliyor.</p>
+    <p><b>Doğru olan:</b> kalıp <b>bir senaryo aracı olarak çalışıyor.</b> İtiraz araca değil, aracın <b>keşif</b> diye sunulmasına.</p>
+    <p><b>Asıl bulgu:</b> kalıp önce reçeteye çevrildi, sonra o reçeteyle üretilen ürünler <b>teorinin kanıtı olarak gösterildi.</b> Bugün "her hikâyede var" demek doğru — ama sebebi evrensellik değil, <b>şablonun yaygınlığı.</b> Çıktı, girdinin kanıtı sayıldı.</p>
+    <p><b>Ve yöntem dersi:</b> bir iddianın değeri <b>neyi dışarıda bıraktığıyla</b> ölçülür. Markete gitmeyi de Odysseia'yı da eşit kolaylıkla açıklayan bir çerçeve, anlatılar hakkında hiçbir şey söylemiyor. <b>Kapsamı daraltmak iddiayı zayıflatmaz, sınanabilir kılar.</b></p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Hiç gerçek bir düzenlilik yok mu?</p>
+      <p class="oq__a"><b>Var, ama ölçeği bilinmiyor.</b> Tanımlı külliyatlar üzerinde yapılan çözümlemeler gerçek sıralı yapılar buluyor. Bunların ne kadarının kültürler arası olduğu <b>ayrı ve açık bir soru</b> — ve monomit bu soruyu cevaplamıyor, atlıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Şablonun etkisi ölçüldü mü?</p>
+      <p class="oq__a"><b>Bu yazıda ölçülmedi.</b> Şablonun sinema anlatısına yayılma oranı niceliksel olarak incelenebilir bir soru; burada mekanizma tarif edildi, <b>büyüklüğü verilmedi.</b></p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Karşılaştırılan iyi örnek kusursuz mu?</p>
+      <p class="oq__a"><b>Hayır.</b> Tanımlı külliyat üzerine yapılan çözümleme de eleştirildi — işlev birimlerinin esnekliği ve külliyat seçimi tartışıldı. Buradaki üstünlük <b>sonuçta değil, yöntemde:</b> iddia sınanabilir biçimde kurulmuştu.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">"Neredeyse oybirliği" ne kadar kesin?</p>
+      <p class="oq__a">Alan içi değerlendirmelere dayanan bir ifadedir, <b>sayım değil.</b> Kesin olan: teori folklor ve antikçağ edebiyatı alanlarında <b>yerleşik bir bulgu olarak kabul edilmiyor</b> — popüler algının tersine.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir.</b> Kalıp önerilerinin tarihçesi ve bunlara yöneltilen itirazlar folklor alanının kendi literatürüne dayanır. Anlatılar özetlenmiştir; yayımlanmış telifli çeviriler kullanılmamıştır.</p>
+    <p><b>"Neredeyse oybirliği" bir sayım değildir.</b> Alan içi değerlendirmelere dayanan nitel bir ifadedir ve metinde böyle işaretlenmiştir. Kesin olan, teorinin ilgili akademik alanlarda yerleşik bir bulgu olarak kabul edilmediğidir.</p>
+    <p><b>Bu yazı bir aracı kötülemiyor.</b> Kalıp, hikâye kurma aracı olarak fiilen çalışır. İtiraz yalnızca "işe yarayan bir reçete" ile "keşfedilmiş evrensel yapı" iddialarının birbirine karıştırılmasınadır.</p>
+    <p><b>Serinin ilgili yazıları:</b> Geç Kalan Haberci · Gökteki Ayı · Sümerler · Tufan Bilmecesi.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>
