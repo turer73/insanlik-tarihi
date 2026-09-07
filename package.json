@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "description": "Kanıt Atlası: iddia, kanıt, karşı kanıt ve kaynak izlenebilirliği üzerine kurulu Türkçe tarih araştırma altyapısı.",
+  "license": "MIT",
   "engines": {
     "node": ">=18"
   },
