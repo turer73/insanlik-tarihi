@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="İnsanlık Tarihi bulgularında kanıt, kaynak ve konum bağlantılarını denetleme aracı.">
+  <title>Kanıt Denetimi · İnsanlık Tarihi</title>
+  <style>
+    :root{
+      color-scheme:light dark;
+      --bg:#eceae4;--surface:#f7f5f0;--raised:#fff;--ink:#171a1c;--muted:#565d62;
+      --quiet:#7a8186;--rule:#cbc7bd;--soft:#dfdcd4;--accent:#264e6a;--accent-soft:#d9e5ec;
+      --ok:#286343;--ok-soft:#d9eadf;--warn:#865f09;--warn-soft:#f1e5c4;
+      --bad:#92382c;--bad-soft:#f1dbd6;--special:#60417f;--special-soft:#e6dcef;
+      --mono:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+      --sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      --serif:Georgia,"Times New Roman",serif;
+    }
+    @media(prefers-color-scheme:dark){
+      :root{--bg:#111518;--surface:#181d21;--raised:#1e2429;--ink:#e7eaec;--muted:#a8afb4;
+        --quiet:#7d858b;--rule:#343b41;--soft:#292f34;--accent:#8bb9d6;--accent-soft:#182b38;
+        --ok:#78c99a;--ok-soft:#142a1e;--warn:#dfb75f;--warn-soft:#2c2514;
+        --bad:#e08a7d;--bad-soft:#311b17;--special:#c0a2df;--special-soft:#291f34}
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-underline-offset:3px}
+    button,input,select{font:inherit;color:inherit}
+    :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+    .skip{position:absolute;left:-999px;top:0;background:var(--raised);padding:.7rem 1rem;z-index:20}
+    .skip:focus{left:.75rem;top:.75rem}
+    header{border-bottom:1px solid var(--rule);background:var(--surface)}
+    .wrap{max-width:1280px;margin:auto;padding-inline:clamp(1rem,3vw,2.2rem)}
+    .hero{padding-block:clamp(2rem,5vw,3.6rem) 1.5rem}
+    .eyebrow{font:700 .7rem/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+    h1,h2,h3{font-family:var(--serif);letter-spacing:-.015em;text-wrap:balance}
+    h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.02;margin:.55rem 0 .8rem;max-width:14ch}
+    .lede{max-width:72ch;color:var(--muted);font-size:1rem;margin:0}
+    .lede strong{color:var(--ink)}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.4rem}
+    .stat{background:var(--surface);padding:.75rem .9rem}
+    .stat b{display:block;font:700 1.5rem/1.1 var(--serif)}
+    .stat span{font:600 .68rem/1.3 var(--mono);color:var(--quiet);text-transform:uppercase;letter-spacing:.06em}
+    main{padding-block:1.2rem 4rem}
+    .controls{display:grid;grid-template-columns:minmax(220px,1fr) repeat(2,minmax(150px,220px));gap:.75rem;
+      border:1px solid var(--rule);background:var(--surface);padding:.9rem;position:sticky;top:0;z-index:5}
+    .field{display:flex;flex-direction:column;gap:.25rem}
+    .field label{font:700 .65rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--quiet)}
+    input,select{width:100%;min-height:40px;border:1px solid var(--rule);background:var(--raised);padding:.45rem .6rem;border-radius:0}
+    .resultline{display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap;
+      color:var(--quiet);font:500 .74rem/1.4 var(--mono);padding:.8rem .1rem}
+    .resultline b{color:var(--ink)}
+    .records{display:flex;flex-direction:column;gap:.7rem}
+    details.record{border:1px solid var(--rule);background:var(--raised)}
+    details.record[open]{border-color:var(--accent)}
+    summary{list-style:none;cursor:pointer;padding:1rem;display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:start}
+    summary::-webkit-details-marker{display:none}
+    summary:hover{background:var(--surface)}
+    .claim{font-weight:650;line-height:1.4}
+    .meta{display:flex;flex-wrap:wrap;gap:.25rem .7rem;margin-top:.3rem;color:var(--quiet);font:500 .67rem/1.4 var(--mono)}
+    .chev{color:var(--quiet);font:700 .72rem/1.4 var(--mono);white-space:nowrap}
+    details[open] .chev::before{content:"kapat −"}
+    details:not([open]) .chev::before{content:"incele +"}
+    .badge{display:inline-flex;align-items:center;padding:.22rem .46rem;font:700 .62rem/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+    .established{background:var(--ok-soft);color:var(--ok)} .contested{background:var(--warn-soft);color:var(--warn)}
+    .minority{background:var(--accent-soft);color:var(--accent)} .refuted{background:var(--bad-soft);color:var(--bad)}
+    .unknown{background:var(--soft);color:var(--muted)} .unmeasurable{background:var(--special-soft);color:var(--special)}
+    .body{border-top:1px solid var(--soft);padding:1rem;display:flex;flex-direction:column;gap:1rem}
+    .auditfacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:1px;background:var(--soft);border:1px solid var(--soft)}
+    .fact{background:var(--surface);padding:.65rem .75rem}
+    .fact span{display:block;color:var(--quiet);font:700 .61rem/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+    .fact b{display:block;margin-top:.12rem;font-size:.85rem}
+    .section{display:flex;flex-direction:column;gap:.5rem}
+    .section h3{font-family:var(--mono);font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--quiet);margin:0}
+    .items{display:flex;flex-direction:column;gap:.45rem}
+    .item{border-left:3px solid var(--accent);background:var(--surface);padding:.72rem .8rem}
+    .item.counter{border-left-color:var(--bad)}
+    .item p{margin:0;color:var(--muted);max-width:84ch}
+    .itemid{display:block;margin-bottom:.25rem;font:600 .62rem/1.3 var(--mono);color:var(--quiet)}
+    .citations{display:flex;flex-wrap:wrap;gap:.32rem;margin-top:.55rem}
+    .citation{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.3rem;border:1px solid var(--rule);
+      background:var(--raised);padding:.28rem .45rem;font:600 .66rem/1.35 var(--mono);text-decoration:none}
+    .citation:hover{border-color:var(--accent)}
+    .ctype{padding:.08rem .28rem;background:var(--accent-soft);color:var(--accent)}
+    .ctype.counter{background:var(--bad-soft);color:var(--bad)}
+    .sourcegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.5rem}
+    .source{border:1px solid var(--rule);padding:.75rem;background:var(--surface)}
+    .source .sid{font:600 .61rem/1.3 var(--mono);color:var(--quiet)}
+    .source b{display:block;margin:.25rem 0 .15rem}
+    .source p{margin:0;color:var(--muted);font-size:.82rem}
+    .review-draft{color:var(--warn)} .review-editor-reviewed{color:var(--accent)} .review-expert-reviewed{color:var(--ok)}
+    .empty{border:1px dashed var(--rule);padding:2.5rem 1rem;text-align:center;color:var(--quiet)}
+    .legacy-note{margin-top:.8rem;color:var(--quiet);font-size:.78rem}
+    @media(max-width:760px){
+      .controls{grid-template-columns:1fr;position:static}
+      summary{grid-template-columns:auto 1fr}.chev{grid-column:2}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#content">İçeriğe geç</a>
+<header>
+  <div class="wrap hero">
+    <div class="eyebrow">İnsanlık Tarihi · araştırma altyapısı</div>
+    <h1>Kanıt denetimi</h1>
+    <p class="lede">Bu araç yalnızca <strong>şema v2</strong> kayıtlarını gösterir. Amaç, her kanıtın hangi kaynağa, o kaynağın neresine ve ne tür bir destek ilişkisiyle bağlandığını tek ekranda denetlemektir.</p>
+    <div class="stats" id="stats" aria-label="Denetim özeti"></div>
+    <p class="legacy-note" id="legacy-note"></p>
+  </div>
+</header>
+
+<main id="content" class="wrap">
+  <section class="controls" aria-label="Kayıt filtreleri">
+    <div class="field">
+      <label for="q">Ara</label>
+      <input id="q" type="search" placeholder="iddia, kaynak, konu veya kimlik">
+    </div>
+    <div class="field">
+      <label for="status">Epistemik durum</label>
+      <select id="status"><option value="">Tümü</option></select>
+    </div>
+    <div class="field">
+      <label for="review">İnceleme durumu</label>
+      <select id="review"><option value="">Tümü</option></select>
+    </div>
+  </section>
+
+  <div class="resultline" id="resultline" aria-live="polite"></div>
+  <section class="records" id="records" aria-label="Denetlenebilir bulgular"></section>
+</main>
+
+<script id="data" type="application/json">__CANONICAL_DATA__</script>
+<script>
+(function(){
+  "use strict";
+  var ALL = JSON.parse(document.getElementById("data").textContent);
+  var D = ALL.filter(function(r){ return r.schema_version === 2; });
+  var STATUS = {
+    established:"yerleşik", contested:"tartışmalı", minority:"azınlık görüşü",
+    refuted:"çürütülmüş", unknown:"bilinmiyor", unmeasurable:"ölçülemez"
+  };
+  var REVIEW = {
+    draft:"taslak", "editor-reviewed":"editör incelemeli", "expert-reviewed":"uzman incelemeli"
+  };
+  var SUPPORT = {
+    direct:"doğrudan", inference:"çıkarım", context:"bağlam",
+    "claim-origin":"iddia kökeni", counter:"karşı kanıt"
+  };
+  var state = {q:"", status:"", review:""};
+
+  function esc(value){
+    return String(value == null ? "" : value).replace(/[&<>"']/g,function(ch){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch];
+    });
+  }
+  function uniq(values){ return Array.from(new Set(values.filter(Boolean))); }
+  function sourceMap(record){
+    var map = {};
+    (record.sources || []).forEach(function(source){ if(source.id) map[source.id] = source; });
+    return map;
+  }
+  function sourceName(source, fallback){
+    if(!source) return fallback;
+    var lead = source.authors && source.authors.length ? source.authors[0] : source.title;
+    return lead + (source.year ? " (" + source.year + ")" : "");
+  }
+  function sourceHref(source){
+    if(!source) return "";
+    if(source.url) return source.url;
+    if(source.doi) return "https://doi.org/" + source.doi;
+    return "";
+  }
+  function bibliography(source){
+    var parts = [];
+    if(source.authors && source.authors.length) parts.push(source.authors.join("; "));
+    if(source.year) parts.push("(" + source.year + ")");
+    if(source.title) parts.push(source.title);
+    if(source.container) parts.push(source.container);
+    if(source.volume) parts.push(source.volume);
+    if(source.pages) parts.push("s. " + source.pages);
+    if(source.publisher) parts.push(source.publisher);
+    if(source.doi) parts.push("doi:" + source.doi);
+    return parts.join(" · ");
+  }
+  function citations(item, sources, isCounter){
+    return (item.citations || []).map(function(citation){
+      var source = sources[citation.source_ref];
+      var label = sourceName(source, citation.source_ref);
+      var href = sourceHref(source);
+      var cls = citation.support_type === "counter" || isCounter ? " counter" : "";
+      var inner = "<span>" + esc(label) + "</span><span>· " + esc(citation.locator) + "</span>"
+        + "<span class=\"ctype" + cls + "\">" + esc(SUPPORT[citation.support_type] || citation.support_type) + "</span>";
+      return href
+        ? "<a class=\"citation\" href=\"" + esc(href) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + inner + "</a>"
+        : "<span class=\"citation\">" + inner + "</span>";
+    }).join("");
+  }
+  function evidenceSection(record, field, title, isCounter){
+    var items = (record[field] || []).filter(function(item){ return item && typeof item === "object"; });
+    if(!items.length) return "";
+    var sources = sourceMap(record);
+    return "<section class=\"section\"><h3>" + esc(title) + "</h3><div class=\"items\">"
+      + items.map(function(item){
+          return "<article class=\"item" + (isCounter ? " counter" : "") + "\">"
+            + "<span class=\"itemid\">" + esc(item.id) + "</span>"
+            + "<p>" + esc(item.text) + "</p>"
+            + "<div class=\"citations\">" + citations(item, sources, isCounter) + "</div>"
+            + "</article>";
+        }).join("")
+      + "</div></section>";
+  }
+  function sourcesSection(record){
+    if(!(record.sources || []).length) return "";
+    return "<section class=\"section\"><h3>Kaynak künyeleri</h3><div class=\"sourcegrid\">"
+      + record.sources.map(function(source){
+          var href = sourceHref(source);
+          return "<article class=\"source\"><span class=\"sid\">" + esc(source.id || "kimliksiz") + "</span>"
+            + "<b>" + (href ? "<a href=\"" + esc(href) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + esc(source.title) + "</a>" : esc(source.title)) + "</b>"
+            + "<p>" + esc(bibliography(source)) + "</p></article>";
+        }).join("")
+      + "</div></section>";
+  }
+  function recordCard(record){
+    var review = record.review && record.review.status || "draft";
+    var evidenceCount = (record.evidence || []).filter(function(v){return v && typeof v === "object";}).length;
+    var counterCount = (record.counter_evidence || []).filter(function(v){return v && typeof v === "object";}).length;
+    var citationCount = ["evidence","counter_evidence"].reduce(function(total,field){
+      return total + (record[field] || []).reduce(function(sum,item){return sum + ((item && item.citations) || []).length;},0);
+    },0);
+    var period = record.period || {};
+    var facts = [
+      ["sınıflandırma güveni", record.confidence || "—"],
+      ["inceleme", REVIEW[review] || review],
+      ["kanıt / karşı kanıt", evidenceCount + " / " + counterCount],
+      ["atıf bağlantısı", citationCount],
+      ["son kontrol", record.checked || "—"]
+    ];
+    return "<details class=\"record\">"
+      + "<summary><span class=\"badge " + esc(record.status) + "\">" + esc(STATUS[record.status] || record.status) + "</span>"
+      + "<span><span class=\"claim\">" + esc(record.claim) + "</span><span class=\"meta\">"
+      + "<span>" + esc(record.id) + "</span>"
+      + (record.subject && record.subject.site ? "<span>· " + esc(record.subject.site) + "</span>" : "")
+      + (period.era_label ? "<span>· " + esc(period.era_label) + "</span>" : "")
+      + "<span class=\"review-" + esc(review) + "\">· " + esc(REVIEW[review] || review) + "</span>"
+      + "</span></span><span class=\"chev\" aria-hidden=\"true\"></span></summary>"
+      + "<div class=\"body\"><div class=\"auditfacts\">"
+      + facts.map(function(f){return "<div class=\"fact\"><span>" + esc(f[0]) + "</span><b>" + esc(f[1]) + "</b></div>";}).join("")
+      + "</div>"
+      + (record.popular_claim ? "<section class=\"section\"><h3>Popüler hâli ve sapma</h3><div class=\"item counter\"><p><strong>" + esc(record.popular_claim) + "</strong></p>"
+          + (record.divergence ? "<p style=\"margin-top:.45rem\">" + esc(record.divergence) + "</p>" : "") + "</div></section>" : "")
+      + evidenceSection(record,"evidence","Lehte kanıt",false)
+      + evidenceSection(record,"counter_evidence","Aleyhte kanıt ve sınırlar",true)
+      + sourcesSection(record)
+      + (record.review && record.review.notes ? "<section class=\"section\"><h3>İnceleme notu</h3><div class=\"item\"><p>" + esc(record.review.notes) + "</p></div></section>" : "")
+      + "</div></details>";
+  }
+  function searchable(record){
+    return [
+      record.id, record.claim, record.popular_claim, record.divergence,
+      (record.topic || []).join(" "),
+      (record.sources || []).map(function(s){return [s.id,s.title,(s.authors||[]).join(" ")].join(" ");}).join(" ")
+    ].join(" ").toLocaleLowerCase("tr");
+  }
+  function render(){
+    var rows = D.filter(function(record){
+      if(state.status && record.status !== state.status) return false;
+      var review = record.review && record.review.status || "draft";
+      if(state.review && review !== state.review) return false;
+      if(state.q && searchable(record).indexOf(state.q) < 0) return false;
+      return true;
+    });
+    rows.sort(function(a,b){
+      var ro = {"expert-reviewed":0,"editor-reviewed":1,draft:2};
+      var ar = a.review && a.review.status || "draft";
+      var br = b.review && b.review.status || "draft";
+      return (ro[ar] - ro[br]) || a.claim.localeCompare(b.claim,"tr");
+    });
+    document.getElementById("records").innerHTML = rows.length
+      ? rows.map(recordCard).join("")
+      : "<div class=\"empty\">Bu filtrelerle eşleşen v2 kayıt bulunamadı.</div>";
+    document.getElementById("resultline").innerHTML = "<span><b>" + rows.length + "</b> / " + D.length + " denetlenebilir kayıt</span>"
+      + "<span>" + (ALL.length - D.length) + " eski biçim kayıt bu görünümün dışında</span>";
+  }
+  function options(){
+    var statuses = uniq(D.map(function(r){return r.status;}));
+    var reviews = uniq(D.map(function(r){return r.review && r.review.status || "draft";}));
+    document.getElementById("status").innerHTML = "<option value=\"\">Tümü</option>"
+      + statuses.map(function(v){return "<option value=\"" + esc(v) + "\">" + esc(STATUS[v] || v) + "</option>";}).join("");
+    document.getElementById("review").innerHTML = "<option value=\"\">Tümü</option>"
+      + reviews.map(function(v){return "<option value=\"" + esc(v) + "\">" + esc(REVIEW[v] || v) + "</option>";}).join("");
+  }
+  function stats(){
+    var evidence = 0, citationsCount = 0, drafts = 0;
+    D.forEach(function(record){
+      ["evidence","counter_evidence"].forEach(function(field){
+        (record[field] || []).forEach(function(item){
+          if(item && typeof item === "object"){ evidence += 1; citationsCount += (item.citations || []).length; }
+        });
+      });
+      if(!record.review || record.review.status === "draft") drafts += 1;
+    });
+    var items = [[D.length,"şema v2 kayıt"],[evidence,"kimlikli kanıt"],[citationsCount,"konumlu atıf"],[drafts,"uzman incelemesi bekleyen"]];
+    document.getElementById("stats").innerHTML = items.map(function(item){
+      return "<div class=\"stat\"><b>" + item[0] + "</b><span>" + esc(item[1]) + "</span></div>";
+    }).join("");
+    document.getElementById("legacy-note").textContent =
+      (ALL.length - D.length) + " kayıt hâlâ v1 biçimindedir; bu sayı göç borcudur, kalite puanı değildir.";
+  }
+
+  document.getElementById("q").addEventListener("input",function(event){
+    state.q = event.target.value.trim().toLocaleLowerCase("tr"); render();
+  });
+  document.getElementById("status").addEventListener("change",function(event){
+    state.status = event.target.value; render();
+  });
+  document.getElementById("review").addEventListener("change",function(event){
+    state.review = event.target.value; render();
+  });
+
+  options(); stats(); render();
+})();
+</script>
+</body>
+</html>

@@ -1,108 +1,564 @@
 [
   {
+    "schema_version": 2,
     "id": "iskenderiye-tek-yangin-yok",
     "claim": "İskenderiye Kütüphanesi tek bir yangında yok edildi.",
     "status": "refuted",
     "confidence": "high",
-    "topic": ["iskenderiye", "kutuphane", "kaynak-elestirisi"],
-    "subject": { "site": "İskenderiye Kütüphanesi ve Mouseion", "region": "Nil Deltası, Helenistik Mısır", "modern_country": "Mısır", "coordinates": { "lat": 31.2001, "lon": 29.9187 } },
-    "period": { "earliest": -300, "latest": 700, "era_label": "Ptolemaios'tan erken İslam dönemine", "precision": "range", "dating_method": ["historical-record", "textual"] },
-    "languages": ["Grekçe", "Mısırca", "Latince"],
-    "disciplines": ["tarih", "filoloji", "bilim-tarihi"],
+    "topic": [
+      "iskenderiye",
+      "kutuphane",
+      "kaynak-elestirisi"
+    ],
+    "subject": {
+      "site": "İskenderiye Kütüphanesi ve Mouseion",
+      "region": "Nil Deltası, Helenistik Mısır",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 31.2001,
+        "lon": 29.9187
+      }
+    },
+    "period": {
+      "earliest": -300,
+      "latest": 700,
+      "era_label": "Ptolemaios'tan erken İslam dönemine",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "textual"
+      ]
+    },
+    "languages": [
+      "Grekçe",
+      "Mısırca",
+      "Latince"
+    ],
+    "disciplines": [
+      "tarih",
+      "filoloji",
+      "bilim-tarihi"
+    ],
     "popular_claim": "İskenderiye Kütüphanesi bir gecede yakıldı ve insanlık büyük bir hazineyi bir anda kaybetti.",
-    "divergence": "Dört ayrı yangın anlatısı var ve hiçbiri kütüphanenin sonu değil. Her anlatı, anlatıldığı dönemin DÜŞMANINI suçluyor - Roma karşıtları Sezar'ı, Hristiyanlık karşıtları piskoposu, İslam karşıtları halifeyi. Kütüphanenin ölümü herkesin kendi tezini astığı bir çengele dönüşmüş.",
-    "divergence_type": ["ideolojik-secim", "medya-abartisi"],
+    "divergence": "Dört ayrı yıkım anlatısı tek bir dramatik sona dönüştürülür. Oysa kaynaklar Caesar'ın liman yangınını, üçüncü yüzyıl çatışmalarını, Serapeum'un 391'de yıkılışını ve yüzyıllar sonra ortaya çıkan 642 anlatısını ayrı olaylar olarak verir; hiçbirinin bütün İskenderiye kitaplıklarını tek başına sona erdirdiği gösterilemez.",
+    "divergence_type": [
+      "ideolojik-secim",
+      "medya-abartisi"
+    ],
     "evidence": [
-      "MÖ 48 Sezar yangını gerçek ama büyük olasılıkla limandaki depoları ve ikincil koleksiyonları etkiledi.",
-      "Strabon yangından yaklaşık yirmi yıl sonra İskenderiye'yi ziyaret edip Mouseion'u ve kütüphanesini tarif ediyor - felaket boyutunda bir kayıptan söz etmiyor.",
-      "MS 270'lerdeki kentsel yıkım Mouseion'un işlevini yitirmesinde rol oynamış olabilir.",
-      "MS 391 Serapeion yıkımı gerçek bir olay ama oradaki koleksiyonun içeriği bilinmiyor.",
-      "Halife Ömer anlatısı olaydan ~500 yıl sonra ortaya çıkıyor ve dönemin diğer efsaneleriyle kalıp benzerlikleri taşıyor; uzmanlar arasında kurgu olduğu yönünde geniş uzlaşı var."
-    ],
-    "counter_evidence": ["Strabon'un sessizliğinden çıkarım, genelde zayıf bir araçtır; burada gücü, yazarın tam o konuyu ayrıntılı anlatıyor olmasından geliyor."],
-    "sources": [
-      { "tier": "peer-reviewed", "type": "article", "title": "The Destruction of the Library of Alexandria: A Reassessment", "language": "en", "accessed": "2026-09-06" },
-      { "tier": "institutional", "type": "webpage", "title": "Library of Alexandria - The destruction of the library", "institution": "Open University / OpenLearn", "url": "https://www.open.edu/openlearn/history-the-arts/library-alexandria/content-section-3", "language": "en", "accessed": "2026-09-06" },
-      { "tier": "primary", "type": "book", "authors": ["Strabon"], "title": "Geographika", "language": "grc" }
-    ],
-    "open_questions": ["Mouseion tam olarak ne zaman işlevini yitirdi?", "Serapeion koleksiyonunda ne vardı?"],
-    "checked": "2026-09-06",
-    "used_in": ["iskenderiye"]
-  },
-  {
-    "id": "iskenderiye-asil-sebep-kopyalanmama",
-    "claim": "Antik metinlerin kaybının başlıca sebebi yangın değil, papirüsün ömrü ve yeniden kopyalanmama kararıdır.",
-    "status": "established",
-    "confidence": "high",
-    "topic": ["iskenderiye", "metin-aktarimi", "hayatta-kalma-yanliligi"],
-    "subject": { "site": "İskenderiye Kütüphanesi", "region": "Helenistik Akdeniz", "modern_country": "Mısır", "coordinates": { "lat": 31.2001, "lon": 29.9187 } },
-    "period": { "earliest": -300, "latest": 900, "era_label": "Rulodan kodekse geçiş dönemi dahil", "precision": "range", "dating_method": ["textual", "historical-record"] },
-    "languages": ["Grekçe", "Latince"],
-    "disciplines": ["filoloji", "tarih", "metin-elestirisi"],
-    "popular_claim": "Bir yangın olmasaydı antik bilgi korunurdu ve bugün yüzyıllar ileride olurduk.",
-    "divergence": "Papirüs kırılgandır ve Mısır ikliminde bile birkaç yüzyıl ömrü vardır. Bir metnin hayatta kalması için yıpranmadan önce ELLE YENİDEN YAZILMASI gerekir - pahalı, yavaş, emek yoğun. Kimse her şeyi kopyalamaz; kâtipler okutulan ve aranan metinleri seçer. Rulodan kodekse geçiş ikinci bir eleme anıdır.",
-    "divergence_type": ["hayatta-kalma-yanliligi", "medya-abartisi"],
-    "evidence": [
-      "Öklid'in Elemanlar'ı ayakta çünkü yüzyıllar boyunca öğretildi ve kopyalandı.",
-      "Aristarkhos'un güneş merkezli metni kayıp - fikir yanlış sayıldığı için kopyalanmadı; sadece Arşimet'in aktarımıyla biliniyor.",
-      "Eratosthenes'in ve Herophilos'un eserleri kayıp, bulguları alıntılarla biliniyor.",
-      "Elimizdeki antik külliyat rastgele hayatta kalanlar değil, seçilerek aktarılanlardır."
-    ],
-    "sources": [
-      { "tier": "peer-reviewed", "type": "book", "title": "Antik metin aktarımı ve elyazması geleneği literatürü", "language": "en" }
-    ],
-    "open_questions": ["Kaybedilen metinlerin değeri ölçülemez - kayıp listesinin kendisi (Kallimakhos'un Pinakes'i) kayıp."],
-    "checked": "2026-09-06",
-    "used_in": ["iskenderiye"]
-  },
-  {
-    "id": "iskenderiye-metin-elestirisi-dogdu",
-    "claim": "Metin eleştirisi disiplini İskenderiye'de, Homeros nüshalarının karşılaştırılmasıyla doğdu.",
-    "status": "established",
-    "confidence": "high",
-    "topic": ["iskenderiye", "metin-elestirisi", "yontem-tarihi"],
-    "subject": { "site": "İskenderiye Mouseion", "region": "Helenistik Mısır", "modern_country": "Mısır", "coordinates": { "lat": 31.2001, "lon": 29.9187 } },
-    "period": { "earliest": -280, "latest": -140, "era_label": "Ptolemaios dönemi filolojisi", "precision": "range", "dating_method": ["textual"] },
-    "languages": ["Grekçe"],
-    "disciplines": ["filoloji", "metin-elestirisi", "bilim-tarihi"],
-    "evidence": [
-      "Kâtipler Homeros'un farklı nüshalarını karşılaştırıp hangi okumanın daha eski olduğunu belirlemeye çalıştı.",
-      "İşaretleme sistemleri, varyant notları ve eleştirel baskı fikri burada gelişti.",
-      "Kallimakhos'un Pinakes'i (120 kitaplık katalog) kütüphane biliminin erken örneğidir - kendisi kayıp, parçalarla biliniyor."
-    ],
-    "sources": [
-      { "tier": "peer-reviewed", "type": "book", "title": "Helenistik filoloji ve Homeros metin eleştirisi literatürü", "language": "en" }
-    ],
-    "open_questions": ["Pinakes'in yapısı ve kapsamı tam olarak bilinmiyor - yalnızca alıntı parçaları var."],
-    "checked": "2026-09-06",
-    "used_in": ["iskenderiye"]
-  },
-  {
-    "id": "milankovic-100bin-yil-problemi",
-    "claim": "Buzul çağı kaydına hâkim olan ~100 bin yıllık ritmin sebebi açıklanmıştır.",
-    "status": "unknown",
-    "confidence": "high",
-    "topic": ["milankovic", "iklim", "buzul-caglari", "acik-problem"],
-    "period": { "earliest": -1000000, "latest": 2026, "era_label": "Geç Pleyistosen'den bugüne", "precision": "range", "dating_method": ["isotopic", "astronomical"] },
-    "disciplines": ["iklim-bilimi", "astronomi", "jeoloji"],
-    "popular_claim": "Buzul çağları Milanković döngüleriyle açıklanmıştır ve konu kapanmıştır.",
-    "divergence": "Üç periyodun kayıtta bulunması sağlam bir sonuç. Ama kayda HÂKİM olan 100 bin yıllık ritim, üç döngünün EN ZAYIFINA (basıklık) ait - basıklığın güneşlenmeye doğrudan etkisi binde bir düzeyinde. En zayıf sinyalin kaydı yönetmesi açıklanmadı.",
-    "divergence_type": ["guncellenmemis"],
-    "evidence": [
-      "1976'da derin deniz çökel karotlarındaki oksijen izotop kayıtları beklenen üç periyodu (~100 bin, ~41 bin, ~23 bin yıl) doğrudan gösterdi.",
-      "Periyotlar gökmekaniğinden ÖNCEDEN hesaplanmıştı; çökel verisi bağımsız bir ölçümdü."
+      {
+        "id": "birden-fazla-yikim-adayi",
+        "text": "Modern literatürde Caesar'ın MÖ 48 yangını, üçüncü yüzyıl çatışmaları, Serapeum'un 391'de yıkılması ve 642 anlatısı ayrı adaylar olarak tartışılır; tek ve belgelenmiş bir son olay yoktur.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 356-358",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "roma-doneminde-kutuphane",
+        "text": "Roma döneminde İskenderiye'de kopya çıkarılabilecek ölçüde önemli bir kitap koleksiyonu ve çalışan Mouseion bulunduğuna dair kayıtlar vardır.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 357; Suetonius, Domitianus 20 tartışması",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "aurelian-dolayli-tahmin",
+        "text": "Saray kitaplığının 273'te zarar görmüş olması mümkündür, fakat bunu doğrudan söyleyen antik bir kaynak yoktur; sonuç saray bölgesindeki genel yıkımdan çıkarılır.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 358, ilk paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "serapeum-ayri-koleksiyon",
+        "text": "İskenderiye'de birden fazla kitaplık bulunmuş olabileceği için Caesar veya Aurelian dönemindeki bir yıkımın Serapeum'daki olası koleksiyonu zorunlu olarak sona erdirmesi gerekmez.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 358, ikinci ve üçüncü paragraflar",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "omer-anlatisi-gec",
+        "text": "Halife Ömer'in kitapları yaktırdığı anlatısı olaydan yüzyıllar sonra ortaya çıkar ve modern uzmanlık literatüründe tarihsel kurgu olarak değerlendirilir.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 357, ilk paragraf ve dn. 37",
+            "support_type": "direct"
+          }
+        ]
+      }
     ],
     "counter_evidence": [
-      "Basıklığın güneşlenmeye doğrudan etkisi çok küçük; buzul çağını açıklamaya yetmez.",
-      "Orta Pleyistosen Geçişi'nde (~1,2-0,8 My) ritim 41 binden 100 bine atladı ama yörünge zorlaması değişmedi - nedeni bilinmiyor.",
-      "Doğrusal olmayan geri besleme açıklamaları var ama uzlaşılmış bir çözüm yok."
+      {
+        "id": "strabon-sessizligi-belirsiz",
+        "text": "Strabon Caesar yangınından sonra Mouseion'u betimlerken kitaplıktan açıkça söz etmez; bu sessizlik hem süreklilik hem de kayıp yönünde kesin kanıt sayılamaz.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 357, dn. 39",
+            "support_type": "counter"
+          }
+        ]
+      }
     ],
     "sources": [
-      { "tier": "peer-reviewed", "type": "article", "authors": ["Hays, James D.", "Imbrie, John", "Shackleton, Nicholas"], "year": 1976, "title": "Variations in the Earth's Orbit: Pacemaker of the Ice Ages", "container": "Science", "language": "en" }
+      {
+        "id": "bagnall-2002-library-dreams",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Bagnall, Roger S."
+        ],
+        "year": 2002,
+        "title": "Alexandria: Library of Dreams",
+        "container": "Proceedings of the American Philosophical Society",
+        "volume": "146(4)",
+        "pages": "348-362",
+        "url": "https://archive.nyu.edu/handle/2451/28263",
+        "language": "en",
+        "accessed": "2026-09-07"
+      }
     ],
-    "open_questions": ["100 bin yıl problemi", "Orta Pleyistosen Geçişi'nin sebebi"],
-    "checked": "2026-09-06",
+    "open_questions": [
+      "Saray kitaplığı tam olarak ne zaman ve hangi ölçekte işlevini yitirdi?",
+      "Serapeum'da geç antikçağa kadar yaşayan koleksiyonun kapsamı neydi?"
+    ],
+    "checked": "2026-09-07",
+    "used_in": [
+      "iskenderiye"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Kaynak-konum zinciri kuruldu; konu uzmanı incelemesi henüz yapılmadı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "iskenderiye-asil-sebep-kopyalanmama",
+    "claim": "Antik metinlerin kaybının başlıca sebebi yangın değil, fiziksel eskime ve yeniden kopyalanmama sürecidir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "iskenderiye",
+      "metin-aktarimi",
+      "hayatta-kalma-yanliligi"
+    ],
+    "subject": {
+      "site": "İskenderiye Kütüphanesi",
+      "region": "Helenistik Akdeniz",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 31.2001,
+        "lon": 29.9187
+      }
+    },
+    "period": {
+      "earliest": -300,
+      "latest": 900,
+      "era_label": "Rulodan kodekse geçiş dönemi dahil",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Grekçe",
+      "Latince"
+    ],
+    "disciplines": [
+      "filoloji",
+      "tarih",
+      "metin-elestirisi"
+    ],
+    "popular_claim": "Bir yangın olmasaydı antik bilgi korunurdu ve bugün yüzyıllar ileride olurduk.",
+    "divergence": "Bir metnin korunması, binanın yanmamasından çok daha fazlasını gerektirir. Papirüs rulolar kullanımla ve nemle eskir; metin ancak yeni rulolara, ardından kodekslere tekrar tekrar kopyalanırsa yaşar. Bu sürekli bakım ve seçme süreci durduğunda koleksiyon, tek bir felaket olmadan da çözülür.",
+    "divergence_type": [
+      "hayatta-kalma-yanliligi",
+      "medya-abartisi"
+    ],
+    "evidence": [
+      {
+        "id": "papirus-sinirli-omur",
+        "text": "Papirüs iyi koşullarda yüzyıllarca dayanabilse de İskenderiye'nin nemli Akdeniz iklimi, kullanım, böcekler ve diğer etkenler koleksiyonların sürekli yenilenmesini gerektirirdi.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 358-359",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "surekli-yeniden-kopyalama",
+        "text": "Geç antikçağa ulaşan bir kitaplığın ruloları yeni nüshalarla değiştirmesi ve dördüncü yüzyılda kodeks ortamına aktarması gerekiyordu.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 359, ikinci paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "iskenderiyede-yenileme-kaniti-yok",
+        "text": "İskenderiye'de gerekli ölçekte sürekli kopyalama ve kitap edinme bütçesinin sürdüğünü gösteren kanıt bulunmuyor.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 359, ikinci paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kopyalarin-hayatta-kalma-secimi",
+        "text": "Antik eserlerin çoğu birden fazla nüsha hâlinde bulunuyordu; belirleyici sorun tek bir merkezdeki yıkımdan çok, nüshaların sonraki yüzyıllarda kopyalanmaya devam edip etmemesiydi.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 360, ilk paragraf",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "yanginlar-onemsiz-degil",
+        "text": "Yangın ve savaşlar belirli koleksiyonları gerçekten yok etmiş olabilir; kaynaklar, toplam kayıpta fiziksel felaket ile uzun süreli kurumsal çözülmenin payını nicel olarak ayırmaya yetmez.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 356-360",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "bagnall-2002-library-dreams",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Bagnall, Roger S."
+        ],
+        "year": 2002,
+        "title": "Alexandria: Library of Dreams",
+        "container": "Proceedings of the American Philosophical Society",
+        "volume": "146(4)",
+        "pages": "348-362",
+        "url": "https://archive.nyu.edu/handle/2451/28263",
+        "language": "en",
+        "accessed": "2026-09-07"
+      }
+    ],
+    "open_questions": [
+      "İskenderiye koleksiyonlarında kopyalama hızını ve bütçeyi gösteren kayıp idari kayıtlar var mıydı?",
+      "Tek tek eserlerin aktarım zincirinde hangi seçim mekanizması daha belirleyiciydi?"
+    ],
+    "checked": "2026-09-07",
+    "used_in": [
+      "iskenderiye"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Ana sentez kaynağındaki sayfa konumları bağlandı; ikinci uzmanlık kaynağıyla çapraz inceleme önerilir."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "iskenderiye-metin-elestirisi-dogdu",
+    "claim": "Metin eleştirisi, İskenderiye'de Homeros metinlerinin karşılaştırılması ve standartlaştırılmasıyla ilk sürekli kurumsal programına kavuştu.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "iskenderiye",
+      "metin-elestirisi",
+      "yontem-tarihi"
+    ],
+    "subject": {
+      "site": "İskenderiye Mouseion",
+      "region": "Helenistik Mısır",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 31.2001,
+        "lon": 29.9187
+      }
+    },
+    "period": {
+      "earliest": -280,
+      "latest": -140,
+      "era_label": "Ptolemaios dönemi filolojisi",
+      "precision": "range",
+      "dating_method": [
+        "textual"
+      ]
+    },
+    "languages": [
+      "Grekçe"
+    ],
+    "disciplines": [
+      "filoloji",
+      "metin-elestirisi",
+      "bilim-tarihi"
+    ],
+    "evidence": [
+      {
+        "id": "ilk-surekli-filoloji-programi",
+        "text": "Kütüphane ve Mouseion, doğru metni kurmaya yönelik filolojik çalışmayı ilk kez sürekli bir kurum programı hâline getirdi.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 360, ikinci paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "homeros-standartlastirma",
+        "text": "Dağınık ve standartlaşmamış Homeros metin geleneği, Aristarkhos'un çalışmasıyla sonraki elyazması geleneğinin temelini oluşturan daha standart bir biçime kavuştu.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 360, ikinci paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sonraki-elestirel-baskilarin-temeli",
+        "text": "İskenderiyeli filologların erken yöntemleri bugünkü ölçütlere göre sınırlıydı, fakat eleştirel metin kurma geleneğinin sonraki gelişimine temel oluşturdu.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 360, ikinci paragraf",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "dogus-ifadesinin-siniri",
+        "text": "Buradaki 'doğuş', daha önce hiçbir metin karşılaştırması yapılmadığı anlamına gelmez; iddia, yöntemin sürekli ve kurumsal bir araştırma programına dönüşmesiyle sınırlıdır.",
+        "citations": [
+          {
+            "source_ref": "bagnall-2002-library-dreams",
+            "locator": "s. 360, 'for the first time a philological enterprise' tartışması",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "bagnall-2002-library-dreams",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Bagnall, Roger S."
+        ],
+        "year": 2002,
+        "title": "Alexandria: Library of Dreams",
+        "container": "Proceedings of the American Philosophical Society",
+        "volume": "146(4)",
+        "pages": "348-362",
+        "url": "https://archive.nyu.edu/handle/2451/28263",
+        "language": "en",
+        "accessed": "2026-09-07"
+      }
+    ],
+    "open_questions": [
+      "Zenodotos, Aristophanes ve Aristarkhos'un kullandığı yöntemlerin birbirine göre gelişim sırası hangi ayrıntılarda yeniden kurulabilir?"
+    ],
+    "checked": "2026-09-07",
+    "used_in": [
+      "iskenderiye"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "İddia, 'ilk kurumsal ve sürekli program' biçiminde daraltıldı; klasik filoloji uzmanı incelemesi bekleniyor."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "milankovic-100bin-yil-problemi",
+    "claim": "Buzul çağı kaydına hâkim olan yaklaşık 100 bin yıllık ritmin fiziksel nedeni üzerinde uzlaşılmış bir açıklama vardır.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "milankovic",
+      "iklim",
+      "buzul-caglari",
+      "acik-problem"
+    ],
+    "period": {
+      "earliest": -1000000,
+      "latest": 2026,
+      "era_label": "Geç Pleyistosen'den bugüne",
+      "precision": "range",
+      "dating_method": [
+        "isotopic",
+        "astronomical"
+      ]
+    },
+    "disciplines": [
+      "iklim-bilimi",
+      "astronomi",
+      "jeoloji"
+    ],
+    "popular_claim": "Buzul çağları Milanković döngüleriyle bütünüyle açıklanmıştır ve konu kapanmıştır.",
+    "divergence": "Yörünge periyotlarının iklim kaydında bulunması sağlamdır; açık kalan sorun, en güçlü iklim sinyalinin doğrudan ışınım etkisi en zayıf olan yaklaşık 100 bin yıllık dışmerkezlik ölçeğinde neden baskınlaştığı ve Orta Pleyistosen Geçişi'nde 41 bin yıllık rejimden 100 bin yıllık rejime neden geçildiğidir.",
+    "divergence_type": [
+      "guncellenmemis"
+    ],
+    "evidence": [
+      {
+        "id": "uc-spektral-tepe",
+        "text": "Deniz tabanı çökel kayıtlarında iklim değişkenliği 23 bin, 42 bin ve yaklaşık 100 bin yıllık üç belirgin spektral tepede yoğunlaşır.",
+        "citations": [
+          {
+            "source_ref": "hays-1976-pacemaker",
+            "locator": "Özet, madde 2",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yuz-bin-yil-baskin",
+        "text": "Yaklaşık 100 bin yıllık bileşen kayıttaki en büyük varyans payını taşır ve ortalama periyodu dışmerkezlikle yakındır.",
+        "citations": [
+          {
+            "source_ref": "hays-1976-pacemaker",
+            "locator": "Özet, maddeler 2 ve 5",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "mpt-rejim-degisimi",
+        "text": "Orta Pleyistosen Geçişi sırasında düşük genlikli yaklaşık 41 bin yıllık döngüler, yüksek genlikli yaklaşık 100 bin yıllık döngülere dönüştü.",
+        "citations": [
+          {
+            "source_ref": "pollak-2026-mpt",
+            "locator": "Özet, ilk iki paragraf; §1, paragraflar 3-4",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "dismerkezlik-zayif-zorlama",
+        "text": "Dışmerkezliğin küresel güneşlenmeye doğrudan etkisi, eğiklik ve presesyona göre çok küçüktür; bu nedenle 100 bin yıllık baskınlığın basit doğrusal zorlamayla açıklanması yetersiz kalır.",
+        "citations": [
+          {
+            "source_ref": "hays-1976-pacemaker",
+            "locator": "Özet, madde 5",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "pollak-2026-mpt",
+            "locator": "§1, paragraf 3",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "mpt-zorlama-degismedi",
+        "text": "41 bin yıllık rejimden 100 bin yıllık rejime geçiş sırasında dış yörünge zorlamasında eşdeğer bir değişim görülmez; iklim sistemindeki geri besleme veya eşik değişiminin niteliği tartışmalıdır.",
+        "citations": [
+          {
+            "source_ref": "pollak-2026-mpt",
+            "locator": "Özet, ikinci paragraf; §1, paragraflar 4-6",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "rakip-mekanizmalar",
+        "text": "Regolit aşınması, uzun dönemli soğuma, buz tabakası eşikleri ve yörünge bileşenlerinin faz kilitlenmesi gibi farklı mekanizmalar benzer örüntüler üretebildiği için tek bir açıklama üzerinde uzlaşı yoktur.",
+        "citations": [
+          {
+            "source_ref": "pollak-2026-mpt",
+            "locator": "§1, paragraflar 8-21",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "hays-1976-pacemaker",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Hays, James D.",
+          "Imbrie, John",
+          "Shackleton, Nicholas J."
+        ],
+        "year": 1976,
+        "title": "Variations in the Earth's Orbit: Pacemaker of the Ice Ages",
+        "container": "Science",
+        "volume": "194(4270)",
+        "pages": "1121-1132",
+        "doi": "10.1126/science.194.4270.1121",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17790893/",
+        "language": "en",
+        "accessed": "2026-09-07"
+      },
+      {
+        "id": "pollak-2026-mpt",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Pollak, Felix",
+          "Parrenin, Frédéric",
+          "Capron, Emilie",
+          "Chase, Zanna",
+          "Jong, Lenneke",
+          "Legrain, Etienne"
+        ],
+        "year": 2026,
+        "title": "Simulating global ice volume across the Mid-Pleistocene Transition with a ramp-like increase in the deglaciation threshold",
+        "container": "Climate of the Past",
+        "volume": "22",
+        "pages": "675-688",
+        "doi": "10.5194/cp-22-675-2026",
+        "url": "https://cp.copernicus.org/articles/22/675/2026/",
+        "language": "en",
+        "accessed": "2026-09-07"
+      }
+    ],
+    "open_questions": [
+      "Yaklaşık 100 bin yıllık ritmi hangi geri besleme veya eşik mekanizması baskın hâle getiriyor?",
+      "Orta Pleyistosen Geçişi'ni başlatan iç iklim sistemi değişimi neydi?"
+    ],
+    "checked": "2026-09-07",
     "volatile": true,
-    "used_in": ["milankovic", "hatirlamadigimiz-felaketler"]
+    "used_in": [
+      "milankovic",
+      "hatirlamadigimiz-felaketler"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "1976 temel çalışması ile 2026 açık erişimli güncel çalışma bağlandı; paleoklimatoloji uzmanı incelemesi bekleniyor."
+    }
   }
 ]

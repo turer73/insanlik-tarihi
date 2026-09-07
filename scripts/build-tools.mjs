@@ -67,45 +67,67 @@ const bundleJson = JSON.stringify(bundle);
 writeFileSync(join(ROOT, "data", "findings.bundle.json"), `${bundleJson}\n`);
 console.log(`bundle  ${bundle.length} kayıt / ${files.length} dosya`);
 
-// Araçlar, geçiş sürecinde v1 düz metin ve v2 kaynak bağlantılı kanıtları birlikte okuyabilir.
+// Mevcut zaman çizelgesi ve tarayıcı v1'de düz metin kanıt bekler.
+// Kanonik v2 yapısı yalnızca bu iki eski araç için yayın kopyasında düzleştirilir.
 const toolBundleJson = JSON.stringify(bundle.map(normalizeFindingForTools));
 
 // JSON, script etiketi içinde güvenli tutulur.
-const data = toolBundleJson.replace(/<\//g, "<\\/");
+const canonicalData = bundleJson.replace(/<\//g, "<\\/");
+const legacyToolData = toolBundleJson.replace(/<\//g, "<\\/");
 const articles = readFileSync(join(ROOT, "data", "articles.json"), "utf8").replace(/<\//g, "<\\/");
 
 const jobs = [
-  ["tools/timeline.template.html", "zaman-cizelgesi.html"],
-  ["tools/browser.template.html", "bulgu-veri-tabani.html"],
+  {
+    sourcePath: "tools/timeline.template.html",
+    outputName: "zaman-cizelgesi.html",
+    placeholder: "__DATA__",
+    payload: legacyToolData,
+  },
+  {
+    sourcePath: "tools/browser.template.html",
+    outputName: "bulgu-veri-tabani.html",
+    placeholder: "__DATA__",
+    payload: legacyToolData,
+  },
+  {
+    sourcePath: "tools/audit.template.html",
+    outputName: "kanit-denetimi.html",
+    placeholder: "__CANONICAL_DATA__",
+    payload: canonicalData,
+  },
 ];
 
-for (const [sourcePath, outputName] of jobs) {
-  const absoluteSource = join(ROOT, sourcePath);
+for (const job of jobs) {
+  const absoluteSource = join(ROOT, job.sourcePath);
   let template = readFileSync(absoluteSource, "utf8");
 
-  // Eski şablondaki tekil CSS yazım hatasına karşı geriye dönük güvenlik ağı.
-  // Şablon düzeltildikten sonra bu satır kaldırılabilir.
+  // Eski tarayıcı şablonundaki tekil CSS yazım hatasına karşı geriye dönük
+  // güvenlik ağı. Şablon doğrudan düzeltildiğinde bu dönüşüm kaldırılabilir.
   template = template.replace(
     "--accent-ink:#1E3purple; --accent-ink:#1E344A;",
     "--accent-ink:#1E344A;",
   );
 
-  if (!template.includes("__DATA__")) {
-    console.error(`${sourcePath}: __DATA__ yer tutucusu yok`);
+  if (!template.includes(job.placeholder)) {
+    console.error(`${job.sourcePath}: ${job.placeholder} yer tutucusu yok`);
     process.exit(1);
   }
-  template = template.replace("__DATA__", data);
+  template = template.replace(job.placeholder, job.payload);
+
+  if (template.includes("__DATA__") || template.includes("__CANONICAL_DATA__")) {
+    console.error(`${job.sourcePath}: çözülememiş veri yer tutucusu kaldı`);
+    process.exit(1);
+  }
 
   if (template.includes("__ARTICLES__")) {
     template = template.replace("__ARTICLES__", articles);
   }
-
-  if (template.includes("__DATA__") || template.includes("__ARTICLES__")) {
-    console.error(`${sourcePath}: çözülememiş yer tutucu kaldı`);
+  if (template.includes("__ARTICLES__")) {
+    console.error(`${job.sourcePath}: çözülememiş __ARTICLES__ yer tutucusu kaldı`);
     process.exit(1);
   }
 
-  const outputPath = join(out, outputName);
+  const outputPath = join(out, job.outputName);
   writeFileSync(outputPath, template);
-  console.log(`${outputName}  ${(Buffer.byteLength(template) / 1024).toFixed(1)} KB`);
+  console.log(`${job.outputName}  ${(Buffer.byteLength(template) / 1024).toFixed(1)} KB`);
 }
