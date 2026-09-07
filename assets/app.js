@@ -91,6 +91,26 @@
     });
   }
 
+  // Yazının dayandığı bulguların durum dağılımı.
+  // Veri scripts/build-tools.mjs tarafından assets/evidence-data.js'e üretilir;
+  // yoksa çubuk hiç çizilmez (kart eski hâliyle çalışmaya devam eder).
+  const EV_ORDER = ['established','contested','minority','refuted','unknown','unmeasurable'];
+  const EV_TR = { established:'yerleşik', contested:'tartışmalı', minority:'azınlık',
+                  refuted:'çürütülmüş', unknown:'bilinmiyor', unmeasurable:'ölçülemez' };
+
+  function evidenceStrip(slug) {
+    const e = (window.ITEvidence || {})[slug];
+    if (!e || !e.n) return '';
+    const parts = EV_ORDER.filter(s => e.st[s]);
+    const segments = parts.map(s =>
+      `<i class="ev-seg ev-${s}" style="flex:${e.st[s]}"></i>`).join('');
+    const label = parts.map(s => `${e.st[s]} ${EV_TR[s]}`).join(' · ');
+    return `<div class="evidence-strip" role="img" aria-label="Dayandığı ${e.n} bulgu: ${escapeHtml(label)}">
+      <span class="ev-bar">${segments}</span>
+      <span class="ev-count"><strong>${e.n}</strong> bulgu</span>
+    </div>`;
+  }
+
   function articleCard(article) {
     const aiClass = article.cover ? ' has-ai-cover' : '';
     return `<a class="article-card${aiClass}" href="reader.html?slug=${encodeURIComponent(article.slug)}" aria-label="${escapeHtml(article.title)} yazısını oku">
@@ -103,6 +123,7 @@
         <span class="dossier-number">Dosya ${String(article.no).padStart(2,'0')}</span>
         <h2 class="article-title">${escapeHtml(article.cardTitle)}</h2>
         <p class="article-summary">${escapeHtml(article.summary)}</p>
+        ${evidenceStrip(article.slug)}
         <div class="article-footer">
           <span class="evidence-badge" data-tone="${article.tone}">${icon(article.evidenceIcon)}<span>${escapeHtml(article.evidenceLabel)}</span></span>
           <span class="read-button">Yazıyı Oku ${icon('arrow')}</span>
