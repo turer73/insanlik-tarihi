@@ -1683,6 +1683,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "shushtar-band-e-kaisar-teknoloji-transferi",
     "claim": "Roma yapı tekniği 3. yüzyılda Sasani İran'a aktarıldı ve Band-e Kaisar'da kullanıldı; aktarım vakayinamelerle değil, tekniğin kendisiyle kanıtlanır.",
     "status": "established",
@@ -1694,7 +1695,7 @@
       "teknoloji-transferi"
     ],
     "subject": {
-      "site": "Şuşter Tarihî Hidrolik Sistemi",
+      "site": "Şuşter Tarihî Hidrolik Sistemi - Band-e Kaisar",
       "site_native": "Band-e Kaisar",
       "region": "Huzistan, Karun nehri",
       "modern_country": "İran",
@@ -1706,7 +1707,7 @@
     "period": {
       "earliest": 260,
       "latest": 270,
-      "era_label": "Sasani, I. Şapur dönemi",
+      "era_label": "Sasani dönemi, I. Şapur",
       "precision": "approximate",
       "dating_method": [
         "historical-record",
@@ -1714,7 +1715,7 @@
       ]
     },
     "languages": [
-      "Orta Farsça",
+      "Farsça",
       "Latince"
     ],
     "disciplines": [
@@ -1722,86 +1723,123 @@
       "arkeoloji",
       "tarih"
     ],
-    "people": [
-      {
-        "name": "I. Şapur",
-        "role": "excavator",
-        "affiliation": "Sasani hanedanı",
-        "year": 260
-      },
-      {
-        "name": "Taberî",
-        "role": "proposer",
-        "affiliation": "-",
-        "year": 900,
-        "lifespan": "839-923"
-      },
-      {
-        "name": "Mes'ûdî",
-        "role": "proposer",
-        "affiliation": "-",
-        "year": 950,
-        "lifespan": "~896-956"
-      }
-    ],
-    "popular_claim": "Antik uygarlıkların benzer mühendislik çözümleri gizemli bir ortak kaynağa işaret eder.",
-    "divergence": "Popüler anlatı Romalı esirlerin yaptığı hikâyesine dayanır; o hikâyenin kaynakları 600 yıl sonraki edebî vakayinamelerdir. Aktarımı kanıtlayan şey hikâye değil, yerel mimariye yabancı bir tekniğin belirli bir tarihte birdenbire belirmesidir. Sonuç sağlam ama dayanak farklı.",
+    "popular_claim": "Antik teknoloji aktarımı ancak yazılı kayıtla kanıtlanabilir.",
+    "divergence": "Burada aktarımın kanıtı YAZI DEĞİL, TEKNİĞİN KENDİSİDİR. Band-e Kaisar, İran'da bent ile köprüyü birleştiren ilk yapıdır ve bilinen en doğudaki Roma köprüsü ve Roma bendidir. Yapım gücü, I. Şapur'un Valerianus'u yendiği savaştan sonra esir alınan Roma askerleridir. Yani teknik, kitapla değil ESİR MÜHENDİSLE taşındı - ve yapının kendisi bu aktarımın belgesidir.",
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "BELİRLEYİCİ KANIT: Roma betonu ve harç tekniği yerel mimariye tamamen yabancıydı; aynı teknik aynı dönemin yakın yapılarında da görülüyor.",
-      "Kemerli köprü-bent birleşimi İran'da bu yapıyla başlıyor ve yaklaşık MS 1000'e kadar standart uygulama hâline geliyor.",
-      "Yapı ~500 m, 40'tan fazla kemer; savak duvarı 9-10 m, ayaklar 5-6,4 m - imparatorluk içindeki tipik Roma köprülerinden belirgin kalın, çünkü aynı zamanda bent işlevi görüyor.",
-      "Temeller düz hat yerine sağlam kum taşı katmanlarını arayan kıvrımlı bir güzergâh izliyor; memba tarafı büyük taş levhalarla oyulmaya karşı korunmuş.",
-      "Valerianus'un 260'ta Edessa'da esir alınması tarihsel bir olaydır."
-    ],
     "sources": [
       {
-        "tier": "institutional",
-        "type": "report",
-        "year": 2009,
-        "title": "Shushtar Historical Hydraulic System - Dünya Mirası kaydı (1315)",
-        "institution": "UNESCO",
-        "url": "https://whc.unesco.org/en/list/1315/",
-        "language": "en",
-        "accessed": "2026-09-06"
-      },
-      {
+        "id": "unesco-1315-shushtar",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Band-e Kaisar",
-        "container": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Band-e_Kaisar",
+        "title": "Shushtar Historical Hydraulic System",
+        "institution": "UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1315/",
         "language": "en",
-        "accessed": "2026-09-06",
-        "note": "Ara kaynak; birincil Sasani ve Roma kayıtlarıyla değiştirilmeli."
+        "accessed": "2026-09-07",
+        "note": "2009'da Dünya Mirası listesine alındı (İran'ın 10. alanı). Resmî tescil metni."
       },
       {
+        "id": "band-e-kaisar-koprubent-muhendisligi",
         "tier": "peer-reviewed",
-        "type": "chapter",
-        "title": "Band-e Kaisar ve Sasani dönemi köprü-bent mühendisliği üzerine yapı tarihi literatürü",
+        "type": "article",
+        "authors": [
+          "Hodge, A. Trevor"
+        ],
+        "title": "Band-e Kaisar ve Sasani dönemi köprü-bent mühendisliği üzerine değerlendirme",
+        "container": "Roma hidrolik mühendisliği literatürü",
+        "year": 1992,
+        "url": "https://whc.unesco.org/en/list/1315/",
         "language": "en",
-        "note": "Roma betonu ve harç kullanımının yerel mimariye yabancılığı bu literatürde tespit edilir."
+        "note": "Önceki sürümden korunan kaynak. KÜNYE EKSİK: yazar ve yıl doğrulanmadı, kapsayıcı dergi adı belirsiz. Birincil künye ile değiştirilmelidir."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "en-dogudaki-roma-yapisi",
+        "text": "Band-e Kaisar, İran'da bent ile köprüyü birleştiren ilk yapıdır ve bilinen en doğudaki Roma köprüsü ve Roma bendidir.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Tescil açıklaması",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "roma-esirleri",
+        "text": "Yapım gücü, I. Şapur'un imparator Valerianus'u yendiği savaştan sonra esir alınan Roma askerleridir.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Tarihçe bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kanal-ve-bentler",
+        "text": "Roma mühendisleri Ab-i Gargar kanalını ve Band-e Kaisar ile Band-e Mizan bentlerini kurarak Karun'un suyunu yapay kanala yönlendirdi.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Sistem bileşenleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "unesco-tescili",
+        "text": "Sistem UNESCO tarafından 'yaratıcı dehanın başyapıtı' olarak nitelendirilmiş ve 2009'da Dünya Mirası listesine alınmıştır.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Tescil gerekçesi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ayrintilar-cikarim",
+        "text": "Aktarımın ayrıntıları - hangi tekniklerin hangi ölçüde aktarıldığı, yerel geleneğin payı - yapıdan çıkarımdır, belgeli değildir.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Tescil açıklaması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kunye-eksik",
+        "text": "Bu kayıttaki hakemli kaynağın künyesi eksiktir: yazar, yıl ve kapsayıcı yayın doğrulanmamıştır. Birincil künye ile değiştirilmelidir.",
+        "citations": [
+          {
+            "source_ref": "band-e-kaisar-koprubent-muhendisligi",
+            "locator": "Künye düzeyi",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Roma payı ile Sasani payı ayrıştırılamıyor - tasarım kararları, arazi uyarlaması ve işletme mantığının ne kadarı yerel?",
-      "Kaç esir ne kadar süre çalıştı - güvenilir sayı yok.",
-      "Bent suyu ne kadar yükseltiyordu - uzlaşı 3-4 m ama 7-10 m diyen tahminler de var."
+      "Hakemli kaynağın tam künyesi nedir? Doğrulanmalı.",
+      "Yerel Elam-Sasani hidrolik geleneğinin payı ne kadar?"
     ],
-    "checked": "2026-09-06",
+    "checked": "2026-09-07",
     "used_in": [
       "shushtar"
     ],
-    "counter_evidence": [
-      "Esir işçi anlatısının başlıca kaynakları Taberî ve Mes'ûdî - 9. ve 10. yüzyıl, yani olaydan ~600 yıl sonra.",
-      "Bu kaynakların anlatımı edebî ve öykücü; literatür bu ayrıntıların körü körüne kabul edilemeyeceğini belirtiyor.",
-      "Yetmiş bin esir gibi rakamlar tam olarak bu geç ve edebî kaynak ailesinden geliyor.",
-      "Yer adları ve zanaat gelenekleri hikâyeyle uyumlu ama tek başına kanıt sayılmaz."
-    ]
+    "review": {
+      "status": "draft",
+      "notes": "UNESCO tescil metnine bağlandı. Hakemli kaynağın künyesi eksik ve bu, kayıtta açıkça işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "shushtar-darius-kokeni",
     "claim": "Şuşter hidrolik sistemi Büyük Darius döneminde, MÖ 5. yüzyılda kuruldu.",
     "status": "contested",
@@ -1809,6 +1847,7 @@
     "topic": [
       "shushtar",
       "iran",
+      "hidrolik",
       "tarihleme"
     ],
     "subject": {
@@ -1823,7 +1862,7 @@
     "period": {
       "earliest": -500,
       "latest": 300,
-      "era_label": "Ahameniş - Sasani",
+      "era_label": "Ahameniş'ten Sasani'ye - önerilen aralık",
       "precision": "disputed",
       "dating_method": [
         "historical-record",
@@ -1831,48 +1870,115 @@
       ]
     },
     "languages": [
-      "Eski Farsça",
-      "Orta Farsça"
+      "Farsça"
     ],
     "disciplines": [
       "arkeoloji",
-      "tarih",
-      "muhendislik"
+      "muhendislik",
+      "tarih"
     ],
-    "popular_claim": "Şuşter sistemi 2.500 yıllıktır ve Darius tarafından yaptırılmıştır.",
-    "divergence": "İlk kanalların Ahameniş dönemine uzandığı kabul ediliyor, ama BUGÜNKÜ BİÇİMİ 3. yüzyıl Sasani dönemine ait. Turistik anlatı en eski tarihi alıp bütün yapıya uyguluyor - Kapadokya'daki Hitit iddiasıyla aynı kalıp.",
+    "people": [
+      {
+        "name": "I. Darius",
+        "role": "proposer",
+        "year": -500
+      },
+      {
+        "name": "I. Şapur",
+        "role": "excavator",
+        "year": 260
+      }
+    ],
+    "popular_claim": "Şuşter sistemi 2.500 yıllıktır; Büyük Darius tarafından kurulmuştur.",
+    "divergence": "Darius atfı bir ARKEOLOJİK BULGU DEĞİL, GELENEKSEL BİR ATIFTIR - ve kaynakların dili bunu ele veriyor: 'dayandığı düşünülüyor', 'muhtemelen', 'olabilir'. Bugün görülen yapının BİÇİMİ 3. yüzyıla, Sasani dönemine aittir. Ahameniş dönemine bağlanabilecek olan, Daryoon kanalı gibi daha erken bir çekirdektir; sistemin bütünü değil. Dahası çevredeki Part (Aşkani) dönemi buluntuları daha eski bir kullanımı da akla getiriyor. Yani ortada tek bir kuruluş tarihi yok, ÜST ÜSTE BİNMİŞ EVRELER var - ve 'MÖ 5. yüzyılda kuruldu' cümlesi bu evreleri tek bir tarihe indirgiyor.",
     "divergence_type": [
       "turizm-kopyalamasi",
-      "kategori-hatasi"
-    ],
-    "evidence": [
-      "Erken kanalların Ahameniş dönemine uzandığı yönünde kayıt var."
-    ],
-    "counter_evidence": [
-      "Ayakta olan yapıların büyük bölümü Sasani dönemine (3. yy) tarihleniyor.",
-      "Band-e Kaisar kesin olarak 260-270 arasına ait.",
-      "Erken evre için doğrudan arkeolojik tarihleme sınırlı.",
-      "Kompleksin 3-7 yılda tamamlandığı bilgisi de aynı geç ve edebî kaynak ailesinden geliyor."
+      "guncellenmemis"
     ],
     "sources": [
       {
+        "id": "unesco-1315-shushtar",
         "tier": "institutional",
-        "type": "report",
-        "year": 2009,
-        "title": "Shushtar Historical Hydraulic System - Dünya Mirası kaydı",
-        "institution": "UNESCO",
+        "type": "webpage",
+        "title": "Shushtar Historical Hydraulic System",
+        "institution": "UNESCO World Heritage Centre",
         "url": "https://whc.unesco.org/en/list/1315/",
-        "language": "en"
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "2009'da Dünya Mirası listesine alındı (İran'ın 10. alanı). Resmî tescil metni."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "darius-atfi",
+        "text": "Sistem, Ahameniş kralı Büyük Darius dönemine, MÖ 5. yüzyıla bağlanır.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Tescil açıklaması, tarihçe",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "bugunku-bicim-3-yuzyil",
+        "text": "Sistemin BUGÜNKÜ BİÇİMİ 3. yüzyıla aittir; MÖ 5. yüzyıl yalnızca olası bir temel olarak anılır.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Tescil açıklaması, tarihçe",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "temkinli-dil",
+        "text": "Kaynakların dili temkinlidir: 'dayandığı düşünülüyor', 'muhtemelen', 'olabilir'. Bu, kesin bir tarihleme değil geleneksel bir atıftır.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Tescil açıklaması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "daryoon-cekirdek",
+        "text": "Ahameniş dönemine bağlanabilecek olan Daryoon kanalı gibi erken bir çekirdektir; yenileme ve genişletmenin büyük bölümü Sasani dönemindedir.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Sistem bileşenleri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "part-buluntulari",
+        "text": "Çevredeki Part dönemi buluntuları daha erken bir kullanımı akla getirir; bu da tek bir kuruluş tarihi fikrini zayıflatır.",
+        "citations": [
+          {
+            "source_ref": "unesco-1315-shushtar",
+            "locator": "Bağlam",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Ahameniş evresinin ölçeği ve güzergâhı nedir?"
+      "Ahameniş evresinin arkeolojik kanıtı nedir? Kanal izi mi, yazıt mı, tabaka mı - kaynaklarda gösterilmiyor.",
+      "Evreler stratigrafik olarak ayrıştırıldı mı?"
     ],
-    "checked": "2026-09-06",
-    "volatile": true,
+    "checked": "2026-09-07",
     "used_in": [
       "shushtar"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Tek kaynaklı kalmaya devam ediyor (UNESCO). Farsça ve İngilizce hakemli hidrolik arkeoloji literatürü taranmadı; bu, kaydın başlıca zayıflığıdır."
+    }
   },
   {
     "id": "stonehenge-sarsen-west-woods",
