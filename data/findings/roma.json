@@ -1696,6 +1696,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "catisma-tezi-terk-edildi",
     "claim": "Bilim ile dinin doğaları gereği ve sürekli çatıştığı tezi (Draper-White çatışma tezi) bilim tarihi alanında terk edilmiştir.",
     "status": "established",
@@ -1741,39 +1742,39 @@
         "affiliation": "Cornell University",
         "year": 1896,
         "lifespan": "1832-1918"
+      },
+      {
+        "name": "Numbers, Ronald L.",
+        "role": "refuter",
+        "affiliation": "University of Wisconsin-Madison",
+        "year": 2009
       }
     ],
     "popular_claim": "Kilise bilimi bastırdı ve bin yıllık bir Karanlık Çağ yarattı; bilim ile din tarih boyunca savaş hâlindeydi.",
-    "divergence": "Anlatının belirli yazarları ve tarihleri var: Draper (1874) ve White (1896). 20. yüzyıl bilim tarihçileri bu eserlerin kanıtlarını denetledi ve önemli bölümünün yanlış yorumlandığını ya da doğrudan uydurulduğunu gösterdi. 'Karanlık Çağ' terimi de tarihçilerce terk edilmiştir; dönem 'Ortaçağ' olarak adlandırılır ve entelektüel üretimin sürdüğü bir dönem olarak incelenir. DİKKAT: tezin çökmesi somut olayların olmadığı anlamına GELMEZ - çöken kısım çatışmanın yapısal, sürekli ve kaçınılmaz olduğu iddiasıdır.",
+    "divergence": "Anlatının belirli yazarları ve tarihleri var: Draper (1874) ve White (1896). 20. yüzyıl bilim tarihçileri kanıtları denetledi ve önemli bölümünün yanlış yorumlandığını ya da uydurulduğunu gösterdi. 2009'da Harvard University Press, alanın önde gelen tarihçilerinin yazdığı 25 denemelik bir derlemeyle mitleri tek tek ele aldı - bu, reddin kurumsallaştığının göstergesidir. DİKKAT: tezin çökmesi somut olayların olmadığı anlamına GELMEZ; çöken kısım çatışmanın yapısal, sürekli ve kaçınılmaz olduğu iddiasıdır.",
     "divergence_type": [
       "ideolojik-secim",
       "guncellenmemis"
     ],
-    "evidence": [
-      "'Karanlık Çağ' nitelemesinin kökeni 14. yüzyılda Petrarca'dır ve BİLİM değil, Latin edebiyatının gerileyişi hakkındadır - bir edebiyat zevki yargısı.",
-      "Draper 1874 ve White 1896 tarihli eserler bugünkü popüler anlatının kaynağıdır.",
-      "Bilim tarihçilerinin denetimi, kanıtların önemli bölümünün yanlış okunmuş veya uydurulmuş olduğunu gösterdi.",
-      "Üniversite kurumunun kendisi bir Ortaçağ kilise kurumudur: Bologna 1088, Paris ve Oxford 12. yüzyıl."
-    ],
-    "counter_evidence": [
-      "Çatışma tezinin reddi, belirli tarihlerde belirli kurumlarca yapılan sansür ve yargılamaları ortadan kaldırmaz - Index, Galileo ve Bruno ayrı kayıtlarda tutulmaktadır.",
-      "Savunmacı literatürde ters yönde bir eğilim var: 'mit çürütüldü' diyerek belgelenmiş sicili de aynı torbaya atmak."
-    ],
-    "open_questions": [
-      "Popüler anlatı neden akademik reddiyeye rağmen bu kadar dayanıklı?"
-    ],
     "sources": [
       {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Conflict thesis",
-        "container": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Conflict_thesis",
+        "id": "numbers-2009-galileo-goes-to-jail",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Numbers, Ronald L. (ed.)"
+        ],
+        "year": 2009,
+        "title": "Galileo Goes to Jail and Other Myths about Science and Religion",
+        "publisher": "Harvard University Press",
+        "isbn": "9780674033276",
+        "pages": "xiii+302",
         "language": "en",
         "accessed": "2026-09-07",
-        "note": "Ara kaynak; alanın uzlaşı durumunun özeti için."
+        "note": "Bilim tarihçilerinin yazdığı 25 denemelik derleme; her mite yaklaşık dokuz sayfa. Isis ve Journal of Ecclesiastical History'de değerlendirildi. Künye doğrulandı, TAM METİN OKUNMADI."
       },
       {
+        "id": "draper-1874-conflict",
         "tier": "popular",
         "type": "book",
         "authors": [
@@ -1781,10 +1782,13 @@
         ],
         "year": 1874,
         "title": "History of the Conflict between Religion and Science",
+        "publisher": "D. Appleton",
+        "url": "https://archive.org/details/historyofconflic00drap",
         "language": "en",
-        "note": "Kanıt olarak DEĞİL, incelenen olgunun kendisi olarak kaydedildi."
+        "note": "KANIT DEĞİL - incelenen olgunun kendisi. Çatışma tezinin kurucu metinlerinden."
       },
       {
+        "id": "white-1896-warfare",
         "tier": "popular",
         "type": "book",
         "authors": [
@@ -1792,16 +1796,107 @@
         ],
         "year": 1896,
         "title": "A History of the Warfare of Science with Theology in Christendom",
+        "publisher": "D. Appleton",
+        "url": "https://archive.org/details/historyofwarfare01whit",
         "language": "en",
-        "note": "Kanıt olarak DEĞİL, incelenen olgunun kendisi olarak kaydedildi."
+        "note": "KANIT DEĞİL - incelenen olgunun kendisi."
+      },
+      {
+        "id": "conflict-thesis-wikipedia",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Conflict thesis",
+        "institution": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Conflict_thesis",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak; alanın uzlaşı durumunun özeti."
       }
+    ],
+    "evidence": [
+      {
+        "id": "harvard-derlemesi",
+        "text": "Bilim tarihçilerinin yazdığı 25 denemelik bir Harvard University Press derlemesi, bilim-din çatışması mitlerini tek tek ele alır ve her birine yaklaşık dokuz sayfa ayırır.",
+        "citations": [
+          {
+            "source_ref": "numbers-2009-galileo-goes-to-jail",
+            "locator": "Derlemenin kapsamı ve yapısı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kurucu-metinler",
+        "text": "Anlatının kurucu metinleri belirlidir: Draper 1874 ve White 1896.",
+        "citations": [
+          {
+            "source_ref": "draper-1874-conflict",
+            "locator": "Eserin kendisi",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "alan-konumu",
+        "text": "Çatışma tezi bugün bilim tarihi alanında terk edilmiş bir tezdir; ders kitaplarında ve internette ise hâlâ yaşamaktadır.",
+        "citations": [
+          {
+            "source_ref": "conflict-thesis-wikipedia",
+            "locator": "Alanın konumu bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "sicil-ayri",
+        "text": "Tezin reddi, belirli tarihlerde belirli kurumlarca yapılan sansür ve yargılamaları ortadan kaldırmaz - Index, Galileo ve Bruno ayrı kayıtlarda tutulmaktadır.",
+        "citations": [
+          {
+            "source_ref": "numbers-2009-galileo-goes-to-jail",
+            "locator": "Derlemenin çerçevesi",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "ters-egilim",
+        "text": "Savunmacı literatürde ters yönde bir eğilim var: 'mit çürütüldü' diyerek belgelenmiş sicili de aynı torbaya atmak.",
+        "citations": [
+          {
+            "source_ref": "conflict-thesis-wikipedia",
+            "locator": "Eleştiriler bölümü",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "tam-metin-okunmadi",
+        "text": "Bu kayıtta derlemenin tam metni okunmamıştır; künye ve kapsam doğrulanmış, tekil deneme argümanları incelenmemiştir.",
+        "citations": [
+          {
+            "source_ref": "numbers-2009-galileo-goes-to-jail",
+            "locator": "Kaynak erişim düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Popüler anlatı neden akademik reddiyeye rağmen bu kadar dayanıklı?"
     ],
     "checked": "2026-09-07",
     "used_in": [
       "mit-ve-sicil"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Hakemli çıpa eklendi (Numbers 2009); tam metin okunmadı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "duz-dunya-ortacag-miti",
     "claim": "Ortaçağ Avrupası'nda eğitimli çevreler dünyanın düz olduğuna inanıyordu.",
     "status": "refuted",
@@ -1844,45 +1939,110 @@
       }
     ],
     "popular_claim": "Kolomb, dünyanın yuvarlak olduğunu düz olduğuna inanan din adamlarına karşı savundu.",
-    "divergence": "Dünyanın küre olduğu Ortaçağ'da eğitimli çevrelerde STANDART BİLGİYDİ; antikçağdan devralınmış ve dönemin ders metinlerinde yer alıyordu. Kolomb ile uzmanlar arasındaki gerçek tartışma dünyanın ŞEKLİ değil ÇEVRESİNİN UZUNLUĞUydu - ve o tartışmada haklı olan taraf Kolomb değil, uzmanlardı: Kolomb mesafeyi ciddi biçimde küçümsüyordu. Düz dünya sahnesi 1828'de yayımlanan bir Kolomb biyografisindeki kurgusal bir sahneden gelir ve sonradan çatışma tezi tarafından yaygınlaştırılmıştır.",
+    "divergence": "Dünyanın küre olduğu Ortaçağ'da eğitimli çevrelerde STANDART BİLGİYDİ. Kolomb ile uzmanlar arasındaki gerçek tartışma dünyanın ŞEKLİ değil ÇEVRESİNİN UZUNLUĞUydu - ve o tartışmada haklı olan Kolomb değil uzmanlardı. Bu mit, Harvard University Press derlemesinde AYRI BİR BÖLÜM olarak ele alınacak kadar yerleşiktir: derlemenin üçüncü miti, Ortaçağ Hristiyanlarının dünyanın düz olduğunu öğrettiği iddiasıdır.",
     "divergence_type": [
       "medya-abartisi",
       "ideolojik-secim"
     ],
-    "evidence": [
-      "Ortaçağ ders metinlerinde küre biçimi standart olarak yer alır.",
-      "Kolomb'un hesabı Dünya'nın çevresini olduğundan çok küçük gösteriyordu; itiraz eden uzmanlar bu noktada haklıydı.",
-      "Düz dünya anlatısının bilinen popüler kaynağı 1828 tarihli edebî bir biyografidir."
-    ],
-    "counter_evidence": [
-      "Bazı geç antik yazarlarda düz dünya görüşü savunulmuştur; ancak bunlar azınlıkta kalmış ve Ortaçağ eğitim geleneğine hâkim olmamıştır."
-    ],
     "sources": [
       {
+        "id": "numbers-2009-galileo-goes-to-jail",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Numbers, Ronald L. (ed.)"
+        ],
+        "year": 2009,
+        "title": "Galileo Goes to Jail and Other Myths about Science and Religion",
+        "publisher": "Harvard University Press",
+        "isbn": "9780674033276",
+        "pages": "xiii+302",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Bilim tarihçilerinin yazdığı 25 denemelik derleme; her mite yaklaşık dokuz sayfa. Isis ve Journal of Ecclesiastical History'de değerlendirildi. Künye doğrulandı, TAM METİN OKUNMADI."
+      },
+      {
+        "id": "flat-earth-myth-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "Myth of the flat Earth",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Myth_of_the_flat_Earth",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "mit-3",
+        "text": "Harvard University Press derlemesinin üçüncü miti, Ortaçağ Hristiyanlarının dünyanın düz olduğunu öğrettiği iddiasını ele alır ve çürütür.",
+        "citations": [
+          {
+            "source_ref": "numbers-2009-galileo-goes-to-jail",
+            "locator": "Mit 3",
+            "support_type": "direct"
+          }
+        ]
       },
       {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "\"The Dark Ages\" - Popery, Periodisation and Pejoratives",
-        "url": "https://historyforatheists.com/2016/11/the-dark-ages-popery-periodisation-and-pejoratives/",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; dönemlendirme tartışmasının özeti."
+        "id": "kure-standart",
+        "text": "Ortaçağ ders metinlerinde küre biçimi standart olarak yer alır; Kolomb'un hesabı Dünya'nın çevresini olduğundan çok küçük gösteriyordu.",
+        "citations": [
+          {
+            "source_ref": "flat-earth-myth-wikipedia",
+            "locator": "Ortaçağ bilgisi bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "1828-biyografi",
+        "text": "Düz dünya sahnesinin bilinen popüler kaynağı 1828 tarihli edebî bir Kolomb biyografisidir.",
+        "citations": [
+          {
+            "source_ref": "flat-earth-myth-wikipedia",
+            "locator": "Mitin kökeni bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "gec-antik-istisnalar",
+        "text": "Bazı geç antik yazarlarda düz dünya görüşü savunulmuştur; ancak azınlıkta kalmış ve Ortaçağ eğitim geleneğine hâkim olmamıştır.",
+        "citations": [
+          {
+            "source_ref": "flat-earth-myth-wikipedia",
+            "locator": "İstisnalar bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "bolum-okunmadi",
+        "text": "Derlemenin ilgili bölümü bu kayıtta okunmamıştır; mit numarası ve konusu doğrulanmış, argüman ayrıntısı incelenmemiştir.",
+        "citations": [
+          {
+            "source_ref": "numbers-2009-galileo-goes-to-jail",
+            "locator": "Kaynak erişim düzeyi",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "checked": "2026-09-07",
     "used_in": [
       "mit-ve-sicil"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Hakemli çıpa eklendi; ilgili bölüm okunmadı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "index-librorum-407-yil",
     "claim": "Katolik Kilisesi'nin resmî yasaklı kitaplar listesi Index Librorum Prohibitorum 1559'dan 1966'ya, yani 407 yıl yürürlükte kaldı.",
     "status": "established",
@@ -1918,45 +2078,107 @@
       "hukuk"
     ],
     "popular_claim": "Kilise sansürü Ortaçağ'a ait, uzak ve kapanmış bir konudur.",
-    "divergence": "Index bir Ortaçağ kurumu DEĞİLDİR: 1559'da, yani matbaanın yaygınlaşmasından sonra, Karşı Reform bağlamında kuruldu ve 1966'da kaldırıldı - yani yaşayan insanların hafızasında bitti. Sansürün asıl kurumsal biçimi Ortaçağ'da değil, ERKEN MODERN dönemdedir. 'Ortaçağ karanlığı' çerçevesi burada da yanlış dönemi gösteriyor.",
+    "divergence": "Index bir Ortaçağ kurumu DEĞİLDİR: 1559'da, matbaanın yaygınlaşmasından sonra, Karşı Reform bağlamında kuruldu ve 1966'da kaldırıldı - yaşayan insanların hafızasında bitti. Sansürün asıl kurumsal biçimi Ortaçağ'da değil ERKEN MODERN dönemdedir. 'Ortaçağ karanlığı' çerçevesi burada da yanlış dönemi gösteriyor.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Index 1559'da kuruldu, 1966'da kaldırıldı: 407 yıl.",
-      "Kopernik'in De revolutionibus'u 1616'da 'düzeltilene kadar' askıya alındı.",
-      "Galileo'nun Diyalog'u 1633'te listeye girdi.",
-      "İkisi de listeden 1835'te çıktı: Kopernik için 219, Galileo için 202 yıl sonra."
-    ],
-    "counter_evidence": [
-      "Index'in fiilî uygulanabilirliği bölgeden bölgeye ve dönemden döneme büyük farklılık gösterdi; her yerde eşit ölçüde işleyen bir yasak değildi.",
-      "Yasaklı listede olmak eserin okunmadığı anlamına gelmez; yasaklı kitapların dolaşımı belgelidir."
-    ],
     "sources": [
       {
+        "id": "index-1559-edition",
         "tier": "primary",
         "type": "edition",
         "year": 1559,
         "title": "Index Librorum Prohibitorum",
-        "language": "la"
+        "publisher": "Sacra Congregatio Indicis",
+        "language": "la",
+        "note": "Listenin kendisi. 1559'da kuruldu, 1966'da kaldırıldı."
       },
       {
+        "id": "index-librorum-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "Index Librorum Prohibitorum",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Index_Librorum_Prohibitorum",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak. Bu kayıt için hakemli çıpa BULUNAMADI."
       }
+    ],
+    "evidence": [
+      {
+        "id": "407-yil",
+        "text": "Index 1559'da kuruldu ve 1966'da kaldırıldı: 407 yıl.",
+        "citations": [
+          {
+            "source_ref": "index-1559-edition",
+            "locator": "Listenin kuruluşu ve kaldırılışı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kopernik-galileo",
+        "text": "Kopernik'in De revolutionibus'u 1616'da 'düzeltilene kadar' askıya alındı; Galileo'nun Diyalog'u 1633'te listeye girdi; ikisi de 1835'te çıktı.",
+        "citations": [
+          {
+            "source_ref": "index-librorum-wikipedia",
+            "locator": "Kayda değer yasaklar bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "uygulama-degisken",
+        "text": "Index'in fiilî uygulanabilirliği bölgeden bölgeye ve dönemden döneme büyük farklılık gösterdi; her yerde eşit işleyen bir yasak değildi.",
+        "citations": [
+          {
+            "source_ref": "index-librorum-wikipedia",
+            "locator": "Uygulama bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "dolasim-devam",
+        "text": "Yasaklı listede olmak eserin okunmadığı anlamına gelmez; yasaklı kitapların dolaşımı belgelidir.",
+        "citations": [
+          {
+            "source_ref": "index-librorum-wikipedia",
+            "locator": "Etki bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "hakemli-cipa-yok",
+        "text": "BU KAYIT İÇİN HAKEMLİ ÇIPA BULUNAMADI. Tarihler ara kaynaktan doğrulanmıştır; sansür tarihi literatürüyle desteklenmelidir.",
+        "citations": [
+          {
+            "source_ref": "index-librorum-wikipedia",
+            "locator": "Kaynak düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Index'in fiilî etkisini ölçen hakemli çalışma var mı? Bu kayıtta bulunamadı."
     ],
     "checked": "2026-09-07",
     "used_in": [
       "mit-ve-sicil"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Hakemli çıpa YOK; ara kaynak düzeyinde kalmaya devam ediyor."
+    }
   },
   {
+    "schema_version": 2,
     "id": "galileo-1633-mahkumiyeti",
     "claim": "Galileo 1633'te 'ağır sapkınlık şüphesi' ile mahkûm edildi ve ölümüne kadar ev hapsinde tutuldu; kurumsal düzeltme 1992'yi buldu.",
     "status": "established",
@@ -2002,48 +2224,156 @@
         "role": "proposer",
         "year": 1633,
         "lifespan": "1564-1642"
+      },
+      {
+        "name": "Finocchiaro, Maurice A.",
+        "role": "editor",
+        "year": 1989
       }
     ],
-    "popular_claim": "Galileo bilimsel gerçeği söylediği için işkence gördü ve hapse atıldı.",
-    "divergence": "Olay gerçek ama ayrıntılar sık yanlış aktarılır: işkence UYGULANMADI, işkence tehdidi usul gereği okundu. Hapis değil EV HAPSİ verildi. Bunlar hafifletici değil düzeltici ayrıntılardır; sicilin ağırlığı zaten belgelerin kendisindedir. Bu kayıt sicilin en az tartışmalı kalemidir: yargılama tutanakları elimizdedir.",
+    "popular_claim": "Galileo bilimsel gerçeği söylediği için işkence gördü ve zindana atıldı.",
+    "divergence": "Olay gerçek ama ayrıntılar sık yanlış aktarılır: işkence UYGULANMADI, işkence tehdidi usul gereği okundu; zindan değil EV HAPSİ verildi. Bunlar hafifletici değil DÜZELTİCİ ayrıntılardır - sicilin ağırlığı zaten belgelerin kendisindedir ve o belgeler standart bir edisyonda toplu hâlde yayımlanmıştır. Bu, kaydın en az tartışmalı kalemi olmasının sebebidir: iddia yorum değil, belge.",
     "divergence_type": [
       "medya-abartisi"
     ],
-    "evidence": [
-      "1633 kararı 'ağır sapkınlık şüphesi' (vehementer suspectus de haeresi) hükmünü içerir.",
-      "Galileo görüşünü yeminle reddetmeye zorlandı.",
-      "1642'deki ölümüne kadar ev hapsinde kaldı.",
-      "Diyalog Index'e alındı ve 1835'e kadar listede kaldı - 202 yıl.",
-      "Kurumun yargılamadaki hatayı resmen kabulü 1992'dir: karardan 359 yıl sonra."
-    ],
-    "counter_evidence": [
-      "Yargılamanın arka planında kişisel ve siyasi etkenler de vardı; salt 'bilim karşıtlığı' okuması olayı basitleştirir.",
-      "1616'daki ilk uyarının içeriği ve Galileo'nun onu ihlal edip etmediği tarihçiler arasında tartışılmıştır."
-    ],
     "sources": [
       {
-        "tier": "primary",
+        "id": "finocchiaro-1989-galileo-affair",
+        "tier": "peer-reviewed",
         "type": "edition",
-        "year": 1633,
-        "title": "Galileo yargılaması tutanakları ve mahkûmiyet kararı",
-        "language": "la"
+        "authors": [
+          "Finocchiaro, Maurice A. (ed. ve çev.)"
+        ],
+        "year": 1989,
+        "title": "The Galileo Affair: A Documentary History",
+        "container": "California Studies in the History of Science 5",
+        "publisher": "University of California Press",
+        "isbn": "9780520066625",
+        "pages": "xvi+382",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Galileo yargılama belgelerinin standart İngilizce edisyonu. Künye doğrulandı, tam metin okunmadı."
       },
       {
+        "id": "numbers-2009-galileo-goes-to-jail",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Numbers, Ronald L. (ed.)"
+        ],
+        "year": 2009,
+        "title": "Galileo Goes to Jail and Other Myths about Science and Religion",
+        "publisher": "Harvard University Press",
+        "isbn": "9780674033276",
+        "pages": "xiii+302",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Bilim tarihçilerinin yazdığı 25 denemelik derleme; her mite yaklaşık dokuz sayfa. Isis ve Journal of Ecclesiastical History'de değerlendirildi. Künye doğrulandı, TAM METİN OKUNMADI."
+      },
+      {
+        "id": "galileo-affair-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "Galileo affair",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Galileo_affair",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "belge-edisyonu",
+        "text": "Yargılamanın belgeleri, California Studies in the History of Science dizisinde standart bir edisyon olarak derlenip çevrilmiştir.",
+        "citations": [
+          {
+            "source_ref": "finocchiaro-1989-galileo-affair",
+            "locator": "Edisyonun kapsamı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "karar-ve-ev-hapsi",
+        "text": "1633 kararı 'ağır sapkınlık şüphesi' hükmünü içerir; Galileo görüşünü yeminle reddetmeye zorlandı ve 1642'deki ölümüne kadar ev hapsinde kaldı.",
+        "citations": [
+          {
+            "source_ref": "galileo-affair-wikipedia",
+            "locator": "Yargılama ve karar bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "index-ve-1992",
+        "text": "Diyalog Index'e alındı ve 1835'e kadar listede kaldı; kurumun yargılamadaki hatayı resmen kabulü 1992'dir.",
+        "citations": [
+          {
+            "source_ref": "galileo-affair-wikipedia",
+            "locator": "Sonrası bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "mit-derlemesinde",
+        "text": "Galileo miti, bilim tarihçilerinin mit derlemesinde başlık düzeyinde ele alınacak kadar yerleşiktir.",
+        "citations": [
+          {
+            "source_ref": "numbers-2009-galileo-goes-to-jail",
+            "locator": "Derlemenin başlığı ve kapsamı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "siyasi-etkenler",
+        "text": "Yargılamanın arka planında kişisel ve siyasi etkenler de vardı; salt 'bilim karşıtlığı' okuması olayı basitleştirir.",
+        "citations": [
+          {
+            "source_ref": "galileo-affair-wikipedia",
+            "locator": "Bağlam bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "1616-tartismasi",
+        "text": "1616'daki ilk uyarının içeriği ve Galileo'nun onu ihlal edip etmediği tarihçiler arasında tartışılmıştır.",
+        "citations": [
+          {
+            "source_ref": "finocchiaro-1989-galileo-affair",
+            "locator": "1616 belgeleri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "edisyon-okunmadi",
+        "text": "Bu kayıtta belge edisyonunun tam metni okunmamıştır; künye ve kapsam doğrulanmıştır.",
+        "citations": [
+          {
+            "source_ref": "finocchiaro-1989-galileo-affair",
+            "locator": "Kaynak erişim düzeyi",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "checked": "2026-09-07",
     "used_in": [
       "mit-ve-sicil"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Belge edisyonu çıpa olarak bağlandı; tam metin okunmadı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "bruno-1600-gerekce",
     "claim": "Giordano Bruno 1600'de kozmolojik görüşleri yüzünden yakıldı.",
     "status": "contested",
@@ -2096,45 +2426,130 @@
       "medya-abartisi",
       "ideolojik-secim"
     ],
-    "evidence": [
-      "1592'de tutuklandı, sekiz yıl hapiste tutuldu, 1600'de Campo de' Fiori'de diri diri yakıldı.",
-      "Suçlamalar arasında sonsuz evren ve çok sayıda dünya görüşü yer alıyor.",
-      "Suçlamaların ağırlığı teolojiktir: Üçleme, İsa'nın tanrılığı, ekmek-şarap öğretisi, büyü uygulaması.",
-      "Bruno yargılama sürecinde görüşlerini geri almayı reddetti ve mahkemenin yetkisini tanımadığını söyledi."
-    ],
-    "counter_evidence": [
-      "Yargılamanın tam tutanakları KAYIP; elimizde özet ve dolaylı kayıtlar var. Bu, gerekçe tartışmasının neden çözülemediğinin asıl sebebi.",
-      "Tarihçiler kozmolojinin ağırlığı konusunda anlaşamıyor; alanda süren bir tartışmadır."
-    ],
-    "open_questions": [
-      "Kozmolojik suçlamaların karardaki ağırlığı neydi? Tam tutanaklar olmadan çözülemiyor."
-    ],
     "sources": [
       {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Giordano Bruno",
-        "container": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Giordano_Bruno",
-        "language": "en",
-        "accessed": "2026-09-07"
-      },
-      {
+        "id": "famous-trials-bruno",
         "tier": "institutional",
         "type": "webpage",
         "title": "The Trials of Giordano Bruno (1592-1600)",
+        "institution": "Famous Trials (University of Missouri-Kansas City)",
         "url": "https://www.famous-trials.com/bruno/261-home",
         "language": "en",
         "accessed": "2026-09-07",
         "note": "Yargılama belgelerinin derlemesi."
+      },
+      {
+        "id": "giordano-bruno-wikipedia",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Giordano Bruno",
+        "institution": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Giordano_Bruno",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak."
+      },
+      {
+        "id": "numbers-2009-galileo-goes-to-jail",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Numbers, Ronald L. (ed.)"
+        ],
+        "year": 2009,
+        "title": "Galileo Goes to Jail and Other Myths about Science and Religion",
+        "publisher": "Harvard University Press",
+        "isbn": "9780674033276",
+        "pages": "xiii+302",
+        "language": "en",
+        "accessed": "2026-09-07",
+        "note": "Bilim tarihçilerinin yazdığı 25 denemelik derleme; her mite yaklaşık dokuz sayfa. Isis ve Journal of Ecclesiastical History'de değerlendirildi. Künye doğrulandı, TAM METİN OKUNMADI."
       }
+    ],
+    "evidence": [
+      {
+        "id": "tutuklama-infaz",
+        "text": "1592'de tutuklandı, sekiz yıl hapiste tutuldu, 1600'de Campo de' Fiori'de diri diri yakıldı.",
+        "citations": [
+          {
+            "source_ref": "giordano-bruno-wikipedia",
+            "locator": "Yargılama ve infaz bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "suclama-listesi",
+        "text": "Suçlamalar arasında sonsuz evren ve çok sayıda dünya görüşü yer alır; ağırlık ise teolojiktir - Üçleme, İsa'nın tanrılığı, ekmek-şarap öğretisi, büyü.",
+        "citations": [
+          {
+            "source_ref": "famous-trials-bruno",
+            "locator": "Suçlama listesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "mit-literaturunde",
+        "text": "Bilim-din mitleri literatüründe Bruno vakası, 'bilim şehidi' çerçevesinin sınandığı örneklerden biridir.",
+        "citations": [
+          {
+            "source_ref": "numbers-2009-galileo-goes-to-jail",
+            "locator": "Derlemenin kapsamı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "tutanaklar-kayip",
+        "text": "Yargılamanın TAM TUTANAKLARI KAYIP; elimizde özet ve dolaylı kayıtlar var. Gerekçe tartışmasının çözülememesinin asıl sebebi budur.",
+        "citations": [
+          {
+            "source_ref": "famous-trials-bruno",
+            "locator": "Belge durumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "alan-anlasamiyor",
+        "text": "Tarihçiler kozmolojinin karardaki ağırlığı konusunda anlaşamıyor; alanda süren bir tartışmadır.",
+        "citations": [
+          {
+            "source_ref": "giordano-bruno-wikipedia",
+            "locator": "Tarihyazımı bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "bruno-bolumu-dogrulanmadi",
+        "text": "Bu kayıtta derlemede Bruno'ya ayrılmış bir bölüm olup olmadığı DOĞRULANMADI; kaynak yalnızca genel kapsam için kullanıldı.",
+        "citations": [
+          {
+            "source_ref": "numbers-2009-galileo-goes-to-jail",
+            "locator": "Kaynak erişim düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Kozmolojik suçlamaların karardaki ağırlığı neydi? Tam tutanaklar olmadan çözülemiyor."
     ],
     "checked": "2026-09-07",
     "used_in": [
       "mit-ve-sicil"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Numbers derlemesinde Bruno bölümü doğrulanmadı; genel kapsam atfı olarak kullanıldı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "justinianus-529-atina-okulu",
     "claim": "529'da Atina'daki Yeni-Platoncu felsefe okulunun kapatılması antik düşüncenin sonunu getirdi.",
     "status": "contested",
@@ -2193,43 +2608,102 @@
       "medya-abartisi",
       "guncellenmemis"
     ],
-    "evidence": [
-      "529'da çıkarılan düzenleme paganların ders vermesini yasakladı.",
-      "Atina'daki okul kapandı; Damaskios ve çevresi Pers sarayına gitti."
-    ],
-    "counter_evidence": [
-      "Filozofların bir kısmı birkaç yıl sonra, bir antlaşma maddesiyle korunarak geri döndü.",
-      "Okulun o tarihte zaten zayıfladığını savunan görüşler var.",
-      "Kapatılan kurumun Platon'un Akademisi ile kurumsal sürekliliği yoktur.",
-      "Doğu Roma'da felsefe eğitimi başka merkezlerde sürdü."
-    ],
-    "open_questions": [
-      "Kapanma ne kadar tam ve ne kadar kalıcıydı? Kaynaklar yeterli değil."
-    ],
     "sources": [
       {
+        "id": "codex-justinianus-1-11-10",
         "tier": "primary",
         "type": "edition",
         "year": 529,
         "title": "Codex Justinianus 1.11.10 (pagan öğretim yasağı)",
-        "language": "la"
+        "publisher": "—",
+        "language": "la",
+        "note": "Düzenlemenin hukuk metni."
       },
       {
+        "id": "platonic-academy-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "Platonic Academy",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Platonic_Academy",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak. Hakemli geç antikçağ çıpası BULUNAMADI."
       }
+    ],
+    "evidence": [
+      {
+        "id": "yasak-metni",
+        "text": "529'da çıkarılan düzenleme paganların ders vermesini yasakladı.",
+        "citations": [
+          {
+            "source_ref": "codex-justinianus-1-11-10",
+            "locator": "Düzenleme metni",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "okul-kapandi",
+        "text": "Atina'daki okul kapandı; Damaskios ve çevresi Pers sarayına gitti.",
+        "citations": [
+          {
+            "source_ref": "platonic-academy-wikipedia",
+            "locator": "529 ve sonrası bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "geri-donus",
+        "text": "Filozofların bir kısmı birkaç yıl sonra, bir antlaşma maddesiyle korunarak geri döndü.",
+        "citations": [
+          {
+            "source_ref": "platonic-academy-wikipedia",
+            "locator": "529 ve sonrası bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sureklilik-yok",
+        "text": "Kapatılan kurumun Platon'un Akademisi ile kurumsal sürekliliği yoktur; okulun o tarihte zaten zayıfladığı da savunulur.",
+        "citations": [
+          {
+            "source_ref": "platonic-academy-wikipedia",
+            "locator": "Süreklilik tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "hakemli-cipa-yok",
+        "text": "BU KAYIT İÇİN HAKEMLİ GEÇ ANTİKÇAĞ ÇIPASI BULUNAMADI; ara kaynak düzeyinde kalmaktadır.",
+        "citations": [
+          {
+            "source_ref": "platonic-academy-wikipedia",
+            "locator": "Kaynak düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Kapanma ne kadar tam ve ne kadar kalıcıydı? Kaynaklar yeterli değil."
     ],
     "checked": "2026-09-07",
     "used_in": [
       "mit-ve-sicil"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Hakemli çıpa YOK."
+    }
   },
   {
+    "schema_version": 2,
     "id": "sansurun-toplam-maliyeti",
     "claim": "Kurumsal sansürün bilim ve düşünce üzerindeki toplam maliyeti hesaplanabilir.",
     "status": "unmeasurable",
@@ -2276,44 +2750,94 @@
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Mekanizmanın gerçek olduğunu gösteren belgeli bir vaka var: Descartes, Galileo'nun 1633 mahkûmiyetini duyduğunda tamamlamak üzere olduğu evren kitabını yayımlamaktan vazgeçti ve bunu mektuplarında açıkça yazdı. Eser sağlığında yayımlanmadı.",
-      "Bu tek vaka korkunun birinci sınıf bir düşünürü susturabildiğini kanıtlar - ama kaç kez olduğunu vermez."
-    ],
-    "counter_evidence": [
-      "Tek vakadan genelleme yapılamaz; Descartes'ın kararında başka etkenler de olmuş olabilir.",
-      "Yasaklı kitapların yine de dolaştığı ve okunduğu belgelidir; sansürün etkinliği her yerde aynı değildi."
-    ],
-    "open_questions": [
-      "Kaç eser hiç yazılmadı? Yapısal olarak cevaplanamaz - kayıt bırakmayan bir kayıp."
-    ],
     "sources": [
       {
+        "id": "descartes-mersenne-1633",
         "tier": "primary",
         "type": "manuscript",
         "authors": [
           "Descartes, René"
         ],
         "year": 1633,
-        "title": "Mersenne'e mektuplar - Le Monde'un yayımdan çekilmesi",
-        "language": "fr"
+        "title": "Mersenne'e mektuplar — Le Monde'un yayımdan çekilmesi",
+        "publisher": "—",
+        "language": "fr",
+        "note": "Öz-sansürün belgeli tek birinci sınıf vakası."
       },
       {
+        "id": "descartes-le-monde-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "The World (Descartes)",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/The_World_(Descartes)",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak."
       }
+    ],
+    "evidence": [
+      {
+        "id": "descartes-cekilmesi",
+        "text": "Descartes, Galileo'nun 1633 mahkûmiyetini duyduğunda tamamlamak üzere olduğu evren kitabını yayımlamaktan vazgeçti ve bunu mektuplarında açıkça yazdı; eser sağlığında yayımlanmadı.",
+        "citations": [
+          {
+            "source_ref": "descartes-mersenne-1633",
+            "locator": "Mersenne'e mektuplar, 1633",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "mekanizma-kanitli",
+        "text": "Bu tek vaka, korkunun birinci sınıf bir düşünürü susturabildiğini kanıtlar - ama kaç kez olduğunu vermez.",
+        "citations": [
+          {
+            "source_ref": "descartes-le-monde-wikipedia",
+            "locator": "Yayım tarihçesi",
+            "support_type": "inference"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "tek-vaka",
+        "text": "Tek vakadan genelleme yapılamaz; Descartes'ın kararında başka etkenler de olmuş olabilir.",
+        "citations": [
+          {
+            "source_ref": "descartes-le-monde-wikipedia",
+            "locator": "Bağlam",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sansur-etkinligi",
+        "text": "Yasaklı kitapların yine de dolaştığı ve okunduğu belgelidir; sansürün etkinliği her yerde aynı değildi.",
+        "citations": [
+          {
+            "source_ref": "descartes-le-monde-wikipedia",
+            "locator": "Dönem bağlamı",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Kaç eser hiç yazılmadı? Yapısal olarak cevaplanamaz - kayıt bırakmayan bir kayıp."
     ],
     "checked": "2026-09-07",
     "used_in": [
       "mit-ve-sicil"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Birincil vaka güçlü; genel iddia yapısal olarak ölçülemez."
+    }
   },
   {
+    "schema_version": 2,
     "id": "cadi-avi-donemi",
     "claim": "Avrupa'daki büyük cadı avı dalgası Ortaçağ'a değil, erken modern döneme (yaklaşık 1560-1630) aittir.",
     "status": "established",
@@ -2346,39 +2870,95 @@
       "antropoloji"
     ],
     "popular_claim": "Cadı yakma Ortaçağ karanlığının simgesidir ve milyonlarca kadın yakılmıştır.",
-    "divergence": "İki hata birden: DÖNEM ve SAYI. Yoğunlaşma 16. yüzyıl ortası ile 17. yüzyıl başıdır - yani Rönesans ve Reform SONRASI, hem Katolik hem Protestan bölgelerde. Daha erken dönemde kilise hukuku, gece uçuşu gibi inançları hurafe ve yanılsama sayan bir metni esas alıyordu; sertleşme sonradan geldi. Modern tahminler on binler mertebesindedir; 'milyonlar' rakamı 19.-20. yüzyıl polemiğinin ürünüdür.",
+    "divergence": "İki hata birden: DÖNEM ve SAYI. Yoğunlaşma 16. yüzyıl ortası ile 17. yüzyıl başıdır - yani Rönesans ve Reform SONRASI, hem Katolik hem Protestan bölgelerde. Daha erken dönemde kilise hukuku gece uçuşu gibi inançları hurafe sayan bir metni esas alıyordu; sertleşme sonradan geldi. Modern tahminler on binler mertebesindedir; 'milyonlar' rakamı 19.-20. yüzyıl polemiğinin ürünüdür.",
     "divergence_type": [
       "medya-abartisi",
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Yargılamaların yoğunlaştığı dönem yaklaşık 1560-1630'dur.",
-      "Hem Katolik hem Protestan bölgelerde yaşandı; mezhep ayrımı belirleyici değildi.",
-      "Erken Ortaçağ kilise hukukunda gece uçuşu inancı yanılsama sayılıyordu."
-    ],
-    "counter_evidence": [
-      "Toplam idam sayısı için verilen aralıklar tartışmalıdır; bu kayıt kesin rakam değil mertebe verir.",
-      "Bölgesel farklar çok büyüktür; bazı bölgelerde yargılama neredeyse yokken bazılarında yoğundur."
-    ],
-    "open_questions": [
-      "Toplam idam sayısı nedir? Aralıklar tartışmalı."
-    ],
     "sources": [
       {
+        "id": "witch-trials-wikipedia",
         "tier": "institutional",
         "type": "webpage",
         "title": "Witch trials in the early modern period",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Witch_trials_in_the_early_modern_period",
         "language": "en",
         "accessed": "2026-09-07",
-        "note": "Ara kaynak; hakemli monografilerle değiştirilmeli."
+        "note": "Ara kaynak. Hakemli çıpa (ör. Levack) BULUNAMADI/eklenmedi; kaydın başlıca zayıflığı."
       }
+    ],
+    "evidence": [
+      {
+        "id": "1560-1630",
+        "text": "Yargılamaların yoğunlaştığı dönem yaklaşık 1560-1630'dur; hem Katolik hem Protestan bölgelerde yaşandı.",
+        "citations": [
+          {
+            "source_ref": "witch-trials-wikipedia",
+            "locator": "Kronoloji bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "canon-episcopi",
+        "text": "Erken Ortaçağ kilise hukukunda gece uçuşu inancı yanılsama sayılıyordu; sertleşme sonradan geldi.",
+        "citations": [
+          {
+            "source_ref": "witch-trials-wikipedia",
+            "locator": "Erken dönem bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "sayilar-tartismali",
+        "text": "Toplam idam sayısı için verilen aralıklar tartışmalıdır; bu kayıt kesin rakam değil mertebe verir.",
+        "citations": [
+          {
+            "source_ref": "witch-trials-wikipedia",
+            "locator": "Sayı tahminleri bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "bolgesel-fark",
+        "text": "Bölgesel farklar çok büyüktür; bazı bölgelerde yargılama neredeyse yokken bazılarında yoğundur.",
+        "citations": [
+          {
+            "source_ref": "witch-trials-wikipedia",
+            "locator": "Coğrafi dağılım",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "en-zayif-kayit",
+        "text": "BU KAYIT TEK ARA KAYNAĞA DAYANIYOR. Alanın standart hakemli monografileri (ör. Levack) taranmadı; kümenin en zayıf kaydıdır.",
+        "citations": [
+          {
+            "source_ref": "witch-trials-wikipedia",
+            "locator": "Kaynak düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Toplam idam sayısı nedir? Aralıklar tartışmalı.",
+      "Hakemli monografi taraması yapılmalı."
     ],
     "checked": "2026-09-07",
     "volatile": true,
     "used_in": [
       "mit-ve-sicil"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "KÜMENİN EN ZAYIF KAYDI: tek ara kaynak, hakemli çıpa yok."
+    }
   }
 ]
