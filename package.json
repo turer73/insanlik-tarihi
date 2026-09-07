@@ -1,0 +1,17 @@
+{
+  "name": "insanlik-tarihi",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "İddia, kanıt, karşı kanıt ve kaynak izlenebilirliği üzerine kurulu Türkçe tarih araştırma altyapısı.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "validate:strict": "node scripts/validate.mjs --strict",
+    "validate:example": "node scripts/validate.mjs examples/finding.v2.json --strict",
+    "build": "node scripts/build-tools.mjs",
+    "check": "node scripts/validate.mjs && node scripts/validate.mjs examples/finding.v2.json --strict && node scripts/build-tools.mjs --skip-validate && git diff --exit-code -- data/findings.bundle.json dist"
+  }
+}

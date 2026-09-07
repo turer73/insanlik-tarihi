@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "id": "ornek-v2",
+  "claim": "Şema sürümü 2 bir kanıtı belirli kaynak ve konumla ilişkilendirir.",
+  "status": "established",
+  "confidence": "high",
+  "topic": [
+    "ornek",
+    "yontem"
+  ],
+  "period": {
+    "earliest": 2024,
+    "latest": 2024,
+    "era_label": "Modern araştırma",
+    "precision": "exact",
+    "dating_method": [
+      "historical-record"
+    ]
+  },
+  "disciplines": [
+    "tarih"
+  ],
+  "evidence": [
+    {
+      "id": "kaynak-baglantisi",
+      "text": "Örnek kanıt doğrudan bir hakemli yayına ve sayfa aralığına bağlıdır.",
+      "citations": [
+        {
+          "source_ref": "ornek-makale-2024",
+          "locator": "s. 12-14, Tablo 2",
+          "support_type": "direct"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ornek-makale-2024",
+      "tier": "peer-reviewed",
+      "type": "article",
+      "authors": [
+        "Örnek, Ayşe"
+      ],
+      "year": 2024,
+      "title": "Denetlenebilir tarih kayıtları için örnek çalışma",
+      "container": "Örnek Tarih Dergisi",
+      "language": "tr",
+      "url": "https://example.org/denetlenebilir-tarih-kayitlari",
+      "accessed": "2026-09-07"
+    }
+  ],
+  "checked": "2026-09-07",
+  "review": {
+    "status": "editor-reviewed",
+    "reviewed_by": [
+      "ornek-editor"
+    ],
+    "reviewed_at": "2026-09-07",
+    "notes": "Şema ve kaynak bağlantısı örneği."
+  }
+}

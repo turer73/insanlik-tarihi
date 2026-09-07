@@ -2,15 +2,186 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://insanlik-tarihi.local/schema/finding.schema.json",
   "title": "Bulgu (Finding)",
-  "description": "Tek bir doğrulanabilir iddia ve onun epistemik durumu. Bu veri tabanının birimi 'gerçek' değil, 'iddianın kanıt karşısındaki durumu'dur. Her alan ayrı ayrı sorgulanabilir olacak şekilde yapılandırılmıştır.",
+  "description": "Tek bir doğrulanabilir iddia ve onun epistemik durumu. Bu veri tabanının birimi 'gerçek' değil, 'iddianın kanıt karşısındaki durumu'dur. Şema sürümü 2, kanıt kalemlerini belirli kaynak ve konumlarla ilişkilendirir; sürüm 1 kayıtları geriye dönük uyumluluk için kabul edilir.",
   "type": "object",
-  "required": ["id", "claim", "status", "topic", "sources", "checked"],
+  "required": [
+    "id",
+    "claim",
+    "status",
+    "topic",
+    "sources",
+    "checked"
+  ],
   "additionalProperties": false,
-  "properties": {
-    "id": {
+  "$defs": {
+    "slug": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
-      "description": "Kalıcı kimlik. Yazılar buna atıf yapar. ASLA değiştirme; yanlışsa yenisini aç ve supersedes ile bağla."
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "source_ref",
+        "locator",
+        "support_type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source_ref": {
+          "$ref": "#/$defs/slug",
+          "description": "Aynı kaydın sources dizisindeki kalıcı kaynak kimliği."
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Sayfa, bölüm, satır, tablo, şekil, yazıt numarası veya veri seti alanı; ör. 's. 42-44', 'Fig. 3', 'satır 134-155'."
+        },
+        "support_type": {
+          "enum": [
+            "direct",
+            "inference",
+            "context",
+            "claim-origin",
+            "counter"
+          ],
+          "description": "direct: kaynak doğrudan destekler. inference: proje kaynak verisinden çıkarım yapar. context: arka plan sağlar. claim-origin: popüler/önceki iddianın kökenidir. counter: itirazı destekler."
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "evidenceItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "text",
+        "citations"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/slug",
+          "description": "Bulgu içinde kalıcı kanıt kimliği; sıralama değişse de atıflar bozulmaz."
+        },
+        "text": {
+          "type": "string",
+          "minLength": 3
+        },
+        "citations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "tier",
+        "title"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/slug",
+          "description": "Bulgu içinde kalıcı kaynak kimliği. Şema sürümü 2 kayıtlarında zorunludur."
+        },
+        "tier": {
+          "enum": [
+            "primary",
+            "peer-reviewed",
+            "institutional",
+            "popular",
+            "unreliable"
+          ],
+          "description": "primary: antik metin, kazı raporu, edisyon, veri seti. peer-reviewed: hakemli yayın. institutional: UNESCO, müze, üniversite duyurusu. popular: medya - tek dayanak olamaz. unreliable: turizm/içerik sitesi - yalnızca popular_claim'i belgelemek için, iddianın kanıtı sayılmaz."
+        },
+        "type": {
+          "enum": [
+            "article",
+            "book",
+            "chapter",
+            "report",
+            "dataset",
+            "edition",
+            "inscription",
+            "manuscript",
+            "database",
+            "press-release",
+            "webpage",
+            "thesis"
+          ]
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Soyad, Ad biçiminde."
+        },
+        "year": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "container": {
+          "type": "string",
+          "description": "Dergi, kitap veya seri adı."
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "string"
+        },
+        "pages": {
+          "type": "string"
+        },
+        "doi": {
+          "type": "string"
+        },
+        "isbn": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string",
+          "description": "Yayının dili: tr, en, de, fr, es, ar..."
+        },
+        "institution": {
+          "type": "string"
+        },
+        "accessed": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "enum": [
+        1,
+        2
+      ],
+      "description": "Eksikse sürüm 1 kabul edilir. Sürüm 2'de kaynak kimlikleri ve kanıt-kaynak bağlantıları zorunludur."
+    },
+    "id": {
+      "$ref": "#/$defs/slug",
+      "description": "Kalıcı kimlik. Yazılar buna atıf yapar. Asla değiştirme; yanlışsa yenisini aç ve supersedes ile bağla."
     },
     "claim": {
       "type": "string",
@@ -18,149 +189,311 @@
       "description": "İddianın tek cümlelik, test edilebilir hâli. 'X ilginçtir' değil, 'X şudur' biçiminde."
     },
     "status": {
-      "enum": ["established", "contested", "minority", "refuted", "unknown", "unmeasurable"],
+      "enum": [
+        "established",
+        "contested",
+        "minority",
+        "refuted",
+        "unknown",
+        "unmeasurable"
+      ],
       "description": "established: geniş uzlaşı, birden çok bağımsız kanıt hattı. contested: ciddi uzmanlar anlaşamıyor. minority: gerçek hipotez ama ana akım değil. refuted: iddia edildi, yanlışlandı. unknown: soru açık, güçlü konum yok. unmeasurable: yöntem yapısal olarak cevap veremiyor."
     },
     "confidence": {
-      "enum": ["high", "medium", "low"],
-      "description": "Bu KAYDA olan güven - iddiaya değil. Kaynak kalitesi ve tarama derinliğini yansıtır."
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "description": "Bu kaydın sınıflandırılmasına olan güven; iddianın olasılığı değildir."
     },
     "topic": {
       "type": "array",
       "minItems": 1,
-      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
-      "description": "Serbest etiketler. Yer/dönem/disiplin için aşağıdaki yapılı alanları kullan; bu alan çapraz temalar içindir."
+      "items": {
+        "$ref": "#/$defs/slug"
+      },
+      "description": "Serbest çapraz tema etiketleri. Yer, dönem ve disiplin için yapılı alanları kullan."
     },
-
     "subject": {
       "type": "object",
-      "description": "İddianın konusu olan yer. Yer bağımsız bir iddiaysa (ör. genel yöntem) boş bırakılabilir.",
+      "description": "İddianın konusu olan yer. Yer bağımsız bir iddiaysa boş bırakılabilir.",
       "additionalProperties": false,
       "properties": {
-        "site": { "type": "string", "description": "Arkeolojik site veya yapı adı (Türkçe kullanım)." },
-        "site_native": { "type": "string", "description": "Yerel/özgün addır varsa (Etemenanki, Thonis, Huayna Picchu)." },
-        "region": { "type": "string", "description": "Tarihsel bölge: Mezopotamya, Levant, And Dağları, Yukarı Mısır..." },
-        "modern_country": { "type": "string", "description": "Bugünkü ülke (ISO adı, Türkçe)." },
+        "site": {
+          "type": "string"
+        },
+        "site_native": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "modern_country": {
+          "type": "string"
+        },
         "coordinates": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["lat", "lon"],
+          "required": [
+            "lat",
+            "lon"
+          ],
           "properties": {
-            "lat": { "type": "number", "minimum": -90, "maximum": 90 },
-            "lon": { "type": "number", "minimum": -180, "maximum": 180 }
+            "lat": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "lon": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            }
           }
         }
       }
     },
-
     "period": {
       "type": "object",
-      "description": "İddianın ilgili olduğu tarihsel aralık. Yıllar işaretli tam sayı: negatif = MÖ, pozitif = MS. Sıfır yılı yoktur, kullanma.",
+      "description": "İddianın ilgili olduğu tarihsel aralık. Yıllar işaretli tam sayı: negatif = MÖ, pozitif = MS. Sıfır yılı yoktur.",
       "additionalProperties": false,
       "properties": {
-        "earliest": { "type": "integer", "description": "En erken yıl. MÖ 9500 icin -9500." },
-        "latest": { "type": "integer", "description": "En geç yıl." },
-        "era_label": { "type": "string", "description": "Dönem adı: Çanak Çömleksiz Neolitik A, Yeni Babil, Klasik Maya, Nabati..." },
+        "earliest": {
+          "type": "integer"
+        },
+        "latest": {
+          "type": "integer"
+        },
+        "era_label": {
+          "type": "string"
+        },
         "precision": {
-          "enum": ["exact", "decade", "century", "approximate", "range", "disputed", "unknown"],
-          "description": "Tarihin ne kadar sağlam olduğu. disputed = uzmanlar farklı tarihler veriyor."
+          "enum": [
+            "exact",
+            "decade",
+            "century",
+            "approximate",
+            "range",
+            "disputed",
+            "unknown"
+          ]
         },
         "dating_method": {
           "type": "array",
-          "items": { "enum": ["radiocarbon", "dendrochronology", "paleography", "stratigraphy", "typology", "epigraphic", "textual", "historical-record", "isotopic", "thermoluminescence", "astronomical", "none"] },
-          "description": "Tarihin hangi yöntemle elde edildiği. 'none' = tarihlenemiyor, tahmin."
+          "items": {
+            "enum": [
+              "radiocarbon",
+              "dendrochronology",
+              "paleography",
+              "stratigraphy",
+              "typology",
+              "epigraphic",
+              "textual",
+              "historical-record",
+              "isotopic",
+              "thermoluminescence",
+              "astronomical",
+              "none"
+            ]
+          }
         }
       }
     },
-
     "languages": {
       "type": "array",
-      "items": { "type": "string" },
-      "description": "İddianın dayandığı BİRİNCİL malzemenin dilleri (Akadca, Sümerce, İbranice, Aramice, Grekçe, Mısırca, Maya hiyeroglifi, Kmerce...). Kaynak yayınların dili değil - o sources[].language alanında."
+      "items": {
+        "type": "string"
+      },
+      "description": "İddianın dayandığı birincil malzemenin dilleri; kaynak yayının dili sources[].language alanındadır."
     },
-
     "disciplines": {
       "type": "array",
-      "items": { "enum": ["arkeoloji", "filoloji", "epigrafi", "metin-elestirisi", "jeoloji", "jeoarkeoloji", "iklim-bilimi", "astronomi", "genetik", "dilbilim", "tarih", "sanat-tarihi", "mimarlik", "muhendislik", "antropoloji", "bilim-tarihi", "hukuk", "matematik", "paleontoloji",
+      "items": {
+        "enum": [
+          "arkeoloji",
+          "filoloji",
+          "epigrafi",
+          "metin-elestirisi",
+          "jeoloji",
+          "jeoarkeoloji",
+          "iklim-bilimi",
+          "astronomi",
+          "genetik",
+          "dilbilim",
+          "tarih",
+          "sanat-tarihi",
+          "mimarlik",
+          "muhendislik",
+          "antropoloji",
+          "bilim-tarihi",
+          "hukuk",
+          "matematik",
+          "paleontoloji",
           "sosyoloji",
           "demografi",
-          "felsefe"] },
-      "description": "İddiayı hangi disiplin(ler) karara bağlıyor."
+          "felsefe"
+        ]
+      }
     },
-
     "people": {
       "type": "array",
-      "description": "Bu bulguyla ilişkili kişiler. Kaynak yazarlarından farklı olabilir (kazı yöneticisi, iddiayı ortaya atan, çürüten, çeviren).",
       "items": {
         "type": "object",
-        "required": ["name", "role"],
+        "required": [
+          "name",
+          "role"
+        ],
         "additionalProperties": false,
         "properties": {
-          "name": { "type": "string" },
-          "role": {
-            "enum": ["proposer", "refuter", "excavator", "translator", "editor", "discoverer", "critic", "surveyor", "analyst"],
-            "description": "proposer: iddiayı ortaya atan. refuter: çürüten. excavator: kazı yöneticisi. discoverer: buluntuyu bulan. critic: metodolojik itiraz getiren."
+          "name": {
+            "type": "string"
           },
-          "affiliation": { "type": "string" },
-          "year": { "type": "integer", "description": "Bu rolü üstlendiği yıl." },
-          "lifespan": { "type": "string", "description": "Doğum-ölüm, biliniyorsa: '1880-1930'." }
+          "role": {
+            "enum": [
+              "proposer",
+              "refuter",
+              "excavator",
+              "translator",
+              "editor",
+              "discoverer",
+              "critic",
+              "surveyor",
+              "analyst"
+            ]
+          },
+          "affiliation": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "lifespan": {
+            "type": "string"
+          }
         }
       }
     },
-
     "popular_claim": {
-      "type": "string",
-      "description": "Popüler kaynaklarda yaygın olarak söylenen hâli. Bu projenin ayırt edici alanı - farklıysa boş bırakma."
+      "type": "string"
     },
     "divergence": {
-      "type": "string",
-      "description": "Popüler hâl ile bilimsel durum NEDEN ayrışıyor. Sadece 'yanlış' yazma; mekanizmayı yaz."
+      "type": "string"
     },
     "divergence_type": {
       "type": "array",
-      "items": { "enum": ["eski-ceviri", "guncellenmemis", "turizm-kopyalamasi", "ideolojik-secim", "medya-abartisi", "somurge-anlatisi", "kategori-hatasi", "hayatta-kalma-yanliligi", "provenans-yoklugu"] },
-      "description": "Sapmanın türü. Zamanla en sık görülen mekanizmaları çıkarmak için."
+      "items": {
+        "enum": [
+          "eski-ceviri",
+          "guncellenmemis",
+          "turizm-kopyalamasi",
+          "ideolojik-secim",
+          "medya-abartisi",
+          "somurge-anlatisi",
+          "kategori-hatasi",
+          "hayatta-kalma-yanliligi",
+          "provenans-yoklugu"
+        ]
+      }
     },
-
-    "evidence": { "type": "array", "items": { "type": "string" }, "description": "Lehte somut kanıt kalemleri, her biri tek cümle." },
-    "counter_evidence": { "type": "array", "items": { "type": "string" }, "description": "Aleyhte kanıt. contested ve minority için ZORUNLU." },
-    "open_questions": { "type": "array", "items": { "type": "string" } },
-
+    "evidence": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 3
+          },
+          {
+            "$ref": "#/$defs/evidenceItem"
+          }
+        ]
+      },
+      "description": "Sürüm 1'de metin dizisi; sürüm 2'de kimlikli ve kaynak bağlantılı nesneler."
+    },
+    "counter_evidence": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 3
+          },
+          {
+            "$ref": "#/$defs/evidenceItem"
+          }
+        ]
+      },
+      "description": "Aleyhte kanıt. contested ve minority kayıtlarında içerik kuralı olarak zorunludur."
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "sources": {
       "type": "array",
       "minItems": 1,
       "items": {
-        "type": "object",
-        "required": ["tier", "title"],
-        "additionalProperties": false,
-        "properties": {
-          "tier": {
-            "enum": ["primary", "peer-reviewed", "institutional", "popular", "unreliable"],
-            "description": "primary: antik metin, kazı raporu, edisyon, veri seti. peer-reviewed: hakemli yayın. institutional: UNESCO, müze, üniversite duyurusu. popular: medya - TEK DAYANAK OLAMAZ. unreliable: turizm/içerik sitesi - yalnızca popular_claim'i belgelemek için, iddianın kanıtı SAYILMAZ."
-          },
-          "type": { "enum": ["article", "book", "chapter", "report", "dataset", "edition", "inscription", "manuscript", "database", "press-release", "webpage", "thesis"] },
-          "authors": { "type": "array", "items": { "type": "string" }, "description": "Soyad, Ad biçiminde." },
-          "year": { "type": "integer" },
-          "title": { "type": "string" },
-          "container": { "type": "string", "description": "Dergi, kitap veya seri adı." },
-          "publisher": { "type": "string" },
-          "volume": { "type": "string" },
-          "pages": { "type": "string" },
-          "doi": { "type": "string" },
-          "isbn": { "type": "string" },
-          "url": { "type": "string" },
-          "language": { "type": "string", "description": "Yayının dili: tr, en, de, fr, es, ar..." },
-          "institution": { "type": "string" },
-          "accessed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-          "note": { "type": "string" }
-        }
+        "$ref": "#/$defs/source"
       }
     },
-
-    "checked": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Bu kaydın son doğrulandığı tarih." },
-    "volatile": { "type": "boolean", "description": "true ise konu aktif değişiyor; düzenli yeniden kontrol ister." },
-    "used_in": { "type": "array", "items": { "type": "string" }, "description": "Bu bulguyu kullanan yazı slug'ları. Bulgu değişirse bu yazılar güncellenmeli." },
-    "supersedes": { "type": "array", "items": { "type": "string" } },
-    "superseded_by": { "type": "string", "description": "Doluysa kayıt arşivdir, kullanma." }
+    "checked": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "volatile": {
+      "type": "boolean"
+    },
+    "used_in": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/slug"
+      }
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/slug"
+      }
+    },
+    "superseded_by": {
+      "$ref": "#/$defs/slug"
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "draft",
+            "editor-reviewed",
+            "expert-reviewed"
+          ]
+        },
+        "reviewed_by": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "reviewed_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "next_review_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      }
+    }
   }
 }
