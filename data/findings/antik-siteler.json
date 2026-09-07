@@ -809,6 +809,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "kapadokya-tarihlenemez",
     "claim": "Kapadokya yer altı şehirlerinin oyulma tarihi belirlenebilir.",
     "status": "unmeasurable",
@@ -830,7 +831,7 @@
     "period": {
       "earliest": -800,
       "latest": 1000,
-      "era_label": "Frig(?) - Bizans",
+      "era_label": "Önerilen aralıkların tamamı",
       "precision": "disputed",
       "dating_method": [
         "none",
@@ -839,57 +840,140 @@
       ]
     },
     "languages": [
+      "Türkçe",
       "Grekçe"
     ],
     "disciplines": [
       "arkeoloji",
-      "mimarlik"
+      "mimarlik",
+      "jeoloji"
     ],
     "popular_claim": "Yer altı şehirleri Hititler döneminde, yaklaşık MÖ 2000'de kazılmaya başlandı.",
-    "divergence": "Kayaya oyulmuş mimaride stratigrafi yoktur - malzeme biriktirilmez, çıkarılır. Boşluğun kendisini tarihleyecek bir şey yok. İçeride bulunan eşya, o boşluğun ne zaman oyulduğunu söylemez.",
+    "divergence": "Kayaya oyulmuş mimaride stratigrafi yoktur - malzeme biriktirilmez, ÇIKARILIR. Boşluğun kendisini tarihleyecek bir şey yoktur; içeride bulunan eşya, o boşluğun ne zaman oyulduğunu söylemez. Bunun sonucu, kaynaklarda BİRBİRİYLE BAĞDAŞMAYAN tarihlerin yan yana dolaşmasıdır - ve bu yalnızca popüler kaynaklarda değil, resmî kaynakta da böyledir.",
     "divergence_type": [
       "kategori-hatasi",
       "turizm-kopyalamasi"
     ],
-    "evidence": [
-      "Belgelenebilen kullanım Bizans dönemi (5.-10. yy): kiliseler, haçlar, mimari formlar.",
-      "En büyük genişleme Arap-Bizans sınır savaşları dönemine denk geliyor."
-    ],
-    "counter_evidence": [
-      "Hitit iddiası yalnızca içeride bulunan eserlere dayanıyor - kanıt değeri düşük.",
-      "Frig iddiası bir makullük argümanı, doğrudan kanıt değil.",
-      "Sık alıntılanan Ksenophon tanıklığı Ermenistan'ı tarif ediyor, Kapadokya'yı değil."
-    ],
     "sources": [
       {
+        "id": "kultur-portali-derinkuyu",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Derinkuyu Yeraltı Şehri",
+        "institution": "T.C. Kültür ve Turizm Bakanlığı - Kültür Portalı",
+        "url": "https://www.kulturportali.gov.tr/turkiye/nevsehir/gezilecekyer/derinkuyu-yeralti-sehri",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Resmî kurumsal kaynak. Kapasite rakamı ve havalandırma bacası sayısı VERMEZ - bu yokluk kayıtlarda kanıt olarak kullanılmıştır."
+      },
+      {
+        "id": "derinkuyu-wikipedia-en",
         "tier": "institutional",
         "type": "webpage",
         "title": "Derinkuyu underground city",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Derinkuyu_underground_city",
         "language": "en",
-        "accessed": "2026-09-06"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak; önceki sürümden korundu."
       },
       {
+        "id": "ksenophon-anabasis-iv",
         "tier": "primary",
         "type": "book",
         "authors": [
           "Ksenophon"
         ],
         "title": "Anabasis IV",
+        "publisher": "—",
         "language": "grc",
-        "note": "Yer altı evlerini tarif eder ama konum Ermenistan."
+        "note": "Yer altı evlerini tarif eder ama konum Ermenistan'dır, Kapadokya değil."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "resmi-tarihleme",
+        "text": "T.C. Kültür ve Turizm Bakanlığı'nın resmî sayfası kökeni Asur kolonilerine bağlar ve 2. yüzyılda Roma zulmünden kaçan ilk Hristiyanların buraya yerleştiğini belirtir.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi, tarihçe bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bizans-kullanimi",
+        "text": "Belgelenebilen kullanım Bizans dönemine aittir: kiliseler, haçlar, mimari formlar.",
+        "citations": [
+          {
+            "source_ref": "derinkuyu-wikipedia-en",
+            "locator": "Tarihçe bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bagdasmaz-tarihler",
+        "text": "Aynı site için dolaşan tarihlemeler bağdaşmaz: Asur kolonileri, Hitit, 2. yüzyıl Hristiyanları ve 8.-12. yüzyıl önerileri aynı anda doğru olamaz.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi, tarihçe bölümü",
+            "support_type": "inference"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "hitit-iddiasi-zayif",
+        "text": "Hitit iddiası yalnızca içeride bulunan eserlere dayanır; kayaya oyma mimaride bu, boşluğun tarihini vermez.",
+        "citations": [
+          {
+            "source_ref": "derinkuyu-wikipedia-en",
+            "locator": "Tarihçe bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ksenophon-yanlis-yer",
+        "text": "Sık alıntılanan Ksenophon tanıklığı Ermenistan'ı tarif eder, Kapadokya'yı değil.",
+        "citations": [
+          {
+            "source_ref": "ksenophon-anabasis-iv",
+            "locator": "IV. kitap, yer altı evleri bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "resmi-kaynak-da-vermiyor",
+        "text": "Resmî kaynak da kesin bir kuruluş tarihi vermez; verdiği çerçeve dönem aralığıdır, tarihleme değil.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Bizans öncesi bir çekirdek var mı - yöntem bu soruya cevap veremiyor."
+      "Bizans öncesi bir çekirdek var mı? Yöntem bu soruya yapısal olarak cevap veremiyor."
     ],
-    "checked": "2026-09-06",
+    "checked": "2026-09-07",
     "used_in": [
       "kapadokya"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Türkçe resmî kaynak eklendi; hakemli Türkçe jeoarkeoloji literatürü hâlâ taranmadı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "kapadokya-mardin-baglantisi",
     "claim": "Kapadokya yer altı şehirleri tünellerle Mardin'e kadar uzanır.",
     "status": "refuted",
@@ -897,47 +981,142 @@
     "topic": [
       "kapadokya",
       "mardin",
+      "matiate",
       "sehir-efsanesi"
     ],
     "subject": {
-      "region": "Kapadokya - Yukarı Mezopotamya",
-      "modern_country": "Türkiye"
+      "site": "Kapadokya - Midyat (Matiate) hattı",
+      "region": "Orta Anadolu - Yukarı Mezopotamya",
+      "modern_country": "Türkiye",
+      "coordinates": {
+        "lat": 37.4189,
+        "lon": 41.3697
+      }
     },
     "period": {
-      "precision": "unknown",
+      "earliest": 100,
+      "latest": 2022,
+      "era_label": "Matiate'nin kullanımından keşfine",
+      "precision": "range",
       "dating_method": [
-        "none"
+        "historical-record",
+        "typology"
       ]
     },
-    "languages": [],
+    "languages": [
+      "Türkçe"
+    ],
     "disciplines": [
-      "jeoloji",
-      "arkeoloji"
+      "arkeoloji",
+      "jeoloji"
     ],
     "popular_claim": "Yer altı şehirleri Kayseri ve Mardin'e kadar birbirine bağlıdır.",
-    "divergence": "Jeolojik olarak imkânsız. Kapadokya kazısını mümkün kılan volkanik tüf Mardin'e uzanmıyor; Mardin kireçtaşı. Aradaki ~500 km'nin büyük kısmında o kaya yok.",
+    "divergence": "Jeolojik olarak imkânsız ve arkeolojik olarak da desteklenmiyor. Kapadokya kazısını mümkün kılan volkanik tüf Mardin'e uzanmaz; Matiate KİREÇTAŞINA oyulmuştur. Dahası Matiate 2020'de restorasyon sırasında TESADÜFEN bulundu - Kapadokya'dan uzanan bilinen bir hattın ucu olarak değil. İşlev profili de farklıdır: hakemli çalışma A-1 ve A-4 mekanlarını üzüm işliği, silo ve şırahane olarak tanımlar. İki gelenek YAKINSAMADIR, bağlantı değil.",
     "divergence_type": [
-      "kategori-hatasi"
-    ],
-    "counter_evidence": [
-      "Mardin'deki yer altı yapıları (Midyat/Matiate) farklı kayada, bağımsız gelişmiş ayrı bir gelenektir - yakınsama, bağlantı değil.",
-      "Derinkuyu-Kaymaklı arasındaki 9 km tünel iddiasında bile yalnızca kısa bölümler kazılmış; uçtan uca doğrulanmış geçit yok."
+      "kategori-hatasi",
+      "medya-abartisi"
     ],
     "sources": [
       {
+        "id": "ersun-2021-matiate",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ersun, Durmuş"
+        ],
+        "year": 2021,
+        "title": "Matiate (Midyat) Yeraltı Şehri A-1 ve A-4 Mekanlarının İşlevine Yönelik Bir Değerlendirme",
+        "container": "Sinop Üniversitesi Sosyal Bilimler Dergisi",
+        "volume": "5(2)",
+        "pages": "191-220",
+        "doi": "10.30561/sinopusd.1007461",
+        "url": "https://dergipark.org.tr/tr/pub/sinopusd/article/1007461",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Türkçe hakemli. Bu kayıtlarda makalenin ÖZETİ okunmuştur, tam metni değil; locator'lar özet düzeyindedir."
+      },
+      {
+        "id": "derinkuyu-wikipedia-en",
         "tier": "institutional",
         "type": "webpage",
         "title": "Derinkuyu underground city",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Derinkuyu_underground_city",
         "language": "en",
-        "accessed": "2026-09-06"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak; önceki sürümden korundu."
       }
     ],
-    "checked": "2026-09-06",
+    "evidence": [
+      {
+        "id": "kirectasi-farki",
+        "text": "Matiate (Midyat) kireçtaşına oyulmuştur; Kapadokya'nın volkanik tüfünden farklı bir kayaçtır.",
+        "citations": [
+          {
+            "source_ref": "ersun-2021-matiate",
+            "locator": "Özet ve mekân tanımları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "matiate-sirahane",
+        "text": "Matiate'nin A-1 mekânında üzüm işliği düzeneği ve depolama siloları, A-4 mekânında depolama amaçlı yedi mimari öğe bulunur; her iki mekân şırahane olarak değerlendirilmiştir.",
+        "citations": [
+          {
+            "source_ref": "ersun-2021-matiate",
+            "locator": "Özet",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tunel-dogrulanmadi",
+        "text": "Derinkuyu-Kaymaklı arasındaki 9 km tünel iddiasında bile yalnızca kısa bölümler kazılmıştır; uçtan uca doğrulanmış bir geçit yoktur.",
+        "citations": [
+          {
+            "source_ref": "derinkuyu-wikipedia-en",
+            "locator": "Tüneller bölümü",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "matiate-onemli",
+        "text": "Bu kayıt Matiate'nin önemsiz olduğunu söylemez - tersine, bağımsız ve kendi başına önemli bir yerleşimdir; iddia edilen şey Kapadokya'ya BAĞLI olmadığıdır.",
+        "citations": [
+          {
+            "source_ref": "ersun-2021-matiate",
+            "locator": "Özet",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "kazi-suruyor",
+        "text": "Matiate kazısı sürüyor; alanın tam yayılımı ve komşu yapılarla ilişkisi henüz kapanmamıştır.",
+        "citations": [
+          {
+            "source_ref": "ersun-2021-matiate",
+            "locator": "Giriş ve kapsam",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Matiate'nin tam yayılımı nedir? Kazı sürüyor."
+    ],
+    "checked": "2026-09-07",
     "used_in": [
       "kapadokya"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Hakemli Türkçe kaynak eklendi; makalenin özeti okundu, tam metni değil."
+    }
   },
   {
     "id": "antik-kanon-turizm-kategorisi",
@@ -3201,6 +3380,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "kapadokya-kapasite-rakami",
     "claim": "Derinkuyu 20.000 kişi barındırabiliyordu.",
     "status": "unknown",
@@ -3208,7 +3388,8 @@
     "topic": [
       "kapadokya",
       "derinkuyu",
-      "dayanaksiz-rakam"
+      "nufus-tahmini",
+      "matiate"
     ],
     "subject": {
       "site": "Derinkuyu yer altı şehri",
@@ -3220,78 +3401,156 @@
       }
     },
     "period": {
-      "earliest": 400,
+      "earliest": 300,
       "latest": 1000,
-      "era_label": "Bizans",
-      "precision": "range",
+      "era_label": "Yoğun kullanım dönemi (tahmini)",
+      "precision": "approximate",
       "dating_method": [
-        "typology",
+        "none",
         "historical-record"
       ]
     },
+    "languages": [
+      "Türkçe"
+    ],
     "disciplines": [
-      "arkeoloji"
+      "arkeoloji",
+      "muhendislik"
     ],
-    "popular_claim": "Derinkuyu 20.000 kişiyi hayvanlarıyla birlikte barındırabiliyordu.",
-    "divergence": "Rakam yüzlerce kaynakta tekrarlanıyor ama hesabın nereden geldiği hiçbir yerde gösterilmiyor. Bir sayı yeterince tekrarlanınca kaynak aranmaz oluyor.",
+    "popular_claim": "Derinkuyu 20.000 kişi barındırabiliyordu.",
+    "divergence": "Rakamın hesap zinciri yok. Ve asıl gösterge şu: T.C. Kültür ve Turizm Bakanlığı'nın RESMÎ SAYFASI kapasite rakamı VERMEZ - ne 20.000 ne başka bir sayı. Rakam turizm ve içerik sitelerinde birbirinden kopyalanarak dolaşıyor. Aynı kalıp bölgede tekrar ediyor: Matiate için basında 70.000 rakamı dolaşıyor ve onun da bir hesap zinciri gösterilmiyor. Kapasite abartması tekil bir hata değil, BÖLGESEL BİR ANLATIM ALIŞKANLIĞI.",
     "divergence_type": [
+      "medya-abartisi",
       "turizm-kopyalamasi"
-    ],
-    "counter_evidence": [
-      "Hesabın kaynağı bulunamadı.",
-      "Havalandırma ölçülmediği için kapasitenin fizyolojik üst sınırı da hesaplanamıyor.",
-      "Sitenin tamamı ziyarete açık değil; hacim tahmini eksik veriye dayanıyor.",
-      "Hakemli literatur sitenin fiziksel parametrelerini veriyor ama kapasite hesabi icermiyor."
     ],
     "sources": [
       {
+        "id": "kultur-portali-derinkuyu",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Derinkuyu underground city - site parametreleri",
-        "container": "Wikipedia",
+        "title": "Derinkuyu Yeraltı Şehri",
+        "institution": "T.C. Kültür ve Turizm Bakanlığı - Kültür Portalı",
+        "url": "https://www.kulturportali.gov.tr/turkiye/nevsehir/gezilecekyer/derinkuyu-yeralti-sehri",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Resmî kurumsal kaynak. Kapasite rakamı ve havalandırma bacası sayısı VERMEZ - bu yokluk kayıtlarda kanıt olarak kullanılmıştır."
+      },
+      {
+        "id": "derinkuyu-wikipedia-en",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Derinkuyu underground city",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Derinkuyu_underground_city",
         "language": "en",
-        "accessed": "2026-09-06",
-        "note": "Sitenin derinlik ve kat bilgisi icin; kapasite rakami icin degil."
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak; önceki sürümden korundu."
       },
       {
+        "id": "ersun-2021-matiate",
         "tier": "peer-reviewed",
         "type": "article",
-        "title": "Geomechanical Evaluation of Derinkuyu Antique Underground City",
-        "container": "Rock Mechanics and Rock Engineering",
-        "doi": "10.1007/s00603-012-0301-7",
-        "language": "en",
-        "note": "Sitenin fiziksel parametreleri; kapasite hesabi icermez."
+        "authors": [
+          "Ersun, Durmuş"
+        ],
+        "year": 2021,
+        "title": "Matiate (Midyat) Yeraltı Şehri A-1 ve A-4 Mekanlarının İşlevine Yönelik Bir Değerlendirme",
+        "container": "Sinop Üniversitesi Sosyal Bilimler Dergisi",
+        "volume": "5(2)",
+        "pages": "191-220",
+        "doi": "10.30561/sinopusd.1007461",
+        "url": "https://dergipark.org.tr/tr/pub/sinopusd/article/1007461",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Türkçe hakemli. Bu kayıtlarda makalenin ÖZETİ okunmuştur, tam metni değil; locator'lar özet düzeyindedir."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "resmi-rakam-yok",
+        "text": "Bakanlığın resmî Derinkuyu sayfası kapasite rakamı vermez; verdiği bilgiler kat sayısı, mekân türleri ve ziyarete açık oranıdır.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi",
+            "support_type": "direct"
+          }
+        ]
       },
       {
-        "tier": "unreliable",
-        "type": "webpage",
-        "title": "Turizm ve içerik sitelerinde tekrarlanan kapasite rakamı",
-        "language": "tr",
-        "note": "Kanıt olarak değil, popüler iddianın kaynağı olarak kaydedildi."
+        "id": "yuzde-on-gezilebilir",
+        "text": "Resmî sayfa Derinkuyu'nun bugün ancak yüzde onunun gezilebildiğini belirtir; yani kapasite tahmini yapılacak alanın büyük bölümü erişilebilir değildir.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi, ziyaret bilgisi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "hesap-verisi-yok",
+        "text": "Kapasite tahmini için gereken veriler yoktur: havalandırma debisi, su kaynağı verimi, depolama hacmi ve kullanım süresi. Hiçbiri ölçülmüş değildir.",
+        "citations": [
+          {
+            "source_ref": "derinkuyu-wikipedia-en",
+            "locator": "Site parametreleri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "matiate-70bin-kalibi",
+        "text": "Aynı abartma kalıbı bölgede tekrar ediyor: Matiate için basında 70.000 kişilik kapasite dolaşıyor; hakemli çalışma böyle bir rakam vermez, mekân işlevlerini inceler.",
+        "citations": [
+          {
+            "source_ref": "ersun-2021-matiate",
+            "locator": "Özet",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kapsam-siniri",
+        "text": "Bu kayıt 'kapasite düşüktü' demez; 'kapasite BİLİNMİYOR' der. Rakamın yanlış olduğu değil, dayanaksız olduğu iddia edilmektedir.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Rakamın ilk kaynağı ne?"
+      "Havalandırma ve su kapasitesi ölçülürse üst sınır hesaplanabilir mi? Böyle bir çalışma bulunamadı."
     ],
-    "checked": "2026-09-06",
+    "checked": "2026-09-07",
     "used_in": [
       "kapadokya"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Resmî kaynağın SESSİZLİĞİ kanıt olarak kullanıldı; bu, güçlü ama dolaylı bir argümandır."
+    }
   },
   {
+    "schema_version": 2,
     "id": "kapadokya-sigina-insandan",
-    "claim": "Kapadokya yer altı şehirleri insan saldırılarından korunmak için yapılmış sığınaklardır.",
-    "status": "established",
+    "claim": "Kapadokya yer altı şehirleri yalnızca insan saldırılarından korunmak için yapılmış sığınaklardır.",
+    "status": "contested",
     "confidence": "medium",
     "topic": [
       "kapadokya",
       "derinkuyu",
+      "matiate",
       "islev"
     ],
     "subject": {
-      "site": "Kapadokya yer altı yerleşimleri",
-      "region": "Kapadokya",
+      "site": "Kapadokya yer altı yerleşimleri ve Matiate",
+      "region": "Kapadokya ve Yukarı Mezopotamya",
       "modern_country": "Türkiye",
       "coordinates": {
         "lat": 38.3735,
@@ -3299,52 +3558,153 @@
       }
     },
     "period": {
-      "earliest": 600,
+      "earliest": 100,
       "latest": 1000,
-      "era_label": "Arap-Bizans sınır savaşları dönemi",
+      "era_label": "Belgelenebilir kullanım dönemi",
       "precision": "range",
       "dating_method": [
-        "historical-record",
-        "typology"
+        "typology",
+        "historical-record"
       ]
     },
     "languages": [
-      "Grekçe"
+      "Türkçe"
     ],
     "disciplines": [
       "arkeoloji",
-      "tarih"
+      "mimarlik"
     ],
-    "popular_claim": "Yer altı şehirleri büyük bir kıyametten ya da gökten gelen bir tehditten korunmak için yapıldı.",
-    "divergence": "Tasarımın kendisi insan tehdidine işaret ediyor. En büyük genişleme dönemi Arap-Bizans sınır savaşlarına denk geliyor ve bu tesadüf değil.",
+    "popular_claim": "Yer altı şehirleri saldırı anında sığınmak için kazılmış gizli sığınaklardır.",
+    "divergence": "Savunma özellikleri gerçektir - tek kişilik dar geçitler, içeriden kapatılan taş kapılar. AMA 'yalnızca sığınak' çerçevesi eksik: hem Derinkuyu'da hem Matiate'de mekanlar ÜRETİM VE DEPOLAMA işlevi taşıyor. Bakanlığın resmî sayfası Derinkuyu'da şarap üretim tesisleri, erzak depoları, kiliseler ve manastırlar sayar. Matiate'de hakemli çalışma A-1 ve A-4 mekanlarını üzüm işliği, silo ve şırahane olarak değerlendirir. Bunlar kısa süreli sığınmanın değil, SÜREGİDEN EKONOMİK KULLANIMIN işaretleridir. Doğru soru 'sığınak mı' değil, 'sığınma İLE üretim aynı mekânda nasıl birleşiyor'.",
     "divergence_type": [
-      "medya-abartisi"
-    ],
-    "evidence": [
-      "Dar geçitler tek sıra geçişe zorluyor.",
-      "Katlar tek tek kapatılabiliyor.",
-      "Yuvarlanan taş kapılar YALNIZCA İÇERİDEN açılabiliyor.",
-      "Su kaynağı yüzeye bağlanmamış - kuşatmacı zehirleyemesin diye.",
-      "Belgelenebilen en yoğun kullanım Bizans dönemi, Arap akınlarıyla çakışıyor."
-    ],
-    "counter_evidence": [
-      "Bizans öncesi kullanım varsa amacı bilinmiyor; tasarım kanıtı geç dönem yapıları için geçerli."
+      "kategori-hatasi",
+      "turizm-kopyalamasi"
     ],
     "sources": [
       {
+        "id": "kultur-portali-derinkuyu",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Derinkuyu Yeraltı Şehri",
+        "institution": "T.C. Kültür ve Turizm Bakanlığı - Kültür Portalı",
+        "url": "https://www.kulturportali.gov.tr/turkiye/nevsehir/gezilecekyer/derinkuyu-yeralti-sehri",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Resmî kurumsal kaynak. Kapasite rakamı ve havalandırma bacası sayısı VERMEZ - bu yokluk kayıtlarda kanıt olarak kullanılmıştır."
+      },
+      {
+        "id": "ersun-2021-matiate",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ersun, Durmuş"
+        ],
+        "year": 2021,
+        "title": "Matiate (Midyat) Yeraltı Şehri A-1 ve A-4 Mekanlarının İşlevine Yönelik Bir Değerlendirme",
+        "container": "Sinop Üniversitesi Sosyal Bilimler Dergisi",
+        "volume": "5(2)",
+        "pages": "191-220",
+        "doi": "10.30561/sinopusd.1007461",
+        "url": "https://dergipark.org.tr/tr/pub/sinopusd/article/1007461",
+        "language": "tr",
+        "accessed": "2026-09-07",
+        "note": "Türkçe hakemli. Bu kayıtlarda makalenin ÖZETİ okunmuştur, tam metni değil; locator'lar özet düzeyindedir."
+      },
+      {
+        "id": "derinkuyu-wikipedia-en",
         "tier": "institutional",
         "type": "webpage",
         "title": "Derinkuyu underground city",
-        "container": "Wikipedia",
+        "institution": "Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Derinkuyu_underground_city",
         "language": "en",
-        "accessed": "2026-09-06"
+        "accessed": "2026-09-07",
+        "note": "Ara kaynak; önceki sürümden korundu."
       }
     ],
-    "checked": "2026-09-06",
+    "evidence": [
+      {
+        "id": "savunma-ozellikleri",
+        "text": "Savunma özellikleri belgelidir: yalnızca tek kişinin geçebildiği dar tüneller ve giriş-çıkışlarda içeriden kapatılan büyük taş silindirler.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi, mimari özellikler",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "derinkuyu-uretim-mekanlari",
+        "text": "Resmî sayfa Derinkuyu'da erzak depoları, havalandırma bacaları, şarap üretim tesisleri, kiliseler, manastırlar, su kuyuları ve toplantı odaları sayar.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi, mekân listesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "matiate-uretim-mekanlari",
+        "text": "Matiate'de A-1 mekânında üzüm işliği ve depolama siloları, A-4 mekânında depolama amaçlı yedi mimari öğe bulunur; her iki mekân üretime dayalı işlev ve şırahane kullanımı bakımından değerlendirilmiştir.",
+        "citations": [
+          {
+            "source_ref": "ersun-2021-matiate",
+            "locator": "Özet",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "iki-islev-birlikte",
+        "text": "Üretim mekânlarının varlığı savunma işlevini çürütmez; iki işlev aynı yerleşimde birlikte bulunabilir ve muhtemelen bulunmuştur.",
+        "citations": [
+          {
+            "source_ref": "kultur-portali-derinkuyu",
+            "locator": "Sayfa gövdesi",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "matiate-kapadokya-degil",
+        "text": "Matiate Kapadokya değildir; oradaki işlev profili Kapadokya için doğrudan kanıt sayılamaz, yalnızca karşılaştırma sağlar.",
+        "citations": [
+          {
+            "source_ref": "ersun-2021-matiate",
+            "locator": "Kapsam",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "tarihleme-islev-baglantisi",
+        "text": "Hangi mekânın hangi dönemde hangi işlevle kullanıldığı tarihlenemediği için (bkz. kapadokya-tarihlenemez), işlev tartışması da kesin sonuca bağlanamaz.",
+        "citations": [
+          {
+            "source_ref": "derinkuyu-wikipedia-en",
+            "locator": "Tarihçe bölümü",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Sığınma ile üretim aynı mekânda nasıl birleşiyordu - mevsimlik mi, sürekli mi, dönemsel mi?",
+      "Üretim mekânları savunma mekânlarıyla aynı evreye mi ait? Tarihleme yapılamadığı için açık."
+    ],
+    "checked": "2026-09-07",
     "used_in": [
       "kapadokya"
-    ]
+    ],
+    "supersedes": [],
+    "review": {
+      "status": "draft",
+      "notes": "BU KAYDIN ESASI DEĞİŞTİ. Önceki sürüm 'insan saldırılarından korunmak için yapılmış sığınaklardır' iddiasını established sayıyordu. Türkçe kaynaklar (Bakanlık resmî sayfası + Ersun 2021) her iki bölgede de üretim/depolama işlevi gösterdiği için iddia 'yalnızca sığınak' biçiminde daraltıldı ve contested'a çekildi."
+    }
   },
   {
     "schema_version": 2,
