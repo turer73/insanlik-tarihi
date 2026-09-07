@@ -1,0 +1,523 @@
+<title>Gökteki Ayı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+
+<style>
+:root{
+  --bg:#E6E8E7; --surface:#F1F3F2; --surface-2:#D5DAD9; --raised:#FBFCFC;
+  --ink:#101616; --ink-2:#43504F; --ink-3:#727F7E;
+  --rule:#BDC5C4; --rule-soft:#CFD6D5;
+  --accent:#1F5A63; --accent-ink:#154650; --accent-soft:#D2E0E2;
+  --clay:#A85A34; --clay-ink:#874525; --clay-soft:#F0DCD1;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1112; --surface:#111819; --surface-2:#1A2324; --raised:#141B1C;
+    --ink:#DFE7E6; --ink-2:#9FADAC; --ink-3:#71807F;
+    --rule:#253030; --rule-soft:#1C2625;
+    --accent:#6FB3BE; --accent-ink:#8AC7D1; --accent-soft:#0E2427;
+    --clay:#DD9068; --clay-ink:#E8A784; --clay-soft:#2A1610;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1112; --surface:#111819; --surface-2:#1A2324; --raised:#141B1C;
+  --ink:#DFE7E6; --ink-2:#9FADAC; --ink-3:#71807F;
+  --rule:#253030; --rule-soft:#1C2625;
+  --accent:#6FB3BE; --accent-ink:#8AC7D1; --accent-soft:#0E2427;
+  --clay:#DD9068; --clay-ink:#E8A784; --clay-soft:#2A1610;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(2.6rem,6vw,4.4rem) clamp(2rem,4vw,3rem);background:linear-gradient(170deg,var(--accent-soft) 0%,transparent 66%)}
+.hero__grid{display:grid;gap:1.8rem;grid-template-columns:1fr;align-items:center}
+@media(min-width:900px){.hero__grid{grid-template-columns:1.35fr .85fr;gap:2.6rem}}
+.hero__inner{display:flex;flex-direction:column;gap:1.25rem}
+.series{font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.hero h1{font-size:clamp(2.3rem,6.5vw,4.3rem);line-height:1.01;font-weight:700;font-variation-settings:"SOFT" 6,"WONK" 1;letter-spacing:-.03em}
+.hero__lede{font-family:var(--display);font-size:clamp(1.12rem,2.1vw,1.45rem);line-height:1.42;color:var(--ink-2);max-width:50ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+
+.sky{border:1px solid var(--rule);background:var(--raised);padding:1.1rem 1.2rem 1rem;display:flex;flex-direction:column;gap:.7rem}
+.sky svg{width:100%;height:auto;display:block}
+.sky svg text{font-family:var(--mono);fill:var(--ink-3);font-size:6.2px;letter-spacing:.02em}
+.sky svg .lines path{stroke:var(--accent);fill:none}
+.sky svg .stars circle{fill:var(--clay)}
+.sky .names{display:flex;flex-direction:column;gap:.3rem;border-top:1px solid var(--rule-soft);padding-top:.7rem}
+.sky .nm{display:grid;grid-template-columns:auto 1fr;gap:.15rem .7rem;align-items:baseline}
+.sky .nm b{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+.sky .nm span{font-size:.86rem;color:var(--ink-2)}
+.sky .nm span i{font-style:normal;color:var(--clay-ink);font-weight:600}
+.sky .cap{font-family:var(--mono);font-size:.63rem;color:var(--ink-3);line-height:1.4}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:62ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.c{border-color:var(--clay);background:var(--clay-soft)}
+.note b{font-weight:700}
+
+/* three explanations */
+.exp{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:860px){.exp{grid-template-columns:repeat(3,1fr)}}
+.ex{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.6rem}
+.ex .n{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);padding:.18rem .45rem;align-self:flex-start}
+.ex h3{font-size:1.14rem}
+.ex p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.ex .pred{border-top:1px solid var(--rule-soft);padding-top:.6rem;margin-top:.15rem}
+.ex .pred b{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--clay-ink);display:block;margin-bottom:.2rem}
+.ex .pred span{font-size:.9rem;color:var(--ink);display:block}
+
+/* calibration */
+.cal{border:1px solid var(--accent);background:var(--accent-soft);padding:1.5rem 1.6rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem}
+.cal .badge{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--accent);color:var(--raised);padding:.2rem .5rem;align-self:flex-start}
+.cal h3{font-size:1.28rem}
+.cal p{margin:0;max-width:72ch}
+.cal b{color:var(--ink)}
+.trio{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr}
+@media(min-width:680px){.trio{grid-template-columns:repeat(3,1fr)}}
+.tr{background:var(--raised);padding:.85rem 1rem;display:flex;flex-direction:column;gap:.2rem}
+.tr b{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3)}
+.tr span{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 30,"WONK" 0}
+.tr em{font-style:normal;font-size:.83rem;color:var(--ink-2)}
+
+/* method + criticism */
+.meth{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:820px){.meth{grid-template-columns:1fr 1fr}}
+.mt{background:var(--bg);padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.6rem}
+.mt .tag{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .45rem;align-self:flex-start}
+.mt h3{font-size:1.12rem}
+.mt ul{margin:0;padding-left:1.05rem;font-size:.92rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.42rem}
+.mt ul b{color:var(--ink)}
+.mt.works{background:var(--accent-soft)}
+.mt.works .tag{background:var(--accent);color:var(--raised)}
+.mt.limits .tag{background:var(--clay-soft);color:var(--clay-ink)}
+
+/* matrix */
+.mx{overflow-x:auto;border:1px solid var(--rule);margin-top:1.5rem;background:var(--raised)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:.88rem}
+th,td{padding:.6rem .7rem;border-bottom:1px solid var(--rule-soft);text-align:left;vertical-align:top}
+thead th{background:var(--surface);font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule);white-space:nowrap;text-align:center}
+thead th:first-child{text-align:left;min-width:190px}
+tbody th{font-weight:700;color:var(--ink);font-size:.89rem;font-family:var(--body)}
+tbody th small{display:block;font-weight:400;color:var(--ink-3);font-size:.78rem;margin-top:.1rem;font-family:var(--body)}
+tbody td{text-align:center;font-family:var(--mono);font-size:1.02rem;color:var(--ink-2)}
+tbody td.v{color:var(--accent-ink);font-weight:700}
+tbody td.p{color:var(--clay-ink)}
+tbody td.n{color:var(--ink-3);opacity:.5}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+td.why{text-align:left;font-family:var(--body);font-size:.86rem;color:var(--ink-2);min-width:210px}
+td.why b{color:var(--ink)}
+.mxkey{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-family:var(--mono);font-size:.7rem;color:var(--ink-3);margin-top:.75rem}
+.mxkey span b{color:var(--ink-2)}
+
+/* case */
+.case{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.cs{background:var(--bg);padding:1.2rem 1.35rem;display:grid;gap:.4rem 1.2rem;grid-template-columns:1fr}
+@media(min-width:820px){.cs{grid-template-columns:minmax(180px,auto) 1.9fr;align-items:start}}
+.cs__l{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);padding:.2rem .5rem;align-self:start}
+.cs__l.c{color:var(--clay-ink);background:var(--clay-soft)}
+.cs p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.cs p+p{margin-top:.45rem}
+.cs p b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(235px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:72ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__inner">
+      <span class="series">İnceleme 22 · Mitoloji I</span>
+      <p class="eyebrow">Karşılaştırmalı mitoloji · yöntem ve sınırları</p>
+      <h1>Gökteki Ayı</h1>
+      <p class="hero__lede">Aynı yedi yıldız. Sibirya'da <strong>avlanan bir hayvan</strong>, Kuzey Amerika'da <strong>avlanan bir ayı</strong>, Yunan'da <strong>ayıya dönüştürülmüş bir kadın</strong>. Bu üç halkın ortak teması en az <strong>on beş bin yıldır</strong> birbirinden ayrı. Benzerlik nereden geliyor — ve bunu <strong>ölçebilir miyiz?</strong></p>
+    </div>
+
+    <div class="sky">
+      <svg viewBox="0 0 210 108" role="img" aria-label="Büyük Ayı takımyıldızının yedi parlak yıldızı ve onları birleştiren çizgiler">
+        <g class="lines" stroke-width="1.1" opacity="0.55">
+          <path d="M30 20 L28 62 L66 68 L68 32 Z"/>
+          <path d="M68 32 L104 28 L140 34 L178 54"/>
+        </g>
+        <g class="stars">
+          <circle cx="30" cy="20" r="4.4"/>
+          <circle cx="28" cy="62" r="3.9"/>
+          <circle cx="66" cy="68" r="3.4"/>
+          <circle cx="68" cy="32" r="2.6"/>
+          <circle cx="104" cy="28" r="4.1"/>
+          <circle cx="140" cy="34" r="3.6"/>
+          <circle cx="178" cy="54" r="3.8"/>
+        </g>
+        <g>
+          <text x="30" y="10" text-anchor="middle">Dubhe</text>
+          <text x="20" y="76" text-anchor="middle">Merak</text>
+          <text x="70" y="82" text-anchor="middle">Phecda</text>
+          <text x="78" y="24" text-anchor="middle">Megrez</text>
+          <text x="104" y="18" text-anchor="middle">Alioth</text>
+          <text x="140" y="24" text-anchor="middle">Mizar</text>
+          <text x="180" y="70" text-anchor="middle">Alkaid</text>
+        </g>
+      </svg>
+      <div class="names">
+        <div class="nm"><b>Yunan</b><span>Ursa Major — <i>Büyük Ayı</i></span></div>
+        <div class="nm"><b>Kuzey Amerika</b><span>Avcıların kovaladığı <i>ayı</i></span></div>
+        <div class="nm"><b>Çin</b><span>Beidou — <i>Kuzey Kepçesi</i></span></div>
+        <div class="nm"><b>İskandinav</b><span>Karlavagnen — <i>araba</i></span></div>
+        <div class="nm"><b>Hint</b><span>Saptarşi — <i>yedi bilge</i></span></div>
+      </div>
+      <p class="cap">Aynı yedi yıldız, beş ayrı okuma. Üçü hayvan değil. <b>Dağılım sürekli değil</b> — bulmacanın kendisi bu.</p>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#uc">Üç açıklama</a>
+    <a href="#kalibrasyon">Kalibrasyon</a>
+    <a href="#yontem">Yöntem ve sınırı</a>
+    <a href="#ayi">Gökteki av</a>
+    <a href="#matris">Yedi gelenek</a>
+    <a href="#kategori">Kategori uyarısı</a>
+    <a href="#laurasia">Büyük iddia</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="uc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Çerçeve</p>
+    <h2>Benzerlik üç şeyden gelebilir</h2>
+    <p class="kicker">Ve bunlar <b>farklı şeyler öngörür</b> — yani birbirinden ayrılabilirler. Bu yazının bütün meselesi o ayrımı yapabilmek.</p>
+  </div>
+
+  <div class="exp">
+    <div class="ex">
+      <span class="n">Açıklama 1</span>
+      <h3>Bağımsız icat</h3>
+      <p>Aynı zihin, aynı dünya. İnsanlar her yerde ölümü, mevsimleri, fırtınayı, yılanı gördü ve benzer hikâyeler kurdu. <b>Temas gerekmez.</b></p>
+      <div class="pred"><b>Öngörüsü</b><span>Benzerlik <b>sığ</b> olur: aynı tema, ayrıntılar farklı. Ve dağılım <b>çevreyle</b> ilişkilidir, nüfus tarihiyle değil.</span></div>
+    </div>
+    <div class="ex">
+      <span class="n">Açıklama 2</span>
+      <h3>Temas</h3>
+      <p>Hikâye gerçekten yolculuk etti — tüccarla, göçle, misyonerle, komşuyla. <b>Anlatılar en az mal kadar hareketlidir.</b></p>
+      <div class="pred"><b>Öngörüsü</b><span>Benzerlik <b>derin</b> olur (aynı tuhaf ayrıntı) ve dağılım <b>ticaret yolları ve komşuluk</b> hatlarını izler.</span></div>
+    </div>
+    <div class="ex">
+      <span class="n">Açıklama 3</span>
+      <h3>Ortak köken</h3>
+      <p>Anlatı, halklar ayrılmadan <b>önce</b> vardı ve her biri yanında götürdü. Dil ailelerinin yaptığının aynısı.</p>
+      <div class="pred"><b>Öngörüsü</b><span>Benzerlik <b>derin</b> olur ve dağılım <b>nüfus tarihini</b> izler — sonradan hiç temas etmemiş halklarda bile.</span></div>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Ayrımı yapan şey şu:</b> iki halk <b>ayrıldıktan sonra hiç temas etmediyse</b> ve ikisinde de aynı <b>tuhaf ayrıntı</b> varsa, ikinci açıklama düşer. Geriye ilk ve üçüncü kalır — ve onları ayıran şey ayrıntının ne kadar <b>keyfî</b> olduğudur. Fırtına ile yılan keyfî değil; <b>yedi yıldıza ayı demek</b> keyfî.</p>
+</section>
+
+<section id="kalibrasyon" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Kalibrasyon</p>
+    <h2>Cevabını bildiğimiz bir vaka</h2>
+    <p class="kicker">Bir yöntemi denemeden önce, sonucu <b>bağımsız olarak bilinen</b> bir örnekte sınamak gerekir. Elimizde tam olarak öyle bir örnek var.</p>
+  </div>
+
+  <div class="cal">
+    <span class="badge">bilinen cevap</span>
+    <h3>Fırtına tanrısı yılanı öldürür — ve dilbilim bize akrabalığı zaten söylüyor</h3>
+    <div class="trio">
+      <div class="tr"><b>Hint</b><span>Indra — Vritra</span><em>Suları tutan yılanı öldürür</em></div>
+      <div class="tr"><b>Yunan</b><span>Zeus — Typhon</span><em>Yılansı canavarla savaş</em></div>
+      <div class="tr"><b>İskandinav</b><span>Thor — Jörmungandr</span><em>Dünyayı saran yılanla karşılaşma</em></div>
+    </div>
+    <p>Bu üç gelenek arasındaki akrabalığı <b>mitolojiden bağımsız olarak biliyoruz:</b> Sanskritçe, Yunanca ve Eski İskandinavca <b>aynı dil ailesindendir</b> ve bu, karşılaştırmalı dilbilimin en sağlam sonuçlarından biridir. Ses değişimleri düzenli, akrabalık kanıtlanmış.</p>
+    <p>Yani burada mitolojik benzerlik <b>ortak kökenle</b> açıklanıyor — ve bu sonucu <b>başka bir disipline dayanarak doğrulayabiliyoruz.</b> Kalibrasyon vakası budur: yöntemin doğru cevabı verdiğini gördüğümüz yer.</p>
+    <p><b>Ama hemen bir uyarı:</b> aynı motif Japon geleneğinde de var — fırtına tanrısı <b>Susanoo</b>, sekiz başlı yılan <b>Yamata no Oroçi</b>'yi öldürür. Japonca bu dil ailesinden <b>değil.</b> Demek ki motifin kendisi ortak kökene kanıt değil: fırtına da yılan da <b>her yerde vardır</b> ve bağımsız icat için fazlasıyla makul adaydır.</p>
+  </div>
+
+  <p class="note c" style="margin-top:1.5rem"><b>Kalibrasyonun asıl dersi:</b> bir motifin <b>varlığı</b> bir şey söylemez. Söyleyen şey <b>dağılımıdır</b> — nerede var, nerede yok, ve bu desen nüfus tarihine mi yoksa coğrafyaya mı uyuyor. Bu yüzden bu yazının merkezinde tek tek hikâyeler değil, <b>bir dağılım tablosu</b> var.</p>
+</section>
+
+<section id="yontem" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Alet</p>
+    <h2>Mitler nasıl sayılır — ve nerede tıkanır</h2>
+    <p class="kicker">Son yıllarda mitolojiye <b>evrimsel biyolojinin ağaç kurma yöntemleri</b> uygulanıyor. Alet gerçek. Sınırları da gerçek.</p>
+  </div>
+
+  <div class="meth">
+    <div class="mt works">
+      <span class="tag">Nasıl işliyor</span>
+      <h3>Hikâyeyi parçalarına ayırmak</h3>
+      <ul>
+        <li><b>Motif indeksi:</b> 20. yüzyılda folklor, anlatıları numaralandırılmış en küçük birimlere ayıran devasa kataloglar üretti. Bir hikâye artık bir <b>özellikler listesi.</b></li>
+        <li><b>Masal tipleri:</b> Uluslararası tip kataloglarında her anlatı bir numara alır — mağarada kapana kısılan adam anlatısı <b>ATU 1137</b>'dir.</li>
+        <li><b>Ağaç kurma:</b> Her versiyon, motiflerin var/yok olduğu bir <b>ikili matrise</b> çevrilir; sonra genetikte tür ağacı kurmak için kullanılan algoritmalar çalıştırılır.</li>
+        <li>Uygulanan iki örnek: <b>Gökteki Av</b> için 47 versiyon ve 93 özellik; <b>Polyphemus</b> anlatısı için 44 versiyon ve 98 özellik.</li>
+      </ul>
+    </div>
+    <div class="mt limits">
+      <span class="tag">Neden tartışmalı</span>
+      <h3>Folklorcuların itirazları</h3>
+      <ul>
+        <li><b>Örneklem küçük ve delik deşik.</b> Versiyonlar coğrafi olarak dağınık; ağaçları bilinen göç yollarıyla eşleştirmek güvenilir değil.</li>
+        <li><b>Alternatifler dışlanmıyor.</b> Bağımsız gelişim, sömürgecilik, misyoner faaliyeti ve komşular arası yayılma — hepsi aynı deseni üretebilir.</li>
+        <li><b>Birimler yapay.</b> Anlatı gelenekleri akışkandır; "uluslararası masal tipi" denen şeyin kendisi <b>modern bir kurgudur</b>, doğal bir birim değil.</li>
+        <li><b>Sınanamıyor.</b> Sonuçları karşılaştırabileceğimiz <b>bağımsız olarak bilinen bir cevap yok</b>; modelin verdiği ağaç doğrudan doğru kabul ediliyor.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note c" style="margin-top:1.5rem"><b>Bu, "yöntem işe yaramaz" demek değil.</b> Bu, <b>yöntemin şu an nerede olduğunu</b> söylemek: umut verici, yeni, ve <b>henüz kalibre edilmemiş.</b> Biyolojide filogenetik, cevabı bilinen vakalarda sınandığı için güvenilir hâle geldi. Mitolojide o sınama aşaması <b>henüz yapılmadı.</b> Bu yüzden bu yazı çıkan ağaçları sonuç değil, <b>hipotez</b> olarak kaydediyor.</p>
+</section>
+
+<section id="ayi" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Vaka</p>
+    <h2>Gökteki av: en güçlü ve en kırılgan örnek</h2>
+  </div>
+
+  <div class="case">
+    <div class="cs">
+      <span class="cs__l">İddia</span>
+      <div>
+        <p>Büyük Ayı takımyıldızının <b>avlanan bir hayvan</b> olarak görülmesi hem Kuzey Avrasya'da hem Kuzey Amerika'da bulunuyor. Bazı Kuzey Amerika anlatılarında ayı sonbaharda yaralanır ve <b>kanı yaprakları kızartır</b> — mevsimle bağlı, ayrıntılı bir versiyon.</p>
+        <p>Bu iki bölgenin halkları <b>en az on beş bin yıl önce</b> ayrıldı. Aradaki kara köprüsü sular altında. <b>Sonraki temas seçeneği fiilen kapalı.</b></p>
+      </div>
+    </div>
+    <div class="cs">
+      <span class="cs__l">Neden güçlü</span>
+      <div>
+        <p>Ayrıntı <b>keyfî.</b> O yedi yıldız bir ayıya benzemez — kepçeye, arabaya, pulluğa benzer ve nitekim başka gelenekler tam da bunları görmüştür. Keyfî bir seçimin iki yerde bağımsız olarak tekrar etmesi, <b>fırtına-yılan eşleşmesinden çok daha az beklenir.</b></p>
+        <p>Yunan geleneğinde de takımyıldız bir <b>ayıdır</b> — ve Yunan anlatısı bunu açıklamakta zorlanır: ayıya dönüştürülme hikâyesi, adı <b>zaten var olan</b> bir takımyıldıza sonradan getirilmiş bir gerekçe gibi durur.</p>
+      </div>
+    </div>
+    <div class="cs">
+      <span class="cs__l c">Neden kırılgan</span>
+      <div>
+        <p><b>Dağılım sürekli değil.</b> Çin'de kepçe, Hindistan'da yedi bilge, İskandinavya'da araba. Eğer motif ortak bir atadan geliyorsa, bu geleneklerin hepsinde <b>kaybolmuş</b> olması gerekir — mümkün, ama <b>test edilemeyen</b> bir varsayım.</p>
+        <p>Ve delik deşik dağılım iki şeyin <b>ikisine birden</b> benziyor: derin ortak kökenden kalma bir kalıntı desenine, <b>ya da</b> yeterince örneklenmemiş bir haritaya. Elimizdeki veriyle bu ikisi ayrılamıyor.</p>
+        <p>Ayrıca <b>16.-19. yüzyıl teması</b> kolayca hafife alınıyor: derlemelerin çoğu misyonerler ve etnograflar aracılığıyla yapıldı ve Avrupa anlatılarının yerel geleneklere sızma ihtimali her vakada ayrıca elenmeli.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="matris" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Dağılım</p>
+    <h2>Yedi gelenek, beş motif</h2>
+    <p class="kicker">Önemli olan hangi kutunun dolu olduğu değil — <b>desenin neye benzediği.</b></p>
+  </div>
+
+  <div class="mx">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Motif</th>
+          <th scope="col">Hint</th>
+          <th scope="col">Çin</th>
+          <th scope="col">Yunan</th>
+          <th scope="col">Japon</th>
+          <th scope="col">K. Amerika</th>
+          <th scope="col">İskandinav</th>
+          <th scope="col">İnuit</th>
+          <th scope="col">En iyi açıklama</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Sudan yaratılış<small>Dünya ilksel suyla başlar</small></th>
+          <td class="v">●</td><td class="v">●</td><td class="v">●</td><td class="v">●</td><td class="v">●</td><td class="p">◐</td><td class="v">●</td>
+          <td class="why"><b>Bağımsız icat.</b> Neredeyse evrensel ve fazlasıyla genel — bu kadar yaygın bir motif <b>hiçbir şeyi ayırt etmez.</b></td>
+        </tr>
+        <tr>
+          <th scope="row">Fırtına tanrısı yılanı öldürür<small>Indra, Zeus, Thor, Susanoo</small></th>
+          <td class="v">●</td><td class="p">◐</td><td class="v">●</td><td class="v">●</td><td class="p">◐</td><td class="v">●</td><td class="n">?</td>
+          <td class="why"><b>Karışık.</b> Üç gelenekte ortak köken (dilbilim doğruluyor), Japon geleneğinde <b>değil</b> — demek ki motif tek başına akrabalık kanıtı değil.</td>
+        </tr>
+        <tr>
+          <th scope="row">Dalgıç yaratılış<small>Bir hayvan dibe dalıp çamur çıkarır</small></th>
+          <td class="p">◐</td><td class="p">◐</td><td class="n">○</td><td class="p">◐</td><td class="v">●</td><td class="n">○</td><td class="p">◐</td>
+          <td class="why"><b>Ortak köken adayı.</b> Yoğunlaştığı yer <b>Kuzey Avrasya ve Kuzey Amerika</b> — tam da Bering geçişiyle bağlantılı hat. Kuvvetli ama tartışmalı.</td>
+        </tr>
+        <tr>
+          <th scope="row">Gökteki av<small>Büyük Ayı avlanan hayvan olarak</small></th>
+          <td class="n">○</td><td class="n">○</td><td class="v">●</td><td class="n">○</td><td class="v">●</td><td class="n">○</td><td class="p">◐</td>
+          <td class="why"><b>Açık uçlu.</b> Ayrıntı keyfî olduğu için güçlü; dağılım delik deşik olduğu için kırılgan. <b>Bu yazının asıl vakası.</b></td>
+        </tr>
+        <tr>
+          <th scope="row">Dünya ağacı<small>Kozmosu bağlayan eksen</small></th>
+          <td class="v">●</td><td class="v">●</td><td class="p">◐</td><td class="p">◐</td><td class="p">◐</td><td class="v">●</td><td class="n">○</td>
+          <td class="why"><b>Çevre belirliyor.</b> Boşluğun sebebi kültürel uzaklık değil: <b>İnuit'in yaşadığı bölgede ağaç yok.</b></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mxkey">
+    <span><b>●</b> belirgin biçimde var</span>
+    <span><b>◐</b> kısmen / farklı biçimde</span>
+    <span><b>○</b> yok ya da merkezî değil</span>
+    <span><b>?</b> veri yetersiz</span>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem"><b>Tablonun en öğretici satırı en alttaki.</b> İnuit geleneğinde dünya ağacı yok — ve sebebi <b>ağaç sınırının kuzeyinde yaşamak.</b> Bir motifin yokluğu her zaman kültürel mesafeyi göstermez; bazen sadece <b>o şeyin orada bulunmadığını</b> gösterir. Evrensellik iddiaları en çok burada tökezliyor: karşılaştırma yapılan geleneklerin <b>aynı malzemeye sahip olmadığını</b> hesaba katmıyorlar.</p>
+</section>
+
+<section id="kategori" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Uyarı</p>
+    <h2>Yukarıdaki tablo bir kategori hatası içeriyor</h2>
+  </div>
+
+  <div class="prose">
+    <p>Ve bunu saklamak yerine söylemek gerekiyor: <b>"Kızılderili mitolojisi" diye tek bir şey yoktur.</b> İki kıtaya yayılmış, birbirinden dil ailesi düzeyinde ayrı <b>yüzlerce ayrı gelenek</b> vardır. Aynı şey "Eskimo" için de geçerli — İnuit ve Yupik gelenekleri ayrıdır ve kendi içlerinde de bölgeseldir.</p>
+    <p>"Yunan mitolojisi" ile "Kızılderili mitolojisi"ni tablonun aynı sütun düzeyine koymak, <b>bir şehri bir kıtayla karşılaştırmaktır.</b> Popüler karşılaştırmalı mitoloji bu hatayı sürekli yapar ve hata <b>tek yönde çalışır:</b> çeşitliliği tek bir kutuya sıkıştırdığınızda, o kutuda "her şey" bulunur ve <b>her benzerlik doğrulanmış görünür.</b></p>
+    <p>Yukarıdaki tablo bu yüzden bir <b>kaba tarama</b>dır, bir kanıt değil. Ciddi bir çalışma sütunları tek tek geleneklere böler — ve o zaman kutuların çoğu <b>boş ya da "veri yetersiz"</b> çıkar.</p>
+  </div>
+</section>
+
+<section id="laurasia" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Maksimal iddia</p>
+    <h2>"Hepsinin tek bir atası var" tezi</h2>
+    <p class="kicker">Bu alanın en iddialı önerisi, dünya mitolojilerini <b>iki büyük aileye</b> ayırıp birinin kökenini <b>40.000 yıl öncesine</b> koyar. Ciddiye alınmayı hak ediyor — ve ciddi itirazlar alıyor.</p>
+  </div>
+
+  <div class="case">
+    <div class="cs">
+      <span class="cs__l">Tez</span>
+      <div><p>Avrasya ve Amerika mitolojileri, <b>yaratılıştan yıkıma uzanan tutarlı bir hikâye çizgisi</b> paylaşır ve tek bir atadan gelir; Sahra altı Afrika, Avustralya ve Yeni Gine gelenekleri ise böyle bir çizgi taşımaz ve ayrı bir gruptur.</p></div>
+    </div>
+    <div class="cs">
+      <span class="cs__l c">İtirazlar</span>
+      <div>
+        <p><b>Ölçüt tutarsız uygulanıyor.</b> Bir gelenek yazarın öyle dediği için birinci gruba konuyor; aynı boşluklar öteki grupta görüldüğünde farklı yorumlanıyor.</p>
+        <p><b>İstisnalar tezi taşımıyor.</b> "Şu grupta bulunmaz" denen motifler öteki grupta bulunabiliyor; istisna sayısı şemayı zayıflatacak kadar çok.</p>
+        <p><b>Kaynaklar eski.</b> Kullanılan derlemelerin önemli bölümü güncelliğini yitirmiş.</p>
+        <p><b>Ve en ağır itiraz:</b> ayrım, birinci grubu "yüksek kültür" ikinciyi "düşük kültür" konumuna yerleştiren bir <b>hiyerarşi</b> kuruyor. Bu, karşılaştırmalı mitolojinin 19. yüzyıldan miras aldığı bir sorun ve alan bu konuda haklı olarak tetikte.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="note c" style="margin-top:1.5rem">Bu tezi veri tabanına <b>azınlık görüşü</b> olarak kaydediyoruz — çürütülmüş değil, ama uzlaşı da değil. Ve şu ayrımı korumak önemli: <b>tek tek motiflerin derin ortak kökeni</b> ayrı bir sorudur, <b>bütün mitolojilerin tek bir soyağacına oturtulması</b> ayrı. Birincisi test edilebilir bir hipotez; ikincisi şimdilik bir <b>çerçeve önerisi.</b></p>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Sonuç</p>
+    <h2>Ne söylenebilir</h2>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bu yazının sonucu</p>
+    <h3>Benzerlik gerçek; sebebi çoğu vakada henüz belirlenemiyor</h3>
+    <p><b>Kesin olan:</b> bu yedi gelenekte ortak motifler <b>var</b> ve bu bir yanılsama değil. Ama "hepsinde var" cümlesi <b>tek başına hiçbir şey kanıtlamaz</b> — sudan yaratılış her yerde var ve tam da bu yüzden hiçbir şeyi ayırt etmiyor.</p>
+    <p><b>Ayrımı yapan şey dağılımdır.</b> Fırtına-yılan motifi hem akraba hem akraba olmayan geleneklerde var: ortak köken kanıtı değil. Dalgıç yaratılış ve gökteki av ise <b>Kuzey Avrasya-Kuzey Amerika hattında</b> yoğunlaşıyor — yani nüfus tarihine uyan bir desen. <b>Bu, ilgi çekici bir hipotez; kanıtlanmış bir sonuç değil.</b></p>
+    <p><b>Yöntem hakkında dürüst hüküm:</b> mitleri sayılabilir birimlere çevirip ağaç kurmak <b>gerçek bir ilerlemedir</b> ama henüz <b>kalibre edilmemiştir</b> — cevabı bağımsız olarak bilinen vakalarda sınanmadı. Bu yüzden çıkan ağaçlar sonuç değil, sınanacak <b>öneri</b> olarak kaydedilmelidir.</p>
+    <p>Ve bu yazının en somut kazanımı bir tabloda değil, bir boşlukta: <b>İnuit geleneğinde dünya ağacı yok, çünkü orada ağaç yok.</b> Karşılaştırmalı mitolojinin en sık unuttuğu şey, karşılaştırdığı halkların <b>aynı dünyada yaşamadığıdır.</b></p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Bitmemiş işler</p>
+    <h2>Dürüstçe: bilmediklerimiz</h2>
+  </div>
+
+  <div class="open">
+    <div class="oq">
+      <p class="oq__q">Gökteki av gerçekten Bering öncesinden mi geliyor?</p>
+      <p class="oq__a"><b>Bilinmiyor.</b> Ayrıntının keyfîliği lehine, dağılımın delik deşikliği aleyhine çalışıyor. Mevcut örneklemle ayrılamıyor.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Sömürge dönemi teması ne kadar bulaştı?</p>
+      <p class="oq__a">Derlemelerin çoğu <b>misyoner ve etnograf aracılığıyla</b> yapıldı. Avrupa anlatılarının yerel geleneklere sızma ihtimali her vakada ayrıca elenmeli — çoğu çalışmada bu <b>yapılmıyor.</b></p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Filogenetik yöntem güvenilir mi?</p>
+      <p class="oq__a"><b>Henüz bilinmiyor</b> — çünkü kalibre edilmedi. Cevabı bağımsız bilinen vakalarda sınanana kadar sonuçları hipotez sayılmalı.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Kaç gelenek gerçekten karşılaştırıldı?</p>
+      <p class="oq__a">"Kızılderili" ve "Eskimo" başlıkları <b>yüzlerce ayrı geleneği</b> tek kutuya sıkıştırıyor. Sütunlar tek tek geleneklere bölündüğünde kutuların çoğu <b>boş ya da veri yetersiz</b> çıkar.</p>
+    </div>
+    <div class="oq">
+      <p class="oq__q">Bu seri neden tufanı burada tekrar etmiyor?</p>
+      <p class="oq__a">Tufan anlatılarının dağılımı ve "hepsinde var mı" sorusu <b>ayrı bir yazıda</b> ele alındı. Buradaki soru farklı: <b>benzerliğin sebebini ayırt edebilir miyiz.</b></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Bu yazı özgün derlemedir.</b> Motif ve masal tipi numaraları standart folklor kataloglarına; filogenetik uygulamalar ve bunlara yöneltilen itirazlar hakemli literatüre ve alan içi tartışmaya dayanır. Anlatılar özetlenmiştir; yayımlanmış telifli çeviriler kullanılmamıştır.</p>
+    <p><b>Tablo bir kaba taramadır, kanıt değildir.</b> "K. Amerika" ve "İnuit" sütunları yüzlerce ayrı geleneği tek başlık altında topluyor ve bu bir kategori hatasıdır; metin içinde açıkça işaretlenmiştir. Ciddi bir çalışma sütunları tek tek geleneklere böler.</p>
+    <p><b>Bu yazı hiçbir mitin doğru ya da yanlış olduğunu söylemiyor.</b> Ele aldığı şey anlatıların <b>dağılımı</b> ve bu dağılımdan hangi çıkarımların yapılabileceğidir — anlatıların içeriğinin doğruluğu bu yazının konusu değildir.</p>
+    <p><b>Serinin ilgili yazıları:</b> Tufan Bilmecesi · Hatırlamadığımız Felaketler · Sümerler.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var el = document.querySelector(a.getAttribute('href')); if (el) map[el.id] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+</script>

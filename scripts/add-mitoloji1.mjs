@@ -1,0 +1,434 @@
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
+
+const path = "data/findings/mitoloji.json";
+const list = existsSync(path) ? JSON.parse(readFileSync(path, "utf8")) : [];
+const CHECKED = "2026-09-07";
+
+const yeni = [
+  {
+    id: "benzerlik-uc-aciklama",
+    claim:
+      "Mitolojik benzerliğin üç olası kaynağı (bağımsız icat, temas, ortak köken) farklı dağılım desenleri öngörür ve bu yüzden birbirinden ayrılabilir.",
+    status: "established",
+    confidence: "high",
+    topic: ["mitoloji", "yontem", "karsilastirmali-mitoloji"],
+    subject: {
+      site: "Karşılaştırmalı mitoloji yöntemi",
+      region: "kuramsal",
+      modern_country: "çok uluslu",
+    },
+    period: {
+      earliest: 1850,
+      latest: 2026,
+      era_label: "Karşılaştırmalı mitolojinin kuruluşundan bugüne",
+      precision: "range",
+      dating_method: ["historical-record"],
+    },
+    disciplines: ["antropoloji", "dilbilim", "tarih", "felsefe"],
+    popular_claim:
+      "Aynı hikâye tüm kültürlerde varsa, anlatılan olay gerçekten yaşanmış olmalıdır.",
+    divergence:
+      "Yaygınlık tek başına hiçbir şeye kanıt değildir - hatta tersine çalışır. Bir motif NE KADAR yaygınsa, bağımsız icat açıklaması O KADAR güçlenir, çünkü evrensel deneyimler (su, ölüm, fırtına, yılan) evrensel anlatılar üretir. Ayırt edici olan yaygınlık değil DAĞILIM DESENİdir: motif nüfus tarihini mi izliyor, ticaret yollarını mı, yoksa çevre koşullarını mı.",
+    divergence_type: ["kategori-hatasi"],
+    evidence: [
+      "Bağımsız icat öngörüsü: benzerlik sığ olur (aynı tema, farklı ayrıntı) ve dağılım çevreyle ilişkilidir.",
+      "Temas öngörüsü: benzerlik derin olur (aynı tuhaf ayrıntı) ve dağılım ticaret yolları ile komşuluk hatlarını izler.",
+      "Ortak köken öngörüsü: benzerlik derin olur ve dağılım nüfus tarihini izler - sonradan temas etmemiş halklarda bile.",
+      "Ayırt edici test: iki halk ayrıldıktan sonra hiç temas etmediyse ve ikisinde de aynı KEYFÎ ayrıntı varsa, temas açıklaması düşer.",
+    ],
+    counter_evidence: [
+      "Üç açıklama pratikte iç içe geçer; bir motifin bir bölgede ortak kökenden, başka bir bölgede temastan gelmesi mümkündür.",
+      "'Keyfî ayrıntı' ölçütü niceliksel değildir; neyin keyfî sayılacağı yorumcuya bağlıdır.",
+    ],
+    sources: [
+      {
+        tier: "peer-reviewed",
+        type: "chapter",
+        title: "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
+        url: "https://link.springer.com/content/pdf/10.1007/978-3-319-39445-9_6.pdf",
+        language: "en",
+        accessed: "2026-09-07",
+        note: "Yöntem tartışmasının çerçevesi.",
+      },
+    ],
+    checked: CHECKED,
+    used_in: ["gokteki-ayi"],
+  },
+
+  {
+    id: "firtina-yilan-motifi-kalibrasyon",
+    claim:
+      "Fırtına tanrısının yılanı öldürmesi motifi, Hint-Avrupa geleneklerinde ortak kökenden gelir; ama motifin varlığı tek başına akrabalık kanıtı değildir.",
+    status: "established",
+    confidence: "high",
+    topic: ["mitoloji", "hint-avrupa", "yontem", "karsilastirmali-mitoloji"],
+    subject: {
+      site: "Hint-Avrupa ve Japon gelenekleri",
+      region: "Avrasya",
+      modern_country: "çok uluslu",
+    },
+    period: {
+      earliest: -4000,
+      latest: 800,
+      era_label: "Proto-Hint-Avrupa'dan yazılı geleneklere",
+      precision: "approximate",
+      dating_method: ["textual", "historical-record"],
+    },
+    languages: ["Sanskritçe", "Yunanca", "Eski İskandinavca", "Japonca"],
+    disciplines: ["dilbilim", "antropoloji", "filoloji"],
+    popular_claim:
+      "Fırtına tanrısının ejderha/yılan öldürmesi tüm dünyada aynı olduğu için ortak bir kökene işaret eder.",
+    divergence:
+      "Bu motif KALİBRASYON VAKASIDIR: Hint (Indra-Vritra), Yunan (Zeus-Typhon) ve İskandinav (Thor-Jörmungandr) örneklerindeki akrabalığı MİTOLOJİDEN BAĞIMSIZ olarak biliyoruz - karşılaştırmalı dilbilim bu üç dilin akrabalığını düzenli ses değişimleriyle kanıtlar. Ama aynı motif Japon geleneğinde de var (Susanoo - Yamata no Oroçi) ve Japonca bu aileden DEĞİL. Sonuç: motifin varlığı ortak kökene kanıt değildir; fırtına ve yılan bağımsız icat için fazlasıyla makul adaylardır.",
+    divergence_type: ["kategori-hatasi"],
+    evidence: [
+      "Indra-Vritra, Zeus-Typhon ve Thor-Jörmungandr aynı dil ailesinden üç gelenekte yer alır.",
+      "Bu üç dilin akrabalığı karşılaştırmalı dilbilimin en sağlam sonuçlarından biridir - mitolojiden bağımsız bir doğrulama hattı.",
+      "Aynı motif Hint-Avrupa dışı bir gelenekte de var: Susanoo, sekiz başlı yılan Yamata no Oroçi'yi öldürür.",
+      "Çin geleneğinde ejderhanın değeri TERS yöndedir: yağmur getiren, iyicil bir figürdür - motifin evrensel olmadığını gösteren bir karşı örnek.",
+    ],
+    counter_evidence: [
+      "Japon örneğinin kıta Asya'sı üzerinden temasla gelmiş olma ihtimali elenmiş değildir.",
+      "Hint-Avrupa 'fırtına tanrısı yılanı öldürür' rekonstrüksiyonunun ayrıntıları da alanda tartışılır.",
+    ],
+    sources: [
+      {
+        tier: "primary",
+        type: "edition",
+        title: "Rigveda I.32 (Indra-Vritra)",
+        language: "sa",
+      },
+      {
+        tier: "primary",
+        type: "edition",
+        title: "Kojiki (Susanoo - Yamata no Oroçi)",
+        year: 712,
+        language: "ja",
+      },
+    ],
+    checked: CHECKED,
+    used_in: ["gokteki-ayi"],
+  },
+
+  {
+    id: "mit-filogenetigi-kalibre-degil",
+    claim:
+      "Mitlere uygulanan filogenetik ağaç kurma yöntemleri, cevabı bağımsız olarak bilinen vakalarda henüz sınanmadığı için sonuçları hipotez düzeyindedir.",
+    status: "contested",
+    confidence: "high",
+    topic: ["mitoloji", "yontem", "karsilastirmali-mitoloji"],
+    subject: {
+      site: "Filogenetik mitoloji çalışmaları",
+      region: "kuramsal",
+      modern_country: "çok uluslu",
+    },
+    period: {
+      earliest: 2012,
+      latest: 2026,
+      era_label: "Yöntemin mitolojiye uygulanması",
+      precision: "range",
+      dating_method: ["historical-record"],
+    },
+    languages: ["İngilizce", "Fransızca"],
+    disciplines: ["antropoloji", "matematik", "genetik"],
+    people: [
+      { name: "d'Huy, Julien", role: "proposer", year: 2013 },
+    ],
+    popular_claim:
+      "Bilim, mitlerin 40.000 yıllık soyağacını çıkardı; hangi hikâyenin nereden geldiğini artık biliyoruz.",
+    divergence:
+      "Yöntem gerçek ve ilerlemedir: anlatılar motiflerin var/yok olduğu ikili matrislere çevriliyor ve genetikte tür ağacı kuran algoritmalar çalıştırılıyor. Ama dört ciddi itiraz var ve hiçbiri çözülmedi. En ağırı sonuncusu: BAĞIMSIZ OLARAK BİLİNEN BİR CEVAP YOK, yani modelin ürettiği ağaç doğrudan doğru kabul ediliyor. Biyolojide filogenetik, cevabı bilinen vakalarda sınandığı için güvenilir hâle geldi; mitolojide o kalibrasyon aşaması henüz yapılmadı.",
+    divergence_type: ["medya-abartisi"],
+    evidence: [
+      "Gökteki Av için 47 versiyon ve 93 özellik; Polyphemus anlatısı (ATU 1137) için 44 versiyon ve 98 özellik kodlandı.",
+      "Standart folklor motif indeksleri ve uluslararası masal tipi katalogları bu kodlamanın altyapısını sağlıyor.",
+    ],
+    counter_evidence: [
+      "Örneklem küçük ve coğrafi olarak dağınık; ağaçları bilinen göç yollarıyla güvenilir biçimde eşleştirmek mümkün değil.",
+      "Alternatif açıklamalar dışlanmıyor: bağımsız gelişim, sömürgecilik, misyoner faaliyeti ve komşular arası yayılma aynı deseni üretebilir.",
+      "Anlatı gelenekleri akışkandır; 'uluslararası masal tipi' denen birimin kendisi modern bir kurgudur, doğal bir birim değil.",
+      "Sonuçların karşılaştırılabileceği bağımsız olarak bilinen bir cevap yok - yöntem sınanamıyor.",
+    ],
+    open_questions: [
+      "Yöntem, cevabı dilbilimden bilinen Hint-Avrupa vakasında sınanırsa doğru ağacı verir mi? Bu test yapılmalı.",
+    ],
+    sources: [
+      {
+        tier: "peer-reviewed",
+        type: "article",
+        authors: ["d'Huy, Julien"],
+        year: 2013,
+        title: "A Cosmic Hunt in the Berber sky: a phylogenetic reconstruction of Palaeolithic mythology",
+        container: "Les Cahiers de l'AARS",
+        volume: "15",
+        pages: "93-106",
+        language: "en",
+      },
+      {
+        tier: "peer-reviewed",
+        type: "chapter",
+        title: "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
+        url: "https://link.springer.com/content/pdf/10.1007/978-3-319-39445-9_6.pdf",
+        language: "en",
+        accessed: "2026-09-07",
+      },
+      {
+        tier: "peer-reviewed",
+        type: "article",
+        title: "The Cultural Transmission and Evolution of Folk Narratives",
+        url: "https://durham-repository.worktribe.com/OutputFile/1642267",
+        language: "en",
+        accessed: "2026-09-07",
+        note: "Yönteme yöneltilen itirazların kaynağı.",
+      },
+    ],
+    checked: CHECKED,
+    volatile: true,
+    used_in: ["gokteki-ayi"],
+  },
+
+  {
+    id: "gokteki-av-bering-oncesi",
+    claim:
+      "Büyük Ayı takımyıldızının avlanan bir hayvan olarak görülmesi, Bering geçişinden önceki ortak bir mitolojik mirastan gelir.",
+    status: "unknown",
+    confidence: "medium",
+    topic: ["mitoloji", "gokteki-av", "arkeoastronomi", "bering"],
+    subject: {
+      site: "Kuzey Avrasya ve Kuzey Amerika",
+      region: "Kuzey yarımküre",
+      modern_country: "çok uluslu",
+    },
+    period: {
+      earliest: -15000,
+      latest: 1900,
+      era_label: "Bering geçişinden etnografik derlemelere",
+      precision: "disputed",
+      dating_method: ["none", "historical-record"],
+    },
+    languages: ["Grekçe", "çeşitli Kuzey Amerika dilleri", "Sibirya dilleri"],
+    disciplines: ["antropoloji", "astronomi", "dilbilim"],
+    people: [
+      { name: "d'Huy, Julien", role: "proposer", year: 2013 },
+    ],
+    popular_claim:
+      "Tüm kültürler Büyük Ayı'yı ayı olarak görür - bu, ortak bir insanlık hafızasının kanıtıdır.",
+    divergence:
+      "'Tüm kültürler' yanlış: Çin'de kepçe (Beidou), Hindistan'da yedi bilge (Saptarşi), İskandinavya'da araba (Karlavagnen). Ayı/av okuması Yunan, Sibirya ve Kuzey Amerika hattında yoğunlaşıyor - yani DELİK DEŞİK bir dağılım. Bu desen iki şeye birden benziyor: derin ortak kökenden kalma bir kalıntıya YA DA yetersiz örneklenmiş bir haritaya. Mevcut veriyle ikisi ayrılamıyor.",
+    divergence_type: ["medya-abartisi", "provenans-yoklugu"],
+    evidence: [
+      "Ayrıntı KEYFÎ: o yedi yıldız bir ayıya benzemez; kepçeye, arabaya, pulluğa benzer ve başka gelenekler tam bunları görmüştür. Keyfî bir seçimin bağımsız olarak tekrar etmesi az beklenir.",
+      "Bazı Kuzey Amerika anlatılarında ayı sonbaharda yaralanır ve kanı yaprakları kızartır - mevsimle bağlı, ayrıntılı bir versiyon.",
+      "Yunan geleneğinde de takımyıldız bir ayıdır ve Yunan anlatısı bunu açıklamakta zorlanır: dönüşüm hikâyesi, zaten var olan bir ada sonradan getirilmiş bir gerekçe gibi durur.",
+      "Kuzey Avrasya ve Kuzey Amerika halkları en az 15.000 yıl önce ayrıldı; kara köprüsü sular altında, sonraki temas seçeneği fiilen kapalı.",
+    ],
+    counter_evidence: [
+      "Dağılım sürekli değil: Çin, Hindistan ve İskandinavya'da ayı okuması yok. Ortak kökense bu geleneklerin hepsinde KAYBOLMUŞ olması gerekir - mümkün ama test edilemez.",
+      "16.-19. yüzyıl teması hafife alınıyor: derlemelerin çoğu misyoner ve etnograflar aracılığıyla yapıldı; Avrupa anlatılarının sızma ihtimali her vakada ayrıca elenmeli.",
+      "Örneklem küçük; 47 versiyon iki kıtaya yayılmış yüzlerce geleneği temsil etmiyor.",
+    ],
+    open_questions: [
+      "Motif gerçekten Bering öncesinden mi geliyor? Mevcut örneklemle ayrılamıyor.",
+      "Sömürge dönemi teması ne ölçüde bulaştı? Çoğu çalışmada bu eleme yapılmıyor.",
+    ],
+    sources: [
+      {
+        tier: "peer-reviewed",
+        type: "article",
+        authors: ["d'Huy, Julien"],
+        year: 2013,
+        title: "A Cosmic Hunt in the Berber sky: a phylogenetic reconstruction of Palaeolithic mythology",
+        container: "Les Cahiers de l'AARS",
+        volume: "15",
+        language: "en",
+      },
+      {
+        tier: "peer-reviewed",
+        type: "article",
+        title: "The Cultural Transmission and Evolution of Folk Narratives",
+        url: "https://durham-repository.worktribe.com/OutputFile/1642267",
+        language: "en",
+        accessed: "2026-09-07",
+        note: "Karşı görüş ve yöntem itirazları.",
+      },
+    ],
+    checked: CHECKED,
+    volatile: true,
+    used_in: ["gokteki-ayi"],
+  },
+
+  {
+    id: "laurasia-hipotezi",
+    claim:
+      "Dünya mitolojileri, biri yaratılıştan yıkıma uzanan tutarlı bir hikâye çizgisi taşıyan iki büyük aileye ayrılır ve birincisinin kökeni yaklaşık 40.000 yıl öncesine dayanır.",
+    status: "minority",
+    confidence: "medium",
+    topic: ["mitoloji", "karsilastirmali-mitoloji", "yontem"],
+    subject: {
+      site: "Dünya mitolojileri",
+      region: "küresel",
+      modern_country: "çok uluslu",
+    },
+    period: {
+      earliest: -40000,
+      latest: 2012,
+      era_label: "İddia edilen köken tarihinden tezin yayımına",
+      precision: "disputed",
+      dating_method: ["none"],
+    },
+    disciplines: ["antropoloji", "dilbilim", "filoloji"],
+    people: [
+      { name: "Witzel, E. J. Michael", role: "proposer", affiliation: "Harvard University", year: 2012 },
+    ],
+    popular_claim:
+      "Bütün mitolojilerin tek bir soyağacı çıkarıldı ve kökeni 40.000 yıl öncesine dayanıyor.",
+    divergence:
+      "Tez ciddiye alınmayı hak ediyor ama uzlaşı DEĞİL, azınlık görüşü. Dört ana itiraz var ve dördüncüsü alanın en hassas noktasına dokunuyor: ayrım, birinci grubu 'yüksek kültür' ikinciyi 'düşük kültür' konumuna yerleştiren bir hiyerarşi kuruyor - karşılaştırmalı mitolojinin 19. yüzyıldan miras aldığı bir sorun. Ayrıca şu ayrım korunmalı: TEK TEK MOTİFLERİN derin ortak kökeni test edilebilir bir hipotezdir; BÜTÜN MİTOLOJİLERİN tek soyağacına oturtulması şimdilik bir çerçeve önerisidir.",
+    divergence_type: ["medya-abartisi", "ideolojik-secim"],
+    evidence: [
+      "Tez, Avrasya ve Amerika mitolojilerinin yaratılıştan yıkıma uzanan tutarlı bir hikâye çizgisi paylaştığını, Sahra altı Afrika, Avustralya ve Yeni Gine geleneklerinin ise böyle bir çizgi taşımadığını savunur.",
+    ],
+    counter_evidence: [
+      "Sınıflandırma ölçütü tutarsız uygulanıyor: bir gelenek yazarın öyle demesiyle birinci gruba konuyor, aynı boşluklar öteki grupta farklı yorumlanıyor.",
+      "İstisna sayısı şemayı zayıflatacak kadar çok: 'şu grupta bulunmaz' denen motifler öteki grupta bulunabiliyor.",
+      "Kullanılan derlemelerin önemli bölümü güncelliğini yitirmiş kaynaklardır.",
+      "Ayrım, gruplar arasında bir kültürel hiyerarşi kuruyor ve bu, ırksal önyargı kaygısı doğuruyor.",
+      "Destekleyici olarak sunulan diğer alanlardan gelen kanıtların önemli bölümü tartışmalı veya belirsiz; teze ters düşen yorumlar da mevcut - doğrulama yanlılığı işareti.",
+    ],
+    open_questions: [
+      "İki aile ayrımı, ölçütler tutarlı uygulandığında ayakta kalır mı?",
+    ],
+    sources: [
+      {
+        tier: "peer-reviewed",
+        type: "book",
+        authors: ["Witzel, E. J. Michael"],
+        year: 2012,
+        title: "The Origins of the World's Mythologies",
+        publisher: "Oxford University Press",
+        language: "en",
+      },
+      {
+        tier: "peer-reviewed",
+        type: "article",
+        title: "JFR Review: The Origins of the World's Mythologies",
+        container: "Journal of Folklore Research",
+        url: "http://www.jfr.indiana.edu/review.php?id=1613",
+        language: "en",
+        accessed: "2026-09-07",
+        note: "Alan içi eleştirel değerlendirme.",
+      },
+    ],
+    checked: CHECKED,
+    used_in: ["gokteki-ayi"],
+  },
+
+  {
+    id: "motif-yoklugu-cevre",
+    claim:
+      "Bir mitolojik motifin bir gelenekte bulunmaması her zaman kültürel mesafeyi gösterir.",
+    status: "refuted",
+    confidence: "high",
+    topic: ["mitoloji", "yontem", "cevre"],
+    subject: {
+      site: "İnuit bölgesi - ağaç sınırının kuzeyi",
+      region: "Kuzey Kutbu",
+      modern_country: "Kanada / Grönland / ABD (Alaska)",
+      coordinates: { lat: 68.0, lon: -100.0 },
+    },
+    period: {
+      earliest: 1000,
+      latest: 1950,
+      era_label: "Etnografik derleme dönemi",
+      precision: "range",
+      dating_method: ["historical-record"],
+    },
+    disciplines: ["antropoloji", "jeoloji"],
+    popular_claim:
+      "Dünya ağacı motifi neredeyse evrenseldir; bulunmadığı yerler bu evrensel mirastan kopmuş demektir.",
+    divergence:
+      "İnuit geleneğinde dünya ağacı yok - ve sebebi kültürel uzaklık değil, AĞAÇ SINIRININ KUZEYİNDE YAŞAMAK. Bir motifin yokluğu bazen sadece o şeyin orada bulunmadığını gösterir. Karşılaştırmalı mitolojinin en sık atladığı nokta budur: karşılaştırılan halklar AYNI MALZEMEYE SAHİP DEĞİLDİR. Evrensellik iddiaları en çok burada tökezliyor.",
+    divergence_type: ["kategori-hatasi"],
+    evidence: [
+      "Dünya ağacı motifi Hint, Çin, İskandinav ve Sibirya geleneklerinde merkezî yer tutar.",
+      "İnuit yerleşim bölgesinin büyük bölümü ağaç sınırının kuzeyindedir; ağaç yerel çevrede bulunmaz.",
+    ],
+    counter_evidence: [
+      "Çevresel açıklama her yokluk için geçerli değildir; bazı yokluklar gerçekten kültürel ayrışmayı gösterir. Bu kayıt 'her zaman kültürel mesafe' iddiasını çürütür, çevrenin her zaman belirleyici olduğunu savunmaz.",
+      "Sürüklenmiş odun (driftwood) İnuit maddi kültüründe kullanılıyordu; ağacın tamamen bilinmediği söylenemez.",
+    ],
+    sources: [
+      {
+        tier: "peer-reviewed",
+        type: "chapter",
+        title: "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
+        url: "https://link.springer.com/content/pdf/10.1007/978-3-319-39445-9_6.pdf",
+        language: "en",
+        accessed: "2026-09-07",
+        note: "Çevre ve motif dağılımı ilişkisi tartışması için.",
+      },
+    ],
+    checked: CHECKED,
+    used_in: ["gokteki-ayi"],
+  },
+
+  {
+    id: "gelenek-tek-kutu-hatasi",
+    claim:
+      "'Kızılderili mitolojisi' ve 'Eskimo mitolojisi' karşılaştırmalarda tek bir gelenek olarak ele alınabilir.",
+    status: "refuted",
+    confidence: "high",
+    topic: ["mitoloji", "yontem", "karsilastirmali-mitoloji"],
+    subject: {
+      site: "Kuzey ve Güney Amerika yerli gelenekleri",
+      region: "Amerika kıtaları ve Kuzey Kutbu",
+      modern_country: "çok uluslu",
+    },
+    period: {
+      earliest: 1800,
+      latest: 2026,
+      era_label: "Etnografik derlemeden bugüne",
+      precision: "range",
+      dating_method: ["historical-record"],
+    },
+    disciplines: ["antropoloji", "dilbilim"],
+    popular_claim:
+      "Kızılderili mitolojisinde de aynı motif var - demek ki motif evrensel.",
+    divergence:
+      "'Kızılderili mitolojisi' diye tek bir şey yoktur: iki kıtaya yayılmış, birbirinden DİL AİLESİ DÜZEYİNDE ayrı yüzlerce gelenek vardır. Aynı şey 'Eskimo' için de geçerli - İnuit ve Yupik gelenekleri ayrıdır ve kendi içlerinde de bölgeseldir. 'Yunan mitolojisi' ile 'Kızılderili mitolojisi'ni aynı sütun düzeyine koymak, bir şehri bir kıtayla karşılaştırmaktır. Hata TEK YÖNDE çalışır: çeşitliliği tek kutuya sıkıştırdığınızda o kutuda 'her şey' bulunur ve her benzerlik doğrulanmış görünür.",
+    divergence_type: ["kategori-hatasi", "somurge-anlatisi"],
+    evidence: [
+      "Amerika kıtalarında birbirinden dil ailesi düzeyinde ayrı yüzlerce yerli gelenek vardır.",
+      "İnuit ve Yupik gelenekleri ayrıdır; kendi içlerinde de bölgesel farklar taşır.",
+      "Sütunlar tek tek geleneklere bölündüğünde karşılaştırma kutularının çoğu boş ya da 'veri yetersiz' çıkar.",
+    ],
+    counter_evidence: [
+      "Bölgesel gruplamalar (örneğin Kuzeydoğu Ormanları, Kutup bölgesi) yöntemsel olarak savunulabilir; itiraz bu tür dikkatli gruplamalara değil, kıta ölçeğinde tek kutuya karşıdır.",
+    ],
+    sources: [
+      {
+        tier: "peer-reviewed",
+        type: "article",
+        title: "The Cultural Transmission and Evolution of Folk Narratives",
+        url: "https://durham-repository.worktribe.com/OutputFile/1642267",
+        language: "en",
+        accessed: "2026-09-07",
+        note: "Örneklem ve birim sorunları tartışması.",
+      },
+    ],
+    checked: CHECKED,
+    used_in: ["gokteki-ayi"],
+  },
+];
+
+const mevcut = new Set(list.map((r) => r.id));
+const eklenen = [];
+for (const r of yeni) {
+  if (mevcut.has(r.id)) { console.log("ATLANDI:", r.id); continue; }
+  list.push(r);
+  eklenen.push(r.id);
+}
+writeFileSync(path, JSON.stringify(list, null, 2) + "\n", "utf8");
+console.log(`${eklenen.length} kayıt eklendi -> ${path}`);
+eklenen.forEach((id) => console.log("  +", id));
+console.log("mitoloji.json toplam:", list.length);
