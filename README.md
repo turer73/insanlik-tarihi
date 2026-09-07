@@ -1,168 +1,188 @@
 # İnsanlık Tarihi — Bulgu Veri Tabanı
 
-Tarih, bilim, sanat ve teknoloji konularında özgün Türkçe derin incelemeler için kurulan
-araştırma altyapısı. Depo iki şeyi birlikte tutar: **yayımlanan yazılar** (`articles/`)
-ve **yazıların dayandığı bulgular** (`data/findings/`). İkisi `used_in` / `articles.json`
-üzerinden birbirine bağlıdır.
+Tarih, bilim, sanat ve teknoloji konularındaki Türkçe derin incelemeler için
+kurulan araştırma ve yayın altyapısıdır. Depo iki katmanı birlikte tutar:
 
-## Neden veri tabanı
+- `articles/`: yayımlanan anlatılar,
+- `data/findings/`: anlatıların dayandığı yapılandırılmış bulgular.
 
-Yazılar bulgulara `id` ile atıf yapar. Bir bulgunun durumu değiştiğinde
-(`status` güncellenir, yeni kaynak çıkar, iddia çürütülür) `used_in` alanı
-**hangi yazıların güncellenmesi gerektiğini** söyler. Bu olmadan büyüyen bir
-içerik sitesi sessizce çürür — 2024'te değişen bir bulgu 2022'de yazılmış
-yazıda yanlış hâliyle kalır.
+İki katman `used_in` ve `data/articles.json` üzerinden birbirine bağlanır.
+Kanonik kaynak Git deposudur; üretilen bundle ve HTML araçları çıktıdır.
 
-## Birim: iddia, gerçek değil
+## Temel ilke: kayıt bir gerçek değil, değerlendirilmiş bir iddiadır
 
-Bu veri tabanının kaydı bir "gerçek" değil, **bir iddianın kanıt karşısındaki
-durumu**dur. Bu yüzden `status` alanı doğru/yanlış ikilisi değil:
+Her kayıt tek ve test edilebilir bir iddiayı, o iddianın kanıt karşısındaki
+durumunu ve sınırlılıklarını taşır.
 
-| status | anlamı |
+| `status` | Anlamı |
 |---|---|
-| `established` | Geniş uzlaşı, birden çok bağımsız kanıt hattı |
-| `contested` | Ciddi uzmanlar anlaşamıyor, kanıt gerçekten bölüyor |
-| `minority` | Gerçek bir hipotez ama ana akım değil |
-| `refuted` | İddia edildi, yanlışlandı |
-| `unknown` | Soru açık, güçlü bir konum yok |
-| `unmeasurable` | **Yöntem yapısal olarak cevap veremiyor** |
+| `established` | Geniş uzlaşı ve yeterli kanıt |
+| `contested` | Uzmanlar arasında gerçek ve önemli görüş ayrılığı |
+| `minority` | Literatürde yaşayan fakat ana akım olmayan hipotez |
+| `refuted` | İleri sürülmüş ve kanıtla yanlışlanmış iddia |
+| `unknown` | Soru açık; güçlü bir sonuç yok |
+| `unmeasurable` | Mevcut yöntem soruyu yapısal olarak cevaplayamıyor |
 
-`unmeasurable` bu projeye özgüdür ve "nasıl biliyoruz" omurgasını şemaya gömer.
-Örnekler: Kapadokya yer altı şehirleri (kayaya oymada stratigrafi yoktur),
-Etemenanki'nin yüksekliği (yapı yok edildi, yeni ölçüm imkânsız).
+`confidence`, iddianın olasılığı değil **sınıflandırma güvenidir**. Örneğin
+`status: unknown` ve `confidence: high`, “bu sorunun bugün cevaplanamadığına
+yüksek güven var” demektir.
 
-## Ayırt edici alan: `popular_claim` + `divergence`
+## Popüler anlatı ile bilimsel durumun ayrılması
 
-Her kayıt, varsa popüler kaynaklardaki hâlini ve **neden saptığını** taşır.
-`divergence_type` sapmanın mekanizmasını sınıflar: `eski-ceviri`,
-`guncellenmemis`, `turizm-kopyalamasi`, `ideolojik-secim`, `medya-abartisi`,
-`somurge-anlatisi`, `kategori-hatasi`, `hayatta-kalma-yanliligi`,
-`provenans-yoklugu`.
+Bir kayıt gerekliyse şu iki alanı birlikte taşır:
 
-Zamanla bu alan kendi başına bir bulgu üretir: Türkçe popüler tarih içeriğinde
-en sık hangi mekanizmayla sapılıyor.
+- `popular_claim`: dolaşımdaki yaygın anlatı,
+- `divergence`: bu anlatının bilimsel durumdan neden ayrıştığı.
+
+`divergence_type`, sapma mekanizmasını sınıflar: eski çeviri, güncellenmemiş
+bilgi, turizm kopyalaması, ideolojik seçim, medya abartısı, sömürge anlatısı,
+kategori hatası, hayatta kalma yanlılığı ve provenans yokluğu.
 
 ## Kaynak katmanları
 
-| tier | ne | kural |
-|---|---|---|
-| `primary` | Antik metin, kazı raporu, edisyon, veri seti | — |
-| `peer-reviewed` | Hakemli yayın | — |
-| `institutional` | UNESCO, müze, üniversite duyurusu | — |
-| `popular` | Medya | **Tek dayanak olamaz** |
-| `unreliable` | Turizm / içerik sitesi | **İddianın kanıtı sayılmaz** |
+| `tier` | Kullanım |
+|---|---|
+| `primary` | Antik metin, yazıt, elyazması, kazı raporu, veri seti |
+| `peer-reviewed` | Hakemli makale, kitap veya bölüm |
+| `institutional` | Müze, üniversite, UNESCO ve benzeri kurum kaynağı |
+| `popular` | Genel okur yayını; bilimsel iddianın tek dayanağı olamaz |
+| `unreliable` | Turizm/içerik sitesi; yalnızca popüler iddianın dolaşımını belgeleyebilir |
 
-`unreliable` kaydediliyor çünkü `popular_claim`'in *kendisinin* kanıtı o.
-Turizm sitesi "Babil Kulesi 91 metreydi" diyorsa, bu iddianın doğruluğunun
-değil, **popüler hâlin ne olduğunun** belgesidir.
-
-Doğrulayıcı, yalnızca `popular`/`unreliable` kaynağa dayanan kaydı **hata**
+Doğrulayıcı, yalnızca `popular` veya `unreliable` kaynaklara dayanan kaydı hata
 sayar.
 
-## Yapı
+## Şema v2: kanıtı kaynağın belirli yerine bağlamak
 
+Yeni ve göç edilmiş kayıtlar `schema_version: 2` kullanır. Her kaynak kalıcı bir
+kimlik, her kanıt da bir veya daha fazla konumlu atıf taşır:
+
+```json
+{
+  "schema_version": 2,
+  "id": "ornek-bulgu",
+  "claim": "Tek cümlelik test edilebilir iddia.",
+  "status": "contested",
+  "confidence": "medium",
+  "topic": ["ornek"],
+  "evidence": [
+    {
+      "id": "birinci-kanit",
+      "text": "Kaynakta ölçülen veya bildirilen sonuç.",
+      "citations": [
+        {
+          "source_ref": "yazar-2026-makale",
+          "locator": "s. 12-14, Şekil 3",
+          "support_type": "direct"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "yazar-2026-makale",
+      "tier": "peer-reviewed",
+      "type": "article",
+      "authors": ["Yazar, Ad"],
+      "year": 2026,
+      "title": "Makale başlığı",
+      "container": "Dergi",
+      "doi": "10.xxxx/xxxxx"
+    }
+  ],
+  "checked": "2026-09-07",
+  "review": {
+    "status": "draft"
+  }
+}
 ```
-schema/finding.schema.json   Şema (JSON Schema 2020-12)
-data/findings/*.json         Bulgular, konuya göre gruplanmış diziler
-scripts/validate.mjs         Doğrulama + bütünlük raporu (bağımlılık yok)
-```
 
-Kaynak doğrusu **git'tir**, veri tabanı değil. Sebebi: bir bulgunun durumu
-değiştiğinde git geçmişi *ne zaman ve neden* değiştiğini saklar. SQL'de
-`UPDATE` bunu siler. İleride site araması için D1'e senkronlanabilir, ama
-kanonik kaynak burası kalır.
+`support_type` değerleri:
 
-## Kullanım
+| Değer | Anlamı |
+|---|---|
+| `direct` | Kaynak sonucu doğrudan ölçer veya açıkça bildirir |
+| `inference` | Projenin kaynak verisinden yaptığı işaretlenmiş çıkarım |
+| `context` | Arka plan sağlar; iddiayı tek başına kanıtlamaz |
+| `claim-origin` | Popüler veya eski iddianın kökenini belgeler |
+| `counter` | İddiaya karşı kanıt veya yayımlanmış itiraz |
+
+Mevcut v1 kayıtlar çalışmaya devam eder. Göç, kaynak konumları gerçekten
+doğrulanarak kayıt kayıt yapılır; düz metni otomatik olarak “atıflı” göstermeye
+çalışan toplu bir dönüşüm kullanılmaz.
+
+## İnceleme durumu
+
+V2 kayıtları editoryal durum taşıyabilir:
+
+- `draft`: kaynak zinciri kuruluyor veya uzman incelemesi bekleniyor,
+- `editor-reviewed`: yapı, künye ve çıkarım zinciri kontrol edildi,
+- `expert-reviewed`: konu uzmanı içerik incelemesi yaptı.
+
+Bu alan, `status` ve `confidence` değerlerinden ayrıdır.
+
+## Kurulum ve kalite kapısı
+
+Node.js 18 veya üzeri yeterlidir; harici paket bağımlılığı yoktur.
 
 ```bash
-node scripts/validate.mjs
+npm run validate          # mevcut veri tabanı ve bütünlük kuralları
+npm run validate:strict   # verilen bütün kayıtların v2 olmasını ister
+npm run validate:example  # gerçek kaynaklı v2 örneği
+npm test                  # araç uyumluluğu ve denetim şablonu testleri
+npm run build             # bundle ve dist/ araçlarını üretir
+npm run check             # CI ile aynı tam kalite kapısı
 ```
 
-Şema uyumu, kimlik çakışması, referans bütünlüğü ve içerik kurallarını denetler;
-ayrıca alan doldurma oranı raporu verir.
+Doğrulayıcı şunları denetler:
 
-**İçerik kuralları (uyarı üretir):**
-- `contested` / `minority` ise `counter_evidence` zorunlu — tek taraflı kayıt işe yaramaz
-- `popular_claim` varsa `divergence` zorunlu — "yanlış" demek yetmez, mekanizma gerekir
-- `volatile` kayıt 180 günden eskiyse yeniden kontrol uyarısı
+- JSON şeması, kimlik biçimleri ve tekrarlar,
+- kanıt → kaynak → konum referans bütünlüğü,
+- DOI, URL ve gerçek takvim tarihi biçimleri,
+- ters tarih aralıkları,
+- `used_in` ve sürümleme bağlantıları,
+- tartışmalı kayıtların karşı kanıtı,
+- bibliyografik asgari alanlar,
+- değişken kayıtların bayatlık süresi,
+- v1’den v2’ye kalan göç borcu.
+
+Her pull request’te GitHub Actions `npm run check` çalıştırır.
+
+## Yayın araçları
+
+`npm run build`, `tools/*.template.html` şablonlarından tek dosyalık HTML
+çıktıları üretir:
+
+- `dist/zaman-cizelgesi.html`: ölçekli kronoloji, yoğunluk ve eşzamanlılık görünümü,
+- `dist/bulgu-veri-tabani.html`: arama ve çok boyutlu filtreleme,
+- `dist/kanit-denetimi.html`: yalnızca v2 kayıtlarında kanıt, kaynak, konum ve
+  inceleme zincirini gösteren editoryal denetim ekranı.
+
+İlk iki araç geçiş sürecinde v1 ve v2 kayıtları birlikte gösterebilmek için
+yayın kopyasında kanıtları okunabilir düz metne dönüştürür. Kanonik JSON
+değişmez. `kanit-denetimi.html` ise doğrudan yapılandırılmış v2 verisini okur.
 
 ## Yıl gösterimi
 
-İşaretli tam sayı: negatif = MÖ, pozitif = MS. **Sıfır yılı yoktur** —
-doğrulayıcı `0` girilirse hata verir. MÖ 9500 → `-9500`.
+Tarihsel yıllar işaretli tam sayıdır:
 
-## Doldurma durumu
+- negatif: MÖ,
+- pozitif: MS,
+- `0`: geçersizdir; tarihsel takvimde sıfır yılı kullanılmaz.
 
-`scripts/enrich-2026-09.mjs` ile ilk sürümde yazılmış 38 kayda 179 alan eklendi.
-Güncel doldurma oranı (doğrulayıcı raporundan):
-
-| alan | oran |
-|---|---|
-| `period` | %100 |
-| `disciplines` | %100 |
-| `subject` | %85 |
-| `people` | %74 |
-| `divergence_type` | %66 |
-| `languages` | %64 |
-
-Boş kalanlar çoğunlukla yer/dil bağı olmayan yöntem ve bilim-sosyolojisi
-kayıtları; oraya zorla veri koymak yanlış olur.
-
-`counter_evidence` %42'de — doğrulayıcı bunu yalnızca `contested` ve `minority`
-kayıtlar için zorunlu tutuyor, `established` kayıtlarda boş olması normaldir.
-
-## Araçlar
-
-```bash
-node scripts/build-tools.mjs [cikti-dizini]
-```
-
-`tools/*.template.html` şablonlarına `data/findings.bundle.json` verisini gömüp
-yayına hazır tek dosyalık HTML üretir. Şablonlarda `__DATA__` yer tutucusu bulunur.
-
-- **zaman-cizelgesi.html** — her bulgu, `period.earliest`–`period.latest` aralığı
-  boyunca ölçekli bir çubuk. Üç ölçek (Uygarlıklar / İnsan / Derin zaman),
-  kronolojik-bölge-durum sıralaması, yoğunluk histogramı. Log ölçek seçildiğinde
-  yakın geçmişi şişirdiği uyarısı gösterilir.
-  - **Çubuğa tıkla** → bulgu ayrıntısı + `used_in` üzerinden yazı bağlantıları.
-  - **Çubuk dışına tıkla** → dikey kılavuz kilitlenir, o tarihte aktif olmayan
-    satırlar soluklaşır ve çakışan bulgular listelenir. `Esc` kaldırır.
-  - Yazı bağlantıları `data/articles.json` dosyasından gelir; şablona
-    `__ARTICLES__` yer tutucusuyla gömülür. Yeni yazı yayımlandığında bu dosyaya
-    slug + URL eklenmelidir, yoksa bulgu "henüz bir yazıda kullanılmadı" görünür.
-- **bulgu-veri-tabani.html** — kayıt tarayıcı; durum, disiplin, bölge, sapma türü
-  ve kaynak katmanına göre filtreleme.
-
-İkisi de veri tabanından üretilir; yeni bulgu eklendiğinde yeniden çalıştırmak yeter.
+Örnek: MÖ 9500 → `-9500`.
 
 ## Dizin yapısı
 
-| yol | içerik |
+| Yol | İçerik |
 |---|---|
-| `articles/` | Yayımlanan yazıların HTML kaynağı (tek dosya, bağımsız çalışır) |
-| `data/findings/` | Konu bazlı bulgu dosyaları — veri tabanının kendisi |
-| `data/articles.json` | slug → başlık/URL/sıra kaydı |
-| `schema/` | `finding.schema.json` — kaydın sözleşmesi (JSON Schema 2020-12) |
-| `scripts/` | `validate.mjs` (bağımlılıksız doğrulayıcı), `build-tools.mjs`, tek seferlik göç betikleri |
-| `tools/` | Zaman çizelgesi ve bulgu tarayıcısının şablonları (`__DATA__` yer tutuculu) |
-| `dist/` | Şablonlara veri enjekte edilmiş, yayımlanabilir hâl |
+| `articles/` | Yazıların bağımsız HTML kaynakları |
+| `data/findings/` | Konu bazlı kanonik bulgu dizileri |
+| `data/articles.json` | Yazı slug, başlık, sıra ve URL kaydı |
+| `schema/` | JSON Schema 2020-12 sözleşmesi |
+| `scripts/` | Doğrulama, test, göç ve derleme araçları |
+| `tools/` | Yayın aracı şablonları |
+| `dist/` | Verisi gömülmüş yayımlanabilir HTML çıktıları |
+| `examples/` | Gerçek kaynaklı şema v2 örnekleri |
 
-## Çalıştırma
-
-Bağımlılık yok, kurulum yok. Node 18+ yeterli.
-
-```bash
-node scripts/validate.mjs      # şema + gönderme bütünlüğü + içerik kuralları
-node scripts/build-tools.mjs   # dist/ altına iki aracı üretir
-```
-
-Doğrulayıcı yalnızca şemaya bakmaz; **içerik kurallarını** da uygular:
-`contested`/`minority` bir kaydın `counter_evidence` alanı boşsa uyarır,
-`popular_claim` varsa `divergence` ister ve yalnızca `popular`/`unreliable`
-kaynağa dayanan bir kaydı **hata** sayar — iddianın bir çıpası olmalıdır.
-
-## Neden git, neden SQL değil
-
-Bir bulgunun `status` alanı değiştiğinde önemli olan yeni değer değil,
-**değişmiş olması**. `UPDATE` bu tarihi siler; commit tutar. Kayıt sayısı
-SQL gerektirecek mertebede değil ve muhtemelen hiç olmayacak.
+Katkı ve editoryal kurallar için [`CONTRIBUTING.md`](CONTRIBUTING.md) dosyasına
+bakın.
