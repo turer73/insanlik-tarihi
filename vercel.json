@@ -9,6 +9,17 @@
       "permanent": true
     },
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.kanitatlasi.com"
+        }
+      ],
+      "destination": "https://kanitatlasi.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
