@@ -152,6 +152,46 @@
   .ka-finding-body{padding-inline:.8rem}
 }
 
+/* Arama sorusu: başlığın hemen altındaki, aranan soruyu açıkça söyleyen alt başlık. */
+.ka-search-question{
+  margin:.6rem 0 0;
+  max-width:56ch;
+  color:var(--ka-muted,#4e4849);
+  font:500 clamp(1rem,2vw,1.25rem)/1.45 var(--display,var(--serif,Georgia,serif));
+}
+
+/* İlgili dosyalar: etiket örtüşmesiyle üretilen, yazı sonundaki yönlendirme listesi. */
+.ka-related,.ka-attribution{
+  max-width:var(--wrap,1180px);
+  margin:clamp(2rem,5vw,3.5rem) auto 0;
+  padding:1.3rem 1.4rem;
+  border:1px solid var(--ka-line);
+  border-radius:var(--ka-radius);
+  background:color-mix(in srgb,var(--ka-bg-soft,#ded8d0) 26%,var(--ka-bg,#f5f2ed));
+}
+.ka-related-heading{margin:0 0 .9rem;color:var(--ka-ink);font:650 1.15rem/1.2 var(--display,var(--serif,Georgia,serif))}
+.ka-related ul{margin:0;padding:0;list-style:none;display:grid;gap:.45rem}
+.ka-related li{display:flex;flex-wrap:wrap;gap:.25rem .7rem;align-items:baseline}
+.ka-related li a{color:var(--ka-ink);font-weight:650;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ka-accent) 45%,transparent)}
+.ka-related li a:hover{color:var(--ka-accent)}
+.ka-related li span{color:var(--ka-faint);font:600 .72rem/1.4 var(--mono,ui-monospace,monospace);letter-spacing:.05em;text-transform:uppercase}
+.ka-related-hub{margin:.9rem 0 0;color:var(--ka-muted);font-size:.9rem}
+.ka-related-hub a{color:var(--ka-accent);font-weight:650}
+
+.ka-attribution p{margin:.5rem 0;color:var(--ka-muted);font-size:.92rem;line-height:1.6;max-width:72ch}
+.ka-attribution a{color:var(--ka-accent)}
+.ka-attribution-cite{
+  margin:.8rem 0;
+  padding:.7rem 1rem;
+  border-inline-start:3px solid var(--ka-accent);
+  background:color-mix(in srgb,var(--ka-accent-soft,#dcebed) 55%,transparent);
+  color:var(--ka-ink);
+  font:500 .88rem/1.6 var(--mono,ui-monospace,monospace);
+  overflow-wrap:anywhere;word-break:break-word;
+}
+.ka-attribution-meta{font-size:.84rem!important;color:var(--ka-faint)!important}
+.ka-attribution-kit{display:inline-block;margin-top:.4rem;font:600 .8rem/1 var(--mono,ui-monospace,monospace)}
+
 @media (min-width:700px){
   .ka-evidence-list{grid-template-columns:repeat(2,minmax(0,1fr))}
   .ka-sources ol{grid-template-columns:repeat(2,minmax(0,1fr))}

@@ -24,6 +24,7 @@ const TARIH = tarihler(ROOT, TODAY);
 const context = { window: {} };
 vm.runInNewContext(await readFile(path.join(ROOT, 'assets', 'articles-data.js'), 'utf8'), context, { filename: 'assets/articles-data.js' });
 const articles = context.window.ITArticles;
+const hubs = Object.values(JSON.parse(await readFile(path.join(ROOT, 'data', 'konu-merkezleri.json'), 'utf8'))).sort((a, b) => a.sira - b.sira);
 
 const rows = [
   {
@@ -49,8 +50,11 @@ const rows = [
   { no: 'A1', baslik: 'Ölçekli Zaman Çizelgesi', url: `${ORIGIN}/dist/zaman-cizelgesi.html`, meta: 'Zaman Çizelgesi — Kanıt Atlası', aciklama: 'Bulguları tarih ekseninde gösteren araç.', kategori: 'Araç', ilk: ilkYayin(TARIH, 'dist/zaman-cizelgesi.html'), son: sonDegisiklik(TARIH, 'dist/zaman-cizelgesi.html') },
   { no: 'A2', baslik: 'Bulgu Veri Tabanı', url: `${ORIGIN}/dist/bulgu-veri-tabani.html`, meta: 'Bulgu Veri Tabanı — Kanıt Atlası', aciklama: 'İddia, kanıt, karşı kanıt ve kaynak kayıtlarının aranabilir tablosu.', kategori: 'Araç', ilk: ilkYayin(TARIH, 'dist/bulgu-veri-tabani.html'), son: sonDegisiklik(TARIH, 'dist/bulgu-veri-tabani.html') },
   { no: 'A3', baslik: 'Kanıt Denetimi', url: `${ORIGIN}/dist/kanit-denetimi.html`, meta: 'Kanıt Denetimi — Kanıt Atlası', aciklama: 'Bulguların statü ve inceleme durumunun denetim görünümü.', kategori: 'Araç', ilk: ilkYayin(TARIH, 'dist/kanit-denetimi.html'), son: sonDegisiklik(TARIH, 'dist/kanit-denetimi.html') },
+  { no: 'K0', baslik: 'Konu Merkezleri', url: `${ORIGIN}/konular.html`, meta: 'Konu Merkezleri — Kanıt Atlası', aciklama: 'Kayıp şehirler, mitler, dinler tarihi ve iklim-uygarlık dosya kümeleri.', kategori: 'Merkez', ilk: ilkYayin(TARIH, 'data/konu-merkezleri.json'), son: sonDegisiklik(TARIH, 'data/konu-merkezleri.json') },
+  ...hubs.map(hub => ({ no: `K${hub.sira}`, baslik: hub.baslik, url: `${ORIGIN}/konular/${hub.slug}.html`, meta: `${hub.baslik} — Konu Merkezi — Kanıt Atlası`, aciklama: hub.kisa, kategori: 'Merkez', ilk: ilkYayin(TARIH, 'data/konu-merkezleri.json'), son: sonDegisiklik(TARIH, 'data/konu-merkezleri.json') })),
   { no: 'S1', baslik: 'Hakkında ve Yöntem', url: `${ORIGIN}/hakkinda.html`, meta: 'Hakkında ve Yöntem — Kanıt Atlası', aciklama: 'Kanıt Atlası yayın kimliği, araştırma yöntemi, inceleme durumu, düzeltme süreci ve lisans bilgisi.', kategori: 'Sayfa', ilk: ilkYayin(TARIH, 'pages/hakkinda.html'), son: sonDegisiklik(TARIH, 'pages/hakkinda.html') },
   { no: 'S2', baslik: 'Düzeltme Günlüğü', url: `${ORIGIN}/duzeltmeler.html`, meta: 'Düzeltme Günlüğü — Kanıt Atlası', aciklama: 'Kanıt Atlası içerik düzeltmelerinin açık günlüğü.', kategori: 'Sayfa', ilk: ilkYayin(TARIH, 'pages/duzeltmeler.html'), son: sonDegisiklik(TARIH, 'pages/duzeltmeler.html') },
+  { no: 'S3', baslik: 'Yeniden Yayımlama Kiti', url: `${ORIGIN}/yeniden-yayin.html`, meta: 'Yeniden Yayımlama Kiti — Kanıt Atlası', aciklama: 'CC BY 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi.', kategori: 'Sayfa', ilk: ilkYayin(TARIH, 'pages/yeniden-yayin.html'), son: sonDegisiklik(TARIH, 'pages/yeniden-yayin.html') },
 ];
 
 // Önceki tablodaki elle doldurulmuş İndeks/Not sütunlarını URL eşleşmesiyle koru.

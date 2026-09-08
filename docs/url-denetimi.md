@@ -39,8 +39,14 @@ Bu tablo sitemap'teki bütün URL'leri tek tek izler. **Betik tarafından üreti
 | A1 | [Ölçekli Zaman Çizelgesi](https://kanitatlasi.com/dist/zaman-cizelgesi.html) | Zaman Çizelgesi — Kanıt Atlası | Bulguları tarih ekseninde gösteren araç. | Araç | 2026-09-07 | 2026-09-08 |  |  |
 | A2 | [Bulgu Veri Tabanı](https://kanitatlasi.com/dist/bulgu-veri-tabani.html) | Bulgu Veri Tabanı — Kanıt Atlası | İddia, kanıt, karşı kanıt ve kaynak kayıtlarının aranabilir tablosu. | Araç | 2026-09-07 | 2026-09-07 |  |  |
 | A3 | [Kanıt Denetimi](https://kanitatlasi.com/dist/kanit-denetimi.html) | Kanıt Denetimi — Kanıt Atlası | Bulguların statü ve inceleme durumunun denetim görünümü. | Araç | 2026-09-07 | 2026-09-07 |  |  |
-| S1 | [Hakkında ve Yöntem](https://kanitatlasi.com/hakkinda.html) | Hakkında ve Yöntem — Kanıt Atlası | Kanıt Atlası yayın kimliği, araştırma yöntemi, inceleme durumu, düzeltme süreci ve lisans bilgisi. | Sayfa | 2026-09-08 | 2026-09-08 |  |  |
-| S2 | [Düzeltme Günlüğü](https://kanitatlasi.com/duzeltmeler.html) | Düzeltme Günlüğü — Kanıt Atlası | Kanıt Atlası içerik düzeltmelerinin açık günlüğü. | Sayfa | 2026-09-08 | 2026-09-08 |  |  |
+| K0 | [Konu Merkezleri](https://kanitatlasi.com/konular.html) | Konu Merkezleri — Kanıt Atlası | Kayıp şehirler, mitler, dinler tarihi ve iklim-uygarlık dosya kümeleri. | Merkez | 2026-09-09 | 2026-09-09 |  |  |
+| K1 | [Kayıp Şehirler ve Uygarlıklar](https://kanitatlasi.com/konular/kayip-sehirler.html) | Kayıp Şehirler ve Uygarlıklar — Konu Merkezi — Kanıt Atlası | Petra'dan Angkor'a, terk edilmiş ve yeniden bulunmuş yerleşimlerin gerçek hikâyesi. | Merkez | 2026-09-09 | 2026-09-09 |  |  |
+| K2 | [Mitler ve Ortak Anlatılar](https://kanitatlasi.com/konular/mitler-anlatilar.html) | Mitler ve Ortak Anlatılar — Konu Merkezi — Kanıt Atlası | Tufandan ateşin çalınmasına: aynı anlatıların farklı kültürlerde belirmesinin kanıtı ve sınırı. | Merkez | 2026-09-09 | 2026-09-09 |  |  |
+| K3 | [Dinler Tarihinin Kanıtları](https://kanitatlasi.com/konular/dinler-tarihi.html) | Dinler Tarihinin Kanıtları — Konu Merkezi — Kanıt Atlası | Kutsal metinler, kopyalar ve kayıtlar: inanç iddialarını tarihsel kanıtla ayıran dosyalar. | Merkez | 2026-09-09 | 2026-09-09 |  |  |
+| K4 | [İklim ve Uygarlık](https://kanitatlasi.com/konular/iklim-uygarlik.html) | İklim ve Uygarlık — Konu Merkezi — Kanıt Atlası | Buzul çağlarından tarım takvimlerine: iklimin uygarlıkları nasıl şekillendirdiği ve nasıl şekillendirmediği. | Merkez | 2026-09-09 | 2026-09-09 |  |  |
+| S1 | [Hakkında ve Yöntem](https://kanitatlasi.com/hakkinda.html) | Hakkında ve Yöntem — Kanıt Atlası | Kanıt Atlası yayın kimliği, araştırma yöntemi, inceleme durumu, düzeltme süreci ve lisans bilgisi. | Sayfa | 2026-09-08 | 2026-09-09 |  |  |
+| S2 | [Düzeltme Günlüğü](https://kanitatlasi.com/duzeltmeler.html) | Düzeltme Günlüğü — Kanıt Atlası | Kanıt Atlası içerik düzeltmelerinin açık günlüğü. | Sayfa | 2026-09-08 | 2026-09-09 |  |  |
+| S3 | [Yeniden Yayımlama Kiti](https://kanitatlasi.com/yeniden-yayin.html) | Yeniden Yayımlama Kiti — Kanıt Atlası | CC BY 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi. | Sayfa | 2026-09-09 | 2026-09-09 |  |  |
 
 ## Nasıl doldurulur?
 

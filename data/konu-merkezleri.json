@@ -1,0 +1,119 @@
+{
+  "kayip-sehirler": {
+    "slug": "kayip-sehirler",
+    "sira": 1,
+    "baslik": "Kayıp Şehirler ve Uygarlıklar",
+    "kisa": "Petra'dan Angkor'a, terk edilmiş ve yeniden bulunmuş yerleşimlerin gerçek hikâyesi.",
+    "giris": [
+      "«Kayıp şehir» anlatısı güçlüdür: cangılın yuttuğu kent, kumun örttüğü uygarlık, kimsenin bilmediği bir yer. Ama bu dosyalar aynı anlatının neresinde durduğunu sorar. Bir yerin «kaybolması» genellikle insanların kaybolması demek değildir; yapının terk edilmesi, hatırlanma biçiminin değişmesi demektir.",
+      "Bu merkezdeki dosyalar, yerleşimin görünen kalıntısı ile görünmeyen altyapısını ayırır: Petra'da kaya mezarları değil su sistemi kenti yaşatır; Angkor'da tapınaklar değil su ağı kentin ölçeğini gösterir. Her dosyada ölçülebilen ile varsayılan ayrı izlenir."
+    ],
+    "kavramlar": [
+      { "terim": "Terk edilme", "anlam": "Bir yerleşimin işlev kaybıyla boşalması; çöküşle değil, dönüşümle de açıklanabilir." },
+      { "terim": "Kanıt yokluğu", "anlam": "Bir izin bulunmaması, olayın olmadığını göstermez; yalnızca kaydın sınırını gösterir." },
+      { "terim": "Uzaktan algılama", "anlam": "LiDAR gibi yöntemlerle bitki örtüsü altındaki yapı izlerinin haritalanması." },
+      { "terim": "Stratigrafi", "anlam": "Katman sıralaması üzerinden yapıların ve buluntuların göreli tarihlenmesi." },
+      { "terim": "Yeniden adlandırma", "anlam": "Bir yerin sonraki kuşaklar tarafından yeni adlar ve işlevlerle anılması; 'kaybolma' duygusunun kaynaklarından biri." }
+    ],
+    "kilometre-taslari": [
+      { "tarih": "MÖ ~6. yy", "olay": "Babil'in asıl kent katmanları; sembolik Babil anlatısı sonradan büyür", "dosya": "babil" },
+      { "tarih": "MÖ 312", "olay": "Petra'nın yazılı kayıtlarda görünmesi; kent su sistemiyle okunur", "dosya": "petra" },
+      { "tarih": "9.–15. yy", "olay": "Angkor'un düşük yoğunluklu kentsel yayılımı; terk edilme çöküş değil dönüşümdür", "dosya": "angkor" },
+      { "tarih": "~15. yy", "olay": "Machu Picchu'nun terk edilmesi; 'keşif' anlatısı 1911 sonrasıdır", "dosya": "machu-picchu" }
+    ],
+    "acik-sorular": [
+      "Angkor'un nüfusu hangi tarihte hangi hızla azaldı; su ağının bozulması sebep mi sonuç muydu?",
+      "Kapadokya yeraltı yerleşimlerinin ilk oyulma tarihi stratigrafiyle belirlenebilir mi?",
+      "Chichén Itzá'daki akustik etkiler yapının tasarım amacı hakkında ne söyleyebilir?",
+      "Petra'nın nüfus kapasitesi hangi bağımsız yöntemle sınanabilir?"
+    ],
+    "dosyalar": ["babil", "petra", "shushtar", "angkor", "tas-tepeler", "machu-picchu", "chichen-itza", "kapadokya", "persepolis", "sumer", "roma-etki"]
+  },
+  "mitler-anlatilar": {
+    "slug": "mitler-anlatilar",
+    "sira": 2,
+    "baslik": "Mitler ve Ortak Anlatılar",
+    "kisa": "Tufandan ateşin çalınmasına: aynı anlatıların farklı kültürlerde belirmesinin kanıtı ve sınırı.",
+    "giris": [
+      "İki halk aynı hikâyeyi anlattığında üç açıklama vardır: ortak köken, temas yoluyla aktarım ya da bağımsız icat. Bu merkezdeki dosyalar, anlatıyı benzerlik hissiyle değil, kaynak zinciriyle sınar: motif nerede ilk kez yazılı hale gelmiş, hangi metin hangi metni görmüş, benzerliğin kendisi hangi koşulda zorunlu?",
+      "Tufan anlatıları, ateş hırsızlığı motifi ve gökyüzündeki ayı gibi örnekler aynı soruyu farklı derinliklerde sorar. Cevapların çoğu 'bağımsız benzerlik' kutusuna düşer; ama aktarım gerçekten olduğunda onu da gösterebilen bir çerçeve kurulur."
+    ],
+    "kavramlar": [
+      { "terim": "Motif", "anlam": "Anlatının taşınabilir en küçük parçası: kaçış, hırsızlık, tanık kuş." },
+      { "terim": "Ortak köken", "anlam": "Anlatının tek bir kaynaktan çıkıp taşınması; metin zinciriyle gösterilmelidir." },
+      { "terim": "Bağımsız icat", "anlam": "Benzer koşulların benzer anlatılar üretmesi; benzerlik tek başına kanıt değildir." },
+      { "terim": "Sözlü gelenek", "anlam": "Yazıya geçmeden önceki aktarım katmanı; doğrudan gözlemlenemez, çıkarımla sınanır." },
+      { "terim": "Yazılı aktarım", "anlam": "Kopya zinciri üzerinden izlenebilen aktarım; metin eleştirisiyle tarihlenir." }
+    ],
+    "kilometre-taslari": [
+      { "tarih": "MÖ ~1700", "olay": "Atrahasis ve Gılgamış'ın tufan anlatıları; İncil'deki tufandan çok önce", "dosya": "tufan-bilmecesi" },
+      { "tarih": "MÖ ~700", "olay": "Hesiodos İşler ve Günler'de Ülker takvimi; tarım ritmi gökyüzüne bağlanır", "dosya": "herkesin-saati" },
+      { "tarih": "MÖ ~460", "olay": "Aiskhylos'un Prometheus tragedyası; ateş hırsızlığı motifinin yazılı hali", "dosya": "calinan-ates" },
+      { "tarih": "6 Mayıs · 8 Kasım", "olay": "Anadolu halk takviminin iki eşiği; gökyüzü, mevsim ve gelenek iç içe", "dosya": "yilin-iki-kapisi" }
+    ],
+    "acik-sorular": [
+      "Büyükayı anlatılarının benzerliği ortak köken mi, gökyüzünün kendisinin zorladığı bir benzerlik mi?",
+      "Tufan anlatısı Mezopotamya'dan ne zaman ve hangi yolla Levant'a taşındı?",
+      "Ülker takviminin hangi uygulamaları doğrudan gözlem, hangileri sonradan atıftır?"
+    ],
+    "dosyalar": ["tufan-bilmecesi", "hatirlamadigimiz-felaketler", "calinan-ates", "gokteki-ayi", "herkesin-saati", "yilin-iki-kapisi", "ayni-cumlede", "mit-ve-sicil", "iskenderiye", "kendi-kaniti", "stonehenge"]
+  },
+  "dinler-tarihi": {
+    "slug": "dinler-tarihi",
+    "sira": 3,
+    "baslik": "Dinler Tarihinin Kanıtları",
+    "kisa": "Kutsal metinler, kopyalar ve kayıtlar: inanç iddialarını tarihsel kanıtla ayıran dosyalar.",
+    "giris": [
+      "Bir metnin kutsal olması, onun tarihsel kayıt olarak okunmasını gerektirmez; bir metnin geç yazılmış olması da onu değersiz kılmaz. Bu merkezdeki dosyalar, inanç anlatıları ile tarihsel kayıt arasındaki mesafeyi ölçer: olay ne zaman olmuş, metin ne zaman yazılmış, aradaki kopya zinciri neye izin veriyor?",
+      "Ölü Deniz Parşömenleri metin tarihini, Hristiyanlık-Roma dosyaları kurumların dönüşümünü, İsa'nın tarihselliği dosyası olay ile kayıt arasındaki zaman mesafesini konu alır. Ortak yöntem değişmez: iddiayı kaynağından, kanıtı hikâyeden ayırmak."
+    ],
+    "kavramlar": [
+      { "terim": "Tarihsellik", "anlam": "Bir kişi veya olayın tarihsel kayıtla sınanabilirliği." },
+      { "terim": "Kopya zinciri", "anlam": "Elyazmasının aslından günümüze geçişindeki ara kopyalar; her halka bir mesafedir." },
+      { "terim": "Kanon", "anlam": "Bir topluluğun kabul ettiği metin listesi; seçim sürecinin kendisi tarihseldir." },
+      { "terim": "Zaman mesafesi", "anlam": "Olay ile onu anlatan en eski kaynak arasındaki fark; güven değerlendirmesinin ölçüsü." },
+      { "terim": "Sessizlikten çıkarım", "anlam": "Beklenen kaydın yokluğunun taşıdığı anlam; zayıf ama bazen ağırlığı olan kanıt." }
+    ],
+    "kilometre-taslari": [
+      { "tarih": "MÖ ~3. yy – MS 1. yy", "olay": "Ölü Deniz Parşömenleri'nin yazıldığı dönem; en eski İbranice İncil metinleri", "dosya": "olu-deniz-parsomenleri" },
+      { "tarih": "MS ~50'ler", "olay": "Pavlus mektupları: İsa'dan kalan en eski yazılı kayıtlar", "dosya": "isa-tarihsellik" },
+      { "tarih": "MS 313", "olay": "Milano Fermanı; Hristiyanlığın kurumsallaşma dönüm noktası", "dosya": "roma-hristiyanlik" },
+      { "tarih": "1947", "olay": "Parşömenlerin Kumran'da bulunması; metin tarihinin yeniden kurulması", "dosya": "olu-deniz-parsomenleri" }
+    ],
+    "acik-sorular": [
+      "Tarihsel İsa hakkındaki en erken kayıtların birbirinden bağımsızlığı ne ölçüde gösterilebilir?",
+      "Kumran topluluğunun kimliği hangi kanıtla hangi kesinlikte söylenebilir?",
+      "Hristiyanlığın Roma'daki büyüme hızı için güvenilir bir sayı var mı?"
+    ],
+    "dosyalar": ["olu-deniz-parsomenleri", "babil", "roma-hristiyanlik", "isa-tarihsellik", "gec-kalan-haberci"]
+  },
+  "iklim-uygarlik": {
+    "slug": "iklim-uygarlik",
+    "sira": 4,
+    "baslik": "İklim ve Uygarlık",
+    "kisa": "Buzul çağlarından tarım takvimlerine: iklimin uygarlıkları nasıl şekillendirdiği ve nasıl şekillendirmediği.",
+    "giris": [
+      "İklim her şeyi açıklar demek de yanlış, iklimi yok saymak da. Bu merkezdeki dosyalar aynı dengeyi kurar: buzul çağlarını yörünge döngüleriyle ölçerken uygarlık çöküşlerini tek bir iklim cümlesine indirgemez; antik hidrolik sistemlerin mühendisliğini incelerken suyu kader olarak okumaz.",
+      "Milanković döngüleri zamanın derin katmanını, tufan dosyası jeoloji ile anlatı arasındaki bağı, Şuşter ve Petra suyun toplumsal örgütlenmesini gösterir. Ortak ders: iklim sınır koyar, ama sınırın içinde seçenekler uygarlığın kendisidir."
+    ],
+    "kavramlar": [
+      { "terim": "Vekil veri", "anlam": "Buz çekirdeği, polen, sediman gibi doğrudan ölçülmemiş dönemlerin dolaylı kaydı." },
+      { "terim": "Yörünge döngüsü", "anlam": "Dünya yörüngesinin biçim, eğiklik ve yalpalama değişimleri; buzul ritminin saati." },
+      { "terim": "Su yönetimi", "anlam": "Toplumun suyu bulma, saklama, bölme ve enerjiye çevirme düzeni." },
+      { "terim": "Hafıza seçimi", "anlam": "Toplumların bazı felaketleri anlatıya çevirip bazılarını silmesi." },
+      { "terim": "Mevsim takvimi", "anlam": "Tarım ritmini gökyüzü gözlemiyle sabitleyen geleneksel zaman bilgisi." }
+    ],
+    "kilometre-taslari": [
+      { "tarih": "MÖ 2,6 milyon – 11.700", "olay": "Buzul çağları döngüsü; yörünge parametreleri ritmi belirler", "dosya": "milankovic" },
+      { "tarih": "MS ~260–270", "olay": "Şuşter hidrolik sistemi; suyu üç kez kullanan mühendislik", "dosya": "shushtar" },
+      { "tarih": "9.–15. yy", "olay": "Angkor'un su ağı; iklim tek başına çöküşü açıklamıyor", "dosya": "angkor" },
+      { "tarih": "MÖ ~700", "olay": "Hesiodos'un Ülker takvimi; mevsim ritmi gökyüzüne bağlanır", "dosya": "herkesin-saati" }
+    ],
+    "acik-sorular": [
+      "Buzul çağı ritminin tam olarak hangi parametreyle kilitlendiği matematiksel olarak çözüldü mü?",
+      "Angkor'un su ağındaki bozulma kronolojisi bağımsız tarihlemeyle doğrulanabilir mi?",
+      "Unutulan felaketlerin hangisi jeolojik kayıtta iz bıraktı, hangisi yalnız anlatıda yaşıyor?"
+    ],
+    "dosyalar": ["milankovic", "tufan-bilmecesi", "hatirlamadigimiz-felaketler", "petra", "shushtar", "angkor", "herkesin-saati", "yilin-iki-kapisi"]
+  }
+}
