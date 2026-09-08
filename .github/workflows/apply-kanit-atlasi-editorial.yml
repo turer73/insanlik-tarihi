@@ -60,8 +60,10 @@ jobs:
             if (!name.endsWith('.js')) continue;
             const file = path.join(dir, name);
             const source = await readFile(file, 'utf8');
-            const normalized = source.replace(/ITCoverData\["([^"]+)"\]/g, "ITCoverData['$1']");
-            if (normalized === source) throw new Error(`Kapak veri anahtarı normalize edilemedi: ${name}`);
+            const slug = path.basename(name, '.js');
+            const match = source.match(/"(data:image\/webp;base64,[^"]+)"/);
+            if (!match) throw new Error(`Kapak veri URI'si çözülemedi: ${name}`);
+            const normalized = `window.ITCoverData=window.ITCoverData||{};window.ITCoverData['${slug}']='${match[1]}';\n`;
             await writeFile(file, normalized, 'utf8');
           }
           NODE
