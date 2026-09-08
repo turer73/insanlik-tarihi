@@ -49,9 +49,9 @@
 
   function renderArtwork(article, context = 'card') {
     if (article.cover) {
-      const eager = context === 'card' && FEATURED_ORDER.indexOf(article.slug) < 6;
-      const source = window.ITCoverData?.[article.slug] || article.cover;
-      return `<img src="${source}" alt="" width="960" height="540" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'}>`;
+      const eager = context === 'card' && FEATURED_ORDER.indexOf(article.slug) >= 0 && FEATURED_ORDER.indexOf(article.slug) < 6;
+      const source = article.cover;
+      return `<img data-editorial-slug="${article.slug}" src="${source}" alt="" width="1200" height="675" decoding="async" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'}>`;
     }
     if (!window.ITVisuals?.render) return '';
     visualInstance += 1;
@@ -255,6 +255,12 @@
   }
 
   function init() {
+    document.addEventListener('error', event => {
+      const image = event.target;
+      const slug = image?.dataset?.editorialSlug;
+      if (!slug || !window.ITVisuals?.render) return;
+      image.outerHTML = window.ITVisuals.render(slug, { decorative: true, instance: 'fallback-' + (++visualInstance) });
+    }, true);
     initTheme();
     initNavigation();
     initViewSwitch();
