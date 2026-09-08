@@ -1,0 +1,84 @@
+name: Apply Kanıt Atlası editorial handoff
+
+on:
+  push:
+    branches:
+      - feat/kanit-atlasi-editorial-live-20260908
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kanit-atlasi-editorial-handoff
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[editorial-applied]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout integration branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconstruct official handoff patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          base64 --decode .editorial-patch-text.tar.gz.b64 | tar -xzf -
+          jq -s 'add' \
+            .editorial-cover-sources-01.json \
+            .editorial-cover-sources-02.json \
+            .editorial-cover-sources-03.json > .editorial-cover-sources.combined.json
+          jq --slurpfile fix .editorial-cover-source-19-fix.json \
+            'map(if .slug == "roma-hristiyanlik" then $fix[0][0] else . end)' \
+            .editorial-cover-sources.combined.json > .editorial-cover-sources.json
+          test "$(jq length .editorial-cover-sources.json)" = "27"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install temporary image processor
+        run: npm install --no-save --package-lock=false sharp@0.34.3
+
+      - name: Download and prepare 27 editorial covers
+        run: node .editorial-patch/scripts/download-and-prepare-covers.mjs "$GITHUB_WORKSPACE"
+
+      - name: Apply homepage and article visual system
+        run: sh .editorial-patch/install-all.sh "$GITHUB_WORKSPACE"
+
+      - name: Run complete repository checks
+        run: npm run check:all
+
+      - name: Remove transfer-only files
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .editorial-patch
+          rm -f \
+            .editorial-patch-text.tar.gz.b64 \
+            .editorial-cover-source-19-fix.json \
+            .editorial-cover-sources-01.json \
+            .editorial-cover-sources-02.json \
+            .editorial-cover-sources-03.json \
+            .editorial-cover-sources.combined.json \
+            .editorial-cover-sources.json \
+            .github/workflows/apply-kanit-atlasi-editorial.yml
+
+      - name: Commit completed integration
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --stat
+          git diff --cached --quiet && { echo "No integration changes produced"; exit 1; }
+          git commit -m "feat: Kanıt Atlası editoryal görsel sistemini tamamla [editorial-applied]"
+          git push origin HEAD:feat/kanit-atlasi-editorial-live-20260908
