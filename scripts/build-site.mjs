@@ -331,15 +331,21 @@ async function brandToolPages() {
 
 // A new HTML response must not reuse JS/CSS from an older deployment in a
 // returning visitor's cache. Hash the final output, including build transforms.
-async function versionPageAssets(directory = OUT) {
+async function finalizePages(directory = OUT) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     const file = path.join(directory, entry.name);
     if (entry.isDirectory()) {
-      if (entry.name !== 'assets') await versionPageAssets(file);
+      if (entry.name !== 'assets') await finalizePages(file);
       continue;
     }
     if (!entry.name.endsWith('.html')) continue;
     let html = await readFile(file, 'utf8');
+    // Redirect-only pages should not generate a second pageview.
+    if (!/location\.replace\(|http-equiv=["']refresh["']/i.test(html)) {
+      html = html.replace('</head>', `<script defer data-domain="kanitatlasi.com" src="https://analytics.3d-labx.com/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>`);
+    }
     const references = [...html.matchAll(/\b(?:src|href)="([^"?#]+\.(?:js|css|svg))"/g)];
     for (const [, url] of references) {
       if (/^(?:[a-z]+:|\/\/)/i.test(url)) continue;
@@ -408,7 +414,7 @@ async function main() {
   await writeFile(path.join(OUT, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: DENY\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()\n  Cross-Origin-Opener-Policy: same-origin\n\n/assets/*\n  Cache-Control: public, max-age=0, must-revalidate\n`);
   await writeFile(path.join(OUT, '_redirects'), '/index.html  /  301\n');
 
-  await versionPageAssets();
+  await finalizePages();
   const built = (await readdir(articleDirectory)).filter(name => name.endsWith('.html')).length;
   if (built !== articles.length) throw new Error(`Yazı çıktısı eksik: ${built}/${articles.length}`);
   console.log(`Kanıt Atlası yayını hazır: ${built} yazı → site/`);
