@@ -34,6 +34,9 @@ jobs:
       - name: Build production website
         run: npm run build:site
 
+      - name: Verify editorial covers and social metadata
+        run: npm run test:editorial
+
       - name: Verify lastmod snapshot is current
         # build:site tam geçmiş varken data/lastmod.json'u yeniden üretir.
         # Fark çıkıyorsa anlık görüntü bayat demektir: yerelde `npm run

@@ -166,3 +166,6 @@ dialog{color:var(--ink)}
 .ev-unmeasurable{background:#6b4b86}
 .ev-count{flex:0 0 auto;color:var(--ink-3);font:600 .62rem/1 var(--mono);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
 .ev-count strong{color:var(--ink-2);font-weight:700}
+
+/* Keep category labels inside the clipped editorial cover. */
+.article-card.has-ai-cover .category-chip{bottom:12px}

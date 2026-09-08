@@ -65,8 +65,8 @@ function brandIndex(source, articles) {
   <meta property="og:type" content="website">
   <meta property="og:url" content="${ORIGIN}/">
   <meta property="og:image" content="${ORIGIN}/assets/og-image.webp">
-  <meta property="og:image:width" content="480">
-  <meta property="og:image:height" content="270">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Kanıt Atlası — İnsanlık Tarihi Araştırma Arşivi">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kanıt Atlası — İnsanlık Tarihi Araştırma Arşivi">
@@ -163,7 +163,7 @@ function articleJsonLd(article) {
       url: `${ORIGIN}/`,
       logo: { '@type': 'ImageObject', url: `${ORIGIN}/favicon.svg` }
     },
-    image: `${ORIGIN}/assets/og-image.webp`,
+    image: `${ORIGIN}/${article.cover}`,
     articleSection: article.category,
     keywords: article.tags.join(', ')
   }).replaceAll('<', '\\u003c');
@@ -181,6 +181,8 @@ function wrapArticle(source, article) {
     .replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(article.title)} — Kanıt Atlası</title>`)
     .trim();
   bodyFragment = bodyFragment
+    // Fragment IDs may start with a digit (for example #476); they are not CSS selectors.
+    .replaceAll("document.querySelector(a.getAttribute('href'))", "document.getElementById(a.getAttribute('href').slice(1))")
     .replace(/<\/?body[^>]*>/gi, '')
     .replace(/<\/html>\s*$/i, '')
     .trim();
@@ -202,13 +204,15 @@ function wrapArticle(source, article) {
   <meta property="og:title" content="${escapeHtml(article.title)} — Kanıt Atlası">
   <meta property="og:description" content="${escapeHtml(article.summary)}">
   <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${ORIGIN}/assets/og-image.webp">
-  <meta property="og:image:width" content="480">
-  <meta property="og:image:height" content="270">
+  <meta property="og:image" content="${ORIGIN}/${article.cover}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="${escapeHtml(article.title)} — temsili editoryal illüstrasyon">
+  <meta name="twitter:image:alt" content="${escapeHtml(article.title)} — temsili editoryal illüstrasyon">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(article.title)} — Kanıt Atlası">
   <meta name="twitter:description" content="${escapeHtml(article.summary)}">
-  <meta name="twitter:image" content="${ORIGIN}/assets/og-image.webp">
+  <meta name="twitter:image" content="${ORIGIN}/${article.cover}">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="../site.webmanifest">
 ${headFragment}
@@ -222,36 +226,18 @@ ${bodyFragment}
   <script src="../assets/visuals-scenes-3.js"></script>
   <script src="../assets/visuals-scenes-4.js"></script>
   <script src="../assets/visuals.js"></script>
+  <script src="../assets/editorial-meta.js"></script>
   <script src="../assets/article-visuals.js"></script>
 </body>
 </html>\n`;
 }
 
 async function extractCoverAssets() {
-  const sourceDirectory = path.join(ROOT, 'assets', 'covers-data');
-  const destinationDirectory = path.join(OUT, 'assets', 'covers');
-  await mkdir(destinationDirectory, { recursive: true });
-  let socialCover = null;
-
-  for (const entry of await readdir(sourceDirectory, { withFileTypes: true })) {
-    if (!entry.isFile() || !entry.name.endsWith('.js')) continue;
-    const source = await readFile(path.join(sourceDirectory, entry.name), 'utf8');
-    const match = source.match(/ITCoverData\['([^']+)'\]='data:image\/([^;]+);base64,([^']+)'/);
-    if (!match) throw new Error(`Kapak verisi çözülemedi: ${entry.name}`);
-    const [, slug, rawExtension, encoded] = match;
-    const extension = rawExtension === 'jpeg' ? 'jpg' : rawExtension;
-    const bytes = Buffer.from(encoded, 'base64');
-    await writeFile(path.join(destinationDirectory, `${slug}.${extension}`), bytes);
-    if (slug === 'iskenderiye') socialCover = bytes;
+  const articles = await loadArticles();
+  for (const article of articles) {
+    if (!(await exists(path.join(OUT, article.cover)))) throw new Error('Editoryal kapak eksik: ' + article.slug);
   }
-
-  if (!socialCover) throw new Error('Sosyal paylaşım görseli için İskenderiye kapağı bulunamadı.');
-  await writeFile(path.join(OUT, 'assets', 'og-image.webp'), socialCover);
   await rm(path.join(OUT, 'assets', 'covers-data'), { recursive: true, force: true });
-}
-
-function favicon() {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="#165f50"/><circle cx="32" cy="32" r="22" fill="none" stroke="#f6f3eb" stroke-width="2"/><circle cx="32" cy="32" r="13" fill="none" stroke="#f6f3eb" stroke-width="1.5"/><text x="32" y="37" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#f6f3eb">KA</text></svg>`;
 }
 
 function manifest() {
@@ -321,6 +307,7 @@ async function brandToolPages() {
     const file = path.join(directory, entry.name);
     let content = await readFile(file, 'utf8');
     content = content
+      .replace('</head>', '<link rel="icon" href="../favicon.svg" type="image/svg+xml"></head>')
       .replaceAll('İnsanlık Tarihi bulgularını', 'Kanıt Atlası bulgularını')
       .replaceAll('İnsanlık Tarihi bulgularında', 'Kanıt Atlası bulgularında')
       .replaceAll('· İnsanlık Tarihi', '· Kanıt Atlası')
@@ -367,7 +354,7 @@ async function main() {
   }
 
   await brandToolPages();
-  await writeFile(path.join(OUT, 'favicon.svg'), favicon());
+  await writeFile(path.join(OUT, 'favicon.svg'), await readFile(path.join(ROOT, 'assets', 'logo-mark.svg'), 'utf8'));
   await writeFile(path.join(OUT, 'site.webmanifest'), manifest());
   await writeFile(path.join(OUT, 'reader.html'), legacyReader());
   await writeFile(path.join(OUT, '404.html'), notFoundPage());
