@@ -65,8 +65,8 @@ function brandIndex(source, articles) {
   <meta property="og:type" content="website">
   <meta property="og:url" content="${ORIGIN}/">
   <meta property="og:image" content="${ORIGIN}/assets/og-image.webp">
-  <meta property="og:image:width" content="480">
-  <meta property="og:image:height" content="270">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Kanıt Atlası — İnsanlık Tarihi Araştırma Arşivi">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kanıt Atlası — İnsanlık Tarihi Araştırma Arşivi">
@@ -203,8 +203,8 @@ function wrapArticle(source, article) {
   <meta property="og:description" content="${escapeHtml(article.summary)}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${ORIGIN}/assets/covers/${article.slug}.webp">
-  <meta property="og:image:width" content="480">
-  <meta property="og:image:height" content="270">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(article.title)} — Kanıt Atlası">
   <meta name="twitter:description" content="${escapeHtml(article.summary)}">
