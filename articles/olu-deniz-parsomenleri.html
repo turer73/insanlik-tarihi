@@ -388,6 +388,11 @@ tr.hilite td.cave{color:var(--accent-ink)}
   *{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
 }
 html{scroll-behavior:smooth;scroll-padding-top:4rem}
+
+/* Dar ekranlarda içerik taşmasını önle. */
+.mss{grid-template-columns:repeat(auto-fit,minmax(min(100%,288px),1fr))}@media(max-width:480px){.penal{table-layout:fixed}.penal th,.penal td{overflow-wrap:anywhere;white-space:normal!important}.ms{min-width:0}}
+
+@media(max-width:480px){h1{overflow-wrap:anywhere}.psg__head span{white-space:normal;overflow-wrap:anywhere}.evid,.places{grid-template-columns:minmax(0,1fr)}.evid>*{min-width:0;overflow-wrap:anywhere}}
 </style>
 
 <header class="hero">
