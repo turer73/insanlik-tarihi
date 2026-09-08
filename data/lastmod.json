@@ -72,6 +72,7 @@
     "assets/og-image.webp": "2026-09-08",
     "assets/styles-components.css": "2026-09-08",
     "assets/styles-core.css": "2026-09-08",
+    "assets/tracking.js": "2026-09-08",
     "assets/visuals-scenes-1.js": "2026-09-07",
     "assets/visuals-scenes-2.js": "2026-09-07",
     "assets/visuals-scenes-3.js": "2026-09-07",
@@ -83,7 +84,8 @@
     "dist/index.html": "2026-09-07",
     "dist/kanit-denetimi.html": "2026-09-07",
     "dist/zaman-cizelgesi.html": "2026-09-08",
-    "index.html": "2026-09-08"
+    "index.html": "2026-09-08",
+    "pages/": "2026-09-08"
   },
   "published": {
     "articles/angkor.html": "2026-09-07",
@@ -158,6 +160,7 @@
     "assets/og-image.webp": "2026-09-08",
     "assets/styles-components.css": "2026-09-07",
     "assets/styles-core.css": "2026-09-07",
+    "assets/tracking.js": "2026-09-08",
     "assets/visuals-scenes-1.js": "2026-09-07",
     "assets/visuals-scenes-2.js": "2026-09-07",
     "assets/visuals-scenes-3.js": "2026-09-07",
@@ -169,6 +172,7 @@
     "dist/index.html": "2026-09-07",
     "dist/kanit-denetimi.html": "2026-09-07",
     "dist/zaman-cizelgesi.html": "2026-09-07",
-    "index.html": "2026-09-07"
+    "index.html": "2026-09-07",
+    "pages/": "2026-09-08"
   }
 }

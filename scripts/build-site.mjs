@@ -91,7 +91,9 @@ function brandIndex(source, articles) {
     .replace('<strong>İnsanlık Tarihi</strong>\n          <small>Kanıt odaklı araştırma arşivi</small>', '<strong>Kanıt Atlası</strong>\n          <small>İnsanlık tarihi araştırma arşivi</small>')
     .replace('<a href="index.html">Ana Sayfa</a>\n        <a class="is-active" href="#main" aria-current="page">Yazılar</a>', '<a href="#top">Ana Sayfa</a>\n        <a class="is-active" href="#yazilar" aria-current="page">Yazılar</a>')
     .replace('<section class="archive-content" aria-labelledby="archiveTitle">', '<section class="archive-content" id="yazilar" aria-labelledby="archiveTitle">')
-    .replace('<div><strong>İnsanlık Tarihi</strong><p>Kanıt odaklı, kaynak izlenebilirliği yüksek Türkçe araştırma arşivi.</p></div>', '<div><strong>Kanıt Atlası</strong><p>İnsanlık tarihine kanıt, karşı kanıt ve kaynak izlenebilirliği üzerinden bakan Türkçe araştırma arşivi. <a href="feed.xml">RSS</a></p></div>');
+    .replace('<div><strong>İnsanlık Tarihi</strong><p>Kanıt odaklı, kaynak izlenebilirliği yüksek Türkçe araştırma arşivi.</p></div>', '<div><strong>Kanıt Atlası</strong><p>İnsanlık tarihine kanıt, karşı kanıt ve kaynak izlenebilirliği üzerinden bakan Türkçe araştırma arşivi. <a href="feed.xml">RSS</a></p></div>')
+    .replaceAll('<a href="#hakkinda">', '<a href="hakkinda.html">')
+    .replace('<p>Yazılar ve bulgu kayıtları', '<p><a href="hakkinda.html">Hakkında</a> · <a href="duzeltmeler.html">Düzeltmeler</a> · <a href="feed.xml">RSS</a></p>\n      <p>Yazılar ve bulgu kayıtları');
 
   const noscript = `<noscript>
           <section class="noscript-archive" aria-labelledby="noscriptTitle">
@@ -148,6 +150,101 @@ function brandApp(source) {
       "    renderArticles();\n    $('#year').textContent = new Date().getFullYear();",
       "    renderArticles();\n    const initialQuery = new URLSearchParams(location.search).get('q');\n    if (initialQuery) {\n      openSearch();\n      $('#siteSearch').value = initialQuery;\n      renderSearchResults(initialQuery);\n    }\n    $('#year').textContent = new Date().getFullYear();"
     );
+}
+
+const STATIC_PAGES = [
+  {
+    file: 'hakkinda.html',
+    title: 'Hakkında ve Yöntem',
+    description: 'Kanıt Atlası yayın kimliği, araştırma yöntemi, inceleme durumu, düzeltme süreci ve lisans bilgisi.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'AboutPage',
+      name: 'Kanıt Atlası — Hakkında ve Yöntem',
+      url: `${ORIGIN}/hakkinda.html`,
+      inLanguage: 'tr-TR',
+      description: 'Yayın kimliği, araştırma yöntemi, inceleme ve düzeltme süreci.',
+      isPartOf: { '@type': 'WebSite', name: 'Kanıt Atlası', url: `${ORIGIN}/` },
+      mainEntity: {
+        '@type': 'Organization',
+        name: 'Kanıt Atlası',
+        url: `${ORIGIN}/`,
+        logo: { '@type': 'ImageObject', url: `${ORIGIN}/favicon.svg` }
+      }
+    }
+  },
+  {
+    file: 'duzeltmeler.html',
+    title: 'Düzeltme Günlüğü',
+    description: 'Kanıt Atlası içerik düzeltmelerinin açık günlüğü: tarih, etkilenen yazı ve yapılan değişiklik kayıtları.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Kanıt Atlası — Düzeltme Günlüğü',
+      url: `${ORIGIN}/duzeltmeler.html`,
+      inLanguage: 'tr-TR',
+      description: 'Yayımlanmış içerikte yapılan düzeltmelerin açık kaydı.',
+      isPartOf: { '@type': 'WebSite', name: 'Kanıt Atlası', url: `${ORIGIN}/` },
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            item: {
+              '@type': 'CorrectionComment',
+              dateCreated: '2026-09-08',
+              about: { '@type': 'Article', url: `${ORIGIN}/articles/iskenderiye.html` },
+              text: 'Strabon Geographia XVII 1.8 pasajında doğrudan anlatılan yapının Mouseion olduğu doğrulanınca "kütüphaneyi tarif etti" ifadesi daraltıldı.'
+            }
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            item: {
+              '@type': 'CorrectionComment',
+              dateCreated: '2026-09-07',
+              about: { '@type': 'Article', url: `${ORIGIN}/articles/tas-tepeler.html` },
+              text: 'Hatalı bir karşılaştırma cümlesi düzeltildi; kurumsal çerçeve, Havuzlu Yapı ayrıntıları ve karbon tarihleri eklendi.'
+            }
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            item: {
+              '@type': 'CorrectionComment',
+              dateCreated: '2026-09-07',
+              about: { '@type': 'Article', url: `${ORIGIN}/articles/angkor.html` },
+              text: '"Sanayi öncesi dünyanın en büyük şehri" ifadesi ölçüm kategorisiyle sınırlandı: "bilinen en büyük yerleşim kompleksi".'
+            }
+          }
+        ]
+      }
+    }
+  }
+];
+
+function brandStaticPage(source, page) {
+  const meta = `  <meta name="theme-color" content="#f3efe7">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="description" content="${escapeHtml(page.description)}">
+  <link rel="canonical" href="${page.jsonLd.url}">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Kanıt Atlası">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${escapeHtml(page.title)} — Kanıt Atlası">
+  <meta property="og:description" content="${escapeHtml(page.description)}">
+  <meta property="og:url" content="${page.jsonLd.url}">
+  <meta property="og:image" content="${ORIGIN}/assets/og-image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${escapeHtml(page.title)} — Kanıt Atlası">
+  <meta name="twitter:description" content="${escapeHtml(page.description)}">
+  <meta name="twitter:image" content="${ORIGIN}/assets/og-image.webp">
+  <script type="application/ld+json">${JSON.stringify(page.jsonLd, null, 2).replaceAll('<', '\\u003c')}</script>`;
+  return addOrReplace(source, /<!-- KA-META -->/, meta, `statik sayfa meta bloğu: ${page.file}`);
 }
 
 function articleJsonLd(article) {
@@ -241,6 +338,7 @@ ${bodyFragment}
   <script src="../assets/visuals.js"></script>
   <script src="../assets/editorial-meta.js"></script>
   <script src="../assets/article-visuals.js"></script>
+  <script src="../assets/tracking.js"></script>
 </body>
 </html>\n`;
 }
@@ -295,7 +393,8 @@ function sitemap(articles, pilotSummaries) {
     })),
     { loc: `${ORIGIN}/dist/zaman-cizelgesi.html`, priority: '0.8', changefreq: 'monthly', lastmod: sonDegisiklik(TARIH, 'dist/zaman-cizelgesi.html') },
     { loc: `${ORIGIN}/dist/bulgu-veri-tabani.html`, priority: '0.8', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/bulgu-veri-tabani.html') },
-    { loc: `${ORIGIN}/dist/kanit-denetimi.html`, priority: '0.7', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/kanit-denetimi.html') }
+    { loc: `${ORIGIN}/dist/kanit-denetimi.html`, priority: '0.7', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/kanit-denetimi.html') },
+    ...STATIC_PAGES.map(page => ({ loc: page.jsonLd.url, priority: '0.5', changefreq: 'monthly', lastmod: sonDegisiklik(TARIH, `pages/${page.file}`) }))
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(item => `  <url><loc>${item.loc}</loc><lastmod>${item.lastmod}</lastmod><changefreq>${item.changefreq}</changefreq><priority>${item.priority}</priority></url>`).join('\n')}\n</urlset>\n`;
 }
@@ -404,6 +503,17 @@ async function main() {
   }
 
   await brandToolPages();
+  for (const page of STATIC_PAGES) {
+    await writeFile(path.join(OUT, page.file), brandStaticPage(await readFile(path.join(ROOT, 'pages', page.file), 'utf8'), page));
+  }
+  // Arama motoru doğrulama dosyaları (Search Console, Bing) varsa yayına ekle.
+  const verificationDirectory = path.join(ROOT, 'verification');
+  if (await exists(verificationDirectory)) {
+    for (const entry of await readdir(verificationDirectory, { withFileTypes: true })) {
+      if (!entry.isFile() || entry.name.startsWith('.')) continue;
+      await cp(path.join(verificationDirectory, entry.name), path.join(OUT, entry.name));
+    }
+  }
   await writeFile(path.join(OUT, 'favicon.svg'), await readFile(path.join(ROOT, 'assets', 'logo-mark.svg'), 'utf8'));
   await writeFile(path.join(OUT, 'site.webmanifest'), manifest());
   await writeFile(path.join(OUT, 'reader.html'), legacyReader());

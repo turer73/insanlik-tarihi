@@ -205,7 +205,7 @@ export function renderEvidenceIntro(article, findings, summary = {}) {
     ? escapeHTML(summary.limit)
     : "Bu dosya, kayıtlı bulguların sınırlarıyla okunmalıdır.";
   const articleTitle = article?.title ? `: ${escapeHTML(article.title)}` : "";
-  return `<aside class="ka-evidence-intro" aria-label="Kanıt okuma rehberi"><p class="ka-evidence-kicker">Kanıt dosyası${articleTitle}</p><p><strong>Kısa yanıt:</strong> ${shortAnswer}</p><p><strong>Sınır:</strong> ${limit}</p><p class="ka-review-counts">İnceleme kaydı: ${counts.draft} taslak, ${counts.reviewed} incelenmiş${counts.unrecorded ? `, ${counts.unrecorded} inceleme kaydı belirtilmemiş` : ""}.</p><nav class="ka-reading-nav" aria-label="Yazı içinde gezinme"><a href="#kanit-dosyasi">Kanıt dosyası</a><a href="#ka-anlati">Anlatı</a></nav></aside>`;
+  return `<aside class="ka-evidence-intro" aria-label="Kanıt okuma rehberi"><p class="ka-evidence-kicker">Kanıt dosyası${articleTitle}</p><p><strong>Kısa yanıt:</strong> ${shortAnswer}</p><p><strong>Sınır:</strong> ${limit}</p><p class="ka-review-counts">İnceleme kaydı: ${counts.draft} taslak, ${counts.reviewed} incelenmiş${counts.unrecorded ? `, ${counts.unrecorded} inceleme kaydı belirtilmemiş` : ""}.</p><nav class="ka-reading-nav" aria-label="Yazı içinde gezinme"><a href="#kanit-dosyasi">Kanıt dosyası</a><a href="#ka-anlati">Anlatı</a><a href="../hakkinda.html">Yöntem</a><a href="../duzeltmeler.html">Düzeltmeler</a></nav></aside>`;
 }
 
 /** Bulguları ayrıntı/özet kartlarıyla ve kaynak geri bağlantılarıyla render eder. */
@@ -217,5 +217,5 @@ export function renderEvidenceDossier(article, findings) {
   const body = models.length
     ? models.map(renderFinding).join("")
     : "<p>Bu yazı için yayımlanmış bulgu kaydı yok.</p>";
-  return `<section class="ka-evidence-dossier" id="kanit-dosyasi" aria-labelledby="kanit-dosyasi-baslik"><h2 class="ka-section-heading" id="kanit-dosyasi-baslik">Kanıt dosyası${title}</h2>${body}</section>`;
+  return `<section class="ka-evidence-dossier" id="kanit-dosyasi" aria-labelledby="kanit-dosyasi-baslik"><div class="ka-dossier-head"><h2 class="ka-section-heading" id="kanit-dosyasi-baslik">Kanıt dosyası${title}</h2><button type="button" class="ka-share" aria-label="Bu yazıyı paylaş"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg><span data-share-label>Paylaş</span></button></div>${body}</section>`;
 }

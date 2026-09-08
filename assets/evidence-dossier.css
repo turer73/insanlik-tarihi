@@ -67,6 +67,23 @@
 
 .ka-evidence-dossier#kanit-dosyasi{scroll-margin-top:5rem}
 .ka-section-heading{margin:0 0 .8rem;font-size:clamp(1.45rem,3vw,2.25rem);line-height:1.08}
+.ka-dossier-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.8rem 1.2rem;margin-bottom:.8rem}
+.ka-dossier-head .ka-section-heading{margin:0}
+.ka-share{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  min-height:2.5rem;
+  padding:.5rem .95rem;
+  border:1px solid var(--ka-line);
+  border-radius:999px;
+  background:var(--ka-bg);
+  color:var(--ka-accent);
+  font:600 .8rem/1.25 var(--mono,ui-monospace,monospace);
+  cursor:pointer;
+}
+.ka-share svg{width:1rem;height:1rem;flex:0 0 auto}
+.ka-share:hover{background:var(--ka-bg-soft);border-color:var(--ka-accent)}
 
 .ka-finding{
   margin:0 0 .7rem;

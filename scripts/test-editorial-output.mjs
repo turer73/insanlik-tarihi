@@ -24,20 +24,23 @@ for(const article of articles) {
  assert.equal(bytes.toString('ascii',8,12),'WEBP');
  assert.equal(bytes.length,entry.bytes);
  assert.ok(bytes.equals(await readFile(path.join(root,article.cover))));
- const html=await read(`site/articles/${article.slug}.html`);
- const url=`https://kanitatlasi.com/${article.cover}`;
- assert.ok(html.includes(`property="og:image" content="${url}"`),article.slug);
- assert.ok(html.includes(`name="twitter:image" content="${url}"`),article.slug);
- assert.ok(html.includes('property="og:image:width" content="1200"'));
- assert.ok(html.includes('property="og:image:height" content="675"'));
- const ld=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
- assert.equal(ld.image,url);
- assert.ok(html.includes('../assets/editorial-meta.js'));
- assert.ok(html.includes('../assets/article-visuals.js'));
+  const html=await read(`site/articles/${article.slug}.html`);
+  const url=`https://kanitatlasi.com/${article.cover}`;
+  assert.ok(html.includes(`property="og:image" content="${url}"`),article.slug);
+  assert.ok(html.includes(`name="twitter:image" content="${url}"`),article.slug);
+  assert.ok(html.includes('property="og:image:width" content="1200"'));
+  assert.ok(html.includes('property="og:image:height" content="675"'));
+  const ld=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  assert.equal(ld.image,url);
+  assert.ok(html.includes('../assets/editorial-meta.js'));
+  assert.ok(html.includes('../assets/article-visuals.js'));
+  assert.ok(html.includes('../assets/tracking.js'),article.slug);
+  assert.ok(html.includes('class="ka-share"'),article.slug);
+  assert.ok(html.includes('href="../hakkinda.html"') && html.includes('href="../duzeltmeler.html"'),article.slug);
 }
 assert.equal((await readdir(path.join(root,'site/assets/editorial-covers'))).length,27);
 let versionedAssets = 0;
-for (const page of ['index.html', ...articles.map(a=>`articles/${a.slug}.html`), 'dist/zaman-cizelgesi.html', 'dist/bulgu-veri-tabani.html', 'dist/kanit-denetimi.html']) {
+for (const page of ['index.html', ...articles.map(a=>`articles/${a.slug}.html`), 'dist/zaman-cizelgesi.html', 'dist/bulgu-veri-tabani.html', 'dist/kanit-denetimi.html', 'hakkinda.html', 'duzeltmeler.html']) {
  const html=await read(`site/${page}`);
  assert.equal((html.match(/data-domain="kanitatlasi\.com"/g)||[]).length,1,`${page}: one Plausible loader`);
  assert.ok(html.includes('<script defer data-domain="kanitatlasi.com" src="https://analytics.3d-labx.com/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>'));
@@ -55,5 +58,14 @@ assert.ok(versionedAssets > 200);
 assert.ok(!(await read('site/reader.html')).includes('data-domain="kanitatlasi.com"'), 'redirect must not double-count pageviews');
 assert.ok((await read('site/_headers')).includes('max-age=0, must-revalidate'));
 assert.ok((await read('vercel.json')).includes('max-age=0, must-revalidate'));
+for (const page of ['hakkinda.html','duzeltmeler.html']) {
+  const html = await read(`site/${page}`);
+  assert.ok(html.includes(`<link rel="canonical" href="https://kanitatlasi.com/${page}">`), page);
+  assert.ok(html.includes('<script type="application/ld+json">'), page);
+  assert.ok(!html.includes('<!-- KA-META -->'), page);
+}
+assert.ok((await read('site/index.html')).includes('href="hakkinda.html"'), 'ana sayfada güven sayfası bağlantısı');
+assert.ok((await read('site/index.html')).includes('href="duzeltmeler.html"'), 'ana sayfada düzeltme sayfası bağlantısı');
+assert.ok(!(await read('site/index.html')).includes('href="#hakkinda"'), 'eski çapa bağlantısı kalmamalı');
 console.log(`Önbellek: ${versionedAssets} yerel varlık başvurusu içerik hash'iyle doğrulandı.`);
 console.log('Üretim çıktısı: 27/27 gerçek WebP, dosya bütünlüğü, logo, favicon ve makaleye özel OG/Twitter/Schema.org doğrulandı.');
