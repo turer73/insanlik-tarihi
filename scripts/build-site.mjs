@@ -4,6 +4,7 @@ import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { tarihler, sonDegisiklik, ilkYayin, enYeni } from './lib/lastmod.mjs';
+import { renderEvidenceIntro, renderEvidenceDossier } from './lib/evidence-dossier.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'site');
@@ -170,7 +171,7 @@ function articleJsonLd(article) {
   }).replaceAll('<', '\\u003c');
 }
 
-function wrapArticle(source, article) {
+function wrapArticle(source, article, pilot = null) {
   const bodyMatch = source.match(/<(?:header|main|body)\b/i);
   if (!bodyMatch || bodyMatch.index == null) throw new Error(`Yazı gövdesi ayırt edilemedi: ${article.slug}`);
 
@@ -187,6 +188,16 @@ function wrapArticle(source, article) {
     .replace(/<\/?body[^>]*>/gi, '')
     .replace(/<\/html>\s*$/i, '')
     .trim();
+
+  if (pilot) {
+    if (!bodyFragment.includes('</header>') || !bodyFragment.includes('<main>') || !bodyFragment.includes('</main>')) {
+      throw new Error(`Pilot yazı yapısı beklenen biçimde değil: ${article.slug}`);
+    }
+    bodyFragment = bodyFragment
+      .replace('</header>', `</header>\n${renderEvidenceIntro(article, pilot.findings, pilot.summary)}`)
+      .replace('<main>', '<main id="ka-anlati">')
+      .replace('</main>', `${renderEvidenceDossier(article, pilot.findings)}\n</main>`);
+  }
 
   const canonical = `${ORIGIN}/articles/${article.slug}.html`;
   return `<!doctype html>
@@ -218,6 +229,7 @@ function wrapArticle(source, article) {
   <link rel="manifest" href="../site.webmanifest">
 ${headFragment}
   <link rel="stylesheet" href="../assets/article-visuals.css">
+${pilot ? '  <link rel="stylesheet" href="../assets/evidence-dossier.css">' : ''}
   <script type="application/ld+json">${articleJsonLd(article)}</script>
 </head>
 <body>
@@ -261,7 +273,7 @@ function notFoundPage() {
   return `<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta name="theme-color" content="#f3efe7"><title>Sayfa bulunamadı — Kanıt Atlası</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><style>:root{--bg:#f3efe7;--surface:#fbf9f3;--ink:#171a18;--muted:#606762;--green:#165f50;--line:#d8d3c8;color-scheme:light dark}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:1.2rem;background:radial-gradient(circle at 80% 10%,#e3ece7 0,transparent 35%),var(--bg);color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(760px,100%);padding:clamp(2rem,7vw,5rem);border:1px solid var(--line);border-radius:24px;background:var(--surface);box-shadow:0 24px 80px rgba(25,33,30,.1)}.mark{width:72px;height:72px;border:2px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green);font:700 1.25rem Georgia,serif;box-shadow:inset 0 0 0 9px var(--surface),inset 0 0 0 11px var(--green)}.code{margin:2.2rem 0 .2rem;color:var(--green);font:700 .78rem ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}h1{margin:0;font:650 clamp(2.3rem,7vw,4.7rem)/.98 Georgia,serif;letter-spacing:-.04em}p{max-width:55ch;color:var(--muted);font-size:1.08rem;line-height:1.65}nav{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}a{padding:.75rem 1rem;border:1px solid var(--line);border-radius:999px;color:var(--ink);font-weight:700;text-decoration:none}a:first-child{background:var(--green);border-color:var(--green);color:white}@media(prefers-color-scheme:dark){:root{--bg:#111713;--surface:#18201c;--ink:#eef3ef;--muted:#aeb9b3;--line:#334039;--green:#76b7a5}}</style></head><body><main><div class="mark" aria-hidden="true">KA</div><p class="code">404 · Kayıt bulunamadı</p><h1>Bu iz, arşivde yok.</h1><p>Bağlantı değişmiş, yazı taşınmış veya adres yanlış yazılmış olabilir. Araştırma arşivine dönerek kanıt zincirini yeniden izleyebilirsiniz.</p><nav aria-label="Yönlendirme"><a href="/">Ana sayfaya dön</a><a href="/dist/zaman-cizelgesi.html">Zaman çizelgesi</a><a href="/dist/bulgu-veri-tabani.html">Veri tabanı</a></nav></main></body></html>`;
 }
 
-function sitemap(articles) {
+function sitemap(articles, pilotSummaries) {
   // Ana sayfa listeyi gösterir: yazılardan biri veya sayfanın kendisi
   // değiştiyse ana sayfa da değişmiştir.
   const anaSayfa = enYeni(TARIH, [
@@ -279,7 +291,7 @@ function sitemap(articles) {
       loc: `${ORIGIN}/articles/${article.slug}.html`,
       priority: article.featured ? '0.9' : '0.7',
       changefreq: 'monthly',
-      lastmod: sonDegisiklik(TARIH, `articles/${article.slug}.html`)
+      lastmod: pilotSummaries[article.slug] ? enYeni(TARIH, [`articles/${article.slug}.html`, 'data/reading-pilot.json']) : sonDegisiklik(TARIH, `articles/${article.slug}.html`)
     })),
     { loc: `${ORIGIN}/dist/zaman-cizelgesi.html`, priority: '0.8', changefreq: 'monthly', lastmod: sonDegisiklik(TARIH, 'dist/zaman-cizelgesi.html') },
     { loc: `${ORIGIN}/dist/bulgu-veri-tabani.html`, priority: '0.8', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/bulgu-veri-tabani.html') },
@@ -342,6 +354,8 @@ async function versionPageAssets(directory = OUT) {
 
 async function main() {
   const articles = await loadArticles();
+  const pilotSummaries = JSON.parse(await readFile(path.join(ROOT, 'data', 'reading-pilot.json'), 'utf8'));
+  const findings = JSON.parse(await readFile(path.join(ROOT, 'data', 'findings.bundle.json'), 'utf8'));
   const articleNames = new Set((await readdir(path.join(ROOT, 'articles'))).filter(name => name.endsWith('.html')).map(name => name.slice(0, -5)));
   const missing = articles.filter(article => !articleNames.has(article.slug));
   if (missing.length) throw new Error(`Kaynak HTML dosyası eksik: ${missing.map(item => item.slug).join(', ')}`);
@@ -374,7 +388,10 @@ async function main() {
   await mkdir(articleDirectory, { recursive: true });
   for (const article of articles) {
     const source = await readFile(path.join(ROOT, 'articles', `${article.slug}.html`), 'utf8');
-    await writeFile(path.join(articleDirectory, `${article.slug}.html`), wrapArticle(source, article));
+    const summary = pilotSummaries[article.slug];
+    const pilot = summary ? { summary, findings: findings.filter(finding => finding.used_in?.includes(article.slug)) } : null;
+    if (pilot && !pilot.findings.length) throw new Error(`Pilot yazının bulgu kaydı yok: ${article.slug}`);
+    await writeFile(path.join(articleDirectory, `${article.slug}.html`), wrapArticle(source, article, pilot));
   }
 
   await brandToolPages();
@@ -383,7 +400,7 @@ async function main() {
   await writeFile(path.join(OUT, 'reader.html'), legacyReader());
   await writeFile(path.join(OUT, '404.html'), notFoundPage());
   await writeFile(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
-  await writeFile(path.join(OUT, 'sitemap.xml'), sitemap(articles));
+  await writeFile(path.join(OUT, 'sitemap.xml'), sitemap(articles, pilotSummaries));
   await writeFile(path.join(OUT, 'feed.xml'), rss(articles));
   await writeFile(path.join(OUT, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: DENY\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()\n  Cross-Origin-Opener-Policy: same-origin\n\n/assets/*\n  Cache-Control: public, max-age=0, must-revalidate\n`);
   await writeFile(path.join(OUT, '_redirects'), '/index.html  /  301\n');
