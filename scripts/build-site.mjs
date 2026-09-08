@@ -356,6 +356,8 @@ async function main() {
   const articles = await loadArticles();
   const pilotSummaries = JSON.parse(await readFile(path.join(ROOT, 'data', 'reading-pilot.json'), 'utf8'));
   const findings = JSON.parse(await readFile(path.join(ROOT, 'data', 'findings.bundle.json'), 'utf8'));
+  const unknownSummaries = Object.keys(pilotSummaries).filter(slug => !articles.some(article => article.slug === slug));
+  if (unknownSummaries.length) throw new Error(`Özetin yazı kaydı yok: ${unknownSummaries.join(', ')}`);
   const articleNames = new Set((await readdir(path.join(ROOT, 'articles'))).filter(name => name.endsWith('.html')).map(name => name.slice(0, -5)));
   const missing = articles.filter(article => !articleNames.has(article.slug));
   if (missing.length) throw new Error(`Kaynak HTML dosyası eksik: ${missing.map(item => item.slug).join(', ')}`);
@@ -389,8 +391,9 @@ async function main() {
   for (const article of articles) {
     const source = await readFile(path.join(ROOT, 'articles', `${article.slug}.html`), 'utf8');
     const summary = pilotSummaries[article.slug];
-    const pilot = summary ? { summary, findings: findings.filter(finding => finding.used_in?.includes(article.slug)) } : null;
-    if (pilot && !pilot.findings.length) throw new Error(`Pilot yazının bulgu kaydı yok: ${article.slug}`);
+    if (!summary?.summary?.trim() || !summary?.limit?.trim()) throw new Error(`Yazının kısa yanıtı veya sınır notu eksik: ${article.slug}`);
+    const pilot = { summary, findings: findings.filter(finding => finding.used_in?.includes(article.slug)) };
+    if (!pilot.findings.length) throw new Error(`Yazının bulgu kaydı yok: ${article.slug}`);
     await writeFile(path.join(articleDirectory, `${article.slug}.html`), wrapArticle(source, article, pilot));
   }
 

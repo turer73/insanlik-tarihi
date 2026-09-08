@@ -135,6 +135,9 @@ section:last-of-type{border-bottom:0}
 
 @media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
 html{scroll-behavior:smooth;scroll-padding-top:4rem}
+
+/* Dar ekranlarda içerik taşmasını önle. */
+@media(max-width:480px){.faces{grid-template-columns:repeat(2,minmax(0,1fr))}.face{min-width:0;overflow-wrap:anywhere}}
 </style>
 
 <header class="hero">

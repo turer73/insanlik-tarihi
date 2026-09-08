@@ -10,5 +10,101 @@
   "babil": {
     "summary": "Babil dosyası, kent ve yapılar hakkındaki tarihsel kayıtları sonraki sembolik anlatılardan ayırmayı amaçlar. Kule, Asma Bahçeler, matematik ve kentin modern müdahaleleri aynı kanıt türüyle değerlendirilemez. Aşağıdaki dosyada her iddianın mevcut değerlendirmesi, karşı kanıtı ve kaynak künyesi birlikte sunulur. Böylece bir sonucun hangi kayda dayandığını ve hangi soruların açık kaldığını ayrı ayrı inceleyebilirsiniz.",
     "limit": "Bu yazıya bağlı kayıtlar eski kaynak biçimindedir. Kaynaklar listelenmiş olsa da kanıt kalemi ile sayfa veya pasaj arasındaki bağlantılar henüz kurulmamıştır; uzman incelemesi kayıtlı değildir."
+  },
+  "olu-deniz-parsomenleri": {
+    "summary": "Ölü Deniz parşömenleri tek bir kitap değil, farklı dillerde ve yüzyıllara yayılan bir kütüphane olarak ele alınır. Mağaraların, yazmaların ve kopyalama zincirinin ne gösterdiği; yazar, topluluk ve metin sürekliliği iddialarından ayrı okunur.",
+    "limit": "Karbon-14, paleografi ve metin karşılaştırmaları aralıklar sağlar; koleksiyonun bütün kökeni, geçmişi ve yazarlığı bu kayıtlarla kesinleşmez."
+  },
+  "tufan-bilmecesi": {
+    "summary": "Tufan Bilmecesi, “bütün antik uygarlıklarda vardır” cümlesini kaynakları tek tek karşılaştırarak sınar. Mezopotamya’daki anlatı kümesi, Mısır ve Çin’deki yokluk ya da farklılıklarla birlikte okunur; kuş motifi gibi ayrıntılar aktarım iddiasını test eder.",
+    "limit": "Bir yerleşimdeki taşkın izi tek başına bütün anlatıların ortak bir olaya dayandığını göstermez. Kronoloji ve aktarım yolları bazı kayıtlar için açık kalır."
+  },
+  "hatirlamadigimiz-felaketler": {
+    "summary": "Bu dosya, kimsenin görmediği jeolojik ve iklimsel felaketleri üç farklı arşivin ölçekleriyle nasıl bildiğimizi inceler. Kıtaların, iklimin, yok oluşların ve buzulların uzun geçmişi; insan tanıklığının sınırından ayrı bir kanıt düzeni kurar.",
+    "limit": "Korunmuş kayıtlar coğrafya ve dönemlere göre eşitsizdir; bir anlatının yokluğu olayın yokluğunu kanıtlamaz. Felaketlerin nedenleri ve payları her örnekte aynı kesinlikte değildir."
+  },
+  "ayni-cumlede": {
+    "summary": "Aynı Cümlede, aralarında binlerce yıl ve bağlantı bulunmayan altı yapının neden sürekli yan yana anıldığını sorar. Machu Picchu, Stonehenge ve diğer örneklerde yanlış adlandırmalar ile popüler benzetmeler, kaynakların söylediği gerçeklerden ayrılır.",
+    "limit": "Benzerlik tek başına ortak kökeni veya doğrudan aktarımı kurmaz. Kaynakların tarihlenmesi, seçimi ve bağlantısı açık kaldığında sonuç sınırlıdır."
+  },
+  "petra": {
+    "summary": "Petra’nın fotoğraflanan yüzünün büyük ölçüde nekropol olduğu, asıl kentin ise su sistemiyle okunması gerektiği gösterilir. Yılda yaklaşık 150 milimetre yağış alan çölde on binlerce kişiyi yaşatma iddiası, borular, depolar ve dağıtım düzeniyle sınanır.",
+    "limit": "Kalan yapılar bazı altyapı çıkarımlarını destekler, ancak kentin tüm nüfusunu ve işlevlerini yeniden kurmaz. Tarih ve kullanım atamaları kanıtın kapsamına bağlıdır."
+  },
+  "shushtar": {
+    "summary": "Şuşter, Petra’daki kıtlık çözümünün tersine bolluk ve gücü yöneten hidrolik mühendisliği üzerinden teknoloji aktarımını inceler. Band-e Kaisar’ın köprü mü bent mi olduğu ve tasarımın kökeni, “belgelenmiş aktarım” iddiasının somut sınırlarını gösterir.",
+    "limit": "Tarihleme ve atıf için gereken bağımsız kanıtlar her aşamada aynı ölçüde görünür değildir. Bu nedenle aktarım iddiası, benzer tasarımdan daha dar okunmalıdır."
+  },
+  "stonehenge": {
+    "summary": "Stonehenge’de taşların kaynağı son yıllarda kilometre hassasiyetinde daraltılmış olsa da yapının neden yapıldığı sorusu açık kalır. Sarsenlerin West Woods bağlantısı, mavitaş ocakları ve taşınma tartışması; işlev iddiasından ayrı incelenir.",
+    "limit": "Jeokimyasal eşleşmeler kaynak alanını daraltır, fakat taşıma yöntemi ve amaç konusunda seçenekler bırakır. Sürdüğü belirtilen tartışmalar kesin sonuç olarak sunulmamalıdır."
+  },
+  "sumer": {
+    "summary": "Sümer yazısının ilk tabletleri şiir değil arpa, bira, koyun ve işçi yevmiyesi makbuzlarıdır; yazının muhasebe bağlamı buradan izlenir. Kil tabletler, ölü bir dili ve kurumları görünür kılarken yazının öncülleri ile sonraki edebiyat arasındaki farkı da gösterir.",
+    "limit": "Arşivler seçici ve korunma koşullarına bağlıdır; yazı öncesi uygulamalar ile işaretlerin anlamı da ayrıntıda tartışmalıdır. Bu nedenle genelleme, mevcut tablet grubuyla sınırlıdır."
+  },
+  "angkor": {
+    "summary": "Angkor’un su ağının çöküşüyle bittiği standart anlatı, LiDAR ve uzun dönemli yerleşim izleriyle tersinden sınanır. Bulgular, insanların çekilmesinin altyapının bozulmasına yol açmış olabileceğini de hesaba katar; tapınaklar şehrin yalnız küçük bir parçasıdır.",
+    "limit": "Uzaktan algılama ve su ağı izleri peyzaj değişimini gösterir, fakat tek başına bütün çöküş nedenlerini sıralamaz. Kronoloji ve nedenlerin göreli ağırlığı açık sorulardır."
+  },
+  "tas-tepeler": {
+    "summary": "Taş Tepeler, Göbekli Tepe ve Karahan Tepe’de alanların yalnız küçük bir bölümünün açılmış olmasının yorumları nasıl sınırladığını inceler. Kazı çatıları, alan büyüklüğü ve değişen kronoloji atamaları, bulunan kadar bulunmayan verinin de hesaba katılmasını gerektirir.",
+    "limit": "Kazılmamış alanlar ve çelişen atama tarihleri genellemeyi sınırlar. Bir yapının boyutu veya işlevi, bütün bölge için tek başına temsil ölçüsü değildir."
+  },
+  "machu-picchu": {
+    "summary": "Machu Picchu dosyası yerleşimin kayıp olduğu, bugünkü adını taşıdığı, bir şehir olduğu ve Bingham’ın aradığı yer olduğu iddialarını ayrı ayrı inceler. Saha notları, arşiv kayıtları ve DNA bulguları; adlandırma, işlev, Vilcabamba arayışı ve burada yaşayan insanlar hakkında farklı soruları yanıtlar.",
+    "limit": "Sonraki adlandırmalar ve eksik arşiv, işlev ile terk edilme yorumlarını kısmi bırakır. Bir kaynağın geç tarihli olması, içeriğini otomatik olarak geçersiz kılmaz; bağımsızlık ayrıca değerlendirilmelidir."
+  },
+  "chichen-itza": {
+    "summary": "Chichén Itzá’da DNA ve iskelet bulgularının kurbanların kimliğine ilişkin anlatıları nasıl sınadığı, akustik ve astronomi yorumlarıyla karşılaştırılır. Bir etkinin bugün ölçülebilmesi ile yapının o amaçla tasarlandığının gösterilmesi ayrı kanıt sorularıdır.",
+    "limit": "Ölçülebilir bir düzenek etkisi, tarihsel aktörlerin aynı amacı taşıdığını tek başına göstermez. Kimlik, tarih ve ritüel yorumları için kanıtın sınırları korunmalıdır."
+  },
+  "persepolis": {
+    "summary": "Persepolis, iki bin yıl boyunca düşmanlarının anlatısından sonra sarayda bulunan Pers idari kayıtlarıyla yeniden okunur. Kale tabletleri işçilerin, kadın emeğinin ve dağıtımın izini verir; kabartmalardaki tek taraflı tabloyu somut kayıtlarla sınar.",
+    "limit": "Arşivin amacı ve korunmuş kayıtların kapsamı hangi sorulara cevap verilebileceğini belirler. Mülkiyet, emek ve yangın gibi yorumlar kayıtların kapsamını aşmamalıdır."
+  },
+  "milankovic": {
+    "summary": "Milanković dosyası buzul çağlarını üç yörüngesel salınımın nasıl etkilediğini, toplam ısıdan çok kuzey yazındaki kar erimesi üzerinden açıklar. Döngülerin üst üste binmesi ve çözülememiş zamanlama problemi, modelin sınırını görünür kılar.",
+    "limit": "Korelasyon veya zorlama hesabı tek başına her geçişin zamanlamasını ve büyüklüğünü açıklamaz. Çözünürlük ve diğer iklim etkenleri yorumda belirsizlik bırakır."
+  },
+  "roma-etki": {
+    "summary": "Roma’nın etkisi, “Romalılar bize ne verdi” listesi yerine Grönland buzundaki ekonomi, kıta ölçeğinde kurşun kirliliği ve bugün ölçülebilen dört iz üzerinden incelenir. Kullanılmaya devam edenin kalması, modern bakışın hangi izleri görünür kıldığını da sorgulatır.",
+    "limit": "Korunmuş izler ve modern miras seçimi Roma etkisinin tamamını temsil etmez. “Etki”nin kapsamı, seçilen gösterge ve dönemle birlikte okunmalıdır."
+  },
+  "roma-hristiyanlik": {
+    "summary": "Roma-Hristiyanlık dosyası Constantinus’un dönüşümü, İznik Konsili ve imparatorluğun Hristiyanlaşması hakkındaki basit anlatıyı tarihlerle sınar. 313–380 arasındaki altmış yedi yıl, kurum ve ritüellerdeki kademeli, iki yönlü dönüşümü görünür kılar.",
+    "limit": "Bölgeler ve dönemler aynı kanıt yoğunluğuna sahip değildir. Kronolojik birliktelik tek başına tek yönlü nedensellik kurmaz."
+  },
+  "isa-tarihsellik": {
+    "summary": "İsa Tarihselliği, bir kaynağın anlattığı olaya uzaklığını ölçen bir mesafe merdiveni kurar. Olay, ilk metin ve sonraki kopya arasındaki aralık; “İsa var mıydı?” sorusundan önce hangi kanıt eşiğinin geçilebildiğini belirler.",
+    "limit": "Tarih aralıkları ve kopya zincirindeki boşluklar çıkarım gücünü sınar; tek başına her tarihsel iddiayı kanıtlamaz veya çürütmez. Kaynak sessizliği de ayrıca yorumlanmalıdır."
+  },
+  "mit-ve-sicil": {
+    "summary": "Mit ve Sicil, “Kilise insanlık tarihini karanlığa götürdü” cümlesindeki iki iddiayı ayırır: tarihçilerin terk ettiği Karanlık Çağ miti ile tarihleri ve belge numaraları duran somut zararlar. Index gibi kayıtlar, genelleme ile belgelenmiş olayın aynı kanıt olmadığını gösterir.",
+    "limit": "Belgelenmiş yasak ve zararlar incelenebilir; sansür nedeniyle hiç yazılmamış eserlerin sayısı veya değeri doğrudan ölçülemez. Tekil olaylardan bütün dönemlere genelleme yapılmamalıdır."
+  },
+  "gokteki-ayi": {
+    "summary": "Gökteki Ayı, farklı coğrafyalardaki gökyüzü ve av anlatılarının neden benzeştiğini sorar. Ortak köken, sonraki kültürel aktarım ve aynı gökyüzünden doğan bağımsız benzerlik açıklamaları karşılaştırılır.",
+    "limit": "Motif benzerliği doğrudan aktarımı kurmaz; aktarım yolu ve tarihleme ayrıca kanıtlanmalıdır. Bu veriler yoksa köken sonucu açık kalır."
+  },
+  "gec-kalan-haberci": {
+    "summary": "Geç Kalan Haberci, Afrika’nın büyük bölümündeki ölümün yanlış teslim edilmiş bir mesajla başladığını anlatan mitlerin bölgesel haritasını inceler. İki haberci ve dört farklı cevap, mitleri ölçen yöntemin kendisini sınayan karşılaştırmalar olarak kullanılır.",
+    "limit": "Anlatıların coğrafi dağılımı tek başına yaşlarını veya ortak kökenlerini belirlemez. Karşılaştırma için seçilen soruların ve sınıflandırmaların farklı geleneklere uygunluğu da sınanmalıdır."
+  },
+  "kendi-kaniti": {
+    "summary": "Kendi Kanıtı, Campbell’ın “Kahramanın Yolculuğu”nu bütün mitlerdeki evrensel kalıp sayan iddianın nasıl kendi kanıtını ürettiğini gösterir. Farklı listelerin seçilmesi ve her şeye uyarlanması, folklorcuların neden bu teoriyi reddettiğiyle birlikte incelenir.",
+    "limit": "Döngüyü göstermek dış kanıtın yerini tutmaz. Sonuç, bağımsız kaynak ve ölçülebilir destek bulunup bulunmadığıyla sınırlıdır."
+  },
+  "calinan-ates": {
+    "summary": "Ateş hırsızlığı dosyası Yunan titanını, Polinezya hilebazını ve Kuzey Amerika kuzgununu aynı motif içinde yan yana koyar; her anlatının işlevinin farklı olduğunu gösterir. Ateşin her toplum için beklenebilir bir ihtiyaç olması, ortak köken iddiasına karşı bağımsız açıklamayı güçlendirir.",
+    "limit": "Motif benzerliği tek başına ortak kökeni seçmez. Aktarım yolları ve tarihleme eksik kaldığında bağımsız ortaya çıkma ihtimali açık tutulur."
+  },
+  "herkesin-saati": {
+    "summary": "Hesiodos’un Ülker’e göre orak ve saban zamanını belirlemesi, And Dağları’nda patates ekiminde aynı kümenin izlenmesi ve modern uydu verileriyle birlikte ele alınır. Gökyüzünün ortak sinyali, benzer tarım saatlerinin ortak köken olmadan da kurulabileceğini gösterir.",
+    "limit": "Takvim eşleşmesi ortak köken veya aynı uygulama anlamına gelmez. Yerel pratikler ve verilerin zaman çözünürlüğü karşılaştırmayı sınırlar."
+  },
+  "yilin-iki-kapisi": {
+    "summary": "Yılın İki Kapısı, Anadolu halk takvimindeki 6 Mayıs ve 8 Kasım eşiklerini iki yarım ve dört dilim içinde, aynı yıldız kümesinin görünürlük işaretleriyle karşılaştırır. Takvim tarihleri donmuş bir kural gibi değil, gökyüzü, mevsim ve yerel gelenek katmanlarının kesişimi olarak okunur.",
+    "limit": "Takvim yakınlığı tek başına astronomik kökeni veya bütün bölgelerde tek tip uygulamayı kanıtlamaz. Yerel farklılıklar ve kayıt biçimleri sonucu sınırlar."
   }
 }

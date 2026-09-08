@@ -140,6 +140,9 @@ section:last-of-type{border-bottom:0}
 
 @media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
 html{scroll-behavior:smooth;scroll-padding-top:4rem}
+
+/* Dar ekranlarda içerik taşmasını önle. */
+.tl__row{display:contents}.tl__body{min-width:0;overflow-wrap:anywhere}@media(max-width:480px){.tl{grid-template-columns:60px minmax(0,1fr);gap:0 .65rem}.tl__body{padding-left:.65rem}}
 </style>
 
 <header class="hero">
