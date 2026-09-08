@@ -1,6 +1,7 @@
 import { access, cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import vm from 'node:vm';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { tarihler, sonDegisiklik, ilkYayin, enYeni } from './lib/lastmod.mjs';
 
@@ -316,6 +317,29 @@ async function brandToolPages() {
   }
 }
 
+// A new HTML response must not reuse JS/CSS from an older deployment in a
+// returning visitor's cache. Hash the final output, including build transforms.
+async function versionPageAssets(directory = OUT) {
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const file = path.join(directory, entry.name);
+    if (entry.isDirectory()) {
+      if (entry.name !== 'assets') await versionPageAssets(file);
+      continue;
+    }
+    if (!entry.name.endsWith('.html')) continue;
+    let html = await readFile(file, 'utf8');
+    const references = [...html.matchAll(/\b(?:src|href)="([^"?#]+\.(?:js|css|svg))"/g)];
+    for (const [, url] of references) {
+      if (/^(?:[a-z]+:|\/\/)/i.test(url)) continue;
+      const asset = url.startsWith('/') ? path.resolve(OUT, '.' + url) : path.resolve(path.dirname(file), url);
+      if (!asset.startsWith(OUT + path.sep)) throw new Error(`Yayın dışı varlık: ${url}`);
+      const version = createHash('sha256').update(await readFile(asset)).digest('hex').slice(0, 16);
+      html = html.replaceAll(`"${url}"`, `"${url}?v=${version}"`);
+    }
+    await writeFile(file, html);
+  }
+}
+
 async function main() {
   const articles = await loadArticles();
   const articleNames = new Set((await readdir(path.join(ROOT, 'articles'))).filter(name => name.endsWith('.html')).map(name => name.slice(0, -5)));
@@ -361,9 +385,10 @@ async function main() {
   await writeFile(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
   await writeFile(path.join(OUT, 'sitemap.xml'), sitemap(articles));
   await writeFile(path.join(OUT, 'feed.xml'), rss(articles));
-  await writeFile(path.join(OUT, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: DENY\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()\n  Cross-Origin-Opener-Policy: same-origin\n\n/assets/*\n  Cache-Control: public, max-age=604800, stale-while-revalidate=86400\n`);
+  await writeFile(path.join(OUT, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: DENY\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()\n  Cross-Origin-Opener-Policy: same-origin\n\n/assets/*\n  Cache-Control: public, max-age=0, must-revalidate\n`);
   await writeFile(path.join(OUT, '_redirects'), '/index.html  /  301\n');
 
+  await versionPageAssets();
   const built = (await readdir(articleDirectory)).filter(name => name.endsWith('.html')).length;
   if (built !== articles.length) throw new Error(`Yazı çıktısı eksik: ${built}/${articles.length}`);
   console.log(`Kanıt Atlası yayını hazır: ${built} yazı → site/`);
