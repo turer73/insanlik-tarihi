@@ -100,6 +100,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .axis__scale{position:relative;height:34px}
 .tick{position:absolute;top:0;bottom:0;border-left:1px solid var(--rule-soft)}
 .tick span{position:absolute;top:9px;left:5px;font-family:var(--mono);font-size:.65rem;color:var(--ink-3);white-space:nowrap}
+.tick.endpoint.end span{left:auto;right:5px}
+.tick span[aria-hidden="true"]{visibility:hidden}
 .tick.major{border-left-color:var(--rule)}
 .tick.major span{color:var(--ink-2);font-weight:600}
 
@@ -334,6 +336,43 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     return out;
   }
 
+  // Tick çizgileri gerçek zaman eşleşmesini korur; dar eksenlerde yalnızca
+  // ölçülen metinler seyreltilir. Uç etiketler sığdığı sürece açıklamayı taşır.
+  function selectAxisLabelIndexes(items){
+    if(items.length < 2) return items.map(function(item){ return item.index; });
+    var keep = new Set([items[0].index]);
+    var last = items[items.length - 1];
+    if(last.left >= items[0].right + 10) keep.add(last.index);
+    var ordered = items.slice(1, -1).sort(function(a,b){ return Number(b.major) - Number(a.major) || a.index - b.index; });
+    ordered.forEach(function(item){
+      var clear = true;
+      keep.forEach(function(index){
+        var other = items[index];
+        if(item.left < other.right + 10 && other.left < item.right + 10) clear = false;
+      });
+      if(clear) keep.add(item.index);
+    });
+    return Array.from(keep);
+  }
+
+  function applyAxisLabelDensity(el){
+    var ticks = Array.prototype.slice.call(el.querySelectorAll('.tick'));
+    if(ticks.length < 2) return;
+    var axisRect = el.getBoundingClientRect();
+    var items = ticks.map(function(tick, index){
+      var span = tick.querySelector('span');
+      var box = span.getBoundingClientRect();
+      var left = box.left - axisRect.left;
+      return { tick:tick, span:span, index:index, left:left, right:left + (box.width || span.textContent.length * 7), major:tick.classList.contains('major') };
+    });
+    var keep = new Set(selectAxisLabelIndexes(items));
+    items.forEach(function(item){
+      var visible = keep.has(item.index);
+      item.span.setAttribute('aria-hidden', visible ? 'false' : 'true');
+      item.span.style.visibility = visible ? 'visible' : 'hidden';
+    });
+  }
+
   function axis(){
     var s = SCALES[S.scale], el = document.getElementById('axis'), h='';
     var ticks;
@@ -345,13 +384,16 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
       var p = clamp(pos(t,S.scale))*100;
       if(p<0||p>100) return;
       var major = (S.scale==='civ' && (t===-10000||t===-3200||t===1||t===2000)) || i===0 || i===ticks.length-1;
-      h += '<div class="tick'+(major?' major':'')+'" style="left:'+p.toFixed(3)+'%"><span>'+esc(fmtY(t===1?1:t))+'</span></div>';
+      var label = fmtY(t===1?1:t);
+      var edge = i===0 ? ' endpoint start' : (i===ticks.length-1 ? ' endpoint end' : '');
+      h += '<div class="tick'+(major?' major':'')+edge+'" aria-label="'+esc(label)+'" style="left:'+p.toFixed(3)+'%"><span>'+esc(label)+'</span></div>';
     });
     if(S.scale==='civ'){
       var pw = clamp(pos(-3200,'civ'))*100;
-      h += '<div class="tick major" style="left:'+pw.toFixed(3)+'%"><span>yazı</span></div>';
+      h += '<div class="tick major" aria-label="yazı" style="left:'+pw.toFixed(3)+'%"><span>yazı</span></div>';
     }
     el.innerHTML = h;
+    applyAxisLabelDensity(el);
   }
 
   function hist(list){
@@ -518,6 +560,13 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape' && S.guide !== null){ S.guide = null; draw(); }
   });
+
+  var axisResize;
+  window.addEventListener('resize', function(){
+    clearTimeout(axisResize);
+    axisResize = setTimeout(function(){ axis(); }, 80);
+  });
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ axis(); });
 
   draw();
 })();

@@ -15,7 +15,14 @@
   }
 
   function normalize(value) {
-    return String(value).toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    return String(value)
+      .toLocaleLowerCase('tr-TR')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      // Arama; Türkçe imla denetimi değil, aksan ve klavye farkına toleranslı
+      // bir bulmadır. ASCII büyük I, Türkçe küçük harfe çevrilince dotless ı
+      // olur; kullanıcı "ISKENDERIYE" yazdığında İskenderiye kaydını yine bul.
+      .replaceAll('ı', 'i');
   }
 
   function icon(name, className = '') {
@@ -74,8 +81,7 @@
       renderFilters();
       renderArticles();
       if (matchMedia('(max-width:900px)').matches) {
-        host.classList.remove('is-open');
-        $('#mobileFilterToggle').setAttribute('aria-expanded','false');
+        setMobileFilterOpen(false);
       }
     }));
   }
@@ -204,6 +210,7 @@
   function openSearch() {
     const dialog = $('#searchDialog');
     if (!dialog.open) dialog.showModal();
+    $('#siteSearch').value = '';
     renderSearchResults('');
     setTimeout(() => $('#siteSearch').focus(),30);
   }
@@ -219,6 +226,10 @@
     document.addEventListener('keydown', event => {
       if ((event.ctrlKey || event.metaKey) && event.key.toLocaleLowerCase('tr-TR') === 'k') { event.preventDefault(); openSearch(); }
       if (event.key === '/' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)) { event.preventDefault(); openSearch(); }
+      if (event.key === 'Escape') {
+        setMenuOpen(false);
+        setMobileFilterOpen(false);
+      }
     });
   }
 
@@ -237,20 +248,29 @@
     $('#themeToggle').addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
   }
 
+  function setMenuOpen(open) {
+    const menu = $('#menuToggle');
+    $('#mainNav').classList.toggle('is-open', open);
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+  }
+
+  function setMobileFilterOpen(open) {
+    const toggle = $('#mobileFilterToggle');
+    $('#categoryFilters').classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.textContent = open ? 'Konuları gizle' : 'Konuları göster';
+  }
+
   function initNavigation() {
-    const nav = $('#mainNav');
     $('#menuToggle').addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
-      $('#menuToggle').setAttribute('aria-expanded',String(open));
+      setMenuOpen(!$('#mainNav').classList.contains('is-open'));
     });
     $$('#mainNav a').forEach(link => link.addEventListener('click', () => {
-      nav.classList.remove('is-open');
-      $('#menuToggle').setAttribute('aria-expanded','false');
+      setMenuOpen(false);
     }));
     $('#mobileFilterToggle').addEventListener('click', () => {
-      const open = $('#categoryFilters').classList.toggle('is-open');
-      $('#mobileFilterToggle').setAttribute('aria-expanded',String(open));
-      $('#mobileFilterToggle').textContent = open ? 'Konuları gizle' : 'Konuları göster';
+      setMobileFilterOpen(!$('#categoryFilters').classList.contains('is-open'));
     });
   }
 
