@@ -39,6 +39,9 @@ assert.equal((await readdir(path.join(root,'site/assets/editorial-covers'))).len
 let versionedAssets = 0;
 for (const page of ['index.html', ...articles.map(a=>`articles/${a.slug}.html`), 'dist/zaman-cizelgesi.html', 'dist/bulgu-veri-tabani.html', 'dist/kanit-denetimi.html']) {
  const html=await read(`site/${page}`);
+ assert.equal((html.match(/data-domain="kanitatlasi\.com"/g)||[]).length,1,`${page}: one Plausible loader`);
+ assert.ok(html.includes('<script defer data-domain="kanitatlasi.com" src="https://analytics.3d-labx.com/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>'));
+ assert.ok(html.includes('window.plausible.q = window.plausible.q || []'));
  for (const [,url] of html.matchAll(/\b(?:src|href)="([^\"]+\.(?:js|css|svg)(?:\?[^\"]*)?)"/g)) {
   if (/^(?:[a-z]+:|\/\/)/i.test(url)) continue;
   const [asset,query]=url.split('?');
@@ -49,6 +52,7 @@ for (const page of ['index.html', ...articles.map(a=>`articles/${a.slug}.html`),
  }
 }
 assert.ok(versionedAssets > 200);
+assert.ok(!(await read('site/reader.html')).includes('data-domain="kanitatlasi.com"'), 'redirect must not double-count pageviews');
 assert.ok((await read('site/_headers')).includes('max-age=0, must-revalidate'));
 assert.ok((await read('vercel.json')).includes('max-age=0, must-revalidate'));
 console.log(`Önbellek: ${versionedAssets} yerel varlık başvurusu içerik hash'iyle doğrulandı.`);
