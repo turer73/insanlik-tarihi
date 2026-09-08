@@ -141,3 +141,8 @@ kbd{border:0;background:transparent;color:var(--ink-3);font:600 .73rem var(--san
 .sort-select svg{position:absolute;right:.8rem;top:50%;width:18px;height:18px;transform:translateY(-50%);pointer-events:none;color:var(--ink-3)}
 .results-bar{min-height:30px;margin:.15rem 0 .75rem;display:flex;align-items:center;justify-content:space-between;color:var(--ink-3);font-size:.8rem}
 .results-bar button{background:none;color:var(--green);font-weight:800;cursor:pointer;padding:.25rem 0}
+
+/* Kanıt Atlası güneş/pusula amblemi */
+.brand__mark{border:0!important;background:transparent!important;overflow:visible;box-shadow:none!important}
+.brand__mark::before,.brand__mark::after{display:none!important}
+.brand__mark img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(27,36,31,.14))}

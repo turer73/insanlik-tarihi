@@ -35,7 +35,7 @@
           return response.text();
         })
         .then(source => {
-          const layer = `<base href="./"><link rel="stylesheet" href="assets/article-visuals.css"><script src="assets/visuals-scenes-1.js" defer><\/script><script src="assets/visuals-scenes-2.js" defer><\/script><script src="assets/visuals-scenes-3.js" defer><\/script><script src="assets/visuals-scenes-4.js" defer><\/script><script src="assets/visuals.js" defer><\/script><script src="assets/article-visuals.js" defer><\/script>`;
+          const layer = `<base href="./"><link rel="stylesheet" href="assets/article-visuals.css"><script src="assets/visuals-scenes-1.js" defer><\/script><script src="assets/visuals-scenes-2.js" defer><\/script><script src="assets/visuals-scenes-3.js" defer><\/script><script src="assets/visuals-scenes-4.js" defer><\/script><script src="assets/visuals.js" defer><\/script><script src="assets/editorial-meta.js" defer><\/script><script src="assets/covers-data/${encodeURIComponent(slug)}.js" defer><\/script><script src="assets/article-visuals.js" defer><\/script>`;
           document.open();
           document.write(layer + source);
           document.close();

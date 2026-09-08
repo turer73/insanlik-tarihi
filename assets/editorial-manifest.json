@@ -1,0 +1,218 @@
+{
+  "olu-deniz-parsomenleri": {
+    "file": "assets/editorial-covers/olu-deniz-parsomenleri.webp",
+    "alt": "Ölü Deniz kıyısındaki mağara, küpler ve parşömenler",
+    "source": "ölü_deniz_mağarasında_antik_parşömenler.png",
+    "bytes": 120720,
+    "width": 1200,
+    "height": 675
+  },
+  "tufan-bilmecesi": {
+    "file": "assets/editorial-covers/tufan-bilmecesi.webp",
+    "alt": "Mezopotamya taşkını, batık kent ve çivi yazılı tablet",
+    "source": "mezopotamya_tufanı_harabeler_ve_güneş_diski.png",
+    "bytes": 169474,
+    "width": 1200,
+    "height": 675
+  },
+  "hatirlamadigimiz-felaketler": {
+    "file": "assets/editorial-covers/hatirlamadigimiz-felaketler.webp",
+    "alt": "Kül tabakası altında kalan antik yerleşim ve volkan",
+    "source": "küller_altında_antik_yerleşim.png",
+    "bytes": 140072,
+    "width": 1200,
+    "height": 675
+  },
+  "babil": {
+    "file": "assets/editorial-covers/babil.webp",
+    "alt": "Babil kent silueti, İştar Kapısı ve kil tablet",
+    "source": "kadim_babil_in_altın_ufku.png",
+    "bytes": 156624,
+    "width": 1200,
+    "height": 675
+  },
+  "ayni-cumlede": {
+    "file": "assets/editorial-covers/ayni-cumlede.webp",
+    "alt": "İskenderiye ile Machu Picchu’yu aynı atlas düzleminde karşılaştıran kompozisyon",
+    "source": "özel editoryal kompozisyon",
+    "bytes": 137182,
+    "width": 1200,
+    "height": 675
+  },
+  "petra": {
+    "file": "assets/editorial-covers/petra.webp",
+    "alt": "Petra Hazinesi ve atlas çizgileri",
+    "source": "petra_hazinesi_ve_altın_pusula_güneşi.png",
+    "bytes": 129938,
+    "width": 1200,
+    "height": 675
+  },
+  "shushtar": {
+    "file": "assets/editorial-covers/shushtar.webp",
+    "alt": "Şuşter su sistemi, kanallar ve su çarkları",
+    "source": "şuştar_ın_antik_su_mühendisliği.png",
+    "bytes": 122938,
+    "width": 1200,
+    "height": 675
+  },
+  "stonehenge": {
+    "file": "assets/editorial-covers/stonehenge.webp",
+    "alt": "Stonehenge taş çemberi ve göksel ölçüm çizgileri",
+    "source": "taş_çemberinde_altın_çağ_mistikliği.png",
+    "bytes": 95814,
+    "width": 1200,
+    "height": 675
+  },
+  "sumer": {
+    "file": "assets/editorial-covers/sumer.webp",
+    "alt": "Sümer kil tabletleri ve ziggurat kenti",
+    "source": "mezopotamya_da_kil_tableti_ve_ziggurat.png",
+    "bytes": 125788,
+    "width": 1200,
+    "height": 675
+  },
+  "angkor": {
+    "file": "assets/editorial-covers/angkor.webp",
+    "alt": "Angkor tapınakları, su havuzları ve harita katmanı",
+    "source": "angkor_tapınağı_nda_altın_günbatımı.png",
+    "bytes": 181026,
+    "width": 1200,
+    "height": 675
+  },
+  "tas-tepeler": {
+    "file": "assets/editorial-covers/tas-tepeler.webp",
+    "alt": "Taş Tepeler T biçimli dikilitaşları ve kazı planı",
+    "source": "göbekli_tepe_de_gün_doğumu.png",
+    "bytes": 116000,
+    "width": 1200,
+    "height": 675
+  },
+  "machu-picchu": {
+    "file": "assets/editorial-covers/machu-picchu.webp",
+    "alt": "Machu Picchu ve And Dağları atlas görünümü",
+    "source": "machu_picchu_nun_vintage_atlas_panoraması.png",
+    "bytes": 142990,
+    "width": 1200,
+    "height": 675
+  },
+  "chichen-itza": {
+    "file": "assets/editorial-covers/chichen-itza.webp",
+    "alt": "Chichén Itzá piramidi ve göksel hizalama çizgileri",
+    "source": "altın_saatte_maya_piramidi.png",
+    "bytes": 144336,
+    "width": 1200,
+    "height": 675
+  },
+  "kapadokya": {
+    "file": "assets/editorial-covers/kapadokya.webp",
+    "alt": "Kapadokya kaya yerleşimleri, yeraltı planı ve balonlar",
+    "source": "kapadokya_nın_kartografik_rüyası.png",
+    "bytes": 120602,
+    "width": 1200,
+    "height": 675
+  },
+  "persepolis": {
+    "file": "assets/editorial-covers/persepolis.webp",
+    "alt": "Persepolis kabartmaları, sütunlar ve idari tabletler",
+    "source": "persepolis_in_altın_çağ_harabeleri.png",
+    "bytes": 127056,
+    "width": 1200,
+    "height": 675
+  },
+  "iskenderiye": {
+    "file": "assets/editorial-covers/iskenderiye.webp",
+    "alt": "Antik İskenderiye, deniz feneri ve bilgi araçları",
+    "source": "antik_i_skenderiye_nin_altın_haritası.png",
+    "bytes": 147502,
+    "width": 1200,
+    "height": 675
+  },
+  "milankovic": {
+    "file": "assets/editorial-covers/milankovic.webp",
+    "alt": "Buzul vadisi ve yörüngesel döngü şemaları",
+    "source": "buzul_vadisinde_milanković_döngüleri.png",
+    "bytes": 138858,
+    "width": 1200,
+    "height": 675
+  },
+  "roma-etki": {
+    "file": "assets/editorial-covers/roma-etki.webp",
+    "alt": "Roma Forumu, Kolezyum ve tarihsel miras",
+    "source": "altın_saatte_antik_roma_harabeleri.png",
+    "bytes": 168582,
+    "width": 1200,
+    "height": 675
+  },
+  "roma-hristiyanlik": {
+    "file": "assets/editorial-covers/roma-hristiyanlik.webp",
+    "alt": "Roma mimarisi ile erken Hristiyanlık sembollerinin buluşması",
+    "source": "altın_çağ_da_roma_nın_kutsal_panoraması.png",
+    "bytes": 160672,
+    "width": 1200,
+    "height": 675
+  },
+  "isa-tarihsellik": {
+    "file": "assets/editorial-covers/isa-tarihsellik.webp",
+    "alt": "Parşömen, tarihsel bağlam ve kaynaklar arası zaman mesafesi",
+    "source": "özel editoryal kompozisyon",
+    "bytes": 103382,
+    "width": 1200,
+    "height": 675
+  },
+  "mit-ve-sicil": {
+    "file": "assets/editorial-covers/mit-ve-sicil.webp",
+    "alt": "Mitolojik yaratık, tabletler ve kayıt arşivi",
+    "source": "mit_ve_kayıtların_altın_pusulası.png",
+    "bytes": 152666,
+    "width": 1200,
+    "height": 675
+  },
+  "gokteki-ayi": {
+    "file": "assets/editorial-covers/gokteki-ayi.webp",
+    "alt": "Büyük Ayı yıldızları altında antik gözlemciler",
+    "source": "yıldızlar_altında_antik_gözlemciler.png",
+    "bytes": 145930,
+    "width": 1200,
+    "height": 675
+  },
+  "gec-kalan-haberci": {
+    "file": "assets/editorial-covers/gec-kalan-haberci.webp",
+    "alt": "Parşömenler, uzak kent ve zaman çizgileri",
+    "source": "zamanın_altın_atlası.png",
+    "bytes": 161754,
+    "width": 1200,
+    "height": 675
+  },
+  "kendi-kaniti": {
+    "file": "assets/editorial-covers/kendi-kaniti.webp",
+    "alt": "Kendi üzerine kapanan kanıt döngüsünü gösteren atlas kompozisyonu",
+    "source": "özel editoryal kompozisyon",
+    "bytes": 131562,
+    "width": 1200,
+    "height": 675
+  },
+  "calinan-ates": {
+    "file": "assets/editorial-covers/calinan-ates.webp",
+    "alt": "Volkan ateşi ve antik yerleşim",
+    "source": "volkan_gölgesinde_antik_harabeler.png",
+    "bytes": 140954,
+    "width": 1200,
+    "height": 675
+  },
+  "herkesin-saati": {
+    "file": "assets/editorial-covers/herkesin-saati.webp",
+    "alt": "Gökyüzü gözlemi, yıldız saati ve tarımsal zaman",
+    "source": "özel editoryal kompozisyon",
+    "bytes": 137126,
+    "width": 1200,
+    "height": 675
+  },
+  "yilin-iki-kapisi": {
+    "file": "assets/editorial-covers/yilin-iki-kapisi.webp",
+    "alt": "Yılın iki mevsim kapısını birleştiren çift atlas görünümü",
+    "source": "özel editoryal kompozisyon",
+    "bytes": 92238,
+    "width": 1200,
+    "height": 675
+  }
+}

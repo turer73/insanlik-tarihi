@@ -1,0 +1,21 @@
+import { access, readFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const required=['assets/article-visuals.js','assets/article-visuals.css','assets/editorial-meta.js','assets/logo-mark.svg','reader.html','scripts/build-site.mjs'];
+for(const rel of required) await access(path.join(ROOT,rel));
+const js=await readFile(path.join(ROOT,'assets/article-visuals.js'),'utf8');
+const css=await readFile(path.join(ROOT,'assets/article-visuals.css'),'utf8');
+const reader=await readFile(path.join(ROOT,'reader.html'),'utf8');
+const build=await readFile(path.join(ROOT,'scripts/build-site.mjs'),'utf8');
+const metaSource=await readFile(path.join(ROOT,'assets/editorial-meta.js'),'utf8');
+if(!js.includes('it-editorial-image')||!js.includes('window.ITCoverData')||!js.includes('covers/${encodeURIComponent(slug)}.webp')) throw new Error('Makale görsel betiği gerçek kapakları kullanmıyor');
+if(!css.includes('.it-editorial-image')||!css.includes('.it-section-visual--2')) throw new Error('Makale görsel stilleri eksik');
+if(!reader.includes('assets/editorial-meta.js')||!reader.includes('covers-data/${encodeURIComponent(slug)}.js')) throw new Error('Reader tekil kapak betiğini yüklemiyor');
+if(!build.includes('assets/covers/${article.slug}.webp')) throw new Error('Makale Open Graph/JSON-LD görseli yazıya özel değil');
+const match=metaSource.match(/window\.KAEditorialMeta=(\{.*\});/s);
+if(!match) throw new Error('Editoryal meta dosyası okunamadı');
+const meta=JSON.parse(match[1]);
+if(Object.keys(meta).length!==27) throw new Error(`Editoryal meta 27 kayıt içermiyor: ${Object.keys(meta).length}`);
+console.log('Makale içi editoryal sistem: 27/27 kayıt doğrulandı.');

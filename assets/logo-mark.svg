@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Kanıt Atlası amblemi</title>
+  <desc id="desc">Altın güneş diski, pusula yıldızı ve ay evrelerinden oluşan dairesel amblem</desc>
+  <defs>
+    <radialGradient id="g" cx="44%" cy="38%" r="68%">
+      <stop offset="0" stop-color="#e8c77c"/><stop offset=".7" stop-color="#b98735"/><stop offset="1" stop-color="#8c642a"/>
+    </radialGradient>
+  </defs>
+  <circle cx="64" cy="64" r="61" fill="#123f36" stroke="#c79a4c" stroke-width="3"/>
+  <circle cx="64" cy="64" r="51" fill="none" stroke="#e5c477" stroke-opacity=".72" stroke-width="1.4"/>
+  <circle cx="64" cy="64" r="37" fill="url(#g)" stroke="#f0d28f" stroke-width="1.2"/>
+  <g fill="none" stroke="#ead18f" stroke-opacity=".7" stroke-width="1">
+    <circle cx="64" cy="64" r="26"/><circle cx="64" cy="64" r="18"/>
+    <path d="M64 13v102M13 64h102M28 28l72 72M100 28 28 100"/>
+  </g>
+  <g fill="#e8c77c">
+    <circle cx="25" cy="64" r="4.2"/><circle cx="103" cy="64" r="4.2"/>
+    <path d="M35 35a7 7 0 1 0 7-7 5.7 5.7 0 1 1-7 7Z"/>
+    <path d="M93 35a7 7 0 1 1-7-7 5.7 5.7 0 1 0 7 7Z"/>
+    <path d="M35 93a7 7 0 1 1 7 7 5.7 5.7 0 1 0-7-7Z"/>
+    <path d="M93 93a7 7 0 1 0-7 7 5.7 5.7 0 1 1 7-7Z"/>
+  </g>
+  <path d="M64 27 70 56 101 64 70 72 64 101 58 72 27 64 58 56Z" fill="#123f36" stroke="#f3d696" stroke-width="1.4"/>
+  <path d="M64 43 68 60 85 64 68 68 64 85 60 68 43 64 60 60Z" fill="#f2d38c"/>
+  <circle cx="64" cy="64" r="4.2" fill="#123f36" stroke="#f2d38c" stroke-width="1.2"/>
+</svg>

@@ -163,7 +163,7 @@ function articleJsonLd(article) {
       url: `${ORIGIN}/`,
       logo: { '@type': 'ImageObject', url: `${ORIGIN}/favicon.svg` }
     },
-    image: `${ORIGIN}/assets/og-image.webp`,
+    image: `${ORIGIN}/assets/covers/${article.slug}.webp`,
     articleSection: article.category,
     keywords: article.tags.join(', ')
   }).replaceAll('<', '\\u003c');
@@ -202,13 +202,13 @@ function wrapArticle(source, article) {
   <meta property="og:title" content="${escapeHtml(article.title)} — Kanıt Atlası">
   <meta property="og:description" content="${escapeHtml(article.summary)}">
   <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${ORIGIN}/assets/og-image.webp">
+  <meta property="og:image" content="${ORIGIN}/assets/covers/${article.slug}.webp">
   <meta property="og:image:width" content="480">
   <meta property="og:image:height" content="270">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(article.title)} — Kanıt Atlası">
   <meta name="twitter:description" content="${escapeHtml(article.summary)}">
-  <meta name="twitter:image" content="${ORIGIN}/assets/og-image.webp">
+  <meta name="twitter:image" content="${ORIGIN}/assets/covers/${article.slug}.webp">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="../site.webmanifest">
 ${headFragment}
@@ -222,6 +222,7 @@ ${bodyFragment}
   <script src="../assets/visuals-scenes-3.js"></script>
   <script src="../assets/visuals-scenes-4.js"></script>
   <script src="../assets/visuals.js"></script>
+  <script src="../assets/editorial-meta.js"></script>
   <script src="../assets/article-visuals.js"></script>
 </body>
 </html>\n`;
@@ -367,7 +368,7 @@ async function main() {
   }
 
   await brandToolPages();
-  await writeFile(path.join(OUT, 'favicon.svg'), favicon());
+  await writeFile(path.join(OUT, 'favicon.svg'), await readFile(path.join(ROOT, 'assets', 'logo-mark.svg'), 'utf8'));
   await writeFile(path.join(OUT, 'site.webmanifest'), manifest());
   await writeFile(path.join(OUT, 'reader.html'), legacyReader());
   await writeFile(path.join(OUT, '404.html'), notFoundPage());
