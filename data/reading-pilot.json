@@ -1,0 +1,14 @@
+{
+  "iskenderiye": {
+    "summary": "İskenderiye Kütüphanesi’nin sonunu tek bir yangına bağlayan anlatı, farklı dönemlere ait olayları birleştirir. Bu dosya yangın öykülerini, Mouseion’a ilişkin tanıklıkları ve metinlerin yeniden kopyalanma sürecini ayrı ayrı ele alır. Antik bir metnin günümüze ulaşması ile bir kurumun ayakta kalması aynı soru değildir. Aşağıdaki kanıt dosyası, bu yazıda kullanılan iddiaları ve kaynak konumlarını incelemenizi sağlar.",
+    "limit": "Strabon’un Mouseion tasviri, kitap koleksiyonunun yangından ne ölçüde etkilendiğini tek başına göstermez. Kayıtların konu uzmanı incelemesi bekleniyor."
+  },
+  "kapadokya": {
+    "summary": "Kapadokya’nın yer altı yerleşimleri hakkında yapının ilk oyulması, sonraki kullanımları ve mühendislik kapasitesi ayrı sorular gerektirir. Bir kullanım dönemine ilişkin kayıt, bütün yapının başlangıcını tarihlemez. Bu dosya, tünel bağlantısı ve nüfus kapasitesi gibi yaygın iddiaları, hangi ölçümün veya kaynağın gerektiğini belirterek ele alır. Kaynak bağlantısı eksik kayıtlar da aşağıda açıkça işaretlenmiştir.",
+    "limit": "Bu arşivde bir ölçüm veya kaynağın bulunmaması, hiçbir araştırmanın yapılmadığı anlamına gelmez. İlk oyulma tarihi ve kapasite gibi sorular mevcut kayıtlarla kesinleştirilemiyor."
+  },
+  "babil": {
+    "summary": "Babil dosyası, kent ve yapılar hakkındaki tarihsel kayıtları sonraki sembolik anlatılardan ayırmayı amaçlar. Kule, Asma Bahçeler, matematik ve kentin modern müdahaleleri aynı kanıt türüyle değerlendirilemez. Aşağıdaki dosyada her iddianın mevcut değerlendirmesi, karşı kanıtı ve kaynak künyesi birlikte sunulur. Böylece bir sonucun hangi kayda dayandığını ve hangi soruların açık kaldığını ayrı ayrı inceleyebilirsiniz.",
+    "limit": "Bu yazıya bağlı kayıtlar eski kaynak biçimindedir. Kaynaklar listelenmiş olsa da kanıt kalemi ile sayfa veya pasaj arasındaki bağlantılar henüz kurulmamıştır; uzman incelemesi kayıtlı değildir."
+  }
+}

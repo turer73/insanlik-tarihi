@@ -29,7 +29,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 // Tarihi izlenen yollar. Yazılar ve araçlar sitemap'e, yayın tarihi RSS'e gider.
-const IZLENEN = ["articles", "dist", "index.html", "assets", "data/articles.json"];
+const IZLENEN = ["articles", "dist", "index.html", "assets", "data/articles.json", "data/reading-pilot.json"];
 
 const GUNLUK = /^\d{4}-\d{2}-\d{2}$/;
 

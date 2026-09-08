@@ -1,0 +1,143 @@
+/* Kanıt dosyası pilotu: makale temalarının içine taşmayan ortak katman. */
+.ka-evidence-intro,.ka-evidence-dossier{
+  --ka-bg:var(--surface,var(--bg,#f5f2ed));
+  --ka-bg-soft:var(--surface-2,#ded8d0);
+  --ka-ink:var(--ink,#181518);
+  --ka-muted:var(--ink-2,#4e4849);
+  --ka-faint:var(--ink-3,#7b7476);
+  --ka-line:var(--rule,#c8c1ba);
+  --ka-accent:var(--accent-ink,var(--accent,#0b6f78));
+  --ka-accent-soft:var(--accent-soft,#dcebed);
+  --ka-warn:var(--gold-ink,var(--gold,#8a6a15));
+  --ka-warn-soft:var(--gold-soft,#efe4c6);
+  --ka-radius:clamp(8px,1.2vw,14px);
+  max-width:var(--wrap,1180px);
+  margin-inline:auto;
+  padding-inline:clamp(1.25rem,4vw,3rem);
+  color:var(--ka-ink);
+  min-width:0;
+}
+
+.ka-evidence-intro{margin-inline:auto}
+
+.ka-evidence-intro *,.ka-evidence-dossier *{box-sizing:border-box;min-width:0}
+.ka-evidence-intro a,.ka-evidence-dossier a,.ka-evidence-intro button,.ka-evidence-dossier button{color:var(--ka-accent);text-underline-offset:3px}
+.ka-evidence-intro :where(a,button):focus-visible,.ka-evidence-dossier :where(a,button,summary):focus-visible{
+  outline:3px solid var(--ka-accent);
+  outline-offset:3px;
+}
+
+.ka-evidence-intro{
+  display:grid;
+  gap:.55rem;
+  width:calc(100% - 2.5rem);
+  box-sizing:border-box;
+  margin:clamp(1.5rem,4vw,3rem) auto 1rem;
+  padding:1rem 1.15rem;
+  border:1px solid var(--ka-line);
+  border-inline-start:3px solid var(--ka-accent);
+  border-radius:var(--ka-radius);
+  background:color-mix(in srgb,var(--ka-accent-soft) 58%,var(--ka-bg));
+}
+.ka-evidence-intro :where(p,h2){margin:0}
+.ka-evidence-intro h2,.ka-section-heading{font-family:var(--display,var(--serif,Georgia,serif));font-weight:650;letter-spacing:-.015em}
+.ka-evidence-intro p{max-width:70ch;color:var(--ka-muted);line-height:1.55}
+.ka-evidence-intro .ka-limit{margin-top:.15rem;color:var(--ka-faint);font-size:.88rem}
+
+.ka-reading-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+  margin:0 0 1.5rem;
+  padding:0;
+}
+.ka-reading-nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:2.75rem;
+  max-width:100%;
+  padding:.55rem .8rem;
+  border:1px solid var(--ka-line);
+  border-radius:999px;
+  background:var(--ka-bg);
+  font:600 .78rem/1.25 var(--mono,ui-monospace,monospace);
+  text-decoration:none;
+}
+.ka-reading-nav a:hover{background:var(--ka-bg-soft);border-color:var(--ka-accent)}
+
+.ka-evidence-dossier#kanit-dosyasi{scroll-margin-top:5rem}
+.ka-section-heading{margin:0 0 .8rem;font-size:clamp(1.45rem,3vw,2.25rem);line-height:1.08}
+
+.ka-finding{
+  margin:0 0 .7rem;
+  border:1px solid var(--ka-line);
+  border-radius:var(--ka-radius);
+  background:var(--ka-bg);
+  overflow:visible;
+}
+.ka-finding summary{
+  cursor:pointer;
+  padding:.9rem 1rem;
+  color:var(--ka-ink);
+  font-weight:650;
+  line-height:1.4;
+}
+.ka-finding summary:hover{background:color-mix(in srgb,var(--ka-bg-soft) 45%,var(--ka-bg))}
+.ka-finding-summary{display:list-item;list-style-position:inside}
+.ka-finding-summary .ka-status{margin:.25rem 0 .25rem .4rem}
+.ka-finding-summary .ka-status{flex:0 0 auto}
+.ka-finding-body{padding:0 1rem 1.1rem;border-top:1px solid var(--ka-line);color:var(--ka-muted)}
+.ka-finding-body p{max-width:72ch;line-height:1.6}
+
+.ka-evidence-group{margin:1rem 0 0;padding:0;border:0}
+.ka-evidence-group h4,.ka-sources h4{margin:0 0 .55rem;color:var(--ka-ink);font:650 1rem/1.25 var(--display,var(--serif,Georgia,serif))}
+.ka-evidence-group ol,.ka-evidence-group ul,.ka-sources ol{margin:0;padding-inline-start:1.25rem}
+.ka-evidence-group li{padding:.6rem .15rem;color:var(--ka-muted)}
+.ka-evidence-group li+li{border-top:1px solid color-mix(in srgb,var(--ka-line) 70%,transparent)}
+.ka-evidence-group-empty p,.ka-metadata-missing{margin:.35rem 0;color:var(--ka-faint);font-size:.88rem}
+.ka-evidence-note,.ka-source-note{margin:.35rem 0 0;color:var(--ka-faint);font-size:.88rem}
+
+.ka-status{
+  display:inline-flex;
+  align-items:center;
+  min-height:1.6rem;
+  padding:.18rem .45rem;
+  border:1px solid currentColor;
+  border-radius:999px;
+  color:var(--ka-accent);
+  font:700 .67rem/1 var(--mono,ui-monospace,monospace);
+  letter-spacing:.04em;
+}
+.ka-review-state{margin:.9rem 0;padding:.75rem .85rem;border-inline-start:2px solid var(--ka-warn);background:color-mix(in srgb,var(--ka-warn-soft) 62%,var(--ka-bg));color:var(--ka-muted)}
+.ka-review-state .ka-status{margin-inline-end:.4rem;color:var(--ka-warn)}
+
+.ka-evidence-list{display:grid;gap:.55rem;margin:1rem 0;padding:0;list-style:none}
+.ka-evidence-list>li{padding:.7rem .8rem;border:1px solid var(--ka-line);border-radius:calc(var(--ka-radius) - 2px);background:color-mix(in srgb,var(--ka-bg-soft) 28%,var(--ka-bg))}
+.ka-citation{display:inline-flex;flex-wrap:wrap;gap:.25rem .5rem;margin-top:.45rem;font:600 .74rem/1.4 var(--mono,ui-monospace,monospace)}
+.ka-citation,.ka-source,.ka-finding-body{overflow-wrap:anywhere;word-break:break-word}
+.ka-sources{margin-top:1.15rem;padding:0;border:0}
+.ka-sources ol{display:grid;gap:.55rem}
+.ka-source{padding:.75rem .85rem;border:1px solid var(--ka-line);border-radius:calc(var(--ka-radius) - 2px);background:var(--ka-bg);overflow-wrap:anywhere;word-break:break-word}
+.ka-source p{margin:.3rem 0 0;color:var(--ka-muted);font-size:.9rem;line-height:1.5}
+.ka-source-title{display:block;color:var(--ka-ink);font-weight:650}
+.ka-source-meta{display:block;margin-top:.25rem;color:var(--ka-muted);font:500 .77rem/1.45 var(--mono,ui-monospace,monospace)}
+.ka-source-backlinks{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.5rem!important}
+.ka-source-backlink{font:600 .74rem/1.3 var(--mono,ui-monospace,monospace)}
+.ka-source a{overflow-wrap:anywhere}
+.ka-limit{color:var(--ka-faint);font-size:.88rem;line-height:1.5}
+
+@media (max-width:640px){
+  .ka-evidence-dossier{padding-inline:clamp(.85rem,4vw,1.25rem)}
+  .ka-reading-nav{display:grid;grid-template-columns:1fr}
+  .ka-reading-nav a{border-radius:var(--ka-radius);width:100%}
+  .ka-finding summary{display:list-item;padding:.85rem .8rem}
+  .ka-finding-summary .ka-status{margin-bottom:.45rem}
+  .ka-finding-body{padding-inline:.8rem}
+}
+
+@media (min-width:700px){
+  .ka-evidence-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ka-sources ol{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media (prefers-reduced-motion:reduce){.ka-evidence-intro *,.ka-evidence-dossier *{scroll-behavior:auto!important;transition:none!important}}

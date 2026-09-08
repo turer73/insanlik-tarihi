@@ -82,6 +82,7 @@
   }
 
   function addSectionVisuals(slug) {
+    if (document.querySelector('.ka-evidence-dossier')) return;
     const sections = [...document.querySelectorAll('main section, body > section')]
       .filter(section => !section.closest('header') && !section.closest('.it-story-visual'));
     if (sections.length < 3) return;
