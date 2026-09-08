@@ -71,13 +71,13 @@ jobs:
       - name: Apply homepage and article visual system
         run: sh .editorial-patch/install-all.sh "$GITHUB_WORKSPACE"
 
-      - name: Run repository quality contract
+      - name: Run pre-commit quality contract
         shell: bash
         run: |
           set -euo pipefail
           npm run check
           npm run build:site
-          git diff --exit-code -- data/lastmod.json
+          git diff --check
           test -f site/index.html
           test -f site/sitemap.xml
           test -f site/feed.xml
@@ -99,14 +99,17 @@ jobs:
             .editorial-cover-sources.json \
             .github/workflows/apply-kanit-atlasi-editorial.yml
 
-      - name: Commit completed integration
+      - name: Commit and verify completed integration
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --cached --stat
+          git diff --cached --check
           git diff --cached --quiet && { echo "No integration changes produced"; exit 1; }
           git commit -m "feat: Kanıt Atlası editoryal görsel sistemini tamamla [editorial-applied]"
+          npm run check
+          npm run build:site
+          git diff --exit-code -- data/lastmod.json
           git push origin HEAD:feat/kanit-atlasi-editorial-live-20260908
