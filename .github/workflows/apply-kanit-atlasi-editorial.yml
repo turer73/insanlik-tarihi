@@ -71,8 +71,18 @@ jobs:
       - name: Apply homepage and article visual system
         run: sh .editorial-patch/install-all.sh "$GITHUB_WORKSPACE"
 
-      - name: Run complete repository checks
-        run: npm run check:all
+      - name: Run repository quality contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check
+          npm run build:site
+          git diff --exit-code -- data/lastmod.json
+          test -f site/index.html
+          test -f site/sitemap.xml
+          test -f site/feed.xml
+          test -f site/articles/iskenderiye.html
+          test -f site/dist/zaman-cizelgesi.html
 
       - name: Remove transfer-only files
         shell: bash
