@@ -322,6 +322,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "laurasia-hipotezi",
     "claim": "Dünya mitolojileri, biri yaratılıştan yıkıma uzanan tutarlı bir hikâye çizgisi taşıyan iki büyük aileye ayrılır ve birincisinin kökeni yaklaşık 40.000 yıl öncesine dayanır.",
     "status": "minority",
@@ -356,6 +357,12 @@
         "role": "proposer",
         "affiliation": "Harvard University",
         "year": 2012
+      },
+      {
+        "name": "Thompson, Tok",
+        "role": "critic",
+        "affiliation": "University of Southern California",
+        "year": 2013
       }
     ],
     "popular_claim": "Bütün mitolojilerin tek bir soyağacı çıkarıldı ve kökeni 40.000 yıl öncesine dayanıyor.",
@@ -364,21 +371,9 @@
       "medya-abartisi",
       "ideolojik-secim"
     ],
-    "evidence": [
-      "Tez, Avrasya ve Amerika mitolojilerinin yaratılıştan yıkıma uzanan tutarlı bir hikâye çizgisi paylaştığını, Sahra altı Afrika, Avustralya ve Yeni Gine geleneklerinin ise böyle bir çizgi taşımadığını savunur."
-    ],
-    "counter_evidence": [
-      "Sınıflandırma ölçütü tutarsız uygulanıyor: bir gelenek yazarın öyle demesiyle birinci gruba konuyor, aynı boşluklar öteki grupta farklı yorumlanıyor.",
-      "İstisna sayısı şemayı zayıflatacak kadar çok: 'şu grupta bulunmaz' denen motifler öteki grupta bulunabiliyor.",
-      "Kullanılan derlemelerin önemli bölümü güncelliğini yitirmiş kaynaklardır.",
-      "Ayrım, gruplar arasında bir kültürel hiyerarşi kuruyor ve bu, ırksal önyargı kaygısı doğuruyor.",
-      "Destekleyici olarak sunulan diğer alanlardan gelen kanıtların önemli bölümü tartışmalı veya belirsiz; teze ters düşen yorumlar da mevcut - doğrulama yanlılığı işareti."
-    ],
-    "open_questions": [
-      "İki aile ayrımı, ölçütler tutarlı uygulandığında ayakta kalır mı?"
-    ],
     "sources": [
       {
+        "id": "witzel-2012-origins-mythologies",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
@@ -387,23 +382,121 @@
         "year": 2012,
         "title": "The Origins of the World's Mythologies",
         "publisher": "Oxford University Press",
-        "language": "en"
+        "isbn": "9780199812851",
+        "pages": "xx+665",
+        "language": "en",
+        "note": "Tezin kendisi. Bu kayıtta iddianın KAYNAĞI olarak kullanılır, doğrulayıcısı olarak değil."
       },
       {
-        "tier": "peer-reviewed",
+        "id": "thompson-2013-witzel-degerlendirmesi",
+        "tier": "institutional",
         "type": "article",
-        "title": "JFR Review: The Origins of the World's Mythologies",
-        "container": "Journal of Folklore Research",
-        "url": "http://www.jfr.indiana.edu/review.php?id=1613",
+        "authors": [
+          "Thompson, Tok"
+        ],
+        "year": 2013,
+        "title": "Review of E. J. Michael Witzel, The Origins of the World's Mythologies",
+        "container": "Journal of Folklore Research Reviews",
+        "institution": "Indiana University - IUScholarWorks Journals",
+        "url": "https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Alan içi eleştirel değerlendirme."
+        "accessed": "2026-09-09",
+        "note": "Alan içi eleştirel değerlendirme; yazar University of Southern California'da folklorcu. 5 Aralık 2013, 1535 kelime. ÖNCEKİ SÜRÜMÜN HATASI: bu kaynak yazarsız ve yılsız biçimde, ölü bir adresle (jfr.indiana.edu - DNS'te yok) ve 'peer-reviewed' etiketiyle duruyordu; accessed alanı da erişilmemiş bir adres için doldurulmuştu. Künye tamamlandı, adres yaşayan sürümle değiştirildi, tier kitap değerlendirmesi olduğu için institutional yapıldı."
       }
     ],
-    "checked": "2026-09-07",
+    "evidence": [
+      {
+        "id": "iki-aile-savi",
+        "text": "Tez, Avrasya ve Amerika mitolojilerinin yaratılıştan yıkıma uzanan tutarlı bir hikâye çizgisi paylaştığını, Sahra altı Afrika, Avustralya ve Yeni Gine geleneklerinin ise böyle bir çizgi taşımadığını savunur.",
+        "citations": [
+          {
+            "source_ref": "witzel-2012-origins-mythologies",
+            "locator": "Tezin ana savı",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "olcut-tutarsiz",
+        "text": "Sınıflandırma ölçütü tutarsız uygulanıyor: bir gelenek yazarın öyle demesiyle birinci gruba konuyor, aynı boşluklar öteki grupta farklı yorumlanıyor.",
+        "citations": [
+          {
+            "source_ref": "thompson-2013-witzel-degerlendirmesi",
+            "locator": "Ölçüt tutarlılığı itirazı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "istisna-fazlaligi",
+        "text": "İstisna sayısı şemayı zayıflatacak kadar çok: 'şu grupta bulunmaz' denen motifler öteki grupta bulunabiliyor.",
+        "citations": [
+          {
+            "source_ref": "thompson-2013-witzel-degerlendirmesi",
+            "locator": "İstisnalar",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "eskimis-derlemeler",
+        "text": "Kullanılan derlemelerin önemli bölümü güncelliğini yitirmiş kaynaklardır.",
+        "citations": [
+          {
+            "source_ref": "thompson-2013-witzel-degerlendirmesi",
+            "locator": "Kaynak tabanı eleştirisi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "hiyerarsi-kaygisi",
+        "text": "Ayrım, gruplar arasında bir kültürel hiyerarşi kuruyor ve bu, ırksal önyargı kaygısı doğuruyor.",
+        "citations": [
+          {
+            "source_ref": "thompson-2013-witzel-degerlendirmesi",
+            "locator": "Hiyerarşi itirazı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "dogrulama-yanliligi",
+        "text": "Destekleyici olarak sunulan diğer alanlardan gelen kanıtların önemli bölümü tartışmalı veya belirsiz; teze ters düşen yorumlar da mevcut - doğrulama yanlılığı işareti.",
+        "citations": [
+          {
+            "source_ref": "thompson-2013-witzel-degerlendirmesi",
+            "locator": "Yan alan kanıtlarının değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tam-metin-okunmadi",
+        "text": "Bu kayıttaki itirazların ayrıntısı değerlendirmenin TAM METNİNDEN değil, kaydın önceki sürümünden devralınmıştır. Künye ve yazar doğrulandı; itirazların metindeki tam ifadesi doğrulanmadı.",
+        "citations": [
+          {
+            "source_ref": "thompson-2013-witzel-degerlendirmesi",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "İki aile ayrımı, ölçütler tutarlı uygulandığında ayakta kalır mı?",
+      "Thompson'ın değerlendirmesinin tam metni okunduğunda itirazlar burada yazıldığı gibi mi duruyor?"
+    ],
+    "checked": "2026-09-09",
     "used_in": [
       "gokteki-ayi"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Ölü kaynak canlı sürümüyle değiştirildi, yazar ve yıl eklendi, tier kitap değerlendirmesi olduğu için institutional'a düşürüldü. Tam metinler okunmadı."
+    }
   },
   {
     "id": "motif-yoklugu-cevre",
@@ -863,6 +956,7 @@
     ]
   },
   {
+    "schema_version": 2,
     "id": "yaratilis-sorusu-alet-yanliligi",
     "claim": "'Bu gelenekte yaratılıştan yıkıma uzanan bir hikâye var mı' sorusu tarafsız bir ölçüttür.",
     "status": "refuted",
@@ -891,49 +985,135 @@
       "felsefe",
       "dilbilim"
     ],
+    "people": [
+      {
+        "name": "Stanner, W. E. H.",
+        "role": "proposer",
+        "affiliation": "Australian National University",
+        "year": 1953
+      }
+    ],
     "popular_claim": "Bazı geleneklerde tutarlı bir yaratılış anlatısı yoktur; bu, o geleneklerin daha basit olduğunu gösterir.",
     "divergence": "Soru tarafsız değildir: içinde zamanın BAŞLANGICI VE SONU OLAN BİR ÇİZGİ olduğu varsayımı gizlidir. Zamanı böyle örgütlemeyen bir gelenek bu testten HER ZAMAN sıfır alır - hikâyesi olmadığı için değil, sorunun ona uymadığı için. Tanıdık biçimi şudur: yıl saymayan bir geleneğe 'bu olay hangi yılda oldu' diye sorup 'tarih bilgisi yok' sonucuna varmak. Herkes ikincisinin hatalı olduğunu görür; birincisi aynı hatadır ama daha az görünürdür, çünkü 'yaratılış hikâyesi' kategorisi doğal geliyor. Doğal değil - bizim zaman anlayışımızın kalıbı.",
     "divergence_type": [
       "kategori-hatasi",
       "somurge-anlatisi"
     ],
-    "evidence": [
-      "Avustralya gelenekleri düz bir zaman çizgisi kullanmaz (bkz. everywhen-dogrusal-olmayan-zaman); bu testten otomatik olarak sıfır alırlar.",
-      "Hint geleneğinin ana damarında ölümün ve dünyanın bir 'kökeni' yoktur çünkü zaman döngüseldir - aynı yapısal sorun.",
-      "Karşı kanıt: testin 'eksik' saydığı Afrika bölgesi, elimizdeki en izlenebilir mitolojik tarihlerden birini taşıyor (bkz. yanlis-teslim-olum-motifi)."
-    ],
-    "counter_evidence": [
-      "Bu kayıt 'iki aile' ayrımının tamamen yanlış olduğunu söylemez; ayrım gerçek bir yapısal farkı da yakalıyor olabilir. Söylenen şu: farkın ne kadarının nesnede, ne kadarının soruda olduğu ayrılmadı."
-    ],
-    "open_questions": [
-      "Zaman anlayışından bağımsız bir 'anlatı derinliği' ölçütü kurulabilir mi?"
-    ],
     "sources": [
       {
+        "id": "stanner-1979-white-man-got-no-dreaming",
         "tier": "peer-reviewed",
-        "type": "article",
+        "type": "book",
         "authors": [
           "Stanner, W. E. H."
         ],
-        "year": 1953,
-        "title": "The Dreaming",
-        "language": "en"
+        "year": 1979,
+        "title": "White Man Got No Dreaming: Essays 1938-1973",
+        "publisher": "Australian National University Press",
+        "isbn": "9780708118023",
+        "pages": "389",
+        "language": "en",
+        "note": "'The Dreaming' denemesi bu akademik derlemede yeniden basılmıştır. TARİH ÇELİŞKİSİ KAYDA GEÇİRİLİYOR: deneme yaygın olarak 1953 tarihiyle anılır ama ilk basımı T. A. G. Hungerford'un derlediği Australian Signpost antolojisidir (1956). Önceki sürüm kaynağı 'Stanner 1953, article' diye gösteriyordu - ne kapsayıcı ne yayıncı vardı. Burada üniversite yayınevinden çıkan derleme künyelendi; 1953/1956 farkı çözülmüş değil."
       },
       {
-        "tier": "peer-reviewed",
+        "id": "thompson-2013-witzel-degerlendirmesi",
+        "tier": "institutional",
         "type": "article",
-        "title": "JFR Review: The Origins of the World's Mythologies",
-        "container": "Journal of Folklore Research",
-        "url": "http://www.jfr.indiana.edu/review.php?id=1613",
+        "authors": [
+          "Thompson, Tok"
+        ],
+        "year": 2013,
+        "title": "Review of E. J. Michael Witzel, The Origins of the World's Mythologies",
+        "container": "Journal of Folklore Research Reviews",
+        "institution": "Indiana University - IUScholarWorks Journals",
+        "url": "https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/38998",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Hiyerarşi ve ölçüt tutarlılığı itirazları."
+        "accessed": "2026-09-09",
+        "note": "Alan içi eleştirel değerlendirme; yazar University of Southern California'da folklorcu. 5 Aralık 2013, 1535 kelime. ÖNCEKİ SÜRÜMÜN HATASI: bu kaynak yazarsız ve yılsız biçimde, ölü bir adresle (jfr.indiana.edu - DNS'te yok) ve 'peer-reviewed' etiketiyle duruyordu; accessed alanı da erişilmemiş bir adres için doldurulmuştu. Künye tamamlandı, adres yaşayan sürümle değiştirildi, tier kitap değerlendirmesi olduğu için institutional yapıldı."
       }
     ],
-    "checked": "2026-09-07",
+    "evidence": [
+      {
+        "id": "avustralya-zaman-cizgisi-yok",
+        "text": "Avustralya gelenekleri düz bir zaman çizgisi kullanmaz (bkz. everywhen-dogrusal-olmayan-zaman); bu testten otomatik olarak sıfır alırlar.",
+        "citations": [
+          {
+            "source_ref": "stanner-1979-white-man-got-no-dreaming",
+            "locator": "'The Dreaming' denemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "hint-dongusel-zaman",
+        "text": "Hint geleneğinin ana damarında ölümün ve dünyanın bir 'kökeni' yoktur çünkü zaman döngüseldir - aynı yapısal sorun.",
+        "citations": [
+          {
+            "source_ref": "stanner-1979-white-man-got-no-dreaming",
+            "locator": "Zaman kavrayışı tartışması - benzeşim",
+            "support_type": "inference"
+          }
+        ]
+      },
+      {
+        "id": "afrika-karsi-ornek",
+        "text": "Testin 'eksik' saydığı Afrika bölgesi, elimizdeki en izlenebilir mitolojik tarihlerden birini taşıyor (bkz. yanlis-teslim-olum-motifi).",
+        "citations": [
+          {
+            "source_ref": "thompson-2013-witzel-degerlendirmesi",
+            "locator": "Sınıflandırmanın Afrika'yı konumlandırması",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ayrim-tamamen-yanlis-degil",
+        "text": "Bu kayıt 'iki aile' ayrımının tamamen yanlış olduğunu söylemez; ayrım gerçek bir yapısal farkı da yakalıyor olabilir. Söylenen şu: farkın ne kadarının nesnede, ne kadarının soruda olduğu ayrılmadı.",
+        "citations": [
+          {
+            "source_ref": "thompson-2013-witzel-degerlendirmesi",
+            "locator": "Ayrımın kısmi geçerliliği",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "hint-cikarim-uzatmasi",
+        "text": "Hint geleneğine ilişkin satır Stanner'dan DOĞRUDAN gelmez; Avustralya için kurduğu zaman argümanının başka bir geleneğe uzatılmasıdır. Uzatma bu kayıtta yapılmıştır, kaynakta değil.",
+        "citations": [
+          {
+            "source_ref": "stanner-1979-white-man-got-no-dreaming",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "stanner-tarih-celiskisi",
+        "text": "Stanner'ın denemesinin tarihi çözülmüş değil: yaygın olarak 1953 anılır, ilk basımı 1956 antolojisidir. Bu kayıt 1979 akademik derlemesini künyeliyor.",
+        "citations": [
+          {
+            "source_ref": "stanner-1979-white-man-got-no-dreaming",
+            "locator": "Künye düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Zaman anlayışından bağımsız bir 'anlatı derinliği' ölçütü kurulabilir mi?",
+      "'The Dreaming' 1953 mü 1956 mı? Birincil basım görülmeli."
+    ],
+    "checked": "2026-09-09",
     "used_in": [
       "gec-kalan-haberci"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Stanner künyesi kapsayıcı ve ISBN ile tamamlandı, 1953/1956 çelişkisi kayda geçirildi. Hint geleneğine ilişkin satırın çıkarım olduğu açıkça işaretlendi. Tam metinler okunmadı."
+    }
   },
   {
     "id": "monomit-evrensel-degil",
