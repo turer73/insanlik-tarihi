@@ -213,6 +213,16 @@ const STATIC_PAGES = [
             position: 1,
             item: {
               '@type': 'CorrectionComment',
+              dateCreated: '2026-09-09',
+              about: { '@type': 'CollectionPage', url: `${ORIGIN}/konular/mitler-anlatilar.html` },
+              text: 'Prometheus kilometre taşına daha eski Hesiodos tanığı eklendi; konu merkezlerindeki tarihsel kesinlik ve Türkçe karakter sorunları düzeltildi.'
+            }
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            item: {
+              '@type': 'CorrectionComment',
               dateCreated: '2026-09-08',
               about: { '@type': 'Article', url: `${ORIGIN}/articles/iskenderiye.html` },
               text: 'Strabon Geographia XVII 1.8 pasajında doğrudan anlatılan yapının Mouseion olduğu doğrulanınca "kütüphaneyi tarif etti" ifadesi daraltıldı.'
@@ -220,7 +230,7 @@ const STATIC_PAGES = [
           },
           {
             '@type': 'ListItem',
-            position: 2,
+            position: 3,
             item: {
               '@type': 'CorrectionComment',
               dateCreated: '2026-09-07',
@@ -230,7 +240,7 @@ const STATIC_PAGES = [
           },
           {
             '@type': 'ListItem',
-            position: 3,
+            position: 4,
             item: {
               '@type': 'CorrectionComment',
               dateCreated: '2026-09-07',

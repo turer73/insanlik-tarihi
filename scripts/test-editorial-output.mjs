@@ -48,17 +48,23 @@ for(const article of articles) {
 assert.equal((await readdir(path.join(root,'site/assets/editorial-covers'))).length,27);
 const tartismaPilotu = JSON.parse(await read('data/tartisma-pilotu.json'));
 const pilotSet = new Set(tartismaPilotu.yazilar);
+const contributionEnabled = tartismaPilotu.aktif === true;
 for (const article of articles) {
   const html = await read(`site/articles/${article.slug}.html`);
-  assert.equal(html.includes('data-contribution-form'), pilotSet.has(article.slug), `${article.slug}: katkı formu yalnızca pilot yazılarda`);
+  assert.equal(html.includes('data-contribution-form'), contributionEnabled && pilotSet.has(article.slug), `${article.slug}: katkı formu yalnızca etkin pilot yazılarda`);
+  if (!contributionEnabled && pilotSet.has(article.slug)) {
+    assert.ok(html.includes('moderasyon ve kötüye kullanım koruması tamamlanana kadar kapalıdır'), `${article.slug}: kapalı pilot açıklaması`);
+  }
   assert.ok(html.includes('class="ka-newsletter"'), `${article.slug}: bülten bloğu`);
   assert.ok(html.includes('../assets/cta-blocks.css'), `${article.slug}: cta css`);
   assert.ok(html.includes('../assets/contribution.js'), `${article.slug}: contribution js`);
 }
 const pilotDosya = await read('site/articles/tufan-bilmecesi.html');
-assert.ok(pilotDosya.includes('<select name="iddia">'), 'pilot formda bulgu seçimi');
-assert.ok(pilotDosya.includes('value="Soru sor"') && pilotDosya.includes('value="Düzeltme öner"'), 'pilot formda katkı türleri');
-assert.ok(pilotDosya.includes('name="website"'), 'pilot formda honeypot alanı');
+if (contributionEnabled) {
+  assert.ok(pilotDosya.includes('<select name="iddia">'), 'pilot formda bulgu seçimi');
+  assert.ok(pilotDosya.includes('value="Soru sor"') && pilotDosya.includes('value="Düzeltme öner"'), 'pilot formda katkı türleri');
+  assert.ok(pilotDosya.includes('name="website"'), 'pilot formda honeypot alanı');
+}
 const anaSayfa = await read('site/index.html');
 assert.ok(anaSayfa.includes('class="ka-newsletter"'), 'ana sayfada bülten bloğu');
 assert.ok(anaSayfa.includes('assets/cta-blocks.css') && anaSayfa.includes('assets/contribution.js'), 'ana sayfada cta varlıkları');
@@ -91,6 +97,7 @@ for (const page of ['hakkinda.html','duzeltmeler.html','yeniden-yayin.html']) {
 }
 for (const hub of hubs) {
   const html = await read(`site/konular/${hub.slug}.html`);
+  assert.ok(!/[ÃÄÅ]|â(?:€|†)/u.test(html), `${hub.slug}: bozuk UTF-8 dizisi olmamalı`);
   assert.ok(html.includes(`<link rel="canonical" href="https://kanitatlasi.com/konular/${hub.slug}.html">`), hub.slug);
   assert.ok(html.includes('<script type="application/ld+json">'), hub.slug);
   for (const dosya of hub.dosyalar) {
@@ -100,6 +107,8 @@ for (const hub of hubs) {
     assert.ok(html.includes(`href="../articles/${tas.dosya}.html"`), `${hub.slug}: kilometre taşı ${tas.dosya}`);
   }
 }
+const hubIndex = await read('site/konular.html');
+assert.ok(!/[ÃÄÅ]|â(?:€|†)/u.test(hubIndex), 'konu merkezi dizininde bozuk UTF-8 dizisi olmamalı');
 const hubDosyalar = new Set(hubs.flatMap(hub => hub.dosyalar));
 for (const article of articles) {
   assert.ok(hubDosyalar.has(article.slug), `${article.slug} en az bir merkezde olmalı`);

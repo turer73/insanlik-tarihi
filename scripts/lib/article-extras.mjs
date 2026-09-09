@@ -69,6 +69,12 @@ export function renderAttribution(article) {
 /** Tartışma pilotu: kaynak isteyen, ön moderasyonlu katkı formu. */
 export function renderContribution(article, findings, pilot) {
   if (!pilot) return '';
+  if (pilot.aktif !== true) {
+    return `<section class="ka-contribution" aria-labelledby="katki-baslik">
+  <h2 class="ka-related-heading" id="katki-baslik">Bu dosyaya katkı verin</h2>
+  <p class="ka-contribution-intro">Site içi katkı formu moderasyon ve kötüye kullanım koruması tamamlanana kadar kapalıdır. Bu sırada soru, kaynak ve düzeltme önerilerinizi <a href="https://github.com/${escapeHTML(pilot.repo)}/issues" rel="noopener" target="_blank">GitHub issue izleyicisinden</a> iletebilirsiniz.</p>
+</section>`;
+  }
   const claims = (findings ?? [])
     .map(finding => finding?.claim)
     .filter(claim => claim && claim.trim().length <= 220);
@@ -99,7 +105,7 @@ export function renderContribution(article, findings, pilot) {
     <label class="ka-contribution-field"><span>Katkınız <b aria-hidden="true">*</b></span><textarea name="mesaj" rows="5" maxlength="4000" required placeholder="İddianızı ve mümkünse dayandığı kanıtı yazın"></textarea></label>
     <div class="ka-contribution-actions">
       <button type="submit" class="ka-contribution-submit">Katkıyı gönder</button>
-      <p class="ka-contribution-process">Süreç: ${escapeHTML(surec)} — her aşamada tarih görünür.</p>
+      <p class="ka-contribution-process">Süreç: ${escapeHTML(surec)} — durum değişiklikleri GitHub kaydında güncellenir.</p>
     </div>
     <p class="ka-contribution-status" role="status" aria-live="polite" hidden></p>
   </form>

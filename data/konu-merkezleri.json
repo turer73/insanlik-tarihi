@@ -2,8 +2,8 @@
   "kayip-sehirler": {
     "slug": "kayip-sehirler",
     "sira": 1,
-    "baslik": "Kayıp Şehirler ve Uygarlıklar",
-    "kisa": "Petra'dan Angkor'a, terk edilmiş ve yeniden bulunmuş yerleşimlerin gerçek hikâyesi.",
+    "baslik": "Kentler, Yapılar ve Uygarlıklar",
+    "kisa": "Petra'dan Angkor'a, tarihsel yerleşimlerin, yapıların ve onları çevreleyen anlatıların kanıt izi.",
     "giris": [
       "«Kayıp şehir» anlatısı güçlüdür: cangılın yuttuğu kent, kumun örttüğü uygarlık, kimsenin bilmediği bir yer. Ama bu dosyalar aynı anlatının neresinde durduğunu sorar. Bir yerin «kaybolması» genellikle insanların kaybolması demek değildir; yapının terk edilmesi, hatırlanma biçiminin değişmesi demektir.",
       "Bu merkezdeki dosyalar, yerleşimin görünen kalıntısı ile görünmeyen altyapısını ayırır: Petra'da kaya mezarları değil su sistemi kenti yaşatır; Angkor'da tapınaklar değil su ağı kentin ölçeğini gösterir. Her dosyada ölçülebilen ile varsayılan ayrı izlenir."
@@ -19,7 +19,7 @@
       { "tarih": "MÖ 605–562", "olay": "II. Nebukadnezar zirvesi; Tevrat'ın 'Babil'i bu Babil, sembolik anlatı sonradan büyür", "dosya": "babil" },
       { "tarih": "MÖ 4.–1. yy", "olay": "Nabatiler ticaret yollarını tutuyor; kent su sistemiyle okunur", "dosya": "petra" },
       { "tarih": "9.–15. yy", "olay": "Angkor'un düşük yoğunluklu kentsel yayılımı; terk edilme çöküş değil dönüşümdür", "dosya": "angkor" },
-      { "tarih": "~16. yy", "olay": "Machu Picchu İspanyol istilası sonrası terk edilir; tarih net değil, 'keşif' anlatısı 1911 sonrasıdır", "dosya": "machu-picchu" }
+      { "tarih": "~16. yy", "olay": "Machu Picchu muhtemelen İspanyol istilasından kısa süre sonra terk edildi; doğrudan terk kaydı ve kesin tarih yok, 'keşif' anlatısı 1911 sonrasıdır", "dosya": "machu-picchu" }
     ],
     "acik-sorular": [
       "Angkor'un nüfusu hangi tarihte hangi hızla azaldı; su ağının bozulması sebep mi sonuç muydu?",
@@ -35,7 +35,7 @@
     "baslik": "Mitler ve Ortak Anlatılar",
     "kisa": "Tufandan ateşin çalınmasına: aynı anlatıların farklı kültürlerde belirmesinin kanıtı ve sınırı.",
     "giris": [
-      "İki halk aynı hikâyeyi anlattığında üç açıklama vardır: ortak köken, temas yoluyla aktarım ya da bağımsız icat. Bu merkezdeki dosyalar, anlatıyı benzerlik hissiyle değil, kaynak zinciriyle sınar: motif nerede ilk kez yazılı hale gelmiş, hangi metin hangi metni görmüş, benzerliğin kendisi hangi koşulda zorunlu?",
+      "İki halk aynı hikâyeyi anlattığında en az üç açıklama vardır: ortak köken, temas yoluyla aktarım, bağımsız icat veya bunların birleşimi. Bu merkezdeki dosyalar, anlatıyı benzerlik hissiyle değil, kaynak zinciriyle sınar: motif nerede ilk kez yazılı hale gelmiş, hangi metin hangi metni görmüş, benzerliğin kendisi hangi koşulda zorunlu?",
       "Tufan anlatıları, ateş hırsızlığı motifi ve gökyüzündeki ayı gibi örnekler aynı soruyu farklı derinliklerde sorar. Cevapların çoğu 'bağımsız benzerlik' kutusuna düşer; ama aktarım gerçekten olduğunda onu da gösterebilen bir çerçeve kurulur."
     ],
     "kavramlar": [
@@ -46,9 +46,9 @@
       { "terim": "Yazılı aktarım", "anlam": "Kopya zinciri üzerinden izlenebilen aktarım; metin eleştirisiyle tarihlenir." }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ ~1700", "olay": "Atrahasis tufan anlatısı; Gılgamış XI ~MÖ 1200, Tekvin ~MÖ 6. yy", "dosya": "tufan-bilmecesi" },
+      { "tarih": "MÖ ~1700–6. yy", "olay": "Atrahasis'ten Gılgamış XI'e ve Tekvin'e uzanan tufan metinleri; tarihler ayrı metin katmanlarını gösterir", "dosya": "tufan-bilmecesi" },
       { "tarih": "MÖ ~700", "olay": "Hesiodos İşler ve Günler'de Ülker takvimi; tarım ritmi gökyüzüne bağlanır", "dosya": "herkesin-saati" },
-      { "tarih": "MÖ ~460", "olay": "Aiskhylos'un Prometheus tragedyası; ateş hırsızlığı motifinin yazılı hali", "dosya": "calinan-ates" },
+      { "tarih": "MÖ 8.–5. yy", "olay": "Hesiodos'ta ateş hırsızlığı anlatısı; daha geç Prometheus Desmotes tragedyası gelenekte Aiskhylos'a atfedilir, yazarlığı tartışmalıdır", "dosya": "calinan-ates" },
       { "tarih": "6 Mayıs · 8 Kasım", "olay": "Anadolu halk takviminin iki eşiği; gökyüzü, mevsim ve gelenek iç içe", "dosya": "yilin-iki-kapisi" }
     ],
     "acik-sorular": [
@@ -75,8 +75,8 @@
       { "terim": "Sessizlikten çıkarım", "anlam": "Beklenen kaydın yokluğunun taşıdığı anlam; zayıf ama bazen ağırlığı olan kanıt." }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ 250 – MS 68", "olay": "Ölü Deniz Parşömenleri'nin yazıldığı dönem; en eski İbranice İncil metinleri", "dosya": "olu-deniz-parsomenleri" },
-      { "tarih": "y. 50–60", "olay": "Pavlus mektupları: İsa'dan kalan en eski yazılı kayıtlar", "dosya": "isa-tarihsellik" },
+      { "tarih": "MÖ 250 – MS 68", "olay": "Ölü Deniz Parşömenleri'nin yazıldığı dönem; İbranice Kutsal Kitap kitaplarının günümüze ulaşan en erken nüshaları arasında", "dosya": "olu-deniz-parsomenleri" },
+      { "tarih": "y. 50–60", "olay": "Pavlus mektupları: İsa hakkında günümüze ulaşan en erken Hristiyan yazıları arasında", "dosya": "isa-tarihsellik" },
       { "tarih": "MS 313", "olay": "Milano Fermanı; Hristiyanlığın kurumsallaşma dönüm noktası", "dosya": "roma-hristiyanlik" },
       { "tarih": "1947", "olay": "Parşömenlerin Kumran'da bulunması; metin tarihinin yeniden kurulması", "dosya": "olu-deniz-parsomenleri" }
     ],
@@ -104,8 +104,8 @@
       { "terim": "Mevsim takvimi", "anlam": "Tarım ritmini gökyüzü gözlemiyle sabitleyen geleneksel zaman bilgisi." }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ 2,6 milyon – 11.700", "olay": "Buzul çağları döngüsü; yörünge parametreleri ritmi belirler", "dosya": "milankovic" },
-      { "tarih": "MS ~260–270", "olay": "Şuşter hidrolik sistemi; suyu üç kez kullanan mühendislik", "dosya": "shushtar" },
+      { "tarih": "MÖ 2,6 milyon – MÖ 11.700", "olay": "Pleyistosen'deki buzul-buzularası döngülerin zamanlamasında yörünge zorlaması etkili; mekanizma ve geri beslemeler bütünüyle çözülmüş değil", "dosya": "milankovic" },
+      { "tarih": "MS ~260–270", "olay": "Şuşter sisteminin Sasani evresindeki Band-e Kaisar; Roma yapı tekniğiyle ilişkilendirilen mühendislik", "dosya": "shushtar" },
       { "tarih": "9.–15. yy", "olay": "Angkor'un su ağı; iklim tek başına çöküşü açıklamıyor", "dosya": "angkor" },
       { "tarih": "MÖ ~700", "olay": "Hesiodos'un Ülker takvimi; mevsim ritmi gökyüzüne bağlanır", "dosya": "herkesin-saati" }
     ],
