@@ -9,6 +9,7 @@ import assert from "node:assert/strict";
 import {
   ayristir,
   calismaAgaciniUygula,
+  gercekDegisiklikDurumu,
   sonDegisiklik,
   ilkYayin,
   enYeni,
@@ -104,6 +105,17 @@ test("tırnaklı yol (Türkçe karakter) tırnaksız kaydedilir", () => {
 test("temiz ağaç hiçbir tarihi değiştirmez", () => {
   const h = calismaAgaciniUygula(ayristir(LOG), "", "2026-09-08");
   assert.equal(h.lastmod["articles/babil.html"], "2026-09-06");
+});
+
+test("gerçek diff ve izlenmeyen yollar birleştirilir; status gürültüsü taşınmaz", () => {
+  const durum = gercekDegisiklikDurumu(
+    "data/konu-merkezleri.json\n",
+    "articles/yeni.html\ndata/konu-merkezleri.json\n",
+  );
+  const h = calismaAgaciniUygula(ayristir(LOG), durum, "2026-09-08");
+  assert.equal(h.lastmod["data/konu-merkezleri.json"], "2026-09-08");
+  assert.equal(h.lastmod["articles/yeni.html"], "2026-09-08");
+  assert.equal(h.lastmod["dist/zaman-cizelgesi.html"], undefined);
 });
 
 /* --- arama yardımcıları: bilinmeyen yol sessizce yanlış olmasın ------ */

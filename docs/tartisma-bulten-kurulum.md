@@ -1,18 +1,20 @@
 # Tartışma Pilotu ve Bülten Kurulumu
 
-Kod hazır; bu iki özelliği canlıya almak için aşağıdaki yayıncı (insan)
-adımları gerekir. Adımlar tamamlanana kadar formlar güvenli biçimde yedek
-davranış gösterir (katkı formu hata mesajı, bülten RSS çağrısı).
+Kodun yayın katmanı hazırdır; bu iki özelliği canlıya almak için aşağıdaki
+yayıncı (insan) adımları gerekir. Adımlar tamamlanana kadar katkı formu gizlenir
+ve GitHub Issues bağlantısı gösterilir; bülten RSS çağrısına düşer.
 
 ## 1. Tartışma pilotu (Vercel Function → GitHub Issues)
 
-Katkı formu, 8 pilot yazıda görünür (`data/tartisma-pilotu.json`). Gönderim
+Katkı çağrısı 8 pilot yazıda görünür (`data/tartisma-pilotu.json`). Form ancak
+aynı dosyada `aktif` değeri `true` yapıldığında açılır. Gönderim
 `api/katki.mjs` sunucusuz fonksiyonuna gider; fonksiyon herkese açık bir
 GitHub issue'su açar. E-posta toplanmaz.
 
 1. **GitHub erişim belirteci oluştur:**
-   - https://github.com/settings/tokens → *Generate new token (classic)*
-   - Kapsam: yalnızca **`public_repo`** (başka hiçbir kapsam gerekmez)
+   - İnce ayarlı (fine-grained) belirteç kullanın ve yalnız
+     `turer73/insanlik-tarihi` deposunu seçin.
+   - Depo izni: yalnızca **Issues: Read and write**.
    - Süre: öneri 90 gün; süresi dolunca yenilenir.
 
 2. **Vercel ortam değişkeni:**
@@ -20,14 +22,20 @@ GitHub issue'su açar. E-posta toplanmaz.
    - `GITHUB_TOKEN` = belirteç (Production + Preview)
    - İsteğe bağlı `KATKI_REPO` = varsayılan `turer73/insanlik-tarihi`
 
-3. **Etiket:** Repoda `okur-katkisi` etiketi oluştur
+3. **Kötüye kullanım koruması:** `/api/katki` için bot doğrulaması ve istek
+   sınırı eklenmeden `aktif` değerini açmayın. Honeypot tek başına yeterli
+   koruma değildir.
+
+4. **Etiket:** Repoda `okur-katkisi` etiketi oluştur
    (https://github.com/turer73/insanlik-tarihi/labels). Fonksiyon bu etiketi
    ekler; yoksa issue etiketsiz açılır (hata sayılmaz).
 
-4. **Deneme:** Deploy sonrası bir pilot yazıda formu gönderin. Issue
+5. **Etkinleştirme ve deneme:** Ortam değişkenleri ile kötüye kullanım koruması
+   doğrulandıktan sonra `data/tartisma-pilotu.json` içindeki `aktif` değerini
+   `true` yapın ve deploy edin. Ardından bir pilot yazıda formu gönderin. Issue
    `[Okur katkısı] …` başlığıyla açılmalı.
 
-5. **Moderasyon:** Issue'lar herkese açık kayıttır. Editör yanıtı aynı issue'da
+6. **Moderasyon:** Issue'lar herkese açık kayıttır. Editör yanıtı aynı issue'da
    verilir; kabul edilen düzeltme yazıya işlenince `duzeltmeler.html` güncellenir
    ve issue kapatılır.
 
@@ -56,7 +64,7 @@ GitHub issue'su açar. E-posta toplanmaz.
 
 ## 4. Yapılandırma yoksa ne olur?
 
-- `GITHUB_TOKEN` yok: form sunucuda `503` döner, kullanıcıya
-  "Form arka ucu henüz yapılandırılmadı" iletisi gösterilir.
+- Pilot etkin değil: form gösterilmez; okur GitHub Issues bağlantısına yönelir.
+- Pilot yanlışlıkla etkinleştirilir ama `GITHUB_TOKEN` yoksa sunucu `503` döner.
 - `username` boş: bülten bloğu RSS çağrısıyla görünür.
 - Bu durumlar testlerle güvence altındadır; site diğer özellikleriyle çalışır.

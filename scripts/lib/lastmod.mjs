@@ -93,15 +93,31 @@ export function calismaAgaciniUygula(harita, durumCiktisi, bugun) {
   return harita;
 }
 
+/**
+ * Git'in içerik farkı gördüğü izlenen dosyalar ile izlenmeyen dosyaları,
+ * mevcut çalışma ağacı ayrıştırıcısının beklediği biçime getirir. Böylece
+ * Windows'ta yalnız satır sonu dönüşümü yüzünden `status` içinde görünen ama
+ * gerçek diff üretmeyen dosyalar bugüne çekilmez.
+ */
+export function gercekDegisiklikDurumu(diffCiktisi, izlenmeyenCiktisi) {
+  const yollar = new Set(
+    `${diffCiktisi}\n${izlenmeyenCiktisi}`
+      .split("\n")
+      .map((satir) => satir.trim())
+      .filter(Boolean),
+  );
+  return [...yollar].map((yol) => ` M ${yol}`).join("\n");
+}
+
 function gecmistenHesapla(root, bugun) {
   const harita = ayristir(git(root, [
     "log", "--format=%cs", "--name-only", "--no-renames", "--", ...IZLENEN,
   ]));
-  return calismaAgaciniUygula(
-    harita,
-    git(root, ["status", "--porcelain", "--", ...IZLENEN]),
-    bugun,
+  const gercekDurum = gercekDegisiklikDurumu(
+    git(root, ["-c", "core.quotepath=false", "diff", "--name-only", "--no-renames", "HEAD", "--", ...IZLENEN]),
+    git(root, ["-c", "core.quotepath=false", "ls-files", "--others", "--exclude-standard", "--", ...IZLENEN]),
   );
+  return calismaAgaciniUygula(harita, gercekDurum, bugun);
 }
 
 function anlikGoruntuOku(root) {
