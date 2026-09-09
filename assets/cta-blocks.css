@@ -1,0 +1,75 @@
+/* Katkı formu ve bülten bloğu: makale katmanı ve ana sayfa ortak stili.
+   Makalelerde evidence-dossier değişkenleri (--ka-*) kullanılır; ana sayfada
+   kendi yedeği olan tema değişkenlerine düşer. */
+.ka-contribution,.ka-newsletter{
+  --cta-bg:var(--ka-bg,var(--paper,#fbf9f3));
+  --cta-soft:var(--ka-bg-soft,var(--paper-3,#ebe6dc));
+  --cta-ink:var(--ka-ink,var(--ink,#171a18));
+  --cta-muted:var(--ka-muted,var(--ink-2,#59605d));
+  --cta-faint:var(--ka-faint,var(--ink-3,#69716c));
+  --cta-line:var(--ka-line,var(--line,#d8d4ca));
+  --cta-accent:var(--ka-accent,var(--green,#0d5c4f));
+  --cta-accent-soft:var(--ka-accent-soft,var(--green-soft,#dde9e4));
+  --cta-radius:var(--ka-radius,12px);
+  max-width:var(--wrap,1180px);
+  margin:clamp(1.6rem,4vw,3rem) auto 0;
+  padding:1.3rem 1.4rem;
+  border:1px solid var(--cta-line);
+  border-radius:var(--cta-radius);
+  background:color-mix(in srgb,var(--cta-soft) 30%,var(--cta-bg));
+  color:var(--cta-ink);
+  min-width:0;
+}
+.ka-contribution *,.ka-newsletter *{box-sizing:border-box;min-width:0}
+.ka-contribution-heading,.ka-newsletter .ka-related-heading{margin:0 0 .7rem;font:650 1.15rem/1.2 var(--display,var(--serif,Georgia,serif))}
+.ka-contribution-intro,.ka-newsletter p{margin:.4rem 0;max-width:72ch;color:var(--cta-muted);font-size:.93rem;line-height:1.6}
+.ka-contribution a,.ka-newsletter a{color:var(--cta-accent);text-underline-offset:3px}
+.ka-contribution :where(input,select,textarea):focus-visible,.ka-newsletter input:focus-visible{outline:2px solid var(--cta-accent);outline-offset:2px}
+
+.ka-contribution-form{display:grid;gap:.85rem;margin-top:1rem}
+.ka-contribution-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0;pointer-events:none}
+.ka-contribution-kind{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.ka-contribution-kind legend{width:100%;margin-bottom:.2rem;color:var(--cta-muted);font:600 .8rem/1.3 var(--mono,ui-monospace,monospace);letter-spacing:.04em;text-transform:uppercase}
+.ka-contribution-kind label{display:inline-flex;align-items:center;gap:.4rem;padding:.45rem .8rem;border:1px solid var(--cta-line);border-radius:999px;background:var(--cta-bg);font-size:.86rem;cursor:pointer}
+.ka-contribution-kind label:has(input:checked){border-color:var(--cta-accent);color:var(--cta-accent);font-weight:700}
+.ka-contribution-kind input{accent-color:var(--cta-accent)}
+.ka-contribution-grid{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.ka-contribution-field{display:grid;gap:.35rem}
+.ka-contribution-field span{color:var(--cta-muted);font:600 .78rem/1.3 var(--mono,ui-monospace,monospace);letter-spacing:.03em}
+.ka-contribution-field b{color:var(--cta-accent)}
+.ka-contribution-field :where(input,select,textarea){
+  width:100%;
+  padding:.65rem .8rem;
+  border:1px solid var(--cta-line);
+  border-radius:10px;
+  background:var(--cta-bg);
+  color:var(--cta-ink);
+  font:400 .92rem/1.5 var(--sans,var(--body,ui-sans-serif,sans-serif));
+}
+.ka-contribution-field textarea{resize:vertical}
+.ka-contribution-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem 1.2rem}
+.ka-contribution-submit{
+  min-height:42px;
+  padding:.65rem 1.15rem;
+  border:1px solid var(--cta-accent);
+  border-radius:999px;
+  background:var(--cta-accent);
+  color:#fff;
+  font-weight:800;
+  font-size:.88rem;
+  cursor:pointer;
+}
+.ka-contribution-submit:hover{filter:brightness(1.08)}
+.ka-contribution-submit:disabled{opacity:.55;cursor:wait}
+.ka-contribution-process{margin:0;color:var(--cta-faint);font-size:.8rem}
+.ka-contribution-status{margin:.4rem 0 0;padding:.7rem .9rem;border-radius:10px;background:var(--cta-accent-soft);color:var(--cta-ink);font-size:.9rem;overflow-wrap:anywhere}
+.ka-contribution-status.is-error{background:color-mix(in srgb,var(--warn-soft,#f2e6d5) 70%,var(--cta-bg));color:var(--cta-ink)}
+.ka-newsletter-form{display:flex;flex-wrap:wrap;gap:.7rem;margin:.9rem 0}
+.ka-newsletter-form .ka-contribution-field{flex:1 1 260px}
+.ka-newsletter-note{margin:.3rem 0 0!important;color:var(--cta-faint)!important;font-size:.8rem!important}
+@media(max-width:640px){
+  .ka-contribution-grid{grid-template-columns:1fr}
+  .ka-contribution-kind{display:grid;grid-template-columns:1fr 1fr}
+  .ka-contribution-kind label{justify-content:center;padding:.55rem .6rem}
+}
+@media print{.ka-contribution,.ka-newsletter{display:none}}

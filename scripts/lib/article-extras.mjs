@@ -65,3 +65,67 @@ export function renderAttribution(article) {
   <p><a class="ka-attribution-kit" href="../yeniden-yayin.html">Yeniden yayımlama kiti →</a></p>
 </section>`;
 }
+
+/** Tartışma pilotu: kaynak isteyen, ön moderasyonlu katkı formu. */
+export function renderContribution(article, findings, pilot) {
+  if (!pilot) return '';
+  const claims = (findings ?? [])
+    .map(finding => finding?.claim)
+    .filter(claim => claim && claim.trim().length <= 220);
+  const options = claims
+    .map((claim, index) => `<option value="${escapeHTML(claim.slice(0, 220))}">${escapeHTML(claim.slice(0, 140))}${claim.length > 140 ? '…' : ''}</option>`)
+    .join('');
+  const surec = (pilot.durum_akisi ?? []).join(' → ');
+  return `<section class="ka-contribution" aria-labelledby="katki-baslik">
+  <h2 class="ka-related-heading" id="katki-baslik">Bu dosyaya katkı verin</h2>
+  <p class="ka-contribution-intro">Soru sorabilir, farklı bir görüş sunabilir, kaynak paylaşabilir veya düzeltme önerebilirsiniz. Katkılar herkese açık biçimde <a href="https://github.com/${escapeHTML(pilot.repo)}/issues" rel="noopener" target="_blank">GitHub issue izleyicisinde</a> görünür; editör orada yanıtlar. E-posta toplanmaz.</p>
+  <form class="ka-contribution-form" data-contribution-form novalidate>
+    <input type="text" name="website" class="ka-contribution-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <fieldset class="ka-contribution-kind">
+      <legend>Katkı türü</legend>
+      ${['Soru sor', 'Farklı görüş sun', 'Kaynak paylaş', 'Düzeltme öner'].map((tur, index) => `<label><input type="radio" name="tur" value="${escapeHTML(tur)}"${index === 0 ? ' checked' : ''}> ${escapeHTML(tur)}</label>`).join('')}
+    </fieldset>
+    <label class="ka-contribution-field"><span>İlgili iddia veya bulgu</span>
+      <select name="iddia">
+        <option value="">Metindeki başka bir cümle (aşağıda belirtin)</option>
+        ${options}
+      </select>
+    </label>
+    <div class="ka-contribution-grid">
+      <label class="ka-contribution-field"><span>Adınız veya rumuzunuz <b aria-hidden="true">*</b></span><input type="text" name="ad" maxlength="80" required placeholder="Görünür olacak"></label>
+      <label class="ka-contribution-field"><span>Kaynak bağlantısı (isteğe bağlı)</span><input type="url" name="kaynak_url" maxlength="500" placeholder="https://…"></label>
+    </div>
+    <label class="ka-contribution-field"><span>Bu kaynak hangi cümleyi etkiliyor? (isteğe bağlı)</span><input type="text" name="kaynak_etki" maxlength="300" placeholder="Ör: 'Taşlar buzullarla taşındı' cümlesini"></label>
+    <label class="ka-contribution-field"><span>Katkınız <b aria-hidden="true">*</b></span><textarea name="mesaj" rows="5" maxlength="4000" required placeholder="İddianızı ve mümkünse dayandığı kanıtı yazın"></textarea></label>
+    <div class="ka-contribution-actions">
+      <button type="submit" class="ka-contribution-submit">Katkıyı gönder</button>
+      <p class="ka-contribution-process">Süreç: ${escapeHTML(surec)} — her aşamada tarih görünür.</p>
+    </div>
+    <p class="ka-contribution-status" role="status" aria-live="polite" hidden></p>
+  </form>
+</section>`;
+}
+
+/** Bülten çağrısı: Buttondown yapılandırıldıysa kayıt formu, değilse RSS çağrısı. */
+export function renderNewsletter(bulten, yol = '') {
+  const baslik = escapeHTML(bulten?.baslik ?? 'Bir iddia · iki kanıt · bir açık soru');
+  const aciklama = escapeHTML(bulten?.aciklama ?? '');
+  if (bulten?.provider === 'buttondown' && bulten.username?.trim()) {
+    const formUrl = `https://buttondown.com/api/emails/embed-subscribe/${encodeURIComponent(bulten.username.trim())}`;
+    return `<section class="ka-newsletter" aria-labelledby="bulten-baslik">
+  <h2 class="ka-related-heading" id="bulten-baslik">${baslik}</h2>
+  <p>${aciklama}</p>
+  <form action="${formUrl}" method="post" target="_blank" class="ka-newsletter-form" data-newsletter-form>
+    <label class="ka-contribution-field"><span>E-posta adresiniz</span><input type="email" name="email" required placeholder="ornek@eposta.com"></label>
+    <input type="hidden" name="tag" value="kanit-atlasi">
+    <button type="submit" class="ka-contribution-submit">Bültene kaydol</button>
+  </form>
+  <p class="ka-newsletter-note">${escapeHTML(bulten?.not ?? '')}</p>
+</section>`;
+  }
+  return `<section class="ka-newsletter" aria-labelledby="bulten-baslik">
+  <h2 class="ka-related-heading" id="bulten-baslik">${baslik}</h2>
+  <p>${aciklama} Yeni yazılar ve güncellemeler için <a href="${yol}feed.xml">RSS</a> akışını izleyin.</p>
+  <p class="ka-newsletter-note">E-posta bülteni hazırlandığında kayıt alanı burada açılacak.</p>
+</section>`;
+}

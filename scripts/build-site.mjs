@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { tarihler, sonDegisiklik, ilkYayin, enYeni } from './lib/lastmod.mjs';
 import { renderEvidenceIntro, renderEvidenceDossier } from './lib/evidence-dossier.mjs';
 import { loadHubs, loadEvidence, primaryHub, validateHubs, renderHubIndex, renderHubPage } from './lib/hubs.mjs';
-import { renderSearchQuestion, renderRelated, renderAttribution } from './lib/article-extras.mjs';
+import { renderSearchQuestion, renderRelated, renderAttribution, renderContribution, renderNewsletter } from './lib/article-extras.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'site');
@@ -54,7 +54,7 @@ function addOrReplace(source, pattern, replacement, label) {
   return source.replace(pattern, replacement);
 }
 
-function brandIndex(source, articles) {
+function brandIndex(source, articles, bulten = null) {
   let html = source;
   const meta = `  <meta name="theme-color" content="#f3efe7">
   <meta name="color-scheme" content="light dark">
@@ -96,7 +96,10 @@ function brandIndex(source, articles) {
     .replace('<div><strong>İnsanlık Tarihi</strong><p>Kanıt odaklı, kaynak izlenebilirliği yüksek Türkçe araştırma arşivi.</p></div>', '<div><strong>Kanıt Atlası</strong><p>İnsanlık tarihine kanıt, karşı kanıt ve kaynak izlenebilirliği üzerinden bakan Türkçe araştırma arşivi. <a href="feed.xml">RSS</a></p></div>')
     .replaceAll('<a href="#hakkinda">', '<a href="hakkinda.html">')
     .replace('<a href="dist/zaman-cizelgesi.html">Zaman Çizelgesi</a>', '<a href="konular.html">Konular</a>\n        <a href="dist/zaman-cizelgesi.html">Zaman Çizelgesi</a>')
-    .replace('<p>Yazılar ve bulgu kayıtları', '<p><a href="konular.html">Konular</a> · <a href="yeniden-yayin.html">Yeniden Yayın</a> · <a href="hakkinda.html">Hakkında</a> · <a href="duzeltmeler.html">Düzeltmeler</a> · <a href="feed.xml">RSS</a></p>\n      <p>Yazılar ve bulgu kayıtları');
+    .replace('<p>Yazılar ve bulgu kayıtları', '<p><a href="konular.html">Konular</a> · <a href="yeniden-yayin.html">Yeniden Yayın</a> · <a href="hakkinda.html">Hakkında</a> · <a href="duzeltmeler.html">Düzeltmeler</a> · <a href="feed.xml">RSS</a></p>\n      <p>Yazılar ve bulgu kayıtları')
+    .replace('  <link rel="stylesheet" href="assets/styles-components.css">', '  <link rel="stylesheet" href="assets/styles-components.css">\n  <link rel="stylesheet" href="assets/cta-blocks.css">')
+    .replace('<script src="assets/app.js"></script>', '<script src="assets/app.js"></script>\n  <script src="assets/contribution.js"></script>')
+    .replace('  </main>', `      ${renderNewsletter(bulten, '')}\n  </main>`);
 
   const noscript = `<noscript>
           <section class="noscript-archive" aria-labelledby="noscriptTitle">
@@ -286,7 +289,7 @@ function articleJsonLd(article) {
 }
 
 function wrapArticle(source, article, pilot = null, context = {}) {
-  const { searchQuestion = '', hubs = [], articles = [] } = context;
+  const { searchQuestion = '', hubs = [], articles = [], contributionPilot = null, bulten = null } = context;
   const bodyMatch = source.match(/<(?:header|main|body)\b/i);
   if (!bodyMatch || bodyMatch.index == null) throw new Error(`Yazı gövdesi ayırt edilemedi: ${article.slug}`);
 
@@ -312,7 +315,7 @@ function wrapArticle(source, article, pilot = null, context = {}) {
       .replace('</header>', `</header>\n${renderEvidenceIntro(article, pilot.findings, pilot.summary)}`)
       .replace('<main>', '<main id="ka-anlati">');
   }
-  bodyFragment = bodyFragment.replace('</main>', `${pilot ? renderEvidenceDossier(article, pilot.findings) : ''}\n${renderRelated(article, articles, hubs, articles)}\n${renderAttribution(article)}\n</main>`);
+  bodyFragment = bodyFragment.replace('</main>', `${pilot ? renderEvidenceDossier(article, pilot.findings) : ''}\n${renderRelated(article, articles, hubs, articles)}\n${renderAttribution(article)}\n${renderContribution(article, pilot?.findings ?? [], contributionPilot)}\n${renderNewsletter(bulten, '../')}\n</main>`);
   if (searchQuestion) {
     if (!/<h1[^>]*>/i.test(bodyFragment)) throw new Error(`Arama sorusu için başlık bulunamadı: ${article.slug}`);
     bodyFragment = bodyFragment.replace(/<h1([^>]*)>[\s\S]*?<\/h1>/i, (match) => `${match}\n${renderSearchQuestion(searchQuestion)}`);
@@ -349,6 +352,7 @@ function wrapArticle(source, article, pilot = null, context = {}) {
 ${headFragment}
   <link rel="stylesheet" href="../assets/article-visuals.css">
 ${pilot ? '  <link rel="stylesheet" href="../assets/evidence-dossier.css">' : ''}
+  <link rel="stylesheet" href="../assets/cta-blocks.css">
   <script type="application/ld+json">${articleJsonLd(article)}</script>
 </head>
 <body>
@@ -361,6 +365,7 @@ ${bodyFragment}
   <script src="../assets/editorial-meta.js"></script>
   <script src="../assets/article-visuals.js"></script>
   <script src="../assets/tracking.js"></script>
+  <script src="../assets/contribution.js"></script>
 </body>
 </html>\n`;
 }
@@ -393,7 +398,7 @@ function notFoundPage() {
   return `<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta name="theme-color" content="#f3efe7"><title>Sayfa bulunamadı — Kanıt Atlası</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><style>:root{--bg:#f3efe7;--surface:#fbf9f3;--ink:#171a18;--muted:#606762;--green:#165f50;--line:#d8d3c8;color-scheme:light dark}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:1.2rem;background:radial-gradient(circle at 80% 10%,#e3ece7 0,transparent 35%),var(--bg);color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(760px,100%);padding:clamp(2rem,7vw,5rem);border:1px solid var(--line);border-radius:24px;background:var(--surface);box-shadow:0 24px 80px rgba(25,33,30,.1)}.mark{width:72px;height:72px;border:2px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green);font:700 1.25rem Georgia,serif;box-shadow:inset 0 0 0 9px var(--surface),inset 0 0 0 11px var(--green)}.code{margin:2.2rem 0 .2rem;color:var(--green);font:700 .78rem ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}h1{margin:0;font:650 clamp(2.3rem,7vw,4.7rem)/.98 Georgia,serif;letter-spacing:-.04em}p{max-width:55ch;color:var(--muted);font-size:1.08rem;line-height:1.65}nav{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}a{padding:.75rem 1rem;border:1px solid var(--line);border-radius:999px;color:var(--ink);font-weight:700;text-decoration:none}a:first-child{background:var(--green);border-color:var(--green);color:white}@media(prefers-color-scheme:dark){:root{--bg:#111713;--surface:#18201c;--ink:#eef3ef;--muted:#aeb9b3;--line:#334039;--green:#76b7a5}}</style></head><body><main><div class="mark" aria-hidden="true">KA</div><p class="code">404 · Kayıt bulunamadı</p><h1>Bu iz, arşivde yok.</h1><p>Bağlantı değişmiş, yazı taşınmış veya adres yanlış yazılmış olabilir. Araştırma arşivine dönerek kanıt zincirini yeniden izleyebilirsiniz.</p><nav aria-label="Yönlendirme"><a href="/">Ana sayfaya dön</a><a href="/dist/zaman-cizelgesi.html">Zaman çizelgesi</a><a href="/dist/bulgu-veri-tabani.html">Veri tabanı</a></nav></main></body></html>`;
 }
 
-function sitemap(articles, pilotSummaries, hubs) {
+function sitemap(articles, pilotSummaries, hubs, pilotSet) {
   // Ana sayfa listeyi gösterir: yazılardan biri veya sayfanın kendisi
   // değiştiyse ana sayfa da değişmiştir.
   const anaSayfa = enYeni(TARIH, [
@@ -411,7 +416,13 @@ function sitemap(articles, pilotSummaries, hubs) {
       loc: `${ORIGIN}/articles/${article.slug}.html`,
       priority: article.featured ? '0.9' : '0.7',
       changefreq: 'monthly',
-      lastmod: pilotSummaries[article.slug] ? enYeni(TARIH, [`articles/${article.slug}.html`, 'data/reading-pilot.json']) : sonDegisiklik(TARIH, `articles/${article.slug}.html`)
+      lastmod: enYeni(TARIH, [
+        `articles/${article.slug}.html`,
+        'data/reading-pilot.json',
+        'data/arama-sorulari.json',
+        'data/bulten.json',
+        ...(pilotSet.has(article.slug) ? ['data/tartisma-pilotu.json'] : [])
+      ])
     })),
     { loc: `${ORIGIN}/dist/zaman-cizelgesi.html`, priority: '0.8', changefreq: 'monthly', lastmod: sonDegisiklik(TARIH, 'dist/zaman-cizelgesi.html') },
     { loc: `${ORIGIN}/dist/bulgu-veri-tabani.html`, priority: '0.8', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/bulgu-veri-tabani.html') },
@@ -497,6 +508,13 @@ async function main() {
   }
   const hubCoverage = articles.filter(article => !primaryHub(hubs, article.slug)).map(article => article.slug);
   if (hubCoverage.length) throw new Error(`Hiçbir konu merkezinde olmayan yazı: ${hubCoverage.join(', ')}`);
+  const tartismaPilotu = JSON.parse(await readFile(path.join(ROOT, 'data', 'tartisma-pilotu.json'), 'utf8'));
+  const pilotSlugs = new Set(tartismaPilotu.yazilar ?? []);
+  for (const slug of pilotSlugs) {
+    if (!articles.some(article => article.slug === slug)) throw new Error(`Tartışma pilotunda tanınmayan yazı: ${slug}`);
+  }
+  if (!tartismaPilotu.repo || !tartismaPilotu.etiket) throw new Error('Tartışma pilotu yapılandırması eksik: repo/etiket');
+  const bulten = JSON.parse(await readFile(path.join(ROOT, 'data', 'bulten.json'), 'utf8'));
   const unknownSummaries = Object.keys(pilotSummaries).filter(slug => !articles.some(article => article.slug === slug));
   if (unknownSummaries.length) throw new Error(`Özetin yazı kaydı yok: ${unknownSummaries.join(', ')}`);
   const articleNames = new Set((await readdir(path.join(ROOT, 'articles'))).filter(name => name.endsWith('.html')).map(name => name.slice(0, -5)));
@@ -509,7 +527,7 @@ async function main() {
   await copyRequired('dist');
   await extractCoverAssets();
 
-  const index = brandIndex(await readFile(path.join(ROOT, 'index.html'), 'utf8'), articles);
+  const index = brandIndex(await readFile(path.join(ROOT, 'index.html'), 'utf8'), articles, bulten);
   await writeFile(path.join(OUT, 'index.html'), index);
   await writeFile(path.join(OUT, 'assets', 'app.js'), brandApp(await readFile(path.join(ROOT, 'assets', 'app.js'), 'utf8')));
 
@@ -535,7 +553,7 @@ async function main() {
     if (!summary?.summary?.trim() || !summary?.limit?.trim()) throw new Error(`Yazının kısa yanıtı veya sınır notu eksik: ${article.slug}`);
     const pilot = { summary, findings: findings.filter(finding => finding.used_in?.includes(article.slug)) };
     if (!pilot.findings.length) throw new Error(`Yazının bulgu kaydı yok: ${article.slug}`);
-    await writeFile(path.join(articleDirectory, `${article.slug}.html`), wrapArticle(source, article, pilot, { searchQuestion: searchQuestions[article.slug], hubs, articles }));
+    await writeFile(path.join(articleDirectory, `${article.slug}.html`), wrapArticle(source, article, pilot, { searchQuestion: searchQuestions[article.slug], hubs, articles, contributionPilot: pilotSlugs.has(article.slug) ? tartismaPilotu : null, bulten }));
   }
 
   await brandToolPages();
@@ -561,7 +579,7 @@ async function main() {
   await writeFile(path.join(OUT, 'reader.html'), legacyReader());
   await writeFile(path.join(OUT, '404.html'), notFoundPage());
   await writeFile(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
-  await writeFile(path.join(OUT, 'sitemap.xml'), sitemap(articles, pilotSummaries, hubs));
+  await writeFile(path.join(OUT, 'sitemap.xml'), sitemap(articles, pilotSummaries, hubs, pilotSlugs));
   await writeFile(path.join(OUT, 'feed.xml'), rss(articles));
   await writeFile(path.join(OUT, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: DENY\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()\n  Cross-Origin-Opener-Policy: same-origin\n\n/assets/*\n  Cache-Control: public, max-age=0, must-revalidate\n`);
   await writeFile(path.join(OUT, '_redirects'), '/index.html  /  301\n');
