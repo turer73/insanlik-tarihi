@@ -1,37 +1,18 @@
 [
   {
+    "schema_version": 2,
     "id": "tufan-evrensel-degil",
-    "claim": "Nuh tipi tufan anlatısı (yok edici, uyarılan kurtulan, gemi, kuş testi) evrensel değildir; Yakındoğu'ya özgü bir metin kümesidir.",
+    "claim": "Nuh tipi tufan anlatısı (yok edici, uyarılan kurtulan, gemi, kuş testi) evrensel değildir; Yakındoğu merkezli bir gelenektir.",
     "status": "established",
     "confidence": "high",
     "topic": [
       "tufan",
       "karsilastirmali-mitoloji"
     ],
-    "popular_claim": "Bütün antik uygarlıklarda tufan anlatısı vardır.",
-    "divergence": "İddia 19. yüzyılda misyoner derlemeleri ve karşılaştırmalı folklor çalışmalarıyla DERLENDİ. Bir anlatı aranırsa bulunur; belirsiz su anlatıları 'tufan miti' olarak sınıflandı. Derleyenlerin önemli kısmı din adamıydı ve Tekvin'in evrensel bir hatıraya dayandığını göstermek teolojik olarak değerliydi.",
-    "evidence": [
-      "Mısır'da tufan miti yok.",
-      "Japonya'da (Kojiki, Nihon Shoki) yok.",
-      "Sahra altı Afrika'da belirgin biçimde seyrek.",
-      "Çin'inki yapısal olarak farklı bir anlatı.",
-      "Amerika kıtası kayıtları fetih sonrası."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "title": "Stephanie Dalley, Myths from Mesopotamia"
-      },
-      {
-        "tier": "unreliable",
-        "note": "Kaynak olarak değil, popüler iddianın kökeni olarak kaydedildi.",
-        "title": "James Frazer, Folk-Lore in the Old Testament (1918)"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "tufan-bilmecesi"
-    ],
+    "subject": {
+      "region": "küresel",
+      "modern_country": "çok uluslu"
+    },
     "period": {
       "earliest": -1700,
       "latest": 1918,
@@ -61,12 +42,156 @@
         "lifespan": "1854-1941"
       }
     ],
+    "popular_claim": "Bütün antik uygarlıklarda tufan anlatısı vardır.",
+    "divergence": "İddia 19. yüzyılda misyoner derlemeleri ve karşılaştırmalı folklor çalışmalarıyla DERLENDİ. Bir anlatı aranırsa bulunur; belirsiz su anlatıları 'tufan miti' olarak sınıflandı. Derleyenlerin önemli kısmı din adamıydı ve Tekvin'in evrensel bir hatıraya dayandığını göstermek teolojik olarak değerliydi.",
     "divergence_type": [
       "ideolojik-secim",
       "kategori-hatasi"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "dalley-1989-myths-from-mesopotamia",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Dalley, Stephanie"
+        ],
+        "year": 1989,
+        "title": "Myths from Mesopotamia: Creation, the Flood, Gilgamesh and Others",
+        "publisher": "Oxford University Press",
+        "isbn": "9780199538362",
+        "note": "Mezopotamya tufan metinlerinin standart İngilizce çevirisi ve girişleri."
+      },
+      {
+        "id": "frazer-1918-folklore-old-testament",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "popular",
+        "type": "book",
+        "authors": [
+          "Frazer, James George"
+        ],
+        "year": 1918,
+        "title": "Folk-Lore in the Old Testament",
+        "note": "'Bütün uygarlıklarda tufan vardır' iddiasının derleyici kaynağı. Bu kayıtta KANIT DEĞİL, iddianın KÖKENİ olarak duruyor. TIER DÜZELTİLDİ: önceki sürümde 'unreliable' yazıyordu; README'ye göre o katman turizm/içerik siteleri için. Frazer dönemin ciddi bir karşılaştırmalı folklor çalışmasıdır, yöntemi bugün aşılmıştır - 'popular' doğru karşılığı."
+      },
+      {
+        "id": "lewis-2006-flood-myths-early-china",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Lewis, Mark Edward"
+        ],
+        "year": 2006,
+        "title": "The Flood Myths of Early China",
+        "publisher": "State University of New York Press",
+        "isbn": "9780791466636",
+        "note": "Çin tufan anlatılarının standart incelemesi; yapısal farkın çözümlemesi buradan geliyor."
+      },
+      {
+        "id": "assmann-2001-search-for-god",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Assmann, Jan"
+        ],
+        "year": 2001,
+        "title": "The Search for God in Ancient Egypt",
+        "publisher": "Cornell University Press",
+        "isbn": "9780801487293",
+        "note": "Mısır dininin kapsamlı incelemesi; tufan anlatısının YOKLUĞU bu tür bir külliyat taramasıyla söylenebilir."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "misirda-yok",
+        "text": "Mısır'da tufan miti yok.",
+        "citations": [
+          {
+            "source_ref": "assmann-2001-search-for-god",
+            "locator": "Mısır dini külliyatı taraması",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "cin-yapisal-farkli",
+        "text": "Çin'inki yapısal olarak farklı bir anlatı.",
+        "citations": [
+          {
+            "source_ref": "lewis-2006-flood-myths-early-china",
+            "locator": "Gun-Yu döngüsünün yapısı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yakindogu-ailesi",
+        "text": "Yakındoğu geleneği kendi içinde bağlantılıdır: Atrahasis, Gılgamış XI ve Tekvin aynı anlatı ailesidir.",
+        "citations": [
+          {
+            "source_ref": "dalley-1989-myths-from-mesopotamia",
+            "locator": "Tufan metinleri girişi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "frazer-derlemesi",
+        "text": "Evrensellik iddiasının derleyici kaynağı belirlidir.",
+        "citations": [
+          {
+            "source_ref": "frazer-1918-folklore-old-testament",
+            "locator": "Tufan bölümü",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "japonya-afrika-kaynaksiz",
+        "text": "Japonya (Kojiki, Nihon Shoki) ve Sahra altı Afrika için 'yok' ve 'seyrek' ifadeleri bu kayıtta AYRI KAYNAKLARA BAĞLANMADI; iki bölge için külliyat taraması yapılmadı.",
+        "citations": [
+          {
+            "source_ref": "frazer-1918-folklore-old-testament",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kalip-ayrimi",
+        "text": "'Evrensel değil' demek 'yalnızca Yakındoğu'da var' demek değildir; su felaketi anlatıları başka yerlerde de bulunur - iddia BELİRLİ BİR ANLATI KALIBININ evrensel olmadığıdır.",
+        "citations": [
+          {
+            "source_ref": "dalley-1989-myths-from-mesopotamia",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Japonya ve Sahra altı Afrika için külliyat taraması yapılmalı; şu an iddia dolaylı."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Frazer'ın tier'ı unreliable -> popular olarak DÜZELTİLDİ (README tanımına aykırıydı) ve rolü claim-origin olarak işaretlendi. Japonya/Afrika iddialarının kaynaksız olduğu açıkça yazıldı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-misirda-yok",
     "claim": "Mısır mitolojisinde insanlığı yok eden bir tufan anlatısı yoktur.",
     "status": "established",
@@ -74,25 +199,6 @@
     "topic": [
       "tufan",
       "misir"
-    ],
-    "evidence": [
-      "Üç bin yıllık devasa yazılı külliyatta böyle bir anlatı bulunmuyor.",
-      "En yakın metin Gök İneği Kitabı'ndaki İnsanlığın Yok Edilişi - ama araç su değil, kırmızıya boyanmış bira; insanlık boğularak değil, tanrıça sarhoş edilerek KURTARILIYOR.",
-      "İlksel su kavramı (Nun) var ama bu kozmogoni; Tabut Metni'ndeki Atum ifadesi GELECEĞE dair, geçmişte yaşanmış bir tufana değil."
-    ],
-    "counter_evidence": [],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "title": "Erik Hornung, Gök İneği Kitabı çalışması"
-      }
-    ],
-    "open_questions": [
-      "Yıllık Nil taşkını kültürünün merkezinde olmasına rağmen neden yok - kültürel açıklama net değil."
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "site": "Mısır külliyatı",
@@ -124,9 +230,130 @@
         "year": 1982,
         "lifespan": "1933-2022"
       }
-    ]
+    ],
+    "popular_claim": "Mısır'da da bir tufan anlatısı vardır; her nehir uygarlığında olmalı.",
+    "divergence": "YOK - ve yokluğu şaşırtıcı olan da bu: yıllık Nil taşkını kültürün merkezindeydi. En yakın metin 'İnsanlığın Yok Edilişi'dir ama orada araç SU DEĞİL, kırmızıya boyanmış biradır; üstelik insanlık boğularak değil, tanrıça sarhoş edilerek KURTARILIR. Yani anlatı ters yönde çalışıyor. Bir kültürün elinde malzeme olması, o anlatıyı üreteceği anlamına gelmiyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "assmann-2001-search-for-god",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Assmann, Jan"
+        ],
+        "year": 2001,
+        "title": "The Search for God in Ancient Egypt",
+        "publisher": "Cornell University Press",
+        "isbn": "9780801487293",
+        "note": "Mısır dininin kapsamlı incelemesi; tufan anlatısının YOKLUĞU bu tür bir külliyat taramasıyla söylenebilir."
+      },
+      {
+        "id": "lichtheim-1976-ancient-egyptian-literature",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Lichtheim, Miriam"
+        ],
+        "year": 1976,
+        "title": "Ancient Egyptian Literature: A Book of Readings",
+        "publisher": "University of California Press",
+        "isbn": "9780520036154",
+        "note": "Mısır edebiyatının standart antolojisi; negatif iddianın dayandığı külliyat."
+      },
+      {
+        "id": "hornung-1982-gok-inegi",
+        "language": "de",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Hornung, Erik"
+        ],
+        "year": 1982,
+        "title": "Der ägyptische Mythos von der Himmelskuh",
+        "note": "Gök İneği Kitabı'nın edisyonu - 'İnsanlığın Yok Edilişi' metni burada. YAYINCI VE ISBN BU TURDA DOĞRULANMADI, uydurulmadı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "kulliyatta-yok",
+        "text": "Üç bin yıllık devasa yazılı külliyatta böyle bir anlatı bulunmuyor.",
+        "citations": [
+          {
+            "source_ref": "lichtheim-1976-ancient-egyptian-literature",
+            "locator": "Antolojinin kapsamı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "gok-inegi-bira",
+        "text": "En yakın metin Gök İneği Kitabı'ndaki İnsanlığın Yok Edilişi - ama araç su değil, kırmızıya boyanmış bira; insanlık boğularak değil, tanrıça sarhoş edilerek KURTARILIYOR.",
+        "citations": [
+          {
+            "source_ref": "hornung-1982-gok-inegi",
+            "locator": "İnsanlığın Yok Edilişi bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "nun-kozmogoni",
+        "text": "İlksel su kavramı (Nun) var ama bu kozmogoni; Tabut Metni'ndeki Atum ifadesi GELECEĞE dair, geçmişte yaşanmış bir tufana değil.",
+        "citations": [
+          {
+            "source_ref": "assmann-2001-search-for-god",
+            "locator": "Kozmogoni ve Nun",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "negatif-iddia-siniri",
+        "text": "NEGATİF İDDİA KANITLANAMAZ, yalnızca desteklenebilir: 'yok' demek, taranmış külliyatta bulunmadığı demektir. Mısır külliyatı büyük ama eksiksiz değildir.",
+        "citations": [
+          {
+            "source_ref": "lichtheim-1976-ancient-egyptian-literature",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "aciklama-net-degil",
+        "text": "Yokluğun kültürel açıklaması net değil: Nil taşkını yıkıcı değil BEREKETLİ olduğu için mi, yoksa başka bir sebeple mi - bu kayıt cevap vermiyor.",
+        "citations": [
+          {
+            "source_ref": "assmann-2001-search-for-god",
+            "locator": "Açık uç",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Yıllık Nil taşkını kültürünün merkezinde olmasına rağmen neden yok - kültürel açıklama net değil."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Negatif iddianın kanıtlanamaz olduğu açıkça yazıldı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-cin-yapisi-ters",
     "claim": "Çin'in Gun-Yu anlatısı yapısal olarak Nuh tipi tufan anlatısı değildir.",
     "status": "established",
@@ -134,24 +361,6 @@
     "topic": [
       "tufan",
       "cin"
-    ],
-    "popular_claim": "Çin'de de tufan miti vardır.",
-    "divergence": "Teknik olarak doğru, analitik olarak yanıltıcı. 'Tufan' etiketi yapısal farkı gizliyor.",
-    "evidence": [
-      "Gemi yok, kanal var - Yu suyu dizginlemek yerine denize akıtıyor.",
-      "Ceza yok; su tanrısal hüküm değil çözülecek problem.",
-      "İnsanlık yok olmuyor, yerinde kalıyor.",
-      "Sonuç kurtuluş değil hanedan ve yönetme meşruiyeti."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "title": "Mark Edward Lewis, The Flood Myths of Early China"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "site": "Sarı Irmak havzası",
@@ -182,11 +391,127 @@
         "year": 2006
       }
     ],
+    "popular_claim": "Çin'de de tufan miti vardır.",
+    "divergence": "Teknik olarak doğru, analitik olarak yanıltıcı. 'Tufan' etiketi yapısal farkı gizliyor.",
     "divergence_type": [
       "kategori-hatasi"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "lewis-2006-flood-myths-early-china",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Lewis, Mark Edward"
+        ],
+        "year": 2006,
+        "title": "The Flood Myths of Early China",
+        "publisher": "State University of New York Press",
+        "isbn": "9780791466636",
+        "note": "Çin tufan anlatılarının standart incelemesi; yapısal farkın çözümlemesi buradan geliyor."
+      },
+      {
+        "id": "birrell-1993-chinese-mythology",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Birrell, Anne"
+        ],
+        "year": 1993,
+        "title": "Chinese Mythology: An Introduction",
+        "publisher": "Johns Hopkins University Press",
+        "isbn": "9780801845956",
+        "note": "Çin mitolojisinin kaynak temelli girişi; Gun-Yu döngüsünün metinleri."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "gemi-yok-kanal-var",
+        "text": "Gemi yok, kanal var - Yu suyu dizginlemek yerine denize akıtıyor.",
+        "citations": [
+          {
+            "source_ref": "lewis-2006-flood-myths-early-china",
+            "locator": "Yu'nun su işleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ceza-yok",
+        "text": "Ceza yok; su tanrısal hüküm değil çözülecek problem.",
+        "citations": [
+          {
+            "source_ref": "lewis-2006-flood-myths-early-china",
+            "locator": "Anlatının ahlaki çerçevesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "insanlik-yok-olmuyor",
+        "text": "İnsanlık yok olmuyor, yerinde kalıyor.",
+        "citations": [
+          {
+            "source_ref": "birrell-1993-chinese-mythology",
+            "locator": "Gun-Yu anlatısı metinleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sonuc-mesruiyet",
+        "text": "Sonuç kurtuluş değil hanedan ve yönetme meşruiyeti.",
+        "citations": [
+          {
+            "source_ref": "lewis-2006-flood-myths-early-china",
+            "locator": "Siyasi işlev çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "temas-etmedi-demiyoruz",
+        "text": "Yapısal fark, iki geleneğin hiç temas etmediğini göstermez; söylenen şey aynı ANLATI KALIBI olmadığıdır.",
+        "citations": [
+          {
+            "source_ref": "lewis-2006-flood-myths-early-china",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "metinler-gec-derleme",
+        "text": "Gun-Yu metinleri de geç derlemedir (Savaşan Devletler ve sonrası); anlatının kaç yüzyıl önce hangi biçimde dolaştığı ayrı bir sorudur.",
+        "citations": [
+          {
+            "source_ref": "birrell-1993-chinese-mythology",
+            "locator": "Metin tarihleri",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Gun-Yu anlatısının yazıya geçmeden önceki biçimi izlenebilir mi?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Lewis'in ISBN'i doğrulandı (SUNY Press). Birrell eklendi. Metinlerin geç derleme olduğu counter_evidence'a yazıldı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-kus-testi-bagimlilik-kaniti",
     "claim": "Kuş salma motifi, Gılgamış XI ile Tekvin arasındaki metinsel bağımlılığın filolojik kanıtıdır.",
     "status": "established",
@@ -195,25 +520,6 @@
       "tufan",
       "mezopotamya",
       "metin-elestirisi"
-    ],
-    "evidence": [
-      "Karanın çıkıp çıkmadığını anlamak için sırayla kuş salmak bir olayın değil, bir ANLATININ parçası - keyfî edebî çözüm.",
-      "Keyfî ayrıntılar bağımsız olarak iki kez icat edilmez.",
-      "Tekvin'de sıra değişmiş (kuzgun sonra güvercin) ama mantık aynı; zeytin yaprağı Levant'ın kendi katkısı."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Gılgamış Destanı XI. tablet"
-      },
-      {
-        "tier": "peer-reviewed",
-        "title": "Andrew George, Gılgamış eleştirel edisyonu"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "region": "Mezopotamya - Levant",
@@ -244,9 +550,134 @@
         "affiliation": "SOAS, University of London",
         "year": 2003
       }
-    ]
+    ],
+    "popular_claim": "İki anlatının benzerliği, ikisinin de gerçek bir olayı hatırlamasından gelir.",
+    "divergence": "Benzerlik gerçek ama açıklaması ortak HATIRA değil, ortak METİN. Kanıt şurada: kuş salma KEYFÎ bir edebî çözümdür - karanın çıkıp çıkmadığını anlamanın doğal yolu değil, bir anlatı hilesidir. Böyle keyfî bir ayrıntı iki kez bağımsız icat edilmez. Aynı mantığın Tekvin'de sırası değişmiş, zeytin yaprağı eklenmiştir; yani ödünç alınmış ve yerelleştirilmiştir.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "george-2003-babylonian-gilgamesh",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "George, Andrew R."
+        ],
+        "year": 2003,
+        "title": "The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts",
+        "publisher": "Oxford University Press",
+        "isbn": "9780198149224",
+        "volume": "2 cilt",
+        "note": "XI. tabletin eleştirel edisyonu. Bu kayıtta METNİN NE DEDİĞİ için kullanılıyor - bu yüzden primary."
+      },
+      {
+        "id": "tigay-1982-evolution-gilgamesh",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Tigay, Jeffrey H."
+        ],
+        "year": 1982,
+        "title": "The Evolution of the Gilgamesh Epic",
+        "publisher": "University of Pennsylvania Press",
+        "isbn": "9780812278057",
+        "note": "Destanın metinsel gelişiminin standart incelemesi; bağımlılık savının yöntemsel dayanağı."
+      },
+      {
+        "id": "wenham-1987-genesis-1-15",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Wenham, Gordon J."
+        ],
+        "year": 1987,
+        "title": "Genesis 1-15",
+        "container": "Word Biblical Commentary",
+        "publisher": "Word Books",
+        "isbn": "9780849902000",
+        "note": "Tekvin tufan anlatısının ayrıntılı yorumu; kuş sırasındaki farkın değerlendirmesi."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "kus-salma-keyfi",
+        "text": "Karanın çıkıp çıkmadığını anlamak için sırayla kuş salmak bir olayın değil, bir ANLATININ parçası - keyfî edebî çözüm.",
+        "citations": [
+          {
+            "source_ref": "george-2003-babylonian-gilgamesh",
+            "locator": "XI. tablet, kuş salma bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "keyfi-ayrinti-olcutu",
+        "text": "Keyfî ayrıntılar bağımsız olarak iki kez icat edilmez.",
+        "citations": [
+          {
+            "source_ref": "tigay-1982-evolution-gilgamesh",
+            "locator": "Metinsel bağımlılık ölçütleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sira-degismis-mantik-ayni",
+        "text": "Tekvin'de sıra değişmiş (kuzgun sonra güvercin) ama mantık aynı; zeytin yaprağı Levant'ın kendi katkısı.",
+        "citations": [
+          {
+            "source_ref": "wenham-1987-genesis-1-15",
+            "locator": "Tekvin 8 yorumu",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "yon-ve-araci-belirsiz",
+        "text": "Bağımlılığın YÖNÜ ve aracı metin bu kayıtta gösterilmiyor: doğrudan Gılgamış'tan mı, ortak bir Yakındoğu geleneğinden mi geldiği ayrı bir tartışmadır.",
+        "citations": [
+          {
+            "source_ref": "tigay-1982-evolution-gilgamesh",
+            "locator": "Aktarım yolları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "denizcilik-uygulamasi-itirazi",
+        "text": "Kuş salma denizcilikte bilinen bir uygulamadır; 'tamamen keyfî' nitelemesi bu yüzden mutlak değildir - ama SIRALI üç kuş ve dönüş/dönmeme mantığı anlatıya özgüdür.",
+        "citations": [
+          {
+            "source_ref": "wenham-1987-genesis-1-15",
+            "locator": "Motifin değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Bağımlılık doğrudan mı, aracı bir metin üzerinden mi?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu üç künyeyle değiştirildi. 'Tamamen keyfî' nitelemesine denizcilik itirazı counter_evidence'a eklendi - kayıt bu itirazı hiç anmıyordu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-atrahasis-sebep-gurultu",
     "claim": "Atrahasis'te tufanın sebebi ahlaki bozulma değil, insanların gürültüsünün Enlil'in uykusunu kaçırmasıdır.",
     "status": "established",
@@ -254,24 +685,6 @@
     "topic": [
       "tufan",
       "mezopotamya"
-    ],
-    "evidence": [
-      "Metin doğrudan böyle diyor: insanlığın uğultusu ağır geldi, uyku kaçtı.",
-      "Tekvin aynı olay örgüsünü alıp ahlaki çerçeveye oturtuyor - ödünç alıp yeniden anlamlandırma."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Atrahasis, I. tablet"
-      },
-      {
-        "tier": "peer-reviewed",
-        "title": "W. G. Lambert ve A. R. Millard, Atrahasis edisyonu"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "region": "Mezopotamya",
@@ -307,9 +720,126 @@
         "affiliation": "University of Liverpool",
         "year": 1969
       }
-    ]
+    ],
+    "popular_claim": "Tufan, insanlığın günahları yüzünden gönderilen bir cezadır.",
+    "divergence": "Bu ahlaki çerçeve Tekvin'in katkısıdır, anlatının kendisinin değil. Atrahasis'te gerekçe açıkça yazılıdır ve ahlakla ilgisi yoktur: insanlar çoğaldı, uğultuları arttı, tanrı uyuyamadı. Aynı olay örgüsü ödünç alınıp BAŞKA BİR SEBEBE bağlanmış - yani devralınan şey olay, değiştirilen şey anlam.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "atrahasis-i-tablet",
+        "language": "akk",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "inscription",
+        "title": "Atrahasis, I. tablet",
+        "note": "Gürültü gerekçesinin geçtiği metin."
+      },
+      {
+        "id": "lambert-millard-1969-atrahasis",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Lambert, Wilfred G.",
+          "Millard, Alan R."
+        ],
+        "year": 1969,
+        "title": "Atra-hasis: The Babylonian Story of the Flood",
+        "publisher": "Clarendon Press",
+        "note": "Atrahasis'in standart edisyonu ve çevirisi. ISBN BU TURDA DOĞRULANAMADI, uydurulmadı."
+      },
+      {
+        "id": "dalley-1989-myths-from-mesopotamia",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Dalley, Stephanie"
+        ],
+        "year": 1989,
+        "title": "Myths from Mesopotamia: Creation, the Flood, Gilgamesh and Others",
+        "publisher": "Oxford University Press",
+        "isbn": "9780199538362",
+        "note": "Mezopotamya tufan metinlerinin standart İngilizce çevirisi ve girişleri."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "metin-dogrudan-boyle-diyor",
+        "text": "Metin doğrudan böyle diyor: insanlığın uğultusu ağır geldi, uyku kaçtı.",
+        "citations": [
+          {
+            "source_ref": "atrahasis-i-tablet",
+            "locator": "I. tablet, gürültü gerekçesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "standart-edisyon-okumasi",
+        "text": "Standart edisyon bu okumayı verir.",
+        "citations": [
+          {
+            "source_ref": "lambert-millard-1969-atrahasis",
+            "locator": "I. tablet çevirisi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tekvin-ahlaki-cerceve",
+        "text": "Tekvin aynı olay örgüsünü alıp ahlaki çerçeveye oturtuyor - ödünç alıp yeniden anlamlandırma.",
+        "citations": [
+          {
+            "source_ref": "dalley-1989-myths-from-mesopotamia",
+            "locator": "Tufan metinleri karşılaştırması",
+            "support_type": "inference"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "rigmu-terim-tartismasi",
+        "text": "'Gürültü' (rigmu) teriminin yalnızca ses mi yoksa isyan/kargaşa çağrışımı da mı taşıdığı tartışılmıştır; okuma tartışmasız değildir.",
+        "citations": [
+          {
+            "source_ref": "lambert-millard-1969-atrahasis",
+            "locator": "Terim tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "degistirme-savi-cikarim",
+        "text": "Tekvin'in çerçeveyi 'değiştirdiği' savı bir ÇIKARIMDIR: iki metnin ilişkisi kabul edilse bile hangisinin neyi ne zaman eklediği ayrıca gösterilmelidir.",
+        "citations": [
+          {
+            "source_ref": "dalley-1989-myths-from-mesopotamia",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "'rigmu' teriminin anlam alanı nedir - yalnızca gürültü mü?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Lambert & Millard künyelendi (ISBN doğrulanamadı, işaretlendi). Terim tartışması counter_evidence'a eklendi. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-popol-vuh-fetih-sonrasi",
     "claim": "Popol Vuh'un tufan bölümü bağımsız Kolomb öncesi kanıt sayılamaz.",
     "status": "established",
@@ -318,24 +848,6 @@
       "tufan",
       "mezoamerika",
       "provenans"
-    ],
-    "popular_claim": "Mayalarda da tufan miti vardı.",
-    "divergence": "Metin ~1555'te, Latin alfabesiyle, Hristiyanlaşmış K'iche' yazarlarca, fetihten ~30 yıl sonra yazıldı. Uzmanların çoğu metnin ciddi Kolomb öncesi malzeme taşıdığında hemfikir, ama TUFAN ÖĞESİ kirlenme kuşkusunun en yüksek olduğu yer.",
-    "counter_evidence": [
-      "Metnin bütünü uydurma değil; birçok bölüm Kolomb öncesi ikonografiyle örtüşüyor."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Popol Vuh, Ximénez kopyası (~1701)"
-      }
-    ],
-    "open_questions": [
-      "Kolomb öncesi bir tufan geleneği var mıydı - fetih öncesi kaynak olmadığı için cevaplanamıyor."
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "site": "Popol Vuh elyazması",
@@ -370,12 +882,91 @@
         "lifespan": "1666-1729"
       }
     ],
+    "popular_claim": "Mayalarda da tufan miti vardı.",
+    "divergence": "Metin ~1555'te, Latin alfabesiyle, Hristiyanlaşmış K'iche' yazarlarca, fetihten ~30 yıl sonra yazıldı. Uzmanların çoğu metnin ciddi Kolomb öncesi malzeme taşıdığında hemfikir, ama TUFAN ÖĞESİ kirlenme kuşkusunun en yüksek olduğu yer.",
     "divergence_type": [
       "provenans-yoklugu",
       "somurge-anlatisi"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "tedlock-1996-popol-vuh",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Tedlock, Dennis"
+        ],
+        "year": 1996,
+        "title": "Popol Vuh: The Mayan Book of the Dawn of Life",
+        "publisher": "Simon & Schuster",
+        "isbn": "9780684818450",
+        "note": "Antropolog Tedlock'un eleştirel çevirisi; akademik standart çeviri sayılır. Ticari bir yayınevinden çıkmış olması onu popülerleştirme yapmaz - metin bir bilim insanının kaynak temelli çevirisidir. (Karşılaştırma: aynı ölçütle Allen vd. 1986 'popular' işaretlenmişti çünkü o bir popülerleştirmedir.)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "ozgun-elyazmasi-yok",
+        "text": "Bilinen en eski nüsha Ximénez'in ~1701 kopyasıdır; özgün elyazması yok.",
+        "citations": [
+          {
+            "source_ref": "tedlock-1996-popol-vuh",
+            "locator": "Metnin aktarım tarihçesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "fetih-sonrasi-kayit",
+        "text": "Metin fetihten sonra, Latin alfabesiyle ve Hristiyanlaşmış yazarlarca kaydedildi.",
+        "citations": [
+          {
+            "source_ref": "tedlock-1996-popol-vuh",
+            "locator": "Yazım koşulları",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ikonografi-ortusmesi",
+        "text": "Metnin bütünü uydurma değil; birçok bölüm Kolomb öncesi ikonografiyle örtüşüyor.",
+        "citations": [
+          {
+            "source_ref": "tedlock-1996-popol-vuh",
+            "locator": "İkonografi karşılaştırması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tufan-ogesi-metnin-tamami-degil",
+        "text": "Bu kayıt TUFAN ÖĞESİ için kuşku bildiriyor, metnin tamamı için değil. Ayrım korunmazsa kayıt Popol Vuh'u toptan geçersiz sayıyormuş gibi okunur.",
+        "citations": [
+          {
+            "source_ref": "tedlock-1996-popol-vuh",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Kolomb öncesi bir tufan geleneği var mıydı - fetih öncesi kaynak olmadığı için cevaplanamıyor."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Tedlock künyelendi; ticari yayınevinden çıkmış olmasına rağmen akademik çeviri olduğu için peer-reviewed işaretlendi ve gerekçesi kaynak notuna yazıldı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-ur-katmani-tek-olay-degil",
     "claim": "Mezopotamya'daki arkeolojik tufan katmanları tek bir küresel olaya değil, tekrar eden yerel taşkınlara işaret eder.",
     "status": "established",
@@ -384,22 +975,6 @@
       "tufan",
       "jeoarkeoloji",
       "mezopotamya"
-    ],
-    "popular_claim": "Woolley Ur'da Nuh Tufanı'nın kanıtını buldu.",
-    "divergence": "Woolley 1929'da metrelerce alüvyon katmanı bulup Tufan olarak duyurdu. Sonraki kazılar Kiş, Şuruppak ve Uruk'ta da katmanlar buldu - ama FARKLI TARİHLERDE. Duyuru popüler kültürde kaldı, düzeltme kalmadı.",
-    "evidence": [
-      "Farklı sitelerde farklı tarihli katmanlar.",
-      "Mezopotamya bir taşkın ovası; şehirler defalarca sular altında kaldı."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Leonard Woolley, Ur kazıları (1929)"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "site": "Ur",
@@ -431,14 +1006,136 @@
         "affiliation": "British Museum / Penn Museum",
         "year": 1929,
         "lifespan": "1880-1960"
+      },
+      {
+        "name": "Mallowan, M. E. L.",
+        "role": "critic",
+        "year": 1964
       }
     ],
+    "popular_claim": "Woolley Ur'da Nuh Tufanı'nın kanıtını buldu.",
+    "divergence": "Woolley 1929'da metrelerce alüvyon katmanı bulup Tufan olarak duyurdu. Sonraki kazılar Kiş, Şuruppak ve Uruk'ta da katmanlar buldu - ama FARKLI TARİHLERDE. Duyuru popüler kültürde kaldı, düzeltme kalmadı.",
     "divergence_type": [
       "guncellenmemis",
       "medya-abartisi"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "mallowan-1964-noahs-flood-reconsidered",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Mallowan, M. E. L."
+        ],
+        "year": 1964,
+        "title": "Noah's Flood Reconsidered",
+        "container": "Iraq",
+        "volume": "26(2)",
+        "pages": "62-82",
+        "publisher": "British Institute for the Study of Iraq",
+        "doi": "10.2307/4199766",
+        "note": "Woolley'in duyurusunun alan içindeki yeniden değerlendirmesi. Kiş'te üç ayrı taşkın belgeler; en geç ve en şiddetlisi ~MÖ 2600. Sonuç: Mezopotamya tufan anlatısı gerçek ama YEREL bir felaketten esinlenmiştir. DeepSeek turunda bu kayda aday gelmemişti, ayrıca arandı."
+      },
+      {
+        "id": "woolley-1929-ur-tufan-katmani",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Woolley, Leonard"
+        ],
+        "year": 1929,
+        "title": "Ur kazıları: alüvyon katmanı duyurusu",
+        "note": "Popüler anlatının KÖKENİ. Künye ayrıntıları (yayın adı, cilt) bu turda doğrulanmadı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "farkli-tarihli-katmanlar",
+        "text": "Farklı sitelerde farklı tarihli katmanlar bulundu; Kiş'te üç ayrı taşkın belgelenmiştir ve en geç olanı ~MÖ 2600'dür.",
+        "citations": [
+          {
+            "source_ref": "mallowan-1964-noahs-flood-reconsidered",
+            "locator": "Kiş taşkın tablosu",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yerel-felaket-sonucu",
+        "text": "Alan içi yeniden değerlendirmenin sonucu: anlatı gerçek bir felaketten esinlenmiş olabilir ama bu felaket hiçbir biçimde EVRENSEL değildir.",
+        "citations": [
+          {
+            "source_ref": "mallowan-1964-noahs-flood-reconsidered",
+            "locator": "Sonuç bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "taskin-ovasi",
+        "text": "Mezopotamya bir taşkın ovası; şehirler defalarca sular altında kaldı.",
+        "citations": [
+          {
+            "source_ref": "mallowan-1964-noahs-flood-reconsidered",
+            "locator": "Bölgesel değerlendirme",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "woolley-duyurusu",
+        "text": "Popüler anlatının kaynağı Woolley'in kendi duyurusudur.",
+        "citations": [
+          {
+            "source_ref": "woolley-1929-ur-tufan-katmani",
+            "locator": "Duyuru",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "hicbir-olay-yoktu-demiyoruz",
+        "text": "Mallowan'ın kendisi anlatının GERÇEK bir felaketten esinlendiğini savunur; bu kayıt 'hiçbir olay yoktu' demiyor, 'tek ve küresel bir olay yoktu' diyor.",
+        "citations": [
+          {
+            "source_ref": "mallowan-1964-noahs-flood-reconsidered",
+            "locator": "Sonuç bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "woolley-kunye-eksik",
+        "text": "Woolley'in 1929 duyurusunun künye ayrıntıları bu kayıtta doğrulanmadı.",
+        "citations": [
+          {
+            "source_ref": "woolley-1929-ur-tufan-katmani",
+            "locator": "Künye düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "1964'ten sonraki jeoarkeoloji bu tabloyu değiştirdi mi? Güncel literatür taranmadı."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "DeepSeek turunda bu kayda doğrulanmış aday GELMEDİ; ayrıca arandı ve alanın klasik yeniden değerlendirmesi bulundu (Mallowan 1964, Iraq 26). Kaydın iddiasını doğrudan taşıyor."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-karadeniz-felaket-hipotezi",
     "claim": "Akdeniz ~7.600 yıl önce Boğaz'ı yarıp Karadeniz'i ani biçimde doldurdu.",
     "status": "minority",
@@ -447,29 +1144,6 @@
       "tufan",
       "jeoloji",
       "karadeniz"
-    ],
-    "evidence": [
-      "Ryan ve Pitman (1997) sediment ve fauna değişimine dayanarak öne sürdü.",
-      "Popüler kültürde geniş kabul gördü."
-    ],
-    "counter_evidence": [
-      "Sonraki jeolojik çalışmalar su seviyesi yükselişinin çok daha KADEMELİ olduğuna işaret etti.",
-      "Felaket versiyonu bugün azınlık görüşü."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "title": "Ryan & Pitman (1997)"
-      },
-      {
-        "tier": "peer-reviewed",
-        "title": "Sonraki jeolojik itirazlar, ör. Giosan vd."
-      }
-    ],
-    "checked": "2026-09-06",
-    "volatile": true,
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "site": "Karadeniz havzası",
@@ -507,10 +1181,127 @@
         "affiliation": "Columbia University, Lamont-Doherty",
         "year": 1997,
         "lifespan": "1931-2019"
+      },
+      {
+        "name": "Giosan, Liviu",
+        "role": "critic",
+        "year": 2009
       }
-    ]
+    ],
+    "popular_claim": "Nuh Tufanı'nın jeolojik karşılığı bulundu: Karadeniz'in ani dolması.",
+    "divergence": "Hipotez gerçek bir gözleme dayanıyor - havzada tatlı sudan tuzlu suya geçiş var. Tartışmalı olan HIZ: 'ani felaket' mi yoksa yüzyıllara yayılan kademeli bir yükselme mi? Sonraki jeolojik çalışmalar ikincisine işaret ediyor ve felaket sürümü bugün azınlık görüşü. Popüler kültürde ise hâlâ 'kanıtlandı' diye dolaşıyor - bir hipotezin ilk hâli, düzeltilmiş hâlinden daha hızlı yayıldı.",
+    "divergence_type": [
+      "guncellenmemis",
+      "medya-abartisi"
+    ],
+    "sources": [
+      {
+        "id": "ryan-pitman-1999-noahs-flood",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "popular",
+        "type": "book",
+        "authors": [
+          "Ryan, William B. F.",
+          "Pitman, Walter C."
+        ],
+        "year": 1999,
+        "title": "Noah's Flood: The New Scientific Discoveries About the Event That Changed History",
+        "publisher": "Simon & Schuster",
+        "isbn": "9780684810522",
+        "note": "Hipotezin POPÜLERLEŞTİRİLMİŞ sunumu. Özgün hakemli yayın 1997'dir ve bu kayıtta künyelenmedi - eksiklik açıkça işaretlendi. Kitap burada iddianın kaynağı olarak kullanılıyor, kanıt olarak değil."
+      },
+      {
+        "id": "giosan-2009-black-sea",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Giosan, Liviu",
+          "Filip, Florin",
+          "Constantinescu, Stefan"
+        ],
+        "year": 2009,
+        "title": "Was the Black Sea catastrophically flooded in the early Holocene?",
+        "container": "Quaternary Science Reviews",
+        "doi": "10.1016/j.quascirev.2008.10.012",
+        "note": "Felaket senaryosunu doğrudan sınayan çalışma; su seviyesi yükselişinin kademeli olduğu sonucunun dayanağı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "ryan-pitman-onerisi",
+        "text": "Ryan ve Pitman (1997) sediment ve fauna değişimine dayanarak öne sürdü.",
+        "citations": [
+          {
+            "source_ref": "ryan-pitman-1999-noahs-flood",
+            "locator": "Hipotezin sunumu",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "populer-kabul",
+        "text": "Popüler kültürde geniş kabul gördü.",
+        "citations": [
+          {
+            "source_ref": "ryan-pitman-1999-noahs-flood",
+            "locator": "Kitabın yayılımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "kademeli-yukselis",
+        "text": "Sonraki jeolojik çalışmalar su seviyesi yükselişinin çok daha KADEMELİ olduğuna işaret etti.",
+        "citations": [
+          {
+            "source_ref": "giosan-2009-black-sea",
+            "locator": "Sonuçlar",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "azinlik-gorusu",
+        "text": "Felaket versiyonu bugün azınlık görüşü.",
+        "citations": [
+          {
+            "source_ref": "giosan-2009-black-sea",
+            "locator": "Tartışma bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "1997-yayini-kunyelenmedi",
+        "text": "Özgün HAKEMLİ yayın (1997) bu kayıtta künyelenmedi; hipotezin kaynağı olarak popülerleştirilmiş kitap kullanılıyor. Bu bir eksikliktir.",
+        "citations": [
+          {
+            "source_ref": "ryan-pitman-1999-noahs-flood",
+            "locator": "Kaynak düzeyi sınırı",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Ryan & Pitman'ın 1997 tarihli hakemli yayını künyelenmeli."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Ryan & Pitman 1999 tier'ı 'popular' - popülerleştirilmiş kitap. Giosan 2009 DOI ile bağlandı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-manu-bagimsizligi",
     "claim": "Hindistan'daki Manu ve balık anlatısı Mezopotamya'dan bağımsız olarak doğmuştur.",
     "status": "unknown",
@@ -518,26 +1309,6 @@
     "topic": [
       "tufan",
       "hindistan"
-    ],
-    "evidence": [
-      "Śatapatha Brāhmaṇa (~MÖ 700) ve sonraki Puranalar'da mevcut."
-    ],
-    "counter_evidence": [
-      "İndus-Mezopotamya ticaret bağlantısı vardı; aktarım fiziksel olarak mümkün.",
-      "Doğrudan metinsel bağımlılık kanıtı yok - kuş testi gibi keyfî bir ortak ayrıntı bulunmuyor."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Śatapatha Brāhmaṇa 1.8.1"
-      }
-    ],
-    "open_questions": [
-      "Karara bağlanmamış; her iki yön de savunulabilir."
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "region": "Kuzey Hindistan, Ganj havzası",
@@ -558,9 +1329,103 @@
     "disciplines": [
       "filoloji",
       "antropoloji"
-    ]
+    ],
+    "popular_claim": "Hindistan'daki tufan anlatısı, anlatının evrenselliğinin bir başka kanıtıdır.",
+    "divergence": "Kanıt olabilmesi için BAĞIMSIZ olması gerekir - ve bu gösterilemiyor. İndus ile Mezopotamya arasında ticaret bağlantısı vardı, yani aktarım fiziksel olarak mümkün. Öte yandan Gılgamış-Tekvin ilişkisini kuran türden keyfî bir ortak ayrıntı (kuş testi gibi) burada YOK. Yani ne bağımlılık gösterilebiliyor ne bağımsızlık. Kaydın durumu bu yüzden 'unknown' - ve bu bir eksiklik değil, dürüst karşılık.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "satapatha-brahmana-1-8-1",
+        "language": "sa",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "manuscript",
+        "title": "Śatapatha Brāhmaṇa 1.8.1",
+        "note": "Manu ve balık anlatısının bilinen en eski metni."
+      },
+      {
+        "id": "lambert-1965-babylonian-background-genesis",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Lambert, Wilfred G."
+        ],
+        "year": 1965,
+        "title": "A New Look at the Babylonian Background of Genesis",
+        "container": "Journal of Theological Studies",
+        "volume": "XVI(2)",
+        "pages": "287-300",
+        "doi": "10.1093/jts/XVI.2.287",
+        "note": "DİKKAT: Makale TEKVİN'in Babil arka planı üzerinedir, Manu-Mezopotamya ilişkisi üzerine DEĞİL. Bu kayıtta aktarım tartışmasının yöntemi için bağlam kaynağı olarak kullanılıyor, iddianın doğrudan dayanağı olarak değil."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "satapatha-metni",
+        "text": "Śatapatha Brāhmaṇa (~MÖ 700) ve sonraki Puranalar'da mevcut.",
+        "citations": [
+          {
+            "source_ref": "satapatha-brahmana-1-8-1",
+            "locator": "1.8.1",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ticaret-baglantisi",
+        "text": "İndus-Mezopotamya ticaret bağlantısı vardı; aktarım fiziksel olarak mümkün.",
+        "citations": [
+          {
+            "source_ref": "lambert-1965-babylonian-background-genesis",
+            "locator": "Aktarım tartışması",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "keyfi-ortak-ayrinti-yok",
+        "text": "Doğrudan metinsel bağımlılık kanıtı yok - kuş testi gibi keyfî bir ortak ayrıntı bulunmuyor.",
+        "citations": [
+          {
+            "source_ref": "satapatha-brahmana-1-8-1",
+            "locator": "Metnin içeriği",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "lambert-dolayli-kaynak",
+        "text": "KAYNAK SINIRI: bu kayıtta kullanılan Lambert 1965, TEKVİN'in Babil arka planı üzerinedir; Manu-Mezopotamya ilişkisini doğrudan ele almaz. Manu'nun bağımsızlığını inceleyen bir çalışma bu turda bulunamadı.",
+        "citations": [
+          {
+            "source_ref": "lambert-1965-babylonian-background-genesis",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Karara bağlanmamış; her iki yön de savunulabilir.",
+      "Manu anlatısının Mezopotamya ile ilişkisini doğrudan inceleyen Hint-Avrupa ve Vedik literatür taranmalı."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Lambert 1965 DOI ile doğrulandı AMA konusu Tekvin'dir, Manu değil. Bağlam kaynağı olarak alındı ve dolaylılığı açıkça yazıldı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "tufan-avustralya-deniz-seviyesi-hafizasi",
     "claim": "Bazı Aborjin sözlü gelenekleri ~7.000 yıl öncesine ait kıyı çizgisi değişimini koruyor olabilir.",
     "status": "contested",
@@ -569,24 +1434,6 @@
       "tufan",
       "avustralya",
       "sozlu-gelenek"
-    ],
-    "evidence": [
-      "Nunn ve Reid (2016) çok sayıda gelenekte deniz yükselmesi motifi tespit etti ve jeolojik kıyı verileriyle eşleştirdi."
-    ],
-    "counter_evidence": [
-      "Sözlü aktarımın 7.000 yıl bilgi taşıyabileceği tartışmalı.",
-      "Eşleştirme sonradan yapılan bir yorum; test edilebilirliği sınırlı."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "title": "Nunn & Reid, Australian Geographer (2016)"
-      }
-    ],
-    "checked": "2026-09-06",
-    "volatile": true,
-    "used_in": [
-      "tufan-bilmecesi"
     ],
     "subject": {
       "region": "Avustralya kıyıları",
@@ -622,6 +1469,88 @@
         "affiliation": "University of New England",
         "year": 2016
       }
-    ]
+    ],
+    "popular_claim": "Sözlü gelenek binlerce yıllık olayları güvenilir biçimde taşıyamaz.",
+    "divergence": "Bu kayıt tersini KANITLAMIYOR - ama iddianın sınanabilir hale geldiğini gösteriyor. Nunn ve Reid çok sayıda gelenekteki deniz yükselmesi motifini jeolojik kıyı verileriyle eşleştirdi. Zorluk şurada: eşleştirme SONRADAN yapılıyor. Bir anlatı ile bir jeolojik olay arasında örtüşme aramak, aramaya nereden başlandığına duyarlıdır. Yani bulgu ilginç, yöntemi tartışmalı - kaydın durumu 'contested' tam da bu yüzden.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "nunn-reid-2016-aboriginal-memories",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Nunn, Patrick D.",
+          "Reid, Nicholas J."
+        ],
+        "year": 2016,
+        "title": "Aboriginal Memories of Inundation of the Australian Coast Dating from More than 7000 Years Ago",
+        "container": "Australian Geographer",
+        "doi": "10.1080/00049182.2015.1077539",
+        "note": "İddianın kaynağı olan çalışma. Bu kayıtta doğrulayıcı değil, önerinin kendisi olarak kullanılıyor."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "nunn-reid-eslestirmesi",
+        "text": "Nunn ve Reid (2016) çok sayıda gelenekte deniz yükselmesi motifi tespit etti ve jeolojik kıyı verileriyle eşleştirdi.",
+        "citations": [
+          {
+            "source_ref": "nunn-reid-2016-aboriginal-memories",
+            "locator": "Yöntem ve bulgular",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "7000-yil-tartismali",
+        "text": "Sözlü aktarımın 7.000 yıl bilgi taşıyabileceği tartışmalı.",
+        "citations": [
+          {
+            "source_ref": "nunn-reid-2016-aboriginal-memories",
+            "locator": "Tartışma bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sonradan-eslestirme",
+        "text": "Eşleştirme sonradan yapılan bir yorum; test edilebilirliği sınırlı.",
+        "citations": [
+          {
+            "source_ref": "nunn-reid-2016-aboriginal-memories",
+            "locator": "Yöntem sınırları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tek-calisma",
+        "text": "Bu kayıt TEK BİR ÇALIŞMAYA dayanıyor; öneriyi bağımsız olarak sınayan bir yayın burada künyelenmedi.",
+        "citations": [
+          {
+            "source_ref": "nunn-reid-2016-aboriginal-memories",
+            "locator": "Kaynak bağımsızlığı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Öneriyi bağımsız sınayan çalışma var mı? Bu turda aranmadı."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Nunn & Reid DOI ile bağlandı ve claim-origin olarak işaretlendi - kayıt tek bir çalışmaya dayanıyor, bu açıkça yazıldı."
+    }
   }
 ]
