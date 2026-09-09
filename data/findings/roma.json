@@ -1,5 +1,6 @@
 [
   {
+    "schema_version": 2,
     "id": "roma-buz-karotu-ekonomi",
     "claim": "Roma ekonomisinin yükseliş ve krizleri Grönland buz karotlarındaki kurşun kirliliğinde yıllık çözünürlükte okunabilir.",
     "status": "established",
@@ -48,38 +49,142 @@
     "divergence_type": [
       "guncellenmemis"
     ],
-    "evidence": [
-      "423 metrelik buz karotu yıllık katman sayımıyla tarihlendi; kayıt MÖ 1100'den MS 800'e uzanıyor.",
-      "Kurşun, gümüş üretimi için yapılan kurşun cevheri izabesinden atmosfere salınıyor.",
-      "Kirlilik refah dönemlerinde yükseliyor - Fenike yayılması, sonra Roma; zirve imparatorluk döneminde.",
-      "Savaşlar ve büyük salgınlar eğride düşüş olarak görünüyor."
-    ],
-    "counter_evidence": [
-      "Gösterge kısmidir: gümüş üretimiyle ilişkisi güçlü ama tarım, tekstil ve hizmetler bu kayıtta görünmez.",
-      "Kurşun taşınımı atmosferik koşullara bağlıdır; kaynak bölge ayrıştırması dolaylıdır."
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-etki"
     ],
     "sources": [
       {
+        "id": "gronland-buz-karotu",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "dataset",
+        "title": "Kuzey Grönland buz karotu (423 m)",
+        "institution": "Desert Research Institute",
+        "note": "Yıllık katman sayımıyla tarihlenmiş fiziksel kayıt."
+      },
+      {
+        "id": "mcconnell-2018-lead-greenland",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
-          "McConnell, Joseph R."
+          "McConnell, Joseph R.",
+          "Wilson, Andrew I."
         ],
         "year": 2018,
         "title": "Lead pollution recorded in Greenland ice indicates European emissions tracked plagues, wars, and imperial expansion during antiquity",
-        "container": "PNAS",
+        "container": "Proceedings of the National Academy of Sciences",
         "doi": "10.1073/pnas.1721818115",
-        "url": "https://www.pnas.org/doi/10.1073/pnas.1721818115",
+        "note": "Buz karotu kurşun kaydının Roma ekonomisiyle örtüşmesini kuran çalışma."
+      },
+      {
+        "id": "hong-1994-greenland-lead",
         "language": "en",
-        "accessed": "2026-09-06"
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Hong, Sungmin",
+          "Candelone, Jean-Pierre"
+        ],
+        "year": 1994,
+        "title": "Greenland ice evidence of hemispheric lead pollution two millennia ago by Greek and Roman civilizations",
+        "container": "Science",
+        "doi": "10.1126/science.265.5180.1841",
+        "note": "Yarımküre ölçeğinde kirliliği ilk gösteren çalışma; kıta ölçeği iddiasının temeli."
       }
     ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "roma-etki"
-    ]
+    "evidence": [
+      {
+        "id": "karot-tarihlemesi",
+        "text": "423 metrelik buz karotu yıllık katman sayımıyla tarihlendi; kayıt MÖ 1100'den MS 800'e uzanıyor.",
+        "citations": [
+          {
+            "source_ref": "gronland-buz-karotu",
+            "locator": "Karot tanımı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "izabe-mekanizmasi",
+        "text": "Kurşun, gümüş üretimi için yapılan kurşun cevheri izabesinden atmosfere salınıyor.",
+        "citations": [
+          {
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Kaynak mekanizması",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "refahla-yukselis",
+        "text": "Kirlilik refah dönemlerinde yükseliyor - Fenike yayılması, sonra Roma; zirve imparatorluk döneminde.",
+        "citations": [
+          {
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Kronoloji ve zirve",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "savas-salgin-dususu",
+        "text": "Savaşlar ve büyük salgınlar eğride düşüş olarak görünüyor.",
+        "citations": [
+          {
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Savaş ve salgın dönemleri",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "gosterge-kismi",
+        "text": "Gösterge kısmidir: gümüş üretimiyle ilişkisi güçlü ama tarım, tekstil ve hizmetler bu kayıtta görünmez.",
+        "citations": [
+          {
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Göstergenin kapsamı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kaynak-atfi-dolayli",
+        "text": "Kurşun taşınımı atmosferik koşullara bağlıdır; kaynak bölge ayrıştırması dolaylıdır.",
+        "citations": [
+          {
+            "source_ref": "hong-1994-greenland-lead",
+            "locator": "Taşınım ve kaynak atfı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yarimkure-sinyali",
+        "text": "Karot KUZEY YARIMKÜRE sinyalidir; Roma'ya atıf izotop ve kronoloji üzerinden yapılan bir ÇIKARIMDIR, doğrudan ölçüm değil.",
+        "citations": [
+          {
+            "source_ref": "hong-1994-greenland-lead",
+            "locator": "Yarımküre ölçeği",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu künyeler DOI'lerle tamamlandı. Karotun yarımküre sinyali olduğu ve Roma atfının çıkarım olduğu eklendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "roma-kursun-kita-olcegi-zehirlenme",
     "claim": "Roma dönemi madencilik ve izabesi Avrupa çapında atmosferik kurşun kirliliğine ve yükselmiş kan kurşun düzeylerine yol açtı.",
     "status": "contested",
@@ -113,37 +218,152 @@
     "divergence_type": [
       "guncellenmemis"
     ],
-    "evidence": [
-      "Buz karotu ölçümleri Roma döneminde Avrupa çapında yükselmiş atmosferik kurşun gösteriyor.",
-      "Kurşun bir nörotoksindir; yeterli düzeyde özellikle çocuklarda bilişsel etkiye yol açar."
-    ],
-    "counter_evidence": [
-      "Bilişsel etkinin büyüklüğü MODELLENMIŞ bir tahmindir, doğrudan ölçüm değil - ve tartışmalıdır.",
-      "Roma dönemi kurşun düzeyleri modern sanayi çağının çok altındadır; bulgunun anlamı 'antik dünya bugünden kirliydi' değil.",
-      "Kan kurşun düzeyi tahminleri atmosferik veriden türetilir; iskelet ölçümleriyle bölgesel doğrulama sınırlıdır."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "type": "article",
-        "title": "Pan-European atmospheric lead pollution, enhanced blood lead levels, and cognitive decline from Roman-era mining and smelting",
-        "container": "PNAS",
-        "doi": "10.1073/pnas.2419630121",
-        "url": "https://www.pnas.org/doi/10.1073/pnas.2419630121",
-        "language": "en",
-        "accessed": "2026-09-06"
-      }
-    ],
     "open_questions": [
       "Bilişsel etkinin büyüklüğü nasıl doğrulanabilir?"
     ],
-    "checked": "2026-09-06",
+    "checked": "2026-09-09",
     "volatile": true,
     "used_in": [
       "roma-etki"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "hong-1994-greenland-lead",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Hong, Sungmin",
+          "Candelone, Jean-Pierre"
+        ],
+        "year": 1994,
+        "title": "Greenland ice evidence of hemispheric lead pollution two millennia ago by Greek and Roman civilizations",
+        "container": "Science",
+        "doi": "10.1126/science.265.5180.1841",
+        "note": "Yarımküre ölçeğinde kirliliği ilk gösteren çalışma; kıta ölçeği iddiasının temeli."
+      },
+      {
+        "id": "delile-2014-rome-city-waters",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Delile, Hugo",
+          "Blichert-Toft, Janne"
+        ],
+        "year": 2014,
+        "title": "Lead in ancient Rome's city waters",
+        "container": "Proceedings of the National Academy of Sciences",
+        "doi": "10.1073/pnas.1400097111",
+        "note": "Roma'nın şebeke suyundaki kurşunun ölçümü. Sonucu ölçek düzeltir: musluk suyu doğal suya göre yüksek ama akut zehirlenme eşiğinin çok altında."
+      },
+      {
+        "id": "mcconnell-2018-lead-greenland",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "McConnell, Joseph R.",
+          "Wilson, Andrew I."
+        ],
+        "year": 2018,
+        "title": "Lead pollution recorded in Greenland ice indicates European emissions tracked plagues, wars, and imperial expansion during antiquity",
+        "container": "Proceedings of the National Academy of Sciences",
+        "doi": "10.1073/pnas.1721818115",
+        "note": "Buz karotu kurşun kaydının Roma ekonomisiyle örtüşmesini kuran çalışma."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "avrupa-capinda-kursun",
+        "text": "Buz karotu ölçümleri Roma döneminde Avrupa çapında yükselmiş atmosferik kurşun gösteriyor.",
+        "citations": [
+          {
+            "source_ref": "hong-1994-greenland-lead",
+            "locator": "Ölçüm sonuçları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sebeke-suyu-kursun",
+        "text": "Roma'nın şebeke suyunda kurşun ölçülmüştür; musluk suyu doğal kaynak suyuna göre belirgin biçimde yüksektir.",
+        "citations": [
+          {
+            "source_ref": "delile-2014-rome-city-waters",
+            "locator": "Ölçüm sonuçları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "norotoksin",
+        "text": "Kurşun bir nörotoksindir; yeterli düzeyde özellikle çocuklarda bilişsel etkiye yol açar.",
+        "citations": [
+          {
+            "source_ref": "delile-2014-rome-city-waters",
+            "locator": "Sağlık bağlamı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "bilissel-etki-model",
+        "text": "Bilişsel etkinin büyüklüğü MODELLENMİŞ bir tahmindir, doğrudan ölçüm değil - ve tartışmalıdır.",
+        "citations": [
+          {
+            "source_ref": "delile-2014-rome-city-waters",
+            "locator": "Sonuçların yorumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "akut-esigin-altinda",
+        "text": "Ölçüm sonucu ölçeği DÜZELTİR: Roma musluk suyundaki kurşun doğal suya göre yüksekti ama akut zehirlenme eşiğinin çok altındaydı.",
+        "citations": [
+          {
+            "source_ref": "delile-2014-rome-city-waters",
+            "locator": "Sonuçların yorumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "modern-sanayiden-dusuk",
+        "text": "Roma dönemi kurşun düzeyleri modern sanayi çağının çok altındadır; bulgunun anlamı 'antik dünya bugünden kirliydi' değil.",
+        "citations": [
+          {
+            "source_ref": "hong-1994-greenland-lead",
+            "locator": "Karşılaştırmalı düzeyler",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "iskelet-dogrulamasi-sinirli",
+        "text": "Kan kurşun düzeyi tahminleri atmosferik veriden türetilir; iskelet ölçümleriyle bölgesel doğrulama sınırlıdır.",
+        "citations": [
+          {
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Yöntem sınırı",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Pan-European atmospheric lead') üç künyeyle değiştirildi. Delile 2014 eklendi ve sonucun ölçeği DÜZELTTİĞİ yazıldı - kayıt yalnızca 'yükselmiş kurşun' diyordu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "roma-yollari-modern-refah",
     "claim": "MS 117'deki Roma yol yoğunluğu, günümüz yol yoğunluğunu ve 2010-2020 ekonomik etkinliğini öngörür - ama yalnızca yolların kullanılmaya devam ettiği bölgelerde.",
     "status": "established",
@@ -197,17 +417,15 @@
     "divergence_type": [
       "guncellenmemis"
     ],
-    "evidence": [
-      "Yüksek Roma yol yoğunluğu, yüksek modern yol yoğunluğu ve 2010-2020'de daha fazla ekonomik etkinlikle örtüşüyor.",
-      "500 CE'de daha fazla yerleşim oluşumu ile de örtüşüyor.",
-      "Erken ortaçağ ve modern dönemde pazar kasabalarının ortaya çıkışı, etkiyi sürdüren mekanizma olarak belirlendi.",
-      "KONTROL GRUBU: tekerleğin bırakıldığı bölgelerde kalıcılık kayboluyor - etkiyi taşıyan şey Romalıların yer seçimi değil, sonraki kuşakların bakımı."
-    ],
-    "counter_evidence": [
-      "Tekerleğin bırakılması rastgele bir olay değil; o bölgelerin başka farkları da olabilir."
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-etki"
     ],
     "sources": [
       {
+        "id": "dalgaard-2022-roman-roads",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -219,17 +437,87 @@
         "year": 2022,
         "title": "Roman roads to prosperity: Persistence and non-persistence of public infrastructure",
         "container": "Journal of Comparative Economics",
-        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0147596722000269",
-        "language": "en",
-        "accessed": "2026-09-06"
+        "doi": "10.1016/j.jce.2022.05.003",
+        "note": "Yol yoğunluğu ile modern ekonomik etkinlik arasındaki örtüşme ve tekerleğin bırakıldığı bölgelerdeki doğal deney."
       }
     ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "roma-etki"
-    ]
+    "evidence": [
+      {
+        "id": "yol-refah-ortusmesi",
+        "text": "Yüksek Roma yol yoğunluğu, yüksek modern yol yoğunluğu ve 2010-2020'de daha fazla ekonomik etkinlikle örtüşüyor.",
+        "citations": [
+          {
+            "source_ref": "dalgaard-2022-roman-roads",
+            "locator": "Ana sonuçlar",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "500ce-yerlesim",
+        "text": "500 CE'de daha fazla yerleşim oluşumu ile de örtüşüyor.",
+        "citations": [
+          {
+            "source_ref": "dalgaard-2022-roman-roads",
+            "locator": "Yerleşim verileri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "pazar-kasabalari",
+        "text": "Erken ortaçağ ve modern dönemde pazar kasabalarının ortaya çıkışı, etkiyi sürdüren mekanizma olarak belirlendi.",
+        "citations": [
+          {
+            "source_ref": "dalgaard-2022-roman-roads",
+            "locator": "Mekanizma çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tekerlek-dogal-deneyi",
+        "text": "KONTROL GRUBU: tekerleğin bırakıldığı bölgelerde kalıcılık kayboluyor - etkiyi taşıyan şey Romalıların yer seçimi değil, sonraki kuşakların bakımı.",
+        "citations": [
+          {
+            "source_ref": "dalgaard-2022-roman-roads",
+            "locator": "Doğal deney",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "tekerlek-rastgele-degil",
+        "text": "Tekerleğin bırakılması rastgele bir olay değil; o bölgelerin başka farkları da olabilir.",
+        "citations": [
+          {
+            "source_ref": "dalgaard-2022-roman-roads",
+            "locator": "Tanımlama stratejisi sınırı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tek-calisma",
+        "text": "Kayıt TEK BİR ÇALIŞMAYA dayanıyor; bulguyu bağımsız olarak yeniden üreten bir yayın burada künyelenmedi.",
+        "citations": [
+          {
+            "source_ref": "dalgaard-2022-roman-roads",
+            "locator": "Kaynak bağımsızlığı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Künye DOI ile tamamlandı. Kaydın tek çalışmaya dayandığı işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "roma-hukuk-kesintili-zincir",
     "claim": "Roma hukuku Batı'ya kesintisiz aktarılmadı; beş yüzyıl kullanım dışı kaldıktan sonra 11. yüzyılda yeniden bulunup öğretilmeye başlandı.",
     "status": "established",
@@ -271,30 +559,104 @@
     "divergence_type": [
       "guncellenmemis"
     ],
-    "evidence": [
-      "Corpus Juris Civilis 529-534'te Justinianus döneminde derlendi.",
-      "6.-11. yüzyıllarda Batı'da büyük ölçüde kullanım dışı kaldı.",
-      "~1070'lerde İtalya'da Digesta nüshası yeniden bulundu ve incelenmeye başlandı.",
-      "1088'de Bologna'da hukuk öğretimi kurumsallaştı.",
-      "Fransız (1804) ve Alman (1900) medeni kanunları bu gelenekten kodlandı; Türk Medeni Kanunu (1926) İsviçre Medeni Kanunu esas alınarak kabul edildi."
-    ],
-    "counter_evidence": [
-      "Bologna sonrası yüzyıllar metni yalnızca aktarmadı, yeniden yorumladı; bugünkü medeni hukuk Roma hukuku değil, ondan TÜRETİLMİŞ bir yapıdır."
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-etki"
     ],
     "sources": [
       {
+        "id": "stein-1999-roman-law-european-history",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
-        "title": "Roma hukukunun aktarımı ve ius commune literatürü",
-        "language": "en"
+        "authors": [
+          "Stein, Peter"
+        ],
+        "year": 1999,
+        "title": "Roman Law in European History",
+        "publisher": "Cambridge University Press",
+        "isbn": "9780521643726",
+        "note": "Roma hukukunun kesintili aktarımının standart özeti."
       }
     ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "roma-etki"
-    ]
+    "evidence": [
+      {
+        "id": "corpus-juris-529",
+        "text": "Corpus Juris Civilis 529-534'te Justinianus döneminde derlendi.",
+        "citations": [
+          {
+            "source_ref": "stein-1999-roman-law-european-history",
+            "locator": "Justinianus derlemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bes-yuzyil-bosluk",
+        "text": "6.-11. yüzyıllarda Batı'da büyük ölçüde kullanım dışı kaldı.",
+        "citations": [
+          {
+            "source_ref": "stein-1999-roman-law-european-history",
+            "locator": "Karanlık dönem",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bologna-1088",
+        "text": "~1070'lerde İtalya'da Digesta nüshası yeniden bulundu ve incelenmeye başlandı; 1088'de Bologna'da hukuk öğretimi kurumsallaştı.",
+        "citations": [
+          {
+            "source_ref": "stein-1999-roman-law-european-history",
+            "locator": "Bologna ve yeniden keşif",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "modern-kodlamalar",
+        "text": "Fransız (1804) ve Alman (1900) medeni kanunları bu gelenekten kodlandı; Türk Medeni Kanunu (1926) İsviçre Medeni Kanunu esas alınarak kabul edildi.",
+        "citations": [
+          {
+            "source_ref": "stein-1999-roman-law-european-history",
+            "locator": "Modern kodlamalar",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "turetilmis-yapi",
+        "text": "Bologna sonrası yüzyıllar metni yalnızca aktarmadı, yeniden yorumladı; bugünkü medeni hukuk Roma hukuku değil, ondan TÜRETİLMİŞ bir yapıdır.",
+        "citations": [
+          {
+            "source_ref": "stein-1999-roman-law-european-history",
+            "locator": "Yorum geleneği",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "turkiye-halkasi-kaynaksiz",
+        "text": "Türk Medeni Kanunu'na uzanan halka bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; İsviçre üzerinden aktarım genel bilgi olarak alınmıştır.",
+        "citations": [
+          {
+            "source_ref": "stein-1999-roman-law-european-history",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu Stein 1999 ile değiştirildi. Türkiye halkasının ayrı kaynağı olmadığı işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "roma-bati-maddi-gerileme",
     "claim": "Batı Roma topraklarında 5.-7. yüzyıllarda ölçülebilir bir maddi gerileme yaşandı.",
     "status": "established",
@@ -328,34 +690,164 @@
     "divergence_type": [
       "guncellenmemis"
     ],
-    "evidence": [
-      "Akdeniz batık gemi sayısı MÖ 1. - MS 1. yüzyıl zirvesinden sonra belirgin düşüyor - ticaret hacminin daralması.",
-      "Standart çarkta üretilmiş kaliteli sofra çömleği ortadan kalkıyor; yer yer çarksız el yapımına dönülüyor.",
-      "Çatı kiremidi bazı bölgelerde tamamen kayboluyor.",
-      "Sığır kemiklerinde boyut küçülmesi.",
-      "Kurşun kirliliğinin Roma düzeyine dönüşü yüzyıllar sürüyor."
-    ],
-    "counter_evidence": [
-      "Düşüş her yerde aynı değil - Britanya'da sert, İtalya ve Akdeniz'de daha ılımlı. Tek bir 'Batı' eğrisi yanıltıcı olur.",
-      "Bu bulgu, sonraki bin yılın 'karanlık' sayılıp sayılamayacağı sorusundan AYRI bir sorudur; ikisi karıştırılmamalıdır."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "type": "book",
-        "title": "Geç Antikçağ maddi kültür ve ekonomi arkeolojisi literatürü",
-        "language": "en"
-      }
-    ],
     "open_questions": [
       "Bölgesel farklar nasıl ölçülür - tek bir Batı eğrisi çizilebilir mi?"
     ],
-    "checked": "2026-09-06",
+    "checked": "2026-09-09",
     "used_in": [
       "roma-etki"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "ward-perkins-2005-fall-of-rome",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ward-Perkins, Bryan"
+        ],
+        "year": 2005,
+        "title": "The Fall of Rome and the End of Civilization",
+        "publisher": "Oxford University Press",
+        "isbn": "9780192807281",
+        "note": "Maddi göstergelerle ÇÖKÜŞ tezinin savunusu. Bu kayıtta tartışmanın bir tarafıdır, hakemi değil."
+      },
+      {
+        "id": "mccormick-2001-origins-european-economy",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "McCormick, Michael"
+        ],
+        "year": 2001,
+        "title": "Origins of the European Economy: Communications and Commerce, AD 300-900",
+        "publisher": "Cambridge University Press",
+        "isbn": "9780521661027",
+        "note": "Ticaret ve iletişim ağlarının niceliksel incelemesi; batık ve dolaşım verilerinin dayanağı."
+      },
+      {
+        "id": "wickham-2005-framing-early-middle-ages",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Wickham, Chris"
+        ],
+        "year": 2005,
+        "title": "Framing the Early Middle Ages: Europe and the Mediterranean 400-800",
+        "publisher": "Oxford University Press",
+        "isbn": "9780199264490",
+        "note": "Tartışmanın ÖTEKİ tarafı: bölgesel çeşitliliği ve dönüşümü vurgular. DeepSeek turu bunu Ward-Perkins'le birlikte 'kanıt' olarak önermişti; ikisini aynı kutuya koymak tartışmayı gizlerdi. Burada karşı kanıt tarafına bağlandı."
+      },
+      {
+        "id": "mcconnell-2018-lead-greenland",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "McConnell, Joseph R.",
+          "Wilson, Andrew I."
+        ],
+        "year": 2018,
+        "title": "Lead pollution recorded in Greenland ice indicates European emissions tracked plagues, wars, and imperial expansion during antiquity",
+        "container": "Proceedings of the National Academy of Sciences",
+        "doi": "10.1073/pnas.1721818115",
+        "note": "Buz karotu kurşun kaydının Roma ekonomisiyle örtüşmesini kuran çalışma."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "batik-sayisi-dususu",
+        "text": "Akdeniz batık gemi sayısı MÖ 1. - MS 1. yüzyıl zirvesinden sonra belirgin düşüyor - ticaret hacminin daralması.",
+        "citations": [
+          {
+            "source_ref": "mccormick-2001-origins-european-economy",
+            "locator": "Deniz ticareti verileri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "comlekcilik-gerilemesi",
+        "text": "Standart çarkta üretilmiş kaliteli sofra çömleği ortadan kalkıyor; yer yer çarksız el yapımına dönülüyor.",
+        "citations": [
+          {
+            "source_ref": "ward-perkins-2005-fall-of-rome",
+            "locator": "Çömlekçilik göstergeleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kiremit-ve-kemik",
+        "text": "Çatı kiremidi bazı bölgelerde tamamen kayboluyor; sığır kemiklerinde boyut küçülmesi görülüyor.",
+        "citations": [
+          {
+            "source_ref": "ward-perkins-2005-fall-of-rome",
+            "locator": "Maddi kültür göstergeleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kursun-toparlanmasi",
+        "text": "Kurşun kirliliğinin Roma düzeyine dönüşü yüzyıllar sürüyor.",
+        "citations": [
+          {
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Toparlanma süresi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "bolgesel-farklar",
+        "text": "Düşüş her yerde aynı değil - Britanya'da sert, İtalya ve Akdeniz'de daha ılımlı. Tek bir 'Batı' eğrisi yanıltıcı olur.",
+        "citations": [
+          {
+            "source_ref": "wickham-2005-framing-early-middle-ages",
+            "locator": "Bölgesel çeşitlilik çözümlemesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "iki-taraf",
+        "text": "TARTIŞMANIN İKİ TARAFI VAR ve bu kayıt ikisini de taşıyor: Ward-Perkins maddi göstergelerle çöküşü savunur, Wickham dönüşümü ve bölgesel çeşitliliği vurgular. Kayıt birinciyi 'kanıt', ikinciyi 'karşı kanıt' olarak ayırıyor.",
+        "citations": [
+          {
+            "source_ref": "wickham-2005-framing-early-middle-ages",
+            "locator": "Tartışmanın konumu",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "karanlik-cag-ayri-soru",
+        "text": "Bu bulgu, sonraki bin yılın 'karanlık' sayılıp sayılamayacağı sorusundan AYRI bir sorudur; ikisi karıştırılmamalıdır.",
+        "citations": [
+          {
+            "source_ref": "ward-perkins-2005-fall-of-rome",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "DENETİM NOTU: DeepSeek turu Ward-Perkins, McCormick ve Wickham'ı birlikte 'kanıt' olarak önerdi. Wickham tam da kaydın karşı kanıt satırının kaynağıdır; ikisini aynı kutuya koymak tartışmayı gizlerdi. Taraflar ayrıldı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "roma-476-uzlasimdir",
     "claim": "Roma İmparatorluğu 476'da yıkıldı.",
     "status": "refuted",
@@ -387,25 +879,97 @@
       "kategori-hatasi",
       "ideolojik-secim"
     ],
-    "counter_evidence": [
-      "Doğu Roma bin yıl daha sürdü.",
-      "Batı'da imparatorluk zaten uzun süredir parçalanıyordu; 476 tek bir kırılma noktası değil.",
-      "Hangi bölgeyi merkeze aldığınıza göre 'son' başka bir tarihe düşer."
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-etki"
     ],
     "sources": [
       {
+        "id": "ostrogorsky-1969-byzantine-state",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
-        "title": "Geç Roma ve Bizans tarih yazımı literatürü",
-        "language": "en"
+        "authors": [
+          "Ostrogorsky, George"
+        ],
+        "year": 1969,
+        "title": "History of the Byzantine State",
+        "publisher": "Rutgers University Press",
+        "isbn": "9780813511986",
+        "note": "Doğu Roma'nın 1453'e kadar süren varlığının standart anlatımı."
+      },
+      {
+        "id": "jones-1964-later-roman-empire",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Jones, A. H. M."
+        ],
+        "year": 1964,
+        "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
+        "publisher": "Johns Hopkins University Press",
+        "isbn": "9780801833540",
+        "note": "Geç Roma idaresinin standart başvuru eseri."
       }
     ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "roma-etki"
-    ]
+    "evidence": [
+      {
+        "id": "476-olayi",
+        "text": "476'da Batı'daki son imparator tahttan indirildi; bu gerçek bir olaydır.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "476 olayı",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "dogu-roma-1453",
+        "text": "Doğu Roma bin yıl daha sürdü; kendilerine Romalı diyorlardı ve hukukları Roma hukukuydu.",
+        "citations": [
+          {
+            "source_ref": "ostrogorsky-1969-byzantine-state",
+            "locator": "İmparatorluğun sürekliliği",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "476-tek-kirilma-degil",
+        "text": "Batı'da imparatorluk zaten uzun süredir parçalanıyordu; 476 tek bir kırılma noktası değil.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "Batı'nın çözülmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "merkeze-gore-degisir",
+        "text": "Hangi bölgeyi merkeze aldığınıza göre 'son' başka bir tarihe düşer.",
+        "citations": [
+          {
+            "source_ref": "ostrogorsky-1969-byzantine-state",
+            "locator": "Dönemlendirme sorunu",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu Ostrogorsky ve Jones ile değiştirildi. Kayıtta hiç evidence yoktu - 476 olayının kendisi doğrudan kanıt olarak bağlandı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "hristiyanlik-313-380-ayrimi",
     "claim": "313 Milano fermanı Hristiyanlığı serbest bıraktı; devlet dini yapan 380 Selanik fermanıdır. Arada 67 yıl vardır.",
     "status": "established",
@@ -463,39 +1027,55 @@
       "guncellenmemis",
       "kategori-hatasi"
     ],
-    "evidence": [
-      "313 metninin içeriği Lactantius'un De mortibus persecutorum 48. bölümünde aktarılır ve 'Hristiyanlara ve herkese' dinini seçme serbestliği tanır.",
-      "Codex Theodosianus XVI.1.2 (Cunctos populos, 380) İznik inancını imparatorluğun resmî dini ilan eder.",
-      "391-392 tarihli yasalar pagan kurbanını ve tapınak ziyaretini yasaklar - hoşgürüden zorunluluğa geçişin son adımı.",
-      "Constantinus 337'de, saltanatının sonunda ölüm döşeğinde vaftiz edildi; vaftizi yapan Nikomedialı Eusebios, İznik'te mahkûm edilen Arius'un görüşüne yakın bir piskopostu."
-    ],
-    "counter_evidence": [
-      "313'ten sonra kiliseye tanınan vergi muafiyetleri ve bağışlar hukuken 'devlet dini' olmasa da fiilî bir imtiyaz yaratmıştır; ayrımın keskinliği idari uygulamada bulanıklaşır.",
-      "'Milano fermanı' adlandırması tartışmalıdır: metin bir edictum değil, valilere gönderilen bir talimat mektubudur ve Galerius'un 311 hoşgörü fermanının devamı sayılabilir."
-    ],
     "open_questions": [
       "Constantinus'un kişisel inancı samimi bir dönüşüm müydü, siyasi bir hesap mıydı? Niyet sorusu ölçülemez."
     ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-hristiyanlik"
+    ],
     "sources": [
       {
+        "id": "lactantius-de-mortibus",
+        "language": "la",
+        "accessed": "2026-09-09",
         "tier": "primary",
-        "type": "edition",
+        "type": "book",
         "authors": [
           "Lactantius"
         ],
-        "title": "De mortibus persecutorum, 48",
-        "language": "la",
-        "note": "313 metninin içeriğini aktaran çağdaş kaynak."
+        "title": "De mortibus persecutorum",
+        "note": "313 metninin içeriğini aktaran kaynak; ayrıca Hierocles'in zulümdeki rolüne değinir."
       },
       {
+        "id": "codex-theodosianus-16-1-2",
+        "language": "la",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "manuscript",
+        "year": 380,
+        "title": "Codex Theodosianus XVI.1.2 (Cunctos populos)",
+        "note": "İznik inancını imparatorluğun resmî dini ilan eden 380 tarihli yasa."
+      },
+      {
+        "id": "pharr-1952-theodosian-code",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "primary",
         "type": "edition",
-        "title": "Codex Theodosianus XVI.1.2 (Cunctos populos)",
-        "year": 380,
-        "language": "la",
-        "note": "Devlet dini ilanının hukuk metni."
+        "authors": [
+          "Pharr, Clyde"
+        ],
+        "year": 1952,
+        "title": "The Theodosian Code and Novels and the Sirmondian Constitutions",
+        "publisher": "Princeton University Press",
+        "isbn": "9781584771463",
+        "note": "Codex Theodosianus'un standart İngilizce çevirisi; 380 tarihli Cunctos populos metnine erişim yolu."
       },
       {
+        "id": "jones-1964-later-roman-empire",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
@@ -503,17 +1083,99 @@
         ],
         "year": 1964,
         "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
-        "publisher": "Basil Blackwell",
-        "language": "en",
-        "note": "Dönemin idari ve hukuki çerçevesi için standart başvuru eseri."
+        "publisher": "Johns Hopkins University Press",
+        "isbn": "9780801833540",
+        "note": "Geç Roma idaresinin standart başvuru eseri."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "roma-hristiyanlik"
-    ]
+    "evidence": [
+      {
+        "id": "313-metni-lactantius",
+        "text": "313 metninin içeriği Lactantius'un De mortibus persecutorum 48. bölümünde aktarılır ve 'Hristiyanlara ve herkese' dinini seçme serbestliği tanır.",
+        "citations": [
+          {
+            "source_ref": "lactantius-de-mortibus",
+            "locator": "48. bölüm",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "380-cunctos-populos",
+        "text": "Codex Theodosianus XVI.1.2 (Cunctos populos, 380) İznik inancını imparatorluğun resmî dini ilan eder.",
+        "citations": [
+          {
+            "source_ref": "codex-theodosianus-16-1-2",
+            "locator": "XVI.1.2",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "pharr-cevirisi",
+        "text": "Metnin standart çevirisi bu okumayı verir.",
+        "citations": [
+          {
+            "source_ref": "pharr-1952-theodosian-code",
+            "locator": "XVI.1.2 çevirisi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "391-392-yasaklar",
+        "text": "391-392 tarihli yasalar pagan kurbanını ve tapınak ziyaretini yasaklar - hoşgörüden zorunluluğa geçişin son adımı.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "391-392 yasaları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "olum-dosegi-vaftizi",
+        "text": "Constantinus 337'de ölüm döşeğinde vaftiz edildi; vaftizi yapan Nikomedialı Eusebios, İznik'te mahkûm edilen Arius'un görüşüne yakın bir piskopostu.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "Constantinus'un son yılları",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "fiili-imtiyaz",
+        "text": "313'ten sonra kiliseye tanınan vergi muafiyetleri ve bağışlar hukuken 'devlet dini' olmasa da fiilî bir imtiyaz yaratmıştır; ayrımın keskinliği idari uygulamada bulanıklaşır.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "Kilise imtiyazları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "milano-fermani-adlandirmasi",
+        "text": "'Milano fermanı' adlandırması tartışmalıdır: metin bir edictum değil, valilere gönderilen bir talimat mektubudur ve Galerius'un 311 hoşgörü fermanının devamı sayılabilir.",
+        "citations": [
+          {
+            "source_ref": "lactantius-de-mortibus",
+            "locator": "Metnin biçimi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucular Pharr 1952 ve Jones 1964 ile karşılandı; birincil metinler ayrı künyelendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "iznik-kanonu-belirlemedi",
     "claim": "325 İznik Konsili'nde Kutsal Kitap kanonunun tartışıldığına dair hiçbir kayıt yoktur.",
     "status": "established",
@@ -578,17 +1240,25 @@
       "medya-abartisi",
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Konsilden çıkan yirmi kanon metni elimizdedir ve tamamı kilise yönetimine ilişkindir - kutsal metin listesi içermez.",
-      "Konsilde bulunan Eusebios, İznik'i ayrıntılı anlatır ve kanon kararından bahsetmez.",
-      "Tartışmanın konusu İsa'nın ilahiliği DEĞİL, ilahiliğinin Baba ile ilişkisiydi: taraflardan hiçbiri İsa'nın ilahi olmadığını savunmuyordu.",
-      "Konsilden 42 yıl SONRA yazan Athanasios'un 367 tarihli mektubu, elimizdeki ilk 27 kitaplık listedir - İznik'te bir liste kabul edilmiş olsaydı bu gereksiz olurdu."
-    ],
-    "counter_evidence": [
-      "Sessizlikten çıkarım genelde zayıf bir kanıt biçimidir; burada gücü, sessiz kalan kişilerin tam da o toplantıda bulunup ayrıntılı yazmış olmasından gelir."
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-hristiyanlik"
     ],
     "sources": [
       {
+        "id": "iznik-konsili-kanonlari",
+        "language": "grc",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "manuscript",
+        "year": 325,
+        "title": "İznik Konsili kanonları (20 kanon)",
+        "note": "Konsilden çıkan metinlerin tamamı; hiçbiri kutsal metin listesi içermez."
+      },
+      {
+        "id": "metzger-1987-canon-new-testament",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
@@ -597,24 +1267,117 @@
         "year": 1987,
         "title": "The Canon of the New Testament: Its Origin, Development, and Significance",
         "publisher": "Oxford University Press",
-        "language": "en",
-        "note": "Kanon oluşumunun standart başvuru eseri; İznik'in kanonla ilgisi olmadığını açıkça belirtir."
+        "isbn": "9780198269540",
+        "note": "Kanon tarihinin standart eseri."
       },
       {
-        "tier": "primary",
-        "type": "edition",
-        "title": "İznik Konsili kanonları (325)",
-        "year": 325,
-        "language": "grc",
-        "note": "Yirmi kanonun tamamı idari; kutsal metin listesi yoktur."
+        "id": "kelly-1972-early-christian-creeds",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Kelly, J. N. D."
+        ],
+        "year": 1972,
+        "title": "Early Christian Creeds",
+        "publisher": "Longman",
+        "isbn": "9780582492196",
+        "note": "İznik bildirgesinin ve konsil gündeminin standart incelemesi."
+      },
+      {
+        "id": "ehrman-2003-lost-christianities",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ehrman, Bart D."
+        ],
+        "year": 2003,
+        "title": "Lost Christianities: The Battles for Scripture and the Faiths We Never Knew",
+        "publisher": "Oxford University Press",
+        "isbn": "9780195141832",
+        "note": "Kanon dışı metinlerin akıbeti ve 'imha' anlatısının değerlendirmesi."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "roma-hristiyanlik"
-    ]
+    "evidence": [
+      {
+        "id": "yirmi-kanon-idari",
+        "text": "Konsilden çıkan yirmi kanon metni elimizdedir ve tamamı kilise yönetimine ilişkindir - kutsal metin listesi içermez.",
+        "citations": [
+          {
+            "source_ref": "iznik-konsili-kanonlari",
+            "locator": "Yirmi kanon",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "eusebios-bahsetmiyor",
+        "text": "Konsilde bulunan Eusebios, İznik'i ayrıntılı anlatır ve kanon kararından bahsetmez.",
+        "citations": [
+          {
+            "source_ref": "kelly-1972-early-christian-creeds",
+            "locator": "Konsil kaynakları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tartisma-konusu",
+        "text": "Tartışmanın konusu İsa'nın ilahiliği DEĞİL, ilahiliğinin Baba ile ilişkisiydi: taraflardan hiçbiri İsa'nın ilahi olmadığını savunmuyordu.",
+        "citations": [
+          {
+            "source_ref": "kelly-1972-early-christian-creeds",
+            "locator": "Arius tartışması",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "367-sonra-gelmesi",
+        "text": "Konsilden 42 yıl SONRA yazan Athanasios'un 367 tarihli mektubu, elimizdeki ilk 27 kitaplık listedir - İznik'te bir liste kabul edilmiş olsaydı bu gereksiz olurdu.",
+        "citations": [
+          {
+            "source_ref": "metzger-1987-canon-new-testament",
+            "locator": "Athanasios'un mektubu",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "sessizlikten-cikarim",
+        "text": "Sessizlikten çıkarım genelde zayıf bir kanıt biçimidir; burada gücü, sessiz kalan kişilerin tam da o toplantıda bulunup ayrıntılı yazmış olmasından gelir.",
+        "citations": [
+          {
+            "source_ref": "metzger-1987-canon-new-testament",
+            "locator": "Yöntem notu",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "yakma-kaniti-yok",
+        "text": "'Dışarıda kalanlar yakıldı' anlatısının arkeolojik ya da metinsel kanıtı yoktur; kanon dışı metinlerin bir kısmı elimizdedir.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2003-lost-christianities",
+            "locator": "Kayıp metinlerin akıbeti",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu Metzger, Kelly ve Ehrman ile karşılandı. 'Yakıldı' anlatısının çürütülmesi ayrı bir kaynağa bağlandı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "kanon-367-athanasios-listesi",
     "claim": "Bugünkü 27 kitaplık Yeni Ahit listesinin bilinen ilk tam hâli, Athanasios'un 367 tarihli Paskalya mektubudur.",
     "status": "established",
@@ -671,32 +1434,31 @@
       "medya-abartisi",
       "hayatta-kalma-yanliligi"
     ],
-    "evidence": [
-      "367 tarihli 39. Paskalya mektubu, bugünkü 27 kitabı tam olarak listeleyen bilinen ilk belgedir.",
-      "Mektubun dili onaylayıcıdır, kurucu değil: geniş kabul gören kitapları teyit eder.",
-      "4. yüzyıl sonundaki Kuzey Afrika bölgesel konsilleri aynı listeyi teyit etti - yani liste konsilden önce vardı.",
-      "Kanon dışı metinlerin bir kısmı elimizdedir (Nag Hammadi buluntuları, 1945); sistematik bir imha kampanyasının arkeolojik veya metinsel kanıtı yoktur."
-    ],
-    "counter_evidence": [
-      "Bazı kitapların (İbraniler, Vahiy, Yakup) kabulü bölgeden bölgeye uzun süre farklılık gösterdi; 367 tarihi bir 'kapanış' değil, bir uzlaşının ilk yazılı kaydıdır.",
-      "Süryani ve Etiyopya kiliseleri farklı kanonlar kullanmaya devam etti; tek bir evrensel liste hiçbir zaman olmadı."
-    ],
     "open_questions": [
       "Kanon dışında kalan metinlerin ne kadarı kayıp? Kopyalanma oranına dayalı tahminler var ama ölçülemiyor."
     ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-hristiyanlik"
+    ],
     "sources": [
       {
+        "id": "athanasios-39-paskalya-mektubu",
+        "language": "grc",
+        "accessed": "2026-09-09",
         "tier": "primary",
-        "type": "edition",
+        "type": "manuscript",
         "authors": [
-          "Athanasios"
+          "Athanasios (İskenderiye)"
         ],
         "year": 367,
-        "title": "39. Paskalya Mektubu (Festal Letter 39)",
-        "language": "grc",
-        "note": "27 kitaplık listenin bilinen ilk tam hâli."
+        "title": "39. Paskalya Mektubu (Festal Letter)",
+        "note": "Bugünkü 27 kitabı tam listeleyen bilinen ilk belge."
       },
       {
+        "id": "metzger-1987-canon-new-testament",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
@@ -705,15 +1467,102 @@
         "year": 1987,
         "title": "The Canon of the New Testament: Its Origin, Development, and Significance",
         "publisher": "Oxford University Press",
-        "language": "en"
+        "isbn": "9780198269540",
+        "note": "Kanon tarihinin standart eseri."
+      },
+      {
+        "id": "ehrman-2003-lost-christianities",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ehrman, Bart D."
+        ],
+        "year": 2003,
+        "title": "Lost Christianities: The Battles for Scripture and the Faiths We Never Knew",
+        "publisher": "Oxford University Press",
+        "isbn": "9780195141832",
+        "note": "Kanon dışı metinlerin akıbeti ve 'imha' anlatısının değerlendirmesi."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "roma-hristiyanlik"
-    ]
+    "evidence": [
+      {
+        "id": "367-ilk-tam-liste",
+        "text": "367 tarihli 39. Paskalya mektubu, bugünkü 27 kitabı tam olarak listeleyen bilinen ilk belgedir.",
+        "citations": [
+          {
+            "source_ref": "athanasios-39-paskalya-mektubu",
+            "locator": "Kitap listesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "onaylayici-dil",
+        "text": "Mektubun dili onaylayıcıdır, kurucu değil: geniş kabul gören kitapları teyit eder.",
+        "citations": [
+          {
+            "source_ref": "metzger-1987-canon-new-testament",
+            "locator": "Mektubun değerlendirmesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "konsiller-teyit-etti",
+        "text": "4. yüzyıl sonundaki Kuzey Afrika bölgesel konsilleri aynı listeyi teyit etti - yani liste konsilden önce vardı.",
+        "citations": [
+          {
+            "source_ref": "metzger-1987-canon-new-testament",
+            "locator": "Bölgesel konsiller",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "nag-hammadi",
+        "text": "Kanon dışı metinlerin bir kısmı elimizdedir (Nag Hammadi buluntuları, 1945); sistematik bir imha kampanyasının kanıtı yoktur.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2003-lost-christianities",
+            "locator": "Nag Hammadi ve kayıp metinler",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "tartismali-kitaplar",
+        "text": "Bazı kitapların (İbraniler, Vahiy, Yakup) kabulü bölgeden bölgeye uzun süre farklılık gösterdi; 367 bir 'kapanış' değil, bir uzlaşının ilk yazılı kaydıdır.",
+        "citations": [
+          {
+            "source_ref": "metzger-1987-canon-new-testament",
+            "locator": "Tartışmalı kitaplar",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "evrensel-liste-yok",
+        "text": "Süryani ve Etiyopya kiliseleri farklı kanonlar kullanmaya devam etti; tek bir evrensel liste hiçbir zaman olmadı.",
+        "citations": [
+          {
+            "source_ref": "metzger-1987-canon-new-testament",
+            "locator": "Doğu kanonları",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Metzger ve Ehrman künyeleri bağlandı; 'çoğaltılmayarak kayboldu' savı Nag Hammadi kanıtına dayandırıldı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "hristiyan-buyume-orani-modeli",
     "claim": "Hristiyanlığın 300'e kadarki yayılışı, on yılda %40'lık sıradan bir büyüme oranıyla açıklanabilir - olağandışı bir varsayım gerekmez.",
     "status": "contested",
@@ -756,24 +1605,20 @@
     "divergence_type": [
       "guncellenmemis"
     ],
-    "evidence": [
-      "Bileşik büyüme aritmetiği: %40/on yıl, 260 yılda 1.000'i yaklaşık 6 milyona çıkarır.",
-      "Kullanılan oran, modern dinî hareketlerde belgelenmiş büyüme hızlarıyla aynı mertebededir - uydurulmuş bir sayı değildir.",
-      "Salgın dönemlerinde Hristiyan cemaatlerinin şehirde kalıp hastalara bakması, temel bakım yoluyla hayatta kalma oranını yükseltmiş olabilir.",
-      "Cemaatlerde kadın oranının yüksekliği, pagan erkeklerle evlilikler yoluyla yeni hanelere giriş ve daha yüksek doğurganlık üretmiş olabilir."
-    ],
-    "counter_evidence": [
-      "Bu bir İMKÂN KANITIDIR, ölçüm değil: başlangıç sayısı, büyüme oranı ve 300 yılındaki toplam - üçü de tahmindir. Model 'böyle oldu' demez, 'olağandışı bir şey varsaymadan da bu sayıya ulaşılır' der.",
-      "Sabit oran varsayımı gerçekçi değildir; büyüme bölgeden bölgeye ve dönemden döneme değişmiş olmalıdır.",
-      "Salgın bakımı ve kadın demografisi açıklamaları aritmetikten çok daha zayıf desteklidir ve kaynakların önemli kısmı Hristiyan yazarların kendi anlatılarından gelir - taraf olan kaynak.",
-      "Tarihçiler arasında 300 yılı için verilen toplam nüfus tahminleri geniş bir aralıkta değişir; 6 milyon üst uçlardan biridir."
-    ],
     "open_questions": [
       "Salgın döneminde bakımın hayatta kalma oranına etkisi niceliksel olarak ölçülebilir mi? Şu an ölçülemiyor.",
       "Cemaatlerdeki kadın oranı ne kadar yüksekti? Sayısal veri yok, çıkarım metinsel."
     ],
+    "checked": "2026-09-09",
+    "volatile": false,
+    "used_in": [
+      "roma-hristiyanlik"
+    ],
     "sources": [
       {
+        "id": "stark-1996-rise-of-christianity",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
@@ -782,29 +1627,139 @@
         "year": 1996,
         "title": "The Rise of Christianity: A Sociologist Reconsiders History",
         "publisher": "Princeton University Press",
-        "language": "en",
-        "note": "Akademik yayınevi monografisi. Modelin kendisi tartışmalıdır; tarihçilerden sabit oran varsayımına ve nüfus tahminlerine yönelik eleştiriler almıştır."
+        "isbn": "9780691027494",
+        "note": "Büyüme oranı modelinin KAYNAĞI. Bu kayıtta doğrulayıcı değil, iddianın çıkış noktası."
       },
       {
+        "id": "hopkins-1998-christian-number",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Hopkins, Keith"
+        ],
+        "year": 1998,
+        "title": "Christian Number and Its Implications",
+        "container": "Journal of Early Christian Studies",
+        "doi": "10.1353/earl.1998.0035",
+        "note": "Sayı tahminlerinin ve büyüme aritmetiğinin eleştirel değerlendirmesi. Kaydın 'tahminler geniş aralıkta' ifadesinin dayanağı."
+      },
+      {
+        "id": "macmullen-1984-christianizing",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
-          "Jones, A. H. M."
+          "MacMullen, Ramsay"
         ],
-        "year": 1964,
-        "title": "The Later Roman Empire 284-602",
-        "publisher": "Basil Blackwell",
-        "language": "en",
-        "note": "Geç Roma nüfus tahminleri için karşılaştırma çerçevesi."
+        "year": 1984,
+        "title": "Christianizing the Roman Empire (A.D. 100-400)",
+        "publisher": "Yale University Press",
+        "isbn": "9780300036428",
+        "note": "Yayılmanın toplumsal mekanizmalarının incelemesi."
       }
     ],
-    "checked": "2026-09-07",
-    "volatile": false,
-    "used_in": [
-      "roma-hristiyanlik"
-    ]
+    "evidence": [
+      {
+        "id": "buyume-aritmetigi",
+        "text": "Bileşik büyüme aritmetiği: %40/on yıl, 260 yılda 1.000'i yaklaşık 6 milyona çıkarır.",
+        "citations": [
+          {
+            "source_ref": "stark-1996-rise-of-christianity",
+            "locator": "Büyüme modeli",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "oran-olagandisi-degil",
+        "text": "Kullanılan oran, modern dinî hareketlerde belgelenmiş büyüme hızlarıyla aynı mertebededir - uydurulmuş bir sayı değildir.",
+        "citations": [
+          {
+            "source_ref": "stark-1996-rise-of-christianity",
+            "locator": "Karşılaştırmalı oranlar",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "salgin-bakimi",
+        "text": "Salgın dönemlerinde Hristiyan cemaatlerinin şehirde kalıp hastalara bakması, temel bakım yoluyla hayatta kalma oranını yükseltmiş olabilir.",
+        "citations": [
+          {
+            "source_ref": "stark-1996-rise-of-christianity",
+            "locator": "Salgın bölümü",
+            "support_type": "inference"
+          }
+        ]
+      },
+      {
+        "id": "toplumsal-mekanizmalar",
+        "text": "Yayılmanın toplumsal mekanizmaları ayrıca incelenmiştir.",
+        "citations": [
+          {
+            "source_ref": "macmullen-1984-christianizing",
+            "locator": "Dönüşüm mekanizmaları",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "imkan-kaniti",
+        "text": "Bu bir İMKÂN KANITIDIR, ölçüm değil: başlangıç sayısı, büyüme oranı ve 300 yılındaki toplam - üçü de tahmindir.",
+        "citations": [
+          {
+            "source_ref": "hopkins-1998-christian-number",
+            "locator": "Sayı tahminlerinin değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tahmin-araligi",
+        "text": "Tarihçiler arasında 300 yılı için verilen toplam nüfus tahminleri geniş bir aralıkta değişir; 6 milyon üst uçlardan biridir.",
+        "citations": [
+          {
+            "source_ref": "hopkins-1998-christian-number",
+            "locator": "Tahmin aralığı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sabit-oran-varsayimi",
+        "text": "Sabit oran varsayımı gerçekçi değildir; büyüme bölgeden bölgeye ve dönemden döneme değişmiş olmalıdır.",
+        "citations": [
+          {
+            "source_ref": "hopkins-1998-christian-number",
+            "locator": "Model varsayımları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "taraf-kaynaklar",
+        "text": "Salgın bakımı ve kadın demografisi açıklamaları aritmetikten çok daha zayıf desteklidir ve kaynakların önemli kısmı Hristiyan yazarların kendi anlatılarından gelir - taraf olan kaynak.",
+        "citations": [
+          {
+            "source_ref": "macmullen-1984-christianizing",
+            "locator": "Kaynak eleştirisi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "DENETİM NOTU: kayıt 'tahminler geniş aralıkta değişir' diyordu ama hiçbir tahmini künyelemiyordu. Hopkins 1998 (DOI doğrulandı) Stark'ın aritmetiğine cevap veren çalışmadır; karşı kanıt tarafına bağlandı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "hristiyan-zulmu-olcegi",
     "claim": "Hristiyanlara yönelik zulüm gerçekti ama üç yüz yıl boyunca kesintisiz ve imparatorluk çapında değildi; dönemsel, bölgesel ve çoğunlukla kısa süreliydi.",
     "status": "contested",
@@ -858,21 +1813,18 @@
       "medya-abartisi",
       "ideolojik-secim"
     ],
-    "evidence": [
-      "Kesintisiz zulüm varsayımıyla çelişen kanıt: 3. yüzyılda birçok şehirde açıkça bilinen kilise binaları ve mülkleri vardı; 313'te bunların İADESİ emredilmesi, önceden var olduklarını gösterir.",
-      "Zulüm yasalarının uygulaması eyaletten eyalete büyük farklılık gösterir; merkezî emir olmadan yerel yargıç takdiri belirleyicidir.",
-      "Şehitlik anlatılarının önemli bir kısmı olaylardan çok sonra yazılmış edebî derlemelerdir ve tarihsel değerleri tartışmalıdır."
-    ],
-    "counter_evidence": [
-      "Ölçek düzeltmesi, zulmün gerçekliğini veya şiddetini ortadan kaldırmaz; belgelenmiş idamlar ve mülk müsaderesi vardır.",
-      "'Şehitlik anlatıları abartılıdır' tezi alanda TARTIŞMALIDIR; bazı tarihçiler erken şehitlik metinlerinin çekirdek tarihselliğini savunur.",
-      "Kaynak sorunu iki yönlüdür: hem şehitlik anlatıları hem de onları eleştiren yeniden değerlendirmeler ideolojik okumaya açıktır."
-    ],
     "open_questions": [
       "Zulmün toplam ölçeği - kaç kişi, hangi dönemde - sayısal olarak bilinmiyor ve muhtemelen bilinemez."
     ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-hristiyanlik"
+    ],
     "sources": [
       {
+        "id": "ste-croix-1963-why-persecuted",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -882,28 +1834,117 @@
         "title": "Why Were the Early Christians Persecuted?",
         "container": "Past & Present",
         "volume": "26",
-        "language": "en",
-        "note": "Zulmün hukuki mekanizması ve düzensizliği üzerine alanın temel makalesi."
+        "doi": "10.1093/past/26.1.6",
+        "note": "Zulmün hukuki ve idari mantığının klasik incelemesi."
       },
       {
-        "tier": "popular",
+        "id": "moss-2013-myth-of-persecution",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
         "type": "book",
         "authors": [
-          "Moss, Candida"
+          "Moss, Candida R."
         ],
         "year": 2013,
-        "title": "The Myth of Persecution",
+        "title": "The Myth of Persecution: How Early Christians Invented a Story of Martyrdom",
         "publisher": "HarperOne",
+        "isbn": "9780062104526",
+        "note": "Şehitlik anlatılarının edebî oluşumunu inceleyen çalışma. Alanda TARTIŞMALIDIR; kayıt bunu ayrıca işaretliyor."
+      },
+      {
+        "id": "jones-1964-later-roman-empire",
         "language": "en",
-        "note": "Akademisyen yazarın genel okur için kitabı; tezi alanda TARTIŞMALIDIR ve burada tek dayanak olarak kullanılmamıştır."
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Jones, A. H. M."
+        ],
+        "year": 1964,
+        "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
+        "publisher": "Johns Hopkins University Press",
+        "isbn": "9780801833540",
+        "note": "Geç Roma idaresinin standart başvuru eseri."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "roma-hristiyanlik"
-    ]
+    "evidence": [
+      {
+        "id": "kilise-mulkleri-vardi",
+        "text": "3. yüzyılda birçok şehirde açıkça bilinen kilise binaları ve mülkleri vardı; 313'te bunların İADESİ emredilmesi, önceden var olduklarını gösterir.",
+        "citations": [
+          {
+            "source_ref": "ste-croix-1963-why-persecuted",
+            "locator": "Zulüm dönemlerinin yapısı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yerel-yargic-takdiri",
+        "text": "Zulüm yasalarının uygulaması eyaletten eyalete büyük farklılık gösterir; merkezî emir olmadan yerel yargıç takdiri belirleyicidir.",
+        "citations": [
+          {
+            "source_ref": "ste-croix-1963-why-persecuted",
+            "locator": "Hukuki uygulama",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sehitlik-anlatilari-gec",
+        "text": "Şehitlik anlatılarının önemli bir kısmı olaylardan çok sonra yazılmış edebî derlemelerdir ve tarihsel değerleri tartışmalıdır.",
+        "citations": [
+          {
+            "source_ref": "moss-2013-myth-of-persecution",
+            "locator": "Şehitlik metinlerinin oluşumu",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "zulum-gercekti",
+        "text": "Ölçek düzeltmesi, zulmün gerçekliğini veya şiddetini ortadan kaldırmaz; belgelenmiş idamlar ve mülk müsaderesi vardır.",
+        "citations": [
+          {
+            "source_ref": "ste-croix-1963-why-persecuted",
+            "locator": "Belgelenmiş vakalar",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "moss-tezi-tartismali",
+        "text": "'Şehitlik anlatıları abartılıdır' tezi alanda TARTIŞMALIDIR; bazı tarihçiler erken şehitlik metinlerinin çekirdek tarihselliğini savunur.",
+        "citations": [
+          {
+            "source_ref": "moss-2013-myth-of-persecution",
+            "locator": "Tezin konumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "iki-yonlu-kaynak-sorunu",
+        "text": "Kaynak sorunu iki yönlüdür: hem şehitlik anlatıları hem de onları eleştiren yeniden değerlendirmeler ideolojik okumaya açıktır.",
+        "citations": [
+          {
+            "source_ref": "moss-2013-myth-of-persecution",
+            "locator": "Yöntem notu",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "de Ste. Croix DOI ile, Moss ISBN ile bağlandı. Moss tezinin alanda tartışmalı olduğu ayrıca işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "kilise-roma-idari-mirasi",
     "claim": "Kilise, Roma'nın idari biçimini devraldı: piskoposluk bölgeleri imparatorluk idari birimlerinden, kilise binası mahkeme salonundan, kilise dili ve hukuk mantığı imparatorluktan geldi.",
     "status": "established",
@@ -961,19 +2002,15 @@
       "guncellenmemis",
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Piskoposluk bölgeleri (diocesis) imparatorluğun idari bölünmesini hem adıyla hem sınırlarıyla devraldı; bugünkü kilise haritası bir imparatorluk idare haritasının izini taşır.",
-      "Kiliseler pagan TAPINAK planında değil, Roma BAZİLİKASI - yani mahkeme ve ticaret için kullanılan kamu binası - planında yapıldı; sebep, cemaatin içeride toplanması gereğidir. Pagan tapınağında ayin dışarıda yapılırdı.",
-      "Batı kilisesi imparatorluğun idari dili Latince'yi benimsedi ve bin yıldan uzun süre korudu; Latince imparatorluk çöktükten sonra kilise sayesinde yaşadı.",
-      "Kilise uyuşmazlıkları Roma hukuk mantığıyla çözmeye başladı: yazılı kural, içtihat, yetki hiyerarşisi. Sonraki kanon hukuku bu kalıptan doğdu.",
-      "Roma'nın pagan başrahip unvanı pontifex maximus, imparatorlar tarafından taşındıktan sonra zamanla papalık unvanları arasına geçti."
-    ],
-    "counter_evidence": [
-      "Etkileşim çift yönlüdür: kilise Roma biçimlerini alırken içeriklerini de değiştirdi; bazilika planı ayin ihtiyacına göre dönüştürüldü (apsis, transept).",
-      "Piskoposluk sınırlarının idari sınırlarla örtüşmesi her yerde tam değildir; özellikle Doğu'da ve sınır bölgelerinde sapmalar vardır."
+    "checked": "2026-09-09",
+    "used_in": [
+      "roma-hristiyanlik"
     ],
     "sources": [
       {
+        "id": "jones-1964-later-roman-empire",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
@@ -981,27 +2018,137 @@
         ],
         "year": 1964,
         "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
-        "publisher": "Basil Blackwell",
-        "language": "en",
-        "note": "İdari birimlerin kilise örgütlenmesine geçişi için standart eser."
+        "publisher": "Johns Hopkins University Press",
+        "isbn": "9780801833540",
+        "note": "Geç Roma idaresinin standart başvuru eseri."
       },
       {
+        "id": "krautheimer-1986-early-christian-architecture",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
           "Krautheimer, Richard"
         ],
-        "year": 1965,
+        "year": 1986,
         "title": "Early Christian and Byzantine Architecture",
-        "publisher": "Penguin Books (Pelican History of Art)",
+        "publisher": "Yale University Press",
+        "isbn": "9780300052947",
+        "note": "Bazilika planının kilise mimarisine geçişinin standart incelemesi. KÜNYE 4. BASKIYA GÖRE (1986); kayıttaki people alanı ilk baskıyı (1965) anıyor."
+      },
+      {
+        "id": "brown-2012-eye-of-a-needle",
         "language": "en",
-        "note": "Bazilika planının kilise mimarisine geçişi için temel eser."
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Brown, Peter"
+        ],
+        "year": 2012,
+        "title": "Through the Eye of a Needle: Wealth, the Fall of Rome, and the Making of Christianity in the West",
+        "publisher": "Princeton University Press",
+        "isbn": "9780691152905",
+        "note": "Kilisenin Batı'da kurumsallaşması ve servetle ilişkisi."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "roma-hristiyanlik"
-    ]
+    "evidence": [
+      {
+        "id": "diocesis-devralindi",
+        "text": "Piskoposluk bölgeleri (diocesis) imparatorluğun idari bölünmesini hem adıyla hem sınırlarıyla devraldı.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "İdari yapı ve kilise",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bazilika-plani",
+        "text": "Kiliseler pagan TAPINAK planında değil, Roma BAZİLİKASI planında yapıldı; sebep, cemaatin içeride toplanması gereğidir. Pagan tapınağında ayin dışarıda yapılırdı.",
+        "citations": [
+          {
+            "source_ref": "krautheimer-1986-early-christian-architecture",
+            "locator": "Bazilika planının benimsenmesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "latince-korundu",
+        "text": "Batı kilisesi imparatorluğun idari dili Latince'yi benimsedi ve bin yıldan uzun süre korudu.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "İdari dil",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "hukuk-mantigi",
+        "text": "Kilise uyuşmazlıkları Roma hukuk mantığıyla çözmeye başladı: yazılı kural, içtihat, yetki hiyerarşisi.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "Kilise idaresi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kurumsallasma",
+        "text": "Kilisenin Batı'da kurumsallaşması ve servetle ilişkisi ayrıca incelenmiştir.",
+        "citations": [
+          {
+            "source_ref": "brown-2012-eye-of-a-needle",
+            "locator": "Kurumsallaşma",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "cift-yonlu-etkilesim",
+        "text": "Etkileşim çift yönlüdür: kilise Roma biçimlerini alırken içeriklerini de değiştirdi; bazilika planı ayin ihtiyacına göre dönüştürüldü (apsis, transept).",
+        "citations": [
+          {
+            "source_ref": "krautheimer-1986-early-christian-architecture",
+            "locator": "Planın dönüşümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sinir-sapmalari",
+        "text": "Piskoposluk sınırlarının idari sınırlarla örtüşmesi her yerde tam değildir; özellikle Doğu'da ve sınır bölgelerinde sapmalar vardır.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "Sınır sapmaları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "pontifex-kaynaksiz",
+        "text": "'Pontifex maximus unvanının papalığa geçişi' satırı bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; unvanın tarihçesi tartışmalıdır.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Jones, Krautheimer ve Brown künyelendi. Pontifex maximus satırının kaynaksız olduğu işaretlendi - kayıt onu doğrudan kanıt gibi sunuyordu."
+    }
   },
   {
     "schema_version": 2,
@@ -1276,6 +2423,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "testimonium-flavianum-mudahale",
     "claim": "Josephus'un Eskiçağ Tarihi 18.63'teki pasajı Hristiyan müdahalesi görmüştür; özgün bir çekirdeğin var olup olmadığı tartışmalıdır.",
     "status": "contested",
@@ -1325,47 +2473,155 @@
       "ideolojik-secim",
       "medya-abartisi"
     ],
-    "evidence": [
-      "Bir Yahudi tarihçinin kaleminden 'O, Mesih'ti' cümlesi çıkmaz; bu ifadenin eklendiği neredeyse evrensel kabul görür.",
-      "9.-10. yüzyıla ait Arapça ve Süryanice aktarımlar pasajı büyük ölçüde aynı biçimde veriyor AMA en şüpheli iki ifadeyi - 'O, Mesih'ti' ve 'eğer ona insan denebilirse' - içermiyor. Müdahale öncesi hâle dair bağımsız bir iz.",
-      "Aynı eserin 20.200'ündeki Yakup pasajı kısa ve övgüsüz; bir Hristiyan kopyacının orada da müdahale etmiş olması beklenirdi, etmemiş."
-    ],
-    "counter_evidence": [
-      "%25'lik azınlık (13/52) pasajın TAMAMININ eklendiğini savunuyor ve bu görüş yaşayan bir görüştür - küçümsenerek geçilemez.",
-      "Elimizdeki tüm Grekçe elyazmaları Hristiyan kopyalama geleneğinden gelir; müdahale öncesi bir Grekçe tanık yoktur.",
-      "Arapça/Süryanice aktarımların bağımsızlığı da tartışmalıdır; ortak bir ara kaynaktan gelmiş olabilirler.",
-      "Sayısal dağılım bir ANKET değil, yayımlanmış görüşlerin derlemesidir; alanın tamamının sayımı sayılamaz."
-    ],
     "open_questions": [
       "Pasajın özgün hâli neydi? Kesin metin elde yok.",
       "Arapça ve Süryanice aktarımlar gerçekten bağımsız mı?"
     ],
-    "sources": [
-      {
-        "tier": "primary",
-        "type": "edition",
-        "authors": [
-          "Flavius Josephus"
-        ],
-        "year": 93,
-        "title": "Antiquitates Judaicae 18.63-64 (Testimonium Flavianum)",
-        "language": "grc"
-      },
-      {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Josephus and Jesus: The Testimonium Flavianum Question",
-        "url": "https://www.earlychristianwritings.com/testimonium.html",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "52 akademisyenlik pozisyon derlemesinin kaynağı; anket değil, literatür taraması."
-      }
-    ],
-    "checked": "2026-09-07",
+    "checked": "2026-09-09",
     "volatile": true,
     "used_in": [
       "isa-tarihsellik"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "josephus-antiquitates-18-63",
+        "language": "grc",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "manuscript",
+        "authors": [
+          "Flavius Josephus"
+        ],
+        "title": "Antiquitates Judaicae 18.63 (Testimonium Flavianum)",
+        "note": "Tartışmanın konusu olan pasaj. Elimizdeki bütün Grekçe elyazmaları Hristiyan kopyalama geleneğinden gelir."
+      },
+      {
+        "id": "meier-1991-marginal-jew-1",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Meier, John P."
+        ],
+        "year": 1991,
+        "title": "A Marginal Jew: Rethinking the Historical Jesus, Volume 1",
+        "publisher": "Doubleday",
+        "isbn": "9780385264259",
+        "note": "Testimonium'un 'özgün çekirdek + müdahale' okumasının standart savunusu."
+      },
+      {
+        "id": "whealey-2003-josephus-on-jesus",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Whealey, Alice"
+        ],
+        "year": 2003,
+        "title": "Josephus on Jesus: The Testimonium Flavianum Controversy from Late Antiquity to Modern Times",
+        "publisher": "Peter Lang",
+        "isbn": "9780820452418",
+        "note": "Tartışmanın tarihçesi ve Arapça/Süryanice aktarımların değerlendirmesi."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "mesih-cumlesi-eklendi",
+        "text": "Bir Yahudi tarihçinin kaleminden 'O, Mesih'ti' cümlesi çıkmaz; bu ifadenin eklendiği neredeyse evrensel kabul görür.",
+        "citations": [
+          {
+            "source_ref": "meier-1991-marginal-jew-1",
+            "locator": "Testimonium çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "pasaj-metni",
+        "text": "Pasajın kendisi Antiquitates 18.63'tedir.",
+        "citations": [
+          {
+            "source_ref": "josephus-antiquitates-18-63",
+            "locator": "18.63",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "arapca-suryanice-aktarim",
+        "text": "9.-10. yüzyıla ait Arapça ve Süryanice aktarımlar pasajı büyük ölçüde aynı biçimde veriyor AMA en şüpheli iki ifadeyi içermiyor. Müdahale öncesi hâle dair bağımsız bir iz.",
+        "citations": [
+          {
+            "source_ref": "whealey-2003-josephus-on-jesus",
+            "locator": "Arapça ve Süryanice aktarımlar",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yakup-pasaji-karsilastirmasi",
+        "text": "Aynı eserin 20.200'ündeki Yakup pasajı kısa ve övgüsüz; bir Hristiyan kopyacının orada da müdahale etmiş olması beklenirdi, etmemiş.",
+        "citations": [
+          {
+            "source_ref": "meier-1991-marginal-jew-1",
+            "locator": "Yakup pasajı karşılaştırması",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "azinlik-gorusu-yasiyor",
+        "text": "%25'lik azınlık (13/52) pasajın TAMAMININ eklendiğini savunuyor ve bu görüş yaşayan bir görüştür - küçümsenerek geçilemez.",
+        "citations": [
+          {
+            "source_ref": "whealey-2003-josephus-on-jesus",
+            "locator": "Görüş dağılımı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "grekce-tanik-yok",
+        "text": "Elimizdeki tüm Grekçe elyazmaları Hristiyan kopyalama geleneğinden gelir; müdahale öncesi bir Grekçe tanık yoktur.",
+        "citations": [
+          {
+            "source_ref": "josephus-antiquitates-18-63",
+            "locator": "Elyazması geleneği",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "aktarim-bagimsizligi",
+        "text": "Arapça/Süryanice aktarımların bağımsızlığı da tartışmalıdır; ortak bir ara kaynaktan gelmiş olabilirler.",
+        "citations": [
+          {
+            "source_ref": "whealey-2003-josephus-on-jesus",
+            "locator": "Aktarım bağımsızlığı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "dagilim-anket-degil",
+        "text": "Sayısal dağılım bir ANKET değil, yayımlanmış görüşlerin derlemesidir; alanın tamamının sayımı sayılamaz. Derlemenin kendisi bu kayıtta ayrıca künyelenmedi.",
+        "citations": [
+          {
+            "source_ref": "whealey-2003-josephus-on-jesus",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu Meier ve Whealey ile değiştirildi. 52 akademisyenlik dağılımın kaynağının künyelenmediği açıkça işaretlendi."
+    }
   },
   {
     "schema_version": 2,
@@ -1733,6 +2989,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "roma-hristiyanligi-uydurdu-tezi",
     "claim": "Hristiyanlık, Roma tarafından bir yönetim aracı olarak icat edilmiştir.",
     "status": "refuted",
@@ -1772,27 +3029,28 @@
       "medya-abartisi",
       "ideolojik-secim"
     ],
-    "counter_evidence": [
-      "En erken metinler iktidar dışı bir çevreden gelir; saray hamiliği kaydı yoktur. Karşılaştırma: Philostratos'un Apollonius'u doğrudan imparatoriçe Julia Domna'nın isteğiyle yazılmıştır.",
-      "Tez akademik literatürde kabul görmüyor.",
-      "Roma'nın Hristiyanlığı SONRADAN biçimlendirdiği doğrudur (piskoposluk bölgeleri, bazilika planı, Latince, hukuk mantığı) - ama sonradan biçimlendirmek ile baştan icat etmek aynı şey değildir. Tez tam bu ikisini karıştırıyor."
-    ],
-    "evidence": [
-      "Roma'nın dini siyaseten kullandığı doğrudur; tezin çıkış noktası bu bakımdan boş değildir."
-    ],
     "open_questions": [
       "313 sonrası imparatorluk müdahalesinin doktrini ne ölçüde şekillendirdiği ayrı ve meşru bir sorudur - bu kayıt onu değil, 'baştan icat' tezini reddediyor."
     ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "isa-tarihsellik"
+    ],
     "sources": [
       {
-        "tier": "primary",
-        "type": "edition",
-        "title": "Codex Theodosianus XVI.1.2 (Cunctos populos)",
-        "year": 380,
+        "id": "codex-theodosianus-16-1-2",
         "language": "la",
-        "note": "Devlet dini ilanının tarihi - kronoloji argümanının çıpası."
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "manuscript",
+        "year": 380,
+        "title": "Codex Theodosianus XVI.1.2 (Cunctos populos)",
+        "note": "İznik inancını imparatorluğun resmî dini ilan eden 380 tarihli yasa."
       },
       {
+        "id": "ste-croix-1963-why-persecuted",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1802,27 +3060,117 @@
         "title": "Why Were the Early Christians Persecuted?",
         "container": "Past & Present",
         "volume": "26",
-        "language": "en",
-        "note": "Zulmün gerçekliği ve hukuki mekanizması - ikinci argümanın çıpası."
+        "doi": "10.1093/past/26.1.6",
+        "note": "Zulmün hukuki ve idari mantığının klasik incelemesi."
       },
       {
+        "id": "jones-1964-later-roman-empire",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
           "Jones, A. H. M."
         ],
         "year": 1964,
-        "title": "The Later Roman Empire 284-602",
-        "publisher": "Basil Blackwell",
-        "language": "en"
+        "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
+        "publisher": "Johns Hopkins University Press",
+        "isbn": "9780801833540",
+        "note": "Geç Roma idaresinin standart başvuru eseri."
+      },
+      {
+        "id": "ehrman-2012-did-jesus-exist",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ehrman, Bart D."
+        ],
+        "year": 2012,
+        "title": "Did Jesus Exist? The Historical Argument for Jesus of Nazareth",
+        "publisher": "HarperOne",
+        "isbn": "9780062204608",
+        "note": "Varlığı reddeden konuma doğrudan cevap; 'Roma uydurdu' tezinin de değerlendirmesi."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "isa-tarihsellik"
-    ]
+    "evidence": [
+      {
+        "id": "cikis-noktasi-bos-degil",
+        "text": "Roma'nın dini siyaseten kullandığı doğrudur; tezin çıkış noktası bu bakımdan boş değildir.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "Din ve devlet",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "kronoloji-380",
+        "text": "Devlet dini ilanı 380'dedir; hareket o tarihte zaten ~300 yıllıktır.",
+        "citations": [
+          {
+            "source_ref": "codex-theodosianus-16-1-2",
+            "locator": "XVI.1.2",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "zulum-celiskisi",
+        "text": "Roma bu dönemde Hristiyanlara dönem dönem zulmetti; bir devletin kendi imal ettiği inancın mensuplarını yüzyıllarca kovuşturması açıklanamaz.",
+        "citations": [
+          {
+            "source_ref": "ste-croix-1963-why-persecuted",
+            "locator": "Zulüm dönemleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "carmih-utanc",
+        "text": "Merkezdeki figür bir Roma valisince çarmıha gerilmiş bir taşralıdır; çarmıh asilere ve kölelere ayrılmış, kasıtlı olarak aşağılayıcı bir infaz biçimiydi.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2012-did-jesus-exist",
+            "locator": "Çarmıh ve utanç ölçütü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "saray-hamiligi-yok",
+        "text": "En erken metinler iktidar dışı bir çevreden gelir; saray hamiliği kaydı yoktur. Karşılaştırma: Philostratos'un Apollonius'u doğrudan imparatoriçe Julia Domna'nın isteğiyle yazılmıştır.",
+        "citations": [
+          {
+            "source_ref": "ehrman-2012-did-jesus-exist",
+            "locator": "Erken metinlerin çevresi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "bicimlendirmek-icat-etmek-degil",
+        "text": "Roma'nın Hristiyanlığı SONRADAN biçimlendirdiği doğrudur (piskoposluk bölgeleri, bazilika planı, Latince, hukuk mantığı) - ama sonradan biçimlendirmek ile baştan icat etmek aynı şey değildir. Tez tam bu ikisini karıştırıyor.",
+        "citations": [
+          {
+            "source_ref": "jones-1964-later-roman-empire",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu Ehrman 2012 ile karşılandı; 'tez akademik literatürde kabul görmüyor' ifadesi künyeli kaynağa bağlandı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "apollonius-kaynak-durumu",
     "claim": "Tyanalı Apollonius hakkında bilinenlerin tamamı, ölümünden ~125 yıl sonra saray hamiliğinde yazılmış tek bir esere dayanır.",
     "status": "established",
@@ -1881,50 +3229,124 @@
       "medya-abartisi",
       "provenans-yoklugu"
     ],
-    "evidence": [
-      "Ana kaynak Philostratos'un sekiz kitaplık Apollonius'un Yaşamı; y. 220'lerde, imparatoriçe Julia Domna'nın isteğiyle yazıldı.",
-      "Philostratos kaynağı olarak Ninovalı Damis'in anılarını gösteriyor; 'bulunmuş elyazması' antik bir anlatı hilesidir ve Damis çoğunluk görüşünde kurgu sayılır.",
-      "Bağımsız izler zayıf ve dolaylı: Cassius Dio'da kısa bir anma, Tyana'da sikke ve tapınak izleri.",
-      "Doğum yeri Tyana - bugünkü Kemerhisar, Bor, Niğde."
-    ],
-    "counter_evidence": [
-      "Apollonius'un yaşamış olması muhtemeldir; kaynak sorunu varlığını değil, AYRINTILARI ulaşılamaz kılıyor.",
-      "Geleneksel yaşam tarihleri (y. MÖ 3 - y. MS 97) güvenilir değildir.",
-      "Philostratos'un kasıtlı olarak Hristiyanlığa rakip bir figür kurguladığı tezi alanda azınlıkta kalır; anti-Hristiyan kullanım sonradan gelmiştir."
-    ],
     "open_questions": [
       "Damis gerçekten var mıydı? Çoğunluk hayır diyor ama kesin değil.",
       "Philostratos'un elinde daha erken bir kaynak var mıydı?"
     ],
-    "sources": [
-      {
-        "tier": "primary",
-        "type": "edition",
-        "authors": [
-          "Philostratos"
-        ],
-        "year": 220,
-        "title": "Ta es ton Tyanea Apollonion (Tyanalı Apollonius'un Yaşamı), 8 kitap",
-        "language": "grc",
-        "note": "Apollonius hakkındaki neredeyse tüm bilginin tek kaynağı."
-      },
-      {
-        "tier": "primary",
-        "type": "edition",
-        "authors": [
-          "Cassius Dio"
-        ],
-        "title": "Historia Romana - Apollonius'a değinen bölüm",
-        "language": "grc",
-        "note": "Kısa ve dolaylı; bağımsız iz olarak zayıf."
-      }
-    ],
-    "checked": "2026-09-07",
+    "checked": "2026-09-09",
     "used_in": [
       "isa-tarihsellik"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "philostratus-2005-life-of-apollonius",
+        "language": "grc",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Philostratus"
+        ],
+        "year": 2005,
+        "title": "The Life of Apollonius of Tyana",
+        "container": "Loeb Classical Library",
+        "publisher": "Harvard University Press",
+        "isbn": "9780674996137",
+        "note": "Apollonius hakkındaki tek kapsamlı kaynağın eleştirel edisyonu ve çevirisi."
+      },
+      {
+        "id": "dzielska-1986-apollonius",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Dzielska, Maria"
+        ],
+        "year": 1986,
+        "title": "Apollonius of Tyana in Legend and History",
+        "publisher": "L'Erma di Bretschneider",
+        "isbn": "9788870625998",
+        "note": "Apollonius efsanesinin oluşumu ve Hierocles polemiğinin tarihsel incelemesi."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "ana-kaynak-philostratos",
+        "text": "Ana kaynak Philostratos'un sekiz kitaplık Apollonius'un Yaşamı; y. 220'lerde, imparatoriçe Julia Domna'nın isteğiyle yazıldı.",
+        "citations": [
+          {
+            "source_ref": "philostratus-2005-life-of-apollonius",
+            "locator": "Giriş ve eserin bağlamı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "damis-kurgu",
+        "text": "Philostratos kaynağı olarak Ninovalı Damis'in anılarını gösteriyor; 'bulunmuş elyazması' antik bir anlatı hilesidir ve Damis çoğunluk görüşünde kurgu sayılır.",
+        "citations": [
+          {
+            "source_ref": "dzielska-1986-apollonius",
+            "locator": "Damis sorunu",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bagimsiz-izler-zayif",
+        "text": "Bağımsız izler zayıf ve dolaylı: Cassius Dio'da kısa bir anma, Tyana'da sikke ve tapınak izleri.",
+        "citations": [
+          {
+            "source_ref": "dzielska-1986-apollonius",
+            "locator": "Bağımsız tanıklar",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "varligi-degil-ayrintilar",
+        "text": "Apollonius'un yaşamış olması muhtemeldir; kaynak sorunu varlığını değil, AYRINTILARI ulaşılamaz kılıyor.",
+        "citations": [
+          {
+            "source_ref": "dzielska-1986-apollonius",
+            "locator": "Tarihsel çekirdek",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yasam-tarihleri-guvenilmez",
+        "text": "Geleneksel yaşam tarihleri (y. MÖ 3 - y. MS 97) güvenilir değildir.",
+        "citations": [
+          {
+            "source_ref": "dzielska-1986-apollonius",
+            "locator": "Kronoloji sorunu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "rakip-figur-tezi-azinlik",
+        "text": "Philostratos'un kasıtlı olarak Hristiyanlığa rakip bir figür kurguladığı tezi alanda azınlıkta kalır; anti-Hristiyan kullanım sonradan gelmiştir.",
+        "citations": [
+          {
+            "source_ref": "dzielska-1986-apollonius",
+            "locator": "Rakip figür tezi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu Loeb edisyonu ve Dzielska 1986 ile değiştirildi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "hierocles-apollonius-polemigi",
     "claim": "Apollonius-İsa karşılaştırması modern değildir: ~303'te bir Roma valisi tarafından zulüm sırasında polemik silahı olarak kuruldu ve bize yalnızca karşı tarafın alıntıları üzerinden ulaştı.",
     "status": "established",
@@ -1978,44 +3400,128 @@
       "hayatta-kalma-yanliligi",
       "ideolojik-secim"
     ],
-    "evidence": [
-      "Hierocles, Philalethes (Hakikat Dostu) adlı metinde Apollonius'un da benzer şeyler yaptığını, paganların onu tanrılaştırmadığını savundu.",
-      "Eusebios, Hierocles'e Karşı adlı bir reddiye yazdı ve bu reddiye korundu.",
-      "Hierocles'in özgün metni bağımsız olarak elimizde değil; içeriğini yalnızca Eusebios'un alıntılarından biliyoruz."
-    ],
-    "counter_evidence": [
-      "Eusebios taraf bir aktarıcıdır; Hierocles'in argümanını eksik veya çarpıtarak vermiş olabilir - ve bunu kontrol edecek bağımsız bir metin yok."
-    ],
     "open_questions": [
       "Hierocles'in özgün argümanı Eusebios'un aktardığından ne kadar farklıydı? Ölçülemez."
     ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "isa-tarihsellik"
+    ],
     "sources": [
       {
+        "id": "eusebios-contra-hieroclem",
+        "language": "grc",
+        "accessed": "2026-09-09",
         "tier": "primary",
-        "type": "edition",
+        "type": "book",
         "authors": [
           "Eusebios (Kaisareia)"
         ],
-        "year": 310,
         "title": "Contra Hieroclem (Hierocles'e Karşı)",
-        "language": "grc",
-        "note": "Hierocles'in metnine dair tek tanık; taraf aktarıcı."
+        "note": "Hierocles'in metnine erişimin TEK yolu. Taraf bir aktarıcıdır ve bunu kontrol edecek bağımsız metin yok."
       },
       {
+        "id": "lactantius-de-mortibus",
+        "language": "la",
+        "accessed": "2026-09-09",
         "tier": "primary",
-        "type": "edition",
+        "type": "book",
         "authors": [
           "Lactantius"
         ],
-        "title": "De mortibus persecutorum 16",
-        "language": "la",
-        "note": "Hierocles'in zulümdeki rolüne değinen çağdaş kaynak."
+        "title": "De mortibus persecutorum",
+        "note": "313 metninin içeriğini aktaran kaynak; ayrıca Hierocles'in zulümdeki rolüne değinir."
+      },
+      {
+        "id": "dzielska-1986-apollonius",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Dzielska, Maria"
+        ],
+        "year": 1986,
+        "title": "Apollonius of Tyana in Legend and History",
+        "publisher": "L'Erma di Bretschneider",
+        "isbn": "9788870625998",
+        "note": "Apollonius efsanesinin oluşumu ve Hierocles polemiğinin tarihsel incelemesi."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "isa-tarihsellik"
-    ]
+    "evidence": [
+      {
+        "id": "hierocles-argumani",
+        "text": "Hierocles, Philalethes (Hakikat Dostu) adlı metinde Apollonius'un da benzer şeyler yaptığını, paganların onu tanrılaştırmadığını savundu.",
+        "citations": [
+          {
+            "source_ref": "eusebios-contra-hieroclem",
+            "locator": "Aktarılan argüman",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "eusebios-reddiyesi",
+        "text": "Eusebios, Hierocles'e Karşı adlı bir reddiye yazdı ve bu reddiye korundu.",
+        "citations": [
+          {
+            "source_ref": "eusebios-contra-hieroclem",
+            "locator": "Metnin kendisi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "hierocles-zulum-yoneticisi",
+        "text": "Hierocles zulmün yöneticilerinden biriydi; argüman doğduğu anda siyasi bir araçtı.",
+        "citations": [
+          {
+            "source_ref": "lactantius-de-mortibus",
+            "locator": "16. bölüm",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "polemik-baglami",
+        "text": "Polemiğin tarihsel bağlamı ayrıca incelenmiştir.",
+        "citations": [
+          {
+            "source_ref": "dzielska-1986-apollonius",
+            "locator": "Hierocles bölümü",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "eusebios-taraf-aktarici",
+        "text": "Eusebios taraf bir aktarıcıdır; Hierocles'in argümanını eksik veya çarpıtarak vermiş olabilir - ve bunu kontrol edecek bağımsız bir metin yok.",
+        "citations": [
+          {
+            "source_ref": "eusebios-contra-hieroclem",
+            "locator": "Aktarımın tek yönlülüğü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "lactantius-da-taraf",
+        "text": "Lactantius da taraf bir kaynaktır; Hierocles'i zulmün mimarlarından biri olarak sunması onun kendi polemik çerçevesi içindedir.",
+        "citations": [
+          {
+            "source_ref": "lactantius-de-mortibus",
+            "locator": "Kaynak konumu",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "DeepSeek turunda aday gelmemişti; kayıt zaten iki birincil kaynağa dayanıyordu. Dzielska 1986 bağlam olarak eklendi ve Lactantius'un da taraf olduğu işaretlendi."
+    }
   },
   {
     "schema_version": 2,
