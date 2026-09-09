@@ -85,6 +85,32 @@
         "url": "https://arkeofili.com/dendera-hathor-tapinagini-taniyalim/",
         "language": "tr",
         "accessed": "2026-09-09"
+      },
+      {
+        "id": "faulkner-1962-middle-egyptian",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Faulkner, Raymond O."
+        ],
+        "year": 1962,
+        "title": "A Concise Dictionary of Middle Egyptian",
+        "publisher": "Griffith Institute, Ashmolean Museum",
+        "isbn": "9780900416323",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "Standart Orta Mısırca sözlük. Söz varlığına dair olumsuz iddianın dayanması gereken kaynak türü budur - tek bir tapınak edisyonu değil."
+      },
+      {
+        "id": "thesaurus-linguae-aegyptiae",
+        "tier": "institutional",
+        "type": "database",
+        "title": "Thesaurus Linguae Aegyptiae",
+        "institution": "Berlin-Brandenburgische Akademie der Wissenschaften",
+        "url": "https://thesaurus-linguae-aegyptiae.de/",
+        "language": "de",
+        "accessed": "2026-09-09",
+        "note": "Yayımlanmış Mısırca metin külliyatının aranabilir veri tabanı. 'Külliyatta böyle bir sözcük yok' iddiası ancak böyle bir araçla denetlenebilir."
       }
     ],
     "evidence": [
@@ -114,11 +140,16 @@
     "counter_evidence": [
       {
         "id": "misir-metin-kulliyatinda-elektrik-ampul-aydinlatma-cihazi-ve",
-        "text": "Mısır metin külliyatında elektrik, ampul, aydınlatma cihazı veya kabloya karşılık gelen bir sözcük kayıtlı değildir.",
+        "text": "Mısır metin külliyatında elektrik, ampul, aydınlatma cihazı veya kabloya karşılık gelen bir sözcük kayıtlı değildir. Bu, sözlük ve aranabilir külliyat düzeyinde denetlenebilir bir ifadedir - tek bir tapınak edisyonunun taşıyabileceği bir iddia değil.",
         "citations": [
           {
-            "source_ref": "cauville2020",
-            "locator": "Külliyatın söz varlığı",
+            "source_ref": "faulkner-1962-middle-egyptian",
+            "locator": "Sözlük geneli",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "thesaurus-linguae-aegyptiae",
+            "locator": "Külliyat araması",
             "support_type": "counter"
           }
         ]
@@ -144,6 +175,17 @@
             "support_type": "claim-origin"
           }
         ]
+      },
+      {
+        "id": "olumsuz-iddia-siniri",
+        "text": "OLUMSUZ İDDİA SINIRI: 'kayıtlı değildir' ifadesi, YAYIMLANMIŞ ve dizinlenmiş külliyat için geçerlidir. Ayrıca bu kayıtta külliyat araması fiilen ÇALIŞTIRILMADI; kaynak, iddianın denetlenebileceği yeri gösteriyor, denetlendiğini değil.",
+        "citations": [
+          {
+            "source_ref": "thesaurus-linguae-aegyptiae",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
@@ -155,7 +197,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Türkçe kaynak Arkeofili; akademik Türkçe Mısıroloji literatürü taranmadı."
+      "notes": "DENETİM DÜZELTMESİ (2026-09-09): külliyat çapındaki olumsuz iddia cauville2020'ye (Dendera ilahileri edisyonu) bağlanmıştı. Faulkner 1962 ve Thesaurus Linguae Aegyptiae eklendi; ayrıca aramanın fiilen yapılmadığı açıkça yazıldı."
     }
   },
   {
@@ -445,12 +487,12 @@
       },
       {
         "id": "kirectasi-yalitkandir-iletim-hatti-okumasi-yapi-malzemesinin",
-        "text": "Kireçtaşı yalıtkandır; 'iletim hattı' okuması yapı malzemesinin elektriksel davranışıyla bağdaşmaz.",
+        "text": "Kireçtaşı yalıtkandır; 'iletim hattı' okuması yapı malzemesinin elektriksel davranışıyla bağdaşmaz. BU SATIR KAYDIN KENDİ FİZİKSEL ÇIKARIMIDIR: malzemenin yalıtkanlığı bilinen bir olgudur ama bu çıkarımı Giza bağlamında yapan ayrı bir kaynak bu turda BULUNAMADI ve satır, iddianın kendi kaynağına dayandırılamaz.",
         "citations": [
           {
-            "source_ref": "dunn1998",
-            "locator": "Kanallar bölümüne karşı okuma",
-            "support_type": "counter"
+            "source_ref": "lehner1997",
+            "locator": "Yapı malzemeleri - bağlam",
+            "support_type": "context"
           }
         ]
       },
@@ -475,7 +517,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Dunn künyesi ISBN ile doğrulandı. Karşı kayıt Lehner standart eserine bağlı."
+      "notes": "DENETİM DÜZELTMESİ (2026-09-09): 'kireçtaşı yalıtkandır' karşı kanıtı dunn1998'e counter olarak bağlanmıştı - Dunn'ın kitabı santral tezini SAVUNUR, kendi çürütmesini içermez. Satır kaydın kendi çıkarımı olarak işaretlendi ve ayrı kaynak bulunamadığı açıkça yazıldı."
     }
   },
   {
@@ -911,6 +953,23 @@
         "language": "tr",
         "accessed": "2026-09-09",
         "note": "2025 SAR/radar iddialarının kuşkucu değerlendirmesi; doğrulama standardını açıklar."
+      },
+      {
+        "id": "dobecki-schoch-1992-sismik",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Dobecki, Thomas L.",
+          "Schoch, Robert M."
+        ],
+        "year": 1992,
+        "title": "Seismic investigations in the vicinity of the Great Sphinx of Giza, Egypt",
+        "container": "Geoarchaeology",
+        "volume": "7(6)",
+        "doi": "10.1002/gea.3340070603",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "1990'lardaki sismik ölçümlerin ASIL kaynağı. Önceki sürümde bu satır West 1979'a bağlanmıştı - 1979 tarihli bir kitap 1990'ların ölçümlerini bildiremez. Çalışma anomalileri raporlar; onları 'oda' saymaz - o atlama popüler yorumda yapılır."
       }
     ],
     "evidence": [
@@ -927,12 +986,12 @@
       },
       {
         "id": "1990-larda-sismik-olcumlerde-sfenks-cevresinde-anomaliler-bi",
-        "text": "1990'larda sismik ölçümlerde Sfenks çevresinde anomaliler bildirildiği savunulur.",
+        "text": "1990'larda Sfenks çevresinde yapılan sismik ölçümler, kayada anomaliler raporladı; iddia bu raporu 'oda' okumasına bağlar.",
         "citations": [
           {
-            "source_ref": "west1979",
-            "locator": "Sismik bulgular bölümü",
-            "support_type": "inference"
+            "source_ref": "dobecki-schoch-1992-sismik",
+            "locator": "Ölçüm sonuçları",
+            "support_type": "claim-origin"
           }
         ]
       }
@@ -970,6 +1029,17 @@
             "support_type": "counter"
           }
         ]
+      },
+      {
+        "id": "anomali-oda-degil",
+        "text": "Sismik çalışmanın kendisi anomalileri RAPORLAR, onları 'oda' saymaz. 'Anomali -> salon' atlaması ölçümde değil, popüler yorumda yapılır.",
+        "citations": [
+          {
+            "source_ref": "dobecki-schoch-1992-sismik",
+            "locator": "Sonuçların yorumu",
+            "support_type": "counter"
+          }
+        ]
       }
     ],
     "open_questions": [
@@ -981,7 +1051,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Fagan derlemesi çerçeve için; radar durumu Arkeofili 2025 ile."
+      "notes": "DENETİM DÜZELTMESİ (2026-09-09): '1990'larda sismik ölçümler' satırı West 1979'a bağlanmıştı - 1979 tarihli bir kitap 1990'ların ölçümlerini bildiremez. Gerçek kaynak künyelendi (Dobecki & Schoch 1992, Geoarchaeology, DOI crossref'te doğrulandı)."
     }
   },
   {
@@ -1021,7 +1091,7 @@
       "tarih"
     ],
     "popular_claim": "Napoleon'un topları Sfenks'in burnunu kırdı.",
-    "divergence": "Anlatı, iki ayrı tarihi (1378 olayı, 1798 seferi) tek sahnede birleştirir; burnun çok daha önce eksik olduğu çizim kaydıyla yanlışlanır.",
+    "divergence": "Anlatı iki ayrı tarihi (1378 kaydı, 1798 seferi) tek sahnede birleştirir ve burnun çok daha önce eksik olduğu çizim kaydıyla yanlışlanır. AMA NAPOLEON'U ÇÜRÜTMEK, YERİNE BAŞKA BİR FAİL KOYMAK DEMEK DEĞİL: el-Makrîzî'nin 1378 kaydı burnun kırılışına dair en bilinen anlatıdır, kanıtlanmış faili değil. Lehner'in Sfenks incelemesi, burun bölgesine çubuk/keski çakılıp kaldıraçla koparıldığını ve hasarın MS 3.-10. yüzyıllara ait olduğunu söyler - yani 1378'den YÜZYILLARCA ÖNCE. Kesin olan tek şey, burnun 1798'den çok önce gitmiş olduğudur.",
     "divergence_type": [
       "medya-abartisi"
     ],
@@ -1050,17 +1120,31 @@
         "year": 1440,
         "publisher": "15. yüzyıl vakayinamesi",
         "language": "ar",
-        "note": "1378'de Sâimüddîn adlı kişinin Sfenks'in burnunu kırdığını kaydeden erken kayıt."
+        "note": "1378'de Muhammed Sâim ed-Dehr adlı kişinin Sfenks'in burnunu kırdığını kaydeden erken kayıt."
+      },
+      {
+        "id": "lehner1997",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "The Complete Pyramids: Solving the Ancient Mysteries",
+        "authors": [
+          "Lehner, Mark"
+        ],
+        "year": 1997,
+        "publisher": "Thames & Hudson",
+        "isbn": "9780500050842",
+        "language": "en",
+        "note": "Standart Mısırolojik başvuru eseri."
       }
     ],
     "evidence": [
       {
-        "id": "erken-bir-kayit-1378-de-s-imudd-n-adli-kisinin-sfenks-in-bur",
-        "text": "Erken bir kayıt, 1378'de Sâimüddîn adlı kişinin Sfenks'in burnunu kırdığını aktarır.",
+        "id": "makrizi-kaydi",
+        "text": "el-Makrîzî'nin 15. yüzyıl vakayinamesi, 1378'de Muhammed Sâim ed-Dehr adlı kişinin Sfenks'in burnunu kırdığını aktarır.",
         "citations": [
           {
             "source_ref": "makrizi",
-            "locator": "Hıtat, Mısır anıtları bölümü",
+            "locator": "el-Hıtat, Sfenks bahsi",
             "support_type": "claim-origin"
           }
         ]
@@ -1068,8 +1152,8 @@
     ],
     "counter_evidence": [
       {
-        "id": "norden-in-1737-38-cizimlerinde-burun-zaten-yoktur-napoleon-s",
-        "text": "Norden'in 1737-38 çizimlerinde burun zaten yoktur; Napoleon seferi 1798'dedir.",
+        "id": "norden-cizimleri",
+        "text": "Norden'in 1737-38 çizimlerinde burun zaten yoktur; Napoleon seferi 1798'dedir. Napoleon anlatısını kesin olarak yanlışlayan kanıt budur.",
         "citations": [
           {
             "source_ref": "norden1757",
@@ -1077,10 +1161,33 @@
             "support_type": "counter"
           }
         ]
+      },
+      {
+        "id": "lehner-tarihleme-celiskisi",
+        "text": "Lehner'in incelemesine göre burun bölgesine çubuk/keski çakılıp kaldıraçla koparılmıştır ve hasar MS 3.-10. yüzyıllara tarihlenir - yani 1378 kaydından yüzyıllarca önce. Bu doğruysa el-Makrîzî'nin anlattığı olay, zaten eksik olan bir burna sonradan bağlanmış bir anlatı olabilir.",
+        "citations": [
+          {
+            "source_ref": "lehner1997",
+            "locator": "Sfenks bölümü, hasar incelemesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "lehner-ikincil-aktarim",
+        "text": "KAYIT DÜZEYİ SINIRI: Lehner'in tarihlemesi bu kayıtta İKİNCİL AKTARIMLARDAN doğrulandı, kendi metninden değil. Sayfa düzeyinde locator yok; 'MS 3.-10. yüzyıl' aralığının Lehner'in kendi ifadesi mi yoksa aktaranların özeti mi olduğu denetlenmedi.",
+        "citations": [
+          {
+            "source_ref": "lehner1997",
+            "locator": "Künye ve locator düzeyi",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Burun hasarının kesin tarihi ve failleri için 1378 kaydı dışında bağımsız belge yok."
+      "Burun hasarının kesin tarihi bilinmiyor: el-Makrîzî 1378 der, Lehner'in inceleme tarihlemesi çok daha eskiye işaret eder. İkisi uzlaştırılmadı.",
+      "Lehner'in tarihlemesi kendi metninden, sayfa düzeyinde künyelenmeli."
     ],
     "checked": "2026-09-09",
     "used_in": [
@@ -1088,7 +1195,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "İki birincil kaynak karşılaştırması; efsanenin popülerleşme izi taranmadı."
+      "notes": "DENETİM DÜZELTMESİ (2026-09-09): (a) isim yanlıştı - 'Sâimüddîn' değil Muhammed Sâim ed-Dehr; (b) 1378 atfı fazla kesin sunuluyordu ve dosyanın KENDİ kaynağıyla (Lehner) çelişiyordu. Napoleon'un çürütülmesi doğru kalıyor; değişen şey, boşluğa ikinci bir anlatının aynı kesinlikle konmaması."
     }
   },
   {
