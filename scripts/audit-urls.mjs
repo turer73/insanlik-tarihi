@@ -2,18 +2,21 @@
 //
 // docs/url-denetimi.md içine, sitemap'teki bütün URL'lerin başlık, meta
 // açıklama, kategori ve git geçmişinden üretilmiş tarih bilgilerini yazar.
-// "İndeks" sütunu boş üretilir; elle doldurulan değerler sonraki üretimlerde
-// URL eşleşmesiyle KORUNUR. Değer yalnız Google Search Console'dan
-// doğrulanabilir; bu betik tahmin üretmez.
+//
+// "İndeks" sütunu artık ELLE DEĞİL, Search Console'un URL Inspection
+// cevabından gelir (data/gsc-index.json anlık görüntüsü; tazeleme
+// scripts/fetch-gsc.mjs). Anlık görüntü yoksa sütun boş kalır - betik hâlâ
+// tahmin üretmez, yalnızca ölçülmüş değeri yazar. "Not" sütunu elle
+// doldurulmaya devam eder ve yeniden üretimde KORUNUR.
 //
 // Taze tutma: npm check zincirine bağlıdır. Makale verisi değişirse bu dosya
 // da değişmelidir; git diff yakalar.
 
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { tarihler, sonDegisiklik, ilkYayin } from './lib/lastmod.mjs';
+import { siteRows } from './lib/site-urls.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ORIGIN = 'https://kanitatlasi.com';
@@ -21,41 +24,15 @@ const ORIGIN = 'https://kanitatlasi.com';
 const TODAY = ((d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`)(new Date());
 const TARIH = tarihler(ROOT, TODAY);
 
-const context = { window: {} };
-vm.runInNewContext(await readFile(path.join(ROOT, 'assets', 'articles-data.js'), 'utf8'), context, { filename: 'assets/articles-data.js' });
-const articles = context.window.ITArticles;
-const hubs = Object.values(JSON.parse(await readFile(path.join(ROOT, 'data', 'konu-merkezleri.json'), 'utf8'))).sort((a, b) => a.sira - b.sira);
+const rows = (await siteRows(ROOT)).map(row => ({
+  ...row,
+  ilk: ilkYayin(TARIH, row.kaynak),
+  son: sonDegisiklik(TARIH, row.kaynak),
+}));
 
-const rows = [
-  {
-    no: '—',
-    baslik: 'Ana sayfa (arşiv)',
-    url: `${ORIGIN}/`,
-    meta: 'Kanıt Atlası — İnsanlık Tarihi Araştırma Arşivi',
-    aciklama: 'Geçmişi değil, kanıtı izleyin. Arkeoloji, tarih, bilim ve inanç üzerine kaynak odaklı araştırma dosyaları.',
-    kategori: '—',
-    ilk: ilkYayin(TARIH, 'index.html'),
-    son: sonDegisiklik(TARIH, 'index.html'),
-  },
-  ...[...articles].sort((a, b) => a.no - b.no).map(article => ({
-    no: String(article.no).padStart(2, '0'),
-    baslik: article.cardTitle ?? article.title,
-    url: `${ORIGIN}/articles/${article.slug}.html`,
-    meta: `${article.title} — Kanıt Atlası`,
-    aciklama: article.summary,
-    kategori: article.category,
-    ilk: ilkYayin(TARIH, `articles/${article.slug}.html`),
-    son: sonDegisiklik(TARIH, `articles/${article.slug}.html`),
-  })),
-  { no: 'A1', baslik: 'Ölçekli Zaman Çizelgesi', url: `${ORIGIN}/dist/zaman-cizelgesi.html`, meta: 'Zaman Çizelgesi — Kanıt Atlası', aciklama: 'Bulguları tarih ekseninde gösteren araç.', kategori: 'Araç', ilk: ilkYayin(TARIH, 'dist/zaman-cizelgesi.html'), son: sonDegisiklik(TARIH, 'dist/zaman-cizelgesi.html') },
-  { no: 'A2', baslik: 'Bulgu Veri Tabanı', url: `${ORIGIN}/dist/bulgu-veri-tabani.html`, meta: 'Bulgu Veri Tabanı — Kanıt Atlası', aciklama: 'İddia, kanıt, karşı kanıt ve kaynak kayıtlarının aranabilir tablosu.', kategori: 'Araç', ilk: ilkYayin(TARIH, 'dist/bulgu-veri-tabani.html'), son: sonDegisiklik(TARIH, 'dist/bulgu-veri-tabani.html') },
-  { no: 'A3', baslik: 'Kanıt Denetimi', url: `${ORIGIN}/dist/kanit-denetimi.html`, meta: 'Kanıt Denetimi — Kanıt Atlası', aciklama: 'Bulguların statü ve inceleme durumunun denetim görünümü.', kategori: 'Araç', ilk: ilkYayin(TARIH, 'dist/kanit-denetimi.html'), son: sonDegisiklik(TARIH, 'dist/kanit-denetimi.html') },
-  { no: 'K0', baslik: 'Konu Merkezleri', url: `${ORIGIN}/konular.html`, meta: 'Konu Merkezleri — Kanıt Atlası', aciklama: 'Kayıp şehirler, mitler, dinler tarihi ve iklim-uygarlık dosya kümeleri.', kategori: 'Merkez', ilk: ilkYayin(TARIH, 'data/konu-merkezleri.json'), son: sonDegisiklik(TARIH, 'data/konu-merkezleri.json') },
-  ...hubs.map(hub => ({ no: `K${hub.sira}`, baslik: hub.baslik, url: `${ORIGIN}/konular/${hub.slug}.html`, meta: `${hub.baslik} — Konu Merkezi — Kanıt Atlası`, aciklama: hub.kisa, kategori: 'Merkez', ilk: ilkYayin(TARIH, 'data/konu-merkezleri.json'), son: sonDegisiklik(TARIH, 'data/konu-merkezleri.json') })),
-  { no: 'S1', baslik: 'Hakkında ve Yöntem', url: `${ORIGIN}/hakkinda.html`, meta: 'Hakkında ve Yöntem — Kanıt Atlası', aciklama: 'Kanıt Atlası yayın kimliği, araştırma yöntemi, inceleme durumu, düzeltme süreci ve lisans bilgisi.', kategori: 'Sayfa', ilk: ilkYayin(TARIH, 'pages/hakkinda.html'), son: sonDegisiklik(TARIH, 'pages/hakkinda.html') },
-  { no: 'S2', baslik: 'Düzeltme Günlüğü', url: `${ORIGIN}/duzeltmeler.html`, meta: 'Düzeltme Günlüğü — Kanıt Atlası', aciklama: 'Kanıt Atlası içerik düzeltmelerinin açık günlüğü.', kategori: 'Sayfa', ilk: ilkYayin(TARIH, 'pages/duzeltmeler.html'), son: sonDegisiklik(TARIH, 'pages/duzeltmeler.html') },
-  { no: 'S3', baslik: 'Yeniden Yayımlama Kiti', url: `${ORIGIN}/yeniden-yayin.html`, meta: 'Yeniden Yayımlama Kiti — Kanıt Atlası', aciklama: 'CC BY 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi.', kategori: 'Sayfa', ilk: ilkYayin(TARIH, 'pages/yeniden-yayin.html'), son: sonDegisiklik(TARIH, 'pages/yeniden-yayin.html') },
-];
+// Search Console kapsama anlık görüntüsü. Yoksa sütun boş kalır - betik
+// tahmin üretmez. Tazeleme: node scripts/fetch-gsc.mjs (klipper üzerinden).
+const gsc = JSON.parse(await readFile(path.join(ROOT, 'data', 'gsc-index.json'), 'utf8').catch(() => '{}'));
 
 // Önceki tablodaki elle doldurulmuş İndeks/Not sütunlarını URL eşleşmesiyle koru.
 function oncekiElNotlari(markdown) {
@@ -71,10 +48,24 @@ function oncekiElNotlari(markdown) {
 const onceki = await readFile(path.join(ROOT, 'docs', 'url-denetimi.md'), 'utf8').catch(() => '');
 const elle = oncekiElNotlari(onceki);
 
+// Search Console'un coverageState metnini tek kelimeye indirger. Ayrım
+// önemli: "taranmadı" ile "reddedildi" aynı şey değildir - biri bekleme,
+// öteki sorundur.
+function indeksOzeti(kayit) {
+  if (!kayit) return '';
+  const durum = kayit.durum ?? '';
+  if (kayit.karar === 'PASS') return `evet · ${kayit.sonTarama?.slice(0, 10) ?? ''}`.trim();
+  if (/bilinmiyor/i.test(durum)) return 'bilinmiyor';
+  if (/keşfedildi|kesfedildi/i.test(durum)) return 'keşfedildi, taranmadı';
+  if (/tarandı|tarandi/i.test(durum)) return 'tarandı, eklenmedi';
+  return durum || 'hayır';
+}
+
 const satirlar = rows.map(row => {
   const korunan = elle.get(row.url) ?? {};
   const aciklama = String(row.aciklama).replaceAll('|', '\\|').slice(0, 140);
-  return `| ${row.no} | [${row.baslik}](${row.url}) | ${row.meta} | ${aciklama} | ${row.kategori} | ${row.ilk} | ${row.son} | ${korunan.indeks ?? ''} | ${korunan.not ?? ''} |`;
+  const indeks = indeksOzeti(gsc.urls?.[row.url]);
+  return `| ${row.no} | [${row.baslik}](${row.url}) | ${row.meta} | ${aciklama} | ${row.kategori} | ${row.ilk} | ${row.son} | ${indeks} | ${korunan.not ?? ''} |`;
 }).join('\n');
 
 const md = `# URL Denetim Tablosu
@@ -83,18 +74,32 @@ Bu tablo sitemap'teki bütün URL'leri tek tek izler. **Betik tarafından üreti
 
 - **İlk yayın / Son değişiklik:** git geçmişinden üretilir; derleme günü değil, gerçek içerik tarihidir.
 - **Açıklama:** makalenin \`<meta name="description">\` içeriği.
-- **İndeks ve Not:** elle doldurulur; değer yalnız Google Search Console'dan doğrulanır. Betik yeniden çalıştığında bu iki sütun URL eşleşmesiyle **korunur** — kayıt güvenlidir.
+- **İndeks:** Google Search Console **URL Inspection** cevabından gelir — tahmin değil, ölçüm. Anlık görüntü \`data/gsc-index.json\`; tazelemek için \`node scripts/fetch-gsc.mjs\`. Anlık görüntü yoksa sütun boş kalır.
+- **Not:** elle doldurulur ve yeniden üretimde URL eşleşmesiyle **korunur**.
 
 | No | Yazı | URL | Meta başlık | Açıklama | Kategori | İlk yayın | Son değişiklik | İndeks | Not |
 |---|---|---|---|---|---|---|---|---|---|
 ${satirlar}
 
-## Nasıl doldurulur?
+## İndeks sütunu nasıl tazelenir?
 
-1. Search Console'da "Sayfalar" raporunda indekslenmiş/taranmış URL'leri dışa aktarın.
-2. URL'e göre eşleştirip \`İndeks\` sütununa \`evet\` / \`hayır\` / hata kodu yazın.
-3. İndekslenmeyen satır için \`Not\` sütununa sebebi (noindex, 404, yönlendirme, düşük kalite vb.) ekleyin.
-4. Tabloyu commit edin; sürüm geçmişi indekslemenin günlüğü olur. Elle yazılan sütunlar yeniden üretimde kaybolmaz.
+\`\`\`
+node scripts/fetch-gsc.mjs     # Search Console'a sorar, data/gsc-index.json yazar
+node scripts/audit-urls.mjs    # tabloyu yeniden üretir
+\`\`\`
+
+Sorgu \`sc-domain:kanitatlasi.com\` mülkü üzerinden, **salt okunur** yetkiyle yapılır.
+Değerlerin anlamı:
+
+| Değer | Ne demek |
+|---|---|
+| \`evet · TARİH\` | Dizine eklendi; tarih son tarama günü |
+| \`keşfedildi, taranmadı\` | Google URL'yi biliyor ama henüz taramadı — **bekleme, sorun değil** |
+| \`tarandı, eklenmedi\` | Tarandı ama dizine alınmadı — sebebi \`Not\` sütununa yazılmalı |
+| \`bilinmiyor\` | Google'ın haberi yok; sitemap henüz yeniden okunmamış olabilir |
+| (boş) | Anlık görüntü yok ya da bu URL ölçülmedi |
+
+\`Not\` sütunu elle yazılır ve yeniden üretimde kaybolmaz.
 `;
 
 await writeFile(path.join(ROOT, 'docs', 'url-denetimi.md'), md, 'utf8');
