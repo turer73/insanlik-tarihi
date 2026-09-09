@@ -154,7 +154,7 @@ function brandApp(source) {
     )
     .replace(
       "    renderArticles();\n    $('#year').textContent = new Date().getFullYear();",
-      "    renderArticles();\n    const initialQuery = new URLSearchParams(location.search).get('q');\n    if (initialQuery) {\n      openSearch();\n      $('#siteSearch').value = initialQuery;\n      renderSearchResults(initialQuery);\n    }\n    $('#year').textContent = new Date().getFullYear();"
+      "    renderArticles();\n    const initialQuery = new URLSearchParams(location.search).get('q');\n    if (new URLSearchParams(location.search).has('q')) {\n      openSearch();\n      $('#siteSearch').value = initialQuery;\n      renderSearchResults(initialQuery);\n    }\n    $('#year').textContent = new Date().getFullYear();"
     );
 }
 
@@ -572,7 +572,7 @@ async function main() {
   for (const hub of hubs) {
     await writeFile(path.join(hubsDirectory, `${hub.slug}.html`), renderHubPage(hub, articles, hubEvidence));
   }
-  await writeFile(path.join(OUT, 'konular.html'), renderHubIndex(hubs, articles));
+  await writeFile(path.join(OUT, 'konular.html'), renderHubIndex(hubs, articles, hubEvidence));
   for (const page of STATIC_PAGES) {
     await writeFile(path.join(OUT, page.file), brandStaticPage(await readFile(path.join(ROOT, 'pages', page.file), 'utf8'), page));
   }
