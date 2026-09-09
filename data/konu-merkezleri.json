@@ -16,10 +16,10 @@
       { "terim": "Yeniden adlandırma", "anlam": "Bir yerin sonraki kuşaklar tarafından yeni adlar ve işlevlerle anılması; 'kaybolma' duygusunun kaynaklarından biri." }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ ~6. yy", "olay": "Babil'in asıl kent katmanları; sembolik Babil anlatısı sonradan büyür", "dosya": "babil" },
-      { "tarih": "MÖ 312", "olay": "Petra'nın yazılı kayıtlarda görünmesi; kent su sistemiyle okunur", "dosya": "petra" },
+      { "tarih": "MÖ 605–562", "olay": "II. Nebukadnezar zirvesi; Tevrat'ın 'Babil'i bu Babil, sembolik anlatı sonradan büyür", "dosya": "babil" },
+      { "tarih": "MÖ 4.–1. yy", "olay": "Nabatiler ticaret yollarını tutuyor; kent su sistemiyle okunur", "dosya": "petra" },
       { "tarih": "9.–15. yy", "olay": "Angkor'un düşük yoğunluklu kentsel yayılımı; terk edilme çöküş değil dönüşümdür", "dosya": "angkor" },
-      { "tarih": "~15. yy", "olay": "Machu Picchu'nun terk edilmesi; 'keşif' anlatısı 1911 sonrasıdır", "dosya": "machu-picchu" }
+      { "tarih": "~16. yy", "olay": "Machu Picchu İspanyol istilası sonrası terk edilir; tarih net değil, 'keşif' anlatısı 1911 sonrasıdır", "dosya": "machu-picchu" }
     ],
     "acik-sorular": [
       "Angkor'un nüfusu hangi tarihte hangi hızla azaldı; su ağının bozulması sebep mi sonuç muydu?",
@@ -46,7 +46,7 @@
       { "terim": "Yazılı aktarım", "anlam": "Kopya zinciri üzerinden izlenebilen aktarım; metin eleştirisiyle tarihlenir." }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ ~1700", "olay": "Atrahasis ve Gılgamış'ın tufan anlatıları; İncil'deki tufandan çok önce", "dosya": "tufan-bilmecesi" },
+      { "tarih": "MÖ ~1700", "olay": "Atrahasis tufan anlatısı; Gılgamış XI ~MÖ 1200, Tekvin ~MÖ 6. yy", "dosya": "tufan-bilmecesi" },
       { "tarih": "MÖ ~700", "olay": "Hesiodos İşler ve Günler'de Ülker takvimi; tarım ritmi gökyüzüne bağlanır", "dosya": "herkesin-saati" },
       { "tarih": "MÖ ~460", "olay": "Aiskhylos'un Prometheus tragedyası; ateş hırsızlığı motifinin yazılı hali", "dosya": "calinan-ates" },
       { "tarih": "6 Mayıs · 8 Kasım", "olay": "Anadolu halk takviminin iki eşiği; gökyüzü, mevsim ve gelenek iç içe", "dosya": "yilin-iki-kapisi" }
@@ -75,8 +75,8 @@
       { "terim": "Sessizlikten çıkarım", "anlam": "Beklenen kaydın yokluğunun taşıdığı anlam; zayıf ama bazen ağırlığı olan kanıt." }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ ~3. yy – MS 1. yy", "olay": "Ölü Deniz Parşömenleri'nin yazıldığı dönem; en eski İbranice İncil metinleri", "dosya": "olu-deniz-parsomenleri" },
-      { "tarih": "MS ~50'ler", "olay": "Pavlus mektupları: İsa'dan kalan en eski yazılı kayıtlar", "dosya": "isa-tarihsellik" },
+      { "tarih": "MÖ 250 – MS 68", "olay": "Ölü Deniz Parşömenleri'nin yazıldığı dönem; en eski İbranice İncil metinleri", "dosya": "olu-deniz-parsomenleri" },
+      { "tarih": "y. 50–60", "olay": "Pavlus mektupları: İsa'dan kalan en eski yazılı kayıtlar", "dosya": "isa-tarihsellik" },
       { "tarih": "MS 313", "olay": "Milano Fermanı; Hristiyanlığın kurumsallaşma dönüm noktası", "dosya": "roma-hristiyanlik" },
       { "tarih": "1947", "olay": "Parşömenlerin Kumran'da bulunması; metin tarihinin yeniden kurulması", "dosya": "olu-deniz-parsomenleri" }
     ],
