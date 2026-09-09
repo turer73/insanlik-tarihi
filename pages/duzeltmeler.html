@@ -11,51 +11,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..800,0..100,0..1&family=Karla:wght@400..800&family=JetBrains+Mono:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="assets/styles-core.css">
   <link rel="stylesheet" href="assets/styles-components.css">
-  <style>
-    .static-page{width:min(calc(100% - 3rem),920px);margin-inline:auto;padding:3rem 0 5.5rem}
-    .static-page__head{margin-bottom:2.2rem}
-    .static-page__head h1{margin:.55rem 0 .8rem;font:650 clamp(2.3rem,5.5vw,4rem)/1.02 var(--serif);letter-spacing:-.03em;text-wrap:balance}
-    .static-page__head p{margin:0;max-width:64ch;color:var(--ink-2);font-size:1.06rem}
-    .static-note{border-left:3px solid var(--gold);padding:.9rem 1.1rem;background:var(--warn-soft);border-radius:0 10px 10px 0;color:var(--ink-2);margin:1.6rem 0}
-    .static-note b{color:var(--ink)}
-    .static-section{margin:2.4rem 0;padding:1.7rem 1.8rem;border:1px solid var(--line);border-radius:16px;background:var(--paper)}
-    .static-section h2{margin:0 0 1rem;font:650 1.55rem/1.15 var(--serif);letter-spacing:-.015em}
-    .static-section p{margin:.5rem 0;max-width:72ch;color:var(--ink-2);line-height:1.6}
-    .static-section p b{color:var(--ink)}
-    .static-section a{color:var(--green-2);text-underline-offset:3px;font-weight:700}
-    .correction-log{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:1rem}
-    .correction{background:var(--paper);padding:1.05rem 1.15rem}
-    .correction__meta{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;margin-bottom:.4rem}
-    .correction__date{font:700 .74rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--green-2)}
-    .correction__where{font:600 .74rem/1 var(--mono);color:var(--ink-3)}
-    .correction__what{margin:0;color:var(--ink-2);font-size:.93rem;line-height:1.55}
-    .correction__what b{color:var(--ink)}
-    @media(max-width:720px){.static-page{width:min(calc(100% - 1.6rem),920px);padding-top:2rem}.static-section{padding:1.25rem 1.1rem}}
-    @media print{.site-header{position:static}.static-section{border:0;padding:0}.correction-log{border:0}}
-  </style>
+  <link rel="stylesheet" href="assets/static-pages.css">
 </head>
 <body>
   <a class="skip-link" href="#main">İçeriğe geç</a>
 
-  <header class="site-header" id="top">
-    <div class="site-header__inner">
-      <a class="brand" href="index.html" aria-label="Kanıt Atlası ana sayfası">
-        <span class="brand__mark" aria-hidden="true"><img src="assets/logo-mark.svg" alt=""></span>
-        <span class="brand__copy">
-          <strong>Kanıt Atlası</strong>
-          <small>Tarihin Pusulası</small>
-        </span>
-      </a>
-      <nav class="main-nav" aria-label="Sayfa menüsü">
-        <a href="index.html">Yazılar</a>
-        <a href="konular.html">Konular</a>
-        <a href="hakkinda.html">Hakkında</a>
-        <a class="is-active" href="duzeltmeler.html" aria-current="page">Düzeltmeler</a>
-      </nav>
-    </div>
-  </header>
+  <header class="site-header" id="top"><div class="site-header__inner"><a class="brand" href="index.html" aria-label="Kanıt Atlası ana sayfası"><span class="brand__mark"><img src="assets/logo-mark.svg" alt=""></span><span class="brand__copy"><strong>Kanıt Atlası</strong><small>Tarihin Pusulası</small></span></a><nav class="main-nav" id="mainNav" aria-label="Ana menü"><a href="index.html#yazilar">Yazılar</a><a href="konular.html">Konular</a><a href="dist/zaman-cizelgesi.html">Zaman Çizelgesi</a><a href="dist/bulgu-veri-tabani.html">Veri Tabanı</a><a href="dist/kanit-denetimi.html">Kanıt Denetimi</a><a href="hakkinda.html">Hakkında</a><a class="is-active" aria-current="page" href="duzeltmeler.html">Düzeltmeler</a></nav><div class="header-actions"><a class="search-trigger" href="index.html?q=" aria-label="Yazılarda ara"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg><span>Ara…</span><kbd>Ctrl + K</kbd></a><button class="theme-switch" id="themeToggle" type="button" aria-label="Koyu temaya geç" aria-pressed="false"><svg class="theme-switch__sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"/></svg><span class="theme-switch__track"><span></span></span></button><button class="menu-toggle" id="menuToggle" type="button" aria-label="Menüyü aç" aria-controls="mainNav" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div></div></header>
 
-  <main id="main" class="static-page">
+  <main id="main" class="static-page"><div class="static-shell"><aside class="static-sidebar" aria-label="Sayfa bölümleri"><section class="sidebar-intro"><div class="static-sidebar__mark"><img src="assets/logo-mark.svg" alt=""></div><h2>Değişiklik silinmez,<br>kayda dönüşür.</h2><p>Olgu, kaynak, tarih veya sonucu değiştiren her düzeltme burada izlenir.</p></section><nav class="static-toc"><a href="#kayitlar">Kayıtlı düzeltmeler</a><a href="#duzeltme-oner">Düzeltme öner</a><a href="hakkinda.html#yontem">Yöntemi oku</a></nav><div class="static-sidebar__meta"><b>Açık kayıt</b><p>Günlük 8 Eylül 2026’da başladı.</p></div></aside><div class="static-content">
     <div class="static-page__head">
       <p class="eyebrow">Açık kayıt defteri</p>
       <h1>Düzeltme günlüğü</h1>
@@ -64,7 +27,7 @@
 
     <div class="static-note"><b>Kayıt neyi kapsıyor:</b> Bu günlük 8 Eylül 2026'da başlatıldı. Öncesindeki değişiklikler için <a href="https://github.com/turer73/insanlik-tarihi/commits/main" rel="noopener" target="_blank">deponun git geçmişi</a> açıktır. Yazım ve biçim düzeltmeleri günlüğe girmez; <b>olgu, kaynak, tarih veya sonuç değiştiren</b> düzeltmeler girilir.</div>
 
-    <section class="static-section">
+    <section class="static-section" id="kayitlar">
       <h2>Kayıtlı düzeltmeler</h2>
       <div class="correction-log">
         <div class="correction">
@@ -98,7 +61,7 @@
       </div>
     </section>
 
-    <section class="static-section">
+    <section class="static-section" id="duzeltme-oner">
       <h2>Düzeltme nasıl önerilir?</h2>
       <p>Bir yazıda olgu, kaynak veya tarih hatası gördüğünüzde <a href="https://github.com/turer73/insanlik-tarihi/issues" rel="noopener" target="_blank">GitHub Issues</a> üzerinden bildirebilirsiniz. Değerlendirme şu sırayı izler:</p>
       <p><b>1 · Bildirim</b> — Hangi yazıda, hangi cümlenin neden yanlış olduğu ve varsa doğrulayıcı kaynak yazılır.<br>
@@ -106,7 +69,7 @@
       <b>3 · Kayıt</b> — Düzeltme yazı içinde işaretlenir ve bu günlüğe tarihiyle eklenir. Öneriyi yapan kişi, isterse adıyla anılır.</p>
       <p>Bu sayfa bir tartışma alanı değil, kayıt defteridir. Metni değiştirmeyen görüş ayrılıkları günlüğe girmez; kanıt standardına uygun olanlar yazının kanıt dosyasına "karşı kanıt" olarak işlenebilir.</p>
     </section>
-  </main>
+  </div></div></main>
 
   <footer class="site-footer">
     <div class="site-footer__inner">
@@ -117,6 +80,6 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/site-shell.js"></script>
 </body>
 </html>

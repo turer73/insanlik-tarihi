@@ -107,7 +107,7 @@ function hubJsonLd(hub, articles) {
 
 export function renderHubPage(hub, articles, evidence) {
   const taslar = hub['kilometre-taslari'] ?? [];
-  const nav = `<a href="../index.html">Yazılar</a><a class="is-active" href="../konular.html" aria-current="page">Konular</a><a href="../hakkinda.html">Hakkında</a><a href="../duzeltmeler.html">Düzeltmeler</a>`;
+  const nav = `<a href="../index.html#yazilar">Yazılar</a><a class="is-active" href="../konular.html" aria-current="page">Konular</a><a href="../dist/zaman-cizelgesi.html">Zaman Çizelgesi</a><a href="../dist/bulgu-veri-tabani.html">Veri Tabanı</a><a href="../dist/kanit-denetimi.html">Kanıt Denetimi</a><a href="../hakkinda.html">Hakkında</a><a href="../duzeltmeler.html">Düzeltmeler</a>`;
   const head = `<!doctype html>
 <html lang="tr">
 <head>
@@ -149,9 +149,10 @@ export function renderHubPage(hub, articles, evidence) {
         <span class="brand__mark" aria-hidden="true"><img src="../assets/logo-mark.svg" alt=""></span>
         <span class="brand__copy"><strong>Kanıt Atlası</strong><small>Tarihin Pusulası</small></span>
       </a>
-      <nav class="main-nav" aria-label="Ana menü">
+      <nav class="main-nav" id="mainNav" aria-label="Ana menü">
         ${nav}
       </nav>
+      <div class="header-actions"><a class="search-trigger" href="../index.html?q=" aria-label="Yazılarda ara"><span>Ara…</span><kbd>Ctrl + K</kbd></a><button class="theme-switch" id="themeToggle" type="button" aria-label="Koyu temaya geç" aria-pressed="false"><span class="theme-switch__track"><span></span></span></button><button class="menu-toggle" id="menuToggle" type="button" aria-label="Menüyü aç" aria-controls="mainNav" aria-expanded="false">☰</button></div>
     </div>
   </header>`;
   const cards = hub.dosyalar.map(slug => {
@@ -200,19 +201,25 @@ export function renderHubPage(hub, articles, evidence) {
       <span>© <span class="hub-year"></span> Kanıt Atlası</span>
     </div>
   </footer>
-  <script>document.querySelectorAll('.hub-year').forEach(el => { el.textContent = new Date().getFullYear(); });</script>
+  <script src="../assets/site-shell.js"></script>
 </body>
 </html>
 `;
 }
 
-export function renderHubIndex(hubs, articles) {
-  const cards = hubs.map(hub => `<a class="hub-index-card" href="konular/${escapeHTML(hub.slug)}.html">
-    <span class="hub-index-card__no">Merkez ${String(hub.sira).padStart(2, '0')}</span>
-    <h2>${escapeHTML(hub.baslik)}</h2>
-    <p>${escapeHTML(hub.kisa)}</p>
-    <span class="hub-index-card__count">${hub.dosyalar.length} dosya</span>
-  </a>`).join('');
+export function renderHubIndex(hubs, articles, evidence = {}) {
+  const cards = hubs.map(hub => {
+    const hubArticles = hub.dosyalar.map(slug => articles.find(article => article.slug === slug)).filter(Boolean);
+    const cover = hubArticles[0]?.cover ?? 'assets/og-image.webp';
+    const evidenceCount = hubArticles.reduce((total, article) => total + (evidence[article.slug]?.n ?? 0), 0);
+    const samples = hubArticles.slice(0, 3).map(article => String(article.no).padStart(2, '0') + ' · ' + escapeHTML(article.cardTitle));
+    return `<a class="hub-index-card" href="konular/${escapeHTML(hub.slug)}.html">
+      <div class="hub-index-card__visual"><img src="${escapeHTML(cover)}" alt="" width="1200" height="675" decoding="async" loading="lazy"><span class="hub-index-card__no">Konu merkezi ${String(hub.sira).padStart(2, '0')}</span></div>
+      <div class="hub-index-card__body"><h2>${escapeHTML(hub.baslik)}</h2><p>${escapeHTML(hub.kisa)}</p><ul class="hub-index-card__files">${samples.map(file => `<li>${file}</li>`).join('')}</ul><div class="hub-index-card__meta"><span>${hub.dosyalar.length} dosya</span><span>${evidenceCount} bulgu</span><span>${hub['acik-sorular'].length} açık soru</span><span class="hub-index-card__action">Merkezi aç →</span></div></div>
+    </a>`;
+  }).join('');
+  const articleCount = new Set(hubs.flatMap(hub => hub.dosyalar)).size;
+  const topicNav = hubs.map(hub => `<a href="konular/${escapeHTML(hub.slug)}.html"><b>${String(hub.sira).padStart(2, '0')}</b><span>${escapeHTML(hub.baslik)}</span><small>${hub.dosyalar.length}</small></a>`).join('');
   const jsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -263,19 +270,16 @@ export function renderHubIndex(hubs, articles) {
         <span class="brand__mark" aria-hidden="true"><img src="assets/logo-mark.svg" alt=""></span>
         <span class="brand__copy"><strong>Kanıt Atlası</strong><small>Tarihin Pusulası</small></span>
       </a>
-      <nav class="main-nav" aria-label="Ana menü">
-        <a href="index.html">Yazılar</a><a class="is-active" href="konular.html" aria-current="page">Konular</a><a href="hakkinda.html">Hakkında</a><a href="duzeltmeler.html">Düzeltmeler</a>
+      <nav class="main-nav" id="mainNav" aria-label="Ana menü">
+        <a href="index.html#yazilar">Yazılar</a><a class="is-active" href="konular.html" aria-current="page">Konular</a><a href="dist/zaman-cizelgesi.html">Zaman Çizelgesi</a><a href="dist/bulgu-veri-tabani.html">Veri Tabanı</a><a href="dist/kanit-denetimi.html">Kanıt Denetimi</a><a href="hakkinda.html">Hakkında</a><a href="duzeltmeler.html">Düzeltmeler</a>
       </nav>
+      <div class="header-actions"><a class="search-trigger" href="index.html?q=" aria-label="Yazılarda ara"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg><span>Ara…</span><kbd>Ctrl + K</kbd></a><button class="theme-switch" id="themeToggle" type="button" aria-label="Koyu temaya geç" aria-pressed="false"><svg class="theme-switch__sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"/></svg><span class="theme-switch__track"><span></span></span></button><button class="menu-toggle" id="menuToggle" type="button" aria-label="Menüyü aç" aria-controls="mainNav" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
     </div>
   </header>
-  <main id="main" class="hub-index">
-    <div class="hub-index__head">
-      <p class="eyebrow">Yol haritası</p>
-      <h1>Konu merkezleri</h1>
-      <p>Tek tek dosyalar bir konunun cümleleri; merkezler ise o konunun bütünü. Her merkez giriş yazısını, zaman çizgisini, temel kavramları, ilgili dosyaları ve açık soruları bir arada sunar.</p>
-    </div>
-    <div class="hub-index__grid">${cards}</div>
-  </main>
+  <main id="main" class="topics-page"><div class="topics-shell">
+    <aside class="topics-sidebar" aria-label="Konu merkezleri"><section class="sidebar-intro"><div class="topics-sidebar__mark"><img src="assets/logo-mark.svg" alt=""></div><h2>Dosyaları değil,<br>bağlantıları izleyin.</h2><p>Aynı sorunun farklı dönem ve disiplinlerde bıraktığı kanıt izlerini birlikte okuyun.</p></section><nav class="topics-nav" aria-label="Merkezlere git">${topicNav}</nav><section class="method-card"><div class="method-card__icon">◆</div><div><h2>Kanıt zinciri</h2><p>İddia → kaynak → kanıt → karşı kanıt → durum</p><a href="hakkinda.html#yontem">Yöntemi oku →</a></div></section></aside>
+    <section class="topics-content"><header class="topics-heading"><p class="eyebrow">4 konu merkezi · ${articleCount} araştırma dosyası</p><h1>Konu haritaları</h1><p>Bir sorunun zaman içindeki izini sürün. Her merkez ilgili dosyaları, temel kavramları, zaman çizgisini ve henüz yanıtlanmamış soruları aynı rotada toplar.</p></header><div class="hub-index__grid">${cards}</div><section class="about-panel topics-guide"><div><p class="eyebrow">Nasıl kullanılır?</p><h2>Bir başlıktan başlayın, kanıt zincirine inin.</h2></div><div class="about-panel__body"><p>Merkez kartı sizi konu özetine götürür. Bulgu sayısı kalite puanı değildir; yalnız izlenen kayıt miktarını gösterir.</p><div class="about-links"><a href="index.html#yazilar">Bütün yazılar →</a><a href="dist/kanit-denetimi.html">Kanıt denetimi →</a></div></div></section></section>
+  </div></main>
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div><strong>Kanıt Atlası</strong><p>İnsanlık tarihine kanıt, karşı kanıt ve kaynak izlenebilirliği üzerinden bakan Türkçe araştırma arşivi.</p></div>
@@ -284,7 +288,7 @@ export function renderHubIndex(hubs, articles) {
       <span>© <span class="hub-year"></span> Kanıt Atlası</span>
     </div>
   </footer>
-  <script>document.querySelectorAll('.hub-year').forEach(el => { el.textContent = new Date().getFullYear(); });</script>
+  <script src="assets/site-shell.js"></script>
 </body>
 </html>
 `;

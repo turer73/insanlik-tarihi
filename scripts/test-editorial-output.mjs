@@ -95,6 +95,13 @@ for (const page of ['hakkinda.html','duzeltmeler.html','yeniden-yayin.html']) {
   assert.ok(html.includes('<script type="application/ld+json">'), page);
   assert.ok(!html.includes('<!-- KA-META -->'), page);
 }
+for (const page of ['hakkinda.html','duzeltmeler.html']) {
+  const html = await read(`site/${page}`);
+  assert.ok(html.includes('class="static-shell"'), `${page}: ana site yerleşimi`);
+  assert.ok(html.includes('id="mainNav"') && html.includes('class="header-actions"'), `${page}: ortak gezinme`);
+  assert.ok(html.includes('assets/static-pages.css') && html.includes('assets/site-shell.js'), `${page}: ortak sayfa varlıkları`);
+  assert.ok(html.includes('aria-label="Menüyü aç"') && html.includes('aria-label="Yazılarda ara"'), `${page}: erişilebilir kontroller`);
+}
 for (const hub of hubs) {
   const html = await read(`site/konular/${hub.slug}.html`);
   assert.ok(!/[ÃÄÅ]|â(?:€|†)/u.test(html), `${hub.slug}: bozuk UTF-8 dizisi olmamalı`);
@@ -109,6 +116,11 @@ for (const hub of hubs) {
 }
 const hubIndex = await read('site/konular.html');
 assert.ok(!/[ÃÄÅ]|â(?:€|†)/u.test(hubIndex), 'konu merkezi dizininde bozuk UTF-8 dizisi olmamalı');
+assert.ok(hubIndex.includes('class="topics-shell"'), 'konu dizini ana site yerleşimini kullanmalı');
+assert.equal((hubIndex.match(/class="hub-index-card"/g) ?? []).length, hubs.length, 'her merkez görselli kartla sunulmalı');
+assert.ok(hubIndex.includes('hub-index-card__visual') && hubIndex.includes('açık soru</span>'), 'merkez kartı görsel ve içerik göstergeleri');
+assert.ok(hubIndex.includes('class="header-actions"') && hubIndex.includes('assets/site-shell.js'), 'konu dizininde ortak gezinme');
+
 const hubDosyalar = new Set(hubs.flatMap(hub => hub.dosyalar));
 for (const article of articles) {
   assert.ok(hubDosyalar.has(article.slug), `${article.slug} en az bir merkezde olmalı`);
