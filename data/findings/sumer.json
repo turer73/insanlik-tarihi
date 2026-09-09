@@ -1,64 +1,337 @@
 [
   {
+    "schema_version": 2,
     "id": "sumer-yazi-muhasebe-icin",
-    "claim": "Yazı muhasebe için icat edildi; bilinen en eski tabletlerin ezici çoğunluğu idari kayıttır ve ilk edebî metinler yaklaşık 700 yıl sonra gelir.",
+    "claim": "Yazı muhasebe için icat edildi; bilinen en eski tabletlerin ezici çoğunluğu idari kayıttır ve ilk edebî metinler yaklaşık 700 yıl sonra görülür.",
     "status": "established",
     "confidence": "high",
-    "topic": ["sumer", "yazinin-icadi", "mezopotamya"],
-    "subject": { "site": "Uruk, Eanna alanı", "site_native": "Unug", "region": "Güney Mezopotamya", "modern_country": "Irak", "coordinates": { "lat": 31.3225, "lon": 45.6361 } },
-    "period": { "earliest": -3300, "latest": -2600, "era_label": "Uruk IV - Erken Hanedanlar", "precision": "range", "dating_method": ["stratigraphy", "paleography", "radiocarbon"] },
-    "languages": ["Sümerce"],
-    "disciplines": ["filoloji", "arkeoloji", "epigrafi"],
+    "topic": [
+      "sumer",
+      "yazinin-icadi",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk, Eanna alanı",
+      "site_native": "Unug",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3225,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -3300,
+      "latest": -2600,
+      "era_label": "Uruk IV - Erken Hanedanlar",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "paleography",
+        "radiocarbon"
+      ]
+    },
+    "languages": [
+      "Sümerce"
+    ],
+    "disciplines": [
+      "filoloji",
+      "arkeoloji",
+      "epigrafi"
+    ],
     "popular_claim": "Yazı destanları, duaları ve kutsal metinleri kaydetmek için icat edildi.",
-    "divergence": "En erken tabletlerde tanrı, kral övgüsü veya anlatı yok; miktar, mal ve sorumlu kişi adı var. İçerik dağılımı sayılabilir bir olgudur ve yayımlanmış külliyat açıktır.",
-    "divergence_type": ["kategori-hatasi", "guncellenmemis"],
-    "evidence": [
-      "Uruk IV tabletleri teslimat, sayım ve tayın kayıtlarıdır: arpa, bira, koyun, işçi payı.",
-      "En erken sayı sistemi saydığı şeye göre değişir - tahıl ve hayvan için ayrı düzenler; soyut sayı fikri henüz yok.",
-      "İlk edebî metinler (Şuruppak Öğütleri, Keş Tapınak İlahisi) ~MÖ 2600'e tarihlenir."
+    "divergence": "En erken tabletlerde tanrı, kral övgüsü veya anlatı yok; miktar, mal ve sorumlu kişi adı var. İçerik dağılımı sayılabilir bir olgudur ve yayımlanmış külliyat açıktır. Alanın standart çözümlemesi bunu daha da keskin söyler: en erken tabletlerin amacı DİLİ kaydetmek değil, sayısal bir sistemle yerel ekonominin yönetimini izlemekti.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "guncellenmemis"
     ],
     "sources": [
-      { "tier": "primary", "type": "dataset", "title": "Uruk IV proto-çivi yazısı tablet külliyatı", "language": "sux" },
-      { "tier": "peer-reviewed", "type": "book", "title": "Proto-çivi yazısı ve erken Mezopotamya idaresi literatürü", "language": "en" }
+      {
+        "id": "nissen-damerow-englund-1993-archaic-bookkeeping",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Nissen, Hans J.",
+          "Damerow, Peter",
+          "Englund, Robert K."
+        ],
+        "year": 1993,
+        "title": "Archaic Bookkeeping: Early Writing and Techniques of Economic Administration in the Ancient Near East",
+        "publisher": "University of Chicago Press",
+        "isbn": "9780226586595",
+        "pages": "xi+169",
+        "language": "en",
+        "note": "Proto-çivi yazısı külliyatının standart çözümlemesi. Ana tezi doğrudan bu kaydın konusu: en erken tabletlerin amacı DİLİ kaydetmek değil, sayısal bir sistemle yerel ekonominin yönetimini izlemekti. Paul Larsen çevirisi. Önceki sürümde bu kaynağın yerinde 'Proto-çivi yazısı ve erken Mezopotamya idaresi literatürü' yazan bir YER TUTUCU vardı."
+      }
     ],
-    "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "evidence": [
+      {
+        "id": "idari-kayit-turleri",
+        "text": "Uruk IV tabletleri teslimat, sayım ve tayın kayıtlarıdır: arpa, bira, koyun, işçi payı.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "İdari metin türleri bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "nesneye-bagli-sayi-sistemi",
+        "text": "En erken sayı sistemi saydığı şeye göre değişir - tahıl ve hayvan için ayrı düzenler; soyut sayı fikri henüz yok.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Sayı sistemleri çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "amac-dil-degil-yonetim",
+        "text": "Tabletlerin amacı dili kaydetmek değil, sayısal bir sistemle yerel ekonominin yönetimini izlemekti.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Kitabın ana tezi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ilk-edebi-metinler-2600",
+        "text": "İlk edebî metinler (Şuruppak Öğütleri, Keş Tapınak İlahisi) ~MÖ 2600'e tarihlenir.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Kronolojik çerçeve",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "yayimlanmis-kulliyat-siniri",
+        "text": "'Ezici çoğunluk idari' ifadesi YAYIMLANMIŞ külliyata dayanır. Kazılmamış ve yayımlanmamış malzemenin dağılımı bilinmiyor; oran bir örneklem oranıdır.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Külliyatın kapsamı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "korunma-yanliligi",
+        "text": "İdari tabletlerin daha iyi korunmuş olması da mümkündür: pişmiş kil arşivler yangınla sertleşir, başka ortamlardaki kayıtlar korunmaz. Dağılım kısmen hayatta kalma yanlılığı olabilir.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Korunma koşulları",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "tam-metin-okunmadi",
+        "text": "Bu kaydın kaynağının TAM METNİ OKUNMADI; locator'lar bölüm düzeyinde, sayfa düzeyinde değil.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Yayımlanmamış Uruk külliyatının tür dağılımı yayımlanmışla aynı mı?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "sumer"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu kaynak ('...literatürü') gerçek künyeyle değiştirildi. Boş olan counter_evidence dolduruldu - örneklem ve korunma yanlılığı işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "sumer-uruk-iv-dili",
     "claim": "En eski Uruk IV tabletleri Sümerce yazılmıştır.",
     "status": "unknown",
     "confidence": "high",
-    "topic": ["sumer", "proto-civi-yazisi", "dil"],
-    "subject": { "site": "Uruk", "region": "Güney Mezopotamya", "modern_country": "Irak", "coordinates": { "lat": 31.3225, "lon": 45.6361 } },
-    "period": { "earliest": -3300, "latest": -3100, "era_label": "Uruk IV", "precision": "approximate", "dating_method": ["stratigraphy", "paleography"] },
-    "languages": [],
-    "disciplines": ["filoloji", "dilbilim", "epigrafi"],
-    "popular_claim": "Dünyanın en eski yazısı Sümerce'dir.",
-    "divergence": "Sistemin sonradan Sümerce yazmak için kullanıldığı kesin. Ama en erken tabletlerdeki işaretlerin SES DEĞERİ oturmamıştır ve metinlerin hangi dili kaydettiği doğrudan gösterilemez.",
-    "divergence_type": ["kategori-hatasi"],
-    "counter_evidence": [
-      "En erken işaretler büyük ölçüde resim-yazıdır; ses değeri sonradan gelişir.",
-      "İdari listelerde dilbilgisi işaretleyicisi neredeyse yok - dil tespiti için gereken yapı bulunmuyor."
+    "topic": [
+      "sumer",
+      "proto-civi-yazisi",
+      "dil"
     ],
-    "sources": [{ "tier": "peer-reviewed", "type": "book", "title": "Proto-çivi yazısı çözümleme literatürü", "language": "en" }],
-    "open_questions": ["Uruk IV metinlerinin dili belirlenebilir mi?"],
-    "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "subject": {
+      "site": "Uruk",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3225,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -3300,
+      "latest": -3100,
+      "era_label": "Uruk IV",
+      "precision": "approximate",
+      "dating_method": [
+        "stratigraphy",
+        "paleography"
+      ]
+    },
+    "disciplines": [
+      "filoloji",
+      "dilbilim",
+      "epigrafi"
+    ],
+    "popular_claim": "Dünyanın en eski yazısı Sümerce'dir.",
+    "divergence": "Sistemin sonradan Sümerce yazmak için kullanıldığı kesin. Ama en erken tabletlerdeki işaretlerin SES DEĞERİ oturmamıştır ve metinlerin hangi dili kaydettiği doğrudan gösterilemez. Sorun kanıtın azlığı değil, KAYDIN TÜRÜ: sayı ve mal işaretlerinden oluşan bir muhasebe notu, hangi dilde düşünüldüğünü ele vermez.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "nissen-damerow-englund-1993-archaic-bookkeeping",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Nissen, Hans J.",
+          "Damerow, Peter",
+          "Englund, Robert K."
+        ],
+        "year": 1993,
+        "title": "Archaic Bookkeeping: Early Writing and Techniques of Economic Administration in the Ancient Near East",
+        "publisher": "University of Chicago Press",
+        "isbn": "9780226586595",
+        "pages": "xi+169",
+        "language": "en",
+        "note": "Proto-çivi yazısı külliyatının standart çözümlemesi. Ana tezi doğrudan bu kaydın konusu: en erken tabletlerin amacı DİLİ kaydetmek değil, sayısal bir sistemle yerel ekonominin yönetimini izlemekti. Paul Larsen çevirisi. Önceki sürümde bu kaynağın yerinde 'Proto-çivi yazısı ve erken Mezopotamya idaresi literatürü' yazan bir YER TUTUCU vardı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "dil-tasimak-uzere-tasarlanmamis",
+        "text": "En erken tabletlerin işlevi dili kaydetmek değil, sayısal bir sistemle ekonomiyi izlemekti - yani metinler dil taşımak üzere tasarlanmamıştı.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Kitabın ana tezi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "resim-yazi-ses-degeri-sonra",
+        "text": "En erken işaretler büyük ölçüde resim-yazıdır; ses değeri sonradan gelişir.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "İşaret sistemi gelişimi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "dilbilgisi-isaretleyicisi-yok",
+        "text": "İdari listelerde dilbilgisi işaretleyicisi neredeyse yok - dil tespiti için gereken yapı bulunmuyor.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Metin yapısı çözümlemesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sumerce-degil-demiyoruz",
+        "text": "Bu kayıt 'Sümerce DEĞİLDİR' demiyor; 'gösterilemez' diyor. Sonraki dönemde sistemin Sümerce yazdığı kesin olduğuna göre sürekliliğin Sümerce olması makul bir olasılıktır - ama olasılık kanıt değildir.",
+        "citations": [
+          {
+            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
+            "locator": "Süreklilik tartışması",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Uruk IV metinlerinin dili belirlenebilir mi?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "sumer"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Kayıt hiç evidence taşımıyordu - yalnızca karşı kanıtla duruyordu. Kaynağın ana tezi doğrudan kanıt olarak bağlandı."
+    }
   },
   {
     "id": "sumer-akadca-uzerinden-cozuldu",
     "claim": "Sümerce doğrudan değil, Akadca üzerinden ve Babilli kâtiplerin hazırladığı iki dilli sözlük listeleri sayesinde okunabildi.",
     "status": "established",
     "confidence": "high",
-    "topic": ["sumer", "cozulme", "yontem", "bilim-tarihi"],
-    "subject": { "site": "Behistun Yazıtı", "region": "Kermanşah, Zagros", "modern_country": "İran", "coordinates": { "lat": 34.3881, "lon": 47.4361 } },
-    "period": { "earliest": -520, "latest": 1869, "era_label": "Behistun'dan Sümerce'nin adlandırılmasına", "precision": "range", "dating_method": ["historical-record", "epigraphic"] },
-    "languages": ["Sümerce", "Akadca", "Eski Farsça", "Elamca"],
-    "disciplines": ["filoloji", "dilbilim", "bilim-tarihi"],
+    "topic": [
+      "sumer",
+      "cozulme",
+      "yontem",
+      "bilim-tarihi"
+    ],
+    "subject": {
+      "site": "Behistun Yazıtı",
+      "region": "Kermanşah, Zagros",
+      "modern_country": "İran",
+      "coordinates": {
+        "lat": 34.3881,
+        "lon": 47.4361
+      }
+    },
+    "period": {
+      "earliest": -520,
+      "latest": 1869,
+      "era_label": "Behistun'dan Sümerce'nin adlandırılmasına",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Eski Farsça",
+      "Elamca"
+    ],
+    "disciplines": [
+      "filoloji",
+      "dilbilim",
+      "bilim-tarihi"
+    ],
     "people": [
-      { "name": "Rawlinson, Henry", "role": "translator", "affiliation": "-", "year": 1847, "lifespan": "1810-1895" },
-      { "name": "Oppert, Jules", "role": "proposer", "affiliation": "-", "year": 1869, "lifespan": "1825-1905" }
+      {
+        "name": "Rawlinson, Henry",
+        "role": "translator",
+        "affiliation": "-",
+        "year": 1847,
+        "lifespan": "1810-1895"
+      },
+      {
+        "name": "Oppert, Jules",
+        "role": "proposer",
+        "affiliation": "-",
+        "year": 1869,
+        "lifespan": "1825-1905"
+      }
     ],
     "evidence": [
       "Behistun Yazıtı (~MÖ 520) aynı metni Eski Farsça, Elamca ve Akadca verir; Eski Farsça çözülünce Akadca da çözüldü.",
@@ -67,136 +340,741 @@
       "Dile 'Sümerce' adı 1869'da kondu - Sümerler kendi adlarını bize bırakmadı."
     ],
     "sources": [
-      { "tier": "primary", "type": "inscription", "year": -520, "title": "Behistun Yazıtı", "language": "peo" },
-      { "tier": "peer-reviewed", "type": "book", "title": "Çivi yazısının çözülmesi ve Asirbilim tarihi literatürü", "language": "en" }
+      {
+        "tier": "primary",
+        "type": "inscription",
+        "year": -520,
+        "title": "Behistun Yazıtı",
+        "language": "peo"
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Çivi yazısının çözülmesi ve Asirbilim tarihi literatürü",
+        "language": "en"
+      }
     ],
     "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "used_in": [
+      "sumer"
+    ]
   },
   {
+    "schema_version": 2,
     "id": "sumer-enheduanna-yazarligi",
     "claim": "Enheduanna kendisine atfedilen ilahileri gerçekten yazmıştır ve tarihte adı bilinen ilk yazardır.",
     "status": "contested",
     "confidence": "high",
-    "topic": ["sumer", "enheduanna", "yazarlik", "atif-tartismasi"],
-    "subject": { "site": "Ur", "region": "Güney Mezopotamya", "modern_country": "Irak", "coordinates": { "lat": 30.9626, "lon": 46.1031 } },
-    "period": { "earliest": -2285, "latest": -2250, "era_label": "Akad, Sargon dönemi", "precision": "approximate", "dating_method": ["epigraphic", "historical-record"] },
-    "languages": ["Sümerce", "Akadca"],
-    "disciplines": ["filoloji", "arkeoloji", "sanat-tarihi"],
-    "people": [{ "name": "Enheduanna", "role": "proposer", "affiliation": "Ur, Nanna tapınağı en-rahibesi", "year": -2285 }],
-    "popular_claim": "Enheduanna tarihte adı bilinen ilk yazardır ve eserleri elimizdedir.",
-    "divergence": "Varlığı ve makamı sağlam: Ur'da bulunan kalker disk onu Sargon'un kızı ve Nanna'nın en-rahibesi olarak adlandırıyor ve çağdaştır. Ama ilahilerin ELİMİZDEKİ NÜSHALARI yaklaşık 500 yıl sonrasına (Eski Babil dönemi) aittir ve yazarlık atfı uzmanlar arasında tartışmalıdır. İfade bir atıf geleneğine dayanıyor, imzalı bir elyazmasına değil.",
-    "divergence_type": ["guncellenmemis", "medya-abartisi"],
-    "evidence": [
-      "Enheduanna Diski çağdaş bir buluntudur ve onu adıyla, unvanıyla ve babasıyla tanımlar.",
-      "Nin-me-şara (İnanna'nın Yüceltilmesi) ve Tapınak İlahileri geleneksel olarak ona atfedilir.",
-      "Metinlerde birinci tekil şahıs anlatıcı ve kişisel bir ses var."
+    "topic": [
+      "sumer",
+      "enheduanna",
+      "yazarlik",
+      "atif-tartismasi"
     ],
-    "counter_evidence": [
-      "Bilinen nüshaların hiçbiri çağdaş değil; hepsi ~500 yıl sonrasına ait.",
-      "Mezopotamya'da geç dönem atıfları yaygın bir gelenektir; bir metni ünlü bir figüre bağlamak sık görülür.",
-      "Birinci tekil anlatıcı, yazarın kendisi olmayabilir - edebî bir kişileştirme de olabilir."
+    "subject": {
+      "site": "Ur",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 30.9626,
+        "lon": 46.1031
+      }
+    },
+    "period": {
+      "earliest": -2285,
+      "latest": -2250,
+      "era_label": "Akad, Sargon dönemi",
+      "precision": "approximate",
+      "dating_method": [
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca"
+    ],
+    "disciplines": [
+      "filoloji",
+      "arkeoloji",
+      "sanat-tarihi"
+    ],
+    "people": [
+      {
+        "name": "Enheduanna",
+        "role": "proposer",
+        "affiliation": "Ur, Nanna tapınağı en-rahibesi",
+        "year": -2285
+      },
+      {
+        "name": "Helle, Sophus",
+        "role": "editor",
+        "year": 2023
+      }
+    ],
+    "popular_claim": "Enheduanna tarihte adı bilinen ilk yazardır ve eserleri elimizdedir.",
+    "divergence": "Varlığı ve makamı sağlam: Ur'da bulunan kalker disk onu Sargon'un kızı ve Nanna'nın en-rahibesi olarak adlandırıyor ve çağdaştır. Ama ilahilerin ELİMİZDEKİ NÜSHALARI yaklaşık 500 yıl sonrasına (Eski Babil dönemi) aittir ve yazarlık atfı uzmanlar arasında tartışmalıdır. İfade bir atıf geleneğine dayanıyor, imzalı bir elyazmasına değil. ÜÇÜNCÜ BİR KONUM DA VAR: sorunun kendisinin çağdışı olduğu - metinlerin tek bir kişiye bağlanması, kolektif üretilen bir geleneğe modern bir yazarlık kalıbı giydirmek olabilir.",
+    "divergence_type": [
+      "guncellenmemis",
+      "medya-abartisi"
     ],
     "sources": [
-      { "tier": "primary", "type": "inscription", "title": "Enheduanna Diski", "institution": "Penn Museum, Philadelphia", "language": "akk" },
-      { "tier": "peer-reviewed", "type": "book", "title": "Enheduanna atfı üzerine Asirbilim tartışması", "language": "en" }
+      {
+        "id": "enheduanna-diski",
+        "tier": "primary",
+        "type": "inscription",
+        "title": "Enheduanna Diski (kalker adak diski, Ur)",
+        "language": "akk",
+        "note": "Çağdaş buluntu. Enheduanna'yı adıyla, 'Nanna'nın en-rahibesi' unvanıyla ve Sargon'un kızı olarak tanımlar. Varlığın kanıtı budur - yazarlığın değil."
+      },
+      {
+        "id": "helle-2023-enheduana",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Helle, Sophus"
+        ],
+        "year": 2023,
+        "title": "Enheduana: The Complete Poems of the World's First Author",
+        "publisher": "Yale University Press",
+        "url": "https://sophushelle.com/category/enheduana/",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "Şiirlerin tam çevirisi ve yazarlık tartışmasının güncel değerlendirmesi. Helle atıf tartışmasını hem dikkat dağıtıcı hem çağdışı bulur. ISBN DOĞRULANAMADI; künye iki bağımsız aramayla teyit edildi ama URL olarak yazarın kendi sayfası kullanıldı - yayıncı kaydı kadar güçlü bir çıpa değil."
+      }
     ],
-    "open_questions": ["Atıf tartışması yeni bir buluntu olmadan kapanabilir mi?"],
-    "checked": "2026-09-06",
-    "volatile": true,
-    "used_in": ["sumer"]
+    "evidence": [
+      {
+        "id": "disk-cagdas-buluntu",
+        "text": "Enheduanna Diski çağdaş bir buluntudur ve onu adıyla, unvanıyla ve babasıyla tanımlar.",
+        "citations": [
+          {
+            "source_ref": "enheduanna-diski",
+            "locator": "Adak yazıtı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "atfedilen-eserler",
+        "text": "Nin-me-şara (İnanna'nın Yüceltilmesi) ve Tapınak İlahileri geleneksel olarak ona atfedilir.",
+        "citations": [
+          {
+            "source_ref": "helle-2023-enheduana",
+            "locator": "Şiirlerin derlemi ve atıf geleneği",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "birinci-tekil-anlatici",
+        "text": "Metinlerde birinci tekil şahıs anlatıcı ve kişisel bir ses var.",
+        "citations": [
+          {
+            "source_ref": "helle-2023-enheduana",
+            "locator": "Metin çevirileri",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "nushalar-500-yil-sonra",
+        "text": "Bilinen nüshaların hiçbiri çağdaş değil; hepsi ~500 yıl sonrasına, Eski Babil dönemine ait.",
+        "citations": [
+          {
+            "source_ref": "helle-2023-enheduana",
+            "locator": "Nüsha tarihlemesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "gec-donem-atif-gelenegi",
+        "text": "Mezopotamya'da geç dönem atıfları yaygın bir gelenektir; bir metni ünlü bir figüre bağlamak sık görülür. Alandan somut itiraz: 'Kâtipler neden geriye bakıp bir başrahibeyi seçsin? Çok sayıda başrahibe vardı. Neden o?'",
+        "citations": [
+          {
+            "source_ref": "helle-2023-enheduana",
+            "locator": "Yazarlık tartışmasının değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "anlatici-kisilestirme-olabilir",
+        "text": "Birinci tekil anlatıcı, yazarın kendisi olmayabilir - edebî bir kişileştirme de olabilir.",
+        "citations": [
+          {
+            "source_ref": "helle-2023-enheduana",
+            "locator": "Anlatıcı sesi tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "helle-ucuncu-konum",
+        "text": "Helle'nin kendi konumu ikisinden de farklı: yazarlık tartışmasını hem dikkat dağıtıcı hem çağdışı buluyor. Yazarlığın 'çok iplikli bir dokuma' olduğunu, kişi ile metin arasında birebir karşılık aramanın meseleyi kaçırdığını savunuyor.",
+        "citations": [
+          {
+            "source_ref": "helle-2023-enheduana",
+            "locator": "Yazarlık kavramı tartışması",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "kunye-siniri",
+        "text": "Bu kaydın kaynağının TAM METNİ OKUNMADI ve ISBN'i doğrulanamadı; künye iki bağımsız aramayla teyit edildi.",
+        "citations": [
+          {
+            "source_ref": "helle-2023-enheduana",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Atıf tartışması yeni bir buluntu olmadan kapanabilir mi?",
+      "'İlk yazar' sorusu, yazarlık kavramının kendisi bu döneme uymuyorsa anlamlı mı?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "sumer"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu kaynak ('Enheduanna atfı üzerine Asirbilim tartışması') Helle 2023 ile değiştirildi. Helle'nin üçüncü konumu kayda eklendi - önceki sürümde tartışma yalnızca iki taraflı görünüyordu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "sumer-ur-nammu-tazminat",
-    "claim": "Bilinen en eski yasa derlemesi olan Ur-Nammu Yasaları bedensel zararlara tazminat öngörür; misilleme ilkesi ('göze göz') daha SONRA, Hammurabi ile gelir.",
+    "claim": "Bilinen en eski yasa derlemesi olan Ur-Nammu Yasaları bedensel zararlara tazminat öngörür; misilleme ilkesi ('göze göz') daha sonra gelir.",
     "status": "established",
     "confidence": "high",
-    "topic": ["sumer", "hukuk-tarihi", "ur-nammu"],
-    "subject": { "site": "Nippur ve Ur tabletleri", "region": "Güney Mezopotamya", "modern_country": "Irak", "coordinates": { "lat": 32.126, "lon": 45.234 } },
-    "period": { "earliest": -2100, "latest": -2050, "era_label": "Ur III", "precision": "approximate", "dating_method": ["paleography", "textual"] },
-    "languages": ["Sümerce"],
-    "disciplines": ["filoloji", "hukuk", "tarih"],
-    "people": [{ "name": "Kramer, Samuel Noah", "role": "editor", "affiliation": "University of Pennsylvania", "year": 1952, "lifespan": "1897-1990" }],
-    "popular_claim": "En eski hukuk 'göze göz, dişe diş' ilkesine dayanıyordu ve zamanla yumuşadı.",
-    "divergence": "Tam tersi. Daha eski olan Ur-Nammu gümüş tazminat öngörür; misilleme ilkesi ~300 yıl SONRAKİ Hammurabi'de belirir. Hukuk tarihinin 'sertten yumuşağa' doğru ilerlediği varsayımı bu örnekte tutmuyor.",
-    "divergence_type": ["guncellenmemis", "kategori-hatasi"],
-    "evidence": [
-      "Maddeler bedensel zarar için gümüş tartılarak ödenen tazminat belirler.",
-      "Hammurabi Yasaları (~MÖ 1750) aynı suçlar için bedensel misilleme öngörür.",
-      "Metin 1952'de Nippur tabletinden yayımlandı."
+    "topic": [
+      "sumer",
+      "hukuk-tarihi",
+      "ur-nammu"
     ],
-    "counter_evidence": [
-      "Metin parçalıdır; maddelerin bir kısmı eksik ve bazı okumalar tartışmalıdır.",
-      "Yasanın Ur-Nammu'ya mı oğlu Şulgi'ye mi ait olduğu kesin değildir.",
-      "Bu metinlerin fiilen uygulanan hukuk mu yoksa ideal bir derleme mi olduğu genel olarak tartışmalıdır."
+    "subject": {
+      "site": "Nippur ve Ur tabletleri",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 32.126,
+        "lon": 45.234
+      }
+    },
+    "period": {
+      "earliest": -2100,
+      "latest": -2050,
+      "era_label": "Ur III",
+      "precision": "approximate",
+      "dating_method": [
+        "paleography",
+        "textual"
+      ]
+    },
+    "languages": [
+      "Sümerce"
+    ],
+    "disciplines": [
+      "filoloji",
+      "hukuk",
+      "tarih"
+    ],
+    "people": [
+      {
+        "name": "Kramer, Samuel Noah",
+        "role": "editor",
+        "affiliation": "University of Pennsylvania",
+        "year": 1952,
+        "lifespan": "1897-1990"
+      },
+      {
+        "name": "Kraus, F. R.",
+        "role": "excavator",
+        "affiliation": "İstanbul Arkeoloji Müzeleri",
+        "year": 1952
+      }
+    ],
+    "popular_claim": "En eski hukuk 'göze göz, dişe diş' ilkesine dayanıyordu ve zamanla yumuşadı.",
+    "divergence": "Tam tersi. Daha eski olan Ur-Nammu gümüş tazminat öngörür; misilleme ilkesi ~300 yıl SONRAKİ Hammurabi'de belirir. Hukuk tarihinin 'sertten yumuşağa' doğru ilerlediği varsayımı bu örnekte tutmuyor. AMA ELDEKİ METİN ÇOK KÜÇÜK: nüshanın korunma durumu yüzünden yalnızca uzun önsöz ve BEŞ madde okunabilmiştir. Yani 'derleme tazminat esaslıdır' hükmü beş maddeden çıkarılan bir genellemedir.",
+    "divergence_type": [
+      "guncellenmemis",
+      "kategori-hatasi"
     ],
     "sources": [
-      { "tier": "primary", "type": "edition", "authors": ["Kramer, Samuel Noah"], "year": 1952, "title": "Ur-Nammu Yasaları, Nippur tableti yayını", "language": "en" }
+      {
+        "id": "kramer-1952-ur-nammu-yasalari",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Kramer, Samuel Noah"
+        ],
+        "year": 1952,
+        "title": "Ur-Nammu Yasaları: Nippur tableti (Ni 3191) ilk yayını",
+        "language": "en",
+        "note": "Bilinen ilk nüshanın yayını. Tableti, İstanbul Arkeoloji Müzeleri'nde kurator olan F. R. Kraus iki parçayı birleştirerek tanımlamış ve Nippur koleksiyonunda 3191 numarayla kaydetmiştir; Kramer bunu Kraus'un mektubuyla öğrenip incelemiştir. Korunma durumu kötü olduğu için yalnızca uzun önsöz ve BEŞ madde okunabilmiştir."
+      },
+      {
+        "id": "istanbul-arkeoloji-nippur-ni3191",
+        "tier": "institutional",
+        "type": "database",
+        "title": "Nippur koleksiyonu, Ni 3191 - Ur-Nammu Yasaları tableti",
+        "institution": "İstanbul Arkeoloji Müzeleri, Çivi Yazılı Belgeler Arşivi",
+        "publisher": "İstanbul Arkeoloji Müzeleri",
+        "language": "tr",
+        "note": "Nesnenin bulunduğu kurum. Tablet açık kahverengi, yaklaşık 20x10 cm. BU KAYITTAKİ TÜRKÇE KURUM KAYNAĞI ZORLAMA DEĞİL: metnin bilinen ilk nüshası fiilen İstanbul'dadır ve tanımlanması da orada yapılmıştır. Kurumun çevrimiçi nesne kaydı bu turda DOĞRULANMADI; künye ikincil aktarımlara dayanıyor."
+      }
     ],
-    "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "evidence": [
+      {
+        "id": "gumus-tazminat",
+        "text": "Maddeler bedensel zarar için gümüş tartılarak ödenen tazminat belirler.",
+        "citations": [
+          {
+            "source_ref": "kramer-1952-ur-nammu-yasalari",
+            "locator": "Okunabilen maddeler",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ni3191-istanbulda",
+        "text": "Metin 1952'de Nippur tabletinden yayımlandı; tablet İstanbul Arkeoloji Müzeleri'nin Nippur koleksiyonunda Ni 3191 numarasıyla kayıtlıdır.",
+        "citations": [
+          {
+            "source_ref": "istanbul-arkeoloji-nippur-ni3191",
+            "locator": "Nesne kaydı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kraus-birlestirmesi",
+        "text": "Tableti, müzede kurator olan F. R. Kraus iki parçayı birleştirerek tanımlamış; Kramer bunu Kraus'un mektubuyla öğrenip incelemiştir.",
+        "citations": [
+          {
+            "source_ref": "kramer-1952-ur-nammu-yasalari",
+            "locator": "Yayının buluntu tarihçesi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "yalnizca-bes-madde",
+        "text": "Metin parçalıdır: korunma durumu yüzünden yalnızca uzun önsöz ve BEŞ madde okunabilmiştir. Genelleme bu kadar dar bir tabana dayanıyor.",
+        "citations": [
+          {
+            "source_ref": "kramer-1952-ur-nammu-yasalari",
+            "locator": "Korunma durumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ur-nammu-mu-sulgi-mi",
+        "text": "Yasanın Ur-Nammu'ya mı oğlu Şulgi'ye mi ait olduğu kesin değildir.",
+        "citations": [
+          {
+            "source_ref": "kramer-1952-ur-nammu-yasalari",
+            "locator": "Atıf tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "uygulanan-hukuk-mu",
+        "text": "Bu metinlerin fiilen uygulanan hukuk mu yoksa ideal bir derleme mi olduğu genel olarak tartışmalıdır.",
+        "citations": [
+          {
+            "source_ref": "kramer-1952-ur-nammu-yasalari",
+            "locator": "Metin türü tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "hammurabi-kaynaksiz",
+        "text": "Hammurabi karşılaştırması bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; Hammurabi Yasaları'nın misilleme öngördüğü genel bilgi olarak alınmıştır.",
+        "citations": [
+          {
+            "source_ref": "kramer-1952-ur-nammu-yasalari",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "muze-kaydi-dogrulanmadi",
+        "text": "İstanbul Arkeoloji Müzeleri'nin çevrimiçi nesne kaydı bu turda DOĞRULANMADI; Ni 3191 künyesi ikincil aktarımlara dayanıyor.",
+        "citations": [
+          {
+            "source_ref": "istanbul-arkeoloji-nippur-ni3191",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Beş maddeden derlemenin bütününe genelleme ne kadar güvenli?",
+      "Ni 3191'in müze kaydı ve güncel durumu nedir? Kurumun çevrimiçi kataloğu taranmalı."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "sumer"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Tabletin İstanbul Arkeoloji Müzeleri'nde olduğu ve Kraus tarafından tanımlandığı eklendi - kayıt bunu hiç söylemiyordu. 'Yalnızca beş madde okunabildi' sınırı da eklendi; iddianın dayanağı bu kadar dardı ve kayıt bunu göstermiyordu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "sumer-kral-listesi-tarihsel-degil",
     "claim": "Sümer Kral Listesi tarihsel bir kayıt değil, tek ve devredilen krallık fikrini savunan siyasi bir meşruiyet belgesidir.",
     "status": "established",
     "confidence": "high",
-    "topic": ["sumer", "kral-listesi", "kaynak-elestirisi"],
-    "subject": { "site": "Weld-Blundell Prizması", "region": "Güney Mezopotamya", "modern_country": "Irak" },
-    "period": { "earliest": -1900, "latest": -1700, "era_label": "Eski Babil (nüshalar)", "precision": "approximate", "dating_method": ["paleography"] },
-    "languages": ["Sümerce"],
-    "disciplines": ["filoloji", "tarih"],
+    "topic": [
+      "sumer",
+      "kral-listesi",
+      "kaynak-elestirisi"
+    ],
+    "subject": {
+      "site": "Weld-Blundell Prizması",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak"
+    },
+    "period": {
+      "earliest": -1900,
+      "latest": -1700,
+      "era_label": "Eski Babil (nüshalar)",
+      "precision": "approximate",
+      "dating_method": [
+        "paleography"
+      ]
+    },
+    "languages": [
+      "Sümerce"
+    ],
+    "disciplines": [
+      "filoloji",
+      "tarih"
+    ],
+    "people": [
+      {
+        "name": "Jacobsen, Thorkild",
+        "role": "editor",
+        "year": 1939
+      }
+    ],
     "popular_claim": "Sümer Kral Listesi tufan öncesinde on binlerce yıl süren saltanatlar kaydeder.",
-    "divergence": "Liste eşzamanlı hanedanları ardışıkmış gibi sıralar ve tufan öncesi saltanatlara sembolik rakamlar verir. Takvim olarak kullanılamaz; türü yanlış anlaşılıyor.",
-    "divergence_type": ["kategori-hatasi", "ideolojik-secim"],
-    "evidence": [
-      "Metnin tezi açık: krallık tektir ve sırayla şehirden şehre geçer.",
-      "Bağımsız kaynaklardan eşzamanlı oldukları bilinen hanedanlar listede ardışık gösterilir.",
-      "Tufan öncesi saltanat süreleri on binlerce yıla ulaşır."
+    "divergence": "Liste eşzamanlı hanedanları ardışıkmış gibi sıralar ve tufan öncesi saltanatlara sembolik rakamlar verir. Takvim olarak kullanılamaz; türü yanlış anlaşılıyor. Belge bir kronoloji değil, BİR TEZ savunuyor: krallık tektir ve sırayla şehirden şehre geçer.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "ideolojik-secim"
     ],
     "sources": [
-      { "tier": "primary", "type": "manuscript", "title": "Weld-Blundell Prizması", "institution": "Ashmolean Museum, Oxford", "language": "sux" }
+      {
+        "id": "jacobsen-1939-sumerian-king-list",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Jacobsen, Thorkild"
+        ],
+        "year": 1939,
+        "title": "The Sumerian King List",
+        "publisher": "Oriental Institute, University of Chicago",
+        "language": "en",
+        "note": "Listenin editio princeps'i; hâlâ standart edisyon. Seri numarası (Assyriological Studies 11 olarak anılır) bu turda TEYİT EDİLMEDİ, bu yüzden yazılmadı."
+      },
+      {
+        "id": "weld-blundell-prizmasi-wb444",
+        "tier": "primary",
+        "type": "inscription",
+        "title": "Weld-Blundell Prizması (WB 444)",
+        "institution": "Ashmolean Museum, Oxford",
+        "language": "sux",
+        "note": "Kral Listesi'nin en tam nüshası: dört yüzlü, yaklaşık 20x9 cm, her yüzde iki sütun. Tufan öncesi hükümdarlarla başlar, İsin hanedanından Suen-magir ile biter. Yaklaşık 25 kadar başka nüsha/parça daha bilinir."
+      }
     ],
-    "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "evidence": [
+      {
+        "id": "tek-krallik-tezi",
+        "text": "Metnin tezi açık: krallık tektir ve sırayla şehirden şehre geçer.",
+        "citations": [
+          {
+            "source_ref": "weld-blundell-prizmasi-wb444",
+            "locator": "Metnin yapısı ve geçiş formülleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "eszamanli-hanedanlar-ardisik",
+        "text": "Bağımsız kaynaklardan eşzamanlı oldukları bilinen hanedanlar listede ardışık gösterilir.",
+        "citations": [
+          {
+            "source_ref": "jacobsen-1939-sumerian-king-list",
+            "locator": "Giriş çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tufan-oncesi-saltanatlar",
+        "text": "Tufan öncesi saltanat süreleri on binlerce yıla ulaşır.",
+        "citations": [
+          {
+            "source_ref": "weld-blundell-prizmasi-wb444",
+            "locator": "Tufan öncesi hükümdarlar bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "isin-hanedaninda-bitiyor",
+        "text": "Prizma tufan öncesi hükümdarlarla başlar ve İsin hanedanından Suen-magir ile biter - yani anlatı, yazıldığı dönemin hanedanına kadar getirilir.",
+        "citations": [
+          {
+            "source_ref": "weld-blundell-prizmasi-wb444",
+            "locator": "Metnin başı ve sonu",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "tamamen-tarihsel-degil-degil",
+        "text": "'Tarihsel değil' fazla keskin olabilir: liste geç dönem hanedanlar için bağımsız kaynaklarla örtüşen bilgi de taşır. Sorun türünün kronoloji sanılmasıdır, içinde hiç tarihsel bilgi olmaması değil.",
+        "citations": [
+          {
+            "source_ref": "jacobsen-1939-sumerian-king-list",
+            "locator": "Kaynak değeri tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yirmi-bes-nusha",
+        "text": "WB 444 en tam nüshadır ama tek nüsha değildir; yaklaşık 25 kadar başka nüsha ve parça bilinir ve aralarında farklar vardır.",
+        "citations": [
+          {
+            "source_ref": "weld-blundell-prizmasi-wb444",
+            "locator": "Nüsha durumu",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "1939-sonrasi-taranmadi",
+        "text": "Jacobsen'in edisyonu 1939 tarihlidir; sonraki seksen yılda yayımlanan nüshalar bu kayıtta taranmadı.",
+        "citations": [
+          {
+            "source_ref": "jacobsen-1939-sumerian-king-list",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Nüshalar arası farklar 'tek krallık' tezini ne kadar tutarlı taşıyor?",
+      "1939'dan sonraki yayınlar Jacobsen'in çözümlemesini değiştirdi mi?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "sumer"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu yerine Jacobsen 1939 ve WB 444 künyelendi. Boş counter_evidence dolduruldu; 'tarihsel değil' ifadesinin fazla keskin olabileceği eklendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "sumer-gilgamis-sumerce-tufan-yok",
     "claim": "Sümerce Gılgamış şiirlerinde tufan anlatısı yoktur; tufan destana Akadca gelenekten girer.",
     "status": "established",
     "confidence": "high",
-    "topic": ["sumer", "gilgamis", "tufan", "metin-elestirisi"],
-    "subject": { "region": "Güney Mezopotamya", "modern_country": "Irak" },
-    "period": { "earliest": -2100, "latest": -1200, "era_label": "Ur III / Eski Babil nüshalardan Standart Babil sürümüne", "precision": "range", "dating_method": ["paleography", "textual"] },
-    "languages": ["Sümerce", "Akadca"],
-    "disciplines": ["filoloji", "metin-elestirisi"],
+    "topic": [
+      "sumer",
+      "gilgamis",
+      "tufan",
+      "metin-elestirisi"
+    ],
+    "subject": {
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak"
+    },
+    "period": {
+      "earliest": -2100,
+      "latest": -1200,
+      "era_label": "Ur III / Eski Babil nüshalardan Standart Babil sürümüne",
+      "precision": "range",
+      "dating_method": [
+        "paleography",
+        "textual"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca"
+    ],
+    "disciplines": [
+      "filoloji",
+      "metin-elestirisi"
+    ],
+    "people": [
+      {
+        "name": "George, Andrew R.",
+        "role": "editor",
+        "affiliation": "SOAS, University of London",
+        "year": 2003
+      }
+    ],
     "popular_claim": "Gılgamış Destanı Sümer eseridir ve tufan anlatısını içerir.",
-    "divergence": "Sümerce gelenek beş ayrı, bağımsız ve kısa şiirden oluşur - bütünlüklü bir destan değil. Bilinen Gılgamış Destanı bir AKAD eseridir ve tufan bölümü Atrahasis geleneğinden gelir.",
-    "divergence_type": ["kategori-hatasi", "guncellenmemis"],
-    "evidence": [
-      "Sümerce şiirler ayrı ayrı korunmuştur: Gılgamış ve Huvava, Gılgamış ve Gök Boğası, Gılgamış'ın Ölümü ve diğerleri.",
-      "Standart Babil sürümü çok daha geç derlenmiş ve bütünlenmiştir.",
-      "Tufan bölümü Atrahasis anlatısıyla doğrudan ilişkilidir."
+    "divergence": "Sümerce gelenek beş ayrı, bağımsız ve kısa şiirden oluşur - bütünlüklü bir destan değil. Bilinen Gılgamış Destanı bir AKAD eseridir ve tufan bölümü Atrahasis geleneğinden gelir. 'Sümer destanı' ifadesi iki ayrı geleneği tek esere indirgiyor.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "guncellenmemis"
     ],
     "sources": [
-      { "tier": "peer-reviewed", "type": "edition", "authors": ["George, Andrew R."], "year": 2003, "title": "The Babylonian Gilgamesh Epic - eleştirel edisyon", "language": "en" }
+      {
+        "id": "george-2003-babylonian-gilgamesh",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "George, Andrew R."
+        ],
+        "year": 2003,
+        "title": "The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts",
+        "publisher": "Oxford University Press",
+        "isbn": "9780198149224",
+        "volume": "2 cilt",
+        "language": "en",
+        "note": "Bilinen bütün çivi yazılı kaynakları bir araya getiren eleştirel edisyon; xxxiv+977 sayfa ve 147 levha. Bu kayıtta EDİSYON OLARAK DEĞİL, ÇÖZÜMLEME OLARAK kullanılıyor: Sümerce şiirlerin ayrı ayrı korunduğu ve tufan bölümünün Akadca gelenekten geldiği George'un tespitidir, metnin kendisi değil. Tier ayrımı bu yüzden peer-reviewed."
+      }
     ],
-    "checked": "2026-09-06",
-    "used_in": ["sumer", "tufan-bilmecesi"]
+    "evidence": [
+      {
+        "id": "sumerce-siirler-ayri",
+        "text": "Sümerce şiirler ayrı ayrı korunmuştur: Gılgamış ve Huvava, Gılgamış ve Gök Boğası, Gılgamış'ın Ölümü ve diğerleri.",
+        "citations": [
+          {
+            "source_ref": "george-2003-babylonian-gilgamesh",
+            "locator": "Giriş: Sümerce şiirler bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "standart-babil-gec-derleme",
+        "text": "Standart Babil sürümü çok daha geç derlenmiş ve bütünlenmiştir.",
+        "citations": [
+          {
+            "source_ref": "george-2003-babylonian-gilgamesh",
+            "locator": "Giriş: metnin oluşum tarihi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tufan-atrahasis-baglantisi",
+        "text": "Tufan bölümü Atrahasis anlatısıyla doğrudan ilişkilidir.",
+        "citations": [
+          {
+            "source_ref": "george-2003-babylonian-gilgamesh",
+            "locator": "Tufan bölümü çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ziusudra-ayrimi",
+        "text": "'Sümerce gelenekte tufan yok' ifadesi ELİMİZDEKİ metinler için geçerlidir. Sümerce bir tufan anlatısı ayrıca vardır (Ziusudra); söylenen şey, GILGAMIŞ şiirlerinde bulunmadığıdır - bu iki cümle karıştırılmamalı.",
+        "citations": [
+          {
+            "source_ref": "george-2003-babylonian-gilgamesh",
+            "locator": "Gelenekler arası ilişki",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tam-metin-okunmadi-george",
+        "text": "Bu kaydın kaynağının tam metni okunmadı; George'un edisyonu iki cilt ve yaklaşık bin sayfadır, locator'lar bölüm düzeyindedir.",
+        "citations": [
+          {
+            "source_ref": "george-2003-babylonian-gilgamesh",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Sümerce Ziusudra anlatısı ile Akadca Atrahasis arasındaki aktarım nasıl işledi?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "sumer",
+      "tufan-bilmecesi"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "George künyesi yayıncı ve ISBN ile tamamlandı. Boş olan counter_evidence dolduruldu: Ziusudra ayrımı eklendi - kayıt 'Sümerce gelenekte tufan yok' gibi okunabiliyordu, oysa söylenen yalnızca Gılgamış şiirleri için geçerli."
+    }
   },
   {
     "id": "sumer-anunnaki-nibiru",
     "claim": "Anunnaki, Nibiru adlı bir gezegenden gelen dünya dışı bir ırktır.",
     "status": "refuted",
     "confidence": "high",
-    "topic": ["sumer", "sozde-arkeoloji", "curutme"],
-    "subject": { "region": "Mezopotamya", "modern_country": "Irak" },
-    "period": { "earliest": -2500, "latest": 1976, "era_label": "Metin geleneği ve modern iddia", "precision": "range", "dating_method": ["textual", "historical-record"] },
-    "languages": ["Sümerce", "Akadca"],
-    "disciplines": ["filoloji", "astronomi", "dilbilim"],
+    "topic": [
+      "sumer",
+      "sozde-arkeoloji",
+      "curutme"
+    ],
+    "subject": {
+      "region": "Mezopotamya",
+      "modern_country": "Irak"
+    },
+    "period": {
+      "earliest": -2500,
+      "latest": 1976,
+      "era_label": "Metin geleneği ve modern iddia",
+      "precision": "range",
+      "dating_method": [
+        "textual",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca"
+    ],
+    "disciplines": [
+      "filoloji",
+      "astronomi",
+      "dilbilim"
+    ],
     "popular_claim": "Sümer tabletleri Nibiru'dan gelen Anunnaki adlı uzaylı bir ırkı anlatır.",
     "divergence": "İddia 1976 tarihli popüler bir kitaptan gelir, çivi yazısından değil. Metinlerde bu okumayı destekleyen hiçbir şey yok ve Asirbilim alanı iddiayı bütünüyle reddeder.",
-    "divergence_type": ["medya-abartisi", "ideolojik-secim"],
+    "divergence_type": [
+      "medya-abartisi",
+      "ideolojik-secim"
+    ],
     "counter_evidence": [
       "Anunna(ki) 'An'ın soyu' demektir ve tanrılar topluluğunu, yani Sümer panteonunun genelini karşılar.",
       "Nibiru, Babil astronomi metinlerinde bir gök konumu / geçiş noktasıdır ve farklı metinlerde farklı gök cisimleriyle ilişkilendirilir.",
@@ -204,43 +1082,112 @@
       "İddia sahibinin çevirileri çivi yazılı metinlerle örtüşmüyor."
     ],
     "sources": [
-      { "tier": "unreliable", "type": "book", "authors": ["Sitchin, Zecharia"], "year": 1976, "title": "The 12th Planet", "language": "en", "note": "Kanıt olarak değil, iddianın kaynağı olarak kaydedildi." },
-      { "tier": "peer-reviewed", "type": "book", "title": "Akadca ve Sümerce sözlük külliyatı; Babil astronomi metinleri literatürü", "language": "en" }
+      {
+        "tier": "unreliable",
+        "type": "book",
+        "authors": [
+          "Sitchin, Zecharia"
+        ],
+        "year": 1976,
+        "title": "The 12th Planet",
+        "language": "en",
+        "note": "Kanıt olarak değil, iddianın kaynağı olarak kaydedildi."
+      },
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Akadca ve Sümerce sözlük külliyatı; Babil astronomi metinleri literatürü",
+        "language": "en"
+      }
     ],
     "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "used_in": [
+      "sumer"
+    ]
   },
   {
     "id": "sumer-birdenbire-ortaya-cikmadi",
     "claim": "Sümer uygarlığı öncesiz biçimde, birdenbire ortaya çıktı.",
     "status": "refuted",
     "confidence": "high",
-    "topic": ["sumer", "ubeyd", "curutme"],
-    "subject": { "region": "Güney Mezopotamya", "modern_country": "Irak" },
-    "period": { "earliest": -6500, "latest": -3100, "era_label": "Ubeyd - Uruk", "precision": "range", "dating_method": ["stratigraphy", "radiocarbon", "typology"] },
-    "disciplines": ["arkeoloji"],
+    "topic": [
+      "sumer",
+      "ubeyd",
+      "curutme"
+    ],
+    "subject": {
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak"
+    },
+    "period": {
+      "earliest": -6500,
+      "latest": -3100,
+      "era_label": "Ubeyd - Uruk",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "typology"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji"
+    ],
     "popular_claim": "Sümerler hiçbir öncülü olmadan, gelişmiş bir uygarlık olarak birdenbire belirdi.",
     "divergence": "Uruk döneminden önce bölgede Ubeyd dönemi yerleşimleri var ve arkeolojik olarak SÜREKLİLİK gösteriyorlar. Ani kopuş yok, kademeli ölçek artışı var.",
-    "divergence_type": ["medya-abartisi"],
+    "divergence_type": [
+      "medya-abartisi"
+    ],
     "counter_evidence": [
       "Aynı bölgelerde giderek büyüyen yerleşimler.",
       "Çömlekçilikte kesintisiz tipolojik gelişim.",
       "Tapınak yapılarında kademeli büyüme - küçük odadan anıtsal yapıya."
     ],
-    "sources": [{ "tier": "peer-reviewed", "type": "book", "title": "Ubeyd-Uruk geçişi ve güney Mezopotamya yerleşim arkeolojisi literatürü", "language": "en" }],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Ubeyd-Uruk geçişi ve güney Mezopotamya yerleşim arkeolojisi literatürü",
+        "language": "en"
+      }
+    ],
     "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "used_in": [
+      "sumer"
+    ]
   },
   {
     "id": "sumer-koken-sorunu",
     "claim": "Sümerlerin kökeni belirlenmiştir.",
     "status": "unknown",
     "confidence": "high",
-    "topic": ["sumer", "koken-sorunu", "dilbilim"],
-    "subject": { "region": "Güney Mezopotamya", "modern_country": "Irak" },
-    "period": { "earliest": -6500, "latest": -3000, "era_label": "Ubeyd - Erken Uruk", "precision": "range", "dating_method": ["stratigraphy", "typology"] },
-    "languages": ["Sümerce"],
-    "disciplines": ["dilbilim", "arkeoloji", "genetik"],
+    "topic": [
+      "sumer",
+      "koken-sorunu",
+      "dilbilim"
+    ],
+    "subject": {
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak"
+    },
+    "period": {
+      "earliest": -6500,
+      "latest": -3000,
+      "era_label": "Ubeyd - Erken Uruk",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "typology"
+      ]
+    },
+    "languages": [
+      "Sümerce"
+    ],
+    "disciplines": [
+      "dilbilim",
+      "arkeoloji",
+      "genetik"
+    ],
     "evidence": [
       "Arkeoloji Ubeyd'den Uruk'a yerel süreklilik gösteriyor - dışarıdan ani bir gelişe işaret yok.",
       "Sümerce bilinen hiçbir dille akraba değildir; bir dil izolatıdır."
@@ -249,60 +1196,250 @@
       "Dil izolatı olması, dilin bölgeye dışarıdan gelmiş olabileceği ihtimalini açık bırakıyor.",
       "Arkeolojik süreklilik ile dilbilimsel yalıtılmışlık tam olarak uzlaştırılamadı."
     ],
-    "sources": [{ "tier": "peer-reviewed", "type": "book", "title": "Sümer sorunu üzerine dilbilim ve arkeoloji literatürü", "language": "en" }],
-    "open_questions": ["Dil ve maddi kültür farklı yönlere işaret ederken köken nasıl belirlenir?"],
+    "sources": [
+      {
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Sümer sorunu üzerine dilbilim ve arkeoloji literatürü",
+        "language": "en"
+      }
+    ],
+    "open_questions": [
+      "Dil ve maddi kültür farklı yönlere işaret ederken köken nasıl belirlenir?"
+    ],
     "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "used_in": [
+      "sumer"
+    ]
   },
   {
+    "schema_version": 2,
     "id": "sumer-ur-hizmetliler-olum-bicimi",
     "claim": "Ur Kral Mezarlığı'ndaki hizmetliler gönüllü olarak zehir içip öldü.",
     "status": "refuted",
     "confidence": "medium",
-    "topic": ["sumer", "ur", "yorum-duzeltmesi"],
-    "subject": { "site": "Ur Kral Mezarlığı", "region": "Güney Mezopotamya", "modern_country": "Irak", "coordinates": { "lat": 30.9626, "lon": 46.1031 } },
-    "period": { "earliest": -2600, "latest": -2450, "era_label": "Erken Hanedanlar III", "precision": "range", "dating_method": ["stratigraphy", "radiocarbon"] },
-    "disciplines": ["arkeoloji", "antropoloji"],
-    "people": [{ "name": "Woolley, Leonard", "role": "excavator", "affiliation": "British Museum / Penn Museum", "year": 1922, "lifespan": "1880-1960" }],
+    "topic": [
+      "sumer",
+      "ur",
+      "yorum-duzeltmesi"
+    ],
+    "subject": {
+      "site": "Ur Kral Mezarlığı",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 30.9626,
+        "lon": 46.1031
+      }
+    },
+    "period": {
+      "earliest": -2600,
+      "latest": -2450,
+      "era_label": "Erken Hanedanlar III",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "antropoloji"
+    ],
+    "people": [
+      {
+        "name": "Woolley, Leonard",
+        "role": "excavator",
+        "affiliation": "British Museum / Penn Museum",
+        "year": 1922,
+        "lifespan": "1880-1960"
+      },
+      {
+        "name": "Baadsgaard, Aubrey",
+        "role": "critic",
+        "affiliation": "University of Pennsylvania",
+        "year": 2011
+      }
+    ],
     "popular_claim": "Maiyet efendisiyle birlikte gömülmek için gönüllü olarak zehir içti; ölüm sakin ve törenseldi.",
-    "divergence": "Woolley'in yorumu 1920'lerin imkânlarıyla makuldü - iskeletleri açmadan içeriden görüntüleme yoktu. Tomografi taramaları ölüm anına yakın künt travma kırıkları gösterdi; hizmetliler büyük olasılıkla öldürüldü.",
-    "divergence_type": ["guncellenmemis"],
-    "evidence": ["Ana mezarların yanında çok sayıda hizmetli gömüsü bulundu."],
-    "counter_evidence": [
-      "Tomografi taramaları perimortem künt travma kırıkları gösterdi.",
-      "Bulgu YALNIZCA İKİ kafatasından geliyor; bütün mezarlığa genelleme yapılamaz."
+    "divergence": "Woolley'in yorumu 1920'lerin imkânlarıyla makuldü - iskeletleri açmadan içeriden görüntüleme yoktu. Tomografi taramaları ölüm anına yakın künt travma kırıkları gösterdi; hizmetliler büyük olasılıkla öldürüldü. Çalışma ayrıca cesetlerin ısıtılıp cıvayla muhafaza edildiğini, giydirilip sıralar hâlinde yatırıldığını öne sürüyor - yani sahnedeki düzen ölüm anının sakinliğinden değil, SONRADAN YAPILAN DÜZENLEMEDEN geliyor.",
+    "divergence_type": [
+      "guncellenmemis"
     ],
     "sources": [
-      { "tier": "primary", "type": "report", "authors": ["Woolley, Leonard"], "title": "Ur Kral Mezarlığı kazı raporları", "language": "en" },
-      { "tier": "peer-reviewed", "type": "article", "title": "Ur kafataslarında tomografi çalışması", "institution": "Penn Museum", "language": "en" }
+      {
+        "id": "woolley-1934-ur-kral-mezarligi",
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Woolley, Leonard"
+        ],
+        "year": 1934,
+        "title": "Ur Excavations II: The Royal Cemetery",
+        "publisher": "British Museum - University Museum, Philadelphia",
+        "language": "en",
+        "note": "Kazı raporu. Hizmetli gömülerinin sayısı ve düzeni buradan bilinir; ölüm biçimi yorumu ise 1920'lerin imkânlarına dayanır - iskeletleri açmadan içeriden görüntüleme yoktu."
+      },
+      {
+        "id": "baadsgaard-2011-ur-insan-kurbani",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Baadsgaard, Aubrey",
+          "Monge, Janet",
+          "Cox, Samantha",
+          "Zettler, Richard L."
+        ],
+        "year": 2011,
+        "title": "Human sacrifice and intentional corpse preservation in the Royal Cemetery of Ur",
+        "container": "Antiquity",
+        "volume": "85(327)",
+        "pages": "27-42",
+        "doi": "10.1017/S0003598X00067417",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "Ur Kral Mezarlığı'ndan İKİ kafatasının tomografi incelemesi. Kurbanların keskin bir aletle indirildiğini, sonra ısıtılıp cıvayla muhafaza edildiğini, giydirilip sıralar hâlinde yatırıldığını öne sürer - yani 'zehir içip sakin biçimde öldüler' varsayımını sarsar. DOI adresi canlı kontrol edildi."
+      }
     ],
-    "open_questions": ["Daha çok iskelet taranırsa sonuç genellenebilir mi?"],
-    "checked": "2026-09-06",
-    "volatile": true,
-    "used_in": ["sumer"]
+    "evidence": [
+      {
+        "id": "coklu-hizmetli-gomusu",
+        "text": "Ana mezarların yanında çok sayıda hizmetli gömüsü bulundu.",
+        "citations": [
+          {
+            "source_ref": "woolley-1934-ur-kral-mezarligi",
+            "locator": "Kral Mezarlığı gömü planları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yorumun-kaynagi-woolley",
+        "text": "Popüler anlatının kaynağı kazı raporunun kendisidir: sahnenin sakinliği, gönüllü ve zehirle ölüm yorumunu doğurdu.",
+        "citations": [
+          {
+            "source_ref": "woolley-1934-ur-kral-mezarligi",
+            "locator": "Yorum bölümü",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "perimortem-kunt-travma",
+        "text": "Tomografi taramaları ölüm anına yakın (perimortem) künt travma kırıkları gösterdi; kurbanların keskin bir aletle indirildiği öne sürülüyor.",
+        "citations": [
+          {
+            "source_ref": "baadsgaard-2011-ur-insan-kurbani",
+            "locator": "Tomografi bulguları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "civayla-muhafaza",
+        "text": "Cesetlerin ısıtılıp cıvayla muhafaza edildiği, giydirilip sıralar hâlinde yatırıldığı öne sürülüyor - sahnedeki düzen sonradan yapılmış olabilir.",
+        "citations": [
+          {
+            "source_ref": "baadsgaard-2011-ur-insan-kurbani",
+            "locator": "Ceset işleme çözümlemesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yalnizca-iki-kafatasi",
+        "text": "Bulgu YALNIZCA İKİ kafatasından geliyor; bütün mezarlığa genelleme yapılamaz. Bu kaydın 'refuted' durumu da bu iki kafataslık tabana dayanıyor - yani çürütmenin kendisi de dar.",
+        "citations": [
+          {
+            "source_ref": "baadsgaard-2011-ur-insan-kurbani",
+            "locator": "Örneklem büyüklüğü",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Daha çok iskelet taranırsa sonuç genellenebilir mi?",
+      "İki kafataslık örneklem 'refuted' demek için yeterli mi, yoksa 'contested' mi daha doğru?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "sumer"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Ur kafataslarında tomografi çalışması') gerçek künyeyle değiştirildi: Baadsgaard vd. 2011, Antiquity, DOI canlı kontrol edildi. Örneklem darlığının çürütmenin KENDİSİNİ de sınırladığı açıkça yazıldı ve açık soruya taşındı."
+    }
   },
   {
     "id": "sumer-ur-sancagi-islevi",
     "claim": "Ur Sancağı'nın işlevi belirlenmiştir.",
     "status": "unknown",
     "confidence": "high",
-    "topic": ["sumer", "ur", "adlandirma"],
-    "subject": { "site": "Ur Sancağı", "region": "Güney Mezopotamya", "modern_country": "Irak", "coordinates": { "lat": 30.9626, "lon": 46.1031 } },
-    "period": { "earliest": -2600, "latest": -2500, "era_label": "Erken Hanedanlar III", "precision": "approximate", "dating_method": ["stratigraphy", "typology"] },
-    "disciplines": ["arkeoloji", "sanat-tarihi"],
+    "topic": [
+      "sumer",
+      "ur",
+      "adlandirma"
+    ],
+    "subject": {
+      "site": "Ur Sancağı",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 30.9626,
+        "lon": 46.1031
+      }
+    },
+    "period": {
+      "earliest": -2600,
+      "latest": -2500,
+      "era_label": "Erken Hanedanlar III",
+      "precision": "approximate",
+      "dating_method": [
+        "stratigraphy",
+        "typology"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "sanat-tarihi"
+    ],
     "popular_claim": "Ur Sancağı bir savaş sancağıdır.",
     "divergence": "'Sancak' adı kazıcının tahminidir; nesnenin işlevi bilinmiyor. Ad, tahminin zamanla gerçeğe dönüşmesinin tipik örneği.",
-    "divergence_type": ["turizm-kopyalamasi", "guncellenmemis"],
+    "divergence_type": [
+      "turizm-kopyalamasi",
+      "guncellenmemis"
+    ],
     "evidence": [
       "İki panelde savaş ve barış sahneleri var: arabalar, esirler, ziyafet, mal getiren insanlar.",
       "Lapis lazuli, kırmızı kireçtaşı ve deniz kabuğuyla kakma; lapis Afganistan'dan geliyor - uzun mesafeli ticaretin kanıtı."
     ],
-    "counter_evidence": ["Kutu, çalgı gövdesi ve mobilya parçası dahil rakip yorumlar var; hiçbiri kanıtlanmadı."],
+    "counter_evidence": [
+      "Kutu, çalgı gövdesi ve mobilya parçası dahil rakip yorumlar var; hiçbiri kanıtlanmadı."
+    ],
     "sources": [
-      { "tier": "primary", "type": "report", "authors": ["Woolley, Leonard"], "title": "Ur Kral Mezarlığı kazı raporları", "language": "en" },
-      { "tier": "institutional", "type": "webpage", "title": "Ur Sancağı kayıt bilgisi", "institution": "British Museum", "language": "en" }
+      {
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Woolley, Leonard"
+        ],
+        "title": "Ur Kral Mezarlığı kazı raporları",
+        "language": "en"
+      },
+      {
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Ur Sancağı kayıt bilgisi",
+        "institution": "British Museum",
+        "language": "en"
+      }
     ],
     "checked": "2026-09-06",
-    "used_in": ["sumer"]
+    "used_in": [
+      "sumer"
+    ]
   }
 ]
