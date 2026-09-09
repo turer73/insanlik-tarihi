@@ -214,5 +214,13 @@
     "bytes": 92238,
     "width": 1200,
     "height": 675
+  },
+  "piramit-santrali": {
+    "file": "assets/editorial-covers/piramit-santrali.webp",
+    "alt": "Gece gökyüzünde üç piramit, Sfenks silueti ve yıldırım; ampul, pil ve Sfenks efsaneleri",
+    "source": "Geometrik editoryal kompozisyon",
+    "bytes": 28014,
+    "width": 1200,
+    "height": 675
   }
 }

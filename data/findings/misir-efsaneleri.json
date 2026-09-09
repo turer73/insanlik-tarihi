@@ -1,0 +1,1502 @@
+[
+  {
+    "schema_version": 2,
+    "id": "dendera-isigi",
+    "claim": "Hathor Tapınağı'ndaki kabartmalar elektrik ampulü, kablo ve izolatör tasviridir.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "dendera",
+      "elektrik",
+      "ikonografi"
+    ],
+    "subject": {
+      "site": "Dendera Hathor Tapınağı, güney mahzen kabartmaları",
+      "region": "Yukarı Mısır",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 26.1419,
+        "lon": 32.6703
+      }
+    },
+    "period": {
+      "earliest": -54,
+      "latest": 20,
+      "era_label": "Ptolemaios-Roma dönemi tapınağı",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "Mısırca"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "epigrafi"
+    ],
+    "popular_claim": "Mısırlılar elektrik ampulünü icat etmişti; Dendera kabartmaları bunun kanıtı.",
+    "divergence": "Kabartmadaki öğelerin modern teknoloji diliyle yeniden adlandırılması: yılan 'filaman', lotus 'ampul', çevre çizgileri 'kablo' olur. Mısır ikonografisinin kendi sözlüğü bu okumayı gerektirmez.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "medya-abartisi"
+    ],
+    "sources": [
+      {
+        "id": "dunn1998",
+        "tier": "popular",
+        "type": "book",
+        "title": "The Giza Power Plant: Technologies of Ancient Egypt",
+        "authors": [
+          "Dunn, Christopher"
+        ],
+        "year": 1998,
+        "publisher": "Bear & Company",
+        "isbn": "9781879181502",
+        "language": "en",
+        "note": "İddia kökeni. Mühendislik temelli popüler kitap; hakemli değil."
+      },
+      {
+        "id": "cauville2020",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Dendara. Hymnes à Hathor et à Isis",
+        "authors": [
+          "Cauville, Sylvie"
+        ],
+        "year": 2020,
+        "publisher": "Peeters (IFAO külliyatı)",
+        "isbn": "9789042942851",
+        "language": "fr",
+        "note": "Dendera kabartma külliyatının standart edisyonu; 'ampul' sahnesinin okuması bu külliyatın ikonografik çerçevesi içinde yapılır."
+      },
+      {
+        "id": "arkeofili-dendera",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Dendera Hathor Tapınağı'nı Tanıyalım",
+        "authors": [
+          "Bozoğlu, Begüm"
+        ],
+        "year": 2023,
+        "institution": "Arkeofili",
+        "url": "https://arkeofili.com/dendera-hathor-tapinagini-taniyalim/",
+        "language": "tr",
+        "accessed": "2026-09-09"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "kabartma-hathor-tapinaginin-mahzenlerinde-yer-alir-tapinak-m",
+        "text": "Kabartma, Hathor tapınağının mahzenlerinde yer alır; tapınak MÖ 54'te başlayan inşaatıyla Ptolemaios dönemine aittir.",
+        "citations": [
+          {
+            "source_ref": "arkeofili-dendera",
+            "locator": "Tapınak tarihi bölümü",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "sahnenin-standart-misirolojik-okumasi-lotus-ciceginden-cikan",
+        "text": "Sahnenin standart Mısırolojik okuması lotus çiçeğinden çıkan yılandır (Harsomtus motifi); sahne dini metin bağlamında durur.",
+        "citations": [
+          {
+            "source_ref": "cauville2020",
+            "locator": "Dendera ilahileri, mahzen sahne okumaları",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "misir-metin-kulliyatinda-elektrik-ampul-aydinlatma-cihazi-ve",
+        "text": "Mısır metin külliyatında elektrik, ampul, aydınlatma cihazı veya kabloya karşılık gelen bir sözcük kayıtlı değildir.",
+        "citations": [
+          {
+            "source_ref": "cauville2020",
+            "locator": "Külliyatın söz varlığı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ampul-okumasi-ikonografi-sozlugunu-modern-teknolojiye-gore-k",
+        "text": "'Ampul' okuması ikonografi sözlüğünü modern teknolojiye göre kurar; tapınak metinleri sahneyi yaratılış anlatısı içinde verir.",
+        "citations": [
+          {
+            "source_ref": "cauville2020",
+            "locator": "Mahzen sahne açıklamaları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "iddia-akademik-misirolojiden-degil-populer-kitap-anlatisinda",
+        "text": "İddia, akademik Mısırolojiden değil popüler kitap anlatısından gelir.",
+        "citations": [
+          {
+            "source_ref": "dunn1998",
+            "locator": "Dendera bölümü",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Kabartmanın aydınlatma tarihine dair popüler okuması hangi yayınla yaygınlaştı; izi sistematik taranmadı."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Türkçe kaynak Arkeofili; akademik Türkçe Mısıroloji literatürü taranmadı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "bagdat-pili",
+    "claim": "Khujut Rabu buluntusu bir elektrik pilidir ve antik dünyada elektrokaplamada kullanılıyordu.",
+    "status": "refuted",
+    "confidence": "medium",
+    "topic": [
+      "bagdat-pili",
+      "elektrik",
+      "irak"
+    ],
+    "subject": {
+      "site": "Khujut Rabu (Bağdat yakını)",
+      "region": "Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 33.3152,
+        "lon": 44.3661
+      }
+    },
+    "period": {
+      "earliest": -250,
+      "latest": 650,
+      "era_label": "Part-Sasani aralığı",
+      "precision": "disputed",
+      "dating_method": [
+        "typology"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "Almanca"
+    ],
+    "disciplines": [
+      "arkeoloji"
+    ],
+    "popular_claim": "Bağdat pili, antik çağda elektrik üretildiğini kanıtlar.",
+    "divergence": "Gerçek buluntu ile yüklenen yorum arasındaki fark: kap, bakır silindir, demir çubuk ve asfalt tıpadan oluşur; 'pil' okuması bu parçaların işlevine tek bir açıklama dayatır.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "konig1938",
+        "tier": "institutional",
+        "type": "article",
+        "title": "Ein galvanisches Element aus der Partherzeit?",
+        "authors": [
+          "König, Wilhelm"
+        ],
+        "year": 1938,
+        "container": "Forschungen und Fortschritte",
+        "volume": "14",
+        "pages": "8-9",
+        "publisher": "Forschungen und Fortschritte",
+        "institution": "Forschungen und Fortschritte",
+        "language": "de",
+        "note": "İddia kökeni: buluntuyu 'pil' olarak yorumlayan ilk yayın."
+      },
+      {
+        "id": "paszthory1989",
+        "tier": "institutional",
+        "type": "article",
+        "title": "Electricity generation or magic? The analysis of an unusual group of finds from Mesopotamia",
+        "authors": [
+          "Paszthory, Emmerich"
+        ],
+        "year": 1989,
+        "container": "MASCA Research Papers in Science and Archaeology",
+        "volume": "6",
+        "pages": "31-38",
+        "publisher": "University of Pennsylvania Museum",
+        "institution": "University of Pennsylvania Museum (MASCA)",
+        "language": "en"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "buluntu-1936-da-bulundu-bakir-silindir-demir-cubuk-asfalt-ti",
+        "text": "Buluntu 1936'da bulundu; bakır silindir + demir çubuk + asfalt tıpa düzeneği ilk kez König tarafından 'galvanik element' olarak yorumlandı.",
+        "citations": [
+          {
+            "source_ref": "konig1938",
+            "locator": "Makale bütünü",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "duzenek-laboratuvarda-elektrolitle-kucuk-bir-gerilim-uretir",
+        "text": "Düzenek laboratuvarda elektrolitle küçük bir gerilim üretir; bu gözlem 'pil' okumasının teknik çekirdeğidir.",
+        "citations": [
+          {
+            "source_ref": "konig1938",
+            "locator": "Deney bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "elektrik-uretimini-gerektiren-hicbir-alet-bulunmadi-tel-kabl",
+        "text": "Elektrik üretimini gerektiren hiçbir alet bulunmadı: tel, kablo, elektrot ve elektrokaplanmış tek bir eser yok.",
+        "citations": [
+          {
+            "source_ref": "paszthory1989",
+            "locator": "Buluntu grubu analizi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "benzer-kaplar-seleukia-da-papirus-rulolariyla-birlikte-bulun",
+        "text": "Benzer kaplar Seleukia'da papirüs rulolarıyla birlikte bulundu; parşömen saklama kabı açıklaması daha ekonomiktir.",
+        "citations": [
+          {
+            "source_ref": "paszthory1989",
+            "locator": "Alternatif açıklama bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tarihleme-belirsizdir-part-sasani-araligi-ve-buluntu-misir-p",
+        "text": "Tarihleme belirsizdir (Part-Sasani aralığı) ve buluntu Mısır piramitleriyle ne coğrafi ne zamansal bağ kurar; 'antik elektrik' anlatısı bu ilgisizliği örter.",
+        "citations": [
+          {
+            "source_ref": "paszthory1989",
+            "locator": "Bağlam değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Kabın asıl işlevi (ritüel rulo kabı dahil) için bağımsız kalıntı analizi yok."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "König ve Paszthory künyeleri standart; buluntunun güncel sergi durumu taranmadı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "piramit-enerji-santrali",
+    "claim": "Büyük Piramit elektrik üretmek üzere tasarlanmış bir enerji santralidir.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "buyuk-piramit",
+      "enerji",
+      "sozdebilim"
+    ],
+    "subject": {
+      "site": "Giza, Büyük Piramit (Keops)",
+      "region": "Giza platosu",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 29.9792,
+        "lon": 31.1342
+      }
+    },
+    "period": {
+      "earliest": -2589,
+      "latest": -2566,
+      "era_label": "IV. Hanedan, Keops dönemi",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "epigraphic",
+        "radiocarbon"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "İngilizce"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "muhendislik"
+    ],
+    "popular_claim": "Piramit bir mezar değil, elektrik santraliydi.",
+    "divergence": "Yapının parçalarına (granit odalar, kanallar, 'kuyu'lar) elektrik devresi dilinde işlev atfedilir; aynı parçalar inşaat ve ritüel kaydıyla açıklanmış durumdadır.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "medya-abartisi"
+    ],
+    "sources": [
+      {
+        "id": "dunn1998",
+        "tier": "popular",
+        "type": "book",
+        "title": "The Giza Power Plant: Technologies of Ancient Egypt",
+        "authors": [
+          "Dunn, Christopher"
+        ],
+        "year": 1998,
+        "publisher": "Bear & Company",
+        "isbn": "9781879181502",
+        "language": "en",
+        "note": "İddia kökeni. Mühendislik temelli popüler kitap; hakemli değil."
+      },
+      {
+        "id": "lehner1997",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "The Complete Pyramids: Solving the Ancient Mysteries",
+        "authors": [
+          "Lehner, Mark"
+        ],
+        "year": 1997,
+        "publisher": "Thames & Hudson",
+        "isbn": "9780500050842",
+        "language": "en",
+        "note": "Standart Mısırolojik başvuru eseri."
+      },
+      {
+        "id": "harrell1993",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "The Great Pyramid Debate — Evidence from the Lauer Sample",
+        "authors": [
+          "Harrell, James A.",
+          "Penrod, Brooks"
+        ],
+        "year": 1993,
+        "container": "Journal of Geological Education",
+        "volume": "41",
+        "pages": "358-363",
+        "doi": "10.5408/0022-1368-41.4.358",
+        "language": "en"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "tez-kral-odasi-granitlerinin-piezoelektrik-uretebilecegi-ve",
+        "text": "Tez, Kral Odası granitlerinin piezoelektrik üretebileceği ve kanalların elektrik iletimi için açıldığı savını kurar.",
+        "citations": [
+          {
+            "source_ref": "dunn1998",
+            "locator": "Power plant modeli bölümleri",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "granit-icerdigi-kuvars-nedeniyle-basinc-altinda-cok-kucuk-el",
+        "text": "Granit, içerdiği kuvars nedeniyle basınç altında çok küçük elektrik yükü üretebilir; tezin teknik dayanağı bu maddi olgudur.",
+        "citations": [
+          {
+            "source_ref": "dunn1998",
+            "locator": "Piezoelektrik bölümü",
+            "support_type": "inference"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "piramit-gemi-cukurlari-vadideki-ve-morg-tapinaklari-kult-kay",
+        "text": "Piramit, gemi çukurları, vadideki ve morg tapınakları, kült kayıtlarıyla birlikte ölüm sonrası kompleksinin parçasıdır; 'mezar' okuması bağımsız ve bol kayıtlıdır.",
+        "citations": [
+          {
+            "source_ref": "lehner1997",
+            "locator": "Giza kompleksi bölümleri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "misir-da-elektrik-uretimi-iletimi-veya-kullanimina-dair-tek",
+        "text": "Mısır'da elektrik üretimi, iletimi veya kullanımına dair tek bir cihaz, kablo veya yazılı kayıt bulunmamıştır.",
+        "citations": [
+          {
+            "source_ref": "lehner1997",
+            "locator": "Arkeolojik kayıt çerçevesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kirectasi-yalitkandir-iletim-hatti-okumasi-yapi-malzemesinin",
+        "text": "Kireçtaşı yalıtkandır; 'iletim hattı' okuması yapı malzemesinin elektriksel davranışıyla bağdaşmaz.",
+        "citations": [
+          {
+            "source_ref": "dunn1998",
+            "locator": "Kanallar bölümüne karşı okuma",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ana-akim-jeolojik-ve-tarihsel-kayit-yapiyi-iv-hanedan-insaat",
+        "text": "Ana akım jeolojik ve tarihsel kayıt, yapıyı IV. Hanedan inşaat programı içinde tarihler; 'daha eski teknoloji' okuması gerekmez.",
+        "citations": [
+          {
+            "source_ref": "harrell1993",
+            "locator": "Lauer örneği tartışması",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "'Kuyu' denilen kanalların inşaat işlevi tam olarak çözülmüş değil; bu belirsizlik santral tezinin beslendiği boşluklardan biri."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Dunn künyesi ISBN ile doğrulandı. Karşı kayıt Lehner standart eserine bağlı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "piramit-elektrikli-alet",
+    "claim": "Piramit bloklarının hassas işlenmesi elektrikli aletler gerektirir; bakır aletlerle açıklanamaz.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "tas-isciligi",
+      "elektrik",
+      "giza"
+    ],
+    "subject": {
+      "site": "Giza taş ocakları ve blok yüzeyleri",
+      "region": "Giza",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 29.9792,
+        "lon": 31.1342
+      }
+    },
+    "period": {
+      "earliest": -2589,
+      "latest": -2566,
+      "era_label": "IV. Hanedan",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "İngilizce"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "muhendislik"
+    ],
+    "popular_claim": "Taşlar o kadar pürüzsüz ki ancak elektrikli aletle işlenmiş olabilir.",
+    "divergence": "'Hassasiyet = modern alet' denklemi: ölçülen pürüzsüzlük, binlerce işçi-saatlik zımpara ve aşındırıcı çalışmasının ulaşabileceği düzeyin kanıtlanmış üstünde değil.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "dunn1998",
+        "tier": "popular",
+        "type": "book",
+        "title": "The Giza Power Plant: Technologies of Ancient Egypt",
+        "authors": [
+          "Dunn, Christopher"
+        ],
+        "year": 1998,
+        "publisher": "Bear & Company",
+        "isbn": "9781879181502",
+        "language": "en",
+        "note": "İddia kökeni. Mühendislik temelli popüler kitap; hakemli değil."
+      },
+      {
+        "id": "stocks2003",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Experiments in Egyptian Archaeology: Stoneworking Technology in Ancient Egypt",
+        "authors": [
+          "Stocks, Denys A."
+        ],
+        "year": 2003,
+        "publisher": "Routledge",
+        "doi": "10.4324/9780203430231",
+        "language": "en",
+        "note": "Deneysel arkeoloji: bakır alet + aşındırıcı kum ile granit işleme ölçümleri."
+      },
+      {
+        "id": "petrie1883",
+        "tier": "primary",
+        "type": "book",
+        "title": "The Pyramids and Temples of Gizeh",
+        "authors": [
+          "Petrie, W. M. Flinders"
+        ],
+        "year": 1883,
+        "publisher": "Field & Tuer, Londra",
+        "language": "en",
+        "note": "Birincil ölçüm kaydı: matkap çekirdeği izleri dahil alet izlerinin ilk sistemli kaydı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "iddia-blok-yuzeylerindeki-duzluk-ve-matkap-deligi-izlerinin",
+        "text": "İddia, blok yüzeylerindeki düzlük ve matkap deliği izlerinin el aletleriyle üretilemeyeceği savına dayanır.",
+        "citations": [
+          {
+            "source_ref": "dunn1998",
+            "locator": "İşçilik bölümleri",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "deneysel-arkeoloji-bakir-testere-asindirici-kumun-granit-ve",
+        "text": "Deneysel arkeoloji, bakır testere + aşındırıcı kumun granit ve kireçtaşını ölçülebilir hızda ve düz yüzeylerle kestiğini göstermiştir.",
+        "citations": [
+          {
+            "source_ref": "stocks2003",
+            "locator": "Deney serileri ve ölçümler",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "petrie-nin-kaydettigi-matkap-cekirdegi-izleri-boru-matkap-as",
+        "text": "Petrie'nin kaydettiği matkap çekirdeği izleri, boru matkap + aşındırıcı yönteminin iz deseniyle uyumludur.",
+        "citations": [
+          {
+            "source_ref": "petrie1883",
+            "locator": "Matkap izleri bölümü",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "tas-ocaklarinda-yarida-kalmis-kesimler-ve-alet-izleri-elektr",
+        "text": "Taş ocaklarında yarıda kalmış kesimler ve alet izleri, elektrikli alet gerektirmeyen yöntemleri belgeler.",
+        "citations": [
+          {
+            "source_ref": "stocks2003",
+            "locator": "Ocak kayıtları bölümü",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Büyük blokların şantiye içi taşınma düzeni hâlâ tartışmalıdır; bu açık soru 'kayıp teknoloji' anlatılarının yemidir."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Stocks DOI doğrulandı (Routledge)."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "sfenks-su-erozyonu",
+    "claim": "Sfenks muhafazasındaki aşınmalar yağmur suyu erozyonudur ve yapı en az ~MÖ 5000-7000'e tarihlenmelidir.",
+    "status": "minority",
+    "confidence": "medium",
+    "topic": [
+      "sfenks",
+      "erozyon",
+      "tarihleme"
+    ],
+    "subject": {
+      "site": "Büyük Sfenks",
+      "region": "Giza",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 29.9753,
+        "lon": 31.1376
+      }
+    },
+    "period": {
+      "earliest": -7000,
+      "latest": -2500,
+      "era_label": "Ana akım MÖ ~2500 (Kefren); tez MÖ 7000 öncesi",
+      "precision": "disputed",
+      "dating_method": [
+        "none",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "İngilizce"
+    ],
+    "disciplines": [
+      "jeoloji",
+      "arkeoloji"
+    ],
+    "popular_claim": "Sfenks, Mısır uygarlığından binlerce yıl önce, yağmurlu iklimde yapıldı.",
+    "divergence": "Aşınma deseninin tek nedeni olarak yağmur suyu seçilir; aynı kireçtaşında tuz ayrışması ve ıslak kumun ürettiği desenler hesaba katılmaz.",
+    "divergence_type": [
+      "ideolojik-secim"
+    ],
+    "sources": [
+      {
+        "id": "west1979",
+        "tier": "popular",
+        "type": "book",
+        "title": "Serpent in the Sky: The High Wisdom of Ancient Egypt",
+        "authors": [
+          "West, John Anthony"
+        ],
+        "year": 1979,
+        "publisher": "Quest Books (2012 baskısı)",
+        "isbn": "9780835630146",
+        "language": "en",
+        "note": "İddia kökeni. Su erozyonu tezinin popülerleştiricisi; Cayce'nin Kayıt Salonu kehanetini de benimser."
+      },
+      {
+        "id": "schoch1992",
+        "tier": "institutional",
+        "type": "article",
+        "title": "Redating the Great Sphinx of Giza",
+        "authors": [
+          "Schoch, Robert M."
+        ],
+        "year": 1992,
+        "container": "KMT: A Modern Journal of Ancient Egypt",
+        "volume": "3",
+        "pages": "52-70",
+        "publisher": "KMT Communications",
+        "institution": "KMT Communications",
+        "language": "en",
+        "note": "Su erozyonu tezinin jeolojik sunumu. Hakemli dergi değil, alan dergisi."
+      },
+      {
+        "id": "gauri1990",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Weathering of limestone beds at the great sphinx",
+        "authors": [
+          "Chowdhury, A.",
+          "Punuru, A.",
+          "Gauri, K. Lal"
+        ],
+        "year": 1990,
+        "container": "Environmental Geology and Water Sciences",
+        "volume": "15",
+        "doi": "10.1007/bf01706413",
+        "language": "en",
+        "note": "Tuz ayrışması (haloklasti) mekanizmasının ölçümü."
+      },
+      {
+        "id": "lehner1997",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "The Complete Pyramids: Solving the Ancient Mysteries",
+        "authors": [
+          "Lehner, Mark"
+        ],
+        "year": 1997,
+        "publisher": "Thames & Hudson",
+        "isbn": "9780500050842",
+        "language": "en",
+        "note": "Standart Mısırolojik başvuru eseri."
+      },
+      {
+        "id": "arkeofili-sfenks",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Büyük Sfenks'in Oluşumunda Doğanın Bir Rolü Var mıydı?",
+        "authors": [
+          "Ertuğrul, Erman"
+        ],
+        "year": 2023,
+        "institution": "Arkeofili",
+        "url": "https://arkeofili.com/buyuk-sfenksin-olusumunda-doganin-bir-rolu-var-miydi/",
+        "language": "tr",
+        "accessed": "2026-09-09"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "muhafaza-duvarindaki-derin-dikey-asinmalarin-yagmur-suyuyla",
+        "text": "Muhafaza duvarındaki derin dikey aşınmaların yağmur suyuyla açıklanması gerektiği ve bölge ikliminin son kez bu ölçekte yağmuru çok daha erken dönemde aldığı savunulur.",
+        "citations": [
+          {
+            "source_ref": "schoch1992",
+            "locator": "Aşınma profilleri bölümü",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "tezin-populer-tasiyicisi-sfenks-i-kayip-uygarlik-anlatisina",
+        "text": "Tezin popüler taşıyıcısı, Sfenks'i 'kayıp uygarlık' anlatısına bağlar.",
+        "citations": [
+          {
+            "source_ref": "west1979",
+            "locator": "Sfenks bölümleri",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "kirectasindaki-tuz-ayrismasi-haloklasti-olcumleri-yagmur-suy",
+        "text": "Kireçtaşındaki tuz ayrışması (haloklasti) ölçümleri, yağmur suyu olmadan da benzer aşınma desenleri üretir.",
+        "citations": [
+          {
+            "source_ref": "gauri1990",
+            "locator": "Tuz ayrışması ölçümleri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "islak-kum-ve-yeralti-suyu-etkileri-de-ayni-duvarlarda-olculm",
+        "text": "Islak kum ve yeraltı suyu etkileri de aynı duvarlarda ölçülmüştür; tek mekanizma okuması desteklenmez.",
+        "citations": [
+          {
+            "source_ref": "gauri1990",
+            "locator": "Mekanizma karşılaştırması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ana-akim-tarihleme-sfenks-i-kefren-kompleksinin-parcasi-olar",
+        "text": "Ana akım tarihleme, Sfenks'i Kefren kompleksinin parçası olarak MÖ ~2500'e koyar; bu okuma yapı programı ve çevre kayıtlarıyla tutarlıdır.",
+        "citations": [
+          {
+            "source_ref": "lehner1997",
+            "locator": "Sfenks bölümü",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "2023-te-yayimlanan-akiskan-deneyleri-dogal-sureclerin-sfenks",
+        "text": "2023'te yayımlanan akışkan deneyleri, doğal süreçlerin Sfenks benzeri biçimler üretebildiğini gösterdi; tartışma canlı ama ana akım tezi benimsemiyor.",
+        "citations": [
+          {
+            "source_ref": "arkeofili-sfenks",
+            "locator": "Deney haberi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Sfenks gövdesinin çekirdek örneklemesi ile doğrudan tarihlemesi yapılmamıştır; yaş tartışması bu yüzden dolaylı kalır."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Schoch ve karşı kayıtlar standart; tez azınlık görüşü olarak tutuldu - çürütülmüş değil, ana akım tarafından benimsenmemiş."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "sfenks-kayit-salonu",
+    "claim": "Sfenks'in altında Atlantis uygarlığının arşivi olan 'Kayıt Salonu' bulunur.",
+    "status": "refuted",
+    "confidence": "medium",
+    "topic": [
+      "sfenks",
+      "kayit-salonu",
+      "sozdebilim"
+    ],
+    "subject": {
+      "site": "Büyük Sfenks çevresi",
+      "region": "Giza",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 29.9753,
+        "lon": 31.1376
+      }
+    },
+    "period": {
+      "earliest": -10000,
+      "latest": 2026,
+      "era_label": "Kehanet çerçevesi",
+      "precision": "disputed",
+      "dating_method": [
+        "none"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "İngilizce"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "jeoarkeoloji"
+    ],
+    "popular_claim": "Sfenks'in pençeleri altında gizli bir arşiv salonu var; radar buldu.",
+    "divergence": "Kehanet (Cayce, 1930'lar) bir arkeolojik beklentiye dönüştürülür; sismik ve radar anomalileri 'salon' kanıtı sayılır, doğal boşluk/çatlak açıklaması dışlanır.",
+    "divergence_type": [
+      "provenans-yoklugu",
+      "ideolojik-secim"
+    ],
+    "sources": [
+      {
+        "id": "west1979",
+        "tier": "popular",
+        "type": "book",
+        "title": "Serpent in the Sky: The High Wisdom of Ancient Egypt",
+        "authors": [
+          "West, John Anthony"
+        ],
+        "year": 1979,
+        "publisher": "Quest Books (2012 baskısı)",
+        "isbn": "9780835630146",
+        "language": "en",
+        "note": "İddia kökeni. Su erozyonu tezinin popülerleştiricisi; Cayce'nin Kayıt Salonu kehanetini de benimser."
+      },
+      {
+        "id": "fagan2006",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Archaeological Fantasies: How Pseudoarchaeology Misrepresents the Past and Misleads the Public",
+        "authors": [
+          "Fagan, Garrett G."
+        ],
+        "year": 2006,
+        "publisher": "Routledge",
+        "isbn": "9780415305938",
+        "language": "en"
+      },
+      {
+        "id": "arkeofili-radar",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Mısır Piramitlerinin Altında Gerçekten Gizli Bir Şehir mi Var?",
+        "authors": [
+          "Ertuğrul, Erman"
+        ],
+        "year": 2025,
+        "institution": "Arkeofili",
+        "url": "https://arkeofili.com/misir-piramitlerinin-altinda-gercekten-gizli-bir-sehir-mi-var/",
+        "language": "tr",
+        "accessed": "2026-09-09",
+        "note": "2025 SAR/radar iddialarının kuşkucu değerlendirmesi; doğrulama standardını açıklar."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "iddianin-kaynagi-edgar-cayce-nin-1930-lardaki-kehanetleridir",
+        "text": "İddianın kaynağı Edgar Cayce'nin 1930'lardaki kehanetleridir; tez bu kehaneti jeolojik söylemle yeniden kurar.",
+        "citations": [
+          {
+            "source_ref": "west1979",
+            "locator": "Kayıt Salonu bölümü",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "1990-larda-sismik-olcumlerde-sfenks-cevresinde-anomaliler-bi",
+        "text": "1990'larda sismik ölçümlerde Sfenks çevresinde anomaliler bildirildiği savunulur.",
+        "citations": [
+          {
+            "source_ref": "west1979",
+            "locator": "Sismik bulgular bölümü",
+            "support_type": "inference"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "anomaliler-bagimsiz-bicimde-yapi-olarak-dogrulanmadi-kirecta",
+        "text": "Anomaliler bağımsız biçimde 'yapı' olarak doğrulanmadı; kireçtaşındaki doğal boşluk ve çatlaklar bu sinyalleri üretebilir.",
+        "citations": [
+          {
+            "source_ref": "arkeofili-radar",
+            "locator": "Radar iddialarının kuşkucu değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sozde-arkeoloji-literaturunde-kayip-salon-kalibi-tekrarli-bi",
+        "text": "Sözde-arkeoloji literatüründe 'kayıp salon' kalıbı tekrarlı bir yapıdır: kehanet kendi kendine kanıt sayılır.",
+        "citations": [
+          {
+            "source_ref": "fagan2006",
+            "locator": "Sözde-arkeoloji çerçeve bölümleri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "misir-eski-eserler-bakanligi-nin-aciklamalari-ve-sonraki-tar",
+        "text": "Mısır Eski Eserler Bakanlığı'nın açıklamaları ve sonraki taramalar oda bildirmemiştir.",
+        "citations": [
+          {
+            "source_ref": "arkeofili-radar",
+            "locator": "Resmî açıklama bölümü",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Sfenks çevresinin hangi yüzdesi sistematik jeofizik taramadan geçti? Kayıt yok - 'bilinmeyen boşluk' kavramının kendisi açık sorudur."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Fagan derlemesi çerçeve için; radar durumu Arkeofili 2025 ile."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "sfenks-napolyon-burnu",
+    "claim": "Sfenks'in burnunu Napoleon'un askerleri top atışıyla kırdı.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "sfenks",
+      "napolyon",
+      "efsane"
+    ],
+    "subject": {
+      "site": "Büyük Sfenks",
+      "region": "Giza",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 29.9753,
+        "lon": 31.1376
+      }
+    },
+    "period": {
+      "earliest": 1378,
+      "latest": 1798,
+      "era_label": "1378 olayı - 1798 Napoleon seferi",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "Arapça"
+    ],
+    "disciplines": [
+      "tarih"
+    ],
+    "popular_claim": "Napoleon'un topları Sfenks'in burnunu kırdı.",
+    "divergence": "Anlatı, iki ayrı tarihi (1378 olayı, 1798 seferi) tek sahnede birleştirir; burnun çok daha önce eksik olduğu çizim kaydıyla yanlışlanır.",
+    "divergence_type": [
+      "medya-abartisi"
+    ],
+    "sources": [
+      {
+        "id": "norden1757",
+        "tier": "primary",
+        "type": "book",
+        "title": "Travels in Egypt and Nubia",
+        "authors": [
+          "Norden, Frederik Ludvig"
+        ],
+        "year": 1757,
+        "publisher": "Londra (Fransızca özgünü 1755)",
+        "language": "en",
+        "note": "1737-38 tarihli çizimler; Sfenks burnusuz resmedilir. Napoleon seferi 1798'den önce."
+      },
+      {
+        "id": "makrizi",
+        "tier": "primary",
+        "type": "book",
+        "title": "el-Hıtat (Kitâbü'l-Mevâiz ve'l-İ'tibâr)",
+        "authors": [
+          "el-Makrîzî"
+        ],
+        "year": 1440,
+        "publisher": "15. yüzyıl vakayinamesi",
+        "language": "ar",
+        "note": "1378'de Sâimüddîn adlı kişinin Sfenks'in burnunu kırdığını kaydeden erken kayıt."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "erken-bir-kayit-1378-de-s-imudd-n-adli-kisinin-sfenks-in-bur",
+        "text": "Erken bir kayıt, 1378'de Sâimüddîn adlı kişinin Sfenks'in burnunu kırdığını aktarır.",
+        "citations": [
+          {
+            "source_ref": "makrizi",
+            "locator": "Hıtat, Mısır anıtları bölümü",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "norden-in-1737-38-cizimlerinde-burun-zaten-yoktur-napoleon-s",
+        "text": "Norden'in 1737-38 çizimlerinde burun zaten yoktur; Napoleon seferi 1798'dedir.",
+        "citations": [
+          {
+            "source_ref": "norden1757",
+            "locator": "Giza levhaları",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Burun hasarının kesin tarihi ve failleri için 1378 kaydı dışında bağımsız belge yok."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "İki birincil kaynak karşılaştırması; efsanenin popülerleşme izi taranmadı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "orion-hizalamasi",
+    "claim": "Üç piramit Orion kuşağını yansıtır ve Giza planı ~MÖ 10.500 gökyüzüne kilitlenmiştir.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "orion",
+      "hizalama",
+      "giza"
+    ],
+    "subject": {
+      "site": "Giza piramitleri",
+      "region": "Giza",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 29.9773,
+        "lon": 31.1325
+      }
+    },
+    "period": {
+      "earliest": -2589,
+      "latest": -2566,
+      "era_label": "IV. Hanedan",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "İngilizce"
+    ],
+    "disciplines": [
+      "astronomi",
+      "arkeoloji"
+    ],
+    "popular_claim": "Piramitlerin konumu, MÖ 10.500'deki Orion kuşağını kopyalar.",
+    "divergence": "Üç noktanın üç yıldıza benzerliği, seçici eşleştirme ve keyfi tarihlemeyle kozmik bir şablona dönüştürülür; ölçüldüğünde iddia edilen kesinlikte bir kilitlenme çıkmaz.",
+    "divergence_type": [
+      "ideolojik-secim"
+    ],
+    "sources": [
+      {
+        "id": "bauval1994",
+        "tier": "popular",
+        "type": "book",
+        "title": "The Orion Mystery: Unlocking the Secrets of the Pyramids",
+        "authors": [
+          "Bauval, Robert",
+          "Gilbert, Adrian"
+        ],
+        "year": 1994,
+        "publisher": "Heinemann",
+        "isbn": "9780434000746",
+        "language": "en",
+        "note": "İddia kökeni. Orion korelasyon tezi."
+      },
+      {
+        "id": "fairall1999",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Precession and the layout of the ancient Egyptian pyramids",
+        "authors": [
+          "Fairall, Anthony"
+        ],
+        "year": 1999,
+        "container": "Astronomy & Geophysics",
+        "volume": "40",
+        "pages": "3.4",
+        "doi": "10.1093/astrog/40.3.3.4",
+        "language": "en"
+      },
+      {
+        "id": "krupp1997",
+        "tier": "institutional",
+        "type": "article",
+        "title": "Pyramid Marketing Schemes",
+        "authors": [
+          "Krupp, E. C."
+        ],
+        "year": 1997,
+        "container": "Sky & Telescope",
+        "pages": "Şubat 1997 sayısı",
+        "publisher": "Sky Publishing",
+        "institution": "Sky & Telescope",
+        "language": "en"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "tez-uc-piramidin-dizilisinin-orion-kusagi-yildizlarini-andir",
+        "text": "Tez, üç piramidin dizilişinin Orion kuşağı yıldızlarını andırdığını ve Sfenks'in Aslan'a baktığını savunur.",
+        "citations": [
+          {
+            "source_ref": "bauval1994",
+            "locator": "Korelasyon bölümleri",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "presesyon-hesabiyla-yapilan-astronomik-denetim-mo-10-500-sab",
+        "text": "Presesyon hesabıyla yapılan astronomik denetim, ~MÖ 10.500 şablonunun gökyüzüne oturmadığını gösterir.",
+        "citations": [
+          {
+            "source_ref": "fairall1999",
+            "locator": "Presesyon hesapları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "nil-in-gokyuzundeki-karsiligi-olarak-secilen-samanyolu-esles",
+        "text": "Nil'in gökyüzündeki karşılığı olarak seçilen Samanyolu eşleştirmesi yön olarak zorludur; eşleştirme seçicidir.",
+        "citations": [
+          {
+            "source_ref": "krupp1997",
+            "locator": "Yön eleştirisi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "uc-yildiza-uc-piramit-uydurma-serbestligi-dizilisin-istatist",
+        "text": "Üç yıldıza üç piramit 'uydurma' serbestliği, dizilişin istatistiksel anlamını zayıflatır.",
+        "citations": [
+          {
+            "source_ref": "fairall1999",
+            "locator": "İstatistiksel değerlendirme",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Piramitlerin kuzey yöneliminin gözlem tekniği (yıldız hizalaması) gerçek ve iyi belgelidir; bu teknik ile Orion tezi arasındaki karışıklık ayrıca açıklanmayı hak eder."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Fairall DOI ve Krupp künyesi gerçek; Bauval ISBN doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "misir-kayip-elektrik-teknolojisi",
+    "claim": "Eski Mısır'da kullanılmış, sonradan kaybolmuş bir elektrik teknolojisi vardı.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "kayip-teknoloji",
+      "sozdebilim",
+      "misir"
+    ],
+    "subject": {
+      "site": "Mısır (genel çerçeve)",
+      "region": "Mısır",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 26.8206,
+        "lon": 30.8025
+      }
+    },
+    "period": {
+      "earliest": -3200,
+      "latest": 30,
+      "era_label": "Firavun dönemi bütünü",
+      "precision": "range",
+      "dating_method": [
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "İngilizce"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "felsefe"
+    ],
+    "popular_claim": "Atalarımız elektriği biliyordu; teknoloji sonradan kayboldu.",
+    "divergence": "Üretim-iletim-kullanım zincirinin hiçbir halkası (kaynak, kablo, cihaz, kayıt) yokken, ayrı ayrı zayıf iddialar birbirine 'destek' sayılır. Kayıp teknoloji anlatıları, kanıt yokluğunu gerekçeye çeviren tekrarlı bir kalıp izler.",
+    "divergence_type": [
+      "hayatta-kalma-yanliligi",
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "fagan2006",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "Archaeological Fantasies: How Pseudoarchaeology Misrepresents the Past and Misleads the Public",
+        "authors": [
+          "Fagan, Garrett G."
+        ],
+        "year": 2006,
+        "publisher": "Routledge",
+        "isbn": "9780415305938",
+        "language": "en"
+      },
+      {
+        "id": "arkeofili-siluriyen",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Silüriyen Hipotezi: Bizden Önce Gelişmiş Bir Uygarlık Var mıydı?",
+        "year": 2025,
+        "institution": "Arkeofili",
+        "url": "https://arkeofili.com/siluriyen-hipotezi-bizden-once-gelismis-bir-uygarlik-var-miydi/",
+        "language": "tr",
+        "accessed": "2026-09-09"
+      },
+      {
+        "id": "dunn1998",
+        "tier": "popular",
+        "type": "book",
+        "title": "The Giza Power Plant: Technologies of Ancient Egypt",
+        "authors": [
+          "Dunn, Christopher"
+        ],
+        "year": 1998,
+        "publisher": "Bear & Company",
+        "isbn": "9781879181502",
+        "language": "en",
+        "note": "İddia kökeni. Mühendislik temelli popüler kitap; hakemli değil."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "cerceve-birbirinden-bagimsiz-buluntulari-dendera-bagdat-tek",
+        "text": "Çerçeve, birbirinden bağımsız buluntuları (Dendera, Bağdat) tek bir 'antik elektrik' anlatısında birleştirir.",
+        "citations": [
+          {
+            "source_ref": "dunn1998",
+            "locator": "Kitap bütünü",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "misir-arkeolojik-kaydi-elektrigin-uc-halkasindan-hicbirini-i",
+        "text": "Mısır arkeolojik kaydı elektriğin üç halkasından hiçbirini içermez: üretim cihazı, iletim kablosu, kullanım aleti veya yazılı söz.",
+        "citations": [
+          {
+            "source_ref": "fagan2006",
+            "locator": "Kayıt yokluğu değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kayip-ileri-uygarlik-kalibi-arkeolojik-yontemin-disindaki-bi",
+        "text": "'Kayıp ileri uygarlık' kalıbı, arkeolojik yöntemin dışındaki bir hipotez ailesidir; jeolojik izi sorgulanan Silüriyen hipotezi tartışması bunun güncel örneğidir.",
+        "citations": [
+          {
+            "source_ref": "arkeofili-siluriyen",
+            "locator": "Hipotez değerlendirmesi",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "zayif-iddialarin-toplami-guclu-iddia-uretmez-her-bulgu-kendi",
+        "text": "Zayıf iddiaların toplamı güçlü iddia üretmez; her bulgu kendi kaydıyla değerlendirilir.",
+        "citations": [
+          {
+            "source_ref": "fagan2006",
+            "locator": "Sözde-arkeoloji eleştiri çerçevesi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Teknolojinin 'kaybolması' kalıbının kültürel çekiciliği ayrı bir inceleme konusu; bu yazının kapsamında kayıt sorusuyla sınırlı."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Üst çerçeve kaydı; Silüriyen hipotezi Arkeofili üzerinden bağlandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "ruya-steli",
+    "claim": "Rüya Steli, Sfenks'i kumdan kurtarma karşılığında taht vaadini kaydeden antik bir meşruiyet anlatısıdır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "ruya-steli",
+      "mesruiyet",
+      "antik-anlati"
+    ],
+    "subject": {
+      "site": "Büyük Sfenks önü, Rüya Steli",
+      "region": "Giza",
+      "modern_country": "Mısır",
+      "coordinates": {
+        "lat": 29.9753,
+        "lon": 31.1376
+      }
+    },
+    "period": {
+      "earliest": -1401,
+      "latest": -1391,
+      "era_label": "IV. Thutmose dönemi",
+      "precision": "range",
+      "dating_method": [
+        "historical-record",
+        "epigraphic"
+      ]
+    },
+    "languages": [
+      "Türkçe",
+      "Mısırca"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "tarih"
+    ],
+    "popular_claim": "—",
+    "divergence": "—",
+    "divergence_type": [],
+    "sources": [
+      {
+        "id": "ruyasteli",
+        "tier": "primary",
+        "type": "inscription",
+        "title": "Rüya Steli (IV. Thutmose)",
+        "year": -1400,
+        "publisher": "Giza, Büyük Sfenks önü, granit stel",
+        "language": "egy",
+        "note": "MÖ ~1400. Sfenks'i kumdan kurtarma karşılığında taht vaadi anlatısı; antik meşruiyet belgesi."
+      },
+      {
+        "id": "lehner1997",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "title": "The Complete Pyramids: Solving the Ancient Mysteries",
+        "authors": [
+          "Lehner, Mark"
+        ],
+        "year": 1997,
+        "publisher": "Thames & Hudson",
+        "isbn": "9780500050842",
+        "language": "en",
+        "note": "Standart Mısırolojik başvuru eseri."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "stel-iv-thutmose-nin-sfenks-i-kumdan-kurtarma-karsiliginda-t",
+        "text": "Stel, IV. Thutmose'nin Sfenks'i kumdan kurtarma karşılığında taht sözü aldığı rüyayı anlatır.",
+        "citations": [
+          {
+            "source_ref": "ruyasteli",
+            "locator": "Stel metni",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "stel-sfenks-in-kendi-doneminde-mo-1400-bile-kumla-ortulebild",
+        "text": "Stel, Sfenks'in kendi döneminde (MÖ ~1400) bile kumla örtülebildiğini ve anıta bakım kültünün varlığını gösterir.",
+        "citations": [
+          {
+            "source_ref": "lehner1997",
+            "locator": "Sfenks tarihçesi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "anlati-tarihsel-bir-ruya-kaydi-degil-taht-uzerindeki-hak-idd",
+        "text": "Anlatı, tarihsel bir rüya kaydı değil, taht üzerindeki hak iddiasını meşrulaştıran bir propaganda metni olarak okunur.",
+        "citations": [
+          {
+            "source_ref": "ruyasteli",
+            "locator": "Stel metni, meşruiyet çerçevesi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Thutmose'nin tahta gelişinin hanedan içi meşruiyet sorununun boyutu tartışmalıdır."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "piramit-santrali"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Antik anlatı ile modern sözde-bilim anlatısının karşılaştırması için çapa kayıt."
+    }
+  }
+]

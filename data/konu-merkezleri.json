@@ -9,17 +9,48 @@
       "Bu merkezdeki dosyalar, yerleşimin görünen kalıntısı ile görünmeyen altyapısını ayırır: Petra'da kaya mezarları değil su sistemi kenti yaşatır; Angkor'da tapınaklar değil su ağı kentin ölçeğini gösterir. Her dosyada ölçülebilen ile varsayılan ayrı izlenir."
     ],
     "kavramlar": [
-      { "terim": "Terk edilme", "anlam": "Bir yerleşimin işlev kaybıyla boşalması; çöküşle değil, dönüşümle de açıklanabilir." },
-      { "terim": "Kanıt yokluğu", "anlam": "Bir izin bulunmaması, olayın olmadığını göstermez; yalnızca kaydın sınırını gösterir." },
-      { "terim": "Uzaktan algılama", "anlam": "LiDAR gibi yöntemlerle bitki örtüsü altındaki yapı izlerinin haritalanması." },
-      { "terim": "Stratigrafi", "anlam": "Katman sıralaması üzerinden yapıların ve buluntuların göreli tarihlenmesi." },
-      { "terim": "Yeniden adlandırma", "anlam": "Bir yerin sonraki kuşaklar tarafından yeni adlar ve işlevlerle anılması; 'kaybolma' duygusunun kaynaklarından biri." }
+      {
+        "terim": "Terk edilme",
+        "anlam": "Bir yerleşimin işlev kaybıyla boşalması; çöküşle değil, dönüşümle de açıklanabilir."
+      },
+      {
+        "terim": "Kanıt yokluğu",
+        "anlam": "Bir izin bulunmaması, olayın olmadığını göstermez; yalnızca kaydın sınırını gösterir."
+      },
+      {
+        "terim": "Uzaktan algılama",
+        "anlam": "LiDAR gibi yöntemlerle bitki örtüsü altındaki yapı izlerinin haritalanması."
+      },
+      {
+        "terim": "Stratigrafi",
+        "anlam": "Katman sıralaması üzerinden yapıların ve buluntuların göreli tarihlenmesi."
+      },
+      {
+        "terim": "Yeniden adlandırma",
+        "anlam": "Bir yerin sonraki kuşaklar tarafından yeni adlar ve işlevlerle anılması; 'kaybolma' duygusunun kaynaklarından biri."
+      }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ 605–562", "olay": "II. Nebukadnezar zirvesi; Tevrat'ın 'Babil'i bu Babil, sembolik anlatı sonradan büyür", "dosya": "babil" },
-      { "tarih": "MÖ 4.–1. yy", "olay": "Nabatiler ticaret yollarını tutuyor; kent su sistemiyle okunur", "dosya": "petra" },
-      { "tarih": "9.–15. yy", "olay": "Angkor'un düşük yoğunluklu kentsel yayılımı; terk edilme çöküş değil dönüşümdür", "dosya": "angkor" },
-      { "tarih": "~16. yy", "olay": "Machu Picchu muhtemelen İspanyol istilasından kısa süre sonra terk edildi; doğrudan terk kaydı ve kesin tarih yok, 'keşif' anlatısı 1911 sonrasıdır", "dosya": "machu-picchu" }
+      {
+        "tarih": "MÖ 605–562",
+        "olay": "II. Nebukadnezar zirvesi; Tevrat'ın 'Babil'i bu Babil, sembolik anlatı sonradan büyür",
+        "dosya": "babil"
+      },
+      {
+        "tarih": "MÖ 4.–1. yy",
+        "olay": "Nabatiler ticaret yollarını tutuyor; kent su sistemiyle okunur",
+        "dosya": "petra"
+      },
+      {
+        "tarih": "9.–15. yy",
+        "olay": "Angkor'un düşük yoğunluklu kentsel yayılımı; terk edilme çöküş değil dönüşümdür",
+        "dosya": "angkor"
+      },
+      {
+        "tarih": "~16. yy",
+        "olay": "Machu Picchu muhtemelen İspanyol istilasından kısa süre sonra terk edildi; doğrudan terk kaydı ve kesin tarih yok, 'keşif' anlatısı 1911 sonrasıdır",
+        "dosya": "machu-picchu"
+      }
     ],
     "acik-sorular": [
       "Angkor'un nüfusu hangi tarihte hangi hızla azaldı; su ağının bozulması sebep mi sonuç muydu?",
@@ -27,7 +58,19 @@
       "Chichén Itzá'daki akustik etkiler yapının tasarım amacı hakkında ne söyleyebilir?",
       "Petra'nın nüfus kapasitesi hangi bağımsız yöntemle sınanabilir?"
     ],
-    "dosyalar": ["babil", "petra", "shushtar", "angkor", "tas-tepeler", "machu-picchu", "chichen-itza", "kapadokya", "persepolis", "sumer", "roma-etki"]
+    "dosyalar": [
+      "babil",
+      "petra",
+      "shushtar",
+      "angkor",
+      "tas-tepeler",
+      "machu-picchu",
+      "chichen-itza",
+      "kapadokya",
+      "persepolis",
+      "sumer",
+      "roma-etki"
+    ]
   },
   "mitler-anlatilar": {
     "slug": "mitler-anlatilar",
@@ -39,24 +82,68 @@
       "Tufan anlatıları, ateş hırsızlığı motifi ve gökyüzündeki ayı gibi örnekler aynı soruyu farklı derinliklerde sorar. Cevapların çoğu 'bağımsız benzerlik' kutusuna düşer; ama aktarım gerçekten olduğunda onu da gösterebilen bir çerçeve kurulur."
     ],
     "kavramlar": [
-      { "terim": "Motif", "anlam": "Anlatının taşınabilir en küçük parçası: kaçış, hırsızlık, tanık kuş." },
-      { "terim": "Ortak köken", "anlam": "Anlatının tek bir kaynaktan çıkıp taşınması; metin zinciriyle gösterilmelidir." },
-      { "terim": "Bağımsız icat", "anlam": "Benzer koşulların benzer anlatılar üretmesi; benzerlik tek başına kanıt değildir." },
-      { "terim": "Sözlü gelenek", "anlam": "Yazıya geçmeden önceki aktarım katmanı; doğrudan gözlemlenemez, çıkarımla sınanır." },
-      { "terim": "Yazılı aktarım", "anlam": "Kopya zinciri üzerinden izlenebilen aktarım; metin eleştirisiyle tarihlenir." }
+      {
+        "terim": "Motif",
+        "anlam": "Anlatının taşınabilir en küçük parçası: kaçış, hırsızlık, tanık kuş."
+      },
+      {
+        "terim": "Ortak köken",
+        "anlam": "Anlatının tek bir kaynaktan çıkıp taşınması; metin zinciriyle gösterilmelidir."
+      },
+      {
+        "terim": "Bağımsız icat",
+        "anlam": "Benzer koşulların benzer anlatılar üretmesi; benzerlik tek başına kanıt değildir."
+      },
+      {
+        "terim": "Sözlü gelenek",
+        "anlam": "Yazıya geçmeden önceki aktarım katmanı; doğrudan gözlemlenemez, çıkarımla sınanır."
+      },
+      {
+        "terim": "Yazılı aktarım",
+        "anlam": "Kopya zinciri üzerinden izlenebilen aktarım; metin eleştirisiyle tarihlenir."
+      }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ ~1700–6. yy", "olay": "Atrahasis'ten Gılgamış XI'e ve Tekvin'e uzanan tufan metinleri; tarihler ayrı metin katmanlarını gösterir", "dosya": "tufan-bilmecesi" },
-      { "tarih": "MÖ ~700", "olay": "Hesiodos İşler ve Günler'de Ülker takvimi; tarım ritmi gökyüzüne bağlanır", "dosya": "herkesin-saati" },
-      { "tarih": "MÖ 8.–5. yy", "olay": "Hesiodos'ta ateş hırsızlığı anlatısı; daha geç Prometheus Desmotes tragedyası gelenekte Aiskhylos'a atfedilir, yazarlığı tartışmalıdır", "dosya": "calinan-ates" },
-      { "tarih": "6 Mayıs · 8 Kasım", "olay": "Anadolu halk takviminin iki eşiği; gökyüzü, mevsim ve gelenek iç içe", "dosya": "yilin-iki-kapisi" }
+      {
+        "tarih": "MÖ ~1700–6. yy",
+        "olay": "Atrahasis'ten Gılgamış XI'e ve Tekvin'e uzanan tufan metinleri; tarihler ayrı metin katmanlarını gösterir",
+        "dosya": "tufan-bilmecesi"
+      },
+      {
+        "tarih": "MÖ ~700",
+        "olay": "Hesiodos İşler ve Günler'de Ülker takvimi; tarım ritmi gökyüzüne bağlanır",
+        "dosya": "herkesin-saati"
+      },
+      {
+        "tarih": "MÖ 8.–5. yy",
+        "olay": "Hesiodos'ta ateş hırsızlığı anlatısı; daha geç Prometheus Desmotes tragedyası gelenekte Aiskhylos'a atfedilir, yazarlığı tartışmalıdır",
+        "dosya": "calinan-ates"
+      },
+      {
+        "tarih": "6 Mayıs · 8 Kasım",
+        "olay": "Anadolu halk takviminin iki eşiği; gökyüzü, mevsim ve gelenek iç içe",
+        "dosya": "yilin-iki-kapisi"
+      }
     ],
     "acik-sorular": [
       "Büyükayı anlatılarının benzerliği ortak köken mi, gökyüzünün kendisinin zorladığı bir benzerlik mi?",
       "Tufan anlatısı Mezopotamya'dan ne zaman ve hangi yolla Levant'a taşındı?",
       "Ülker takviminin hangi uygulamaları doğrudan gözlem, hangileri sonradan atıftır?"
     ],
-    "dosyalar": ["tufan-bilmecesi", "hatirlamadigimiz-felaketler", "calinan-ates", "gokteki-ayi", "herkesin-saati", "yilin-iki-kapisi", "ayni-cumlede", "mit-ve-sicil", "iskenderiye", "kendi-kaniti", "stonehenge"]
+    "dosyalar": [
+      "tufan-bilmecesi",
+      "hatirlamadigimiz-felaketler",
+      "calinan-ates",
+      "gokteki-ayi",
+      "herkesin-saati",
+      "yilin-iki-kapisi",
+      "ayni-cumlede",
+      "mit-ve-sicil",
+      "iskenderiye",
+      "kendi-kaniti",
+      "stonehenge",
+      "piramit-santrali"
+    ]
   },
   "dinler-tarihi": {
     "slug": "dinler-tarihi",
@@ -68,24 +155,61 @@
       "Ölü Deniz Parşömenleri metin tarihini, Hristiyanlık-Roma dosyaları kurumların dönüşümünü, İsa'nın tarihselliği dosyası olay ile kayıt arasındaki zaman mesafesini konu alır. Ortak yöntem değişmez: iddiayı kaynağından, kanıtı hikâyeden ayırmak."
     ],
     "kavramlar": [
-      { "terim": "Tarihsellik", "anlam": "Bir kişi veya olayın tarihsel kayıtla sınanabilirliği." },
-      { "terim": "Kopya zinciri", "anlam": "Elyazmasının aslından günümüze geçişindeki ara kopyalar; her halka bir mesafedir." },
-      { "terim": "Kanon", "anlam": "Bir topluluğun kabul ettiği metin listesi; seçim sürecinin kendisi tarihseldir." },
-      { "terim": "Zaman mesafesi", "anlam": "Olay ile onu anlatan en eski kaynak arasındaki fark; güven değerlendirmesinin ölçüsü." },
-      { "terim": "Sessizlikten çıkarım", "anlam": "Beklenen kaydın yokluğunun taşıdığı anlam; zayıf ama bazen ağırlığı olan kanıt." }
+      {
+        "terim": "Tarihsellik",
+        "anlam": "Bir kişi veya olayın tarihsel kayıtla sınanabilirliği."
+      },
+      {
+        "terim": "Kopya zinciri",
+        "anlam": "Elyazmasının aslından günümüze geçişindeki ara kopyalar; her halka bir mesafedir."
+      },
+      {
+        "terim": "Kanon",
+        "anlam": "Bir topluluğun kabul ettiği metin listesi; seçim sürecinin kendisi tarihseldir."
+      },
+      {
+        "terim": "Zaman mesafesi",
+        "anlam": "Olay ile onu anlatan en eski kaynak arasındaki fark; güven değerlendirmesinin ölçüsü."
+      },
+      {
+        "terim": "Sessizlikten çıkarım",
+        "anlam": "Beklenen kaydın yokluğunun taşıdığı anlam; zayıf ama bazen ağırlığı olan kanıt."
+      }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ 250 – MS 68", "olay": "Ölü Deniz Parşömenleri'nin yazıldığı dönem; İbranice Kutsal Kitap kitaplarının günümüze ulaşan en erken nüshaları arasında", "dosya": "olu-deniz-parsomenleri" },
-      { "tarih": "y. 50–60", "olay": "Pavlus mektupları: İsa hakkında günümüze ulaşan en erken Hristiyan yazıları arasında", "dosya": "isa-tarihsellik" },
-      { "tarih": "MS 313", "olay": "Milano Fermanı; Hristiyanlığın kurumsallaşma dönüm noktası", "dosya": "roma-hristiyanlik" },
-      { "tarih": "1947", "olay": "Parşömenlerin Kumran'da bulunması; metin tarihinin yeniden kurulması", "dosya": "olu-deniz-parsomenleri" }
+      {
+        "tarih": "MÖ 250 – MS 68",
+        "olay": "Ölü Deniz Parşömenleri'nin yazıldığı dönem; İbranice Kutsal Kitap kitaplarının günümüze ulaşan en erken nüshaları arasında",
+        "dosya": "olu-deniz-parsomenleri"
+      },
+      {
+        "tarih": "y. 50–60",
+        "olay": "Pavlus mektupları: İsa hakkında günümüze ulaşan en erken Hristiyan yazıları arasında",
+        "dosya": "isa-tarihsellik"
+      },
+      {
+        "tarih": "MS 313",
+        "olay": "Milano Fermanı; Hristiyanlığın kurumsallaşma dönüm noktası",
+        "dosya": "roma-hristiyanlik"
+      },
+      {
+        "tarih": "1947",
+        "olay": "Parşömenlerin Kumran'da bulunması; metin tarihinin yeniden kurulması",
+        "dosya": "olu-deniz-parsomenleri"
+      }
     ],
     "acik-sorular": [
       "Tarihsel İsa hakkındaki en erken kayıtların birbirinden bağımsızlığı ne ölçüde gösterilebilir?",
       "Kumran topluluğunun kimliği hangi kanıtla hangi kesinlikte söylenebilir?",
       "Hristiyanlığın Roma'daki büyüme hızı için güvenilir bir sayı var mı?"
     ],
-    "dosyalar": ["olu-deniz-parsomenleri", "babil", "roma-hristiyanlik", "isa-tarihsellik", "gec-kalan-haberci"]
+    "dosyalar": [
+      "olu-deniz-parsomenleri",
+      "babil",
+      "roma-hristiyanlik",
+      "isa-tarihsellik",
+      "gec-kalan-haberci"
+    ]
   },
   "iklim-uygarlik": {
     "slug": "iklim-uygarlik",
@@ -97,23 +221,63 @@
       "Milanković döngüleri zamanın derin katmanını, tufan dosyası jeoloji ile anlatı arasındaki bağı, Şuşter ve Petra suyun toplumsal örgütlenmesini gösterir. Ortak ders: iklim sınır koyar, ama sınırın içinde seçenekler uygarlığın kendisidir."
     ],
     "kavramlar": [
-      { "terim": "Vekil veri", "anlam": "Buz çekirdeği, polen, sediman gibi doğrudan ölçülmemiş dönemlerin dolaylı kaydı." },
-      { "terim": "Yörünge döngüsü", "anlam": "Dünya yörüngesinin biçim, eğiklik ve yalpalama değişimleri; buzul ritminin saati." },
-      { "terim": "Su yönetimi", "anlam": "Toplumun suyu bulma, saklama, bölme ve enerjiye çevirme düzeni." },
-      { "terim": "Hafıza seçimi", "anlam": "Toplumların bazı felaketleri anlatıya çevirip bazılarını silmesi." },
-      { "terim": "Mevsim takvimi", "anlam": "Tarım ritmini gökyüzü gözlemiyle sabitleyen geleneksel zaman bilgisi." }
+      {
+        "terim": "Vekil veri",
+        "anlam": "Buz çekirdeği, polen, sediman gibi doğrudan ölçülmemiş dönemlerin dolaylı kaydı."
+      },
+      {
+        "terim": "Yörünge döngüsü",
+        "anlam": "Dünya yörüngesinin biçim, eğiklik ve yalpalama değişimleri; buzul ritminin saati."
+      },
+      {
+        "terim": "Su yönetimi",
+        "anlam": "Toplumun suyu bulma, saklama, bölme ve enerjiye çevirme düzeni."
+      },
+      {
+        "terim": "Hafıza seçimi",
+        "anlam": "Toplumların bazı felaketleri anlatıya çevirip bazılarını silmesi."
+      },
+      {
+        "terim": "Mevsim takvimi",
+        "anlam": "Tarım ritmini gökyüzü gözlemiyle sabitleyen geleneksel zaman bilgisi."
+      }
     ],
     "kilometre-taslari": [
-      { "tarih": "MÖ 2,6 milyon – MÖ 11.700", "olay": "Pleyistosen'deki buzul-buzularası döngülerin zamanlamasında yörünge zorlaması etkili; mekanizma ve geri beslemeler bütünüyle çözülmüş değil", "dosya": "milankovic" },
-      { "tarih": "MS ~260–270", "olay": "Şuşter sisteminin Sasani evresindeki Band-e Kaisar; Roma yapı tekniğiyle ilişkilendirilen mühendislik", "dosya": "shushtar" },
-      { "tarih": "9.–15. yy", "olay": "Angkor'un su ağı; iklim tek başına çöküşü açıklamıyor", "dosya": "angkor" },
-      { "tarih": "MÖ ~700", "olay": "Hesiodos'un Ülker takvimi; mevsim ritmi gökyüzüne bağlanır", "dosya": "herkesin-saati" }
+      {
+        "tarih": "MÖ 2,6 milyon – MÖ 11.700",
+        "olay": "Pleyistosen'deki buzul-buzularası döngülerin zamanlamasında yörünge zorlaması etkili; mekanizma ve geri beslemeler bütünüyle çözülmüş değil",
+        "dosya": "milankovic"
+      },
+      {
+        "tarih": "MS ~260–270",
+        "olay": "Şuşter sisteminin Sasani evresindeki Band-e Kaisar; Roma yapı tekniğiyle ilişkilendirilen mühendislik",
+        "dosya": "shushtar"
+      },
+      {
+        "tarih": "9.–15. yy",
+        "olay": "Angkor'un su ağı; iklim tek başına çöküşü açıklamıyor",
+        "dosya": "angkor"
+      },
+      {
+        "tarih": "MÖ ~700",
+        "olay": "Hesiodos'un Ülker takvimi; mevsim ritmi gökyüzüne bağlanır",
+        "dosya": "herkesin-saati"
+      }
     ],
     "acik-sorular": [
       "Buzul çağı ritminin tam olarak hangi parametreyle kilitlendiği matematiksel olarak çözüldü mü?",
       "Angkor'un su ağındaki bozulma kronolojisi bağımsız tarihlemeyle doğrulanabilir mi?",
       "Unutulan felaketlerin hangisi jeolojik kayıtta iz bıraktı, hangisi yalnız anlatıda yaşıyor?"
     ],
-    "dosyalar": ["milankovic", "tufan-bilmecesi", "hatirlamadigimiz-felaketler", "petra", "shushtar", "angkor", "herkesin-saati", "yilin-iki-kapisi"]
+    "dosyalar": [
+      "milankovic",
+      "tufan-bilmecesi",
+      "hatirlamadigimiz-felaketler",
+      "petra",
+      "shushtar",
+      "angkor",
+      "herkesin-saati",
+      "yilin-iki-kapisi"
+    ]
   }
 }

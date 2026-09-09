@@ -30,6 +30,9 @@ else bad("slug: Türkçe harfler", slug("Gökteki Ayı ve Şuşter"));
 if (slug("  Çift   boşluk!  ") === "cift-boskluk" || slug("  Çift   boşluk!  ") === "cift-bosluk") ok("slug: boşluk ve noktalama");
 else bad("slug: boşluk ve noktalama", slug("  Çift   boşluk!  "));
 
+if (slug("Düzenek laboratuvarda elektrolitle küçük bir gerilim üretir; bu gözlem") === "duzenek-laboratuvarda-elektrolitle-kucuk-bir-gerilim-uretir") ok("slug: 60 karakter sınırında sondaki tire düşer");
+else bad("slug: 60 karakter sınırı", slug("Düzenek laboratuvarda elektrolitle küçük bir gerilim üretir; bu gözlem"));
+
 // --- kurucu parçaları ---
 reddetmeli("source: kimliksiz reddedilir", "kimlik zorunlu", () => source("", { tier: "primary", type: "edition", title: "X" }));
 reddetmeli("source: tier'sız reddedilir", "tier zorunlu", () => source("a", { type: "article", title: "X" }));
