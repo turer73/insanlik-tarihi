@@ -1,34 +1,14 @@
 [
   {
+    "schema_version": 2,
     "id": "babil-ad-etimolojisi",
-    "claim": "Akadca Bab-ilim 'Tanrı'nın Kapısı' demektir; Tekvin'in bunu İbranice balal ('karıştırmak') fiiline bağlaması dilbilimsel değil polemik bir kelime oyunudur.",
+    "claim": "Akadca Bab-ilim 'Tanrı'nın Kapısı' demektir; Tekvin'in bunu İbranice balal ('karıştırmak') fiiline bağlaması dilbilimsel değil, polemik bir kelime oyunudur.",
     "status": "established",
     "confidence": "high",
     "topic": [
       "babil",
       "dilbilim",
       "polemik"
-    ],
-    "popular_claim": "Babil, 'karışıklık' anlamına gelir.",
-    "divergence": "Düşman bir metnin kasıtlı kelime oyunu, üç bin yıl sonra şehrin dünya çapında bilinen anlamı oldu. Etimoloji yanlış ama yanlışlığı kaza değil.",
-    "evidence": [
-      "Akadca Bab-ilim ile İbranice balal arasında dilbilimsel akrabalık yok; yalnızca sesçe benziyorlar.",
-      "Tekvin 11:9 bağlantıyı açıkça kuruyor."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Tekvin 11:1-9"
-      },
-      {
-        "tier": "peer-reviewed",
-        "title": "Akadca sözlük ve Asurbilim literatürü"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "babil",
-      "ayni-cumlede"
     ],
     "subject": {
       "site": "Babil",
@@ -58,11 +38,150 @@
       "dilbilim",
       "filoloji"
     ],
+    "popular_claim": "Babil, 'karışıklık' anlamına gelir.",
+    "divergence": "Düşman bir metnin kasıtlı kelime oyunu, üç bin yıl sonra şehrin dünya çapında bilinen anlamı oldu. Etimoloji yanlış ama yanlışlığı kaza değil.",
     "divergence_type": [
       "ideolojik-secim"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "black-george-postgate-2000-cda",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Black, Jeremy",
+          "George, Andrew",
+          "Postgate, Nicholas"
+        ],
+        "year": 2000,
+        "title": "A Concise Dictionary of Akkadian",
+        "publisher": "Harrassowitz Verlag",
+        "isbn": "9783447042642",
+        "language": "en",
+        "note": "Akadca standart sözlük. 'Bāb-ilim' okumasının dayanağı burasıdır; önceki sürümde bu kaynağın yerinde yazarsız bir 'Akadca sözlük ve Asurbilim literatürü' yer tutucusu vardı."
+      },
+      {
+        "id": "sarna-1966-understanding-genesis",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Sarna, Nahum M."
+        ],
+        "year": 1966,
+        "title": "Understanding Genesis",
+        "publisher": "Jewish Theological Seminary of America",
+        "isbn": "9780805202533",
+        "language": "en",
+        "note": "Tekvin 11:9'daki kelime oyununun ve adın polemik kullanımının çözümlemesi."
+      },
+      {
+        "id": "tekvin-11-1-9",
+        "tier": "primary",
+        "type": "manuscript",
+        "title": "Tekvin 11:1-9",
+        "language": "he",
+        "note": "İddianın kaynağı olan metin. Bu kayıtta doğrulayıcı değil, KÖKEN olarak kullanılıyor."
+      },
+      {
+        "id": "bottero-1992-mesopotamia",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Bottéro, Jean"
+        ],
+        "year": 1992,
+        "title": "Mesopotamia: Writing, Reasoning, and the Gods",
+        "publisher": "University of Chicago Press",
+        "isbn": "9780226067278",
+        "language": "en",
+        "note": "Adın Mezopotamya kültüründeki yeri için bağlam kaynağı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "bab-ilim-sozluk",
+        "text": "Akadca Bāb-ilim 'tanrının kapısı' okumasıyla sözlükte yer alır.",
+        "citations": [
+          {
+            "source_ref": "black-george-postgate-2000-cda",
+            "locator": "bābu ve ilu maddeleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "akrabalik-yok",
+        "text": "Akadca Bab-ilim ile İbranice balal arasında dilbilimsel akrabalık yok; yalnızca sesçe benziyorlar.",
+        "citations": [
+          {
+            "source_ref": "sarna-1966-understanding-genesis",
+            "locator": "Babil Kulesi bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tekvin-baglantiyi-kuruyor",
+        "text": "Tekvin 11:9 bağlantıyı açıkça kuruyor.",
+        "citations": [
+          {
+            "source_ref": "tekvin-11-1-9",
+            "locator": "11:9",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "polemik-arac",
+        "text": "Kelime oyunu bir hata değil, düşman bir şehre yönelik bilinçli bir polemik aracıdır.",
+        "citations": [
+          {
+            "source_ref": "sarna-1966-understanding-genesis",
+            "locator": "Kelime oyunu çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "adin-kendi-kokeni",
+        "text": "Adın kendi kökeni de tartışmasız değil: Bāb-ilim okuması, adın daha eski ve Sami dili dışı bir biçimin sonradan yorumlanması olabileceği görüşünü tümüyle dışlamaz.",
+        "citations": [
+          {
+            "source_ref": "bottero-1992-mesopotamia",
+            "locator": "Ad ve kültür bölümü",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "tam-metin-okunmadi",
+        "text": "Bu kayıttaki kaynakların tam metinleri okunmadı; locator'lar bölüm düzeyinde.",
+        "citations": [
+          {
+            "source_ref": "black-george-postgate-2000-cda",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Bāb-ilim okuması, adın Sami dili öncesi bir biçime dayanma ihtimalini ne kadar kapatıyor?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil",
+      "ayni-cumlede"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Akadca sözlük ve Asurbilim literatürü') üç gerçek künyeyle değiştirildi. Adın kökenine dair açık uç counter_evidence'a eklendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-etemenanki-yuksekligi",
     "claim": "Etemenanki zigguratının yüksekliği belirlenebilir.",
     "status": "unmeasurable",
@@ -71,30 +190,6 @@
       "babil",
       "etemenanki",
       "olcum"
-    ],
-    "popular_claim": "Babil Kulesi 91 metre yüksekliğindeydi.",
-    "divergence": "İki kaynak %50 farkla çelişiyor ve yapı bugün yok olduğu için yeni ölçüm mümkün değil. Popüler kaynaklar hangisi etkileyiciyse onu yazıyor.",
-    "evidence": [
-      "1913 arazi ölçümü ve temel izlerinden ~61 m tahmini.",
-      "Esagila Tableti ~91 m ve yedi kat veriyor."
-    ],
-    "counter_evidence": [
-      "Esagila Tableti Helenistik dönemden kalma bir kopya; yapı zaten harabeyken yazılmış ve ideal ölçüler vermiş olabilir.",
-      "Yapı tuğlaları yüzyıllar boyunca sökülüp götürüldü; yerinde suyla dolmuş bir çukur var."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Robert Koldewey, Babil kazıları (1899-1917)"
-      },
-      {
-        "tier": "primary",
-        "title": "Esagila Tableti"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "babil"
     ],
     "subject": {
       "site": "Etemenanki zigguratı",
@@ -133,12 +228,122 @@
         "lifespan": "1855-1925"
       }
     ],
+    "popular_claim": "Babil Kulesi 91 metre yüksekliğindeydi.",
+    "divergence": "İki kaynak %50 farkla çelişiyor ve yapı bugün yok olduğu için yeni ölçüm mümkün değil. Popüler kaynaklar hangisi etkileyiciyse onu yazıyor.",
     "divergence_type": [
       "guncellenmemis",
       "medya-abartisi"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "koldewey-1913-babil",
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Koldewey, Robert"
+        ],
+        "year": 1913,
+        "title": "Das wieder erstehende Babylon",
+        "language": "de",
+        "note": "Kazı yayını; 1913 arazi ölçümünün kaynağı. KÜNYE BU TURDA BAĞIMSIZ DOĞRULANMADI - yayıncı ve baskı bilgisi eksik bırakıldı, uydurulmadı."
+      },
+      {
+        "id": "esagila-tableti",
+        "tier": "primary",
+        "type": "inscription",
+        "title": "Esagila Tableti",
+        "language": "akk",
+        "note": "Etemenanki'nin ölçülerini veren metin. Helenistik dönem kopyası; yapı zaten harabeyken yazılmış."
+      },
+      {
+        "id": "george-1992-babylonian-topographical-texts",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "George, Andrew R."
+        ],
+        "year": 1992,
+        "title": "Babylonian Topographical Texts",
+        "container": "Orientalia Lovaniensia Analecta",
+        "publisher": "Peeters",
+        "isbn": "9789068314106",
+        "language": "en",
+        "note": "Esagila Tableti dahil Babil topografya metinlerinin standart edisyonu ve çözümlemesi."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "koldewey-61m",
+        "text": "1913 arazi ölçümü ve temel izlerinden ~61 m tahmini.",
+        "citations": [
+          {
+            "source_ref": "koldewey-1913-babil",
+            "locator": "Etemenanki ölçümleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "esagila-91m",
+        "text": "Esagila Tableti ~91 m ve yedi kat veriyor.",
+        "citations": [
+          {
+            "source_ref": "esagila-tableti",
+            "locator": "Ölçü satırları",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "esagila-ideal-olcu",
+        "text": "Esagila Tableti Helenistik dönemden kalma bir kopya; yapı zaten harabeyken yazılmış ve ideal ölçüler vermiş olabilir.",
+        "citations": [
+          {
+            "source_ref": "george-1992-babylonian-topographical-texts",
+            "locator": "Esagila Tableti değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tuglalar-sokuldu",
+        "text": "Yapı tuğlaları yüzyıllar boyunca sökülüp götürüldü; yerinde suyla dolmuş bir çukur var.",
+        "citations": [
+          {
+            "source_ref": "koldewey-1913-babil",
+            "locator": "Alanın durumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "koldewey-kunye-eksik",
+        "text": "Koldewey'in yayın künyesi bu turda bağımsız doğrulanmadı; yayıncı ve baskı bilgisi eksik.",
+        "citations": [
+          {
+            "source_ref": "koldewey-1913-babil",
+            "locator": "Künye düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "İki rakam arasındaki fark, ölçüm hatası mı yoksa iki farklı yapı evresi mi?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "George 1992 eklendi - Esagila Tableti'nin Helenistik kopya olduğu değerlendirmesi artık künyeli bir kaynağa bağlı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-kuleyi-iskender-sokturdu",
     "claim": "Etemenanki'nin kalıntısı, onu yeniden inşa etmek isteyen Büyük İskender tarafından söktürüldü.",
     "status": "established",
@@ -147,20 +352,6 @@
       "babil",
       "etemenanki",
       "iskender"
-    ],
-    "evidence": [
-      "İskender zemini yeni yapı için temizletti.",
-      "MÖ 323'te Babil'de öldü; yeniden inşa hiç başlamadı."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Klasik dönem kaynakları (Strabon, Arrianos)"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "babil"
     ],
     "subject": {
       "site": "Etemenanki zigguratı",
@@ -196,9 +387,91 @@
         "year": -331,
         "lifespan": "MÖ 356-323"
       }
-    ]
+    ],
+    "popular_claim": "Babil Kulesi tanrısal bir cezayla ya da bir felaketle yıkıldı.",
+    "divergence": "Yapıyı ortadan kaldıran şey ceza değil, YENİDEN İNŞA NİYETİ oldu: İskender zemini yeni yapı için temizletti, sonra MÖ 323'te Babil'de öldü ve inşaat hiç başlamadı. Yani kule 'yıkılmadı', SÖKÜLÜP ORTADA BIRAKILDI - anlatının en bilinen sonu, gerçekte bir inşaat kazasıdır.",
+    "divergence_type": [
+      "guncellenmemis"
+    ],
+    "sources": [
+      {
+        "id": "george-1992-babylonian-topographical-texts",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "George, Andrew R."
+        ],
+        "year": 1992,
+        "title": "Babylonian Topographical Texts",
+        "container": "Orientalia Lovaniensia Analecta",
+        "publisher": "Peeters",
+        "isbn": "9789068314106",
+        "language": "en",
+        "note": "Esagila Tableti dahil Babil topografya metinlerinin standart edisyonu ve çözümlemesi."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "zemin-temizlendi",
+        "text": "İskender zemini yeni yapı için temizletti.",
+        "citations": [
+          {
+            "source_ref": "george-1992-babylonian-topographical-texts",
+            "locator": "Etemenanki'nin geç tarihçesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "insaat-baslamadi",
+        "text": "MÖ 323'te Babil'de öldü; yeniden inşa hiç başlamadı.",
+        "citations": [
+          {
+            "source_ref": "george-1992-babylonian-topographical-texts",
+            "locator": "Etemenanki'nin geç tarihçesi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "sokum-olcegi-belirsiz",
+        "text": "Sökümün ölçeği ve ne kadarının İskender döneminde yapıldığı klasik kaynaklara dayanır; arkeolojik olarak evrelere ayrılmış değildir.",
+        "citations": [
+          {
+            "source_ref": "george-1992-babylonian-topographical-texts",
+            "locator": "Kaynak değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tek-etken-degil",
+        "text": "Yapının tuğlaları yüzyıllar boyunca da sökülmüştü; İskender tek etken değil.",
+        "citations": [
+          {
+            "source_ref": "george-1992-babylonian-topographical-texts",
+            "locator": "Alanın uzun tarihçesi",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Söküm evreleri arkeolojik olarak ayrıştırılabilir mi?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Kayıt popular_claim ve divergence olmadan duruyordu - projenin temel ayrımı kurulmamıştı. Kuruldu ve kaynağa bağlandı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-nudimmud-paraleli",
     "claim": "Sümerce 'Enmerkar ve Aratta Beyi' metnindeki Nudimmud pasajı Babil Kulesi'ndeki dil karışması motifinin öncülüdür.",
     "status": "refuted",
@@ -208,34 +481,6 @@
       "sumer",
       "karsilastirmali-mitoloji",
       "ceviri-tartismasi"
-    ],
-    "popular_claim": "Babil Kulesi hikâyesinin çok daha eski bir Sümer versiyonu vardır.",
-    "divergence": "Kramer'in 20. yüzyıl ortası okuması pasajı bir BOZMA eylemi sayıp Tekvin ile eşleştirdi ve popüler kaynaklara yerleşti. Oxford ETCSL'deki standart çeviride pasaj dillerin BİRLEŞMESİNİ diliyor - anlam ters yönde.",
-    "evidence": [
-      "ETCSL çevirisi: bütün halklar Enlil'e tek bir dille seslensin; Enki konuşmayı değiştirsin ve insanlığın konuşması gerçekten tek olsun.",
-      "Pasaj dilek kipinde ve altın çağ betimlemesi içinde geçiyor."
-    ],
-    "counter_evidence": [
-      "Sümerce fiilin kipi ve zamanı üzerinde uzmanlar arasında görüş farkı sürüyor; tartışma tamamen kapanmış değil."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "url": "https://etcsl.orinst.ox.ac.uk/section1/tr1823.htm",
-        "title": "ETCSL 1.8.2.3, Enmerkar and the lord of Aratta, satır 134-155"
-      },
-      {
-        "tier": "peer-reviewed",
-        "title": "Samuel Noah Kramer - eski okuma"
-      }
-    ],
-    "open_questions": [
-      "Fiil kipi tartışması nasıl çözülecek - yeni tablet parçası gerekebilir."
-    ],
-    "checked": "2026-09-06",
-    "volatile": true,
-    "used_in": [
-      "babil"
     ],
     "subject": {
       "site": "Enmerkar ve Aratta Beyi",
@@ -269,11 +514,152 @@
         "lifespan": "1897-1990"
       }
     ],
+    "popular_claim": "Babil Kulesi hikâyesinin çok daha eski bir Sümer versiyonu vardır.",
+    "divergence": "Kramer'in 20. yüzyıl ortası okuması pasajı bir BOZMA eylemi sayıp Tekvin ile eşleştirdi ve popüler kaynaklara yerleşti. Oxford ETCSL'deki standart çeviride pasaj dillerin BİRLEŞMESİNİ diliyor - anlam ters yönde.",
     "divergence_type": [
       "eski-ceviri"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "etcsl-1-8-2-3-enmerkar",
+        "tier": "primary",
+        "type": "database",
+        "title": "ETCSL 1.8.2.3, Enmerkar and the Lord of Aratta",
+        "institution": "Electronic Text Corpus of Sumerian Literature, University of Oxford",
+        "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=c.1.8.2.3",
+        "language": "sux",
+        "accessed": "2026-09-09"
+      },
+      {
+        "id": "vanstiphout-2003-epics-sumerian-kings",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Vanstiphout, Herman L. J."
+        ],
+        "year": 2003,
+        "title": "Epics of Sumerian Kings: The Matter of Aratta",
+        "publisher": "Society of Biblical Literature",
+        "isbn": "9781589830837",
+        "language": "en",
+        "note": "Enmerkar döngüsünün edisyonu ve çevirisi; Nudimmud pasajının bağlamı ve kipi için ana dayanak."
+      },
+      {
+        "id": "black-2004-literature-ancient-sumer",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Black, Jeremy",
+          "Cunningham, Graham",
+          "Robson, Eleanor",
+          "Zólyomi, Gábor"
+        ],
+        "year": 2004,
+        "title": "The Literature of Ancient Sumer",
+        "publisher": "Oxford University Press",
+        "isbn": "9780199263110",
+        "language": "en",
+        "note": "ETCSL çevirilerinin basılı karşılığı; pasajın standart okumasını verir."
+      },
+      {
+        "id": "kramer-1963-the-sumerians",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Kramer, Samuel Noah"
+        ],
+        "year": 1963,
+        "title": "The Sumerians: Their History, Culture, and Character",
+        "publisher": "University of Chicago Press",
+        "isbn": "9780226452388",
+        "language": "en",
+        "note": "Popüler anlatının KÖKENİ. Kramer'in pasajı bir 'bozma' eylemi olarak okuması buradan yayıldı; bu kayıtta doğrulayıcı değil, iddianın kaynağı olarak kullanılıyor."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "etcsl-cevirisi",
+        "text": "ETCSL çevirisi: bütün halklar Enlil'e tek bir dille seslensin; Enki konuşmayı değiştirsin ve insanlığın konuşması gerçekten tek olsun.",
+        "citations": [
+          {
+            "source_ref": "etcsl-1-8-2-3-enmerkar",
+            "locator": "Nudimmud pasajı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "dilek-kipi-altin-cag",
+        "text": "Pasaj dilek kipinde ve altın çağ betimlemesi içinde geçiyor.",
+        "citations": [
+          {
+            "source_ref": "vanstiphout-2003-epics-sumerian-kings",
+            "locator": "Enmerkar ve Aratta Beyi, pasaj notları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "basili-ceviri-ayni",
+        "text": "Basılı standart çeviri de aynı okumayı veriyor - yani okuma tek bir çevrimiçi kaynağa bağlı değil.",
+        "citations": [
+          {
+            "source_ref": "black-2004-literature-ancient-sumer",
+            "locator": "Enmerkar ve Aratta Beyi çevirisi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kramer-okumasi-koken",
+        "text": "Karşıt okumanın kaynağı belirli: Kramer pasajı bir bozma eylemi olarak sunmuş ve popüler literatür bunu devralmıştır.",
+        "citations": [
+          {
+            "source_ref": "kramer-1963-the-sumerians",
+            "locator": "Enmerkar bölümü",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "fiil-kipi-tartismasi",
+        "text": "Sümerce fiilin kipi ve zamanı üzerinde uzmanlar arasında görüş farkı sürüyor; tartışma tamamen kapanmış değil.",
+        "citations": [
+          {
+            "source_ref": "vanstiphout-2003-epics-sumerian-kings",
+            "locator": "Fiil kipi tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "refuted-neye-ait",
+        "text": "'Refuted' damgası KRAMER'İN OKUMASINA değil, 'Babil Kulesi'nin Sümer versiyonu' eşleştirmesine aittir. Kramer'in metni yanlış çevirdiği değil, farklı yorumladığı söyleniyor.",
+        "citations": [
+          {
+            "source_ref": "kramer-1963-the-sumerians",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Fiil kipi tartışması nasıl çözülecek - yeni tablet parçası gerekebilir."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Kramer - eski okuma') gerçek künyeyle değiştirildi ve claim-origin olarak işaretlendi. 'Refuted'ın neyi çürüttüğü açıklığa kavuşturuldu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-asma-bahceler-ninova",
     "claim": "Asma Bahçeler Babil'de değil Ninova'daydı ve Sennacherib tarafından yaptırıldı.",
     "status": "contested",
@@ -282,38 +668,6 @@
       "babil",
       "ninova",
       "asma-bahceler"
-    ],
-    "popular_claim": "Asma Bahçeler Nebukadnezar tarafından Babil'de yaptırıldı.",
-    "divergence": "Dünyanın yedi harikasından yeri en şüpheli olanı; popüler anlatı hiç sorgulanmadan tekrarlanıyor.",
-    "evidence": [
-      "Hiçbir Babil metni bahçelerden söz etmiyor - Nebukadnezar'ın uzun inşaat yazıtları dahil.",
-      "Sennacherib Ninova'daki bahçesini ve ~50 km uzaktan su getiren sistemi kendi kaydetti.",
-      "Koldewey Babil'i 18 yıl kazdı ve ikna edici bir kalıntı bulamadı.",
-      "Ninova'da su kemeri kalıntıları ve su yükseltme düzeneğine dair betimlemeler var."
-    ],
-    "counter_evidence": [
-      "İki şehirde de bahçenin arkeolojik kanıtı yok - tez sorunu çözmüyor, yer değiştiriyor.",
-      "Eleştirmenler Dalley'in Klasik kaynakları seçici okuduğunu söylüyor.",
-      "Antik yazarların 'Babil' demesi tümüyle yok sayılamaz; ad bölgeyi geniş anlamda karşılıyor olabilir."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "title": "Stephanie Dalley, The Mystery of the Hanging Garden of Babylon (Oxford, 2013)"
-      },
-      {
-        "tier": "peer-reviewed",
-        "title": "Dalley'e yöneltilen metodolojik eleştiriler"
-      }
-    ],
-    "open_questions": [
-      "Bahçelerin tümüyle edebi bir abartı olma ihtimali masadan kalkmadı."
-    ],
-    "checked": "2026-09-06",
-    "volatile": true,
-    "used_in": [
-      "babil",
-      "ayni-cumlede"
     ],
     "subject": {
       "site": "Ninova (önerilen yer)",
@@ -359,11 +713,180 @@
         "lifespan": "1855-1925"
       }
     ],
+    "popular_claim": "Asma Bahçeler Nebukadnezar tarafından Babil'de yaptırıldı.",
+    "divergence": "Dünyanın yedi harikasından yeri en şüpheli olanı; popüler anlatı hiç sorgulanmadan tekrarlanıyor. Ama bu kaydın durumu 'çürütüldü' değil TARTIŞMALI: Ninova tezi güçlü bir öneri, kabul edilmiş bir sonuç değil.",
     "divergence_type": [
       "guncellenmemis"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "dalley-2013-hanging-garden",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Dalley, Stephanie"
+        ],
+        "year": 2013,
+        "title": "The Mystery of the Hanging Garden of Babylon: An Elusive World Wonder Traced",
+        "publisher": "Oxford University Press",
+        "isbn": "9780199662265",
+        "language": "en",
+        "note": "Ninova tezinin kitap boyu savunusu. Bu kayıtta TEZİN KAYNAĞI olarak kullanılıyor - tarafsız bir hakem değil, taraflardan biri."
+      },
+      {
+        "id": "dalley-1994-nineveh-babylon-iraq",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Dalley, Stephanie"
+        ],
+        "year": 1994,
+        "title": "Nineveh, Babylon and the Hanging Gardens: Cuneiform and Classical Sources Reconciled",
+        "container": "Iraq",
+        "volume": "56",
+        "publisher": "British Institute for the Study of Iraq",
+        "doi": "10.2307/4200384",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "Tezin makale biçimindeki ilk sunumu; Herodot'un ölçülerinin abartılı olduğu değerlendirmesini de içerir."
+      },
+      {
+        "id": "finkel-seymour-2008-babylon",
+        "tier": "institutional",
+        "type": "book",
+        "authors": [
+          "Finkel, Irving L.",
+          "Seymour, Michael J."
+        ],
+        "year": 2008,
+        "title": "Babylon: City of Wonders",
+        "publisher": "British Museum Press",
+        "institution": "British Museum",
+        "isbn": "9780714111711",
+        "language": "en",
+        "note": "Sergi kitabı; Babil arkeolojisinin kurumsal özeti. Dalley tezine mesafeli duran tarafı temsil ediyor."
+      },
+      {
+        "id": "koldewey-1913-babil",
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Koldewey, Robert"
+        ],
+        "year": 1913,
+        "title": "Das wieder erstehende Babylon",
+        "language": "de",
+        "note": "Kazı yayını; 1913 arazi ölçümünün kaynağı. KÜNYE BU TURDA BAĞIMSIZ DOĞRULANMADI - yayıncı ve baskı bilgisi eksik bırakıldı, uydurulmadı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "babil-metinleri-sessiz",
+        "text": "Hiçbir Babil metni bahçelerden söz etmiyor - Nebukadnezar'ın uzun inşaat yazıtları dahil.",
+        "citations": [
+          {
+            "source_ref": "dalley-2013-hanging-garden",
+            "locator": "Babil kaynaklarının sessizliği",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sennacherib-kendi-kaydi",
+        "text": "Sennacherib Ninova'daki bahçesini ve ~50 km uzaktan su getiren sistemi kendi kaydetti.",
+        "citations": [
+          {
+            "source_ref": "dalley-1994-nineveh-babylon-iraq",
+            "locator": "Sennacherib yazıtları çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "koldewey-bulamadi",
+        "text": "Koldewey Babil'i 18 yıl kazdı ve ikna edici bir kalıntı bulamadı.",
+        "citations": [
+          {
+            "source_ref": "koldewey-1913-babil",
+            "locator": "Kazı sonuçları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ninova-su-sistemi",
+        "text": "Ninova'da su kemeri kalıntıları ve su yükseltme düzeneğine dair betimlemeler var.",
+        "citations": [
+          {
+            "source_ref": "dalley-2013-hanging-garden",
+            "locator": "Su sistemi bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "kanit-iki-yerde-de-yok",
+        "text": "İki şehirde de bahçenin arkeolojik kanıtı yok - tez sorunu çözmüyor, yer değiştiriyor.",
+        "citations": [
+          {
+            "source_ref": "finkel-seymour-2008-babylon",
+            "locator": "Bahçeler bölümü",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "secici-okuma-elestirisi",
+        "text": "Eleştirmenler Dalley'in Klasik kaynakları seçici okuduğunu söylüyor.",
+        "citations": [
+          {
+            "source_ref": "finkel-seymour-2008-babylon",
+            "locator": "Tezin değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "babil-adi-genis-anlam",
+        "text": "Antik yazarların 'Babil' demesi tümüyle yok sayılamaz; ad bölgeyi geniş anlamda karşılıyor olabilir.",
+        "citations": [
+          {
+            "source_ref": "finkel-seymour-2008-babylon",
+            "locator": "Adlandırma tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tek-arastirmaci",
+        "text": "Bu kaydın iki ana kaynağı da AYNI YAZARDAN (Dalley 1994 ve 2013); tez lehindeki kanıt tek bir araştırmacının okumasına dayanıyor.",
+        "citations": [
+          {
+            "source_ref": "dalley-2013-hanging-garden",
+            "locator": "Kaynak bağımsızlığı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Bahçelerin tümüyle edebi bir abartı olma ihtimali masadan kalkmadı.",
+      "Dalley dışında tezi bağımsız olarak sınayan bir çalışma var mı?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil",
+      "ayni-cumlede"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Dalley'e yöneltilen metodolojik eleştiriler') Finkel & Seymour 2008 ile karşılandı. Tez lehindeki kanıtın tek yazara dayandığı açıkça işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-60lik-sistem-bugun",
     "claim": "Bugün kullandığımız 60 dakikalık saat ve 360 derecelik çember Mezopotamya'nın altmışlık taban sisteminden gelir.",
     "status": "established",
@@ -372,19 +895,6 @@
       "babil",
       "matematik",
       "sureklilik"
-    ],
-    "evidence": [
-      "Sümer kökenli altmışlık taban, Babil matematiğiyle sistemleşti ve Yunan astronomisi üzerinden aktarıldı."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "title": "Mezopotamya matematiği literatürü"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "babil"
     ],
     "subject": {
       "region": "Mezopotamya",
@@ -406,9 +916,104 @@
     "disciplines": [
       "matematik",
       "bilim-tarihi"
-    ]
+    ],
+    "popular_claim": "Altmışlık sistemi Babilliler icat etti.",
+    "divergence": "Zincir tek adımlı değil: taban SÜMER kökenlidir, BABİL matematiğinde sistemleşmiştir ve bugüne YUNAN ASTRONOMİSİ üzerinden geçmiştir. 'Babil icat etti' cümlesi üç ayrı aşamayı tek isme sıkıştırıyor - ve aktarımı sağlayan halkayı, yani astronomiyi, görünmez kılıyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "robson-2008-mathematics-ancient-iraq",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Robson, Eleanor"
+        ],
+        "year": 2008,
+        "title": "Mathematics in Ancient Iraq: A Social History",
+        "publisher": "Princeton University Press",
+        "isbn": "9780691091822",
+        "language": "en",
+        "note": "Mezopotamya matematiğinin toplumsal tarihi; altmışlık sistemin kökeni ve kullanımı."
+      },
+      {
+        "id": "neugebauer-1969-exact-sciences",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Neugebauer, Otto"
+        ],
+        "year": 1969,
+        "title": "The Exact Sciences in Antiquity",
+        "publisher": "Dover Publications",
+        "isbn": "9780486223322",
+        "language": "en",
+        "note": "Altmışlık sistemin Yunan astronomisi üzerinden aktarımının klasik anlatımı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "sumer-kokeni-babil-sistemlesme",
+        "text": "Altmışlık taban Sümer kökenlidir ve Babil matematiğinde sistemleşmiştir.",
+        "citations": [
+          {
+            "source_ref": "robson-2008-mathematics-ancient-iraq",
+            "locator": "Sayı sistemleri bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yunan-astronomisi-aktarimi",
+        "text": "Sistem bugüne Yunan astronomisi üzerinden aktarılmıştır.",
+        "citations": [
+          {
+            "source_ref": "neugebauer-1969-exact-sciences",
+            "locator": "Babil astronomisinin aktarımı",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "neden-60-bilinmiyor",
+        "text": "Altmışlık tabanın NEDEN seçildiği çözülmüş değil; bölenlerinin çokluğu sık öne sürülür ama bu sonradan yapılmış bir gerekçelendirmedir, belgeli bir sebep değil.",
+        "citations": [
+          {
+            "source_ref": "robson-2008-mathematics-ancient-iraq",
+            "locator": "Kökene dair tartışma",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kesintisiz-mi",
+        "text": "Bugünkü saat ve derece bölümlemesinin kesintisiz bir aktarım mı yoksa sonradan yeniden benimseme mi olduğu, aradaki dönemler için ayrıntılı olarak izlenmedi.",
+        "citations": [
+          {
+            "source_ref": "neugebauer-1969-exact-sciences",
+            "locator": "Aktarım zinciri",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Altmışlık tabanın seçilme sebebi belgelenebilir mi, yoksa kalıcı olarak açık bir soru mu?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Mezopotamya matematiği literatürü') Robson ve Neugebauer ile değiştirildi. Kayıt popular_claim ve divergence olmadan duruyordu; kuruldu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-yamuk-yontemi",
     "claim": "Babilli gökbilimciler Jüpiter'in konumunu hız-zaman grafiğinin altındaki alanı yamuk olarak hesaplayarak buluyordu.",
     "status": "established",
@@ -417,22 +1022,6 @@
       "babil",
       "astronomi",
       "matematik"
-    ],
-    "popular_claim": "Bu geometrik yöntem 14. yüzyıl Oxford'unda doğdu.",
-    "divergence": "2016'da çivi yazılı tabletlerde gösterildi; yöntem yaklaşık 1.400 yıl daha eski çıktı.",
-    "evidence": [
-      "Çivi yazılı tabletlerde hesap adımları izlenebiliyor.",
-      "Astronomi Günlükleri ~MÖ 7. yy'dan MÖ 1. yy'a, yaklaşık 700 yıl kesintisiz gözlem kaydı içeriyor."
-    ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "title": "Mathieu Ossendrijver, Science (2016)"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "babil"
     ],
     "subject": {
       "site": "Babil",
@@ -470,11 +1059,106 @@
         "year": 2016
       }
     ],
+    "popular_claim": "Bu geometrik yöntem 14. yüzyıl Oxford'unda doğdu.",
+    "divergence": "2016'da çivi yazılı tabletlerde gösterildi; yöntem yaklaşık 1.400 yıl daha eski çıktı.",
     "divergence_type": [
       "guncellenmemis"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "ossendrijver-2016-jupiter-yamuk",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ossendrijver, Mathieu"
+        ],
+        "year": 2016,
+        "title": "Ancient Babylonian astronomers calculated Jupiter's position from the area under a time-velocity graph",
+        "container": "Science",
+        "volume": "351(6272)",
+        "pages": "482-484",
+        "doi": "10.1126/science.aad8085",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "Yamuk yönteminin çivi yazılı tabletlerde gösterildiği makale. DOI crossref'te doğrulandı."
+      },
+      {
+        "id": "neugebauer-1969-exact-sciences",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Neugebauer, Otto"
+        ],
+        "year": 1969,
+        "title": "The Exact Sciences in Antiquity",
+        "publisher": "Dover Publications",
+        "isbn": "9780486223322",
+        "language": "en",
+        "note": "Altmışlık sistemin Yunan astronomisi üzerinden aktarımının klasik anlatımı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "hesap-adimlari-izlenebiliyor",
+        "text": "Çivi yazılı tabletlerde hesap adımları izlenebiliyor.",
+        "citations": [
+          {
+            "source_ref": "ossendrijver-2016-jupiter-yamuk",
+            "locator": "Tablet çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "700-yil-gozlem",
+        "text": "Astronomi Günlükleri ~MÖ 7. yy'dan MÖ 1. yy'a, yaklaşık 700 yıl kesintisiz gözlem kaydı içeriyor.",
+        "citations": [
+          {
+            "source_ref": "neugebauer-1969-exact-sciences",
+            "locator": "Astronomi Günlükleri",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "dort-tablet",
+        "text": "Bulgu DÖRT tablet üzerine kuruludur; yöntemin Babil astronomisinde ne kadar yaygın olduğu bundan çıkarılamaz.",
+        "citations": [
+          {
+            "source_ref": "ossendrijver-2016-jupiter-yamuk",
+            "locator": "Malzeme ve yöntem",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "baglanti-gosterilmedi",
+        "text": "'Oxford'da doğdu' anlatısının çürütülmesi, iki geleneğin BAĞLANTILI olduğunu göstermez; bağımsız gelişme de mümkündür.",
+        "citations": [
+          {
+            "source_ref": "ossendrijver-2016-jupiter-yamuk",
+            "locator": "Tartışma bölümü",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Yöntem Babil astronomisinde yaygın mıydı, yoksa birkaç kâtibe mi özgüydü?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Ossendrijver künyesi DOI ile tamamlandı (crossref doğruladı). Örneklem darlığı counter_evidence'a eklendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-herodot-gitti-mi",
     "claim": "Herodot Babil'i kendi gözleriyle gördü.",
     "status": "unknown",
@@ -483,23 +1167,6 @@
       "babil",
       "kaynak-elestirisi",
       "herodot"
-    ],
-    "popular_claim": "Herodot'un Babil betimlemesi görgü tanıklığıdır.",
-    "divergence": "Verdiği sur ölçüleri fiziksel olarak mümkün değil ve arkeolojik kalıntılarla uyuşmuyor; betimlemelerinde şehri görmüş birinden beklenmeyecek hatalar var.",
-    "counter_evidence": [
-      "Ölçüler dönemin hiçbir yapı tekniğiyle uyuşmuyor.",
-      "Muhtemelen ikinci elden, zaten büyütülmüş anlatılara dayandı."
-    ],
-    "sources": [
-      {
-        "tier": "primary",
-        "title": "Herodot, Tarihler I"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "babil",
-      "ayni-cumlede"
     ],
     "subject": {
       "site": "Babil",
@@ -531,16 +1198,131 @@
       {
         "name": "Herodotos",
         "role": "proposer",
-        "affiliation": "-",
         "year": -440,
         "lifespan": "MÖ ~484-425"
       }
     ],
+    "popular_claim": "Herodot'un Babil betimlemesi görgü tanıklığıdır.",
+    "divergence": "Verdiği sur ölçüleri fiziksel olarak mümkün değil ve arkeolojik kalıntılarla uyuşmuyor; betimlemelerinde şehri görmüş birinden beklenmeyecek hatalar var.",
     "divergence_type": [
       "medya-abartisi"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "herodotos-tarihler-1",
+        "tier": "primary",
+        "type": "book",
+        "authors": [
+          "Herodotos"
+        ],
+        "title": "Tarihler, I. kitap",
+        "language": "grc",
+        "note": "y. MÖ 440. Bu kayıtta iddianın kaynağı; güvenilirliği kaydın konusu."
+      },
+      {
+        "id": "dalley-1994-nineveh-babylon-iraq",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Dalley, Stephanie"
+        ],
+        "year": 1994,
+        "title": "Nineveh, Babylon and the Hanging Gardens: Cuneiform and Classical Sources Reconciled",
+        "container": "Iraq",
+        "volume": "56",
+        "publisher": "British Institute for the Study of Iraq",
+        "doi": "10.2307/4200384",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "Tezin makale biçimindeki ilk sunumu; Herodot'un ölçülerinin abartılı olduğu değerlendirmesini de içerir."
+      },
+      {
+        "id": "koldewey-1913-babil",
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Koldewey, Robert"
+        ],
+        "year": 1913,
+        "title": "Das wieder erstehende Babylon",
+        "language": "de",
+        "note": "Kazı yayını; 1913 arazi ölçümünün kaynağı. KÜNYE BU TURDA BAĞIMSIZ DOĞRULANMADI - yayıncı ve baskı bilgisi eksik bırakıldı, uydurulmadı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "tarihler-birinci-kitap",
+        "text": "Anlatının kaynağı Tarihler'in birinci kitabıdır; Herodot şehri ayrıntılı biçimde betimler.",
+        "citations": [
+          {
+            "source_ref": "herodotos-tarihler-1",
+            "locator": "Babil betimlemesi",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "olculer-abartili",
+        "text": "Verdiği sur ölçüleri abartılıdır ve dönemin yapı tekniğiyle uyuşmaz.",
+        "citations": [
+          {
+            "source_ref": "dalley-1994-nineveh-babylon-iraq",
+            "locator": "Klasik kaynakların ölçüleri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kazi-olcegi-desteklemiyor",
+        "text": "Kazıdan çıkan sur kalıntıları anlatılan ölçeği desteklemiyor.",
+        "citations": [
+          {
+            "source_ref": "koldewey-1913-babil",
+            "locator": "Sur kazıları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ikinci-el-anlatilar",
+        "text": "Muhtemelen ikinci elden, zaten büyütülmüş anlatılara dayandı.",
+        "citations": [
+          {
+            "source_ref": "dalley-1994-nineveh-babylon-iraq",
+            "locator": "Kaynak değerlendirmesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "gitmedi-denmiyor",
+        "text": "Kaydın durumu 'unknown' - yani 'gitmedi' denmiyor. Abartılı ölçüler gitmemiş olmayı DÜŞÜNDÜRÜR ama kanıtlamaz; bir gezginin gördüğünü de abartması mümkündür.",
+        "citations": [
+          {
+            "source_ref": "dalley-1994-nineveh-babylon-iraq",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Herodot'un Babil bölümü üzerine yapılmış özel çalışmalar bu kayıtta taranmadı; Almanca literatür özellikle eksik."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil",
+      "ayni-cumlede"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "DeepSeek turunda önerilen Rollinger künyesi ALINMADI: yalnızca alan adı düzeyinde bir URL vardı (histos.org), makalenin kendisine değil; başlık da doğrulanamadı. Kaydın Herodot'a özel literatür eksiği açık soru olarak bırakıldı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-istar-kapisi-berlin",
     "claim": "İştar Kapısı Berlin'deki Pergamon Müzesi'ndedir ve Irak iadesini talep etmektedir.",
     "status": "established",
@@ -549,27 +1331,6 @@
       "babil",
       "mulkiyet",
       "miras-hukuku"
-    ],
-    "evidence": [
-      "Koldewey kazısından çıkan sırlı tuğlalar Almanya'ya götürüldü, 1930'larda yeniden kuruldu.",
-      "Müzede sergilenen yalnızca küçük ön kapı; büyük olan depoda.",
-      "Babil UNESCO Dünya Mirası listesine ancak 2019'da girdi."
-    ],
-    "sources": [
-      {
-        "tier": "institutional",
-        "title": "Pergamon Museum, Berlin"
-      },
-      {
-        "tier": "institutional",
-        "title": "UNESCO Dünya Mirası, Babil (2019)"
-      }
-    ],
-    "checked": "2026-09-06",
-    "volatile": true,
-    "used_in": [
-      "babil",
-      "ayni-cumlede"
     ],
     "subject": {
       "site": "İştar Kapısı",
@@ -603,9 +1364,125 @@
         "year": 1899,
         "lifespan": "1855-1925"
       }
-    ]
+    ],
+    "popular_claim": "Berlin'de görülen İştar Kapısı, Babil'deki kapının kendisidir.",
+    "divergence": "Berlin'de duran şey taşınmış bir yapı değil, sırlı tuğlalardan 1930'larda KURULMUŞ bir yeniden inşadır. Dahası sergilenen, kapının küçük ön bölümüdür; büyük olan depodadır. Yani ziyaretçi 'Babil'in kapısını' değil, onun bir bölümünün müzede kurulmuş hâlini görüyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ],
+    "sources": [
+      {
+        "id": "pergamon-muzesi-istar-kapisi",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "İştar Kapısı, Vorderasiatisches Museum",
+        "institution": "Pergamonmuseum, Staatliche Museen zu Berlin",
+        "publisher": "Staatliche Museen zu Berlin",
+        "language": "de",
+        "note": "Nesneyi elinde tutan kurum - mülkiyet tartışmasında TARAF kaynak."
+      },
+      {
+        "id": "unesco-2019-babil-dunya-mirasi",
+        "tier": "institutional",
+        "type": "webpage",
+        "authors": [
+          "UNESCO World Heritage Centre"
+        ],
+        "year": 2019,
+        "title": "Babylon",
+        "institution": "UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1541/",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "Resmî tescil kaydı; Babil'in listeye 2019'da girdiğini doğrular."
+      },
+      {
+        "id": "koldewey-1913-babil",
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Koldewey, Robert"
+        ],
+        "year": 1913,
+        "title": "Das wieder erstehende Babylon",
+        "language": "de",
+        "note": "Kazı yayını; 1913 arazi ölçümünün kaynağı. KÜNYE BU TURDA BAĞIMSIZ DOĞRULANMADI - yayıncı ve baskı bilgisi eksik bırakıldı, uydurulmadı."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "tuglalar-tasindi",
+        "text": "Koldewey kazısından çıkan sırlı tuğlalar Almanya'ya götürüldü, 1930'larda yeniden kuruldu.",
+        "citations": [
+          {
+            "source_ref": "koldewey-1913-babil",
+            "locator": "Kazı ve buluntuların taşınması",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kucuk-on-kapi",
+        "text": "Müzede sergilenen yalnızca küçük ön kapı; büyük olan depoda.",
+        "citations": [
+          {
+            "source_ref": "pergamon-muzesi-istar-kapisi",
+            "locator": "Sergileme bilgisi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "unesco-2019-tescil",
+        "text": "Babil UNESCO Dünya Mirası listesine ancak 2019'da girdi.",
+        "citations": [
+          {
+            "source_ref": "unesco-2019-babil-dunya-mirasi",
+            "locator": "Tescil tarihi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "iade-talebi-dogrulanmadi",
+        "text": "İade talebinin hukuki durumu ve resmî yazışmaları bu kayıtta DOĞRULANMADI; ifade genel aktarımlara dayanıyor.",
+        "citations": [
+          {
+            "source_ref": "pergamon-muzesi-istar-kapisi",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "taraf-kaynak",
+        "text": "Nesneyi elinde tutan kurumun kendi sayfası bu tartışmada TARAF kaynaktır; Irak tarafının konumu burada temsil edilmiyor.",
+        "citations": [
+          {
+            "source_ref": "pergamon-muzesi-istar-kapisi",
+            "locator": "Kaynak konumu",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Irak'ın resmî iade talebi belgeli mi? Hangi tarihte, hangi kanaldan?"
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil",
+      "ayni-cumlede"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Kayıt popular_claim ve divergence olmadan duruyordu. Kuruldu: sergilenenin yeniden inşa olduğu ayrımı eklendi. İade talebinin doğrulanmadığı açıkça işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "babil-modern-tahribat",
     "claim": "Babil sahası 1980'lerdeki yeniden inşa ve 2003 sonrası askerî üs nedeniyle geri dönülmez hasar gördü.",
     "status": "established",
@@ -613,21 +1490,6 @@
     "topic": [
       "babil",
       "miras-tahribati"
-    ],
-    "evidence": [
-      "Saddam Hüseyin Nebukadnezar'ın sarayının kalıntıları üzerine, kendi adı damgalı tuğlalarla inşa ettirdi.",
-      "2003-2004'te koalisyon güçleri doğrudan alanın üzerine üs kurdu.",
-      "UNESCO raporunda arkeolojik tabakayı kesen hendekler, kum torbalarına doldurulan arkeolojik dolgu, ezilen 2.600 yıllık tuğla döşemeler ve İştar Kapısı kabartmalarında tahribat belgelendi."
-    ],
-    "sources": [
-      {
-        "tier": "institutional",
-        "title": "UNESCO Babil hasar raporu (2009)"
-      }
-    ],
-    "checked": "2026-09-06",
-    "used_in": [
-      "babil"
     ],
     "subject": {
       "site": "Babil",
@@ -652,8 +1514,126 @@
       "arkeoloji",
       "hukuk"
     ],
+    "popular_claim": "Babil'in tahribatı 2003 işgaliyle başladı.",
+    "divergence": "Hasar iki ayrı kaynaktan ve iki farklı türde geldi. 1980'lerde Saddam Hüseyin özgün kalıntıların ÜZERİNE, kendi adı damgalı tuğlalarla inşa ettirdi - yani tahribat bir siyasi program olarak yapıldı. 2003-2004'te ise alanın üzerine askerî üs kuruldu ve yaklaşık 300.000 m² çakılla kaplandı. İkincisi daha çok konuşuluyor ama birincisi geri dönülmezliği bakımından ondan hafif değil.",
     "divergence_type": [
-      "ideolojik-secim"
-    ]
+      "ideolojik-secim",
+      "guncellenmemis"
+    ],
+    "sources": [
+      {
+        "id": "van-ess-curtis-2009-babil-hasar-raporu",
+        "tier": "institutional",
+        "type": "report",
+        "authors": [
+          "van Ess, Margareta",
+          "Curtis, John"
+        ],
+        "year": 2009,
+        "title": "Final Report on Damage Assessment in Babylon",
+        "container": "International Coordination Committee for the Safeguarding of the Cultural Heritage of Iraq",
+        "institution": "UNESCO",
+        "publisher": "UNESCO, Paris",
+        "language": "en",
+        "note": "Askerî üssün yol açtığı hasarın kurumsal değerlendirmesi. Katkıda bulunanlar arasında Irak SBAH, John Curtis (British Museum), Elizabeth Stone'un uydu görüntüsü çözümlemesi ve Roberto Parapetti'nin raporu var - yani tek elden çıkmış bir belge değil."
+      },
+      {
+        "id": "unesco-2019-babil-dunya-mirasi",
+        "tier": "institutional",
+        "type": "webpage",
+        "authors": [
+          "UNESCO World Heritage Centre"
+        ],
+        "year": 2019,
+        "title": "Babylon",
+        "institution": "UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1541/",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "note": "Resmî tescil kaydı; Babil'in listeye 2019'da girdiğini doğrular."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "saddam-yeniden-insa",
+        "text": "Saddam Hüseyin Nebukadnezar'ın sarayının kalıntıları üzerine, kendi adı damgalı tuğlalarla inşa ettirdi.",
+        "citations": [
+          {
+            "source_ref": "van-ess-curtis-2009-babil-hasar-raporu",
+            "locator": "Yeniden inşa dönemi değerlendirmesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "askeri-us-2003-2004",
+        "text": "2003-2004'te koalisyon güçleri doğrudan alanın üzerine üs kurdu; kamp Nisan 2003 ile Aralık 2004 arasında kaldı.",
+        "citations": [
+          {
+            "source_ref": "van-ess-curtis-2009-babil-hasar-raporu",
+            "locator": "Askerî kamp dönemi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "300000-m2-cakil",
+        "text": "Yaklaşık 300.000 m² çakılla kaplandı; bu, bozulmamış arkeolojik dolguyu tehlikeye attı.",
+        "citations": [
+          {
+            "source_ref": "van-ess-curtis-2009-babil-hasar-raporu",
+            "locator": "Hasar dökümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "istar-kapisi-toren-yolu-hasar",
+        "text": "Kazı, kesme, sıyırma ve tesviye işlemleri kente ciddi zarar verdi; İştar Kapısı ve Tören Yolu da hasar gördü.",
+        "citations": [
+          {
+            "source_ref": "van-ess-curtis-2009-babil-hasar-raporu",
+            "locator": "Hasar dökümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "raporun-katkicilari",
+        "text": "Rapor tek elden çıkmadı ama TARAFLARDAN BİRİNİN katkısını da içeriyor: değerlendirmelere ABD Dışişleri Bakanlığı için hazırlanan bir rapor da girdi. Bu, raporu geçersiz kılmaz, okunurken bilinmesi gerekir.",
+        "citations": [
+          {
+            "source_ref": "van-ess-curtis-2009-babil-hasar-raporu",
+            "locator": "Katkıda bulunanlar",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "geri-donulmezlik-dereceli",
+        "text": "'Geri dönülmez' nitelemesi hasarın türüne göre değişir; çakıl örtüsünün kaldırılabilirliği ile tabakayı kesen hendekler aynı şey değildir.",
+        "citations": [
+          {
+            "source_ref": "van-ess-curtis-2009-babil-hasar-raporu",
+            "locator": "Öneriler bölümü",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "1980'ler ve 2003 hasarının göreli ağırlığı ölçülebilir mi?",
+      "2009 raporundan bu yana durum nasıl değişti? Güncel değerlendirme taranmadı."
+    ],
+    "checked": "2026-09-09",
+    "used_in": [
+      "babil"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "DeepSeek turunda bu kayda George 1992 önerilmişti - kitap gerçek ama antik topografya metinleri modern tahribat hakkında hiçbir şey söylemez. DOĞRULANMIŞ AMA İLGİSİZ olduğu için alınmadı; yerine UNESCO 2009 hasar raporunun künyesi ayrıca arandı ve doğrulandı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+    }
   }
 ]
