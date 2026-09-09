@@ -277,6 +277,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "sumer-akadca-uzerinden-cozuldu",
     "claim": "Sümerce doğrudan değil, Akadca üzerinden ve Babilli kâtiplerin hazırladığı iki dilli sözlük listeleri sayesinde okunabildi.",
     "status": "established",
@@ -321,43 +322,144 @@
       {
         "name": "Rawlinson, Henry",
         "role": "translator",
-        "affiliation": "-",
         "year": 1847,
         "lifespan": "1810-1895"
       },
       {
         "name": "Oppert, Jules",
         "role": "proposer",
-        "affiliation": "-",
         "year": 1869,
         "lifespan": "1825-1905"
       }
     ],
-    "evidence": [
-      "Behistun Yazıtı (~MÖ 520) aynı metni Eski Farsça, Elamca ve Akadca verir; Eski Farsça çözülünce Akadca da çözüldü.",
-      "1850'lerde Akadca metinler arasında aynı yazıyla yazılmış farklı bir dil fark edildi.",
-      "Babilli kâtiplerin kendi eğitimleri için hazırladığı Sümerce-Akadca sözlük listeleri anahtarı verdi.",
-      "Dile 'Sümerce' adı 1869'da kondu - Sümerler kendi adlarını bize bırakmadı."
+    "popular_claim": "Sümerce, tabletler bulununca okundu.",
+    "divergence": "Sümerce'yi okumamızı sağlayan şey Sümerlerin kendisi değil, ONLARDAN SONRA GELENLERİN ÖDEVLERİ oldu. Babilli kâtipler Sümerce'yi ölü bir okul dili olarak öğrenirken kendileri için iki dilli sözlük listeleri hazırladılar; anahtar bu listelerde. Zincir üç adımlı: Behistun'un üç dilliliği Eski Farsça'yı verdi, o Akadca'yı açtı, Akadca da Sümerce'yi. Dilin adı bile bize ait - 'Sümerce' 1869'da kondu; Sümerler kendi adlarını bize bırakmadı.",
+    "divergence_type": [
+      "kategori-hatasi"
     ],
     "sources": [
       {
+        "id": "behistun-yaziti",
+        "language": "peo",
+        "accessed": "2026-09-09",
         "tier": "primary",
         "type": "inscription",
-        "year": -520,
         "title": "Behistun Yazıtı",
-        "language": "peo"
+        "note": "y. MÖ 520. Aynı metni Eski Farsça, Elamca ve Akadca veren üç dilli kaya yazıtı - çivi yazısının çözülmesinin anahtarı."
       },
       {
+        "id": "daniels-bright-1996-worlds-writing-systems",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
-        "title": "Çivi yazısının çözülmesi ve Asirbilim tarihi literatürü",
-        "language": "en"
+        "authors": [
+          "Daniels, Peter T.",
+          "Bright, William"
+        ],
+        "year": 1996,
+        "title": "The World's Writing Systems",
+        "publisher": "Oxford University Press",
+        "isbn": "9780195079937",
+        "note": "Yazı sistemlerinin standart başvuru eseri; çivi yazısının çözülme tarihçesi ve Sümerce'nin adlandırılması için dayanak."
+      },
+      {
+        "id": "kramer-1963-the-sumerians",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Kramer, Samuel Noah"
+        ],
+        "year": 1963,
+        "title": "The Sumerians: Their History, Culture, and Character",
+        "publisher": "University of Chicago Press",
+        "isbn": "9780226452388",
+        "note": "Alanın klasik genel eseri. 1963 tarihlidir; köken tartışmasının sonraki altmış yılını kapsamaz - bu, kullanıldığı yerlerde işaretlendi."
       }
     ],
-    "checked": "2026-09-06",
+    "evidence": [
+      {
+        "id": "behistun-uc-dilli",
+        "text": "Behistun Yazıtı (~MÖ 520) aynı metni Eski Farsça, Elamca ve Akadca verir; Eski Farsça çözülünce Akadca da çözüldü.",
+        "citations": [
+          {
+            "source_ref": "behistun-yaziti",
+            "locator": "Üç dilli metin",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "farkli-dil-fark-edildi",
+        "text": "1850'lerde Akadca metinler arasında aynı yazıyla yazılmış farklı bir dil fark edildi.",
+        "citations": [
+          {
+            "source_ref": "daniels-bright-1996-worlds-writing-systems",
+            "locator": "Çivi yazısının çözülmesi bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "iki-dilli-listeler",
+        "text": "Babilli kâtiplerin kendi eğitimleri için hazırladığı Sümerce-Akadca sözlük listeleri anahtarı verdi.",
+        "citations": [
+          {
+            "source_ref": "kramer-1963-the-sumerians",
+            "locator": "Kâtip eğitimi ve sözlük listeleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "1869-adlandirma",
+        "text": "Dile 'Sümerce' adı 1869'da kondu - Sümerler kendi adlarını bize bırakmadı.",
+        "citations": [
+          {
+            "source_ref": "daniels-bright-1996-worlds-writing-systems",
+            "locator": "Adlandırma tarihçesi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "babilli-anlayisi-tasiyor",
+        "text": "İki dilli listeler BABİLLİLERİN Sümerce anlayışını taşır; onlar için de Sümerce ölü bir dildi. Yani anahtar, dilin son konuşurlarından değil sonraki öğrencilerinden geliyor ve bu, aktarımda kayıp ihtimalini açık bırakıyor.",
+        "citations": [
+          {
+            "source_ref": "kramer-1963-the-sumerians",
+            "locator": "Sözlük listelerinin niteliği",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kramer-1963-eski",
+        "text": "Kramer 1963 tarihlidir; çözülme tarihçesinin sonraki altmış yıldaki değerlendirmesi bu kayıtta taranmadı.",
+        "citations": [
+          {
+            "source_ref": "kramer-1963-the-sumerians",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "İki dilli listelerin Sümerce anlayışı ne kadar güvenilir - Babilli kâtiplerin hataları izlenebiliyor mu?"
+    ],
+    "checked": "2026-09-09",
     "used_in": [
       "sumer"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Çivi yazısının çözülmesi ve Asirbilim tarihi literatürü') iki gerçek künyeyle değiştirildi. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+    }
   },
   {
     "schema_version": 2,
@@ -1037,6 +1139,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "sumer-anunnaki-nibiru",
     "claim": "Anunnaki, Nibiru adlı bir gezegenden gelen dünya dışı bir ırktır.",
     "status": "refuted",
@@ -1069,20 +1172,25 @@
       "astronomi",
       "dilbilim"
     ],
+    "people": [
+      {
+        "name": "Sitchin, Zecharia",
+        "role": "proposer",
+        "year": 1976,
+        "lifespan": "1920-2010"
+      }
+    ],
     "popular_claim": "Sümer tabletleri Nibiru'dan gelen Anunnaki adlı uzaylı bir ırkı anlatır.",
-    "divergence": "İddia 1976 tarihli popüler bir kitaptan gelir, çivi yazısından değil. Metinlerde bu okumayı destekleyen hiçbir şey yok ve Asirbilim alanı iddiayı bütünüyle reddeder.",
+    "divergence": "İddia 1976 tarihli popüler bir kitaptan gelir, çivi yazısından değil. İki kelime de gerçek ama anlamları başka: Anunna(ki) 'An'ın soyu' demektir ve Sümer panteonunun genelini karşılar - yani tanrılar, ziyaretçiler değil. Nibiru ise Babil astronomi metinlerinde bir GÖK KONUMU / geçiş noktasıdır. Gerçek kelimeleri alıp anlamlarını değiştirmek, uydurmaktan daha ikna edici görünür; iddianın gücü de buradan geliyor.",
     "divergence_type": [
       "medya-abartisi",
       "ideolojik-secim"
     ],
-    "counter_evidence": [
-      "Anunna(ki) 'An'ın soyu' demektir ve tanrılar topluluğunu, yani Sümer panteonunun genelini karşılar.",
-      "Nibiru, Babil astronomi metinlerinde bir gök konumu / geçiş noktasıdır ve farklı metinlerde farklı gök cisimleriyle ilişkilendirilir.",
-      "3.600 yıllık yörüngeli bir gezegen fikrinin çivi yazılı hiçbir dayanağı yok.",
-      "İddia sahibinin çevirileri çivi yazılı metinlerle örtüşmüyor."
-    ],
     "sources": [
       {
+        "id": "sitchin-1976-12th-planet",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "unreliable",
         "type": "book",
         "authors": [
@@ -1090,22 +1198,149 @@
         ],
         "year": 1976,
         "title": "The 12th Planet",
-        "language": "en",
-        "note": "Kanıt olarak değil, iddianın kaynağı olarak kaydedildi."
+        "publisher": "Stein and Day",
+        "note": "İddianın KAYNAĞI. Bu kayıtta kanıt olarak değil, çürütülen iddianın çıkış noktası olarak duruyor."
       },
       {
+        "id": "black-george-postgate-2000-cda",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
-        "title": "Akadca ve Sümerce sözlük külliyatı; Babil astronomi metinleri literatürü",
-        "language": "en"
+        "authors": [
+          "Black, Jeremy",
+          "George, Andrew",
+          "Postgate, Nicholas"
+        ],
+        "year": 2000,
+        "title": "A Concise Dictionary of Akkadian",
+        "publisher": "Harrassowitz Verlag",
+        "isbn": "9783447042642",
+        "note": "Akadca standart sözlük. Bu dosyada 'anunna(ki)' ve 'nibiru' kelimelerinin sözlük anlamı için dayanak."
+      },
+      {
+        "id": "epsd-sumer-sozlugu",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "institutional",
+        "type": "database",
+        "title": "The Pennsylvania Sumerian Dictionary (ePSD)",
+        "institution": "University of Pennsylvania Museum",
+        "url": "https://psd.museum.upenn.edu/",
+        "note": "Sümerce sözlük projesi; kelime anlamlarının açık erişimli kontrol yolu."
+      },
+      {
+        "id": "hunger-pingree-1989-mul-apin",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Hunger, Hermann",
+          "Pingree, David"
+        ],
+        "year": 1989,
+        "title": "MUL.APIN: An Astronomical Compendium in Cuneiform",
+        "container": "Archiv für Orientforschung, Beiheft 24",
+        "publisher": "F. Berger, Horn",
+        "note": "Babil astronomi derlemesinin standart edisyonu. KÜNYE DOĞRULANDI AMA İLGİLİ PASAJ DOĞRULANMADI: bu eserin 'nibiru' hakkında tam olarak ne dediği bu turda kontrol edilmedi. Atıf corpus düzeyindedir, pasaj düzeyinde değil."
       }
     ],
-    "checked": "2026-09-06",
+    "evidence": [
+      {
+        "id": "iddianin-kaynagi-1976",
+        "text": "İddianın kaynağı 1976 tarihli popüler bir kitaptır, herhangi bir çivi yazılı metin değil.",
+        "citations": [
+          {
+            "source_ref": "sitchin-1976-12th-planet",
+            "locator": "Kitabın tezi",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "anunna-anlami",
+        "text": "Anunna(ki) 'An'ın soyu' demektir ve tanrılar topluluğunu, yani Sümer panteonunun genelini karşılar.",
+        "citations": [
+          {
+            "source_ref": "epsd-sumer-sozlugu",
+            "locator": "anunna maddesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "cda-anunnaku",
+        "text": "Kelimenin Akadca sözlükteki karşılığı da aynı yöndedir; 'uzaylı ırk' okuması sözlük düzeyinde karşılıksızdır.",
+        "citations": [
+          {
+            "source_ref": "black-george-postgate-2000-cda",
+            "locator": "anunnakū maddesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "nibiru-gok-konumu",
+        "text": "Nibiru, Babil astronomi metinlerinde bir gök konumu / geçiş noktasıdır ve farklı metinlerde farklı gök cisimleriyle ilişkilendirilir.",
+        "citations": [
+          {
+            "source_ref": "hunger-pingree-1989-mul-apin",
+            "locator": "Babil astronomi derlemesi - corpus düzeyi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "3600-yillik-yorunge-yok",
+        "text": "3.600 yıllık yörüngeli bir gezegen fikrinin çivi yazılı hiçbir dayanağı yok.",
+        "citations": [
+          {
+            "source_ref": "hunger-pingree-1989-mul-apin",
+            "locator": "Derlemenin içeriği - corpus düzeyi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "pasaj-dogrulanmadi",
+        "text": "KAYIT DÜZEYİ SINIRI: MUL.APIN'in nibiru hakkında tam olarak ne dediği bu turda DOĞRULANMADI. Künye teyit edildi, ilgili pasaj değil. Bir kaydın 'refuted' olması, çürütmenin dayanağını gevşek bırakmak için gerekçe değildir - pasaj düzeyinde locator bulunmalı.",
+        "citations": [
+          {
+            "source_ref": "hunger-pingree-1989-mul-apin",
+            "locator": "Künye ve locator düzeyi",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "ceviriler-tek-tek-karsilastirilmadi",
+        "text": "İddia sahibinin çevirileri çivi yazılı metinlerle örtüşmüyor; ama bu kayıtta çevirilerin TEK TEK karşılaştırması yapılmadı - ifade alan genelinin değerlendirmesine dayanıyor.",
+        "citations": [
+          {
+            "source_ref": "sitchin-1976-12th-planet",
+            "locator": "Çeviri iddiaları",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "MUL.APIN'de nibiru'nun geçtiği satırlar künyelenmeli - şu an atıf corpus düzeyinde."
+    ],
+    "checked": "2026-09-09",
     "used_in": [
       "sumer"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Akadca ve Sümerce sözlük külliyatı') CDA, ePSD ve MUL.APIN künyeleriyle değiştirildi. MUL.APIN'in ilgili pasajının doğrulanmadığı açıkça yazıldı ve açık soruya taşındı - 'refuted' bir kayıtta dayanağı gevşek bırakmak özellikle sakıncalı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "sumer-birdenbire-ortaya-cikmadi",
     "claim": "Sümer uygarlığı öncesiz biçimde, birdenbire ortaya çıktı.",
     "status": "refuted",
@@ -1138,25 +1373,111 @@
     "divergence_type": [
       "medya-abartisi"
     ],
-    "counter_evidence": [
-      "Aynı bölgelerde giderek büyüyen yerleşimler.",
-      "Çömlekçilikte kesintisiz tipolojik gelişim.",
-      "Tapınak yapılarında kademeli büyüme - küçük odadan anıtsal yapıya."
-    ],
     "sources": [
       {
+        "id": "adams-1981-heartland-of-cities",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
-        "title": "Ubeyd-Uruk geçişi ve güney Mezopotamya yerleşim arkeolojisi literatürü",
-        "language": "en"
+        "authors": [
+          "Adams, Robert McC."
+        ],
+        "year": 1981,
+        "title": "Heartland of Cities: Surveys of Ancient Settlement and Land Use on the Central Floodplain of the Euphrates",
+        "publisher": "University of Chicago Press",
+        "isbn": "9780226005447",
+        "note": "Güney Mezopotamya yerleşim örüntüsünün yüzey araştırmasına dayanan klasik çalışması; süreklilik savının ana dayanağı."
+      },
+      {
+        "id": "pollock-1999-ancient-mesopotamia",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Pollock, Susan"
+        ],
+        "year": 1999,
+        "title": "Ancient Mesopotamia: The Eden that Never Was",
+        "publisher": "Cambridge University Press",
+        "isbn": "9780521575683",
+        "note": "Ubeyd-Uruk geçişinin toplumsal arkeoloji açısından değerlendirmesi."
       }
     ],
-    "checked": "2026-09-06",
+    "evidence": [
+      {
+        "id": "buyuyen-yerlesimler",
+        "text": "Aynı bölgelerde giderek büyüyen yerleşimler; yüzey araştırmaları bunu örüntü düzeyinde gösteriyor.",
+        "citations": [
+          {
+            "source_ref": "adams-1981-heartland-of-cities",
+            "locator": "Yerleşim örüntüsü çözümlemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "comlekcilik-surekliligi",
+        "text": "Çömlekçilikte kesintisiz tipolojik gelişim.",
+        "citations": [
+          {
+            "source_ref": "pollock-1999-ancient-mesopotamia",
+            "locator": "Ubeyd-Uruk maddi kültürü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tapinak-kademeli-buyume",
+        "text": "Tapınak yapılarında kademeli büyüme - küçük odadan anıtsal yapıya.",
+        "citations": [
+          {
+            "source_ref": "pollock-1999-ancient-mesopotamia",
+            "locator": "Anıtsal mimarinin gelişimi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "maddi-kultur-nufus-degil",
+        "text": "Süreklilik MADDİ KÜLTÜRDE gösteriliyor; bu, Ubeyd nüfusuyla Uruk nüfusunun aynı olduğunu kanıtlamaz. Çömlek geleneği devam ederken nüfus değişebilir.",
+        "citations": [
+          {
+            "source_ref": "pollock-1999-ancient-mesopotamia",
+            "locator": "Süreklilik yorumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "olcek-artisinin-hizi",
+        "text": "Uruk döneminde ölçek artışının HIZI ayrı bir tartışma konusudur; 'kademeli' nitelemesi bu hızı hafifletiyor olabilir.",
+        "citations": [
+          {
+            "source_ref": "adams-1981-heartland-of-cities",
+            "locator": "Kentleşme hızı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Uruk kentleşmesinin hızı hangi çözünürlükte ölçülebiliyor?"
+    ],
+    "checked": "2026-09-09",
     "used_in": [
       "sumer"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu iki gerçek künyeyle değiştirildi. Maddi kültür sürekliliğinin nüfus sürekliliği demek olmadığı eklendi - kayıt bu ikisini ayırmıyordu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "sumer-koken-sorunu",
     "claim": "Sümerlerin kökeni belirlenmiştir.",
     "status": "unknown",
@@ -1188,29 +1509,140 @@
       "arkeoloji",
       "genetik"
     ],
-    "evidence": [
-      "Arkeoloji Ubeyd'den Uruk'a yerel süreklilik gösteriyor - dışarıdan ani bir gelişe işaret yok.",
-      "Sümerce bilinen hiçbir dille akraba değildir; bir dil izolatıdır."
-    ],
-    "counter_evidence": [
-      "Dil izolatı olması, dilin bölgeye dışarıdan gelmiş olabileceği ihtimalini açık bırakıyor.",
-      "Arkeolojik süreklilik ile dilbilimsel yalıtılmışlık tam olarak uzlaştırılamadı."
+    "popular_claim": "Sümerler Orta Asya'dan (ya da başka bir yerden) gelmiş bir halktır.",
+    "divergence": "İki kanıt türü FARKLI YÖNLERE işaret ediyor ve bu, henüz uzlaştırılmadı. Arkeoloji Ubeyd'den Uruk'a yerel süreklilik gösteriyor - dışarıdan ani bir geliş izi yok. Dilbilim ise Sümerce'yi bilinen hiçbir dile bağlayamıyor; bir dil izolatı. 'Köken belirlendi' diyen her cevap, bu iki kanıttan birini seçip ötekini görmezden geliyor. Kaydın durumu bu yüzden 'unknown' - eksiklik değil, iki kanıt türünün henüz birleştirilememesi.",
+    "divergence_type": [
+      "kategori-hatasi"
     ],
     "sources": [
       {
+        "id": "matthews-2003-archaeology-mesopotamia",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "book",
-        "title": "Sümer sorunu üzerine dilbilim ve arkeoloji literatürü",
-        "language": "en"
+        "authors": [
+          "Matthews, Roger"
+        ],
+        "year": 2003,
+        "title": "The Archaeology of Mesopotamia: Theories and Approaches",
+        "publisher": "Routledge",
+        "isbn": "9780415253178",
+        "note": "Alanın kuram ve yöntem tartışması; 'Sümer sorunu'nun nasıl kurulduğuna dair güncel değerlendirme."
+      },
+      {
+        "id": "adams-1981-heartland-of-cities",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Adams, Robert McC."
+        ],
+        "year": 1981,
+        "title": "Heartland of Cities: Surveys of Ancient Settlement and Land Use on the Central Floodplain of the Euphrates",
+        "publisher": "University of Chicago Press",
+        "isbn": "9780226005447",
+        "note": "Güney Mezopotamya yerleşim örüntüsünün yüzey araştırmasına dayanan klasik çalışması; süreklilik savının ana dayanağı."
+      },
+      {
+        "id": "bottero-1992-mesopotamia",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Bottéro, Jean"
+        ],
+        "year": 1992,
+        "title": "Mesopotamia: Writing, Reasoning, and the Gods",
+        "publisher": "University of Chicago Press",
+        "isbn": "9780226067278",
+        "note": "Mezopotamya kültürünün genel değerlendirmesi."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "arkeolojik-sureklilik",
+        "text": "Arkeoloji Ubeyd'den Uruk'a yerel süreklilik gösteriyor - dışarıdan ani bir gelişe işaret yok.",
+        "citations": [
+          {
+            "source_ref": "adams-1981-heartland-of-cities",
+            "locator": "Yerleşim sürekliliği",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "dil-izolati",
+        "text": "Sümerce bilinen hiçbir dille akraba değildir; bir dil izolatıdır.",
+        "citations": [
+          {
+            "source_ref": "bottero-1992-mesopotamia",
+            "locator": "Dil ve yazı bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sorunun-kurulusu",
+        "text": "'Sümer sorunu'nun kendisi bir araştırma tarihi konusudur: sorunun nasıl kurulduğu, verilen cevapları biçimlendiriyor.",
+        "citations": [
+          {
+            "source_ref": "matthews-2003-archaeology-mesopotamia",
+            "locator": "Kuram ve yaklaşımlar",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "izolat-disaridan-gelme",
+        "text": "Dil izolatı olması, dilin bölgeye dışarıdan gelmiş olabileceği ihtimalini açık bırakıyor.",
+        "citations": [
+          {
+            "source_ref": "bottero-1992-mesopotamia",
+            "locator": "Dilin konumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "uzlastirilamadi",
+        "text": "Arkeolojik süreklilik ile dilbilimsel yalıtılmışlık tam olarak uzlaştırılamadı.",
+        "citations": [
+          {
+            "source_ref": "matthews-2003-archaeology-mesopotamia",
+            "locator": "Köken tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "arkeogenetik-yok",
+        "text": "Kayıt 'genetik' disiplinini sayıyor ama bu turda hiçbir arkeogenetik çalışma künyelenmedi; o kanıt türü burada TEMSİL EDİLMİYOR.",
+        "citations": [
+          {
+            "source_ref": "matthews-2003-archaeology-mesopotamia",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Dil ve maddi kültür farklı yönlere işaret ederken köken nasıl belirlenir?"
+      "Dil ve maddi kültür farklı yönlere işaret ederken köken nasıl belirlenir?",
+      "Güney Mezopotamya için arkeogenetik veri var mı? Bu kayıtta taranmadı."
     ],
-    "checked": "2026-09-06",
+    "checked": "2026-09-09",
     "used_in": [
       "sumer"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu üç künyeyle değiştirildi. Kayıt 'genetik' disiplinini sayarken hiç genetik kaynak taşımıyordu; bu boşluk açıkça yazıldı."
+    }
   },
   {
     "schema_version": 2,
@@ -1374,6 +1806,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "sumer-ur-sancagi-islevi",
     "claim": "Ur Sancağı'nın işlevi belirlenmiştir.",
     "status": "unknown",
@@ -1406,40 +1839,160 @@
       "arkeoloji",
       "sanat-tarihi"
     ],
+    "people": [
+      {
+        "name": "Woolley, Leonard",
+        "role": "excavator",
+        "affiliation": "British Museum / Penn Museum",
+        "year": 1934,
+        "lifespan": "1880-1960"
+      }
+    ],
     "popular_claim": "Ur Sancağı bir savaş sancağıdır.",
     "divergence": "'Sancak' adı kazıcının tahminidir; nesnenin işlevi bilinmiyor. Ad, tahminin zamanla gerçeğe dönüşmesinin tipik örneği.",
     "divergence_type": [
       "turizm-kopyalamasi",
       "guncellenmemis"
     ],
-    "evidence": [
-      "İki panelde savaş ve barış sahneleri var: arabalar, esirler, ziyafet, mal getiren insanlar.",
-      "Lapis lazuli, kırmızı kireçtaşı ve deniz kabuğuyla kakma; lapis Afganistan'dan geliyor - uzun mesafeli ticaretin kanıtı."
-    ],
-    "counter_evidence": [
-      "Kutu, çalgı gövdesi ve mobilya parçası dahil rakip yorumlar var; hiçbiri kanıtlanmadı."
-    ],
     "sources": [
       {
+        "id": "woolley-1934-ur-kral-mezarligi",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "primary",
         "type": "report",
         "authors": [
           "Woolley, Leonard"
         ],
-        "title": "Ur Kral Mezarlığı kazı raporları",
-        "language": "en"
+        "year": 1934,
+        "title": "Ur Excavations II: The Royal Cemetery",
+        "publisher": "British Museum - University Museum, Philadelphia",
+        "note": "Kazı raporu. 'Sancak' adlandırması buradan gelir - kazıcının tahmini, kaydın konusu olan ad."
       },
       {
+        "id": "zettler-horne-1998-treasures-ur",
+        "language": "en",
+        "accessed": "2026-09-09",
         "tier": "institutional",
-        "type": "webpage",
-        "title": "Ur Sancağı kayıt bilgisi",
-        "institution": "British Museum",
-        "language": "en"
+        "type": "book",
+        "authors": [
+          "Zettler, Richard L.",
+          "Horne, Lee"
+        ],
+        "year": 1998,
+        "title": "Treasures from the Royal Tombs of Ur",
+        "institution": "University of Pennsylvania Museum of Archaeology and Anthropology",
+        "publisher": "University of Pennsylvania Museum",
+        "isbn": "9780924171550",
+        "note": "Nesneyi elinde tutan müzenin sergi ve katalog kitabı; Ur Sancağı'nın tanımı ve malzeme dökümü için dayanak."
+      },
+      {
+        "id": "collon-1995-ancient-near-eastern-art",
+        "language": "en",
+        "accessed": "2026-09-09",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Collon, Dominique"
+        ],
+        "year": 1995,
+        "title": "Ancient Near Eastern Art",
+        "publisher": "University of California Press",
+        "isbn": "9780520203075",
+        "note": "Yakındoğu sanatının standart girişi; nesnenin ikonografik değerlendirmesi."
       }
     ],
-    "checked": "2026-09-06",
+    "evidence": [
+      {
+        "id": "adlandirma-kazicidan",
+        "text": "'Sancak' adlandırması kazı raporundan gelir; nesnenin bir direğe takıldığına dair bir bulgu değil, kazıcının yorumudur.",
+        "citations": [
+          {
+            "source_ref": "woolley-1934-ur-kral-mezarligi",
+            "locator": "Nesnenin tanımı",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "iki-panel-sahneler",
+        "text": "İki panelde savaş ve barış sahneleri var: arabalar, esirler, ziyafet, mal getiren insanlar.",
+        "citations": [
+          {
+            "source_ref": "zettler-horne-1998-treasures-ur",
+            "locator": "Nesne tanımı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "lapis-afganistan",
+        "text": "Lapis lazuli, kırmızı kireçtaşı ve deniz kabuğuyla kakma; lapis Afganistan'dan geliyor - uzun mesafeli ticaretin kanıtı.",
+        "citations": [
+          {
+            "source_ref": "zettler-horne-1998-treasures-ur",
+            "locator": "Malzeme dökümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "islevi-belirsiz-yapit",
+        "text": "Nesne, Yakındoğu sanatının standart başvuru eserlerinde işlevi belirsiz bir yapıt olarak ele alınır.",
+        "citations": [
+          {
+            "source_ref": "collon-1995-ancient-near-eastern-art",
+            "locator": "Erken Hanedanlar dönemi yapıtları",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "rakip-yorumlar",
+        "text": "Kutu, çalgı gövdesi ve mobilya parçası dahil rakip yorumlar var; hiçbiri kanıtlanmadı.",
+        "citations": [
+          {
+            "source_ref": "collon-1995-ancient-near-eastern-art",
+            "locator": "Yorum tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yeniden-kurgu",
+        "text": "Nesne mezardan PARÇALANMIŞ olarak çıktı ve bugünkü biçimi bir yeniden kurgudur; yani 'işlev' tartışması, kurgunun kendisi tartışmalıyken yürüyor.",
+        "citations": [
+          {
+            "source_ref": "woolley-1934-ur-kral-mezarligi",
+            "locator": "Buluntu durumu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "muze-yayini",
+        "text": "Zettler & Horne müzenin kendi yayınıdır; nesneyi elinde tutan kurumun tanımı bu tartışmada nötr değildir.",
+        "citations": [
+          {
+            "source_ref": "zettler-horne-1998-treasures-ur",
+            "locator": "Kaynak konumu",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Yeniden kurgunun kendisi ne kadar güvenilir - parçaların özgün dizilimi belgeli mi?"
+    ],
+    "checked": "2026-09-09",
     "used_in": [
       "sumer"
-    ]
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu ('Ur Sancağı kayıt bilgisi') iki künyeyle değiştirildi. Nesnenin parçalanmış çıkıp yeniden kurgulandığı eklendi - kayıt bunu hiç anmıyordu ve işlev tartışmasının zeminini değiştiriyor."
+    }
   }
 ]
