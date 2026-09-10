@@ -2,14 +2,14 @@
    Makalelerde evidence-dossier değişkenleri (--ka-*) kullanılır; ana sayfada
    kendi yedeği olan tema değişkenlerine düşer. */
 .ka-contribution,.ka-newsletter{
-  --cta-bg:var(--ka-bg,var(--paper,#fbf9f3));
-  --cta-soft:var(--ka-bg-soft,var(--paper-3,#ebe6dc));
+  --cta-bg:var(--ka-bg,var(--surface,var(--paper,#fbf9f3)));
+  --cta-soft:var(--ka-bg-soft,var(--surface-2,var(--paper-3,#ebe6dc)));
   --cta-ink:var(--ka-ink,var(--ink,#171a18));
   --cta-muted:var(--ka-muted,var(--ink-2,#59605d));
   --cta-faint:var(--ka-faint,var(--ink-3,#69716c));
   --cta-line:var(--ka-line,var(--line,#d8d4ca));
-  --cta-accent:var(--ka-accent,var(--green,#0d5c4f));
-  --cta-accent-soft:var(--ka-accent-soft,var(--green-soft,#dde9e4));
+  --cta-accent:var(--ka-accent,var(--accent-ink,var(--accent,var(--green,#0d5c4f))));
+  --cta-accent-soft:var(--ka-accent-soft,var(--accent-soft,var(--green-soft,#dde9e4)));
   --cta-radius:var(--ka-radius,12px);
   max-width:var(--wrap,1180px);
   margin:clamp(1.6rem,4vw,3rem) auto 0;

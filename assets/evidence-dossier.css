@@ -1,5 +1,5 @@
 /* Kanıt dosyası pilotu: makale temalarının içine taşmayan ortak katman. */
-.ka-evidence-intro,.ka-evidence-dossier{
+.ka-evidence-intro,.ka-evidence-dossier,.ka-related,.ka-attribution{
   --ka-bg:var(--surface,var(--bg,#f5f2ed));
   --ka-bg-soft:var(--surface-2,#ded8d0);
   --ka-ink:var(--ink,#181518);
@@ -156,7 +156,7 @@
 .ka-search-question{
   margin:.6rem 0 0;
   max-width:56ch;
-  color:var(--ka-muted,#4e4849);
+  color:var(--ink-2,var(--ink,#4e4849));
   font:500 clamp(1rem,2vw,1.25rem)/1.45 var(--display,var(--serif,Georgia,serif));
 }
 
