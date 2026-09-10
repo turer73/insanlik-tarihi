@@ -6,8 +6,8 @@
   --ka-muted:var(--ink-2,#4e4849);
   --ka-faint:var(--ink-3,#7b7476);
   --ka-line:var(--rule,#c8c1ba);
-  --ka-accent:var(--accent-ink,var(--accent,#0b6f78));
-  --ka-accent-soft:var(--accent-soft,#dcebed);
+  --ka-accent:var(--accent-ink,var(--accent,var(--green-ink,var(--green,#0b6f78))));
+  --ka-accent-soft:var(--accent-soft,var(--green-soft,#dcebed));
   --ka-warn:var(--gold-ink,var(--gold,#8a6a15));
   --ka-warn-soft:var(--gold-soft,#efe4c6);
   --ka-radius:clamp(8px,1.2vw,14px);
