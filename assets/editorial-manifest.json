@@ -222,5 +222,13 @@
     "bytes": 230450,
     "width": 1200,
     "height": 675
+  },
+  "uruk": {
+    "file": "assets/editorial-covers/uruk.webp",
+    "alt": "Mezopotamya kerpic mimarisi, zigurat teraslari ve civi yazisi tabletleri kompozisyonu",
+    "source": "Uruk yazisinin hero SVG illüstrasyonu",
+    "bytes": 21230,
+    "width": 1200,
+    "height": 675
   }
 }

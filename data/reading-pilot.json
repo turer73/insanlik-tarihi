@@ -110,5 +110,9 @@
   "piramit-santrali": {
     "summary": "Bu dosya, 'Mısırlılar elektriği biliyordu' cümlesini taşıyan iddiaları tek tek kaynak zincirine bağlar: Dendera kabartmaları, Bağdat pili, piramit santrali tezi, elektrikli alet iddiası, Sfenks'in su erozyonuyla tarihlenmesi, Kayıt Salonu, Napoleon burnu ve Orion hizalaması ayrı ayrı değerlendirilir; belgeli antik anlatı (Rüya Steli) aynı dosyada karşılaştırma çapası olarak durur.",
     "limit": "Statüler kaynak denetimine dayanır; Sfenks'in yaşı ve çevresinin tarama kapsamı gibi sorular, doğrudan tarihleme yokluğunda açık kalır. Kayıt yokluğu olay yokluğunun kanıtı değildir; bu yazı yalnızca iddiaların mevcut kayıtla taşınıp taşınmadığını ölçer."
+  },
+  "uruk": {
+    "summary": "Bu dosya, Uruk hakkında dolaşan 'ilk şehir' ve 'ilk efsane' iddialarını tek tek kaynak zincirine bağlar: kentin ölçeği, nüfusu, yazının doğuşu, Gılgamış'ın tarihselliği, Enmerkar'ın 'yazıyı icat ettiği' anlatısı, Aratta, Erech ve modern sahte tarih iddiaları ayrı ayrı değerlendirilir.",
+    "limit": "Kayıtlar arkeolojik yüzey araştırması, kazı ve geç dönem metin kopyalarına dayanır; nüfus ve alan rakamları model tahminidir. Erken metinlerin çoğu geç nüshalardan bilinir; bu yazı iddiaların mevcut kayıtla taşınıp taşınmadığını ölçer, kesin 'ilk'lik hükmü vermez."
   }
 }

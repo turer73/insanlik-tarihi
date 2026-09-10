@@ -9,8 +9,8 @@ const read=p=>readFile(path.join(root,p),'utf8');
 const context={window:{}};
 vm.runInNewContext(await read('assets/articles-data.js'),context);
 const articles=context.window.ITArticles;
-assert.equal(articles.length,28);
-assert.equal(new Set(articles.map(a=>a.cover)).size,28);
+assert.equal(articles.length,29);
+assert.equal(new Set(articles.map(a=>a.cover)).size,29);
 const manifest=JSON.parse(await read('assets/editorial-manifest.json'));
 const index=await read('site/index.html');
 assert.ok(index.includes('assets/logo-mark.svg'));
@@ -45,7 +45,7 @@ for(const article of articles) {
     assert.ok(articles.some(a=>a.slug===slug),`${article.slug}: bilinmeyen ilgili dosya ${slug}`);
   }
 }
-assert.equal((await readdir(path.join(root,'site/assets/editorial-covers'))).length,28);
+assert.equal((await readdir(path.join(root,'site/assets/editorial-covers'))).length,29);
 const tartismaPilotu = JSON.parse(await read('data/tartisma-pilotu.json'));
 const pilotSet = new Set(tartismaPilotu.yazilar);
 const contributionEnabled = tartismaPilotu.aktif === true;
@@ -132,4 +132,4 @@ assert.ok((await read('site/index.html')).includes('href="hakkinda.html"'), 'ana
 assert.ok((await read('site/index.html')).includes('href="duzeltmeler.html"'), 'ana sayfada düzeltme sayfası bağlantısı');
 assert.ok(!(await read('site/index.html')).includes('href="#hakkinda"'), 'eski çapa bağlantısı kalmamalı');
 console.log(`Önbellek: ${versionedAssets} yerel varlık başvurusu içerik hash'iyle doğrulandı.`);
-console.log('Üretim çıktısı: 28/28 gerçek WebP, dosya bütünlüğü, logo, favicon ve makaleye özel OG/Twitter/Schema.org doğrulandı.');
+console.log('Üretim çıktısı: 29/29 gerçek WebP, dosya bütünlüğü, logo, favicon ve makaleye özel OG/Twitter/Schema.org doğrulandı.');

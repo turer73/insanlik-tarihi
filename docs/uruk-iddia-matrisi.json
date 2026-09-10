@@ -1,0 +1,878 @@
+{
+  "schema_version": 2,
+  "article": {
+    "slug": "uruk-ilk-sehir-mi-ilk-efsane-mi",
+    "title": "Uruk: İlk Şehir mi, İlk Efsane mi?",
+    "suggested_number": 29,
+    "category": "Arkeoloji & Kentler",
+    "summary": "Uruk’un kentleşme, yazı, ekonomi ve uzak ağlardaki rolünü; Gilgameş, Enmerkar, Erech ve modern sahte tarih iddialarından ayıran kanıt odaklı inceleme.",
+    "tagline": "Kent büyüdü, efsane onu izledi.",
+    "status": "draft",
+    "checked": "2026-09-10"
+  },
+  "method": {
+    "pipeline": [
+      "iddia",
+      "kaynak",
+      "kanıt",
+      "karşı kanıt",
+      "durum"
+    ],
+    "status_vocabulary": [
+      "established",
+      "contested",
+      "minority",
+      "refuted",
+      "unknown",
+      "unmeasurable"
+    ],
+    "note": "Bu dosya Kanıt Atlası veri modeline uyarlanabilir araştırma taslağıdır; repo şemasına alınmadan önce locator ve alan adları mevcut JSON Schema ile eşleştirilmelidir."
+  },
+  "claims": [
+    {
+      "id": "uruk-gec-dorduncu-binyil-metropol",
+      "claim": "Uruk, MÖ 4. binyılın sonlarında çok büyük, uzmanlaşmış ve anıtsal bir kent merkezidir.",
+      "popular_claim": "Uruk dünyanın tartışmasız ilk şehridir.",
+      "status": "established",
+      "confidence": "high",
+      "evidence": [
+        "Alan araştırmaları ve yayınlar, geç 4. binyılda 250 hektarı aşan bir yerleşim ölçeği gösterir.",
+        "Anıtsal kamusal yapılar, uzmanlaşmış idari kayıtlar ve bölgesel merkez-çevre ilişkileri birlikte görünür."
+      ],
+      "counter_evidence": [
+        "‘İlk şehir’ sıralaması kullanılan şehir tanımına bağlıdır; Tell Brak erken ve eşzamanlı bir başka kentsel odaktır."
+      ],
+      "open_questions": [
+        "Aynı anda yoğun biçimde yerleşilmiş alanın evrelere göre tam büyüklüğü nedir?"
+      ],
+      "sources": [
+        2,
+        3,
+        4,
+        5,
+        29
+      ]
+    },
+    {
+      "id": "uruk-dunyanin-ilk-sehri",
+      "claim": "Uruk’un ‘dünyanın ilk şehri’ olduğu mutlak bir olgu değil, ölçüte bağlı bir sınıflandırmadır.",
+      "popular_claim": "Uruk’tan önce şehir yoktu.",
+      "status": "contested",
+      "confidence": "high",
+      "evidence": [
+        "Uruk geç 4. binyılın en büyük ve en karmaşık kentlerinden biridir.",
+        "Tell Brak’ta geç 5. ve erken 4. binyılda 130 hektarlık kentsel gelişim saptanmıştır."
+      ],
+      "counter_evidence": [
+        "Uruk’un yazı, bürokrasi ve anıtsal ölçeği aynı düğümde birleştirmesi onu ‘ilk metropol’ etiketi için güçlü aday yapar."
+      ],
+      "open_questions": [
+        "Şehir için nüfus, yoğunluk, kurum veya işlevden hangisi eşik kabul edilmelidir?"
+      ],
+      "sources": [
+        2,
+        5,
+        29
+      ]
+    },
+    {
+      "id": "uruk-nufusu",
+      "claim": "Uruk’un kesin nüfusu bilinmez; on binlerle ifade edilen sayılar alan ve yoğunluk modelleridir.",
+      "popular_claim": "Uruk’ta kesin olarak 40 bin, 60 bin veya 80 bin kişi yaşıyordu.",
+      "status": "unknown",
+      "confidence": "high",
+      "evidence": [
+        "Antik nüfus sayımı korunmamıştır.",
+        "Yerleşim alanı, yapı yoğunluğu, hane büyüklüğü ve boş alan varsayımları sonucu ciddi biçimde değiştirir."
+      ],
+      "counter_evidence": [
+        "Kentin yüzlerce hektara erişen ölçeği, nüfusun küçük bir kasaba düzeyinde olmadığını güçlü biçimde gösterir."
+      ],
+      "open_questions": [
+        "Geç Uruk evresinde sürekli oturulan konut alanı ne kadardı?"
+      ],
+      "sources": [
+        4,
+        25
+      ]
+    },
+    {
+      "id": "uruk-su-peyzaji",
+      "claim": "Uruk kuru bir çölün ortasında birdenbire kurulmadı; tatlı su kanalları ve eski akarsu kollarıyla örülü bir taşkın ovasında gelişti.",
+      "popular_claim": "Sümerliler çölün ortasında doğaya rağmen mucizevi bir kent kurdu.",
+      "status": "established",
+      "confidence": "high",
+      "evidence": [
+        "Jeoarkeolojik çekirdekler bölgenin erken Holosen’den itibaren tatlı su etkisinde olduğunu gösterir.",
+        "İnsan yapımı kanallar doğal akarsu örüntülerinin üzerine bindirilmiştir."
+      ],
+      "counter_evidence": [
+        "Elverişli su ortamı kendiliğinden kent üretmez; bakım, emek, ulaşım ve siyasal koordinasyon yine gerekir."
+      ],
+      "open_questions": [
+        "Belirli kanal kesimlerinin hangi evrede açıldığı ve hangi kurumca yönetildiği nedir?"
+      ],
+      "sources": [
+        1,
+        6,
+        25
+      ]
+    },
+    {
+      "id": "uruk-eanna-anu",
+      "claim": "Uruk’ta Eanna ve Anu olarak adlandırılan iki büyük anıtsal çekirdek vardır.",
+      "popular_claim": "Kazılan bütün büyük yapılar işlevi kesin olarak bilinen tapınaklardır.",
+      "status": "established",
+      "confidence": "high",
+      "evidence": [
+        "Kazılar terasları, salonlu yapıları, avluları, nişli cepheleri ve art arda yenilenen anıtsal yapı evrelerini ortaya çıkarmıştır."
+      ],
+      "counter_evidence": [
+        "Erken yapıların ‘tapınak’, ‘saray’ veya ‘idare binası’ işlevleri çoğu kez sonraki kült bilgisi ve mimari benzetme üzerinden adlandırılır."
+      ],
+      "open_questions": [
+        "Eanna’daki belirli yapıların ritüel, idari ve depolama işlevleri nasıl dağılıyordu?"
+      ],
+      "sources": [
+        7,
+        8,
+        28
+      ]
+    },
+    {
+      "id": "uruk-beyaz-tapinak",
+      "claim": "Anu terası üzerindeki Beyaz Tapınak, geç 4. binyılın anıtsal kerpiç mimarisinin güçlü bir örneğidir.",
+      "popular_claim": "Beyaz Tapınak, bilinen ilk ziggurattır ve işlevi bütünüyle çözülmüştür.",
+      "status": "established",
+      "confidence": "medium",
+      "evidence": [
+        "Yükseltilmiş teras, beyaz sıvalı cephe ve merkezi salon düzeni arkeolojik olarak belgelenmiştir."
+      ],
+      "counter_evidence": [
+        "‘İlk ziggurat’ etiketi tanıma bağlıdır; yapı sonraki tam gelişmiş zigguratlardan farklıdır.",
+        "Üst yapının rekonstrüksiyonu kısmi kalıntılara dayanır."
+      ],
+      "open_questions": [
+        "Yapının ritüel programı ve erişim düzeni tam olarak nasıldı?"
+      ],
+      "sources": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "uruk-yazi",
+      "claim": "Uruk, bilinen en erken büyük proto-çivi yazısı arşivlerinden birini üretmiştir.",
+      "popular_claim": "Yazıyı tek bir Uruklu bir günde icat etti.",
+      "status": "established",
+      "confidence": "high",
+      "evidence": [
+        "Uruk IV tabakalarından MÖ yaklaşık 3350–3200 tarihli idari tabletler vardır.",
+        "İlk kayıtlar ağırlıkla mal, sayı, emek ve tahsis hesaplarıdır."
+      ],
+      "counter_evidence": [
+        "Yazı; sayaçlar, sayısal tabletler, mühürleme ve işaret standartlaşmasının kademeli sonucudur.",
+        "En erken işaretlerin hangi konuşma dilini ne ölçüde kodladığı her zaman belirlenemez."
+      ],
+      "open_questions": [
+        "En erken proto-çivi yazısının dilsel içeriği ne ölçüde Sümerceydi?"
+      ],
+      "sources": [
+        2,
+        9,
+        10,
+        30
+      ]
+    },
+    {
+      "id": "uruk-ilk-edebiyat",
+      "claim": "En erken Uruk tabletleri edebiyat değil, büyük ölçüde idari kayıttır.",
+      "popular_claim": "Gilgameş Destanı Uruk IV döneminde yazıya geçirildi.",
+      "status": "refuted",
+      "confidence": "high",
+      "evidence": [
+        "Arkaik tabletlerin türü idari ve sözlük/listesel kayıtlardır.",
+        "Gilgameş anlatılarının bilinen nüshaları çok daha geç dönemlerdendir."
+      ],
+      "counter_evidence": [
+        "Sözlü anlatıların daha eski olması mümkündür; ancak bu, korunmuş bir 4. binyıl destan tableti anlamına gelmez."
+      ],
+      "open_questions": [
+        "Gilgameş çevresindeki sözlü geleneklerin en erken çekirdeği ne zamana iner?"
+      ],
+      "sources": [
+        9,
+        17,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "enmerkar-yaziyi-icat-etti",
+      "claim": "Enmerkar’ın yazıyı icat etmesi edebî bir köken anlatısıdır; çağdaş tarih kaydı değildir.",
+      "popular_claim": "Yazıyı Uruk kralı Enmerkar’ın icat ettiği tabletlerle kanıtlanmıştır.",
+      "status": "refuted",
+      "confidence": "high",
+      "evidence": [
+        "Enmerkar ve Aratta anlatısının korunmuş tanıkları Eski Babil dönemindendir.",
+        "Yazının arkeolojik gelişimi anlatıdaki tek seferlik icattan daha eski ve kademelidir."
+      ],
+      "counter_evidence": [
+        "Öykü, Mezopotamyalıların yazıyı Uruk’un siyasal ve ticari gücüyle ilişkilendirdiğini gösterir."
+      ],
+      "open_questions": [
+        "Öykünün en eski sözlü veya yazılı biçimi ne zamana gider?"
+      ],
+      "sources": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "uruk-tapinak-devleti",
+      "claim": "Büyük kurumlar ekonomide belirleyiciydi; fakat bütün üretimin tek bir tapınak devleti tarafından yönetildiği model aşırı geneldir.",
+      "popular_claim": "Uruk’ta herkes tapınağın maaşlı işçisiydi.",
+      "status": "contested",
+      "confidence": "high",
+      "evidence": [
+        "Tabletler büyük ölçekli tahsis, sürü, tahıl ve emek yönetimini gösterir.",
+        "Yakın dönem araştırmalar hane üretimi ve yerel örgütlenmenin de önemli olduğunu gösterir."
+      ],
+      "counter_evidence": [
+        "Arşivlerin kurumsal olması, arşiv dışındaki bütün üretimin yokluğu anlamına gelmez."
+      ],
+      "open_questions": [
+        "Kurumsal, hane ve mevsimlik üretimin toplam ekonomi içindeki payları neydi?"
+      ],
+      "sources": [
+        3,
+        10,
+        13
+      ]
+    },
+    {
+      "id": "egimli-agizli-kase-erzak",
+      "claim": "Eğimli ağızlı kaseler seri üretildi; fakat hepsinin standart erzak kabı olduğu kanıtlanmış değildir.",
+      "popular_claim": "Her kase bir işçinin günlük tahıl payını ölçüyordu.",
+      "status": "contested",
+      "confidence": "high",
+      "evidence": [
+        "Kaplar geniş coğrafyada çok sayıda ve hızlı üretime uygun biçimde bulunur.",
+        "Boyutlar değişkendir ve organik kalıntılar tahıl dışında et ve olası süt ürünlerini de gösterir."
+      ],
+      "counter_evidence": [
+        "Bazı bağlamlarda porsiyonlama veya erzak dağıtımı için kullanılmış olmaları mümkündür."
+      ],
+      "open_questions": [
+        "İşlev bölgeye, kuruma ve içeriğe göre nasıl değişiyordu?"
+      ],
+      "sources": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": "uruk-imparatorlugu",
+      "claim": "Uruk maddi kültürü Batı Asya’ya yayıldı; bu, tek merkezden yönetilen bir Uruk imparatorluğunu kanıtlamaz.",
+      "popular_claim": "Uruk dünyanın ilk kıtalararası imparatorluğuydu.",
+      "status": "refuted",
+      "confidence": "high",
+      "evidence": [
+        "Bazı yerlerde planlı güney kolonileri veya ticari enklavlar görülür.",
+        "Başka yerlerde yerel gelenekler sürer ve Uruk unsurları seçilerek uyarlanır."
+      ],
+      "counter_evidence": [
+        "Geniş ağın mal, insan, teknik ve sembol dolaşımında güney Mezopotamya’nın güçlü rolü vardır."
+      ],
+      "open_questions": [
+        "Göç, ticaret, hammadde erişimi ve siyasal baskının bölgesel payları neydi?"
+      ],
+      "sources": [
+        3,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "uruk-kolonileri",
+      "claim": "Uruk ağında gerçek koloni ve göçmen enklavı örnekleri vardır; bütün Uruk benzeri siteler koloni değildir.",
+      "popular_claim": "Uruk tarzı çanak çömlek bulunan her yer Uruk’un sömürgesiydi.",
+      "status": "established",
+      "confidence": "medium",
+      "evidence": [
+        "Habuba Kabira gibi planlı güney tarzı yerleşimler koloni yorumunu destekler.",
+        "Tell Brak ve başka alanlarda yerel malzeme kültürüyle yan yana varoluş görülür."
+      ],
+      "counter_evidence": [
+        "Maddi benzerlik siyasi egemenliği tek başına göstermez."
+      ],
+      "open_questions": [
+        "Her bir sitenin göçmen, tüccar, yerel seçkin veya karma topluluk profili nedir?"
+      ],
+      "sources": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "inanna-uruk",
+      "claim": "İnanna, Uruk’un en önemli tanrısal odaklarından biridir ve Eanna geleneğiyle güçlü biçimde ilişkilidir.",
+      "popular_claim": "Eanna’daki her figür ve yapı doğrudan İnanna’yı temsil eder.",
+      "status": "established",
+      "confidence": "high",
+      "evidence": [
+        "Kamış demeti simgeleri, mühürler, sunu sahneleri ve daha sonraki kült geleneği İnanna bağını destekler."
+      ],
+      "counter_evidence": [
+        "Tek tek erken yapıların ve adsız figürlerin kimliği her zaman yazıtla belirtilmez."
+      ],
+      "open_questions": [
+        "Geç Uruk ikonografisindeki insan figürlerinin kurumsal unvanları neydi?"
+      ],
+      "sources": [
+        15,
+        16,
+        27
+      ]
+    },
+    {
+      "id": "warka-vazo-kutsal-evlilik",
+      "claim": "Warka Vazosu bir sunu/ritüel düzeni gösterir; ‘kutsal evlilik’ yorumu olasıdır fakat yazıtla doğrulanmış değildir.",
+      "popular_claim": "Vazo, belirli bir kral ile İnanna’nın evliliğini fotoğraf gibi kaydeder.",
+      "status": "contested",
+      "confidence": "high",
+      "evidence": [
+        "Alt kayıtlarda su, bitki, hayvan ve sunu taşıyan insanlar; üstte İnanna simgeleriyle ilişkili bir sahne vardır."
+      ],
+      "counter_evidence": [
+        "Figürlerin adları ve ritüelin tam adı yazılı değildir."
+      ],
+      "open_questions": [
+        "Üst sahnedeki figürlerin kimliği ve ritüelin takvimdeki yeri nedir?"
+      ],
+      "sources": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "warka-maskesi-inanna",
+      "claim": "Warka Maskesi muhtemelen büyük bir bileşik heykele ait kadın yüzüdür; İnanna kimliği güçlü ama kesin olmayan bir yorumdur.",
+      "popular_claim": "Maskenin İnanna olduğu kesin olarak yazılıdır.",
+      "status": "contested",
+      "confidence": "medium",
+      "evidence": [
+        "Eanna çevresinde bulunması, anıtsal ölçek ve kadın ilahi imgesi yorumu destekler."
+      ],
+      "counter_evidence": [
+        "Kimliği veren yazıt korunmamıştır."
+      ],
+      "open_questions": [
+        "Heykelin gövdesi, kakmaları ve özgün sergileme bağlamı nasıldı?"
+      ],
+      "sources": [
+        2,
+        28
+      ]
+    },
+    {
+      "id": "uruk-rahip-kral",
+      "claim": "Geç Uruk ikonografisinde baş bantlı ve ağ desenli etekli seçkin bir erkek tipi vardır; ‘rahip-kral’ modern bir tanımlamadır.",
+      "popular_claim": "Bu figür Uruk’un adı bilinen tek mutlak hükümdarıdır.",
+      "status": "established",
+      "confidence": "high",
+      "evidence": [
+        "Mühürlerde figür ritüel, tarım, sürü ve İnanna simgeleriyle birlikte tekrarlanır."
+      ],
+      "counter_evidence": [
+        "Figürün adı ve tam unvanı erken sahnelerde yazılı değildir; tek kişi mi makam tipi mi olduğu açık değildir."
+      ],
+      "open_questions": [
+        "İkonografik tip bir kralı, rahibi, kurumsal makamı veya ideal yöneticiyi mi gösterir?"
+      ],
+      "sources": [
+        15
+      ]
+    },
+    {
+      "id": "uruk-ilk-demokrasi",
+      "claim": "Uruk’un ‘ilk demokrasi’ olduğu sonucunu doğrulayacak çağdaş anayasal belge yoktur.",
+      "popular_claim": "Gilgameş iki meclise danıştığı için demokrasi Uruk’ta icat edildi.",
+      "status": "contested",
+      "confidence": "high",
+      "evidence": [
+        "Gilgameş ve Aga anlatısında yaşlılar ve savaşabilir erkekler topluluğu görünür.",
+        "Metin, kolektif danışma fikrinin Mezopotamya siyasal hayalinde yer aldığını gösterir."
+      ],
+      "counter_evidence": [
+        "Korunan nüshalar olaylardan yüzyıllar sonradır.",
+        "Kral istemediği görüşü bırakıp desteklediği gruba gider; eşit yurttaşlık, seçim ve hesap verme gösterilmez."
+      ],
+      "open_questions": [
+        "Erken Hanedanlık kentlerindeki meclislerin gerçek yetkisi ne kadardı?"
+      ],
+      "sources": [
+        17,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "gilgames-tarihsel",
+      "claim": "Gilgameş’in tarihsel bir kral olması mümkündür; mevcut kanıt biyografisini doğrulamaya yetmez.",
+      "popular_claim": "Gilgameş’in hayatı destanda anlatıldığı gibi kanıtlanmıştır.",
+      "status": "unknown",
+      "confidence": "high",
+      "evidence": [
+        "Mezopotamya geleneği onu Uruk kralı sayar ve 3. binyıl ortalarında tanrılaştırılmıştır.",
+        "Krallık listesi ve sonraki anmalar tarihsel çekirdek ihtimalini canlı tutar."
+      ],
+      "counter_evidence": [
+        "Çağdaş ve açık bir Gilgameş kraliyet yazıtı yoktur.",
+        "Destan ve Sumerce öyküler yüzyıllar boyunca edebî biçimde geliştirilmiştir."
+      ],
+      "open_questions": [
+        "Adın arkasında tek bir hükümdar mı, birkaç gelenek mi vardır?"
+      ],
+      "sources": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "gilgames-126-yil",
+      "claim": "Gilgameş’e verilen 126 yıllık saltanat tarihsel kronoloji olarak kullanılamaz.",
+      "popular_claim": "Gilgameş 126 yıl hüküm sürdü.",
+      "status": "refuted",
+      "confidence": "high",
+      "evidence": [
+        "Sümer Krallar Listesi olağanüstü uzun saltanatları ve krallığın gökten inişi gibi teolojik şemaları içerir."
+      ],
+      "counter_evidence": [
+        "Liste siyasal hafıza ve hanedan sıralaması için değerlidir."
+      ],
+      "open_questions": [
+        "Belirli sayıların simgesel ve yazımsal işlevleri nasıl oluştu?"
+      ],
+      "sources": [
+        20,
+        21
+      ]
+    },
+    {
+      "id": "gilgames-sur",
+      "claim": "Uruk’un büyük suru gerçektir; onu doğrudan Gilgameş’in yaptırdığı bağımsız olarak kanıtlanmış değildir.",
+      "popular_claim": "Kazılar surun üzerindeki ‘Gilgameş yaptı’ yazıtını buldu.",
+      "status": "contested",
+      "confidence": "high",
+      "evidence": [
+        "Jeofizik ve kazı verileri geniş bir sur devresini gösterir.",
+        "Mezopotamya edebiyatı suru Gilgameş’le özdeşleştirir."
+      ],
+      "counter_evidence": [
+        "Surun evreleri ve onarımları vardır; kişisel atfı doğrulayan çağdaş yapı yazıtı yoktur."
+      ],
+      "open_questions": [
+        "İlk devrenin kesin tarihi ve sonraki onarım evreleri nelerdir?"
+      ],
+      "sources": [
+        21,
+        25,
+        28
+      ]
+    },
+    {
+      "id": "gilgames-mezari",
+      "claim": "2003 jeofizik çalışması bir yapı anomalisi saptadı; Gilgameş’in mezarı bulunmuş değildir.",
+      "popular_claim": "Arkeologlar Gilgameş’in mezarını kesin olarak keşfetti.",
+      "status": "refuted",
+      "confidence": "high",
+      "evidence": [
+        "Araştırma özeti yapının mezar olarak yorumlanabileceğini, Gilgameş bağlantısının spekülatif kaldığını açıkça belirtir."
+      ],
+      "counter_evidence": [
+        "Konumun eski su yatağıyla ilişkisi edebî anlatıyla ilginç bir paralellik oluşturur."
+      ],
+      "open_questions": [
+        "Yapı kazılırsa tarihi, işlevi ve gömü bağlamı ne çıkacaktır?"
+      ],
+      "sources": [
+        25
+      ]
+    },
+    {
+      "id": "aratta-gercek-kent",
+      "claim": "Aratta edebî metinlerde güçlü bir uzak ülke/kenttir; konumu arkeolojik olarak belirlenmemiştir.",
+      "popular_claim": "Aratta’nın İran, Anadolu veya İndus’taki belirli bir kent olduğu kanıtlanmıştır.",
+      "status": "unknown",
+      "confidence": "high",
+      "evidence": [
+        "Metin Aratta’yı dağlık, değerli taş ve zanaatla ilişkili bir rakip olarak anlatır."
+      ],
+      "counter_evidence": [
+        "Coğrafi ipuçları birden fazla bölgeye uyabilir; bağımsız, ad taşıyan buluntu yoktur."
+      ],
+      "open_questions": [
+        "Aratta tek bir yer mi, edebî birleşim mi, geniş bir bölge mi?"
+      ],
+      "sources": [
+        18,
+        19
+      ]
+    },
+    {
+      "id": "uruk-erech",
+      "claim": "İbranice Erech’in Uruk’la özdeşleştirilmesi güçlü ve yaygın akademik görüştür.",
+      "popular_claim": "Kutsal Kitap Uruk’un bütün kuruluş tarihini doğrular.",
+      "status": "established",
+      "confidence": "high",
+      "evidence": [
+        "Ad biçimi ve coğrafi sıra Erech–Uruk eşlemesini destekler."
+      ],
+      "counter_evidence": [
+        "Bu eşleştirme, Nimrod anlatısını çağdaş Uruk tarihi belgesine dönüştürmez."
+      ],
+      "open_questions": [
+        "Metnin son biçimindeki kent listesinin siyasal ve edebî amacı nedir?"
+      ],
+      "sources": [
+        26
+      ]
+    },
+    {
+      "id": "uruk-babil-kulesi",
+      "claim": "Uruk, Babil Kulesi’nin kenti değildir; Yaratılış metni Babel ile Erech’i ayrı kentler olarak sayar.",
+      "popular_claim": "Uruk zigguratı Babil Kulesi’dir.",
+      "status": "refuted",
+      "confidence": "high",
+      "evidence": [
+        "Babel/Babil ve Erech/Uruk aynı listede farklı adlardır."
+      ],
+      "counter_evidence": [
+        "Uruk’un anıtsal terasları, daha sonraki ziggurat geleneğinin erken bağlamını anlamaya yardım eder."
+      ],
+      "open_questions": [
+        "Babil Kulesi anlatısının hangi Mezopotamya yapı geleneklerinden beslendiği nedir?"
+      ],
+      "sources": [
+        26
+      ]
+    },
+    {
+      "id": "nimrod-uruku-kurdu",
+      "claim": "Nimrod’un Uruk’u kurduğunu gösteren çağdaş Mezopotamya kaydı yoktur.",
+      "popular_claim": "Nimrod tarihsel olarak Uruk’un kurucusudur.",
+      "status": "unknown",
+      "confidence": "high",
+      "evidence": [
+        "Nimrod İncil’deki edebî-soybilimsel çerçevede görünür; Uruk’un oluşumu ondan binyıllar önceye uzanan arkeolojik evrelerle açıklanır."
+      ],
+      "counter_evidence": [
+        "Erech adının Uruk’u işaret etmesi, sonraki gelenekte kentin güçlü hafızasını gösterir."
+      ],
+      "open_questions": [
+        "Nimrod figürü hangi Mezopotamya kral geleneklerinin bileşimidir?"
+      ],
+      "sources": [
+        2,
+        26
+      ]
+    },
+    {
+      "id": "uruk-anunnaki-uzaylilar",
+      "claim": "Uruk’un uzaylılar veya Anunnaki adlı dünya dışı mühendislerce kurulduğunu destekleyen arkeolojik ya da filolojik kanıt yoktur.",
+      "popular_claim": "Uruk’un kent planı ve yazısı insanüstü teknoloji gerektirir.",
+      "status": "refuted",
+      "confidence": "high",
+      "evidence": [
+        "Yapı evreleri, kerpiç üretimi, idari araçlar, mühürler ve yazı sisteminin kademeli gelişimi arkeolojik dizide izlenebilir."
+      ],
+      "counter_evidence": [
+        "Anunnaki gerçek Mezopotamya tanrılar topluluğuna ait bir terimdir; modern dünya dışı yorumu antik metinlerin doğrudan anlamı değildir."
+      ],
+      "open_questions": [
+        "Modern sahte tarih anlatıları hangi çeviri ve medya zincirleriyle yayılıyor?"
+      ],
+      "sources": [
+        2,
+        3,
+        9,
+        15,
+        30
+      ]
+    },
+    {
+      "id": "uruk-bir-gecede-coktu",
+      "claim": "Uruk dönemi düzeni değişti; fakat kent MÖ 3100 civarında tek bir gecede yok olmadı.",
+      "popular_claim": "Uruk uygarlığı ani bir tufan veya gizemli felaketle tamamen ortadan kalktı.",
+      "status": "refuted",
+      "confidence": "high",
+      "evidence": [
+        "Kent erken hanedanlık, Babil, Seleukos ve Helenistik dönemlerde farklı biçimlerde yaşamayı sürdürdü.",
+        "Çivi yazılı bilimsel ve kült metinleri çok daha geç tarihlere kadar Uruk’ta üretildi."
+      ],
+      "counter_evidence": [
+        "Geç 4. binyıl ağlarında ve maddi kültürde gerçek bir dönüşüm, daralma ve bölgesel yeniden yapılanma vardır."
+      ],
+      "open_questions": [
+        "Dönüşümde akarsu değişimi, göç, siyasal rekabet ve ticaret ağlarının göreli payları nedir?"
+      ],
+      "sources": [
+        3,
+        6,
+        27
+      ]
+    },
+    {
+      "id": "uruk-sadece-tarihoncesi",
+      "claim": "Uruk yalnızca yazının doğuşuna ait bir tarihöncesi kent değildir; binyıllar boyunca yeniden biçimlenen uzun ömürlü bir merkezdir.",
+      "popular_claim": "Uruk, Gilgameş çağından sonra terk edildi.",
+      "status": "established",
+      "confidence": "high",
+      "evidence": [
+        "Helenistik dönemde Anu ve İştar/Nanaya tapınak çevreleri ile çivi yazısı bilginliği sürmüştür."
+      ],
+      "counter_evidence": [
+        "Kentin büyüklüğü, nüfusu ve bölgesel ağırlığı her dönemde aynı değildir."
+      ],
+      "open_questions": [
+        "Geç dönem mahallelerinin erken kentsel dokuyla ilişkisi neydi?"
+      ],
+      "sources": [
+        27,
+        28
+      ]
+    },
+    {
+      "id": "uruk-irak-adi",
+      "claim": "‘Irak’ adının doğrudan ‘Uruk’tan geldiği önerisi kesinleşmiş bir etimoloji değildir.",
+      "popular_claim": "Irak kelimesi tartışmasız biçimde Uruk’tan türemiştir.",
+      "status": "contested",
+      "confidence": "medium",
+      "evidence": [
+        "Ses benzerliği ve coğrafi süreklilik bu görüşü popüler kılar."
+      ],
+      "counter_evidence": [
+        "Arapça ve Orta Farsça açıklamalar dâhil başka etimolojiler vardır; kesintisiz dil zinciri gösterilmiş değildir."
+      ],
+      "open_questions": [
+        "Adın en erken güvenilir ara biçimleri hangileridir?"
+      ],
+      "sources": []
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "UNESCO — The Ahwar of Southern Iraq",
+      "url": "https://whc.unesco.org/en/list/1481/",
+      "tier": "institutional",
+      "note": "Uruk, Ur ve Eridu’nun bataklık kenarı kentleri, yazı ve anıtsal mimari bağlamı."
+    },
+    {
+      "id": 2,
+      "title": "Uruk: First City of the Ancient World",
+      "url": "https://mitpressbookstore.mit.edu/book/9781606064443",
+      "tier": "scholarly-book",
+      "note": "Uruk’un kentleşme, bürokrasi, sanat ve erken yazı tarihindeki yeri."
+    },
+    {
+      "id": 3,
+      "title": "Gebhard J. Selz — The Uruk Phenomenon",
+      "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+      "tier": "peer-reviewed",
+      "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez."
+    },
+    {
+      "id": 4,
+      "title": "Penn Museum Lagash Archaeological Project — Historical Context",
+      "url": "https://web.sas.upenn.edu/lagash/historical-context/",
+      "tier": "institutional",
+      "note": "Uruk döneminin kronolojisi ve kentin 250 hektarı aşan ölçeği."
+    },
+    {
+      "id": 5,
+      "title": "Ur, Karsgaard & Oates — Tell Brak Suburban Survey",
+      "url": "https://jasonur.scholars.harvard.edu/publications/spatial-dimensions-early-mesopotamian-urbanism-tell-brak-suburban-survey-2003-2",
+      "tier": "peer-reviewed",
+      "note": "Tell Brak’ın geç 5. ve erken 4. binyıldaki 130 hektarlık kentsel gelişimi."
+    },
+    {
+      "id": 6,
+      "title": "Jotheri et al. — Holocene fluvial and anthropogenic processes around Uruk",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10039203/",
+      "tier": "peer-reviewed",
+      "note": "Uruk çevresinin tatlı su, doğal kanal ve insan yapımı kanal tarihi."
+    },
+    {
+      "id": 7,
+      "title": "ZRS — Uruk White Temple Reconstruction",
+      "url": "https://zrs.berlin/project/uruk-white-temple/",
+      "tier": "research-project",
+      "note": "Beyaz Tapınak rekonstrüksiyonu ve rekonstrüksiyon belirsizlikleri."
+    },
+    {
+      "id": 8,
+      "title": "Smarthistory — White Temple and ziggurat, Uruk",
+      "url": "https://smarthistory.org/white-temple-and-ziggurat-uruk/",
+      "tier": "institutional",
+      "note": "Anu terası, Beyaz Tapınak ve anıtsal kerpiç mimari."
+    },
+    {
+      "id": 9,
+      "title": "CDLI — Uruk IV Administrative Tablet P002976",
+      "url": "https://cdli.earth/P002976",
+      "tier": "primary-database",
+      "note": "MÖ yaklaşık 3350–3200 tarihli Uruk IV idari tableti."
+    },
+    {
+      "id": 10,
+      "title": "British Museum — How to write cuneiform",
+      "url": "https://www.britishmuseum.org/blog/how-write-cuneiform",
+      "tier": "institutional",
+      "note": "Çivi yazısının hesap tutma bağlamı ve uzun kullanım tarihi."
+    },
+    {
+      "id": 11,
+      "title": "British Museum — Bevelled rim bowl",
+      "url": "https://www.britishmuseum.org/collection/object/W_1932-1212-1279",
+      "tier": "institutional",
+      "note": "Eğimli ağızlı kaselerin standart erzak kabı olduğu yorumuna yönelik müze değerlendirmesi."
+    },
+    {
+      "id": 12,
+      "title": "Glatz et al. — Organic residues in Beveled Rim Bowls",
+      "url": "https://refubium.fu-berlin.de/handle/fub188/40020",
+      "tier": "peer-reviewed",
+      "note": "Et ve olası süt ürünleri kalıntıları; tek işlevli tahıl/ekmek yorumuna karşı veri."
+    },
+    {
+      "id": 13,
+      "title": "Early Urbanism in Northern Mesopotamia",
+      "url": "https://doi.org/10.1007/s10814-019-09136-7",
+      "tier": "peer-reviewed",
+      "note": "Uruk yayılımı, gerçek koloni alanları ve yerel süreklilik üzerine eleştirel sentez."
+    },
+    {
+      "id": 14,
+      "title": "Lewis — Reframing the Uruk Expansion",
+      "url": "https://doi.org/10.1017/S0959774324000404",
+      "tier": "peer-reviewed",
+      "note": "Uruk etkisinin yerel uyarlama ve glokalleşme çerçevesinde değerlendirilmesi."
+    },
+    {
+      "id": 15,
+      "title": "British Museum — Late Uruk cylinder seal 116722",
+      "url": "https://www.britishmuseum.org/collection/object/W_1925-0110-20",
+      "tier": "primary-museum",
+      "note": "Rahip-kral, sürü ve İnanna’nın kamış demeti simgeleri."
+    },
+    {
+      "id": 16,
+      "title": "Smarthistory — Warka Vase",
+      "url": "https://smarthistory.org/warka-vase/",
+      "tier": "institutional",
+      "note": "Vazonun katmanlı sahnesi, sunu alayı ve İnanna yorumu."
+    },
+    {
+      "id": 17,
+      "title": "University of Oxford — ETCSL",
+      "url": "https://www.orinst.ox.ac.uk/electronic-text-corpus-sumerian-literature-etcsl",
+      "tier": "institutional",
+      "note": "Sümer edebî metinlerinin çoğunun geç 3. ve erken 2. binyıl nüshaları olduğu bağlamı."
+    },
+    {
+      "id": 18,
+      "title": "ETCSL — Enmerkar and the Lord of Aratta",
+      "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.2.3",
+      "tier": "primary-translation",
+      "note": "Enmerkar, Aratta ve yazının ortaya çıkışı anlatısı."
+    },
+    {
+      "id": 19,
+      "title": "CDLI — Enmerkar and the Lord of Aratta witness P278286",
+      "url": "https://cdli.earth/P278286",
+      "tier": "primary-database",
+      "note": "Anlatının Eski Babil dönemine tarihlenen Nippur nüshası."
+    },
+    {
+      "id": 20,
+      "title": "CDLI — Sumerian King List",
+      "url": "https://cdli.earth/artifacts/112355",
+      "tier": "primary-database",
+      "note": "Krallık listesinin kopyaları ve Uruk hanedan geleneği."
+    },
+    {
+      "id": 21,
+      "title": "Oxford Classical Dictionary — Gilgamesh/Gilgamesh Epic",
+      "url": "https://doi.org/10.1093/acrefore/9780199381135.013.9025",
+      "tier": "scholarly-reference",
+      "note": "Gilgameş’in tarihselliğinin bilinmediği ve metin geleneğinin katmanları."
+    },
+    {
+      "id": 22,
+      "title": "Metropolitan Museum of Art — Gilgamesh",
+      "url": "https://www.metmuseum.org/essays/gilgamesh",
+      "tier": "institutional",
+      "note": "Gilgameş hakkında çağdaş bilgi bulunmaması ve destan geleneği."
+    },
+    {
+      "id": 23,
+      "title": "Kramer & Jacobsen — Gilgamesh and Agga",
+      "url": "https://www.journals.uchicago.edu/doi/10.2307/501208",
+      "tier": "peer-reviewed",
+      "note": "Yaşlılar ve savaşabilir erkekler meclislerinin geçtiği edebî metin."
+    },
+    {
+      "id": 24,
+      "title": "Jacobsen — Primitive Democracy in Ancient Mesopotamia",
+      "url": "https://www.journals.uchicago.edu/doi/10.2307/542482",
+      "tier": "peer-reviewed",
+      "note": "‘İlkel demokrasi’ tezinin klasik formülasyonu; doğrudan anayasal belge değildir."
+    },
+    {
+      "id": 25,
+      "title": "Magnetometry at Uruk: The city of King Gilgamesh",
+      "url": "https://ui.adsabs.harvard.edu/abs/2003EAEJA.....9152F/abstract",
+      "tier": "research-abstract",
+      "note": "Kanal sistemi, sur ve olası mezar yapısı; Gilgameş mezarı yorumu açıkça spekülatif."
+    },
+    {
+      "id": 26,
+      "title": "TheTorah — Nimrod’s Cities: Babel, Erech, Akkad and Calneh",
+      "url": "https://www.thetorah.com/article/nimrods-cities-babel-erech-akkad-and-calneh",
+      "tier": "scholarly-publication",
+      "note": "Erech’in Uruk’la özdeşliği ve metinde Babel/Babil’den ayrı sayılması."
+    },
+    {
+      "id": 27,
+      "title": "Oxford — Hellenistic Uruk",
+      "url": "https://doi.org/10.1093/oso/9780199659889.003.0015",
+      "tier": "scholarly-chapter",
+      "note": "Uruk’un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu."
+    },
+    {
+      "id": 28,
+      "title": "DAI — Virtual Tour through Uruk-Warka",
+      "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+      "tier": "institutional",
+      "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme."
+    },
+    {
+      "id": 29,
+      "title": "UCL/Cambridge — Tell Brak and concurrent early urbanism",
+      "url": "https://www.cam.ac.uk/news/researchers-rewrite-origins-of-the-urban-sprawl",
+      "tier": "institutional",
+      "note": "Uruk’un mutlak ‘ilk şehir’ ilanını sınırlayan Tell Brak bulguları."
+    },
+    {
+      "id": 30,
+      "title": "Getty — Mesopotamia: Civilization Begins",
+      "url": "https://www.getty.edu/art/exhibitions/mesopotamia/explore.html",
+      "tier": "institutional",
+      "note": "İlk kentler, yazı, bürokrasi ve anıtsal altyapı bağlamı."
+    }
+  ]
+}

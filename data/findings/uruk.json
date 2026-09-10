@@ -1,0 +1,3521 @@
+[
+  {
+    "schema_version": 2,
+    "id": "uruk-gec-dorduncu-binyil-metropol",
+    "claim": "Uruk, MÖ 4. binyılın sonlarında çok büyük, uzmanlaşmış ve anıtsal bir kent merkezidir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk dünyanın tartışmasız ilk şehridir.",
+    "sources": [
+      {
+        "id": "matris-kaynak-2",
+        "tier": "institutional",
+        "title": "Uruk: First City of the Ancient World",
+        "url": "https://mitpressbookstore.mit.edu/book/9781606064443",
+        "language": "en",
+        "note": "Uruk’un kentleşme, bürokrasi, sanat ve erken yazı tarihindeki yeri.",
+        "institution": "Uruk: First City of the Ancient World",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-3",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Gebhard J. Selz — The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004"
+      },
+      {
+        "id": "matris-kaynak-4",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Penn Museum Lagash Archaeological Project — Historical Context",
+        "url": "https://web.sas.upenn.edu/lagash/historical-context/",
+        "language": "en",
+        "note": "Uruk döneminin kronolojisi ve kentin 250 hektarı aşan ölçeği.",
+        "institution": "Penn Museum, University of Pennsylvania"
+      },
+      {
+        "id": "matris-kaynak-5",
+        "tier": "institutional",
+        "title": "Ur, Karsgaard & Oates — Tell Brak Suburban Survey",
+        "url": "https://jasonur.scholars.harvard.edu/publications/spatial-dimensions-early-mesopotamian-urbanism-tell-brak-suburban-survey-2003-2",
+        "language": "en",
+        "note": "Tell Brak’ın geç 5. ve erken 4. binyıldaki 130 hektarlık kentsel gelişimi.",
+        "institution": "Ur, Karsgaard & Oates",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-29",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "UCL/Cambridge — Tell Brak and concurrent early urbanism",
+        "url": "https://www.cam.ac.uk/news/researchers-rewrite-origins-of-the-urban-sprawl",
+        "language": "en",
+        "note": "Uruk’un mutlak ‘ilk şehir’ ilanını sınırlayan Tell Brak bulguları.",
+        "institution": "University of Cambridge"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "alan-arastirmalari-ve-yayinlar-gec-4-binyilda-250-hektari-as",
+        "text": "Alan araştırmaları ve yayınlar, geç 4. binyılda 250 hektarı aşan bir yerleşim ölçeği gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "anitsal-kamusal-yapilar-uzmanlasmis-idari-kayitlar-ve-bolges",
+        "text": "Anıtsal kamusal yapılar, uzmanlaşmış idari kayıtlar ve bölgesel merkez-çevre ilişkileri birlikte görünür.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ilk-sehir-siralamasi-kullanilan-sehir-tanimina-baglidir-tell",
+        "text": "‘İlk şehir’ sıralaması kullanılan şehir tanımına bağlıdır; Tell Brak erken ve eşzamanlı bir başka kentsel odaktır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Aynı anda yoğun biçimde yerleşilmiş alanın evrelere göre tam büyüklüğü nedir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-dunyanin-ilk-sehri",
+    "claim": "Uruk’un ‘dünyanın ilk şehri’ olduğu mutlak bir olgu değil, ölçüte bağlı bir sınıflandırmadır.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk’tan önce şehir yoktu.",
+    "sources": [
+      {
+        "id": "matris-kaynak-2",
+        "tier": "institutional",
+        "title": "Uruk: First City of the Ancient World",
+        "url": "https://mitpressbookstore.mit.edu/book/9781606064443",
+        "language": "en",
+        "note": "Uruk’un kentleşme, bürokrasi, sanat ve erken yazı tarihindeki yeri.",
+        "institution": "Uruk: First City of the Ancient World",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-5",
+        "tier": "institutional",
+        "title": "Ur, Karsgaard & Oates — Tell Brak Suburban Survey",
+        "url": "https://jasonur.scholars.harvard.edu/publications/spatial-dimensions-early-mesopotamian-urbanism-tell-brak-suburban-survey-2003-2",
+        "language": "en",
+        "note": "Tell Brak’ın geç 5. ve erken 4. binyıldaki 130 hektarlık kentsel gelişimi.",
+        "institution": "Ur, Karsgaard & Oates",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-29",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "UCL/Cambridge — Tell Brak and concurrent early urbanism",
+        "url": "https://www.cam.ac.uk/news/researchers-rewrite-origins-of-the-urban-sprawl",
+        "language": "en",
+        "note": "Uruk’un mutlak ‘ilk şehir’ ilanını sınırlayan Tell Brak bulguları.",
+        "institution": "University of Cambridge"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "uruk-gec-4-binyilin-en-buyuk-ve-en-karmasik-kentlerinden-bir",
+        "text": "Uruk geç 4. binyılın en büyük ve en karmaşık kentlerinden biridir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tell-brak-ta-gec-5-ve-erken-4-binyilda-130-hektarlik-kentsel",
+        "text": "Tell Brak’ta geç 5. ve erken 4. binyılda 130 hektarlık kentsel gelişim saptanmıştır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "uruk-un-yazi-burokrasi-ve-anitsal-olcegi-ayni-dugumde-birles",
+        "text": "Uruk’un yazı, bürokrasi ve anıtsal ölçeği aynı düğümde birleştirmesi onu ‘ilk metropol’ etiketi için güçlü aday yapar.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Şehir için nüfus, yoğunluk, kurum veya işlevden hangisi eşik kabul edilmelidir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-nufusu",
+    "claim": "Uruk’un kesin nüfusu bilinmez; on binlerle ifade edilen sayılar alan ve yoğunluk modelleridir.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk’ta kesin olarak 40 bin, 60 bin veya 80 bin kişi yaşıyordu.",
+    "sources": [
+      {
+        "id": "matris-kaynak-4",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Penn Museum Lagash Archaeological Project — Historical Context",
+        "url": "https://web.sas.upenn.edu/lagash/historical-context/",
+        "language": "en",
+        "note": "Uruk döneminin kronolojisi ve kentin 250 hektarı aşan ölçeği.",
+        "institution": "Penn Museum, University of Pennsylvania"
+      },
+      {
+        "id": "matris-kaynak-25",
+        "tier": "institutional",
+        "type": "report",
+        "title": "Magnetometry at Uruk: The city of King Gilgamesh",
+        "url": "https://ui.adsabs.harvard.edu/abs/2003EAEJA.....9152F/abstract",
+        "language": "en",
+        "note": "Kanal sistemi, sur ve olası mezar yapısı; Gilgameş mezarı yorumu açıkça spekülatif.",
+        "institution": "EAGE / NASA ADS (araştırma özeti)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "antik-nufus-sayimi-korunmamistir",
+        "text": "Antik nüfus sayımı korunmamıştır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-4",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yerlesim-alani-yapi-yogunlugu-hane-buyuklugu-ve-bos-alan-var",
+        "text": "Yerleşim alanı, yapı yoğunluğu, hane büyüklüğü ve boş alan varsayımları sonucu ciddi biçimde değiştirir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-4",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "kentin-yuzlerce-hektara-erisen-olcegi-nufusun-kucuk-bir-kasa",
+        "text": "Kentin yüzlerce hektara erişen ölçeği, nüfusun küçük bir kasaba düzeyinde olmadığını güçlü biçimde gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-4",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Geç Uruk evresinde sürekli oturulan konut alanı ne kadardı?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-su-peyzaji",
+    "claim": "Uruk kuru bir çölün ortasında birdenbire kurulmadı; tatlı su kanalları ve eski akarsu kollarıyla örülü bir taşkın ovasında gelişti.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Sümerliler çölün ortasında doğaya rağmen mucizevi bir kent kurdu.",
+    "sources": [
+      {
+        "id": "matris-kaynak-1",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "UNESCO — The Ahwar of Southern Iraq",
+        "url": "https://whc.unesco.org/en/list/1481/",
+        "language": "en",
+        "note": "Uruk, Ur ve Eridu’nun bataklık kenarı kentleri, yazı ve anıtsal mimari bağlamı.",
+        "institution": "UNESCO"
+      },
+      {
+        "id": "matris-kaynak-6",
+        "tier": "institutional",
+        "title": "Jotheri et al. — Holocene fluvial and anthropogenic processes around Uruk",
+        "url": "https://discovery.ucl.ac.uk/id/eprint/10039203/",
+        "language": "en",
+        "note": "Uruk çevresinin tatlı su, doğal kanal ve insan yapımı kanal tarihi.",
+        "institution": "Jotheri et al.",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-25",
+        "tier": "institutional",
+        "type": "report",
+        "title": "Magnetometry at Uruk: The city of King Gilgamesh",
+        "url": "https://ui.adsabs.harvard.edu/abs/2003EAEJA.....9152F/abstract",
+        "language": "en",
+        "note": "Kanal sistemi, sur ve olası mezar yapısı; Gilgameş mezarı yorumu açıkça spekülatif.",
+        "institution": "EAGE / NASA ADS (araştırma özeti)"
+      },
+      {
+        "id": "arkeofili-uruk-tekne",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Uruk Yerleşiminde 4.000 Yıllık Ahşap Tekne Bulundu",
+        "year": 2022,
+        "institution": "Arkeofili",
+        "url": "https://arkeofili.com/uruk-yerlesiminde-4-000-yillik-ahsap-tekne-bulundu/",
+        "language": "tr",
+        "accessed": "2026-09-10"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "jeoarkeolojik-cekirdekler-bolgenin-erken-holosen-den-itibare",
+        "text": "Jeoarkeolojik çekirdekler bölgenin erken Holosen’den itibaren tatlı su etkisinde olduğunu gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-1",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "insan-yapimi-kanallar-dogal-akarsu-oruntulerinin-uzerine-bin",
+        "text": "İnsan yapımı kanallar doğal akarsu örüntülerinin üzerine bindirilmiştir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-1",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "elverisli-su-ortami-kendiliginden-kent-uretmez-bakim-emek-ul",
+        "text": "Elverişli su ortamı kendiliğinden kent üretmez; bakım, emek, ulaşım ve siyasal koordinasyon yine gerekir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-1",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Belirli kanal kesimlerinin hangi evrede açıldığı ve hangi kurumca yönetildiği nedir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-eanna-anu",
+    "claim": "Uruk’ta Eanna ve Anu olarak adlandırılan iki büyük anıtsal çekirdek vardır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk: Eanna ve Anu bölgeleri",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Kazılan bütün büyük yapılar işlevi kesin olarak bilinen tapınaklardır.",
+    "sources": [
+      {
+        "id": "matris-kaynak-7",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "ZRS — Uruk White Temple Reconstruction",
+        "url": "https://zrs.berlin/project/uruk-white-temple/",
+        "language": "en",
+        "note": "Beyaz Tapınak rekonstrüksiyonu ve rekonstrüksiyon belirsizlikleri.",
+        "institution": "ZRS Berlin (Uruk Beyaz Tapınak projesi)"
+      },
+      {
+        "id": "matris-kaynak-8",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Smarthistory — White Temple and ziggurat, Uruk",
+        "url": "https://smarthistory.org/white-temple-and-ziggurat-uruk/",
+        "language": "en",
+        "note": "Anu terası, Beyaz Tapınak ve anıtsal kerpiç mimari.",
+        "institution": "Smarthistory (Center for Public Art History)"
+      },
+      {
+        "id": "matris-kaynak-28",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "DAI — Virtual Tour through Uruk-Warka",
+        "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+        "language": "en",
+        "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme.",
+        "institution": "Deutsches Archäologisches Institut (DAI)"
+      },
+      {
+        "id": "arkeofili-uruk-kult-alani",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Irak'ta Uruk Dönemi 5.000 Yıllık Bir Kült Alanı Keşfedildi",
+        "year": 2025,
+        "institution": "Arkeofili",
+        "url": "https://arkeofili.com/irakta-uruk-donemi-5-000-yillik-bir-kult-alani-kesfedildi/",
+        "language": "tr",
+        "accessed": "2026-09-10"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "kazilar-teraslari-salonlu-yapilari-avlulari-nisli-cepheleri",
+        "text": "Kazılar terasları, salonlu yapıları, avluları, nişli cepheleri ve art arda yenilenen anıtsal yapı evrelerini ortaya çıkarmıştır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-7",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "erken-yapilarin-tapinak-saray-veya-idare-binasi-islevleri-co",
+        "text": "Erken yapıların ‘tapınak’, ‘saray’ veya ‘idare binası’ işlevleri çoğu kez sonraki kült bilgisi ve mimari benzetme üzerinden adlandırılır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-7",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Eanna’daki belirli yapıların ritüel, idari ve depolama işlevleri nasıl dağılıyordu?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-beyaz-tapinak",
+    "claim": "Anu terası üzerindeki Beyaz Tapınak, geç 4. binyılın anıtsal kerpiç mimarisinin güçlü bir örneğidir.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk: Eanna ve Anu bölgeleri",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Beyaz Tapınak, bilinen ilk ziggurattır ve işlevi bütünüyle çözülmüştür.",
+    "sources": [
+      {
+        "id": "matris-kaynak-7",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "ZRS — Uruk White Temple Reconstruction",
+        "url": "https://zrs.berlin/project/uruk-white-temple/",
+        "language": "en",
+        "note": "Beyaz Tapınak rekonstrüksiyonu ve rekonstrüksiyon belirsizlikleri.",
+        "institution": "ZRS Berlin (Uruk Beyaz Tapınak projesi)"
+      },
+      {
+        "id": "matris-kaynak-8",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Smarthistory — White Temple and ziggurat, Uruk",
+        "url": "https://smarthistory.org/white-temple-and-ziggurat-uruk/",
+        "language": "en",
+        "note": "Anu terası, Beyaz Tapınak ve anıtsal kerpiç mimari.",
+        "institution": "Smarthistory (Center for Public Art History)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "yukseltilmis-teras-beyaz-sivali-cephe-ve-merkezi-salon-duzen",
+        "text": "Yükseltilmiş teras, beyaz sıvalı cephe ve merkezi salon düzeni arkeolojik olarak belgelenmiştir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-7",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ilk-ziggurat-etiketi-tanima-baglidir-yapi-sonraki-tam-gelism",
+        "text": "‘İlk ziggurat’ etiketi tanıma bağlıdır; yapı sonraki tam gelişmiş zigguratlardan farklıdır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-7",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ust-yapinin-rekonstruksiyonu-kismi-kalintilara-dayanir",
+        "text": "Üst yapının rekonstrüksiyonu kısmi kalıntılara dayanır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-7",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Yapının ritüel programı ve erişim düzeni tam olarak nasıldı?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-yazi",
+    "claim": "Uruk, bilinen en erken büyük proto-çivi yazısı arşivlerinden birini üretmiştir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Yazıyı tek bir Uruklu bir günde icat etti.",
+    "sources": [
+      {
+        "id": "matris-kaynak-2",
+        "tier": "institutional",
+        "title": "Uruk: First City of the Ancient World",
+        "url": "https://mitpressbookstore.mit.edu/book/9781606064443",
+        "language": "en",
+        "note": "Uruk’un kentleşme, bürokrasi, sanat ve erken yazı tarihindeki yeri.",
+        "institution": "Uruk: First City of the Ancient World",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-9",
+        "tier": "primary",
+        "type": "database",
+        "title": "CDLI — Uruk IV Administrative Tablet P002976",
+        "url": "https://cdli.earth/P002976",
+        "language": "en",
+        "note": "MÖ yaklaşık 3350–3200 tarihli Uruk IV idari tableti.",
+        "institution": "Cuneiform Digital Library Initiative (CDLI)"
+      },
+      {
+        "id": "matris-kaynak-10",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "British Museum — How to write cuneiform",
+        "url": "https://www.britishmuseum.org/blog/how-write-cuneiform",
+        "language": "en",
+        "note": "Çivi yazısının hesap tutma bağlamı ve uzun kullanım tarihi.",
+        "institution": "British Museum"
+      },
+      {
+        "id": "matris-kaynak-30",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Getty — Mesopotamia: Civilization Begins",
+        "url": "https://www.getty.edu/art/exhibitions/mesopotamia/explore.html",
+        "language": "en",
+        "note": "İlk kentler, yazı, bürokrasi ve anıtsal altyapı bağlamı.",
+        "institution": "Getty Museum"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "uruk-iv-tabakalarindan-mo-yaklasik-3350-3200-tarihli-idari-t",
+        "text": "Uruk IV tabakalarından MÖ yaklaşık 3350–3200 tarihli idari tabletler vardır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ilk-kayitlar-agirlikla-mal-sayi-emek-ve-tahsis-hesaplaridir",
+        "text": "İlk kayıtlar ağırlıkla mal, sayı, emek ve tahsis hesaplarıdır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "yazi-sayaclar-sayisal-tabletler-muhurleme-ve-isaret-standart",
+        "text": "Yazı; sayaçlar, sayısal tabletler, mühürleme ve işaret standartlaşmasının kademeli sonucudur.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "en-erken-isaretlerin-hangi-konusma-dilini-ne-olcude-kodladig",
+        "text": "En erken işaretlerin hangi konuşma dilini ne ölçüde kodladığı her zaman belirlenemez.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "En erken proto-çivi yazısının dilsel içeriği ne ölçüde Sümerceydi?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-ilk-edebiyat",
+    "claim": "En erken Uruk tabletleri edebiyat değil, büyük ölçüde idari kayıttır.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Gilgameş Destanı Uruk IV döneminde yazıya geçirildi.",
+    "sources": [
+      {
+        "id": "matris-kaynak-9",
+        "tier": "primary",
+        "type": "database",
+        "title": "CDLI — Uruk IV Administrative Tablet P002976",
+        "url": "https://cdli.earth/P002976",
+        "language": "en",
+        "note": "MÖ yaklaşık 3350–3200 tarihli Uruk IV idari tableti.",
+        "institution": "Cuneiform Digital Library Initiative (CDLI)"
+      },
+      {
+        "id": "matris-kaynak-17",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "University of Oxford — ETCSL",
+        "url": "https://www.orinst.ox.ac.uk/electronic-text-corpus-sumerian-literature-etcsl",
+        "language": "en",
+        "note": "Sümer edebî metinlerinin çoğunun geç 3. ve erken 2. binyıl nüshaları olduğu bağlamı.",
+        "institution": "University of Oxford, ETCSL"
+      },
+      {
+        "id": "matris-kaynak-21",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Oxford Classical Dictionary — Gilgamesh/Gilgamesh Epic",
+        "url": "https://doi.org/10.1093/acrefore/9780199381135.013.9025",
+        "language": "en",
+        "note": "Gilgameş’in tarihselliğinin bilinmediği ve metin geleneğinin katmanları.",
+        "authors": [
+          "Jiménez, Enrique"
+        ],
+        "year": 2025,
+        "container": "Oxford Classical Dictionary",
+        "doi": "10.1093/acrefore/9780199381135.013.9025"
+      },
+      {
+        "id": "matris-kaynak-22",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Metropolitan Museum of Art — Gilgamesh",
+        "url": "https://www.metmuseum.org/essays/gilgamesh",
+        "language": "en",
+        "note": "Gilgameş hakkında çağdaş bilgi bulunmaması ve destan geleneği.",
+        "institution": "Metropolitan Museum of Art"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "arkaik-tabletlerin-turu-idari-ve-sozluk-listesel-kayitlardir",
+        "text": "Arkaik tabletlerin türü idari ve sözlük/listesel kayıtlardır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-9",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "gilgames-anlatilarinin-bilinen-nushalari-cok-daha-gec-doneml",
+        "text": "Gilgameş anlatılarının bilinen nüshaları çok daha geç dönemlerdendir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-9",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "sozlu-anlatilarin-daha-eski-olmasi-mumkundur-ancak-bu-korunm",
+        "text": "Sözlü anlatıların daha eski olması mümkündür; ancak bu, korunmuş bir 4. binyıl destan tableti anlamına gelmez.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-9",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Gilgameş çevresindeki sözlü geleneklerin en erken çekirdeği ne zamana iner?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "enmerkar-yaziyi-icat-etti",
+    "claim": "Enmerkar’ın yazıyı icat etmesi edebî bir köken anlatısıdır; çağdaş tarih kaydı değildir.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Yazıyı Uruk kralı Enmerkar’ın icat ettiği tabletlerle kanıtlanmıştır.",
+    "sources": [
+      {
+        "id": "matris-kaynak-17",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "University of Oxford — ETCSL",
+        "url": "https://www.orinst.ox.ac.uk/electronic-text-corpus-sumerian-literature-etcsl",
+        "language": "en",
+        "note": "Sümer edebî metinlerinin çoğunun geç 3. ve erken 2. binyıl nüshaları olduğu bağlamı.",
+        "institution": "University of Oxford, ETCSL"
+      },
+      {
+        "id": "matris-kaynak-18",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "ETCSL — Enmerkar and the Lord of Aratta",
+        "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.2.3",
+        "language": "en",
+        "note": "Enmerkar, Aratta ve yazının ortaya çıkışı anlatısı.",
+        "institution": "University of Oxford, ETCSL"
+      },
+      {
+        "id": "matris-kaynak-19",
+        "tier": "primary",
+        "type": "database",
+        "title": "CDLI — Enmerkar and the Lord of Aratta witness P278286",
+        "url": "https://cdli.earth/P278286",
+        "language": "en",
+        "note": "Anlatının Eski Babil dönemine tarihlenen Nippur nüshası.",
+        "institution": "Cuneiform Digital Library Initiative (CDLI)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "enmerkar-ve-aratta-anlatisinin-korunmus-taniklari-eski-babil",
+        "text": "Enmerkar ve Aratta anlatısının korunmuş tanıkları Eski Babil dönemindendir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-17",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yazinin-arkeolojik-gelisimi-anlatidaki-tek-seferlik-icattan",
+        "text": "Yazının arkeolojik gelişimi anlatıdaki tek seferlik icattan daha eski ve kademelidir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-17",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "oyku-mezopotamyalilarin-yaziyi-uruk-un-siyasal-ve-ticari-guc",
+        "text": "Öykü, Mezopotamyalıların yazıyı Uruk’un siyasal ve ticari gücüyle ilişkilendirdiğini gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-17",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Öykünün en eski sözlü veya yazılı biçimi ne zamana gider?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-tapinak-devleti",
+    "claim": "Büyük kurumlar ekonomide belirleyiciydi; fakat bütün üretimin tek bir tapınak devleti tarafından yönetildiği model aşırı geneldir.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk: Eanna ve Anu bölgeleri",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk’ta herkes tapınağın maaşlı işçisiydi.",
+    "sources": [
+      {
+        "id": "matris-kaynak-3",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Gebhard J. Selz — The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004"
+      },
+      {
+        "id": "matris-kaynak-10",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "British Museum — How to write cuneiform",
+        "url": "https://www.britishmuseum.org/blog/how-write-cuneiform",
+        "language": "en",
+        "note": "Çivi yazısının hesap tutma bağlamı ve uzun kullanım tarihi.",
+        "institution": "British Museum"
+      },
+      {
+        "id": "matris-kaynak-13",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Early Urbanism in Northern Mesopotamia",
+        "url": "https://doi.org/10.1007/s10814-019-09136-7",
+        "language": "en",
+        "note": "Uruk yayılımı, gerçek koloni alanları ve yerel süreklilik üzerine eleştirel sentez.",
+        "authors": [
+          "McMahon, Augusta"
+        ],
+        "year": 2019,
+        "container": "Journal of Archaeological Research",
+        "volume": "28",
+        "pages": "289-337",
+        "doi": "10.1007/s10814-019-09136-7"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "tabletler-buyuk-olcekli-tahsis-suru-tahil-ve-emek-yonetimini",
+        "text": "Tabletler büyük ölçekli tahsis, sürü, tahıl ve emek yönetimini gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yakin-donem-arastirmalar-hane-uretimi-ve-yerel-orgutlenmenin",
+        "text": "Yakın dönem araştırmalar hane üretimi ve yerel örgütlenmenin de önemli olduğunu gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "arsivlerin-kurumsal-olmasi-arsiv-disindaki-butun-uretimin-yo",
+        "text": "Arşivlerin kurumsal olması, arşiv dışındaki bütün üretimin yokluğu anlamına gelmez.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Kurumsal, hane ve mevsimlik üretimin toplam ekonomi içindeki payları neydi?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "egimli-agizli-kase-erzak",
+    "claim": "Eğimli ağızlı kaseler seri üretildi; fakat hepsinin standart erzak kabı olduğu kanıtlanmış değildir.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Her kase bir işçinin günlük tahıl payını ölçüyordu.",
+    "sources": [
+      {
+        "id": "matris-kaynak-11",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "British Museum — Bevelled rim bowl",
+        "url": "https://www.britishmuseum.org/collection/object/W_1932-1212-1279",
+        "language": "en",
+        "note": "Eğimli ağızlı kaselerin standart erzak kabı olduğu yorumuna yönelik müze değerlendirmesi.",
+        "institution": "British Museum"
+      },
+      {
+        "id": "matris-kaynak-12",
+        "tier": "institutional",
+        "title": "Glatz et al. — Organic residues in Beveled Rim Bowls",
+        "url": "https://refubium.fu-berlin.de/handle/fub188/40020",
+        "language": "en",
+        "note": "Et ve olası süt ürünleri kalıntıları; tek işlevli tahıl/ekmek yorumuna karşı veri.",
+        "institution": "Glatz et al.",
+        "type": "article"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "kaplar-genis-cografyada-cok-sayida-ve-hizli-uretime-uygun-bi",
+        "text": "Kaplar geniş coğrafyada çok sayıda ve hızlı üretime uygun biçimde bulunur.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-11",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "boyutlar-degiskendir-ve-organik-kalintilar-tahil-disinda-et",
+        "text": "Boyutlar değişkendir ve organik kalıntılar tahıl dışında et ve olası süt ürünlerini de gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-11",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "bazi-baglamlarda-porsiyonlama-veya-erzak-dagitimi-icin-kulla",
+        "text": "Bazı bağlamlarda porsiyonlama veya erzak dağıtımı için kullanılmış olmaları mümkündür.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-11",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "İşlev bölgeye, kuruma ve içeriğe göre nasıl değişiyordu?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-imparatorlugu",
+    "claim": "Uruk maddi kültürü Batı Asya’ya yayıldı; bu, tek merkezden yönetilen bir Uruk imparatorluğunu kanıtlamaz.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk dünyanın ilk kıtalararası imparatorluğuydu.",
+    "sources": [
+      {
+        "id": "matris-kaynak-3",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Gebhard J. Selz — The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004"
+      },
+      {
+        "id": "matris-kaynak-13",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Early Urbanism in Northern Mesopotamia",
+        "url": "https://doi.org/10.1007/s10814-019-09136-7",
+        "language": "en",
+        "note": "Uruk yayılımı, gerçek koloni alanları ve yerel süreklilik üzerine eleştirel sentez.",
+        "authors": [
+          "McMahon, Augusta"
+        ],
+        "year": 2019,
+        "container": "Journal of Archaeological Research",
+        "volume": "28",
+        "pages": "289-337",
+        "doi": "10.1007/s10814-019-09136-7"
+      },
+      {
+        "id": "matris-kaynak-14",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Lewis — Reframing the Uruk Expansion",
+        "url": "https://doi.org/10.1017/S0959774324000404",
+        "language": "en",
+        "note": "Uruk etkisinin yerel uyarlama ve glokalleşme çerçevesinde değerlendirilmesi.",
+        "authors": [
+          "Lewis, Michael P."
+        ],
+        "year": 2025,
+        "container": "Cambridge Archaeological Journal",
+        "volume": "35",
+        "pages": "332-346",
+        "doi": "10.1017/S0959774324000404"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "bazi-yerlerde-planli-guney-kolonileri-veya-ticari-enklavlar",
+        "text": "Bazı yerlerde planlı güney kolonileri veya ticari enklavlar görülür.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "baska-yerlerde-yerel-gelenekler-surer-ve-uruk-unsurlari-seci",
+        "text": "Başka yerlerde yerel gelenekler sürer ve Uruk unsurları seçilerek uyarlanır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "genis-agin-mal-insan-teknik-ve-sembol-dolasiminda-guney-mezo",
+        "text": "Geniş ağın mal, insan, teknik ve sembol dolaşımında güney Mezopotamya’nın güçlü rolü vardır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Göç, ticaret, hammadde erişimi ve siyasal baskının bölgesel payları neydi?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-kolonileri",
+    "claim": "Uruk ağında gerçek koloni ve göçmen enklavı örnekleri vardır; bütün Uruk benzeri siteler koloni değildir.",
+    "status": "established",
+    "confidence": "medium",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk tarzı çanak çömlek bulunan her yer Uruk’un sömürgesiydi.",
+    "sources": [
+      {
+        "id": "matris-kaynak-13",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Early Urbanism in Northern Mesopotamia",
+        "url": "https://doi.org/10.1007/s10814-019-09136-7",
+        "language": "en",
+        "note": "Uruk yayılımı, gerçek koloni alanları ve yerel süreklilik üzerine eleştirel sentez.",
+        "authors": [
+          "McMahon, Augusta"
+        ],
+        "year": 2019,
+        "container": "Journal of Archaeological Research",
+        "volume": "28",
+        "pages": "289-337",
+        "doi": "10.1007/s10814-019-09136-7"
+      },
+      {
+        "id": "matris-kaynak-14",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Lewis — Reframing the Uruk Expansion",
+        "url": "https://doi.org/10.1017/S0959774324000404",
+        "language": "en",
+        "note": "Uruk etkisinin yerel uyarlama ve glokalleşme çerçevesinde değerlendirilmesi.",
+        "authors": [
+          "Lewis, Michael P."
+        ],
+        "year": 2025,
+        "container": "Cambridge Archaeological Journal",
+        "volume": "35",
+        "pages": "332-346",
+        "doi": "10.1017/S0959774324000404"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "habuba-kabira-gibi-planli-guney-tarzi-yerlesimler-koloni-yor",
+        "text": "Habuba Kabira gibi planlı güney tarzı yerleşimler koloni yorumunu destekler.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-13",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tell-brak-ve-baska-alanlarda-yerel-malzeme-kulturuyle-yan-ya",
+        "text": "Tell Brak ve başka alanlarda yerel malzeme kültürüyle yan yana varoluş görülür.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-13",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "maddi-benzerlik-siyasi-egemenligi-tek-basina-gostermez",
+        "text": "Maddi benzerlik siyasi egemenliği tek başına göstermez.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-13",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Her bir sitenin göçmen, tüccar, yerel seçkin veya karma topluluk profili nedir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "inanna-uruk",
+    "claim": "İnanna, Uruk’un en önemli tanrısal odaklarından biridir ve Eanna geleneğiyle güçlü biçimde ilişkilidir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk: Eanna ve Anu bölgeleri",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Eanna’daki her figür ve yapı doğrudan İnanna’yı temsil eder.",
+    "sources": [
+      {
+        "id": "matris-kaynak-15",
+        "tier": "primary",
+        "type": "webpage",
+        "title": "British Museum — Late Uruk cylinder seal 116722",
+        "url": "https://www.britishmuseum.org/collection/object/W_1925-0110-20",
+        "language": "en",
+        "note": "Rahip-kral, sürü ve İnanna’nın kamış demeti simgeleri.",
+        "institution": "British Museum"
+      },
+      {
+        "id": "matris-kaynak-16",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Smarthistory — Warka Vase",
+        "url": "https://smarthistory.org/warka-vase/",
+        "language": "en",
+        "note": "Vazonun katmanlı sahnesi, sunu alayı ve İnanna yorumu.",
+        "institution": "Smarthistory (Center for Public Art History)"
+      },
+      {
+        "id": "matris-kaynak-27",
+        "tier": "institutional",
+        "type": "chapter",
+        "title": "Oxford — Hellenistic Uruk",
+        "url": "https://doi.org/10.1093/oso/9780199659889.003.0015",
+        "language": "en",
+        "note": "Uruk’un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu.",
+        "institution": "Oxford — Hellenistic Uruk"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "kamis-demeti-simgeleri-muhurler-sunu-sahneleri-ve-daha-sonra",
+        "text": "Kamış demeti simgeleri, mühürler, sunu sahneleri ve daha sonraki kült geleneği İnanna bağını destekler.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-15",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "tek-tek-erken-yapilarin-ve-adsiz-figurlerin-kimligi-her-zama",
+        "text": "Tek tek erken yapıların ve adsız figürlerin kimliği her zaman yazıtla belirtilmez.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-15",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Geç Uruk ikonografisindeki insan figürlerinin kurumsal unvanları neydi?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "warka-vazo-kutsal-evlilik",
+    "claim": "Warka Vazosu bir sunu/ritüel düzeni gösterir; ‘kutsal evlilik’ yorumu olasıdır fakat yazıtla doğrulanmış değildir.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk: Eanna ve Anu bölgeleri",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Vazo, belirli bir kral ile İnanna’nın evliliğini fotoğraf gibi kaydeder.",
+    "sources": [
+      {
+        "id": "matris-kaynak-15",
+        "tier": "primary",
+        "type": "webpage",
+        "title": "British Museum — Late Uruk cylinder seal 116722",
+        "url": "https://www.britishmuseum.org/collection/object/W_1925-0110-20",
+        "language": "en",
+        "note": "Rahip-kral, sürü ve İnanna’nın kamış demeti simgeleri.",
+        "institution": "British Museum"
+      },
+      {
+        "id": "matris-kaynak-16",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Smarthistory — Warka Vase",
+        "url": "https://smarthistory.org/warka-vase/",
+        "language": "en",
+        "note": "Vazonun katmanlı sahnesi, sunu alayı ve İnanna yorumu.",
+        "institution": "Smarthistory (Center for Public Art History)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "alt-kayitlarda-su-bitki-hayvan-ve-sunu-tasiyan-insanlar-ustt",
+        "text": "Alt kayıtlarda su, bitki, hayvan ve sunu taşıyan insanlar; üstte İnanna simgeleriyle ilişkili bir sahne vardır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-15",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "figurlerin-adlari-ve-rituelin-tam-adi-yazili-degildir",
+        "text": "Figürlerin adları ve ritüelin tam adı yazılı değildir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-15",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Üst sahnedeki figürlerin kimliği ve ritüelin takvimdeki yeri nedir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "warka-maskesi-inanna",
+    "claim": "Warka Maskesi muhtemelen büyük bir bileşik heykele ait kadın yüzüdür; İnanna kimliği güçlü ama kesin olmayan bir yorumdur.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk: Eanna ve Anu bölgeleri",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Maskenin İnanna olduğu kesin olarak yazılıdır.",
+    "sources": [
+      {
+        "id": "matris-kaynak-2",
+        "tier": "institutional",
+        "title": "Uruk: First City of the Ancient World",
+        "url": "https://mitpressbookstore.mit.edu/book/9781606064443",
+        "language": "en",
+        "note": "Uruk’un kentleşme, bürokrasi, sanat ve erken yazı tarihindeki yeri.",
+        "institution": "Uruk: First City of the Ancient World",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-28",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "DAI — Virtual Tour through Uruk-Warka",
+        "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+        "language": "en",
+        "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme.",
+        "institution": "Deutsches Archäologisches Institut (DAI)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "eanna-cevresinde-bulunmasi-anitsal-olcek-ve-kadin-ilahi-imge",
+        "text": "Eanna çevresinde bulunması, anıtsal ölçek ve kadın ilahi imgesi yorumu destekler.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "kimligi-veren-yazit-korunmamistir",
+        "text": "Kimliği veren yazıt korunmamıştır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Heykelin gövdesi, kakmaları ve özgün sergileme bağlamı nasıldı?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-rahip-kral",
+    "claim": "Geç Uruk ikonografisinde baş bantlı ve ağ desenli etekli seçkin bir erkek tipi vardır; ‘rahip-kral’ modern bir tanımlamadır.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk: Eanna ve Anu bölgeleri",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Bu figür Uruk’un adı bilinen tek mutlak hükümdarıdır.",
+    "sources": [
+      {
+        "id": "matris-kaynak-15",
+        "tier": "primary",
+        "type": "webpage",
+        "title": "British Museum — Late Uruk cylinder seal 116722",
+        "url": "https://www.britishmuseum.org/collection/object/W_1925-0110-20",
+        "language": "en",
+        "note": "Rahip-kral, sürü ve İnanna’nın kamış demeti simgeleri.",
+        "institution": "British Museum"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "muhurlerde-figur-rituel-tarim-suru-ve-inanna-simgeleriyle-bi",
+        "text": "Mühürlerde figür ritüel, tarım, sürü ve İnanna simgeleriyle birlikte tekrarlanır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-15",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "figurun-adi-ve-tam-unvani-erken-sahnelerde-yazili-degildir-t",
+        "text": "Figürün adı ve tam unvanı erken sahnelerde yazılı değildir; tek kişi mi makam tipi mi olduğu açık değildir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-15",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "İkonografik tip bir kralı, rahibi, kurumsal makamı veya ideal yöneticiyi mi gösterir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-ilk-demokrasi",
+    "claim": "Uruk’un ‘ilk demokrasi’ olduğu sonucunu doğrulayacak çağdaş anayasal belge yoktur.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Gilgameş iki meclise danıştığı için demokrasi Uruk’ta icat edildi.",
+    "sources": [
+      {
+        "id": "matris-kaynak-17",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "University of Oxford — ETCSL",
+        "url": "https://www.orinst.ox.ac.uk/electronic-text-corpus-sumerian-literature-etcsl",
+        "language": "en",
+        "note": "Sümer edebî metinlerinin çoğunun geç 3. ve erken 2. binyıl nüshaları olduğu bağlamı.",
+        "institution": "University of Oxford, ETCSL"
+      },
+      {
+        "id": "matris-kaynak-23",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Kramer & Jacobsen — Gilgamesh and Agga",
+        "url": "https://www.journals.uchicago.edu/doi/10.2307/501208",
+        "language": "en",
+        "note": "Yaşlılar ve savaşabilir erkekler meclislerinin geçtiği edebî metin.",
+        "authors": [
+          "Kramer, Samuel Noah",
+          "Jacobsen, Thorkild"
+        ],
+        "year": 1949,
+        "container": "American Journal of Archaeology",
+        "volume": "53",
+        "pages": "1-18"
+      },
+      {
+        "id": "matris-kaynak-24",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Jacobsen — Primitive Democracy in Ancient Mesopotamia",
+        "url": "https://www.journals.uchicago.edu/doi/10.2307/542482",
+        "language": "en",
+        "note": "‘İlkel demokrasi’ tezinin klasik formülasyonu; doğrudan anayasal belge değildir.",
+        "authors": [
+          "Jacobsen, Thorkild"
+        ],
+        "year": 1943,
+        "container": "Journal of Near Eastern Studies",
+        "volume": "2",
+        "pages": "159-172"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "gilgames-ve-aga-anlatisinda-yaslilar-ve-savasabilir-erkekler",
+        "text": "Gilgameş ve Aga anlatısında yaşlılar ve savaşabilir erkekler topluluğu görünür.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-17",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "metin-kolektif-danisma-fikrinin-mezopotamya-siyasal-hayalind",
+        "text": "Metin, kolektif danışma fikrinin Mezopotamya siyasal hayalinde yer aldığını gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-17",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "korunan-nushalar-olaylardan-yuzyillar-sonradir",
+        "text": "Korunan nüshalar olaylardan yüzyıllar sonradır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-17",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kral-istemedigi-gorusu-birakip-destekledigi-gruba-gider-esit",
+        "text": "Kral istemediği görüşü bırakıp desteklediği gruba gider; eşit yurttaşlık, seçim ve hesap verme gösterilmez.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-17",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Erken Hanedanlık kentlerindeki meclislerin gerçek yetkisi ne kadardı?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "gilgames-tarihsel",
+    "claim": "Gilgameş’in tarihsel bir kral olması mümkündür; mevcut kanıt biyografisini doğrulamaya yetmez.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Gilgameş’in hayatı destanda anlatıldığı gibi kanıtlanmıştır.",
+    "sources": [
+      {
+        "id": "matris-kaynak-20",
+        "tier": "primary",
+        "type": "database",
+        "title": "CDLI — Sumerian King List",
+        "url": "https://cdli.earth/artifacts/112355",
+        "language": "en",
+        "note": "Krallık listesinin kopyaları ve Uruk hanedan geleneği.",
+        "institution": "Cuneiform Digital Library Initiative (CDLI)"
+      },
+      {
+        "id": "matris-kaynak-21",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Oxford Classical Dictionary — Gilgamesh/Gilgamesh Epic",
+        "url": "https://doi.org/10.1093/acrefore/9780199381135.013.9025",
+        "language": "en",
+        "note": "Gilgameş’in tarihselliğinin bilinmediği ve metin geleneğinin katmanları.",
+        "authors": [
+          "Jiménez, Enrique"
+        ],
+        "year": 2025,
+        "container": "Oxford Classical Dictionary",
+        "doi": "10.1093/acrefore/9780199381135.013.9025"
+      },
+      {
+        "id": "matris-kaynak-22",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Metropolitan Museum of Art — Gilgamesh",
+        "url": "https://www.metmuseum.org/essays/gilgamesh",
+        "language": "en",
+        "note": "Gilgameş hakkında çağdaş bilgi bulunmaması ve destan geleneği.",
+        "institution": "Metropolitan Museum of Art"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "mezopotamya-gelenegi-onu-uruk-krali-sayar-ve-3-binyil-ortala",
+        "text": "Mezopotamya geleneği onu Uruk kralı sayar ve 3. binyıl ortalarında tanrılaştırılmıştır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-20",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "krallik-listesi-ve-sonraki-anmalar-tarihsel-cekirdek-ihtimal",
+        "text": "Krallık listesi ve sonraki anmalar tarihsel çekirdek ihtimalini canlı tutar.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-20",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "cagdas-ve-acik-bir-gilgames-kraliyet-yaziti-yoktur",
+        "text": "Çağdaş ve açık bir Gilgameş kraliyet yazıtı yoktur.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-20",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "destan-ve-sumerce-oykuler-yuzyillar-boyunca-edeb-bicimde-gel",
+        "text": "Destan ve Sumerce öyküler yüzyıllar boyunca edebî biçimde geliştirilmiştir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-20",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Adın arkasında tek bir hükümdar mı, birkaç gelenek mi vardır?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "gilgames-126-yil",
+    "claim": "Gilgameş’e verilen 126 yıllık saltanat tarihsel kronoloji olarak kullanılamaz.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Gilgameş 126 yıl hüküm sürdü.",
+    "sources": [
+      {
+        "id": "matris-kaynak-20",
+        "tier": "primary",
+        "type": "database",
+        "title": "CDLI — Sumerian King List",
+        "url": "https://cdli.earth/artifacts/112355",
+        "language": "en",
+        "note": "Krallık listesinin kopyaları ve Uruk hanedan geleneği.",
+        "institution": "Cuneiform Digital Library Initiative (CDLI)"
+      },
+      {
+        "id": "matris-kaynak-21",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Oxford Classical Dictionary — Gilgamesh/Gilgamesh Epic",
+        "url": "https://doi.org/10.1093/acrefore/9780199381135.013.9025",
+        "language": "en",
+        "note": "Gilgameş’in tarihselliğinin bilinmediği ve metin geleneğinin katmanları.",
+        "authors": [
+          "Jiménez, Enrique"
+        ],
+        "year": 2025,
+        "container": "Oxford Classical Dictionary",
+        "doi": "10.1093/acrefore/9780199381135.013.9025"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "sumer-krallar-listesi-olaganustu-uzun-saltanatlari-ve-kralli",
+        "text": "Sümer Krallar Listesi olağanüstü uzun saltanatları ve krallığın gökten inişi gibi teolojik şemaları içerir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-20",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "liste-siyasal-hafiza-ve-hanedan-siralamasi-icin-degerlidir",
+        "text": "Liste siyasal hafıza ve hanedan sıralaması için değerlidir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-20",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Belirli sayıların simgesel ve yazımsal işlevleri nasıl oluştu?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "gilgames-sur",
+    "claim": "Uruk’un büyük suru gerçektir; onu doğrudan Gilgameş’in yaptırdığı bağımsız olarak kanıtlanmış değildir.",
+    "status": "contested",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Kazılar surun üzerindeki ‘Gilgameş yaptı’ yazıtını buldu.",
+    "sources": [
+      {
+        "id": "matris-kaynak-21",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Oxford Classical Dictionary — Gilgamesh/Gilgamesh Epic",
+        "url": "https://doi.org/10.1093/acrefore/9780199381135.013.9025",
+        "language": "en",
+        "note": "Gilgameş’in tarihselliğinin bilinmediği ve metin geleneğinin katmanları.",
+        "authors": [
+          "Jiménez, Enrique"
+        ],
+        "year": 2025,
+        "container": "Oxford Classical Dictionary",
+        "doi": "10.1093/acrefore/9780199381135.013.9025"
+      },
+      {
+        "id": "matris-kaynak-25",
+        "tier": "institutional",
+        "type": "report",
+        "title": "Magnetometry at Uruk: The city of King Gilgamesh",
+        "url": "https://ui.adsabs.harvard.edu/abs/2003EAEJA.....9152F/abstract",
+        "language": "en",
+        "note": "Kanal sistemi, sur ve olası mezar yapısı; Gilgameş mezarı yorumu açıkça spekülatif.",
+        "institution": "EAGE / NASA ADS (araştırma özeti)"
+      },
+      {
+        "id": "matris-kaynak-28",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "DAI — Virtual Tour through Uruk-Warka",
+        "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+        "language": "en",
+        "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme.",
+        "institution": "Deutsches Archäologisches Institut (DAI)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "jeofizik-ve-kazi-verileri-genis-bir-sur-devresini-gosterir",
+        "text": "Jeofizik ve kazı verileri geniş bir sur devresini gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-21",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "mezopotamya-edebiyati-suru-gilgames-le-ozdeslestirir",
+        "text": "Mezopotamya edebiyatı suru Gilgameş’le özdeşleştirir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-21",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "surun-evreleri-ve-onarimlari-vardir-kisisel-atfi-dogrulayan",
+        "text": "Surun evreleri ve onarımları vardır; kişisel atfı doğrulayan çağdaş yapı yazıtı yoktur.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-21",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "İlk devrenin kesin tarihi ve sonraki onarım evreleri nelerdir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "gilgames-mezari",
+    "claim": "2003 jeofizik çalışması bir yapı anomalisi saptadı; Gilgameş’in mezarı bulunmuş değildir.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Arkeologlar Gilgameş’in mezarını kesin olarak keşfetti.",
+    "sources": [
+      {
+        "id": "matris-kaynak-25",
+        "tier": "institutional",
+        "type": "report",
+        "title": "Magnetometry at Uruk: The city of King Gilgamesh",
+        "url": "https://ui.adsabs.harvard.edu/abs/2003EAEJA.....9152F/abstract",
+        "language": "en",
+        "note": "Kanal sistemi, sur ve olası mezar yapısı; Gilgameş mezarı yorumu açıkça spekülatif.",
+        "institution": "EAGE / NASA ADS (araştırma özeti)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "arastirma-ozeti-yapinin-mezar-olarak-yorumlanabilecegini-gil",
+        "text": "Araştırma özeti yapının mezar olarak yorumlanabileceğini, Gilgameş bağlantısının spekülatif kaldığını açıkça belirtir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-25",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "konumun-eski-su-yatagiyla-iliskisi-edeb-anlatiyla-ilginc-bir",
+        "text": "Konumun eski su yatağıyla ilişkisi edebî anlatıyla ilginç bir paralellik oluşturur.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-25",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Yapı kazılırsa tarihi, işlevi ve gömü bağlamı ne çıkacaktır?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "aratta-gercek-kent",
+    "claim": "Aratta edebî metinlerde güçlü bir uzak ülke/kenttir; konumu arkeolojik olarak belirlenmemiştir.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Aratta’nın İran, Anadolu veya İndus’taki belirli bir kent olduğu kanıtlanmıştır.",
+    "sources": [
+      {
+        "id": "matris-kaynak-18",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "ETCSL — Enmerkar and the Lord of Aratta",
+        "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.2.3",
+        "language": "en",
+        "note": "Enmerkar, Aratta ve yazının ortaya çıkışı anlatısı.",
+        "institution": "University of Oxford, ETCSL"
+      },
+      {
+        "id": "matris-kaynak-19",
+        "tier": "primary",
+        "type": "database",
+        "title": "CDLI — Enmerkar and the Lord of Aratta witness P278286",
+        "url": "https://cdli.earth/P278286",
+        "language": "en",
+        "note": "Anlatının Eski Babil dönemine tarihlenen Nippur nüshası.",
+        "institution": "Cuneiform Digital Library Initiative (CDLI)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "metin-aratta-yi-daglik-degerli-tas-ve-zanaatla-iliskili-bir",
+        "text": "Metin Aratta’yı dağlık, değerli taş ve zanaatla ilişkili bir rakip olarak anlatır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-18",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "cografi-ipuclari-birden-fazla-bolgeye-uyabilir-bagimsiz-ad-t",
+        "text": "Coğrafi ipuçları birden fazla bölgeye uyabilir; bağımsız, ad taşıyan buluntu yoktur.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-18",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Aratta tek bir yer mi, edebî birleşim mi, geniş bir bölge mi?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-erech",
+    "claim": "İbranice Erech’in Uruk’la özdeşleştirilmesi güçlü ve yaygın akademik görüştür.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Kutsal Kitap Uruk’un bütün kuruluş tarihini doğrular.",
+    "sources": [
+      {
+        "id": "matris-kaynak-26",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "TheTorah — Nimrod’s Cities: Babel, Erech, Akkad and Calneh",
+        "url": "https://www.thetorah.com/article/nimrods-cities-babel-erech-akkad-and-calneh",
+        "language": "en",
+        "note": "Erech’in Uruk’la özdeşliği ve metinde Babel/Babil’den ayrı sayılması.",
+        "institution": "Project TABS — TheTorah.com"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "ad-bicimi-ve-cografi-sira-erech-uruk-eslemesini-destekler",
+        "text": "Ad biçimi ve coğrafi sıra Erech–Uruk eşlemesini destekler.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-26",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "bu-eslestirme-nimrod-anlatisini-cagdas-uruk-tarihi-belgesine",
+        "text": "Bu eşleştirme, Nimrod anlatısını çağdaş Uruk tarihi belgesine dönüştürmez.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-26",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Metnin son biçimindeki kent listesinin siyasal ve edebî amacı nedir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-babil-kulesi",
+    "claim": "Uruk, Babil Kulesi’nin kenti değildir; Yaratılış metni Babel ile Erech’i ayrı kentler olarak sayar.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk zigguratı Babil Kulesi’dir.",
+    "sources": [
+      {
+        "id": "matris-kaynak-26",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "TheTorah — Nimrod’s Cities: Babel, Erech, Akkad and Calneh",
+        "url": "https://www.thetorah.com/article/nimrods-cities-babel-erech-akkad-and-calneh",
+        "language": "en",
+        "note": "Erech’in Uruk’la özdeşliği ve metinde Babel/Babil’den ayrı sayılması.",
+        "institution": "Project TABS — TheTorah.com"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "babel-babil-ve-erech-uruk-ayni-listede-farkli-adlardir",
+        "text": "Babel/Babil ve Erech/Uruk aynı listede farklı adlardır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-26",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "uruk-un-anitsal-teraslari-daha-sonraki-ziggurat-geleneginin",
+        "text": "Uruk’un anıtsal terasları, daha sonraki ziggurat geleneğinin erken bağlamını anlamaya yardım eder.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-26",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Babil Kulesi anlatısının hangi Mezopotamya yapı geleneklerinden beslendiği nedir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "nimrod-uruku-kurdu",
+    "claim": "Nimrod’un Uruk’u kurduğunu gösteren çağdaş Mezopotamya kaydı yoktur.",
+    "status": "unknown",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Nimrod tarihsel olarak Uruk’un kurucusudur.",
+    "sources": [
+      {
+        "id": "matris-kaynak-2",
+        "tier": "institutional",
+        "title": "Uruk: First City of the Ancient World",
+        "url": "https://mitpressbookstore.mit.edu/book/9781606064443",
+        "language": "en",
+        "note": "Uruk’un kentleşme, bürokrasi, sanat ve erken yazı tarihindeki yeri.",
+        "institution": "Uruk: First City of the Ancient World",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-26",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "TheTorah — Nimrod’s Cities: Babel, Erech, Akkad and Calneh",
+        "url": "https://www.thetorah.com/article/nimrods-cities-babel-erech-akkad-and-calneh",
+        "language": "en",
+        "note": "Erech’in Uruk’la özdeşliği ve metinde Babel/Babil’den ayrı sayılması.",
+        "institution": "Project TABS — TheTorah.com"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "nimrod-incil-deki-edeb-soybilimsel-cercevede-gorunur-uruk-un",
+        "text": "Nimrod İncil’deki edebî-soybilimsel çerçevede görünür; Uruk’un oluşumu ondan binyıllar önceye uzanan arkeolojik evrelerle açıklanır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "erech-adinin-uruk-u-isaret-etmesi-sonraki-gelenekte-kentin-g",
+        "text": "Erech adının Uruk’u işaret etmesi, sonraki gelenekte kentin güçlü hafızasını gösterir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Nimrod figürü hangi Mezopotamya kral geleneklerinin bileşimidir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-anunnaki-uzaylilar",
+    "claim": "Uruk’un uzaylılar veya Anunnaki adlı dünya dışı mühendislerce kurulduğunu destekleyen arkeolojik ya da filolojik kanıt yoktur.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk’un kent planı ve yazısı insanüstü teknoloji gerektirir.",
+    "sources": [
+      {
+        "id": "matris-kaynak-2",
+        "tier": "institutional",
+        "title": "Uruk: First City of the Ancient World",
+        "url": "https://mitpressbookstore.mit.edu/book/9781606064443",
+        "language": "en",
+        "note": "Uruk’un kentleşme, bürokrasi, sanat ve erken yazı tarihindeki yeri.",
+        "institution": "Uruk: First City of the Ancient World",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-3",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Gebhard J. Selz — The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004"
+      },
+      {
+        "id": "matris-kaynak-9",
+        "tier": "primary",
+        "type": "database",
+        "title": "CDLI — Uruk IV Administrative Tablet P002976",
+        "url": "https://cdli.earth/P002976",
+        "language": "en",
+        "note": "MÖ yaklaşık 3350–3200 tarihli Uruk IV idari tableti.",
+        "institution": "Cuneiform Digital Library Initiative (CDLI)"
+      },
+      {
+        "id": "matris-kaynak-15",
+        "tier": "primary",
+        "type": "webpage",
+        "title": "British Museum — Late Uruk cylinder seal 116722",
+        "url": "https://www.britishmuseum.org/collection/object/W_1925-0110-20",
+        "language": "en",
+        "note": "Rahip-kral, sürü ve İnanna’nın kamış demeti simgeleri.",
+        "institution": "British Museum"
+      },
+      {
+        "id": "matris-kaynak-30",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Getty — Mesopotamia: Civilization Begins",
+        "url": "https://www.getty.edu/art/exhibitions/mesopotamia/explore.html",
+        "language": "en",
+        "note": "İlk kentler, yazı, bürokrasi ve anıtsal altyapı bağlamı.",
+        "institution": "Getty Museum"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "yapi-evreleri-kerpic-uretimi-idari-araclar-muhurler-ve-yazi",
+        "text": "Yapı evreleri, kerpiç üretimi, idari araçlar, mühürler ve yazı sisteminin kademeli gelişimi arkeolojik dizide izlenebilir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "anunnaki-gercek-mezopotamya-tanrilar-topluluguna-ait-bir-ter",
+        "text": "Anunnaki gerçek Mezopotamya tanrılar topluluğuna ait bir terimdir; modern dünya dışı yorumu antik metinlerin doğrudan anlamı değildir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-2",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Modern sahte tarih anlatıları hangi çeviri ve medya zincirleriyle yayılıyor?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-bir-gecede-coktu",
+    "claim": "Uruk dönemi düzeni değişti; fakat kent MÖ 3100 civarında tek bir gecede yok olmadı.",
+    "status": "refuted",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk uygarlığı ani bir tufan veya gizemli felaketle tamamen ortadan kalktı.",
+    "sources": [
+      {
+        "id": "matris-kaynak-3",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Gebhard J. Selz — The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004"
+      },
+      {
+        "id": "matris-kaynak-6",
+        "tier": "institutional",
+        "title": "Jotheri et al. — Holocene fluvial and anthropogenic processes around Uruk",
+        "url": "https://discovery.ucl.ac.uk/id/eprint/10039203/",
+        "language": "en",
+        "note": "Uruk çevresinin tatlı su, doğal kanal ve insan yapımı kanal tarihi.",
+        "institution": "Jotheri et al.",
+        "type": "article"
+      },
+      {
+        "id": "matris-kaynak-27",
+        "tier": "institutional",
+        "type": "chapter",
+        "title": "Oxford — Hellenistic Uruk",
+        "url": "https://doi.org/10.1093/oso/9780199659889.003.0015",
+        "language": "en",
+        "note": "Uruk’un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu.",
+        "institution": "Oxford — Hellenistic Uruk"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "kent-erken-hanedanlik-babil-seleukos-ve-helenistik-donemlerd",
+        "text": "Kent erken hanedanlık, Babil, Seleukos ve Helenistik dönemlerde farklı biçimlerde yaşamayı sürdürdü.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "civi-yazili-bilimsel-ve-kult-metinleri-cok-daha-gec-tarihler",
+        "text": "Çivi yazılı bilimsel ve kült metinleri çok daha geç tarihlere kadar Uruk’ta üretildi.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "gec-4-binyil-aglarinda-ve-maddi-kulturde-gercek-bir-donusum",
+        "text": "Geç 4. binyıl ağlarında ve maddi kültürde gerçek bir dönüşüm, daralma ve bölgesel yeniden yapılanma vardır.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-3",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Dönüşümde akarsu değişimi, göç, siyasal rekabet ve ticaret ağlarının göreli payları nedir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-sadece-tarihoncesi",
+    "claim": "Uruk yalnızca yazının doğuşuna ait bir tarihöncesi kent değildir; binyıllar boyunca yeniden biçimlenen uzun ömürlü bir merkezdir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Uruk, Gilgameş çağından sonra terk edildi.",
+    "sources": [
+      {
+        "id": "matris-kaynak-27",
+        "tier": "institutional",
+        "type": "chapter",
+        "title": "Oxford — Hellenistic Uruk",
+        "url": "https://doi.org/10.1093/oso/9780199659889.003.0015",
+        "language": "en",
+        "note": "Uruk’un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu.",
+        "institution": "Oxford — Hellenistic Uruk"
+      },
+      {
+        "id": "matris-kaynak-28",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "DAI — Virtual Tour through Uruk-Warka",
+        "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+        "language": "en",
+        "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme.",
+        "institution": "Deutsches Archäologisches Institut (DAI)"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "helenistik-donemde-anu-ve-istar-nanaya-tapinak-cevreleri-ile",
+        "text": "Helenistik dönemde Anu ve İştar/Nanaya tapınak çevreleri ile çivi yazısı bilginliği sürmüştür.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-27",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "kentin-buyuklugu-nufusu-ve-bolgesel-agirligi-her-donemde-ayn",
+        "text": "Kentin büyüklüğü, nüfusu ve bölgesel ağırlığı her dönemde aynı değildir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-27",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Geç dönem mahallelerinin erken kentsel dokuyla ilişkisi neydi?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "uruk-irak-adi",
+    "claim": "‘Irak’ adının doğrudan ‘Uruk’tan geldiği önerisi kesinleşmiş bir etimoloji değildir.",
+    "status": "contested",
+    "confidence": "medium",
+    "topic": [
+      "uruk",
+      "mezopotamya"
+    ],
+    "subject": {
+      "site": "Uruk (Warka)",
+      "region": "Güney Mezopotamya",
+      "modern_country": "Irak",
+      "coordinates": {
+        "lat": 31.3222,
+        "lon": 45.6361
+      }
+    },
+    "period": {
+      "earliest": -4200,
+      "latest": -2900,
+      "era_label": "Geç Uruk — Cemdet Nasr",
+      "precision": "range",
+      "dating_method": [
+        "stratigraphy",
+        "radiocarbon",
+        "epigraphic",
+        "historical-record"
+      ]
+    },
+    "languages": [
+      "Sümerce",
+      "Akadca",
+      "Türkçe"
+    ],
+    "disciplines": [
+      "arkeoloji",
+      "filoloji"
+    ],
+    "popular_claim": "Irak kelimesi tartışmasız biçimde Uruk’tan türemiştir.",
+    "sources": [
+      {
+        "id": "matris-kaynak-1",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "UNESCO — The Ahwar of Southern Iraq",
+        "url": "https://whc.unesco.org/en/list/1481/",
+        "language": "en",
+        "note": "Uruk, Ur ve Eridu’nun bataklık kenarı kentleri, yazı ve anıtsal mimari bağlamı.",
+        "institution": "UNESCO"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "ses-benzerligi-ve-cografi-sureklilik-bu-gorusu-populer-kilar",
+        "text": "Ses benzerliği ve coğrafi süreklilik bu görüşü popüler kılar.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-1",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "arapca-ve-orta-farsca-aciklamalar-d-hil-baska-etimolojiler-v",
+        "text": "Arapça ve Orta Farsça açıklamalar dâhil başka etimolojiler vardır; kesintisiz dil zinciri gösterilmiş değildir.",
+        "citations": [
+          {
+            "source_ref": "matris-kaynak-1",
+            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "open_questions": [
+      "Adın en erken güvenilir ara biçimleri hangileridir?"
+    ],
+    "checked": "2026-09-10",
+    "used_in": [
+      "uruk"
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
+    }
+  }
+]
