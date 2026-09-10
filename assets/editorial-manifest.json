@@ -225,9 +225,9 @@
   },
   "uruk": {
     "file": "assets/editorial-covers/uruk.webp",
-    "alt": "Mezopotamya kerpic mimarisi, zigurat teraslari ve civi yazisi tabletleri kompozisyonu",
-    "source": "Uruk yazisinin hero SVG illüstrasyonu",
-    "bytes": 21230,
+    "alt": "Uruk kenti: kerpiç teraslar, zigurat silueti ve çivi yazısı tabletleri — temsili editoryal illüstrasyon",
+    "source": "Codex paketi editoryal görseli",
+    "bytes": 264128,
     "width": 1200,
     "height": 675
   }
