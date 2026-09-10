@@ -51,6 +51,10 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:
 .hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.42;color:var(--ink-2);max-width:48ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
 .hero__lede strong{color:var(--ink);font-weight:600}
 .series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.hero-figure{margin-top:.6rem;border:1px solid var(--rule);border-radius:14px;overflow:hidden;background:var(--surface)}
+.hero-figure img,.inline-figure img{display:block;width:100%;height:auto}
+.hero-figure figcaption,.inline-figure figcaption{padding:.55rem .9rem;font-size:.78rem;color:var(--ink-3);border-top:1px solid var(--rule-soft)}
+.inline-figure{margin:1.6rem 0;border:1px solid var(--rule);border-radius:14px;overflow:hidden;background:var(--surface);max-width:880px}
 .stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(155px,1fr));border:1px solid var(--rule);margin-top:.75rem}
 .stat{background:var(--bg);padding:1rem 1.15rem;display:flex;flex-direction:column;gap:.2rem}
 .stat__num{font-family:var(--display);font-size:1.8rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
@@ -160,6 +164,11 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
       <div class="stat"><span class="stat__num">1936</span><span class="stat__lbl">"Bağdat pili"nin bulunduğu yıl</span></div>
       <div class="stat"><span class="stat__num s">3</span><span class="stat__lbl">efsane ailesi: ampul · pil · enerji santrali</span></div>
     </div>
+
+    <figure class="hero-figure">
+      <img src="../assets/editorial-covers/piramit-santrali.webp" alt="Piramitler, Sfenks silueti ve yıldırımlı gece gökyüzü — temsili editoryal illüstrasyon" width="1200" height="675" decoding="async">
+      <figcaption>Temsili editoryal illüstrasyon — arkeolojik bulgu veya tarihsel belge değildir.</figcaption>
+    </figure>
   </div>
 </header>
 
@@ -192,6 +201,11 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <p>Anlatının tarifi nettir: cam ampul, içinde "filaman" gibi duran bir yılan, altta kablo ve izolatör, yanında onu taşıyanlar. Aydınlatma tarihi yazılır: Mısırlılar elektriği <b>bulmuş ama sırrı onlarla ölmüştür.</b></p>
     <p>Sahnenin kendisi gerçek. Dendera'daki Hathor Tapınağı MÖ 54'te başlayan inşaatıyla Ptolemaios dönemine ait; kabartmalar güney mahzenlerinde duruyor. Tartışmalı olan şey, sahnenin <b>ne olduğu</b> değil, hangi sözlükle okunacağı.</p>
   </div>
+
+  <figure class="inline-figure">
+    <img src="../assets/piramit-santrali-icerik.webp" alt="Piramitler, Sfenks silueti ve yıldırımlı gece gökyüzü — temsili editoryal illüstrasyon" width="1280" height="960" loading="lazy" decoding="async">
+    <figcaption>Efsanenin sahnesi: gece, taş ve yıldırım. Görsel temsili editoryal illüstrasyondur — arkeolojik bulgu veya tarihsel belge değildir.</figcaption>
+  </figure>
 
   <div class="opp">
     <div class="op">
