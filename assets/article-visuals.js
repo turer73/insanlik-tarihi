@@ -16,7 +16,8 @@
     'Hristiyanlık ve Roma: Kim Kimi Dönüştürdü':'roma-hristiyanlik','Kanıt Ne Kadar Uzakta':'isa-tarihsellik',
     'Mit ve Sicil':'mit-ve-sicil','Gökteki Ayı':'gokteki-ayi','Geç Kalan Haberci':'gec-kalan-haberci',
     'Kendi Kanıtı':'kendi-kaniti','Çalınan Ateş':'calinan-ates','Herkesin Saati':'herkesin-saati',
-    'Yılın İki Kapısı':'yilin-iki-kapisi'
+    'Yılın İki Kapısı':'yilin-iki-kapisi',
+    'Piramit Santrali: Ampul, Pil ve Sfenks Efsaneleri':'piramit-santrali'
   };
 
   function getSlug() {

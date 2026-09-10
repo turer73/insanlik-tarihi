@@ -9,7 +9,7 @@ Bu tablo sitemap'teki bütün URL'leri tek tek izler. **Betik tarafından üreti
 
 | No | Yazı | URL | Meta başlık | Açıklama | Kategori | İlk yayın | Son değişiklik | İndeks | Not |
 |---|---|---|---|---|---|---|---|---|---|
-| — | [Ana sayfa (arşiv)](https://kanitatlasi.com/) | Kanıt Atlası — İnsanlık Tarihi Araştırma Arşivi | Geçmişi değil, kanıtı izleyin. Arkeoloji, tarih, bilim ve inanç üzerine kaynak odaklı araştırma dosyaları. | — | 2026-09-07 | 2026-09-08 | evet · 2026-09-07 |  |
+| — | [Ana sayfa (arşiv)](https://kanitatlasi.com/) | Kanıt Atlası — İnsanlık Tarihi Araştırma Arşivi | Geçmişi değil, kanıtı izleyin. Arkeoloji, tarih, bilim ve inanç üzerine kaynak odaklı araştırma dosyaları. | — | 2026-09-07 | 2026-09-10 | evet · 2026-09-07 |  |
 | 01 | [Ölü Deniz Parşömenleri](https://kanitatlasi.com/articles/olu-deniz-parsomenleri.html) | Ölü Deniz Parşömenleri — Kanıt Atlası | Metinlerin keşfi, tarihlendirilmesi ve tarihsel bağlamına dair kanıt odaklı inceleme. | Metin & İnanç | 2026-09-07 | 2026-09-08 | bilinmiyor |  |
 | 02 | [Tufan Bilmecesi](https://kanitatlasi.com/articles/tufan-bilmecesi.html) | Tufan Bilmecesi — Kanıt Atlası | Tufan anlatılarını jeoloji, arkeoloji ve metin tarihiyle sınayan karşılaştırmalı dosya. | İklim & Felaket | 2026-09-07 | 2026-09-07 | bilinmiyor |  |
 | 03 | [Hatırlamadığımız Felaketler](https://kanitatlasi.com/articles/hatirlamadigimiz-felaketler.html) | Hatırlamadığımız Felaketler — Kanıt Atlası | Toplumsal hafızanın büyük afetleri nasıl seçip unuttuğunu araştıran dosya. | İklim & Felaket | 2026-09-07 | 2026-09-08 | keşfedildi, taranmadı |  |
