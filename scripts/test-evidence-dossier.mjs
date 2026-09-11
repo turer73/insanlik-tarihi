@@ -51,8 +51,26 @@ assert.match(intro, /href="#kanit-dosyasi"/);
 assert.match(intro, /href="#ka-anlati"/);
 assert.match(intro, /Kısa &lt;yanıt&gt;/);
 assert.match(intro, /taslak/);
-assert.match(intro, /inceleme kaydı belirtilmemiş/);
 assert.doesNotMatch(intro, /Tümü yüksek güven/);
+
+// "Kaydı belirtilmemiş" sayacı CANLI VERİYE bağlanmıştı ve v2 geçişi bitince
+// düştü: artık her bulguda review alanı var, dolayısıyla pilot kümede
+// kaydedilmemiş bulgu kalmadı. Test doğru şeyi sınıyordu ama yanlış yerden -
+// sayacın çalışıp çalışmadığı, veri kümesinin o an eksik bulgu içermesine
+// bağlı olmamalı. Kurgulanmış girdiyle sınanıyor.
+const introKayitsiz = renderEvidenceIntro({ title: "Kayıtsız" }, [
+  { id: "a", review: { status: "draft" } },
+  { id: "b", review: { status: "editor-reviewed" } },
+  { id: "c" },
+]);
+assert.match(introKayitsiz, /1 taslak/);
+assert.match(introKayitsiz, /1 incelenmiş/);
+assert.match(introKayitsiz, /1 inceleme kaydı belirtilmemiş/);
+// Ve tersi: hiç eksik yoksa o cümle parçası HİÇ görünmemeli.
+assert.doesNotMatch(
+  renderEvidenceIntro({ title: "Tam" }, [{ id: "a", review: { status: "draft" } }]),
+  /inceleme kaydı belirtilmemiş/,
+);
 
 const dossier = renderEvidenceDossier({ title: "Pilot" }, pilot);
 assertV2References(pilot, dossier, "pilot");
@@ -66,9 +84,27 @@ assert.match(dossier, /class="ka-citation" href="#kaynak-/);
 assert.match(dossier, /Alexandria: Library of Dreams,/, "atıf teknik kimlik yerine okunabilir kaynak başlığını göstermeli");
 assert.doesNotMatch(dossier, />bagnall-2002-library-dreams,/, "çözülen kaynak kimliği kullanıcıya gösterilmemeli");
 assert.match(dossier, /class="ka-source-backlink" href="#bulgu-iskenderiye-tek-yangin-yok-kanit-/);
-assert.match(dossier, /belirli bir kaynak ve sayfa\/pasajla eşleştirilmemiş/);
 assert.match(dossier, /class="ka-review-note"/);
 assert.match(dossier, /hakemli Türkçe jeoarkeoloji literatürü hâlâ taranmadı/);
+
+// "Kaynağa eşleştirilmemiş" uyarısı da CANLI VERİYE bağlanmıştı: v1 kanıtı
+// düz bir dizgidir ve bu uyarıyı tetikler. v2 geçişi bitince pilot kümede
+// dizgi kanıt kalmadı, iddia düştü. Uyarı hâlâ gerekli - eski kayıtlar geri
+// gelebilir, üretici de citations'ı boş bir v2 kanıtı için aynı uyarıyı
+// veriyor - o yüzden iki yolu da kurgulanmış girdiyle sınıyoruz.
+const eslesmemis = renderEvidenceDossier({ title: "Eşleşmemiş" }, [{
+  id: "dizgi-kanit", claim: "Eski biçim", status: "contested", confidence: "low",
+  evidence: ["kaynağa bağlanmamış düz metin"], counter_evidence: [],
+  sources: [], review: { status: "draft" },
+}, {
+  id: "bos-atif", claim: "Yeni biçim ama atıfsız", status: "contested", confidence: "low",
+  evidence: [{ text: "atıf listesi boş", citations: [] }], counter_evidence: [],
+  sources: [], review: { status: "draft" },
+}]);
+assert.equal(
+  [...eslesmemis.matchAll(/belirli bir kaynak ve sayfa\/pasajla eşleştirilmemiş/g)].length, 2,
+  "hem dizgi kanıt hem atıfsız v2 kanıdı eşleşmemiş olarak işaretlenmeli",
+);
 
 const ids = [...dossier.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 assert.equal(ids.length, new Set(ids).size, "üretici tüm HTML kimliklerini benzersiz tutmalı");

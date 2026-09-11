@@ -1,5 +1,6 @@
 [
   {
+    "schema_version": 2,
     "id": "benzerlik-uc-aciklama",
     "claim": "Mitolojik benzerliğin üç olası kaynağı (bağımsız icat, temas, ortak köken) farklı dağılım desenleri öngörür ve bu yüzden birbirinden ayrılabilir.",
     "status": "established",
@@ -34,33 +35,122 @@
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Bağımsız icat öngörüsü: benzerlik sığ olur (aynı tema, farklı ayrıntı) ve dağılım çevreyle ilişkilidir.",
-      "Temas öngörüsü: benzerlik derin olur (aynı tuhaf ayrıntı) ve dağılım ticaret yolları ile komşuluk hatlarını izler.",
-      "Ortak köken öngörüsü: benzerlik derin olur ve dağılım nüfus tarihini izler - sonradan temas etmemiş halklarda bile.",
-      "Ayırt edici test: iki halk ayrıldıktan sonra hiç temas etmediyse ve ikisinde de aynı KEYFÎ ayrıntı varsa, temas açıklaması düşer."
-    ],
-    "counter_evidence": [
-      "Üç açıklama pratikte iç içe geçer; bir motifin bir bölgede ortak kökenden, başka bir bölgede temastan gelmesi mümkündür.",
-      "'Keyfî ayrıntı' ölçütü niceliksel değildir; neyin keyfî sayılacağı yorumcuya bağlıdır."
+    "checked": "2026-09-12",
+    "used_in": [
+      "gokteki-ayi"
     ],
     "sources": [
       {
+        "id": "tehrani-dhuy-2016-phylogenetics-folklore",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J.",
+          "d'Huy, Julien"
+        ],
+        "year": 2016,
         "title": "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
-        "url": "https://link.springer.com/content/pdf/10.1007/978-3-319-39445-9_6.pdf",
+        "container": "Understanding Complex Systems",
+        "publisher": "Springer",
+        "doi": "10.1007/978-3-319-39445-9_6",
+        "note": "Yöntemin kendi sunumu. Bu dosyada hem yöntemin tarifi hem de sınırlarının kaynağı olarak kullanılıyor."
+      },
+      {
+        "id": "tehrani-2023-cultural-transmission-folk-narratives",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Yöntem tartışmasının çerçevesi."
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J."
+        ],
+        "year": 2023,
+        "title": "The Cultural Transmission and Evolution of Folk Narratives",
+        "container": "The Oxford Handbook of Cultural Evolution",
+        "publisher": "Oxford University Press",
+        "doi": "10.1093/oxfordhb/9780198869252.013.39",
+        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "gokteki-ayi"
-    ]
+    "evidence": [
+      {
+        "id": "bagimsiz-icat-ongorusu",
+        "text": "Bağımsız icat öngörüsü: benzerlik sığ olur (aynı tema, farklı ayrıntı) ve dağılım çevreyle ilişkilidir.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Açıklama modelleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "temas-ongorusu",
+        "text": "Temas öngörüsü: benzerlik derin olur (aynı tuhaf ayrıntı) ve dağılım ticaret yolları ile komşuluk hatlarını izler.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Yayılma modelleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ortak-koken-ongorusu",
+        "text": "Ortak köken öngörüsü: benzerlik derin olur ve dağılım nüfus tarihini izler - sonradan temas etmemiş halklarda bile.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Soyağacı modelleri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ayirt-edici-test",
+        "text": "Ayırt edici test: iki halk ayrıldıktan sonra hiç temas etmediyse ve ikisinde de aynı KEYFÎ ayrıntı varsa, temas açıklaması düşer.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Ayırt edici ölçüt",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ic-ice-gecme",
+        "text": "Üç açıklama pratikte iç içe geçer; bir motifin bir bölgede ortak kökenden, başka bir bölgede temastan gelmesi mümkündür.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Model sınırları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "keyfi-olcut-nicel-degil",
+        "text": "'Keyfî ayrıntı' ölçütü niceliksel değildir; neyin keyfî sayılacağı yorumcuya bağlıdır.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Ölçüt tartışması",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu iki gerçek künyeyle değiştirildi (Tehrani & d'Huy 2016, Tehrani 2023 - ikisi de DOI ile doğrulandı)."
+    }
   },
   {
+    "schema_version": 2,
     "id": "firtina-yilan-motifi-kalibrasyon",
     "claim": "Fırtına tanrısının yılanı öldürmesi motifi, Hint-Avrupa geleneklerinde ortak kökenden gelir; ama motifin varlığı tek başına akrabalık kanıtı değildir.",
     "status": "established",
@@ -102,37 +192,132 @@
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Indra-Vritra, Zeus-Typhon ve Thor-Jörmungandr aynı dil ailesinden üç gelenekte yer alır.",
-      "Bu üç dilin akrabalığı karşılaştırmalı dilbilimin en sağlam sonuçlarından biridir - mitolojiden bağımsız bir doğrulama hattı.",
-      "Aynı motif Hint-Avrupa dışı bir gelenekte de var: Susanoo, sekiz başlı yılan Yamata no Oroçi'yi öldürür.",
-      "Çin geleneğinde ejderhanın değeri TERS yöndedir: yağmur getiren, iyicil bir figürdür - motifin evrensel olmadığını gösteren bir karşı örnek."
-    ],
-    "counter_evidence": [
-      "Japon örneğinin kıta Asya'sı üzerinden temasla gelmiş olma ihtimali elenmiş değildir.",
-      "Hint-Avrupa 'fırtına tanrısı yılanı öldürür' rekonstrüksiyonunun ayrıntıları da alanda tartışılır."
+    "checked": "2026-09-12",
+    "used_in": [
+      "gokteki-ayi"
     ],
     "sources": [
       {
+        "id": "rigveda-1-32",
+        "language": "sa",
+        "accessed": "2026-09-12",
         "tier": "primary",
         "type": "edition",
-        "title": "Rigveda I.32 (Indra-Vritra)",
-        "language": "sa"
+        "title": "Rigveda I.32 (Indra-Vritra)"
       },
       {
+        "id": "kojiki-susanoo",
+        "language": "ja",
+        "accessed": "2026-09-12",
         "tier": "primary",
         "type": "edition",
-        "title": "Kojiki (Susanoo - Yamata no Oroçi)",
         "year": 712,
-        "language": "ja"
+        "title": "Kojiki (Susanoo - Yamata no Oroçi)"
+      },
+      {
+        "id": "west-2007-indo-european-poetry-myth",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "West, Martin Litchfield"
+        ],
+        "year": 2007,
+        "title": "Indo-European Poetry and Myth",
+        "publisher": "Oxford University Press",
+        "isbn": "9780199280759",
+        "note": "Hint-Avrupa şiir ve mit rekonstrüksiyonunun standart eseri; fırtına-yılan motifinin karşılaştırmalı temeli."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "gokteki-ayi"
-    ]
+    "evidence": [
+      {
+        "id": "uc-gelenek",
+        "text": "Indra-Vritra, Zeus-Typhon ve Thor-Jörmungandr aynı dil ailesinden üç gelenekte yer alır.",
+        "citations": [
+          {
+            "source_ref": "west-2007-indo-european-poetry-myth",
+            "locator": "Fırtına tanrısı ve yılan bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "rigveda-metni",
+        "text": "Metnin kendisi: Indra, Vritra'yı öldürür.",
+        "citations": [
+          {
+            "source_ref": "rigveda-1-32",
+            "locator": "I.32",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "dilbilim-bagimsiz-hat",
+        "text": "Bu üç dilin akrabalığı karşılaştırmalı dilbilimin en sağlam sonuçlarından biridir - mitolojiden bağımsız bir doğrulama hattı.",
+        "citations": [
+          {
+            "source_ref": "west-2007-indo-european-poetry-myth",
+            "locator": "Yöntem girişi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "japon-ornegi",
+        "text": "Aynı motif Hint-Avrupa dışı bir gelenekte de var: Susanoo, sekiz başlı yılan Yamata no Oroçi'yi öldürür.",
+        "citations": [
+          {
+            "source_ref": "kojiki-susanoo",
+            "locator": "Susanoo bölümü",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "temas-elenmedi",
+        "text": "Japon örneğinin kıta Asya'sı üzerinden temasla gelmiş olma ihtimali elenmiş değildir.",
+        "citations": [
+          {
+            "source_ref": "west-2007-indo-european-poetry-myth",
+            "locator": "Yayılma tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "rekonstruksiyon-tartismali",
+        "text": "Hint-Avrupa 'fırtına tanrısı yılanı öldürür' rekonstrüksiyonunun ayrıntıları da alanda tartışılır.",
+        "citations": [
+          {
+            "source_ref": "west-2007-indo-european-poetry-myth",
+            "locator": "Rekonstrüksiyon tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "cin-ornegi-kaynaksiz",
+        "text": "Çin ejderhasının TERS değeri (yağmur getiren, iyicil figür) bu kayıtta ayrı bir kaynağa bağlanmadı; karşı örnek genel bilgi olarak alınmıştır.",
+        "citations": [
+          {
+            "source_ref": "west-2007-indo-european-poetry-myth",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "West 2007 eklendi - motifin Hint-Avrupa rekonstrüksiyonunun standart dayanağı. Çin karşı örneğinin kaynaksız olduğu işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "mit-filogenetigi-kalibre-degil",
     "claim": "Mitlere uygulanan filogenetik ağaç kurma yöntemleri, cevabı bağımsız olarak bilinen vakalarda henüz sınanmadığı için sonuçları hipotez düzeyindedir.",
     "status": "contested",
@@ -177,21 +362,19 @@
     "divergence_type": [
       "medya-abartisi"
     ],
-    "evidence": [
-      "Gökteki Av için 47 versiyon ve 93 özellik; Polyphemus anlatısı (ATU 1137) için 44 versiyon ve 98 özellik kodlandı.",
-      "Standart folklor motif indeksleri ve uluslararası masal tipi katalogları bu kodlamanın altyapısını sağlıyor."
-    ],
-    "counter_evidence": [
-      "Örneklem küçük ve coğrafi olarak dağınık; ağaçları bilinen göç yollarıyla güvenilir biçimde eşleştirmek mümkün değil.",
-      "Alternatif açıklamalar dışlanmıyor: bağımsız gelişim, sömürgecilik, misyoner faaliyeti ve komşular arası yayılma aynı deseni üretebilir.",
-      "Anlatı gelenekleri akışkandır; 'uluslararası masal tipi' denen birimin kendisi modern bir kurgudur, doğal bir birim değil.",
-      "Sonuçların karşılaştırılabileceği bağımsız olarak bilinen bir cevap yok - yöntem sınanamıyor."
-    ],
     "open_questions": [
       "Yöntem, cevabı dilbilimden bilinen Hint-Avrupa vakasında sınanırsa doğru ağacı verir mi? Bu test yapılmalı."
     ],
+    "checked": "2026-09-12",
+    "volatile": true,
+    "used_in": [
+      "gokteki-ayi"
+    ],
     "sources": [
       {
+        "id": "dhuy-2013-cosmic-hunt-berber",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -202,33 +385,120 @@
         "container": "Les Cahiers de l'AARS",
         "volume": "15",
         "pages": "93-106",
-        "language": "en"
+        "url": "https://shs.hal.science/halshs-00932197v1",
+        "note": "Gökteki Av filogenetiğinin özgün sunumu. Dergi crossref'te yok; kalıcı çıpa olarak HAL kaydı kullanıldı."
       },
       {
+        "id": "tehrani-dhuy-2016-phylogenetics-folklore",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J.",
+          "d'Huy, Julien"
+        ],
+        "year": 2016,
         "title": "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
-        "url": "https://link.springer.com/content/pdf/10.1007/978-3-319-39445-9_6.pdf",
-        "language": "en",
-        "accessed": "2026-09-07"
+        "container": "Understanding Complex Systems",
+        "publisher": "Springer",
+        "doi": "10.1007/978-3-319-39445-9_6",
+        "note": "Yöntemin kendi sunumu. Bu dosyada hem yöntemin tarifi hem de sınırlarının kaynağı olarak kullanılıyor."
       },
       {
-        "tier": "peer-reviewed",
-        "type": "article",
-        "title": "The Cultural Transmission and Evolution of Folk Narratives",
-        "url": "https://durham-repository.worktribe.com/OutputFile/1642267",
+        "id": "tehrani-2023-cultural-transmission-folk-narratives",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Yönteme yöneltilen itirazların kaynağı."
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J."
+        ],
+        "year": 2023,
+        "title": "The Cultural Transmission and Evolution of Folk Narratives",
+        "container": "The Oxford Handbook of Cultural Evolution",
+        "publisher": "Oxford University Press",
+        "doi": "10.1093/oxfordhb/9780198869252.013.39",
+        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
       }
     ],
-    "checked": "2026-09-07",
-    "volatile": true,
-    "used_in": [
-      "gokteki-ayi"
-    ]
+    "evidence": [
+      {
+        "id": "versiyon-sayilari",
+        "text": "Gökteki Av için 47 versiyon ve 93 özellik; Polyphemus anlatısı (ATU 1137) için 44 versiyon ve 98 özellik kodlandı.",
+        "citations": [
+          {
+            "source_ref": "dhuy-2013-cosmic-hunt-berber",
+            "locator": "Veri ve kodlama",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "motif-indeksleri",
+        "text": "Standart folklor motif indeksleri ve uluslararası masal tipi katalogları bu kodlamanın altyapısını sağlıyor.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Kodlama altyapısı",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "orneklem-kucuk",
+        "text": "Örneklem küçük ve coğrafi olarak dağınık; ağaçları bilinen göç yollarıyla güvenilir biçimde eşleştirmek mümkün değil.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Örneklem sorunları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "alternatifler-dislanmiyor",
+        "text": "Alternatif açıklamalar dışlanmıyor: bağımsız gelişim, sömürgecilik, misyoner faaliyeti ve komşular arası yayılma aynı deseni üretebilir.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Alternatif açıklamalar",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "masal-tipi-kurgu",
+        "text": "Anlatı gelenekleri akışkandır; 'uluslararası masal tipi' denen birimin kendisi modern bir kurgudur, doğal bir birim değil.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Birim sorunu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kalibrasyon-yok",
+        "text": "Sonuçların karşılaştırılabileceği bağımsız olarak bilinen bir cevap yok - yöntem sınanamıyor.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Kalibrasyon sorunu",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "d'Huy 2013 HAL çıpasıyla, Tehrani künyeleri DOI ile bağlandı. Kalibrasyon itirazı yöntemin kendi sunumuna bağlandı - itiraz dışarıdan değil, içeriden."
+    }
   },
   {
+    "schema_version": 2,
     "id": "gokteki-av-bering-oncesi",
     "claim": "Büyük Ayı takımyıldızının avlanan bir hayvan olarak görülmesi, Bering geçişinden önceki ortak bir mitolojik mirastan gelir.",
     "status": "unknown",
@@ -277,23 +547,20 @@
       "medya-abartisi",
       "provenans-yoklugu"
     ],
-    "evidence": [
-      "Ayrıntı KEYFÎ: o yedi yıldız bir ayıya benzemez; kepçeye, arabaya, pulluğa benzer ve başka gelenekler tam bunları görmüştür. Keyfî bir seçimin bağımsız olarak tekrar etmesi az beklenir.",
-      "Bazı Kuzey Amerika anlatılarında ayı sonbaharda yaralanır ve kanı yaprakları kızartır - mevsimle bağlı, ayrıntılı bir versiyon.",
-      "Yunan geleneğinde de takımyıldız bir ayıdır ve Yunan anlatısı bunu açıklamakta zorlanır: dönüşüm hikâyesi, zaten var olan bir ada sonradan getirilmiş bir gerekçe gibi durur.",
-      "Kuzey Avrasya ve Kuzey Amerika halkları en az 15.000 yıl önce ayrıldı; kara köprüsü sular altında, sonraki temas seçeneği fiilen kapalı."
-    ],
-    "counter_evidence": [
-      "Dağılım sürekli değil: Çin, Hindistan ve İskandinavya'da ayı okuması yok. Ortak kökense bu geleneklerin hepsinde KAYBOLMUŞ olması gerekir - mümkün ama test edilemez.",
-      "16.-19. yüzyıl teması hafife alınıyor: derlemelerin çoğu misyoner ve etnograflar aracılığıyla yapıldı; Avrupa anlatılarının sızma ihtimali her vakada ayrıca elenmeli.",
-      "Örneklem küçük; 47 versiyon iki kıtaya yayılmış yüzlerce geleneği temsil etmiyor."
-    ],
     "open_questions": [
       "Motif gerçekten Bering öncesinden mi geliyor? Mevcut örneklemle ayrılamıyor.",
       "Sömürge dönemi teması ne ölçüde bulaştı? Çoğu çalışmada bu eleme yapılmıyor."
     ],
+    "checked": "2026-09-12",
+    "volatile": true,
+    "used_in": [
+      "gokteki-ayi"
+    ],
     "sources": [
       {
+        "id": "dhuy-2013-cosmic-hunt-berber",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -303,23 +570,112 @@
         "title": "A Cosmic Hunt in the Berber sky: a phylogenetic reconstruction of Palaeolithic mythology",
         "container": "Les Cahiers de l'AARS",
         "volume": "15",
-        "language": "en"
+        "pages": "93-106",
+        "url": "https://shs.hal.science/halshs-00932197v1",
+        "note": "Gökteki Av filogenetiğinin özgün sunumu. Dergi crossref'te yok; kalıcı çıpa olarak HAL kaydı kullanıldı."
       },
       {
-        "tier": "peer-reviewed",
-        "type": "article",
-        "title": "The Cultural Transmission and Evolution of Folk Narratives",
-        "url": "https://durham-repository.worktribe.com/OutputFile/1642267",
+        "id": "tehrani-2023-cultural-transmission-folk-narratives",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Karşı görüş ve yöntem itirazları."
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J."
+        ],
+        "year": 2023,
+        "title": "The Cultural Transmission and Evolution of Folk Narratives",
+        "container": "The Oxford Handbook of Cultural Evolution",
+        "publisher": "Oxford University Press",
+        "doi": "10.1093/oxfordhb/9780198869252.013.39",
+        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
       }
     ],
-    "checked": "2026-09-07",
-    "volatile": true,
-    "used_in": [
-      "gokteki-ayi"
-    ]
+    "evidence": [
+      {
+        "id": "ayrinti-keyfi",
+        "text": "Ayrıntı KEYFÎ: o yedi yıldız bir ayıya benzemez; kepçeye, arabaya, pulluğa benzer ve başka gelenekler tam bunları görmüştür. Keyfî bir seçimin bağımsız olarak tekrar etmesi az beklenir.",
+        "citations": [
+          {
+            "source_ref": "dhuy-2013-cosmic-hunt-berber",
+            "locator": "Motifin tanımı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sonbahar-yapraklari",
+        "text": "Bazı Kuzey Amerika anlatılarında ayı sonbaharda yaralanır ve kanı yaprakları kızartır - mevsimle bağlı, ayrıntılı bir versiyon.",
+        "citations": [
+          {
+            "source_ref": "dhuy-2013-cosmic-hunt-berber",
+            "locator": "Versiyon dökümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yunan-gerekce",
+        "text": "Yunan geleneğinde de takımyıldız bir ayıdır ve Yunan anlatısı bunu açıklamakta zorlanır: dönüşüm hikâyesi, zaten var olan bir ada sonradan getirilmiş bir gerekçe gibi durur.",
+        "citations": [
+          {
+            "source_ref": "dhuy-2013-cosmic-hunt-berber",
+            "locator": "Yunan versiyonu",
+            "support_type": "inference"
+          }
+        ]
+      },
+      {
+        "id": "bering-ayrilmasi",
+        "text": "Kuzey Avrasya ve Kuzey Amerika halkları en az 15.000 yıl önce ayrıldı; kara köprüsü sular altında, sonraki temas seçeneği fiilen kapalı.",
+        "citations": [
+          {
+            "source_ref": "dhuy-2013-cosmic-hunt-berber",
+            "locator": "Ayrılma argümanı",
+            "support_type": "claim-origin"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "dagilim-surekli-degil",
+        "text": "Dağılım sürekli değil: Çin, Hindistan ve İskandinavya'da ayı okuması yok. Ortak kökense bu geleneklerin hepsinde KAYBOLMUŞ olması gerekir - mümkün ama test edilemez.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Dağılım sorunu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "somurge-donemi-temasi",
+        "text": "16.-19. yüzyıl teması hafife alınıyor: derlemelerin çoğu misyoner ve etnograflar aracılığıyla yapıldı; Avrupa anlatılarının sızma ihtimali her vakada ayrıca elenmeli.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Derleme koşulları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "47-versiyon-yetersiz",
+        "text": "Örneklem küçük; 47 versiyon iki kıtaya yayılmış yüzlerce geleneği temsil etmiyor.",
+        "citations": [
+          {
+            "source_ref": "dhuy-2013-cosmic-hunt-berber",
+            "locator": "Örneklem",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "d'Huy 2013 künyelendi ve Bering argümanının ona ait olduğu claim-origin ile işaretlendi."
+    }
   },
   {
     "schema_version": 2,
@@ -499,6 +855,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "motif-yoklugu-cevre",
     "claim": "Bir mitolojik motifin bir gelenekte bulunmaması her zaman kültürel mesafeyi gösterir.",
     "status": "refuted",
@@ -535,31 +892,109 @@
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Dünya ağacı motifi Hint, Çin, İskandinav ve Sibirya geleneklerinde merkezî yer tutar.",
-      "İnuit yerleşim bölgesinin büyük bölümü ağaç sınırının kuzeyindedir; ağaç yerel çevrede bulunmaz."
-    ],
-    "counter_evidence": [
-      "Çevresel açıklama her yokluk için geçerli değildir; bazı yokluklar gerçekten kültürel ayrışmayı gösterir. Bu kayıt 'her zaman kültürel mesafe' iddiasını çürütür, çevrenin her zaman belirleyici olduğunu savunmaz.",
-      "Sürüklenmiş odun (driftwood) İnuit maddi kültüründe kullanılıyordu; ağacın tamamen bilinmediği söylenemez."
+    "checked": "2026-09-12",
+    "used_in": [
+      "gokteki-ayi"
     ],
     "sources": [
       {
+        "id": "boas-1888-central-eskimo",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "primary",
+        "type": "report",
+        "authors": [
+          "Boas, Franz"
+        ],
+        "year": 1888,
+        "title": "The Central Eskimo",
+        "container": "Sixth Annual Report of the Bureau of Ethnology",
+        "url": "https://www.gutenberg.org/ebooks/42084",
+        "note": "Dönemin etnografik derlemesi. BİRİNCİL DEĞİL, DÖNEM KAYNAĞIDIR: 19. yüzyıl derleme koşulları ve derleyicinin çerçevesi kayda dahildir."
+      },
+      {
+        "id": "tehrani-2023-cultural-transmission-folk-narratives",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "chapter",
-        "title": "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
-        "url": "https://link.springer.com/content/pdf/10.1007/978-3-319-39445-9_6.pdf",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Çevre ve motif dağılımı ilişkisi tartışması için."
+        "authors": [
+          "Tehrani, Jamshid J."
+        ],
+        "year": 2023,
+        "title": "The Cultural Transmission and Evolution of Folk Narratives",
+        "container": "The Oxford Handbook of Cultural Evolution",
+        "publisher": "Oxford University Press",
+        "doi": "10.1093/oxfordhb/9780198869252.013.39",
+        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "gokteki-ayi"
-    ]
+    "evidence": [
+      {
+        "id": "dunya-agaci-dagilimi",
+        "text": "Dünya ağacı motifi Hint, Çin, İskandinav ve Sibirya geleneklerinde merkezî yer tutar.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Motif dağılımı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "agac-siniri",
+        "text": "İnuit yerleşim bölgesinin büyük bölümü ağaç sınırının kuzeyindedir; ağaç yerel çevrede bulunmaz.",
+        "citations": [
+          {
+            "source_ref": "boas-1888-central-eskimo",
+            "locator": "Çevre ve yerleşim tarifi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "cevre-her-zaman-degil",
+        "text": "Çevresel açıklama her yokluk için geçerli değildir; bazı yokluklar gerçekten kültürel ayrışmayı gösterir. Bu kayıt 'her zaman kültürel mesafe' iddiasını çürütür, çevrenin her zaman belirleyici olduğunu savunmaz.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "suruklenmis-odun",
+        "text": "Sürüklenmiş odun (driftwood) İnuit maddi kültüründe kullanılıyordu; ağacın tamamen bilinmediği söylenemez.",
+        "citations": [
+          {
+            "source_ref": "boas-1888-central-eskimo",
+            "locator": "Maddi kültür",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "boas-donem-kaynagi",
+        "text": "Boas 1888 bir DÖNEM KAYNAĞIDIR: 19. yüzyıl derleme koşulları ve derleyicinin kendi çerçevesi kayda dahildir; yokluk gözlemi de bu süzgeçten geçmiştir.",
+        "citations": [
+          {
+            "source_ref": "boas-1888-central-eskimo",
+            "locator": "Kaynak konumu",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Boas 1888 künyelendi ve DÖNEM KAYNAĞI olduğu açıkça işaretlendi - kayıt onu doğrudan gözlem gibi kullanıyordu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "gelenek-tek-kutu-hatasi",
     "claim": "'Kızılderili mitolojisi' ve 'Eskimo mitolojisi' karşılaştırmalarda tek bir gelenek olarak ele alınabilir.",
     "status": "refuted",
@@ -593,31 +1028,83 @@
       "kategori-hatasi",
       "somurge-anlatisi"
     ],
-    "evidence": [
-      "Amerika kıtalarında birbirinden dil ailesi düzeyinde ayrı yüzlerce yerli gelenek vardır.",
-      "İnuit ve Yupik gelenekleri ayrıdır; kendi içlerinde de bölgesel farklar taşır.",
-      "Sütunlar tek tek geleneklere bölündüğünde karşılaştırma kutularının çoğu boş ya da 'veri yetersiz' çıkar."
-    ],
-    "counter_evidence": [
-      "Bölgesel gruplamalar (örneğin Kuzeydoğu Ormanları, Kutup bölgesi) yöntemsel olarak savunulabilir; itiraz bu tür dikkatli gruplamalara değil, kıta ölçeğinde tek kutuya karşıdır."
+    "checked": "2026-09-12",
+    "used_in": [
+      "gokteki-ayi"
     ],
     "sources": [
       {
-        "tier": "peer-reviewed",
-        "type": "article",
-        "title": "The Cultural Transmission and Evolution of Folk Narratives",
-        "url": "https://durham-repository.worktribe.com/OutputFile/1642267",
+        "id": "tehrani-2023-cultural-transmission-folk-narratives",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Örneklem ve birim sorunları tartışması."
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J."
+        ],
+        "year": 2023,
+        "title": "The Cultural Transmission and Evolution of Folk Narratives",
+        "container": "The Oxford Handbook of Cultural Evolution",
+        "publisher": "Oxford University Press",
+        "doi": "10.1093/oxfordhb/9780198869252.013.39",
+        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "gokteki-ayi"
-    ]
+    "evidence": [
+      {
+        "id": "yuzlerce-gelenek",
+        "text": "Amerika kıtalarında birbirinden dil ailesi düzeyinde ayrı yüzlerce yerli gelenek vardır.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Örneklem birimi sorunu",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "inuit-yupik-ayri",
+        "text": "İnuit ve Yupik gelenekleri ayrıdır; kendi içlerinde de bölgesel farklar taşır.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Gruplama sorunu",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kutular-bos-cikar",
+        "text": "Sütunlar tek tek geleneklere bölündüğünde karşılaştırma kutularının çoğu boş ya da 'veri yetersiz' çıkar.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Veri seyrekliği",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "bolgesel-gruplama-mesru",
+        "text": "Bölgesel gruplamalar (örneğin Kuzeydoğu Ormanları, Kutup bölgesi) yöntemsel olarak savunulabilir; itiraz bu tür dikkatli gruplamalara değil, kıta ölçeğinde tek kutuya karşıdır.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yer tutucu Tehrani 2023 ile değiştirildi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "yanlis-teslim-olum-motifi",
     "claim": "Sahra altı Afrika'nın geniş bir bölümünde ölümün kökeni bir ceza değil, yanlış teslim edilmiş bir mesajla açıklanır.",
     "status": "established",
@@ -663,44 +1150,131 @@
       "kategori-hatasi",
       "ideolojik-secim"
     ],
-    "evidence": [
-      "En yaygın haberci çifti bukalemun (yavaş, iyi haber) ve kertenkeledir (hızlı, kötü haber).",
-      "Malavi'deki Tumbuka anlatımında haberi gönderen Chiuta'dır; bukalemun yeniden doğuş, kertenkele kalıcı ölüm haberiyle yola çıkar ve kertenkele önce varır.",
-      "Bazı anlatımlarda iki ayrı haberci, bazılarında tek haberci vardır ve mesaj yolda bozulur ya da çalınıp çarpıtılır.",
-      "Değişmeyen çekirdek: ölüm bir ceza değil, bir iletişim kazasıdır ve geri alınamaz."
-    ],
-    "counter_evidence": [
-      "Afrika derlemelerinin büyük bölümü misyonerler aracılığıyla yapıldı; 'ölüm bir ceza' kalıbının yerel anlatılara sızma ihtimali her vakada ayrıca elenmeli - çoğu çalışmada bu yapılmıyor.",
-      "'Sahra altı Afrika' tek bir gelenek değildir; bu genelleme kaba bir taramadır."
+    "checked": "2026-09-12",
+    "used_in": [
+      "gec-kalan-haberci"
     ],
     "sources": [
       {
-        "tier": "peer-reviewed",
+        "id": "abrahamsson-1951-origin-of-death",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "institutional",
         "type": "book",
         "authors": [
           "Abrahamsson, Hans"
         ],
         "year": 1951,
         "title": "The Origin of Death: Studies in African Mythology",
-        "language": "en",
-        "note": "Motifin Afrika içi dağılımı üzerine temel çalışma."
+        "container": "Studia Ethnographica Upsaliensia 3",
+        "institution": "Uppsala Universitet",
+        "publisher": "Studia Ethnographica Upsaliensia, Uppsala",
+        "note": "Afrika ölüm kökeni motiflerinin klasik envanteri ve hâlâ standart derlemesi. TIER GEREKÇESİ: akademik bir monografidir ama 1951 tarihli olduğu için ISBN'i yoktur ve v2'nin peer-reviewed katmanı tanımlayıcı ister; kurum serisi künyesiyle institutional yazıldı. Katman, eserin niteliğini değil künyelenebilirliğini yansıtıyor."
       },
       {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Origin of death",
-        "container": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Origin_of_death",
-        "language": "en",
-        "accessed": "2026-09-07"
+        "id": "lequellec-2021-afrique-pourquoi-meurt-on",
+        "language": "fr",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Le Quellec, Jean-Loïc"
+        ],
+        "year": 2021,
+        "title": "En Afrique, pourquoi meurt-on ? Essai sur l'histoire d'un mythe africain",
+        "container": "Afriques",
+        "doi": "10.4000/afriques.1717",
+        "note": "Ölüm kökeni motifinin Afrika içi dağılımının incelenmesi. YAZAR DÜZELTMESİ: önceki sürümde bu eser d'Huy'ye yakın duruyordu; crossref'e göre yazar Jean-Loïc Le Quellec'tir."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "gec-kalan-haberci"
-    ]
+    "evidence": [
+      {
+        "id": "bukalemun-kertenkele",
+        "text": "En yaygın haberci çifti bukalemun (yavaş, iyi haber) ve kertenkeledir (hızlı, kötü haber).",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Motif envanteri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tumbuka-anlatimi",
+        "text": "Malavi'deki Tumbuka anlatımında haberi gönderen Chiuta'dır; bukalemun yeniden doğuş, kertenkele kalıcı ölüm haberiyle yola çıkar ve kertenkele önce varır.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Tumbuka anlatımı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "varyant-tipleri",
+        "text": "Bazı anlatımlarda iki ayrı haberci, bazılarında tek haberci vardır ve mesaj yolda bozulur ya da çalınıp çarpıtılır.",
+        "citations": [
+          {
+            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
+            "locator": "Varyant tipolojisi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "iletisim-kazasi",
+        "text": "Değişmeyen çekirdek: ölüm bir ceza değil, bir iletişim kazasıdır ve geri alınamaz.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Motifin yapısı",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "misyoner-derlemesi",
+        "text": "Afrika derlemelerinin büyük bölümü misyonerler aracılığıyla yapıldı; 'ölüm bir ceza' kalıbının yerel anlatılara sızma ihtimali her vakada ayrıca elenmeli - çoğu çalışmada bu yapılmıyor.",
+        "citations": [
+          {
+            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
+            "locator": "Derleme eleştirisi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sahra-alti-tek-degil",
+        "text": "'Sahra altı Afrika' tek bir gelenek değildir; bu genelleme kaba bir taramadır.",
+        "citations": [
+          {
+            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
+            "locator": "Bölgesel çeşitlilik",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "1951-eski",
+        "text": "Abrahamsson 1951 hâlâ standart envanterdir ama YETMİŞ YILLIKTIR; sonraki derlemeler ve yeniden değerlendirmeler bu kayıtta taranmadı.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Abrahamsson kurum serisi künyesiyle, Le Quellec 2021 DOI ile bağlandı. Envanterin yetmiş yıllık olduğu işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "olum-kokeni-tip-dagilimi",
     "claim": "Ölümün kökeni sorusu evrenseldir ama cevabın TİPİ bölgesel olarak kümelenir.",
     "status": "established",
@@ -742,46 +1316,141 @@
       "kategori-hatasi",
       "medya-abartisi"
     ],
-    "evidence": [
-      "Dört tip birbirinden yapısal olarak farklıdır: kaza, kayıp, ceza ve pazarlık.",
-      "Hint geleneğinde soru 'ölüm neden var' değil 'döngüden nasıl çıkılır' hâline gelir - eksik bir cevap değil, farklı bir soru.",
-      "Bu dağılım 'hepsinde aynı hikâye var' iddiasını doğrudan yanlışlıyor."
-    ],
-    "counter_evidence": [
-      "Tipler saf değildir; aynı bölgede birden fazla tip bulunabilir ve karma anlatımlar vardır.",
-      "Tip sınıflandırmasının kendisi analistin kurduğu bir birimdir; doğal bir kategori değil."
+    "checked": "2026-09-12",
+    "used_in": [
+      "gec-kalan-haberci"
     ],
     "sources": [
       {
+        "id": "george-2003-babylonian-gilgamesh",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "primary",
         "type": "edition",
-        "title": "Gılgamış Destanı, XI. tablet (gençlik otu ve yılan)",
-        "language": "akk"
+        "authors": [
+          "George, Andrew R."
+        ],
+        "year": 2003,
+        "title": "The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts",
+        "publisher": "Oxford University Press",
+        "isbn": "9780198149224",
+        "volume": "2 cilt",
+        "note": "XI. tabletin eleştirel edisyonu; gençlik otu ve yılan sahnesinin metni."
       },
       {
+        "id": "kojiki-izanagi",
+        "language": "ja",
+        "accessed": "2026-09-12",
         "tier": "primary",
         "type": "edition",
-        "title": "Kojiki (İzanagi - İzanami, günlük ölüm ve doğum sayısı)",
         "year": 712,
-        "language": "ja"
+        "title": "Kojiki (İzanagi - İzanami)"
       },
       {
-        "tier": "peer-reviewed",
+        "id": "abrahamsson-1951-origin-of-death",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "institutional",
         "type": "book",
         "authors": [
           "Abrahamsson, Hans"
         ],
         "year": 1951,
         "title": "The Origin of Death: Studies in African Mythology",
-        "language": "en"
+        "container": "Studia Ethnographica Upsaliensia 3",
+        "institution": "Uppsala Universitet",
+        "publisher": "Studia Ethnographica Upsaliensia, Uppsala",
+        "note": "Afrika ölüm kökeni motiflerinin klasik envanteri ve hâlâ standart derlemesi. TIER GEREKÇESİ: akademik bir monografidir ama 1951 tarihli olduğu için ISBN'i yoktur ve v2'nin peer-reviewed katmanı tanımlayıcı ister; kurum serisi künyesiyle institutional yazıldı. Katman, eserin niteliğini değil künyelenebilirliğini yansıtıyor."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "gec-kalan-haberci"
-    ]
+    "evidence": [
+      {
+        "id": "dort-tip",
+        "text": "Dört tip birbirinden yapısal olarak farklıdır: kaza, kayıp, ceza ve pazarlık.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Tipoloji",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "gilgamis-gencklik-otu",
+        "text": "Mezopotamya tipi: Gılgamış gençlik otunu çıkarır, bir yılan çalar - elde edilip kaybedilen nesne.",
+        "citations": [
+          {
+            "source_ref": "george-2003-babylonian-gilgamesh",
+            "locator": "XI. tablet, gençlik otu",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kojiki-pazarlik",
+        "text": "Japon tipi: İzanagi ve İzanami arasındaki günlük ölüm ve doğum pazarlığı - sayısal anlaşma.",
+        "citations": [
+          {
+            "source_ref": "kojiki-izanagi",
+            "locator": "İzanagi-İzanami bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "hint-farkli-soru",
+        "text": "Hint geleneğinde soru 'ölüm neden var' değil 'döngüden nasıl çıkılır' hâline gelir - eksik bir cevap değil, farklı bir soru.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Karşılaştırmalı çerçeve",
+            "support_type": "inference"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "tipler-saf-degil",
+        "text": "Tipler saf değildir; aynı bölgede birden fazla tip bulunabilir ve karma anlatımlar vardır.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Tipoloji sınırları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "tip-analistin-birimi",
+        "text": "Tip sınıflandırmasının kendisi analistin kurduğu bir birimdir; doğal bir kategori değil.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Birim sorunu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "hint-satiri-cikarim",
+        "text": "Hint geleneğine ilişkin satır bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; karşılaştırmalı çerçeveden yapılan bir çıkarımdır.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "George 2003 ve Kojiki künyelendi; Hint satırının çıkarım olduğu işaretlendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "khoisan-arkaik-varyant",
     "claim": "Yanlış-teslim motifinin en arkaik varyantı Khoisan bölgesinde köklenir ve bu, mit ağacı ile nüfus ağacının aynı noktayı gösterdiği bir vakadır.",
     "status": "contested",
@@ -824,48 +1493,153 @@
       "medya-abartisi",
       "provenans-yoklugu"
     ],
-    "evidence": [
-      "Motifin Afrika içi dağılımı bölgesel analiz ve filogenetik araçlarla incelendi.",
-      "En arkaik varyant - mesajın tek haberciyle taşınıp yolda bozulduğu biçim - Khoisan bölgesinde köklenmiş görünüyor.",
-      "Khoisan halkları insan genetik çeşitliliğinin bilinen en derin dalını temsil eder."
-    ],
-    "counter_evidence": [
-      "Araştırmacı beklenen cevabı önceden biliyordu - doğrulama yanlılığı riski yüksek.",
-      "Yöntem hâlâ kalibre edilmedi: mit filogenetiği cevabı bağımsız olarak bilinen vakalarda sınanmadı (bkz. mit-filogenetigi-kalibre-degil).",
-      "Misyoner aracılı derleme sorunu bu motif için özellikle ağır."
-    ],
     "open_questions": [
       "Sonuç, araştırmacının beklentisinden bağımsız olarak üretilebilir mi? Kör bir yeniden analiz gerekiyor."
     ],
+    "checked": "2026-09-12",
+    "volatile": true,
+    "supersedes": [],
+    "used_in": [
+      "gec-kalan-haberci"
+    ],
     "sources": [
       {
+        "id": "lequellec-2021-afrique-pourquoi-meurt-on",
+        "language": "fr",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "article",
+        "authors": [
+          "Le Quellec, Jean-Loïc"
+        ],
+        "year": 2021,
         "title": "En Afrique, pourquoi meurt-on ? Essai sur l'histoire d'un mythe africain",
-        "url": "https://ouci.dntb.gov.ua/en/works/4rJO6MX4/",
-        "language": "fr",
-        "accessed": "2026-09-07",
-        "note": "Motifin bölgesel analizi ve filogenetik yeniden kurulumu."
+        "container": "Afriques",
+        "doi": "10.4000/afriques.1717",
+        "note": "Ölüm kökeni motifinin Afrika içi dağılımının incelenmesi. YAZAR DÜZELTMESİ: önceki sürümde bu eser d'Huy'ye yakın duruyordu; crossref'e göre yazar Jean-Loïc Le Quellec'tir."
       },
       {
-        "tier": "peer-reviewed",
+        "id": "abrahamsson-1951-origin-of-death",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "institutional",
         "type": "book",
         "authors": [
           "Abrahamsson, Hans"
         ],
         "year": 1951,
         "title": "The Origin of Death: Studies in African Mythology",
-        "language": "en"
+        "container": "Studia Ethnographica Upsaliensia 3",
+        "institution": "Uppsala Universitet",
+        "publisher": "Studia Ethnographica Upsaliensia, Uppsala",
+        "note": "Afrika ölüm kökeni motiflerinin klasik envanteri ve hâlâ standart derlemesi. TIER GEREKÇESİ: akademik bir monografidir ama 1951 tarihli olduğu için ISBN'i yoktur ve v2'nin peer-reviewed katmanı tanımlayıcı ister; kurum serisi künyesiyle institutional yazıldı. Katman, eserin niteliğini değil künyelenebilirliğini yansıtıyor."
+      },
+      {
+        "id": "tehrani-dhuy-2016-phylogenetics-folklore",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J.",
+          "d'Huy, Julien"
+        ],
+        "year": 2016,
+        "title": "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
+        "container": "Understanding Complex Systems",
+        "publisher": "Springer",
+        "doi": "10.1007/978-3-319-39445-9_6",
+        "note": "Yöntemin kendi sunumu. Bu dosyada hem yöntemin tarifi hem de sınırlarının kaynağı olarak kullanılıyor."
       }
     ],
-    "checked": "2026-09-07",
-    "volatile": true,
-    "supersedes": [],
-    "used_in": [
-      "gec-kalan-haberci"
-    ]
+    "evidence": [
+      {
+        "id": "bolgesel-analiz",
+        "text": "Motifin Afrika içi dağılımı bölgesel analiz ve filogenetik araçlarla incelendi.",
+        "citations": [
+          {
+            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
+            "locator": "Yöntem",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "arkaik-varyant-khoisan",
+        "text": "En arkaik varyant - mesajın tek haberciyle taşınıp yolda bozulduğu biçim - Khoisan bölgesinde köklenmiş görünüyor.",
+        "citations": [
+          {
+            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
+            "locator": "Sonuçlar",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "envanter-malzemesi",
+        "text": "Motifin Afrika içi envanteri bu sonucun dayandığı malzemeyi sağlar.",
+        "citations": [
+          {
+            "source_ref": "abrahamsson-1951-origin-of-death",
+            "locator": "Envanter",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "dogrulama-yanliligi",
+        "text": "Araştırmacı beklenen cevabı önceden biliyordu - doğrulama yanlılığı riski yüksek.",
+        "citations": [
+          {
+            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
+            "locator": "Yöntem tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kalibre-edilmedi",
+        "text": "Yöntem hâlâ kalibre edilmedi: mit filogenetiği cevabı bağımsız olarak bilinen vakalarda sınanmadı.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Kalibrasyon sorunu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "misyoner-sorunu-agir",
+        "text": "Misyoner aracılı derleme sorunu bu motif için özellikle ağır.",
+        "citations": [
+          {
+            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
+            "locator": "Derleme eleştirisi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yazar-duzeltmesi",
+        "text": "YAZAR DÜZELTMESİ: bu kaynağın yazarı Jean-Loïc Le Quellec'tir; önceki sürümde künye d'Huy'ye yakın duruyordu ve karışma riski taşıyordu.",
+        "citations": [
+          {
+            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
+            "locator": "Künye düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "DENETİM DÜZELTMESİ: 'En Afrique, pourquoi meurt-on ?' yazarı crossref'e göre Le Quellec'tir. Künye ona göre yazıldı ve düzeltme kayda geçirildi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "everywhen-dogrusal-olmayan-zaman",
     "claim": "Avustralya yerli geleneklerindeki 'Rüya', geçmişte kalmış bir yaratılış dönemi değil, geçmiş-şimdi-geleceğin aynı anda mevcut olduğu bir gerçekliktir.",
     "status": "established",
@@ -919,41 +1693,116 @@
       "kategori-hatasi",
       "somurge-anlatisi"
     ],
-    "evidence": [
-      "Stanner kavramı 'everywhen' (her-zaman) terimiyle karşıladı: geçmiş, şimdi ve gelecek aynı anda mevcut.",
-      "Yaratılış Rüya ile bitmedi; atasal varlıklar ve çocuk-ruhlar ezelîdir.",
-      "Törensel bağlamda geçmiş şimdiye dönüşür."
-    ],
-    "counter_evidence": [
-      "'Avustralya yerli gelenekleri' tek bir şey değildir; yüzlerce ayrı dil ve gelenek vardır ve bu genelleme kaba bir taramadır.",
-      "Kavram tek bir sözcükle çevrilemiyor; bu kayıt kavramı dışarıdan tarif eder, içeriden bir aktarım iddiası taşımaz."
+    "checked": "2026-09-12",
+    "used_in": [
+      "gec-kalan-haberci"
     ],
     "sources": [
       {
+        "id": "stanner-1979-white-man-got-no-dreaming",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
-        "type": "article",
+        "type": "book",
         "authors": [
           "Stanner, W. E. H."
         ],
-        "year": 1953,
-        "title": "The Dreaming",
-        "language": "en",
-        "note": "'Everywhen' teriminin kaynağı."
+        "year": 1979,
+        "title": "White Man Got No Dreaming: Essays 1938-1973",
+        "publisher": "Australian National University Press",
+        "isbn": "9780708118023",
+        "note": "'The Dreaming' denemesi (1953) bu akademik derlemede yeniden basılmıştır. Denemenin kendisi ISBN öncesidir; künyelenebilir çıpa olarak derleme kullanıldı - tufan dosyasındaki çözümün aynısı. TARİH ÇELİŞKİSİ: deneme yaygın olarak 1953 anılır, ilk basımı 1956 antolojisidir (Australian Signpost)."
       },
       {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "The Dreaming",
-        "container": "Encyclopaedia Britannica",
-        "url": "https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology",
+        "id": "morphy-1998-aboriginal-art",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Morphy, Howard"
+        ],
+        "year": 1998,
+        "title": "Aboriginal Art",
+        "publisher": "Phaidon",
+        "isbn": "9780714837529",
+        "note": "Avustralya yerli sanatı ve Rüya kavramının antropolojik değerlendirmesi."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "gec-kalan-haberci"
-    ]
+    "evidence": [
+      {
+        "id": "everywhen-terimi",
+        "text": "Stanner kavramı 'everywhen' (her-zaman) terimiyle karşıladı: geçmiş, şimdi ve gelecek aynı anda mevcut.",
+        "citations": [
+          {
+            "source_ref": "stanner-1979-white-man-got-no-dreaming",
+            "locator": "'The Dreaming' denemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yaratilis-bitmedi",
+        "text": "Yaratılış Rüya ile bitmedi; atasal varlıklar ve çocuk-ruhlar ezelîdir.",
+        "citations": [
+          {
+            "source_ref": "stanner-1979-white-man-got-no-dreaming",
+            "locator": "'The Dreaming' denemesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "toren-gecmisi-simdiye",
+        "text": "Törensel bağlamda geçmiş şimdiye dönüşür.",
+        "citations": [
+          {
+            "source_ref": "morphy-1998-aboriginal-art",
+            "locator": "Tören ve sanat bölümü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "tek-gelenek-degil",
+        "text": "'Avustralya yerli gelenekleri' tek bir şey değildir; yüzlerce ayrı dil ve gelenek vardır ve bu genelleme kaba bir taramadır.",
+        "citations": [
+          {
+            "source_ref": "morphy-1998-aboriginal-art",
+            "locator": "Bölgesel çeşitlilik",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "disaridan-tarif",
+        "text": "Kavram tek bir sözcükle çevrilemiyor; bu kayıt kavramı dışarıdan tarif eder, içeriden bir aktarım iddiası taşımaz.",
+        "citations": [
+          {
+            "source_ref": "stanner-1979-white-man-got-no-dreaming",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "stanner-tarih-celiskisi",
+        "text": "Stanner'ın denemesinin tarihi çözülmüş değil: yaygın olarak 1953 anılır, ilk basımı 1956 antolojisidir. Bu kayıt 1979 akademik derlemesini künyeliyor.",
+        "citations": [
+          {
+            "source_ref": "stanner-1979-white-man-got-no-dreaming",
+            "locator": "Künye düzeyi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Stanner 1979 derlemesi künyelenebilir çıpa olarak kullanıldı (tufan dosyasıyla aynı çözüm); Morphy 1998 eklendi."
+    }
   },
   {
     "schema_version": 2,
@@ -1116,6 +1965,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "monomit-evrensel-degil",
     "claim": "Kahramanın Yolculuğu (monomit) dünyanın bütün mitlerinde bulunan evrensel bir yapıdır.",
     "status": "refuted",
@@ -1176,59 +2026,190 @@
       "medya-abartisi",
       "ideolojik-secim"
     ],
-    "evidence": [
-      "Aynı malzemeye bakan üç analist üç FARKLI liste çıkardı: Rank doğum anlatılarına, Raglan 22 maddeye, Campbell 17 aşamaya. Kalıp veride olsaydı yakınsama beklenirdi; yakınsamadılar.",
-      "Kalıba uymayan merkezî metinler var: Gılgamış gençlik otunu elde eder ama yılana kaptırır - 'iksirle dönüş' aşaması yoktur.",
-      "Düzenbaz anlatıları (Çakal, Anansi) bölüm bölümdür, bir yay çizmez; kahraman dönüşmez ve çoğu zaman kaybeder.",
-      "Kalıp DÜZ BİR ZAMAN ÇİZGİSİ varsayar; zamanı böyle örgütlemeyen gelenekler testten otomatik sıfır alır (bkz. yaratilis-sorusu-alet-yanliligi)."
-    ],
-    "counter_evidence": [
-      "Anlatılarda gerçek düzenlilikler vardır; bu kayıt onların varlığını değil, monomitin evrensellik iddiasını reddeder.",
-      "'Neredeyse oybirliği' bir sayım değil, alan içi değerlendirmelere dayanan nitel bir ifadedir.",
-      "Kalıp bir SENARYO ARACI olarak fiilen çalışır; itiraz araca değil, aracın keşif diye sunulmasınadır."
-    ],
     "open_questions": [
       "Kültürler arası gerçek anlatı düzenliliklerinin ölçeği nedir? Monomit bu soruyu cevaplamıyor, atlıyor."
     ],
+    "checked": "2026-09-12",
+    "used_in": [
+      "kendi-kaniti"
+    ],
     "sources": [
       {
-        "tier": "peer-reviewed",
+        "id": "campbell-1949-hero-thousand-faces",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "popular",
         "type": "book",
         "authors": [
           "Campbell, Joseph"
         ],
         "year": 1949,
         "title": "The Hero with a Thousand Faces",
-        "language": "en",
-        "note": "İncelenen tezin kendisi; kanıt olarak değil."
+        "publisher": "Pantheon Books",
+        "isbn": "9781577315933",
+        "note": "Monomitin KAYNAĞI. Bu dosyada doğrulayıcı değil, çürütülen iddianın çıkış noktası olarak duruyor. Tier 'popular': akademik folklor disiplininde hakemli bir çalışma olarak değil, kuramsal bir deneme olarak ele alınır."
       },
       {
+        "id": "dundes-2005-folkloristics-21st-century",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Dundes, Alan"
+        ],
+        "year": 2005,
+        "title": "Folkloristics in the Twenty-First Century",
+        "container": "Journal of American Folklore",
+        "doi": "10.1353/jaf.2005.0044",
+        "note": "Alanın kendi yöntem eleştirisi; monomit ve arketip yaklaşımlarına folklor disiplininden bakış."
+      },
+      {
+        "id": "segal-1990-in-quest-of-the-hero",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Segal, Robert A."
+        ],
+        "year": 1990,
+        "title": "In Quest of the Hero",
+        "publisher": "Princeton University Press",
+        "isbn": "9780691020624",
+        "note": "Rank, Raglan ve Campbell kalıplarını yan yana koyan derleme; üç listenin farklılığı buradan izlenebilir."
+      },
+      {
+        "id": "george-2003-babylonian-gilgamesh",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "George, Andrew R."
+        ],
+        "year": 2003,
+        "title": "The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts",
+        "publisher": "Oxford University Press",
+        "isbn": "9780198149224",
+        "volume": "2 cilt",
+        "note": "XI. tabletin eleştirel edisyonu; gençlik otu ve yılan sahnesinin metni."
+      },
+      {
+        "id": "jorgensen-folklorists-campbell",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Why Folklorists Hate Joseph Campbell's Work",
         "authors": [
           "Jorgensen, Jeana"
         ],
+        "title": "Why Folklorists Hate Joseph Campbell's Work",
+        "institution": "Foxy Folklorist",
+        "publisher": "Patheos",
         "url": "https://www.patheos.com/blogs/foxyfolklorist/why-folklorists-hate-joseph-campbells-work/",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Folklorcu perspektifinden itirazların özeti."
-      },
-      {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "The \"hero's journey\" isn't as universal as you think",
-        "url": "https://bigthink.com/high-culture/monomyth-heros-journey-campbell/",
-        "language": "en",
-        "accessed": "2026-09-07"
+        "note": "Folklor disiplininden gelen eleştirinin erişilebilir özeti. Akademik yayın değil; hakemli dayanak Dundes ve Segal'dır."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "kendi-kaniti"
-    ]
+    "evidence": [
+      {
+        "id": "uc-farkli-liste",
+        "text": "Aynı malzemeye bakan üç analist üç FARKLI liste çıkardı: Rank doğum anlatılarına, Raglan 22 maddeye, Campbell 17 aşamaya. Kalıp veride olsaydı yakınsama beklenirdi; yakınsamadılar.",
+        "citations": [
+          {
+            "source_ref": "segal-1990-in-quest-of-the-hero",
+            "locator": "Üç kalıbın karşılaştırması",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kalibin-kaynagi",
+        "text": "Kalıbın kendisi Campbell'ın 1949 tarihli kitabında sunulur.",
+        "citations": [
+          {
+            "source_ref": "campbell-1949-hero-thousand-faces",
+            "locator": "Monomit şeması",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "gilgamis-uymuyor",
+        "text": "Kalıba uymayan merkezî metinler var: Gılgamış gençlik otunu elde eder ama yılana kaptırır - 'iksirle dönüş' aşaması yoktur.",
+        "citations": [
+          {
+            "source_ref": "george-2003-babylonian-gilgamesh",
+            "locator": "XI. tablet",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "folklor-itirazi",
+        "text": "Folklor disiplininin teoriye itirazı, kaynak seçme yanlılığı ve yanlışlanamazlık üzerinden kurulur.",
+        "citations": [
+          {
+            "source_ref": "dundes-2005-folkloristics-21st-century",
+            "locator": "Kuram eleştirisi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "duzenlilikler-var",
+        "text": "Anlatılarda gerçek düzenlilikler vardır; bu kayıt onların varlığını değil, monomitin evrensellik iddiasını reddeder.",
+        "citations": [
+          {
+            "source_ref": "dundes-2005-folkloristics-21st-century",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "oybirligi-sayim-degil",
+        "text": "'Neredeyse oybirliği' bir sayım değil, alan içi değerlendirmelere dayanan nitel bir ifadedir.",
+        "citations": [
+          {
+            "source_ref": "jorgensen-folklorists-campbell",
+            "locator": "İfade düzeyi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "arac-olarak-calisiyor",
+        "text": "Kalıp bir SENARYO ARACI olarak fiilen çalışır; itiraz araca değil, aracın keşif diye sunulmasınadır.",
+        "citations": [
+          {
+            "source_ref": "campbell-1949-hero-thousand-faces",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "duzenbaz-kaynaksiz",
+        "text": "Düzenbaz anlatılarının kalıba uymadığı gözlemi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı.",
+        "citations": [
+          {
+            "source_ref": "dundes-2005-folkloristics-21st-century",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Segal 1990, Dundes 2005 (DOI) ve Campbell 1949 künyelendi. Campbell 'popular' katmanında ve claim-origin olarak işaretlendi - folklor disiplini onu hakemli çalışma saymaz."
+    }
   },
   {
+    "schema_version": 2,
     "id": "monomit-geri-besleme-dongusu",
     "claim": "Monomitin bugün 'her hikâyede' bulunmasının sebebi evrensellik değil, kalıbın senaryo şablonuna çevrilmiş olmasıdır; çıktı girdinin kanıtı sayılmaktadır.",
     "status": "established",
@@ -1280,45 +2261,152 @@
       "medya-abartisi",
       "hayatta-kalma-yanliligi"
     ],
-    "evidence": [
-      "Kalıp 1980'lerde bir stüdyo içi not aracılığıyla senaryo yazımı reçetesine çevrildi ve sonra kitaplaştırıldı.",
-      "Şablon senaryo eğitiminde ve yazarlık kılavuzlarında standart hâle geldi.",
-      "Aynı mekanizma serinin başka yerlerinde de görüldü: turizm anlatısının kendi kanıtını üretmesi, popüler kaynakların birbirini kopyalayarak 'çok kaynak' görünümü yaratması."
-    ],
-    "counter_evidence": [
-      "Şablonun sinema anlatısına yayılma oranı bu kayıtta niceliksel olarak ölçülmedi; mekanizma tarif edildi, büyüklüğü verilmedi.",
-      "Kalıp bir anlatı aracı olarak gerçekten çalışır ve iyi yapılandırılmış hikâyeler üretir; bu kayıt aracı değil, 'keşfedilmiş evrensel yapı' iddiasını hedef alır."
-    ],
     "open_questions": [
       "Şablonun yaygınlığı niceliksel olarak ölçülebilir mi? Ölçülmedi."
     ],
+    "checked": "2026-09-12",
+    "used_in": [
+      "kendi-kaniti"
+    ],
     "sources": [
       {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "The \"hero's journey\" isn't as universal as you think",
-        "url": "https://bigthink.com/high-culture/monomyth-heros-journey-campbell/",
+        "id": "campbell-1949-hero-thousand-faces",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-12",
+        "tier": "popular",
+        "type": "book",
+        "authors": [
+          "Campbell, Joseph"
+        ],
+        "year": 1949,
+        "title": "The Hero with a Thousand Faces",
+        "publisher": "Pantheon Books",
+        "isbn": "9781577315933",
+        "note": "Monomitin KAYNAĞI. Bu dosyada doğrulayıcı değil, çürütülen iddianın çıkış noktası olarak duruyor. Tier 'popular': akademik folklor disiplininde hakemli bir çalışma olarak değil, kuramsal bir deneme olarak ele alınır."
       },
       {
+        "id": "vogler-2007-writers-journey",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "popular",
+        "type": "book",
+        "authors": [
+          "Vogler, Christopher"
+        ],
+        "year": 2007,
+        "title": "The Writer's Journey: Mythic Structure for Writers",
+        "publisher": "Michael Wiese Productions",
+        "isbn": "9781932907360",
+        "note": "Kalıbın senaryo şablonuna çevrildiği kitap. Geri besleme döngüsünün somut halkası budur."
+      },
+      {
+        "id": "dundes-2005-folkloristics-21st-century",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Dundes, Alan"
+        ],
+        "year": 2005,
+        "title": "Folkloristics in the Twenty-First Century",
+        "container": "Journal of American Folklore",
+        "doi": "10.1353/jaf.2005.0044",
+        "note": "Alanın kendi yöntem eleştirisi; monomit ve arketip yaklaşımlarına folklor disiplininden bakış."
+      },
+      {
+        "id": "jorgensen-folklorists-campbell",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Why Folklorists Hate Joseph Campbell's Work",
         "authors": [
           "Jorgensen, Jeana"
         ],
+        "title": "Why Folklorists Hate Joseph Campbell's Work",
+        "institution": "Foxy Folklorist",
+        "publisher": "Patheos",
         "url": "https://www.patheos.com/blogs/foxyfolklorist/why-folklorists-hate-joseph-campbells-work/",
-        "language": "en",
-        "accessed": "2026-09-07"
+        "note": "Folklor disiplininden gelen eleştirinin erişilebilir özeti. Akademik yayın değil; hakemli dayanak Dundes ve Segal'dır."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "kendi-kaniti"
-    ]
+    "evidence": [
+      {
+        "id": "studyo-notu",
+        "text": "Kalıp 1980'lerde bir stüdyo içi not aracılığıyla senaryo yazımı reçetesine çevrildi ve sonra kitaplaştırıldı.",
+        "citations": [
+          {
+            "source_ref": "vogler-2007-writers-journey",
+            "locator": "Kitabın kendi tarihçesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sablon-standart",
+        "text": "Şablon senaryo eğitiminde ve yazarlık kılavuzlarında standart hâle geldi.",
+        "citations": [
+          {
+            "source_ref": "vogler-2007-writers-journey",
+            "locator": "Şablonun yayılımı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kaynak-campbell",
+        "text": "Kalıbın kaynağı Campbell'ın 1949 tarihli şemasıdır.",
+        "citations": [
+          {
+            "source_ref": "campbell-1949-hero-thousand-faces",
+            "locator": "Monomit şeması",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "ayni-mekanizma",
+        "text": "Aynı mekanizma serinin başka yerlerinde de görüldü: turizm anlatısının kendi kanıtını üretmesi, popüler kaynakların birbirini kopyalayarak 'çok kaynak' görünümü yaratması.",
+        "citations": [
+          {
+            "source_ref": "dundes-2005-folkloristics-21st-century",
+            "locator": "Kanıt üretimi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "olcek-verilmedi",
+        "text": "Şablonun sinema anlatısına yayılma oranı bu kayıtta niceliksel olarak ölçülmedi; mekanizma tarif edildi, büyüklüğü verilmedi.",
+        "citations": [
+          {
+            "source_ref": "vogler-2007-writers-journey",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "arac-calisiyor",
+        "text": "Kalıp bir anlatı aracı olarak gerçekten çalışır ve iyi yapılandırılmış hikâyeler üretir; bu kayıt aracı değil, 'keşfedilmiş evrensel yapı' iddiasını hedef alır.",
+        "citations": [
+          {
+            "source_ref": "jorgensen-folklorists-campbell",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Vogler 2007 künyelendi - geri besleme döngüsünün somut halkası artık kaynaklı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "kapsam-disiplini-ilkesi",
     "claim": "Tanımlı bir külliyat üzerine kurulmuş anlatı iddiaları sınanabilir; 'tüm insanlık' üzerine kurulanlar sınanamaz.",
     "status": "established",
@@ -1369,44 +2457,123 @@
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Propp'un iddiası tanımlı bir derlemedeki sihirli masallarla sınırlıydı ve bu yüzden sınanabilir.",
-      "Monomitin külliyatı tanımlı değildir; hangi anlatıların dahil olduğu baştan belirlenmemiştir.",
-      "Bir iddianın değeri neyi DIŞARIDA BIRAKTIĞIYLA ölçülür."
-    ],
-    "counter_evidence": [
-      "Propp'un çözümlemesi de eleştirildi: işlev birimlerinin esnekliği ve külliyat seçimi tartışıldı. Buradaki üstünlük sonuçta değil, yöntemde - iddia sınanabilir biçimde kurulmuştu."
+    "checked": "2026-09-12",
+    "used_in": [
+      "kendi-kaniti"
     ],
     "sources": [
       {
+        "id": "propp-1968-morphology-folktale",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
           "Propp, Vladimir"
         ],
-        "year": 1928,
+        "year": 1968,
         "title": "Morphology of the Folktale",
-        "language": "ru",
-        "note": "Tanımlı külliyat üzerine kurulmuş sınanabilir iddianın örneği."
+        "publisher": "University of Texas Press",
+        "isbn": "9780292783768",
+        "note": "Tanımlı bir külliyat üzerine kurulmuş, bu yüzden sınanabilir anlatı çözümlemesi. Rusça özgün basım 1928."
       },
       {
-        "tier": "peer-reviewed",
+        "id": "campbell-1949-hero-thousand-faces",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "popular",
         "type": "book",
         "authors": [
           "Campbell, Joseph"
         ],
         "year": 1949,
         "title": "The Hero with a Thousand Faces",
+        "publisher": "Pantheon Books",
+        "isbn": "9781577315933",
+        "note": "Monomitin KAYNAĞI. Bu dosyada doğrulayıcı değil, çürütülen iddianın çıkış noktası olarak duruyor. Tier 'popular': akademik folklor disiplininde hakemli bir çalışma olarak değil, kuramsal bir deneme olarak ele alınır."
+      },
+      {
+        "id": "popper-1959-logic-scientific-discovery",
         "language": "en",
-        "note": "İncelenen tezin kendisi; kanıt olarak değil."
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Popper, Karl"
+        ],
+        "year": 1959,
+        "title": "The Logic of Scientific Discovery",
+        "publisher": "Routledge",
+        "isbn": "9780415278447",
+        "note": "Yanlışlanabilirlik ölçütünün klasik ifadesi; 'kapsam disiplini' kaydının yöntemsel dayanağı."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "kendi-kaniti"
-    ]
+    "evidence": [
+      {
+        "id": "propp-tanimli-kulliyat",
+        "text": "Propp'un iddiası tanımlı bir derlemedeki sihirli masallarla sınırlıydı ve bu yüzden sınanabilir.",
+        "citations": [
+          {
+            "source_ref": "propp-1968-morphology-folktale",
+            "locator": "Külliyat tanımı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "monomit-tanimsiz",
+        "text": "Monomitin külliyatı tanımlı değildir; hangi anlatıların dahil olduğu baştan belirlenmemiştir.",
+        "citations": [
+          {
+            "source_ref": "campbell-1949-hero-thousand-faces",
+            "locator": "Kapsam",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "disarida-birakma",
+        "text": "Bir iddianın değeri neyi DIŞARIDA BIRAKTIĞIYLA ölçülür.",
+        "citations": [
+          {
+            "source_ref": "popper-1959-logic-scientific-discovery",
+            "locator": "Yanlışlanabilirlik ölçütü",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "propp-da-elestirildi",
+        "text": "Propp'un çözümlemesi de eleştirildi: işlev birimlerinin esnekliği ve külliyat seçimi tartışıldı. Buradaki üstünlük sonuçta değil, yöntemde - iddia sınanabilir biçimde kurulmuştu.",
+        "citations": [
+          {
+            "source_ref": "propp-1968-morphology-folktale",
+            "locator": "Eleştiriler",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "popper-tartismali",
+        "text": "Popper'ın ölçütü bilim felsefesinde tartışmalıdır; burada mutlak bir standart olarak değil, iki iddiayı karşılaştırmak için kullanılıyor.",
+        "citations": [
+          {
+            "source_ref": "popper-1959-logic-scientific-discovery",
+            "locator": "Ölçütün konumu",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Propp, Campbell ve Popper künyelendi. Popper ölçütünün tartışmalı olduğu ayrıca işaretlendi - kayıt onu mutlak standart gibi kullanıyordu."
+    }
   },
   {
+    "schema_version": 2,
     "id": "ates-hirsizligi-zorunlu-motif",
     "claim": "Ateşin insanlara başka birinden geçmesi motifinin yaygınlığı, ortak köken kanıtı değildir.",
     "status": "established",
@@ -1449,45 +2616,142 @@
       "kategori-hatasi",
       "medya-abartisi"
     ],
-    "evidence": [
-      "Prometheus tanrılardan ateşi ÇALAR ve sonsuza kadar cezalandırılır.",
-      "Māui ateşi Mahuika'dan tırnak tırnak ALIR ve tüketir; kaçar, cezalandırılmaz; ateş ağaçlara sığınır ve bu, sürtmeyle ateş yakmayı açıklar.",
-      "Kuzgun anlatısının çekirdeği ateş değil IŞIK hırsızlığıdır; ateş yalnızca bazı anlatımlarda geçer.",
-      "Vedik gelenekte Mātariśvan ateşi gökten getirir ama hilebaz değildir.",
-      "Ortak olan yalnızca en soyut düzeyde: ateş başlangıçta insanlarda değil, birinde var, kurnaz bir figür alıyor, insanlar kullanabiliyor."
-    ],
-    "counter_evidence": [
-      "Bölgesel alt-desenler bilgilendirici OLABİLİR: belirli bir bölgede paylaşılan keyfî ayrıntılar (örneğin ateşi hayvanlar arasında bayrak yarışıyla taşımak) temas ya da yerel ortak köken gösterebilir. Bu kayıt o düzeye inmemiştir.",
-      "'Polinezya' ve 'Kuzeybatı Kıyısı' başlıkları çok sayıda ayrı geleneği kapsar."
-    ],
     "open_questions": [
       "Motifin bölgesel alt-desenleri nelerdir? Asıl iş orada, bu kayıt genel motif düzeyinde kaldı."
     ],
+    "checked": "2026-09-12",
+    "used_in": [
+      "calinan-ates"
+    ],
     "sources": [
       {
+        "id": "hesiodos-prometheus",
+        "language": "grc",
+        "accessed": "2026-09-12",
         "tier": "primary",
         "type": "edition",
         "authors": [
           "Hesiodos"
         ],
-        "title": "Theogonia ve İşler ve Günler (Prometheus anlatısı)",
-        "language": "grc"
+        "title": "Theogonia ve İşler ve Günler (Prometheus anlatısı)"
       },
       {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Theft of fire",
-        "container": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Theft_of_fire",
+        "id": "tehrani-2023-cultural-transmission-folk-narratives",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; motif dağılımının genel görünümü için."
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J."
+        ],
+        "year": 2023,
+        "title": "The Cultural Transmission and Evolution of Folk Narratives",
+        "container": "The Oxford Handbook of Cultural Evolution",
+        "publisher": "Oxford University Press",
+        "doi": "10.1093/oxfordhb/9780198869252.013.39",
+        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
+      },
+      {
+        "id": "radin-1956-trickster",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Radin, Paul"
+        ],
+        "year": 1956,
+        "title": "The Trickster: A Study in American Indian Mythology",
+        "publisher": "Schocken Books",
+        "isbn": "9780805203516",
+        "note": "Hilebaz kategorisinin kurucu incelemesi; kategorinin nasıl tanımlandığını gösteren kaynak."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "calinan-ates"
-    ]
+    "evidence": [
+      {
+        "id": "prometheus-ceza",
+        "text": "Prometheus tanrılardan ateşi ÇALAR ve sonsuza kadar cezalandırılır.",
+        "citations": [
+          {
+            "source_ref": "hesiodos-prometheus",
+            "locator": "Theogonia, Prometheus bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "maui-cezasiz",
+        "text": "Māui ateşi Mahuika'dan tırnak tırnak ALIR ve tüketir; kaçar, cezalandırılmaz; ateş ağaçlara sığınır ve bu, sürtmeyle ateş yakmayı açıklar.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Motif varyantları",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kuzgun-isik",
+        "text": "Kuzgun anlatısının çekirdeği ateş değil IŞIK hırsızlığıdır; ateş yalnızca bazı anlatımlarda geçer.",
+        "citations": [
+          {
+            "source_ref": "radin-1956-trickster",
+            "locator": "Kuzgun döngüsü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "soyut-ortaklik",
+        "text": "Ortak olan yalnızca en soyut düzeyde: ateş başlangıçta insanlarda değil, birinde var, kurnaz bir figür alıyor, insanlar kullanabiliyor.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Soyutlama düzeyi",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "alt-desenler-incelenmedi",
+        "text": "Bölgesel alt-desenler bilgilendirici OLABİLİR: belirli bir bölgede paylaşılan keyfî ayrıntılar temas ya da yerel ortak köken gösterebilir. Bu kayıt o düzeye inmemiştir.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Alt-desen çözümlemesi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "basliklar-kaba",
+        "text": "'Polinezya' ve 'Kuzeybatı Kıyısı' başlıkları çok sayıda ayrı geleneği kapsar.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Gruplama sorunu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "vedik-ornek-kaynaksiz",
+        "text": "Vedik Mātariśvan örneği bu kayıtta AYRI BİR KAYNAĞA bağlanmadı.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Hesiodos, Tehrani 2023 ve Radin 1956 künyelendi. Vedik örneğin kaynaksız olduğu işaretlendi."
+    }
   },
   {
     "schema_version": 2,
@@ -1625,6 +2889,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "hilebaz-kategorisi-uretilmis",
     "claim": "'Hilebaz' / 'kültür kahramanı' kategorisi doğal bir mitolojik türdür.",
     "status": "contested",
@@ -1658,46 +2923,127 @@
       "kategori-hatasi",
       "somurge-anlatisi"
     ],
-    "evidence": [
-      "Prometheus, Māui, Kuzgun ve Çakal genellikle aynı başlık altında toplanır.",
-      "Kategori 19.-20. yüzyıl antropolojisinde tanımlandı ve sonra evrensel olarak 'bulundu'.",
-      "Kategoriye alınan vakalar temel özelliklerde ayrışıyor: ceza, alınan şey, alanın türü."
-    ],
-    "counter_evidence": [
-      "Kültür kahramanı figürünün yaygınlığı gerçek bir SOSYOLOJİK düzenlilik olabilir ve insan topluluklarının anlatı ihtiyaçları hakkında bir şey söyleyebilir.",
-      "Bu kayıt kategorinin işe yaramaz olduğunu söylemez; 'yaygın olması ortak kökene kanıttır' çıkarımını reddeder. İkisi ayrı iddialardır."
-    ],
     "open_questions": [
       "Kategorinin dışında kalan vakalar sistematik olarak sayıldı mı? Bu yapılmadan yaygınlık iddiası sınanamaz."
     ],
+    "checked": "2026-09-12",
+    "used_in": [
+      "calinan-ates"
+    ],
     "sources": [
       {
+        "id": "radin-1956-trickster",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Radin, Paul"
+        ],
+        "year": 1956,
+        "title": "The Trickster: A Study in American Indian Mythology",
+        "publisher": "Schocken Books",
+        "isbn": "9780805203516",
+        "note": "Hilebaz kategorisinin kurucu incelemesi; kategorinin nasıl tanımlandığını gösteren kaynak."
+      },
+      {
+        "id": "tehrani-2023-cultural-transmission-folk-narratives",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J."
+        ],
+        "year": 2023,
+        "title": "The Cultural Transmission and Evolution of Folk Narratives",
+        "container": "The Oxford Handbook of Cultural Evolution",
+        "publisher": "Oxford University Press",
+        "doi": "10.1093/oxfordhb/9780198869252.013.39",
+        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
+      },
+      {
+        "id": "jorgensen-folklorists-campbell",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Why Folklorists Hate Joseph Campbell's Work",
         "authors": [
           "Jorgensen, Jeana"
         ],
+        "title": "Why Folklorists Hate Joseph Campbell's Work",
+        "institution": "Foxy Folklorist",
+        "publisher": "Patheos",
         "url": "https://www.patheos.com/blogs/foxyfolklorist/why-folklorists-hate-joseph-campbells-work/",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Kategori üretme mekanizması üzerine folklorcu eleştirisi."
-      },
-      {
-        "tier": "peer-reviewed",
-        "type": "article",
-        "title": "The Cultural Transmission and Evolution of Folk Narratives",
-        "url": "https://durham-repository.worktribe.com/OutputFile/1642267",
-        "language": "en",
-        "accessed": "2026-09-07"
+        "note": "Folklor disiplininden gelen eleştirinin erişilebilir özeti. Akademik yayın değil; hakemli dayanak Dundes ve Segal'dır."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "calinan-ates"
-    ]
+    "evidence": [
+      {
+        "id": "ayni-baslik-altinda",
+        "text": "Prometheus, Māui, Kuzgun ve Çakal genellikle aynı başlık altında toplanır.",
+        "citations": [
+          {
+            "source_ref": "radin-1956-trickster",
+            "locator": "Kategori tanımı",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "kategori-tanimlandi",
+        "text": "Kategori 19.-20. yüzyıl antropolojisinde tanımlandı ve sonra evrensel olarak 'bulundu'.",
+        "citations": [
+          {
+            "source_ref": "radin-1956-trickster",
+            "locator": "Kategorinin tarihçesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "vakalar-ayrisiyor",
+        "text": "Kategoriye alınan vakalar temel özelliklerde ayrışıyor: ceza, alınan şey, alanın türü.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Vaka karşılaştırması",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "sosyolojik-duzenlilik",
+        "text": "Kültür kahramanı figürünün yaygınlığı gerçek bir SOSYOLOJİK düzenlilik olabilir ve insan topluluklarının anlatı ihtiyaçları hakkında bir şey söyleyebilir.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Alternatif okuma",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kategori-isesiz-degil",
+        "text": "Bu kayıt kategorinin işe yaramaz olduğunu söylemez; 'yaygın olması ortak kökene kanıttır' çıkarımını reddeder. İkisi ayrı iddialardır.",
+        "citations": [
+          {
+            "source_ref": "jorgensen-folklorists-campbell",
+            "locator": "Kayıt düzeyi ayrımı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Radin 1956 künyelendi - kategorinin kurucu incelemesi artık claim-origin olarak bağlı."
+    }
   },
   {
+    "schema_version": 2,
     "id": "ulker-takvim-bagimsiz-icat",
     "claim": "Ülker'in mevsim takvimi olarak dünyanın dört bir yanında kullanılması, bağımsız icadın en güçlü vakalarından biridir.",
     "status": "established",
@@ -1749,44 +3095,148 @@
     "divergence_type": [
       "kategori-hatasi"
     ],
-    "evidence": [
-      "Hesiodos doğuşunda hasat, batışında sürüm önerir; denizciliğin güvenli mevsimi de buna bağlanır.",
-      "And Dağları'nda haziranda kümenin parlaklığına bakılarak patates ekim tarihi belirlenir.",
-      "Maori geleneğinde kümenin yeniden görünmesi (Matariki) yılbaşıdır.",
-      "Japonca adı Subaru 'bir araya gelmek'ten gelir ve kümenin görünüşünü tarif eder.",
-      "Kullanım ezici çoğunlukla mevsim ve tarım zamanlamasıdır - ortak kökene değil ORTAK SORUNA işaret eder."
-    ],
-    "counter_evidence": [
-      "Kullanım biçimlerindeki ayrıntılar (hangi eşik, hangi ürün, hangi tören) bölgesel olarak farklıdır ve bunların bir kısmı temasla yayılmış olabilir.",
-      "Anadolu geleneği bu kayıtta yüzeysel ele alınmıştır."
-    ],
     "open_questions": [
       "Ülker'in Türk halk takvimindeki yeri ayrıntılı incelenmedi; yerel kaynak erişimi kolay olduğu için ayrı bir çalışmayı hak ediyor."
     ],
+    "checked": "2026-09-12",
+    "used_in": [
+      "herkesin-saati"
+    ],
     "sources": [
       {
+        "id": "hesiodos-isler-ve-gunler-ulker",
+        "language": "grc",
+        "accessed": "2026-09-12",
         "tier": "primary",
         "type": "edition",
         "authors": [
           "Hesiodos"
         ],
-        "title": "İşler ve Günler (Ülker'in doğuşu ve batışına göre tarım takvimi)",
-        "language": "grc"
+        "title": "İşler ve Günler (Ülker'in doğuşu ve batışına göre tarım takvimi)"
       },
       {
+        "id": "ruggles-2005-ancient-astronomy",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ruggles, Clive"
+        ],
+        "year": 2005,
+        "title": "Ancient Astronomy: An Encyclopedia of Cosmologies and Myth",
+        "publisher": "ABC-CLIO",
+        "isbn": "9781851094776",
+        "note": "Arkeoastronomi başvuru eseri; Ülker'in takvim kullanımlarının karşılaştırmalı dökümü."
+      },
+      {
+        "id": "karadeniz-halk-takvimi",
+        "language": "tr",
+        "accessed": "2026-09-12",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Pleiades",
-        "container": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Pleiades",
-        "language": "en",
-        "accessed": "2026-09-07"
+        "title": "Halk Takvimi ve Meteorolojisi",
+        "institution": "T.C. Karadeniz Bölgesi kültür yayını",
+        "url": "https://karadeniz.gov.tr/halk-takvimi-ve-meteorolojisi-7/",
+        "note": "Anadolu halk takviminde Ülker'in yeri. Bu dosyadaki Türkçe kaynak, konunun kendisinden geliyor - Anadolu takvim geleneği."
       }
     ],
-    "checked": "2026-09-07",
-    "used_in": [
-      "herkesin-saati"
-    ]
+    "evidence": [
+      {
+        "id": "hesiodos-takvimi",
+        "text": "Hesiodos doğuşunda hasat, batışında sürüm önerir; denizciliğin güvenli mevsimi de buna bağlanır.",
+        "citations": [
+          {
+            "source_ref": "hesiodos-isler-ve-gunler-ulker",
+            "locator": "İşler ve Günler",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "and-daglari-patates",
+        "text": "And Dağları'nda haziranda kümenin parlaklığına bakılarak patates ekim tarihi belirlenir.",
+        "citations": [
+          {
+            "source_ref": "ruggles-2005-ancient-astronomy",
+            "locator": "And Dağları maddesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "matariki-yilbasi",
+        "text": "Maori geleneğinde kümenin yeniden görünmesi (Matariki) yılbaşıdır.",
+        "citations": [
+          {
+            "source_ref": "ruggles-2005-ancient-astronomy",
+            "locator": "Matariki maddesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "anadolu-halk-takvimi",
+        "text": "Anadolu halk takviminde de Ülker mevsim işareti olarak kullanılır.",
+        "citations": [
+          {
+            "source_ref": "karadeniz-halk-takvimi",
+            "locator": "Halk takvimi bölümü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ortak-sorun",
+        "text": "Kullanım ezici çoğunlukla mevsim ve tarım zamanlamasıdır - ortak kökene değil ORTAK SORUNA işaret eder.",
+        "citations": [
+          {
+            "source_ref": "ruggles-2005-ancient-astronomy",
+            "locator": "Karşılaştırmalı döküm",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "ayrintilar-farkli",
+        "text": "Kullanım biçimlerindeki ayrıntılar (hangi eşik, hangi ürün, hangi tören) bölgesel olarak farklıdır ve bunların bir kısmı temasla yayılmış olabilir.",
+        "citations": [
+          {
+            "source_ref": "ruggles-2005-ancient-astronomy",
+            "locator": "Bölgesel farklar",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "anadolu-yuzeysel",
+        "text": "Anadolu geleneği bu kayıtta yüzeysel ele alınmıştır; kullanılan Türkçe kaynak kurumsal bir kültür sayfasıdır, hakemli bir halkbilim çalışması değil.",
+        "citations": [
+          {
+            "source_ref": "karadeniz-halk-takvimi",
+            "locator": "Kaynak düzeyi sınırı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "subaru-kaynaksiz",
+        "text": "Japonca 'Subaru' etimolojisi bu kayıtta ayrı bir kaynağa bağlanmadı.",
+        "citations": [
+          {
+            "source_ref": "ruggles-2005-ancient-astronomy",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Ruggles 2005 künyelendi. Türkçe kaynağın hakemli olmadığı açıkça yazıldı - konu Anadolu takvimi olduğu için kaynak doğal, ama düzeyi işaretlenmeli."
+    }
   },
   {
     "schema_version": 2,
@@ -1936,6 +3386,7 @@
     }
   },
   {
+    "schema_version": 2,
     "id": "yedi-kiz-kardes-derin-koken",
     "claim": "Ülker'in 'yedi kız kardeş, biri kayıp' anlatısı, insanların Afrika'dan yayılmasından önceye, yaklaşık yüz bin yıl öncesine dayanır.",
     "status": "minority",
@@ -1986,54 +3437,165 @@
       "medya-abartisi",
       "provenans-yoklugu"
     ],
-    "evidence": [
-      "Çıplak gözle çoğu insan altı yıldız seçer ama pek çok gelenek kümeyi yedi olarak sayar - ayrıntı gökyüzü tarafından dayatılmıyor.",
-      "Pek çok gelenekte anlatı 'yedi kız kardeş' biçimindedir ve sık sık birinin kayıp ya da saklanmış olduğu ayrıntısını taşır.",
-      "Pleione ve Atlas'ın öz hareketi hesaplanabilir; geçmişte açısal ayrımları daha genişti."
-    ],
-    "counter_evidence": [
-      "Yüz bin yıllık anlatı kararlılığı için bir MEKANİZMA sunulmuyor; bu, alanın denediği en uzun zaman ölçeğidir ve mit filogenetiği henüz kalibre edilmedi (bkz. mit-filogenetigi-kalibre-degil).",
-      "'Yedi' bağımsız olarak yüklü bir sayıdır: gezegen sayısı, hafta günü, tekrarlayan anlatı kalıpları. Bir gelenek yedi sayıyorsa sebep gökyüzü değil sayının kendisi olabilir.",
-      "Görülen yıldız sayısı sabit değildir; göz keskinliğine, gökyüzü karanlığına ve havaya göre değişir - bazı insanlar gerçekten yedi ve daha fazlasını seçer.",
-      "'Çoğu kültür yedi diyor' ifadesi sayılmamıştır; hangi gelenekler, hangi derlemelerden ve sömürge dönemi teması elenerek mi - bunlar gösterilmemiştir.",
-      "Öneri astronomlardan gelmektedir, folklorculardan değil."
-    ],
     "open_questions": [
       "Kaç gelenek gerçekten 'yedi' diyor? Sayılmadı.",
       "Yayımlanmış reddiye var mı? Aramamızda bulunamadı - bu bir onay değildir."
     ],
+    "checked": "2026-09-12",
+    "volatile": true,
+    "used_in": [
+      "herkesin-saati"
+    ],
     "sources": [
       {
+        "id": "norris-2021-seven-sisters",
+        "language": "en",
+        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
-        "type": "article",
+        "type": "chapter",
         "authors": [
           "Norris, Ray P.",
           "Norris, Barnaby R. M."
         ],
         "year": 2021,
-        "title": "Why are there Seven Sisters?",
-        "url": "https://arxiv.org/abs/2101.09170",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "İncelenen öneri; kanıt olarak değil, değerlendirilen tez olarak kaydedildi."
+        "title": "Why Are There Seven Sisters?",
+        "container": "Historical & Cultural Astronomy",
+        "publisher": "Springer",
+        "doi": "10.1007/978-3-030-64606-6_11",
+        "note": "Önerinin kendisi. Bu kayıtta doğrulayıcı değil, iddianın kaynağı olarak kullanılıyor."
       },
       {
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Pleiades",
-        "container": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Pleiades",
+        "id": "ruggles-2005-ancient-astronomy",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "book",
+        "authors": [
+          "Ruggles, Clive"
+        ],
+        "year": 2005,
+        "title": "Ancient Astronomy: An Encyclopedia of Cosmologies and Myth",
+        "publisher": "ABC-CLIO",
+        "isbn": "9781851094776",
+        "note": "Arkeoastronomi başvuru eseri; Ülker'in takvim kullanımlarının karşılaştırmalı dökümü."
+      },
+      {
+        "id": "tehrani-dhuy-2016-phylogenetics-folklore",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J.",
+          "d'Huy, Julien"
+        ],
+        "year": 2016,
+        "title": "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
+        "container": "Understanding Complex Systems",
+        "publisher": "Springer",
+        "doi": "10.1007/978-3-319-39445-9_6",
+        "note": "Yöntemin kendi sunumu. Bu dosyada hem yöntemin tarifi hem de sınırlarının kaynağı olarak kullanılıyor."
       }
     ],
-    "checked": "2026-09-07",
-    "volatile": true,
-    "used_in": [
-      "herkesin-saati"
-    ]
+    "evidence": [
+      {
+        "id": "alti-mi-yedi-mi",
+        "text": "Çıplak gözle çoğu insan altı yıldız seçer ama pek çok gelenek kümeyi yedi olarak sayar - ayrıntı gökyüzü tarafından dayatılmıyor.",
+        "citations": [
+          {
+            "source_ref": "norris-2021-seven-sisters",
+            "locator": "Gözlem argümanı",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "kayip-kiz-kardes",
+        "text": "Pek çok gelenekte anlatı 'yedi kız kardeş' biçimindedir ve sık sık birinin kayıp ya da saklanmış olduğu ayrıntısını taşır.",
+        "citations": [
+          {
+            "source_ref": "norris-2021-seven-sisters",
+            "locator": "Motif dökümü",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "oz-hareket",
+        "text": "Pleione ve Atlas'ın öz hareketi hesaplanabilir; geçmişte açısal ayrımları daha genişti.",
+        "citations": [
+          {
+            "source_ref": "norris-2021-seven-sisters",
+            "locator": "Astrometrik hesap",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "mekanizma-yok",
+        "text": "Yüz bin yıllık anlatı kararlılığı için bir MEKANİZMA sunulmuyor; bu, alanın denediği en uzun zaman ölçeğidir ve mit filogenetiği henüz kalibre edilmedi.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Zaman ölçeği sorunu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yedi-yuklu-sayi",
+        "text": "'Yedi' bağımsız olarak yüklü bir sayıdır: gezegen sayısı, hafta günü, tekrarlayan anlatı kalıpları. Bir gelenek yedi sayıyorsa sebep gökyüzü değil sayının kendisi olabilir.",
+        "citations": [
+          {
+            "source_ref": "ruggles-2005-ancient-astronomy",
+            "locator": "Sayı sembolizmi",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yildiz-sayisi-degisken",
+        "text": "Görülen yıldız sayısı sabit değildir; göz keskinliğine, gökyüzü karanlığına ve havaya göre değişir.",
+        "citations": [
+          {
+            "source_ref": "ruggles-2005-ancient-astronomy",
+            "locator": "Gözlem koşulları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sayilmadi",
+        "text": "'Çoğu kültür yedi diyor' ifadesi sayılmamıştır; hangi gelenekler, hangi derlemelerden ve sömürge dönemi teması elenerek mi - bunlar gösterilmemiştir.",
+        "citations": [
+          {
+            "source_ref": "norris-2021-seven-sisters",
+            "locator": "Örneklem",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "astronomlardan-geliyor",
+        "text": "Öneri astronomlardan gelmektedir, folklorculardan değil.",
+        "citations": [
+          {
+            "source_ref": "norris-2021-seven-sisters",
+            "locator": "Yazarların alanı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Norris & Norris 2021 DOI ile künyelendi ve claim-origin olarak işaretlendi. Önceki sürümde arXiv adresi vardı; yayımlanmış bölüm künyesi eklendi."
+    }
   },
   {
+    "schema_version": 2,
     "id": "zorunlu-keyfi-ekseni",
     "claim": "Bir mitolojik benzerliğin bilgi değeri, yaygınlığıyla değil, ayrıntının ne kadar keyfî olduğuyla belirlenir.",
     "status": "established",
@@ -2068,42 +3630,112 @@
       "kategori-hatasi",
       "medya-abartisi"
     ],
-    "evidence": [
-      "Zorunlu uçtaki örnekler: fırtına tanrısının yılanı öldürmesi, ateşin başkasından alınması, Ülker'in takvim olarak kullanılması. Üçü de yaygın, üçü de bilgilendirici değil.",
-      "Keyfî uçtaki örnekler: Büyük Ayı'nın avlanan hayvan olması, Ülker'in 'yedi kız kardeş, biri kayıp' anlatısı. İkisi de dağınık, ikisi de açıklanmayı hak ediyor.",
-      "Ve ikisi de HENÜZ ÇÖZÜLMEDİ - çünkü zor taraf orası.",
-      "Aynı nesne (Ülker) ekseni iki ucundan birden gösteriyor: kullanımı zorunlu, sayımı keyfî."
-    ],
-    "counter_evidence": [
-      "'Keyfî' ölçütü niceliksel değildir; neyin keyfî sayılacağı yorumcuya bağlıdır ve bu, ölçütün en zayıf noktasıdır.",
-      "Zorunlu-keyfî ayrımı süreklidir, ikili değildir; pek çok motif arada kalır."
-    ],
     "open_questions": [
       "'Keyfîlik' niceliksel olarak tanımlanabilir mi? Tanımlanabilirse yöntem ciddi biçimde güçlenir."
     ],
-    "sources": [
-      {
-        "tier": "peer-reviewed",
-        "type": "chapter",
-        "title": "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
-        "url": "https://link.springer.com/content/pdf/10.1007/978-3-319-39445-9_6.pdf",
-        "language": "en",
-        "accessed": "2026-09-07"
-      },
-      {
-        "tier": "peer-reviewed",
-        "type": "article",
-        "title": "The Cultural Transmission and Evolution of Folk Narratives",
-        "url": "https://durham-repository.worktribe.com/OutputFile/1642267",
-        "language": "en",
-        "accessed": "2026-09-07"
-      }
-    ],
-    "checked": "2026-09-07",
+    "checked": "2026-09-12",
     "used_in": [
       "calinan-ates",
       "herkesin-saati"
-    ]
+    ],
+    "sources": [
+      {
+        "id": "tehrani-dhuy-2016-phylogenetics-folklore",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J.",
+          "d'Huy, Julien"
+        ],
+        "year": 2016,
+        "title": "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
+        "container": "Understanding Complex Systems",
+        "publisher": "Springer",
+        "doi": "10.1007/978-3-319-39445-9_6",
+        "note": "Yöntemin kendi sunumu. Bu dosyada hem yöntemin tarifi hem de sınırlarının kaynağı olarak kullanılıyor."
+      },
+      {
+        "id": "tehrani-2023-cultural-transmission-folk-narratives",
+        "language": "en",
+        "accessed": "2026-09-12",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Tehrani, Jamshid J."
+        ],
+        "year": 2023,
+        "title": "The Cultural Transmission and Evolution of Folk Narratives",
+        "container": "The Oxford Handbook of Cultural Evolution",
+        "publisher": "Oxford University Press",
+        "doi": "10.1093/oxfordhb/9780198869252.013.39",
+        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "zorunlu-uc",
+        "text": "Zorunlu uçtaki örnekler: fırtına tanrısının yılanı öldürmesi, ateşin başkasından alınması, Ülker'in takvim olarak kullanılması. Üçü de yaygın, üçü de bilgilendirici değil.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Motif bilgi değeri",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "keyfi-uc",
+        "text": "Keyfî uçtaki örnekler: Büyük Ayı'nın avlanan hayvan olması, Ülker'in 'yedi kız kardeş, biri kayıp' anlatısı. İkisi de dağınık, ikisi de açıklanmayı hak ediyor.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Keyfî ayrıntı ölçütü",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "ulker-iki-uc",
+        "text": "Aynı nesne (Ülker) ekseni iki ucundan birden gösteriyor: kullanımı zorunlu, sayımı keyfî.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Ölçüt uygulaması",
+            "support_type": "inference"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "keyfi-nicel-degil",
+        "text": "'Keyfî' ölçütü niceliksel değildir; neyin keyfî sayılacağı yorumcuya bağlıdır ve bu, ölçütün en zayıf noktasıdır.",
+        "citations": [
+          {
+            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
+            "locator": "Ölçüt tartışması",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "formulasyon-projenin",
+        "text": "Ekseni bu biçimde formüle eden ayrı bir yayın bu kayıtta künyelenmedi; formülasyon bu projenin kendi derlemesidir.",
+        "citations": [
+          {
+            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Eksenin formülasyonunun bu projeye ait olduğu açıkça yazıldı - kayıt onu literatürden alınmış gibi sunuyordu."
+    }
   },
   {
     "schema_version": 2,
