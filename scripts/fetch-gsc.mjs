@@ -109,11 +109,28 @@ if (basarisiz.length) {
 
 for (const k of Object.values(sonuc)) k.olculdu = olculdu;
 
+// BAŞARISIZ KOŞU ESKİ ÖLÇÜMÜ SİLMEMELİ. İlk sürüm yalnızca bu koşunun
+// sonucunu yazıyordu; klipper erişilemediğinde (2026-09-11'de oldu) bütün
+// yığınlar düştü ve 39 URL'lik anlık görüntü BOŞ veriyle ezildi. Ölçüm
+// yapılamaması, önceki ölçümü geçersiz kılmaz - o yüzden eski kayıt
+// korunuyor ve üstüne yalnızca YENİ ölçümler yazılıyor.
+let onceki = {};
+try { onceki = JSON.parse(readFileSync(join(ROOT, 'data', 'gsc-index.json'), 'utf8')).urls ?? {}; } catch { /* ilk üretim */ }
+
+if (!Object.keys(sonuc).length) {
+  console.error('\nHİÇBİR ÖLÇÜM ALINAMADI - anlık görüntü DEĞİŞTİRİLMEDİ.');
+  console.error('Önceki kayıt korunuyor; "ölçemedim" ile "ölçtüm, sonuç boş" aynı şey değildir.');
+  process.exit(1);
+}
+
+const birlesik = { ...onceki, ...sonuc };
 const govde = {
   property: PROPERTY,
   olculdu,
-  not: 'URL Inspection cevabı. Salt okunur sorgu; anlık görüntüdür, canlı veri değil.',
-  urls: Object.fromEntries(Object.keys(sonuc).sort().map(k => [k, sonuc[k]])),
+  not:
+    'URL Inspection cevabı. Salt okunur sorgu; anlık görüntüdür, canlı veri değil. ' +
+    'Her kaydın kendi olculdu alanı vardır: bir koşuda ölçülemeyen URL eski ölçümüyle kalır.',
+  urls: Object.fromEntries(Object.keys(birlesik).sort().map(k => [k, birlesik[k]])),
 };
 await writeFile(path.join(ROOT, 'data', 'gsc-index.json'), `${JSON.stringify(govde, null, 2)}\n`, 'utf8');
 
