@@ -145,7 +145,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "‘İlk şehir’ bir ölçüm değil, bir SIRALAMADIR - ve sıralama hangi tanımı kullandığınıza göre değişir. Ölçek mi, anıtsal mimari mi, yazı mı, idari uzmanlaşma mı? Uruk bu ölçütlerin çoğunda güçlüdür ama Tell Brak daha erken ve eşzamanlı bir kentsel odaktır. Kaydın söylediği şey ‘Uruk büyük ve karmaşık bir kenttir’; söylemediği şey ‘bu yüzden birincidir’. Popüler anlatı ikisini tek cümlede birleştiriyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -267,7 +271,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Soru yanlış kurulmuş: ‘ilk şehir hangisi’ diye sormak, şehir olmanın keskin bir eşiği varmış gibi davranmak demek. Oysa eşiği araştırmacı seçiyor. Tell Brak’ta geç 5. ve erken 4. binyılda 130 hektarlık kentsel gelişim var; Uruk’un üstünlüğü büyüklükte değil, YAZIYI VE BÜROKRASİYİ aynı düğümde birleştirmesinde. Bu gerçek bir fark ama ‘önce/sonra’ değil, ‘farklı bileşim’ demek.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -379,7 +387,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Verilen sayılar sayım değil MODEL ÇIKTISIDIR: alan × yapı yoğunluğu × hane büyüklüğü × boş alan oranı. Dört varsayımın her biri değiştiğinde sonuç iki katına çıkabilir ya da yarıya inebilir. ‘40 bin’ ile ‘80 bin’ arasındaki fark yeni bir buluntudan değil, farklı varsayım setlerinden geliyor. Popüler anlatı model çıktısını ölçüm gibi aktarıyor - ve genellikle tek bir sayı seçip aralığı gizliyor.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "medya-abartisi"
+    ]
   },
   {
     "schema_version": 2,
@@ -512,7 +525,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Bugünkü manzara geçmişin manzarası değil. Bölge bugün kurak; ama jeoarkeolojik çekirdekler erken Holosen’den itibaren tatlı su etkisini gösteriyor ve insan kanalları doğal akarsu kollarının ÜZERİNE bindirilmiş. ‘Çölün ortasında mucize’ anlatısı, bugünkü iklimi geçmişe geri yansıtıyor. Ama ters yöne de düşmemek gerekiyor: elverişli su kendiliğinden kent üretmez - bakım, emek ve koordinasyon yine gerekir.",
+    "divergence_type": [
+      "guncellenmemis",
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -634,7 +652,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Yapıların adları KAZI SONRASI verilmiştir: ‘tapınak’, ‘saray’, ‘idare binası’ nitelemeleri çoğu kez sonraki dönemlerin kült bilgisinden ve mimari benzetmeden türetilir, çağdaş bir yazıttan değil. Yani elimizde kesin olan şey terası, salonu, avlusu ve nişli cephesi belgelenmiş anıtsal yapılardır; onların NE İÇİN kullanıldığı çıkarımdır. Adın kesinliği, işlevin kesinliği sanılıyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -746,7 +768,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "‘İlk ziggurat’ nitelemesi yine tanıma bağlı: yapı yükseltilmiş bir teras üzerinde duruyor ama sonraki tam gelişmiş, basamaklı zigguratlardan farklı. Dahası bugün gördüğümüz üst yapı KISMİ KALINTILARA dayanan bir rekonstrüksiyon - yani çizimlerdeki kesinlik, kalıntılardaki kesinlik değil. Popüler anlatı hem sıralamayı hem de rekonstrüksiyonu olgu gibi aktarıyor.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "medya-abartisi"
+    ]
   },
   {
     "schema_version": 2,
@@ -889,7 +916,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Yazı bir ANDA değil, bir DİZİDE ortaya çıktı: sayaçlar, sayısal tabletler, mühürleme ve işaret standartlaşması. ‘İcat’ kelimesi bu kademeli süreci tek bir sahneye indiriyor. Üstelik en erken işaretlerin hangi konuşma dilini ne ölçüde kodladığı her zaman belirlenemez - yani elimizdeki şey ‘yazılı Sümerce’ değil, sayı ve mal kaydıdır. Uruk’un yaptığı, yazıyı icat etmek değil, bu sistemi büyük ölçekte KULLANIR hale getirmekti.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "guncellenmemis"
+    ]
   },
   {
     "schema_version": 2,
@@ -1026,7 +1058,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Elimize kalan kayıt türü, geçmişin kendisi sanılıyor. Arkaik tabletler idari ve listesel kayıtlardır; Gilgameş anlatılarının bilinen nüshaları çok daha geçtir. Bu, 4. binyılda anlatı olmadığını göstermez - sözlü anlatı pekâlâ daha eski olabilir. Gösterdiği şey şu: KORUNMUŞ 4. binyıl destan tableti YOKTUR. ‘Yazılmadı’ ile ‘yazıldıysa da kalmadı’ ayrı cümlelerdir ve popüler anlatı ikisini de atlayıp doğrudan ‘Uruk IV’te yazıldı’ diyor.",
+    "divergence_type": [
+      "hayatta-kalma-yanliligi",
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -1148,7 +1185,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Bir KÖKEN ANLATISI, tarih kaydı yerine konuyor. Enmerkar ve Aratta metninin korunmuş tanıkları Eski Babil dönemindendir - yani anlattığı olaydan yüzlerce yıl sonra. Ve yazının arkeolojik gelişimi anlatıdaki tek seferlik icattan hem daha eski hem daha kademelidir. Metnin değeri yalancı olmasında değil, NE GÖSTERDİĞİNDE: Mezopotamyalılar yazıyı Uruk’un siyasal ve ticari gücüyle ilişkilendiriyordu. Bu bir kültürel gerçektir, bir icat kaydı değil.",
+    "divergence_type": [
+      "eski-ceviri",
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -1283,7 +1325,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "ARŞİVİN TÜRÜ, EKONOMİNİN TAMAMI SANILIYOR. Elimizdeki tabletler kurumsaldır çünkü yazan ve saklayan kurumdu; hane üretimi kayıt tutmaz. Bu yüzden ‘bütün üretim tapınak tarafından yönetiliyordu’ sonucu, kaynağın kendi seçiciliğinden doğuyor. Yakın dönem araştırmalar hane üretiminin ve yerel örgütlenmenin de önemli olduğunu gösteriyor. Kurumların belirleyici olması ayrı, her şeyin kurum olması ayrı.",
+    "divergence_type": [
+      "hayatta-kalma-yanliligi",
+      "guncellenmemis"
+    ]
   },
   {
     "schema_version": 2,
@@ -1395,7 +1442,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Tek bir işlev, çok sayıda bağlama genelleniyor. Kaseler gerçekten seri üretilmiş ve çok yaygın; ama boyutları DEĞİŞKEN ve organik kalıntılar tahıl dışında et ve olası süt ürünlerini de gösteriyor. ‘Her kase bir günlük tahıl payı’ cümlesi, standart bir ölçü birimi varsayıyor - oysa değişken hacim tam da bunu zorlaştırıyor. Bazı bağlamlarda porsiyonlama için kullanılmış olabilirler; ‘bazı’ ile ‘hepsi’ arasındaki fark burada bütün iddiayı taşıyor.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "guncellenmemis"
+    ]
   },
   {
     "schema_version": 2,
@@ -1537,7 +1589,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "MADDİ BENZERLİK, SİYASİ EGEMENLİK SAYILIYOR. Uruk tarzı çanak çömlek ve mimari geniş bir coğrafyada görünüyor - ama bazı yerlerde planlı güney kolonileri, başka yerlerde yerel geleneğin sürdüğü ve Uruk unsurlarının SEÇİLEREK uyarlandığı bir tablo var. İkinci durum merkezden yönetimle bağdaşmaz. Kanıtın gösterdiği şey bir imparatorluk değil, mal, insan, teknik ve sembolün dolaştığı geniş bir ağ.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "medya-abartisi"
+    ]
   },
   {
     "schema_version": 2,
@@ -1663,7 +1720,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Önceki kaydın tersi hata: ‘imparatorluk yoktu’ demek ‘koloni de yoktu’ demek değil. Habuba Kabira gibi planlı güney tarzı yerleşimler koloni yorumunu gerçekten destekler. Ama Tell Brak ve başka alanlarda yerel malzeme kültürüyle YAN YANA varoluş görülür. Yani tek bir etiket bütün ağa yetmiyor: bazı düğümler koloni, bazıları ticari enklav, bazıları yalnızca etkilenmiş yerel yerleşim.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -1774,7 +1835,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Bağın kendisi sağlam, ama KAPSAMI abartılıyor. Kamış demeti simgeleri, mühürler, sunu sahneleri ve sonraki kült geleneği İnanna bağını destekliyor. Buna karşılık tek tek erken yapıların ve adsız figürlerin kimliği çoğu kez yazıtla belirtilmez. ‘Eanna’daki her şey İnanna’ cümlesi, doğrulanmış bir ilişkiyi doğrulanmamış bir envantere genişletiyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -1875,7 +1940,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Bir SAHNE, bir OLAY KAYDI gibi okunuyor. Vazoda su, bitki, hayvan ve sunu taşıyan insanlar, üstte İnanna simgeleriyle ilişkili bir sahne var - bu bir sunu/ritüel düzenidir. Ama figürlerin adları ve ritüelin adı YAZILI DEĞİLDİR. ‘Kutsal evlilik’ okuması olasıdır ve savunulabilir; ‘belirli bir kral ile İnanna’nın evliliğini fotoğraf gibi kaydeder’ cümlesi ise ikonografiden kimlik ve olay üretiyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -1976,7 +2045,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Kimliği veren yazıt KORUNMAMIŞTIR - iddianın tamamı buna dayanıyor. Eanna çevresinde bulunması, anıtsal ölçeği ve kadın ilahi imgesi yorumu İnanna kimliğini güçlü bir aday yapıyor; ama güçlü aday ile yazılı kesinlik aynı şey değil. Popüler anlatı ‘kesin olarak yazılıdır’ diyerek, tam da elimizde olmayan şeyi elimizdeymiş gibi gösteriyor.",
+    "divergence_type": [
+      "provenans-yoklugu",
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -2067,7 +2141,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "‘Rahip-kral’ MODERN BİR TANIMLAMADIR, antik bir unvan değil. Mühürlerde baş bantlı ve ağ desenli etekli bir erkek tipi tekrar tekrar görünüyor - ritüel, tarım, sürü ve İnanna simgeleriyle birlikte. Ama figürün adı ve tam unvanı erken sahnelerde yazılı değil; TEK BİR KİŞİ mi yoksa bir MAKAM TİPİ mi olduğu bile açık değil. Modern etiketin kesinliği, antik kaydın kesinliği sanılıyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -2213,7 +2291,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Edebî bir sahne, anayasal bir belge yerine konuyor. Gilgameş ve Aga anlatısında yaşlılar ve savaşabilir erkekler topluluğu görünüyor - ve bu, kolektif danışma fikrinin Mezopotamya siyasal hayalinde yer aldığını gerçekten gösteriyor. Ama metnin kendisinde kral, istemediği görüşü bırakıp desteklediği gruba gidiyor; eşit yurttaşlık, seçim ve hesap verme yok. Üstelik korunan nüshalar olaylardan yüzyıllar sonra. ‘Danışma vardı’ ile ‘demokrasi icat edildi’ arasındaki mesafeyi popüler anlatı tek adımda atlıyor.",
+    "divergence_type": [
+      "ideolojik-secim",
+      "eski-ceviri"
+    ]
   },
   {
     "schema_version": 2,
@@ -2351,7 +2434,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Varlık sorusu ile biyografi sorusu karıştırılıyor. Gilgameş’in tarihsel bir kral olması mümkündür ve bu, alanda dışlanan bir ihtimal değil. Ama mevcut kanıt onun BİYOGRAFİSİNİ - ne yaptığını, ne zaman yaşadığını, hangi yapıları diktiğini - doğrulamaya yetmiyor. Kaydın durumu bu yüzden ‘unknown’: ‘yaşamadı’ demiyor, ‘anlatılanları doğrulayamıyoruz’ diyor.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -2457,7 +2544,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Sayı bir KRONOLOJİ değil, bir TÜRÜN parçası. Sümer Krallar Listesi olağanüstü uzun saltanatları ve krallığın gökten inişi gibi teolojik şemaları birlikte taşır; 126 yıl bu şemanın içinde anlamlıdır, takvim içinde değil. Listeyi tarih cetveli gibi okumak, türünü yanlış anlamak demek. Bu, listeyi değersiz yapmaz - siyasal hafıza ve hanedan sıralaması için değerlidir, sadece başka bir şey için.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -2584,7 +2675,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Yapı gerçek, ATIF doğrulanmamış. Jeofizik ve kazı verileri geniş bir sur devresini gösteriyor ve Mezopotamya edebiyatı suru Gilgameş’le özdeşleştiriyor. Ama surun evreleri ve onarımları var, ve kişisel atfı doğrulayan ÇAĞDAŞ YAPI YAZITI yok. ‘Kazılar Gilgameş yaptı yazıtını buldu’ cümlesi, var olmayan bir belgeyi var sayıyor - edebî özdeşleştirmeyi epigrafik kanıta terfi ettiriyor.",
+    "divergence_type": [
+      "medya-abartisi",
+      "eski-ceviri"
+    ]
   },
   {
     "schema_version": 2,
@@ -2675,7 +2771,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Araştırmanın KENDİ ÇEKİNCESİ duyuruda kayboluyor. 2003 jeofizik çalışması bir yapı anomalisi saptadı ve özeti, yapının mezar olarak yorumlanabileceğini ama Gilgameş bağlantısının SPEKÜLATİF kaldığını açıkça söylüyor. Popüler aktarımda ‘yorumlanabilir’ ve ‘spekülatif’ düşüyor, ‘kesin keşif’ kalıyor. Kalıp tanıdık: ölçüm bir anomali bildirir, haber onu bir nesneye dönüştürür.",
+    "divergence_type": [
+      "medya-abartisi"
+    ]
   },
   {
     "schema_version": 2,
@@ -2776,7 +2876,11 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Edebî bir coğrafya, haritaya oturtulmaya çalışılıyor. Metin Aratta’yı dağlık, değerli taş ve zanaatla ilişkili bir rakip olarak anlatıyor - bu ipuçları İran’a da, Anadolu’ya da, daha doğuya da uyabilir. Ve ADINI TAŞIYAN bağımsız bir buluntu yok. Birden çok bölgeye uyan bir tarif, hiçbirini kanıtlamaz; önerilerin çokluğu kesinliğin değil, belirsizliğin işareti.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -2867,7 +2971,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Eşleştirme sağlam, ÇIKARILAN SONUÇ değil. Ad biçimi ve coğrafi sıra Erech–Uruk özdeşliğini destekliyor ve bu yaygın akademik görüş. Ama bir adın doğru eşleşmesi, o adın geçtiği metni çağdaş tarih belgesine dönüştürmez: Nimrod anlatısı edebî-soybilimsel bir çerçevedir. ‘Kutsal Kitap Uruk’u doğruluyor’ cümlesi, bir kent adının tanınmasından bütün bir kuruluş anlatısının onayını üretiyor.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "ideolojik-secim"
+    ]
   },
   {
     "schema_version": 2,
@@ -2958,7 +3067,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "İki ayrı kent tek kente indiriliyor - ve bunu METNİN KENDİSİ yalanlıyor: Yaratılış listesinde Babel ve Erech AYRI adlar olarak geçer. Yani iddia, dayandığını söylediği kaynağa aykırı. Uruk’un anıtsal terasları sonraki ziggurat geleneğini anlamak için değerlidir; ama bu, onu Babil Kulesi yapmaz.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "eski-ceviri"
+    ]
   },
   {
     "schema_version": 2,
@@ -3059,7 +3173,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Edebî bir soybilim, kuruluş kaydı yerine konuyor. Nimrod İncil’deki soy listelerinin çerçevesinde görünür; Uruk’un oluşumu ise ondan binyıllar önceye uzanan arkeolojik evrelerle açıklanır. Çağdaş bir Mezopotamya kaydı Nimrod’u Uruk’un kurucusu olarak anmaz. Erech adının Uruk’u işaret etmesi, kentin sonraki gelenekteki güçlü hafızasını gösterir - kuruluşunu değil.",
+    "divergence_type": [
+      "ideolojik-secim",
+      "eski-ceviri"
+    ]
   },
   {
     "schema_version": 2,
@@ -3196,7 +3315,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "İki ayrı hata üst üste biniyor. Birincisi: kentin oluşumu arkeolojik bir DİZİDE izlenebiliyor - yapı evreleri, kerpiç üretimi, idari araçlar, mühürler, yazı sisteminin kademeli gelişimi. Yani açıklanamayan bir sıçrama yok. İkincisi: ‘Anunnaki’ gerçek bir Mezopotamya terimidir ve tanrılar topluluğunu karşılar; modern dünya dışı okuma metnin anlamı değil, ona sonradan giydirilen bir çerçevedir. Gerçek bir kelimenin anlamını değiştirmek, uydurmaktan daha ikna edici görünür - iddianın gücü buradan geliyor.",
+    "divergence_type": [
+      "ideolojik-secim",
+      "medya-abartisi"
+    ]
   },
   {
     "schema_version": 2,
@@ -3324,7 +3448,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "DÖNÜŞÜM, YOK OLUŞ sanılıyor. Geç 4. binyıl ağlarında gerçek bir daralma ve bölgesel yeniden yapılanma var - bu inkâr edilmiyor. Ama kent erken hanedanlık, Babil, Seleukos ve Helenistik dönemlerde yaşamayı sürdürdü ve çivi yazılı bilimsel ve kült metinleri çok daha geç tarihlere kadar Uruk’ta üretildi. ‘Bir gecede yok oldu’ anlatısı, bir düzenin değişmesini bir yerleşimin bitmesiyle karıştırıyor.",
+    "divergence_type": [
+      "medya-abartisi",
+      "kategori-hatasi"
+    ]
   },
   {
     "schema_version": 2,
@@ -3425,7 +3554,12 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Kent, kendisiyle ilgili EN İLGİNÇ ANIN içine hapsediliyor. Uruk popüler anlatıda yazının doğduğu ve Gilgameş’in yaşadığı varsayılan çağa ait bir tarihöncesi yerleşim olarak duruyor. Oysa Helenistik dönemde bile Anu ve İştar/Nanaya tapınak çevreleri ve çivi yazısı bilginliği sürüyordu - yani kent, ‘ünlü’ olduğu dönemden sonra binyıllar boyunca yaşadı. Büyüklüğü ve bölgesel ağırlığı her dönemde aynı değildi; ama terk edilmedi.",
+    "divergence_type": [
+      "guncellenmemis",
+      "medya-abartisi"
+    ]
   },
   {
     "schema_version": 2,
@@ -3516,6 +3650,10 @@
     "review": {
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
-    }
+    },
+    "divergence": "Ses benzerliği, ETİMOLOJİ sanılıyor. ‘Uruk’ ile ‘Irak’ kulağa yakın geliyor ve coğrafi süreklilik bu izlenimi güçlendiriyor - ama etimoloji kulakla değil, kesintisiz bir dil zinciriyle kurulur ve o zincir gösterilmiş değil. Arapça ve Orta Farsça kökenli başka açıklamalar da var. Bu, Uruk türevi olma ihtimalini ortadan kaldırmaz; ‘tartışmasız’ ifadesini ortadan kaldırır.",
+    "divergence_type": [
+      "kategori-hatasi"
+    ]
   }
 ]
