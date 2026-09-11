@@ -3035,6 +3035,12 @@
       "muhendislik",
       "arkeoloji"
     ],
+    "popular_claim": "Siq girişindeki baraj, Nabatilerin iki bin yıl önce yaptığı ve hâlâ çalışan sel kontrol yapısıdır.",
+    "divergence": "Nabati barajı gerçekten vardı ve temeli hâlâ yerinde. Ama ziyaretçinin gördüğü yapı 1963'teki ölümcül selden SONRA o temel üzerine yeniden inşa edildi. 'Hâlâ çalışıyor' ifadesi iki bin yıllık kesintisiz işleyiş çağrıştırıyor; gerçekte sistem bir noktada devre dışı kalmış, felaket yaşanmış ve modern mühendislikle yeniden kurulmuştur.",
+    "divergence_type": [
+      "turizm-kopyalamasi",
+      "hayatta-kalma-yanliligi"
+    ],
     "open_questions": [
       "1963 selindeki can kaybı sayısı kaynaklarda değişiyor; kesin rakam doğrulanmadı."
     ],
@@ -3506,6 +3512,12 @@
         "affiliation": "University of Brighton",
         "year": 2020
       }
+    ],
+    "popular_claim": "Stonehenge'in dev taşlarının nereden geldiği hâlâ bilinmiyor; bu anıtın çözülmemiş gizemlerinden biri.",
+    "divergence": "Büyük sarsenler için bu soru 2020'de kapandı: 52 taşın 50'si aynı jeokimyasal imzayı taşıyor ve kaynak, anıtın yalnızca ~25 km kuzeyindeki West Woods. Gizem anlatısı üç ayrı soruyu (sarsenler, mavitaşlar, Sunak Taşı) tek bir soruya indirip hepsini açık gösteriyor - oysa üçünün cevabı da farklı ve biri artık verilmiş durumda.",
+    "divergence_type": [
+      "guncellenmemis",
+      "kategori-hatasi"
     ],
     "open_questions": [
       "Kalan iki sarsenin kaynağı belirlenmedi."
@@ -5101,6 +5113,12 @@
         "affiliation": "İstanbul Üniversitesi",
         "year": 2025
       }
+    ],
+    "popular_claim": "Karahan Tepe'de 11.000 yıllık bir amfitiyatro bulundu.",
+    "divergence": "Yapı gerçek ve basamaklı düzeni belgeli. 'Amfitiyatro' ise bir BENZETMEDİR, tanımlama değil: terim Roma dünyasının gösteri mimarisine ait bir kategoriyi Neolitik bir yapıya taşıyor ve işlevi baştan varsaymış oluyor. Kazı henüz ayrıntılı yayın vermedi; yapının ne için kullanıldığı bilinmiyor.",
+    "divergence_type": [
+      "kategori-hatasi",
+      "medya-abartisi"
     ],
     "open_questions": [
       "Yapının işlevi nedir?",
