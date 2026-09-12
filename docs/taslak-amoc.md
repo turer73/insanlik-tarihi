@@ -131,27 +131,81 @@ gösteriyor. Yayın türü de kontrol edilmeli.
 
 ---
 
-## DOĞRULANMAYAN — kayda girmeden önce kaynağından okunmalı
+## Tam metin okundu — basın özeti iki yerde çürüdü
 
-Aşağıdakiler basın bülteni ve haber özetlerinden geldi, makalenin kendisinden değil:
+**2026-09-12 güncellemesi.** Aşağıdaki bölüm, bu taslağın ilk sürümünde
+"doğrulanmadı" diye işaretlenmişti. Üç makalenin tam metni okunduktan sonra
+bunların yalnız doğrulanmamış değil, bir kısmının **yanlış** olduğu görüldü.
 
-- **2,6 ± 0,7 Sv/on yıl** düşüş oranı (26°N, 2004-2023) ve 20 Sv → 15 Sv aralığı.
-  Xing ve ark. 2026'ya atfediliyor; makalenin tam metni okunmadı.
-- **+2 °C hızlı ısınma eşiği** — phys.org üzerinden aktarılan 2026 çalışması;
-  künyesi bulunmadı.
-- **Avrupa'da 10-15 °C soğuma** — tekrar tekrar aktarılıyor ama hangi senaryoya,
-  hangi modele ve hangi bölgeye ait olduğu belirtilmeden dolaşıyor.
+### "On yılda 2,6 Sv" tam AMOC'a ait değil
+
+Xing ve arkadaşlarının kendi rakamları, 26,5°N:
+
+| ölçülen | eğilim (Sv/yıl) |
+|---|---|
+| tam AMOC | 0,09 ± 0,08 |
+| batı sınırı katkısı | 0,21 ± 0,08 |
+| doğu sınırı katkısı | −0,16 ± 0,06 (ters yönde, **güçleniyor**) |
+
+Tam AMOC için belirsizlik neredeyse eğilim kadar. Basında dolaşan rakam batı
+sınırı bileşenine ait ve makale bu ölçünün eğilimin **büyüklüğünü aştığını**
+kendi cümlesiyle söylüyor. "20 Sv → 15 Sv" ikilisi makalede bulunamadı.
+
+Makale insan kaynaklı zorlamaya **hiç atıf yapmıyor.**
+
+### "Çökmez" sonucu bir tanıma dayanıyor
+
+Baker ve arkadaşları çöküşü **6 Sv altına inmek** diye tanımlıyor. Aynı
+modellerde AMOC %20-81 (ortalama %54) zayıflıyor. Bu tanım ilk basımda metinde
+**yoktu**; Mayıs 2025 yazar düzeltmesiyle eklendi.
+
+### Hâlâ doğrulanmayanlar
+
+- **+2 °C hızlı ısınma eşiği** — künyesi bulunamadı.
+- **Avrupa'da 10-15 °C soğuma** — senaryosuz ve bölgesiz dolaşıyor.
 - **%51 zayıflama (2100)** — kaynağı izlenmedi.
-- **Güney Okyanusu'nun karbon kaynağına dönüp +0,2 °C eklemesi** — phys.org 2026.
+- **Güney Okyanusu karbon geri beslemesi, +0,2 °C** — künyesi bulunamadı.
 
-Bunların hiçbiri kayda **rakam olarak** girmemeli; ya asıl makaleden alınmalı ya da
-"basında şu rakam dolaşıyor" biçiminde `claim-origin` olarak işaretlenmeli.
+Bunlar kayıtlara **girmedi.**
 
 ---
 
-## Önerilen bulgu kayıtları
+## Geçmişte oldu mu — evet, ama "durma" değil
 
-Dosya adı önerisi: `data/findings/amoc.json`
+| olay | ne bulundu | kaynak |
+|---|---|---|
+| Heinrich Stadial 1 | zayıflamış **ama süren** sirkülasyon | Bradtmiller ve ark. 2014, `10.1038/ncomms6817` |
+| Geç Genç Dryas | zayıflamış AMOC'un **sürdürülmesi** | You ve ark. 2026, `10.1126/sciadv.adv6220` |
+| Dansgaard-Oeschger | on yıllar ölçeğinde küresel yeniden düzenlenme | Fohlmeister ve ark. 2023, `10.1073/pnas.2302283120` |
+| Heinrich izi | Grönland izotopları olayın kendisini değil **izini** ölçüyor | He ve ark. 2021, `10.1126/sciadv.abh1007` |
+
+İki makalenin başlığı doğrudan "weakened but persistent" ve "sustaining the
+weakened AMOC" diyor. "Durdu" cümlesi vekil göstergelerin verdiğinden fazlasını
+iddia ediyor.
+
+## Buzul çağı nasıl geldi — kategori hatası
+
+Buzul çağlarının ritmini **yörünge zorlaması** sürüyor. Depoda bu zaten üç
+kayıtla duruyor: `felaket-milankovic-donguleri`,
+`felaket-orta-pleyistosen-gecisi`, `milankovic-100bin-yil-problemi`.
+
+AMOC olayları ise **zaten var olan** bir buzul durumunun içinde, on yıllar ile
+yüzyıllar arasında yaşanıyor. Dansgaard-Oeschger ve Heinrich olaylarının hepsi
+son buzul döneminin **içinde**. AMOC bir yükseltici ve yeniden dağıtıcıdır,
+buzullaşmanın tetikleyicisi değil.
+
+Genç Dryas'ın klasik anlatısı da modellemede tutmuyor. Condron & Winsor 2012'ye
+göre Agassiz Gölü'nün St. Lawrence güzergâhından boşalması AMOC'u **%15'ten az**
+zayıflatıyor, çünkü tatlı su derin su oluşum bölgelerinin ~3.000 km güneyine
+gidiyor. Mackenzie Vadisi güzergâhı ise **%30'dan fazla** zayıflatıyor. Yaygın
+anlatının güzergâhı, iddia ettiği etkiyi üretmiyor.
+
+---
+
+## Yazılan bulgu kayıtları
+
+`data/findings/amoc.json` — 9 kayıt, hepsi v2. Aşağıdaki liste
+ilk öneriydi; yazılırken üçü eklendi.
 
 1. `amoc-gulf-stream-kategori-hatasi` — *çürütülmüş* · `kategori-hatasi`
    Gulf Stream rüzgârla sürülür ve durmaz; tartışılan AMOC'un devrilme bileşenidir.
