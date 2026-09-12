@@ -366,6 +366,7 @@ ${pilot ? '  <link rel="stylesheet" href="../assets/evidence-dossier.css">' : ''
   <script type="application/ld+json">${articleJsonLd(article)}</script>
 </head>
 <body>
+  <a class="skip-link" href="#ka-anlati">İçeriğe geç</a>
 ${bodyFragment}
   <script src="../assets/visuals-scenes-1.js"></script>
   <script src="../assets/visuals-scenes-2.js"></script>

@@ -123,7 +123,7 @@ function citationHTML(citation, model, paragraphId) {
 
 function renderEvidenceList(model, field, title, idPrefix) {
   const items = evidenceItems(model.finding, field);
-  if (!items.length) return `<section class="ka-evidence-group ka-evidence-group-empty"><h4>${title}</h4><p>Kayıtlı ${title.toLocaleLowerCase("tr-TR")} yok.</p></section>`;
+  if (!items.length) return `<section class="ka-evidence-group ka-evidence-group-empty"><h3>${title}</h3><p>Kayıtlı ${title.toLocaleLowerCase("tr-TR")} yok.</p></section>`;
 
   const rows = items.map((item, itemIndex) => {
     const paragraphId = uniqueId(`${idPrefix}-${itemIndex + 1}`, model.usedIds);
@@ -137,17 +137,17 @@ function renderEvidenceList(model, field, title, idPrefix) {
     const note = item?.note ? `<p class="ka-evidence-note">${escapeHTML(item.note)}</p>` : "";
     return `<li id="${escapeHTML(paragraphId)}"><p>${escapeHTML(item?.text || "Kanıt metni belirtilmedi.")}</p>${citationMarkup}${note}</li>`;
   }).join("");
-  return `<section class="ka-evidence-group"><h4>${title}</h4><ol>${rows}</ol></section>`;
+  return `<section class="ka-evidence-group"><h3>${title}</h3><ol>${rows}</ol></section>`;
 }
 
 function renderQuestions(model) {
   const questions = Array.isArray(model.finding?.open_questions) ? model.finding.open_questions : [];
   if (!questions.length) return "";
-  return `<section class="ka-evidence-group"><h4>Açık sorular</h4><ul>${questions.map((question) => `<li>${escapeHTML(question)}</li>`).join("")}</ul></section>`;
+  return `<section class="ka-evidence-group"><h3>Açık sorular</h3><ul>${questions.map((question) => `<li>${escapeHTML(question)}</li>`).join("")}</ul></section>`;
 }
 
 function renderSources(model) {
-  if (!model.sourceModels.length) return `<section class="ka-sources"><h4>Kaynaklar</h4><p class="ka-metadata-missing">Bu bulgu için kaynak kaydı yok.</p></section>`;
+  if (!model.sourceModels.length) return `<section class="ka-sources"><h3>Kaynaklar</h3><p class="ka-metadata-missing">Bu bulgu için kaynak kaydı yok.</p></section>`;
   const entries = model.sourceModels.map(({ source, sourceIndex, sourceId, backLinks }) => {
     const title = escapeHTML(sourceTitle(source, sourceIndex + 1));
     const href = sourceURL(source);
@@ -164,7 +164,7 @@ function renderSources(model) {
       .join(" ");
     return `<li class="ka-source" id="${escapeHTML(sourceId)}"><span class="ka-source-title">${linkedTitle}</span>${parts.length ? `<span class="ka-source-meta">${parts.join(" · ")}${identifier}</span>` : identifier ? `<span class="ka-source-meta">${identifier.trim()}</span>` : ""}${note}${back ? `<p class="ka-source-backlinks">${back}</p>` : ""}</li>`;
   }).join("");
-  return `<section class="ka-sources"><h4>Kaynaklar</h4><ol>${entries}</ol></section>`;
+  return `<section class="ka-sources"><h3>Kaynaklar</h3><ol>${entries}</ol></section>`;
 }
 
 function renderFinding(model) {

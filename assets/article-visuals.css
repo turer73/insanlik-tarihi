@@ -1,3 +1,7 @@
+/* Klavye kullanicisi icin icerige atlama. styles-core.css yazi sayfalarinda
+   yuklenmedigi icin kural burada, kendi kendine yeterli degerlerle. */
+.skip-link{position:fixed;left:1rem;top:-5rem;z-index:999;padding:.8rem 1rem;border-radius:10px;background:var(--accent,#165f50);color:var(--surface,#fbf9f3);text-decoration:none;font-weight:800}
+.skip-link:focus{top:1rem}
 /* Kanıt Atlası — DALL·E editoryal makale görsel katmanı */
 .it-archive-back{
   position:fixed;left:clamp(.7rem,2vw,1.4rem);top:clamp(.7rem,2vw,1.2rem);z-index:80;

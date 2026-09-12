@@ -107,7 +107,7 @@
 .ka-finding-body p{max-width:72ch;line-height:1.6}
 
 .ka-evidence-group{margin:1rem 0 0;padding:0;border:0}
-.ka-evidence-group h4,.ka-sources h4{margin:0 0 .55rem;color:var(--ka-ink);font:650 1rem/1.25 var(--display,var(--serif,Georgia,serif))}
+.ka-evidence-group h3,.ka-sources h3{margin:0 0 .55rem;color:var(--ka-ink);font:650 1rem/1.25 var(--display,var(--serif,Georgia,serif))}
 .ka-evidence-group ol,.ka-evidence-group ul,.ka-sources ol{margin:0;padding-inline-start:1.25rem}
 .ka-evidence-group li{padding:.6rem .15rem;color:var(--ka-muted)}
 .ka-evidence-group li+li{border-top:1px solid color-mix(in srgb,var(--ka-line) 70%,transparent)}
