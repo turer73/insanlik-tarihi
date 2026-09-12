@@ -100,7 +100,10 @@
       "status": "draft",
       "notes": "Kurumsal duyuru ve IPCC bölümüne dayanıyor; özgün hakemli makale bağlanmadı."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -247,7 +250,10 @@
       "status": "draft",
       "notes": "Worthington ve Xing tam metinden okundu; IPCC bölüm metninden alıntılandı."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -426,7 +432,10 @@
       "status": "draft",
       "notes": "Xing ve ark. 2026 tam metni (PMC13060603) okundu; rakamlar oradan alındı."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -571,7 +580,10 @@
       "status": "draft",
       "notes": "Alıntılar bölüm metninden alındı, basın özetinden değil."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -758,7 +770,10 @@
       "status": "draft",
       "notes": "Baker 2025 tam metni (PMC11864975) ve yazar düzeltmesi (PMC12058520) okundu."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -1091,7 +1106,10 @@
       "status": "draft",
       "notes": "Worthington ve Baker tam metinden; diğerleri künye ve özet düzeyinde."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -1346,7 +1364,10 @@
       "status": "draft",
       "notes": "You, Fohlmeister ve He TAM METİNDEN okundu; Bradtmiller açık erişim olmadığı için özet düzeyinde kaldı."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -1500,7 +1521,10 @@
       "status": "draft",
       "notes": "Dosyadaki Milanković kayıtlarıyla bağ kuruldu; o kayıtlar bu iddiayı zaten taşıyor."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -1722,7 +1746,10 @@
       "status": "draft",
       "notes": "Condron & Winsor ve You ve ark. TAM METİNDEN okundu; rakamlar oradan."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   },
   {
     "schema_version": 2,
@@ -1903,6 +1930,9 @@
       "status": "draft",
       "notes": "Lee ve ark. 2024 TAM METİNDEN okundu (PMC11624277)."
     },
-    "checked": "2026-09-12"
+    "checked": "2026-09-12",
+    "used_in": [
+      "amoc"
+    ]
   }
 ]

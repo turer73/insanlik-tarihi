@@ -114,5 +114,9 @@
   "uruk": {
     "summary": "Bu dosya, Uruk hakkında dolaşan 'ilk şehir' ve 'ilk efsane' iddialarını tek tek kaynak zincirine bağlar: kentin ölçeği, nüfusu, yazının doğuşu, Gılgamış'ın tarihselliği, Enmerkar'ın 'yazıyı icat ettiği' anlatısı, Aratta, Erech ve modern sahte tarih iddiaları ayrı ayrı değerlendirilir.",
     "limit": "Kayıtlar arkeolojik yüzey araştırması, kazı ve geç dönem metin kopyalarına dayanır; nüfus ve alan rakamları model tahminidir. Erken metinlerin çoğu geç nüshalardan bilinir; bu yazı iddiaların mevcut kayıtla taşınıp taşınmadığını ölçer, kesin 'ilk'lik hükmü vermez."
+  },
+  "amoc": {
+    "summary": "Atlantik devrilme akıntısı hakkında hem çöküş uyarısı yapan hem düşüş bulmayan hakemli çalışmalar var ve ikisi de aynı veriye bakıyor. Bu dosya farkın nereden geldiğini ayırır: kesintisiz ölçüm yirmi iki yıllık, ayırt edilmesi gereken doğal salınım ise yaklaşık yetmiş yıllık. Basında dolaşan rakamların çoğu yanlış değil, yanlış büyüklüğe ait. Aşağıdaki kanıt dosyası bu yazıdaki iddiaları ve kaynak konumlarını tek tek incelemenizi sağlar.",
+    "limit": "Kaynakların biri açık erişim olmadığı için özet düzeyinde okundu ve ilgili satırlar böyle işaretlendi. Avrupa soğuması gibi senaryosuz dolaşan rakamlar dosyaya alınmadı. Kayıtların uzman incelemesi bekleniyor."
   }
 }

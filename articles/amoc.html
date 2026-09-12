@@ -1,0 +1,463 @@
+<title>Atlantik: Yirmi İki Yıllık Kayıt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Karla:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --bg:#E9E7E3; --surface:#F4F2EE; --surface-2:#DDD9D3;
+  --ink:#161816; --ink-2:#4A4E4B; --ink-3:#767A77;
+  --rule:#C5C2BC; --rule-soft:#D6D3CD;
+  --accent:#1F5E8C; --accent-ink:#16456A; --accent-soft:#D6E4EF;
+  --stone:#8C7B63; --stone-ink:#6F6150; --stone-soft:#EBE4D8;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --measure:68ch; --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121413; --surface:#191C1A; --surface-2:#242724;
+    --ink:#E4E7E4; --ink-2:#A4A9A5; --ink-3:#757A76;
+    --rule:#2C302D; --rule-soft:#232724;
+    --accent:#7FB6DE; --accent-ink:#A3CCEB; --accent-soft:#102436;
+    --stone:#C6B392; --stone-ink:#D6C7AB; --stone-soft:#272219;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121413; --surface:#191C1A; --surface-2:#242724;
+  --ink:#E4E7E4; --ink-2:#A4A9A5; --ink-3:#757A76;
+  --rule:#2C302D; --rule-soft:#232724;
+  --accent:#5FC7C1; --accent-ink:#82D8D3; --accent-soft:#0E2A28;
+  --stone:#C6B392; --stone-ink:#D6C7AB; --stone-soft:#272219;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.63;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent-soft);color:var(--ink)}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+
+.hero{border-bottom:1px solid var(--rule);padding-block:clamp(3rem,7vw,5.5rem) clamp(2rem,4vw,3rem);background:radial-gradient(120% 90% at 85% 0%, var(--accent-soft) 0%, transparent 58%)}
+.hero__inner{display:flex;flex-direction:column;gap:1.5rem}
+.hero h1{font-size:clamp(2.5rem,7vw,4.7rem);line-height:1.15;font-weight:700;font-variation-settings:"SOFT" 8,"WONK" 1;letter-spacing:-.025em;max-width:13ch}
+.hero__lede{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--ink-2);max-width:48ch;font-weight:400;font-variation-settings:"SOFT" 30,"WONK" 0}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.series{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent);padding:.28rem .6rem;align-self:flex-start}
+.stats{display:grid;gap:1px;background:var(--rule);grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--rule);margin-top:.75rem}
+.stat{background:var(--bg);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.15rem}
+.stat__num{font-family:var(--display);font-size:1.7rem;font-weight:700;line-height:1.05;font-variation-settings:"SOFT" 8,"WONK" 1;font-variant-numeric:tabular-nums}
+.stat__num.s{color:var(--stone-ink)}
+.stat__lbl{font-size:.81rem;color:var(--ink-3);line-height:1.3}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav__scroll{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:thin;padding-block:.4rem}
+.nav a{flex:0 0 auto;font-family:var(--mono);font-size:.73rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--ink-3);padding:.5rem .7rem;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.is-active{color:var(--accent-ink);background:var(--accent-soft)}
+
+section{padding-block:clamp(2.5rem,5.5vw,4.2rem);border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.sec__head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.sec__head h2{font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.08}
+.sec__head .kicker{font-size:1rem;color:var(--ink-2);max-width:58ch;margin:0}
+.note{border-left:2px solid var(--accent);background:var(--accent-soft);padding:.85rem 1.1rem;font-size:.93rem;color:var(--ink);max-width:var(--measure)}
+.note.s{border-color:var(--stone);background:var(--stone-soft)}
+
+/* two sources */
+.src2{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:780px){.src2{grid-template-columns:1fr 1fr}}
+.sc{background:var(--bg);padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.6rem}
+.sc .tag{font-family:var(--mono);font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.sc h3{font-size:1.14rem}
+.sc p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.sc ul{margin:.1rem 0 0;padding-left:1.05rem;font-size:.91rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.32rem}
+.sc ul b{color:var(--ink)}
+.sc.arch{background:var(--accent-soft)}
+.sc.arch .tag{color:var(--accent-ink)}
+
+/* ration figure */
+.rat{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem}
+.rat h4{font-size:1rem;margin-bottom:.35rem}
+.rat .sub{font-size:.87rem;color:var(--ink-3);margin:0 0 1.1rem;max-width:64ch}
+.rows{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.rw{background:var(--bg);padding:.75rem .9rem;display:grid;gap:.2rem .9rem;grid-template-columns:1fr}
+@media(min-width:620px){.rw{grid-template-columns:minmax(160px,auto) 1fr;align-items:baseline}}
+.rw b{font-size:.9rem;font-weight:700;color:var(--ink)}
+.rw span{font-size:.9rem;color:var(--ink-2)}
+.rw.hl{background:var(--accent-soft)}
+.rw.hl span{color:var(--ink)}
+.rat p.leg{margin:1rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:66ch}
+.rat b{color:var(--ink)}
+
+/* fire split */
+.fire{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin-top:1.5rem}
+@media(min-width:760px){.fire{grid-template-columns:1fr 1fr}}
+.fr{background:var(--bg);padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.5rem}
+.fr .who{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.fr h3{font-size:1.08rem}
+.fr p{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
+.card h4{font-size:1.06rem}
+.card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.card.s .tag{color:var(--stone-ink)}
+.card p{margin:0;font-size:.92rem;color:var(--ink-2)}
+.card b{color:var(--ink)}
+
+.verdictbox{border:1px solid var(--accent);background:var(--accent-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
+.verdictbox .eyebrow{color:var(--accent-ink)}
+.verdictbox h3{font-size:1.38rem}
+.verdictbox p{margin:0}
+.verdictbox b{color:var(--ink)}
+
+.open{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.5rem}
+.oq{background:var(--bg);padding:1.1rem 1.25rem;display:grid;gap:.25rem .9rem;grid-template-columns:1fr}
+@media(min-width:720px){.oq{grid-template-columns:minmax(215px,.85fr) 1.65fr;align-items:start}}
+.oq__q{font-family:var(--display);font-size:1rem;color:var(--ink);font-variation-settings:"SOFT" 40,"WONK" 0}
+.oq__a{margin:0;font-size:.92rem;color:var(--ink-2)}
+
+.foot{padding-block:2.4rem 3.4rem;border-top:1px solid var(--rule);background:var(--surface)}
+.foot p{font-size:.87rem;color:var(--ink-3);max-width:70ch;margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot b{color:var(--ink-2)}
+
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+</style>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="series">İnceleme 30 · Okyanus</span>
+    <p class="eyebrow">Ölçüm süresi · vekil gösterge · tanım sorunu</p>
+    <h1>Atlantik: Yirmi İki Yıllık Kayıt</h1>
+    <p class="hero__lede">Atlantik'in devrilme akıntısı hakkında hem <strong>"çöküyor"</strong> hem <strong>"bir şey yok"</strong> diyen hakemli makaleler var. İkisi de aynı veriye bakıyor. Sebep basit: <strong>kayıt, sorudan kısa.</strong></p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">2004</span><span class="stat__lbl">kesintisiz ölçümün başlangıcı</span></div>
+      <div class="stat"><span class="stat__num s">60 yıl</span><span class="stat__lbl">saptama için gereken seri uzunluğu</span></div>
+      <div class="stat"><span class="stat__num">−0,1 Sv</span><span class="stat__lbl">2011–2021 eğilimi, on yılda</span></div>
+      <div class="stat"><span class="stat__num s">%54</span><span class="stat__lbl">"çökmez" diyen modellerde ortalama zayıflama</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Bölümler">
+  <div class="wrap nav__scroll">
+    <a href="#ad">Hangi akıntı</a>
+    <a href="#sure">Yirmi iki yıl</a>
+    <a href="#rakam">Rakam nereden</a>
+    <a href="#ipcc">IPCC'nin iki yarısı</a>
+    <a href="#tanim">Çöküş nedir</a>
+    <a href="#celiski">Alan kendi içinde</a>
+    <a href="#gecmis">Geçmişte oldu mu</a>
+    <a href="#buzul">Buzul çağı</a>
+    <a href="#sonuc">Sonuç</a>
+    <a href="#acik">Açık sorular</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="ad" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">01 — Kategori</p>
+    <h2>Önce hangi akıntıdan söz ettiğimizi ayıralım</h2>
+    <p class="kicker">Bu yazının en kolay düzeltmesi bu, ve en yaygın hata da bu.</p>
+  </div>
+
+  <div class="src2">
+    <div class="sc">
+      <span class="tag">Rüzgârla sürülür</span>
+      <h3>Gulf Stream</h3>
+      <p>Kuzey Amerika kıyısı boyunca kuzeye akan yüzey akıntısı. Onu süren şey <b>rüzgâr sistemidir.</b></p>
+      <ul>
+        <li>Rüzgâr estiği sürece <b>durmaz</b></li>
+        <li>İklim değişikliğiyle <b>zayıflayabilir</b> — ama bu ayrı bir şey</li>
+        <li>"Gulf Stream duruyor" cümlesi fiziksel olarak yanlıştır</li>
+      </ul>
+    </div>
+    <div class="sc arch">
+      <span class="tag">Yoğunlukla sürülür</span>
+      <h3>AMOC</h3>
+      <p>Atlantik Meridyonel Devrilme Sirkülasyonu. Sıcak yüzey suyu kuzeye gider, soğur, <b>çöker</b> ve derinden güneye döner.</p>
+      <ul>
+        <li>Sürükleyen şey <b>sıcaklık ve tuzluluk farkıdır</b></li>
+        <li>Tatlanma çökmeyi zorlaştırır — zayıflama riski buradan gelir</li>
+        <li>Tartışılan, ölçülen ve modellenen şey <b>budur</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">İkisi Kuzey Amerika kıyısında yan yana aktığı için karışıyor. Gulf Stream AMOC sisteminin bir parçasıdır — <b>ama aynı şey değildir.</b> Doğru cümle şu: "AMOC'un devrilme bileşeni zayıflıyor olabilir."</p>
+</section>
+
+<section id="sure" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">02 — Yöntem</p>
+    <h2>Yirmi iki yıllık bir kayıtla yetmiş yıllık bir salınımı ayırmak</h2>
+    <p class="kicker">Bu yazının omurgası burası. Geri kalan her tartışma buradan doğuyor.</p>
+  </div>
+
+  <div class="prose">
+    <p>AMOC'un kesintisiz doğrudan ölçümü <b>2004'te</b> başladı. 26,5° kuzeyde okyanusu boydan boya kesen demirli bir dizi, o tarihten beri aralıksız ölçüyor. Elimizdeki en iyi veri bu.</p>
+    <p>Sorun, ayırt edilmesi gereken şeyin bu kayıttan uzun olması. Atlantik'in kendi doğal salınımı <b>yaklaşık yetmiş yıllık.</b> Yirmi iki yıllık bir pencereden bakınca, gördüğünüz düşüşün insan kaynaklı bir eğilim mi yoksa uzun bir salınımın inen kolu mu olduğunu ayıramazsınız.</p>
+    <p>Bu benim yorumum değil. Alanın kendi çalışmalarından biri gereken seri uzunluğunu <b>sayıyla veriyor:</b></p>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Worthington ve arkadaşları, 2021</p>
+    <p>Küresel ısınmaya bağlı uzun dönemli AMOC değişimini saptamak için <b>en az altmış yıllık</b> bir seri gerekir.</p>
+  </div>
+
+  <p class="note">Elde yirmi iki yıl var. Bu, "hiçbir şey bilinmiyor" demek değil — <b>ölçüm var.</b> Ama "ölçtük" ile "insan kaynaklı olduğunu ölçtük" aynı cümle değil, ve popüler aktarım ikisini birleştiriyor.</p>
+</section>
+
+<section id="rakam" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">03 — Rakam</p>
+    <h2>Basındaki sayı, tam AMOC'a ait değil</h2>
+    <p class="kicker">"20 Sv'den 15 Sv'ye düştü, on yılda 2,6 Sv kaybediyor." Bu cümlenin iki ayrı sorunu var.</p>
+  </div>
+
+  <div class="prose">
+    <p>2026'da yayımlanan gözlem çalışması dört ayrı enlemde tutarlı bir düşüş buldu ve haberlere böyle geçti. Makalenin kendi rakamlarına bakınca tablo değişiyor.</p>
+  </div>
+
+  <div class="rows">
+    <div class="rw"><b>tam AMOC</b><span><b>0,09 ± 0,08 Sv/yıl</b> — belirsizlik neredeyse eğilim kadar</span></div>
+    <div class="rw"><b>batı sınırı</b><span><b>0,21 ± 0,08 Sv/yıl</b> — basındaki rakamın kaynağı</span></div>
+    <div class="rw"><b>doğu sınırı</b><span><b>−0,16 ± 0,06 Sv/yıl</b> — ters yönde — <b>güçleniyor</b></span></div>
+  </div>
+
+  <div class="prose">
+    <p>Doğu sınırı güçlenerek batıdaki düşüşün büyük bölümünü kapatıyor. Makale bunu saklamıyor, tersine kendi cümlesiyle yazıyor: batı sınırı ölçüsü AMOC eğiliminin <b>işaretini yakalar ama büyüklüğünü aşar.</b> Manşet, makalenin kendi uyarısını atlamış.</p>
+    <p>İkinci sorun "20'den 15'e" ikilisi. Bu ikiliyi makalede bulamadım. Ama bir başka çalışma, demirli dizinin yıl yıl değerlerini veriyor ve nereden geldiğini açıklıyor:</p>
+  </div>
+
+  <div class="rows">
+    <div class="rw"><b>2005</b><span><b>19,2 Sv</b> — kaydın başı</span></div>
+    <div class="rw"><b>2009</b><span><b>14,6 Sv</b> — dip nokta</span></div>
+    <div class="rw"><b>2018</b><span><b>18,0 Sv</b> — <b>toparlanmış</b></span></div>
+  </div>
+
+  <p class="note"><b>2009 dip noktası, bugünkü durum gibi aktarılıyor.</b> Aynı çalışmaya göre 2011–2021 eğilimi on yılda yalnızca −0,1 Sv; seri fiilen düz. Yazarlar bunu "zayıflama bitti" diye okumuyor: doğal bileşenin (+1,0 Sv) insan kaynaklı düşüşü (−2,6 Sv) <b>geçici olarak</b> dengelediğini savunuyorlar.</p>
+</section>
+
+<section id="ipcc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">04 — Uzlaşı</p>
+    <h2>Aynı değerlendirmenin üç cümlesi</h2>
+    <p class="kicker">Popüler aktarım birincisini alıyor, ikincisini düşürüyor, üçüncüsünü hiç anmıyor.</p>
+  </div>
+
+  <div class="rows">
+    <div class="rw"><b>1</b><span><b>Zayıflama çok olası</b> — 21. yüzyıl boyunca, bütün senaryolarda</span></div>
+    <div class="rw"><b>2</b><span><b>Ani çöküş olmayacağına <i>orta güven</i></b> — 2100'den önce</span></div>
+    <div class="rw"><b>3</b><span><b>20. yüzyıl için güven <i>düşük</i></b> — rekonstrüksiyonlar ve modeller birbirini tutmuyor</span></div>
+  </div>
+
+  <p class="note">"Orta güven" bir teminat değil, <b>belirsizliğin adıdır.</b> Ama "çöküyor" da değildir. Üçüncü cümle ise "zayıflama ölçüldü" iddiasının neden olduğundan kesin göründüğünü açıklıyor.</p>
+</section>
+
+<section id="tanim" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">05 — Tanım</p>
+    <h2>"Çökmez" diyen çalışma, çöküşü nasıl tanımlıyor?</h2>
+  </div>
+
+  <div class="prose">
+    <p>2025'te otuz dört iklim modeliyle yapılan bir çalışma, bu yüzyıl içinde çöküşü olası bulmadı. Haberlere "endişeye gerek yok" diye geçti. Mekanizması da gerçek: AMOC'un çökmesi için Güney Okyanusu'ndaki yükselimi dengeleyecek bir Pasifik devrilmesi gerekiyor, modellerde öyle bir devrilme oluşuyor ama dengelemeye yetmiyor.</p>
+    <p>Sonuç doğru aktarılıyor. Düşen şey tanım.</p>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Baker ve arkadaşları, 2025</p>
+    <p>Çöküş, <b>6 Sv'nin altına inmek</b> olarak tanımlanıyor. Aynı modellerde AMOC <b>%20 ile %81 arasında, ortalama %54</b> zayıflıyor.</p>
+  </div>
+
+  <div class="prose">
+    <p>Yaklaşık 17 Sv'lik bir akıntının yarıya inmesi bu tanıma göre "çöküş değil". Küçük bir olay da değil.</p>
+    <p>Bir ayrıntı daha var. Bu tanım ilk basımda metinde <b>yoktu.</b> Mayıs 2025'te yayımlanan yazar düzeltmesiyle parantez içinde eklendi. Aynı düzeltme "Pasifik devrilmesi oluşmuyor" ifadesini de "oluşmuyor <b>ya da genel olarak zayıf kalıyor</b>" olarak yumuşattı.</p>
+  </div>
+
+  <p class="note">Bu, çalışmayı çürütmez. Çalışma sağlam ve yazarları sınırlarını kendileri yazıyor: modeller güçlü bir Pasifik devrilmesi olasılığını hafife alıyorsa, çöküş riskini de hafife alıyor olabilirler. Denenen senaryolar da aşırıdır ve sonuç <b>yalnız 21. yüzyıl içindir.</b></p>
+</section>
+
+<section id="celiski" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">06 — Literatür</p>
+    <h2>Alan kendi içinde anlaşamıyor, ve bu yayımlanmış durumda</h2>
+    <p class="kicker">"Bilim insanları hemfikir" cümlesi bu konuda doğru değil.</p>
+  </div>
+
+  <div class="rows">
+    <div class="rw"><b>çöküş yolunda</b><span><b>Erken uyarı sinyalleri</b> — 2023 ve 2024, iki ayrı yöntem</span></div>
+    <div class="rw"><b>düşüş yok</b><span><b>30 yıllık rekonstrüksiyon</b> — 2021 — başlığı doğrudan "shows no decline"</span></div>
+    <div class="rw"><b>çökmez</b><span><b>34 model</b> — 2025 — Güney Okyanusu yükselimi</span></div>
+    <div class="rw"><b>duraklama</b><span><b>2010'lardan beri düz</b> — 2024 — demirli dizi kaydı</span></div>
+  </div>
+
+  <div class="prose">
+    <p>Anlaşmazlık dedikodu düzeyinde değil. Erken uyarı sinyali yorumuna itiraz eden bir yazı ve ona verilen yanıt, <b>aynı dergide yan yana</b> yayımlandı. Alanın tartışması hakemli kayıtta duruyor.</p>
+    <p>Dikkat çekici olan şu: "düşüş göstermiyor" sonucu veren çalışma, çöküş anlatısını aktaran popüler içerikte <b>neredeyse hiç geçmiyor.</b> Anlatıya uymayan hakemli sonucun görünmez kalması, seçici aktarımın tanımıdır.</p>
+    <p>Yalnız bir şeyi karıştırmayalım: bu çalışmaların uyuşmaması, birinin yalan söylediği anlamına gelmiyor. Doğrudan ölçüm, vekil rekonstrüksiyon ve model simülasyonu <b>aynı büyüklüğü ölçmüyor.</b> Ve "düşüş yok" diyen ekip de kendi sonucunun antropojenik değişimin <b>yokluğunu kanıtlamadığını</b> yazıyor — seri bunun için çok kısa.</p>
+  </div>
+</section>
+
+<section id="gecmis" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">07 — Paleoiklim</p>
+    <h2>Geçmişte oldu mu? Evet — ama "durma" değil</h2>
+    <p class="kicker">Son buzul döneminde AMOC defalarca ve hızla zayıfladı. Tümüyle durduğuna dair kanıt yok.</p>
+  </div>
+
+  <div class="prose">
+    <p>Okyanus tabanı çökeltilerindeki protaktinyum-toryum oranı, devrilmenin gücü hakkında dolaylı bilgi verir. Yaklaşık 17.500 yıl önceki Heinrich Stadial 1 için ölçülen oranlar, neredeyse bütün derinliklerde buzul dönemi değerlerini aşıyor. Yorum şu: <b>belirgin bir azalma, ama duruş değil.</b></p>
+  </div>
+
+  <div class="verdictbox">
+    <p class="eyebrow">Bradtmiller ve arkadaşları, 2014</p>
+    <p>Ani iklim salınımları, devrilmenin <b>tümüyle durmasını gerektirmiyor.</b></p>
+  </div>
+
+  <div class="prose">
+    <p>Aynı sonuç Genç Dryas için de geçerli: zayıflamış ama süren bir AMOC, iki evreli bir düşüş deseniyle.</p>
+    <p>Olayların hızı çarpıcı. Dansgaard-Oeschger geçişlerinde Grönland'da <b>birkaç on yıl içinde 16,5 °C'ye varan</b> ani ısınmalar yaşandı. Bu desen, Antarktika dışında bütün kıtalarda, altmış yedi mağaradan yüz on bir dikitte izlenebiliyor. Yani olay Kuzey Atlantik'e sıkışmış değil — <b>küresel.</b></p>
+  </div>
+
+  <div class="sec__head" style="margin-top:2.4rem">
+    <h3>Vekil gösterge sorunu</h3>
+  </div>
+
+  <div class="prose">
+    <p>Burada, bu serinin tekrar eden dersine bir örnek daha var. Grönland buz çekirdeği izotopları, Heinrich Stadial 1'in soğumasını <b>kaydetmiyor.</b> Modelde o dönemde yıllık ortalama yaklaşık <b>6 °C'lik</b> ani bir soğuma var, buz çekirdeğinde yok.</p>
+    <p>Sebep, izotopun soğumayı ölçmemesi değil. Kış deniz buzu genişleyince kış yağışı kayboluyor, kalan yağışın izotopik zenginleşmesi soğuma sinyalini <b>siliyor.</b> İki etki birbirini götürüyor.</p>
+    <p>Sonucu ağır: Grönland izotopları Heinrich duraklarını sıradan Dansgaard-Oeschger duraklarından <b>ayırt edemiyor</b> ve buzul koşullarında sıcaklık değişkenliğini olduğundan az gösterebiliyor.</p>
+  </div>
+
+  <p class="note">Yazarlar soğumanın olmadığını söylemiyor. Tersini söylüyorlar: <b>soğuma oldu, vekil gösterge kaydetmedi.</b> Bu, İskenderiye'de tek yangın anlatısında ve Kapadokya'nın tarihlenememesinde gördüğümüz sorunun aynısı — ölçtüğümüz şey, sorduğumuz şey değil.</p>
+</section>
+
+<section id="buzul" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">08 — Zaman ölçeği</p>
+    <h2>"AMOC çökerse buzul çağı gelir" nerede yanlış?</h2>
+    <p class="kicker">İki ayrı zaman ölçeği ve iki ayrı mekanizma birbirine karışıyor.</p>
+  </div>
+
+  <div class="src2">
+    <div class="sc">
+      <span class="tag">On binlerce yıl</span>
+      <h3>Buzul çağı</h3>
+      <p>Ritmi <b>yörünge zorlaması</b> sürüyor: Dünya'nın yörünge ve eksen salınımları.</p>
+      <ul>
+        <li>Döngü ölçeği <b>41.000 ve 100.000 yıl</b></li>
+        <li>100 bin yıllık ritmin fiziksel açıklaması hâlâ uzlaşılmış değil</li>
+        <li>Bu serinin Milanković dosyasında ayrıca ele alındı</li>
+      </ul>
+    </div>
+    <div class="sc arch">
+      <span class="tag">On yıllar–yüzyıllar</span>
+      <h3>AMOC olayları</h3>
+      <p>Zaten var olan bir iklim durumunun <b>içinde</b> yaşanan salınımlar.</p>
+      <ul>
+        <li>Dansgaard-Oeschger ve Heinrich olaylarının hepsi <b>son buzul döneminin içinde</b></li>
+        <li>Veri kümesi 120.000–15.000 yıl önce aralığını kapsıyor</li>
+        <li>AMOC ısıyı <b>yeniden dağıtır</b>, buzullaşmayı başlatmaz</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:1.5rem">AMOC bir yükselticidir. Buzul çağının tetikleyicisi değil, içinde çalışan bir mekanizmadır. Bu, zayıflamasının önemsiz olduğu anlamına gelmez — <b>bölgesel etkileri ciddi olabilir.</b> Reddedilen şey etki değil, "buzul çağı" adlandırması.</p>
+
+  <div class="sec__head" style="margin-top:2.4rem">
+    <h3>Genç Dryas: anlatının güzergâhı en zayıf etkiyi üretiyor</h3>
+  </div>
+
+  <div class="prose">
+    <p>Klasik anlatı şöyle: Agassiz Gölü St. Lawrence'tan boşaldı, AMOC durdu, Genç Dryas başladı. On sekiz kilometre çözünürlüklü bir modelde bu güzergâh sınandı.</p>
+  </div>
+
+  <div class="rows">
+    <div class="rw"><b>St. Lawrence</b><span><b>%14 zayıflama</b> — 14,6 Sv — <b>anlatının güzergâhı</b></span></div>
+    <div class="rw"><b>Mackenzie, takımadalar açık</b><span><b>%27 zayıflama</b> — 12,4 Sv</span></div>
+    <div class="rw"><b>Mackenzie, takımadalar kapalı</b><span><b>%32 zayıflama</b> — 11,5 Sv</span></div>
+  </div>
+
+  <div class="prose">
+    <p>St. Lawrence'tan boşalan tatlı su, derin su oluşum bölgelerinin <b>üç bin kilometre güneyine</b> gidiyor ve oraya hiç ulaşmıyor. Mackenzie Vadisi'nden boşalan su ise dar kıyı akıntılarıyla doğrudan oluşum bölgesine varıyor.</p>
+    <p>Yaygın anlatının güzergâhı, iddia ettiği etkiyi <b>en zayıf biçimde</b> üretiyor.</p>
+    <p>Ayrı bir çalışma bir hat daha ekliyor: Agassiz taşkını <b>tek başına</b> bin yıllık bir zayıflamayı sürdürmeye yetmiyor. Geç Genç Dryas'ta Hudson Boğazı'ndan buz dağı boşalımı saptanıyor — yani süreci sürdüren ikinci bir kaynak var.</p>
+  </div>
+
+  <p class="note">Model yazarları kendi sınırlarını yazıyor: Genç Dryas'ın tam iklim etkisini yeniden üretmeyi <b>amaçlamadıklarını</b>, koşuların hesaplama sınırı yüzünden yalnız yirmi beş yıl olduğunu ve bin iki yüz yıl süren bir dönemi açıklamak için binyıllık modeller gerektiğini söylüyorlar. Sonuç "Mackenzie kullanıldı" değil, <b>"kullanılsaydı daha etkili olurdu"</b>dur.</p>
+</section>
+
+<section id="sonuc" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">09 — Hüküm</p>
+    <h2>Ne biliyoruz</h2>
+  </div>
+
+  <div class="rows">
+    <div class="rw"><b>sağlam</b><span><b>AMOC'un 21. yüzyılda zayıflaması çok olası</b> — değerlendirilmiş uzlaşı</span></div>
+    <div class="rw"><b>sağlam</b><span><b>Geçmişte hızla zayıfladı</b> — ama durduğuna dair kanıt yok</span></div>
+    <div class="rw"><b>sağlam</b><span><b>Gulf Stream durmaz</b> — rüzgârla sürülür</span></div>
+    <div class="rw"><b>ölçülemez</b><span><b>Şu anki düşüşün ne kadarı insan kaynaklı</b> — seri 22 yıl, gereken 60</span></div>
+    <div class="rw"><b>tartışmalı</b><span><b>Şu anda zayıflıyor mu</b> — hakemli literatür kendi içinde çelişiyor</span></div>
+    <div class="rw"><b>yanlış</b><span><b>"Çökerse buzul çağı gelir"</b> — iki ayrı zaman ölçeği</span></div>
+  </div>
+
+  <div class="prose">
+    <p>Bu dosyanın söylediği şey "endişelenmeyin" değil. Zayıflamanın çok olası olduğu, değerlendirilmiş uzlaşının kendi ifadesi. Söylediği şey şu: <b>elimizdeki kayıt, sorduğumuz soruyu cevaplayacak kadar uzun değil</b> — ve bu boşluk, hem alarm hem rahatlama üretmeye yetiyor.</p>
+    <p>Basında dolaşan rakamların büyük bölümü yanlış değil; <b>yanlış şeye ait.</b> Batı sınırı bileşeni tam AMOC diye, 2009 dip noktası bugünkü durum diye, bir çalışmanın kendi çöküş tanımı genel bir teminat diye aktarılıyor.</p>
+  </div>
+</section>
+
+<section id="acik" class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">10 — Dürüstçe</p>
+    <h2>Bilmediklerimiz</h2>
+  </div>
+
+  <div class="oq">
+    <div class="oq__q">Doğu sınırındaki güçlenme neden oluyor, başka enlemlerde de var mı?</div>
+    <div class="oq__a">Gözlem verisi doğu sınırında yetersiz. Batı ve doğu arasındaki ters eğilimin bütün Kuzey Atlantik'te tutarlı olup olmadığı bilinmiyor.</div>
+  </div>
+  <div class="oq">
+    <div class="oq__q">2010'lardan beri süren duraklama devam ediyor mu?</div>
+    <div class="oq__a">Bu, 2021 sonrası demirli dizi verisiyle sınanmalı. Duraklamayı bulan ekip bunu kalıcı bir dönüş değil, geçici bir dengeleme olarak okuyor.</div>
+  </div>
+  <div class="oq">
+    <div class="oq__q">Heinrich olaylarında AMOC ne kadar zayıfladı?</div>
+    <div class="oq__a">Vekil göstergeler nicel bir değer vermiyor. "Belirgin azalma" diyebiliyoruz, "%40 zayıfladı" diyemiyoruz.</div>
+  </div>
+  <div class="oq">
+    <div class="oq__q">Eriyik suyun Mackenzie güzergâhından aktığına dair saha kanıtı ne kadar güçlü?</div>
+    <div class="oq__a">Model hangi güzergâhın daha etkili olacağını gösteriyor; hangisinin kullanıldığını göstermiyor. Provenans tartışması ayrı ve açık.</div>
+  </div>
+  <div class="oq">
+    <div class="oq__q">Avrupa'da kaç derece soğuma?</div>
+    <div class="oq__a">Basında 10–15 °C rakamı dolaşıyor. Hangi senaryoya, hangi modele ve hangi bölgeye ait olduğu belirtilmeden aktarıldığı için <b>bu dosyaya alınmadı.</b></div>
+  </div>
+
+  <p class="note" style="margin-top:1.8rem"><b>Bu dosyanın kendi sınırı:</b> kaynakların çoğu tam metinden okundu, biri okunamadı. Bradtmiller ve arkadaşlarının 2014 tarihli çalışması açık erişim değil; ona dayanan satırlar <b>özet düzeyindedir</b> ve kayıtlarda böyle işaretlenmiştir.</p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Kanıt Atlası</b> · İnceleme 30 · Okyanus sirkülasyonu</p>
+    <p>Bu dosyadaki bütün künyeler bağımsız katalogda doğrulandı: tanımlayıcı çözüldü <b>ve</b> dönen başlık eşleşti <b>ve</b> yayın türü kontrol edildi. Doğrulanamayan rakamlar metne alınmadı, açık sorular bölümünde adlarıyla anıldı.</p>
+  </div>
+</footer>
