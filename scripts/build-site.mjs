@@ -56,6 +56,15 @@ function addOrReplace(source, pattern, replacement, label) {
 
 function brandIndex(source, articles, bulten = null) {
   let html = source;
+  // Yazi sayisi index.html'de ELLE yazilmisti ve her yeni yazida geride
+  // kaliyordu. JS calisma aninda duzeltiyor, yani hata yalniz JS'siz
+  // gorunumde ve kaynakta kaliyordu - ama yine de yanlisti ve iki kez
+  // elle duzeltildi. Artik envanterden uretiliyor, kayamaz.
+  const sayi = String(articles.length);
+  html = addOrReplace(html, /(<span id="articleTotal">)\d+(<\/span>)/,
+    `$1${sayi}$2`, 'index articleTotal');
+  html = addOrReplace(html, /(<span id="resultText">)\d+( yazı gösteriliyor<\/span>)/,
+    `$1${sayi}$2`, 'index resultText');
   const meta = `  <meta name="theme-color" content="#f3efe7">
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="index,follow,max-image-preview:large">
