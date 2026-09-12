@@ -1,39 +1,47 @@
 {
   "property": "sc-domain:kanitatlasi.com",
-  "olculdu": "2026-09-09T11:45:24.961Z",
-  "not": "URL Inspection cevabı. Salt okunur sorgu; anlık görüntüdür, canlı veri değil.",
+  "olculdu": "2026-09-12T09:08:16.189Z",
+  "not": "URL Inspection cevabı. Salt okunur sorgu; anlık görüntüdür, canlı veri değil. Her kaydın kendi olculdu alanı vardır: bir koşuda ölçülemeyen URL eski ölçümüyle kalır.",
   "urls": {
     "https://kanitatlasi.com/": {
       "karar": "PASS",
       "durum": "Gönderildi ve dizine eklendi",
       "robots": "ALLOWED",
-      "sonTarama": "2026-09-07T20:13:16Z",
+      "sonTarama": "2026-09-09T22:25:41Z",
       "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
+    },
+    "https://kanitatlasi.com/articles/amoc.html": {
+      "karar": "NEUTRAL",
+      "durum": "URL Google tarafından bilinmiyor",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "sonTarama": null,
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/angkor.html": {
       "karar": "PASS",
       "durum": "Gönderildi ve dizine eklendi",
       "robots": "ALLOWED",
       "sonTarama": "2026-09-08T00:07:43Z",
-      "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": true,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/ayni-cumlede.html": {
       "karar": "NEUTRAL",
-      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
+      "durum": "URL Google tarafından bilinmiyor",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/babil.html": {
       "karar": "PASS",
       "durum": "Gönderildi ve dizine eklendi",
       "robots": "ALLOWED",
       "sonTarama": "2026-09-07T23:52:11Z",
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/calinan-ates.html": {
       "karar": "NEUTRAL",
@@ -41,23 +49,23 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/chichen-itza.html": {
       "karar": "NEUTRAL",
-      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
+      "durum": "URL Google tarafından bilinmiyor",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/gec-kalan-haberci.html": {
       "karar": "NEUTRAL",
-      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
+      "durum": "URL Google tarafından bilinmiyor",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/gokteki-ayi.html": {
       "karar": "NEUTRAL",
@@ -65,15 +73,15 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/hatirlamadigimiz-felaketler.html": {
       "karar": "NEUTRAL",
-      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
+      "durum": "URL Google tarafından bilinmiyor",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/herkesin-saati.html": {
       "karar": "NEUTRAL",
@@ -81,7 +89,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/isa-tarihsellik.html": {
       "karar": "NEUTRAL",
@@ -89,15 +97,15 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/iskenderiye.html": {
       "karar": "PASS",
       "durum": "Gönderildi ve dizine eklendi",
       "robots": "ALLOWED",
       "sonTarama": "2026-09-08T05:27:23Z",
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/kapadokya.html": {
       "karar": "PASS",
@@ -105,47 +113,47 @@
       "robots": "ALLOWED",
       "sonTarama": "2026-09-08T00:52:31Z",
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/kendi-kaniti.html": {
-      "karar": "NEUTRAL",
-      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "sonTarama": null,
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
-    },
-    "https://kanitatlasi.com/articles/machu-picchu.html": {
       "karar": "NEUTRAL",
       "durum": "URL Google tarafından bilinmiyor",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
+    },
+    "https://kanitatlasi.com/articles/machu-picchu.html": {
+      "karar": "NEUTRAL",
+      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "sonTarama": null,
+      "sitemap": true,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/milankovic.html": {
       "karar": "PASS",
       "durum": "Gönderildi ve dizine eklendi",
       "robots": "ALLOWED",
       "sonTarama": "2026-09-08T00:13:59Z",
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/mit-ve-sicil.html": {
-      "karar": "NEUTRAL",
-      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "sonTarama": null,
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
-    },
-    "https://kanitatlasi.com/articles/olu-deniz-parsomenleri.html": {
       "karar": "NEUTRAL",
       "durum": "URL Google tarafından bilinmiyor",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
+    },
+    "https://kanitatlasi.com/articles/olu-deniz-parsomenleri.html": {
+      "karar": "NEUTRAL",
+      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "sonTarama": null,
+      "sitemap": true,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/persepolis.html": {
       "karar": "PASS",
@@ -153,15 +161,23 @@
       "robots": "ALLOWED",
       "sonTarama": "2026-09-08T12:20:43Z",
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/petra.html": {
       "karar": "NEUTRAL",
-      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
+      "durum": "URL Google tarafından bilinmiyor",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
+    },
+    "https://kanitatlasi.com/articles/piramit-santrali.html": {
+      "karar": "NEUTRAL",
+      "durum": "URL Google tarafından bilinmiyor",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "sonTarama": null,
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/roma-etki.html": {
       "karar": "NEUTRAL",
@@ -169,7 +185,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/roma-hristiyanlik.html": {
       "karar": "NEUTRAL",
@@ -177,15 +193,15 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/shushtar.html": {
       "karar": "NEUTRAL",
       "durum": "Tarandı - şu anda dizine eklenmiş değil",
       "robots": "ALLOWED",
       "sonTarama": "2026-09-08T00:23:16Z",
-      "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": true,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/stonehenge.html": {
       "karar": "NEUTRAL",
@@ -193,15 +209,15 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/sumer.html": {
       "karar": "NEUTRAL",
       "durum": "Tarandı - şu anda dizine eklenmiş değil",
       "robots": "ALLOWED",
       "sonTarama": "2026-09-07T23:48:21Z",
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/tas-tepeler.html": {
       "karar": "NEUTRAL",
@@ -209,7 +225,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/tufan-bilmecesi.html": {
       "karar": "NEUTRAL",
@@ -217,15 +233,23 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
+    },
+    "https://kanitatlasi.com/articles/uruk.html": {
+      "karar": "NEUTRAL",
+      "durum": "URL Google tarafından bilinmiyor",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "sonTarama": null,
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/articles/yilin-iki-kapisi.html": {
       "karar": "NEUTRAL",
-      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
+      "durum": "URL Google tarafından bilinmiyor",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
-      "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": false,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/dist/bulgu-veri-tabani.html": {
       "karar": "NEUTRAL",
@@ -233,15 +257,15 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": true,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/dist/kanit-denetimi.html": {
       "karar": "NEUTRAL",
-      "durum": "URL Google tarafından bilinmiyor",
+      "durum": "Keşfedildi - şu anda dizine eklenmiş değil",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
-      "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "sitemap": true,
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/dist/zaman-cizelgesi.html": {
       "karar": "NEUTRAL",
@@ -249,7 +273,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/duzeltmeler.html": {
       "karar": "NEUTRAL",
@@ -257,7 +281,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/hakkinda.html": {
       "karar": "NEUTRAL",
@@ -265,7 +289,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/konular.html": {
       "karar": "NEUTRAL",
@@ -273,7 +297,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/konular/dinler-tarihi.html": {
       "karar": "NEUTRAL",
@@ -281,7 +305,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/konular/iklim-uygarlik.html": {
       "karar": "NEUTRAL",
@@ -289,7 +313,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/konular/kayip-sehirler.html": {
       "karar": "NEUTRAL",
@@ -297,7 +321,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/konular/mitler-anlatilar.html": {
       "karar": "NEUTRAL",
@@ -305,7 +329,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     },
     "https://kanitatlasi.com/yeniden-yayin.html": {
       "karar": "NEUTRAL",
@@ -313,7 +337,7 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "sonTarama": null,
       "sitemap": false,
-      "olculdu": "2026-09-09T11:45:24.961Z"
+      "olculdu": "2026-09-12T09:08:16.189Z"
     }
   }
 }
