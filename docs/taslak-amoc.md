@@ -172,16 +172,30 @@ Bunlar kayıtlara **girmedi.**
 
 ## Geçmişte oldu mu — evet, ama "durma" değil
 
+**Beş paleo makalesinin dördü tam metinden okundu.** Bradtmiller ve arkadaşları
+açık erişim değil; Europe PMC de kapalı olduğunu bildiriyor, o kaynak özet
+düzeyinde kaldı.
+
 | olay | ne bulundu | kaynak |
 |---|---|---|
-| Heinrich Stadial 1 | zayıflamış **ama süren** sirkülasyon | Bradtmiller ve ark. 2014, `10.1038/ncomms6817` |
-| Geç Genç Dryas | zayıflamış AMOC'un **sürdürülmesi** | You ve ark. 2026, `10.1126/sciadv.adv6220` |
-| Dansgaard-Oeschger | on yıllar ölçeğinde küresel yeniden düzenlenme | Fohlmeister ve ark. 2023, `10.1073/pnas.2302283120` |
-| Heinrich izi | Grönland izotopları olayın kendisini değil **izini** ölçüyor | He ve ark. 2021, `10.1126/sciadv.abh1007` |
+| Heinrich Stadial 1 (y. 17.500 yıl önce) | 231Pa/230Th neredeyse bütün derinliklerde buzul değerlerini aşıyor: belirgin azalma, **durma yok** | Bradtmiller ve ark. 2014 |
+| aynı olay, sıcaklık | modelde yıllık ortalama **~6 °C** ani soğuma | He ve ark. 2021 |
+| Dansgaard-Oeschger | Grönland'da birkaç on yılda **16,5 °C**'ye varan ani ısınma | Fohlmeister ve ark. 2023 |
+| Geç Genç Dryas | zayıflamış ama süren AMOC, iki evreli düşüş | You ve ark. 2026 |
 
-İki makalenin başlığı doğrudan "weakened but persistent" ve "sustaining the
-weakened AMOC" diyor. "Durdu" cümlesi vekil göstergelerin verdiğinden fazlasını
-iddia ediyor.
+Bradtmiller'ın sonuç cümlesi kaydın omurgası: **ani iklim salınımları devrilmenin
+tümüyle durmasını gerektirmiyor.**
+
+### Vekil gösterge sorunu — kendi başına bir bulgu
+
+He ve arkadaşları Grönland buz çekirdeğinin Heinrich Stadial 1 soğumasını
+**kaydetmediğini** gösteriyor. Sebep: kış deniz buzu genişleyince kış yağışı
+kayboluyor ve kalan yağışın izotopik zenginleşmesi soğuma sinyalini siliyor.
+Sonuç, Grönland δ18O'sunun Heinrich duraklarını sıradan Dansgaard-Oeschger
+duraklarından **ayırt edemediği**.
+
+Yazarlar soğumanın olmadığını söylemiyor. Tersi: soğuma oldu, vekil gösterge
+kaydetmedi.
 
 ## Buzul çağı nasıl geldi — kategori hatası
 
@@ -189,22 +203,55 @@ Buzul çağlarının ritmini **yörünge zorlaması** sürüyor. Depoda bu zaten
 kayıtla duruyor: `felaket-milankovic-donguleri`,
 `felaket-orta-pleyistosen-gecisi`, `milankovic-100bin-yil-problemi`.
 
-AMOC olayları ise **zaten var olan** bir buzul durumunun içinde, on yıllar ile
-yüzyıllar arasında yaşanıyor. Dansgaard-Oeschger ve Heinrich olaylarının hepsi
-son buzul döneminin **içinde**. AMOC bir yükseltici ve yeniden dağıtıcıdır,
-buzullaşmanın tetikleyicisi değil.
+AMOC olayları ise **zaten var olan** bir buzul durumunun içinde yaşanıyor.
+Fohlmeister ve arkadaşlarının veri kümesi bunu somut kılıyor: 67 mağaradan 111
+dikit, 120-15 bin yıl önce aralığı, yani son buzul döneminin **içi**. AMOC bir
+yükseltici ve yeniden dağıtıcıdır, buzullaşmanın tetikleyicisi değil.
 
-Genç Dryas'ın klasik anlatısı da modellemede tutmuyor. Condron & Winsor 2012'ye
-göre Agassiz Gölü'nün St. Lawrence güzergâhından boşalması AMOC'u **%15'ten az**
-zayıflatıyor, çünkü tatlı su derin su oluşum bölgelerinin ~3.000 km güneyine
-gidiyor. Mackenzie Vadisi güzergâhı ise **%30'dan fazla** zayıflatıyor. Yaygın
-anlatının güzergâhı, iddia ettiği etkiyi üretmiyor.
+### Genç Dryas: klasik anlatının güzergâhı en zayıf etkiyi üretiyor
 
----
+Condron & Winsor 2012 tam metinden okundu. MITgcm, 1/6° (~18 km), 50 düşey
+seviye; 1 yıl boyunca 5 Sv tatlı su; iki ayrı 25 yıllık koşu.
+
+| güzergâh | AMOC zayıflaması | kalan güç |
+|---|---|---|
+| St. Lawrence | %14 | 14,6 Sv |
+| Mackenzie, takımadalar açık | %27 | 12,4 Sv |
+| Mackenzie, takımadalar kapalı | %32 | 11,5 Sv |
+
+Yaygın anlatının güzergâhı, iddia ettiği etkiyi en zayıf biçimde üretiyor.
+Yazarlar Genç Dryas'ın tam iklim etkisini yeniden üretmeyi amaçlamadıklarını
+açıkça yazıyor ve koşuların yalnız 25 yıl olduğunu belirtiyor.
+
+You ve arkadaşları 2026 ayrı bir hat ekliyor: Agassiz taşkını **tek başına**
+bin yıllık bir zayıflamayı sürdürmeye yetmiyor. Geç Genç Dryas'ta Hudson
+Boğazı'ndan buz dağı boşalımı ve Heinrich Olayı 0 saptanıyor.
+
+## Modern tarafta üçüncü bir bulgu: zayıflama 2010'lardan beri duraklamış
+
+Lee ve arkadaşları 2024 tam metinden okundu. RAPID kaydı 26,5°N:
+
+| yıl | AMOC |
+|---|---|
+| 2005 | 19,2 Sv |
+| 2009 | 14,6 Sv |
+| 2018 | 18,0 Sv |
+
+2011-2021 eğilimi on yılda **-0,1 Sv**, yani neredeyse düz. Bu, basındaki
+"20 Sv'den 15 Sv'ye" ikilisinin kaynağını da açıklıyor: 2009 **dip noktası**
+bugünkü durum gibi aktarılıyor. Yazarlar bunu "zayıflama bitti" diye okumuyor;
+doğal bileşenin (+1,0 Sv) insan kaynaklı düşüşü (-2,6 Sv) geçici olarak
+dengelediğini savunuyorlar.
+
+### Anlaşmazlık yayımlanmış durumda
+
+Nature Climate Change'de bir itiraz yazısı ile ona verilen yanıt yan yana
+duruyor: Chen & Tung 2024 (`10.1038/s41558-023-01877-0`) ve Boers 2024
+(`10.1038/s41558-023-01878-z`). Alanın anlaşmazlığı dedikodu değil, hakemli kayıt.
 
 ## Yazılan bulgu kayıtları
 
-`data/findings/amoc.json` — 9 kayıt, hepsi v2. Aşağıdaki liste
+`data/findings/amoc.json` — 10 kayıt, hepsi v2. Aşağıdaki liste
 ilk öneriydi; yazılırken üçü eklendi.
 
 1. `amoc-gulf-stream-kategori-hatasi` — *çürütülmüş* · `kategori-hatasi`
