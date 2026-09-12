@@ -16,6 +16,7 @@ import { spawnSync } from "node:child_process";
 import { join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { normalizeFindingForTools } from "./lib/normalize-for-tools.mjs";
+import { aracOzeti, ARAC_OZETI_CSS } from "./lib/arac-ozeti.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const args = process.argv.slice(2);
@@ -80,18 +81,21 @@ const jobs = [
   {
     sourcePath: "tools/timeline.template.html",
     outputName: "zaman-cizelgesi.html",
+    ozetTuru: "cizelge",
     placeholder: "__DATA__",
     payload: legacyToolData,
   },
   {
     sourcePath: "tools/browser.template.html",
     outputName: "bulgu-veri-tabani.html",
+    ozetTuru: "veri-tabani",
     placeholder: "__DATA__",
     payload: legacyToolData,
   },
   {
     sourcePath: "tools/audit.template.html",
     outputName: "kanit-denetimi.html",
+    ozetTuru: "denetim",
     placeholder: "__CANONICAL_DATA__",
     payload: canonicalData,
   },
@@ -141,6 +145,19 @@ for (const job of jobs) {
   if (template.includes("__ARTICLES__")) {
     console.error(`${job.sourcePath}: çözülememiş __ARTICLES__ yer tutucusu kaldı`);
     process.exit(1);
+  }
+
+  // SUNUCUDA ÜRETİLEN ÖZET. Bu sayfalar 800 KB civarı JavaScript taşıyıp
+  // sunucuda 51-128 kelime üretiyordu; Search Console üçünü de dizine
+  // almamıştı. Özet, yazı sayfalarındaki kanıt dosyasını tekrarlamaz -
+  // kesitsel bir görünümdür ve hiçbir yazıya ait değildir.
+  const ozetBlogu = aracOzeti(job.ozetTuru, bundle, JSON.parse(readFileSync(join(ROOT, "data", "articles.json"), "utf8")));
+  template = template.replace("__OZET__", ozetBlogu).replace("__OZET_CSS__", ARAC_OZETI_CSS);
+  for (const kalan of ["__OZET__", "__OZET_CSS__"]) {
+    if (template.includes(kalan)) {
+      console.error(`${job.sourcePath}: çözülememiş ${kalan} yer tutucusu kaldı`);
+      process.exit(1);
+    }
   }
 
   const outputPath = join(out, job.outputName);

@@ -80,7 +80,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 
 /* true proportion strip */
 .prop{border:1px solid var(--rule);background:var(--raised);padding:.85rem 1rem}
-.prop h3{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.55rem}
+.prop h2,.prop h3{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.55rem}
 .propbar{display:flex;height:26px;border:1px solid var(--rule);overflow:hidden}
 .propbar div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;overflow:hidden;border-right:1px solid var(--rule)}
 .propbar div:last-child{border-right:0}
@@ -204,9 +204,13 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   transition:color .15s ease,border-color .15s ease,background .15s ease}
 .geri:hover{color:var(--accent-ink);border-color:var(--accent);background:var(--accent-soft)}
 .geri:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-</style>
+.skip-link{position:fixed;left:1rem;top:-5rem;z-index:999;padding:.8rem 1rem;border-radius:10px;background:var(--accent,#264e6a);color:var(--surface,#f7f5f0);text-decoration:none;font-weight:800}.skip-link:focus{top:1rem}
+__OZET_CSS__
+  </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Ölçekli Zaman Çizelgesi — Kanıt Atlası", "url": "https://kanitatlasi.com/dist/zaman-cizelgesi.html", "inLanguage": "tr-TR", "description": "İnsanlık Tarihi bulgularını uygarlık, insan ve derin zaman ölçeklerinde karşılaştırın.", "isPartOf": {"@type": "WebSite", "name": "Kanıt Atlası", "url": "https://kanitatlasi.com/"}, "publisher": {"@type": "Organization", "name": "Kanıt Atlası", "url": "https://kanitatlasi.com/"}}</script>
 </head>
 <body>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
 
 <header class="top">
   <div class="top__in">
@@ -215,7 +219,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     <p class="lede">Veri tabanındaki <b>her bulgu</b>, ilgili olduğu tarihsel aralık boyunca uzanan bir çubuk olarak yerleştirildi. Renk, iddianın kanıt karşısındaki durumunu gösteriyor. Çubuk kesikliyse tarih <b>tartışmalı ya da yaklaşık</b> demektir.</p>
 
     <div class="prop">
-      <h3>Önce dürüst oran — Dünya'nın 4,54 milyar yılı, doğrusal</h3>
+      <h2>Önce dürüst oran — Dünya'nın 4,54 milyar yılı, doğrusal</h2>
       <div class="propbar">
         <div class="p-pre">Kambriyen öncesi — 4 milyar yıl</div>
         <div class="p-phan">Fanerozoik</div>
@@ -224,6 +228,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     </div>
   </div>
 </header>
+__OZET__
+<div id="icerik">
 
 <div class="shell">
   <div class="ctrl">
@@ -590,5 +596,6 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   draw();
 })();
 </script>
+</div>
 </body>
 </html>

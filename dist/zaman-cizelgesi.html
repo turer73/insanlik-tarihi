@@ -80,7 +80,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 
 /* true proportion strip */
 .prop{border:1px solid var(--rule);background:var(--raised);padding:.85rem 1rem}
-.prop h3{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.55rem}
+.prop h2,.prop h3{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.55rem}
 .propbar{display:flex;height:26px;border:1px solid var(--rule);overflow:hidden}
 .propbar div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;overflow:hidden;border-right:1px solid var(--rule)}
 .propbar div:last-child{border-right:0}
@@ -204,9 +204,29 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   transition:color .15s ease,border-color .15s ease,background .15s ease}
 .geri:hover{color:var(--accent-ink);border-color:var(--accent);background:var(--accent-soft)}
 .geri:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-</style>
+.skip-link{position:fixed;left:1rem;top:-5rem;z-index:999;padding:.8rem 1rem;border-radius:10px;background:var(--accent,#264e6a);color:var(--surface,#f7f5f0);text-decoration:none;font-weight:800}.skip-link:focus{top:1rem}
+
+.ka-ozet{max-width:var(--wrap,1180px);margin:0 auto;padding:1.6rem 1.1rem 0}
+.ka-ozet h2{margin:0 0 .5rem;font-size:1.35rem}
+.ka-ozet h3{margin:1.6rem 0 .35rem;font-size:1.05rem}
+.ka-ozet p{margin:0 0 .7rem;max-width:70ch;color:var(--muted,#565d62);line-height:1.6}
+.ka-ozet-tablolar{display:flex;flex-wrap:wrap;gap:1rem;margin:1rem 0 .4rem}
+.ka-ozet-tablo{border-collapse:collapse;min-width:min(100%,230px);font-size:.9rem}
+.ka-ozet-tablo caption{text-align:left;padding-bottom:.35rem;font-weight:700;color:var(--ink,#171a1c)}
+.ka-ozet-tablo th,.ka-ozet-tablo td{border:1px solid var(--rule,#cbc7bd);padding:.3rem .55rem;text-align:left;font-weight:400}
+.ka-ozet-tablo th{color:var(--muted,#565d62)}
+.ka-ozet-tablo td{text-align:right;font-variant-numeric:tabular-nums}
+.ka-ozet-konular{display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin:.3rem 0 .8rem;padding:0;list-style:none;font-size:.92rem}
+.ka-ozet-konular li{white-space:nowrap}
+.ka-ozet-sayi{color:var(--quiet,#7a8186);font-size:.85em}
+.ka-ozet-not{font-size:.85rem;color:var(--quiet,#7a8186)}
+@media (max-width:640px){.ka-ozet-konular li{white-space:normal}}
+
+  </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Ölçekli Zaman Çizelgesi — Kanıt Atlası", "url": "https://kanitatlasi.com/dist/zaman-cizelgesi.html", "inLanguage": "tr-TR", "description": "İnsanlık Tarihi bulgularını uygarlık, insan ve derin zaman ölçeklerinde karşılaştırın.", "isPartOf": {"@type": "WebSite", "name": "Kanıt Atlası", "url": "https://kanitatlasi.com/"}, "publisher": {"@type": "Organization", "name": "Kanıt Atlası", "url": "https://kanitatlasi.com/"}}</script>
 </head>
 <body>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
 
 <header class="top">
   <div class="top__in">
@@ -215,7 +235,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     <p class="lede">Veri tabanındaki <b>her bulgu</b>, ilgili olduğu tarihsel aralık boyunca uzanan bir çubuk olarak yerleştirildi. Renk, iddianın kanıt karşısındaki durumunu gösteriyor. Çubuk kesikliyse tarih <b>tartışmalı ya da yaklaşık</b> demektir.</p>
 
     <div class="prop">
-      <h3>Önce dürüst oran — Dünya'nın 4,54 milyar yılı, doğrusal</h3>
+      <h2>Önce dürüst oran — Dünya'nın 4,54 milyar yılı, doğrusal</h2>
       <div class="propbar">
         <div class="p-pre">Kambriyen öncesi — 4 milyar yıl</div>
         <div class="p-phan">Fanerozoik</div>
@@ -224,6 +244,16 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     </div>
   </div>
 </header>
+<section class="ka-ozet" aria-labelledby="ka-ozet-baslik">
+  <h2 id="ka-ozet-baslik">Bu sayfada ne var?</h2>
+  <p>Bu çizelge 207 bulguyu, ilgili oldukları tarihsel aralık boyunca uzanan çubuklar hâlinde yerleştirir. Renk, iddianın kanıt karşısındaki durumunu gösterir. Ölçek doğrusal değildir; aksi hâlde son beş bin yıl, önceki iki milyon yılın yanında görünmez olurdu.</p>
+  <div class="ka-ozet-tablolar"><table class="ka-ozet-tablo"><caption>Kayıtların kanıt karşısındaki durumu</caption><tbody><tr><th scope="row">Yerleşik görüş</th><td>102</td></tr><tr><th scope="row">Çürütülmüş</th><td>38</td></tr><tr><th scope="row">Tartışmalı</th><td>37</td></tr><tr><th scope="row">Bilinmiyor</th><td>21</td></tr><tr><th scope="row">Azınlık görüşü</th><td>5</td></tr><tr><th scope="row">Ölçülemez</th><td>4</td></tr></tbody></table><table class="ka-ozet-tablo"><caption>Popüler iddianın kanıttan sapma türü</caption><tbody><tr><th scope="row">Kategori hatası</th><td>94</td></tr><tr><th scope="row">Medya abartısı</th><td>77</td></tr><tr><th scope="row">Güncellenmemiş</th><td>60</td></tr><tr><th scope="row">İdeolojik seçim</th><td>29</td></tr><tr><th scope="row">Turizm kopyalaması</th><td>20</td></tr><tr><th scope="row">Sömürge anlatısı</th><td>15</td></tr><tr><th scope="row">Hayatta kalma yanlılığı</th><td>14</td></tr><tr><th scope="row">Eski çeviri</th><td>9</td></tr><tr><th scope="row">Provenans yokluğu</th><td>9</td></tr></tbody></table></div>
+  <h3>Kayıtların dağıldığı araştırma dosyaları</h3>
+  <p>Her kayıt, ait olduğu yazıda kanıt ve karşı kanıtıyla birlikte okunabilir.</p>
+  <ul class="ka-ozet-konular"><li><a href="../articles/uruk.html">Uruk: İlk Şehir mi, İlk Efsane mi?</a> <span class="ka-ozet-sayi">30 kayıt</span></li><li><a href="../articles/ayni-cumlede.html">Aynı Cümlede Anılanlar</a> <span class="ka-ozet-sayi">15 kayıt</span></li><li><a href="../articles/sumer.html">Sümer: Kilden Çıkan Arşiv</a> <span class="ka-ozet-sayi">12 kayıt</span></li><li><a href="../articles/hatirlamadigimiz-felaketler.html">Hatırlamadığımız Felaketler</a> <span class="ka-ozet-sayi">11 kayıt</span></li><li><a href="../articles/tufan-bilmecesi.html">Tufan Bilmecesi</a> <span class="ka-ozet-sayi">11 kayıt</span></li><li><a href="../articles/amoc.html">Atlantik: Yirmi İki Yıllık Kayıt</a> <span class="ka-ozet-sayi">10 kayıt</span></li><li><a href="../articles/tas-tepeler.html">Taş Tepeler: Yüzde Beş</a> <span class="ka-ozet-sayi">10 kayıt</span></li><li><a href="../articles/babil.html">Babil: Şehir ve Sembol</a> <span class="ka-ozet-sayi">10 kayıt</span></li><li><a href="../articles/piramit-santrali.html">Piramit Santrali: Ampul, Pil ve Sfenks Efsaneleri</a> <span class="ka-ozet-sayi">10 kayıt</span></li><li><a href="../articles/olu-deniz-parsomenleri.html">Ölü Deniz Parşömenleri</a> <span class="ka-ozet-sayi">8 kayıt</span></li><li><a href="../articles/mit-ve-sicil.html">Mit ve Sicil</a> <span class="ka-ozet-sayi">8 kayıt</span></li><li><a href="../articles/gokteki-ayi.html">Gökteki Ayı</a> <span class="ka-ozet-sayi">7 kayıt</span></li><li><a href="../articles/isa-tarihsellik.html">Kanıt Ne Kadar Uzakta</a> <span class="ka-ozet-sayi">7 kayıt</span></li><li><a href="../articles/stonehenge.html">Stonehenge: Taşın Yolu</a> <span class="ka-ozet-sayi">6 kayıt</span></li><li><a href="../articles/machu-picchu.html">Machu Picchu: Dört Yanlış</a> <span class="ka-ozet-sayi">6 kayıt</span></li><li><a href="../articles/roma-etki.html">Roma: Bakılan Miras</a> <span class="ka-ozet-sayi">6 kayıt</span></li><li><a href="../articles/roma-hristiyanlik.html">Hristiyanlık ve Roma: Kim Kimi Dönüştürdü</a> <span class="ka-ozet-sayi">6 kayıt</span></li><li><a href="../articles/kapadokya.html">Kapadokya: Ölçülmemiş Harika</a> <span class="ka-ozet-sayi">5 kayıt</span></li><li><a href="../articles/gec-kalan-haberci.html">Geç Kalan Haberci</a> <span class="ka-ozet-sayi">5 kayıt</span></li><li><a href="../articles/angkor.html">Angkor: Çöküş Anlatısının Çöküşü</a> <span class="ka-ozet-sayi">4 kayıt</span></li><li><a href="../articles/petra.html">Petra: Görünmeyen Şehir</a> <span class="ka-ozet-sayi">4 kayıt</span></li><li><a href="../articles/chichen-itza.html">Chichén Itzá: Test Edilebilen ve Edilemeyen</a> <span class="ka-ozet-sayi">4 kayıt</span></li><li><a href="../articles/calinan-ates.html">Çalınan Ateş</a> <span class="ka-ozet-sayi">4 kayıt</span></li><li><a href="../articles/herkesin-saati.html">Herkesin Saati</a> <span class="ka-ozet-sayi">4 kayıt</span></li><li><a href="../articles/persepolis.html">Persepolis: Arşiv Konuşunca</a> <span class="ka-ozet-sayi">4 kayıt</span></li><li><a href="../articles/milankovic.html">Milanković Döngüleri</a> <span class="ka-ozet-sayi">3 kayıt</span></li><li><a href="../articles/iskenderiye.html">İskenderiye: Yanmadı, Kopyalanmadı</a> <span class="ka-ozet-sayi">3 kayıt</span></li><li><a href="../articles/kendi-kaniti.html">Kendi Kanıtı</a> <span class="ka-ozet-sayi">3 kayıt</span></li><li><a href="../articles/yilin-iki-kapisi.html">Yılın İki Kapısı</a> <span class="ka-ozet-sayi">3 kayıt</span></li><li><a href="../articles/shushtar.html">Şuşter: Aktarımın Kanıtı</a> <span class="ka-ozet-sayi">2 kayıt</span></li></ul>
+  <p class="ka-ozet-not">Tablolar ve liste sunucuda üretilir; aşağıdaki etkileşimli araç JavaScript ile çalışır. JavaScript kapalıysa bu özet sayfanın tamamıdır.</p>
+</section>
+<div id="icerik">
 
 <div class="shell">
   <div class="ctrl">
@@ -742,5 +772,6 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   draw();
 })();
 </script>
+</div>
 </body>
 </html>
