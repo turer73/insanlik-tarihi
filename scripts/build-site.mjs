@@ -3,7 +3,9 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { tarihler, sonDegisiklik, ilkYayin, enYeni } from './lib/lastmod.mjs';
+import { tarihler } from './lib/lastmod.mjs';
+import { icerikGirdileri } from './lib/icerik-girdileri.mjs';
+import { icerikTarihleri, sonDegisiklik, ilkYayin, enYeni } from './lib/icerik-surumu.mjs';
 import { renderEvidenceIntro, renderEvidenceDossier } from './lib/evidence-dossier.mjs';
 import { loadHubs, loadEvidence, primaryHub, validateHubs, renderHubIndex, renderHubPage } from './lib/hubs.mjs';
 import { renderSearchQuestion, renderRelated, renderAttribution, renderContribution, renderNewsletter } from './lib/article-extras.mjs';
@@ -17,7 +19,9 @@ const ORIGIN = 'https://kanitatlasi.com';
 const TODAY = ((d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`)(new Date());
 
 // Dosya başına gerçek tarihler. Ayrıntı ve neden için scripts/lib/lastmod.mjs.
-const TARIH = tarihler(ROOT, TODAY);
+// TARIH artik ICERIK OZETINDEN uretiliyor; git yalniz tohum.
+// main() icinde doldurulur cunku girdiler envantere bagli.
+let TARIH = { lastmod: {}, published: {}, bugun: TODAY, kaynak: 'kurulmadi' };
 
 const escapeHtml = value => String(value)
   .replaceAll('&', '&amp;')
@@ -418,7 +422,7 @@ function notFoundPage() {
   return `<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta name="theme-color" content="#f3efe7"><title>Sayfa bulunamadı — Kanıt Atlası</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><style>:root{--bg:#f3efe7;--surface:#fbf9f3;--ink:#171a18;--muted:#606762;--green:#165f50;--line:#d8d3c8;color-scheme:light dark}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:1.2rem;background:radial-gradient(circle at 80% 10%,#e3ece7 0,transparent 35%),var(--bg);color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(760px,100%);padding:clamp(2rem,7vw,5rem);border:1px solid var(--line);border-radius:24px;background:var(--surface);box-shadow:0 24px 80px rgba(25,33,30,.1)}.mark{width:72px;height:72px;border:2px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green);font:700 1.25rem Georgia,serif;box-shadow:inset 0 0 0 9px var(--surface),inset 0 0 0 11px var(--green)}.code{margin:2.2rem 0 .2rem;color:var(--green);font:700 .78rem ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}h1{margin:0;font:650 clamp(2.3rem,7vw,4.7rem)/.98 Georgia,serif;letter-spacing:-.04em}p{max-width:55ch;color:var(--muted);font-size:1.08rem;line-height:1.65}nav{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}a{padding:.75rem 1rem;border:1px solid var(--line);border-radius:999px;color:var(--ink);font-weight:700;text-decoration:none}a:first-child{background:var(--green);border-color:var(--green);color:white}@media(prefers-color-scheme:dark){:root{--bg:#111713;--surface:#18201c;--ink:#eef3ef;--muted:#aeb9b3;--line:#334039;--green:#76b7a5}}</style></head><body><main><div class="mark" aria-hidden="true">KA</div><p class="code">404 · Kayıt bulunamadı</p><h1>Bu iz, arşivde yok.</h1><p>Bağlantı değişmiş, yazı taşınmış veya adres yanlış yazılmış olabilir. Araştırma arşivine dönerek kanıt zincirini yeniden izleyebilirsiniz.</p><nav aria-label="Yönlendirme"><a href="/">Ana sayfaya dön</a><a href="/dist/zaman-cizelgesi.html">Zaman çizelgesi</a><a href="/dist/bulgu-veri-tabani.html">Veri tabanı</a></nav></main></body></html>`;
 }
 
-function sitemap(articles, pilotSummaries, hubs, pilotSet) {
+function sitemap(articles, pilotSummaries, hubs) {
   // Ana sayfa listeyi gösterir: yazılardan biri veya sayfanın kendisi
   // değiştiyse ana sayfa da değişmiştir.
   const anaSayfa = enYeni(TARIH, [
@@ -436,19 +440,17 @@ function sitemap(articles, pilotSummaries, hubs, pilotSet) {
       loc: `${ORIGIN}/articles/${article.slug}.html`,
       priority: article.featured ? '0.9' : '0.7',
       changefreq: 'monthly',
-      lastmod: enYeni(TARIH, [
-        `articles/${article.slug}.html`,
-        'data/reading-pilot.json',
-        'data/arama-sorulari.json',
-        'data/bulten.json',
-        ...(pilotSet.has(article.slug) ? ['data/tartisma-pilotu.json'] : [])
-      ])
+      // Yazının tarihi YALNIZ kendi anahtarına bağlı. Eskiden enYeni ile
+      // reading-pilot/arama-sorulari gibi ORTAK dosyalara bağlıydı ve tek
+      // bir yazı eklemek otuz yazının tarihini birden oynatıyordu. O
+      // dosyaların ilgili girdileri artık yazının kendi özetinin içinde.
+      lastmod: sonDegisiklik(TARIH, `articles/${article.slug}.html`)
     })),
     { loc: `${ORIGIN}/dist/zaman-cizelgesi.html`, priority: '0.8', changefreq: 'monthly', lastmod: sonDegisiklik(TARIH, 'dist/zaman-cizelgesi.html') },
     { loc: `${ORIGIN}/dist/bulgu-veri-tabani.html`, priority: '0.8', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/bulgu-veri-tabani.html') },
     { loc: `${ORIGIN}/dist/kanit-denetimi.html`, priority: '0.7', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/kanit-denetimi.html') },
     { loc: `${ORIGIN}/konular.html`, priority: '0.7', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'data/konu-merkezleri.json') },
-    ...hubs.map(hub => ({ loc: `${ORIGIN}/konular/${hub.slug}.html`, priority: '0.6', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'data/konu-merkezleri.json') })),
+    ...hubs.map(hub => ({ loc: `${ORIGIN}/konular/${hub.slug}.html`, priority: '0.6', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, `konular/${hub.slug}.html`) })),
     ...STATIC_PAGES.map(page => ({ loc: page.jsonLd.url, priority: '0.5', changefreq: 'monthly', lastmod: sonDegisiklik(TARIH, `pages/${page.file}`) }))
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(item => `  <url><loc>${item.loc}</loc><lastmod>${item.lastmod}</lastmod><changefreq>${item.changefreq}</changefreq><priority>${item.priority}</priority></url>`).join('\n')}\n</urlset>\n`;
@@ -534,6 +536,16 @@ async function main() {
     if (!articles.some(article => article.slug === slug)) throw new Error(`Tartışma pilotunda tanınmayan yazı: ${slug}`);
   }
   if (!tartismaPilotu.repo || !tartismaPilotu.etiket) throw new Error('Tartışma pilotu yapılandırması eksik: repo/etiket');
+
+  // --- TARİHLER: dosya dokunuşundan değil İÇERİK ÖZETİNDEN ---
+  // git yalnız TOHUM: anlık görüntüde karşılığı olmayan yeni anahtarlara
+  // ilk tarihi vermek için. Var olan anahtarlarda karar özete aittir.
+  const gitTohum = tarihler(ROOT, TODAY);
+  const girdiler = await icerikGirdileri(ROOT, { articles, hubs });
+  TARIH = icerikTarihleri(ROOT, TODAY, girdiler, gitTohum);
+  if (TARIH.degisen.length) {
+    console.log(`İçeriği değişen (${TARIH.degisen.length}): ${TARIH.degisen.slice(0, 6).join(', ')}${TARIH.degisen.length > 6 ? ` +${TARIH.degisen.length - 6}` : ''}`);
+  }
   const bulten = JSON.parse(await readFile(path.join(ROOT, 'data', 'bulten.json'), 'utf8'));
   const unknownSummaries = Object.keys(pilotSummaries).filter(slug => !articles.some(article => article.slug === slug));
   if (unknownSummaries.length) throw new Error(`Özetin yazı kaydı yok: ${unknownSummaries.join(', ')}`);
@@ -599,7 +611,7 @@ async function main() {
   await writeFile(path.join(OUT, 'reader.html'), legacyReader());
   await writeFile(path.join(OUT, '404.html'), notFoundPage());
   await writeFile(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
-  await writeFile(path.join(OUT, 'sitemap.xml'), sitemap(articles, pilotSummaries, hubs, pilotSlugs));
+  await writeFile(path.join(OUT, 'sitemap.xml'), sitemap(articles, pilotSummaries, hubs));
   await writeFile(path.join(OUT, 'feed.xml'), rss(articles));
   await writeFile(path.join(OUT, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: DENY\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()\n  Cross-Origin-Opener-Policy: same-origin\n\n/assets/*\n  Cache-Control: public, max-age=0, must-revalidate\n`);
   await writeFile(path.join(OUT, '_redirects'), '/index.html  /  301\n');

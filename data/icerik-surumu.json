@@ -1,0 +1,215 @@
+{
+  "not": "İçerik özetine dayalı tarih kaydı. Özet aynıysa tarih korunur; yalnız METİN değiştiğinde yenilenir. style/script blokları özete girmez.",
+  "kayitlar": {
+    "articles/amoc.html": {
+      "ozet": "e2cecd9f68379406",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-12"
+    },
+    "articles/angkor.html": {
+      "ozet": "01d095f0af626a05",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/ayni-cumlede.html": {
+      "ozet": "c9c05ba3614801b3",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/babil.html": {
+      "ozet": "8621dac21ebda677",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/calinan-ates.html": {
+      "ozet": "ac8d9d2b6a81eb7a",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/chichen-itza.html": {
+      "ozet": "de3907fddd95d81d",
+      "lastmod": "2026-09-08",
+      "published": "2026-09-07"
+    },
+    "articles/gec-kalan-haberci.html": {
+      "ozet": "ed00da06df61d069",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/gokteki-ayi.html": {
+      "ozet": "e9b3419bd9004164",
+      "lastmod": "2026-09-09",
+      "published": "2026-09-07"
+    },
+    "articles/hatirlamadigimiz-felaketler.html": {
+      "ozet": "23cf4d68a79345b1",
+      "lastmod": "2026-09-08",
+      "published": "2026-09-07"
+    },
+    "articles/herkesin-saati.html": {
+      "ozet": "7cdbbb59a7431f37",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/isa-tarihsellik.html": {
+      "ozet": "9f38775e721dd13a",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/iskenderiye.html": {
+      "ozet": "640af7730d968ade",
+      "lastmod": "2026-09-08",
+      "published": "2026-09-07"
+    },
+    "articles/kapadokya.html": {
+      "ozet": "188ff990ad557ab3",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/kendi-kaniti.html": {
+      "ozet": "30af52b74df7c9b7",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/machu-picchu.html": {
+      "ozet": "082b36c8347ca649",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/milankovic.html": {
+      "ozet": "1e07f526775cce1f",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/mit-ve-sicil.html": {
+      "ozet": "f0a0664a54451aa3",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/olu-deniz-parsomenleri.html": {
+      "ozet": "23dfeb28a171a180",
+      "lastmod": "2026-09-08",
+      "published": "2026-09-07"
+    },
+    "articles/persepolis.html": {
+      "ozet": "8cb05ebb1e422b80",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/petra.html": {
+      "ozet": "a017ff2da345b71a",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/piramit-santrali.html": {
+      "ozet": "79393fc939351604",
+      "lastmod": "2026-09-10",
+      "published": "2026-09-09"
+    },
+    "articles/roma-etki.html": {
+      "ozet": "fa623418af7b3627",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/roma-hristiyanlik.html": {
+      "ozet": "e0b040042de4e0ed",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/shushtar.html": {
+      "ozet": "bde9898e124c96e1",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/stonehenge.html": {
+      "ozet": "b7e4dee0bc31904a",
+      "lastmod": "2026-09-08",
+      "published": "2026-09-07"
+    },
+    "articles/sumer.html": {
+      "ozet": "6ac32f5494718b7d",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/tas-tepeler.html": {
+      "ozet": "5fba31121bc89dc7",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/tufan-bilmecesi.html": {
+      "ozet": "71621320eccec1a5",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "articles/uruk.html": {
+      "ozet": "bbc26403d097658f",
+      "lastmod": "2026-09-10",
+      "published": "2026-09-10"
+    },
+    "articles/yilin-iki-kapisi.html": {
+      "ozet": "d02099f9a636596d",
+      "lastmod": "2026-09-07",
+      "published": "2026-09-07"
+    },
+    "data/konu-merkezleri.json": {
+      "ozet": "939c5979fc8c57b2",
+      "lastmod": "2026-09-10",
+      "published": "2026-09-09"
+    },
+    "dist/bulgu-veri-tabani.html": {
+      "ozet": "c4bb327daec65dab",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-07"
+    },
+    "dist/kanit-denetimi.html": {
+      "ozet": "1913f06c4109455d",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-07"
+    },
+    "dist/zaman-cizelgesi.html": {
+      "ozet": "61bd4f999bd432d5",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-07"
+    },
+    "index.html": {
+      "ozet": "edc63b418984ffca",
+      "lastmod": "2026-09-10",
+      "published": "2026-09-07"
+    },
+    "konular/dinler-tarihi.html": {
+      "ozet": "85043c7f4ebd593b",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-12"
+    },
+    "konular/iklim-uygarlik.html": {
+      "ozet": "3b8bcf555cfb1c82",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-12"
+    },
+    "konular/kayip-sehirler.html": {
+      "ozet": "11ba64acf480bbda",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-12"
+    },
+    "konular/mitler-anlatilar.html": {
+      "ozet": "bb592417df0bf4a2",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-12"
+    },
+    "pages/duzeltmeler.html": {
+      "ozet": "1e5a7739ec7a795d",
+      "lastmod": "2026-09-09",
+      "published": "2026-09-08"
+    },
+    "pages/hakkinda.html": {
+      "ozet": "e341f6a2521601ca",
+      "lastmod": "2026-09-09",
+      "published": "2026-09-08"
+    },
+    "pages/yeniden-yayin.html": {
+      "ozet": "9dd0051aef33b8cd",
+      "lastmod": "2026-09-09",
+      "published": "2026-09-09"
+    }
+  }
+}

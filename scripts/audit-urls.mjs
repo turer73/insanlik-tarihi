@@ -15,14 +15,16 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { tarihler, sonDegisiklik, ilkYayin } from './lib/lastmod.mjs';
+import { anlikTarihler, sonDegisiklik, ilkYayin } from './lib/icerik-surumu.mjs';
 import { siteRows } from './lib/site-urls.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ORIGIN = 'https://kanitatlasi.com';
 
 const TODAY = ((d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`)(new Date());
-const TARIH = tarihler(ROOT, TODAY);
+// Tarihler build-site'in ürettiği içerik anlık görüntüsünden okunur;
+// yeniden hesaplanmaz ki denetim tablosu sitemap ile çelişmesin.
+const TARIH = anlikTarihler(ROOT, TODAY);
 
 const rows = (await siteRows(ROOT)).map(row => ({
   ...row,
