@@ -48,9 +48,10 @@ Bu tablo sitemap'teki bütün URL'leri tek tek izler. **Betik tarafından üreti
 | K2 | [Mitler ve Ortak Anlatılar](https://kanitatlasi.com/konular/mitler-anlatilar.html) | Mitler ve Ortak Anlatılar — Konu Merkezi — Kanıt Atlası | Tufandan ateşin çalınmasına: aynı anlatıların farklı kültürlerde belirmesinin kanıtı ve sınırı. | Merkez | 2026-09-09 | 2026-09-10 | bilinmiyor |  |
 | K3 | [Dinler Tarihinin Kanıtları](https://kanitatlasi.com/konular/dinler-tarihi.html) | Dinler Tarihinin Kanıtları — Konu Merkezi — Kanıt Atlası | Kutsal metinler, kopyalar ve kayıtlar: inanç iddialarını tarihsel kanıtla ayıran dosyalar. | Merkez | 2026-09-09 | 2026-09-10 | bilinmiyor |  |
 | K4 | [İklim ve Uygarlık](https://kanitatlasi.com/konular/iklim-uygarlik.html) | İklim ve Uygarlık — Konu Merkezi — Kanıt Atlası | Buzul çağlarından tarım takvimlerine: iklimin uygarlıkları nasıl şekillendirdiği ve nasıl şekillendirmediği. | Merkez | 2026-09-09 | 2026-09-10 | bilinmiyor |  |
-| S1 | [Hakkında ve Yöntem](https://kanitatlasi.com/hakkinda.html) | Hakkında ve Yöntem — Kanıt Atlası | Kanıt Atlası yayın kimliği, araştırma yöntemi, inceleme durumu, düzeltme süreci ve lisans bilgisi. | Sayfa | 2026-09-08 | 2026-09-09 | bilinmiyor |  |
+| S0 | [Kaynakça](https://kanitatlasi.com/kaynakca.html) | Kaynakça — Kanıt Atlası | Bulgu kayıtlarının arkasındaki bütün kaynak künyeleri; her biri Türkçe kullanım notu ve erişim bağlantısıyla. | Sayfa | 2026-09-12 | 2026-09-12 |  |  |
+| S1 | [Hakkında ve Yöntem](https://kanitatlasi.com/hakkinda.html) | Hakkında ve Yöntem — Kanıt Atlası | Kanıt Atlası yayın kimliği, araştırma yöntemi, inceleme durumu, düzeltme süreci ve lisans bilgisi. | Sayfa | 2026-09-08 | 2026-09-12 | bilinmiyor |  |
 | S2 | [Düzeltme Günlüğü](https://kanitatlasi.com/duzeltmeler.html) | Düzeltme Günlüğü — Kanıt Atlası | Kanıt Atlası içerik düzeltmelerinin açık günlüğü. | Sayfa | 2026-09-08 | 2026-09-09 | bilinmiyor |  |
-| S3 | [Yeniden Yayımlama Kiti](https://kanitatlasi.com/yeniden-yayin.html) | Yeniden Yayımlama Kiti — Kanıt Atlası | CC BY 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi. | Sayfa | 2026-09-09 | 2026-09-09 | bilinmiyor |  |
+| S3 | [Yeniden Yayımlama Kiti](https://kanitatlasi.com/yeniden-yayin.html) | Yeniden Yayımlama Kiti — Kanıt Atlası | CC BY 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi. | Sayfa | 2026-09-09 | 2026-09-12 | bilinmiyor |  |
 
 ## İndeks sütunu nasıl tazelenir?
 

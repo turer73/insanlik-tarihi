@@ -8,6 +8,7 @@ import { icerikGirdileri } from './lib/icerik-girdileri.mjs';
 import { icerikTarihleri, sonDegisiklik, ilkYayin, enYeni } from './lib/icerik-surumu.mjs';
 import { renderEvidenceIntro, renderEvidenceDossier } from './lib/evidence-dossier.mjs';
 import { loadHubs, loadEvidence, primaryHub, validateHubs, renderHubIndex, renderHubPage } from './lib/hubs.mjs';
+import { renderKaynakca } from './lib/kaynakca.mjs';
 import { renderSearchQuestion, renderRelated, renderAttribution, renderContribution, renderNewsletter } from './lib/article-extras.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -109,7 +110,7 @@ function brandIndex(source, articles, bulten = null) {
     .replace('<div><strong>İnsanlık Tarihi</strong><p>Kanıt odaklı, kaynak izlenebilirliği yüksek Türkçe araştırma arşivi.</p></div>', '<div><strong>Kanıt Atlası</strong><p>İnsanlık tarihine kanıt, karşı kanıt ve kaynak izlenebilirliği üzerinden bakan Türkçe araştırma arşivi. <a href="feed.xml">RSS</a></p></div>')
     .replaceAll('<a href="#hakkinda">', '<a href="hakkinda.html">')
     .replace('<a href="dist/zaman-cizelgesi.html">Zaman Çizelgesi</a>', '<a href="konular.html">Konular</a>\n        <a href="dist/zaman-cizelgesi.html">Zaman Çizelgesi</a>')
-    .replace('<p>Yazılar ve bulgu kayıtları', '<p><a href="konular.html">Konular</a> · <a href="yeniden-yayin.html">Yeniden Yayın</a> · <a href="hakkinda.html">Hakkında</a> · <a href="duzeltmeler.html">Düzeltmeler</a> · <a href="feed.xml">RSS</a></p>\n      <p>Yazılar ve bulgu kayıtları')
+    .replace('<p>Yazılar ve bulgu kayıtları', '<p><a href="konular.html">Konular</a> · <a href="kaynakca.html">Kaynakça</a> · <a href="yeniden-yayin.html">Yeniden Yayın</a> · <a href="hakkinda.html">Hakkında</a> · <a href="duzeltmeler.html">Düzeltmeler</a> · <a href="feed.xml">RSS</a></p>\n      <p>Yazılar ve bulgu kayıtları')
     .replace('  <link rel="stylesheet" href="assets/styles-components.css">', '  <link rel="stylesheet" href="assets/styles-components.css">\n  <link rel="stylesheet" href="assets/cta-blocks.css">')
     .replace('<script src="assets/app.js"></script>', '<script src="assets/app.js"></script>\n  <script src="assets/contribution.js"></script>')
     .replace('  </main>', `      ${renderNewsletter(bulten, '')}\n  </main>`);
@@ -450,6 +451,7 @@ function sitemap(articles, pilotSummaries, hubs) {
     { loc: `${ORIGIN}/dist/bulgu-veri-tabani.html`, priority: '0.8', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/bulgu-veri-tabani.html') },
     { loc: `${ORIGIN}/dist/kanit-denetimi.html`, priority: '0.7', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'dist/kanit-denetimi.html') },
     { loc: `${ORIGIN}/konular.html`, priority: '0.7', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'data/konu-merkezleri.json') },
+    { loc: `${ORIGIN}/kaynakca.html`, priority: '0.6', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, 'kaynakca.html') },
     ...hubs.map(hub => ({ loc: `${ORIGIN}/konular/${hub.slug}.html`, priority: '0.6', changefreq: 'weekly', lastmod: sonDegisiklik(TARIH, `konular/${hub.slug}.html`) })),
     ...STATIC_PAGES.map(page => ({ loc: page.jsonLd.url, priority: '0.5', changefreq: 'monthly', lastmod: sonDegisiklik(TARIH, `pages/${page.file}`) }))
   ];
@@ -595,6 +597,7 @@ async function main() {
     await writeFile(path.join(hubsDirectory, `${hub.slug}.html`), renderHubPage(hub, articles, hubEvidence));
   }
   await writeFile(path.join(OUT, 'konular.html'), renderHubIndex(hubs, articles, hubEvidence));
+  await writeFile(path.join(OUT, 'kaynakca.html'), renderKaynakca(findings, articles, ORIGIN));
   for (const page of STATIC_PAGES) {
     await writeFile(path.join(OUT, page.file), brandStaticPage(await readFile(path.join(ROOT, 'pages', page.file), 'utf8'), page));
   }

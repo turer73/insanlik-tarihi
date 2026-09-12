@@ -15,6 +15,7 @@
 
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
+import { kaynaklariTopla } from "./kaynakca.mjs";
 
 const oku = async (p) => {
   try { return await readFile(p, "utf8"); } catch { return ""; }
@@ -67,6 +68,17 @@ export async function icerikGirdileri(root, { articles, hubs }) {
   for (const h of hubs) {
     girdiler[`konular/${h.slug}.html`] = JSON.stringify(merkezler[h.slug] ?? null);
   }
+
+  // --- kaynakça: sayfanın metnini künyeler, notlar ve yazı bağları belirler.
+  // Sayfa üretilmeden ÖNCE hesaplanabilsin diye doğrudan kayıtlardan çıkarılıyor;
+  // bir kaynağın katmanı, başlığı, notu ya da geçtiği yazı değişmedikçe tarih oynamaz.
+  const bulgular = await okuJson(path.join(root, "data", "findings.bundle.json"));
+  girdiler["kaynakca.html"] = JSON.stringify(
+    kaynaklariTopla(Array.isArray(bulgular) ? bulgular : [], articles)
+      .map((k) => [k.id, k.katman, k.kunye.title ?? "", k.kunye.year ?? "", k.notlar.join(" | "),
+        k.yazilar.map((y) => y.slug).join(",")])
+      .sort((a, b) => a[0].localeCompare(b[0])),
+  );
 
   // --- üretilen araç sayfaları: çıktının kendi metni
   for (const d of ["zaman-cizelgesi", "bulgu-veri-tabani", "kanit-denetimi"]) {

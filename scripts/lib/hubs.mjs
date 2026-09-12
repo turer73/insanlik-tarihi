@@ -196,7 +196,7 @@ export function renderHubPage(hub, articles, evidence) {
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div><strong>Kanıt Atlası</strong><p>İnsanlık tarihine kanıt, karşı kanıt ve kaynak izlenebilirliği üzerinden bakan Türkçe araştırma arşivi.</p></div>
-      <p><a href="../konular.html">Konular</a> · <a href="../hakkinda.html">Hakkında</a> · <a href="../duzeltmeler.html">Düzeltmeler</a> · <a href="../feed.xml">RSS</a></p>
+      <p><a href="../konular.html">Konular</a> · <a href="../kaynakca.html">Kaynakça</a> · <a href="../hakkinda.html">Hakkında</a> · <a href="../duzeltmeler.html">Düzeltmeler</a> · <a href="../feed.xml">RSS</a></p>
       <p>Yazılar <a href="https://creativecommons.org/licenses/by/4.0/deed.tr" rel="license noopener" target="_blank">CC BY 4.0</a>, kod <a href="https://github.com/turer73/insanlik-tarihi/blob/main/LICENSE" rel="noopener" target="_blank">MIT</a>.</p>
       <span>© <span class="hub-year"></span> Kanıt Atlası</span>
     </div>
@@ -283,7 +283,7 @@ export function renderHubIndex(hubs, articles, evidence = {}) {
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div><strong>Kanıt Atlası</strong><p>İnsanlık tarihine kanıt, karşı kanıt ve kaynak izlenebilirliği üzerinden bakan Türkçe araştırma arşivi.</p></div>
-      <p><a href="hakkinda.html">Hakkında</a> · <a href="duzeltmeler.html">Düzeltmeler</a> · <a href="feed.xml">RSS</a></p>
+      <p><a href="konular.html">Konular</a> · <a href="kaynakca.html">Kaynakça</a> · <a href="hakkinda.html">Hakkında</a> · <a href="duzeltmeler.html">Düzeltmeler</a> · <a href="feed.xml">RSS</a></p>
       <p>Yazılar <a href="https://creativecommons.org/licenses/by/4.0/deed.tr" rel="license noopener" target="_blank">CC BY 4.0</a>, kod <a href="https://github.com/turer73/insanlik-tarihi/blob/main/LICENSE" rel="noopener" target="_blank">MIT</a>.</p>
       <span>© <span class="hub-year"></span> Kanıt Atlası</span>
     </div>

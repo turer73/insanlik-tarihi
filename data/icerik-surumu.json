@@ -157,17 +157,17 @@
       "published": "2026-09-09"
     },
     "dist/bulgu-veri-tabani.html": {
-      "ozet": "61832f23f6f6bb66",
+      "ozet": "2da22220bd0220c0",
       "lastmod": "2026-09-12",
       "published": "2026-09-07"
     },
     "dist/kanit-denetimi.html": {
-      "ozet": "7909026296c2d25b",
+      "ozet": "849c3af660a3f387",
       "lastmod": "2026-09-12",
       "published": "2026-09-07"
     },
     "dist/zaman-cizelgesi.html": {
-      "ozet": "d79f83a0f4ff3cf3",
+      "ozet": "5f635a94d0d54c18",
       "lastmod": "2026-09-12",
       "published": "2026-09-07"
     },
@@ -175,6 +175,11 @@
       "ozet": "edc63b418984ffca",
       "lastmod": "2026-09-10",
       "published": "2026-09-07"
+    },
+    "kaynakca.html": {
+      "ozet": "526c5eebb6018dde",
+      "lastmod": "2026-09-12",
+      "published": "2026-09-12"
     },
     "konular/dinler-tarihi.html": {
       "ozet": "85043c7f4ebd593b",
@@ -202,13 +207,13 @@
       "published": "2026-09-08"
     },
     "pages/hakkinda.html": {
-      "ozet": "e341f6a2521601ca",
-      "lastmod": "2026-09-09",
+      "ozet": "141faa37d38725e6",
+      "lastmod": "2026-09-12",
       "published": "2026-09-08"
     },
     "pages/yeniden-yayin.html": {
-      "ozet": "9dd0051aef33b8cd",
-      "lastmod": "2026-09-09",
+      "ozet": "3d93d2d2c9a42fd0",
+      "lastmod": "2026-09-12",
       "published": "2026-09-09"
     }
   }

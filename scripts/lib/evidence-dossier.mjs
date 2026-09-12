@@ -205,7 +205,7 @@ export function renderEvidenceIntro(article, findings, summary = {}) {
     ? escapeHTML(summary.limit)
     : "Bu dosya, kayıtlı bulguların sınırlarıyla okunmalıdır.";
   const articleTitle = article?.title ? `: ${escapeHTML(article.title)}` : "";
-  return `<aside class="ka-evidence-intro" aria-label="Kanıt okuma rehberi"><p class="ka-evidence-kicker">Kanıt dosyası${articleTitle}</p><p><strong>Kısa yanıt:</strong> ${shortAnswer}</p><p><strong>Sınır:</strong> ${limit}</p><p class="ka-review-counts">İnceleme kaydı: ${counts.draft} taslak, ${counts.reviewed} incelenmiş${counts.unrecorded ? `, ${counts.unrecorded} inceleme kaydı belirtilmemiş` : ""}.</p><nav class="ka-reading-nav" aria-label="Yazı içinde gezinme"><a href="#kanit-dosyasi">Kanıt dosyası</a><a href="#ka-anlati">Anlatı</a><a href="../hakkinda.html">Yöntem</a><a href="../duzeltmeler.html">Düzeltmeler</a></nav></aside>`;
+  return `<aside class="ka-evidence-intro" aria-label="Kanıt okuma rehberi"><p class="ka-evidence-kicker">Kanıt dosyası${articleTitle}</p><p><strong>Kısa yanıt:</strong> ${shortAnswer}</p><p><strong>Sınır:</strong> ${limit}</p><p class="ka-review-counts">İnceleme kaydı: ${counts.draft} taslak, ${counts.reviewed} incelenmiş${counts.unrecorded ? `, ${counts.unrecorded} inceleme kaydı belirtilmemiş` : ""}.</p><nav class="ka-reading-nav" aria-label="Yazı içinde gezinme"><a href="#kanit-dosyasi">Kanıt dosyası</a><a href="#ka-anlati">Anlatı</a><a href="../hakkinda.html">Yöntem</a><a href="../kaynakca.html">Kaynakça</a><a href="../duzeltmeler.html">Düzeltmeler</a></nav></aside>`;
 }
 
 /** Bulguları ayrıntı/özet kartlarıyla ve kaynak geri bağlantılarıyla render eder. */

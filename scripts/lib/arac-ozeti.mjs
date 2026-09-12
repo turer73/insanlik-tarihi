@@ -18,6 +18,8 @@
 // Erişilebilirlik tarafı da var: JavaScript çalışmadığında ya da ekran
 // okuyucuyla gezildiğinde sayfa artık boş değil.
 
+import { kaynaklariTopla } from "./kaynakca.mjs";
+
 const ETIKET_DURUM = {
   established: "Yerleşik görüş",
   contested: "Tartışmalı",
@@ -108,9 +110,16 @@ export function aracOzeti(tur, bundle, articles) {
       return `<li><a href="../articles/${kacar(slug)}.html">${kacar(ad)}</a> <span class="ka-ozet-sayi">${n} kayıt</span></li>`;
     }).join("");
 
+  // Katman tablosu BENZERSİZ künyeyi sayar, kayıttaki geçiş sayısını değil.
+  // Eskiden geçiş sayıyordu: aynı sayfanın girişinde "345 benzersiz kaynak",
+  // hemen altındaki tabloda toplam 539 yazıyordu. İki sayı da doğruydu ama
+  // aynı ada sahipti. Tekilleştirme kaynakça sayfasıyla AYNI işlevden geliyor;
+  // böylece iki sayfa yapısal olarak çelişemez.
+  const tekilKaynaklar = kaynaklariTopla(kayitlar,
+    Object.entries(articles ?? {}).map(([slug, a]) => ({ slug, ...a })));
   const durum = say(kayitlar, (r) => r.status);
   const sapma = say(kayitlar, (r) => r.divergence_type);
-  const katman = say(kaynaklar, (s) => s.tier);
+  const katman = say(tekilKaynaklar, (k) => k.katman);
   const inceleme = say(kayitlar, (r) => r.review?.status ?? "kayıtsız");
 
   const bagsiz = kayitlar.filter((r) => !(r.used_in ?? []).length).length;
@@ -118,13 +127,13 @@ export function aracOzeti(tur, bundle, articles) {
 
   const girisler = {
     "veri-tabani": `Bu veri tabanı ${kayitlar.length} bulgu kaydı tutuyor ve bunların ${kayitlar.length - bagsiz} tanesi ${yaziSayisi} araştırma yazısına bağlı. Her kayıt bir olguyu değil, bir <strong>iddianın kanıt karşısındaki durumunu</strong> tutar: iddia, kanıt, karşı kanıt, kaynak künyesi ve açık sorular. ${populerIddia} kayıt ayrıca popüler hâlini ve o hâlin kanıttan nerede saptığını da taşıyor.`,
-    denetim: `Bu denetim görünümü ${kayitlar.length} kaydın <strong>kaynak zincirini</strong> gösterir: her kanıt maddesinin hangi kaynağa, o kaynağın neresine ve hangi atıf türüyle bağlandığı. Kayıtların arkasında ${benzersizKaynak} benzersiz kaynak künyesi var. Amaç, bir iddianın doğru görünmesi değil, <strong>izlenebilir</strong> olmasıdır.`,
+    denetim: `Bu denetim görünümü ${kayitlar.length} kaydın <strong>kaynak zincirini</strong> gösterir: her kanıt maddesinin hangi kaynağa, o kaynağın neresine ve hangi atıf türüyle bağlandığı. Kayıtların arkasında <a href="../kaynakca.html">${benzersizKaynak} benzersiz kaynak künyesi</a> var. Amaç, bir iddianın doğru görünmesi değil, <strong>izlenebilir</strong> olmasıdır.`,
     cizelge: `Bu çizelge ${kayitlar.length} bulguyu, ilgili oldukları tarihsel aralık boyunca uzanan çubuklar hâlinde yerleştirir. Renk, iddianın kanıt karşısındaki durumunu gösterir. Ölçek doğrusal değildir; aksi hâlde son beş bin yıl, önceki iki milyon yılın yanında görünmez olurdu.`,
   };
 
   const tablolar = [
     tablo("Kayıtların kanıt karşısındaki durumu", durum, ETIKET_DURUM),
-    tur === "denetim" ? tablo("Kaynak katmanları", katman, ETIKET_KATMAN) : "",
+    tur === "denetim" ? tablo("Benzersiz kaynak künyeleri, katmana göre", katman, ETIKET_KATMAN) : "",
     tur === "denetim" ? tablo("İnceleme durumu", inceleme, ETIKET_INCELEME) : "",
     tur !== "denetim" ? tablo("Popüler iddianın kanıttan sapma türü", sapma, ETIKET_SAPMA) : "",
   ].filter(Boolean).join("");
@@ -134,7 +143,7 @@ export function aracOzeti(tur, bundle, articles) {
   <p>${girisler[tur] ?? girisler["veri-tabani"]}</p>
   <div class="ka-ozet-tablolar">${tablolar}</div>
   <h3>Kayıtların dağıldığı araştırma dosyaları</h3>
-  <p>Her kayıt, ait olduğu yazıda kanıt ve karşı kanıtıyla birlikte okunabilir.</p>
+  <p>Her kayıt, ait olduğu yazıda kanıt ve karşı kanıtıyla birlikte okunabilir. Bütün kaynak künyeleri, kullanım notlarıyla birlikte <a href="../kaynakca.html">kaynakçada</a> listelidir.</p>
   <ul class="ka-ozet-konular">${konuListesi}</ul>
   <p class="ka-ozet-not">Tablolar ve liste sunucuda üretilir; aşağıdaki etkileşimli araç JavaScript ile çalışır. JavaScript kapalıysa bu özet sayfanın tamamıdır.</p>
 </section>`;

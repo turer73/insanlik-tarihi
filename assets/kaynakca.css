@@ -1,0 +1,116 @@
+/* Kaynakça sayfası. Renkler ve tipografi styles-core.css değişkenlerinden gelir;
+   burada yalnız bu sayfaya özgü yerleşim vardır. */
+
+.kk-sayfa{width:min(calc(100% - 3rem),1180px);margin-inline:auto;padding:3rem 0 5.5rem;min-width:0}
+
+.kk-head{margin-bottom:1.2rem;max-width:78ch}
+
+.kk-head h1{margin:.55rem 0 1rem;font:650 clamp(2.2rem,5vw,3.6rem)/1.05 var(--serif);letter-spacing:-.03em;text-wrap:balance}
+
+.kk-head p{margin:.6rem 0;color:var(--ink-2);font-size:1.05rem;line-height:1.65}
+
+.kk-head strong{color:var(--ink)}
+
+/* Ölçüm şeridi: dört sayı, tablo değil çünkü satır/sütun ilişkisi yok. */
+.kk-olcum{display:flex;flex-wrap:wrap;gap:1px;margin:1.8rem 0 0;padding:0;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+
+.kk-olcum>div{flex:1 1 150px;background:var(--paper);padding:.85rem 1rem}
+
+.kk-olcum dt{color:var(--ink-3);font:600 .72rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+
+.kk-olcum dd{margin:.3rem 0 0;font:650 1.5rem/1 var(--serif);font-variant-numeric:tabular-nums}
+
+/* Katman gezintisi: başlığın altında kalır, kaydırınca yapışır. */
+.kk-gezinti{position:sticky;top:calc(var(--header-h) - 6px);z-index:5;display:flex;flex-wrap:wrap;gap:.4rem;margin:1.6rem 0 0;padding:.55rem 0;background:var(--bg)}
+
+.kk-gezinti a{display:inline-flex;align-items:center;gap:.45rem;min-height:2.4rem;padding:.4rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--paper);text-decoration:none}
+
+.kk-gezinti b{font:600 .78rem/1.25 var(--mono);color:var(--ink)}
+
+.kk-gezinti small{font:700 .72rem/1 var(--mono);color:var(--green-2);font-variant-numeric:tabular-nums}
+
+.kk-gezinti a:hover{border-color:var(--green);}
+
+.kk-arama{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:.9rem 0 0}
+
+.kk-arama label{color:var(--ink-3);font:600 .72rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+
+.kk-arama input{flex:1 1 260px;min-height:2.6rem;padding:.5rem .9rem;border:1px solid var(--line-strong);border-radius:999px;background:var(--paper);color:var(--ink)}
+
+.kk-arama-sonuc{color:var(--ink-3);font:600 .8rem/1.3 var(--mono);font-variant-numeric:tabular-nums}
+
+/* JavaScript kapalıyken arama kutusu hiçbir işe yaramaz; gösterilmesi yanıltıcı olur. */
+.kk-arama{display:none}
+.kk-arama-acik .kk-arama{display:flex}
+
+.kk-bolum{padding:2.4rem 0 1rem;border-top:1px solid var(--line);margin-top:1.6rem}
+
+.kk-bolum h2{display:flex;align-items:baseline;gap:.7rem;margin:0 0 .7rem;font:650 1.65rem/1.15 var(--serif);letter-spacing:-.015em}
+
+.kk-sayi{font:700 .82rem/1 var(--mono);color:var(--green-2);background:var(--green-soft);border-radius:999px;padding:.32rem .6rem;font-variant-numeric:tabular-nums}
+
+.kk-bolum-aciklama{max-width:78ch;margin:0 0 1.6rem;color:var(--ink-2);line-height:1.62}
+
+.kk-liste{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+
+.kk-girdi{background:var(--paper);padding:1.1rem 1.25rem;max-width:none}
+
+.kk-girdi:target{background:var(--green-soft)}
+
+.kk-baslik{margin:0;font:600 1.06rem/1.35 var(--serif);color:var(--ink);max-width:74ch;text-wrap:pretty}
+
+.kk-baslik a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line-strong)}
+
+.kk-baslik a:hover{color:var(--green-2);border-bottom-color:var(--green)}
+
+.kk-kunye{margin:.3rem 0 0;color:var(--ink-2);font-size:.9rem;line-height:1.5;max-width:74ch}
+
+.kk-etiketler{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .5rem;margin:.55rem 0 0}
+
+.kk-tanim{display:inline-flex;align-items:center;padding:.22rem .55rem;border:1px solid var(--green-muted);border-radius:6px;background:var(--green-soft);color:var(--green-2);font:600 .74rem/1.3 var(--mono);text-decoration:none;word-break:break-all}
+
+.kk-tanim:hover{border-color:var(--green)}
+
+.kk-tanim-yok{border-color:var(--line);background:var(--paper-3);color:var(--ink-3);font-weight:500}
+
+.kk-rozet{display:inline-flex;align-items:center;padding:.22rem .55rem;border:1px solid var(--line);border-radius:6px;color:var(--ink-3);font:600 .72rem/1.3 var(--mono)}
+
+.kk-not{margin:.6rem 0 0;color:var(--ink-2);font-size:.94rem;line-height:1.58;max-width:76ch}
+
+.kk-not-yok{color:var(--ink-3);font-style:italic}
+
+.kk-not-ikili{color:var(--brown);font-size:.88rem}
+
+.kk-yazilar{display:flex;flex-wrap:wrap;align-items:baseline;gap:.3rem .5rem;margin:.7rem 0 0;font-size:.85rem}
+
+.kk-yazilar>span{color:var(--ink-3);font:600 .72rem/1.3 var(--mono);letter-spacing:.04em;text-transform:uppercase}
+
+.kk-yazilar a{color:var(--green-2);text-decoration:none;border-bottom:1px solid transparent}
+
+.kk-yazilar a::after{content:"·";margin-left:.5rem;color:var(--ink-3)}
+
+.kk-yazilar a:last-child::after{content:""}
+
+.kk-yazilar a:hover{border-bottom-color:var(--green)}
+
+.kk-yazilar-yok{color:var(--ink-3)}
+
+.kk-kapanis p{max-width:78ch;color:var(--ink-2);line-height:1.62}
+
+.kk-kapanis a{color:var(--green-2)}
+
+/* Arama gizlediğinde bölüm başlığı boş listeyle kalmasın. */
+.kk-girdi[hidden]{display:none}
+.kk-bolum[hidden]{display:none}
+
+/* Mobilde sayfa 100.000 pikselden uzun. Katman gezintisi burada asıl gezinme
+   aracı olduğu için yapışık kalır; beş etiketi alt alta sarmak ekranın üçte
+   birini yiyeceğinden tek satırda yana kaydırılır. */
+@media (max-width:700px){
+  .kk-sayfa{width:calc(100% - 2rem);padding:2.2rem 0 4rem}
+  .kk-girdi{padding:1rem}
+  .kk-olcum dd{font-size:1.3rem}
+  .kk-gezinti{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-inline:-1rem;padding-inline:1rem;border-bottom:1px solid var(--line)}
+  .kk-gezinti::-webkit-scrollbar{display:none}
+  .kk-gezinti a{flex:0 0 auto}
+}

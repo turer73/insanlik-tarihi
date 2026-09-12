@@ -14,7 +14,7 @@
     "validate:example": "node scripts/validate.mjs examples/finding.v2.json --strict",
     "build": "node scripts/build-tools.mjs",
     "build:site": "node scripts/build-site.mjs",
-    "test": "node scripts/test-tool-normalization.mjs && node scripts/test-audit-template.mjs && node scripts/test-static-tools.mjs && node scripts/test-finding-builder.mjs && node scripts/test-lastmod.mjs && node scripts/test-icerik-surumu.mjs && node scripts/test-home-interactions.mjs && node scripts/test-timeline-labels.mjs && node scripts/test-evidence-dossier.mjs",
+    "test": "node scripts/test-tool-normalization.mjs && node scripts/test-audit-template.mjs && node scripts/test-static-tools.mjs && node scripts/test-finding-builder.mjs && node scripts/test-lastmod.mjs && node scripts/test-icerik-surumu.mjs && node scripts/test-home-interactions.mjs && node scripts/test-timeline-labels.mjs && node scripts/test-evidence-dossier.mjs && node scripts/test-kaynakca.mjs",
     "check": "node scripts/validate.mjs && node scripts/validate.mjs examples/finding.v2.json --strict && npm test && node scripts/build-tools.mjs --skip-validate && node scripts/audit-urls.mjs && git diff --exit-code -- data/findings.bundle.json dist assets/evidence-data.js docs/url-denetimi.md",
     "test:editorial": "node scripts/test-editorial-output.mjs && node scripts/test-reading-pilot.mjs"
   }

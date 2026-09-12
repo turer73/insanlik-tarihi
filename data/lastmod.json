@@ -77,6 +77,8 @@
     "assets/evidence-data.js": "2026-09-12",
     "assets/evidence-dossier.css": "2026-09-12",
     "assets/hubs.css": "2026-09-10",
+    "assets/kaynakca.css": "2026-09-12",
+    "assets/kaynakca.js": "2026-09-12",
     "assets/logo-mark.svg": "2026-09-08",
     "assets/og-image.webp": "2026-09-08",
     "assets/piramit-santrali-icerik.webp": "2026-09-10",
@@ -102,8 +104,8 @@
     "dist/zaman-cizelgesi.html": "2026-09-12",
     "index.html": "2026-09-12",
     "pages/duzeltmeler.html": "2026-09-09",
-    "pages/hakkinda.html": "2026-09-09",
-    "pages/yeniden-yayin.html": "2026-09-09"
+    "pages/hakkinda.html": "2026-09-12",
+    "pages/yeniden-yayin.html": "2026-09-12"
   },
   "published": {
     "articles/amoc.html": "2026-09-12",
@@ -183,6 +185,8 @@
     "assets/evidence-data.js": "2026-09-07",
     "assets/evidence-dossier.css": "2026-09-08",
     "assets/hubs.css": "2026-09-09",
+    "assets/kaynakca.css": "2026-09-12",
+    "assets/kaynakca.js": "2026-09-12",
     "assets/logo-mark.svg": "2026-09-08",
     "assets/og-image.webp": "2026-09-08",
     "assets/piramit-santrali-icerik.webp": "2026-09-10",
