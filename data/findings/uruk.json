@@ -349,17 +349,6 @@
         "language": "en",
         "note": "Uruk döneminin kronolojisi ve kentin 250 hektarı aşan ölçeği.",
         "institution": "Penn Museum, University of Pennsylvania"
-      },
-      {
-        "id": "eage-2003-uruk-manyetometri",
-        "tier": "institutional",
-        "type": "report",
-        "title": "Magnetometry at Uruk (Iraq): The city of King Gilgamesh",
-        "url": "https://ui.adsabs.harvard.edu/abs/2003EAEJA.....9152F/abstract",
-        "language": "en",
-        "note": "Kanal sistemi, sur ve olası mezar yapısı; Gilgameş mezarı yorumu açıkça spekülatif.",
-        "institution": "European Association of Geoscientists and Engineers (EAGE)",
-        "year": 2003
       }
     ],
     "evidence": [
@@ -3457,25 +3446,6 @@
         "pages": "163-244",
         "doi": "10.1093/oso/9780190687854.003.0004",
         "publisher": "Oxford University Press"
-      },
-      {
-        "id": "jotheri-2018-uruk-holosen-akarsu",
-        "tier": "peer-reviewed",
-        "title": "Holocene fluvial and anthropogenic processes in the region of Uruk in southern Mesopotamia",
-        "url": "https://discovery.ucl.ac.uk/id/eprint/10039203/",
-        "language": "en",
-        "note": "Uruk çevresinin tatlı su, doğal kanal ve insan yapımı kanal tarihi.",
-        "type": "article",
-        "authors": [
-          "Jotheri, Jaafar",
-          "Altaweel, Mark",
-          "Tuji, Akihiro",
-          "Anma, Ryo"
-        ],
-        "year": 2018,
-        "container": "Quaternary International",
-        "pages": "57-69",
-        "doi": "10.1016/j.quaint.2017.11.037"
       },
       {
         "id": "clancier-2012-helenistik-uruk",

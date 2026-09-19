@@ -81,4 +81,22 @@ t("atıfsız kaynak HATA değil uyarıdır - derleme durmaz", () => {
     "uyarı, kaydı geçersiz kılmamalı");
 });
 
+t("üretim betiğinin bıraktığı yer tutucu locator uyarılır", () => {
+  // Kural scripts/lib/finding.mjs'de yazılı ama yalnız kurucu işlevde
+  // duruyordu; doğrudan JSON'a yazılan kayıtlar denetim dışındaydı.
+  const dizin = mkdtempSync(join(tmpdir(), "locator-"));
+  const yol = join(dizin, "kayit.json");
+  writeFileSync(yol, JSON.stringify([{
+    schema_version: 2, id: "deneme-kaydi", claim: "Bir iddia.", status: "established",
+    topic: ["deneme"], disciplines: ["arkeoloji"], checked: "2026-09-19",
+    sources: [kaynak("a")],
+    evidence: [{ id: "k1", text: "Bir kanit.", citations: [
+      { source_ref: "a", locator: "İlgili bölüm (paket notundan türetildi)", support_type: "direct" }] }],
+    counter_evidence: [], review: { status: "draft" },
+  }], null, 2), "utf8");
+  const cikti = calistir(yol);
+  assert.match(cikti, /yer tutucu/, "turetilmis locator uyarilmali");
+  assert.match(cikti, /Turetilmis locator: 1|Türetilmiş locator: 1/);
+});
+
 console.log(`atıfsız kaynak testi: tamam (${sayac} test)`);

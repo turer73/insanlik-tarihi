@@ -204,23 +204,6 @@
         "container": "Quaternary Science Reviews",
         "doi": "10.1016/j.quascirev.2006.07.013",
         "note": "Orta Pleyistosen Geçişi'ni iki milyon yıllık kayıt içinde ele alır."
-      },
-      {
-        "id": "berger-1988-milankovitch-theory",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Berger, André"
-        ],
-        "year": 1988,
-        "title": "Milankovitch Theory and Climate",
-        "container": "Reviews of Geophysics",
-        "volume": "26(4)",
-        "pages": "624-657",
-        "doi": "10.1029/RG026i004p00624",
-        "note": "Kuramın kapsamlı değerlendirmesi; periyot değerleri için dayanak."
       }
     ],
     "evidence": [

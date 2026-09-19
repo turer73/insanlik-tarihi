@@ -648,19 +648,6 @@
         "volume": "641(8062):E2",
         "doi": "10.1038/s41586-025-08977-1",
         "note": "Mayıs 2025. '6 Sv altı' çöküş tanımını metne EKLEYEN düzeltme; ayrıca 'PMOC oluşmuyor' ifadesi 'oluşmuyor ya da genel olarak zayıf kalıyor' olarak yumuşatıldı."
-      },
-      {
-        "id": "ipcc-ar6-wg1-bolum9",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "year": 2021,
-        "title": "Climate Change 2021: The Physical Science Basis — Bölüm 9: Ocean, Cryosphere and Sea Level Change",
-        "institution": "IPCC (Hükümetlerarası İklim Değişikliği Paneli)",
-        "publisher": "Cambridge University Press",
-        "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/",
-        "note": "Değerlendirilmiş uzlaşı konumu. Alıntılar bölüm metninden alındı, basın özetinden değil."
       }
     ],
     "evidence": [
@@ -1817,19 +1804,6 @@
         "volume": "12(15)",
         "doi": "10.1126/sciadv.adz7738",
         "note": "Dört demirli dizi, 16,5°N-42,5°N. TAM METİN OKUNDU. Makale, bu ölçünün AMOC eğilimini ABARTTIĞINI kendisi söylüyor ve insan kaynaklı zorlamaya atıf yapmaktan açıkça kaçınıyor."
-      },
-      {
-        "id": "ipcc-ar6-wg1-bolum9",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "year": 2021,
-        "title": "Climate Change 2021: The Physical Science Basis — Bölüm 9: Ocean, Cryosphere and Sea Level Change",
-        "institution": "IPCC (Hükümetlerarası İklim Değişikliği Paneli)",
-        "publisher": "Cambridge University Press",
-        "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/",
-        "note": "Değerlendirilmiş uzlaşı konumu. Alıntılar bölüm metninden alındı, basın özetinden değil."
       }
     ],
     "evidence": [

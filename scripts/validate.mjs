@@ -28,6 +28,10 @@ const ARTICLES_PATH = join(ROOT, "data", "articles.json");
 
 const args = process.argv.slice(2);
 const strict = args.includes("--strict");
+
+// Üretim betiklerinin bıraktığı yer tutucu locator. Gerçek bir "kaynağın
+// neresi" cevabı değil; kaynağın açılmadığını söyler.
+const TURETILMIS_LOCATOR = /paket notundan türetildi|^ilgili bölüm$/i;
 const inputArgs = args.filter((arg) => !arg.startsWith("--"));
 const schema = JSON.parse(readFileSync(SCHEMA_PATH, "utf8"));
 
@@ -267,6 +271,7 @@ let linkedEvidenceItems = 0;
 let citations = 0;
 let sourcesWithoutId = 0;
 let uncitedSources = 0;
+let derivedLocators = 0;
 
 for (const record of all) {
   const version = record.schema_version ?? 1;
@@ -329,6 +334,10 @@ for (const record of all) {
         citations += 1;
         const citationPath = `${itemPath}.citations[${citationIndex}]`;
         if (citation.source_ref) citedSourceIds.add(citation.source_ref);
+        if (TURETILMIS_LOCATOR.test(String(citation.locator ?? "").trim())) {
+          derivedLocators += 1;
+          warnings.push(`${citationPath}.locator: yer tutucu ('${citation.locator}') — kaynağın neresi okundu belirtilmemiş`);
+        }
         if (!sourceIds.has(citation.source_ref)) {
           errors.push(`${citationPath}.source_ref: '${citation.source_ref}' sources içinde bulunamadı`);
         }
@@ -406,6 +415,7 @@ console.log("\n=== BULGU VERİ TABANI ===");
 console.log(`Kayıt: ${all.length}   Dosya: ${new Set(all.map((record) => record.__file)).size}`);
 console.log(`Şema v2: ${v2Records}/${all.length}   Bağlı kanıt: ${linkedEvidenceItems}   Atıf: ${citations}`);
 console.log(`Geçiş borcu: ${legacyEvidenceItems} eski kanıt satırı · ${sourcesWithoutId} kimliksiz kaynak\n`);
+console.log(`Türetilmiş locator: ${derivedLocators} — kaynağın neresi okundu yazılmamış`);
 console.log(`Atıfsız kaynak bağlantısı: ${uncitedSources} — kayda eklenmiş ama hiçbir kanıt maddesinin göstermediği\n`);
 
 if (all.length) {

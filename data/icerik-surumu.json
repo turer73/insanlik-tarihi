@@ -2,7 +2,7 @@
   "not": "İçerik özetine dayalı tarih kaydı. Özet aynıysa tarih korunur; yalnız METİN değiştiğinde yenilenir. style/script blokları özete girmez.",
   "kayitlar": {
     "articles/amoc.html": {
-      "ozet": "47169338823b41fb",
+      "ozet": "86024278efc52665",
       "lastmod": "2026-09-19",
       "published": "2026-09-12"
     },
@@ -17,7 +17,7 @@
       "published": "2026-09-07"
     },
     "articles/babil.html": {
-      "ozet": "d87b9e2375157381",
+      "ozet": "7c4ed05ba7f6f134",
       "lastmod": "2026-09-19",
       "published": "2026-09-07"
     },
@@ -42,7 +42,7 @@
       "published": "2026-09-07"
     },
     "articles/hatirlamadigimiz-felaketler.html": {
-      "ozet": "f64fe99d30aca16e",
+      "ozet": "aa8ddee6f73800d6",
       "lastmod": "2026-09-19",
       "published": "2026-09-07"
     },
@@ -77,13 +77,13 @@
       "published": "2026-09-07"
     },
     "articles/milankovic.html": {
-      "ozet": "5a950cf4a861d033",
+      "ozet": "664619e07d822be3",
       "lastmod": "2026-09-19",
       "published": "2026-09-07"
     },
     "articles/mit-ve-sicil.html": {
-      "ozet": "2882607548e2ad48",
-      "lastmod": "2026-09-07",
+      "ozet": "fc68861aab141e42",
+      "lastmod": "2026-09-19",
       "published": "2026-09-07"
     },
     "articles/olu-deniz-parsomenleri.html": {
@@ -112,8 +112,8 @@
       "published": "2026-09-07"
     },
     "articles/roma-hristiyanlik.html": {
-      "ozet": "d499b7cb34079cd7",
-      "lastmod": "2026-09-07",
+      "ozet": "6654cd6ef4afec6d",
+      "lastmod": "2026-09-19",
       "published": "2026-09-07"
     },
     "articles/shushtar.html": {
@@ -142,7 +142,7 @@
       "published": "2026-09-07"
     },
     "articles/uruk.html": {
-      "ozet": "1d211c9705554c5a",
+      "ozet": "56fd7ad985a6b9de",
       "lastmod": "2026-09-19",
       "published": "2026-09-10"
     },
@@ -157,17 +157,17 @@
       "published": "2026-09-09"
     },
     "dist/bulgu-veri-tabani.html": {
-      "ozet": "1e594195d5a56ca3",
+      "ozet": "0ee2e48c7ec4afb4",
       "lastmod": "2026-09-19",
       "published": "2026-09-07"
     },
     "dist/kanit-denetimi.html": {
-      "ozet": "ab1f1154e854c34c",
+      "ozet": "d351f413e7691afb",
       "lastmod": "2026-09-19",
       "published": "2026-09-07"
     },
     "dist/zaman-cizelgesi.html": {
-      "ozet": "3782d7742c42d706",
+      "ozet": "c653ffa3b17cc733",
       "lastmod": "2026-09-19",
       "published": "2026-09-07"
     },
