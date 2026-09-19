@@ -266,6 +266,7 @@ let legacyEvidenceItems = 0;
 let linkedEvidenceItems = 0;
 let citations = 0;
 let sourcesWithoutId = 0;
+let uncitedSources = 0;
 
 for (const record of all) {
   const version = record.schema_version ?? 1;
@@ -310,6 +311,7 @@ for (const record of all) {
   });
 
   const evidenceIds = new Set();
+  const citedSourceIds = new Set();
   for (const field of ["evidence", "counter_evidence"]) {
     (record[field] ?? []).forEach((item, index) => {
       const itemPath = `${base}.${field}[${index}]`;
@@ -326,6 +328,7 @@ for (const record of all) {
       (item.citations ?? []).forEach((citation, citationIndex) => {
         citations += 1;
         const citationPath = `${itemPath}.citations[${citationIndex}]`;
+        if (citation.source_ref) citedSourceIds.add(citation.source_ref);
         if (!sourceIds.has(citation.source_ref)) {
           errors.push(`${citationPath}.source_ref: '${citation.source_ref}' sources içinde bulunamadı`);
         }
@@ -335,6 +338,17 @@ for (const record of all) {
         }
       });
     });
+  }
+
+  // TERS YÖN: kaydedilmiş ama hiçbir kanıt maddesinin göstermediği kaynak.
+  // Doğrulayıcı bugüne kadar yalnız atıf -> kaynak yönünü denetliyordu.
+  // Eksik atıf hata değil (bir kaynak kaydın tamamına bağlam olabilir) ama
+  // yazı sayfasında geri bağlantısız durur: destekliyormuş gibi görünüp
+  // hiçbir cümleye bağlı değildir.
+  for (const [sourceId, sourceIndex] of sourceIds) {
+    if (citedSourceIds.has(sourceId)) continue;
+    uncitedSources += 1;
+    warnings.push(`${base}.sources[${sourceIndex}] '${sourceId}': kayda eklenmiş ama hiçbir kanıt maddesi göstermiyor`);
   }
 
   if (version === 2) {
@@ -392,6 +406,7 @@ console.log("\n=== BULGU VERİ TABANI ===");
 console.log(`Kayıt: ${all.length}   Dosya: ${new Set(all.map((record) => record.__file)).size}`);
 console.log(`Şema v2: ${v2Records}/${all.length}   Bağlı kanıt: ${linkedEvidenceItems}   Atıf: ${citations}`);
 console.log(`Geçiş borcu: ${legacyEvidenceItems} eski kanıt satırı · ${sourcesWithoutId} kimliksiz kaynak\n`);
+console.log(`Atıfsız kaynak bağlantısı: ${uncitedSources} — kayda eklenmiş ama hiçbir kanıt maddesinin göstermediği\n`);
 
 if (all.length) {
   console.log("Durum dağılımı:");
