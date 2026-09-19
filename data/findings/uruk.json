@@ -2754,6 +2754,21 @@
         "language": "en",
         "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
         "institution": "Deutsches Archäologisches Institut (DAI)"
+      },
+      {
+        "id": "fassbinder-2020-uruk-manyetogram",
+        "tier": "institutional",
+        "type": "article",
+        "title": "Beneath the Euphrates Sediments: Magnetic Traces of the Mesopotamian Megacity Uruk-Warka",
+        "authors": [
+          "Fassbinder, Jörg W. E."
+        ],
+        "year": 2020,
+        "container": "The Ancient Near East Today",
+        "institution": "American Society of Overseas Research (ASOR)",
+        "url": "https://anetoday.org/beneath-euphrates-sediments/",
+        "language": "en",
+        "note": "2003 EAGE ozetini yazan ekibin acik erisimli ve daha guncel anlatimi. Sur devresi, burclar ve kanal agi olculeriyle burada. ONCEKI SURUMDE bu maddeler NASA ADS ozetine baglanmisti; o sayfa betige kapali ve icerigi denetlenemiyordu."
       }
     ],
     "evidence": [
@@ -2762,8 +2777,8 @@
         "text": "Jeofizik ve kazı verileri geniş bir sur devresini gösterir.",
         "citations": [
           {
-            "source_ref": "jimenez-2025-gilgamis-maddesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "fassbinder-2020-uruk-manyetogram",
+            "locator": "Sur ve burçlar bölümü — yaklaşık 40 metre genişlik",
             "support_type": "direct"
           }
         ]
@@ -2862,6 +2877,21 @@
         "note": "Kanal sistemi, sur ve olası mezar yapısı; Gilgameş mezarı yorumu açıkça spekülatif.",
         "institution": "European Association of Geoscientists and Engineers (EAGE)",
         "year": 2003
+      },
+      {
+        "id": "fassbinder-2020-uruk-manyetogram",
+        "tier": "institutional",
+        "type": "article",
+        "title": "Beneath the Euphrates Sediments: Magnetic Traces of the Mesopotamian Megacity Uruk-Warka",
+        "authors": [
+          "Fassbinder, Jörg W. E."
+        ],
+        "year": 2020,
+        "container": "The Ancient Near East Today",
+        "institution": "American Society of Overseas Research (ASOR)",
+        "url": "https://anetoday.org/beneath-euphrates-sediments/",
+        "language": "en",
+        "note": "2003 EAGE ozetini yazan ekibin acik erisimli ve daha guncel anlatimi. Sur devresi, burclar ve kanal agi olculeriyle burada. ONCEKI SURUMDE bu maddeler NASA ADS ozetine baglanmisti; o sayfa betige kapali ve icerigi denetlenemiyordu."
       }
     ],
     "evidence": [
@@ -2883,8 +2913,8 @@
         "text": "Konumun eski su yatağıyla ilişkisi edebî anlatıyla ilginç bir paralellik oluşturur.",
         "citations": [
           {
-            "source_ref": "eage-2003-uruk-manyetometri",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "fassbinder-2020-uruk-manyetogram",
+            "locator": "Kanal ağı bölümü — 400 metre izlenen ana kanal",
             "support_type": "counter"
           }
         ]
