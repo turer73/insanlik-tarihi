@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em;color:var(--ink-2)}
@@ -56,7 +56,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:
 @media(min-width:700px){.gates{grid-template-columns:1fr 1fr}}
 .gt{background:var(--bg);padding:1.15rem 1.3rem;display:flex;flex-direction:column;gap:.3rem}
 .gt .d{font-family:var(--mono);font-size:1.5rem;font-weight:700;letter-spacing:-.01em}
-.gt h3{font-size:1.06rem}
+.gt h3,.gt .hd{font-size:1.06rem}
 .gt p{margin:0;font-size:.9rem;color:var(--ink-2)}
 .gt p b{color:var(--ink)}
 .gt.k{background:var(--slate-soft)} .gt.k .d{color:var(--slate-ink)}
@@ -79,7 +79,7 @@ section:last-of-type{border-bottom:0}
 
 /* year bar */
 .year{border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:1rem;overflow-x:auto}
-.year h4{font-size:1.06rem}
+.year .hd{font-size:1.06rem}
 .yin{min-width:640px;display:flex;flex-direction:column;gap:.35rem}
 .ybar{display:flex;height:52px;border:1px solid var(--rule)}
 .ybar div{display:flex;flex-direction:column;justify-content:center;padding:.4rem .7rem;border-right:1px solid var(--rule);gap:.05rem;overflow:hidden}
@@ -119,7 +119,7 @@ section:last-of-type{border-bottom:0}
 .ly__l.z{color:var(--slate-ink);background:var(--slate-soft)}
 .ly__l.t{color:var(--accent-ink);background:var(--accent-soft)}
 .ly__l.o{color:var(--ink-2);background:var(--surface-2)}
-.ly h4{font-size:1.04rem;margin-bottom:.15rem}
+.ly .hd{font-size:1.04rem;margin-bottom:.15rem}
 .ly p{margin:0;font-size:.92rem;color:var(--ink-2)}
 .ly p+p{margin-top:.4rem}
 .ly p b{color:var(--ink)}
@@ -164,12 +164,12 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="gates">
       <div class="gt k">
         <span class="d">8 Kasım</span>
-        <h3>Ruz-ı Kasım — kışın kapısı</h3>
+        <div class="hd">Ruz-ı Kasım — kışın kapısı</div>
         <p>Kış yarısı başlar. Sözleşmeler, kiralar, çobanlık düzeni <b>bu tarihe göre</b> kurulurdu.</p>
       </div>
       <div class="gt h">
         <span class="d">6 Mayıs</span>
-        <h3>Hıdırellez — yazın kapısı</h3>
+        <div class="hd">Hıdırellez — yazın kapısı</div>
         <p>Yaz yarısı başlar. Hızır ile İlyas'ın buluştuğu gün; <b>2017'de UNESCO listesine</b> girdi.</p>
       </div>
     </div>
@@ -198,7 +198,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="year">
-    <h4>Halk yılının bölünmesi</h4>
+    <div class="hd">Halk yılının bölünmesi</div>
     <div class="yin">
       <div class="ybar">
         <div class="y-kis" style="flex:179"><b>Kasım — kış yarısı</b><span>8 Kasım → 6 Mayıs · 179 gün</span></div>
@@ -282,7 +282,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="ly">
       <span class="ly__l z">Katman 1 · Yapı</span>
       <div>
-        <h4>İki yarım ve gök menteşesi</h4>
+        <div class="hd">İki yarım ve gök menteşesi</div>
         <p>Yılı ekinoks-gündönümü ortalarında ikiye bölmek ve menteşeyi Ülker'e bağlamak — bu, <b>Anadolu'ya özgü değil.</b> Hesiodos'ta var, Avrupa'nın kuzeyindeki mevsim bölümlerinde var, ılıman kuşağın tarım toplumlarında yaygın.</p>
         <p>Sebep basit: <b>aynı enlem, aynı gökyüzü, aynı ihtiyaç.</b> Toprak güneşin döndüğü gün değil, ondan altı hafta sonra ısınır.</p>
         <p class="verdict">→ BAĞIMSIZ İCAT · benzerlik beklenir, açıklanmaya ihtiyaç duymaz</p>
@@ -292,7 +292,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="ly">
       <span class="ly__l t">Katman 2 · Sözcükler</span>
       <div>
-        <h4>Erbain, hamsin, zemheri</h4>
+        <div class="hd">Erbain, hamsin, zemheri</div>
         <p>Kış dilimlerinin adları Türkçe değil <b>Arapça:</b> <i>erbain</i> kırk, <i>hamsin</i> elli, <i>zemherir</i> şiddetli soğuk. "Ruz-ı Kasım"daki <i>ruz</i> ise <b>Farsça</b> gün demek. Hıdırellez'in kendisi de <b>Hızır ile İlyas</b>'ın birleşmesinden geliyor — Yakın Doğu kökenli bir figür çifti.</p>
         <p>Yani takvimin <b>iskeletini adlandıran katman</b> baştan sona alınmış. Bu, tartışmasız bir <b>temas</b> kanıtı: sözcükler yolculuk etti ve ödünç alınabilecek en kolay şey sözcüktür.</p>
         <p class="verdict">→ TEMAS · Arapça ve Farsça üzerinden alınmış</p>
@@ -302,7 +302,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="ly">
       <span class="ly__l o">Katman 3 · Sayım</span>
       <div>
-        <h4>On iki hayvanlı yıl döngüsü</h4>
+        <div class="hd">On iki hayvanlı yıl döngüsü</div>
         <p>Türk geleneğinde yılları <b>hayvan adlarıyla</b> sayan on iki yıllık bir döngü var ve bu, <b>Kâşgarlı Mahmud'un 11. yüzyılda yazdığı sözlükte</b> kayıtlı. Yani Anadolu'ya gelmeden önce vardı.</p>
         <p>Bu katman öncekilerle <b>aynı kaynaktan gelmiyor:</b> İç Asya'da paylaşılan bir sistem ve Çin takvim geleneğiyle bağlantısı ayrıca tartışılan bir konu.</p>
         <p class="verdict">→ MİRAS · göçle taşınmış, yerinde doğmamış</p>

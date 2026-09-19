@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em}
@@ -104,12 +104,12 @@ section:last-of-type{border-bottom:0}
 .tl__body{padding:.7rem 0 .75rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.3rem;position:relative}
 .tl__body::before{content:"";position:absolute;left:-5px;top:1.1rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .tl__body.m::before{background:var(--mon)}
-.tl__body h4{font-size:.97rem;margin-bottom:.12rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body .hd{font-size:.97rem;margin-bottom:.12rem;font-variation-settings:"SOFT" 25,"WONK" 0}
 .tl__body p{margin:0;font-size:.9rem;color:var(--ink-2)}
 
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
-.card h4{font-size:1.06rem}
+.card .hd{font-size:1.06rem}
 .card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
 .card.m .tag{color:var(--mon-ink)}
 .card p{margin:0;font-size:.92rem;color:var(--ink-2)}
@@ -278,17 +278,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card">
       <span class="tag">Anlatı ihtiyacı</span>
-      <h4>Sonun bir tarihi olmalı</h4>
+      <div class="hd">Sonun bir tarihi olmalı</div>
       <p><b>1431</b> gibi bir yıl vermek, "yüz yıl boyunca yavaşça azaldı" demekten çok daha kolay. Tarihler hatırlanır; eğilimler hatırlanmaz.</p>
     </div>
     <div class="card">
       <span class="tag">Tek sebep yanılgısı</span>
-      <h4>Bir fail arıyoruz</h4>
+      <div class="hd">Bir fail arıyoruz</div>
       <p>İklim, istila, salgın — hepsi tek cümlede anlatılabilir. Oysa büyük yerleşimler genellikle <b>birden çok yavaş sürecin üst üste binmesiyle</b> küçülür.</p>
     </div>
     <div class="card m">
       <span class="tag">Kanıtın biçimi</span>
-      <h4>Yavaş olan iz bırakmaz</h4>
+      <div class="hd">Yavaş olan iz bırakmaz</div>
       <p>İstila yanık tabakası bırakır; <b>bakımsızlık bırakmaz.</b> Bu yüzden ani olaylar kayıtta abartılı, yavaş süreçler eksik görünür — ta ki sediment karotu gibi bir yöntem devreye girene kadar.</p>
     </div>
   </div>
@@ -310,39 +310,39 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="tl">
     <div class="tl__row">
       <div class="tl__date">802</div>
-      <div class="tl__body"><h4>Khmer İmparatorluğu kuruluyor</h4><p>Angkor bölgesi yüzyıllar boyunca başkent işlevi görecek.</p></div>
+      <div class="tl__body"><div class="hd">Khmer İmparatorluğu kuruluyor</div><p>Angkor bölgesi yüzyıllar boyunca başkent işlevi görecek.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1113–1150</div>
-      <div class="tl__body"><h4>Angkor Wat inşa ediliyor</h4><p>Suryavarman II döneminde, Vişnu'ya adanmış olarak. Sonradan Budist kullanıma geçiyor.</p></div>
+      <div class="tl__body"><div class="hd">Angkor Wat inşa ediliyor</div><p>Suryavarman II döneminde, Vişnu'ya adanmış olarak. Sonradan Budist kullanıma geçiyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">~1300'ler</div>
-      <div class="tl__body m"><h4>Merkezde faaliyet azalmaya başlıyor</h4><p>Sediment kayıtları: yanma, orman tahribatı ve erozyon göstergeleri düşüyor.</p></div>
+      <div class="tl__body m"><div class="hd">Merkezde faaliyet azalmaya başlıyor</div><p>Sediment kayıtları: yanma, orman tahribatı ve erozyon göstergeleri düşüyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1345–1375</div>
-      <div class="tl__body"><h4>Büyük kuraklık</h4><p>Ağaç halkalarına göre sekiz yüzyılın en uzun süreli kuraklığı.</p></div>
+      <div class="tl__body"><div class="hd">Büyük kuraklık</div><p>Ağaç halkalarına göre sekiz yüzyılın en uzun süreli kuraklığı.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">~1400</div>
-      <div class="tl__body m"><h4>Angkor Thom hendeği bakımsız</h4><p>Bakım örgütlenmesi artık işlemiyor.</p></div>
+      <div class="tl__body m"><div class="hd">Angkor Thom hendeği bakımsız</div><p>Bakım örgütlenmesi artık işlemiyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1403</div>
-      <div class="tl__body"><h4>Kayıttaki en kurak yıl</h4><p>İkinci kuraklık dönemi: daha kısa, daha sert.</p></div>
+      <div class="tl__body"><div class="hd">Kayıttaki en kurak yıl</div><p>İkinci kuraklık dönemi: daha kısa, daha sert.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1431</div>
-      <div class="tl__body"><h4>Ayutthaya kuvvetleri geliyor</h4><p>Geleneksel "son" tarihi — ama merkez zaten büyük ölçüde boşalmış durumda.</p></div>
+      <div class="tl__body"><div class="hd">Ayutthaya kuvvetleri geliyor</div><p>Geleneksel "son" tarihi — ama merkez zaten büyük ölçüde boşalmış durumda.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">16.–17. yy</div>
-      <div class="tl__body m"><h4>Ziyaretçi kayıtları</h4><p>Portekizli ve Japon ziyaretçiler; bir Japon çizimi. Tapınak kullanımda.</p></div>
+      <div class="tl__body m"><div class="hd">Ziyaretçi kayıtları</div><p>Portekizli ve Japon ziyaretçiler; bir Japon çizimi. Tapınak kullanımda.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2012–</div>
-      <div class="tl__body m"><h4>LiDAR taramaları</h4><p>Şehrin gerçek ölçeği ortaya çıkıyor; nüfus tahmini dört katına yükseliyor.</p></div>
+      <div class="tl__body m"><div class="hd">LiDAR taramaları</div><p>Şehrin gerçek ölçeği ortaya çıkıyor; nüfus tahmini dört katına yükseliyor.</p></div>
     </div>
   </div>
 </section>

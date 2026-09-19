@@ -80,7 +80,7 @@ a{color:var(--accent-ink);text-underline-offset:3px;text-decoration-thickness:1p
 a:hover{text-decoration-thickness:2px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
   font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
@@ -182,7 +182,7 @@ section:last-of-type{border-bottom:0}
   content:"";position:absolute;left:-5px;top:1.32rem;width:8px;height:8px;
   border-radius:50%;background:var(--accent);
 }
-.tl__body h4{font-size:1rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body .hd{font-size:1rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
 .tl__body p{margin:0;font-size:.92rem;color:var(--ink-2)}
 .tl__gap .tl__date{color:var(--ink-3);font-weight:400}
 .tl__gap .tl__body{border-left-style:dashed;border-left-color:var(--rule);padding-block:1.1rem}
@@ -242,7 +242,7 @@ tr.hilite td.cave{color:var(--accent-ink)}
 .hyp-main h3{font-size:1.4rem}
 .hyp-main p{margin:0;max-width:62ch}
 .evid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:.4rem}
-.evid h4{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;
+.evid .hd{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;
   text-transform:uppercase;color:var(--ink-3);margin-bottom:.5rem;font-variation-settings:normal}
 .evid ul{margin:0;padding-left:1.05rem;font-size:.92rem;color:var(--ink-2);
   display:flex;flex-direction:column;gap:.4rem}
@@ -250,7 +250,7 @@ tr.hilite td.cave{color:var(--accent-ink)}
 .alts{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
   grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:1.5rem}
 .alt{background:var(--bg);padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.45rem}
-.alt h4{font-size:1.02rem}
+.alt .hd{font-size:1.02rem}
 .alt__who{font-family:var(--mono);font-size:.73rem;color:var(--ink-3)}
 .alt p{margin:0;font-size:.9rem;color:var(--ink-2)}
 
@@ -282,7 +282,7 @@ tr.hilite td.cave{color:var(--accent-ink)}
 .places{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
   grid-template-columns:repeat(auto-fit,minmax(255px,1fr));margin-top:1.5rem}
 .place{background:var(--bg);padding:1.2rem 1.3rem;display:flex;flex-direction:column;gap:.4rem}
-.place h4{font-size:1.05rem}
+.place .hd{font-size:1.05rem}
 .place__loc{font-family:var(--mono);font-size:.73rem;color:var(--ink-3)}
 .place p{margin:0;font-size:.92rem;color:var(--ink-2)}
 
@@ -374,13 +374,13 @@ tr.hilite td.cave{color:var(--accent-ink)}
   grid-template-columns:1fr;max-width:64ch}
 @media(min-width:680px){.vcmp{grid-template-columns:1fr 1fr}}
 .vcol{background:var(--bg);padding:1.05rem 1.15rem;display:flex;flex-direction:column;gap:.5rem}
-.vcol h4{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;
+.vcol .hd{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;
   text-transform:uppercase;color:var(--ink-3);font-variation-settings:normal}
 .vcol p{margin:0;font-family:var(--display);font-size:1.04rem;line-height:1.6;color:var(--ink);
   font-variation-settings:"opsz" 14,"SOFT" 42,"WONK" 0}
 .vcol .datum{font-family:var(--mono);font-size:.75rem;color:var(--ink-3)}
 .vcol.win{background:var(--accent-soft)}
-.vcol.win h4{color:var(--accent-ink)}
+.vcol.win .hd{color:var(--accent-ink)}
 .vcol mark{background:transparent;color:var(--accent-ink);font-weight:700;
   border-bottom:2px solid var(--accent);padding-bottom:1px}
 
@@ -487,23 +487,23 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
     <div class="tl__row">
       <div class="tl__date">~MÖ 250</div>
-      <div class="tl__body"><h4>En eski parçaların yazımı</h4><p>Koleksiyonun en yaşlı katmanı. Bu tarihte henüz Qumran yerleşimi yok — metinler başka yerde yazıldı.</p></div>
+      <div class="tl__body"><div class="hd">En eski parçaların yazımı</div><p>Koleksiyonun en yaşlı katmanı. Bu tarihte henüz Qumran yerleşimi yok — metinler başka yerde yazıldı.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">~MÖ 100</div>
-      <div class="tl__body"><h4>Qumran yerleşimi kuruluyor</h4><p>Kuruluş tarihi tartışmalı: de Vaux MÖ 130'lara, Jodi Magness MÖ 100–50 arasına koyar.</p></div>
+      <div class="tl__body"><div class="hd">Qumran yerleşimi kuruluyor</div><p>Kuruluş tarihi tartışmalı: de Vaux MÖ 130'lara, Jodi Magness MÖ 100–50 arasına koyar.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">~MÖ 125</div>
-      <div class="tl__body"><h4>Büyük Yeşaya Parşömeni yazılıyor</h4><p>Koleksiyonun en ünlü parçası. Paleografik tarihleme; C-14 daha geniş bir aralık veriyor.</p></div>
+      <div class="tl__body"><div class="hd">Büyük Yeşaya Parşömeni yazılıyor</div><p>Koleksiyonun en ünlü parçası. Paleografik tarihleme; C-14 daha geniş bir aralık veriyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MÖ 31</div>
-      <div class="tl__body"><h4>Deprem</h4><p>Josephus'un kaydettiği büyük deprem. De Vaux yerleşimde buna bağladığı bir terk dönemi tespit etti; bu okuma da tartışılıyor.</p></div>
+      <div class="tl__body"><div class="hd">Deprem</div><p>Josephus'un kaydettiği büyük deprem. De Vaux yerleşimde buna bağladığı bir terk dönemi tespit etti; bu okuma da tartışılıyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MS 68</div>
-      <div class="tl__body"><h4>Roma X. Lejyonu Qumran'ı yıkıyor</h4><p>Birinci Yahudi İsyanı sırasında. Parşömenlerin mağaralara bu sırada ya da hemen öncesinde konulduğu düşünülüyor.</p></div>
+      <div class="tl__body"><div class="hd">Roma X. Lejyonu Qumran'ı yıkıyor</div><p>Birinci Yahudi İsyanı sırasında. Parşömenlerin mağaralara bu sırada ya da hemen öncesinde konulduğu düşünülüyor.</p></div>
     </div>
 
     <div class="tl__row tl__gap">
@@ -515,47 +515,47 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
     <div class="tl__row">
       <div class="tl__date">1947</div>
-      <div class="tl__body"><h4>1. mağara</h4><p>Ta'amireh aşiretinden bedeviler ilk yedi parşömeni buluyor. Anlatılan hikâye — kaybolan keçiyi ararken mağaraya atılan taş, kırılan küp sesi — birden çok versiyonda dolaşıyor; ayrıntısı doğrulanamıyor.</p></div>
+      <div class="tl__body"><div class="hd">1. mağara</div><p>Ta'amireh aşiretinden bedeviler ilk yedi parşömeni buluyor. Anlatılan hikâye — kaybolan keçiyi ararken mağaraya atılan taş, kırılan küp sesi — birden çok versiyonda dolaşıyor; ayrıntısı doğrulanamıyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1947–48</div>
-      <div class="tl__body"><h4>Koleksiyon ikiye bölünüyor</h4><p>Üç parşömeni Eleazar Sukenik satın alıyor. Dördü Süryani metropoliti Mar Athanasius Samuel'e geçip ABD'ye götürülüyor.</p></div>
+      <div class="tl__body"><div class="hd">Koleksiyon ikiye bölünüyor</div><p>Üç parşömeni Eleazar Sukenik satın alıyor. Dördü Süryani metropoliti Mar Athanasius Samuel'e geçip ABD'ye götürülüyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1949–56</div>
-      <div class="tl__body"><h4>2–11. mağaralar</h4><p>Bedeviler ve arkeologlar arasında fiilî bir yarış. En zengini <span class="mono">4. mağara</span> (1952): tek başına elyazmalarının yaklaşık üçte ikisi.</p></div>
+      <div class="tl__body"><div class="hd">2–11. mağaralar</div><p>Bedeviler ve arkeologlar arasında fiilî bir yarış. En zengini <span class="mono">4. mağara</span> (1952): tek başına elyazmalarının yaklaşık üçte ikisi.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1951–56</div>
-      <div class="tl__body"><h4>Roland de Vaux Qumran'ı kazıyor</h4><p>Yerleşimi bir mezhep merkezi olarak yorumluyor. Kazı raporunun tamamı hiçbir zaman yayımlanmadı — sonraki tartışmaların bir kaynağı bu.</p></div>
+      <div class="tl__body"><div class="hd">Roland de Vaux Qumran'ı kazıyor</div><p>Yerleşimi bir mezhep merkezi olarak yorumluyor. Kazı raporunun tamamı hiçbir zaman yayımlanmadı — sonraki tartışmaların bir kaynağı bu.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1954</div>
-      <div class="tl__body"><h4>Wall Street Journal ilanı</h4><p>Mar Samuel dört parşömeni küçük ilanla satışa çıkarıyor. Yigael Yadin aracı üzerinden 250.000 dolara alıyor; parşömenler İsrail'e dönüyor.</p></div>
+      <div class="tl__body"><div class="hd">Wall Street Journal ilanı</div><p>Mar Samuel dört parşömeni küçük ilanla satışa çıkarıyor. Yigael Yadin aracı üzerinden 250.000 dolara alıyor; parşömenler İsrail'e dönüyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1955–56</div>
-      <div class="tl__body"><h4>Bakır Parşömen testereyle açılıyor</h4><p>Oksitlenip kırılganlaştığı için açılamıyordu. Manchester'da 23 şeride kesildi — geri dönüşü olmayan ama başka seçeneği olmayan bir müdahale.</p></div>
+      <div class="tl__body"><div class="hd">Bakır Parşömen testereyle açılıyor</div><p>Oksitlenip kırılganlaştığı için açılamıyordu. Manchester'da 23 şeride kesildi — geri dönüşü olmayan ama başka seçeneği olmayan bir müdahale.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1991</div>
-      <div class="tl__body"><h4>Yayın tekeli kırılıyor</h4><p>Üç kırılma aynı yıl. Kırk yıl sonra metinler nihayet herkese açık.</p></div>
+      <div class="tl__body"><div class="hd">Yayın tekeli kırılıyor</div><p>Üç kırılma aynı yıl. Kırk yıl sonra metinler nihayet herkese açık.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2009</div>
-      <div class="tl__body"><h4>DJD serisi tamamlanıyor</h4><p><i>Discoveries in the Judaean Desert</i>, 40 cilt — resmî bilimsel yayın.</p></div>
+      <div class="tl__body"><div class="hd">DJD serisi tamamlanıyor</div><p><i>Discoveries in the Judaean Desert</i>, 40 cilt — resmî bilimsel yayın.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2011</div>
-      <div class="tl__body"><h4>Leon Levy Dijital Kütüphanesi</h4><p>Yüksek çözünürlüklü, çok spektrumlu görüntüler ücretsiz çevrimiçi. Alan fiilen herkese açılıyor.</p></div>
+      <div class="tl__body"><div class="hd">Leon Levy Dijital Kütüphanesi</div><p>Yüksek çözünürlüklü, çok spektrumlu görüntüler ücretsiz çevrimiçi. Alan fiilen herkese açılıyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2020</div>
-      <div class="tl__body"><h4>Museum of the Bible: 16/16 sahte</h4><p>Bağımsız inceleme, müzenin satın aldığı parçaların tamamının modern sahtecilik olduğunu açıklıyor.</p></div>
+      <div class="tl__body"><div class="hd">Museum of the Bible: 16/16 sahte</div><p>Bağımsız inceleme, müzenin satın aldığı parçaların tamamının modern sahtecilik olduğunu açıklıyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2021</div>
-      <div class="tl__body"><h4>Nahal Hever — 60 yıl sonra yeni parçalar</h4><p>"Dehşet Mağarası"nda Grekçe Küçük Peygamberler parçaları. Qumran koleksiyonundan ayrı, ama aynı çöl ve aynı dönem.</p></div>
+      <div class="tl__body"><div class="hd">Nahal Hever — 60 yıl sonra yeni parçalar</div><p>"Dehşet Mağarası"nda Grekçe Küçük Peygamberler parçaları. Qumran koleksiyonundan ayrı, ama aynı çöl ve aynı dönem.</p></div>
     </div>
   </div>
 </section>
@@ -961,12 +961,12 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
       </div>
       <div class="vcmp">
         <div class="vcol">
-          <h4>Masoretik metin</h4>
+          <div class="hd">Masoretik metin</div>
           <p>"Canının sıkıntısından ötürü görecek, doyacak."</p>
           <span class="datum">Halep / Leningrad kodeksleri · MS 930–1008</span>
         </div>
         <div class="vcol win">
-          <h4>Qumran + Septuaginta</h4>
+          <div class="hd">Qumran + Septuaginta</div>
           <p>"Canının sıkıntısından sonra <mark>ışık</mark> görecek, doyacak."</p>
           <span class="datum">1QIsaᵃ · 1QIsaᵇ · 4QIsaᵈ · Grekçe çeviri · MÖ 2.–1. yy</span>
         </div>
@@ -1046,7 +1046,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
     <div class="evid">
       <div>
-        <h4>Lehine</h4>
+        <div class="hd">Lehine</div>
         <ul>
           <li>Yaşlı Plinius (<i>Doğa Tarihi</i> 5.73) Ölü Deniz'in batı kıyısında, Ein Gedi'nin yukarısında bir Essene yerleşimi tarif ediyor — coğrafya birebir tutuyor.</li>
           <li>Josephus ve İskenderiyeli Philon'un anlattığı âdetler (mülk ortaklığı, uzun kabul süreci, günlük arınma) <span class="mono">1QS</span>'in kurallarıyla örtüşüyor.</li>
@@ -1055,7 +1055,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
         </ul>
       </div>
       <div>
-        <h4>Aleyhine</h4>
+        <div class="hd">Aleyhine</div>
         <ul>
           <li>Parşömenlerin <b>hiçbirinde "Essene" kelimesi geçmiyor.</b> Topluluk kendine hep <span class="mono">Yaḥad</span> diyor.</li>
           <li>4. mağaranın içeriği tek bir mezhebin kütüphanesi için fazla çeşitli — birbiriyle çelişen halakhik pozisyonlar bir arada.</li>
@@ -1069,17 +1069,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <p class="eyebrow" style="margin-top:2rem">Ciddi alternatifler</p>
   <div class="alts">
     <div class="alt">
-      <h4>Sadduki hipotezi</h4>
+      <div class="hd">Sadduki hipotezi</div>
       <span class="alt__who">Lawrence Schiffman</span>
       <p><span class="mono">4QMMT</span>'de savunulan halakhik pozisyonlar, rabbinik kaynakların Sadukilere atfettikleriyle örtüşüyor. Topluluk Essene değil, tapınak rahipliğinden kopmuş bir Sadduki kolu olabilir.</p>
     </div>
     <div class="alt">
-      <h4>Kudüs kütüphanesi</h4>
+      <div class="hd">Kudüs kütüphanesi</div>
       <span class="alt__who">Norman Golb</span>
       <p>Parşömenler Qumran'da yazılmadı. MS 70 kuşatması yaklaşırken Kudüs'teki kütüphanelerden toplanıp çöle kaçırıldı. İçeriğin çelişkili çeşitliliğini bu açıklar; Qumran ise bir kale.</p>
     </div>
     <div class="alt">
-      <h4>Yerleşim dinî değil</h4>
+      <div class="hd">Yerleşim dinî değil</div>
       <span class="alt__who">Donceel-Voûte · Hirschfeld · Magen</span>
       <p>Qumran bir villa, çömlek atölyesi ya da ticaret durağıydı. "Yazı odası" masası aslında bir yemek sedirinin parçası; havuzlar çömlekçilik için su deposu.</p>
     </div>
@@ -1193,22 +1193,22 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
   <div class="places">
     <div class="place">
-      <h4>Kitap Tapınağı</h4>
+      <div class="hd">Kitap Tapınağı</div>
       <span class="place__loc">İsrail Müzesi · Kudüs</span>
       <p>Beyaz parabolik kubbesi ve tam karşısındaki siyah bazalt duvarıyla, <span class="mono">1QM</span>'deki <b>Işık Oğulları / Karanlık Oğulları</b> karşıtlığına bilinçli bir gönderme. Yeşaya Parşömeni ışığa dayanamadığı için genellikle tıpkıbasımı sergilenir.</p>
     </div>
     <div class="place">
-      <h4>Rockefeller Müzesi</h4>
+      <div class="hd">Rockefeller Müzesi</div>
       <span class="place__loc">İsrail Eski Eserler Kurumu · Kudüs</span>
       <p>Koleksiyonun büyük kısmı burada, iklim kontrollü depoda. Sergi değil, çalışma ve koruma merkezi.</p>
     </div>
     <div class="place">
-      <h4>Ürdün Arkeoloji Müzesi</h4>
+      <div class="hd">Ürdün Arkeoloji Müzesi</div>
       <span class="place__loc">Amman</span>
       <p>Bakır Parşömen'in kesilmiş şeritleri burada. Ürdün, koleksiyonun geri kalanı üzerinde de hak iddia ediyor.</p>
     </div>
     <div class="place">
-      <h4>Leon Levy Dijital Kütüphanesi</h4>
+      <div class="hd">Leon Levy Dijital Kütüphanesi</div>
       <span class="place__loc">deadseascrolls.org.il · ücretsiz</span>
       <p>Çok spektrumlu, yüksek çözünürlüklü görüntüler. Kızılötesi görüntüleme, kararmış deride çıplak gözle okunamayan yazıyı ortaya çıkarıyor. Google ortaklığıyla yapılan sürüm tam metin aramaya da izin veriyor.</p>
     </div>

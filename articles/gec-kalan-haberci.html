@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em}
@@ -55,7 +55,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:
 @media(min-width:760px){.tests{grid-template-columns:1fr 1fr}}
 .ts{background:var(--bg);padding:1.2rem 1.35rem;display:flex;flex-direction:column;gap:.45rem}
 .ts .n{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .45rem;align-self:flex-start}
-.ts h3{font-size:1.1rem}
+.ts h3,.ts .hd{font-size:1.1rem}
 .ts p{margin:0;font-size:.92rem;color:var(--ink-2)}
 .ts p b{color:var(--ink)}
 .ts.a{background:var(--moss-soft)}
@@ -80,7 +80,7 @@ section:last-of-type{border-bottom:0}
 
 /* messenger diagram */
 .relay{border:1px solid var(--rule);background:var(--raised);padding:1.3rem 1.4rem 1.1rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem}
-.relay h4{font-size:1.04rem}
+.relay .hd{font-size:1.04rem}
 .relay svg{width:100%;height:auto;display:block;max-width:640px;margin-inline:auto}
 .relay svg text{font-family:var(--mono);font-size:9px;fill:var(--ink-3)}
 .relay svg text.big{font-family:var(--body);font-size:11px;font-weight:700;fill:var(--ink)}
@@ -104,7 +104,7 @@ section:last-of-type{border-bottom:0}
 .types{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(215px,1fr));margin-top:1.5rem}
 .ty{background:var(--bg);padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.35rem}
 .ty .lbl{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
-.ty h4{font-size:1rem}
+.ty .hd{font-size:1rem}
 .ty p{margin:0;font-size:.89rem;color:var(--ink-2)}
 .ty p b{color:var(--ink)}
 .ty .where{font-family:var(--mono);font-size:.66rem;color:var(--accent-ink);border-top:1px solid var(--rule-soft);padding-top:.4rem;margin-top:.15rem}
@@ -161,12 +161,12 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="tests">
       <div class="ts a">
         <span class="n">Test 1</span>
-        <h3>Ölüm neden var?</h3>
+        <div class="hd">Ölüm neden var?</div>
         <p>Bu soruya <b>her gelenek cevap veriyor</b> — ve cevapların dağılımı düzensiz değil, <b>bölgesel.</b> Ölçülebilir bir desen.</p>
       </div>
       <div class="ts b">
         <span class="n">Test 2</span>
-        <h3>Dünyanın bir başlangıcı var mı?</h3>
+        <div class="hd">Dünyanın bir başlangıcı var mı?</div>
         <p>Bu soruya bazı gelenekler cevap vermiyor — <b>ama sebebi eksiklik olmayabilir.</b> Soru onların zaman anlayışına <b>uymuyor</b> olabilir.</p>
       </div>
     </div>
@@ -195,7 +195,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="relay">
-    <h4>Anlatının iskeleti</h4>
+    <div class="hd">Anlatının iskeleti</div>
     <svg viewBox="0 0 620 150" role="img" aria-label="Tanrıdan insanlara giden iki haberci yolu: yavaş bukalemun uzun bir yay çizerek geç varır, hızlı kertenkele düz gidip önce varır">
       <rect class="node" x="8" y="55" width="96" height="40" rx="2"/>
       <text class="big" x="56" y="80" text-anchor="middle">Tanrı</text>
@@ -243,25 +243,25 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="types">
     <div class="ty">
       <span class="lbl">Tip 1</span>
-      <h4>Yanlış teslim edilen haber</h4>
+      <div class="hd">Yanlış teslim edilen haber</div>
       <p>Ölümsüzlük haberi <b>yolda bozulur.</b> Kimsenin suçu yok; sadece yanlış mesaj önce vardı.</p>
       <p class="where">Sahra altı Afrika'da yoğun</p>
     </div>
     <div class="ty">
       <span class="lbl">Tip 2</span>
-      <h4>Çalınan nesne</h4>
+      <div class="hd">Çalınan nesne</div>
       <p>Ölümsüzlük <b>elde edilir ama kaybedilir.</b> Gılgamış gençlik otunu denizin dibinden çıkarır; bir <b>yılan</b> onu çalar.</p>
       <p class="where">Mezopotamya</p>
     </div>
     <div class="ty">
       <span class="lbl">Tip 3</span>
-      <h4>İhlal ve ceza</h4>
+      <div class="hd">İhlal ve ceza</div>
       <p>Ölüm bir <b>yasağın çiğnenmesinin</b> sonucudur. Bir emir vardır, bir ihlal vardır, bir sonuç vardır.</p>
       <p class="where">Yakın Doğu tek tanrılı gelenekler</p>
     </div>
     <div class="ty">
       <span class="lbl">Tip 4</span>
-      <h4>Sayısal pazarlık</h4>
+      <div class="hd">Sayısal pazarlık</div>
       <p>Ölüm bir <b>hesaba</b> bağlanır. Japon anlatısında İzanami her gün bin can alacağına yemin eder; İzanagi her gün bin beş yüz doğum sözü verir.</p>
       <p class="where">Japonya</p>
     </div>

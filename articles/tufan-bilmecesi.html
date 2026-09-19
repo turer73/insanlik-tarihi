@@ -49,7 +49,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
   font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
@@ -157,14 +157,14 @@ tr.key td.rowh{background:var(--accent-soft);color:var(--accent-ink)}
 .tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;
   border-radius:50%;background:var(--accent)}
 .tl__body.late::before{background:var(--ochre)}
-.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body .hd{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
 .tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
 
 /* cards */
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.55rem}
-.card h3,.card h4{font-size:1.1rem}
+.card h3,.card .hd{font-size:1.1rem}
 .card p{margin:0;font-size:.94rem;color:var(--ink-2)}
 .card .tag{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.09em;
   text-transform:uppercase;color:var(--ink-3)}
@@ -444,7 +444,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card">
       <span class="tag">Mezopotamya–İbrani</span>
-      <h4>Ceza ve seçilmiş kurtulan</h4>
+      <div class="hd">Ceza ve seçilmiş kurtulan</div>
       <ul>
         <li>Tanrılar insanlığı yok etmeye karar verir</li>
         <li>Bir kişi uyarılır, gemi yapar</li>
@@ -454,7 +454,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     </div>
     <div class="card ko">
       <span class="tag">Çin</span>
-      <h4>Problem ve mühendislik</h4>
+      <div class="hd">Problem ve mühendislik</div>
       <ul>
         <li>Sular yükselir; ceza değil, durum</li>
         <li>Gemi yok, kanal var</li>
@@ -464,7 +464,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     </div>
     <div class="card">
       <span class="tag">Bir dipnot</span>
-      <h4>Gerçek bir sel olabilir</h4>
+      <div class="hd">Gerçek bir sel olabilir</div>
       <p>2016'da bir grup araştırmacı, Sarı Irmak'ta Jishi Boğazı'nda <b>MÖ ~1920 civarında</b> gerçek bir set patlaması seli için jeolojik kanıt sundu ve bunu Yu anlatısıyla ilişkilendirdi. İddia tartışmalı — hem tarihlendirme hem de mitle bağ kurulması eleştirildi. Yine de somut bir yerel selin bir anlatıyı besleyebileceğini göstermesi bakımından kayda değer.</p>
     </div>
   </div>
@@ -480,27 +480,27 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="tl">
     <div class="tl__row">
       <div class="tl__date">~MÖ 1700</div>
-      <div class="tl__body"><h4>Atrahasis yazıya geçer</h4><p>Elimizdeki en eski tam Akadca tufan anlatısı.</p></div>
+      <div class="tl__body"><div class="hd">Atrahasis yazıya geçer</div><p>Elimizdeki en eski tam Akadca tufan anlatısı.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">~MÖ 1200</div>
-      <div class="tl__body"><h4>Gılgamış standart sürümü</h4><p>XI. tablet, Utnapiştim anlatısını içerir.</p></div>
+      <div class="tl__body"><div class="hd">Gılgamış standart sürümü</div><p>XI. tablet, Utnapiştim anlatısını içerir.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">~MÖ 600–500</div>
-      <div class="tl__body"><h4>Tekvin anlatısı derlenir</h4><p>Sürgün dönemi ve sonrası; iki farklı kaynağın birleştirildiği metin eleştirisinde standart görüştür.</p></div>
+      <div class="tl__body"><div class="hd">Tekvin anlatısı derlenir</div><p>Sürgün dönemi ve sonrası; iki farklı kaynağın birleştirildiği metin eleştirisinde standart görüştür.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MS 1492</div>
-      <div class="tl__body late"><h4>Amerika kıtasıyla temas</h4><p>Bu tarihten sonra kaydedilen her yerli anlatı, misyoner teması <b>sonrasına</b> aittir.</p></div>
+      <div class="tl__body late"><div class="hd">Amerika kıtasıyla temas</div><p>Bu tarihten sonra kaydedilen her yerli anlatı, misyoner teması <b>sonrasına</b> aittir.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MS ~1555</div>
-      <div class="tl__body late"><h4>Popol Vuh yazıya geçirilir</h4><p>K'iche' Mayaca, <b>Latin alfabesiyle</b>, Hristiyanlaştırılmış yazarlarca — İspanyol fethinden ~30 yıl sonra.</p></div>
+      <div class="tl__body late"><div class="hd">Popol Vuh yazıya geçirilir</div><p>K'iche' Mayaca, <b>Latin alfabesiyle</b>, Hristiyanlaştırılmış yazarlarca — İspanyol fethinden ~30 yıl sonra.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MS 1918</div>
-      <div class="tl__body late"><h4>Frazer derlemeyi yayımlar</h4><p>Bu koleksiyonların büyük kısmı misyoner kayıtlarına dayanır.</p></div>
+      <div class="tl__body late"><div class="hd">Frazer derlemeyi yayımlar</div><p>Bu koleksiyonların büyük kısmı misyoner kayıtlarına dayanır.</p></div>
     </div>
   </div>
 
@@ -554,17 +554,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card">
       <span class="tag">1929 · Ur</span>
-      <h4>"Tufanı buldum"</h4>
+      <div class="hd">"Tufanı buldum"</div>
       <p>Leonard Woolley, Ur'da kazarken metrelerce kalınlıkta temiz bir <b>alüvyon katmanı</b> buldu ve bunu Tufan olarak duyurdu. Sonraki kazılar Kiş, Şuruppak ve Uruk'ta da benzer katmanlar buldu — ama <b>farklı tarihlerde.</b> Yani tek bir olay değil, tekrar eden yerel taşkınlar. Mezopotamya bir taşkın ovasıdır; şehirler defalarca sular altında kaldı.</p>
     </div>
     <div class="card">
       <span class="tag">1997 · Karadeniz</span>
-      <h4>Felaket hipotezi</h4>
+      <div class="hd">Felaket hipotezi</div>
       <p>Ryan ve Pitman, Akdeniz'in ~7.600 yıl önce Boğaz'ı yarıp Karadeniz'i ani biçimde doldurduğunu öne sürdü ve tufan anlatılarına bağladı. Popüler oldu. Sonraki jeolojik çalışmalar yükselişin çok daha <b>kademeli</b> olduğuna işaret etti; felaket versiyonu bugün azınlık görüşü.</p>
     </div>
     <div class="card">
       <span class="tag">Buzul sonrası</span>
-      <h4>Gerçek ama yavaş</h4>
+      <div class="hd">Gerçek ama yavaş</div>
       <p>Son buzul çağının bitişiyle deniz seviyesi yaklaşık <b>120 metre</b> yükseldi — ama bu on bin yıla yayıldı. Yılda santimetreler. Kıyı toplulukları için gerçek ve kalıcı bir kayıp, ama bir "su duvarı" değil. Nesiller boyu aktarılan bir yer-kaybı hatırası üretebilir; bir gemi anlatısı üretmesi için sebep yok.</p>
     </div>
   </div>

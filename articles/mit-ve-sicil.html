@@ -40,7 +40,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em}
@@ -58,7 +58,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:
 @media(min-width:760px){.thesis{grid-template-columns:1fr 1fr}}
 .th{background:var(--bg);padding:1.2rem 1.35rem;display:flex;flex-direction:column;gap:.45rem}
 .th .tag{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:.18rem .45rem;align-self:flex-start}
-.th h3{font-size:1.1rem}
+.th h3,.th .hd{font-size:1.1rem}
 .th p{margin:0;font-size:.93rem;color:var(--ink-2)}
 .th p b{color:var(--ink)}
 .th.a{background:var(--false-soft)}
@@ -97,7 +97,7 @@ section:last-of-type{border-bottom:0}
 
 /* index bar */
 .idx{border:1px solid var(--gold);background:var(--gold-soft);padding:1.4rem 1.5rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem}
-.idx h4{font-size:1.15rem}
+.idx .hd{font-size:1.15rem}
 .idx .num{font-family:var(--display);font-size:clamp(2.6rem,7vw,4rem);font-weight:700;line-height:.95;color:var(--gold-ink);font-variation-settings:"SOFT" 6,"WONK" 1;font-variant-numeric:tabular-nums}
 .idxbar{position:relative;height:34px;border:1px solid var(--gold);background:var(--raised);overflow:hidden}
 .idxfill{position:absolute;top:0;bottom:0;left:0;width:100%;background:var(--gold);opacity:.28}
@@ -123,7 +123,7 @@ section:last-of-type{border-bottom:0}
 .rc__d .w{font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.16rem .42rem;align-self:flex-start}
 .w-doc{background:var(--accent-soft);color:var(--accent-ink)}
 .w-con{background:var(--gold-soft);color:var(--gold-ink)}
-.rc h4{font-size:1.04rem;margin-bottom:.15rem}
+.rc .hd{font-size:1.04rem;margin-bottom:.15rem}
 .rc p{margin:0;font-size:.92rem;color:var(--ink-2)}
 .rc p+p{margin-top:.4rem}
 .rc p b{color:var(--ink)}
@@ -140,7 +140,7 @@ section:last-of-type{border-bottom:0}
 .bal{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(235px,1fr));margin-top:1.5rem}
 .bl{background:var(--bg);padding:1.2rem 1.3rem;display:flex;flex-direction:column;gap:.4rem}
 .bl .tag{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-ink)}
-.bl h4{font-size:1.02rem}
+.bl .hd{font-size:1.02rem}
 .bl p{margin:0;font-size:.91rem;color:var(--ink-2)}
 .bl p b{color:var(--ink)}
 
@@ -175,12 +175,12 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="thesis">
       <div class="th a">
         <span class="tag">Terk edildi</span>
-        <h3>"Bin yıllık bir Karanlık Çağ vardı"</h3>
+        <div class="hd">"Bin yıllık bir Karanlık Çağ vardı"</div>
         <p>Bilimin durduğu, aklın söndüğü bir bin yıl. <b>Tarihçiler bu çerçeveyi kullanmıyor</b> — ve onu üreten 19. yüzyıl eserlerinin kanıtları büyük ölçüde yanlış okunmuş ya da uydurulmuş çıktı.</p>
       </div>
       <div class="th b">
         <span class="tag">Sicilde duruyor</span>
-        <h3>"Belirli, tarihlenebilir zararlar verildi"</h3>
+        <div class="hd">"Belirli, tarihlenebilir zararlar verildi"</div>
         <p><b>407 yıl süren</b> bir yasaklı kitaplar listesi. Ev hapsinde ölen bir astronom. Yakılan bir filozof. Kapatılan bir okul. <b>Bunlar için mite ihtiyaç yok.</b></p>
       </div>
     </div>
@@ -281,7 +281,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="idx">
     <div>
       <span class="num">407</span>
-      <h4 style="margin-top:.3rem">yıl boyunca yürürlükte kalan resmî yasaklı kitaplar listesi</h4>
+      <div class="hd" style="margin-top:.3rem">yıl boyunca yürürlükte kalan resmî yasaklı kitaplar listesi</div>
     </div>
     <div class="idxbar" role="img" aria-label="1559'dan 1966'ya uzanan çubuk; 1616, 1633 ve 1835 işaretli">
       <div class="idxfill"></div>
@@ -316,7 +316,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="rc">
       <div class="rc__d"><span class="y">529</span><span class="w w-con">kısmen tartışmalı</span></div>
       <div>
-        <h4>Atina'daki felsefe okulunun kapatılması</h4>
+        <div class="hd">Atina'daki felsefe okulunun kapatılması</div>
         <p>I. Justinianus döneminde çıkarılan bir düzenleme <b>paganların ders vermesini yasakladı.</b> Atina'daki Yeni-Platoncu okul kapandı; hocaları <b>Pers sarayına gitti.</b></p>
         <p class="cav"><b>Tartışmalı olan:</b> kapanmanın ne kadar tam ve ne kadar kalıcı olduğu. Filozofların bir kısmı birkaç yıl sonra, bir antlaşma maddesiyle korunarak geri döndü. Okulun o tarihte zaten zayıfladığını savunanlar var. <b>Bir kesinti oldu; "antik düşüncenin sonu" ise abartılı bir çerçeve.</b></p>
       </div>
@@ -325,7 +325,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="rc">
       <div class="rc__d"><span class="y">1229<br>1234</span><span class="w w-con">bölgesel</span></div>
       <div>
-        <h4>Halk dilinde Kutsal Kitap yasakları</h4>
+        <div class="hd">Halk dilinde Kutsal Kitap yasakları</div>
         <p>Toulouse ve Tarragona konsilleri, sıradan insanların halk dilindeki Kutsal Kitap nüshalarına sahip olmasını yasakladı.</p>
         <p class="cav"><b>Doğru okunması gereken:</b> bunlar <b>bölgesel</b> kararlardı, evrensel bir yasak değil — ve dönemin sapkın hareketlerine karşı alınmış tedbirlerdi. Ama sonuç aynı yöne bakar: <b>metne doğrudan erişim, aracı olmadan yasaklandı.</b></p>
       </div>
@@ -334,7 +334,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="rc">
       <div class="rc__d"><span class="y">1478<br>1542</span><span class="w w-con">sayılar tartışmalı</span></div>
       <div>
-        <h4>Engizisyonlar — tekil değil, çoğul</h4>
+        <div class="hd">Engizisyonlar — tekil değil, çoğul</div>
         <p>Tek bir "Engizisyon" yoktur: Ortaçağ engizisyonu, <b>1478'de kurulan İspanyol Engizisyonu</b> (fiilen <b>bir devlet kurumu</b>, kraliyetin denetiminde) ve <b>1542'de kurulan Roma Engizisyonu</b> ayrı yapılardır.</p>
         <p class="cav"><b>Sayılar konusunda dürüstlük:</b> popüler anlatıdaki "milyonlar" rakamı <b>19. yüzyıl polemiğinin ürünüdür.</b> Yargılama kayıtlarının arşiv üzerinden sayıldığı modern çalışmalar <b>çok daha düşük</b> ölüm sayıları veriyor. Ama düşen sayı mekanizmayı ortadan kaldırmıyor: <b>ihbar, işkence altında itiraf, mal müsaderesi ve sistematik sansür belgelidir</b> — ve asıl etki idam sayısında değil, <b>korkunun yaygınlığındadır.</b></p>
       </div>
@@ -343,7 +343,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="rc">
       <div class="rc__d"><span class="y">1600</span><span class="w w-con">gerekçe tartışmalı</span></div>
       <div>
-        <h4>Giordano Bruno yakıldı</h4>
+        <div class="hd">Giordano Bruno yakıldı</div>
         <p>Sekiz yıl hapsin ardından Roma'da diri diri yakıldı. Suçlamalar arasında <b>sonsuz evren ve çok sayıda dünya</b> görüşü de vardı.</p>
         <p class="cav"><b>İki uç da yanlış.</b> "Bilim için yakıldı" doğru değil: suçlamaların ağırlığı teolojikti — Üçleme, İsa'nın tanrılığı, ekmek-şarap öğretisi, büyü. Ama "kozmolojinin hiç ilgisi yoktu" da doğru değil: <b>çokluk-dünyalar görüşü suçlama listesinde yer alıyor.</b> Alanda hâlâ tartışılan bir soru. <b>Kesin olan:</b> bir insan, <b>düşünceleri yüzünden</b> sekiz yıl hapsedilip yakıldı.</p>
       </div>
@@ -352,7 +352,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="rc">
       <div class="rc__d"><span class="y">1633</span><span class="w w-doc">belgeli</span></div>
       <div>
-        <h4>Galileo mahkûm edildi</h4>
+        <div class="hd">Galileo mahkûm edildi</div>
         <p>"Ağır sapkınlık şüphesi" ile mahkûm edildi, görüşünü yeminle reddetmeye zorlandı ve <b>ölümüne kadar (1642) ev hapsinde tutuldu.</b> <i>Diyalog</i> Index'e alındı.</p>
         <p>Bu kayıt, sicilin en az tartışmalı kalemidir: <b>yargılama tutanakları elimizdedir</b> — üstelik dağınık hâlde değil, <b>standart bir belge edisyonunda</b> toplu ve çevrilmiş olarak (Finocchiaro, 1989). Kitabın listeden çıkması <b>1835</b>'i, kurumun yargılamadaki hatayı resmen kabul etmesi <b>1992</b>'yi buldu — <b>359 yıl.</b></p>
       </div>
@@ -361,7 +361,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <div class="rc">
       <div class="rc__d"><span class="y">1560<br>1630</span><span class="w w-con">dönemi yanlış biliniyor</span></div>
       <div>
-        <h4>Cadı yargılamaları</h4>
+        <div class="hd">Cadı yargılamaları</div>
         <p>Avrupa'daki büyük cadı avı dalgası, popüler sanının aksine <b>Ortaçağ'a ait değildir.</b> Alanın standart monografisi — Brian P. Levack, <i>The Witch-Hunt in Early Modern Europe</i>, 4. baskı, Routledge 2016 — büyük çağı <b>1450-1750</b> aralığına yerleştirir; yargılamaların yoğunlaştığı dönem ise <b>y. 1560-1630</b>'dur. Yani Rönesans ve Reform <b>sonrası.</b> Hem Katolik hem Protestan bölgelerde yaşandı.</p>
         <p class="cav"><b>Ters yöndeki ayrıntı:</b> daha erken dönemde kilise hukuku, gece uçuşu gibi inançları <b>hurafe ve yanılsama</b> sayan bir metni esas alıyordu. Yani sertleşme <b>sonradan</b> geldi. Aynı monografi, Avrupa geneli ve yaklaşık iki yüz yıl için tahmin edilen idam sayısını <b>yaklaşık 45.000</b> olarak veriyor — asılarak ya da yakılarak. Bu bir <b>tahmindir, sayım değil:</b> kayıtlar eksik, bölgesel farklar çok büyük. Ama mertebe nettir; "milyonlar" rakamı gerçek tahminin <b>iki mertebe üstündedir.</b> <b>"Ortaçağ karanlığı" çerçevesi burada da yanlış dönemi gösteriyor.</b></p>
       </div>
@@ -394,22 +394,22 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="bal">
     <div class="bl">
       <span class="tag">Aktarım</span>
-      <h4>Kopyalayan eller</h4>
+      <div class="hd">Kopyalayan eller</div>
       <p>Antik metinlerin Batı'da hayatta kalması, büyük ölçüde <b>manastır yazıhanelerinde sürdürülen kopyalama</b> sayesindedir. Serinin tekrar eden dersi burada da geçerli: <b>kalıcı olan, bakılan şeydir.</b></p>
     </div>
     <div class="bl">
       <span class="tag">Kurum</span>
-      <h4>Üniversitenin kendisi</h4>
+      <div class="hd">Üniversitenin kendisi</div>
       <p>Bologna 1088, Paris ve Oxford 12. yüzyıl. <b>Bugünkü akademik yapının atası bir kilise kurumudur</b> — dereceler, fakülteler, müfredat, özerklik iddiası dahil.</p>
     </div>
     <div class="bl">
       <span class="tag">Kişiler</span>
-      <h4>Kilise adamı bilim insanları</h4>
+      <div class="hd">Kilise adamı bilim insanları</div>
       <p>Güneş merkezli modeli öneren <b>bir katedral görevlisiydi.</b> Kalıtımın kurallarını bulan <b>bir manastır başrahibiydi.</b> Genişleyen evren fikrini ilk ortaya atanlardan biri <b>bir rahipti.</b></p>
     </div>
     <div class="bl">
       <span class="tag">Ayrım</span>
-      <h4>Bu ne demek, ne demek değil</h4>
+      <div class="hd">Bu ne demek, ne demek değil</div>
       <p>Bu sütun, sağ hanedeki hiçbir kalemi silmiyor. Gösterdiği şey şu: <b>kurum tek yönlü bir aktör değildi</b> — aynı yapı hem koruyucu hem kısıtlayıcıydı. <b>Basit bir hikâye isteyen her iki taraf da bunu kaçırıyor.</b></p>
     </div>
   </div>

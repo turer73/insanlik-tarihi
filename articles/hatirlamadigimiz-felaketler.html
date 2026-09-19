@@ -38,7 +38,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;
   font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
@@ -90,7 +90,7 @@ section:last-of-type{border-bottom:0}
 
 /* linear proportion bar */
 .linbar{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.3rem 1.4rem}
-.linbar h4{font-size:1rem;margin-bottom:.9rem}
+.linbar .hd{font-size:1rem;margin-bottom:.9rem}
 .lb{display:flex;height:46px;border:1px solid var(--rule);overflow:hidden}
 .lb__seg{display:flex;align-items:center;justify-content:center;font-family:var(--mono);
   font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;overflow:hidden;white-space:nowrap;
@@ -153,7 +153,7 @@ td.yrs{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:now
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
-.card h4{font-size:1.08rem}
+.card .hd{font-size:1.08rem}
 .card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;
   text-transform:uppercase;color:var(--ink-3)}
 .card p{margin:0;font-size:.93rem;color:var(--ink-2)}
@@ -244,7 +244,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="linbar">
-    <h4>Dünya'nın 4,54 milyar yılı — doğrusal ölçek</h4>
+    <div class="hd">Dünya'nın 4,54 milyar yılı — doğrusal ölçek</div>
     <div class="lb">
       <div class="lb__seg lb__deep">Kambriyen öncesi — 4 milyar yıl</div>
       <div class="lb__seg lb__phan">Fanerozoik</div>
@@ -402,17 +402,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card ice">
       <span class="tag">1950'ler</span>
-      <h4>Marie Tharp haritayı çiziyor</h4>
+      <div class="hd">Marie Tharp haritayı çiziyor</div>
       <p>Okyanus tabanı derinlik verilerini elle haritalarken Atlantik ortasında bir <b>yarık vadi</b> olduğunu fark etti. Çalışma arkadaşı ilk tepkisinde bunu "kız işi laf" diye geçiştirdi. Tharp haklıydı; o yarık, tabanın ayrıldığı yerdi.</p>
     </div>
     <div class="card ice">
       <span class="tag">1962</span>
-      <h4>Hess mekanizmayı öneriyor</h4>
+      <div class="hd">Hess mekanizmayı öneriyor</div>
       <p>Harry Hess okyanus tabanının sırtlarda üretilip iki yana yayıldığını öne sürdü. Kendi makalesini temkinle "bir jeo-şiir denemesi" diye niteledi — kanıtın henüz yetmediğini biliyordu.</p>
     </div>
     <div class="card ice">
       <span class="tag">1963</span>
-      <h4>Manyetik şeritler kesin kanıtı veriyor</h4>
+      <div class="hd">Manyetik şeritler kesin kanıtı veriyor</div>
       <p>Sırtın iki yanındaki kayaların manyetik yönelimi, <b>ayna simetrisinde şeritler</b> oluşturuyordu. Okyanus tabanı, Dünya'nın manyetik alan terslenmelerini kaydeden bir teyp bandıymış. Wegener'in ölümünden 33 yıl sonra tartışma bitti.</p>
     </div>
   </div>
@@ -489,32 +489,32 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card">
       <span class="tag">Buz karotları</span>
-      <h4>Yıl yıl atmosfer</h4>
+      <div class="hd">Yıl yıl atmosfer</div>
       <p>Grönland ve Antarktika'da buz, her yıl bir katman biriktiriyor ve içine <b>o yılın havasını</b> kabarcık olarak hapsediyor. İzotop oranları sıcaklığı, kabarcıklar CO₂'yi, kül katmanları volkanik patlamaları veriyor. 800 bin yıl geriye kesintisiz.</p>
     </div>
     <div class="card">
       <span class="tag">Ağaç halkaları</span>
-      <h4>Yıl hassasiyetinde takvim</h4>
+      <div class="hd">Yıl hassasiyetinde takvim</div>
       <p>Her halka bir yıl. Örtüşen örneklerle zincir binlerce yıl geriye uzatılabiliyor. Miyake olaylarının bulunduğu yer burası — ve L'Anse aux Meadows'un 1021'e tarihlenmesini sağlayan da bu.</p>
     </div>
     <div class="card">
       <span class="tag">Manyetik şeritler</span>
-      <h4>Okyanus tabanı bir teyp</h4>
+      <div class="hd">Okyanus tabanı bir teyp</div>
       <p>Sırtta katılaşan bazalt, o anki manyetik alanın yönünü donduruyor. Alan terslendikçe şeritler oluşuyor — sırtın iki yanında <b>ayna simetrisinde</b>. Levha hareketinin hem kanıtı hem kronometresi.</p>
     </div>
     <div class="card">
       <span class="tag">İridyum katmanı</span>
-      <h4>66 milyon yıllık ince çizgi</h4>
+      <div class="hd">66 milyon yıllık ince çizgi</div>
       <p>Dünya kabuğunda nadir, göktaşlarında bol bir element. Kretase–Paleojen sınırında dünyanın her yerinde aynı ince katman. Chicxulub krateri <b>sonradan</b> bulundu — önce katman, sonra çukur.</p>
     </div>
     <div class="card ice">
       <span class="tag">Çökel varvları</span>
-      <h4>Göl tabanında yıllar</h4>
+      <div class="hd">Göl tabanında yıllar</div>
       <p>Mevsimsel tortu farkları, göl tabanında ağaç halkası gibi çiftler oluşturuyor. Buzul göllerinin doluş-boşalış ritmini buradan okuyoruz.</p>
     </div>
     <div class="card ice">
       <span class="tag">İzotop oranları</span>
-      <h4>Termometre ve kronometre</h4>
+      <div class="hd">Termometre ve kronometre</div>
       <p>Oksijen-18/16 oranı geçmiş sıcaklığı, karbon-14 son ~50 bin yılı, uranyum-kurşun milyarlarca yılı veriyor. Dünya'nın 4,54 milyar yaşı bu yöntemle ölçüldü.</p>
     </div>
   </div>

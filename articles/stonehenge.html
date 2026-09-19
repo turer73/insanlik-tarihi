@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1.05em}
@@ -73,7 +73,7 @@ section:last-of-type{border-bottom:0}
 
 /* distance chart */
 .dist{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.4rem 1.5rem;overflow-x:auto}
-.dist h4{font-size:1.02rem;margin-bottom:.3rem}
+.dist .hd{font-size:1.02rem;margin-bottom:.3rem}
 .dist .sub{font-size:.88rem;color:var(--ink-3);margin:0 0 1.4rem;max-width:66ch}
 .dl{display:flex;flex-direction:column;gap:1.2rem;min-width:560px}
 .dr{display:grid;grid-template-columns:150px 1fr;gap:.4rem .9rem;align-items:center}
@@ -95,7 +95,7 @@ section:last-of-type{border-bottom:0}
 .tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.4rem;position:relative}
 .tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .tl__body.s::before{background:var(--sarsen)}
-.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body .hd{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
 .tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
 .tl__body .st{font-family:var(--mono);font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.14rem .4rem;margin-left:.4rem;vertical-align:2px}
 .st-ok{background:var(--accent-soft);color:var(--accent-ink)}
@@ -116,7 +116,7 @@ section:last-of-type{border-bottom:0}
 
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(245px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
-.card h4{font-size:1.08rem}
+.card .hd{font-size:1.08rem}
 .card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
 .card p{margin:0;font-size:.93rem;color:var(--ink-2)}
 .card b{color:var(--ink)}
@@ -184,7 +184,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="dist">
-    <h4>Taş türüne göre kaynak mesafesi — gerçek oranda</h4>
+    <div class="hd">Taş türüne göre kaynak mesafesi — gerçek oranda</div>
     <p class="sub">Çubuk uzunlukları mesafeyle orantılı. Üzerlerindeki değer taşların ağırlığı.</p>
 
     <div class="dl">
@@ -273,23 +273,23 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="tl">
     <div class="tl__row">
       <div class="tl__date">2020</div>
-      <div class="tl__body s"><h4>Sarsenler West Woods'a bağlanıyor<span class="st st-ok">Yerleşik</span></h4><p>Jeokimyasal imza 52 taştan 50'sini tek kaynağa götürüyor.</p></div>
+      <div class="tl__body s"><div class="hd">Sarsenler West Woods'a bağlanıyor<span class="st st-ok">Yerleşik</span></div><p>Jeokimyasal imza 52 taştan 50'sini tek kaynağa götürüyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2021</div>
-      <div class="tl__body"><h4>Waun Mawn: sökülmüş çember hipotezi<span class="st st-con">Tartışmalı</span></h4><p>Aynı çap, aynı yönelim, MÖ 3000. Güçlü bir öneri ama yayımlanmış itirazları var.</p></div>
+      <div class="tl__body"><div class="hd">Waun Mawn: sökülmüş çember hipotezi<span class="st st-con">Tartışmalı</span></div><p>Aynı çap, aynı yönelim, MÖ 3000. Güçlü bir öneri ama yayımlanmış itirazları var.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2024</div>
-      <div class="tl__body"><h4>Sunak Taşı Galler'den değil, İskoçya'dan<span class="st st-ok">Yerleşik</span></h4><p>Zirkon, apatit ve rutil analizi. Elli yıllık grup varsayımı çöküyor; mesafe ~700 km.</p></div>
+      <div class="tl__body"><div class="hd">Sunak Taşı Galler'den değil, İskoçya'dan<span class="st st-ok">Yerleşik</span></div><p>Zirkon, apatit ve rutil analizi. Elli yıllık grup varsayımı çöküyor; mesafe ~700 km.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2024</div>
-      <div class="tl__body"><h4>Kaynak daraltılamıyor<span class="st st-con">Tartışmalı</span></h4><p>Aynı yıl başka bir çalışma taşın Orkney Anakarası kumtaşlarıyla tam eşleşmediğini gösteriyor. Kaynak, kuzeydoğu İskoçya'da geniş bir alan.</p></div>
+      <div class="tl__body"><div class="hd">Kaynak daraltılamıyor<span class="st st-con">Tartışmalı</span></div><p>Aynı yıl başka bir çalışma taşın Orkney Anakarası kumtaşlarıyla tam eşleşmediğini gösteriyor. Kaynak, kuzeydoğu İskoçya'da geniş bir alan.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2026</div>
-      <div class="tl__body"><h4>Buzul güzergâhı modellemesi<span class="st st-ok">Yeni</span></h4><p>Son Buzul Çağı buz akışı modelleri, kaynak bölgeden Stonehenge'e <b>doğrudan bir buzul güzergâhı öngörmüyor.</b> Sonuç: taşın insan eliyle taşınmış olması gerekiyor.</p></div>
+      <div class="tl__body"><div class="hd">Buzul güzergâhı modellemesi<span class="st st-ok">Yeni</span></div><p>Son Buzul Çağı buz akışı modelleri, kaynak bölgeden Stonehenge'e <b>doğrudan bir buzul güzergâhı öngörmüyor.</b> Sonuç: taşın insan eliyle taşınmış olması gerekiyor.</p></div>
     </div>
   </div>
 </section>
@@ -342,17 +342,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card">
       <span class="tag">Bildiğimiz</span>
-      <h4>Kaynak ve mesafe</h4>
+      <div class="hd">Kaynak ve mesafe</div>
       <p>Üç taş türünün kökeni jeokimyasal olarak belirlendi. Bu, <b>ölçülebilir</b> bir soru ve büyük ölçüde çözüldü.</p>
     </div>
     <div class="card">
       <span class="tag">Bildiğimiz</span>
-      <h4>İnşa evreleri ve yönelim</h4>
+      <div class="hd">İnşa evreleri ve yönelim</div>
       <p>Yapı yaklaşık MÖ 3000'den MÖ 1500'e kadar evrelerle kuruldu; gündönümü ekseniyle hizalanmış. <b>Bu da ölçülebilir.</b></p>
     </div>
     <div class="card">
       <span class="tag">Bilmediğimiz</span>
-      <h4>Ne için</h4>
+      <div class="hd">Ne için</div>
       <p>Tapınak mı, takvim mi, mezarlık mı, şifa merkezi mi, siyasi birleşme anıtı mı? Hepsi öne sürüldü. <b>Yazı yok, hiçbiri kanıtlanamıyor.</b></p>
     </div>
   </div>

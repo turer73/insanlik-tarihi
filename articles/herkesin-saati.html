@@ -24,7 +24,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--gold-soft);color:var(--ink)}
 a{color:var(--gold-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em;color:var(--ink)}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em;color:var(--ink)}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em;color:var(--ink-2)}
@@ -108,7 +108,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 
 /* axis */
 .axis{border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem}
-.axis h4{font-size:1.08rem}
+.axis .hd{font-size:1.08rem}
 .axbar{display:flex;border:1px solid var(--rule);overflow:hidden;min-height:78px}
 .axbar div{flex:1;display:flex;flex-direction:column;justify-content:center;padding:.6rem .8rem;border-right:1px solid var(--rule);gap:.2rem}
 .axbar div:last-child{border-right:0}
@@ -341,7 +341,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="axis">
-    <h4>Aynı yıldız kümesi, iki ayrı türde benzerlik</h4>
+    <div class="hd">Aynı yıldız kümesi, iki ayrı türde benzerlik</div>
     <div class="axbar">
       <div class="a1"><b>Zorunlu</b><span><em>Ülker'i takvim olarak kullanmak.</em> Gökyüzü sinyali herkese veriyor, herkes aynı sorunu çözüyor. Benzerlik <b>beklenir</b>, açıklanmaya ihtiyaç duymaz.</span></div>
       <div class="a2"><b>Arada</b><span>Adlandırma ve görsel betimleme. Kısmen kümenin görünüşü dayatıyor, kısmen kültür seçiyor.</span></div>

@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em}
@@ -97,7 +97,7 @@ section:last-of-type{border-bottom:0}
 
 /* restoration bar */
 .restore{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.3rem 1.4rem}
-.restore h4{font-size:1rem;margin-bottom:.85rem}
+.restore .hd{font-size:1rem;margin-bottom:.85rem}
 .faces{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
 .face{background:var(--bg);padding:.9rem .8rem;display:flex;flex-direction:column;gap:.2rem;text-align:center}
 .face b{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
@@ -110,7 +110,7 @@ section:last-of-type{border-bottom:0}
 
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
-.card h4{font-size:1.06rem}
+.card .hd{font-size:1.06rem}
 .card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
 .card.l .tag{color:var(--lime-ink)}
 .card p{margin:0;font-size:.92rem;color:var(--ink-2)}
@@ -260,17 +260,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card">
       <span class="tag">Lehine</span>
-      <h4>Maya mimarisi hizalanır</h4>
+      <div class="hd">Maya mimarisi hizalanır</div>
       <p>Maya yapılarında astronomik yönelim <b>yaygın ve belgeli</b> bir uygulamadır. Takvim, gök cisimleri ve mimari birbirine bağlıdır. Böyle bir etkinin tasarlanmış olması <b>hiç şaşırtıcı değil.</b></p>
     </div>
     <div class="card l">
       <span class="tag">Aleyhine</span>
-      <h4>Etki tam gün-eşitliğine özgü değil</h4>
+      <div class="hd">Etki tam gün-eşitliğine özgü değil</div>
       <p>Gölge oluşumu ekinoks gününe sıkışmış bir olay değil; <b>haftalar boyunca</b> benzer biçimde görülebiliyor. "Yılda tam iki gün" çerçevesi olduğundan keskin.</p>
     </div>
     <div class="card l">
       <span class="tag">Aleyhine</span>
-      <h4>Kaynak yok, restorasyon var</h4>
+      <div class="hd">Kaynak yok, restorasyon var</div>
       <p>Ne Maya ne de sömürge kaynaklarında bu yapıda bir <b>ekinoks töreni</b> tarif ediliyor. Üstelik gölgeyi oluşturan <b>kuzey yüzü ağır biçimde yeniden inşa edildi.</b> Bugünkü keskinliğin ne kadarı özgün?</p>
     </div>
   </div>
@@ -285,7 +285,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="restore">
-    <h4>El Castillo — dört yüzün durumu</h4>
+    <div class="hd">El Castillo — dört yüzün durumu</div>
     <div class="faces">
       <div class="face done"><b>Kuzey</b><span>Tam restore</span></div>
       <div class="face"><b>Doğu</b><span>Kısmi / harabe</span></div>

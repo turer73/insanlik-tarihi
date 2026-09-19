@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em}
@@ -117,7 +117,7 @@ td.k{color:var(--ink);font-weight:600;white-space:nowrap}
 
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
-.card h4{font-size:1.06rem}
+.card .hd{font-size:1.06rem}
 .card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
 .card.t .tag{color:var(--trav-ink)}
 .card p{margin:0;font-size:.92rem;color:var(--ink-2)}
@@ -329,17 +329,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card">
       <span class="tag">Ne oldu</span>
-      <h4>Batı'da imparator kaldırıldı</h4>
+      <div class="hd">Batı'da imparator kaldırıldı</div>
       <p>476'da Batı'daki son imparator tahttan indirildi. Bu <b>gerçek bir olay</b>, ama dönemin insanları için "bir uygarlığın sonu" değil — Batı'da imparatorluk zaten uzun süredir parçalanıyordu.</p>
     </div>
     <div class="card t">
       <span class="tag">Ne olmadı</span>
-      <h4>Doğu bin yıl daha sürdü</h4>
+      <div class="hd">Doğu bin yıl daha sürdü</div>
       <p>Doğu Roma İmparatorluğu <b>1453'e kadar</b> yaşadı. Kendilerine "Romalı" diyorlardı, hukukları Roma hukukuydu. 476'yı "Roma'nın sonu" saymak, <b>bin yılı silmek</b> demek.</p>
     </div>
     <div class="card">
       <span class="tag">Neden böyle</span>
-      <h4>Batı merkezli bir tarih yazımı</h4>
+      <div class="hd">Batı merkezli bir tarih yazımı</div>
       <p>Tarih ders kitaplarındaki 476 kesiği, <b>Batı Avrupa'dan bakan</b> bir bölümlemedir. Kullanışlıdır ama nötr değildir — hangi bölgeyi merkeze aldığınıza göre "son" başka bir tarihe düşer.</p>
     </div>
   </div>

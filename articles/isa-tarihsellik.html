@@ -40,7 +40,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 16,"WONK" 1;letter-spacing:-.012em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em}
@@ -123,7 +123,7 @@ section:last-of-type{border-bottom:0}
 
 /* stacked consensus bar */
 .cons{border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem;margin-top:1.5rem}
-.cons h4{font-size:1.04rem;margin-bottom:.25rem}
+.cons .hd{font-size:1.04rem;margin-bottom:.25rem}
 .cons .sub{font-size:.88rem;color:var(--ink-3);margin:0 0 1.05rem;max-width:66ch}
 .stack{display:flex;height:44px;border:1px solid var(--rule);overflow:hidden}
 .stack div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.68rem;font-weight:700;overflow:hidden;border-right:1px solid var(--rule)}
@@ -156,7 +156,7 @@ td .num{font-family:var(--mono);font-weight:700;font-variant-numeric:tabular-num
 .cl{background:var(--bg);padding:1.2rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
 .cl__h{display:flex;flex-wrap:wrap;gap:.6rem;align-items:baseline}
 .cl__n{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--flag-ink);background:var(--flag-soft);padding:.18rem .45rem}
-.cl h4{font-size:1.06rem}
+.cl .hd{font-size:1.06rem}
 .cl p{margin:0;font-size:.92rem;color:var(--ink-2)}
 .cl p b{color:var(--ink)}
 .cl .ans{border-left:2px solid var(--accent);padding-left:.8rem}
@@ -397,7 +397,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="cons">
-    <h4>Bir literatür taramasında değerlendirilen 52 akademisyenin dağılımı</h4>
+    <div class="hd">Bir literatür taramasında değerlendirilen 52 akademisyenin dağılımı</div>
     <p class="sub">Josephus'un 18. kitaptaki pasajı hakkında alınan pozisyonlar. Bu bir <b>anket değil</b>, yayımlanmış görüşlerin bir derlemesi — yani alanın tamamının sayımı sayılamaz.</p>
     <div class="stack">
       <div class="s1">4</div>
@@ -445,19 +445,19 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
   <div class="claims">
     <div class="cl">
-      <div class="cl__h"><span class="cl__n">Sorun 1</span><h4>Kronoloji ters işliyor</h4></div>
+      <div class="cl__h"><span class="cl__n">Sorun 1</span><div class="hd">Kronoloji ters işliyor</div></div>
       <p>Roma'nın Hristiyanlıkla ittifakı <b>313</b>'te başlar, devlet dini ilanı <b>380</b>'dedir. Hareket o tarihte zaten <b>yaklaşık üç yüz yıllıktır</b> ve imparatorluk nüfusunun kayda değer bir bölümünü kapsamaktadır.</p>
       <p class="ans">Bir yönetim aracı olarak uydurulmuş olsaydı, <b>uyduranın onu üç yüz yıl boyunca kullanmaması</b> gerekirdi. Roma bir kitle yaratmadı; var olan bir kitleye katıldı.</p>
     </div>
 
     <div class="cl">
-      <div class="cl__h"><span class="cl__n">Sorun 2</span><h4>Kendi uydurduğunu neden idam etsin?</h4></div>
+      <div class="cl__h"><span class="cl__n">Sorun 2</span><div class="hd">Kendi uydurduğunu neden idam etsin?</div></div>
       <p>Roma, bu dönem boyunca Hristiyanlara <b>dönem dönem zulmetti</b> — mülk müsaderesi, idam, sistematik dalgalar. Ölçeği tartışmalı ama gerçekliği değil.</p>
       <p class="ans">Bir devletin, kontrol amacıyla kendi imal ettiği inancın mensuplarını yüzyıllarca kovuşturması <b>açıklanması güç bir davranıştır.</b> Tez bunu açıklamak zorunda ve açıklamıyor.</p>
     </div>
 
     <div class="cl">
-      <div class="cl__h"><span class="cl__n">Sorun 3</span><h4>Uydurulan hikâye bu olmazdı</h4></div>
+      <div class="cl__h"><span class="cl__n">Sorun 3</span><div class="hd">Uydurulan hikâye bu olmazdı</div></div>
       <p>Merkezdeki figür <b>bir Roma valisi tarafından çarmıha gerilmiş</b> bir taşralıdır. Çarmıh, Roma'nın <b>asilere ve kölelere</b> ayırdığı, kasıtlı olarak aşağılayıcı bir infaz biçimiydi.</p>
       <p class="ans">Roma'nın itaat üretmek için tasarlayacağı bir anlatının merkezine, <b>kendi idam ettiği bir mahkûmu</b> koyması beklenmez. Bu ayrıntı uydurmacılığın aleyhine çalışır — çünkü <b>uyduran taraf için utanç vericidir.</b></p>
     </div>

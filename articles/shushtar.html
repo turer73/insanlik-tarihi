@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1.05em}
@@ -114,12 +114,12 @@ td.v{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowra
 .tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.4rem;position:relative}
 .tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .tl__body.s::before{background:var(--stone)}
-.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body .hd{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
 .tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
 
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(245px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
-.card h4{font-size:1.08rem}
+.card .hd{font-size:1.08rem}
 .card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
 .card.no .tag{color:var(--stone-ink)}
 .card.yes .tag{color:var(--accent-ink)}
@@ -311,27 +311,27 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="tl">
     <div class="tl__row">
       <div class="tl__date">MS 260</div>
-      <div class="tl__body s"><h4>Edessa: Valerianus esir alınıyor</h4><p>Bir Roma imparatorunun savaşta esir düştüğü ender olay. Roma bilgisi, Sasani şantiyelerine giden yolu buluyor.</p></div>
+      <div class="tl__body s"><div class="hd">Edessa: Valerianus esir alınıyor</div><p>Bir Roma imparatorunun savaşta esir düştüğü ender olay. Roma bilgisi, Sasani şantiyelerine giden yolu buluyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">~260–270</div>
-      <div class="tl__body"><h4>Band-e Kaisar inşa ediliyor</h4><p>Roma betonu, kesme taş ve demir kenetlerle; köprü ve bent tek yapıda birleşiyor.</p></div>
+      <div class="tl__body"><div class="hd">Band-e Kaisar inşa ediliyor</div><p>Roma betonu, kesme taş ve demir kenetlerle; köprü ve bent tek yapıda birleşiyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">3.–4. yy</div>
-      <div class="tl__body"><h4>Sistem büyüyor</h4><p>Gargar kanalı, tüneller, değirmen kompleksi ve sulama ağı Sasani dönemi boyunca gelişiyor.</p></div>
+      <div class="tl__body"><div class="hd">Sistem büyüyor</div><p>Gargar kanalı, tüneller, değirmen kompleksi ve sulama ağı Sasani dönemi boyunca gelişiyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">4.–10. yy</div>
-      <div class="tl__body"><h4>Yerlileşme</h4><p>Köprü-bent birleşimi <b>İran hidrolik mühendisliğinin standart uygulaması</b> hâline geliyor ve yaklaşık MS 1000'e kadar sürüyor.</p></div>
+      <div class="tl__body"><div class="hd">Yerlileşme</div><p>Köprü-bent birleşimi <b>İran hidrolik mühendisliğinin standart uygulaması</b> hâline geliyor ve yaklaşık MS 1000'e kadar sürüyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">~10. yy</div>
-      <div class="tl__body"><h4>Şiraz'daki Band-e Emir</h4><p>Bu geleneğin doruk örneklerinden biri. Yedi yüz yıl sonra, alınan teknik artık <b>yerel bir dil.</b></p></div>
+      <div class="tl__body"><div class="hd">Şiraz'daki Band-e Emir</div><p>Bu geleneğin doruk örneklerinden biri. Yedi yüz yıl sonra, alınan teknik artık <b>yerel bir dil.</b></p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">2009</div>
-      <div class="tl__body s"><h4>UNESCO Dünya Mirası</h4><p>Sistem "yaratıcı dehanın başyapıtı" ölçütüyle listeye giriyor.</p></div>
+      <div class="tl__body s"><div class="hd">UNESCO Dünya Mirası</div><p>Sistem "yaratıcı dehanın başyapıtı" ölçütüyle listeye giriyor.</p></div>
     </div>
   </div>
 
@@ -353,17 +353,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card yes">
       <span class="tag">Sağlam</span>
-      <h4>Sasani çekirdeği</h4>
+      <div class="hd">Sasani çekirdeği</div>
       <p>Band-e Kaisar, değirmen kompleksi ve tünellerin büyük bölümü <b>3. yüzyıl</b>. Yapı tekniği ve tarihsel kayıtla destekleniyor.</p>
     </div>
     <div class="card no">
       <span class="tag">Zayıf</span>
-      <h4>Ahameniş evresi</h4>
+      <div class="hd">Ahameniş evresi</div>
       <p>Erken kanallar için doğrudan arkeolojik tarihleme <b>sınırlı</b>. Ölçeği ve güzergâhı belirsiz.</p>
     </div>
     <div class="card no">
       <span class="tag">Dikkat</span>
-      <h4>"3–7 yılda bitti"</h4>
+      <div class="hd">"3–7 yılda bitti"</div>
       <p>Kompleksin çok kısa sürede tamamlandığı bilgisi <b>tarihsel metinlere</b> dayanıyor — yani aynı geç ve edebî kaynak ailesine. Mühendislik ölçeğiyle karşılaştırıldığında ihtiyatla karşılanmalı.</p>
     </div>
   </div>

@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1.05em}
@@ -118,12 +118,12 @@ td.v{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowra
 .tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.4rem;position:relative}
 .tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .tl__body.s::before{background:var(--stone)}
-.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body .hd{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
 .tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
 
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(245px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
-.card h4{font-size:1.08rem}
+.card .hd{font-size:1.08rem}
 .card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
 .card.no .tag{color:var(--stone-ink)}
 .card.yes .tag{color:var(--accent-ink)}
@@ -453,17 +453,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card no">
       <span class="tag">İddia kökeni</span>
-      <h4>Kehanet</h4>
+      <div class="hd">Kehanet</div>
       <p>Cayce, 1930'lar. Arkeolojik bir bulgu değil, <b>beklenti</b> üreten bir metin.</p>
     </div>
     <div class="card no">
       <span class="tag">Zayıf halka</span>
-      <h4>Anomali → salon atlaması</h4>
+      <div class="hd">Anomali → salon atlaması</div>
       <p>Sismik/radar anomalisinin doğal boşluk olabileceği gösterilebiliyorken, sinyal "salon" sayıldı. <b>Atlama burada.</b></p>
     </div>
     <div class="card yes">
       <span class="tag">Sağlam kalan</span>
-      <h4>Bilinenin sınırı</h4>
+      <div class="hd">Bilinenin sınırı</div>
       <p>Sfenks çevresinin ne kadarının sistematik tarandığına dair açık kayıt yok. <b>"Bilmiyoruz" doğru cümle</b> — ama "bilmiyoruz"dan "orada" çıkmaz.</p>
     </div>
   </div>
@@ -571,17 +571,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card no">
       <span class="tag">Kalıp 1</span>
-      <h4>Kayıt yokluğunu gerekçe saymak</h4>
+      <div class="hd">Kayıt yokluğunu gerekçe saymak</div>
       <p>Elektriğin üç halkası da (üretim, iletim, kullanım) kayıtsız. Anlatı bunu "sır öldü" diye okur.</p>
     </div>
     <div class="card no">
       <span class="tag">Kalıp 2</span>
-      <h4>Belirsizliği boşluğa çevirmek</h4>
+      <div class="hd">Belirsizliği boşluğa çevirmek</div>
       <p>"Bilmiyoruz" doğru bir cümledir; "bilmiyoruz, öyleyse orada bir şey var" değildir.</p>
     </div>
     <div class="card no">
       <span class="tag">Kalıp 3</span>
-      <h4>Zayıf halkaları zincir yapmak</h4>
+      <div class="hd">Zayıf halkaları zincir yapmak</div>
       <p>Zayıf iddiaların toplamı güçlü iddia üretmez; her biri kendi kaydıyla değerlendirilir.</p>
     </div>
   </div>

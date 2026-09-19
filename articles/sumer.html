@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em}
@@ -97,12 +97,12 @@ section:last-of-type{border-bottom:0}
 .tl__body{padding:.65rem 0 .7rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.2rem;position:relative}
 .tl__body::before{content:"";position:absolute;left:-5px;top:1.05rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .tl__body.l::before{background:var(--lapis)}
-.tl__body h4{font-size:.96rem;margin-bottom:.1rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body .hd{font-size:.96rem;margin-bottom:.1rem;font-variation-settings:"SOFT" 25,"WONK" 0}
 .tl__body p{margin:0;font-size:.89rem;color:var(--ink-2)}
 
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(235px,1fr));margin-top:1.4rem}
 .card{background:var(--bg);padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.45rem}
-.card h4{font-size:1.05rem}
+.card .hd{font-size:1.05rem}
 .card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
 .card.l .tag{color:var(--lapis-ink)}
 .card p{margin:0;font-size:.91rem;color:var(--ink-2)}
@@ -193,19 +193,19 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="tl">
     <div class="tl__row">
       <div class="tl__date">~MÖ 520</div>
-      <div class="tl__body"><h4>Behistun Yazıtı kazınıyor</h4><p>I. Darius, kayaya <b>üç dilde</b> aynı metni yazdırıyor: Eski Farsça, Elamca ve Babilce (Akadca). Amaç propaganda; sonucu, iki bin üç yüz yıl sonra bir şifre anahtarı.</p></div>
+      <div class="tl__body"><div class="hd">Behistun Yazıtı kazınıyor</div><p>I. Darius, kayaya <b>üç dilde</b> aynı metni yazdırıyor: Eski Farsça, Elamca ve Babilce (Akadca). Amaç propaganda; sonucu, iki bin üç yüz yıl sonra bir şifre anahtarı.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1835–47</div>
-      <div class="tl__body"><h4>Rawlinson yazıtı kopyalıyor</h4><p>Uçurumdaki metin ipe asılarak kopyalanıyor. Eski Farsça çözülünce, karşılıklı metin üzerinden <b>Akadca</b> da çözülüyor.</p></div>
+      <div class="tl__body"><div class="hd">Rawlinson yazıtı kopyalıyor</div><p>Uçurumdaki metin ipe asılarak kopyalanıyor. Eski Farsça çözülünce, karşılıklı metin üzerinden <b>Akadca</b> da çözülüyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1850'ler</div>
-      <div class="tl__body l"><h4>Ortada fazladan bir dil var</h4><p>Akadca metinlerin arasında, Akadca <b>olmayan</b> ama aynı yazıyla yazılmış metinler fark ediliyor. Babilli kâtiplerin kendi hazırladığı <b>iki dilli sözlük listeleri</b> anahtarı veriyor: Sümerce kelime, karşısında Akadca karşılığı.</p></div>
+      <div class="tl__body l"><div class="hd">Ortada fazladan bir dil var</div><p>Akadca metinlerin arasında, Akadca <b>olmayan</b> ama aynı yazıyla yazılmış metinler fark ediliyor. Babilli kâtiplerin kendi hazırladığı <b>iki dilli sözlük listeleri</b> anahtarı veriyor: Sümerce kelime, karşısında Akadca karşılığı.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1869</div>
-      <div class="tl__body l"><h4>Dile ad veriliyor</h4><p>Bu dile <b>"Sümerce"</b> adı konuyor. Yani Sümerler, kendi adlarını bize bırakmadılar — biz onlara sonradan bir ad verdik.</p></div>
+      <div class="tl__body l"><div class="hd">Dile ad veriliyor</div><p>Bu dile <b>"Sümerce"</b> adı konuyor. Yani Sümerler, kendi adlarını bize bırakmadılar — biz onlara sonradan bir ad verdik.</p></div>
     </div>
   </div>
 
@@ -368,17 +368,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card l">
       <span class="tag">Her gün</span>
-      <h4>60'lık taban</h4>
+      <div class="hd">60'lık taban</div>
       <p>Saatin <b>60 dakikası</b>, dakikanın 60 saniyesi, çemberin <b>360 derecesi</b>. Sümer'de doğdu, Babil'de sistemleşti, Yunan astronomisiyle aktarıldı, hiç bırakılmadı.</p>
     </div>
     <div class="card">
       <span class="tag">Kurum</span>
-      <h4>Yazılı kayıt ve sözleşme</h4>
+      <div class="hd">Yazılı kayıt ve sözleşme</div>
       <p>Mühürle onaylanmış teslimat kaydı, borç senedi, tanıklı sözleşme. Modern bürokrasinin biçimi burada oluştu — <b>çünkü yazı zaten bunun için icat edilmişti.</b></p>
     </div>
     <div class="card">
       <span class="tag">Kent</span>
-      <h4>Şehir ve tapınak ekonomisi</h4>
+      <div class="hd">Şehir ve tapınak ekonomisi</div>
       <p>Sulamaya dayalı tarım, merkezî ambar, tayın dağıtımı, uzmanlaşmış zanaat. <b>Şehir</b> bir yerleşim biçimi olarak burada kurumsallaştı.</p>
     </div>
   </div>

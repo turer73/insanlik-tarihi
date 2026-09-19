@@ -43,7 +43,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1em}
@@ -81,7 +81,7 @@ section:last-of-type{border-bottom:0}
 /* duzeltme kutusu */
 .errata{border:1px solid var(--err);background:var(--err-soft);padding:1.3rem 1.45rem;display:flex;flex-direction:column;gap:.7rem;max-width:80ch;margin-top:.4rem}
 .errata .tag{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--err);color:#fff;padding:.2rem .5rem;align-self:flex-start}
-.errata h3{font-size:1.1rem}
+.errata h3,.errata .hd{font-size:1.1rem}
 .errata p{margin:0;font-size:.93rem;color:var(--ink-2)}
 .errata p b{color:var(--ink)}
 .errata .was{font-family:var(--display);font-style:italic;font-size:1rem;color:var(--ink);border-left:2px solid var(--err);padding-left:.85rem}
@@ -108,7 +108,7 @@ section:last-of-type{border-bottom:0}
 
 /* excavated bar */
 .dug{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.3rem 1.4rem}
-.dug h4{font-size:1rem;margin-bottom:.9rem}
+.dug .hd{font-size:1rem;margin-bottom:.9rem}
 .dugbar{display:flex;height:52px;border:1px solid var(--rule)}
 .dugbar .in{flex:0 0 5%;background:var(--accent);display:flex;align-items:center;justify-content:center}
 .dugbar .out{flex:1;background:var(--surface-2);display:flex;align-items:center;padding-left:.9rem}
@@ -140,7 +140,7 @@ td.bad{color:var(--soil-ink);font-weight:600}
 
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.25rem 1.3rem;display:flex;flex-direction:column;gap:.45rem}
-.card h4{font-size:1.06rem}
+.card .hd{font-size:1.06rem}
 .card .tag{font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
 .card.s .tag{color:var(--soil-ink)}
 .card p{margin:0;font-size:.92rem;color:var(--ink-2)}
@@ -190,7 +190,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
     <div class="errata">
       <span class="tag">Düzeltme · 2026-09-07</span>
-      <h3>Bu yazının önceki sürümünde yanlış bir cümle vardı</h3>
+      <div class="hd">Bu yazının önceki sürümünde yanlış bir cümle vardı</div>
       <p class="was">"Kesin olan tek şey: Karahan Tepe yüzey alanı olarak Göbekli Tepe'den büyük. Bu bütün kaynaklarda tutarlı."</p>
       <p><b>Doğru değil.</b> Ve hata, tam da bu yazının uyardığı şeydi: Karahan Tepe için dolaşan <b>dört farklı rakamı</b> tablo hâline getirip "hangi rakam neyi sayıyor" diye sordum, ama <b>aynı soruyu Göbekli Tepe için sormadım.</b> Karahan'ın değişken aralığını, Göbekli'nin tek ve denetlenmemiş bir rakamıyla karşılaştırdım.</p>
       <p>Göbekli Tepe'nin rakamları da oynuyor: höyük <b>~9 ha</b>, geniş site tahmini <b>~12 ha</b>, koruma alanı çok daha büyük. Karahan Tepe <b>~10 ha</b> (taş ocaklarıyla ~15 ha). <b>İkisi aynı mertebede</b> ve "hangisi daha büyük" sorusunun bugünkü veriyle temiz bir cevabı yok.</p>
@@ -224,7 +224,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="dug">
-    <h4>Göbekli Tepe — kazılan / kazılmayan</h4>
+    <div class="hd">Göbekli Tepe — kazılan / kazılmayan</div>
     <div class="dugbar">
       <div class="in"><span>%5</span></div>
       <div class="out"><span>toprak altında · jeofizik daha çok yapı gösteriyor</span></div>

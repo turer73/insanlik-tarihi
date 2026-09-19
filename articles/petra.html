@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:var(--accent-ink);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
+h1,h2,h3,.hd{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 18,"WONK" 1;letter-spacing:-.01em}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
 .prose{max-width:var(--measure)}
 .prose p{margin:0 0 1.05em}
@@ -85,7 +85,7 @@ section:last-of-type{border-bottom:0}
 
 /* flow diagram */
 .flow{margin-top:1.5rem;border:1px solid var(--rule);background:var(--surface);padding:1.4rem 1.5rem;overflow-x:auto}
-.flow h4{font-size:1.02rem;margin-bottom:.3rem}
+.flow .hd{font-size:1.02rem;margin-bottom:.3rem}
 .flow .sub{font-size:.88rem;color:var(--ink-3);margin:0 0 1.2rem;max-width:64ch}
 .pipes{display:flex;flex-direction:column;gap:1.15rem;min-width:520px}
 .pipe{display:grid;grid-template-columns:132px 1fr;gap:.5rem .9rem;align-items:center}
@@ -107,7 +107,7 @@ section:last-of-type{border-bottom:0}
 /* three systems */
 .grid3{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(245px,1fr));margin-top:1.5rem}
 .card{background:var(--bg);padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
-.card h4{font-size:1.08rem}
+.card .hd{font-size:1.08rem}
 .card .tag{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--water-ink)}
 .card p{margin:0;font-size:.93rem;color:var(--ink-2)}
 .card b{color:var(--ink)}
@@ -118,7 +118,7 @@ section:last-of-type{border-bottom:0}
 .tl__body{padding:.8rem 0 .9rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.4rem;position:relative}
 .tl__body::before{content:"";position:absolute;left:-5px;top:1.28rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .tl__body.w::before{background:var(--water)}
-.tl__body h4{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
+.tl__body .hd{font-size:.99rem;margin-bottom:.15rem;font-variation-settings:"SOFT" 25,"WONK" 0}
 .tl__body p{margin:0;font-size:.91rem;color:var(--ink-2)}
 
 .verdict{border:1px solid var(--water);background:var(--water-soft);padding:1.7rem 1.8rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem;max-width:74ch}
@@ -247,7 +247,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="flow">
-    <h4>Aynı boru, üç farklı akış rejimi</h4>
+    <div class="hd">Aynı boru, üç farklı akış rejimi</div>
     <p class="sub">Su seviyesi ve eğim değiştikçe borunun içindeki davranış değişir. Nabati hattı, farklı bölümlerde farklı rejimler kullanacak biçimde tasarlanmıştı.</p>
 
     <div class="pipes">
@@ -281,17 +281,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="grid3">
     <div class="card">
       <span class="tag">Siq hattı</span>
-      <h4>Ain Musa'dan şehre</h4>
+      <div class="hd">Ain Musa'dan şehre</div>
       <p>Kaynaktan gelen suyu, kanyonun kuzey duvarı boyunca yükseltilmiş kanalda taşıyıp Sütunlu Cadde'ye ulaştırır. Uzunluğu iki kilometreyi aşar ve kaynağın <b>debisinin ancak bir bölümünü</b> alacak şekilde boyutlandırılmıştır — fazlası hattı zorlardı.</p>
     </div>
     <div class="card">
       <span class="tag">Ain Braq hattı</span>
-      <h4>Farklı arazi, farklı rejim</h4>
+      <div class="hd">Farklı arazi, farklı rejim</div>
       <p>Ayrı bir kaynak, ayrı bir güzergâh ve akış kontrolü için farklı bir çözüm. Üç hattın <b>aynı sorunu üç farklı yöntemle</b> çözmesi, tek bir usta reçetesinin kopyalanmadığını gösteriyor.</p>
     </div>
     <div class="card">
       <span class="tag">Wadi Mataha hattı</span>
-      <h4>Tasarım kararları izlenebiliyor</h4>
+      <div class="hd">Tasarım kararları izlenebiliyor</div>
       <p>Bu hat üzerinde yapılan çalışma, mühendislerin <b>hangi seçenekler arasında karar verdiğini</b> yeniden kurmaya çalışıyor: eğim, kesit, malzeme ve sızıntı arasında yapılan ödünleşimler.</p>
     </div>
   </div>
@@ -339,31 +339,31 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="tl">
     <div class="tl__row">
       <div class="tl__date">MÖ 4.–1. yy</div>
-      <div class="tl__body"><h4>Nabatiler ticaret yollarını tutuyor</h4><p>Arabistan'dan gelen tütsü ve baharat yolları üzerinde konumlanan Nabatiler, kervan ticaretinin denetiminden zenginleşti.</p></div>
+      <div class="tl__body"><div class="hd">Nabatiler ticaret yollarını tutuyor</div><p>Arabistan'dan gelen tütsü ve baharat yolları üzerinde konumlanan Nabatiler, kervan ticaretinin denetiminden zenginleşti.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MÖ 1. yy</div>
-      <div class="tl__body w"><h4>Su altyapısı ölçek kazanıyor</h4><p>Boru hatları, barajlar ve depolar bugün bildiğimiz sistemi oluşturuyor. <b>Suyu yönetebilmek</b>, çölün ortasında bir başkent kurabilmenin ön koşulu.</p></div>
+      <div class="tl__body w"><div class="hd">Su altyapısı ölçek kazanıyor</div><p>Boru hatları, barajlar ve depolar bugün bildiğimiz sistemi oluşturuyor. <b>Suyu yönetebilmek</b>, çölün ortasında bir başkent kurabilmenin ön koşulu.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MS 1. yy</div>
-      <div class="tl__body"><h4>Doruk</h4><p>El-Hazne'nin de içinde olduğu anıtsal cephelerin büyük kısmı bu döneme ait.</p></div>
+      <div class="tl__body"><div class="hd">Doruk</div><p>El-Hazne'nin de içinde olduğu anıtsal cephelerin büyük kısmı bu döneme ait.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MS 106</div>
-      <div class="tl__body"><h4>Roma ilhakı</h4><p>Nabati Krallığı Roma'nın Arabia Petraea eyaletine katılıyor. Şehir bir süre daha canlı kalıyor.</p></div>
+      <div class="tl__body"><div class="hd">Roma ilhakı</div><p>Nabati Krallığı Roma'nın Arabia Petraea eyaletine katılıyor. Şehir bir süre daha canlı kalıyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">MS 363</div>
-      <div class="tl__body"><h4>Büyük deprem</h4><p>Bölgeyi vuran deprem yapıların önemli kısmını yıkıyor. Ticaret yolları da zamanla deniz rotalarına kayıyor.</p></div>
+      <div class="tl__body"><div class="hd">Büyük deprem</div><p>Bölgeyi vuran deprem yapıların önemli kısmını yıkıyor. Ticaret yolları da zamanla deniz rotalarına kayıyor.</p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1812</div>
-      <div class="tl__body"><h4>Burckhardt Avrupa'ya haber veriyor</h4><p>Sıkça "yeniden keşif" denir. Bölgedeki Bedeviler siteyi biliyor ve kullanıyordu; yapılan şey <b>Avrupa'ya bildirmekti.</b></p></div>
+      <div class="tl__body"><div class="hd">Burckhardt Avrupa'ya haber veriyor</div><p>Sıkça "yeniden keşif" denir. Bölgedeki Bedeviler siteyi biliyor ve kullanıyordu; yapılan şey <b>Avrupa'ya bildirmekti.</b></p></div>
     </div>
     <div class="tl__row">
       <div class="tl__date">1989</div>
-      <div class="tl__body"><h4>Sinema etkisi</h4><p>El-Hazne'nin bir Hollywood filminde kullanılması, Petra'nın küresel tanınırlığını sıçratıyor — ve kanona giriş biçimini belirliyor.</p></div>
+      <div class="tl__body"><div class="hd">Sinema etkisi</div><p>El-Hazne'nin bir Hollywood filminde kullanılması, Petra'nın küresel tanınırlığını sıçratıyor — ve kanona giriş biçimini belirliyor.</p></div>
     </div>
   </div>
 </section>
