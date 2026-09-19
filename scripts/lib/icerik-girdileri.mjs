@@ -93,7 +93,12 @@ export async function icerikGirdileri(root, { articles, hubs }) {
   // bir kaynağın katmanı, başlığı, notu ya da geçtiği yazı değişmedikçe tarih oynamaz.
   girdiler["kaynakca.html"] = JSON.stringify(
     kaynaklariTopla(Array.isArray(bulgular) ? bulgular : [], articles)
-      .map((k) => [k.id, k.katman, k.kunye.title ?? "", k.kunye.year ?? "", k.notlar.join(" | "),
+      // TANIMLAYICI DA ANAHTARDA: sayfanın her girdisinde DOI/ISBN/URL görünüyor.
+      // İlk sürümde yoktu ve bir DOI düzeltmesi sayfayı değiştirdiği hâlde
+      // tarihi oynatmadı - bugün yazı anahtarında düzeltilen kusurun aynısı.
+      .map((k) => [k.id, k.katman, k.kunye.title ?? "", k.kunye.year ?? "",
+        k.kunye.doi ?? "", k.kunye.isbn ?? "", k.kunye.url ?? "",
+        (k.kunye.authors ?? []).join(","), k.notlar.join(" | "),
         k.yazilar.map((y) => y.slug).join(",")])
       .sort((a, b) => a[0].localeCompare(b[0])),
   );

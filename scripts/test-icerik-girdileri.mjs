@@ -25,13 +25,10 @@ const YAZILAR = [
 ];
 const MERKEZLER = { kayip: { slug: "kayip", sira: 1, baslik: "Kayıp", dosyalar: ["alfa", "beta"] } };
 
-function bulgu(id, yazilar, not) {
-  return {
-    id,
-    claim: `${id} iddiası`,
-    used_in: yazilar,
-    sources: [{ id: `${id}-kaynak`, tier: "primary", type: "book", title: `${id} kaynağı`, note: not }],
-  };
+function bulgu(id, yazilar, not, doi) {
+  const kaynak = { id: `${id}-kaynak`, tier: "primary", type: "book", title: `${id} kaynağı`, note: not };
+  if (doi) kaynak.doi = doi;
+  return { id, claim: `${id} iddiası`, used_in: yazilar, sources: [kaynak] };
 }
 
 /** Küçük ama gerçek bir depo ağacı kurar. */
@@ -109,6 +106,17 @@ await t("REGRESYON: araç sayfası anahtarı bulgu verisini içerir", async () =
   for (const d of ["zaman-cizelgesi", "bulgu-veri-tabani", "kanit-denetimi"]) {
     assert.ok(farklar(once, sonra).includes(`dist/${d}.html`), `dist/${d}.html veri değişimini görmeli`);
   }
+});
+
+await t("REGRESYON: kaynakça anahtarı TANIMLAYICI değişimini yakalar", async () => {
+  // Sayfanın her girdisinde DOI/ISBN/URL görünüyor. İlk sürümde anahtar yalnız
+  // id/katman/başlık/yıl/not/yazı taşıyordu; yanlış yazılmış bir DOI düzeltilince
+  // sayfa değişti ama tarihi hiç oynamadı. Bu, aynı gün yazı anahtarında
+  // düzeltilen kusurun kaynakça sayfasındaki kopyasıydı.
+  const once = await ozetler(depo([bulgu("alfa-bir", ["alfa"], "sabit", "10.1000/eski")]));
+  const sonra = await ozetler(depo([bulgu("alfa-bir", ["alfa"], "sabit", "10.1000/yeni")]));
+  assert.ok(farklar(once, sonra).includes("kaynakca.html"),
+    "tanımlayıcı düzeltmesi kaynakça özetine yansımalı");
 });
 
 await t("kaynakça anahtarı künye değişimini yakalar", async () => {
