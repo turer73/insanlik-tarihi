@@ -469,7 +469,8 @@
         "title": "A Scottish provenance for the Altar Stone of Stonehenge",
         "container": "Nature",
         "doi": "10.1038/s41586-024-07652-1",
-        "url": "https://www.nature.com/articles/s41586-024-07652-1"
+        "url": "https://www.nature.com/articles/s41586-024-07652-1",
+        "note": "İskoçya provenansının hakemli yayını. Kesinleşen şey kaynak BÖLGESİ; taşın hangi ocaktan geldiği bu çalışmayla belirlenmiyor."
       },
       {
         "id": "ucl-2024-sunak-tasi",
@@ -480,7 +481,8 @@
         "year": 2024,
         "title": "Stonehenge Altar Stone came from Scotland, not Wales",
         "institution": "University College London",
-        "url": "https://www.ucl.ac.uk/news/2024/aug/stonehenge-altar-stone-came-scotland-not-wales"
+        "url": "https://www.ucl.ac.uk/news/2024/aug/stonehenge-altar-stone-came-scotland-not-wales",
+        "note": "Kurumsal duyuru; hakemli yayının kendisi değil. Bulgunun kamuya 'Galler değil İskoçya' başlığıyla sunulduğunu kaydetmek için kullanıldı."
       },
       {
         "id": "clarke-2026-highlands-to-henge",
@@ -674,7 +676,8 @@
         "year": 2022,
         "title": "Study reconsiders name of Peru's Machu Picchu",
         "institution": "University of Illinois Chicago",
-        "url": "https://www.newswise.com/articles/study-reconsiders-name-of-peru-s-machu-picchu"
+        "url": "https://www.newswise.com/articles/study-reconsiders-name-of-peru-s-machu-picchu",
+        "note": "Kurumsal duyuru; ad tartışmasının hakemli yayını değil. Bulgunun kamuya nasıl sunulduğunu kaydeder."
       }
     ],
     "evidence": [
@@ -985,7 +988,8 @@
         "title": "Uncovering archaeological landscapes at Angkor using lidar",
         "container": "PNAS",
         "doi": "10.1073/pnas.1306539110",
-        "url": "https://www.pnas.org/doi/10.1073/pnas.1306539110"
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1306539110",
+        "note": "LiDAR nüfus tahmininin hakemli yayını. Ölçtüğü şey yayılmış, düşük yoğunluklu bir kentleşmedir; yoğun kent çekirdeğiyle alan üzerinden karşılaştırma bu yayının iddiası değil - o karşılaştırma kayıtta karşı kanıt olarak ayrıca işaretli."
       },
       {
         "id": "evans-2007-angkor-harita",
@@ -2018,7 +2022,8 @@
         "type": "report",
         "title": "Dünya Mirası listeleme kriterleri ve coğrafi dengesizlik tartışması",
         "institution": "UNESCO",
-        "url": "https://whc.unesco.org/en/criteria/"
+        "url": "https://whc.unesco.org/en/criteria/",
+        "note": "Kanon eleştirisinin ölçütü olarak kullanılıyor ama kendisi de nötr değil: aynı kaynak UNESCO listesinin coğrafi dengesizliğini de tartışıyor. Kayıt iki yönü birlikte taşıyor."
       },
       {
         "id": "turkce-seyahat-listeleri",
@@ -2234,7 +2239,8 @@
         "year": 1982,
         "title": "Sigiriya Antik Kenti - Dünya Mirası kaydı",
         "institution": "UNESCO",
-        "url": "https://whc.unesco.org/en/list/202/"
+        "url": "https://whc.unesco.org/en/list/202/",
+        "note": "Site tanımı ve yerleşim planı için kurumsal kayıt. Kazı yayını değildir; kale-saray tartışmasını çözmez, plan betimlemesini verir."
       }
     ],
     "evidence": [
@@ -2407,7 +2413,8 @@
         "year": 1982,
         "title": "Sigiriya Antik Kenti - Dünya Mirası kaydı",
         "institution": "UNESCO",
-        "url": "https://whc.unesco.org/en/list/202/"
+        "url": "https://whc.unesco.org/en/list/202/",
+        "note": "Grafitilerin varlığı ve sitenin kesintisiz ziyaret edilmesi için kurumsal kayıt. Dizelerin sayısı ve tarihlemesi için birincil yayınla değiştirilmelidir."
       },
       {
         "id": "bandaranayake-1986-sri-lanka-resimleri",
@@ -3553,7 +3560,8 @@
         "year": 2020,
         "title": "New research reveals origin of Stonehenge's great sarsen stones",
         "institution": "University College London",
-        "url": "https://www.ucl.ac.uk/news/2020/jul/new-research-reveals-origin-stonehenges-great-sarsen-stones"
+        "url": "https://www.ucl.ac.uk/news/2020/jul/new-research-reveals-origin-stonehenges-great-sarsen-stones",
+        "note": "Kurumsal duyuru; jeokimyasal eşleştirmenin hakemli yayını değil. Bulgunun kamuya aynı biçimde sunulduğunu kaydeder."
       }
     ],
     "evidence": [
@@ -4094,7 +4102,8 @@
         "title": "A Scottish provenance for the Altar Stone of Stonehenge",
         "container": "Nature",
         "doi": "10.1038/s41586-024-07652-1",
-        "url": "https://www.nature.com/articles/s41586-024-07652-1"
+        "url": "https://www.nature.com/articles/s41586-024-07652-1",
+        "note": "Taşın ağırlığı (~6.000 kg) ve mesafe (~700 km) için künye kaynağı; insan eliyle taşıma çıkarımı bu iki ölçüye dayanıyor."
       }
     ],
     "evidence": [
@@ -4414,7 +4423,8 @@
         "title": "Geoarchaeological evidence from Angkor, Cambodia, reveals a gradual decline rather than a catastrophic 15th-century collapse",
         "container": "PNAS",
         "doi": "10.1073/pnas.1821460116",
-        "url": "https://www.pnas.org/doi/10.1073/pnas.1821460116"
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1821460116",
+        "note": "Kademeli gerilemenin hakemli yayını. Kanıt TEK BİR hendekten geliyor ve kentin idari çekirdeğini temsil ediyor; çevredeki geniş yerleşime genellenemez."
       },
       {
         "id": "sydney-2019-angkor",
@@ -4425,7 +4435,8 @@
         "year": 2019,
         "title": "New research casts doubt on cause of Angkor's collapse",
         "institution": "University of Sydney",
-        "url": "https://www.sydney.edu.au/news-opinion/news/2019/02/26/new-research-casts-doubt-on-cause-of-angkor-s-collapse.html"
+        "url": "https://www.sydney.edu.au/news-opinion/news/2019/02/26/new-research-casts-doubt-on-cause-of-angkor-s-collapse.html",
+        "note": "Kurumsal duyuru; hakemli yayının kendisi değil. Bulgunun 'çöküşün sebebine kuşku' başlığıyla sunulduğunu kaydeder."
       },
       {
         "id": "evans-2023-angkor-cokus-degerlendirme",
@@ -4627,7 +4638,8 @@
         "title": "Geoarchaeological evidence from Angkor, Cambodia, reveals a gradual decline rather than a catastrophic 15th-century collapse",
         "container": "PNAS",
         "doi": "10.1073/pnas.1821460116",
-        "url": "https://www.pnas.org/doi/10.1073/pnas.1821460116"
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1821460116",
+        "note": "Bu kayıtta karşı kanıt olarak kullanılıyor: sediment kronolojisi gerilemenin kuraklıklardan ÖNCE başladığını gösteriyor, dolayısıyla kuraklığın payı belirlenemiyor."
       }
     ],
     "evidence": [
@@ -4807,7 +4819,8 @@
         "year": 1992,
         "title": "Angkor - Dünya Mirası kaydı",
         "institution": "UNESCO",
-        "url": "https://whc.unesco.org/en/list/668/"
+        "url": "https://whc.unesco.org/en/list/668/",
+        "note": "Sitenin 1992 Dünya Mirası kaydında yaşayan bir dinî merkez olarak tanımlanması için bağlam kaynağı. Terk edilmediği iddiasının tek dayanağı değil."
       }
     ],
     "evidence": [
@@ -5635,7 +5648,8 @@
         "title": "Insights into the genetic histories and lifeways of Machu Picchu's occupants",
         "container": "Science Advances",
         "doi": "10.1126/sciadv.adg3377",
-        "url": "https://www.science.org/doi/10.1126/sciadv.adg3377"
+        "url": "https://www.science.org/doi/10.1126/sciadv.adg3377",
+        "note": "Genom analizinin hakemli yayını. Örneklem 34 birey ve YALNIZCA hizmetli mezarlarından; kraliyet ailesi buraya gömülmüyordu. Genetik köken ile etnik kimlik aynı şey değildir."
       },
       {
         "id": "ucsc-2023-machu-picchu-dna",
@@ -5646,7 +5660,8 @@
         "year": 2023,
         "title": "First DNA analysis of Machu Picchu residents offers insight into Inca society",
         "institution": "UC Santa Cruz",
-        "url": "https://news.ucsc.edu/2023/07/machu-picchu-genomics/"
+        "url": "https://news.ucsc.edu/2023/07/machu-picchu-genomics/",
+        "note": "Kurumsal duyuru; hakemli yayının kendisi değil, bulgunun kamuya sunumunu kaydeder."
       }
     ],
     "evidence": [
@@ -6334,7 +6349,8 @@
         "year": 2024,
         "title": "Ancient Maya genomes reveal ritual sacrifice at Chichén Itzá",
         "institution": "Max-Planck-Gesellschaft",
-        "url": "https://www.mpg.de/22037367/0606-evan-ancient-maya-genomes-150495-x"
+        "url": "https://www.mpg.de/22037367/0606-evan-ancient-maya-genomes-150495-x",
+        "note": "Kurumsal duyuru; hakemli yayının kendisi değil, bulgunun kamuya aynı sonuçla sunulduğunu kaydeder."
       }
     ],
     "evidence": [

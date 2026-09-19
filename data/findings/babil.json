@@ -528,7 +528,8 @@
         "institution": "Electronic Text Corpus of Sumerian Literature, University of Oxford",
         "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=c.1.8.2.3",
         "language": "sux",
-        "accessed": "2026-09-09"
+        "accessed": "2026-09-09",
+        "note": "Sümerce metnin çevrimiçi eleştirel çevirisi. Pasajın Babil motifinin öncülü OLMADIĞI sonucu metnin kendisinden çıkıyor: Enki dili karıştırmıyor, tek dilliliği öngörüyor."
       },
       {
         "id": "vanstiphout-2003-epics-sumerian-kings",

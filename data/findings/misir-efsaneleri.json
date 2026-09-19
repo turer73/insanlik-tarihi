@@ -84,7 +84,8 @@
         "institution": "Arkeofili",
         "url": "https://arkeofili.com/dendera-hathor-tapinagini-taniyalim/",
         "language": "tr",
-        "accessed": "2026-09-09"
+        "accessed": "2026-09-09",
+        "note": "Türkçe ansiklopedik ara kaynak; tapınağın tarihlenmesi ve kabartmanın mahzendeki yeri için bağlam. Kazı ya da epigrafi yayını değildir."
       },
       {
         "id": "faulkner-1962-middle-egyptian",
@@ -273,7 +274,8 @@
         "pages": "31-38",
         "publisher": "University of Pennsylvania Museum",
         "institution": "University of Pennsylvania Museum (MASCA)",
-        "language": "en"
+        "language": "en",
+        "note": "Pil yorumunu buluntu grubunun kendisi üzerinden çürüten çözümleme; parşömen saklama kabı açıklamasının kaynağı."
       }
     ],
     "evidence": [
@@ -435,7 +437,8 @@
         "volume": "41",
         "pages": "358-363",
         "doi": "10.5408/0022-1368-41.4.358",
-        "language": "en"
+        "language": "en",
+        "note": "Piramit taşının jeolojik kaydı için dayanak; yapıyı IV. Hanedan inşaat programı içinde tarihlemenin 'daha eski teknoloji' okumasını gereksiz kıldığını gösterir."
       }
     ],
     "evidence": [
@@ -783,7 +786,8 @@
         "institution": "Arkeofili",
         "url": "https://arkeofili.com/buyuk-sfenksin-olusumunda-doganin-bir-rolu-var-miydi/",
         "language": "tr",
-        "accessed": "2026-09-09"
+        "accessed": "2026-09-09",
+        "note": "Türkçe ara kaynak; 2023 akışkan deneylerinin haberi için kullanıldı. Deneyin kendisi değil haberi, ve ana akım tezi benimsemiyor."
       }
     ],
     "evidence": [
@@ -937,7 +941,8 @@
         "year": 2006,
         "publisher": "Routledge",
         "isbn": "9780415305938",
-        "language": "en"
+        "language": "en",
+        "note": "Sözde-arkeolojinin 'kayıp salon' kalıbını çözümleyen derleme. Belirli bir kazıyı değil, iddianın yapısını değerlendirir: kehanetin kendi kendine kanıt sayılması."
       },
       {
         "id": "arkeofili-radar",
@@ -1269,7 +1274,8 @@
         "volume": "40",
         "pages": "3.4",
         "doi": "10.1093/astrog/40.3.3.4",
-        "language": "en"
+        "language": "en",
+        "note": "Presesyon hesabıyla Orion şablonunu denetleyen yayın; ~MÖ 10.500 dizilişinin gökyüzüne oturmadığını gösterir."
       },
       {
         "id": "krupp1997",
@@ -1284,7 +1290,8 @@
         "pages": "Şubat 1997 sayısı",
         "publisher": "Sky Publishing",
         "institution": "Sky & Telescope",
-        "language": "en"
+        "language": "en",
+        "note": "Orion eşleştirmesinin seçiciliğini gösteren eleştiri; Samanyolu-Nil karşılığının yön olarak zorlandığı buradan."
       }
     ],
     "evidence": [
@@ -1402,7 +1409,8 @@
         "year": 2006,
         "publisher": "Routledge",
         "isbn": "9780415305938",
-        "language": "en"
+        "language": "en",
+        "note": "Zayıf iddiaların toplanarak güçlü bir iddia üretmediği ilkesi için dayanak; her bulgunun kendi kaydıyla değerlendirilmesi gerektiği buradan."
       },
       {
         "id": "arkeofili-siluriyen",
@@ -1413,7 +1421,8 @@
         "institution": "Arkeofili",
         "url": "https://arkeofili.com/siluriyen-hipotezi-bizden-once-gelismis-bir-uygarlik-var-miydi/",
         "language": "tr",
-        "accessed": "2026-09-09"
+        "accessed": "2026-09-09",
+        "note": "Türkçe ara kaynak; 'kayıp ileri uygarlık' hipotez ailesinin güncel bir örneği olarak bağlam. Mısır iddiasının doğrudan kanıtı ya da çürütmesi değil."
       },
       {
         "id": "dunn1998",

@@ -130,7 +130,8 @@
         "pages": "348-362",
         "url": "https://archive.nyu.edu/handle/2451/28263",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Tek ve belgelenmiş bir yıkım olayı bulunmadığını gösteren hakemli çözümleme; sayfa düzeyinde dayanak kayıtta ayrıca işaretli."
       }
     ],
     "open_questions": [
@@ -265,7 +266,8 @@
         "pages": "348-362",
         "url": "https://archive.nyu.edu/handle/2451/28263",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Kaybın asıl mekanizması olarak kopyalanmama tezinin dayanağı. Yazar, yangın ile kurumsal çözülmenin payını nicel olarak ayırmanın kaynaklarla mümkün olmadığını da söylüyor."
       }
     ],
     "open_questions": [
@@ -381,7 +383,8 @@
         "pages": "348-362",
         "url": "https://archive.nyu.edu/handle/2451/28263",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Metin eleştirisinin sürekli bir kurum programına dönüşmesi için dayanak. Buradaki 'doğuş' ilk kez metin karşılaştırması yapılması anlamına gelmiyor."
       }
     ],
     "open_questions": [
@@ -521,7 +524,8 @@
         "doi": "10.1126/science.194.4270.1121",
         "url": "https://pubmed.ncbi.nlm.nih.gov/17790893/",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Yörünge ritimlerini çökel kaydında ölçen klasik yayın. Aynı yayın 100 bin yıllık bileşenin basit doğrusal zorlamayla açıklanamadığını da söylüyor; kaydın 'bilinmiyor' durumu buradan."
       },
       {
         "id": "pollak-2026-mpt",
@@ -543,7 +547,8 @@
         "doi": "10.5194/cp-22-675-2026",
         "url": "https://cp.copernicus.org/articles/22/675/2026/",
         "language": "en",
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-07",
+        "note": "Orta Pleyistosen Geçişi'ni eşik değişimiyle açıklamayı deneyen güncel yayın. Kayıt bunu çözüm olarak değil, benzer örüntü üretebilen rakip mekanizmalardan biri olarak taşıyor."
       }
     ],
     "open_questions": [

@@ -203,7 +203,8 @@
         "accessed": "2026-09-12",
         "tier": "primary",
         "type": "edition",
-        "title": "Rigveda I.32 (Indra-Vritra)"
+        "title": "Rigveda I.32 (Indra-Vritra)",
+        "note": "Birincil metnin kendisi: Indra Vritra'yı öldürür. Motifin VARLIĞININ kaynağı; akrabalığın kanıtı değil."
       },
       {
         "id": "kojiki-susanoo",
@@ -212,7 +213,8 @@
         "tier": "primary",
         "type": "edition",
         "year": 712,
-        "title": "Kojiki (Susanoo - Yamata no Oroçi)"
+        "title": "Kojiki (Susanoo - Yamata no Oroçi)",
+        "note": "Birincil metnin kendisi. Bu kayıtta KARŞI kanıt: aynı motif Hint-Avrupa dışı bir gelenekte de var, dolayısıyla motif tek başına ortak köken göstermiyor."
       },
       {
         "id": "west-2007-indo-european-poetry-myth",
@@ -1344,7 +1346,8 @@
         "tier": "primary",
         "type": "edition",
         "year": 712,
-        "title": "Kojiki (İzanagi - İzanami)"
+        "title": "Kojiki (İzanagi - İzanami)",
+        "note": "Birincil metnin kendisi; ölüm kökeni anlatılarının 'sayısal pazarlık' tipi için örnek."
       },
       {
         "id": "abrahamsson-1951-origin-of-death",
@@ -2633,7 +2636,8 @@
         "authors": [
           "Hesiodos"
         ],
-        "title": "Theogonia ve İşler ve Günler (Prometheus anlatısı)"
+        "title": "Theogonia ve İşler ve Günler (Prometheus anlatısı)",
+        "note": "Birincil metnin kendisi; ateş hırsızlığı motifinin Yunan örneği. Kaydın iddiası motifin yaygınlığının ortak köken kanıtı olmadığı."
       },
       {
         "id": "tehrani-2023-cultural-transmission-folk-narratives",
@@ -3112,7 +3116,8 @@
         "authors": [
           "Hesiodos"
         ],
-        "title": "İşler ve Günler (Ülker'in doğuşu ve batışına göre tarım takvimi)"
+        "title": "İşler ve Günler (Ülker'in doğuşu ve batışına göre tarım takvimi)",
+        "note": "Birincil metnin kendisi; Ülker'in doğuş ve batışına bağlanan tarım takviminin Yunan örneği."
       },
       {
         "id": "ruggles-2005-ancient-astronomy",

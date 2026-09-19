@@ -29,7 +29,8 @@
         "year": 2024,
         "title": "The Gulf Stream is wind-powered and could weaken from climate change",
         "institution": "University College London",
-        "url": "https://www.ucl.ac.uk/news/2024/jul/gulf-stream-wind-powered-and-could-weaken-climate-change"
+        "url": "https://www.ucl.ac.uk/news/2024/jul/gulf-stream-wind-powered-and-could-weaken-climate-change",
+        "note": "Kurumsal duyuru; hakemli yayının kendisi değil. Gulf Stream'in rüzgârla sürüldüğü ayrımı için kullanıldı. Aynı duyuru akıntının zayıflayabileceğini de söylüyor; kayıt 'durmaz' ile 'zayıflamaz' ifadelerini ayrı tutuyor."
       },
       {
         "id": "ipcc-ar6-wg1-bolum9",
@@ -869,7 +870,8 @@
         "title": "Physics-based early warning signal shows that AMOC is on tipping course",
         "container": "Science Advances",
         "volume": "10(6)",
-        "doi": "10.1126/sciadv.adk1189"
+        "doi": "10.1126/sciadv.adk1189",
+        "note": "Bu kayıtta doğrulayıcı değil, 'devrilme yolunda' konumunun KAYNAĞI olarak kullanılıyor: alan içi çelişkinin bir ucu. Karşı uçtaki çalışmalar aynı kayıtta listeli."
       },
       {
         "id": "baker-2025-cokmez",
