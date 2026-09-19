@@ -1359,11 +1359,11 @@
       },
       {
         "id": "yakin-donem-arastirmalar-hane-uretimi-ve-yerel-orgutlenmenin",
-        "text": "Yakın dönem araştırmalar hane üretimi ve yerel örgütlenmenin de önemli olduğunu gösterir.",
+        "text": "Kurumsal hanelerin geniş ailelerle mi kabile yapılarıyla mı ilişkili olduğu bilinmiyor; kurumsal hanelerin yanında aile merkezli (\"özel\") bir ekonomik sektörün bulunup bulunmadığı da bilinmiyor.",
         "citations": [
           {
             "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "s. 214 — kurumsal haneler yanında \"özel\" sektör sorusunun açık kalması",
             "support_type": "direct"
           }
         ]
@@ -1376,7 +1376,7 @@
         "citations": [
           {
             "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "s. 214 — \"other economic modes may well have existed at the same time\"",
             "support_type": "counter"
           }
         ]
@@ -1625,7 +1625,7 @@
         "citations": [
           {
             "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "s. 184 — Fırat boyunca \"colonial Uruk sites\"; Jebel Aruda/Tell Qannas/Habuba Kabira",
             "support_type": "direct"
           }
         ]
@@ -1649,7 +1649,7 @@
         "citations": [
           {
             "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "s. 184 — \"Southern Mesopotamia is the heartland of the Uruk culture\"",
             "support_type": "counter"
           }
         ]
@@ -1747,6 +1747,23 @@
         "volume": "35",
         "pages": "332-346",
         "doi": "10.1017/S0959774324000404"
+      },
+      {
+        "id": "selz-2020-uruk-fenomeni",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "title": "The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004",
+        "publisher": "Oxford University Press"
       }
     ],
     "evidence": [
@@ -1755,8 +1772,8 @@
         "text": "Habuba Kabira gibi planlı güney tarzı yerleşimler koloni yorumunu destekler.",
         "citations": [
           {
-            "source_ref": "mcmahon-2019-kuzey-mezopotamya-kentlesme",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 184 — Habuba Kabira kümesinin \"colonial Uruk sites\" arasında sayılması",
             "support_type": "direct"
           }
         ]
@@ -1766,8 +1783,8 @@
         "text": "Tell Brak ve başka alanlarda yerel malzeme kültürüyle yan yana varoluş görülür.",
         "citations": [
           {
-            "source_ref": "mcmahon-2019-kuzey-mezopotamya-kentlesme",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 184 — \"hybrid sites\" kategorisi ve yerel yerleşimlerdeki Uruk enklavları",
             "support_type": "direct"
           }
         ]
@@ -3606,7 +3623,7 @@
         "citations": [
           {
             "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "s. 168 — E'ana'nın Seleukos çağına dek tanrıçaya adanmış kalması",
             "support_type": "direct"
           }
         ]
@@ -3630,7 +3647,7 @@
         "citations": [
           {
             "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "s. 167 — \"massive architectural restructuring ... complete razing of prior structures\"",
             "support_type": "counter"
           }
         ]
