@@ -643,7 +643,7 @@
         "title": "White Temple and ziggurat, Uruk",
         "url": "https://smarthistory.org/white-temple-and-ziggurat-uruk/",
         "language": "en",
-        "note": "Anu terası, Beyaz Tapınak ve anıtsal kerpiç mimari.",
+        "note": "Anu terası, Beyaz Tapınak ve anıtsal kerpiç mimari. Metin smarthistory.org otomatik erişimi reddettiği için aynı yazının açık erişimli Lumen Learning kopyasından okundu; içerik aynı CC lisanslı Senta German denemesidir.",
         "institution": "Smarthistory (Center for Public Art History)"
       },
       {
@@ -688,8 +688,8 @@
         "text": "Erken yapıların ‘tapınak’, ‘saray’ veya ‘idare binası’ işlevleri çoğu kez sonraki kült bilgisi ve mimari benzetme üzerinden adlandırılır.",
         "citations": [
           {
-            "source_ref": "artefacts-uruk-beyaz-tapinak",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "smarthistory-beyaz-tapinak-ziggurat",
+            "locator": "The White Temple bölümü — içeride çok az nesne bulunması",
             "support_type": "counter"
           }
         ]
@@ -770,7 +770,7 @@
         "title": "White Temple and ziggurat, Uruk",
         "url": "https://smarthistory.org/white-temple-and-ziggurat-uruk/",
         "language": "en",
-        "note": "Anu terası, Beyaz Tapınak ve anıtsal kerpiç mimari.",
+        "note": "Anu terası, Beyaz Tapınak ve anıtsal kerpiç mimari. Metin smarthistory.org otomatik erişimi reddettiği için aynı yazının açık erişimli Lumen Learning kopyasından okundu; içerik aynı CC lisanslı Senta German denemesidir.",
         "institution": "Smarthistory (Center for Public Art History)"
       }
     ],
@@ -793,8 +793,8 @@
         "text": "‘İlk ziggurat’ etiketi tanıma bağlıdır; yapı sonraki tam gelişmiş zigguratlardan farklıdır.",
         "citations": [
           {
-            "source_ref": "artefacts-uruk-beyaz-tapinak",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "smarthistory-beyaz-tapinak-ziggurat",
+            "locator": "Ziggurats bölümü — ziggurat tanımı",
             "support_type": "counter"
           }
         ]
@@ -2769,6 +2769,21 @@
         "url": "https://anetoday.org/beneath-euphrates-sediments/",
         "language": "en",
         "note": "2003 EAGE ozetini yazan ekibin acik erisimli ve daha guncel anlatimi. Sur devresi, burclar ve kanal agi olculeriyle burada. ONCEKI SURUMDE bu maddeler NASA ADS ozetine baglanmisti; o sayfa betige kapali ve icerigi denetlenemiyordu."
+      },
+      {
+        "id": "metmuseum-uruk-ilk-sehir",
+        "tier": "institutional",
+        "type": "article",
+        "title": "Uruk: The First City",
+        "authors": [
+          "Department of Ancient Near Eastern Art"
+        ],
+        "year": 2003,
+        "container": "Heilbrunn Timeline of Art History",
+        "institution": "The Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/essays/uruk-the-first-city",
+        "language": "en",
+        "note": "Surun \"geleneğe göre Kral Gilgameş'in emriyle\" yapıldığını söyleyen kurumsal deneme. Cümlenin kendisi hem edebî özdeşleştirmeyi hem de bunun gelenek olduğunu, çağdaş bir yapı kaydı olmadığını gösteriyor."
       }
     ],
     "evidence": [
@@ -2788,8 +2803,8 @@
         "text": "Mezopotamya edebiyatı suru Gilgameş’le özdeşleştirir.",
         "citations": [
           {
-            "source_ref": "jimenez-2025-gilgamis-maddesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "metmuseum-uruk-ilk-sehir",
+            "locator": "Erken Hanedanlık paragrafı — \"according to tradition ... King Gilgamesh\"",
             "support_type": "direct"
           }
         ]
@@ -2801,8 +2816,8 @@
         "text": "Surun evreleri ve onarımları vardır; kişisel atfı doğrulayan çağdaş yapı yazıtı yoktur.",
         "citations": [
           {
-            "source_ref": "jimenez-2025-gilgamis-maddesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "metmuseum-uruk-ilk-sehir",
+            "locator": "Erken Hanedanlık paragrafı — atfın \"gelenek\" olarak nitelenmesi",
             "support_type": "counter"
           }
         ]
