@@ -3633,8 +3633,8 @@
         "text": "Çivi yazılı bilimsel ve kült metinleri çok daha geç tarihlere kadar Uruk’ta üretildi.",
         "citations": [
           {
-            "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "clancier-2012-helenistik-uruk",
+            "locator": "s. 752 — Uruk'ta bilinen son çivi yazılı belgenin MÖ 108 tarihli olması",
             "support_type": "direct"
           }
         ]
@@ -3746,7 +3746,7 @@
         "citations": [
           {
             "source_ref": "clancier-2012-helenistik-uruk",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "s. 755 — Anu'ya adanmış Reş ve İştar'a adanmış Eşgal tapınakları; ağıtçıların kütüphanesi Reş tapınağında",
             "support_type": "direct"
           }
         ]
@@ -3759,8 +3759,13 @@
         "citations": [
           {
             "source_ref": "clancier-2012-helenistik-uruk",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "s. 761 — Reş ve Eşgal tapınaklarının Part egemenliğinin başında hızla ortadan kalkması",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "clancier-2012-helenistik-uruk",
+            "locator": "s. 759 — Anu zigguratı ve Reş tapınağının Mezopotamya'nın en büyük tapınak külliyeleri arasında sayılması",
+            "support_type": "context"
           }
         ]
       }
