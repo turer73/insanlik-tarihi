@@ -107,6 +107,16 @@
         "language": "en",
         "note": "Uruk’un mutlak ‘ilk şehir’ ilanını sınırlayan Tell Brak bulguları.",
         "institution": "University of Cambridge"
+      },
+      {
+        "id": "unesco-guney-irak-ahwar",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "The Ahwar of Southern Iraq",
+        "url": "https://whc.unesco.org/en/list/1481/",
+        "language": "en",
+        "note": "Uruk, Ur ve Eridu nun tatli su bataklik kenarinda gelismesi ve kentlerin yazi ile anitsal mimariyi birlikte uretmesi icin kurumsal kayit.",
+        "institution": "UNESCO"
       }
     ],
     "evidence": [
@@ -115,8 +125,8 @@
         "text": "Alan araştırmaları ve yayınlar, geç 4. binyılda 250 hektarı aşan bir yerleşim ölçeği gösterir.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "penn-lagash-tarihsel-baglam",
+            "locator": "Uruk (ca. 4000-3100 BCE) bölümü",
             "support_type": "direct"
           }
         ]
@@ -126,8 +136,8 @@
         "text": "Anıtsal kamusal yapılar, uzmanlaşmış idari kayıtlar ve bölgesel merkez-çevre ilişkileri birlikte görünür.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "unesco-guney-irak-ahwar",
+            "locator": "Olağanüstü Evrensel Değer — Kısa Sentez",
             "support_type": "direct"
           }
         ]
@@ -139,8 +149,8 @@
         "text": "‘İlk şehir’ sıralaması kullanılan şehir tanımına bağlıdır; Tell Brak erken ve eşzamanlı bir başka kentsel odaktır.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "cambridge-tell-brak-kentlesme",
+            "locator": "Bulgular bölümü",
             "support_type": "counter"
           }
         ]
@@ -243,6 +253,26 @@
         "language": "en",
         "note": "Uruk’un mutlak ‘ilk şehir’ ilanını sınırlayan Tell Brak bulguları.",
         "institution": "University of Cambridge"
+      },
+      {
+        "id": "penn-lagash-tarihsel-baglam",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Lagash Archaeological Project — Historical Context",
+        "url": "https://web.sas.upenn.edu/lagash/historical-context/",
+        "language": "en",
+        "note": "Uruk doneminin kronolojisi ve kentin 250 hektari asan olcegi.",
+        "institution": "Penn Museum, University of Pennsylvania"
+      },
+      {
+        "id": "unesco-guney-irak-ahwar",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "The Ahwar of Southern Iraq",
+        "url": "https://whc.unesco.org/en/list/1481/",
+        "language": "en",
+        "note": "Kentlerin yazi, anitsal mimari ve karmasik toplum yapisini ayni dugumde birlestirdigi icin kurumsal kayit.",
+        "institution": "UNESCO"
       }
     ],
     "evidence": [
@@ -251,8 +281,8 @@
         "text": "Uruk geç 4. binyılın en büyük ve en karmaşık kentlerinden biridir.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "penn-lagash-tarihsel-baglam",
+            "locator": "Uruk (ca. 4000-3100 BCE) bölümü",
             "support_type": "direct"
           }
         ]
@@ -262,8 +292,8 @@
         "text": "Tell Brak’ta geç 5. ve erken 4. binyılda 130 hektarlık kentsel gelişim saptanmıştır.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "ur-karsgaard-oates-2011-tell-brak-banliyo",
+            "locator": "Özet",
             "support_type": "direct"
           }
         ]
@@ -275,8 +305,8 @@
         "text": "Uruk’un yazı, bürokrasi ve anıtsal ölçeği aynı düğümde birleştirmesi onu ‘ilk metropol’ etiketi için güçlü aday yapar.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "unesco-guney-irak-ahwar",
+            "locator": "Olağanüstü Evrensel Değer — Kısa Sentez",
             "support_type": "counter"
           }
         ]
@@ -358,7 +388,7 @@
         "citations": [
           {
             "source_ref": "penn-lagash-tarihsel-baglam",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Uruk (ca. 4000-3100 BCE) bölümü",
             "support_type": "direct"
           }
         ]
@@ -369,7 +399,7 @@
         "citations": [
           {
             "source_ref": "penn-lagash-tarihsel-baglam",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Uruk (ca. 4000-3100 BCE) bölümü",
             "support_type": "direct"
           }
         ]
@@ -382,7 +412,7 @@
         "citations": [
           {
             "source_ref": "penn-lagash-tarihsel-baglam",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Uruk (ca. 4000-3100 BCE) bölümü",
             "support_type": "counter"
           }
         ]
@@ -507,7 +537,7 @@
         "citations": [
           {
             "source_ref": "unesco-guney-irak-ahwar",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Kısa Sentez — tatlı su bataklıklarının kenarı",
             "support_type": "direct"
           }
         ]
@@ -518,7 +548,7 @@
         "citations": [
           {
             "source_ref": "unesco-guney-irak-ahwar",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Kısa Sentez — deltaik ova ve su dinamiği",
             "support_type": "direct"
           }
         ]
@@ -531,7 +561,7 @@
         "citations": [
           {
             "source_ref": "unesco-guney-irak-ahwar",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Kısa Sentez — kentlerin yükselişi ve gerilemesi",
             "support_type": "counter"
           }
         ]
@@ -646,7 +676,7 @@
         "citations": [
           {
             "source_ref": "artefacts-uruk-beyaz-tapinak",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Proje açıklaması — terasın en az on kez yükseltilmesi",
             "support_type": "direct"
           }
         ]
@@ -751,7 +781,7 @@
         "citations": [
           {
             "source_ref": "artefacts-uruk-beyaz-tapinak",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Proje açıklaması — beyaz sıvalı, nişli cepheler ve orta salon planı",
             "support_type": "direct"
           }
         ]
@@ -775,7 +805,7 @@
         "citations": [
           {
             "source_ref": "artefacts-uruk-beyaz-tapinak",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Proje açıklaması — iki alternatifli rekonstrüksiyon",
             "support_type": "counter"
           }
         ]
@@ -889,8 +919,8 @@
         "text": "Uruk IV tabakalarından MÖ yaklaşık 3350–3200 tarihli idari tabletler vardır.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "cdli-p002976-uruk-iv-tableti",
+            "locator": "Künye: dönem ve nesne türü",
             "support_type": "direct"
           }
         ]
@@ -900,8 +930,8 @@
         "text": "İlk kayıtlar ağırlıkla mal, sayı, emek ve tahsis hesaplarıdır.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "britishmuseum-civi-yazisi-nasil-yazilir",
+            "locator": "Giriş: muhasebe aracı olarak gelişimi",
             "support_type": "direct"
           }
         ]
@@ -924,8 +954,8 @@
         "text": "En erken işaretlerin hangi konuşma dilini ne ölçüde kodladığı her zaman belirlenemez.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "cdli-p002976-uruk-iv-tableti",
+            "locator": "Künye: dil alanı — \"Undetermined\"",
             "support_type": "counter"
           }
         ]
@@ -1044,7 +1074,7 @@
         "citations": [
           {
             "source_ref": "cdli-p002976-uruk-iv-tableti",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Künye: tür — \"Administrative\"",
             "support_type": "direct"
           }
         ]
@@ -1054,8 +1084,8 @@
         "text": "Gilgameş anlatılarının bilinen nüshaları çok daha geç dönemlerdendir.",
         "citations": [
           {
-            "source_ref": "cdli-p002976-uruk-iv-tableti",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "metmuseum-gilgamis",
+            "locator": "Giriş paragrafı — 3. binyıl nüshası korunmamıştır",
             "support_type": "direct"
           }
         ]
@@ -1067,8 +1097,8 @@
         "text": "Sözlü anlatıların daha eski olması mümkündür; ancak bu, korunmuş bir 4. binyıl destan tableti anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "cdli-p002976-uruk-iv-tableti",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "metmuseum-gilgamis",
+            "locator": "Sümerce öyküler bölümü — sözlü anlatı kökeni",
             "support_type": "counter"
           }
         ]
@@ -1170,9 +1200,9 @@
         "text": "Enmerkar ve Aratta anlatısının korunmuş tanıkları Eski Babil dönemindendir.",
         "citations": [
           {
-            "source_ref": "oxford-etcsl-projesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
-            "support_type": "direct"
+            "source_ref": "etcsl-enmerkar-aratta-beyi",
+            "locator": "satır 500-514 — kilin düzleştirilmesi pasajı",
+            "support_type": "claim-origin"
           }
         ]
       },
@@ -1311,8 +1341,8 @@
         "text": "Tabletler büyük ölçekli tahsis, sürü, tahıl ve emek yönetimini gösterir.",
         "citations": [
           {
-            "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "britishmuseum-civi-yazisi-nasil-yazilir",
+            "locator": "Giriş: ekmek ve bira tayınlarının kaydı",
             "support_type": "direct"
           }
         ]
@@ -1437,7 +1467,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-egimli-agizli-kase",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Küratör notu — yayılım ve el yapımı üretim",
             "support_type": "direct"
           }
         ]
@@ -1448,7 +1478,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-egimli-agizli-kase",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Küratör notu — \"the sizes vary considerably\"",
             "support_type": "direct"
           }
         ]
@@ -1461,7 +1491,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-egimli-agizli-kase",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Küratör notu — \"perhaps for issuing rations\"",
             "support_type": "counter"
           }
         ]
@@ -1595,8 +1625,8 @@
         "text": "Başka yerlerde yerel gelenekler sürer ve Uruk unsurları seçilerek uyarlanır.",
         "citations": [
           {
-            "source_ref": "selz-2020-uruk-fenomeni",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "lewis-2025-uruk-genislemesi",
+            "locator": "Özet — glokalleşme çerçevesi",
             "support_type": "direct"
           }
         ]
@@ -1739,8 +1769,8 @@
         "text": "Maddi benzerlik siyasi egemenliği tek başına göstermez.",
         "citations": [
           {
-            "source_ref": "mcmahon-2019-kuzey-mezopotamya-kentlesme",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "lewis-2025-uruk-genislemesi",
+            "locator": "Özet — yerel dinamikler",
             "support_type": "counter"
           }
         ]
@@ -1848,7 +1878,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Nesne tanımı — kamış demeti simgeleri",
             "support_type": "direct"
           }
         ]
@@ -1861,7 +1891,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Künye — \"Emblem of: Inanna\" alanı",
             "support_type": "counter"
           }
         ]
@@ -1953,7 +1983,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Nesne tanımı — rahip-kral ve sunu sahnesi",
             "support_type": "direct"
           }
         ]
@@ -1966,7 +1996,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Nesne tanımı — yazıt kaydı yok",
             "support_type": "counter"
           }
         ]
@@ -2156,7 +2186,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Nesne tanımı — rahip-kral, koyun sürüsü ve kamış demetleri",
             "support_type": "direct"
           }
         ]
@@ -2169,7 +2199,7 @@
         "citations": [
           {
             "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Künye — yazıt alanı boş",
             "support_type": "counter"
           }
         ]
@@ -2275,6 +2305,16 @@
         "volume": "2",
         "pages": "159-172",
         "doi": "10.1086/370672"
+      },
+      {
+        "id": "etcsl-gilgames-ve-aga",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Gilgameš and Aga (ETCSL t.1.8.1.1)",
+        "institution": "University of Oxford, ETCSL",
+        "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.1.1",
+        "language": "sux",
+        "note": "Metnin kendisi. Yaşlılar meclisi ve savaşabilir erkekler topluluğu pasajları buradan; kralın yaşlıların görüşünü ciddiye almaması da metnin kendi ifadesidir."
       }
     ],
     "evidence": [
@@ -2283,8 +2323,8 @@
         "text": "Gilgameş ve Aga anlatısında yaşlılar ve savaşabilir erkekler topluluğu görünür.",
         "citations": [
           {
-            "source_ref": "oxford-etcsl-projesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "etcsl-gilgames-ve-aga",
+            "locator": "satır 1-8 ve 15-23 — yaşlılar ve savaşabilir erkekler",
             "support_type": "direct"
           }
         ]
@@ -2294,8 +2334,8 @@
         "text": "Metin, kolektif danışma fikrinin Mezopotamya siyasal hayalinde yer aldığını gösterir.",
         "citations": [
           {
-            "source_ref": "oxford-etcsl-projesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "etcsl-gilgames-ve-aga",
+            "locator": "satır 1-8 — meclise danışma",
             "support_type": "direct"
           }
         ]
@@ -2318,8 +2358,8 @@
         "text": "Kral istemediği görüşü bırakıp desteklediği gruba gider; eşit yurttaşlık, seçim ve hesap verme gösterilmez.",
         "citations": [
           {
-            "source_ref": "oxford-etcsl-projesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "etcsl-gilgames-ve-aga",
+            "locator": "satır 15-23 — \"did not take seriously the advice of his city's elders\"",
             "support_type": "counter"
           }
         ]
@@ -2388,8 +2428,8 @@
         "id": "cdli-sumer-kral-listesi",
         "tier": "primary",
         "type": "database",
-        "title": "Sumerian King List",
-        "url": "https://cdli.earth/artifacts/112355",
+        "title": "CDLI Sümer Kral Listesi bileşik metni (Q000371 / P479895)",
+        "url": "https://cdli.earth/P479895",
         "language": "en",
         "note": "Krallık listesinin kopyaları ve Uruk hanedan geleneği.",
         "institution": "Cuneiform Digital Library Initiative (CDLI)"
@@ -2419,6 +2459,16 @@
         "language": "en",
         "note": "Gilgameş hakkında çağdaş bilgi bulunmaması ve destan geleneği.",
         "institution": "Metropolitan Museum of Art"
+      },
+      {
+        "id": "etcsl-sumer-kral-listesi",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Sümer Kral Listesi (ETCSL t.2.1.1)",
+        "institution": "University of Oxford, ETCSL",
+        "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.2.1.1",
+        "language": "sux",
+        "note": "Metnin kendisi. Krallığın gökten inişi ve Gilgameş'e verilen 126 yıllık saltanat bu çevirinin satırlarında geçer."
       }
     ],
     "evidence": [
@@ -2427,8 +2477,8 @@
         "text": "Mezopotamya geleneği onu Uruk kralı sayar ve 3. binyıl ortalarında tanrılaştırılmıştır.",
         "citations": [
           {
-            "source_ref": "cdli-sumer-kral-listesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "metmuseum-gilgamis",
+            "locator": "Giriş paragrafı — Uruk kralı sayılması",
             "support_type": "direct"
           }
         ]
@@ -2438,8 +2488,8 @@
         "text": "Krallık listesi ve sonraki anmalar tarihsel çekirdek ihtimalini canlı tutar.",
         "citations": [
           {
-            "source_ref": "cdli-sumer-kral-listesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "etcsl-sumer-kral-listesi",
+            "locator": "satır 95-133 — Gilgameš girdisi",
             "support_type": "direct"
           }
         ]
@@ -2451,8 +2501,8 @@
         "text": "Çağdaş ve açık bir Gilgameş kraliyet yazıtı yoktur.",
         "citations": [
           {
-            "source_ref": "cdli-sumer-kral-listesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "metmuseum-gilgamis",
+            "locator": "Giriş paragrafı — \"No contemporary information is known\"",
             "support_type": "counter"
           }
         ]
@@ -2462,8 +2512,8 @@
         "text": "Destan ve Sumerce öyküler yüzyıllar boyunca edebî biçimde geliştirilmiştir.",
         "citations": [
           {
-            "source_ref": "cdli-sumer-kral-listesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "metmuseum-gilgamis",
+            "locator": "Sümerce öyküler bölümü — Eski Babil nüshaları",
             "support_type": "counter"
           }
         ]
@@ -2531,8 +2581,8 @@
         "id": "cdli-sumer-kral-listesi",
         "tier": "primary",
         "type": "database",
-        "title": "Sumerian King List",
-        "url": "https://cdli.earth/artifacts/112355",
+        "title": "CDLI Sümer Kral Listesi bileşik metni (Q000371 / P479895)",
+        "url": "https://cdli.earth/P479895",
         "language": "en",
         "note": "Krallık listesinin kopyaları ve Uruk hanedan geleneği.",
         "institution": "Cuneiform Digital Library Initiative (CDLI)"
@@ -2552,6 +2602,16 @@
         "container": "Oxford Classical Dictionary",
         "doi": "10.1093/acrefore/9780199381135.013.9025",
         "publisher": "Oxford University Press"
+      },
+      {
+        "id": "etcsl-sumer-kral-listesi",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Sümer Kral Listesi (ETCSL t.2.1.1)",
+        "institution": "University of Oxford, ETCSL",
+        "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.2.1.1",
+        "language": "sux",
+        "note": "Metnin kendisi. Krallığın gökten inişi ve Gilgameş'e verilen 126 yıllık saltanat bu çevirinin satırlarında geçer."
       }
     ],
     "evidence": [
@@ -2560,8 +2620,8 @@
         "text": "Sümer Krallar Listesi olağanüstü uzun saltanatları ve krallığın gökten inişi gibi teolojik şemaları içerir.",
         "citations": [
           {
-            "source_ref": "cdli-sumer-kral-listesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "etcsl-sumer-kral-listesi",
+            "locator": "satır 1 ve 95-133 — gökten inen krallık; Gilgameš 126 yıl",
             "support_type": "direct"
           }
         ]
@@ -2896,7 +2956,7 @@
         "citations": [
           {
             "source_ref": "etcsl-enmerkar-aratta-beyi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "satır 611-625 — altın, gümüş ve lapis lazuli",
             "support_type": "direct"
           }
         ]
@@ -2909,7 +2969,7 @@
         "citations": [
           {
             "source_ref": "etcsl-enmerkar-aratta-beyi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "satır 611-625 — coğrafi ipuçlarının belirsizliği",
             "support_type": "counter"
           }
         ]
@@ -2995,7 +3055,7 @@
         "citations": [
           {
             "source_ref": "levin-2020-nimrod-sehirleri",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Erech bölümü — Uruk ile özdeşleştirme",
             "support_type": "direct"
           }
         ]
@@ -3095,7 +3155,7 @@
         "citations": [
           {
             "source_ref": "levin-2020-nimrod-sehirleri",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "locator": "Tekvin 10:10 şehirleri — Babil ve Erech ayrı adlar",
             "support_type": "direct"
           }
         ]
@@ -3219,8 +3279,8 @@
         "text": "Erech adının Uruk’u işaret etmesi, sonraki gelenekte kentin güçlü hafızasını gösterir.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "levin-2020-nimrod-sehirleri",
+            "locator": "Erech bölümü — Uruk ile özdeşleştirme",
             "support_type": "counter"
           }
         ]
@@ -3351,8 +3411,8 @@
         "text": "Yapı evreleri, kerpiç üretimi, idari araçlar, mühürler ve yazı sisteminin kademeli gelişimi arkeolojik dizide izlenebilir.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "cdli-p002976-uruk-iv-tableti",
+            "locator": "Künye: dönem, tür ve buluntu yeri",
             "support_type": "direct"
           }
         ]
@@ -3364,8 +3424,8 @@
         "text": "Anunnaki gerçek Mezopotamya tanrılar topluluğuna ait bir terimdir; modern dünya dışı yorumu antik metinlerin doğrudan anlamı değildir.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "britishmuseum-116722-silindir-muhur",
+            "locator": "Künye — \"Emblem of: Inanna\" alanı",
             "support_type": "counter"
           }
         ]
