@@ -360,10 +360,17 @@ export function renderKaynakca(bundle, articles, origin) {
     </header>
     ${bolumler}
     <section class="kk-bolum kk-kapanis">
-      <h2>Bir hata gördüyseniz</h2>
-      <p>Yanlış künye, ölü bağlantı ya da yanlış katmanlanmış bir kaynak fark ederseniz bildirin;
-      düzeltmeler <a href="duzeltmeler.html">açık günlüğe</a> yazılır. Bağlantı denetimi her derlemede
-      otomatik koşuyor, ama katman kararı insan kararıdır ve yanılabilir.</p>
+      <h2>Bu listenin sınırları</h2>
+      <p><strong>Bağlantılar çürür.</strong> Her künye kaydedilirken tanımlayıcısı doğrulanır, ama
+      bundan sonrası denetim ister: adresler ayrı bir betikle aralıklı taranır, her derlemede değil.
+      Tarama günü ve sonucu <a href="https://github.com/turer73/insanlik-tarihi/blob/main/docs/kaynak-baglantilari.md" rel="noopener" target="_blank">açık raporda</a> duruyor.
+      Yayıncıların bir bölümü otomatik isteği reddettiği için o adresler "denenemedi" sayılır; kırık
+      oldukları anlamına gelmez.</p>
+      <p><strong>Katman kararı insan kararıdır.</strong> Bir kaynağın hangi katmana girdiği kurala
+      değil yargıya dayanır ve yanılabilir. Aynı şey notlar için de geçerli: not, kaynağın o kayıttaki
+      rolünü anlatır, içeriğinin tarafsız özeti değildir.</p>
+      <p>Yanlış künye, ölü bağlantı ya da yanlış katmanlanmış bir kaynak görürseniz bildirin;
+      düzeltmeler <a href="duzeltmeler.html">açık günlüğe</a> yazılır.</p>
     </section>
   </main>
   <footer class="site-footer">

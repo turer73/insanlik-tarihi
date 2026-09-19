@@ -579,11 +579,11 @@
         "id": "matris-kaynak-7",
         "tier": "institutional",
         "type": "webpage",
-        "title": "ZRS — Uruk White Temple Reconstruction",
-        "url": "https://zrs.berlin/project/uruk-white-temple/",
+        "title": "Uruk Visualisation Project — The White Temple",
+        "url": "https://www.artefacts-berlin.de/portfolio-item/uruk-visualisation-project-the-white-temple/",
         "language": "en",
-        "note": "Beyaz Tapınak rekonstrüksiyonu ve rekonstrüksiyon belirsizlikleri.",
-        "institution": "ZRS Berlin (Uruk Beyaz Tapınak projesi)"
+        "note": "Beyaz Tapınak rekonstrüksiyonu ve belirsizliği için: proje tek katlı ve iki katlı olmak üzere İKİ ayrı rekonstrüksiyon üretti. Görselleştirme bir kazı bulgusu değil, kanıttan çıkarılmış bir yorumdur.",
+        "institution": "Artefacts – Berlin (DAI Şark Bölümü adına)"
       },
       {
         "id": "matris-kaynak-8",
@@ -599,10 +599,10 @@
         "id": "matris-kaynak-28",
         "tier": "institutional",
         "type": "webpage",
-        "title": "DAI — Virtual Tour through Uruk-Warka",
-        "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+        "title": "Uruk (Warka) — DAI kazı ve araştırma projesi",
+        "url": "https://www.dainst.org/en/research/projects/noslug/2604",
         "language": "en",
-        "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme.",
+        "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
         "institution": "Deutsches Archäologisches Institut (DAI)"
       },
       {
@@ -706,11 +706,11 @@
         "id": "matris-kaynak-7",
         "tier": "institutional",
         "type": "webpage",
-        "title": "ZRS — Uruk White Temple Reconstruction",
-        "url": "https://zrs.berlin/project/uruk-white-temple/",
+        "title": "Uruk Visualisation Project — The White Temple",
+        "url": "https://www.artefacts-berlin.de/portfolio-item/uruk-visualisation-project-the-white-temple/",
         "language": "en",
-        "note": "Beyaz Tapınak rekonstrüksiyonu ve rekonstrüksiyon belirsizlikleri.",
-        "institution": "ZRS Berlin (Uruk Beyaz Tapınak projesi)"
+        "note": "Beyaz Tapınak rekonstrüksiyonu ve belirsizliği için: proje tek katlı ve iki katlı olmak üzere İKİ ayrı rekonstrüksiyon üretti. Görselleştirme bir kazı bulgusu değil, kanıttan çıkarılmış bir yorumdur.",
+        "institution": "Artefacts – Berlin (DAI Şark Bölümü adına)"
       },
       {
         "id": "matris-kaynak-8",
@@ -1792,13 +1792,19 @@
       },
       {
         "id": "matris-kaynak-27",
-        "tier": "institutional",
+        "tier": "peer-reviewed",
         "type": "chapter",
-        "title": "Oxford — Hellenistic Uruk",
-        "url": "https://doi.org/10.1093/oso/9780199659889.003.0015",
+        "title": "Cuneiform Culture's Last Guardians: The Old Urban Notability of Hellenistic Uruk",
         "language": "en",
-        "note": "Uruk’un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu.",
-        "institution": "Oxford — Hellenistic Uruk"
+        "note": "Uruk'un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu için dayanak. ÖNCEKİ SÜRÜMDE bu kaydın yerinde çözülmeyen bir DOI vardı; bağlantı denetimi yakaladı ve künye gerçek çalışmayla değiştirildi.",
+        "authors": [
+          "Clancier, Philippe"
+        ],
+        "year": 2012,
+        "container": "The Oxford Handbook of Cuneiform Culture",
+        "publisher": "Oxford University Press",
+        "pages": "752-773",
+        "doi": "10.1093/oxfordhb/9780199557301.013.0015"
       }
     ],
     "evidence": [
@@ -2004,10 +2010,10 @@
         "id": "matris-kaynak-28",
         "tier": "institutional",
         "type": "webpage",
-        "title": "DAI — Virtual Tour through Uruk-Warka",
-        "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+        "title": "Uruk (Warka) — DAI kazı ve araştırma projesi",
+        "url": "https://www.dainst.org/en/research/projects/noslug/2604",
         "language": "en",
-        "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme.",
+        "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
         "institution": "Deutsches Archäologisches Institut (DAI)"
       }
     ],
@@ -2623,10 +2629,10 @@
         "id": "matris-kaynak-28",
         "tier": "institutional",
         "type": "webpage",
-        "title": "DAI — Virtual Tour through Uruk-Warka",
-        "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+        "title": "Uruk (Warka) — DAI kazı ve araştırma projesi",
+        "url": "https://www.dainst.org/en/research/projects/noslug/2604",
         "language": "en",
-        "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme.",
+        "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
         "institution": "Deutsches Archäologisches Institut (DAI)"
       }
     ],
@@ -2930,11 +2936,15 @@
         "id": "matris-kaynak-26",
         "tier": "institutional",
         "type": "webpage",
-        "title": "TheTorah — Nimrod’s Cities: Babel, Erech, Akkad and Calneh",
-        "url": "https://www.thetorah.com/article/nimrods-cities-babel-erech-akkad-and-calneh",
+        "title": "Nimrod, Mighty Hunter and King — Who Was He?",
+        "url": "https://www.thetorah.com/article/nimrod-mighty-hunter-and-king-who-was-he",
         "language": "en",
-        "note": "Erech’in Uruk’la özdeşliği ve metinde Babel/Babil’den ayrı sayılması.",
-        "institution": "Project TABS — TheTorah.com"
+        "note": "Erech'in Uruk'la özdeşliği ve Babil'in listede ayrı bir şehir sayılması için kullanıldı. Akademik yazarlı ama hakemli olmayan bir kamu yayını; metnin kendisi değil, özdeşleştirmenin gerekçesi için.",
+        "institution": "Project TABS — TheTorah.com",
+        "authors": [
+          "Levin, Yigal"
+        ],
+        "year": 2020
       }
     ],
     "evidence": [
@@ -3026,11 +3036,15 @@
         "id": "matris-kaynak-26",
         "tier": "institutional",
         "type": "webpage",
-        "title": "TheTorah — Nimrod’s Cities: Babel, Erech, Akkad and Calneh",
-        "url": "https://www.thetorah.com/article/nimrods-cities-babel-erech-akkad-and-calneh",
+        "title": "Nimrod, Mighty Hunter and King — Who Was He?",
+        "url": "https://www.thetorah.com/article/nimrod-mighty-hunter-and-king-who-was-he",
         "language": "en",
-        "note": "Erech’in Uruk’la özdeşliği ve metinde Babel/Babil’den ayrı sayılması.",
-        "institution": "Project TABS — TheTorah.com"
+        "note": "Erech'in Uruk'la özdeşliği ve Babil'in listede ayrı bir şehir sayılması için kullanıldı. Akademik yazarlı ama hakemli olmayan bir kamu yayını; metnin kendisi değil, özdeşleştirmenin gerekçesi için.",
+        "institution": "Project TABS — TheTorah.com",
+        "authors": [
+          "Levin, Yigal"
+        ],
+        "year": 2020
       }
     ],
     "evidence": [
@@ -3132,11 +3146,15 @@
         "id": "matris-kaynak-26",
         "tier": "institutional",
         "type": "webpage",
-        "title": "TheTorah — Nimrod’s Cities: Babel, Erech, Akkad and Calneh",
-        "url": "https://www.thetorah.com/article/nimrods-cities-babel-erech-akkad-and-calneh",
+        "title": "Nimrod, Mighty Hunter and King — Who Was He?",
+        "url": "https://www.thetorah.com/article/nimrod-mighty-hunter-and-king-who-was-he",
         "language": "en",
-        "note": "Erech’in Uruk’la özdeşliği ve metinde Babel/Babil’den ayrı sayılması.",
-        "institution": "Project TABS — TheTorah.com"
+        "note": "Erech'in Uruk'la özdeşliği ve Babil'in listede ayrı bir şehir sayılması için kullanıldı. Akademik yazarlı ama hakemli olmayan bir kamu yayını; metnin kendisi değil, özdeşleştirmenin gerekçesi için.",
+        "institution": "Project TABS — TheTorah.com",
+        "authors": [
+          "Levin, Yigal"
+        ],
+        "year": 2020
       }
     ],
     "evidence": [
@@ -3394,13 +3412,19 @@
       },
       {
         "id": "matris-kaynak-27",
-        "tier": "institutional",
+        "tier": "peer-reviewed",
         "type": "chapter",
-        "title": "Oxford — Hellenistic Uruk",
-        "url": "https://doi.org/10.1093/oso/9780199659889.003.0015",
+        "title": "Cuneiform Culture's Last Guardians: The Old Urban Notability of Hellenistic Uruk",
         "language": "en",
-        "note": "Uruk’un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu.",
-        "institution": "Oxford — Hellenistic Uruk"
+        "note": "Uruk'un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu için dayanak. ÖNCEKİ SÜRÜMDE bu kaydın yerinde çözülmeyen bir DOI vardı; bağlantı denetimi yakaladı ve künye gerçek çalışmayla değiştirildi.",
+        "authors": [
+          "Clancier, Philippe"
+        ],
+        "year": 2012,
+        "container": "The Oxford Handbook of Cuneiform Culture",
+        "publisher": "Oxford University Press",
+        "pages": "752-773",
+        "doi": "10.1093/oxfordhb/9780199557301.013.0015"
       }
     ],
     "evidence": [
@@ -3501,22 +3525,28 @@
     "sources": [
       {
         "id": "matris-kaynak-27",
-        "tier": "institutional",
+        "tier": "peer-reviewed",
         "type": "chapter",
-        "title": "Oxford — Hellenistic Uruk",
-        "url": "https://doi.org/10.1093/oso/9780199659889.003.0015",
+        "title": "Cuneiform Culture's Last Guardians: The Old Urban Notability of Hellenistic Uruk",
         "language": "en",
-        "note": "Uruk’un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu.",
-        "institution": "Oxford — Hellenistic Uruk"
+        "note": "Uruk'un Helenistik dönemde de çivi yazısı, Anu ve İştar/Nanaya kültleri açısından canlı oluşu için dayanak. ÖNCEKİ SÜRÜMDE bu kaydın yerinde çözülmeyen bir DOI vardı; bağlantı denetimi yakaladı ve künye gerçek çalışmayla değiştirildi.",
+        "authors": [
+          "Clancier, Philippe"
+        ],
+        "year": 2012,
+        "container": "The Oxford Handbook of Cuneiform Culture",
+        "publisher": "Oxford University Press",
+        "pages": "752-773",
+        "doi": "10.1093/oxfordhb/9780199557301.013.0015"
       },
       {
         "id": "matris-kaynak-28",
         "tier": "institutional",
         "type": "webpage",
-        "title": "DAI — Virtual Tour through Uruk-Warka",
-        "url": "https://www.dainst.org/en/research/projects/noslug/5526",
+        "title": "Uruk (Warka) — DAI kazı ve araştırma projesi",
+        "url": "https://www.dainst.org/en/research/projects/noslug/2604",
         "language": "en",
-        "note": "1912’den beri kazılar, alan araştırmaları ve güncel dijital belgeleme.",
+        "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
         "institution": "Deutsches Archäologisches Institut (DAI)"
       }
     ],
