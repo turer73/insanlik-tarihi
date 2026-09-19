@@ -128,6 +128,11 @@
             "source_ref": "penn-lagash-tarihsel-baglam",
             "locator": "Uruk (ca. 4000-3100 BCE) bölümü",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 167 — \"during the Uruk IVa phase, the city reached a size of at least 2.5 sq km\" (= 250 hektar); Uruk IVb'de neredeyse iki katına çıkıp sonra geriliyor",
+            "support_type": "direct"
           }
         ]
       },
@@ -138,6 +143,11 @@
           {
             "source_ref": "unesco-guney-irak-ahwar",
             "locator": "Olağanüstü Evrensel Değer — Kısa Sentez",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 167-168 — kentin \"administrative center of the region, with an advanced and elaborate form of labor division\" olması; en az 25-50 bin nüfus tahmini ve \"many more living in adjacent settlements that were dependent on Uruk\"",
             "support_type": "direct"
           }
         ]
@@ -678,6 +688,11 @@
             "source_ref": "artefacts-uruk-beyaz-tapinak",
             "locator": "Proje açıklaması — terasın en az on kez yükseltilmesi",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "dai-uruk-warka-projesi",
+            "locator": "Overview — \"Rekonstruktion der Eanna-Zikkurrat, erbaut von Urnamma (21. Jh. v. Chr.)\"; Uruk'un İnanna/İştar'ın \"überregional wichtige Kultzentrum\"u olarak anılması",
+            "support_type": "direct"
           }
         ]
       }
@@ -1164,16 +1179,6 @@
     "popular_claim": "Yazıyı Uruk kralı Enmerkar’ın icat ettiği tabletlerle kanıtlanmıştır.",
     "sources": [
       {
-        "id": "oxford-etcsl-projesi",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Electronic Text Corpus of Sumerian Literature (ETCSL)",
-        "url": "https://www.orinst.ox.ac.uk/electronic-text-corpus-sumerian-literature-etcsl",
-        "language": "en",
-        "note": "Sümer edebî metinlerinin çoğunun geç 3. ve erken 2. binyıl nüshaları olduğu bağlamı.",
-        "institution": "University of Oxford, ETCSL"
-      },
-      {
         "id": "etcsl-enmerkar-aratta-beyi",
         "tier": "institutional",
         "type": "webpage",
@@ -1213,6 +1218,11 @@
             "source_ref": "etcsl-enmerkar-aratta-beyi",
             "locator": "satır 500-514 — kilin düzleştirilmesi pasajı",
             "support_type": "claim-origin"
+          },
+          {
+            "source_ref": "cdli-p278286-enmerkar-tanigi",
+            "locator": "Künye — Nippur'da kazılmış edebî tablet (Penn Museum N 3236), dönem: Eski Babil (yaklaşık MÖ 1900-1600); \"Enmerkar and the Lord of Aratta\" tanığı",
+            "support_type": "direct"
           }
         ]
       },
@@ -1896,6 +1906,23 @@
         "publisher": "Oxford University Press",
         "pages": "752-773",
         "doi": "10.1093/oxfordhb/9780199557301.013.0035"
+      },
+      {
+        "id": "selz-2020-uruk-fenomeni",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "title": "The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004",
+        "publisher": "Oxford University Press"
       }
     ],
     "evidence": [
@@ -1906,6 +1933,16 @@
           {
             "source_ref": "britishmuseum-116722-silindir-muhur",
             "locator": "Nesne tanımı — kamış demeti simgeleri",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 177 — \"reed bundle standards, which emblematically refer to the goddess Inana\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "clancier-2012-helenistik-uruk",
+            "locator": "s. 755 — Helenistik dönemde İştar'a adanmış Eşgal tapınağının kentin tapınak mahallesindeki iki ana kutsal alandan biri olması",
             "support_type": "direct"
           }
         ]
@@ -2098,16 +2135,6 @@
         "publisher": "Getty Publications",
         "year": 2017,
         "isbn": "9781606064443"
-      },
-      {
-        "id": "dai-uruk-warka-projesi",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Uruk (Warka) — DAI kazı ve araştırma projesi",
-        "url": "https://www.dainst.org/en/research/projects/noslug/2604",
-        "language": "en",
-        "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
-        "institution": "Deutsches Archäologisches Institut (DAI)"
       },
       {
         "id": "selz-2020-uruk-fenomeni",
@@ -2307,16 +2334,6 @@
     ],
     "popular_claim": "Gilgameş iki meclise danıştığı için demokrasi Uruk’ta icat edildi.",
     "sources": [
-      {
-        "id": "oxford-etcsl-projesi",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Electronic Text Corpus of Sumerian Literature (ETCSL)",
-        "url": "https://www.orinst.ox.ac.uk/electronic-text-corpus-sumerian-literature-etcsl",
-        "language": "en",
-        "note": "Sümer edebî metinlerinin çoğunun geç 3. ve erken 2. binyıl nüshaları olduğu bağlamı.",
-        "institution": "University of Oxford, ETCSL"
-      },
       {
         "id": "kramer-jacobsen-1949-gilgamis-agga",
         "tier": "peer-reviewed",
@@ -2545,6 +2562,11 @@
             "source_ref": "etcsl-sumer-kral-listesi",
             "locator": "satır 95-133 — Gilgameš girdisi",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "cdli-sumer-kral-listesi",
+            "locator": "Q000371 satır 112-117 — Gilgameş \"en kul-ab-ba-ke4\" (Kulaba beyi) olarak anılıyor ve ardılı \"ur-{d}nun-gal dumu {d}gilgames\" (Gilgameş'in oğlu Ur-Nungal) diye kaydediliyor; bileşik metin künyede Eski Babil dönemi (yaklaşık MÖ 1900-1600)",
+            "support_type": "direct"
           }
         ]
       }
@@ -2676,6 +2698,11 @@
           {
             "source_ref": "etcsl-sumer-kral-listesi",
             "locator": "satır 1 ve 95-133 — gökten inen krallık; Gilgameš 126 yıl",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "cdli-sumer-kral-listesi",
+            "locator": "Q000371 satır 106-115 — Enmerkar 420 yıl, Lugalbanda 1200 yıl, Dumuzi 100 yıl, ardından Gilgameş \"mu 2(gesz2) 6(disz) i3-ak\" = 126 yıl; sayı bu dizinin içinde duruyor",
             "support_type": "direct"
           }
         ]
@@ -2828,6 +2855,11 @@
           {
             "source_ref": "fassbinder-2020-uruk-manyetogram",
             "locator": "Sur ve burçlar bölümü — yaklaşık 40 metre genişlik",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "dai-uruk-warka-projesi",
+            "locator": "Overview — \"der Bau von innerstädtischen Kanälen sowie der 9 km langen Stadtmauer erfolgte bereits zu Beginn des 3. Jt. v. Chr.\"",
             "support_type": "direct"
           }
         ]
@@ -3081,6 +3113,11 @@
             "source_ref": "etcsl-enmerkar-aratta-beyi",
             "locator": "satır 611-625 — coğrafi ipuçlarının belirsizliği",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "cdli-p278286-enmerkar-tanigi",
+            "locator": "Künye — tanığın buluntu yeri Nippur (mod. Nuffar), dönem Eski Babil; Aratta'ya dair tanıklık bu edebî tabletler üzerinden geliyor, adı taşıyan bir yerleşimden değil",
+            "support_type": "context"
           }
         ]
       }
@@ -3534,6 +3571,11 @@
             "source_ref": "cdli-p002976-uruk-iv-tableti",
             "locator": "Künye: dönem, tür ve buluntu yeri",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "§ 3.4.1 \"Precursors to writing\", s. 194-195 — jeton sistemi, sayısal tabletler ve etiketler proto-çivi yazısının üç öncülü olarak sıralanıyor",
+            "support_type": "direct"
           }
         ]
       }
@@ -3768,6 +3810,17 @@
       }
     ],
     "evidence": [
+      {
+        "id": "uruk-mo-4200-ile-ms-300-arasinda-iskan-edildi",
+        "text": "Uruk yaklaşık MÖ 4200 ile MS 300 arasında iskân edilmiştir — kabaca 4.500 yıl. Seleukos döneminde (MÖ 3.-2. yy) kentte ünlü bir astronomi okulu araştırma yapıyordu.",
+        "citations": [
+          {
+            "source_ref": "dai-uruk-warka-projesi",
+            "locator": "Overview — \"Uruk ... war zwischen ca. 4200 v. Chr. und 300 n. Chr. besiedelt\"; \"die Astronomenschule, die in der Seleukidenzeit (3./2. Jh. v. Chr.) in Uruk forschte\"",
+            "support_type": "direct"
+          }
+        ]
+      },
       {
         "id": "helenistik-donemde-anu-ve-istar-nanaya-tapinak-cevreleri-ile",
         "text": "Helenistik dönemde Anu ve İştar/Nanaya tapınak çevreleri ile çivi yazısı bilginliği sürmüştür.",
