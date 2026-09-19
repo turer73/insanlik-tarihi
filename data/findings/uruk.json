@@ -943,8 +943,8 @@
         "text": "Yazı; sayaçlar, sayısal tabletler, mühürleme ve işaret standartlaşmasının kademeli sonucudur.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "getty-mezopotamya-uygarlik-basliyor",
+            "locator": "First Writing bölümü — piktogramdan çiviyazısına evrilme",
             "support_type": "counter"
           }
         ]
@@ -1192,6 +1192,16 @@
         "language": "en",
         "note": "Anlatının Eski Babil dönemine tarihlenen Nippur nüshası.",
         "institution": "Cuneiform Digital Library Initiative (CDLI)"
+      },
+      {
+        "id": "getty-mezopotamya-uygarlik-basliyor",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Mesopotamia: Civilization Begins",
+        "url": "https://www.getty.edu/art/exhibitions/mesopotamia/explore.html",
+        "language": "en",
+        "note": "Yazının piktogramdan çiviyazısına kademeli evrimi için kurumsal sergi kaydı.",
+        "institution": "Getty Museum"
       }
     ],
     "evidence": [
@@ -1211,8 +1221,8 @@
         "text": "Yazının arkeolojik gelişimi anlatıdaki tek seferlik icattan daha eski ve kademelidir.",
         "citations": [
           {
-            "source_ref": "oxford-etcsl-projesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "getty-mezopotamya-uygarlik-basliyor",
+            "locator": "First Writing bölümü — yazının MÖ 3400 dolayında ortaya çıkışı",
             "support_type": "direct"
           }
         ]
@@ -1224,8 +1234,8 @@
         "text": "Öykü, Mezopotamyalıların yazıyı Uruk’un siyasal ve ticari gücüyle ilişkilendirdiğini gösterir.",
         "citations": [
           {
-            "source_ref": "oxford-etcsl-projesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "etcsl-enmerkar-aratta-beyi",
+            "locator": "satır 500-514 — Kulaba beyinin mesajı kile yazması",
             "support_type": "counter"
           }
         ]
@@ -2315,6 +2325,16 @@
         "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.1.1",
         "language": "sux",
         "note": "Metnin kendisi. Yaşlılar meclisi ve savaşabilir erkekler topluluğu pasajları buradan; kralın yaşlıların görüşünü ciddiye almaması da metnin kendi ifadesidir."
+      },
+      {
+        "id": "metmuseum-gilgamis",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Gilgamesh",
+        "url": "https://www.metmuseum.org/essays/gilgamesh",
+        "language": "en",
+        "note": "Sümerce Gilgameş öykülerinin Eski Babil okul nüshalarında kopyalandığı bağlamı.",
+        "institution": "Metropolitan Museum of Art"
       }
     ],
     "evidence": [
@@ -2347,8 +2367,8 @@
         "text": "Korunan nüshalar olaylardan yüzyıllar sonradır.",
         "citations": [
           {
-            "source_ref": "oxford-etcsl-projesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "metmuseum-gilgamis",
+            "locator": "Sümerce öyküler bölümü — Eski Babil okul nüshaları",
             "support_type": "counter"
           }
         ]
@@ -2633,8 +2653,8 @@
         "text": "Liste siyasal hafıza ve hanedan sıralaması için değerlidir.",
         "citations": [
           {
-            "source_ref": "cdli-sumer-kral-listesi",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "etcsl-sumer-kral-listesi",
+            "locator": "satır 1-39 — kentten kente hanedan sıralaması",
             "support_type": "counter"
           }
         ]
@@ -3068,8 +3088,8 @@
         "citations": [
           {
             "source_ref": "levin-2020-nimrod-sehirleri",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
-            "support_type": "counter"
+            "locator": "Kayıt düzeyi sınırı",
+            "support_type": "context"
           }
         ]
       }
@@ -3146,6 +3166,16 @@
           "Levin, Yigal"
         ],
         "year": 2020
+      },
+      {
+        "id": "artefacts-uruk-beyaz-tapinak",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Uruk Visualisation Project — The White Temple",
+        "url": "https://www.artefacts-berlin.de/portfolio-item/uruk-visualisation-project-the-white-temple/",
+        "language": "en",
+        "note": "Anu terasının art arda yükseltilmesi; ziggurat geleneğinin erken bağlamı.",
+        "institution": "Artefacts – Berlin (DAI Şark Bölümü adına)"
       }
     ],
     "evidence": [
@@ -3167,8 +3197,8 @@
         "text": "Uruk’un anıtsal terasları, daha sonraki ziggurat geleneğinin erken bağlamını anlamaya yardım eder.",
         "citations": [
           {
-            "source_ref": "levin-2020-nimrod-sehirleri",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "artefacts-uruk-beyaz-tapinak",
+            "locator": "Proje açıklaması — terasın art arda yükseltilmesi",
             "support_type": "counter"
           }
         ]
@@ -3266,8 +3296,8 @@
         "text": "Nimrod İncil’deki edebî-soybilimsel çerçevede görünür; Uruk’un oluşumu ondan binyıllar önceye uzanan arkeolojik evrelerle açıklanır.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "levin-2020-nimrod-sehirleri",
+            "locator": "Nimrod bölümü — Tekvin 10 soybilimsel çerçevesi",
             "support_type": "direct"
           }
         ]
