@@ -2048,7 +2048,7 @@
   {
     "schema_version": 2,
     "id": "warka-maskesi-inanna",
-    "claim": "Warka Maskesi muhtemelen büyük bir bileşik heykele ait kadın yüzüdür; İnanna kimliği güçlü ama kesin olmayan bir yorumdur.",
+    "claim": "Warka Maskesi doğal boyutta bileşik bir heykele ait kadın yüzüdür; İnanna kimliği güçlü ama kesin olmayan bir yorumdur.",
     "status": "contested",
     "confidence": "medium",
     "topic": [
@@ -2108,16 +2108,33 @@
         "language": "en",
         "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
         "institution": "Deutsches Archäologisches Institut (DAI)"
+      },
+      {
+        "id": "selz-2020-uruk-fenomeni",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "title": "The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004",
+        "publisher": "Oxford University Press"
       }
     ],
     "evidence": [
       {
         "id": "eanna-cevresinde-bulunmasi-anitsal-olcek-ve-kadin-ilahi-imge",
-        "text": "Eanna çevresinde bulunması, anıtsal ölçek ve kadın ilahi imgesi yorumu destekler.",
+        "text": "Metinsel kaynaklar İnanna'nın heykel(ler)inden söz eder; Warka Maskesi doğal boyutta bileşik bir imgenin yüzüdür ve büyük olasılıkla böyle bir heykelden günümüze kalan tek parçadır.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 210 — \"the face of a composite, life-sized image, is most likely the only surviving piece of such a statue\"",
             "support_type": "direct"
           }
         ]
@@ -2126,12 +2143,12 @@
     "counter_evidence": [
       {
         "id": "kimligi-veren-yazit-korunmamistir",
-        "text": "Kimliği veren yazıt korunmamıştır.",
+        "text": "Kimliği veren bir yazıt yoktur: uzman literatür heykeli \"büyük olasılıkla tanrıçayı betimleyen\" bileşik imgenin yüzü sayar, kesin bir kimlik tespiti yapmaz.",
         "citations": [
           {
-            "source_ref": "getty-2017-uruk-ilk-sehir",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
-            "support_type": "counter"
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 177 — \"was certainly part of a composite image that probably depicted the goddess\"",
+            "support_type": "inference"
           }
         ]
       }
@@ -2147,7 +2164,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Kimliği veren yazıt KORUNMAMIŞTIR - iddianın tamamı buna dayanıyor. Eanna çevresinde bulunması, anıtsal ölçeği ve kadın ilahi imgesi yorumu İnanna kimliğini güçlü bir aday yapıyor; ama güçlü aday ile yazılı kesinlik aynı şey değil. Popüler anlatı ‘kesin olarak yazılıdır’ diyerek, tam da elimizde olmayan şeyi elimizdeymiş gibi gösteriyor.",
+    "divergence": "Olasılık yargısı, YAZILI KESİNLİK sanılıyor. Metinsel kaynaklar İnanna'nın heykellerinden söz eder ve Warka Maskesi doğal boyutta bileşik bir imgenin yüzüdür; uzman literatür onu \"büyük olasılıkla\" tanrıçayı betimleyen böyle bir heykelden kalan tek parça sayar. Güçlü aday ile yazılı kesinlik aynı şey değil. Popüler anlatı \"kesin olarak yazılıdır\" diyerek, tam da elimizde olmayan şeyi elimizdeymiş gibi gösteriyor.",
     "divergence_type": [
       "provenans-yoklugu",
       "kategori-hatasi"
@@ -2929,12 +2946,23 @@
     "evidence": [
       {
         "id": "arastirma-ozeti-yapinin-mezar-olarak-yorumlanabilecegini-gil",
-        "text": "Araştırma özeti yapının mezar olarak yorumlanabileceğini, Gilgameş bağlantısının spekülatif kaldığını açıkça belirtir.",
+        "text": "Aynı ölçümleri yürüten Fassbinder, 2020'de bütün kampanyaları özetlerken kentin güneyinde, sur dışında geniş bir mezarlık saptandığını bildirir ve Gilgameş'i yalnızca destanın geçtiği yer olarak bir kez anar. Ölçümlerin hiçbirinde bir yapı Gilgameş'in mezarı olarak tanımlanmaz.",
+        "citations": [
+          {
+            "source_ref": "fassbinder-2020-uruk-manyetogram",
+            "locator": "Güney kesimi — \"In the south, outside the city, a large burial ground and a huge building complex of the city wall were detected\"",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "populer-anlatinin-cikis-noktasi-bildirinin-basligidir",
+        "text": "Popüler anlatının çıkış noktası ölçüm değil, bildirinin başlığıdır: \"Magnetometry at Uruk (Iraq): The city of King Gilgamesh\".",
         "citations": [
           {
             "source_ref": "eage-2003-uruk-manyetometri",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
-            "support_type": "direct"
+            "locator": "Bildirinin başlığı",
+            "support_type": "claim-origin"
           }
         ]
       }
@@ -2963,7 +2991,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Araştırmanın KENDİ ÇEKİNCESİ duyuruda kayboluyor. 2003 jeofizik çalışması bir yapı anomalisi saptadı ve özeti, yapının mezar olarak yorumlanabileceğini ama Gilgameş bağlantısının SPEKÜLATİF kaldığını açıkça söylüyor. Popüler aktarımda ‘yorumlanabilir’ ve ‘spekülatif’ düşüyor, ‘kesin keşif’ kalıyor. Kalıp tanıdık: ölçüm bir anomali bildirir, haber onu bir nesneye dönüştürür.",
+    "divergence": "Ölçüm bir anomali bildirir, haber onu bir nesneye dönüştürür. 2003 jeofizik çalışması Uruk'ta kanal ve yapı izleri saptadı; bildirinin BAŞLIĞI kenti \"Kral Gilgameş'in şehri\" diye anıyor, ama bildiri bir yüzey ölçümü raporudur, mezar tespiti değil. Aynı ölçümleri yürüten araştırmacı 2020'de tüm sonuçları özetlerken kentin güneyinde bir mezarlık bildirir ve Gilgameş'i yalnızca destanın geçtiği yer olarak bir kez anar. Popüler aktarımda \"anomali\" düşer, \"kesin keşif\" kalır.",
     "divergence_type": [
       "medya-abartisi"
     ]
@@ -3838,17 +3866,34 @@
         "language": "en",
         "note": "Uruk, Ur ve Eridu’nun bataklık kenarı kentleri, yazı ve anıtsal mimari bağlamı.",
         "institution": "UNESCO"
+      },
+      {
+        "id": "bosworth-1998-eraq-e-ajam",
+        "tier": "institutional",
+        "type": "article",
+        "title": "ʿERĀQ-E ʿAJAM(Ī)",
+        "authors": [
+          "Bosworth, Clifford Edmund"
+        ],
+        "year": 1998,
+        "container": "Encyclopaedia Iranica, Vol. VIII, Fasc. 5",
+        "pages": "538",
+        "url": "https://www.iranicaonline.org/articles/eraq-e-ajami/",
+        "language": "en",
+        "accessed": "2026-09-20",
+        "note": "İmzalı ansiklopedi maddesi. ʿErāq adının ortaçağda İran'ın batısındaki dağlık bölgeye de verilmesini ve ʿErāq-e ʿArab / ʿErāq-e ʿAjam ayrımını belgeler. Adın KÖKENİNİ tartışmaz; buraya adın ortaçağdaki belgeli yayılımı için kondu.",
+        "institution": "Center for Iranian Studies, Columbia University"
       }
     ],
     "evidence": [
       {
         "id": "ses-benzerligi-ve-cografi-sureklilik-bu-gorusu-populer-kilar",
-        "text": "Ses benzerliği ve coğrafi süreklilik bu görüşü popüler kılar.",
+        "text": "Uruk, bugünkü Irak'ın güneyinde, Dicle-Fırat deltasının bataklık kıyısındadır; ses benzerliği bu coğrafi süreklilikle birleşince türetme sezgisel görünür.",
         "citations": [
           {
             "source_ref": "unesco-guney-irak-ahwar",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
-            "support_type": "direct"
+            "locator": "Outstanding Universal Value / Brief Synthesis — \"Uruk, Ur and Eridu ... were originally situated on the margins of freshwater marshes\"",
+            "support_type": "context"
           }
         ]
       }
@@ -3856,18 +3901,19 @@
     "counter_evidence": [
       {
         "id": "arapca-ve-orta-farsca-aciklamalar-d-hil-baska-etimolojiler-v",
-        "text": "Arapça ve Orta Farsça açıklamalar dâhil başka etimolojiler vardır; kesintisiz dil zinciri gösterilmiş değildir.",
+        "text": "Adın belgeli ortaçağ tarihi tek bir kentten türetmeyle bitmiyor: ʿErāq aynı çağda İran'ın batısındaki dağlık bölgeye de verilmiş, ikisi ʿErāq-e ʿArab ve ʿErāq-e ʿAjam diye ayrılmıştır. Bu, Uruk türevini çürütmez; adın tarihinin ses benzerliğinden daha karmaşık olduğunu gösterir.",
         "citations": [
           {
-            "source_ref": "unesco-guney-irak-ahwar",
-            "locator": "İlgili bölüm (paket notundan türetildi)",
-            "support_type": "counter"
+            "source_ref": "bosworth-1998-eraq-e-ajam",
+            "locator": "Cilt VIII/5, s. 538 — \"the misnomer ʿErāq was applied to it with the qualification ʿAjam(ī)\"; Yāqūt'un açıkladığı Selçuklu mekanizması",
+            "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Adın en erken güvenilir ara biçimleri hangileridir?"
+      "Adın en erken güvenilir ara biçimleri hangileridir?",
+      "\"Irak\" adı için önerilen Arapça ve Orta Farsça türetmelerini hangi hakemli kaynak tartışıyor? Bu kayıt için erişilebilir bir dilbilim kaynağı henüz bulunamadı; kaynak bulunana kadar karşı kanıt atıfsız duruyor."
     ],
     "checked": "2026-09-10",
     "used_in": [
@@ -3877,7 +3923,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Ses benzerliği, ETİMOLOJİ sanılıyor. ‘Uruk’ ile ‘Irak’ kulağa yakın geliyor ve coğrafi süreklilik bu izlenimi güçlendiriyor - ama etimoloji kulakla değil, kesintisiz bir dil zinciriyle kurulur ve o zincir gösterilmiş değil. Arapça ve Orta Farsça kökenli başka açıklamalar da var. Bu, Uruk türevi olma ihtimalini ortadan kaldırmaz; ‘tartışmasız’ ifadesini ortadan kaldırır.",
+    "divergence": "Ses benzerliği, ETİMOLOJİ sanılıyor. \"Uruk\" ile \"Irak\" kulağa yakın geliyor ve Uruk'un bugünkü Irak'ın tam içinde olması bu izlenimi güçlendiriyor - ama etimoloji kulakla değil, kesintisiz bir dil zinciriyle kurulur. Bu kayıt böyle bir zincir gösteren erişilebilir bir kaynak bulamadı; Arapça ve Orta Farsça türetmeler de öneriliyor. Bu, Uruk türevi olma ihtimalini ortadan kaldırmaz; \"tartışmasız\" ifadesini ortadan kaldırır.",
     "divergence_type": [
       "kategori-hatasi"
     ]
