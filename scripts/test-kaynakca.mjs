@@ -93,6 +93,19 @@ t("id'siz kaynak başlığıyla tekilleşir, id'siz ve başlıksız atlanır", (
 
 /* --- bağlantı seçimi --- */
 
+t("kurum ile yayıncı aynıysa künye satırında bir kez geçer", () => {
+  // Getty gibi kurumlarda iki alan da aynı adı taşıyor ve satır
+  // "Getty Publications · Getty Publications" çıkıyordu.
+  const html = renderKaynakca(
+    [kayit("b1", [{ id: "x", tier: "institutional", type: "book", title: "X",
+      institution: "Getty Publications", publisher: "Getty Publications" }], ["uruk"])],
+    YAZILAR, "https://ornek.test");
+  const satir = /<p class="kk-kunye">([^<]*)<\/p>/.exec(html);
+  assert.ok(satir, "künye satırı basılmalı");
+  assert.equal((satir[1].match(/Getty Publications/g) || []).length, 1,
+    "aynı ad iki kez yazılmamalı");
+});
+
 const bag = (kaynak) => {
   const html = renderKaynakca([kayit("b1", [kaynak], ["uruk"])], YAZILAR, "https://ornek.test");
   return [...html.matchAll(/<a class="kk-tanim" href="([^"]+)"/g)].map((m) => m[1]);

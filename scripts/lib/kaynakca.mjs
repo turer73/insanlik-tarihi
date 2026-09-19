@@ -179,7 +179,11 @@ function kunyeSatiri(kunye) {
   if (kunye.institution) parcalar.push(kunye.institution);
   if (kunye.year) parcalar.push(String(kunye.year));
   if (kunye.container) parcalar.push(kunye.container);
-  if (kunye.publisher && kunye.publisher !== kunye.container) parcalar.push(kunye.publisher);
+  // Kurum ve yayinci ayni oldugunda tek yaz: Getty gibi kurumlarda ikisi de
+  // "Getty Publications" ve satir "Getty Publications - Getty Publications" cikiyordu.
+  if (kunye.publisher && kunye.publisher !== kunye.container && kunye.publisher !== kunye.institution) {
+    parcalar.push(kunye.publisher);
+  }
   if (kunye.volume) parcalar.push(kunye.volume);
   if (kunye.pages) parcalar.push(kunye.pages);
   return parcalar.map(kacar).join(" · ");
