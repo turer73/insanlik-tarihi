@@ -2,37 +2,41 @@
 
 Son deneme: **2026-09-19** · 280 bağlantı · 345 künye
 
-Bu tablo **betik tarafından üretilir** (`node scripts/denetle-kaynak-baglantilari.mjs`).
-Derlemenin parçası DEĞİLDİR: 276 dış adrese her derlemede istek atmak hız sınırına
-takılır ve derlemeyi ağ dalgalanmasına bağımlı kılardı. Elle, aralıklı çalıştırılır.
+Bu tablo **betik tarafından üretilir** (`npm run denetle:baglantilar`).
+Derlemenin parçası DEĞİLDİR: 280 dış adrese her derlemede istek atmak
+hız sınırına takılır ve derlemeyi ağ dalgalanmasına bağımlı kılardı. Elle, aralıklı
+çalıştırılır.
+
+DOI ve ISBN adreslerinde yönlendirme **izlenmez**: sorulan soru "tanımlayıcı kayıtlı mı"
+olduğu için doi.org'dan gelen 30x zaten cevaptır. Düz URL'lerde yönlendirme izlenir.
+
+Bu tablonun göremediği şey: **yumuşak 404** (silinmiş sayfaya 200 ile "bulunamadı" metni
+döndürmek) ve **çözülen yanlış tanımlayıcı** (yanlış yazılmış bir DOI gerçek olabilir ve
+başka bir çalışmaya gider). İkisi de insan denetimi ister; "sağlam" burada yalnız
+"sunucu cevap verdi" demektir.
 
 | Durum | Sayı | Ne demek |
 |---|---:|---|
-| Sağlam | 238 | 2xx döndü |
+| Sağlam | 244 | Yanıt verdi: düz adreste 2xx, tanımlayıcıda 2xx ya da 30x |
 | Yönlendi | 0 | 2xx döndü ama adres değişti; künyedeki adres eskimiş olabilir |
-| Engelli | 35 | 401/403/429 — yayıncı betik isteklerini kapatıyor. **Ölü değil**, tarayıcıda açılır |
+| Engelli | 34 | 401/403/405/406/429/451 — yayıncı betik isteklerini kapatıyor. **Ölü değil**, tarayıcıda açılır |
 | Ölü | 0 | 4xx/5xx — gerçekten kırık, düzeltilmeli |
-| Ulaşılamadı | 7 | Bağlantı kurulamadı ya da zaman aşımı |
+| Ulaşılamadı | 2 | Bağlantı kurulamadı ya da zaman aşımı |
 
 ## Ölü bağlantı yok
 
 
-## Ulaşılamayanlar (7)
+## Ulaşılamayanlar (2)
 
 Ağ hatası ya da zaman aşımı; tekrar denemeye değer.
 
 | Kaynak | Katman | Adres | Hata |
 |---|---|---|---|
-| CDLI — Enmerkar and the Lord of Aratta witness P278286 | primary | [bağlantı](https://cdli.earth/P278286) | zaman aşımı |
+| CDLI — Sumerian King List | primary | [bağlantı](https://cdli.earth/artifacts/112355) | zaman aşımı |
 | CDLI — Uruk IV Administrative Tablet P002976 | primary | [bağlantı](https://cdli.earth/P002976) | zaman aşımı |
-| The Architecture of Petra | peer-reviewed | [bağlantı](https://openlibrary.org/isbn/9780197270004) | fetch failed |
-| The Exact Sciences in Antiquity | peer-reviewed | [bağlantı](https://openlibrary.org/isbn/9780486223322) | fetch failed |
-| History of the Byzantine State | peer-reviewed | [bağlantı](https://openlibrary.org/isbn/9780813511986) | fetch failed |
-| Epics of Sumerian Kings: The Matter of Aratta | peer-reviewed | [bağlantı](https://openlibrary.org/isbn/9781589830837) | fetch failed |
-| Machu Picchu: A Civil Engineering Marvel | peer-reviewed | [bağlantı](https://openlibrary.org/isbn/9780784404447) | fetch failed |
 
 
-## Betiğe kapalı olanlar (35)
+## Betiğe kapalı olanlar (34)
 
 Bunlar hata değil. Yayıncı otomatik isteği reddediyor; adres tarayıcıda çalışır.
 
@@ -69,7 +73,6 @@ Bunlar hata değil. Yayıncı otomatik isteği reddediyor; adres tarayıcıda ç
 | First DNA analysis of Machu Picchu residents offers insight into Inca society | institutional | [bağlantı](https://news.ucsc.edu/2023/07/machu-picchu-genomics/) | 403 |
 | Shushtar Historical Hydraulic System | institutional | [bağlantı](https://whc.unesco.org/en/list/1315/) | 403 |
 | Angkor - Dünya Mirası kaydı | institutional | [bağlantı](https://whc.unesco.org/en/list/668/) | 403 |
-| Dünya Mirası listeleme kriterleri ve coğrafi dengesizlik tartışması | institutional | [bağlantı](https://whc.unesco.org/en/criteria/) | 403 |
 | Petra - Dünya Mirası kaydı | institutional | [bağlantı](https://whc.unesco.org/en/list/326/) | 403 |
 | Sigiriya Antik Kenti - Dünya Mirası kaydı | institutional | [bağlantı](https://whc.unesco.org/en/list/202/) | 403 |
 | Göbekli Tepe ile Karahan Tepe'nin Jeomorfolojisi ve Doğal Ortam Koşullarının Erk | peer-reviewed | [bağlantı](https://www.researchgate.net/publication/357329428) | 403 |

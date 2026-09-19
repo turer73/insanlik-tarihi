@@ -215,15 +215,24 @@ const rapor = `# Kaynak bağlantı denetimi
 
 Son deneme: **${bugun}** · ${denenecek.length} bağlantı · ${kaynaklar.length} künye
 
-Bu tablo **betik tarafından üretilir** (\`node scripts/denetle-kaynak-baglantilari.mjs\`).
-Derlemenin parçası DEĞİLDİR: 276 dış adrese her derlemede istek atmak hız sınırına
-takılır ve derlemeyi ağ dalgalanmasına bağımlı kılardı. Elle, aralıklı çalıştırılır.
+Bu tablo **betik tarafından üretilir** (\`npm run denetle:baglantilar\`).
+Derlemenin parçası DEĞİLDİR: ${denenecek.length} dış adrese her derlemede istek atmak
+hız sınırına takılır ve derlemeyi ağ dalgalanmasına bağımlı kılardı. Elle, aralıklı
+çalıştırılır.
+
+DOI ve ISBN adreslerinde yönlendirme **izlenmez**: sorulan soru "tanımlayıcı kayıtlı mı"
+olduğu için doi.org'dan gelen 30x zaten cevaptır. Düz URL'lerde yönlendirme izlenir.
+
+Bu tablonun göremediği şey: **yumuşak 404** (silinmiş sayfaya 200 ile "bulunamadı" metni
+döndürmek) ve **çözülen yanlış tanımlayıcı** (yanlış yazılmış bir DOI gerçek olabilir ve
+başka bir çalışmaya gider). İkisi de insan denetimi ister; "sağlam" burada yalnız
+"sunucu cevap verdi" demektir.
 
 | Durum | Sayı | Ne demek |
 |---|---:|---|
-| Sağlam | ${kova.saglam.length} | 2xx döndü |
+| Sağlam | ${kova.saglam.length} | Yanıt verdi: düz adreste 2xx, tanımlayıcıda 2xx ya da 30x |
 | Yönlendi | ${kova.yonlendi.length} | 2xx döndü ama adres değişti; künyedeki adres eskimiş olabilir |
-| Engelli | ${kova.engelli.length} | 401/403/429 — yayıncı betik isteklerini kapatıyor. **Ölü değil**, tarayıcıda açılır |
+| Engelli | ${kova.engelli.length} | 401/403/405/406/429/451 — yayıncı betik isteklerini kapatıyor. **Ölü değil**, tarayıcıda açılır |
 | Ölü | ${kova.olu.length} | 4xx/5xx — gerçekten kırık, düzeltilmeli |
 | Ulaşılamadı | ${kova.ulasilamadi.length} | Bağlantı kurulamadı ya da zaman aşımı |
 
