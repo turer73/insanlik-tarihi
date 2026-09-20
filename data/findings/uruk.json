@@ -159,6 +159,11 @@
         "text": "‘İlk şehir’ sıralaması kullanılan şehir tanımına bağlıdır; Tell Brak erken ve eşzamanlı bir başka kentsel odaktır.",
         "citations": [
           {
+            "source_ref": "ur-karsgaard-oates-2011-tell-brak-banliyo",
+            "locator": "Özet — \"Urbanism at Brak coalesced over the course of several centuries in the late fifth and early fourth millennia BC, when it evolved from a series of spatially discrete settlement zones into a 130-hectare city, without the benefit of irrigated agriculture\"",
+            "support_type": "counter"
+          },
+          {
             "source_ref": "cambridge-tell-brak-kentlesme",
             "locator": "Bulgular bölümü",
             "support_type": "counter"
@@ -303,7 +308,7 @@
         "citations": [
           {
             "source_ref": "ur-karsgaard-oates-2011-tell-brak-banliyo",
-            "locator": "Özet",
+            "locator": "Özet — 130 hektarlık kentin \"over the course of several centuries in the late fifth and early fourth millennia BC\" oluşması; ayrıca geç 3. binyılda 70, Geç Tunç'ta 45 hektarlık ayrı kentsel evreler",
             "support_type": "direct"
           }
         ]
@@ -517,17 +522,6 @@
         "doi": "10.1016/j.quaint.2017.11.037"
       },
       {
-        "id": "eage-2003-uruk-manyetometri",
-        "tier": "institutional",
-        "type": "report",
-        "title": "Magnetometry at Uruk (Iraq): The city of King Gilgamesh",
-        "url": "https://ui.adsabs.harvard.edu/abs/2003EAEJA.....9152F/abstract",
-        "language": "en",
-        "note": "Kanal sistemi, sur ve olası mezar yapısı; Gilgameş mezarı yorumu açıkça spekülatif.",
-        "institution": "European Association of Geoscientists and Engineers (EAGE)",
-        "year": 2003
-      },
-      {
         "id": "arkeofili-uruk-tekne",
         "tier": "institutional",
         "type": "webpage",
@@ -546,9 +540,14 @@
         "text": "Jeoarkeolojik çekirdekler bölgenin erken Holosen’den itibaren tatlı su etkisinde olduğunu gösterir.",
         "citations": [
           {
-            "source_ref": "unesco-guney-irak-ahwar",
-            "locator": "Kısa Sentez — tatlı su bataklıklarının kenarı",
+            "source_ref": "jotheri-2018-uruk-holosen-akarsu",
+            "locator": "Özet — \"the Uruk region ... had been under the influence of freshwater fluvial environment since the early Holocene\"; beş sediman çekirdeği analiz edildi, diyatome analizi bütün sütunun tatlı suda çökeldiğini gösteriyor",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "unesco-guney-irak-ahwar",
+            "locator": "Kısa Sentez — Uruk, Ur ve Eridu'nun tatlı su bataklıklarının kıyısında kurulması",
+            "support_type": "context"
           }
         ]
       },
@@ -557,8 +556,19 @@
         "text": "İnsan yapımı kanallar doğal akarsu örüntülerinin üzerine bindirilmiştir.",
         "citations": [
           {
-            "source_ref": "unesco-guney-irak-ahwar",
-            "locator": "Kısa Sentez — deltaik ova ve su dinamiği",
+            "source_ref": "jotheri-2018-uruk-holosen-akarsu",
+            "locator": "Özet — \"canals and long-term human activities since the mid Holocene have been superimposed on the natural river channel patterns\"; MÖ 4. binyıl ile MS 1. binyıl arasında uzun ömürlü kanallar",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "uruk-yakininda-4000-yillik-ahsap-tekne-tortu-altinda-bulundu",
+        "text": "Uruk yakınında 2018'de belgelenen 7 metre uzunluğunda ahşap bir tekne, yaklaşık 4.000 yıl önce bir nehir kıyısında batıp tortuyla örtülmüştür: bugün kurak olan ovada o dönem seyredilebilir su vardı.",
+        "citations": [
+          {
+            "source_ref": "arkeofili-uruk-tekne",
+            "locator": "Haber gövdesi — 2018'de Uruk-Warka çevresinin sistematik belgelenmesi sırasında bulunması; 7 m x 1,4 m; nehir kıyısında batıp tortuyla örtülmesi",
             "support_type": "direct"
           }
         ]
@@ -570,8 +580,8 @@
         "text": "Elverişli su ortamı kendiliğinden kent üretmez; bakım, emek, ulaşım ve siyasal koordinasyon yine gerekir.",
         "citations": [
           {
-            "source_ref": "unesco-guney-irak-ahwar",
-            "locator": "Kısa Sentez — kentlerin yükselişi ve gerilemesi",
+            "source_ref": "jotheri-2018-uruk-holosen-akarsu",
+            "locator": "Özet — MS 1. binyıl başında yerleşim ve sulamanın genişlemesi, MS 1. binyıl sonunda büyük terk; elverişli su ortamının tek başına süreklilik sağlamaması",
             "support_type": "counter"
           }
         ]
@@ -706,6 +716,11 @@
             "source_ref": "smarthistory-beyaz-tapinak-ziggurat",
             "locator": "The White Temple bölümü — içeride çok az nesne bulunması",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "arkeofili-uruk-kult-alani",
+            "locator": "Haber gövdesi — \"Mimari üslubu, resmi bir yapı olduğuna ve MUHTEMELEN bir kült mekânı ya da tapınak olarak kullanıldığına işaret ediyor\" ve \"bu yapının anıtsal niteliği DOĞRULANIRSA\". Örnek Uruk'tan değil, Kani Shaie'den (Süleymaniye); işlevin mimari üsluptan çıkarılması kalıbını gösteriyor.",
+            "support_type": "context"
           }
         ]
       }
@@ -1499,6 +1514,11 @@
           {
             "source_ref": "britishmuseum-egimli-agizli-kase",
             "locator": "Küratör notu — \"the sizes vary considerably\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "perruchini-glatz-2023-egimli-kase-kalintilari",
+            "locator": "Özet — \"Our analytical results challenge traditional interpretations that see BRBs as containers of cereal-based rations and bread moulds. The presence of meat- and potentially also dairy-based foods ... lends support to multi-purpose explanations.\" SINIR: ölçüm Uruk'ta değil, kuzeydoğu Irak'taki Shakhi Kora'dan 10 kase üzerinde yapıldı.",
             "support_type": "direct"
           }
         ]
@@ -3575,6 +3595,11 @@
           {
             "source_ref": "selz-2020-uruk-fenomeni",
             "locator": "§ 3.4.1 \"Precursors to writing\", s. 194-195 — jeton sistemi, sayısal tabletler ve etiketler proto-çivi yazısının üç öncülü olarak sıralanıyor",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "getty-mezopotamya-uygarlik-basliyor",
+            "locator": "\"First Writing\" bölümü — \"The earliest known writing emerged in southern Mesopotamia around 3400 BC, originating as a system of pictographs that evolved by 2600 BC into the distinctive wedge-shaped script we call cuneiform\"",
             "support_type": "direct"
           }
         ]
