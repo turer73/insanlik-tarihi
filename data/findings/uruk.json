@@ -260,16 +260,6 @@
         "doi": "10.1017/s0021088900000061"
       },
       {
-        "id": "cambridge-tell-brak-kentlesme",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Researchers rewrite origins of the urban sprawl",
-        "url": "https://www.cam.ac.uk/news/researchers-rewrite-origins-of-the-urban-sprawl",
-        "language": "en",
-        "note": "Uruk’un mutlak ‘ilk şehir’ ilanını sınırlayan Tell Brak bulguları.",
-        "institution": "University of Cambridge"
-      },
-      {
         "id": "penn-lagash-tarihsel-baglam",
         "tier": "institutional",
         "type": "webpage",
@@ -1061,16 +1051,6 @@
         "institution": "Cuneiform Digital Library Initiative (CDLI)"
       },
       {
-        "id": "oxford-etcsl-projesi",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Electronic Text Corpus of Sumerian Literature (ETCSL)",
-        "url": "https://www.orinst.ox.ac.uk/electronic-text-corpus-sumerian-literature-etcsl",
-        "language": "en",
-        "note": "Sümer edebî metinlerinin çoğunun geç 3. ve erken 2. binyıl nüshaları olduğu bağlamı.",
-        "institution": "University of Oxford, ETCSL"
-      },
-      {
         "id": "jimenez-2025-gilgamis-maddesi",
         "tier": "peer-reviewed",
         "type": "chapter",
@@ -1116,6 +1096,11 @@
           {
             "source_ref": "metmuseum-gilgamis",
             "locator": "Giriş paragrafı — 3. binyıl nüshası korunmamıştır",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "jimenez-2025-gilgamis-maddesi",
+            "locator": "Özet — Gilgameş anlatılarının en erken tanıkları: beş Sumerce öykü, \"known in manuscripts dating to the early second millennium bce\"",
             "support_type": "direct"
           }
         ]
@@ -1351,23 +1336,6 @@
         "language": "en",
         "note": "Çivi yazısının hesap tutma bağlamı ve uzun kullanım tarihi.",
         "institution": "British Museum"
-      },
-      {
-        "id": "mcmahon-2019-kuzey-mezopotamya-kentlesme",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "title": "Early Urbanism in Northern Mesopotamia",
-        "url": "https://doi.org/10.1007/s10814-019-09136-7",
-        "language": "en",
-        "note": "Uruk yayılımı, gerçek koloni alanları ve yerel süreklilik üzerine eleştirel sentez.",
-        "authors": [
-          "McMahon, Augusta"
-        ],
-        "year": 2019,
-        "container": "Journal of Archaeological Research",
-        "volume": "28",
-        "pages": "289-337",
-        "doi": "10.1007/s10814-019-09136-7"
       }
     ],
     "evidence": [
@@ -1668,6 +1636,11 @@
             "source_ref": "lewis-2025-uruk-genislemesi",
             "locator": "Özet — glokalleşme çerçevesi",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "mcmahon-2019-kuzey-mezopotamya-kentlesme",
+            "locator": "Özet — \"Recent excavations and surveys in northern Mesopotamia have revealed extensive settlements ... by the early fourth millennium BC, comparable to well-known evidence for cities in their traditional homeland of southern Iraq. However, early northern Mesopotamian cities incorporated low-density zones and flexible uses of space not yet identified in southern Mesopotamia.\"",
+            "support_type": "direct"
           }
         ]
       }
@@ -1815,6 +1788,11 @@
           {
             "source_ref": "selz-2020-uruk-fenomeni",
             "locator": "s. 184 — \"hybrid sites\" kategorisi ve yerel yerleşimlerdeki Uruk enklavları",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "mcmahon-2019-kuzey-mezopotamya-kentlesme",
+            "locator": "Özet — \"Recent excavations and surveys in northern Mesopotamia have revealed extensive settlements ... by the early fourth millennium BC, comparable to well-known evidence for cities in their traditional homeland of southern Iraq. However, early northern Mesopotamian cities incorporated low-density zones and flexible uses of space not yet identified in southern Mesopotamia.\"",
             "support_type": "direct"
           }
         ]
@@ -2571,6 +2549,11 @@
             "source_ref": "metmuseum-gilgamis",
             "locator": "Giriş paragrafı — Uruk kralı sayılması",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "jimenez-2025-gilgamis-maddesi",
+            "locator": "Özet — \"According to the Mesopotamian tradition, Gilgameš was a king of the city of Uruk who lived in the first half of the third millennium bce ... he was already deified by the mid-third millennium bce\"",
+            "support_type": "direct"
           }
         ]
       },
@@ -2600,6 +2583,11 @@
             "source_ref": "metmuseum-gilgamis",
             "locator": "Giriş paragrafı — \"No contemporary information is known\"",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "jimenez-2025-gilgamis-maddesi",
+            "locator": "Özet — \"It is unknown whether he was a historical figure\"",
+            "support_type": "direct"
           }
         ]
       },
@@ -2611,6 +2599,11 @@
             "source_ref": "metmuseum-gilgamis",
             "locator": "Sümerce öyküler bölümü — Eski Babil nüshaları",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "jimenez-2025-gilgamis-maddesi",
+            "locator": "Özet — en erken anlatılar beş Sumerce öykü, \"possibly written at the end of the third millennium bce, known in manuscripts dating to the early second millennium bce\"; 1. binyıl \"kanonik\" sürümü Sîn-lēqi-unninni'ye atfediliyor",
+            "support_type": "direct"
           }
         ]
       }
@@ -2724,6 +2717,11 @@
             "source_ref": "cdli-sumer-kral-listesi",
             "locator": "Q000371 satır 106-115 — Enmerkar 420 yıl, Lugalbanda 1200 yıl, Dumuzi 100 yıl, ardından Gilgameş \"mu 2(gesz2) 6(disz) i3-ak\" = 126 yıl; sayı bu dizinin içinde duruyor",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "jimenez-2025-gilgamis-maddesi",
+            "locator": "Özet — \"It is unknown whether he was a historical figure\"; gelenek onu 3. binyılın ilk yarısına koyuyor. Tarihselliği belirsiz bir kralın saltanat sayısı kronoloji olamaz.",
+            "support_type": "context"
           }
         ]
       }
@@ -2892,6 +2890,11 @@
             "source_ref": "metmuseum-uruk-ilk-sehir",
             "locator": "Erken Hanedanlık paragrafı — \"according to tradition ... King Gilgamesh\"",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "eage-2003-uruk-manyetometri",
+            "locator": "Bildirinin başlığı — \"Magnetometry at Uruk (Iraq): The city of King Gilgamesh\"; jeofizik raporunun kenti kralın adıyla anması, atfı epigrafik kanıta terfi ettiren popüler aktarımı besliyor",
+            "support_type": "claim-origin"
           }
         ]
       }
@@ -2905,6 +2908,11 @@
             "source_ref": "metmuseum-uruk-ilk-sehir",
             "locator": "Erken Hanedanlık paragrafı — atfın \"gelenek\" olarak nitelenmesi",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "jimenez-2025-gilgamis-maddesi",
+            "locator": "Özet — \"It is unknown whether he was a historical figure\"; uzman başvuru kaynağı tarihselliği açık bırakıyor, bir yapı atfını doğrulamıyor",
+            "support_type": "context"
           }
         ]
       }
