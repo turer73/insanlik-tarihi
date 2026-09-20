@@ -2493,6 +2493,24 @@
         "language": "en",
         "accessed": "2026-09-20",
         "note": "SINIR: Yazar siyaset bilimci, Asuroloji uzmanı değil; Mezopotamya malzemesini ikincil literatürden derliyor. Buna karşılık kaydın tam da ihtiyacı olan ayrımı yapıyor: kurumsal çoğulculuğu ciddiye alıyor ama \"tam demokrasi\" demiyor, \"hipodemokrasi\" diyor. Ayrıca metin içinde \"Jacobsen, 1943: 401\" diye atıf veriyor; kendi kaynakçasında aynı makale JNES 159-172, yani 401. sayfa yok. Schemeil'in atıf hatası."
+      },
+      {
+        "id": "demirel-2023-eski-yakindoguda-demokratik-temayuller",
+        "tier": "institutional",
+        "type": "chapter",
+        "title": "Eski Yakındoğu'da Demokratik Temayüller",
+        "authors": [
+          "Demirel, Serkan"
+        ],
+        "year": 2023,
+        "container": "Zamanın İzleri: Demokrasi ve Cumhuriyet (ed. M. A. Yalçınkaya, B. Can Emir, S. Demirel)",
+        "institution": "Karadeniz Teknik Üniversitesi Yayınları",
+        "pages": "1-10",
+        "isbn": "9786052271612",
+        "language": "tr",
+        "accessed": "2026-09-20",
+        "note": "Konunun Türkçe akademik ele alınışı; sitedeki okurun doğrudan okuyabileceği tek kaynak bu. SINIR: Bölüm, Gılgamış ve Agga metnini \"MÖ II. binyılın ikinci yarısına ait\" sayıyor; arşivdeki öteki kaynaklar korunan nüshaları Eski Babil dönemine (MÖ II. binyılın ilk yarısı) koyuyor. Bu fark çözülmedi, atıflarda o cümleye dayanılmadı.",
+        "publisher": "Karadeniz Teknik Üniversitesi Yayınları"
       }
     ],
     "evidence": [
@@ -2503,6 +2521,11 @@
           {
             "source_ref": "etcsl-gilgames-ve-aga",
             "locator": "satır 1-8 ve 15-23 — yaşlılar ve savaşabilir erkekler",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "demirel-2023-eski-yakindoguda-demokratik-temayuller",
+            "locator": "s. 4 — \"Şiire göre, Uruk kentinde Yaşlılar ve Silahlı Erkekler olmak üzere iki meclis vardır. Metne göre Gılgamış, Kiş kralına karşı savaşabilmek için Yaşlılar Meclisi'ne ikna etmeye çalışmaktadır; oysaki Silahlı Erkekler Meclisi bu çatışmaya önceden niyetlidir.\"",
             "support_type": "direct"
           }
         ]
@@ -2531,11 +2554,27 @@
             "source_ref": "schemeil-2000-demokrasiden-once-demokrasi",
             "locator": "Özet, s. 99 — \"This was not full democracy, but the Greek version was not perfect either\"; makale boyunca rejim \"hypodemocracy\" diye adlandırılıyor",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "demirel-2023-eski-yakindoguda-demokratik-temayuller",
+            "locator": "s. 2 — \"Eski Mısır ve Mezopotamya toplumlarında demokratik usul ve değerlerin var olabileceğine dair birtakım örnekler vardır. Bu örnekler hiçbir durumda tam teşekküllü bir demokratik temayülü temsil etmez.\"",
+            "support_type": "direct"
           }
         ]
       }
     ],
     "counter_evidence": [
+      {
+        "id": "metin-iki-meclisin-mahiyeti-hakkinda-baska-bir-sey-soylemez",
+        "text": "Metnin kendisi bu iki meclisin ne olduğu, kimlerden oluştuğu, nasıl toplandığı hakkında başka hiçbir şey söylemez. Elimizdeki tek şey bir sahnedir; kurumun tarifi değil.",
+        "citations": [
+          {
+            "source_ref": "demirel-2023-eski-yakindoguda-demokratik-temayuller",
+            "locator": "s. 4 — \"Metinde bu iki meclisin mahiyetine ilişkin başka bir bilgi yer almamaktadır.\"",
+            "support_type": "counter"
+          }
+        ]
+      },
       {
         "id": "korunan-nushalar-olaylardan-yuzyillar-sonradir",
         "text": "Korunan nüshalar olaylardan yüzyıllar sonradır.",
@@ -2560,6 +2599,11 @@
             "source_ref": "jacobsen-1943-ilkel-demokrasi",
             "locator": "Makalenin başlığı ve tezi — \"Primitive Democracy in Ancient Mesopotamia\" (JNES 2/3, 1943, s. 159-172). Popüler \"demokrasi Mezopotamya'da doğdu\" cümlesi buradan türüyor. Makale okunmadı; künye doğrulandı, tezi ikincil literatürden biliniyor.",
             "support_type": "claim-origin"
+          },
+          {
+            "source_ref": "demirel-2023-eski-yakindoguda-demokratik-temayuller",
+            "locator": "s. 3 — \"ilkel demokrasi\" tanımının kendisi dışlayıcıdır: iç egemenlik \"kadınları ya da özgür olmayan erkekleri kapsamadan tüm özgür yetişkin erkek yurttaşlarda\" bulunur",
+            "support_type": "counter"
           }
         ]
       },
@@ -2576,6 +2620,17 @@
             "source_ref": "schemeil-2000-demokrasiden-once-demokrasi",
             "locator": "s. 105 — \"if democracy is a sort of 'government by discussion', these councils were more democratic than many modern political regimes and certainly as democratic as the Greek polis\"",
             "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "nippurda-yurttaslar-meclisi-adli-karar-aliyor-ama-uruk-degil",
+        "text": "Edebî sahnenin ötesinde, meclislerin yargı işlevi gördüğüne dair idari nitelikte bir örnek de vardır: İsin kralı Ur-Ninurta (MÖ 1922-1894) önüne gelen bir davanın Nippur'daki \"Yurttaşlar Meclisi\"nde görülmesini emretmiştir. Ne var ki bu Uruk değil Nippur, ve Gılgamış'ın çağı değil yaklaşık yedi yüz yıl sonrasıdır.",
+        "citations": [
+          {
+            "source_ref": "demirel-2023-eski-yakindoguda-demokratik-temayuller",
+            "locator": "s. 4 — İsin kralı Ur-Ninurta'nın (MÖ 1922-1894) bir davayı \"bir çeşit Adalet Divanı olarak görev yapan Nippur'daki Yurttaşlar Meclisi'nde ele alınmasını\" emretmesi",
+            "support_type": "context"
           }
         ]
       }
