@@ -2059,6 +2059,23 @@
         "language": "en",
         "note": "Vazonun katmanlı sahnesi, sunu alayı ve İnanna yorumu.",
         "institution": "Smarthistory (Center for Public Art History)"
+      },
+      {
+        "id": "selz-2020-uruk-fenomeni",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "title": "The Uruk Phenomenon",
+        "url": "https://doi.org/10.1093/oso/9780190687854.003.0004",
+        "language": "en",
+        "note": "Uruk olgusu, devlet oluşumu ve Batı Asya’daki yayılım üzerine güncel sentez.",
+        "authors": [
+          "Selz, Gebhard J."
+        ],
+        "year": 2020,
+        "container": "The Oxford History of the Ancient Near East",
+        "pages": "163-244",
+        "doi": "10.1093/oso/9780190687854.003.0004",
+        "publisher": "Oxford University Press"
       }
     ],
     "evidence": [
@@ -2067,9 +2084,14 @@
         "text": "Alt kayıtlarda su, bitki, hayvan ve sunu taşıyan insanlar; üstte İnanna simgeleriyle ilişkili bir sahne vardır.",
         "citations": [
           {
-            "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "Nesne tanımı — rahip-kral ve sunu sahnesi",
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 210 — anlatı aşağıdan yukarı okunur: \"water enables agriculture and animal husbandry, thus feeding people and providing the means for them to fulfill the main duty of their existence: to feed and care for the gods\"; üst kayıtta bir yönetici-rahip (\"En\"), tapınağın ambar girişini imleyen flamalı iki halka direğin önünde duran kadın figüre sunu sunar",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "britishmuseum-116722-silindir-muhur",
+            "locator": "Nesne tanımı — Geç Uruk silindir mühründeki rahip-kral ve sunu sahnesi. BU VAZO DEĞİL, aynı ikonografik kalıbı taşıyan ayrı bir nesnedir.",
+            "support_type": "context"
           }
         ]
       }
@@ -2080,8 +2102,19 @@
         "text": "Figürlerin adları ve ritüelin tam adı yazılı değildir.",
         "citations": [
           {
-            "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "Nesne tanımı — yazıt kaydı yok",
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 211 — \"Whether the female is a priestess or the goddess Inana herself has been much debated\". Tartışmanın sürüyor olması, figürü adlandıran bir yazıt bulunmadığının göstergesidir.",
+            "support_type": "inference"
+          }
+        ]
+      },
+      {
+        "id": "kutsal-evlilik-tek-okuma-degil-jacobsen-dini-drama",
+        "text": "\"Kutsal evlilik\" tek okuma değildir: sahnenin bir \"dinî drama\" olduğu yolundaki Thorkild Jacobsen yorumu uzman literatürde hâlâ en iyi açıklama sayılır.",
+        "citations": [
+          {
+            "source_ref": "selz-2020-uruk-fenomeni",
+            "locator": "s. 211 — \"Thorkild Jacobsen's idea that the scene represents a 'religious drama' still seems to be the best interpretation\"",
             "support_type": "counter"
           }
         ]
@@ -2098,7 +2131,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Bir SAHNE, bir OLAY KAYDI gibi okunuyor. Vazoda su, bitki, hayvan ve sunu taşıyan insanlar, üstte İnanna simgeleriyle ilişkili bir sahne var - bu bir sunu/ritüel düzenidir. Ama figürlerin adları ve ritüelin adı YAZILI DEĞİLDİR. ‘Kutsal evlilik’ okuması olasıdır ve savunulabilir; ‘belirli bir kral ile İnanna’nın evliliğini fotoğraf gibi kaydeder’ cümlesi ise ikonografiden kimlik ve olay üretiyor.",
+    "divergence": "Bir SAHNE, bir OLAY KAYDI gibi okunuyor. Vazoda su, bitki, hayvan ve sunu taşıyan insanlar, üstte flamalı halka direklerin önünde duran bir kadın figüre sunu sunan yönetici-rahip var — bu bir sunu/ritüel düzenidir. Ama figürlerin adları ve ritüelin adı YAZILI DEĞİLDİR: kadın figürün rahibe mi tanrıça İnanna'nın kendisi mi olduğu uzun süre tartışılmıştır ve sahneyi \"kutsal evlilik\" yerine bir \"dinî drama\" sayan okuma da hâlâ güçlüdür. \"Kutsal evlilik\" yorumu olasıdır ve savunulabilir; \"belirli bir kral ile İnanna'nın evliliğini fotoğraf gibi kaydeder\" cümlesi ise ikonografiden kimlik ve olay üretiyor.",
     "divergence_type": [
       "kategori-hatasi"
     ]
