@@ -1909,8 +1909,11 @@
         "title": "Warka Vase",
         "url": "https://smarthistory.org/warka-vase/",
         "language": "en",
-        "note": "Vazonun katmanlı sahnesi, sunu alayı ve İnanna yorumu.",
-        "institution": "Smarthistory (Center for Public Art History)"
+        "note": "Senta German'in imzali anlatimi. Nesne kunyesi: alabaster, Gec Uruk donemi (yaklasik MO 3500-3000), 105 cm, yaklasik 270 kg, Irak Ulusal Muzesi (Bagdat). 1934'te Alman kazi ekibi tarafindan Inanna tapinaginda bir adak birikintisinde, bir cift halinde bulundu. Sayfa ayrica vazonun Nisan 2003'te muze yagmasinda calinip Haziran 2003'te geri getirildigini anlatiyor.",
+        "institution": "Smarthistory (Center for Public Art History)",
+        "authors": [
+          "German, Senta"
+        ]
       },
       {
         "id": "clancier-2012-helenistik-uruk",
@@ -1965,6 +1968,11 @@
             "source_ref": "clancier-2012-helenistik-uruk",
             "locator": "s. 755 — Helenistik dönemde İştar'a adanmış Eşgal tapınağının kentin tapınak mahallesindeki iki ana kutsal alandan biri olması",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "smarthistory-warka-vazosu",
+            "locator": "Giriş ve üst kuşak — vazonun 1934'te \"the temple of Inanna, the goddess of love, fertility, and war and the main patron of the city of Uruk\" içinde bir adak birikintisinde bulunması; üst kuşakta kadın figürün arkasındaki \"two reed bundles, symbols of the goddess Inanna\"",
+            "support_type": "direct"
           }
         ]
       }
@@ -1978,6 +1986,11 @@
             "source_ref": "britishmuseum-116722-silindir-muhur",
             "locator": "Künye — \"Emblem of: Inanna\" alanı",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "smarthistory-warka-vazosu",
+            "locator": "Üst kuşak — kadın figürün tanrıçayı temsil ettiğinin \"it is assumed\" diye yazılması; figürü adlandıran bir yazıt yok",
+            "support_type": "direct"
           }
         ]
       }
@@ -2057,8 +2070,11 @@
         "title": "Warka Vase",
         "url": "https://smarthistory.org/warka-vase/",
         "language": "en",
-        "note": "Vazonun katmanlı sahnesi, sunu alayı ve İnanna yorumu.",
-        "institution": "Smarthistory (Center for Public Art History)"
+        "note": "Senta German'in imzali anlatimi. Nesne kunyesi: alabaster, Gec Uruk donemi (yaklasik MO 3500-3000), 105 cm, yaklasik 270 kg, Irak Ulusal Muzesi (Bagdat). 1934'te Alman kazi ekibi tarafindan Inanna tapinaginda bir adak birikintisinde, bir cift halinde bulundu. Sayfa ayrica vazonun Nisan 2003'te muze yagmasinda calinip Haziran 2003'te geri getirildigini anlatiyor.",
+        "institution": "Smarthistory (Center for Public Art History)",
+        "authors": [
+          "German, Senta"
+        ]
       },
       {
         "id": "selz-2020-uruk-fenomeni",
@@ -2089,14 +2105,35 @@
             "support_type": "direct"
           },
           {
-            "source_ref": "britishmuseum-116722-silindir-muhur",
-            "locator": "Nesne tanımı — Geç Uruk silindir mühründeki rahip-kral ve sunu sahnesi. BU VAZO DEĞİL, aynı ikonografik kalıbı taşıyan ayrı bir nesnedir.",
-            "support_type": "context"
+            "source_ref": "smarthistory-warka-vazosu",
+            "locator": "Kayıtların tarifi — en altta dalgalı çizgilerden çıkan, dönüşümlü arpa ve saz; üstünde sıra hâlinde koç ve koyunlar; boş bir kuşak; sonra her biri elinde kap taşıyan dokuz çıplak adam; en üstte karşılıklı duran bir kadın ve bir erkek. Nesne künyesi: alabaster, Geç Uruk dönemi (yaklaşık MÖ 3500-3000), 105 cm, Irak Ulusal Müzesi",
+            "support_type": "direct"
           }
         ]
       }
     ],
     "counter_evidence": [
+      {
+        "id": "ustteki-kral-figuru-neredeyse-butunuyle-kirik-muhurlerden-yeniden-kuruluyor",
+        "text": "Sahnedeki kral figürü neredeyse bütünüyle kırıktır: uzun giysisinin yalnızca alt kısmı durur. Onu kral olarak yeniden kuran şey vazonun kendisi değil, çağdaş silindir mühürlerdeki benzer giysili figürlerdir. Yani \"belirli bir kralın evliliğini kaydeder\" denen sahnede kralın kendisi korunmuş bile değildir.",
+        "citations": [
+          {
+            "source_ref": "smarthistory-warka-vazosu",
+            "locator": "Üst kuşak — \"The man she faces is nearly entirely broken off, and we are left with only the bottom of his long garment\"; benzer giysili figürlerin çağdaş mühür kazımalarında sık görülmesine dayanarak \"we can reconstruct him as a king\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "smarthistory-warka-vazosu",
+            "locator": "Üst kayıt çizimi, altyazı — yaygın olarak dolaşan ve kralı bütün hâlde gösteren görsel bir FOTOĞRAF DEĞİL, Jo Wood'un M. Roaf'tan sonra yaptığı ve \"reconstructing some missing areas\" diye nitelenen bir çizimdir (Leaving No Stones Unturned, Eisenbrauns 2001, s. 17)",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "britishmuseum-116722-silindir-muhur",
+            "locator": "Nesne tanımı — Geç Uruk silindir mühründeki rahip-kral ve sunu sahnesi. Vazodaki kral figürünün yeniden kurulması tam da bu tür mühürlere dayanır; mühür vazonun kanıtı değil, eksik kısmın DOLDURULDUĞU örnektir.",
+            "support_type": "counter"
+          }
+        ]
+      },
       {
         "id": "figurlerin-adlari-ve-rituelin-tam-adi-yazili-degildir",
         "text": "Figürlerin adları ve ritüelin tam adı yazılı değildir.",
@@ -2105,6 +2142,11 @@
             "source_ref": "selz-2020-uruk-fenomeni",
             "locator": "s. 211 — \"Whether the female is a priestess or the goddess Inana herself has been much debated\". Tartışmanın sürüyor olması, figürü adlandıran bir yazıt bulunmadığının göstergesidir.",
             "support_type": "inference"
+          },
+          {
+            "source_ref": "smarthistory-warka-vazosu",
+            "locator": "Üst kuşak — kadın figürün arkasındaki iki kamış demeti İnanna'nın simgesi sayılıyor ve kadının tanrıçayı temsil ettiği \"it is assumed\" (varsayılıyor) diye yazılıyor; başındaki taç antik çağda kırılıp onarılmış",
+            "support_type": "direct"
           }
         ]
       },
@@ -2115,6 +2157,17 @@
           {
             "source_ref": "selz-2020-uruk-fenomeni",
             "locator": "s. 211 — \"Thorkild Jacobsen's idea that the scene represents a 'religious drama' still seems to be the best interpretation\"",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "kutsal-evlilik-en-basit-okuma-degil-daha-ayrintili-bir-yorumdur",
+        "text": "Kaynak, sahnenin en basit okumasını \"bir kralın kentin baş tanrıçası İnanna'yı onurlandırması\" diye verir; \"kutsal evlilik\" bunun üstüne eklenen daha ayrıntılı bir yorumdur. Kralın hangi kentten olduğu bile \"presumably of Uruk\" diye yazılır.",
+        "citations": [
+          {
+            "source_ref": "smarthistory-warka-vazosu",
+            "locator": "Yorum bölümü — \"The simplest way to interpret it is that a king (presumably of Uruk) is celebrating Inanna\"; ardından \"A more detailed reading of the scene suggests a sacred marriage\"",
             "support_type": "counter"
           }
         ]
@@ -2131,7 +2184,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Bir SAHNE, bir OLAY KAYDI gibi okunuyor. Vazoda su, bitki, hayvan ve sunu taşıyan insanlar, üstte flamalı halka direklerin önünde duran bir kadın figüre sunu sunan yönetici-rahip var — bu bir sunu/ritüel düzenidir. Ama figürlerin adları ve ritüelin adı YAZILI DEĞİLDİR: kadın figürün rahibe mi tanrıça İnanna'nın kendisi mi olduğu uzun süre tartışılmıştır ve sahneyi \"kutsal evlilik\" yerine bir \"dinî drama\" sayan okuma da hâlâ güçlüdür. \"Kutsal evlilik\" yorumu olasıdır ve savunulabilir; \"belirli bir kral ile İnanna'nın evliliğini fotoğraf gibi kaydeder\" cümlesi ise ikonografiden kimlik ve olay üretiyor.",
+    "divergence": "Bir SAHNE, bir OLAY KAYDI gibi okunuyor — üstelik sahnenin can alıcı yarısı korunmuş bile değil. Vazoda su, bitki, hayvan ve sunu taşıyan insanlar var; en üstte kamış demetlerinin önünde duran bir kadın figüre sunu sunuluyor. Ama kadının İnanna olduğu VARSAYILIYOR, ve karşısındaki kral figürü neredeyse bütünüyle kırık: onu \"kral\" yapan şey vazo değil, çağdaş silindir mühürlerdeki benzer giysili figürlerden yapılan yeniden kurma. Uzman anlatımda en basit okuma \"bir kral İnanna'yı onurlandırıyor\"dur; \"kutsal evlilik\" bunun üstüne eklenen daha ayrıntılı bir yorumdur ve sahneyi bir \"dinî drama\" sayan okuma da hâlâ güçlüdür. \"Belirli bir kral ile İnanna'nın evliliğini fotoğraf gibi kaydeder\" cümlesi, kırık bir taştan kimlik, olay ve nikâh üretiyor.",
     "divergence_type": [
       "kategori-hatasi"
     ]
