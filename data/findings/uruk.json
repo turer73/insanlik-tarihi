@@ -2447,7 +2447,7 @@
         "type": "article",
         "title": "Primitive Democracy in Ancient Mesopotamia",
         "language": "en",
-        "note": "Modern \"Mezopotamya'da demokrasi\" tartışmasının çıkış noktası. MAKALENİN KENDİSİ OKUNMADI: künye (JNES 2/3, 1943, s. 159-172) Crossref'ten doğrulandı, tezi Schemeil 2000 üzerinden biliniyor. Bu yüzden sayfa numaralı bir atıf yazılmadı; kayıtta yalnız iddianın kaynağı olarak gösteriliyor.",
+        "note": "Modern \"Mezopotamya'da demokrasi\" tartışmasının çıkış noktası. MAKALENİN İLK SAYFASI (s. 159) OKUNDU; gerisi okunmadı ve o sayfanın dışına dayanan atıf yazılmadı. Makalenin özü 1941 Nisan'ında Chicago'da American Oriental Society toplantısında sunulmuş.",
         "authors": [
           "Jacobsen, Thorkild"
         ],
@@ -2576,6 +2576,17 @@
         ]
       },
       {
+        "id": "kurucu-makale-bunu-ilkel-diye-nitelerken-neyi-kastettigini-yazar",
+        "text": "Terimi ortaya atan makalenin kendisi \"ilkel\" sözcüğüyle ne kastettiğini açıkça tanımlar: yönetim işlevleri henüz çok az uzmanlaşmıştır, iktidar yapısı gevşektir ve toplumsal eşgüdüm mekanizması henüz eksik gelişmiştir. Yani kurucu metin, kurduğu şeyin klasik demokrasiden farkını baştan yazmıştır.",
+        "citations": [
+          {
+            "source_ref": "jacobsen-1943-ilkel-demokrasi",
+            "locator": "s. 159 — \"the various functions of government are as yet little specialized, the power structure is loose, and the machinery for social co-ordination by means of power is as yet imperfectly developed\"",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
         "id": "korunan-nushalar-olaylardan-yuzyillar-sonradir",
         "text": "Korunan nüshalar olaylardan yüzyıllar sonradır.",
         "citations": [
@@ -2596,13 +2607,13 @@
             "support_type": "counter"
           },
           {
-            "source_ref": "jacobsen-1943-ilkel-demokrasi",
-            "locator": "Makalenin başlığı ve tezi — \"Primitive Democracy in Ancient Mesopotamia\" (JNES 2/3, 1943, s. 159-172). Popüler \"demokrasi Mezopotamya'da doğdu\" cümlesi buradan türüyor. Makale okunmadı; künye doğrulandı, tezi ikincil literatürden biliniyor.",
-            "support_type": "claim-origin"
-          },
-          {
             "source_ref": "demirel-2023-eski-yakindoguda-demokratik-temayuller",
             "locator": "s. 3 — \"ilkel demokrasi\" tanımının kendisi dışlayıcıdır: iç egemenlik \"kadınları ya da özgür olmayan erkekleri kapsamadan tüm özgür yetişkin erkek yurttaşlarda\" bulunur",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "jacobsen-1943-ilkel-demokrasi",
+            "locator": "s. 159 — Makalenin kullandığı \"demokrasi\" tanımı zaten sınırlıdır: iç egemenlik \"in all free, adult, male citizens without distinction of fortune or class\" bulunur. Yani kadınlar ve özgür olmayanlar tanımın dışındadır.",
             "support_type": "counter"
           }
         ]
@@ -2631,6 +2642,17 @@
             "source_ref": "demirel-2023-eski-yakindoguda-demokratik-temayuller",
             "locator": "s. 4 — İsin kralı Ur-Ninurta'nın (MÖ 1922-1894) bir davayı \"bir çeşit Adalet Divanı olarak görev yapan Nippur'daki Yurttaşlar Meclisi'nde ele alınmasını\" emretmesi",
             "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "demokrasi-terimi-daha-1943te-tartismaliydi-speiser-politokrasi-onerdi",
+        "text": "\"Demokrasi\" adlandırması daha 1943'te tartışmalıydı: E. A. Speiser aynı olgu için \"politokrasi\" terimini öneriyordu. Jacobsen bunu kendi dipnotunda anar ve reddeder. Yani terim bir buluntudan değil, bir adlandırma tercihinden doğmuştur.",
+        "citations": [
+          {
+            "source_ref": "jacobsen-1943-ilkel-demokrasi",
+            "locator": "s. 159, 1 numaralı dipnot — \"the term which he suggests, 'politocracy,' seems, however, less expressive than 'primitive democracy'\"",
+            "support_type": "claim-origin"
           }
         ]
       }
