@@ -2442,29 +2442,12 @@
     "popular_claim": "Gilgameş iki meclise danıştığı için demokrasi Uruk’ta icat edildi.",
     "sources": [
       {
-        "id": "kramer-jacobsen-1949-gilgamis-agga",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "title": "Gilgamesh and Agga",
-        "language": "en",
-        "note": "Yaşlılar ve savaşabilir erkekler meclislerinin geçtiği edebî metin.",
-        "authors": [
-          "Kramer, Samuel Noah",
-          "Jacobsen, Thorkild"
-        ],
-        "year": 1949,
-        "container": "American Journal of Archaeology",
-        "volume": "53",
-        "pages": "1-18",
-        "doi": "10.2307/501208"
-      },
-      {
         "id": "jacobsen-1943-ilkel-demokrasi",
         "tier": "peer-reviewed",
         "type": "article",
         "title": "Primitive Democracy in Ancient Mesopotamia",
         "language": "en",
-        "note": "ÖNCEKİ SÜRÜMDE adres içine gömülü tanımlayıcı (10.2307/542482) Crossref'te kayıtlı değildi. Makalenin gerçek DOI'si doğrulanıp yazıldı.",
+        "note": "Modern \"Mezopotamya'da demokrasi\" tartışmasının çıkış noktası. MAKALENİN KENDİSİ OKUNMADI: künye (JNES 2/3, 1943, s. 159-172) Crossref'ten doğrulandı, tezi Schemeil 2000 üzerinden biliniyor. Bu yüzden sayfa numaralı bir atıf yazılmadı; kayıtta yalnız iddianın kaynağı olarak gösteriliyor.",
         "authors": [
           "Jacobsen, Thorkild"
         ],
@@ -2493,6 +2476,23 @@
         "language": "en",
         "note": "Sümerce Gilgameş öykülerinin Eski Babil okul nüshalarında kopyalandığı bağlamı.",
         "institution": "Metropolitan Museum of Art"
+      },
+      {
+        "id": "schemeil-2000-demokrasiden-once-demokrasi",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Democracy before Democracy?",
+        "authors": [
+          "Schemeil, Yves"
+        ],
+        "year": 2000,
+        "container": "International Political Science Review, cilt 21, sayı 2",
+        "pages": "99-120",
+        "publisher": "SAGE Publications",
+        "doi": "10.1177/0192512100212001",
+        "language": "en",
+        "accessed": "2026-09-20",
+        "note": "SINIR: Yazar siyaset bilimci, Asuroloji uzmanı değil; Mezopotamya malzemesini ikincil literatürden derliyor. Buna karşılık kaydın tam da ihtiyacı olan ayrımı yapıyor: kurumsal çoğulculuğu ciddiye alıyor ama \"tam demokrasi\" demiyor, \"hipodemokrasi\" diyor. Ayrıca metin içinde \"Jacobsen, 1943: 401\" diye atıf veriyor; kendi kaynakçasında aynı makale JNES 159-172, yani 401. sayfa yok. Schemeil'in atıf hatası."
       }
     ],
     "evidence": [
@@ -2514,6 +2514,22 @@
           {
             "source_ref": "etcsl-gilgames-ve-aga",
             "locator": "satır 1-8 — meclise danışma",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "schemeil-2000-demokrasiden-once-demokrasi",
+            "locator": "s. 104 — \"When Mesopotamian elders were unable to agree, they opened their assembly to junior aristocrats and commoners; if necessary, they also invited women and teenagers to have their say in the final decision\"",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "savunan-yazar-da-bunu-tam-demokrasi-saymaz",
+        "text": "Bu konumu savunan yazarın kendisi de sonucu \"demokrasi\" diye adlandırmaz: \"tam demokrasi değildi\" der ve rejimi ayrı bir adla, \"hipodemokrasi\" diye anar. Yani alandaki en iddialı savunma bile popüler cümlenin kurduğu eşitliği kurmuyor.",
+        "citations": [
+          {
+            "source_ref": "schemeil-2000-demokrasiden-once-demokrasi",
+            "locator": "Özet, s. 99 — \"This was not full democracy, but the Greek version was not perfect either\"; makale boyunca rejim \"hypodemocracy\" diye adlandırılıyor",
             "support_type": "direct"
           }
         ]
@@ -2538,6 +2554,27 @@
           {
             "source_ref": "etcsl-gilgames-ve-aga",
             "locator": "satır 15-23 — \"did not take seriously the advice of his city's elders\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "jacobsen-1943-ilkel-demokrasi",
+            "locator": "Makalenin başlığı ve tezi — \"Primitive Democracy in Ancient Mesopotamia\" (JNES 2/3, 1943, s. 159-172). Popüler \"demokrasi Mezopotamya'da doğdu\" cümlesi buradan türüyor. Makale okunmadı; künye doğrulandı, tezi ikincil literatürden biliniyor.",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "siyaset-biliminde-mezopotamya-meclisleri-icin-ciddi-bir-savunma-vardir",
+        "text": "Alanda konunun ciddiye alındığı bir karşı konum var: Schemeil, Mezopotamya ve Mısır siyasetinin kamusal tartışmaya ve ayrıntılı oylama yordamlarına dayandığını, kamu yapılarının eşiklerinde ve kent kapılarında sayısız meclisin toplandığını savunur ve bu meclisleri \"birçok modern siyasal rejimden daha demokratik\" sayar. Kayıt \"hiçbir şey yoktu\" demiyor; belgenin türü hakkında konuşuyor.",
+        "citations": [
+          {
+            "source_ref": "schemeil-2000-demokrasiden-once-demokrasi",
+            "locator": "Özet, s. 99 — \"Egyptian and Mesopotamian politics relied on public debate and detailed voting procedures; countless assemblies convened at the thresholds of public buildings or city gates\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "schemeil-2000-demokrasiden-once-demokrasi",
+            "locator": "s. 105 — \"if democracy is a sort of 'government by discussion', these councils were more democratic than many modern political regimes and certainly as democratic as the Greek polis\"",
             "support_type": "counter"
           }
         ]
