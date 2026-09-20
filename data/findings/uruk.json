@@ -522,6 +522,24 @@
         "language": "tr",
         "accessed": "2026-09-10",
         "note": "Türkçe haber kaynağı; Uruk çevresindeki su peyzajı için bağlam. Kazı raporu değil, tekne buluntusunun duyurusudur."
+      },
+      {
+        "id": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+        "tier": "popular",
+        "type": "article",
+        "title": "Prospections magnétiques à Uruk (Warka): La cité du roi Gilgamesh (Irak)",
+        "authors": [
+          "Fassbinder, Jörg W. E.",
+          "Becker, Helmut",
+          "van Ess, Margarete"
+        ],
+        "year": 2005,
+        "container": "Dossiers d'Archéologie, sayı 308",
+        "pages": "20-25",
+        "publisher": "Éditions Faton",
+        "language": "fr",
+        "accessed": "2026-09-20",
+        "note": "Hakemli dergi DEĞİL: genel okura yönelik bir arkeoloji dergisi, katman bu yüzden \"popüler\". Ama yazarlar prospeksiyonu yürüten ekibin kendisidir ve gazetecilerin \"Gilgameş'in mezarı\" iddiasını açıkça reddettikleri yer burasıdır (s. 25). \"Araştırmacılar ne dedi\" sorusu için birinci ağızdır. Taranmış nüsha okundu; sayfa numaraları dergi dizgisinden."
       }
     ],
     "evidence": [
@@ -548,6 +566,11 @@
           {
             "source_ref": "jotheri-2018-uruk-holosen-akarsu",
             "locator": "Özet — \"canals and long-term human activities since the mid Holocene have been superimposed on the natural river channel patterns\"; MÖ 4. binyıl ile MS 1. binyıl arasında uzun ömürlü kanallar",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 23 — ana kanalın Fırat suyunu kent içine taşıması, kanal boyunca iskeleler ve \"un système d'irrigation sophistiqué alimentant des champs et des palmeraies situés à l'intérieur de la cité\"",
             "support_type": "direct"
           }
         ]
@@ -2863,6 +2886,24 @@
         "url": "https://www.metmuseum.org/essays/uruk-the-first-city",
         "language": "en",
         "note": "Surun \"geleneğe göre Kral Gilgameş'in emriyle\" yapıldığını söyleyen kurumsal deneme. Cümlenin kendisi hem edebî özdeşleştirmeyi hem de bunun gelenek olduğunu, çağdaş bir yapı kaydı olmadığını gösteriyor."
+      },
+      {
+        "id": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+        "tier": "popular",
+        "type": "article",
+        "title": "Prospections magnétiques à Uruk (Warka): La cité du roi Gilgamesh (Irak)",
+        "authors": [
+          "Fassbinder, Jörg W. E.",
+          "Becker, Helmut",
+          "van Ess, Margarete"
+        ],
+        "year": 2005,
+        "container": "Dossiers d'Archéologie, sayı 308",
+        "pages": "20-25",
+        "publisher": "Éditions Faton",
+        "language": "fr",
+        "accessed": "2026-09-20",
+        "note": "Hakemli dergi DEĞİL: genel okura yönelik bir arkeoloji dergisi, katman bu yüzden \"popüler\". Ama yazarlar prospeksiyonu yürüten ekibin kendisidir ve gazetecilerin \"Gilgameş'in mezarı\" iddiasını açıkça reddettikleri yer burasıdır (s. 25). \"Araştırmacılar ne dedi\" sorusu için birinci ağızdır. Taranmış nüsha okundu; sayfa numaraları dergi dizgisinden."
       }
     ],
     "evidence": [
@@ -2878,6 +2919,11 @@
           {
             "source_ref": "dai-uruk-warka-projesi",
             "locator": "Overview — \"der Bau von innerstädtischen Kanälen sowie der 9 km langen Stadtmauer erfolgte bereits zu Beginn des 3. Jt. v. Chr.\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 21 — \"Le mur d'enceinte d'Uruk, qui s'étend sur près de 11 km environ\"; s. 24 — izlenen kesim 1 km'den uzun, yaklaşık 4 m kalınlığında ve pişmiş tuğladan (2020 ölçümünde duvarın kendisi ~9 m, bütün sur kompleksi ~40 m)",
             "support_type": "direct"
           }
         ]
@@ -2913,6 +2959,22 @@
             "source_ref": "jimenez-2025-gilgamis-maddesi",
             "locator": "Özet — \"It is unknown whether he was a historical figure\"; uzman başvuru kaynağı tarihselliği açık bırakıyor, bir yapı atfını doğrulamıyor",
             "support_type": "context"
+          },
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 21 — \"Pour autant que nous le sachions, ce mur remonte au début du IIIe millénaire av. J.-C., et a été réparé à plusieurs reprises. Les dernières traces de réfection remontent au XVIIIe siècle av. J.-C.\" — surun evreleri ve onarımları var, tek bir yapım anına indirgenemez",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "destan-jeofizik-sonuclarin-yorumlanmasina-yardim-etti",
+        "text": "Ekip, destanı ve ikonografiyi jeofizik sonuçların yorumlanmasında kullandığını kendisi yazar: surun pişmiş tuğladan olması \"destanın anlattığı gibi\" diye nitelenir. Yapı gerçek, ama yorum çerçevesi edebî metinden bağımsız değildir.",
+        "citations": [
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 20 — \"l'épopée de Gilgamesh et les nombreuses sources iconographiques ... ont également aidé à l'interprétation des résultats de la prospection magnétique\"; s. 24 — \"le mur a été construit avec des briques d'argile cuites comme le décrit l'épopée\"",
+            "support_type": "counter"
           }
         ]
       }
@@ -3001,13 +3063,47 @@
         "url": "https://anetoday.org/beneath-euphrates-sediments/",
         "language": "en",
         "note": "2003 EAGE ozetini yazan ekibin acik erisimli ve daha guncel anlatimi. Sur devresi, burclar ve kanal agi olculeriyle burada. ONCEKI SURUMDE bu maddeler NASA ADS ozetine baglanmisti; o sayfa betige kapali ve icerigi denetlenemiyordu."
+      },
+      {
+        "id": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+        "tier": "popular",
+        "type": "article",
+        "title": "Prospections magnétiques à Uruk (Warka): La cité du roi Gilgamesh (Irak)",
+        "authors": [
+          "Fassbinder, Jörg W. E.",
+          "Becker, Helmut",
+          "van Ess, Margarete"
+        ],
+        "year": 2005,
+        "container": "Dossiers d'Archéologie, sayı 308",
+        "pages": "20-25",
+        "publisher": "Éditions Faton",
+        "language": "fr",
+        "accessed": "2026-09-20",
+        "note": "Hakemli dergi DEĞİL: genel okura yönelik bir arkeoloji dergisi, katman bu yüzden \"popüler\". Ama yazarlar prospeksiyonu yürüten ekibin kendisidir ve gazetecilerin \"Gilgameş'in mezarı\" iddiasını açıkça reddettikleri yer burasıdır (s. 25). \"Araştırmacılar ne dedi\" sorusu için birinci ağızdır. Taranmış nüsha okundu; sayfa numaraları dergi dizgisinden."
       }
     ],
     "evidence": [
       {
         "id": "arastirma-ozeti-yapinin-mezar-olarak-yorumlanabilecegini-gil",
-        "text": "Aynı ölçümleri yürüten Fassbinder, 2020'de bütün kampanyaları özetlerken kentin güneyinde, sur dışında geniş bir mezarlık saptandığını bildirir ve Gilgameş'i yalnızca destanın geçtiği yer olarak bir kez anar. Ölçümlerin hiçbirinde bir yapı Gilgameş'in mezarı olarak tanımlanmaz.",
+        "text": "Ölçümü yürüten ekip, eski nehir yatağının içinde ve boyunca mezar olarak yorumlanabilecek bir yapı kalıntısı saptadıklarını, ama yalnız jeofizik sonuçlara dayanarak tarihlendirme yapılamayacağını yazar — ve bunun Gilgameş'in mezarı olduğunun \"hiçbir biçimde kanıtlanmadığını\", üstelik bunu bazı gazetecilerin duyurduğunu açıkça belirtir.",
         "citations": [
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 25 — \"nous avons détecté des restes d'une structure qui peut être interprétée comme une tombe mais pour laquelle on ne peut avancer de datation uniquement d'après les résultats géophysiques. Mais il n'est nullement prouvé, contrairement à ce qu'ont annoncé certains journalistes, qu'elle puisse correspondre à la tombe de Gilgamesh, placée dans le fleuve.\"",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "olcumde-kazilan-mezarlik-kent-disinda-orta-babil-donemine-aittir",
+        "text": "Ölçümlerde saptanıp kazılan mezarlık bundan ayrı bir buluntudur: kentin dışında, Orta Babil dönemine aittir ve gömüler ağızları birbirine yapıştırılmış iki büyük küpten oluşur, çoğunlukla yalnız ölü ile birkaç sade çömlek içerir.",
+        "citations": [
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 24 — \"À l'extérieur de la ville, les vestiges d'un cimetière médio-babylonien ont été repérés par prospection magnétique. Les sépultures fouillées comprenaient deux énormes céramiques funéraires qui étaient accolées l'une à l'autre par leur ouverture\"",
+            "support_type": "direct"
+          },
           {
             "source_ref": "fassbinder-2020-uruk-manyetogram",
             "locator": "Güney kesimi — \"In the south, outside the city, a large burial ground and a huge building complex of the city wall were detected\"",
@@ -3025,6 +3121,17 @@
             "support_type": "claim-origin"
           }
         ]
+      },
+      {
+        "id": "ekibin-kendi-en-sansasyonel-sonucu-kanal-sistemidir",
+        "text": "Ekibin kendi sonuç bölümünde \"en sansasyonel sonuç\" diye andığı şey bir mezar değil, kentin içindeki kanal sisteminin varlığının doğrulanmasıdır.",
+        "citations": [
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "Sonuç, s. 24 — \"Le résultat le plus sensationnel obtenu à Uruk fut la confirmation de l'existence d'un système de canaux à l'intérieur de la ville, et son utilisation comme moyen de transport et de communication.\"",
+            "support_type": "direct"
+          }
+        ]
       }
     ],
     "counter_evidence": [
@@ -3035,6 +3142,11 @@
           {
             "source_ref": "fassbinder-2020-uruk-manyetogram",
             "locator": "Kanal ağı bölümü — 400 metre izlenen ana kanal",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 25 — yapının \"le long et à l'intérieur de l'ancien lit du fleuve\" saptanması; destanda Gilgameş'in mezarı da nehrin içine konur",
             "support_type": "counter"
           }
         ]
@@ -3051,7 +3163,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Ölçüm bir anomali bildirir, haber onu bir nesneye dönüştürür. 2003 jeofizik çalışması Uruk'ta kanal ve yapı izleri saptadı; bildirinin BAŞLIĞI kenti \"Kral Gilgameş'in şehri\" diye anıyor, ama bildiri bir yüzey ölçümü raporudur, mezar tespiti değil. Aynı ölçümleri yürüten araştırmacı 2020'de tüm sonuçları özetlerken kentin güneyinde bir mezarlık bildirir ve Gilgameş'i yalnızca destanın geçtiği yer olarak bir kez anar. Popüler aktarımda \"anomali\" düşer, \"kesin keşif\" kalır.",
+    "divergence": "Ölçümün KENDİ ÇEKİNCESİ duyuruda kayboluyor. Ölçümü yapan ekip, eski nehir yatağının içinde ve boyunca mezar olarak yorumlanabilecek bir yapı kalıntısı saptadığını yazıyor — ve hemen ardından, yalnız jeofizik sonuçlara dayanarak tarihlendirme yapılamayacağını, \"bazı gazetecilerin duyurduğunun aksine\" bunun Gilgameş'in mezarı olduğunun hiçbir biçimde kanıtlanmadığını ekliyor. Popüler aktarımda \"yorumlanabilir\" ve \"kanıtlanmış değil\" düşüyor, \"kesin keşif\" kalıyor. Kalıp tanıdık: ölçüm bir anomali bildirir, haber onu bir nesneye dönüştürür.",
     "divergence_type": [
       "medya-abartisi"
     ]
@@ -3840,6 +3952,24 @@
         "language": "en",
         "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
         "institution": "Deutsches Archäologisches Institut (DAI)"
+      },
+      {
+        "id": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+        "tier": "popular",
+        "type": "article",
+        "title": "Prospections magnétiques à Uruk (Warka): La cité du roi Gilgamesh (Irak)",
+        "authors": [
+          "Fassbinder, Jörg W. E.",
+          "Becker, Helmut",
+          "van Ess, Margarete"
+        ],
+        "year": 2005,
+        "container": "Dossiers d'Archéologie, sayı 308",
+        "pages": "20-25",
+        "publisher": "Éditions Faton",
+        "language": "fr",
+        "accessed": "2026-09-20",
+        "note": "Hakemli dergi DEĞİL: genel okura yönelik bir arkeoloji dergisi, katman bu yüzden \"popüler\". Ama yazarlar prospeksiyonu yürüten ekibin kendisidir ve gazetecilerin \"Gilgameş'in mezarı\" iddiasını açıkça reddettikleri yer burasıdır (s. 25). \"Araştırmacılar ne dedi\" sorusu için birinci ağızdır. Taranmış nüsha okundu; sayfa numaraları dergi dizgisinden."
       }
     ],
     "evidence": [
@@ -3850,6 +3980,11 @@
           {
             "source_ref": "dai-uruk-warka-projesi",
             "locator": "Overview — \"Uruk ... war zwischen ca. 4200 v. Chr. und 300 n. Chr. besiedelt\"; \"die Astronomenschule, die in der Seleukidenzeit (3./2. Jh. v. Chr.) in Uruk forschte\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 21 — \"des tablettes de la période récente de la cité (600-200 av. J.-C.) attestent qu'elle eut un rôle important en tant que centre culturel pour la littérature, l'astronomie et l'astrologie. L'occupation de la ville prit fin au cours de la période sassanide, au IVe siècle ap. J.-C.\"",
             "support_type": "direct"
           }
         ]
