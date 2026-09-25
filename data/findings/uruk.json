@@ -2196,18 +2196,6 @@
     "popular_claim": "Maskenin İnanna olduğu kesin olarak yazılıdır.",
     "sources": [
       {
-        "id": "getty-2017-uruk-ilk-sehir",
-        "tier": "institutional",
-        "title": "Uruk: First City of the Ancient World",
-        "language": "en",
-        "note": "Getty sergi kataloğu. ÖNCEKİ SÜRÜMDE kurum alanına kitabın kendi adı yazılmıştı ve adres bir kitapçı ürün sayfasıydı; ISBN doğrulanıp onun yerine kondu.",
-        "institution": "Getty Publications",
-        "type": "book",
-        "publisher": "Getty Publications",
-        "year": 2017,
-        "isbn": "9781606064443"
-      },
-      {
         "id": "selz-2020-uruk-fenomeni",
         "tier": "peer-reviewed",
         "type": "chapter",
@@ -2223,6 +2211,25 @@
         "pages": "163-244",
         "doi": "10.1093/oso/9780190687854.003.0004",
         "publisher": "Oxford University Press"
+      },
+      {
+        "id": "noldeke-lenzen-1940-uvb-11",
+        "tier": "primary",
+        "type": "report",
+        "title": "Elfter vorläufiger Bericht über die von der Deutschen Forschungsgemeinschaft in Uruk-Warka unternommenen Ausgrabungen",
+        "authors": [
+          "Nöldeke, Arnold",
+          "Lenzen, Heinrich"
+        ],
+        "year": 1940,
+        "container": "Abhandlungen der Preußischen Akademie der Wissenschaften, Jahrgang 1940, Phil.-hist. Klasse, Nr. 3",
+        "publisher": "Verlag der Akademie der Wissenschaften, Berlin",
+        "pages": "36 s. + 40 levha",
+        "doi": "10.1515/9783112505465",
+        "url": "https://commons.library.stonybrook.edu/amar/288/",
+        "language": "de",
+        "accessed": "2026-09-25",
+        "note": "Maskenin bulunduğu 1938/39 kazı sezonunun ön raporu; buluntunun birincil yayını. Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). DOI, De Gruyter'in 2021 yeniden basımına ait. Önsöz A. Nöldeke'nin, \"Die Grabungsergebnisse\" bölümü H. Lenzen'in."
       }
     ],
     "evidence": [
@@ -2234,11 +2241,53 @@
             "source_ref": "selz-2020-uruk-fenomeni",
             "locator": "s. 210 — \"the face of a composite, life-sized image, is most likely the only surviving piece of such a statue\"",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "noldeke-lenzen-1940-uvb-11",
+            "locator": "s. 21 (H. Lenzen) — \"Wir glauben, daß es sich um eine etwa lebensgroße, aus verschiedenem Material zusammengesetzte Statue handelt. Erhalten blieb nur das Gesicht.\" Bileşik, doğal boyutta heykel yorumu 1940'ta kazıcının kendisinden geliyor.",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bas-eanna-kutsal-alaninin-kiyisinda-bir-cukurda-yuzu-asagi-bulundu",
+        "text": "Baş, Eanna kutsal alanının geç dönem kuzeybatı çevre duvarının hemen yanında, erken Cemdet Nasr dönemine ait bir yapının yıkıntı molozuna açılmış bir çukurda, yüzü aşağı dönük olarak bulundu. Kazı numarası W 17878; beyaz mermerden, tepeden çeneye 20,1 cm.",
+        "citations": [
+          {
+            "source_ref": "noldeke-lenzen-1940-uvb-11",
+            "locator": "s. 20 (H. Lenzen) — \"Der Fundort liegt dicht bei der späten Nordwesteinschließung des Eanna-Heiligtums im Planquadrat Ne XIV 5\"; baş çukurun güney köşesinde \"mit dem Gesicht nach unten\" yatıyordu; ölçü \"vom Scheitel bis zum Kinn 20.1 cm\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "noldeke-lenzen-1940-uvb-11",
+            "locator": "s. 19 (H. Lenzen) — \"Es ist der Marmorkopf W 17878 (Tafel 1, Tafel 21, Tafel 32 a, b). Das Original befindet sich in Bagdad.\"",
+            "support_type": "direct"
           }
         ]
       }
     ],
     "counter_evidence": [
+      {
+        "id": "bulan-kazi-ekibi-basi-inanna-ya-da-tanrica-olarak-tanimlamaz",
+        "text": "Başı bulan kazı ekibi onu İnanna ya da bir tanrıça olarak tanımlamaz. 1940 tarihli ilk raporda kazı başkanı ona yalnızca \"kadın başı\" der; bulguları yazan kazıcı ise böyle erken bir dönemde yuvarlak heykelin \"tanrıları ya da insanları\" betimleyebileceğini söyleyerek kimliği açık bırakır. Raporda İnanna'nın adı (o dönem \"Innin\" diye okunuyordu) yalnız sonraki tapınaklar için geçer, başla birlikte hiç geçmez; levha açıklamaları da tarafsızdır: \"mermer baş\". İnanna kimliği sonradan eklenen bir yorum katmanıdır.",
+        "citations": [
+          {
+            "source_ref": "noldeke-lenzen-1940-uvb-11",
+            "locator": "s. 4 (A. Nöldeke, önsöz) — \"der ungewöhnlich schöne weibliche Kopf aus weißem Marmor (W 17878)\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "noldeke-lenzen-1940-uvb-11",
+            "locator": "s. 20 (H. Lenzen) — \"Bildwerke von Göttern oder Menschen in rundplastischer Darstellung sind bisher für so frühe Zeiten außerordentlich selten.\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "noldeke-lenzen-1940-uvb-11",
+            "locator": "s. 34-35 (levha listesi) — \"Tafel 1 Marmorkopf aus der Dschemdet Nasr-Zeit\"; \"Tafel 32 a, b Seitenansichten des Marmorkopfes W 17878\"",
+            "support_type": "counter"
+          }
+        ]
+      },
       {
         "id": "kimligi-veren-yazit-korunmamistir",
         "text": "Kimliği veren bir yazıt yoktur: uzman literatür heykeli \"büyük olasılıkla tanrıçayı betimleyen\" bileşik imgenin yüzü sayar, kesin bir kimlik tespiti yapmaz.",
@@ -2252,8 +2301,7 @@
       }
     ],
     "open_questions": [
-      "Heykelin gövdesi, kakmaları ve özgün sergileme bağlamı nasıldı?",
-      "Maskenin buluntu yeri ve bağlamı (yaygın olarak Eanna, 1939 kazı sezonu deniyor) bu kayıtta henüz kaynaklı değil. Birincil kaynak 1938/39 sezonunun ön raporu: A. Nöldeke ve H. Lenzen, \"Elfter vorläufiger Bericht über die ... in Uruk-Warka unternommenen Ausgrabungen\", Berlin 1940 (UVB 11), DOI 10.1515/9783112505465. Kapalı erişimli olduğu için okunamadı; okunana kadar buluntu yeri kayıtta iddia edilmiyor."
+      "Heykelin gövdesi, kakmaları ve özgün sergileme bağlamı nasıldı?"
     ],
     "checked": "2026-09-10",
     "used_in": [
@@ -2263,7 +2311,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Olasılık yargısı, YAZILI KESİNLİK sanılıyor. Metinsel kaynaklar İnanna'nın heykellerinden söz eder ve Warka Maskesi doğal boyutta bileşik bir imgenin yüzüdür; uzman literatür onu \"büyük olasılıkla\" tanrıçayı betimleyen böyle bir heykelden kalan tek parça sayar. Güçlü aday ile yazılı kesinlik aynı şey değil. Popüler anlatı \"kesin olarak yazılıdır\" diyerek, tam da elimizde olmayan şeyi elimizdeymiş gibi gösteriyor.",
+    "divergence": "Olasılık yargısı, YAZILI KESİNLİK sanılıyor — oysa yazılı olan şey tam tersini söylüyor. Başı 1939'da Eanna kutsal alanının kıyısında bulan kazı ekibi, ilk raporunda ona yalnızca \"kadın başı\" dedi ve kimliği \"tanrılar ya da insanlar\" diye açık bıraktı; İnanna adını başla birlikte hiç anmadı. Doğal boyutta bileşik bir heykelin yüzü olduğu yorumu kazıcının kendisinden geliyor ve bugünkü uzman literatür de başı \"büyük olasılıkla\" tanrıçayı betimleyen böyle bir heykelden kalan tek parça sayıyor. Güçlü aday ile yazılı kesinlik aynı şey değil. Popüler anlatı \"kesin olarak yazılıdır\" diyor; kazı raporunda yazılı olan ise \"kadın başı\".",
     "divergence_type": [
       "provenans-yoklugu",
       "kategori-hatasi"
