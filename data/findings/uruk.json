@@ -42,18 +42,6 @@
     "popular_claim": "Uruk dünyanın tartışmasız ilk şehridir.",
     "sources": [
       {
-        "id": "getty-2017-uruk-ilk-sehir",
-        "tier": "institutional",
-        "title": "Uruk: First City of the Ancient World",
-        "language": "en",
-        "note": "Getty sergi kataloğu. ÖNCEKİ SÜRÜMDE kurum alanına kitabın kendi adı yazılmıştı ve adres bir kitapçı ürün sayfasıydı; ISBN doğrulanıp onun yerine kondu.",
-        "institution": "Getty Publications",
-        "type": "book",
-        "publisher": "Getty Publications",
-        "year": 2017,
-        "isbn": "9781606064443"
-      },
-      {
         "id": "selz-2020-uruk-fenomeni",
         "tier": "peer-reviewed",
         "type": "chapter",
@@ -229,18 +217,6 @@
     ],
     "popular_claim": "Uruk’tan önce şehir yoktu.",
     "sources": [
-      {
-        "id": "getty-2017-uruk-ilk-sehir",
-        "tier": "institutional",
-        "title": "Uruk: First City of the Ancient World",
-        "language": "en",
-        "note": "Getty sergi kataloğu. ÖNCEKİ SÜRÜMDE kurum alanına kitabın kendi adı yazılmıştı ve adres bir kitapçı ürün sayfasıydı; ISBN doğrulanıp onun yerine kondu.",
-        "institution": "Getty Publications",
-        "type": "book",
-        "publisher": "Getty Publications",
-        "year": 2017,
-        "isbn": "9781606064443"
-      },
       {
         "id": "ur-karsgaard-oates-2011-tell-brak-banliyo",
         "tier": "peer-reviewed",
@@ -913,18 +889,6 @@
     ],
     "popular_claim": "Yazıyı tek bir Uruklu bir günde icat etti.",
     "sources": [
-      {
-        "id": "getty-2017-uruk-ilk-sehir",
-        "tier": "institutional",
-        "title": "Uruk: First City of the Ancient World",
-        "language": "en",
-        "note": "Getty sergi kataloğu. ÖNCEKİ SÜRÜMDE kurum alanına kitabın kendi adı yazılmıştı ve adres bir kitapçı ürün sayfasıydı; ISBN doğrulanıp onun yerine kondu.",
-        "institution": "Getty Publications",
-        "type": "book",
-        "publisher": "Getty Publications",
-        "year": 2017,
-        "isbn": "9781606064443"
-      },
       {
         "id": "cdli-p002976-uruk-iv-tableti",
         "tier": "primary",
@@ -2288,7 +2252,8 @@
       }
     ],
     "open_questions": [
-      "Heykelin gövdesi, kakmaları ve özgün sergileme bağlamı nasıldı?"
+      "Heykelin gövdesi, kakmaları ve özgün sergileme bağlamı nasıldı?",
+      "Maskenin buluntu yeri ve bağlamı (yaygın olarak Eanna, 1939 kazı sezonu deniyor) bu kayıtta henüz kaynaklı değil. Birincil kaynak 1938/39 sezonunun ön raporu: A. Nöldeke ve H. Lenzen, \"Elfter vorläufiger Bericht über die ... in Uruk-Warka unternommenen Ausgrabungen\", Berlin 1940 (UVB 11), DOI 10.1515/9783112505465. Kapalı erişimli olduğu için okunamadı; okunana kadar buluntu yeri kayıtta iddia edilmiyor."
     ],
     "checked": "2026-09-10",
     "used_in": [
@@ -3842,18 +3807,6 @@
     ],
     "popular_claim": "Uruk’un kent planı ve yazısı insanüstü teknoloji gerektirir.",
     "sources": [
-      {
-        "id": "getty-2017-uruk-ilk-sehir",
-        "tier": "institutional",
-        "title": "Uruk: First City of the Ancient World",
-        "language": "en",
-        "note": "Getty sergi kataloğu. ÖNCEKİ SÜRÜMDE kurum alanına kitabın kendi adı yazılmıştı ve adres bir kitapçı ürün sayfasıydı; ISBN doğrulanıp onun yerine kondu.",
-        "institution": "Getty Publications",
-        "type": "book",
-        "publisher": "Getty Publications",
-        "year": 2017,
-        "isbn": "9781606064443"
-      },
       {
         "id": "selz-2020-uruk-fenomeni",
         "tier": "peer-reviewed",
