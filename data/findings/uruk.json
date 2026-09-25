@@ -1911,6 +1911,22 @@
         "pages": "163-244",
         "doi": "10.1093/oso/9780190687854.003.0004",
         "publisher": "Oxford University Press"
+      },
+      {
+        "id": "heinrich-1935-uvb-6",
+        "tier": "primary",
+        "type": "report",
+        "title": "Sechster vorläufiger Bericht über die von der Deutschen Forschungsgemeinschaft in Uruk-Warka unternommenen Ausgrabungen",
+        "authors": [
+          "Heinrich, Ernst"
+        ],
+        "year": 1935,
+        "container": "Abhandlungen der Preußischen Akademie der Wissenschaften, Jahrgang 1935, Phil.-hist. Klasse, Nr. 2",
+        "publisher": "Verlag der Akademie der Wissenschaften, Berlin",
+        "url": "https://commons.library.stonybrook.edu/amar/579/",
+        "language": "de",
+        "accessed": "2026-09-25",
+        "note": "Warka Vazosu'nun bulunduğu 1933/34 kazı sezonunun ön raporu; A. Falkenstein'ın katkısıyla. Vazo yalnız geçerken anılır, ayrıntılı tarif ayrı bir yayına bırakılmıştır. Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). AMAR'daki bu tek tarama UVB 6, 7 ve 8'i bir arada içeriyor; nüsha Chicago Üniversitesi Oriental Institute kütüphanesinden."
       }
     ],
     "evidence": [
@@ -1937,6 +1953,11 @@
             "source_ref": "smarthistory-warka-vazosu",
             "locator": "Giriş ve üst kuşak — vazonun 1934'te \"the temple of Inanna, the goddess of love, fertility, and war and the main patron of the city of Uruk\" içinde bir adak birikintisinde bulunması; üst kuşakta kadın figürün arkasındaki \"two reed bundles, symbols of the goddess Inanna\"",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "heinrich-1935-uvb-6",
+            "locator": "s. 13-14 — birincil kaynağa göre vazo Eanna bölgesinde, uzun dikdörtgen bir yapının dışında ve kuzeydoğusunda, kazıcının \"absichtlich niedergelegt\" adaklar saydığı bir toplu buluntunun içinde bulundu. Rapor yapıyı bir tapınak olarak adlandırmıyor; İnanna bağı yapı düzeyinde değil, Eanna bölgesi düzeyinde kurulabilir.",
+            "support_type": "context"
           }
         ]
       }
@@ -2056,6 +2077,41 @@
         "pages": "163-244",
         "doi": "10.1093/oso/9780190687854.003.0004",
         "publisher": "Oxford University Press"
+      },
+      {
+        "id": "heinrich-1935-uvb-6",
+        "tier": "primary",
+        "type": "report",
+        "title": "Sechster vorläufiger Bericht über die von der Deutschen Forschungsgemeinschaft in Uruk-Warka unternommenen Ausgrabungen",
+        "authors": [
+          "Heinrich, Ernst"
+        ],
+        "year": 1935,
+        "container": "Abhandlungen der Preußischen Akademie der Wissenschaften, Jahrgang 1935, Phil.-hist. Klasse, Nr. 2",
+        "publisher": "Verlag der Akademie der Wissenschaften, Berlin",
+        "url": "https://commons.library.stonybrook.edu/amar/579/",
+        "language": "de",
+        "accessed": "2026-09-25",
+        "note": "Warka Vazosu'nun bulunduğu 1933/34 kazı sezonunun ön raporu; A. Falkenstein'ın katkısıyla. Vazo yalnız geçerken anılır, ayrıntılı tarif ayrı bir yayına bırakılmıştır. Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). AMAR'daki bu tek tarama UVB 6, 7 ve 8'i bir arada içeriyor; nüsha Chicago Üniversitesi Oriental Institute kütüphanesinden."
+      },
+      {
+        "id": "noldeke-vd-1937-uvb-8",
+        "tier": "primary",
+        "type": "report",
+        "title": "Achter vorläufiger Bericht über die von der Deutschen Forschungsgemeinschaft in Uruk-Warka unternommenen Ausgrabungen",
+        "authors": [
+          "Nöldeke, Arnold",
+          "von Haller, Arndt",
+          "Lenzen, Heinrich",
+          "Heinrich, Ernst"
+        ],
+        "year": 1937,
+        "container": "Abhandlungen der Preußischen Akademie der Wissenschaften, Jahrgang 1936, Phil.-hist. Klasse, Nr. 13",
+        "publisher": "Verlag der Akademie der Wissenschaften, Berlin",
+        "url": "https://commons.library.stonybrook.edu/amar/579/",
+        "language": "de",
+        "accessed": "2026-09-25",
+        "note": "1935/36 kazı sezonunun ön raporu. Vazoya ilişkin atıf, E. Heinrich'in \"Die Grabung im Planquadrat K XVII\" bölümünden. Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). AMAR'daki bu tek tarama UVB 6, 7 ve 8'i bir arada içeriyor; nüsha Chicago Üniversitesi Oriental Institute kütüphanesinden."
       }
     ],
     "evidence": [
@@ -2071,6 +2127,22 @@
           {
             "source_ref": "smarthistory-warka-vazosu",
             "locator": "Kayıtların tarifi — en altta dalgalı çizgilerden çıkan, dönüşümlü arpa ve saz; üstünde sıra hâlinde koç ve koyunlar; boş bir kuşak; sonra her biri elinde kap taşıyan dokuz çıplak adam; en üstte karşılıklı duran bir kadın ve bir erkek. Nesne künyesi: alabaster, Geç Uruk dönemi (yaklaşık MÖ 3500-3000), 105 cm, Irak Ulusal Müzesi",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "vazoyu-bulan-kazici-onu-kult-vazosu-der-ve-toplu-buluntuyu-adak-sayar",
+        "text": "Vazoyu bulan kazıcı onu \"kült vazosu\" diye adlandırır ve birlikte bulunduğu toplu buluntuyu (taş ve sedef hayvan figürleri, silindir mühürler, süslü taş kaplar, altın ve gümüş parçaları, binlerce boncuk) bilerek bırakılmış adaklar olarak yorumlar. Vazo, Eanna bölgesinde III. katmanın son evresine ait uzun dikdörtgen bir yapının dışında, kuzeydoğusunda bulunmuştur.",
+        "citations": [
+          {
+            "source_ref": "heinrich-1935-uvb-6",
+            "locator": "s. 13 — değerli küçük buluntuların çoğu yapının 240 ve 241 numaralı odalarında; \"einiges, z. B. die im Kurzbericht abgebildete Kultvase aus Alabaster, auch im Nordosten außen vor dem Gebäude\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "heinrich-1935-uvb-6",
+            "locator": "s. 14 — \"Wir glauben, daß es sich um Weihgaben handelt, die absichtlich dort niedergelegt worden sind.\"",
             "support_type": "direct"
           }
         ]
@@ -2135,10 +2207,27 @@
             "support_type": "counter"
           }
         ]
+      },
+      {
+        "id": "kocun-tasidigi-kaidedeki-figurler-heykel-mi-rahip-mi",
+        "text": "Sahnenin ayrıntıları bile okumaya bağlıdır. Koçların sırtındaki basamaklı kaidelerde duran figürleri bugünkü bir anlatım heykel olarak okur ve \"kutsal evlilik\" yorumunun bir adımını, yani kral ile tanrıçanın hem bizzat hem heykelleriyle temsil edildiği fikrini buna dayandırır. Vazoyu bulan ekipten Heinrich ise aynı figürleri kaidenin basamaklarında duran rahipler olarak okumuştu.",
+        "citations": [
+          {
+            "source_ref": "noldeke-vd-1937-uvb-8",
+            "locator": "s. 44 (E. Heinrich) — kutsal hayvanların taşıdığı basamaklı kaideler \"besonders deutlich im obersten Bildstreifen der großen Kultvase aus Schicht III. Dort steht auf jedem Absatz des Podiums ein Priester\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "smarthistory-warka-vazosu",
+            "locator": "Üst kuşak — koçların \"carrying platforms on their backs on which statues stand\"; kutsal evlilik okumasında kral ve tanrıça \"each represented in person as well as in statues\"",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Üst sahnedeki figürlerin kimliği ve ritüelin takvimdeki yeri nedir?"
+      "Üst sahnedeki figürlerin kimliği ve ritüelin takvimdeki yeri nedir?",
+      "Vazonun kazıcı tarafından yapılmış ayrıntılı tarifi ayrı bir yayında: E. Heinrich'in \"Kleinfunde aus den archaischen Tempelschichten\" başlıklı çalışması (UVB 7 bu adla anıyor). Üst kuşaktaki kadın figürüne kazıcının ne dediği bu kayıt için henüz okunamadı. Ön raporların üçünde de (UVB 6, 7, 8) \"Hochzeit\" (evlilik) ya da \"Göttin\" (tanrıça) sözcüğü geçmiyor."
     ],
     "checked": "2026-09-10",
     "used_in": [
