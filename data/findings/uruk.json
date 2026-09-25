@@ -3744,18 +3744,6 @@
     "popular_claim": "Nimrod tarihsel olarak Uruk’un kurucusudur.",
     "sources": [
       {
-        "id": "getty-2017-uruk-ilk-sehir",
-        "tier": "institutional",
-        "title": "Uruk: First City of the Ancient World",
-        "language": "en",
-        "note": "Getty sergi kataloğu. ÖNCEKİ SÜRÜMDE kurum alanına kitabın kendi adı yazılmıştı ve adres bir kitapçı ürün sayfasıydı; ISBN doğrulanıp onun yerine kondu.",
-        "institution": "Getty Publications",
-        "type": "book",
-        "publisher": "Getty Publications",
-        "year": 2017,
-        "isbn": "9781606064443"
-      },
-      {
         "id": "levin-2020-nimrod-sehirleri",
         "tier": "institutional",
         "type": "webpage",
@@ -3768,6 +3756,34 @@
           "Levin, Yigal"
         ],
         "year": 2020
+      },
+      {
+        "id": "dai-uruk-warka-projesi",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Uruk (Warka) — DAI kazı ve araştırma projesi",
+        "url": "https://www.dainst.org/en/research/projects/noslug/2604",
+        "language": "en",
+        "note": "1912'den beri süren kazılar, alan araştırmaları ve güncel dijital belgeleme için kurumsal proje sayfası. Kazı raporu değildir.",
+        "institution": "Deutsches Archäologisches Institut (DAI)"
+      },
+      {
+        "id": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+        "tier": "popular",
+        "type": "article",
+        "title": "Prospections magnétiques à Uruk (Warka): La cité du roi Gilgamesh (Irak)",
+        "authors": [
+          "Fassbinder, Jörg W. E.",
+          "Becker, Helmut",
+          "van Ess, Margarete"
+        ],
+        "year": 2005,
+        "container": "Dossiers d'Archéologie, sayı 308",
+        "pages": "20-25",
+        "publisher": "Éditions Faton",
+        "language": "fr",
+        "accessed": "2026-09-20",
+        "note": "Hakemli dergi DEĞİL: genel okura yönelik bir arkeoloji dergisi, katman bu yüzden \"popüler\". Ama yazarlar prospeksiyonu yürüten ekibin kendisidir ve gazetecilerin \"Gilgameş'in mezarı\" iddiasını açıkça reddettikleri yer burasıdır (s. 25). \"Araştırmacılar ne dedi\" sorusu için birinci ağızdır. Taranmış nüsha okundu; sayfa numaraları dergi dizgisinden."
       }
     ],
     "evidence": [
@@ -3778,6 +3794,16 @@
           {
             "source_ref": "levin-2020-nimrod-sehirleri",
             "locator": "Nimrod bölümü — Tekvin 10 soybilimsel çerçevesi",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "dai-uruk-warka-projesi",
+            "locator": "Overview — \"Die älteste Ansiedlung bestand aus mehreren Dörfern nahe des für den Südirak typischen Sumpflandes. Bereits im 4. Jt. v. Chr. wuchsen sie zu einer Stadt von ca. 2,5 km² zusammen\"; kent yaklaşık MÖ 4200'den itibaren iskân ediliyor",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 20 — \"L'ancienne cité d'Uruk se développa à partir d'un petit établissement du Ve millénaire av. J.-C.\"",
             "support_type": "direct"
           }
         ]
@@ -3791,6 +3817,16 @@
           {
             "source_ref": "levin-2020-nimrod-sehirleri",
             "locator": "Erech bölümü — Uruk ile özdeşleştirme",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "dai-uruk-warka-projesi",
+            "locator": "Overview — \"Uruk (arabisch al-Warka, sumerisch Unug, alttestamentlich Erech, griechisch-römisch Orchoi)\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "fassbinder-becker-vaness-2005-uruk-prospeksiyon",
+            "locator": "s. 20 — \"Uruk, la moderne Warka, l'Érech de la Bible\"",
             "support_type": "counter"
           }
         ]
