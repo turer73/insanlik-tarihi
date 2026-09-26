@@ -1927,6 +1927,23 @@
         "language": "de",
         "accessed": "2026-09-25",
         "note": "Warka Vazosu'nun bulunduğu 1933/34 kazı sezonunun ön raporu; A. Falkenstein'ın katkısıyla. Vazo yalnız geçerken anılır, ayrıntılı tarif ayrı bir yayına bırakılmıştır. Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). AMAR'daki bu tek tarama UVB 6, 7 ve 8'i bir arada içeriyor; nüsha Chicago Üniversitesi Oriental Institute kütüphanesinden."
+      },
+      {
+        "id": "heinrich-1936-kleinfunde",
+        "tier": "primary",
+        "type": "book",
+        "title": "Kleinfunde aus den archaischen Tempelschichten in Uruk",
+        "authors": [
+          "Heinrich, Ernst"
+        ],
+        "year": 1936,
+        "container": "Ausgrabungen der Deutschen Forschungsgemeinschaft in Uruk-Warka, Band 1",
+        "publisher": "Deutsche Forschungsgemeinschaft, Berlin; Kommissionsverlag Otto Harrassowitz, Leipzig",
+        "pages": "54 s. + 38 levha",
+        "url": "https://commons.library.stonybrook.edu/amar/308/",
+        "language": "de",
+        "accessed": "2026-09-26",
+        "note": "Warka Vazosu'nun (W 14873) ve birlikte bulunduğu toplu buluntunun kazıcı tarafından yapılmış ayrıntılı yayını; M. Hilzheimer'ın katkısıyla. Stony Brook Üniversitesi'nin AMAR arşivindeki taramadan okundu (ticari olmayan kullanıma açık). Aynı yayına göre vazo antik çağda, henüz kullanılırken kırılıp bakır şeritlerle onarılmış; alt kuşak ise parçalar Bağdat'ta birleştirilirken W. König tarafından tamamlanmış (s. 15)."
       }
     ],
     "evidence": [
@@ -1958,6 +1975,11 @@
             "source_ref": "heinrich-1935-uvb-6",
             "locator": "s. 13-14 — birincil kaynağa göre vazo Eanna bölgesinde, uzun dikdörtgen bir yapının dışında ve kuzeydoğusunda, kazıcının \"absichtlich niedergelegt\" adaklar saydığı bir toplu buluntunun içinde bulundu. Rapor yapıyı bir tapınak olarak adlandırmıyor; İnanna bağı yapı düzeyinde değil, Eanna bölgesi düzeyinde kurulabilir.",
             "support_type": "context"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 11 — kamış demeti simgesi \"verkörpert die Göttin Innin. Demnach war der Eanna-Bezirk von seinem Beginn an, so wie in historischer Zeit, dieser Göttin geweiht, und zwar anscheinend ihr allein\"",
+            "support_type": "direct"
           }
         ]
       }
@@ -1976,6 +1998,11 @@
             "source_ref": "smarthistory-warka-vazosu",
             "locator": "Üst kuşak — kadın figürün tanrıçayı temsil ettiğinin \"it is assumed\" diye yazılması; figürü adlandıran bir yazıt yok",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 11 — bu dönemde \"die Gottheit nie handelnd in menschlicher Gestalt, sondern stets in Form eines Symbols erscheint\"; simgenin yanındaki kadın figürler bu yüzden daha çok tanrıçanın rahibesi olabilir",
+            "support_type": "counter"
           }
         ]
       }
@@ -2112,6 +2139,23 @@
         "language": "de",
         "accessed": "2026-09-25",
         "note": "1935/36 kazı sezonunun ön raporu. Vazoya ilişkin atıf, E. Heinrich'in \"Die Grabung im Planquadrat K XVII\" bölümünden. Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). AMAR'daki bu tek tarama UVB 6, 7 ve 8'i bir arada içeriyor; nüsha Chicago Üniversitesi Oriental Institute kütüphanesinden."
+      },
+      {
+        "id": "heinrich-1936-kleinfunde",
+        "tier": "primary",
+        "type": "book",
+        "title": "Kleinfunde aus den archaischen Tempelschichten in Uruk",
+        "authors": [
+          "Heinrich, Ernst"
+        ],
+        "year": 1936,
+        "container": "Ausgrabungen der Deutschen Forschungsgemeinschaft in Uruk-Warka, Band 1",
+        "publisher": "Deutsche Forschungsgemeinschaft, Berlin; Kommissionsverlag Otto Harrassowitz, Leipzig",
+        "pages": "54 s. + 38 levha",
+        "url": "https://commons.library.stonybrook.edu/amar/308/",
+        "language": "de",
+        "accessed": "2026-09-26",
+        "note": "Warka Vazosu'nun (W 14873) ve birlikte bulunduğu toplu buluntunun kazıcı tarafından yapılmış ayrıntılı yayını; M. Hilzheimer'ın katkısıyla. Stony Brook Üniversitesi'nin AMAR arşivindeki taramadan okundu (ticari olmayan kullanıma açık). Aynı yayına göre vazo antik çağda, henüz kullanılırken kırılıp bakır şeritlerle onarılmış; alt kuşak ise parçalar Bağdat'ta birleştirilirken W. König tarafından tamamlanmış (s. 15)."
       }
     ],
     "evidence": [
@@ -2133,7 +2177,7 @@
       },
       {
         "id": "vazoyu-bulan-kazici-onu-kult-vazosu-der-ve-toplu-buluntuyu-adak-sayar",
-        "text": "Vazoyu bulan kazıcı onu \"kült vazosu\" diye adlandırır ve birlikte bulunduğu toplu buluntuyu (taş ve sedef hayvan figürleri, silindir mühürler, süslü taş kaplar, altın ve gümüş parçaları, binlerce boncuk) bilerek bırakılmış adaklar olarak yorumlar. Vazo, Eanna bölgesinde III. katmanın son evresine ait uzun dikdörtgen bir yapının dışında, kuzeydoğusunda bulunmuştur.",
+        "text": "Vazoyu bulan kazıcı onu \"kült vazosu\" diye adlandırır ve birlikte bulunduğu toplu buluntuyu (taş ve sedef hayvan figürleri, silindir mühürler, süslü taş kaplar, altın ve gümüş parçaları, binlerce boncuk) bilerek bırakılmış adaklar olarak yorumlar. Vazo, Eanna bölgesinde III. katmanın son evresine ait uzun dikdörtgen bir yapının dışında, kuzeydoğusunda bulunmuştur. Kazıcının sahneye okuması da bir bağıştır: üç kuşak birlikte \"Eanna tapınağına yapılan bir bağışı anlatıyor gibi\" görünür.",
         "citations": [
           {
             "source_ref": "heinrich-1935-uvb-6",
@@ -2143,6 +2187,11 @@
           {
             "source_ref": "heinrich-1935-uvb-6",
             "locator": "s. 14 — \"Wir glauben, daß es sich um Weihgaben handelt, die absichtlich dort niedergelegt worden sind.\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 16 — \"Die Reliefs der drei Bildstreifen gehören offensichtlich inhaltlich eng zusammen, und zwar scheinen sie von einer Schenkung an den Tempel Eanna zu erzählen.\"",
             "support_type": "direct"
           }
         ]
@@ -2167,6 +2216,11 @@
             "source_ref": "britishmuseum-116722-silindir-muhur",
             "locator": "Nesne tanımı — Geç Uruk silindir mühründeki rahip-kral ve sunu sahnesi. Vazodaki kral figürünün yeniden kurulması tam da bu tür mühürlere dayanır; mühür vazonun kanıtı değil, eksik kısmın DOLDURULDUĞU örnektir.",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 15-16 — \"Eine Figur des obersten Bildstreifens ... [ist] uns verloren\"; alayın başındaki \"Hauptperson\"dan \"nur ein Fuß, ein Teil des Gewandes und der lange geflochtene oder gewebte Gürtel mit zwei großen Quasten am Ende erhalten\"",
+            "support_type": "counter"
           }
         ]
       },
@@ -2183,6 +2237,21 @@
             "source_ref": "smarthistory-warka-vazosu",
             "locator": "Üst kuşak — kadın figürün arkasındaki iki kamış demeti İnanna'nın simgesi sayılıyor ve kadının tanrıçayı temsil ettiği \"it is assumed\" (varsayılıyor) diye yazılıyor; başındaki taç antik çağda kırılıp onarılmış",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 16 — kadın, hediyeleri alan kişi olarak işaretlenmiştir, \"ganz gleich, ob man sie als die Gottheit selbst oder nur als ihre Vertreterin, also ihre Priesterin auffassen will\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 11 — tanrıça bu dönemde insan biçiminde değil yalnız kamış demeti simgesiyle görünür; \"Die verdoppelte Darstellung der Göttin als Menschenwesen und als Symbol wäre unwahrscheinlich. Eher könnte die irdische Vertreterin der Gottheit, ihre Priesterin, gemeint sein\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 12 — kadının iki uçlu başlığı sonraki dönemin tanrı işareti olan boynuzlu taçtan \"sehr verschieden\"",
+            "support_type": "counter"
           }
         ]
       },
@@ -2205,16 +2274,31 @@
             "source_ref": "smarthistory-warka-vazosu",
             "locator": "Yorum bölümü — \"The simplest way to interpret it is that a king (presumably of Uruk) is celebrating Inanna\"; ardından \"A more detailed reading of the scene suggests a sacred marriage\"",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 11, 2 numaralı dipnot — daha 1930'larda okumalar ayrışıyordu: E. Douglas van Buren sahnelerdeki öne çıkan erkek figürü (vazo dahil) bir tanrı sayıyordu, Heinrich ise kral",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "kocun-tasidigi-kaidedeki-figurler-heykel-mi-rahip-mi",
-        "text": "Sahnenin ayrıntıları bile okumaya bağlıdır. Koçların sırtındaki basamaklı kaidelerde duran figürleri bugünkü bir anlatım heykel olarak okur ve \"kutsal evlilik\" yorumunun bir adımını, yani kral ile tanrıçanın hem bizzat hem heykelleriyle temsil edildiği fikrini buna dayandırır. Vazoyu bulan ekipten Heinrich ise aynı figürleri kaidenin basamaklarında duran rahipler olarak okumuştu.",
+        "text": "Sahnenin ayrıntıları bile okumaya bağlıdır. Koçların sırtındaki basamaklı kaidede duran iki figürü bugünkü bir anlatım kral ile tanrıçanın heykelleri olarak okur ve \"kutsal evlilik\" yorumunun bir adımını, yani ikisinin hem bizzat hem heykelleriyle temsil edildiği fikrini buna dayandırır. Vazoyu bulan kazıcı da bu grubu somut bir nesne, bir heykel grubu olarak düşünür; ama iki figürü de açıkça erkek diye tarif eder, onları rahip sayar ve kabartmalarda bir tanrı heykeli olarak yorumlanabilecek hiçbir şey bulunmadığını yazar. İki okumayı ayıran, figürlerin heykel olup olmadığı değil, kim oldukları.",
         "citations": [
           {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 16 — kaidenin iki basamağında da \"steht, nach vorn gewandt, die Figur eines Mannes\"; biri EN işaretini tutuyor; grup \"durchaus gegenständlich gedacht\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "heinrich-1936-kleinfunde",
+            "locator": "s. 12 — \"so finden sich auf dem Kultgefäß zwei Priesterfiguren abgebildet. Sie stehen auf dem Postament, welches das Widderpaar auf dem Rücken trägt\"; \"Jedenfalls zeigen uns auch die Reliefs bestimmt nichts, was als Abbildung einer Götterstatue gedeutet werden dürfte.\"",
+            "support_type": "counter"
+          },
+          {
             "source_ref": "noldeke-vd-1937-uvb-8",
-            "locator": "s. 44 (E. Heinrich) — kutsal hayvanların taşıdığı basamaklı kaideler \"besonders deutlich im obersten Bildstreifen der großen Kultvase aus Schicht III. Dort steht auf jedem Absatz des Podiums ein Priester\"",
+            "locator": "s. 44 (E. Heinrich) — \"Dort steht auf jedem Absatz des Podiums ein Priester\"",
             "support_type": "counter"
           },
           {
@@ -2226,8 +2310,7 @@
       }
     ],
     "open_questions": [
-      "Üst sahnedeki figürlerin kimliği ve ritüelin takvimdeki yeri nedir?",
-      "Vazonun kazıcı tarafından yapılmış ayrıntılı tarifi ayrı bir yayında: E. Heinrich'in \"Kleinfunde aus den archaischen Tempelschichten\" başlıklı çalışması (UVB 7 bu adla anıyor). Üst kuşaktaki kadın figürüne kazıcının ne dediği bu kayıt için henüz okunamadı. Ön raporların üçünde de (UVB 6, 7, 8) \"Hochzeit\" (evlilik) ya da \"Göttin\" (tanrıça) sözcüğü geçmiyor."
+      "Üst sahnedeki figürlerin kimliği ve ritüelin takvimdeki yeri nedir?"
     ],
     "checked": "2026-09-10",
     "used_in": [
@@ -2237,7 +2320,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Bir SAHNE, bir OLAY KAYDI gibi okunuyor — üstelik sahnenin can alıcı yarısı korunmuş bile değil. Vazoda su, bitki, hayvan ve sunu taşıyan insanlar var; en üstte kamış demetlerinin önünde duran bir kadın figüre sunu sunuluyor. Ama kadının İnanna olduğu VARSAYILIYOR, ve karşısındaki kral figürü neredeyse bütünüyle kırık: onu \"kral\" yapan şey vazo değil, çağdaş silindir mühürlerdeki benzer giysili figürlerden yapılan yeniden kurma. Uzman anlatımda en basit okuma \"bir kral İnanna'yı onurlandırıyor\"dur; \"kutsal evlilik\" bunun üstüne eklenen daha ayrıntılı bir yorumdur ve sahneyi bir \"dinî drama\" sayan okuma da hâlâ güçlüdür. \"Belirli bir kral ile İnanna'nın evliliğini fotoğraf gibi kaydeder\" cümlesi, kırık bir taştan kimlik, olay ve nikâh üretiyor.",
+    "divergence": "Bir SAHNE, bir OLAY KAYDI gibi okunuyor — üstelik sahnenin can alıcı yarısı korunmuş bile değil. Vazoda su, bitki, hayvan ve sunu taşıyan insanlar var; en üstte kamış demetlerinin önünde duran bir kadın figüre sunu sunuluyor. Vazoyu 1933/34 kazı sezonunda bulan kazıcı sahneyi bir kutsal evlilik olarak değil, Eanna tapınağına yapılan bir BAĞIŞ olarak okudu; kadının tanrıçanın kendisi mi rahibesi mi olduğunu açık bıraktı ve rahibeden yana durdu, çünkü tanrıça bu dönemde insan biçiminde değil yalnız kamış demeti simgesiyle gösteriliyordu. Karşısındaki kral figürü neredeyse bütünüyle kırık; onu \"kral\" yapan şey vazo değil, çağdaş mühürlerden yapılan yeniden kurma. \"Kutsal evlilik\" okuması kazı yayınında yok; bugün de en basit okumanın üstüne eklenen daha ayrıntılı bir yorum olarak sunuluyor ve sahneyi bir \"dinî drama\" sayan okuma da hâlâ güçlü. \"Belirli bir kral ile İnanna'nın evliliğini fotoğraf gibi kaydeder\" cümlesi, kırık bir taştan kimlik, olay ve nikâh üretiyor.",
     "divergence_type": [
       "kategori-hatasi"
     ]
