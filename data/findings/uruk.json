@@ -676,6 +676,25 @@
         "language": "tr",
         "accessed": "2026-09-10",
         "note": "Türkçe haber kaynağı; Uruk dönemi kült alanı duyurusu. Eanna-Anu ayrımının birincil dayanağı değil, çevre buluntu bağlamı."
+      },
+      {
+        "id": "noldeke-vd-1937-uvb-8",
+        "tier": "primary",
+        "type": "report",
+        "title": "Achter vorläufiger Bericht über die von der Deutschen Forschungsgemeinschaft in Uruk-Warka unternommenen Ausgrabungen",
+        "authors": [
+          "Nöldeke, Arnold",
+          "von Haller, Arndt",
+          "Lenzen, Heinrich",
+          "Heinrich, Ernst"
+        ],
+        "year": 1937,
+        "container": "Abhandlungen der Preußischen Akademie der Wissenschaften, Jahrgang 1936, Phil.-hist. Klasse, Nr. 13",
+        "publisher": "Verlag der Akademie der Wissenschaften, Berlin",
+        "url": "https://commons.library.stonybrook.edu/amar/579/",
+        "language": "de",
+        "accessed": "2026-09-25",
+        "note": "1935/36 kazı sezonunun ön raporu. Beyaz Tapınak ve yanındaki zigguratın kazısı E. Heinrich'in \"Die Grabung im Planquadrat K XVII\" bölümünde (s. 27-56); Warka Vazosu'na ilişkin atıf da aynı bölümden (s. 44). Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). AMAR'daki bu tek tarama UVB 6, 7 ve 8'i bir arada içeriyor; nüsha Chicago Üniversitesi Oriental Institute kütüphanesinden."
       }
     ],
     "evidence": [
@@ -691,6 +710,11 @@
           {
             "source_ref": "dai-uruk-warka-projesi",
             "locator": "Overview — \"Rekonstruktion der Eanna-Zikkurrat, erbaut von Urnamma (21. Jh. v. Chr.)\"; Uruk'un İnanna/İştar'ın \"überregional wichtige Kultzentrum\"u olarak anılması",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "noldeke-vd-1937-uvb-8",
+            "locator": "s. 27-28 (E. Heinrich) — yaklaşık 12 m yüksekliğinde bir teras üzerinde yüksek bir tapınağın kalıntıları; \"fast genau unter dem Weißen Tempel\" iki eski yüksek tapınağın (D ve E) temel duvarları, planları Beyaz Tapınak'ınkinden çok az farklı",
             "support_type": "direct"
           }
         ]
@@ -710,6 +734,32 @@
             "source_ref": "arkeofili-uruk-kult-alani",
             "locator": "Haber gövdesi — \"Mimari üslubu, resmi bir yapı olduğuna ve MUHTEMELEN bir kült mekânı ya da tapınak olarak kullanıldığına işaret ediyor\" ve \"bu yapının anıtsal niteliği DOĞRULANIRSA\". Örnek Uruk'tan değil, Kani Shaie'den (Süleymaniye); işlevin mimari üsluptan çıkarılması kalıbını gösteriyor.",
             "support_type": "context"
+          },
+          {
+            "source_ref": "noldeke-vd-1937-uvb-8",
+            "locator": "s. 27 (E. Heinrich) — yapı \"wegen seines weißen Wandanstrichs den Namen »Weißer Tempel« erhielt\"; yaşı ve türü, planının Eanna'daki V. katman tapınağının planıyla \"eng verwandt\" olmasından çıkarıldı",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "noldeke-vd-1937-uvb-8",
+            "locator": "s. 47 (E. Heinrich) — zigguratın Anu'ya atfı sonraki Anu tapınağına yakınlığından: \"Diese Vermutung hat viel Wahrscheinlichkeit für sich, jedoch hat die Grabung keinen Anhaltspunkt dafür gegeben\"; yerin Anu'ya kutsal olduğu yalnız Seleukos ve Yeni Babil dönemleri için kanıtlanabiliyor; \"Ich habe deshalb vorläufig vermieden, den Ausdruck Anu-Zikurrat anzuwenden.\"",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "noldeke-vd-1937-uvb-8",
+            "locator": "s. 43-44 (E. Heinrich) — tapınaktaki alçak basamaklı kaide için \"Ein Götterbild hat darauf sicher nicht gestanden\"; bir sunak olduğu, alt basamaktaki yanık izlerinden çıkarılıyor. İşlev yazıttan değil, fiziksel izden okunuyor.",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "ziggurattaki-tek-yazit-asarhaddon-donemine-ait",
+        "text": "Beyaz Tapınak'ın bulunduğu zigguratta ele geçen tek yazıt, Yeni Asur kralı Asarhaddon'un dönemine (MÖ 7. yüzyıl) aittir; arkaik yapıları değil, zigguratın sonradan örülen bir dış kaplamasını tarihler. Kazıcı, açığa çıkan her tuğlayı incelettiği halde başka yazıt bulamadığını yazar ve bu tek yazıta dayanarak zigguratın kime ait olduğuna hükmedilmemesi gerektiğini ekler.",
+        "citations": [
+          {
+            "source_ref": "noldeke-vd-1937-uvb-8",
+            "locator": "s. 54 (E. Heinrich) — dış kaplama \"datiert durch einen Ziegel mit geschriebener Inschrift\"; \"Weitere Inschriften sind nicht gefunden, obwohl ich jeden freigelegten Ziegel daraufhin untersuchen ließ\"; yazıt Asarhaddon adına; \"Dagegen wird man nicht etwa auf Grund der Inschrift anzunehmen brauchen, daß die Zikurrat in K XVII dem Eanna-Bezirk zuzurechnen ist\"",
+            "support_type": "counter"
           }
         ]
       }
@@ -725,7 +775,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Yapıların adları KAZI SONRASI verilmiştir: ‘tapınak’, ‘saray’, ‘idare binası’ nitelemeleri çoğu kez sonraki dönemlerin kült bilgisinden ve mimari benzetmeden türetilir, çağdaş bir yazıttan değil. Yani elimizde kesin olan şey terası, salonu, avlusu ve nişli cephesi belgelenmiş anıtsal yapılardır; onların NE İÇİN kullanıldığı çıkarımdır. Adın kesinliği, işlevin kesinliği sanılıyor.",
+    "divergence": "Yapıların adları KAZI SONRASI verilmiştir: \"tapınak\", \"saray\", \"idare binası\" nitelemeleri çoğu kez sonraki dönemlerin kült bilgisinden ve mimari benzetmeden türetilir, çağdaş bir yazıttan değil. Bunu en açık söyleyen, yapıları kazanların kendisi: Beyaz Tapınak adını beyaz duvar boyasından aldı, tapınak olduğu Eanna'daki bir başka yapıyla plan benzerliğinden çıkarıldı; zigguratı kazan arkeolog \"Anu\" atfının kazıda hiçbir dayanağı olmadığını yazıp \"Anu zigguratı\" demekten kaçındı. Yani elimizde kesin olan şey terası, salonu, avlusu ve nişli cephesi belgelenmiş anıtsal yapılardır; onların NE İÇİN kullanıldığı ve KİME adandığı çıkarımdır. Adın kesinliği, işlevin kesinliği sanılıyor.",
     "divergence_type": [
       "kategori-hatasi"
     ]
@@ -2138,7 +2188,7 @@
         "url": "https://commons.library.stonybrook.edu/amar/579/",
         "language": "de",
         "accessed": "2026-09-25",
-        "note": "1935/36 kazı sezonunun ön raporu. Vazoya ilişkin atıf, E. Heinrich'in \"Die Grabung im Planquadrat K XVII\" bölümünden. Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). AMAR'daki bu tek tarama UVB 6, 7 ve 8'i bir arada içeriyor; nüsha Chicago Üniversitesi Oriental Institute kütüphanesinden."
+        "note": "1935/36 kazı sezonunun ön raporu. Beyaz Tapınak ve yanındaki zigguratın kazısı E. Heinrich'in \"Die Grabung im Planquadrat K XVII\" bölümünde (s. 27-56); Warka Vazosu'na ilişkin atıf da aynı bölümden (s. 44). Stony Brook Üniversitesi'nin Archive of Mesopotamian Archaeological Reports (AMAR) taramasından okundu (ticari olmayan kullanıma açık). AMAR'daki bu tek tarama UVB 6, 7 ve 8'i bir arada içeriyor; nüsha Chicago Üniversitesi Oriental Institute kütüphanesinden."
       },
       {
         "id": "heinrich-1936-kleinfunde",
