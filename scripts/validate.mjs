@@ -18,8 +18,9 @@ import {
   readdirSync,
   statSync,
 } from "node:fs";
-import { extname, join, resolve, dirname } from "node:path";
+import { extname, join, resolve, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
+import { gucluMu, yerTutucuMu } from "./lib/locator.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DEFAULT_DATA = join(ROOT, "data", "findings");
@@ -29,9 +30,8 @@ const ARTICLES_PATH = join(ROOT, "data", "articles.json");
 const args = process.argv.slice(2);
 const strict = args.includes("--strict");
 
-// Üretim betiklerinin bıraktığı yer tutucu locator. Gerçek bir "kaynağın
-// neresi" cevabı değil; kaynağın açılmadığını söyler.
-const TURETILMIS_LOCATOR = /paket notundan türetildi|^ilgili bölüm$/i;
+// Locator ölçümü scripts/lib/locator.mjs içinde: yer tutucu (kaynakta bir yer
+// değil) ile zayıf (sayfa, alıntı ya da katalog kimliği yok) ayrı sayılır.
 const inputArgs = args.filter((arg) => !arg.startsWith("--"));
 const schema = JSON.parse(readFileSync(SCHEMA_PATH, "utf8"));
 
@@ -272,6 +272,8 @@ let citations = 0;
 let sourcesWithoutId = 0;
 let uncitedSources = 0;
 let derivedLocators = 0;
+let weakLocators = 0;
+const weakByFile = new Map();
 
 for (const record of all) {
   const version = record.schema_version ?? 1;
@@ -334,10 +336,18 @@ for (const record of all) {
         citations += 1;
         const citationPath = `${itemPath}.citations[${citationIndex}]`;
         if (citation.source_ref) citedSourceIds.add(citation.source_ref);
-        if (TURETILMIS_LOCATOR.test(String(citation.locator ?? "").trim())) {
+        if (yerTutucuMu(citation.locator)) {
           derivedLocators += 1;
           warnings.push(`${citationPath}.locator: yer tutucu ('${citation.locator}') — kaynağın neresi okundu belirtilmemiş`);
         }
+        const dosya = basename(record.__file);
+        const sayim = weakByFile.get(dosya) ?? { zayif: 0, toplam: 0 };
+        sayim.toplam += 1;
+        if (!gucluMu(citation.locator)) {
+          weakLocators += 1;
+          sayim.zayif += 1;
+        }
+        weakByFile.set(dosya, sayim);
         if (!sourceIds.has(citation.source_ref)) {
           errors.push(`${citationPath}.source_ref: '${citation.source_ref}' sources içinde bulunamadı`);
         }
@@ -416,6 +426,12 @@ console.log(`Kayıt: ${all.length}   Dosya: ${new Set(all.map((record) => record
 console.log(`Şema v2: ${v2Records}/${all.length}   Bağlı kanıt: ${linkedEvidenceItems}   Atıf: ${citations}`);
 console.log(`Geçiş borcu: ${legacyEvidenceItems} eski kanıt satırı · ${sourcesWithoutId} kimliksiz kaynak\n`);
 console.log(`Türetilmiş locator: ${derivedLocators} — kaynağın neresi okundu yazılmamış`);
+console.log(`Zayıf locator: ${weakLocators} / ${citations} — sayfa, satır, alıntı ya da katalog kimliği yok`);
+for (const [dosya, sayim] of [...weakByFile].sort((a, b) => b[1].zayif - a[1].zayif)) {
+  if (!sayim.zayif) continue;
+  const oran = Math.round((sayim.zayif / sayim.toplam) * 100);
+  console.log(`  ${dosya.replace(/\.json$/, "").padEnd(18)} ${String(sayim.zayif).padStart(4)} / ${String(sayim.toplam).padEnd(4)} %${oran}`);
+}
 console.log(`Atıfsız kaynak bağlantısı: ${uncitedSources} — kayda eklenmiş ama hiçbir kanıt maddesinin göstermediği\n`);
 
 if (all.length) {
