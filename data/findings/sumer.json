@@ -764,12 +764,12 @@
           {
             "source_ref": "kramer-1952-ur-nammu-yasalari",
             "locator": "1952 yayınında okunabilen kısım",
-            "support_type": "direct"
+            "support_type": "counter"
           },
           {
             "source_ref": "molina-2026-ur-namma-hukuk-pratigi",
             "locator": "s. 266 — \"In all, 96 laws are currently preserved\"",
-            "support_type": "direct"
+            "support_type": "counter"
           }
         ]
       },

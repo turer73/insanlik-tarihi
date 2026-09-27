@@ -2047,7 +2047,7 @@
           {
             "source_ref": "smarthistory-warka-vazosu",
             "locator": "Üst kuşak — kadın figürün tanrıçayı temsil ettiğinin \"it is assumed\" diye yazılması; figürü adlandıran bir yazıt yok",
-            "support_type": "direct"
+            "support_type": "counter"
           },
           {
             "source_ref": "heinrich-1936-kleinfunde",
@@ -2281,12 +2281,12 @@
           {
             "source_ref": "selz-2020-uruk-fenomeni",
             "locator": "s. 211 — \"Whether the female is a priestess or the goddess Inana herself has been much debated\". Tartışmanın sürüyor olması, figürü adlandıran bir yazıt bulunmadığının göstergesidir.",
-            "support_type": "inference"
+            "support_type": "counter"
           },
           {
             "source_ref": "smarthistory-warka-vazosu",
             "locator": "Üst kuşak — kadın figürün arkasındaki iki kamış demeti İnanna'nın simgesi sayılıyor ve kadının tanrıçayı temsil ettiği \"it is assumed\" (varsayılıyor) diye yazılıyor; başındaki taç antik çağda kırılıp onarılmış",
-            "support_type": "direct"
+            "support_type": "counter"
           },
           {
             "source_ref": "heinrich-1936-kleinfunde",
@@ -2517,7 +2517,7 @@
           {
             "source_ref": "selz-2020-uruk-fenomeni",
             "locator": "s. 177 — \"was certainly part of a composite image that probably depicted the goddess\"",
-            "support_type": "inference"
+            "support_type": "counter"
           }
         ]
       }
@@ -3045,7 +3045,7 @@
           {
             "source_ref": "jimenez-2025-gilgamis-maddesi",
             "locator": "Özet — \"It is unknown whether he was a historical figure\"",
-            "support_type": "direct"
+            "support_type": "counter"
           }
         ]
       },
@@ -3061,7 +3061,7 @@
           {
             "source_ref": "jimenez-2025-gilgamis-maddesi",
             "locator": "Özet — en erken anlatılar beş Sumerce öykü, \"possibly written at the end of the third millennium bce, known in manuscripts dating to the early second millennium bce\"; 1. binyıl \"kanonik\" sürümü Sîn-lēqi-unninni'ye atfediliyor",
-            "support_type": "direct"
+            "support_type": "counter"
           }
         ]
       }
