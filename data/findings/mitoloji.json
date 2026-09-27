@@ -300,22 +300,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "cin-ornegi-kaynaksiz",
-        "text": "Çin ejderhasının TERS değeri (yağmur getiren, iyicil figür) bu kayıtta ayrı bir kaynağa bağlanmadı; karşı örnek genel bilgi olarak alınmıştır.",
-        "citations": [
-          {
-            "source_ref": "west-2007-indo-european-poetry-myth",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "West 2007 eklendi - motifin Hint-Avrupa rekonstrüksiyonunun standart dayanağı. Çin karşı örneğinin kaynaksız olduğu işaretlendi."
+      "notes": "West 2007 eklendi - motifin Hint-Avrupa rekonstrüksiyonunun standart dayanağı. Çin karşı örneğinin kaynaksız olduğu işaretlendi. Çin ejderhasının TERS değeri (yağmur getiren, iyicil figür) bu kayıtta ayrı bir kaynağa bağlanmadı; karşı örnek genel bilgi olarak alınmıştır."
     }
   },
   {
@@ -830,17 +819,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "tam-metin-okunmadi",
-        "text": "Bu kayıttaki itirazların ayrıntısı değerlendirmenin TAM METNİNDEN değil, kaydın önceki sürümünden devralınmıştır. Künye ve yazar doğrulandı; itirazların metindeki tam ifadesi doğrulanmadı.",
-        "citations": [
-          {
-            "source_ref": "thompson-2013-witzel-degerlendirmesi",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -853,7 +831,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Ölü kaynak canlı sürümüyle değiştirildi, yazar ve yıl eklendi, tier kitap değerlendirmesi olduğu için institutional'a düşürüldü. Tam metinler okunmadı."
+      "notes": "Ölü kaynak canlı sürümüyle değiştirildi, yazar ve yıl eklendi, tier kitap değerlendirmesi olduğu için institutional'a düşürüldü. Tam metinler okunmadı. Bu kayıttaki itirazların ayrıntısı değerlendirmenin TAM METNİNDEN değil, kaydın önceki sürümünden devralınmıştır. Künye ve yazar doğrulandı; itirazların metindeki tam ifadesi doğrulanmadı."
     }
   },
   {
@@ -890,7 +868,7 @@
       "jeoloji"
     ],
     "popular_claim": "Dünya ağacı motifi neredeyse evrenseldir; bulunmadığı yerler bu evrensel mirastan kopmuş demektir.",
-    "divergence": "İnuit geleneğinde dünya ağacı yok - ve sebebi kültürel uzaklık değil, AĞAÇ SINIRININ KUZEYİNDE YAŞAMAK. Bir motifin yokluğu bazen sadece o şeyin orada bulunmadığını gösterir. Karşılaştırmalı mitolojinin en sık atladığı nokta budur: karşılaştırılan halklar AYNI MALZEMEYE SAHİP DEĞİLDİR. Evrensellik iddiaları en çok burada tökezliyor.",
+    "divergence": "İnuit geleneğinde dünya ağacı yok - ve sebebi kültürel uzaklık değil, AĞAÇ SINIRININ KUZEYİNDE YAŞAMAK. Bir motifin yokluğu bazen sadece o şeyin orada bulunmadığını gösterir. Karşılaştırmalı mitolojinin en sık atladığı nokta budur: karşılaştırılan halklar AYNI MALZEMEYE SAHİP DEĞİLDİR. Evrensellik iddiaları en çok burada tökezliyor. Çevresel açıklama her yokluk için geçerli değildir; bazı yokluklar gerçekten kültürel ayrışmayı gösterir. Bu kayıt 'her zaman kültürel mesafe' iddiasını çürütür, çevrenin her zaman belirleyici olduğunu savunmaz.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -957,17 +935,6 @@
     ],
     "counter_evidence": [
       {
-        "id": "cevre-her-zaman-degil",
-        "text": "Çevresel açıklama her yokluk için geçerli değildir; bazı yokluklar gerçekten kültürel ayrışmayı gösterir. Bu kayıt 'her zaman kültürel mesafe' iddiasını çürütür, çevrenin her zaman belirleyici olduğunu savunmaz.",
-        "citations": [
-          {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
         "id": "suruklenmis-odun",
         "text": "Sürüklenmiş odun (driftwood) İnuit maddi kültüründe kullanılıyordu; ağacın tamamen bilinmediği söylenemez.",
         "citations": [
@@ -977,22 +944,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "boas-donem-kaynagi",
-        "text": "Boas 1888 bir DÖNEM KAYNAĞIDIR: 19. yüzyıl derleme koşulları ve derleyicinin kendi çerçevesi kayda dahildir; yokluk gözlemi de bu süzgeçten geçmiştir.",
-        "citations": [
-          {
-            "source_ref": "boas-1888-central-eskimo",
-            "locator": "Kaynak konumu",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Boas 1888 künyelendi ve DÖNEM KAYNAĞI olduğu açıkça işaretlendi - kayıt onu doğrudan gözlem gibi kullanıyordu."
+      "notes": "Boas 1888 künyelendi ve DÖNEM KAYNAĞI olduğu açıkça işaretlendi - kayıt onu doğrudan gözlem gibi kullanıyordu. Boas 1888 bir DÖNEM KAYNAĞIDIR: 19. yüzyıl derleme koşulları ve derleyicinin kendi çerçevesi kayda dahildir; yokluk gözlemi de bu süzgeçten geçmiştir."
     }
   },
   {
@@ -1025,7 +981,7 @@
       "dilbilim"
     ],
     "popular_claim": "Kızılderili mitolojisinde de aynı motif var - demek ki motif evrensel.",
-    "divergence": "'Kızılderili mitolojisi' diye tek bir şey yoktur: iki kıtaya yayılmış, birbirinden DİL AİLESİ DÜZEYİNDE ayrı yüzlerce gelenek vardır. Aynı şey 'Eskimo' için de geçerli - İnuit ve Yupik gelenekleri ayrıdır ve kendi içlerinde de bölgeseldir. 'Yunan mitolojisi' ile 'Kızılderili mitolojisi'ni aynı sütun düzeyine koymak, bir şehri bir kıtayla karşılaştırmaktır. Hata TEK YÖNDE çalışır: çeşitliliği tek kutuya sıkıştırdığınızda o kutuda 'her şey' bulunur ve her benzerlik doğrulanmış görünür.",
+    "divergence": "'Kızılderili mitolojisi' diye tek bir şey yoktur: iki kıtaya yayılmış, birbirinden DİL AİLESİ DÜZEYİNDE ayrı yüzlerce gelenek vardır. Aynı şey 'Eskimo' için de geçerli - İnuit ve Yupik gelenekleri ayrıdır ve kendi içlerinde de bölgeseldir. 'Yunan mitolojisi' ile 'Kızılderili mitolojisi'ni aynı sütun düzeyine koymak, bir şehri bir kıtayla karşılaştırmaktır. Hata TEK YÖNDE çalışır: çeşitliliği tek kutuya sıkıştırdığınızda o kutuda 'her şey' bulunur ve her benzerlik doğrulanmış görünür. Bölgesel gruplamalar (örneğin Kuzeydoğu Ormanları, Kutup bölgesi) yöntemsel olarak savunulabilir; itiraz bu tür dikkatli gruplamalara değil, kıta ölçeğinde tek kutuya karşıdır.",
     "divergence_type": [
       "kategori-hatasi",
       "somurge-anlatisi"
@@ -1087,19 +1043,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "bolgesel-gruplama-mesru",
-        "text": "Bölgesel gruplamalar (örneğin Kuzeydoğu Ormanları, Kutup bölgesi) yöntemsel olarak savunulabilir; itiraz bu tür dikkatli gruplamalara değil, kıta ölçeğinde tek kutuya karşıdır.",
-        "citations": [
-          {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "review": {
       "status": "draft",
       "notes": "Yer tutucu Tehrani 2023 ile değiştirildi."
@@ -1258,22 +1202,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "1951-eski",
-        "text": "Abrahamsson 1951 hâlâ standart envanterdir ama YETMİŞ YILLIKTIR; sonraki derlemeler ve yeniden değerlendirmeler bu kayıtta taranmadı.",
-        "citations": [
-          {
-            "source_ref": "abrahamsson-1951-origin-of-death",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Abrahamsson kurum serisi künyesiyle, Le Quellec 2021 DOI ile bağlandı. Envanterin yetmiş yıllık olduğu işaretlendi."
+      "notes": "Abrahamsson kurum serisi künyesiyle, Le Quellec 2021 DOI ile bağlandı. Envanterin yetmiş yıllık olduğu işaretlendi. Abrahamsson 1951 hâlâ standart envanterdir ama YETMİŞ YILLIKTIR; sonraki derlemeler ve yeniden değerlendirmeler bu kayıtta taranmadı."
     }
   },
   {
@@ -1436,22 +1369,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "hint-satiri-cikarim",
-        "text": "Hint geleneğine ilişkin satır bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; karşılaştırmalı çerçeveden yapılan bir çıkarımdır.",
-        "citations": [
-          {
-            "source_ref": "abrahamsson-1951-origin-of-death",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "George 2003 ve Kojiki künyelendi; Hint satırının çıkarım olduğu işaretlendi."
+      "notes": "George 2003 ve Kojiki künyelendi; Hint satırının çıkarım olduğu işaretlendi. Hint geleneğine ilişkin satır bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; karşılaştırmalı çerçeveden yapılan bir çıkarımdır."
     }
   },
   {
@@ -1626,22 +1548,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "yazar-duzeltmesi",
-        "text": "YAZAR DÜZELTMESİ: bu kaynağın yazarı Jean-Loïc Le Quellec'tir; önceki sürümde künye d'Huy'ye yakın duruyordu ve karışma riski taşıyordu.",
-        "citations": [
-          {
-            "source_ref": "lequellec-2021-afrique-pourquoi-meurt-on",
-            "locator": "Künye düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "DENETİM DÜZELTMESİ: 'En Afrique, pourquoi meurt-on ?' yazarı crossref'e göre Le Quellec'tir. Künye ona göre yazıldı ve düzeltme kayda geçirildi."
+      "notes": "DENETİM DÜZELTMESİ: 'En Afrique, pourquoi meurt-on ?' yazarı crossref'e göre Le Quellec'tir. Künye ona göre yazıldı ve düzeltme kayda geçirildi. YAZAR DÜZELTMESİ: bu kaynağın yazarı Jean-Loïc Le Quellec'tir; önceki sürümde künye d'Huy'ye yakın duruyordu ve karışma riski taşıyordu."
     }
   },
   {
@@ -1693,7 +1604,7 @@
       }
     ],
     "popular_claim": "Aborjinlerin 'Rüya Zamanı' bir yaratılış efsanesidir - uzak geçmişte dünyanın yaratıldığı dönem.",
-    "divergence": "'Rüya Zamanı' çevirisi yanıltıcıdır çünkü geçmiş-şimdi-geleceği ayıran DÜZ BİR ZAMAN ÇİZGİSİ ima eder. Stanner bunu tarif etmek için ayrı bir sözcük türetmek zorunda kaldı: 'everywhen' - her-zaman. Atasal varlıklar geçmişte yaşamış figürler değil, HÂLÂ MEVCUT varlıklardır. Törende geçmiş şimdiye dönüşür; anlatı hatırlanmaz, yeniden yaşanır. Bazı çevirmenler anlamın 'ezelî, yaratılmamış'a daha yakın olduğunu belirtir.",
+    "divergence": "'Rüya Zamanı' çevirisi yanıltıcıdır çünkü geçmiş-şimdi-geleceği ayıran DÜZ BİR ZAMAN ÇİZGİSİ ima eder. Stanner bunu tarif etmek için ayrı bir sözcük türetmek zorunda kaldı: 'everywhen' - her-zaman. Atasal varlıklar geçmişte yaşamış figürler değil, HÂLÂ MEVCUT varlıklardır. Törende geçmiş şimdiye dönüşür; anlatı hatırlanmaz, yeniden yaşanır. Bazı çevirmenler anlamın 'ezelî, yaratılmamış'a daha yakın olduğunu belirtir. Kavram tek bir sözcükle çevrilemiyor; bu kayıt kavramı dışarıdan tarif eder, içeriden bir aktarım iddiası taşımaz.",
     "divergence_type": [
       "eski-ceviri",
       "kategori-hatasi",
@@ -1781,33 +1692,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "disaridan-tarif",
-        "text": "Kavram tek bir sözcükle çevrilemiyor; bu kayıt kavramı dışarıdan tarif eder, içeriden bir aktarım iddiası taşımaz.",
-        "citations": [
-          {
-            "source_ref": "stanner-1979-white-man-got-no-dreaming",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "stanner-tarih-celiskisi",
-        "text": "Stanner'ın denemesinin tarihi çözülmüş değil: yaygın olarak 1953 anılır, ilk basımı 1956 antolojisidir. Bu kayıt 1979 akademik derlemesini künyeliyor.",
-        "citations": [
-          {
-            "source_ref": "stanner-1979-white-man-got-no-dreaming",
-            "locator": "Künye düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Stanner 1979 derlemesi künyelenebilir çıpa olarak kullanıldı (tufan dosyasıyla aynı çözüm); Morphy 1998 eklendi."
+      "notes": "Stanner 1979 derlemesi künyelenebilir çıpa olarak kullanıldı (tufan dosyasıyla aynı çözüm); Morphy 1998 eklendi. Stanner'ın denemesinin tarihi çözülmüş değil: yaygın olarak 1953 anılır, ilk basımı 1956 antolojisidir. Bu kayıt 1979 akademik derlemesini künyeliyor."
     }
   },
   {
@@ -1933,28 +1822,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "hint-cikarim-uzatmasi",
-        "text": "Hint geleneğine ilişkin satır Stanner'dan DOĞRUDAN gelmez; Avustralya için kurduğu zaman argümanının başka bir geleneğe uzatılmasıdır. Uzatma bu kayıtta yapılmıştır, kaynakta değil.",
-        "citations": [
-          {
-            "source_ref": "stanner-1979-white-man-got-no-dreaming",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "stanner-tarih-celiskisi",
-        "text": "Stanner'ın denemesinin tarihi çözülmüş değil: yaygın olarak 1953 anılır, ilk basımı 1956 antolojisidir. Bu kayıt 1979 akademik derlemesini künyeliyor.",
-        "citations": [
-          {
-            "source_ref": "stanner-1979-white-man-got-no-dreaming",
-            "locator": "Künye düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1967,7 +1834,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Stanner künyesi kapsayıcı ve ISBN ile tamamlandı, 1953/1956 çelişkisi kayda geçirildi. Hint geleneğine ilişkin satırın çıkarım olduğu açıkça işaretlendi. Tam metinler okunmadı."
+      "notes": "Stanner künyesi kapsayıcı ve ISBN ile tamamlandı, 1953/1956 çelişkisi kayda geçirildi. Hint geleneğine ilişkin satırın çıkarım olduğu açıkça işaretlendi. Tam metinler okunmadı. Hint geleneğine ilişkin satır Stanner'dan DOĞRUDAN gelmez; Avustralya için kurduğu zaman argümanının başka bir geleneğe uzatılmasıdır. Uzatma bu kayıtta yapılmıştır, kaynakta değil. Stanner'ın denemesinin tarihi çözülmüş değil: yaygın olarak 1953 anılır, ilk basımı 1956 antolojisidir. Bu kayıt 1979 akademik derlemesini künyeliyor."
     }
   },
   {
@@ -2027,7 +1894,7 @@
       }
     ],
     "popular_claim": "Bilim, dünyanın bütün mitlerinde bulunan ortak kahraman iskeletini keşfetti.",
-    "divergence": "Akademik folklorcular ve antikçağ edebiyatı uzmanları teoriyi neredeyse oybirliğiyle reddediyor. Başlıca gerekçe KAYNAK SEÇME YANLILIĞI: kalıp yalnızca kalıba uyan anlatılar seçilerek kuruldu, uymayan ve en az onlar kadar geçerli anlatılar dışarıda bırakıldı. İkinci gerekçe YANLIŞLANAMAZLIK: aşamalar o kadar soyut ki mecazi okumaya izin verildiğinde neredeyse her anlatı uyuyor - markete ekmek almaya gitmek dahil. Bir çerçeve her şeyi açıklıyorsa hiçbir şeyi ayırt etmiyor demektir.",
+    "divergence": "Akademik folklorcular ve antikçağ edebiyatı uzmanları teoriyi neredeyse oybirliğiyle reddediyor. Başlıca gerekçe KAYNAK SEÇME YANLILIĞI: kalıp yalnızca kalıba uyan anlatılar seçilerek kuruldu, uymayan ve en az onlar kadar geçerli anlatılar dışarıda bırakıldı. İkinci gerekçe YANLIŞLANAMAZLIK: aşamalar o kadar soyut ki mecazi okumaya izin verildiğinde neredeyse her anlatı uyuyor - markete ekmek almaya gitmek dahil. Bir çerçeve her şeyi açıklıyorsa hiçbir şeyi ayırt etmiyor demektir. Anlatılarda gerçek düzenlilikler vardır; bu kayıt onların varlığını değil, monomitin evrensellik iddiasını reddeder. 'Neredeyse oybirliği' bir sayım değil, alan içi değerlendirmelere dayanan nitel bir ifadedir. Kalıp bir SENARYO ARACI olarak fiilen çalışır; itiraz araca değil, aracın keşif diye sunulmasınadır.",
     "divergence_type": [
       "medya-abartisi",
       "ideolojik-secim"
@@ -2100,21 +1967,6 @@
         "isbn": "9780198149224",
         "volume": "2 cilt",
         "note": "XI. tabletin eleştirel edisyonu; gençlik otu ve yılan sahnesinin metni."
-      },
-      {
-        "id": "jorgensen-folklorists-campbell",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "webpage",
-        "authors": [
-          "Jorgensen, Jeana"
-        ],
-        "title": "Why Folklorists Hate Joseph Campbell's Work",
-        "institution": "Foxy Folklorist",
-        "publisher": "Patheos",
-        "url": "https://www.patheos.com/blogs/foxyfolklorist/why-folklorists-hate-joseph-campbells-work/",
-        "note": "Folklor disiplininden gelen eleştirinin erişilebilir özeti. Akademik yayın değil; hakemli dayanak Dundes ve Segal'dır."
       }
     ],
     "evidence": [
@@ -2163,55 +2015,10 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "duzenlilikler-var",
-        "text": "Anlatılarda gerçek düzenlilikler vardır; bu kayıt onların varlığını değil, monomitin evrensellik iddiasını reddeder.",
-        "citations": [
-          {
-            "source_ref": "dundes-2005-folkloristics-21st-century",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "oybirligi-sayim-degil",
-        "text": "'Neredeyse oybirliği' bir sayım değil, alan içi değerlendirmelere dayanan nitel bir ifadedir.",
-        "citations": [
-          {
-            "source_ref": "jorgensen-folklorists-campbell",
-            "locator": "İfade düzeyi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "arac-olarak-calisiyor",
-        "text": "Kalıp bir SENARYO ARACI olarak fiilen çalışır; itiraz araca değil, aracın keşif diye sunulmasınadır.",
-        "citations": [
-          {
-            "source_ref": "campbell-1949-hero-thousand-faces",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "duzenbaz-kaynaksiz",
-        "text": "Düzenbaz anlatılarının kalıba uymadığı gözlemi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı.",
-        "citations": [
-          {
-            "source_ref": "dundes-2005-folkloristics-21st-century",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "review": {
       "status": "draft",
-      "notes": "Segal 1990, Dundes 2005 (DOI) ve Campbell 1949 künyelendi. Campbell 'popular' katmanında ve claim-origin olarak işaretlendi - folklor disiplini onu hakemli çalışma saymaz."
+      "notes": "Segal 1990, Dundes 2005 (DOI) ve Campbell 1949 künyelendi. Campbell 'popular' katmanında ve claim-origin olarak işaretlendi - folklor disiplini onu hakemli çalışma saymaz. Düzenbaz anlatılarının kalıba uymadığı gözlemi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı."
     }
   },
   {
@@ -2262,7 +2069,7 @@
       }
     ],
     "popular_claim": "Bakın, bütün filmlerde ve hikâyelerde aynı kalıp var - demek ki kalıp evrensel.",
-    "divergence": "Döngü dört adımlı ve kapalı: (1) 1949'da seçilmiş mitlerden bir kalıp çıkarılır; (2) 1980'lerde kalıp senaryo yazımı için bir reçeteye çevrilir; (3) filmler bu şablona göre yazılır ve kalıba tam uyar; (4) bu filmler gösterilip 'her hikâyede var' denerek teoriye kanıt sayılır. Kritik adım dördüncüsüdür: filmlerin kalıba uymasının sebebi kalıbın evrensel olması DEĞİL, filmlerin kalıba göre yazılmış olmasıdır. Çıktıyı girdinin kanıtı saymak döngüyü kapatıyor.",
+    "divergence": "Döngü dört adımlı ve kapalı: (1) 1949'da seçilmiş mitlerden bir kalıp çıkarılır; (2) 1980'lerde kalıp senaryo yazımı için bir reçeteye çevrilir; (3) filmler bu şablona göre yazılır ve kalıba tam uyar; (4) bu filmler gösterilip 'her hikâyede var' denerek teoriye kanıt sayılır. Kritik adım dördüncüsüdür: filmlerin kalıba uymasının sebebi kalıbın evrensel olması DEĞİL, filmlerin kalıba göre yazılmış olmasıdır. Çıktıyı girdinin kanıtı saymak döngüyü kapatıyor. Kalıp bir anlatı aracı olarak gerçekten çalışır ve iyi yapılandırılmış hikâyeler üretir; bu kayıt aracı değil, 'keşfedilmiş evrensel yapı' iddiasını hedef alır.",
     "divergence_type": [
       "medya-abartisi",
       "hayatta-kalma-yanliligi"
@@ -2319,21 +2126,6 @@
         "container": "Journal of American Folklore",
         "doi": "10.1353/jaf.2005.0044",
         "note": "Alanın kendi yöntem eleştirisi; monomit ve arketip yaklaşımlarına folklor disiplininden bakış."
-      },
-      {
-        "id": "jorgensen-folklorists-campbell",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "webpage",
-        "authors": [
-          "Jorgensen, Jeana"
-        ],
-        "title": "Why Folklorists Hate Joseph Campbell's Work",
-        "institution": "Foxy Folklorist",
-        "publisher": "Patheos",
-        "url": "https://www.patheos.com/blogs/foxyfolklorist/why-folklorists-hate-joseph-campbells-work/",
-        "note": "Folklor disiplininden gelen eleştirinin erişilebilir özeti. Akademik yayın değil; hakemli dayanak Dundes ve Segal'dır."
       }
     ],
     "evidence": [
@@ -2382,33 +2174,10 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "olcek-verilmedi",
-        "text": "Şablonun sinema anlatısına yayılma oranı bu kayıtta niceliksel olarak ölçülmedi; mekanizma tarif edildi, büyüklüğü verilmedi.",
-        "citations": [
-          {
-            "source_ref": "vogler-2007-writers-journey",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "arac-calisiyor",
-        "text": "Kalıp bir anlatı aracı olarak gerçekten çalışır ve iyi yapılandırılmış hikâyeler üretir; bu kayıt aracı değil, 'keşfedilmiş evrensel yapı' iddiasını hedef alır.",
-        "citations": [
-          {
-            "source_ref": "jorgensen-folklorists-campbell",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "review": {
       "status": "draft",
-      "notes": "Vogler 2007 künyelendi - geri besleme döngüsünün somut halkası artık kaynaklı."
+      "notes": "Vogler 2007 künyelendi - geri besleme döngüsünün somut halkası artık kaynaklı. Şablonun sinema anlatısına yayılma oranı bu kayıtta niceliksel olarak ölçülmedi; mekanizma tarif edildi, büyüklüğü verilmedi."
     }
   },
   {
@@ -2742,22 +2511,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "vedik-ornek-kaynaksiz",
-        "text": "Vedik Mātariśvan örneği bu kayıtta AYRI BİR KAYNAĞA bağlanmadı.",
-        "citations": [
-          {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Hesiodos, Tehrani 2023 ve Radin 1956 künyelendi. Vedik örneğin kaynaksız olduğu işaretlendi."
+      "notes": "Hesiodos, Tehrani 2023 ve Radin 1956 künyelendi. Vedik örneğin kaynaksız olduğu işaretlendi. Vedik Mātariśvan örneği bu kayıtta AYRI BİR KAYNAĞA bağlanmadı."
     }
   },
   {
@@ -2925,7 +2683,7 @@
       "filoloji"
     ],
     "popular_claim": "Hilebaz figürü tüm dünya mitolojilerinde bulunan evrensel bir arketiptir.",
-    "divergence": "Kategori gerçek bir düzenliliği yakalıyor OLABİLİR - sınırları çiğneyen, kurnazlıkla iş gören, insanlığa bir şey kazandıran figür. Ama uyarı gerekiyor: 'hilebaz' kategorisi 19.-20. yüzyıl antropolojisinin ürünüdür ve TANIMLANDIKTAN SONRA her yerde bulunmuştur - monomit vakasındaki mekanizmanın aynısı. Kategoriye koymak bir bulgu değil, bir İŞLEMDİR. Bulgu olması için kategorinin dışında kalan vakaların da gösterilmesi gerekir; gösterildiğinde kategori daralır: Māui cezalandırılmaz, Kuzgun ateş değil ışık getirir, Mātariśvan hilebaz değildir.",
+    "divergence": "Kategori gerçek bir düzenliliği yakalıyor OLABİLİR - sınırları çiğneyen, kurnazlıkla iş gören, insanlığa bir şey kazandıran figür. Ama uyarı gerekiyor: 'hilebaz' kategorisi 19.-20. yüzyıl antropolojisinin ürünüdür ve TANIMLANDIKTAN SONRA her yerde bulunmuştur - monomit vakasındaki mekanizmanın aynısı. Kategoriye koymak bir bulgu değil, bir İŞLEMDİR. Bulgu olması için kategorinin dışında kalan vakaların da gösterilmesi gerekir; gösterildiğinde kategori daralır: Māui cezalandırılmaz, Kuzgun ateş değil ışık getirir, Mātariśvan hilebaz değildir. Bu kayıt kategorinin işe yaramaz olduğunu söylemez; 'yaygın olması ortak kökene kanıttır' çıkarımını reddeder. İkisi ayrı iddialardır.",
     "divergence_type": [
       "kategori-hatasi",
       "somurge-anlatisi"
@@ -2968,21 +2726,6 @@
         "publisher": "Oxford University Press",
         "doi": "10.1093/oxfordhb/9780198869252.013.39",
         "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
-      },
-      {
-        "id": "jorgensen-folklorists-campbell",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "webpage",
-        "authors": [
-          "Jorgensen, Jeana"
-        ],
-        "title": "Why Folklorists Hate Joseph Campbell's Work",
-        "institution": "Foxy Folklorist",
-        "publisher": "Patheos",
-        "url": "https://www.patheos.com/blogs/foxyfolklorist/why-folklorists-hate-joseph-campbells-work/",
-        "note": "Folklor disiplininden gelen eleştirinin erişilebilir özeti. Akademik yayın değil; hakemli dayanak Dundes ve Segal'dır."
       }
     ],
     "evidence": [
@@ -3029,17 +2772,6 @@
             "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
             "locator": "Alternatif okuma",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "kategori-isesiz-degil",
-        "text": "Bu kayıt kategorinin işe yaramaz olduğunu söylemez; 'yaygın olması ortak kökene kanıttır' çıkarımını reddeder. İkisi ayrı iddialardır.",
-        "citations": [
-          {
-            "source_ref": "jorgensen-folklorists-campbell",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
           }
         ]
       }
@@ -3217,33 +2949,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "anadolu-yuzeysel",
-        "text": "Anadolu geleneği bu kayıtta yüzeysel ele alınmıştır; kullanılan Türkçe kaynak kurumsal bir kültür sayfasıdır, hakemli bir halkbilim çalışması değil.",
-        "citations": [
-          {
-            "source_ref": "karadeniz-halk-takvimi",
-            "locator": "Kaynak düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "subaru-kaynaksiz",
-        "text": "Japonca 'Subaru' etimolojisi bu kayıtta ayrı bir kaynağa bağlanmadı.",
-        "citations": [
-          {
-            "source_ref": "ruggles-2005-ancient-astronomy",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Ruggles 2005 künyelendi. Türkçe kaynağın hakemli olmadığı açıkça yazıldı - konu Anadolu takvimi olduğu için kaynak doğal, ama düzeyi işaretlenmeli."
+      "notes": "Ruggles 2005 künyelendi. Türkçe kaynağın hakemli olmadığı açıkça yazıldı - konu Anadolu takvimi olduğu için kaynak doğal, ama düzeyi işaretlenmeli. Anadolu geleneği bu kayıtta yüzeysel ele alınmıştır; kullanılan Türkçe kaynak kurumsal bir kültür sayfasıdır, hakemli bir halkbilim çalışması değil. Japonca 'Subaru' etimolojisi bu kayıtta ayrı bir kaynağa bağlanmadı."
     }
   },
   {
@@ -3727,22 +3437,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "formulasyon-projenin",
-        "text": "Ekseni bu biçimde formüle eden ayrı bir yayın bu kayıtta künyelenmedi; formülasyon bu projenin kendi derlemesidir.",
-        "citations": [
-          {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Eksenin formülasyonunun bu projeye ait olduğu açıkça yazıldı - kayıt onu literatürden alınmış gibi sunuyordu."
+      "notes": "Eksenin formülasyonunun bu projeye ait olduğu açıkça yazıldı - kayıt onu literatürden alınmış gibi sunuyordu. Ekseni bu biçimde formüle eden ayrı bir yayın bu kayıtta künyelenmedi; formülasyon bu projenin kendi derlemesidir."
     }
   },
   {
@@ -4002,17 +3701,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "hesap-dogrulanmadi",
-        "text": "Görünürlük eşiği tarihleri ara kaynaktan alınmıştır; bağımsız astronomik hesapla doğrulanmamıştır.",
-        "citations": [
-          {
-            "source_ref": "ulker-vikipedi-tr",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -4026,7 +3714,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Astronomik eşleşme bağımsız hesapla doğrulanmadı; devinim itirazı çözülmedi. Bu kayıt bir soru işaretiyle birlikte tutulmaktadır."
+      "notes": "Astronomik eşleşme bağımsız hesapla doğrulanmadı; devinim itirazı çözülmedi. Bu kayıt bir soru işaretiyle birlikte tutulmaktadır. Görünürlük eşiği tarihleri ara kaynaktan alınmıştır; bağımsız astronomik hesapla doğrulanmamıştır."
     }
   },
   {
@@ -4165,17 +3853,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "metin-dogrudan-gorulmedi",
-        "text": "Kâşgarlı'nın metni bu kayıtta doğrudan görülmemiş, ikincil aktarım üzerinden kullanılmıştır.",
-        "citations": [
-          {
-            "source_ref": "divanu-lugatit-turk",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -4188,7 +3865,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Kâşgarlı metni doğrudan görülmedi; birincil edisyonla değiştirilmelidir."
+      "notes": "Kâşgarlı metni doğrudan görülmedi; birincil edisyonla değiştirilmelidir. Kâşgarlı'nın metni bu kayıtta doğrudan görülmemiş, ikincil aktarım üzerinden kullanılmıştır."
     }
   }
 ]

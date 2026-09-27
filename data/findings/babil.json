@@ -154,17 +154,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "tam-metin-okunmadi",
-        "text": "Bu kayıttaki kaynakların tam metinleri okunmadı; locator'lar bölüm düzeyinde.",
-        "citations": [
-          {
-            "source_ref": "black-george-postgate-2000-cda",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -177,7 +166,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Akadca sözlük ve Asurbilim literatürü') üç gerçek künyeyle değiştirildi. Adın kökenine dair açık uç counter_evidence'a eklendi."
+      "notes": "Yer tutucu ('Akadca sözlük ve Asurbilim literatürü') üç gerçek künyeyle değiştirildi. Adın kökenine dair açık uç counter_evidence'a eklendi. Bu kayıttaki kaynakların tam metinleri okunmadı; locator'lar bölüm düzeyinde."
     }
   },
   {
@@ -317,17 +306,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "koldewey-kunye-eksik",
-        "text": "Koldewey'in yayın künyesi bu turda bağımsız doğrulanmadı; yayıncı ve baskı bilgisi eksik.",
-        "citations": [
-          {
-            "source_ref": "koldewey-1913-babil",
-            "locator": "Künye düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -339,7 +317,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "George 1992 eklendi - Esagila Tableti'nin Helenistik kopya olduğu değerlendirmesi artık künyeli bir kaynağa bağlı."
+      "notes": "George 1992 eklendi - Esagila Tableti'nin Helenistik kopya olduğu değerlendirmesi artık künyeli bir kaynağa bağlı. Koldewey'in yayın künyesi bu turda bağımsız doğrulanmadı; yayıncı ve baskı bilgisi eksik."
     }
   },
   {
@@ -515,7 +493,7 @@
       }
     ],
     "popular_claim": "Babil Kulesi hikâyesinin çok daha eski bir Sümer versiyonu vardır.",
-    "divergence": "Kramer'in 20. yüzyıl ortası okuması pasajı bir BOZMA eylemi sayıp Tekvin ile eşleştirdi ve popüler kaynaklara yerleşti. Oxford ETCSL'deki standart çeviride pasaj dillerin BİRLEŞMESİNİ diliyor - anlam ters yönde.",
+    "divergence": "Kramer'in 20. yüzyıl ortası okuması pasajı bir BOZMA eylemi sayıp Tekvin ile eşleştirdi ve popüler kaynaklara yerleşti. Oxford ETCSL'deki standart çeviride pasaj dillerin BİRLEŞMESİNİ diliyor - anlam ters yönde. 'Refuted' damgası KRAMER'İN OKUMASINA değil, 'Babil Kulesi'nin Sümer versiyonu' eşleştirmesine aittir. Kramer'in metni yanlış çevirdiği değil, farklı yorumladığı söyleniyor.",
     "divergence_type": [
       "eski-ceviri"
     ],
@@ -632,17 +610,6 @@
             "source_ref": "vanstiphout-2003-epics-sumerian-kings",
             "locator": "Fiil kipi tartışması",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "refuted-neye-ait",
-        "text": "'Refuted' damgası KRAMER'İN OKUMASINA değil, 'Babil Kulesi'nin Sümer versiyonu' eşleştirmesine aittir. Kramer'in metni yanlış çevirdiği değil, farklı yorumladığı söyleniyor.",
-        "citations": [
-          {
-            "source_ref": "kramer-1963-the-sumerians",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
           }
         ]
       }
@@ -1204,7 +1171,7 @@
       }
     ],
     "popular_claim": "Herodot'un Babil betimlemesi görgü tanıklığıdır.",
-    "divergence": "Verdiği sur ölçüleri fiziksel olarak mümkün değil ve arkeolojik kalıntılarla uyuşmuyor; betimlemelerinde şehri görmüş birinden beklenmeyecek hatalar var.",
+    "divergence": "Verdiği sur ölçüleri fiziksel olarak mümkün değil ve arkeolojik kalıntılarla uyuşmuyor; betimlemelerinde şehri görmüş birinden beklenmeyecek hatalar var. Kaydın durumu 'unknown' - yani 'gitmedi' denmiyor. Abartılı ölçüler gitmemiş olmayı DÜŞÜNDÜRÜR ama kanıtlamaz; bir gezginin gördüğünü de abartması mümkündür.",
     "divergence_type": [
       "medya-abartisi"
     ],
@@ -1294,17 +1261,6 @@
             "source_ref": "dalley-1994-nineveh-babylon-iraq",
             "locator": "Kaynak değerlendirmesi",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "gitmedi-denmiyor",
-        "text": "Kaydın durumu 'unknown' - yani 'gitmedi' denmiyor. Abartılı ölçüler gitmemiş olmayı DÜŞÜNDÜRÜR ama kanıtlamaz; bir gezginin gördüğünü de abartması mümkündür.",
-        "citations": [
-          {
-            "source_ref": "dalley-1994-nineveh-babylon-iraq",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
           }
         ]
       }
@@ -1446,30 +1402,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "iade-talebi-dogrulanmadi",
-        "text": "İade talebinin hukuki durumu ve resmî yazışmaları bu kayıtta DOĞRULANMADI; ifade genel aktarımlara dayanıyor.",
-        "citations": [
-          {
-            "source_ref": "pergamon-muzesi-istar-kapisi",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "taraf-kaynak",
-        "text": "Nesneyi elinde tutan kurumun kendi sayfası bu tartışmada TARAF kaynaktır; Irak tarafının konumu burada temsil edilmiyor.",
-        "citations": [
-          {
-            "source_ref": "pergamon-muzesi-istar-kapisi",
-            "locator": "Kaynak konumu",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
       "Irak'ın resmî iade talebi belgeli mi? Hangi tarihte, hangi kanaldan?"
     ],
@@ -1480,7 +1413,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Kayıt popular_claim ve divergence olmadan duruyordu. Kuruldu: sergilenenin yeniden inşa olduğu ayrımı eklendi. İade talebinin doğrulanmadığı açıkça işaretlendi."
+      "notes": "Kayıt popular_claim ve divergence olmadan duruyordu. Kuruldu: sergilenenin yeniden inşa olduğu ayrımı eklendi. İade talebinin doğrulanmadığı açıkça işaretlendi. İade talebinin hukuki durumu ve resmî yazışmaları bu kayıtta DOĞRULANMADI; ifade genel aktarımlara dayanıyor. Nesneyi elinde tutan kurumun kendi sayfası bu tartışmada TARAF kaynaktır; Irak tarafının konumu burada temsil edilmiyor."
     }
   },
   {

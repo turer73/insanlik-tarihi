@@ -132,17 +132,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "tam-metin-okunmadi",
-        "text": "Bu kaydın kaynağının TAM METNİ OKUNMADI; locator'lar bölüm düzeyinde, sayfa düzeyinde değil.",
-        "citations": [
-          {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -154,7 +143,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu kaynak ('...literatürü') gerçek künyeyle değiştirildi. Boş olan counter_evidence dolduruldu - örneklem ve korunma yanlılığı işaretlendi."
+      "notes": "Yer tutucu kaynak ('...literatürü') gerçek künyeyle değiştirildi. Boş olan counter_evidence dolduruldu - örneklem ve korunma yanlılığı işaretlendi. Bu kaydın kaynağının TAM METNİ OKUNMADI; locator'lar bölüm düzeyinde, sayfa düzeyinde değil."
     }
   },
   {
@@ -436,17 +425,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "kramer-1963-eski",
-        "text": "Kramer 1963 tarihlidir; çözülme tarihçesinin sonraki altmış yıldaki değerlendirmesi bu kayıtta taranmadı.",
-        "citations": [
-          {
-            "source_ref": "kramer-1963-the-sumerians",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -458,7 +436,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Çivi yazısının çözülmesi ve Asirbilim tarihi literatürü') iki gerçek künyeyle değiştirildi. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+      "notes": "Yer tutucu ('Çivi yazısının çözülmesi ve Asirbilim tarihi literatürü') iki gerçek künyeyle değiştirildi. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. Kramer 1963 tarihlidir; çözülme tarihçesinin sonraki altmış yıldaki değerlendirmesi bu kayıtta taranmadı."
     }
   },
   {
@@ -624,17 +602,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "kunye-siniri",
-        "text": "Bu kaydın kaynağının TAM METNİ OKUNMADI ve ISBN'i doğrulanamadı; künye iki bağımsız aramayla teyit edildi.",
-        "citations": [
-          {
-            "source_ref": "helle-2023-enheduana",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -647,7 +614,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu kaynak ('Enheduanna atfı üzerine Asirbilim tartışması') Helle 2023 ile değiştirildi. Helle'nin üçüncü konumu kayda eklendi - önceki sürümde tartışma yalnızca iki taraflı görünüyordu."
+      "notes": "Yer tutucu kaynak ('Enheduanna atfı üzerine Asirbilim tartışması') Helle 2023 ile değiştirildi. Helle'nin üçüncü konumu kayda eklendi - önceki sürümde tartışma yalnızca iki taraflı görünüyordu. Bu kaydın kaynağının TAM METNİ OKUNMADI ve ISBN'i doğrulanamadı; künye iki bağımsız aramayla teyit edildi."
     }
   },
   {
@@ -829,28 +796,6 @@
         ]
       },
       {
-        "id": "hammurabi-kaynaksiz",
-        "text": "Hammurabi karşılaştırması bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; Hammurabi Yasaları'nın misilleme öngördüğü genel bilgi olarak alınmıştır.",
-        "citations": [
-          {
-            "source_ref": "kramer-1952-ur-nammu-yasalari",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "muze-kaydi-dogrulanmadi",
-        "text": "İstanbul Arkeoloji Müzeleri'nin çevrimiçi nesne kaydı bu turda DOĞRULANMADI; Ni 3191 künyesi ikincil aktarımlara dayanıyor.",
-        "citations": [
-          {
-            "source_ref": "istanbul-arkeoloji-nippur-ni3191",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
         "id": "yasada-ayrintili-duzenlenen-bedensel-zarar-ur-iii-mahkeme-kayitlarinda-yok",
         "text": "Yasa bedensel zararı ayrıntılı biçimde düzenlese de Ur III mahkeme kayıtlarında bu türden tek bir dava yoktur; yasanın öngördüğü ile uygulandığı görülen arasında fark vardır.",
         "citations": [
@@ -872,7 +817,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Tabletin İstanbul Arkeoloji Müzeleri'nde olduğu ve Kraus tarafından tanımlandığı eklendi - kayıt bunu hiç söylemiyordu. 'Yalnızca beş madde okunabildi' sınırı da eklendi; iddianın dayanağı bu kadar dardı ve kayıt bunu göstermiyordu."
+      "notes": "Tabletin İstanbul Arkeoloji Müzeleri'nde olduğu ve Kraus tarafından tanımlandığı eklendi - kayıt bunu hiç söylemiyordu. 'Yalnızca beş madde okunabildi' sınırı da eklendi; iddianın dayanağı bu kadar dardı ve kayıt bunu göstermiyordu. Hammurabi karşılaştırması bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; Hammurabi Yasaları'nın misilleme öngördüğü genel bilgi olarak alınmıştır. İstanbul Arkeoloji Müzeleri'nin çevrimiçi nesne kaydı bu turda DOĞRULANMADI; Ni 3191 künyesi ikincil aktarımlara dayanıyor."
     }
   },
   {
@@ -1012,17 +957,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "1939-sonrasi-taranmadi",
-        "text": "Jacobsen'in edisyonu 1939 tarihlidir; sonraki seksen yılda yayımlanan nüshalar bu kayıtta taranmadı.",
-        "citations": [
-          {
-            "source_ref": "jacobsen-1939-sumerian-king-list",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1035,7 +969,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu yerine Jacobsen 1939 ve WB 444 künyelendi. Boş counter_evidence dolduruldu; 'tarihsel değil' ifadesinin fazla keskin olabileceği eklendi."
+      "notes": "Yer tutucu yerine Jacobsen 1939 ve WB 444 künyelendi. Boş counter_evidence dolduruldu; 'tarihsel değil' ifadesinin fazla keskin olabileceği eklendi. Jacobsen'in edisyonu 1939 tarihlidir; sonraki seksen yılda yayımlanan nüshalar bu kayıtta taranmadı."
     }
   },
   {
@@ -1149,17 +1083,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "tam-metin-okunmadi-george",
-        "text": "Bu kaydın kaynağının tam metni okunmadı; George'un edisyonu iki cilt ve yaklaşık bin sayfadır, locator'lar bölüm düzeyindedir.",
-        "citations": [
-          {
-            "source_ref": "george-2003-babylonian-gilgamesh",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1172,7 +1095,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "George künyesi yayıncı ve ISBN ile tamamlandı. Boş olan counter_evidence dolduruldu: Ziusudra ayrımı eklendi - kayıt 'Sümerce gelenekte tufan yok' gibi okunabiliyordu, oysa söylenen yalnızca Gılgamış şiirleri için geçerli."
+      "notes": "George künyesi yayıncı ve ISBN ile tamamlandı. Boş olan counter_evidence dolduruldu: Ziusudra ayrımı eklendi - kayıt 'Sümerce gelenekte tufan yok' gibi okunabiliyordu, oysa söylenen yalnızca Gılgamış şiirleri için geçerli. Bu kaydın kaynağının tam metni okunmadı; George'un edisyonu iki cilt ve yaklaşık bin sayfadır, locator'lar bölüm düzeyindedir."
     }
   },
   {
@@ -1343,17 +1266,6 @@
         ]
       },
       {
-        "id": "pasaj-dogrulanmadi",
-        "text": "KAYIT DÜZEYİ SINIRI: MUL.APIN'in nibiru hakkında tam olarak ne dediği bu turda DOĞRULANMADI. Künye teyit edildi, ilgili pasaj değil. Bir kaydın 'refuted' olması, çürütmenin dayanağını gevşek bırakmak için gerekçe değildir - pasaj düzeyinde locator bulunmalı.",
-        "citations": [
-          {
-            "source_ref": "hunger-pingree-1989-mul-apin",
-            "locator": "Künye ve locator düzeyi",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
         "id": "ceviriler-tek-tek-karsilastirilmadi",
         "text": "İddia sahibinin çevirileri çivi yazılı metinlerle örtüşmüyor; ama bu kayıtta çevirilerin TEK TEK karşılaştırması yapılmadı - ifade alan genelinin değerlendirmesine dayanıyor.",
         "citations": [
@@ -1374,7 +1286,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Akadca ve Sümerce sözlük külliyatı') CDA, ePSD ve MUL.APIN künyeleriyle değiştirildi. MUL.APIN'in ilgili pasajının doğrulanmadığı açıkça yazıldı ve açık soruya taşındı - 'refuted' bir kayıtta dayanağı gevşek bırakmak özellikle sakıncalı."
+      "notes": "Yer tutucu ('Akadca ve Sümerce sözlük külliyatı') CDA, ePSD ve MUL.APIN künyeleriyle değiştirildi. MUL.APIN'in ilgili pasajının doğrulanmadığı açıkça yazıldı ve açık soruya taşındı - 'refuted' bir kayıtta dayanağı gevşek bırakmak özellikle sakıncalı. KAYIT DÜZEYİ SINIRI: MUL.APIN'in nibiru hakkında tam olarak ne dediği bu turda DOĞRULANMADI. Künye teyit edildi, ilgili pasaj değil. Bir kaydın 'refuted' olması, çürütmenin dayanağını gevşek bırakmak için gerekçe değildir - pasaj düzeyinde locator bulunmalı."
     }
   },
   {
@@ -1656,17 +1568,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "arkeogenetik-yok",
-        "text": "Kayıt 'genetik' disiplinini sayıyor ama bu turda hiçbir arkeogenetik çalışma künyelenmedi; o kanıt türü burada TEMSİL EDİLMİYOR.",
-        "citations": [
-          {
-            "source_ref": "matthews-2003-archaeology-mesopotamia",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1679,7 +1580,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu üç künyeyle değiştirildi. Kayıt 'genetik' disiplinini sayarken hiç genetik kaynak taşımıyordu; bu boşluk açıkça yazıldı."
+      "notes": "Yer tutucu üç künyeyle değiştirildi. Kayıt 'genetik' disiplinini sayarken hiç genetik kaynak taşımıyordu; bu boşluk açıkça yazıldı. Kayıt 'genetik' disiplinini sayıyor ama bu turda hiçbir arkeogenetik çalışma künyelenmedi; o kanıt türü burada TEMSİL EDİLMİYOR."
     }
   },
   {
@@ -2008,17 +1909,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "muze-yayini",
-        "text": "Zettler & Horne müzenin kendi yayınıdır; nesneyi elinde tutan kurumun tanımı bu tartışmada nötr değildir.",
-        "citations": [
-          {
-            "source_ref": "zettler-horne-1998-treasures-ur",
-            "locator": "Kaynak konumu",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -2030,7 +1920,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Ur Sancağı kayıt bilgisi') iki künyeyle değiştirildi. Nesnenin parçalanmış çıkıp yeniden kurgulandığı eklendi - kayıt bunu hiç anmıyordu ve işlev tartışmasının zeminini değiştiriyor."
+      "notes": "Yer tutucu ('Ur Sancağı kayıt bilgisi') iki künyeyle değiştirildi. Nesnenin parçalanmış çıkıp yeniden kurgulandığı eklendi - kayıt bunu hiç anmıyordu ve işlev tartışmasının zeminini değiştiriyor. Zettler & Horne müzenin kendi yayınıdır; nesneyi elinde tutan kurumun tanımı bu tartışmada nötr değildir."
     }
   }
 ]

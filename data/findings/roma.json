@@ -637,22 +637,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "turkiye-halkasi-kaynaksiz",
-        "text": "Türk Medeni Kanunu'na uzanan halka bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; İsviçre üzerinden aktarım genel bilgi olarak alınmıştır.",
-        "citations": [
-          {
-            "source_ref": "stein-1999-roman-law-european-history",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu Stein 1999 ile değiştirildi. Türkiye halkasının ayrı kaynağı olmadığı işaretlendi."
+      "notes": "Yer tutucu Stein 1999 ile değiştirildi. Türkiye halkasının ayrı kaynağı olmadığı işaretlendi. Türk Medeni Kanunu'na uzanan halka bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; İsviçre üzerinden aktarım genel bilgi olarak alınmıştır."
     }
   },
   {
@@ -686,7 +675,7 @@
       "tarih"
     ],
     "popular_claim": "Roma'nın sonunda çöküş değil dönüşüm yaşandı; 'karanlık çağ' diye bir şey yoktu.",
-    "divergence": "Bu yaklaşim bazi yonlerden duzelticidir ama maddi gostergeler Bati'da gercek bir dususu gosterir. Gostergeler metinlere degil NESNELERE dayanir: sayilan comlek parcasi, olculen kemik, tarihlenen batik.",
+    "divergence": "Bu yaklaşim bazi yonlerden duzelticidir ama maddi gostergeler Bati'da gercek bir dususu gosterir. Gostergeler metinlere degil NESNELERE dayanir: sayilan comlek parcasi, olculen kemik, tarihlenen batik. Bu bulgu, sonraki bin yılın 'karanlık' sayılıp sayılamayacağı sorusundan AYRI bir sorudur; ikisi karıştırılmamalıdır.",
     "divergence_type": [
       "guncellenmemis"
     ],
@@ -825,17 +814,6 @@
           {
             "source_ref": "wickham-2005-framing-early-middle-ages",
             "locator": "Tartışmanın konumu",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "karanlik-cag-ayri-soru",
-        "text": "Bu bulgu, sonraki bin yılın 'karanlık' sayılıp sayılamayacağı sorusundan AYRI bir sorudur; ikisi karıştırılmamalıdır.",
-        "citations": [
-          {
-            "source_ref": "ward-perkins-2005-fall-of-rome",
-            "locator": "Kayıt düzeyi ayrımı",
             "support_type": "context"
           }
         ]
@@ -2117,22 +2095,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "pontifex-kaynaksiz",
-        "text": "'Pontifex maximus unvanının papalığa geçişi' satırı bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; unvanın tarihçesi tartışmalıdır.",
-        "citations": [
-          {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Jones, Krautheimer ve Brown künyelendi. Pontifex maximus satırının kaynaksız olduğu işaretlendi - kayıt onu doğrudan kanıt gibi sunuyordu."
+      "notes": "Jones, Krautheimer ve Brown künyelendi. Pontifex maximus satırının kaynaksız olduğu işaretlendi - kayıt onu doğrudan kanıt gibi sunuyordu. 'Pontifex maximus unvanının papalığa geçişi' satırı bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; unvanın tarihçesi tartışmalıdır."
     }
   },
   {
@@ -2381,17 +2348,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "tam-metin-okunmadi",
-        "text": "Bu kayıtta iki standart eserin de tam metni okunmamıştır; künyeler ve tezler doğrulanmıştır.",
-        "citations": [
-          {
-            "source_ref": "ehrman-2012-did-jesus-exist",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -2404,7 +2360,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "İki hakemli çıpa eklendi; Katolik/agnostik eşleşmesi yanlılık itirazına somut cevap. Tam metinler okunmadı."
+      "notes": "İki hakemli çıpa eklendi; Katolik/agnostik eşleşmesi yanlılık itirazına somut cevap. Tam metinler okunmadı. Bu kayıtta iki standart eserin de tam metni okunmamıştır; künyeler ve tezler doğrulanmıştır."
     }
   },
   {
@@ -2590,22 +2546,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "dagilim-anket-degil",
-        "text": "Sayısal dağılım bir ANKET değil, yayımlanmış görüşlerin derlemesidir; alanın tamamının sayımı sayılamaz. Derlemenin kendisi bu kayıtta ayrıca künyelenmedi.",
-        "citations": [
-          {
-            "source_ref": "whealey-2003-josephus-on-jesus",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu Meier ve Whealey ile değiştirildi. 52 akademisyenlik dağılımın kaynağının künyelenmediği açıkça işaretlendi."
+      "notes": "Yer tutucu Meier ve Whealey ile değiştirildi. 52 akademisyenlik dağılımın kaynağının künyelenmediği açıkça işaretlendi. Sayısal dağılım bir ANKET değil, yayımlanmış görüşlerin derlemesidir; alanın tamamının sayımı sayılamaz. Derlemenin kendisi bu kayıtta ayrıca künyelenmedi."
     }
   },
   {
@@ -2951,17 +2896,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "epigrafik-yayin-gorulmedi",
-        "text": "Yazıtın epigrafik yayını bu kayıtta doğrudan görülmemiştir; ara kaynak üzerinden kullanılmıştır.",
-        "citations": [
-          {
-            "source_ref": "pilate-stone-wikipedia",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "checked": "2026-09-07",
@@ -2970,7 +2904,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Birincil epigrafik yayın hâlâ görülmedi; ara kaynak düzeyinde."
+      "notes": "Birincil epigrafik yayın hâlâ görülmedi; ara kaynak düzeyinde. Yazıtın epigrafik yayını bu kayıtta doğrudan görülmemiştir; ara kaynak üzerinden kullanılmıştır."
     }
   },
   {
@@ -3009,7 +2943,7 @@
       "metin-elestirisi"
     ],
     "popular_claim": "İsa ve Hristiyanlık, Roma'nın itaat üretmek için tasarladığı bir kurgudur.",
-    "divergence": "Tez üç ayrı yerden kırılıyor ve üçü de test edilebilir. (1) KRONOLOJİ: Roma'nın ittifakı 313, devlet dini ilanı 380 - hareket o tarihte zaten ~300 yıllık. Uyduran taraf onu üç yüz yıl kullanmamış olamaz. (2) ZULÜM: Roma bu dönemde Hristiyanlara dönem dönem zulmetti; bir devletin kendi imal ettiği inancın mensuplarını yüzyıllarca kovuşturması açıklanamaz. (3) ÇARMIH: merkezdeki figür bir Roma valisince çarmıha gerilmiş bir taşralıdır; çarmıh asilere ve kölelere ayrılmış, kasıtlı olarak aşağılayıcı bir infaz biçimiydi. İtaat üretmek için tasarlanan bir anlatının merkezine devletin kendi idam ettiği bir mahkûm konmaz - bu ayrıntı uyduran taraf için utanç vericidir.",
+    "divergence": "Tez üç ayrı yerden kırılıyor ve üçü de test edilebilir. (1) KRONOLOJİ: Roma'nın ittifakı 313, devlet dini ilanı 380 - hareket o tarihte zaten ~300 yıllık. Uyduran taraf onu üç yüz yıl kullanmamış olamaz. (2) ZULÜM: Roma bu dönemde Hristiyanlara dönem dönem zulmetti; bir devletin kendi imal ettiği inancın mensuplarını yüzyıllarca kovuşturması açıklanamaz. (3) ÇARMIH: merkezdeki figür bir Roma valisince çarmıha gerilmiş bir taşralıdır; çarmıh asilere ve kölelere ayrılmış, kasıtlı olarak aşağılayıcı bir infaz biçimiydi. İtaat üretmek için tasarlanan bir anlatının merkezine devletin kendi idam ettiği bir mahkûm konmaz - bu ayrıntı uyduran taraf için utanç vericidir. Roma'nın Hristiyanlığı SONRADAN biçimlendirdiği doğrudur (piskoposluk bölgeleri, bazilika planı, Latince, hukuk mantığı) - ama sonradan biçimlendirmek ile baştan icat etmek aynı şey değildir. Tez tam bu ikisini karıştırıyor.",
     "divergence_type": [
       "medya-abartisi",
       "ideolojik-secim"
@@ -3134,17 +3068,6 @@
             "source_ref": "ehrman-2012-did-jesus-exist",
             "locator": "Erken metinlerin çevresi",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "bicimlendirmek-icat-etmek-degil",
-        "text": "Roma'nın Hristiyanlığı SONRADAN biçimlendirdiği doğrudur (piskoposluk bölgeleri, bazilika planı, Latince, hukuk mantığı) - ama sonradan biçimlendirmek ile baştan icat etmek aynı şey değildir. Tez tam bu ikisini karıştırıyor.",
-        "citations": [
-          {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
           }
         ]
       }
@@ -3490,22 +3413,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "lactantius-da-taraf",
-        "text": "Lactantius da taraf bir kaynaktır; Hierocles'i zulmün mimarlarından biri olarak sunması onun kendi polemik çerçevesi içindedir.",
-        "citations": [
-          {
-            "source_ref": "lactantius-de-mortibus",
-            "locator": "Kaynak konumu",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "DeepSeek turunda aday gelmemişti; kayıt zaten iki birincil kaynağa dayanıyordu. Dzielska 1986 bağlam olarak eklendi ve Lactantius'un da taraf olduğu işaretlendi."
+      "notes": "DeepSeek turunda aday gelmemişti; kayıt zaten iki birincil kaynağa dayanıyordu. Dzielska 1986 bağlam olarak eklendi ve Lactantius'un da taraf olduğu işaretlendi. Lactantius da taraf bir kaynaktır; Hierocles'i zulmün mimarlarından biri olarak sunması onun kendi polemik çerçevesi içindedir."
     }
   },
   {
@@ -3688,17 +3600,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "tam-metin-okunmadi",
-        "text": "Bu kayıtta derlemenin tam metni okunmamıştır; künye ve kapsam doğrulanmış, tekil deneme argümanları incelenmemiştir.",
-        "citations": [
-          {
-            "source_ref": "numbers-2009-galileo-goes-to-jail",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -3710,7 +3611,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Hakemli çıpa eklendi (Numbers 2009); tam metin okunmadı."
+      "notes": "Hakemli çıpa eklendi (Numbers 2009); tam metin okunmadı. Bu kayıtta derlemenin tam metni okunmamıştır; künye ve kapsam doğrulanmış, tekil deneme argümanları incelenmemiştir."
     }
   },
   {
@@ -3837,17 +3738,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "bolum-okunmadi",
-        "text": "Derlemenin ilgili bölümü bu kayıtta okunmamıştır; mit numarası ve konusu doğrulanmış, argüman ayrıntısı incelenmemiştir.",
-        "citations": [
-          {
-            "source_ref": "numbers-2009-galileo-goes-to-jail",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "checked": "2026-09-07",
@@ -3856,7 +3746,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Hakemli çıpa eklendi; ilgili bölüm okunmadı."
+      "notes": "Hakemli çıpa eklendi; ilgili bölüm okunmadı. Derlemenin ilgili bölümü bu kayıtta okunmamıştır; mit numarası ve konusu doğrulanmış, argüman ayrıntısı incelenmemiştir."
     }
   },
   {
@@ -3970,17 +3860,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "hakemli-cipa-yok",
-        "text": "BU KAYIT İÇİN HAKEMLİ ÇIPA BULUNAMADI. Tarihler ara kaynaktan doğrulanmıştır; sansür tarihi literatürüyle desteklenmelidir.",
-        "citations": [
-          {
-            "source_ref": "index-librorum-wikipedia",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -3992,7 +3871,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Hakemli çıpa YOK; ara kaynak düzeyinde kalmaya devam ediyor."
+      "notes": "Hakemli çıpa YOK; ara kaynak düzeyinde kalmaya devam ediyor. BU KAYIT İÇİN HAKEMLİ ÇIPA BULUNAMADI. Tarihler ara kaynaktan doğrulanmıştır; sansür tarihi literatürüyle desteklenmelidir."
     }
   },
   {
@@ -4168,17 +4047,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "edisyon-okunmadi",
-        "text": "Bu kayıtta belge edisyonunun tam metni okunmamıştır; künye ve kapsam doğrulanmıştır.",
-        "citations": [
-          {
-            "source_ref": "finocchiaro-1989-galileo-affair",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "checked": "2026-09-07",
@@ -4187,7 +4055,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Belge edisyonu çıpa olarak bağlandı; tam metin okunmadı."
+      "notes": "Belge edisyonu çıpa olarak bağlandı; tam metin okunmadı. Bu kayıtta belge edisyonunun tam metni okunmamıştır; künye ve kapsam doğrulanmıştır."
     }
   },
   {
@@ -4341,17 +4209,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "bruno-bolumu-dogrulanmadi",
-        "text": "Bu kayıtta derlemede Bruno'ya ayrılmış bir bölüm olup olmadığı DOĞRULANMADI; kaynak yalnızca genel kapsam için kullanıldı.",
-        "citations": [
-          {
-            "source_ref": "numbers-2009-galileo-goes-to-jail",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -4363,7 +4220,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Numbers derlemesinde Bruno bölümü doğrulanmadı; genel kapsam atfı olarak kullanıldı."
+      "notes": "Numbers derlemesinde Bruno bölümü doğrulanmadı; genel kapsam atfı olarak kullanıldı. Bu kayıtta derlemede Bruno'ya ayrılmış bir bölüm olup olmadığı DOĞRULANMADI; kaynak yalnızca genel kapsam için kullanıldı."
     }
   },
   {
@@ -4495,17 +4352,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "hakemli-cipa-yok",
-        "text": "BU KAYIT İÇİN HAKEMLİ GEÇ ANTİKÇAĞ ÇIPASI BULUNAMADI; ara kaynak düzeyinde kalmaktadır.",
-        "citations": [
-          {
-            "source_ref": "platonic-academy-wikipedia",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -4517,7 +4363,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Hakemli çıpa YOK."
+      "notes": "Hakemli çıpa YOK. BU KAYIT İÇİN HAKEMLİ GEÇ ANTİKÇAĞ ÇIPASI BULUNAMADI; ara kaynak düzeyinde kalmaktadır."
     }
   },
   {
@@ -4798,17 +4644,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "tam-metin-okunmadi",
-        "text": "Bu kayıtta monografinin tam metni okunmamıştır; künye, kapsam ve tahmin rakamı doğrulanmıştır.",
-        "citations": [
-          {
-            "source_ref": "levack-2016-witch-hunt",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -4820,7 +4655,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Hakemli çıpa eklendi (Levack 2016) ve rakam belirsizlikten çıktı: 'on binler' -> ~45.000."
+      "notes": "Hakemli çıpa eklendi (Levack 2016) ve rakam belirsizlikten çıktı: 'on binler' -> ~45.000. Bu kayıtta monografinin tam metni okunmamıştır; künye, kapsam ve tahmin rakamı doğrulanmıştır."
     }
   }
 ]

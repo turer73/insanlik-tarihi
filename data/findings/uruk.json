@@ -3822,19 +3822,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "bu-eslestirme-nimrod-anlatisini-cagdas-uruk-tarihi-belgesine",
-        "text": "Bu eşleştirme, Nimrod anlatısını çağdaş Uruk tarihi belgesine dönüştürmez.",
-        "citations": [
-          {
-            "source_ref": "levin-2020-nimrod-sehirleri",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
       "Metnin son biçimindeki kent listesinin siyasal ve edebî amacı nedir?"
     ],
@@ -3846,7 +3834,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Eşleştirme sağlam, ÇIKARILAN SONUÇ değil. Ad biçimi ve coğrafi sıra Erech–Uruk özdeşliğini destekliyor ve bu yaygın akademik görüş. Ama bir adın doğru eşleşmesi, o adın geçtiği metni çağdaş tarih belgesine dönüştürmez: Nimrod anlatısı edebî-soybilimsel bir çerçevedir. ‘Kutsal Kitap Uruk’u doğruluyor’ cümlesi, bir kent adının tanınmasından bütün bir kuruluş anlatısının onayını üretiyor.",
+    "divergence": "Eşleştirme sağlam, ÇIKARILAN SONUÇ değil. Ad biçimi ve coğrafi sıra Erech–Uruk özdeşliğini destekliyor ve bu yaygın akademik görüş. Ama bir adın doğru eşleşmesi, o adın geçtiği metni çağdaş tarih belgesine dönüştürmez: Nimrod anlatısı edebî-soybilimsel bir çerçevedir. ‘Kutsal Kitap Uruk’u doğruluyor’ cümlesi, bir kent adının tanınmasından bütün bir kuruluş anlatısının onayını üretiyor. Bu eşleştirme, Nimrod anlatısını çağdaş Uruk tarihi belgesine dönüştürmez.",
     "divergence_type": [
       "kategori-hatasi",
       "ideolojik-secim"

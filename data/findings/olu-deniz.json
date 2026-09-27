@@ -204,7 +204,7 @@
       }
     ],
     "popular_claim": "Parşömenler Kutsal Kitap'ın değiştirildiğini kanıtladı.",
-    "divergence": "Varyant gerçek ama sonucu tersine işaret ediyor: Masoretik gelenekte bir kelime DÜŞMÜŞ, sonradan eklenmemiş. Aktarımın genel sadakati bu bulguyla zedelenmiyor.",
+    "divergence": "Varyant gerçek ama sonucu tersine işaret ediyor: Masoretik gelenekte bir kelime DÜŞMÜŞ, sonradan eklenmemiş. Aktarımın genel sadakati bu bulguyla zedelenmiyor. Bu kayıt TEK BİR AYETİ konu alıyor; ondan 'aktarım genel olarak sadıktır' sonucunu çıkarmak ayrı ve daha geniş bir iddiadır.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -304,17 +304,6 @@
             "source_ref": "tov-2012-textual-criticism",
             "locator": "Varyant yönü tartışması",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "tek-ayetten-genelleme",
-        "text": "Bu kayıt TEK BİR AYETİ konu alıyor; ondan 'aktarım genel olarak sadıktır' sonucunu çıkarmak ayrı ve daha geniş bir iddiadır.",
-        "citations": [
-          {
-            "source_ref": "ulrich-2010-biblical-qumran-scrolls",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
           }
         ]
       }
@@ -654,17 +643,6 @@
     ],
     "counter_evidence": [
       {
-        "id": "arama-yapildi-mi",
-        "text": "'Hiçbiri bulunamadı' ifadesi ARAMA yapıldığını varsayar; kaç yerin sistematik olarak arandığı bu kayıtta gösterilmiyor. Bulunamama, aranmamış olmakla da açıklanabilir.",
-        "citations": [
-          {
-            "source_ref": "puech-2015-copper-scroll-text",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
         "id": "metnin-turu-anlami-degistirir",
         "text": "Metnin türü tartışmalıdır ve bu, 'bulunamadı'nın anlamını değiştirir: gerçek bir envanterse bulunamama bir başarısızlıktır, folklorik ya da ideal bir liste ise bulunacak bir şey zaten yoktur.",
         "citations": [
@@ -685,7 +663,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "DeepSeek turunda aday gelmemişti; Puech 2015 ayrıca arandı ve crossref'te doğrulandı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+      "notes": "DeepSeek turunda aday gelmemişti; Puech 2015 ayrıca arandı ve crossref'te doğrulandı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. 'Hiçbiri bulunamadı' ifadesi ARAMA yapıldığını varsayar; kaç yerin sistematik olarak arandığı bu kayıtta gösterilmiyor. Bulunamama, aranmamış olmakla da açıklanabilir."
     }
   },
   {
@@ -736,7 +714,7 @@
       }
     ],
     "popular_claim": "Yeni Ölü Deniz parçaları ortaya çıkmaya devam ediyor.",
-    "divergence": "2002'den sonra piyasaya çıkan parçaların TAMAMINA yakını sahte çıktı. Ve sahteciliğin nasıl yakalandığı, kaydın asıl dersi: mürekkep yüzeydeki ÇATLAKLARA AKMIŞ - yani yazı, deri yıprandıktan SONRA yazılmış. Antik bir metin böyle davranmaz. Malzeme de parşömen değil, muhtemelen Roma dönemi YAZISIZ deri; yani sahteci gerçek antik malzeme bulup üstüne yazmış.",
+    "divergence": "2002'den sonra piyasaya çıkan parçaların TAMAMINA yakını sahte çıktı. Ve sahteciliğin nasıl yakalandığı, kaydın asıl dersi: mürekkep yüzeydeki ÇATLAKLARA AKMIŞ - yani yazı, deri yıprandıktan SONRA yazılmış. Antik bir metin böyle davranmaz. Malzeme de parşömen değil, muhtemelen Roma dönemi YAZISIZ deri; yani sahteci gerçek antik malzeme bulup üstüne yazmış. Bu kayıt MUSEUM OF THE BIBLE koleksiyonu içindir; Kumran'dan kazıyla çıkmış parşömenlerin sahihliğine dair hiçbir şey söylemez. İki cümle karıştırılırsa kayıt asıl külliyatı da şüpheye sokuyormuş gibi okunur.",
     "divergence_type": [
       "provenans-yoklugu"
     ],
@@ -844,30 +822,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "kazi-parcalarini-kapsamiyor",
-        "text": "Bu kayıt MUSEUM OF THE BIBLE koleksiyonu içindir; Kumran'dan kazıyla çıkmış parşömenlerin sahihliğine dair hiçbir şey söylemez. İki cümle karıştırılırsa kayıt asıl külliyatı da şüpheye sokuyormuş gibi okunur.",
-        "citations": [
-          {
-            "source_ref": "justnes-lying-pen",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "rapor-kunyeleri-eksik",
-        "text": "Loll ve BAM raporlarının künye ayrıntıları (yayın biçimi, sayfa) bu turda doğrulanmadı.",
-        "citations": [
-          {
-            "source_ref": "loll-2020-mothb-raporu",
-            "locator": "Künye düzeyi",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
       "2002 sonrası piyasaya çıkan parçaların kaçı incelendi, kaçı hâlâ denetlenmedi?"
     ],
@@ -877,7 +832,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. En önemli ekleme: bu kaydın KAZI parçalarını kapsamadığı ayrımı - okuma hatasına çok açıktı."
+      "notes": "Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. En önemli ekleme: bu kaydın KAZI parçalarını kapsamadığı ayrımı - okuma hatasına çok açıktı. Loll ve BAM raporlarının künye ayrıntıları (yayın biçimi, sayfa) bu turda doğrulanmadı."
     }
   },
   {
@@ -941,7 +896,7 @@
       }
     ],
     "popular_claim": "Kumran'da Yeni Ahit parçası bulundu.",
-    "divergence": "1972'de öne sürülen bir iddia popüler apolojetik literatürde kanıtlanmış gibi dolaşıyor. Oysa eşleştirmenin dayandığı harf okuması alan içinde ayrıntılı biçimde reddedildi - 1973'te ve kesin biçimde 1999'da. Parçada yirmiden az harf var ve okunabilir tek TAM kelime yok; böyle bir parçadan çıkarılan her eşleştirme, aranan metne göre değişir.",
+    "divergence": "1972'de öne sürülen bir iddia popüler apolojetik literatürde kanıtlanmış gibi dolaşıyor. Oysa eşleştirmenin dayandığı harf okuması alan içinde ayrıntılı biçimde reddedildi - 1973'te ve kesin biçimde 1999'da. Parçada yirmiden az harf var ve okunabilir tek TAM kelime yok; böyle bir parçadan çıkarılan her eşleştirme, aranan metne göre değişir. Gundry'nin başlığındaki 'final' nitelemesi YAZARIN kendi değerlendirmesidir; bir tartışmanın kapandığını başlığı ilan etmez.",
     "divergence_type": [
       "ideolojik-secim"
     ],
@@ -1045,28 +1000,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "final-yazarin-nitelemesi",
-        "text": "Gundry'nin başlığındaki 'final' nitelemesi YAZARIN kendi değerlendirmesidir; bir tartışmanın kapandığını başlığı ilan etmez.",
-        "citations": [
-          {
-            "source_ref": "gundry-1999-no-nu-7q5",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "1972-yazisi-kunyelenmedi",
-        "text": "O'Callaghan'ın özgün 1972 Biblica yazısı bu kayıtta künyelenmedi; iddiaya erişim JBL'deki değerlendirme üzerinden.",
-        "citations": [
-          {
-            "source_ref": "fitzmyer-1976-ocallaghan-degerlendirmesi",
-            "locator": "Künye düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1078,7 +1011,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "DeepSeek turunda aday gelmemişti; Fee 1973 ve Gundry 1999 ayrıca arandı ve crossref'te yazarlarıyla doğrulandı. 'Uzmanların ezici çoğunluğu reddediyor' ifadesi artık iki künyeli çalışmaya bağlı."
+      "notes": "DeepSeek turunda aday gelmemişti; Fee 1973 ve Gundry 1999 ayrıca arandı ve crossref'te yazarlarıyla doğrulandı. 'Uzmanların ezici çoğunluğu reddediyor' ifadesi artık iki künyeli çalışmaya bağlı. O'Callaghan'ın özgün 1972 Biblica yazısı bu kayıtta künyelenmedi; iddiaya erişim JBL'deki değerlendirme üzerinden."
     }
   },
   {
@@ -1156,30 +1089,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "tek-taraf-kaynak",
-        "text": "BU KAYIT TEK BİR KURUMSAL KAYNAĞA DAYANIYOR ve o kurum tartışmanın TARAFIDIR. Ürdün ve Filistin tarafının konumu burada temsil edilmiyor.",
-        "citations": [
-          {
-            "source_ref": "iaa-parsomen-koleksiyonu",
-            "locator": "Kaynak konumu",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "iade-belgeleri-yok",
-        "text": "İade taleplerinin ve sergi itirazlarının belgeleri bu kayıtta gösterilmiyor; ifadeler genel aktarımlara dayanıyor.",
-        "citations": [
-          {
-            "source_ref": "iaa-parsomen-koleksiyonu",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
       "Ürdün ve Filistin Yönetimi'nin resmî iade talepleri belgeli mi? Hangi tarihte, hangi kanaldan?",
       "Hukuk literatüründe bu ihtilafı inceleyen bir çalışma künyelenmeli - bu turda bulunamadı."
@@ -1190,7 +1100,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "DeepSeek Katz 2005'i önerdi ve URL doğrulaması geçti - ama URL derginin ANA SAYFASIYDI, makalenin kendisi değil. Rollinger vakasıyla aynı gerekçeyle ELENDİ. Kayıt hâlâ tek ve taraf bir kaynağa dayanıyor; bu açıkça yazıldı ve açık soruya taşındı."
+      "notes": "DeepSeek Katz 2005'i önerdi ve URL doğrulaması geçti - ama URL derginin ANA SAYFASIYDI, makalenin kendisi değil. Rollinger vakasıyla aynı gerekçeyle ELENDİ. Kayıt hâlâ tek ve taraf bir kaynağa dayanıyor; bu açıkça yazıldı ve açık soruya taşındı. BU KAYIT TEK BİR KURUMSAL KAYNAĞA DAYANIYOR ve o kurum tartışmanın TARAFIDIR. Ürdün ve Filistin tarafının konumu burada temsil edilmiyor. İade taleplerinin ve sergi itirazlarının belgeleri bu kayıtta gösterilmiyor; ifadeler genel aktarımlara dayanıyor."
     }
   },
   {
@@ -1254,7 +1164,7 @@
       }
     ],
     "popular_claim": "Vatikan ya da kilise parşömenleri sakladı.",
-    "divergence": "Gecikme gerçekti ama sebebi örtbas değil, akademik tekel ve kurumsal hantallıktı. Yayımlanan metinlerde Hristiyanlığı sarsan bir şey çıkmadı.",
+    "divergence": "Gecikme gerçekti ama sebebi örtbas değil, akademik tekel ve kurumsal hantallıktı. Yayımlanan metinlerde Hristiyanlığı sarsan bir şey çıkmadı. 'Hristiyanlığı sarsan bir şey çıkmadı' ifadesi bir DEĞERLENDİRMEDİR, ölçüm değil; neyin 'sarsıcı' sayılacağı okuyucunun beklentisine bağlıdır.",
     "divergence_type": [
       "medya-abartisi"
     ],
@@ -1355,17 +1265,6 @@
       }
     ],
     "counter_evidence": [
-      {
-        "id": "sarsici-degerlendirme",
-        "text": "'Hristiyanlığı sarsan bir şey çıkmadı' ifadesi bir DEĞERLENDİRMEDİR, ölçüm değil; neyin 'sarsıcı' sayılacağı okuyucunun beklentisine bağlıdır.",
-        "citations": [
-          {
-            "source_ref": "vanderkam-flint-2002-meaning-dss",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
       {
         "id": "1991-bitis-degil",
         "text": "Tıkanmanın 1991'de 'kırılması' yayın işinin bittiği anlamına gelmez; DJD serisinin tamamlanması 2009'u buldu.",

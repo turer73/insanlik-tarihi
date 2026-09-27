@@ -43,7 +43,7 @@
       }
     ],
     "popular_claim": "Bütün antik uygarlıklarda tufan anlatısı vardır.",
-    "divergence": "İddia 19. yüzyılda misyoner derlemeleri ve karşılaştırmalı folklor çalışmalarıyla DERLENDİ. Bir anlatı aranırsa bulunur; belirsiz su anlatıları 'tufan miti' olarak sınıflandı. Derleyenlerin önemli kısmı din adamıydı ve Tekvin'in evrensel bir hatıraya dayandığını göstermek teolojik olarak değerliydi.",
+    "divergence": "İddia 19. yüzyılda misyoner derlemeleri ve karşılaştırmalı folklor çalışmalarıyla DERLENDİ. Bir anlatı aranırsa bulunur; belirsiz su anlatıları 'tufan miti' olarak sınıflandı. Derleyenlerin önemli kısmı din adamıydı ve Tekvin'in evrensel bir hatıraya dayandığını göstermek teolojik olarak değerliydi. 'Evrensel değil' demek 'yalnızca Yakındoğu'da var' demek değildir; su felaketi anlatıları başka yerlerde de bulunur - iddia BELİRLİ BİR ANLATI KALIBININ evrensel olmadığıdır.",
     "divergence_type": [
       "ideolojik-secim",
       "kategori-hatasi"
@@ -155,30 +155,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "japonya-afrika-kaynaksiz",
-        "text": "Japonya (Kojiki, Nihon Shoki) ve Sahra altı Afrika için 'yok' ve 'seyrek' ifadeleri bu kayıtta AYRI KAYNAKLARA BAĞLANMADI; iki bölge için külliyat taraması yapılmadı.",
-        "citations": [
-          {
-            "source_ref": "frazer-1918-folklore-old-testament",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "kalip-ayrimi",
-        "text": "'Evrensel değil' demek 'yalnızca Yakındoğu'da var' demek değildir; su felaketi anlatıları başka yerlerde de bulunur - iddia BELİRLİ BİR ANLATI KALIBININ evrensel olmadığıdır.",
-        "citations": [
-          {
-            "source_ref": "dalley-1989-myths-from-mesopotamia",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
       "Japonya ve Sahra altı Afrika için külliyat taraması yapılmalı; şu an iddia dolaylı."
     ],
@@ -188,7 +165,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Frazer'ın tier'ı unreliable -> popular olarak DÜZELTİLDİ (README tanımına aykırıydı) ve rolü claim-origin olarak işaretlendi. Japonya/Afrika iddialarının kaynaksız olduğu açıkça yazıldı."
+      "notes": "Frazer'ın tier'ı unreliable -> popular olarak DÜZELTİLDİ (README tanımına aykırıydı) ve rolü claim-origin olarak işaretlendi. Japonya/Afrika iddialarının kaynaksız olduğu açıkça yazıldı. Japonya (Kojiki, Nihon Shoki) ve Sahra altı Afrika için 'yok' ve 'seyrek' ifadeleri bu kayıtta AYRI KAYNAKLARA BAĞLANMADI; iki bölge için külliyat taraması yapılmadı."
     }
   },
   {
@@ -233,7 +210,7 @@
       }
     ],
     "popular_claim": "Mısır'da da bir tufan anlatısı vardır; her nehir uygarlığında olmalı.",
-    "divergence": "YOK - ve yokluğu şaşırtıcı olan da bu: yıllık Nil taşkını kültürün merkezindeydi. En yakın metin 'İnsanlığın Yok Edilişi'dir ama orada araç SU DEĞİL, kırmızıya boyanmış biradır; üstelik insanlık boğularak değil, tanrıça sarhoş edilerek KURTARILIR. Yani anlatı ters yönde çalışıyor. Bir kültürün elinde malzeme olması, o anlatıyı üreteceği anlamına gelmiyor.",
+    "divergence": "YOK - ve yokluğu şaşırtıcı olan da bu: yıllık Nil taşkını kültürün merkezindeydi. En yakın metin 'İnsanlığın Yok Edilişi'dir ama orada araç SU DEĞİL, kırmızıya boyanmış biradır; üstelik insanlık boğularak değil, tanrıça sarhoş edilerek KURTARILIR. Yani anlatı ters yönde çalışıyor. Bir kültürün elinde malzeme olması, o anlatıyı üreteceği anlamına gelmiyor. NEGATİF İDDİA KANITLANAMAZ, yalnızca desteklenebilir: 'yok' demek, taranmış külliyatta bulunmadığı demektir. Mısır külliyatı büyük ama eksiksiz değildir.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -319,17 +296,6 @@
     ],
     "counter_evidence": [
       {
-        "id": "negatif-iddia-siniri",
-        "text": "NEGATİF İDDİA KANITLANAMAZ, yalnızca desteklenebilir: 'yok' demek, taranmış külliyatta bulunmadığı demektir. Mısır külliyatı büyük ama eksiksiz değildir.",
-        "citations": [
-          {
-            "source_ref": "lichtheim-1976-ancient-egyptian-literature",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
         "id": "aciklama-net-degil",
         "text": "Yokluğun kültürel açıklaması net değil: Nil taşkını yıkıcı değil BEREKETLİ olduğu için mi, yoksa başka bir sebeple mi - bu kayıt cevap vermiyor.",
         "citations": [
@@ -393,7 +359,7 @@
       }
     ],
     "popular_claim": "Çin'de de tufan miti vardır.",
-    "divergence": "Teknik olarak doğru, analitik olarak yanıltıcı. 'Tufan' etiketi yapısal farkı gizliyor.",
+    "divergence": "Teknik olarak doğru, analitik olarak yanıltıcı. 'Tufan' etiketi yapısal farkı gizliyor. Yapısal fark, iki geleneğin hiç temas etmediğini göstermez; söylenen şey aynı ANLATI KALIBI olmadığıdır.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -476,17 +442,6 @@
       }
     ],
     "counter_evidence": [
-      {
-        "id": "temas-etmedi-demiyoruz",
-        "text": "Yapısal fark, iki geleneğin hiç temas etmediğini göstermez; söylenen şey aynı ANLATI KALIBI olmadığıdır.",
-        "citations": [
-          {
-            "source_ref": "lewis-2006-flood-myths-early-china",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
       {
         "id": "metinler-gec-derleme",
         "text": "Gun-Yu metinleri de geç derlemedir (Savaşan Devletler ve sonrası); anlatının kaç yüzyıl önce hangi biçimde dolaştığı ayrı bir sorudur.",
@@ -723,7 +678,7 @@
       }
     ],
     "popular_claim": "Tufan, insanlığın günahları yüzünden gönderilen bir cezadır.",
-    "divergence": "Bu ahlaki çerçeve Tekvin'in katkısıdır, anlatının kendisinin değil. Atrahasis'te gerekçe açıkça yazılıdır ve ahlakla ilgisi yoktur: insanlar çoğaldı, uğultuları arttı, tanrı uyuyamadı. Aynı olay örgüsü ödünç alınıp BAŞKA BİR SEBEBE bağlanmış - yani devralınan şey olay, değiştirilen şey anlam.",
+    "divergence": "Bu ahlaki çerçeve Tekvin'in katkısıdır, anlatının kendisinin değil. Atrahasis'te gerekçe açıkça yazılıdır ve ahlakla ilgisi yoktur: insanlar çoğaldı, uğultuları arttı, tanrı uyuyamadı. Aynı olay örgüsü ödünç alınıp BAŞKA BİR SEBEBE bağlanmış - yani devralınan şey olay, değiştirilen şey anlam. Tekvin'in çerçeveyi 'değiştirdiği' savı bir ÇIKARIMDIR: iki metnin ilişkisi kabul edilse bile hangisinin neyi ne zaman eklediği ayrıca gösterilmelidir.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -814,17 +769,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "degistirme-savi-cikarim",
-        "text": "Tekvin'in çerçeveyi 'değiştirdiği' savı bir ÇIKARIMDIR: iki metnin ilişkisi kabul edilse bile hangisinin neyi ne zaman eklediği ayrıca gösterilmelidir.",
-        "citations": [
-          {
-            "source_ref": "dalley-1989-myths-from-mesopotamia",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -884,7 +828,7 @@
       }
     ],
     "popular_claim": "Mayalarda da tufan miti vardı.",
-    "divergence": "Metin ~1555'te, Latin alfabesiyle, Hristiyanlaşmış K'iche' yazarlarca, fetihten ~30 yıl sonra yazıldı. Uzmanların çoğu metnin ciddi Kolomb öncesi malzeme taşıdığında hemfikir, ama TUFAN ÖĞESİ kirlenme kuşkusunun en yüksek olduğu yer.",
+    "divergence": "Metin ~1555'te, Latin alfabesiyle, Hristiyanlaşmış K'iche' yazarlarca, fetihten ~30 yıl sonra yazıldı. Uzmanların çoğu metnin ciddi Kolomb öncesi malzeme taşıdığında hemfikir, ama TUFAN ÖĞESİ kirlenme kuşkusunun en yüksek olduğu yer. Bu kayıt TUFAN ÖĞESİ için kuşku bildiriyor, metnin tamamı için değil. Ayrım korunmazsa kayıt Popol Vuh'u toptan geçersiz sayıyormuş gibi okunur.",
     "divergence_type": [
       "provenans-yoklugu",
       "somurge-anlatisi"
@@ -939,17 +883,6 @@
             "source_ref": "tedlock-1996-popol-vuh",
             "locator": "İkonografi karşılaştırması",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "tufan-ogesi-metnin-tamami-degil",
-        "text": "Bu kayıt TUFAN ÖĞESİ için kuşku bildiriyor, metnin tamamı için değil. Ayrım korunmazsa kayıt Popol Vuh'u toptan geçersiz sayıyormuş gibi okunur.",
-        "citations": [
-          {
-            "source_ref": "tedlock-1996-popol-vuh",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
           }
         ]
       }
@@ -1110,17 +1043,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "woolley-kunye-eksik",
-        "text": "Woolley'in 1929 duyurusunun künye ayrıntıları bu kayıtta doğrulanmadı.",
-        "citations": [
-          {
-            "source_ref": "woolley-1929-ur-tufan-katmani",
-            "locator": "Künye düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1132,7 +1054,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "DeepSeek turunda bu kayda doğrulanmış aday GELMEDİ; ayrıca arandı ve alanın klasik yeniden değerlendirmesi bulundu (Mallowan 1964, Iraq 26). Kaydın iddiasını doğrudan taşıyor."
+      "notes": "DeepSeek turunda bu kayda doğrulanmış aday GELMEDİ; ayrıca arandı ve alanın klasik yeniden değerlendirmesi bulundu (Mallowan 1964, Iraq 26). Kaydın iddiasını doğrudan taşıyor. Woolley'in 1929 duyurusunun künye ayrıntıları bu kayıtta doğrulanmadı."
     }
   },
   {
@@ -1276,17 +1198,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "1997-yayini-kunyelenmedi",
-        "text": "Özgün HAKEMLİ yayın (1997) bu kayıtta künyelenmedi; hipotezin kaynağı olarak popülerleştirilmiş kitap kullanılıyor. Bu bir eksikliktir.",
-        "citations": [
-          {
-            "source_ref": "ryan-pitman-1999-noahs-flood",
-            "locator": "Kaynak düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1298,7 +1209,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Ryan & Pitman 1999 tier'ı 'popular' - popülerleştirilmiş kitap. Giosan 2009 DOI ile bağlandı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+      "notes": "Ryan & Pitman 1999 tier'ı 'popular' - popülerleştirilmiş kitap. Giosan 2009 DOI ile bağlandı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. Özgün HAKEMLİ yayın (1997) bu kayıtta künyelenmedi; hipotezin kaynağı olarak popülerleştirilmiş kitap kullanılıyor. Bu bir eksikliktir."
     }
   },
   {
@@ -1399,17 +1310,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "lambert-dolayli-kaynak",
-        "text": "KAYNAK SINIRI: bu kayıtta kullanılan Lambert 1965, TEKVİN'in Babil arka planı üzerinedir; Manu-Mezopotamya ilişkisini doğrudan ele almaz. Manu'nun bağımsızlığını inceleyen bir çalışma bu turda bulunamadı.",
-        "citations": [
-          {
-            "source_ref": "lambert-1965-babylonian-background-genesis",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1422,7 +1322,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Lambert 1965 DOI ile doğrulandı AMA konusu Tekvin'dir, Manu değil. Bağlam kaynağı olarak alındı ve dolaylılığı açıkça yazıldı."
+      "notes": "Lambert 1965 DOI ile doğrulandı AMA konusu Tekvin'dir, Manu değil. Bağlam kaynağı olarak alındı ve dolaylılığı açıkça yazıldı. KAYNAK SINIRI: bu kayıtta kullanılan Lambert 1965, TEKVİN'in Babil arka planı üzerinedir; Manu-Mezopotamya ilişkisini doğrudan ele almaz. Manu'nun bağımsızlığını inceleyen bir çalışma bu turda bulunamadı."
     }
   },
   {

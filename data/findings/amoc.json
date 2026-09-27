@@ -14,7 +14,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Gulf Stream duruyor; Avrupa'yı ısıtan akıntı kesiliyor.",
-    "divergence": "İki ayrı olgu tek adla anılıyor. Gulf Stream RÜZGÂRLA sürülür ve rüzgâr estiği sürece durmaz. AMOC ise sıcaklık ve tuzluluk farkının sürüklediği DEVRİLME bileşenidir; zayıflayabilen ve tartışılan budur. İkisi Kuzey Amerika kıyısında yan yana aktığı için karışıyor. 'Gulf Stream duruyor' cümlesi fiziksel olarak yanlış.",
+    "divergence": "İki ayrı olgu tek adla anılıyor. Gulf Stream RÜZGÂRLA sürülür ve rüzgâr estiği sürece durmaz. AMOC ise sıcaklık ve tuzluluk farkının sürüklediği DEVRİLME bileşenidir; zayıflayabilen ve tartışılan budur. İkisi Kuzey Amerika kıyısında yan yana aktığı için karışıyor. 'Gulf Stream duruyor' cümlesi fiziksel olarak yanlış. Gulf Stream AMOC sisteminin bir parçasıdır; tümüyle bağımsız değillerdir. Bu kayıt ikisinin ilişkisiz olduğunu değil, AYNI ŞEY OLMADIĞINI söylüyor.",
     "divergence_type": [
       "kategori-hatasi",
       "medya-abartisi"
@@ -71,17 +71,6 @@
       }
     ],
     "counter_evidence": [
-      {
-        "id": "tumuyle-bagimsiz-degil",
-        "text": "Gulf Stream AMOC sisteminin bir parçasıdır; tümüyle bağımsız değillerdir. Bu kayıt ikisinin ilişkisiz olduğunu değil, AYNI ŞEY OLMADIĞINI söylüyor.",
-        "citations": [
-          {
-            "source_ref": "ucl-2024-gulf-stream-ruzgar",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
       {
         "id": "zayiflayabilir",
         "text": "Gulf Stream'in kendisi de iklim değişikliğiyle zayıflayabilir; durmaması zayıflamayacağı anlamına gelmiyor.",
@@ -1128,7 +1117,7 @@
       ]
     },
     "popular_claim": "AMOC geçmişte durdu ve dünyayı buzul çağına soktu.",
-    "divergence": "Zayıflama gerçek ve tekrarlı; DURMA kanıtlanmış değil. Protaktinyum-toryum oranları Heinrich Stadial 1 için 'zayıflamış AMA SÜREN' bir sirkülasyon gösteriyor - makalenin başlığı bunu birebir söylüyor. Genç Dryas için de aynı: 'zayıflamış AMOC'un sürdürülmesi'. 'Durdu' cümlesi vekil göstergelerin verdiğinden fazlasını iddia ediyor.",
+    "divergence": "Zayıflama gerçek ve tekrarlı; DURMA kanıtlanmış değil. Protaktinyum-toryum oranları Heinrich Stadial 1 için 'zayıflamış AMA SÜREN' bir sirkülasyon gösteriyor - makalenin başlığı bunu birebir söylüyor. Genç Dryas için de aynı: 'zayıflamış AMOC'un sürdürülmesi'. 'Durdu' cümlesi vekil göstergelerin verdiğinden fazlasını iddia ediyor. 'Durmadı' ile 'durmaz' aynı şey değil: geçmiş olaylar buzul dünyasında, bugünkünden farklı sınır koşullarında yaşandı.",
     "divergence_type": [
       "medya-abartisi",
       "kategori-hatasi"
@@ -1322,28 +1311,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "gecmis-bugun-farki",
-        "text": "'Durmadı' ile 'durmaz' aynı şey değil: geçmiş olaylar buzul dünyasında, bugünkünden farklı sınır koşullarında yaşandı.",
-        "citations": [
-          {
-            "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "bradtmiller-ozet-duzeyi",
-        "text": "KAYNAK DÜZEYİ: bu kayıttaki dört makalenin üçü tam metinden okundu. Bradtmiller ve ark. 2014 açık erişim değil; o kaynağın locator'ları ÖZET düzeyindedir.",
-        "citations": [
-          {
-            "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -1351,7 +1318,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "You, Fohlmeister ve He TAM METİNDEN okundu; Bradtmiller açık erişim olmadığı için özet düzeyinde kaldı."
+      "notes": "You, Fohlmeister ve He TAM METİNDEN okundu; Bradtmiller açık erişim olmadığı için özet düzeyinde kaldı. KAYNAK DÜZEYİ: bu kayıttaki dört makalenin üçü tam metinden okundu. Bradtmiller ve ark. 2014 açık erişim değil; o kaynağın locator'ları ÖZET düzeyindedir."
     },
     "checked": "2026-09-12",
     "used_in": [
@@ -1376,7 +1343,7 @@
       "jeoloji"
     ],
     "popular_claim": "AMOC çökerse yeni bir buzul çağı başlar.",
-    "divergence": "İki ayrı zaman ölçeği ve iki ayrı mekanizma birbirine karışıyor. Buzul çağları on binlerce yıllık yörünge döngüleriyle geliyor (bkz. [[felaket-milankovic-donguleri]]). AMOC olayları ise on yıllar ile yüzyıllar arasında, ZATEN var olan bir iklim durumunun içinde yaşanıyor - Dansgaard-Oeschger ve Heinrich olaylarının hepsi son buzul döneminin İÇİNDE. AMOC bir yükseltici ve yeniden dağıtıcıdır, buzullaşmanın tetikleyicisi değil.",
+    "divergence": "İki ayrı zaman ölçeği ve iki ayrı mekanizma birbirine karışıyor. Buzul çağları on binlerce yıllık yörünge döngüleriyle geliyor (bkz. [[felaket-milankovic-donguleri]]). AMOC olayları ise on yıllar ile yüzyıllar arasında, ZATEN var olan bir iklim durumunun içinde yaşanıyor - Dansgaard-Oeschger ve Heinrich olaylarının hepsi son buzul döneminin İÇİNDE. AMOC bir yükseltici ve yeniden dağıtıcıdır, buzullaşmanın tetikleyicisi değil. AMOC zayıflamasının bölgesel etkileri ciddi olabilir; bu kayıt etkiyi küçümsemiyor, 'buzul çağı' adlandırmasını reddediyor. Yörünge zorlaması ile buzul döngüleri arasındaki bağın kendisi de tam çözülmüş değil; 100 bin yıllık ritmin fiziksel açıklaması üzerinde uzlaşı yok. Bkz. [[milankovic-100bin-yil-problemi]] Buzullaşmayı tetiklemese de AMOC geri beslemelerle buzul döngülerine katkıda bulunuyor olabilir; 'tetikleyici değil' ile 'ilgisiz' aynı şey değil.",
     "divergence_type": [
       "kategori-hatasi",
       "medya-abartisi"
@@ -1468,41 +1435,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "etki-kucumsenmiyor",
-        "text": "AMOC zayıflamasının bölgesel etkileri ciddi olabilir; bu kayıt etkiyi küçümsemiyor, 'buzul çağı' adlandırmasını reddediyor.",
-        "citations": [
-          {
-            "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "yorunge-bagi-da-acik",
-        "text": "Yörünge zorlaması ile buzul döngüleri arasındaki bağın kendisi de tam çözülmüş değil; 100 bin yıllık ritmin fiziksel açıklaması üzerinde uzlaşı yok. Bkz. [[milankovic-100bin-yil-problemi]]",
-        "citations": [
-          {
-            "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "geri-besleme-olabilir",
-        "text": "Buzullaşmayı tetiklemese de AMOC geri beslemelerle buzul döngülerine katkıda bulunuyor olabilir; 'tetikleyici değil' ile 'ilgisiz' aynı şey değil.",
-        "citations": [
-          {
-            "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
       "AMOC geri beslemeleri buzul döngülerinin genliğine ne kadar katkı yapıyor?"
     ],

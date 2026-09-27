@@ -20,7 +20,11 @@ const ESKI_YER_TUTUCU = /paket notundan türetildi|^ilgili bölüm$/i;
 // "X düzeyi" etiketleri ve birkaç kesin meta ifade. Bir "düzey" bir
 // kaynağın içinde bir yer olamaz; bu etiketler sitenin kendi akıl yürütmesini
 // adlandırır.
-const META_ETIKET = /düzey(i|leri|ler)?(\s|$)|^kaynak konumu$|^kayıt (tanımı|gerekçesi|yokluğu değerlendirmesi)$/i;
+// Tekil "düzeyi" ya da yalın "düzey": "Karşılaştırmalı düzeyler" gibi çoğul biçim
+// gerçek bir konuyu (ör. kurşun düzeyleri) gösterebildiği için dışarıda. "Kayıt
+// tanımı" ve "Kayıt gerekçesi" de UNESCO sayfalarındaki gerçek bölümleri
+// (Description, Justification for Inscription) karşılayabildiği için dışarıda.
+const META_ETIKET = /düzey(i|leri)?(\s|$)|^kaynak konumu$|^kayıt yokluğu değerlendirmesi$/i;
 
 const SAYFA = /(^|[\s(—–,;])(s|pp?|sf|col)\.?\s*\d|sayfa\s*\d/i;
 const SATIR = /satır\s*\d|\blines?\s*\d/i;

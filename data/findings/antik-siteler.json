@@ -164,22 +164,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "hakemli-kaynak-yok",
-        "text": "BU KAYIT HAKEMLİ BİR KAYNAĞA DAYANMIYOR - dayanamıyor, çünkü mesele tam olarak hakemli yayının henüz olmamasıdır. Kayıt duyuruyu kanıt olarak değil, incelenen olgunun kendisi olarak kullanıyor.",
-        "citations": [
-          {
-            "source_ref": "hawass-2021-aten-duyuru",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Duyuru claim-origin olarak işaretlendi. Kaydın hakemli dayanağının olmadığı - ve neden olamayacağı - açıkça yazıldı."
+      "notes": "Duyuru claim-origin olarak işaretlendi. Kaydın hakemli dayanağının olmadığı - ve neden olamayacağı - açıkça yazıldı. BU KAYIT HAKEMLİ BİR KAYNAĞA DAYANMIYOR - dayanamıyor, çünkü mesele tam olarak hakemli yayının henüz olmamasıdır. Kayıt duyuruyu kanıt olarak değil, incelenen olgunun kendisi olarak kullanıyor."
     }
   },
   {
@@ -360,17 +349,6 @@
         ]
       },
       {
-        "id": "ekip-bagimsiz-degil",
-        "text": "Kazı ekibinin sunumu özel finansmanlı ve medya odaklı; ekibin kendi çalışmasını değerlendirdiği kaynak bağımsız sayılamaz.",
-        "citations": [
-          {
-            "source_ref": "ieasm-ebu-kir",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
         "id": "atlantis-cagrisimi",
         "text": "'Bir gecede yutuldu' anlatısı Türkçe içerik sitelerinde Atlantis çağrışımıyla birlikte dolaşıyor.",
         "citations": [
@@ -384,7 +362,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ: kayıt kademeli batışı iddia ediyor ama yalnızca kazı ekibinin kendi sunumuna yaslanıyordu. Brocard 2024 (HAL) bağımsız jeoarkeolojik hattı getirdi."
+      "notes": "YER TUTUCU DEĞİŞTİ: kayıt kademeli batışı iddia ediyor ama yalnızca kazı ekibinin kendi sunumuna yaslanıyordu. Brocard 2024 (HAL) bağımsız jeoarkeolojik hattı getirdi. Kazı ekibinin sunumu özel finansmanlı ve medya odaklı; ekibin kendi çalışmasını değerlendirdiği kaynak bağımsız sayılamaz."
     }
   },
   {
@@ -639,7 +617,7 @@
       }
     ],
     "popular_claim": "Site adı İnkalardan gelir ve Bingham kayıp şehri keşfetmiştir.",
-    "divergence": "Bingham'ın rehberinden aldığı ad en yüksek dağın adıydı. Ayrıca 'keşif' yoktu: yerel halk siteyi biliyor ve tarım için kullanıyordu, ad Bingham gelmeden yedi yıl önce bir atlasta geçiyordu.",
+    "divergence": "Bingham'ın rehberinden aldığı ad en yüksek dağın adıydı. Ayrıca 'keşif' yoktu: yerel halk siteyi biliyor ve tarım için kullanıyordu, ad Bingham gelmeden yedi yıl önce bir atlasta geçiyordu. 'Machu Picchu' adı bugün yerleşmiş durumda; kayıt adın DEĞİŞTİRİLMESİNİ değil, nereden geldiğini söylüyor.",
     "divergence_type": [
       "somurge-anlatisi",
       "guncellenmemis"
@@ -737,17 +715,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "ad-degistirme-onerisi-degil",
-        "text": "'Machu Picchu' adı bugün yerleşmiş durumda; kayıt adın DEĞİŞTİRİLMESİNİ değil, nereden geldiğini söylüyor.",
-        "citations": [
-          {
-            "source_ref": "amado-bauer-2021-huayna-picchu",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
@@ -792,7 +759,7 @@
       "arkeoloji"
     ],
     "popular_claim": "Bingham 1911'de cangılda kaybolmuş bir şehri keşfetti.",
-    "divergence": "Yerli bilgiye 'keşif' demek, o bilgiyi yok saymanın kibar biçimi. Aynı kalıp Angkor ve Petra için de kullanıldı.",
+    "divergence": "Yerli bilgiye 'keşif' demek, o bilgiyi yok saymanın kibar biçimi. Aynı kalıp Angkor ve Petra için de kullanıldı. 'Kayıp' kelimesi akademik anlamda 'dış dünyanın literatüründe kayıtlı değil' demek olarak savunulabilir; kayıt bu okumayı değil, popüler 'kimse bilmiyordu' okumasını reddediyor.",
     "divergence_type": [
       "somurge-anlatisi"
     ],
@@ -881,33 +848,10 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "kayip-kelimesi-savunulabilir",
-        "text": "'Kayıp' kelimesi akademik anlamda 'dış dünyanın literatüründe kayıtlı değil' demek olarak savunulabilir; kayıt bu okumayı değil, popüler 'kimse bilmiyordu' okumasını reddediyor.",
-        "citations": [
-          {
-            "source_ref": "amado-bauer-2021-huayna-picchu",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "bingham-donem-kaynagi",
-        "text": "Bingham'ın kendi anlatısı DÖNEM KAYNAĞIDIR ve kendi seferini yücelten bir çerçeve taşır; yerel varlığa dair ayrıntılar ona RAĞMEN metinde durduğu için değerli.",
-        "citations": [
-          {
-            "source_ref": "bingham-1948-lost-city",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "review": {
       "status": "draft",
-      "notes": "Bu kaydın hiç karşı kanıtı yoktu; ikisi yazıldı. Bingham künyelendi ve kendi anlatısının taraflı olduğu işaretlendi."
+      "notes": "Bu kaydın hiç karşı kanıtı yoktu; ikisi yazıldı. Bingham künyelendi ve kendi anlatısının taraflı olduğu işaretlendi. Bingham'ın kendi anlatısı DÖNEM KAYNAĞIDIR ve kendi seferini yücelten bir çerçeve taşır; yerel varlığa dair ayrıntılar ona RAĞMEN metinde durduğu için değerli."
     }
   },
   {
@@ -1079,22 +1023,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "japon-cizimi-kaynaksiz",
-        "text": "17. yüzyıl Japon çizimi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; satır kaynaksız olduğu için kanıttan karşı kanıda alındı.",
-        "citations": [
-          {
-            "source_ref": "zhou-daguan-1297",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "'17. yy Japon çizimi' satırı kaynaksızdı; kanıttan çıkarılıp sınır olarak işaretlendi. Zhou Daguan eklendi - Angkor'u yaşarken gören tek ayrıntılı dış tanıklık."
+      "notes": "'17. yy Japon çizimi' satırı kaynaksızdı; kanıttan çıkarılıp sınır olarak işaretlendi. Zhou Daguan eklendi - Angkor'u yaşarken gören tek ayrıntılı dış tanıklık. 17. yüzyıl Japon çizimi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; satır kaynaksız olduğu için kanıttan karşı kanıda alındı."
     }
   },
   {
@@ -1260,22 +1193,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "urna-izleri-kaynaksiz",
-        "text": "Urnadaki kurşun izlerinin Bedevi ateş denemelerinden geldiği yaygın anlatıdır; bu kayıtta kaynağa bağlanmadı.",
-        "citations": [
-          {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ: 'Nabati arkeolojisi ve Petra mimarisi literatürü' yerine McKenzie 1990. Karşı kanıtı yoktu; dördü yazıldı ve iki satırın kaynaksız olduğu işaretlendi."
+      "notes": "YER TUTUCU DEĞİŞTİ: 'Nabati arkeolojisi ve Petra mimarisi literatürü' yerine McKenzie 1990. Karşı kanıtı yoktu; dördü yazıldı ve iki satırın kaynaksız olduğu işaretlendi. Urnadaki kurşun izlerinin Bedevi ateş denemelerinden geldiği yaygın anlatıdır; bu kayıtta kaynağa bağlanmadı."
     }
   },
   {
@@ -1328,7 +1250,7 @@
       }
     ],
     "popular_claim": "El Castillo, bin yıllık hâliyle ayakta duran bir Maya piramididir.",
-    "divergence": "İkonik görüntü hem hayatta kalanın hem de 20. yüzyılda yeniden inşa edilenin görüntüsü. Turizm fotoğrafçılığı hep restore edilmiş yüzü gösteriyor.",
+    "divergence": "İkonik görüntü hem hayatta kalanın hem de 20. yüzyılda yeniden inşa edilenin görüntüsü. Turizm fotoğrafçılığı hep restore edilmiş yüzü gösteriyor. Restore edilmiş olmak sahtelik değildir; kayıt restorasyonu değil, turistik fotoğrafın onu görünmez kılmasını eleştiriyor.",
     "divergence_type": [
       "turizm-kopyalamasi",
       "hayatta-kalma-yanliligi"
@@ -1417,33 +1339,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "restorasyon-sahtelik-degil",
-        "text": "Restore edilmiş olmak sahtelik değildir; kayıt restorasyonu değil, turistik fotoğrafın onu görünmez kılmasını eleştiriyor.",
-        "citations": [
-          {
-            "source_ref": "inah-el-castillo-restorasyon",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "url-bulunamadi",
-        "text": "Bu kaydın kurumsal kaynağı için doğrulanmış bir kamu adresi bulunamadı; denenen INAH bölge sayfası 404 döndü.",
-        "citations": [
-          {
-            "source_ref": "inah-el-castillo-restorasyon",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ. Karşı kanıtı yoktu; üçü yazıldı. Kurumsal kaynağın URL'si doğrulanamadığı için kurum+yayıncı ile künyelendi ve bu kayda geçirildi."
+      "notes": "YER TUTUCU DEĞİŞTİ. Karşı kanıtı yoktu; üçü yazıldı. Kurumsal kaynağın URL'si doğrulanamadığı için kurum+yayıncı ile künyelendi ve bu kayda geçirildi. Bu kaydın kurumsal kaynağı için doğrulanmış bir kamu adresi bulunamadı; denenen INAH bölge sayfası 404 döndü."
     }
   },
   {
@@ -1634,22 +1534,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "wikipedia-degistirildi",
-        "text": "KAYNAK DÜZELTMESİ: bu kaydın Karahan Tepe kaynağı WIKIPEDIA'ydı ve kendi notunda 'birincil kazı yayınlarıyla değiştirilmeli' yazıyordu. Değiştirildi.",
-        "citations": [
-          {
-            "source_ref": "karul-2021-karahantepe",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Wikipedia kaynağı kazı yöneticisinin hakemli yayınıyla değiştirildi - dosyanın kendi notu bunu zaten istiyordu."
+      "notes": "Wikipedia kaynağı kazı yöneticisinin hakemli yayınıyla değiştirildi - dosyanın kendi notu bunu zaten istiyordu. KAYNAK DÜZELTMESİ: bu kaydın Karahan Tepe kaynağı WIKIPEDIA'ydı ve kendi notunda 'birincil kazı yayınlarıyla değiştirilmeli' yazıyordu. Değiştirildi."
     }
   },
   {
@@ -1988,7 +1877,7 @@
       "antropoloji"
     ],
     "popular_claim": "Bu yapılar ortak bir 'antik gizem' kategorisine aittir.",
-    "divergence": "Seçkiyi üç şey belirliyor: erişilebilirlik, 19. yüzyıl keşif rotaları ve fotojeniklik. Aralarında 11.000 yıl var; Machu Picchu matbaaya Stonehenge'den yakın.",
+    "divergence": "Seçkiyi üç şey belirliyor: erişilebilirlik, 19. yüzyıl keşif rotaları ve fotojeniklik. Aralarında 11.000 yıl var; Machu Picchu matbaaya Stonehenge'den yakın. Kanona girmiş olmak siteleri önemsiz yapmaz; kayıt sitelerin değerini değil, bir arada anılmalarının GEREKÇESİNİ sorguluyor.",
     "divergence_type": [
       "kategori-hatasi",
       "somurge-anlatisi",
@@ -2089,17 +1978,6 @@
           {
             "source_ref": "urry-1990-tourist-gaze",
             "locator": "Fotojeniklik",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "deger-sorgulanmiyor",
-        "text": "Kanona girmiş olmak siteleri önemsiz yapmaz; kayıt sitelerin değerini değil, bir arada anılmalarının GEREKÇESİNİ sorguluyor.",
-        "citations": [
-          {
-            "source_ref": "urry-1990-tourist-gaze",
-            "locator": "Kayıt düzeyi ayrımı",
             "support_type": "context"
           }
         ]
@@ -2500,22 +2378,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "1956-edisyonu",
-        "text": "Edisyon 1956 tarihli; sonraki okumalar ve düzeltmeler bu kayıtta taranmadı.",
-        "citations": [
-          {
-            "source_ref": "paranavitana-1956-sigiri-graffiti",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Bu kaydın hiç karşı kanıtı yoktu; üçü yazıldı. İkisi kaydın kendi sınırı, biri kaynağın yaşı."
+      "notes": "Bu kaydın hiç karşı kanıtı yoktu; üçü yazıldı. İkisi kaydın kendi sınırı, biri kaynağın yaşı. Edisyon 1956 tarihli; sonraki okumalar ve düzeltmeler bu kayıtta taranmadı."
     }
   },
   {
@@ -2556,7 +2423,7 @@
       "arkeoloji"
     ],
     "popular_claim": "Freskler Kaşyapa'nın cariyelerini betimler.",
-    "divergence": "Rakip yorumlar var ve hiçbiri kanıtlanmadı: gök perileri (apsara), bulut kızları, dinsel bağış sahneleri, ya da saray kadınları. Turistik anlatı en romantik olanı seçiyor.",
+    "divergence": "Rakip yorumlar var ve hiçbiri kanıtlanmadı: gök perileri (apsara), bulut kızları, dinsel bağış sahneleri, ya da saray kadınları. Turistik anlatı en romantik olanı seçiyor. Yorumların hiçbirinin kanıtlanmamış olması, hepsinin eşit derecede olası olduğu anlamına gelmez; kayıt turistik anlatının SEÇİMİNİ eleştiriyor, tek bir doğru yorum önermiyor.",
     "divergence_type": [
       "turizm-kopyalamasi"
     ],
@@ -2643,33 +2510,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "esit-olasi-degil",
-        "text": "Yorumların hiçbirinin kanıtlanmamış olması, hepsinin eşit derecede olası olduğu anlamına gelmez; kayıt turistik anlatının SEÇİMİNİ eleştiriyor, tek bir doğru yorum önermiyor.",
-        "citations": [
-          {
-            "source_ref": "bandaranayake-1986-sri-lanka-resimleri",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "tek-esere-dayaniyor",
-        "text": "Bu kayıt tek bir sanat tarihi eserine dayanıyor; ikonografi tartışmasının güncel durumu taranmadı.",
-        "citations": [
-          {
-            "source_ref": "bandaranayake-1986-sri-lanka-resimleri",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Kaydın hiç kanıtı yoktu, yalnız karşı kanıtı vardı; üçü yazıldı. Tek esere dayandığı işaretlendi."
+      "notes": "Kaydın hiç kanıtı yoktu, yalnız karşı kanıtı vardı; üçü yazıldı. Tek esere dayandığı işaretlendi. Bu kayıt tek bir sanat tarihi eserine dayanıyor; ikonografi tartışmasının güncel durumu taranmadı."
     }
   },
   {
@@ -2835,22 +2680,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "tek-yazar",
-        "text": "Bu kaydın iki kaynağı da AYNI YAZARA ait; bağımsız bir doğrulama hattı yok.",
-        "citations": [
-          {
-            "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Kaydın iki kaynağının da aynı yazara ait olduğu işaretlendi - kayıt bunu görünür kılmıyordu."
+      "notes": "Kaydın iki kaynağının da aynı yazara ait olduğu işaretlendi - kayıt bunu görünür kılmıyordu. Bu kaydın iki kaynağı da AYNI YAZARA ait; bağımsız bir doğrulama hattı yok."
     }
   },
   {
@@ -2887,7 +2721,7 @@
       "tarih"
     ],
     "popular_claim": "Petra'da 30.000 kişi yaşıyordu.",
-    "divergence": "Rakam sayım kaydına değil, su sistemi kapasitesi ve yerleşim alanı üzerinden yapılan hesaba dayanıyor. Popüler kaynaklarda tahmin olduğu belirtilmeden veriliyor.",
+    "divergence": "Rakam sayım kaydına değil, su sistemi kapasitesi ve yerleşim alanı üzerinden yapılan hesaba dayanıyor. Popüler kaynaklarda tahmin olduğu belirtilmeden veriliyor. Su kapasitesi bir ÜST SINIR verir: sistem şu kadar kişiyi besleyebilirdi demek, şu kadar kişi yaşıyordu demek değildir.",
     "divergence_type": [
       "turizm-kopyalamasi"
     ],
@@ -2988,17 +2822,6 @@
             "source_ref": "mckenzie-1990-petra-mimarisi",
             "locator": "Kazı durumu",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "ust-sinir-cikarimi",
-        "text": "Su kapasitesi bir ÜST SINIR verir: sistem şu kadar kişiyi besleyebilirdi demek, şu kadar kişi yaşıyordu demek değildir.",
-        "citations": [
-          {
-            "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Çıkarım düzeyi",
-            "support_type": "context"
           }
         ]
       }
@@ -3141,17 +2964,6 @@
     ],
     "counter_evidence": [
       {
-        "id": "1963-rakam-kaynaksiz",
-        "text": "1963 selindeki ölüm sayısı bu kayıtta kaynağa bağlanmadı; 'çok sayıda ziyaretçi' ifadesi belgelenmiş bir rakam değildir.",
-        "citations": [
-          {
-            "source_ref": "unesco-petra",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
         "id": "tasarim-ayni-mi",
         "text": "Bugünkü barajın Nabati tasarımını ne ölçüde izlediği belirsiz; 'temel üzerine kuruldu' ile 'aynı tasarım' aynı şey değil.",
         "citations": [
@@ -3176,7 +2988,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ ('Petra Arkeolojik Parkı sel yönetimi kayıtları' - o kayıtlara ulaşılamadı). Karşı kanıtı yoktu; üçü yazıldı. 1963 ölüm sayısının kaynaksız olduğu işaretlendi."
+      "notes": "YER TUTUCU DEĞİŞTİ ('Petra Arkeolojik Parkı sel yönetimi kayıtları' - o kayıtlara ulaşılamadı). Karşı kanıtı yoktu; üçü yazıldı. 1963 ölüm sayısının kaynaksız olduğu işaretlendi. 1963 selindeki ölüm sayısı bu kayıtta kaynağa bağlanmadı; 'çok sayıda ziyaretçi' ifadesi belgelenmiş bir rakam değildir."
     }
   },
   {
@@ -3236,20 +3048,6 @@
         "language": "en",
         "accessed": "2026-09-07",
         "note": "2009'da Dünya Mirası listesine alındı (İran'ın 10. alanı). Resmî tescil metni."
-      },
-      {
-        "id": "band-e-kaisar-koprubent-muhendisligi",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Hodge, A. Trevor"
-        ],
-        "title": "Band-e Kaisar ve Sasani dönemi köprü-bent mühendisliği üzerine değerlendirme",
-        "container": "Roma hidrolik mühendisliği literatürü",
-        "year": 1992,
-        "url": "https://whc.unesco.org/en/list/1315/",
-        "language": "en",
-        "note": "Önceki sürümden korunan kaynak. KÜNYE EKSİK: yazar ve yıl doğrulanmadı, kapsayıcı dergi adı belirsiz. Birincil künye ile değiştirilmelidir."
       }
     ],
     "evidence": [
@@ -3309,17 +3107,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "kunye-eksik",
-        "text": "Bu kayıttaki hakemli kaynağın künyesi eksiktir: yazar, yıl ve kapsayıcı yayın doğrulanmamıştır. Birincil künye ile değiştirilmelidir.",
-        "citations": [
-          {
-            "source_ref": "band-e-kaisar-koprubent-muhendisligi",
-            "locator": "Künye düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -3332,7 +3119,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "UNESCO tescil metnine bağlandı. Hakemli kaynağın künyesi eksik ve bu, kayıtta açıkça işaretlendi."
+      "notes": "UNESCO tescil metnine bağlandı. Hakemli kaynağın künyesi eksik ve bu, kayıtta açıkça işaretlendi. Bu kayıttaki hakemli kaynağın künyesi eksiktir: yazar, yıl ve kapsayıcı yayın doğrulanmamıştır. Birincil künye ile değiştirilmelidir."
     }
   },
   {
@@ -3521,7 +3308,7 @@
       }
     ],
     "popular_claim": "Stonehenge'in dev taşlarının nereden geldiği hâlâ bilinmiyor; bu anıtın çözülmemiş gizemlerinden biri.",
-    "divergence": "Büyük sarsenler için bu soru 2020'de kapandı: 52 taşın 50'si aynı jeokimyasal imzayı taşıyor ve kaynak, anıtın yalnızca ~25 km kuzeyindeki West Woods. Gizem anlatısı üç ayrı soruyu (sarsenler, mavitaşlar, Sunak Taşı) tek bir soruya indirip hepsini açık gösteriyor - oysa üçünün cevabı da farklı ve biri artık verilmiş durumda.",
+    "divergence": "Büyük sarsenler için bu soru 2020'de kapandı: 52 taşın 50'si aynı jeokimyasal imzayı taşıyor ve kaynak, anıtın yalnızca ~25 km kuzeyindeki West Woods. Gizem anlatısı üç ayrı soruyu (sarsenler, mavitaşlar, Sunak Taşı) tek bir soruya indirip hepsini açık gösteriyor - oysa üçünün cevabı da farklı ve biri artık verilmiş durumda. 'Bilinçli seçim' bir ÇIKARIMDIR: kimyasal imza taşların nereden geldiğini söyler, niçin seçildiğini söylemez.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
@@ -3619,17 +3406,6 @@
             "source_ref": "nash-2020-sarsen-west-woods",
             "locator": "Sonuçlar, istisnalar",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "secim-cikarim",
-        "text": "'Bilinçli seçim' bir ÇIKARIMDIR: kimyasal imza taşların nereden geldiğini söyler, niçin seçildiğini söylemez.",
-        "citations": [
-          {
-            "source_ref": "nash-2020-sarsen-west-woods",
-            "locator": "Yorum düzeyi",
-            "support_type": "context"
           }
         ]
       },
@@ -3999,22 +3775,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "bagimsiz-hat-yok",
-        "text": "Bu kayıttaki bütün kanıt satırları HİPOTEZİ SUNAN çalışmadan geliyor; bağımsız bir doğrulama hattı yok. Bu yüzden hepsi claim-origin olarak işaretlendi.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Kanıtların hepsi hipotezi sunan makaleden geldiği için claim-origin yazıldı - kayıt onları doğrulanmış olgu gibi sunuyordu."
+      "notes": "Kanıtların hepsi hipotezi sunan makaleden geldiği için claim-origin yazıldı - kayıt onları doğrulanmış olgu gibi sunuyordu. Bu kayıttaki bütün kanıt satırları HİPOTEZİ SUNAN çalışmadan geliyor; bağımsız bir doğrulama hattı yok. Bu yüzden hepsi claim-origin olarak işaretlendi."
     }
   },
   {
@@ -4216,7 +3981,7 @@
       "antropoloji"
     ],
     "popular_claim": "Stonehenge bir güneş takvimi / tapınak / gözlemevidir.",
-    "divergence": "Öne sürülen işlevlerin hepsi makul ve hiçbiri kanıtlanabilir değil. Yazısız bir toplumun NİYETİNİ soruyoruz ve niyeti taşıyan hiçbir kayıt yok. Maddi sorular (kaynak, mesafe, tarih) cevaplandı; anlam sorusu duruyor.",
+    "divergence": "Öne sürülen işlevlerin hepsi makul ve hiçbiri kanıtlanabilir değil. Yazısız bir toplumun NİYETİNİ soruyoruz ve niyeti taşıyan hiçbir kayıt yok. Maddi sorular (kaynak, mesafe, tarih) cevaplandı; anlam sorusu duruyor. Hizalanmanın ÖLÇÜLEBİLİR olması, kasıtlı olduğunu kanıtlamaz - ama burada kasıt için ayrıca güçlü gerekçeler var; bu kayıt hizalanmayı değil, ondan çıkarılan AMACI tartışıyor.",
     "divergence_type": [
       "kategori-hatasi",
       "medya-abartisi"
@@ -4326,17 +4091,6 @@
             "source_ref": "parker-pearson-2012-stonehenge",
             "locator": "Kanıt sınırı",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "hizalanma-mi-amac-mi",
-        "text": "Hizalanmanın ÖLÇÜLEBİLİR olması, kasıtlı olduğunu kanıtlamaz - ama burada kasıt için ayrıca güçlü gerekçeler var; bu kayıt hizalanmayı değil, ondan çıkarılan AMACI tartışıyor.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "Yorum düzeyi ayrımı",
-            "support_type": "context"
           }
         ]
       }
@@ -4767,7 +4521,7 @@
       "arkeoloji"
     ],
     "popular_claim": "Angkor Wat cangılda unutulmuş, 19. yüzyılda Fransızlar tarafından keşfedilmiş bir tapınaktır.",
-    "divergence": "Anlatı 19. yüzyıl Fransız sömürge keşif edebiyatının ürünü. Yerli bir bilgiye keşif demek, o bilgiyi yok saymanın kibar biçimi - aynı kalıp Petra ve Machu Picchu için de kullanıldı.",
+    "divergence": "Anlatı 19. yüzyıl Fransız sömürge keşif edebiyatının ürünü. Yerli bir bilgiye keşif demek, o bilgiyi yok saymanın kibar biçimi - aynı kalıp Petra ve Machu Picchu için de kullanıldı. 'Hiç kaybolmadı' ile 'hiç gerilemedi' aynı şey değil: kent gerçekten büyük ölçüde boşaldı. Bu kayıt SÜREKLİ KULLANIMI savunuyor, gerilemeyi reddetmiyor.",
     "divergence_type": [
       "somurge-anlatisi"
     ],
@@ -4869,33 +4623,10 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "bosalma-ile-kaybolma-farki",
-        "text": "'Hiç kaybolmadı' ile 'hiç gerilemedi' aynı şey değil: kent gerçekten büyük ölçüde boşaldı. Bu kayıt SÜREKLİ KULLANIMI savunuyor, gerilemeyi reddetmiyor.",
-        "citations": [
-          {
-            "source_ref": "evans-2023-angkor-cokus-degerlendirme",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "japon-cizimi-kaynaksiz-2",
-        "text": "17. yüzyıldan kalma Japon çizimi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; satır kaynaksızdır.",
-        "citations": [
-          {
-            "source_ref": "evans-2023-angkor-cokus-degerlendirme",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ. Bu kaydın hiç karşı kanıtı yoktu; ikisi yazıldı - biri kaydın kendi sınırı (boşalma ile kaybolma ayrı şeyler)."
+      "notes": "YER TUTUCU DEĞİŞTİ. Bu kaydın hiç karşı kanıtı yoktu; ikisi yazıldı - biri kaydın kendi sınırı (boşalma ile kaybolma ayrı şeyler). 17. yüzyıldan kalma Japon çizimi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; satır kaynaksızdır."
     }
   },
   {
@@ -5067,22 +4798,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "hakemli-dayanak-sinirli",
-        "text": "KAYNAK DÜZEYİ: bu kaydın yeni bulgulara dair satırları sezon duyuruları ve kazı ekibinin kendi kanalına dayanıyor. Hakemli dayanak yalnızca 2011 tarihli itiraz; 2025-26 bulguları için hakemli kaynak yok.",
-        "citations": [
-          {
-            "source_ref": "banning-2011-so-fair-a-house",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ: kayıt yalnızca duyurulara ve kaynaksız bir 'haberler' girdisine dayanıyordu. Banning 2011 hakemli ekseni getirdi; yeni bulguların hakemli dayanağının olmadığı işaretlendi."
+      "notes": "YER TUTUCU DEĞİŞTİ: kayıt yalnızca duyurulara ve kaynaksız bir 'haberler' girdisine dayanıyordu. Banning 2011 hakemli ekseni getirdi; yeni bulguların hakemli dayanağının olmadığı işaretlendi. KAYNAK DÜZEYİ: bu kaydın yeni bulgulara dair satırları sezon duyuruları ve kazı ekibinin kendi kanalına dayanıyor. Hakemli dayanak yalnızca 2011 tarihli itiraz; 2025-26 bulguları için hakemli kaynak yok."
     }
   },
   {
@@ -5238,22 +4958,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "populer-girdi-cikarildi",
-        "text": "KAYNAK DEĞİŞİKLİĞİ: bu kayıt 'Karahan Tepe basamaklı yapı aktarımları' adlı, künyesi olmayan bir popüler girdiye dayanıyordu. O kaynak çıkarıldı; yerine kazı yöneticisinin hakemli yayını ve proje sayfası kondu.",
-        "citations": [
-          {
-            "source_ref": "karul-2021-karahantepe",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Künyesiz popüler kaynak çıkarıldı. Basamaklı yapının kendisi hâlâ yalnız sezon duyurularına dayanıyor - bu açıkça yazıldı, kaynak yükseltilmiş gibi gösterilmedi."
+      "notes": "Künyesiz popüler kaynak çıkarıldı. Basamaklı yapının kendisi hâlâ yalnız sezon duyurularına dayanıyor - bu açıkça yazıldı, kaynak yükseltilmiş gibi gösterilmedi. KAYNAK DEĞİŞİKLİĞİ: bu kayıt 'Karahan Tepe basamaklı yapı aktarımları' adlı, künyesi olmayan bir popüler girdiye dayanıyordu. O kaynak çıkarıldı; yerine kazı yöneticisinin hakemli yayını ve proje sayfası kondu."
     }
   },
   {
@@ -5399,22 +5108,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "dolguya-adanmis-kaynak-yok",
-        "text": "KAYNAK DÜZEYİ: 'Göbekli Tepe dolgu oluşumu üzerine tartışma literatürü' diye yazılmış YER TUTUCUNUN yerine Banning 2011 kondu. Banning doğrudan dolgu oluşumu makalesi değil; tapınak yorumunu sorgularken dolguyu da ele alan hakemli eksendir. Dolgu oluşumuna adanmış hakemli bir kaynak bu turda bulunamadı.",
-        "citations": [
-          {
-            "source_ref": "banning-2011-so-fair-a-house",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ ama TAM DEĞİL: dolgu oluşumuna ADANMIŞ hakemli bir kaynak bulunamadı. Konan kaynağın neyi karşılayıp neyi karşılamadığı kayda yazıldı - yer tutucuyu gerçek kaynak gibi göstermek daha kötü olurdu."
+      "notes": "YER TUTUCU DEĞİŞTİ ama TAM DEĞİL: dolgu oluşumuna ADANMIŞ hakemli bir kaynak bulunamadı. Konan kaynağın neyi karşılayıp neyi karşılamadığı kayda yazıldı - yer tutucuyu gerçek kaynak gibi göstermek daha kötü olurdu. KAYNAK DÜZEYİ: 'Göbekli Tepe dolgu oluşumu üzerine tartışma literatürü' diye yazılmış YER TUTUCUNUN yerine Banning 2011 kondu. Banning doğrudan dolgu oluşumu makalesi değil; tapınak yorumunu sorgularken dolguyu da ele alan hakemli eksendir. Dolgu oluşumuna adanmış hakemli bir kaynak bu turda bulunamadı."
     }
   },
   {
@@ -5621,7 +5319,7 @@
       }
     ],
     "popular_claim": "Machu Picchu bir İnka şehriydi ve orada İnkalar yaşıyordu.",
-    "divergence": "Site etnik olarak İnka bir yerleşim değildi. 34 bireyin genom verisi, hizmetli (yanacona) topluluğunun son derece heterojen olduğunu gösteriyor - And yaylaları, Peru kıyıları, ve Peru/Kolombiya/Ekvador Amazon bölgeleri. Bu, İnka mitma uygulamasının (nüfusların bilinçli yer değiştirmesi) maddi kanıtı.",
+    "divergence": "Site etnik olarak İnka bir yerleşim değildi. 34 bireyin genom verisi, hizmetli (yanacona) topluluğunun son derece heterojen olduğunu gösteriyor - And yaylaları, Peru kıyıları, ve Peru/Kolombiya/Ekvador Amazon bölgeleri. Bu, İnka mitma uygulamasının (nüfusların bilinçli yer değiştirmesi) maddi kanıtı. Genetik köken ile ETNİK KİMLİK aynı şey değil; veri nereden gelindiğini söyler, insanların kendilerini ne saydığını söylemez.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
@@ -5741,17 +5439,6 @@
             "source_ref": "salazar-2023-machu-picchu-dna",
             "locator": "Genelleme sınırı",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "koken-kimlik-ayrimi",
-        "text": "Genetik köken ile ETNİK KİMLİK aynı şey değil; veri nereden gelindiğini söyler, insanların kendilerini ne saydığını söylemez.",
-        "citations": [
-          {
-            "source_ref": "salazar-2023-machu-picchu-dna",
-            "locator": "Yorum düzeyi",
-            "support_type": "context"
           }
         ]
       }
@@ -5973,7 +5660,7 @@
       "arkeoloji"
     ],
     "popular_claim": "Machu Picchu'nun etkileyici tarafı taş duvarlarıdır.",
-    "divergence": "Site dik, çok yağış alan ve sismik olarak aktif bir sırtta. Asıl mühendislik sorunu duvar örmek değil, yapının kaymasını ve suyun temelleri oymasını engellemek. Teraslar tarım için değil öncelikle YAMACI TUTMAK için; altlarında kaba taş, çakıl ve kum katmanlarından oluşan drenaj yatakları var.",
+    "divergence": "Site dik, çok yağış alan ve sismik olarak aktif bir sırtta. Asıl mühendislik sorunu duvar örmek değil, yapının kaymasını ve suyun temelleri oymasını engellemek. Teraslar tarım için değil öncelikle YAMACI TUTMAK için; altlarında kaba taş, çakıl ve kum katmanlarından oluşan drenaj yatakları var. 'Ayakta kalması iyi mühendisliği kanıtlar' HAYATTA KALMA YANLILIĞIDIR: yıkılan İnka yapıları ziyaret edilmiyor. Bu kayıt sağlamlık iddiasını drenaj kanıtına dayandırıyor, ayakta kalmaya değil.",
     "divergence_type": [
       "hayatta-kalma-yanliligi",
       "turizm-kopyalamasi"
@@ -6085,17 +5772,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "hayatta-kalma-yanliligi",
-        "text": "'Ayakta kalması iyi mühendisliği kanıtlar' HAYATTA KALMA YANLILIĞIDIR: yıkılan İnka yapıları ziyaret edilmiyor. Bu kayıt sağlamlık iddiasını drenaj kanıtına dayandırıyor, ayakta kalmaya değil.",
-        "citations": [
-          {
-            "source_ref": "masini-2023-machu-picchu-yeralti",
-            "locator": "Yöntem düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
@@ -6139,7 +5815,7 @@
       "arkeoloji"
     ],
     "popular_claim": "İnkalar taşları kesme teknolojisini bilinmeyen bir yöntemle elde etti.",
-    "divergence": "Duvarlar demir aletlerle değil, daha sert taş çekiçler ve aşındırmayla şekillendirildi. Cevap gizemli teknoloji değil, zaman ve iş gücü. Sismik davranış ise tasarımın sonucu: harçsız örgü rijit değil, bloklar birbirine göre az miktarda hareket edip enerjiyi sürtünmeyle harcıyor.",
+    "divergence": "Duvarlar demir aletlerle değil, daha sert taş çekiçler ve aşındırmayla şekillendirildi. Cevap gizemli teknoloji değil, zaman ve iş gücü. Sismik davranış ise tasarımın sonucu: harçsız örgü rijit değil, bloklar birbirine göre az miktarda hareket edip enerjiyi sürtünmeyle harcıyor. 'Yineleyerek optimuma yaklaşma' bir ÇIKARIMDIR; İnka inşaatçılarının bu süreci böyle yürüttüğüne dair doğrudan kayıt yok.",
     "divergence_type": [
       "medya-abartisi"
     ],
@@ -6237,17 +5913,6 @@
             "source_ref": "lipa-2023-inka-duvar-sismik",
             "locator": "Model varsayımları",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "optimum-cikarim",
-        "text": "'Yineleyerek optimuma yaklaşma' bir ÇIKARIMDIR; İnka inşaatçılarının bu süreci böyle yürüttüğüne dair doğrudan kayıt yok.",
-        "citations": [
-          {
-            "source_ref": "protzen-1993-inka-tas-isciligi",
-            "locator": "Yorum düzeyi",
-            "support_type": "context"
           }
         ]
       },
@@ -6498,7 +6163,7 @@
       "mimarlik"
     ],
     "popular_claim": "Mayalar piramidi, yılda tam iki gün merdivende yılan gölgesi oluşacak şekilde tasarladı.",
-    "divergence": "Gölge etkisi gerçek ve gözlemlenebilir. Ama 'kasıtlı mıydı' bir NİYET sorusudur ve niyet ölçülemez. Üç itiraz var: etki ekinoks gününe sıkışmış değil, haftalar boyunca benzer biçimde görülüyor; ne Maya ne sömürge kaynaklarında bu yapıda ekinoks töreni tarif ediliyor; ve gölgeyi oluşturan kuzey yüzü ağır biçimde yeniden inşa edildi.",
+    "divergence": "Gölge etkisi gerçek ve gözlemlenebilir. Ama 'kasıtlı mıydı' bir NİYET sorusudur ve niyet ölçülemez. Üç itiraz var: etki ekinoks gününe sıkışmış değil, haftalar boyunca benzer biçimde görülüyor; ne Maya ne sömürge kaynaklarında bu yapıda ekinoks töreni tarif ediliyor; ve gölgeyi oluşturan kuzey yüzü ağır biçimde yeniden inşa edildi. 'Kasıtlı mıydı' bir NİYET sorusudur. Yönelimin ölçülebilir olması kasıt kanıtı değildir - ama Mezoamerika'da yönelimin yaygınlığı kasıt için güçlü bir ön kabul sağlar. Bu kayıt kastı reddetmiyor, KANITLANMADIĞINI söylüyor.",
     "divergence_type": [
       "turizm-kopyalamasi",
       "medya-abartisi"
@@ -6649,17 +6314,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "niyet-sorusu",
-        "text": "'Kasıtlı mıydı' bir NİYET sorusudur. Yönelimin ölçülebilir olması kasıt kanıtı değildir - ama Mezoamerika'da yönelimin yaygınlığı kasıt için güçlü bir ön kabul sağlar. Bu kayıt kastı reddetmiyor, KANITLANMADIĞINI söylüyor.",
-        "citations": [
-          {
-            "source_ref": "sprajc-2018-mezoamerika-arkeoastronomi",
-            "locator": "Yöntem düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
@@ -6702,7 +6356,7 @@
       "dilbilim"
     ],
     "popular_claim": "Mayalar gizemli biçimde yok oldu.",
-    "divergence": "İki ayrı hata birleşiyor. Birincisi: 'Maya çöküşü' güney ova kentlerinin 9. yy'da terk edilmesini anlatır - ama Chichén Itzá tam da o dönemden SONRA yükselir. İkincisi ve daha ağırı: Maya halkı yok olmadı; bugün milyonlarca Maya yaşıyor ve otuzdan fazla Maya dili konuşuluyor. Ortadan kalkan belirli bir siyasi düzendi, bir halk değil.",
+    "divergence": "İki ayrı hata birleşiyor. Birincisi: 'Maya çöküşü' güney ova kentlerinin 9. yy'da terk edilmesini anlatır - ama Chichén Itzá tam da o dönemden SONRA yükselir. İkincisi ve daha ağırı: Maya halkı yok olmadı; bugün milyonlarca Maya yaşıyor ve otuzdan fazla Maya dili konuşuluyor. Ortadan kalkan belirli bir siyasi düzendi, bir halk değil. Meksika, Guatemala, Belize ve Honduras'ta milyonlarca Maya yaşıyor ve otuzdan fazla Maya dili konuşuluyor. Bu satır bu kayıtta ARKEOLOJİK bir kaynağa değil, güncel demografiye dayanıyor - kayıt için ayrı bir kaynak bağlanmadı. Güney ova kentlerinin terk edilmesi GERÇEKTİR ve ciddi bir olaydır; bu kayıt olayı değil, 'bir halkın yok olması' olarak anlatılmasını reddediyor.",
     "divergence_type": [
       "kategori-hatasi",
       "somurge-anlatisi"
@@ -6810,28 +6464,6 @@
       }
     ],
     "counter_evidence": [
-      {
-        "id": "demografi-kaynaksiz",
-        "text": "Meksika, Guatemala, Belize ve Honduras'ta milyonlarca Maya yaşıyor ve otuzdan fazla Maya dili konuşuluyor. Bu satır bu kayıtta ARKEOLOJİK bir kaynağa değil, güncel demografiye dayanıyor - kayıt için ayrı bir kaynak bağlanmadı.",
-        "citations": [
-          {
-            "source_ref": "demarest-2004-ancient-maya",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "terk-edilme-gercek",
-        "text": "Güney ova kentlerinin terk edilmesi GERÇEKTİR ve ciddi bir olaydır; bu kayıt olayı değil, 'bir halkın yok olması' olarak anlatılmasını reddediyor.",
-        "citations": [
-          {
-            "source_ref": "turner-sabloff-2012-maya-cokusu",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
       {
         "id": "sebepler-tartismali",
         "text": "Çöküşün sebepleri hâlâ tartışmalı: kuraklık, savaş, toprak tükenmesi ve siyasi parçalanma öne sürülüyor, hiçbiri tek başına kanıtlanmadı.",
@@ -6985,22 +6617,11 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "bulunamadi-yok-degil",
-        "text": "'Bulunamadı' ile 'yok' aynı şey değildir: bu kayıt bir TARAMA SONUCUDUR. Türkçe mühendislik literatürü ve yayımlanmamış kurum raporları taranmadı.",
-        "citations": [
-          {
-            "source_ref": "aydan-ulusay-2013-derinkuyu",
-            "locator": "Tarama düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Künye tamamlandı (yazarlar + yıl). 'Bulunamadı ile yok aynı şey değil' sınırı eklendi - kayıt yokluk iddiasını fazla kesin kuruyordu."
+      "notes": "Künye tamamlandı (yazarlar + yıl). 'Bulunamadı ile yok aynı şey değil' sınırı eklendi - kayıt yokluk iddiasını fazla kesin kuruyordu. 'Bulunamadı' ile 'yok' aynı şey değildir: bu kayıt bir TARAMA SONUCUDUR. Türkçe mühendislik literatürü ve yayımlanmamış kurum raporları taranmadı."
     }
   },
   {
@@ -7476,17 +7097,6 @@
         ]
       },
       {
-        "id": "olcum-dogrulanmadi",
-        "text": "Alan rakamları ara kaynaklardan gelmektedir; kazı ekibinin ölçüm yayınıyla doğrulanmamıştır.",
-        "citations": [
-          {
-            "source_ref": "gobekli-tepe-wikipedia-en",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
         "id": "alan-yeterli-degil",
         "text": "'Daha büyük yerleşim' demek için alan yetmez; nüfus, çağdaş kullanım ve yapı yoğunluğu gerekir ve hiçbiri elde yoktur.",
         "citations": [
@@ -7508,7 +7118,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Bu kayıt projenin kendi hatasını düzeltmek için açıldı. Alan rakamları ara kaynaklıdır; birincil kazı yayınıyla doğrulanmalıdır."
+      "notes": "Bu kayıt projenin kendi hatasını düzeltmek için açıldı. Alan rakamları ara kaynaklıdır; birincil kazı yayınıyla doğrulanmalıdır. Alan rakamları ara kaynaklardan gelmektedir; kazı ekibinin ölçüm yayınıyla doğrulanmamıştır."
     }
   },
   {
@@ -7622,17 +7232,6 @@
     ],
     "counter_evidence": [
       {
-        "id": "kurumsal-dogrulama",
-        "text": "Kurumsal bilgi ara kaynaklardan derlenmiştir; Bakanlık ve kazı ekibinin resmî yayınlarıyla doğrulanmalıdır.",
-        "citations": [
-          {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Kaynak düzeyi",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
         "id": "atama-tarihi-celiskisi",
         "text": "TARİH ÇELİŞKİSİ (2026-09-07): Karul'un kazı başkanlığına ne zaman geldiği kaynaklarda tutarsız - bir kaynak Göbekli Tepe 2016 / Karahan Tepe 2021 derken, başka bir kaynak ikisi için de 2020 verir. Bu kayıt çelişkiyi gizlemiyor; resmî atama belgesiyle çözülmelidir.",
         "citations": [
@@ -7651,7 +7250,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Ara kaynak düzeyinde; resmî proje yayınlarıyla doğrulanmalı."
+      "notes": "Ara kaynak düzeyinde; resmî proje yayınlarıyla doğrulanmalı. Kurumsal bilgi ara kaynaklardan derlenmiştir; Bakanlık ve kazı ekibinin resmî yayınlarıyla doğrulanmalıdır."
     },
     "open_questions": [
       "Karul'un atama tarihleri nedir? Kaynaklar çelişiyor."
@@ -7749,17 +7348,6 @@
     ],
     "counter_evidence": [
       {
-        "id": "birincil-yayin-yok",
-        "text": "Rakam ikincil Türkçe kaynaktan alınmıştır; kazı ekibinin birincil tarihleme yayınıyla doğrulanmamıştır.",
-        "citations": [
-          {
-            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
-            "locator": "Kaynak düzeyi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
         "id": "orneklem-sorunu",
         "text": "Her iki sitede de kazılan kesim küçüktür (~%5); 'en eski' iddiası hangi kesimin kazıldığına bağlı kalmaktadır.",
         "citations": [
@@ -7781,7 +7369,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "İkincil kaynaklı karbon aralığı. Birincil yayınla doğrulanana kadar düşük güvenle tutulmalı."
+      "notes": "İkincil kaynaklı karbon aralığı. Birincil yayınla doğrulanana kadar düşük güvenle tutulmalı. Rakam ikincil Türkçe kaynaktan alınmıştır; kazı ekibinin birincil tarihleme yayınıyla doğrulanmamıştır."
     }
   },
   {
@@ -7901,17 +7489,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "betimleme-ara-kaynak",
-        "text": "Yapının ayrıntılı betimlemesi hâlâ ara kaynaklıdır; birincil yayının yalnızca özeti okunmuştur.",
-        "citations": [
-          {
-            "source_ref": "karul-2021-buried-buildings",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -7923,7 +7500,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Birincil yayın eklendi ama yalnızca özet okundu; ayrıntılı betimleme hâlâ ara kaynaklı."
+      "notes": "Birincil yayın eklendi ama yalnızca özet okundu; ayrıntılı betimleme hâlâ ara kaynaklı. Yapının ayrıntılı betimlemesi hâlâ ara kaynaklıdır; birincil yayının yalnızca özeti okunmuştur."
     }
   },
   {
@@ -8042,17 +7619,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "tam-metin-okunmadi",
-        "text": "Bu kayıtta makalenin yalnızca özeti okunmuştur; tam metindeki gerekçelendirme ve stratigrafik kanıt incelenmemiştir.",
-        "citations": [
-          {
-            "source_ref": "karul-2021-buried-buildings",
-            "locator": "Kaynak erişim düzeyi",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -8065,7 +7631,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Birincil hakemli kaynağa dayanıyor ama yalnızca özet okundu; tam metin incelemesi bekliyor."
+      "notes": "Birincil hakemli kaynağa dayanıyor ama yalnızca özet okundu; tam metin incelemesi bekliyor. Bu kayıtta makalenin yalnızca özeti okunmuştur; tam metindeki gerekçelendirme ve stratigrafik kanıt incelenmemiştir."
     }
   }
 ]

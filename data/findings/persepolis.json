@@ -152,17 +152,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "locator-sayfa-duzeyinde-degil",
-        "text": "Bu kayıttaki locator'lar madde ve kitap düzeyindedir, sayfa düzeyinde değil: kaynakların tam metinleri okunmadı.",
-        "citations": [
-          {
-            "source_ref": "hallock-1969-oip92-fortification-tablets",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -174,7 +163,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Kaynakların yazarları ve künyeleri tamamlandı. Yılı doğrulanamayan bir Iranica maddesi (Dandamayev) kayıttan ÇIKARILDI - hiçbir atıf ona bağlanmıyordu. Tam metinler okunmadı; locator'lar madde/kitap düzeyinde."
+      "notes": "Kaynakların yazarları ve künyeleri tamamlandı. Yılı doğrulanamayan bir Iranica maddesi (Dandamayev) kayıttan ÇIKARILDI - hiçbir atıf ona bağlanmıyordu. Tam metinler okunmadı; locator'lar madde/kitap düzeyinde. Bu kayıttaki locator'lar madde ve kitap düzeyindedir, sayfa düzeyinde değil: kaynakların tam metinleri okunmadı."
     }
   },
   {
@@ -517,30 +506,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "iade-dokumu-dogrulanmadi",
-        "text": "İade edilen partilerin tarihleri ve sayıları bu kayıtta DOĞRULANMADI; 'partiler hâlinde' ifadesi kurumun beyanına dayanıyor, bağımsız bir döküme değil.",
-        "citations": [
-          {
-            "source_ref": "isac-persepolis-fortification-archive",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "taraf-kaynak",
-        "text": "Koleksiyonu elinde tutan kurumun kendi sayfası bu konuda TARAF KAYNAKTIR; İran tarafının resmî konumu bu kayıtta temsil edilmiyor.",
-        "citations": [
-          {
-            "source_ref": "isac-persepolis-fortification-archive",
-            "locator": "Kaynak konumu",
-            "support_type": "counter"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
       "Kalan tabletlerin iadesi ve yayın hakları nasıl çözülecek?",
       "İade edilen partilerin tarihleri ve sayıları nedir? Bağımsız bir döküm bulunamadı.",
@@ -552,7 +518,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Kayıt boş popular_claim ve divergence ile duruyordu - yani bu projenin temel ayrımı orada hiç kurulmamıştı. Yüksek Mahkeme kararı eklenerek kuruldu."
+      "notes": "Kayıt boş popular_claim ve divergence ile duruyordu - yani bu projenin temel ayrımı orada hiç kurulmamıştı. Yüksek Mahkeme kararı eklenerek kuruldu. İade edilen partilerin tarihleri ve sayıları bu kayıtta DOĞRULANMADI; 'partiler hâlinde' ifadesi kurumun beyanına dayanıyor, bağımsız bir döküme değil. Koleksiyonu elinde tutan kurumun kendi sayfası bu konuda TARAF KAYNAKTIR; İran tarafının resmî konumu bu kayıtta temsil edilmiyor."
     }
   },
   {

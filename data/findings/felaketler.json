@@ -556,17 +556,6 @@
             "support_type": "counter"
           }
         ]
-      },
-      {
-        "id": "dekkan-literaturu-taranmadi",
-        "text": "Bu kayıtta Dekkan tarafının kendi kronoloji literatürü TARANMADI; pay tartışmasının volkanizma kanadı tek bir derleme makale üzerinden temsil ediliyor.",
-        "citations": [
-          {
-            "source_ref": "bond-grasby-2017-mass-extinctions",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -579,7 +568,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Alvarez ve Renne künyeleri DOI ile bağlandı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. Dekkan literatürünün taranmadığı işaretlendi."
+      "notes": "Alvarez ve Renne künyeleri DOI ile bağlandı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. Dekkan literatürünün taranmadığı işaretlendi. Bu kayıtta Dekkan tarafının kendi kronoloji literatürü TARANMADI; pay tartışmasının volkanizma kanadı tek bir derleme makale üzerinden temsil ediliyor."
     }
   },
   {
@@ -620,7 +609,7 @@
       }
     ],
     "popular_claim": "Bilim bunu reddediyor çünkü yeni fikirleri hep reddeder.",
-    "divergence": "Popüler yapımlar bu hipotezi Wegener ve Bretz vakalarının yanına aynı kesinlikte koyuyor. Fark şu: o ikisi mekanizma bulununca kazandı; bu hipotezin bulguları bağımsız laboratuvarlarda tekrarlanamadı.",
+    "divergence": "Popüler yapımlar bu hipotezi Wegener ve Bretz vakalarının yanına aynı kesinlikte koyuyor. Fark şu: o ikisi mekanizma bulununca kazandı; bu hipotezin bulguları bağımsız laboratuvarlarda tekrarlanamadı. 'Minority' damgası hipotezin YANLIŞ olduğunu söylemez; tekrarlanamadığını söyler. İkisi aynı şey değildir ve bu kayıt birinciyi iddia etmiyor.",
     "divergence_type": [
       "medya-abartisi"
     ],
@@ -716,17 +705,6 @@
             "support_type": "context"
           }
         ]
-      },
-      {
-        "id": "minority-yanlis-demek-degil",
-        "text": "'Minority' damgası hipotezin YANLIŞ olduğunu söylemez; tekrarlanamadığını söyler. İkisi aynı şey değildir ve bu kayıt birinciyi iddia etmiyor.",
-        "citations": [
-          {
-            "source_ref": "surovell-2009-younger-dryas-degerlendirme",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
       }
     ],
     "open_questions": [
@@ -791,7 +769,7 @@
       }
     ],
     "popular_claim": "Toba insanlığı birkaç bin kişiye düşürdü.",
-    "divergence": "1998'de öne sürülen hipotez popüler bilim yayınlarında yerleşti; zayıflatan arkeolojik kanıtlar aynı yaygınlıkta aktarılmadı.",
+    "divergence": "1998'de öne sürülen hipotez popüler bilim yayınlarında yerleşti; zayıflatan arkeolojik kanıtlar aynı yaygınlıkta aktarılmadı. Genetik darboğazın VARLIĞI ayrı bir sorudur; çürütülen şey darboğazın TOBA'YA bağlanmasıdır. Kayıt birincisini reddetmiyor.",
     "divergence_type": [
       "guncellenmemis",
       "medya-abartisi"
@@ -878,17 +856,6 @@
             "source_ref": "marean-2010-pinnacle-point",
             "locator": "Yerleşim sürekliliği",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "darbogaz-mi-toba-mi",
-        "text": "Genetik darboğazın VARLIĞI ayrı bir sorudur; çürütülen şey darboğazın TOBA'YA bağlanmasıdır. Kayıt birincisini reddetmiyor.",
-        "citations": [
-          {
-            "source_ref": "ambrose-1998-toba-bottleneck",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
           }
         ]
       }
@@ -1031,17 +998,6 @@
     ],
     "counter_evidence": [
       {
-        "id": "miyake-2012-farkli-olay",
-        "text": "KÜNYE UYARISI: Miyake vd. 2012 makalesi 774-775 olayını anlatır, 993 olayını DEĞİL. Bu kayıtta olgunun keşfi olarak kullanılıyor; 993 tarihlemesinin dayanağı Kuitems 2022'dir. 993 olayını tanımlayan çalışma bu kayıtta ayrıca künyelenmedi.",
-        "citations": [
-          {
-            "source_ref": "miyake-2012-cosmic-ray-774",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
         "id": "kesim-yili-varis-yili-degil",
         "text": "Tarih, kesilen ağacın kesim yılını verir; yerleşimin ne kadar sürdüğünü ya da ilk varışın bu yıl olduğunu göstermez.",
         "citations": [
@@ -1062,7 +1018,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "DeepSeek turu Miyake 2012'yi bu kayda önerdi ve künyesi doğruydu - ama makale 774-775 olayını anlatıyor, 993'ü değil. Kaynak alındı ama YERİ DEĞİŞTİRİLDİ: olgunun keşfi olarak bağlandı, 993 tarihlemesinin dayanağı olarak değil. 993'ün özgün yayını açık soru olarak bırakıldı."
+      "notes": "DeepSeek turu Miyake 2012'yi bu kayda önerdi ve künyesi doğruydu - ama makale 774-775 olayını anlatıyor, 993'ü değil. Kaynak alındı ama YERİ DEĞİŞTİRİLDİ: olgunun keşfi olarak bağlandı, 993 tarihlemesinin dayanağı olarak değil. 993'ün özgün yayını açık soru olarak bırakıldı. KÜNYE UYARISI: Miyake vd. 2012 makalesi 774-775 olayını anlatır, 993 olayını DEĞİL. Bu kayıtta olgunun keşfi olarak kullanılıyor; 993 tarihlemesinin dayanağı Kuitems 2022'dir. 993 olayını tanımlayan çalışma bu kayıtta ayrıca künyelenmedi."
     }
   },
   {
@@ -1143,7 +1099,7 @@
       }
     ],
     "popular_claim": "Bilim çevresi Wegener'i sırf aykırı olduğu için susturdu.",
-    "divergence": "Reddedenler haksız değildi: Wegener kıtaların okyanus kabuğunu yararak ilerlediğini savunuyordu ve fizikçiler bunun imkânsız olduğunu gösterdi. Wegener eksiği kendisi de biliyordu.",
+    "divergence": "Reddedenler haksız değildi: Wegener kıtaların okyanus kabuğunu yararak ilerlediğini savunuyordu ve fizikçiler bunun imkânsız olduğunu gösterdi. Wegener eksiği kendisi de biliyordu. 'Kanıtı iyi ama mekanizması yanlış' özeti, dönemin itirazlarını tek bir gerekçeye indirger; kıta sürüklenmesine kurumsal ve coğrafi direncin de payı olduğu bilim tarihinde tartışılır.",
     "divergence_type": [
       "medya-abartisi"
     ],
@@ -1214,17 +1170,6 @@
       }
     ],
     "counter_evidence": [
-      {
-        "id": "tek-gerekceye-indirgeme",
-        "text": "'Kanıtı iyi ama mekanizması yanlış' özeti, dönemin itirazlarını tek bir gerekçeye indirger; kıta sürüklenmesine kurumsal ve coğrafi direncin de payı olduğu bilim tarihinde tartışılır.",
-        "citations": [
-          {
-            "source_ref": "vine-matthews-1963-magnetic-anomalies",
-            "locator": "Kayıt düzeyi sınırı",
-            "support_type": "context"
-          }
-        ]
-      },
       {
         "id": "hess-1962-kunyelenmedi",
         "text": "Hess'in 1962 tarihli deniz tabanı yayılması çalışması bu kayıtta künyelenmedi; mekanizma zincirinin bir halkası eksik.",
@@ -1376,30 +1321,7 @@
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "rakamlar-populer-kaynaktan",
-        "text": "Hacim ve taşkın sayısı rakamları bu kayıtta POPÜLER BİR KİTAPTAN alınmıştır; hakemli kaynağa bağlanmadı. Rakamlar alanda tartışmalıdır ve tahmine göre değişir.",
-        "citations": [
-          {
-            "source_ref": "allen-burns-sargent-1986-cataclysms",
-            "locator": "Kaynak düzeyi sınırı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "bretz-kunye-eksik",
-        "text": "Bretz'in 1923 yayınının cilt ve sayfa bilgisi bu turda doğrulanmadı.",
-        "citations": [
-          {
-            "source_ref": "bretz-1923-channeled-scabland",
-            "locator": "Künye düzeyi",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
       "Taşkın sayısı ve hacimleri için hakemli bir kaynak bulunup rakamlar oradan bağlanmalı."
     ],
@@ -1409,7 +1331,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "DeepSeek turu Allen vd. 1986'yı 'peer-reviewed' olarak önermişti; TİCARİ POPÜLER BİLİM KİTABI olduğu için tier 'popular' yapıldı ve rakamların hakemli kaynağa bağlanmadığı counter_evidence'a yazıldı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu."
+      "notes": "DeepSeek turu Allen vd. 1986'yı 'peer-reviewed' olarak önermişti; TİCARİ POPÜLER BİLİM KİTABI olduğu için tier 'popular' yapıldı ve rakamların hakemli kaynağa bağlanmadığı counter_evidence'a yazıldı. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. Hacim ve taşkın sayısı rakamları bu kayıtta POPÜLER BİR KİTAPTAN alınmıştır; hakemli kaynağa bağlanmadı. Rakamlar alanda tartışmalıdır ve tahmine göre değişir. Bretz'in 1923 yayınının cilt ve sayfa bilgisi bu turda doğrulanmadı."
     }
   },
   {
@@ -1441,7 +1363,7 @@
       "arkeoloji"
     ],
     "popular_claim": "Bu felaketlerin izi mitlerde ve eski anlatılarda kalmıştır.",
-    "divergence": "Aritmetik buna izin vermiyor. Yazılı tanıklık ~MÖ 3200'de başlıyor; bu yazıdaki en YAKIN olay olan 8,2 bin yıl olayı bile yazıdan yaklaşık 3.000 yıl öncesine düşüyor. Göbekli Tepe'nin inşası bile Genç Dryas bittikten ~200 yıl SONRA. Yani bu olaylar için elimizdeki tanık insan değil, buz karotları ve çökeller.",
+    "divergence": "Aritmetik buna izin vermiyor. Yazılı tanıklık ~MÖ 3200'de başlıyor; bu yazıdaki en YAKIN olay olan 8,2 bin yıl olayı bile yazıdan yaklaşık 3.000 yıl öncesine düşüyor. Göbekli Tepe'nin inşası bile Genç Dryas bittikten ~200 yıl SONRA. Yani bu olaylar için elimizdeki tanık insan değil, buz karotları ve çökeller. Bu kayıt sözlü aktarımın hiçbir şey taşımadığını söylemez; söylediği şey YAZILI TANIKLIĞIN yetişmediğidir. Sözlü belleğin sınırları ayrı bir tartışmadır ve burada karara bağlanmıyor.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -1515,17 +1437,6 @@
       }
     ],
     "counter_evidence": [
-      {
-        "id": "sozlu-aktarim-ayri-mesele",
-        "text": "Bu kayıt sözlü aktarımın hiçbir şey taşımadığını söylemez; söylediği şey YAZILI TANIKLIĞIN yetişmediğidir. Sözlü belleğin sınırları ayrı bir tartışmadır ve burada karara bağlanmıyor.",
-        "citations": [
-          {
-            "source_ref": "woods-2010-visible-language",
-            "locator": "Kayıt düzeyi ayrımı",
-            "support_type": "context"
-          }
-        ]
-      },
       {
         "id": "tek-koken-degil",
         "text": "'~5.200 yıl' rakamı yazının Mezopotamya'daki başlangıcına dayanır; başka yazı sistemlerinin bağımsız başlangıçları bu sayıyı değiştirmez ama tek bir kökene bağlı olmadığını hatırlatır.",

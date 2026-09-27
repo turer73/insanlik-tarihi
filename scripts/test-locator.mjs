@@ -25,7 +25,13 @@ const t = (ad, fn) => {
 t("eski kalıp yer tutucu", () => assert.ok(yerTutucuMu("İlgili bölüm (paket notundan türetildi)")));
 t("'Kayıt düzeyi ayrımı' yer tutucu", () => assert.ok(yerTutucuMu("Kayıt düzeyi ayrımı")));
 t("'Kaynak erişim düzeyi' yer tutucu", () => assert.ok(yerTutucuMu("Kaynak erişim düzeyi")));
-t("'Karşılaştırmalı düzeyler' yer tutucu", () => assert.ok(yerTutucuMu("Karşılaştırmalı düzeyler")));
+t("'Soyutlama düzeyi' yer tutucu", () => assert.ok(yerTutucuMu("Soyutlama düzeyi")));
+// çoğul "düzeyler" gerçek bir konu olabilir (Hong 1994: kurşun düzeyleri)
+t("'Karşılaştırmalı düzeyler' yer tutucu değil", () => assert.ok(!yerTutucuMu("Karşılaştırmalı düzeyler")));
+// UNESCO sayfalarındaki gerçek bölümler
+t("'Kayıt gerekçesi' yer tutucu değil", () => assert.ok(!yerTutucuMu("Kayıt gerekçesi")));
+t("'Kayıt tanımı' yer tutucu değil", () => assert.ok(!yerTutucuMu("Kayıt tanımı")));
+t("'Kayıt yokluğu değerlendirmesi' yer tutucu", () => assert.ok(yerTutucuMu("Kayıt yokluğu değerlendirmesi")));
 t("'corpus düzeyi' yer tutucu", () => assert.ok(yerTutucuMu("Derlemenin içeriği - corpus düzeyi")));
 t("'Kaynak konumu' yer tutucu", () => assert.ok(yerTutucuMu("Kaynak konumu")));
 t("boş locator yer tutucu", () => assert.ok(yerTutucuMu("")));

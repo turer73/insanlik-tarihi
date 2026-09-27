@@ -2,58 +2,58 @@
   "not": "İçerik özetine dayalı tarih kaydı. Özet aynıysa tarih korunur; yalnız METİN değiştiğinde yenilenir. style/script blokları özete girmez.",
   "kayitlar": {
     "articles/amoc.html": {
-      "ozet": "86024278efc52665",
-      "lastmod": "2026-09-19",
+      "ozet": "bebd2714f78fd431",
+      "lastmod": "2026-09-27",
       "published": "2026-09-12"
     },
     "articles/angkor.html": {
-      "ozet": "9124440fe129cedd",
-      "lastmod": "2026-09-19",
+      "ozet": "f9a61df73e7b7583",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/ayni-cumlede.html": {
-      "ozet": "71a68abbfc7a9071",
-      "lastmod": "2026-09-19",
+      "ozet": "72adf972420b21cf",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/babil.html": {
-      "ozet": "7c4ed05ba7f6f134",
-      "lastmod": "2026-09-19",
+      "ozet": "fbdd23d834d26caa",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/calinan-ates.html": {
-      "ozet": "8eafceb907d76251",
-      "lastmod": "2026-09-19",
+      "ozet": "3b807d69c9350e37",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/chichen-itza.html": {
-      "ozet": "1cee2669233f1818",
-      "lastmod": "2026-09-19",
+      "ozet": "7b516f9d15cc8b49",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/gec-kalan-haberci.html": {
-      "ozet": "e2540ca8ff945ab3",
-      "lastmod": "2026-09-19",
+      "ozet": "f872b9dbc3dd03a0",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/gokteki-ayi.html": {
-      "ozet": "0d0432f92e7c67ba",
-      "lastmod": "2026-09-19",
+      "ozet": "0f407afca4e205cd",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/hatirlamadigimiz-felaketler.html": {
-      "ozet": "aa8ddee6f73800d6",
-      "lastmod": "2026-09-19",
+      "ozet": "6ac1e2cb524a7ac5",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/herkesin-saati.html": {
-      "ozet": "eca6f9ef09295cd9",
-      "lastmod": "2026-09-19",
+      "ozet": "f29643cfbe525f00",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/isa-tarihsellik.html": {
-      "ozet": "7b3b6af373fb0231",
-      "lastmod": "2026-09-07",
+      "ozet": "5b23fe174c5dbd23",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/iskenderiye.html": {
@@ -62,18 +62,18 @@
       "published": "2026-09-07"
     },
     "articles/kapadokya.html": {
-      "ozet": "364c23630ffa718f",
-      "lastmod": "2026-09-07",
+      "ozet": "40f5705dd09bb6ab",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/kendi-kaniti.html": {
-      "ozet": "3bbad73853b94036",
-      "lastmod": "2026-09-07",
+      "ozet": "f693f47b7e4d15da",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/machu-picchu.html": {
-      "ozet": "85a0f15962e950b1",
-      "lastmod": "2026-09-19",
+      "ozet": "f68311a2a09cd9ac",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/milankovic.html": {
@@ -82,73 +82,73 @@
       "published": "2026-09-07"
     },
     "articles/mit-ve-sicil.html": {
-      "ozet": "fc68861aab141e42",
-      "lastmod": "2026-09-19",
+      "ozet": "b0fb271d78c3963e",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/olu-deniz-parsomenleri.html": {
-      "ozet": "fcc9b7e81a6a91c5",
-      "lastmod": "2026-09-08",
+      "ozet": "6970440c6af44865",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/persepolis.html": {
-      "ozet": "a0b58d3afb34627e",
-      "lastmod": "2026-09-07",
+      "ozet": "012fb2060ddd7fcd",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/petra.html": {
-      "ozet": "648e9a002e4a3475",
-      "lastmod": "2026-09-07",
+      "ozet": "ad14258188912cef",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/piramit-santrali.html": {
-      "ozet": "2218dd4ac666816a",
-      "lastmod": "2026-09-19",
+      "ozet": "9d15acf0724ba4b0",
+      "lastmod": "2026-09-27",
       "published": "2026-09-09"
     },
     "articles/roma-etki.html": {
-      "ozet": "cb61dcb9743258fe",
-      "lastmod": "2026-09-07",
+      "ozet": "08569298e631984b",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/roma-hristiyanlik.html": {
-      "ozet": "6654cd6ef4afec6d",
-      "lastmod": "2026-09-19",
+      "ozet": "7c6e742bf2498a98",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/shushtar.html": {
-      "ozet": "aebcaaa1318b28ec",
-      "lastmod": "2026-09-07",
+      "ozet": "e6ace58e69d91d4c",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/stonehenge.html": {
-      "ozet": "17d2c4b5e00de9e9",
-      "lastmod": "2026-09-19",
+      "ozet": "48d498ff4d57ff78",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/sumer.html": {
-      "ozet": "68bee5e693308cd1",
-      "lastmod": "2026-09-19",
+      "ozet": "cef71ebeaad8b70f",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/tas-tepeler.html": {
-      "ozet": "c6460d1f34c5a215",
-      "lastmod": "2026-09-19",
+      "ozet": "c239ba1e2f6f21e1",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/tufan-bilmecesi.html": {
-      "ozet": "877aab957db462b9",
-      "lastmod": "2026-09-19",
+      "ozet": "8c1badd21dea1b5c",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "articles/uruk.html": {
-      "ozet": "da1b278b27bbfdab",
-      "lastmod": "2026-09-20",
+      "ozet": "951442d3c864d6f0",
+      "lastmod": "2026-09-27",
       "published": "2026-09-10"
     },
     "articles/yilin-iki-kapisi.html": {
-      "ozet": "e1ccdc36ee2f6653",
-      "lastmod": "2026-09-07",
+      "ozet": "e8211a132ecaa384",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "data/konu-merkezleri.json": {
@@ -157,18 +157,18 @@
       "published": "2026-09-09"
     },
     "dist/bulgu-veri-tabani.html": {
-      "ozet": "ab9b6b9bb6bd0445",
-      "lastmod": "2026-09-20",
+      "ozet": "2d9bc9deb090e5cd",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "dist/kanit-denetimi.html": {
-      "ozet": "026f723af79afe14",
-      "lastmod": "2026-09-20",
+      "ozet": "99da662d85efd51f",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "dist/zaman-cizelgesi.html": {
-      "ozet": "4ce08605d7cde5f5",
-      "lastmod": "2026-09-20",
+      "ozet": "2271ea06efa843fe",
+      "lastmod": "2026-09-27",
       "published": "2026-09-07"
     },
     "index.html": {
@@ -177,8 +177,8 @@
       "published": "2026-09-07"
     },
     "kaynakca.html": {
-      "ozet": "2dc1ac5c632a1ba8",
-      "lastmod": "2026-09-19",
+      "ozet": "ab5171091c07fb73",
+      "lastmod": "2026-09-27",
       "published": "2026-09-12"
     },
     "konular/dinler-tarihi.html": {
@@ -202,8 +202,8 @@
       "published": "2026-09-12"
     },
     "pages/duzeltmeler.html": {
-      "ozet": "ca3c6d0ae533c803",
-      "lastmod": "2026-09-20",
+      "ozet": "6289f7676cbf5bba",
+      "lastmod": "2026-09-27",
       "published": "2026-09-08"
     },
     "pages/hakkinda.html": {
