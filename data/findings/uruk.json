@@ -105,6 +105,26 @@
         "language": "en",
         "note": "Uruk, Ur ve Eridu nun tatli su bataklik kenarinda gelismesi ve kentlerin yazi ile anitsal mimariyi birlikte uretmesi icin kurumsal kayit.",
         "institution": "UNESCO"
+      },
+      {
+        "id": "zingarello-vd-2026-rejibah",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Rejibah (Southern Iraq): A city at the dawn of Mesopotamian urbanisation",
+        "authors": [
+          "Zingarello, Melania",
+          "Baldi, Johnny Samuele",
+          "Padovani, Claire",
+          "Abric, Camille",
+          "Poudroux, Sébastien",
+          "Merret, Maëlle"
+        ],
+        "year": 2026,
+        "institution": "ArchéOrient – Le Blog (UMR 5133 Archéorient, CNRS / Université Lumière Lyon 2)",
+        "url": "https://archeorient.hypotheses.org/39275",
+        "language": "en",
+        "accessed": "2026-09-29",
+        "note": "EURUK projesinin Rejibah'taki ilk kazı sezonunun (Ekim 2025) kazı ekibince yazılmış raporu. Hakemli değil ve ilk sezona ait; bazı tarihler yalnız yüzey çanak çömleğine dayanıyor. Burada bulguları için değil, güney Mezopotamya'daki erken kentleşme verisinin durumuna dair tespiti için kullanıldı."
       }
     ],
     "evidence": [
@@ -137,6 +157,11 @@
             "source_ref": "selz-2020-uruk-fenomeni",
             "locator": "s. 167-168 — kentin \"administrative center of the region, with an advanced and elaborate form of labor division\" olması; en az 25-50 bin nüfus tahmini ve \"many more living in adjacent settlements that were dependent on Uruk\"",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "zingarello-vd-2026-rejibah",
+            "locator": "\"Introduction: urbanisation at the margins of Ur\" bölümü — Ur'un 15 km'den az güneybatısındaki Rejibah yaklaşık 120 hektar; \"its size alone suggests that it was certainly not a satellite settlement. It was closely connected to major centres such as Ur and Eridu\"",
+            "support_type": "context"
           }
         ]
       }
@@ -254,6 +279,45 @@
         "language": "en",
         "note": "Kentlerin yazi, anitsal mimari ve karmasik toplum yapisini ayni dugumde birlestirdigi icin kurumsal kayit.",
         "institution": "UNESCO"
+      },
+      {
+        "id": "al-quntar-khalidi-ur-2011-khirbat-al-fakhar",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "Proto-Urbanism in the Late 5th Millennium BC: Survey and Excavations at Khirbat al-Fakhar (Hamoukar), Northeast Syria",
+        "authors": [
+          "Al Quntar, Salam",
+          "Khalidi, Lamya",
+          "Ur, Jason A."
+        ],
+        "year": 2011,
+        "container": "Paléorient, cilt 37, sayı 2",
+        "pages": "151-175",
+        "doi": "10.3406/paleo.2011.5428",
+        "url": "https://dash.harvard.edu/handle/1/10873239",
+        "language": "en",
+        "accessed": "2026-09-29",
+        "note": "Harvard'ın açık deposu DASH'teki yazar el yazmasından okundu (\"To appear in Paléorient 37/2\"). Atıflardaki sayfa numaraları EL YAZMASININ sayfalarıdır; derginin s. 151-175 dizgisine karşılık gelmez. Dergi sürümü Persée'de, betik erişimine kapalı."
+      },
+      {
+        "id": "zingarello-vd-2026-rejibah",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Rejibah (Southern Iraq): A city at the dawn of Mesopotamian urbanisation",
+        "authors": [
+          "Zingarello, Melania",
+          "Baldi, Johnny Samuele",
+          "Padovani, Claire",
+          "Abric, Camille",
+          "Poudroux, Sébastien",
+          "Merret, Maëlle"
+        ],
+        "year": 2026,
+        "institution": "ArchéOrient – Le Blog (UMR 5133 Archéorient, CNRS / Université Lumière Lyon 2)",
+        "url": "https://archeorient.hypotheses.org/39275",
+        "language": "en",
+        "accessed": "2026-09-29",
+        "note": "EURUK projesinin Rejibah'taki ilk kazı sezonunun (Ekim 2025) kazı ekibince yazılmış raporu. Hakemli değil ve ilk sezona ait; bazı tarihler yalnız yüzey çanak çömleğine dayanıyor. Burada bulguları için değil, güney Mezopotamya'daki erken kentleşme verisinin durumuna dair tespiti için kullanıldı."
       }
     ],
     "evidence": [
@@ -275,6 +339,49 @@
           {
             "source_ref": "ur-karsgaard-oates-2011-tell-brak-banliyo",
             "locator": "Özet — 130 hektarlık kentin \"over the course of several centuries in the late fifth and early fourth millennia BC\" oluşması; ayrıca geç 3. binyılda 70, Geç Tunç'ta 45 hektarlık ayrı kentsel evreler",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kentlesme-tek-esik-degil-degisken-olcutler-yelpazesi",
+        "text": "Kentleşmeyi inceleyen araştırmacılar kenti tek bir eşikle değil, bir ölçütler yelpazesiyle tanımlar ve bu ölçütlerin hepsinin her eski kentte görülmeyeceğini kabul eder. \"İlk şehir\" sorusunun cevabı bu yüzden hangi ölçütün seçildiğine bağlıdır.",
+        "citations": [
+          {
+            "source_ref": "al-quntar-khalidi-ur-2011-khirbat-al-fakhar",
+            "locator": "el yazması s. 1 — \"Rather than using a trait-list approach, it is better to envision urbanism as a variable phenomenon consisting of a range of different criteria, not all of which will be apparent in all sorts of ancient cities\"",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "khirbat-al-fakhar-mo-4400-3800-300-hektar-proto-urban",
+        "text": "Kuzeydoğu Suriye'de Khirbat al-Fakhar (Hamoukar), MÖ 4400-3800 arasında yaklaşık 300 hektarlık bir alana yayılmış, yoğunluğu yer yer değişen bir yerleşimdir: Uruk'un geç 4. binyıldaki kentinden yaklaşık bir binyıl önce ve ölçek olarak onunla karşılaştırılabilir. Kazıcılar onu kent değil, köy ile kentin özelliklerini birlikte taşıyan \"proto-urban\" bir yerleşim olarak niteler ve bu terimi bir basamak olarak değil, ölçütler üzerinde belirsiz bir konum olarak kullandıklarını vurgular.",
+        "citations": [
+          {
+            "source_ref": "al-quntar-khalidi-ur-2011-khirbat-al-fakhar",
+            "locator": "Özet — \"an extensive settlement of 300 hectares, primarily occupied during the LC 1-2 periods (ca. 4400-3800 cal BC)\"; \"characteristics of both villages and cities, qualifying it as proto-urban\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "al-quntar-khalidi-ur-2011-khirbat-al-fakhar",
+            "locator": "el yazması s. 15 — \"The use of the term 'proto-urban' should not be construed as a type or a position in a unilinear evolutionary sequence, but rather as an ambiguous position on the various continua of urban variables\"",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "uruk-un-en-erken-evreleri-sonraki-kentlerin-altinda",
+        "text": "Uruk'un \"ilk\" görünmesinde kanıtın dağılımının da payı vardır: 4. binyıl Uruk'unun yerleşim dokusu sonraki büyük kentlerin altında kalmıştır ve güneydeki büyük yerleşimlerde kazılar çoğunlukla anıtsal alanlarla sınırlı kalmıştır. Bu yüzden en erken kentleşme evrelerine dair veri, paradoks olarak, kuzeyde daha boldur.",
+        "citations": [
+          {
+            "source_ref": "al-quntar-khalidi-ur-2011-khirbat-al-fakhar",
+            "locator": "el yazması s. 15, 57 numaralı dipnot — \"4th millennium Uruk might have had similarly variable density, but it is sealed by large Early Dynastic and Seleucid cities\"",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "zingarello-vd-2026-rejibah",
+            "locator": "\"Introduction: urbanisation at the margins of Ur\" bölümü — \"currently available data on the earliest stages of urbanisation are more abundant for Syria and northern Mesopotamia, where sites tend to be smaller\"; \"fieldwork was largely confined to monumental areas and rarely extended to workspaces or residential districts\"",
             "support_type": "direct"
           }
         ]
@@ -304,7 +411,7 @@
       "status": "draft",
       "notes": "Codex iddia matrisinden dönüştürüldü. Kanıt-kaynak eşlemesi paketin kaynak numaralarından türetildi; locator'lar bölüm düzeyinde. DOI'li künnyeler CrossRef'ten doğrulandı."
     },
-    "divergence": "Soru yanlış kurulmuş: ‘ilk şehir hangisi’ diye sormak, şehir olmanın keskin bir eşiği varmış gibi davranmak demek. Oysa eşiği araştırmacı seçiyor. Tell Brak’ta geç 5. ve erken 4. binyılda 130 hektarlık kentsel gelişim var; Uruk’un üstünlüğü büyüklükte değil, YAZIYI VE BÜROKRASİYİ aynı düğümde birleştirmesinde. Bu gerçek bir fark ama ‘önce/sonra’ değil, ‘farklı bileşim’ demek.",
+    "divergence": "Soru yanlış kurulmuş: ‘ilk şehir hangisi’ diye sormak, şehir olmanın keskin bir eşiği varmış gibi davranmak demek. Oysa eşiği araştırmacı seçiyor. Tell Brak’ta geç 5. ve erken 4. binyılda 130 hektarlık kentsel gelişim var; Uruk’un üstünlüğü büyüklükte değil, YAZIYI VE BÜROKRASİYİ aynı düğümde birleştirmesinde. Bu gerçek bir fark ama ‘önce/sonra’ değil, ‘farklı bileşim’ demek. Bir de kanıtın dağılımı var: Uruk'un 4. binyıldaki dokusu sonraki kentlerin altında ve güneyde kazılar çoğunlukla anıtsal alanlarla sınırlı kaldı. Kuzeyde ise MÖ 4400-3800 arasında 300 hektara ulaşan Khirbat al-Fakhar gibi, kazıcılarının \"ne köy ne kent\" dediği yerleşimler var. \"İlk şehir\" sıralaması, neyin ne kadar kazılabildiğinin de bir sonucu.",
     "divergence_type": [
       "kategori-hatasi"
     ]
