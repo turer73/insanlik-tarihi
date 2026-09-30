@@ -40,8 +40,10 @@
 .static-sidebar{position:static;grid-template-columns:1fr 1fr}
 .static-toc{display:none}
 }
-@media(max-width:640px){.static-shell{width:min(calc(100% - 1.2rem),var(--page))}
+@media(max-width:640px){.static-shell{width:min(calc(100% - 2rem),var(--page))}
 .static-sidebar{grid-template-columns:1fr}
 .static-sidebar__meta{display:none}
+.static-sidebar .sidebar-intro{display:none}
+.static-page__head h1{font-size:clamp(1.9rem,8.5vw,2.4rem);line-height:1.12}
 .static-section{padding:1.2rem 1rem}
 }

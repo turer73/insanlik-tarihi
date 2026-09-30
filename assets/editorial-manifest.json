@@ -223,6 +223,14 @@
     "width": 1200,
     "height": 675
   },
+  "amoc": {
+    "file": "assets/editorial-covers/amoc.webp",
+    "alt": "Atlantik Okyanusu üzerinde sıcak yüzey ve soğuk derin akıntıları ile ölçüm süresini gösteren temsili editoryal illüstrasyon",
+    "source": "Mevcut temsili editoryal illüstrasyon",
+    "bytes": 285382,
+    "width": 1200,
+    "height": 675
+  },
   "uruk": {
     "file": "assets/editorial-covers/uruk.webp",
     "alt": "Uruk kenti: kerpiç teraslar, zigurat silueti ve çivi yazısı tabletleri — temsili editoryal illüstrasyon",

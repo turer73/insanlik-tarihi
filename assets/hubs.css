@@ -17,7 +17,7 @@
 
 .hub-section h2{margin:0 0 1.3rem;font:650 1.65rem/1.12 var(--serif);letter-spacing:-.015em}
 
-.hub-grid{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.hub-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
 
 .hub-grid .article-card{min-height:440px}
 
@@ -60,7 +60,8 @@
 .hub-index-card__count{margin-top:auto;padding-top:.7rem;color:var(--ink-3);font:600 .72rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase}
 
 @media(max-width:720px){
-  .hub-page,.hub-index{width:min(calc(100% - 1.6rem),1180px);padding-top:2rem}
+  .hub-page,.hub-index{width:min(calc(100% - 2rem),1180px);padding-top:1.35rem}
+  .hub-head h1,.hub-index__head h1{font-size:clamp(1.9rem,8.5vw,2.4rem);line-height:1.12}
 
   .hub-milestone{grid-template-columns:1fr;gap:.2rem}
 
@@ -104,7 +105,9 @@
 .topics-nav{display:none}
 .hub-index__grid{grid-template-columns:1fr}
 }
-@media(max-width:640px){.topics-shell{width:min(calc(100% - 1.2rem),var(--page));}
+@media(max-width:640px){.topics-shell{width:min(calc(100% - 2rem),var(--page));}
 .topics-sidebar{grid-template-columns:1fr}
 .topics-sidebar .method-card{display:none}
+.topics-sidebar .sidebar-intro{display:none}
+.topics-heading h1{font-size:clamp(1.9rem,8.5vw,2.4rem);line-height:1.12}
 }

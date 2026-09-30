@@ -83,7 +83,7 @@ const document = {
     documentListeners.set(type, listeners);
   },
   dispatch(type, event = {}) {
-    for (const listener of documentListeners.get(type) ?? []) listener(event);
+    for (const listener of documentListeners.get(type) ?? []) listener({ preventDefault() {}, ...event });
   },
 };
 
@@ -100,6 +100,8 @@ const context = {
   setTimeout: (callback) => callback(),
   localStorage: { getItem: () => null, setItem: () => {} },
   console,
+  URLSearchParams,
+  location: { search: '?q=ISKENDERIYE' },
 };
 
 const instrumented = source.replace(/\}\)\(\);\s*$/, "window.__homeTest = { normalize, openSearch, initSearch, initNavigation, renderFilters, setMenuOpen, setMobileFilterOpen }; })();\n");
@@ -136,3 +138,45 @@ assert.equal(elements["#mobileFilterToggle"].getAttribute("aria-expanded"), "fal
 assert.equal(elements["#mobileFilterToggle"].textContent, "Konuları göster");
 
 console.log("ana sayfa etkileşimleri: tamam");
+
+document.dispatch('DOMContentLoaded');
+assert.equal(elements['#searchDialog'].open, true, 'URL sorgusu arama penceresini açmalı');
+assert.equal(elements['#siteSearch'].value, 'ISKENDERIYE');
+assert.match(elements['#searchResults'].innerHTML, /İskenderiye/);
+assert.doesNotMatch(elements['#searchResults'].innerHTML, /Babil/);
+document.activeElement = { tagName: 'INPUT' };
+let escapePrevented = false;
+document.dispatch('keydown', { key: 'Escape', preventDefault() { escapePrevented = true; } });
+assert.equal(elements['#searchDialog'].open, false, 'arama alanında Escape pencereyi kapatmalı');
+assert.equal(elements['#searchTrigger'].focused, true, 'arama kapanınca odağı tetikleyici almalı');
+assert.equal(escapePrevented, true, 'arama alanının varsayılan Escape davranışı engellenmeli');
+document.activeElement = { tagName: 'MAIN' };
+elements['#searchTrigger'].dispatch('click');
+assert.equal(elements['#siteSearch'].value, '', 'tıklama olayı sorgu olarak kullanılmamalı');
+
+const shellSource = readFileSync(join(ROOT, 'assets', 'site-shell.js'), 'utf8');
+vm.runInNewContext(shellSource, {
+  document: {
+    ...document,
+    getElementById: id => elements[`#${id}`],
+  },
+  matchMedia: () => ({ matches: false }),
+  localStorage: {
+    getItem() { throw new Error('storage blocked'); },
+    setItem() { throw new Error('storage blocked'); },
+  },
+});
+assert.equal(document.documentElement.dataset.theme, 'light');
+elements['#themeToggle'].listeners.get('click').at(-1)();
+assert.equal(document.documentElement.dataset.theme, 'dark');
+// Ortak kabuğun kendi dinleyicisini denetle; ana sayfa dinleyicisi aynı
+// sahte düğmeye bağlı olduğundan son dinleyiciyi doğrudan çağır.
+const menu = elements['#menuToggle'];
+const shellMenuClick = menu.listeners.get('click').at(-1);
+shellMenuClick();
+assert.equal(menu.getAttribute('aria-label'), 'Menüyü kapat');
+documentListeners.get('keydown').at(-1)({ key: 'Escape' });
+assert.equal(menu.getAttribute('aria-expanded'), 'false');
+assert.equal(menu.getAttribute('aria-label'), 'Menüyü aç');
+assert.equal(menu.focused, true);
+console.log('URL araması ve ortak menü: tamam');

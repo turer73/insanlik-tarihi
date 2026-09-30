@@ -9,8 +9,9 @@ const read=p=>readFile(path.join(root,p),'utf8');
 const context={window:{}};
 vm.runInNewContext(await read('assets/articles-data.js'),context);
 const articles=context.window.ITArticles;
-assert.equal(articles.length,29);
-assert.equal(new Set(articles.map(a=>a.cover)).size,29);
+const articleSlugs = Object.keys(JSON.parse(await read('data/articles.json')));
+assert.deepEqual(new Set(articles.map(a=>a.slug)), new Set(articleSlugs));
+assert.equal(new Set(articles.map(a=>a.cover)).size,articles.length);
 const manifest=JSON.parse(await read('assets/editorial-manifest.json'));
 const index=await read('site/index.html');
 assert.ok(index.includes('assets/logo-mark.svg'));
@@ -45,7 +46,8 @@ for(const article of articles) {
     assert.ok(articles.some(a=>a.slug===slug),`${article.slug}: bilinmeyen ilgili dosya ${slug}`);
   }
 }
-assert.equal((await readdir(path.join(root,'site/assets/editorial-covers'))).length,29);
+const builtArticles = (await readdir(path.join(root,'site/articles'))).filter(file=>file.endsWith('.html')).map(file=>file.slice(0,-5));
+assert.deepEqual(new Set(builtArticles), new Set(articleSlugs));
 const tartismaPilotu = JSON.parse(await read('data/tartisma-pilotu.json'));
 const pilotSet = new Set(tartismaPilotu.yazilar);
 const contributionEnabled = tartismaPilotu.aktif === true;
@@ -70,7 +72,7 @@ assert.ok(anaSayfa.includes('class="ka-newsletter"'), 'ana sayfada bülten bloğ
 assert.ok(anaSayfa.includes('assets/cta-blocks.css') && anaSayfa.includes('assets/contribution.js'), 'ana sayfada cta varlıkları');
 let versionedAssets = 0;
 const hubs = Object.values(JSON.parse(await read('data/konu-merkezleri.json')));
-const allPages = ['index.html', ...articles.map(a=>`articles/${a.slug}.html`), 'dist/zaman-cizelgesi.html', 'dist/bulgu-veri-tabani.html', 'dist/kanit-denetimi.html', 'hakkinda.html', 'duzeltmeler.html', 'yeniden-yayin.html', 'konular.html', ...hubs.map(h=>`konular/${h.slug}.html`)];
+const allPages = ['index.html', ...articles.map(a=>`articles/${a.slug}.html`), 'dist/zaman-cizelgesi.html', 'dist/bulgu-veri-tabani.html', 'dist/kanit-denetimi.html', 'hakkinda.html', 'duzeltmeler.html', 'yeniden-yayin.html', 'konular.html', 'kaynakca.html', ...hubs.map(h=>`konular/${h.slug}.html`)];
 for (const page of allPages) {
  const html=await read(`site/${page}`);
  assert.equal((html.match(/data-domain="kanitatlasi\.com"/g)||[]).length,1,`${page}: one Plausible loader`);
@@ -125,11 +127,12 @@ const hubDosyalar = new Set(hubs.flatMap(hub => hub.dosyalar));
 for (const article of articles) {
   assert.ok(hubDosyalar.has(article.slug), `${article.slug} en az bir merkezde olmalı`);
 }
-assert.equal((await read('site/sitemap.xml')).match(/<loc>/g).length, 1 + articles.length + 3 + 1 + hubs.length + 3);
+const sitemapUrls = [...(await read('site/sitemap.xml')).matchAll(/<loc>([^<]+)<\/loc>/g)].map(match=>match[1]);
+assert.deepEqual(new Set(sitemapUrls), new Set(allPages.map(page=>'https://kanitatlasi.com/' + (page === 'index.html' ? '' : page))));
 assert.ok((await read('site/index.html')).includes('href="konular.html"'), 'ana sayfada konular bağlantısı');
 assert.ok((await read('site/index.html')).includes('href="yeniden-yayin.html"'), 'ana sayfada yeniden yayın bağlantısı');
 assert.ok((await read('site/index.html')).includes('href="hakkinda.html"'), 'ana sayfada güven sayfası bağlantısı');
 assert.ok((await read('site/index.html')).includes('href="duzeltmeler.html"'), 'ana sayfada düzeltme sayfası bağlantısı');
 assert.ok(!(await read('site/index.html')).includes('href="#hakkinda"'), 'eski çapa bağlantısı kalmamalı');
 console.log(`Önbellek: ${versionedAssets} yerel varlık başvurusu içerik hash'iyle doğrulandı.`);
-console.log('Üretim çıktısı: 29/29 gerçek WebP, dosya bütünlüğü, logo, favicon ve makaleye özel OG/Twitter/Schema.org doğrulandı.');
+console.log('Üretim çıktısı: ' + articles.length + ' gerçek WebP, dosya bütünlüğü, logo, favicon ve makaleye özel OG/Twitter/Schema.org doğrulandı.');

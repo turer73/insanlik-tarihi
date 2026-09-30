@@ -207,16 +207,16 @@
     </a>`).join('');
   }
 
-  function openSearch() {
+  function openSearch(query = '') {
     const dialog = $('#searchDialog');
     if (!dialog.open) dialog.showModal();
-    $('#siteSearch').value = '';
-    renderSearchResults('');
+    $('#siteSearch').value = query;
+    renderSearchResults(query);
     setTimeout(() => $('#siteSearch').focus(),30);
   }
 
   function initSearch() {
-    $('#searchTrigger').addEventListener('click', openSearch);
+    $('#searchTrigger').addEventListener('click', () => openSearch());
     $('#siteSearch').addEventListener('input', event => renderSearchResults(event.target.value));
     $('[data-dialog-close]').addEventListener('click', () => $('#searchDialog').close());
     $('#searchDialog').addEventListener('click', event => {
@@ -227,6 +227,11 @@
       if ((event.ctrlKey || event.metaKey) && event.key.toLocaleLowerCase('tr-TR') === 'k') { event.preventDefault(); openSearch(); }
       if (event.key === '/' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)) { event.preventDefault(); openSearch(); }
       if (event.key === 'Escape') {
+        if ($('#searchDialog').open) {
+          event.preventDefault();
+          $('#searchDialog').close();
+          $('#searchTrigger').focus();
+        }
         setMenuOpen(false);
         setMobileFilterOpen(false);
       }
@@ -290,6 +295,8 @@
     $('#emptyReset').addEventListener('click', resetFilters);
     renderFilters();
     renderArticles();
+    const searchParams = new URLSearchParams(location.search);
+    if (searchParams.has('q')) openSearch(searchParams.get('q'));
     $('#year').textContent = new Date().getFullYear();
   }
 

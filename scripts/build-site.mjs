@@ -165,10 +165,6 @@ function brandApp(source) {
     .replace(
       "$('#themeToggle').setAttribute('aria-label', dark ? 'Açık temaya geç' : 'Koyu temaya geç');",
       "$('#themeToggle').setAttribute('aria-label', dark ? 'Açık temaya geç' : 'Koyu temaya geç');\n    const themeMeta = document.querySelector('meta[name=\\\"theme-color\\\"]');\n    if (themeMeta) themeMeta.content = dark ? '#111713' : '#f3efe7';"
-    )
-    .replace(
-      "    renderArticles();\n    $('#year').textContent = new Date().getFullYear();",
-      "    renderArticles();\n    const initialQuery = new URLSearchParams(location.search).get('q');\n    if (new URLSearchParams(location.search).has('q')) {\n      openSearch();\n      $('#siteSearch').value = initialQuery;\n      renderSearchResults(initialQuery);\n    }\n    $('#year').textContent = new Date().getFullYear();"
     );
 }
 
@@ -382,6 +378,7 @@ ${pilot ? '  <link rel="stylesheet" href="../assets/evidence-dossier.css">' : ''
 <body>
   <a class="skip-link" href="#ka-anlati">İçeriğe geç</a>
 ${bodyFragment}
+  <script src="../assets/site-shell.js"></script>
   <script src="../assets/visuals-scenes-1.js"></script>
   <script src="../assets/visuals-scenes-2.js"></script>
   <script src="../assets/visuals-scenes-3.js"></script>
@@ -479,6 +476,7 @@ async function brandToolPages() {
     let content = await readFile(file, 'utf8');
     content = content
       .replace('</head>', '<link rel="icon" href="../favicon.svg" type="image/svg+xml"></head>')
+      .replace('</body>', '<script src="../assets/site-shell.js"></script>\n</body>')
       .replaceAll('İnsanlık Tarihi bulgularını', 'Kanıt Atlası bulgularını')
       .replaceAll('İnsanlık Tarihi bulgularında', 'Kanıt Atlası bulgularında')
       .replaceAll('· İnsanlık Tarihi', '· Kanıt Atlası')
