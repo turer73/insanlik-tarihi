@@ -368,7 +368,7 @@
   {
     "schema_version": 2,
     "id": "stonehenge-sunak-tasi-iskocya",
-    "claim": "Stonehenge'in Sunak Taşı kuzeydoğu İskoçya kökenlidir, Galler'deki Preseli Tepeleri'nden değil.",
+    "claim": "Sunak Taşı için 2026 zirkon karşılaştırması kuzeydoğu İskoçya anakarasındaki kaynak alanlarını destekliyor; kesin çıkarılma noktası belirlenmiş değil.",
     "status": "contested",
     "confidence": "high",
     "topic": [
@@ -415,16 +415,16 @@
       }
     ],
     "popular_claim": "Stonehenge'in bütün mavitaşları Galler'deki Preseli Tepeleri'nden gelir.",
-    "divergence": "2024'e kadar Sunak Taşı da bir kumtaşı olarak mavitaş grubuna dahil edilip Galler kökenli sayılıyordu. Jeokimyasal analiz bunu değiştirdi; popüler ve turistik kaynaklar güncellenmedi.",
+    "divergence": "Kaynak bölgesini daraltan mineral karşılaştırması, taşın hangi ocaktan alındığını veya izlediği yolu tek başına belirlemez. 2026 incelemesindeki yeni daraltma eski metinde görünmüyordu.",
     "divergence_type": [
       "guncellenmemis",
-      "turizm-kopyalamasi"
+      "kategori-hatasi"
     ],
     "open_questions": [
-      "Tam kaynak lokasyon belirlenmedi.",
-      "Taşıma mekanizması (insan vs buzul) çözülmedi."
+      "Kesin çıkarılma noktası neresi?",
+      "Taş, kaynak bölgesinden hangi aşamalarla Stonehenge’e ulaştı?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "volatile": true,
     "used_in": [
       "ayni-cumlede",
@@ -432,127 +432,59 @@
     ],
     "sources": [
       {
-        "id": "clarke-2024-sunak-tasi-iskocya",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Clarke, Anthony J. I.",
-          "Kirkland, Christopher L.",
-          "Bevins, Richard E.",
-          "Ixer, Rob A."
-        ],
-        "year": 2024,
-        "title": "A Scottish provenance for the Altar Stone of Stonehenge",
-        "container": "Nature",
-        "doi": "10.1038/s41586-024-07652-1",
-        "url": "https://www.nature.com/articles/s41586-024-07652-1",
-        "note": "İskoçya provenansının hakemli yayını. Kesinleşen şey kaynak BÖLGESİ; taşın hangi ocaktan geldiği bu çalışmayla belirlenmiyor."
-      },
-      {
-        "id": "ucl-2024-sunak-tasi",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "press-release",
-        "year": 2024,
-        "title": "Stonehenge Altar Stone came from Scotland, not Wales",
-        "institution": "University College London",
-        "url": "https://www.ucl.ac.uk/news/2024/aug/stonehenge-altar-stone-came-scotland-not-wales",
-        "note": "Kurumsal duyuru; hakemli yayının kendisi değil. Bulgunun kamuya 'Galler değil İskoçya' başlığıyla sunulduğunu kaydetmek için kullanıldı."
-      },
-      {
         "id": "clarke-2026-highlands-to-henge",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Clarke, Anthony J. I.",
-          "Veness, Rachel"
+          "Veness, Remy L. J.",
+          "Kirkland, Christopher L.",
+          "Clark, Chris D.",
+          "Gandy, Niall",
+          "Emery, Andy",
+          "Bradley, Sarah L.",
+          "Ely, Jeremy C.",
+          "Ádám, Ignéczi"
         ],
         "year": 2026,
         "title": "From Highlands to Henge: Refining the Provenance and Transport Pathways of Stonehenge's Altar Stone",
         "container": "Journal of Quaternary Science",
         "doi": "10.1002/jqs.70080",
         "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jqs.70080",
-        "note": "Dosyada yazarsız duruyordu; crossref künyesi alındı."
+        "note": "41(6), 888–895; ilk çevrimiçi yayın 4 Haziran 2026. Yayıncı HTML tam metnindeki yöntem, tartışma ve sonuçlar kontrol edildi. Yazar adları yayıncı ve Crossref kaydındaki biçimiyle korundu; eski Rachel Veness atfı yanlıştı."
       }
     ],
     "evidence": [
       {
-        "id": "zirkon-apatit-rutil",
-        "text": "Taş içindeki zirkon, apatit ve rutil tanelerinin yaş ve kimyası Laurentia kökenli kristalin bir kaynağa işaret ediyor.",
+        "id": "2026-kaynak-daraltmasi",
+        "text": "Karşılaştırılan zirkon verilerinde Sarclet en yakın eşleşmedir; sonuç bölümü Caithness veya Inverness–Black Isle alanlarını en olası kaynaklar olarak önerir.",
         "citations": [
           {
-            "source_ref": "clarke-2024-sunak-tasi-iskocya",
-            "locator": "Jeokimyasal analiz",
+            "source_ref": "clarke-2026-highlands-to-henge",
+            "locator": "Discussion → Orcadian Basin sources, fig. 3; Conclusions, ilk paragraf",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "mesafe-750km",
-        "text": "Mesafe ~250 km yerine ~750 km'ye çıkıyor.",
-        "citations": [
-          {
-            "source_ref": "clarke-2024-sunak-tasi-iskocya",
-            "locator": "Sonuç ve tartışma",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "kurumsal-duyuru",
-        "text": "Bulgu kurumsal duyuruda 'Galler değil İskoçya' başlığıyla kamuya sunuldu.",
-        "citations": [
-          {
-            "source_ref": "ucl-2024-sunak-tasi",
-            "locator": "Duyuru başlığı",
-            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "orkney-eslesmiyor",
-        "text": "Aynı yıl yayımlanan bir çalışma taşın Orkney Anakarası kumtaşlarıyla tam eşleşmediğini gösterdi; kaynak İskoçya'nın kuzeydoğusunda geniş bir alan olabilir.",
+        "id": "eslesme-kesin-nokta-degil",
+        "text": "Birden çok örnek istatistiksel olarak ayırt edilemiyor; KS ile MDS karşılaştırmaları bazı örneklerde farklı ayrımlar veriyor.",
         "citations": [
           {
             "source_ref": "clarke-2026-highlands-to-henge",
-            "locator": "Provenans daraltması",
+            "locator": "Discussion → Orcadian Basin sources, fig. 3B",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "buzul-itirazi",
-        "text": "Taşların insan eliyle mi buzullarla mı taşındığı konusunda azınlıkta ama sürmekte olan bir itiraz var.",
-        "citations": [
-          {
-            "source_ref": "clarke-2026-highlands-to-henge",
-            "locator": "Taşıma güzergâhı tartışması",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "bolge-mi-nokta-mi",
-        "text": "KAYDIN KENDİ SINIRI: 'İskoçya kökenli' ile 'şu ocaktan' aynı şey değil. Kesinleşen şey kaynak BÖLGESİ, kaynak noktası değil.",
-        "citations": [
-          {
-            "source_ref": "clarke-2024-sunak-tasi-iskocya",
-            "locator": "Sonuçların kapsamı",
-            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Karşı kanıt artık 2026 JQS makalesine bağlı; önce dosyada yazarsız duruyordu."
+      "notes": "1 Ekim 2026: kayıt 2026 makalesinin kontrol edilen analizine daraltıldı. 2024 Nature makalesinin tam metni bu turda erişilemedi; ona bağlanan eski yöntem ve mesafe cümleleri yeni bir doğrudan okuma gibi sunulmadı. Uzman incelemesi yapılmadı."
     }
   },
   {
@@ -3257,7 +3189,7 @@
   {
     "schema_version": 2,
     "id": "stonehenge-sarsen-west-woods",
-    "claim": "Stonehenge'in 52 sarseninden 50'si aynı jeokimyasal imzayı taşır ve West Woods, Wiltshire'dan (~25 km) gelir.",
+    "claim": "2020 çalışmasında kalan 52 sarsenin 50'si benzer yüzey kimyası gösterir; 58 numaralı taşın karotu, çoğunluk için West Woods çevresini en olası kaynak yapar.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -3298,15 +3230,17 @@
       }
     ],
     "popular_claim": "Stonehenge'in dev taşlarının nereden geldiği hâlâ bilinmiyor; bu anıtın çözülmemiş gizemlerinden biri.",
-    "divergence": "Büyük sarsenler için bu soru 2020'de kapandı: 52 taşın 50'si aynı jeokimyasal imzayı taşıyor ve kaynak, anıtın yalnızca ~25 km kuzeyindeki West Woods. Gizem anlatısı üç ayrı soruyu (sarsenler, mavitaşlar, Sunak Taşı) tek bir soruya indirip hepsini açık gösteriyor - oysa üçünün cevabı da farklı ve biri artık verilmiş durumda. 'Bilinçli seçim' bir ÇIKARIMDIR: kimyasal imza taşların nereden geldiğini söyler, niçin seçildiğini söylemez.",
+    "divergence": "Benzer yüzey kimyası ortak kaynak çıkarımını destekler. West Woods eşleştirmesi her taşın ayrı karot analizinden değil, 58 numaralı taşın ayrıntılı analizi ve temsil ediciliğinden gelir; seçim nedeni ölçülmüş değildir.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
     ],
     "open_questions": [
-      "Kalan iki sarsenin kaynağı belirlenmedi."
+      "26 ve 160 numaralı sarsenlerin kaynağı neresi?",
+      "West Woods çevresindeki kesin çıkarılma alanları nerede?",
+      "Bu alan neden tercih edildi?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "used_in": [
       "stonehenge"
     ],
@@ -3314,75 +3248,60 @@
       {
         "id": "nash-2020-sarsen-west-woods",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Nash, David J.",
-          "Ciborowski, T. Jake R."
+          "Ciborowski, T. Jake R.",
+          "Ullyott, J. Stewart",
+          "Parker Pearson, Mike",
+          "Darvill, Timothy",
+          "Greaney, Susan",
+          "Maniatis, Georgios",
+          "Whitaker, Katy A."
         ],
         "year": 2020,
         "title": "Origins of the sarsen megaliths at Stonehenge",
         "container": "Science Advances",
+        "volume": "6(31)",
+        "pages": "eabc0133",
         "doi": "10.1126/sciadv.abc0133",
-        "url": "https://www.science.org/doi/10.1126/sciadv.abc0133",
-        "note": "Dosyada bu makale İKİ AYRI kaynak olarak duruyordu - biri Türkçe başlıkla ve DOI'siz. Tek künyede birleştirildi."
-      },
-      {
-        "id": "ucl-2020-sarsen",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "press-release",
-        "year": 2020,
-        "title": "New research reveals origin of Stonehenge's great sarsen stones",
-        "institution": "University College London",
-        "url": "https://www.ucl.ac.uk/news/2020/jul/new-research-reveals-origin-stonehenges-great-sarsen-stones",
-        "note": "Kurumsal duyuru; jeokimyasal eşleştirmenin hakemli yayını değil. Bulgunun kamuya aynı biçimde sunulduğunu kaydeder."
+        "url": "https://cris.brighton.ac.uk/ws/files/14404038/eabc0133.full.pdf",
+        "note": "Yayımlanmış makalenin yazar arşivindeki PDF kopyası. Results s. 1–4 ve Discussion s. 6 kontrol edildi. Ham veriler ve ek istatistikler yeniden analiz edilmedi."
       }
     ],
     "evidence": [
       {
         "id": "50-52-imza",
-        "text": "52 sarsenden 50'si tutarlı bir kimyasal imza taşıyor - ortak kaynak.",
+        "text": "52 taşın taşınabilir X-ışını floresans ölçümleri ve BPCA analizi, 50'sinin benzer jeokimyasını gösterir.",
         "citations": [
           {
             "source_ref": "nash-2020-sarsen-west-woods",
-            "locator": "X-ışını floresans analizi",
+            "locator": "Results → Chemical composition of the sarsen stones, s. 1–3; fig. 2",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "58-karot",
+        "text": "58 numaralı taşın geri getirilen karotundan üç örneğin ayrıntılı ICP-MS/ICP-AES analizi yapıldı; bu analiz bütün 50 taşa uygulanmadı.",
+        "citations": [
+          {
+            "source_ref": "nash-2020-sarsen-west-woods",
+            "locator": "Results → Chemical composition of sarsen Stone 58, s. 3–4",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "west-woods-kaynagi",
-        "text": "Kaynak Stonehenge'in ~25 km kuzeyindeki West Woods olarak belirlendi.",
+        "text": "Karotun 20 kaynak alanıyla karşılaştırılmasında West Woods bütün iz element oranları için uyum verir; çoğunluğun buradan gelmesi, yüzey kimyası benzerliğine dayanan çıkarımdır.",
         "citations": [
           {
             "source_ref": "nash-2020-sarsen-west-woods",
-            "locator": "Provenans eşleştirmesi",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "bilincli-secim",
-        "text": "50/52 oranı taşların rastgele toplanmadığını, bilinçli seçildiğini gösteriyor.",
-        "citations": [
-          {
-            "source_ref": "nash-2020-sarsen-west-woods",
-            "locator": "Tartışma",
+            "locator": "Results → Provenance of sarsen Stone 58, s. 4; fig. 3",
             "support_type": "inference"
-          }
-        ]
-      },
-      {
-        "id": "kurumsal-duyuru-sarsen",
-        "text": "Bulgu kurumsal duyuruda da aynı biçimde sunuldu.",
-        "citations": [
-          {
-            "source_ref": "ucl-2020-sarsen",
-            "locator": "Duyuru",
-            "support_type": "context"
           }
         ]
       }
@@ -3390,36 +3309,36 @@
     "counter_evidence": [
       {
         "id": "iki-tas-uymuyor",
-        "text": "Kalan 2 sarsen bu imzaya uymuyor; tek kaynak açıklaması bütün taşları kapsamıyor.",
+        "text": "26 ve 160 numaralı taşlar ana gruptan farklıdır; sonuç bütün sarsenleri tek kaynağa bağlamaz.",
         "citations": [
           {
             "source_ref": "nash-2020-sarsen-west-woods",
-            "locator": "Sonuçlar, istisnalar",
+            "locator": "Results → Chemical composition of the sarsen stones, s. 3; fig. 2",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "uc-ayri-soru",
-        "text": "Sarsenlerin kaynağının bilinmesi, Sunak Taşı ve mavitaşların kaynağını etkilemez - üç ayrı sorudur.",
+        "id": "kesin-nokta-ve-niyet",
+        "text": "Kesin çıkarılma alanını daraltmak için daha fazla örnekleme gerekir. West Woods’un seçilme nedeni belirsizdir; boyut ve kalite açıklamaları yorumdur.",
         "citations": [
           {
             "source_ref": "nash-2020-sarsen-west-woods",
-            "locator": "Kapsam",
-            "support_type": "context"
+            "locator": "Results → Provenance of sarsen Stone 58, s. 4, son paragraf; Discussion, s. 6, ikinci paragraf",
+            "support_type": "counter"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Bu kaydın hiç karşı kanıtı yoktu; üçü yazıldı. 2 taşın imzaya uymadığı makalenin kendi sonucudur, dışarıdan itiraz değil."
+      "notes": "2 Ekim 2026: yüzey ölçümü, karot analizi ve kaynak çıkarımı ayrıldı. Yerleşik/yüksek etiketi bu sınırlı jeokimyasal bulguya aittir; kesin ocak ve seçim amacı için kullanılmaz. Uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "stonehenge-preseli-ocak-kaniti",
-    "claim": "Carn Goedog ve Craig Rhos-y-felin'de mavitaşların insan eliyle çıkarıldığı taş ocakları bulunmuştur.",
+    "claim": "2019 kazı yayını Carn Goedog ve Craig Rhos-y-felin bulgularını Neolitik taş çıkarma olarak yorumlar; Craig Rhos-y-felin’de bazı yapıların insan yapımı sayılması eleştirilmiştir.",
     "status": "contested",
     "confidence": "medium",
     "topic": [
@@ -3438,12 +3357,13 @@
       }
     },
     "period": {
-      "earliest": -3400,
-      "latest": -3000,
-      "era_label": "Orta Neolitik",
+      "earliest": -3350,
+      "latest": -2900,
+      "era_label": "Neolitik ocak yorumu; bağlamsal tarihler",
       "precision": "approximate",
       "dating_method": [
-        "radiocarbon"
+        "radiocarbon",
+        "stratigraphy"
       ]
     },
     "disciplines": [
@@ -3459,119 +3379,125 @@
       }
     ],
     "popular_claim": "Stonehenge'in mavitaşları Galler'deki taş ocaklarından çıkarıldı; ocaklar bulundu.",
-    "divergence": "Kayanın Preseli'den geldiği jeolojik eşleştirmeyle sağlam. Ama o kayanın İNSAN ELİYLE ÇIKARILDIĞI ayrı bir iddiadır ve doğrudan kanıtı tartışmalıdır. Popüler aktarımda iki iddia tek cümlede birleşiyor ve kesinlik olduğundan büyük görünüyor.",
+    "divergence": "Jeolojik kaynak eşleştirmesi ile ocak işletmesi yorumu ayrı kanıtlar gerektirir. Kazı yayını maddi dayanaklar sunar; Craig Rhos-y-felin’e yönelik 2015 jeomorfolojik itirazı iki alanın bütün buluntularına genellemek de doğru değildir.",
     "divergence_type": [
       "kategori-hatasi",
       "guncellenmemis"
     ],
     "open_questions": [
-      "Ocak işletmesinin doğrudan kanıtı bulunabilir mi?"
+      "Craig Rhos-y-felin’de platform ve yol olarak yorumlanan şekiller insan yapımı mı?",
+      "Taş çıkarma olayları ile tarihli tortuların ilişkisi daha kesin kurulabilir mi?",
+      "Hangi blok hangi aşamada Stonehenge’e ulaştı?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "stonehenge"
     ],
     "sources": [
       {
-        "id": "parker-pearson-2021-waun-mawn",
+        "id": "parker-pearson-2019-megalith-quarries",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Parker Pearson, Mike",
-          "Pollard, Joshua",
+          "Pollard, Josh",
           "Richards, Colin",
-          "Welham, Kate"
+          "Welham, Kate",
+          "Casswell, Chris",
+          "French, Charles",
+          "Schlee, Duncan",
+          "Shaw, Dave",
+          "Simmons, Ellen",
+          "Stanford, Adam",
+          "Bevins, Richard",
+          "Ixer, Rob"
         ],
-        "year": 2021,
-        "title": "The original Stonehenge? A dismantled stone circle in the Preseli Hills of west Wales",
+        "year": 2019,
+        "title": "Megalith quarries for Stonehenge’s bluestones",
         "container": "Antiquity",
-        "doi": "10.15184/aqy.2020.239",
-        "note": "Dosyada yılsız ve DOI'siz duruyordu; crossref künyesi alındı."
+        "volume": "93(367)",
+        "pages": "45–62",
+        "doi": "10.15184/aqy.2018.111",
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AAF715CC586231FFFCC18ACB871C9F5E/S0003598X18001114a.pdf/megalith_quarries_for_stonehenges_bluestones.pdf",
+        "note": "Yayıncı PDF: giriş, Carn Goedog kazısı, aletler ve çıkarma teknikleri, iki alanın tarihleme tartışması, tablo 1–2 kontrol edildi. Organik araçlar ve taşıma düzeni korunmuş buluntu gibi sunulmadı."
       },
       {
-        "id": "parker-pearson-2012-stonehenge",
+        "id": "john-2015-rhosyfelin-quarry-critique",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
         "authors": [
-          "Parker Pearson, Mike"
+          "John, Brian S.",
+          "Elis-Gruffydd, Dyfed",
+          "Downes, John"
         ],
-        "year": 2012,
-        "title": "Stonehenge: Exploring the Greatest Stone Age Mystery",
-        "publisher": "Simon & Schuster",
-        "isbn": "9780857207326",
-        "note": "'Stonehenge inşa evreleri ve işlev tartışması literatürü' diye yazılmış YER TUTUCUNUN yerine kondu. İlk denediğim ISBN başka bir kitaba çıktı; bu künye Open Library başlık aramasından alındı."
+        "year": 2015,
+        "title": "Observations on the supposed “Neolithic bluestone quarry” at Craig Rhosyfelin, Pembrokeshire",
+        "container": "Archaeology in Wales",
+        "volume": "54",
+        "pages": "139–148",
+        "url": "https://www.researchgate.net/publication/286775899_OBSERVATIONS_ON_THE_SUPPOSED_NEOLITHIC_BLUESTONE_QUARRY_AT_CRAIG_RHOSYFELIN_PEMBROKESHIRE",
+        "note": "Yazarın yüklediği makale metnindeki platform, alet ve sonuç tartışmaları okundu. İtiraz Craig Rhosyfelin’i kapsar; Carn Goedog’daki 2019 buluntularını doğrudan değerlendiren bir yayın değildir."
       }
     ],
     "evidence": [
       {
         "id": "preseli-eslestirme",
-        "text": "Jeolojik eşleştirme mavitaşları Preseli Tepeleri'ne kesin biçimde bağlıyor.",
+        "text": "Kazı yayını bazı benekli doleritleri Carn Goedog’a, bazı riyolit parçalarını Craig Rhos-y-felin’e bağlayan jeolojik çalışmaların sonuçlarını özetler; bu bütün mavitaşların aynı kaynağı olduğu anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Jeolojik provenans",
-            "support_type": "direct"
+            "source_ref": "parker-pearson-2019-megalith-quarries",
+            "locator": "Introduction, s. 46–47",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "carn-goedog-bulgulari",
+        "text": "Carn Goedog’da taş levhalı platform, kaya yüzündeki boşluklar ve kama/çekiç olarak yorumlanan taş aletler kazı ekibinin çıkarma yorumunu destekler.",
+        "citations": [
+          {
+            "source_ref": "parker-pearson-2019-megalith-quarries",
+            "locator": "Carn Goedog: a bluestone megalith quarry; Tools and quarrying techniques, s. 52–57; fig. 6–9",
+            "support_type": "inference"
           }
         ]
       },
       {
         "id": "iki-nokta-neolitik",
-        "text": "İki noktada (Craig Rhos-y-felin ve Carn Goedog) Neolitik tarihli aktivite izleri bulundu.",
+        "text": "Radyokarbon tarihleri odun kömürü içeren platform ve dolgu bağlamlarına aittir. 2019 yayını faaliyetin sonunu MÖ 3000 çevresine bağlar; bunlar taşın kendi çıkarılma tarihinin doğrudan ölçümü değildir.",
         "citations": [
           {
-            "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Kazı bulguları",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "iki-ayri-iddia",
-        "text": "Kayanın NEREDEN geldiği ile NASIL çıkarıldığı ayrı iddialardır ve ayrı kanıt gerektirirler.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "Mavitaş bölümü",
-            "support_type": "direct"
+            "source_ref": "parker-pearson-2019-megalith-quarries",
+            "locator": "Megalith-quarrying at Carn Goedog and Craig Rhos-y-felin, s. 58–59; tablo 1–2",
+            "support_type": "inference"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "ocak-kaniti-tartismali",
-        "text": "Her iki sitede de gerçek bir ocak işletmesine dair doğrudan kanıt bulunup bulunmadığı tartışmalıdır.",
+        "id": "rhosyfelin-dogal-sekiller",
+        "text": "John ve diğerleri (2015), Craig Rhosyfelin’de platform ve yol sayılan bazı şekilleri doğal kaya düşmesi ve tortul süreçlerle açıklar; geçici insan faaliyeti olasılığını dışlamaz.",
         "citations": [
           {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "Ocak tartışması",
+            "source_ref": "john-2015-rhosyfelin-quarry-critique",
+            "locator": "Sözde mühendislik yapılarının tartışması, s. 145–147; Conclusions, s. 147–148",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "dogal-parcalanma",
-        "text": "Kayanın oradan gelmesi, oradan çıkarıldığını kanıtlamaz - doğal parçalanma ve buzul taşıması da mümkün.",
+        "id": "organik-duzenek-korunmadi",
+        "text": "Carn Goedog’da ahşap araçlar korunmamıştır; halat, kaldıraç ve kızakla çıkarma düzeni yeniden kurulan bir senaryodur. Platformdan çıkan hazırlanmış yol da bulunmamıştır.",
         "citations": [
           {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "Alternatif açıklamalar",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "aktivite-turu-belirsiz",
-        "text": "Neolitik tarihli aktivite izi, o aktivitenin TAŞ ÇIKARMA olduğunu göstermez; aynı yerde başka işler de yapılmış olabilir.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Tarihleme yorumu",
+            "source_ref": "parker-pearson-2019-megalith-quarries",
+            "locator": "Tools and quarrying techniques, s. 56–58",
             "support_type": "counter"
           }
         ]
@@ -3579,13 +3505,13 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ: kayıt tek bir yılsız/DOI'siz makaleye dayanıyordu. Parker Pearson 2021 (DOI) ve 2012 (ISBN) bağlandı."
+      "notes": "2 Ekim 2026: asıl 2019 kazı yayını ve Craig Rhosyfelin’e özgü 2015 itirazı bağlandı. Okunmamış 2012 kitap pasajları ve Waun Mawn makalesine dayanan genel ocak hükümleri çıkarıldı. Buradaki denetim seçilmiş yayınlarla sınırlıdır; uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "stonehenge-waun-mawn-sokulmus-cember",
-    "claim": "Mavitaşlar önce Galler'de Waun Mawn'da bir çember olarak dikildi, sonra sökülüp Stonehenge'e taşındı.",
+    "claim": "2021’de Waun Mawn’dan bazı taşların Stonehenge’e götürüldüğü önerildi; 2022 jeokimyası öne sürülen 91 numaralı çukur–62 numaralı taş eşleşmesini desteklemiyor.",
     "status": "contested",
     "confidence": "medium",
     "topic": [
@@ -3603,17 +3529,18 @@
       }
     },
     "period": {
-      "earliest": -3000,
-      "latest": -2900,
-      "era_label": "Geç Neolitik",
+      "earliest": -3600,
+      "latest": -3000,
+      "era_label": "2021 yayınının önerdiği yapım aralığı; söküm tarihi kesin değil",
       "precision": "disputed",
       "dating_method": [
         "radiocarbon",
-        "thermoluminescence"
+        "optically-stimulated-luminescence"
       ]
     },
     "disciplines": [
-      "arkeoloji"
+      "arkeoloji",
+      "jeoloji"
     ],
     "people": [
       {
@@ -3624,14 +3551,17 @@
       }
     ],
     "popular_claim": "Stonehenge aslında Galler'den taşınmış daha eski bir çemberdir; efsane doğru çıktı.",
-    "divergence": "Hipotez ciddiye alınmayı hak ediyor ama kanıtlanmış değil. Basında 'efsane doğrulandı' çerçevesiyle aktarıldı; yayımlanmış akademik itirazlar aynı görünürlüğü almadı.",
+    "divergence": "Çap ve yönelim karşılaştırması bir taşın aktarımını doğrulamaz. 2022 analizinde somut taş eşleşmesi desteklenmedi; önerinin yazarları da hiçbir Waun Mawn taşının Stonehenge’e ulaşmamış olabileceğini kabul eder. Eksik taşların kökeni bilinmediği için her olası bağlantı dışlanmış değildir.",
     "divergence_type": [
-      "medya-abartisi"
+      "guncellenmemis",
+      "kategori-hatasi"
     ],
     "open_questions": [
-      "Waun Mawn taşlarının Stonehenge'dekilerle doğrudan eşleştirilmesi mümkün mü?"
+      "Sökülen ve bugün bulunmayan taşların kaynağı ve gittiği yer neydi?",
+      "Waun Mawn’ın eksik planı ve söküm tarihi daha kesin kurulabilir mi?",
+      "Stonehenge’in ilk evresindeki Aubrey çukurları taş mı ahşap mı taşıyordu?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "stonehenge"
@@ -3640,93 +3570,135 @@
       {
         "id": "parker-pearson-2021-waun-mawn",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Parker Pearson, Mike",
-          "Pollard, Joshua",
+          "Pollard, Josh",
           "Richards, Colin",
-          "Welham, Kate"
+          "Welham, Kate",
+          "Kinnaird, Timothy",
+          "Shaw, Dave",
+          "Simmons, Ellen",
+          "Stanford, Adam",
+          "Bevins, Richard",
+          "Ixer, Rob",
+          "Ruggles, Clive",
+          "Rylatt, Jim",
+          "Edinborough, Kevan"
         ],
         "year": 2021,
         "title": "The original Stonehenge? A dismantled stone circle in the Preseli Hills of west Wales",
         "container": "Antiquity",
+        "volume": "95(379)",
+        "pages": "85–103",
         "doi": "10.15184/aqy.2020.239",
-        "note": "Dosyada yılsız ve DOI'siz duruyordu; crossref künyesi alındı."
+        "url": "https://discovery.ucl.ac.uk/id/eprint/10127155/1/Parker_Pearson_Copy-Edited_TS_MPP.pdf",
+        "note": "UCL’nin kabul edilmiş, kopya düzenlemesi yapılmış 16 sayfalık metnindeki kazı, tarihleme, jeoloji ve yönelim bölümleri kontrol edildi; atıflardaki PDF sayfaları bu sürüme aittir, yayımlanmış makalenin sayfaları değildir. Ek ham tarihler yeniden analiz edilmedi."
       },
       {
-        "id": "parker-pearson-2012-stonehenge",
+        "id": "darvill-2022-mythical-rings",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Parker Pearson, Mike"
-        ],
-        "year": 2012,
-        "title": "Stonehenge: Exploring the Greatest Stone Age Mystery",
-        "publisher": "Simon & Schuster",
-        "isbn": "9780857207326",
-        "note": "'Stonehenge inşa evreleri ve işlev tartışması literatürü' diye yazılmış YER TUTUCUNUN yerine kondu. İlk denediğim ISBN başka bir kitaba çıktı; bu künye Open Library başlık aramasından alındı."
-      },
-      {
-        "id": "darvill-2006-stonehenge",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
         "authors": [
           "Darvill, Timothy"
         ],
-        "year": 2006,
-        "title": "Stonehenge: The Biography of a Landscape",
-        "publisher": "Tempus",
-        "isbn": "9780752436418",
-        "note": "İşlev tartışmasında Parker Pearson'dan farklı bir okuma sunar; ikisi bilerek yan yana kondu."
+        "year": 2022,
+        "title": "Mythical rings? Waun Mawn and Stonehenge Stage 1",
+        "container": "Antiquity",
+        "volume": "96(390)",
+        "pages": "1515–1529",
+        "doi": "10.15184/aqy.2022.82",
+        "url": "https://www.cambridge.org/core/journals/antiquity/article/mythical-rings-waun-mawn-and-stonehenge-stage-1/2F089B76AA2411BB09DBAFE79060101F",
+        "note": "Yayıncı HTML metnindeki Waun Mawn, Stonehenge: the Aubrey Holes ve Conclusions bölümleri kontrol edildi. 2021 önerisinin eleştirisi, ondan önceki 2006 kitabına bağlanmadı."
+      },
+      {
+        "id": "bevins-2022-waun-mawn-dolerites",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Bevins, Richard E.",
+          "Pearce, Nick J. G.",
+          "Parker Pearson, Mike",
+          "Ixer, Rob A."
+        ],
+        "year": 2022,
+        "title": "Identification of the source of dolerites used at the Waun Mawn stone circle in the Mynydd Preseli, west Wales and implications for the proposed link with Stonehenge",
+        "container": "Journal of Archaeological Science: Reports",
+        "volume": "45",
+        "pages": "103556",
+        "doi": "10.1016/j.jasrep.2022.103556",
+        "url": "https://pure.aber.ac.uk/ws/portalfiles/portal/51538028/Accepted_Manuscript.pdf",
+        "note": "Aberystwyth arşivindeki kabul edilmiş metnin yöntem §4.3–4.5, eksik taşlara ilişkin §7 ve Conclusions §8 bölümleri kontrol edildi. Atıflar 39 sayfalık PDF’nin sayfalarına aittir; ek veriler yeniden analiz edilmedi."
+      },
+      {
+        "id": "parker-pearson-2022-waun-mawn-response",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Parker Pearson, Mike",
+          "Pollard, Josh",
+          "Richards, Colin",
+          "Welham, Kate",
+          "Kinnaird, Timothy",
+          "Srivastava, Aayush",
+          "Casswell, Chris",
+          "Shaw, Dave",
+          "Simmons, Ellen",
+          "Stanford, Adam",
+          "Bevins, Richard",
+          "Ixer, Rob",
+          "Ruggles, Clive",
+          "Rylatt, Jim",
+          "Edinborough, Kevan"
+        ],
+        "year": 2022,
+        "title": "How Waun Mawn stone circle was designed and built, and when the Bluestones arrived at Stonehenge: a response to Darvill",
+        "container": "Antiquity",
+        "volume": "96(390)",
+        "pages": "1530–1537",
+        "doi": "10.15184/aqy.2022.132",
+        "url": "https://discovery.ucl.ac.uk/id/eprint/10161300/2/Parker%20Pearson_How%20Waun%20Mawn%20stone%20circle%20was%20designed%20and%20built%2C%20and%20when%20the%20Bluestones%20arrived%20at%20Stonehenge_AAM.pdf",
+        "note": "UCL arşivindeki kabul edilmiş metnin giriş, yeni kazı bulguları ve sonuç bölümleri kontrol edildi. Atıflar bu 10 sayfalık PDF’ye aittir."
       }
     ],
     "evidence": [
       {
+        "id": "cap-ve-yonelim-onerisi",
+        "text": "2021 kazı ekibi taş ve çukurlardan 110 m çaplı çember kurar; bunu Stonehenge’in hendeğiyle karşılaştırır ve yaz gündönümü yönelimi önerir. Bu bir mimari yorumdur.",
+        "citations": [
+          {
+            "source_ref": "parker-pearson-2021-waun-mawn",
+            "locator": "A dismantled stone circle, PDF s. 3; A solstitial alignment; Discussion, PDF s. 7–8",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
         "id": "waun-mawn-tarihi",
-        "text": "Waun Mawn MÖ 3000 dolayına tarihleniyor - Stonehenge'in ilk inşasından hemen önce.",
+        "text": "2021 metni yapım için yaklaşık MÖ 3600–3000 aralığını, bu aralık içinde MÖ 3400–3200 önerisini verir. OSL ve odun kömürü bağlamlarının karışması belirsizlik yaratır; sökümün tam anı tarihlenmez.",
         "citations": [
           {
             "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Tarihleme",
+            "locator": "Dating the Waun Mawn stone circle → OSL dating; Radiocarbon dating, PDF s. 4–6",
             "support_type": "claim-origin"
           }
         ]
       },
       {
-        "id": "cap-ayni",
-        "text": "Çapı Stonehenge'in çevreleyen hendeğiyle aynı.",
+        "id": "2022-yeni-plan",
+        "text": "Kazı ekibi 2022 yanıtında yeni çukurlar ve merkezdeki ocakla, tamamlanmamış ve kısmen sökülmüş çember yorumunu savunur. Bu savunma taşların Stonehenge’e ulaştığını kanıtlamaz.",
         "citations": [
           {
-            "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Ölçüm karşılaştırması",
-            "support_type": "claim-origin"
-          }
-        ]
-      },
-      {
-        "id": "gundonumu-yonelimi",
-        "text": "İkisi de yaz gündönümü doğuşuna yönelmiş.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Yönelim",
-            "support_type": "claim-origin"
-          }
-        ]
-      },
-      {
-        "id": "300-500-yil-bosluk",
-        "text": "Galler ocak tarihleri (~MÖ 3400-3200) ile mavitaşların Stonehenge'e dikilme tarihi (~MÖ 2900) arasında 300-500 yıllık boşluk var; hipotez bu boşluğu açıklıyor.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Kronoloji argümanı",
+            "source_ref": "parker-pearson-2022-waun-mawn-response",
+            "locator": "Introduction; Building the unfinished stone circle; Conclusions, PDF s. 2–3, 8–9",
             "support_type": "claim-origin"
           }
         ]
@@ -3734,49 +3706,60 @@
     ],
     "counter_evidence": [
       {
-        "id": "benzerlik-belirleyici-degil",
-        "text": "Çap ve yönelim benzerliği tek başına belirleyici değil; benzer ölçüler bağımsız olarak da ortaya çıkabilir.",
+        "id": "darvill-2022-elestirisi",
+        "text": "Darvill (2022) eski plandaki boşlukları, tarihleme bağlamlarını ve ilk evredeki yönelim iddiasını sorgular; daha küçük taş dizileri ile Aubrey çukurlarında ahşap/çukur evreleri önerir.",
         "citations": [
           {
-            "source_ref": "darvill-2006-stonehenge",
-            "locator": "Yönelim ve ölçü tartışması",
+            "source_ref": "darvill-2022-mythical-rings",
+            "locator": "Waun Mawn, Pembrokeshire; Stonehenge: the Aubrey Holes; Conclusions",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "cukur-dizilimi-belirsiz",
-        "text": "Waun Mawn'daki taş çukurlarının sayısı ve dizilimi tam bir çember için yeterince açık değil.",
+        "id": "91-62-eslesmesi-yok",
+        "text": "2022 jeokimyasında 91 numaralı çukurdan iki parça Stonehenge’in 62 numaralı taşından farklıdır. Waun Mawn’da kalan dört taşın en olası kaynağı yerel Cerrig Lladron’dur.",
         "citations": [
           {
-            "source_ref": "parker-pearson-2021-waun-mawn",
-            "locator": "Bulguların sınırları",
+            "source_ref": "bevins-2022-waun-mawn-dolerites",
+            "locator": "§8 Conclusions, PDF s. 20–21; özellikle sonuç i–iii (metin satırları 604–609)",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "elestiriler-gorunmez",
-        "text": "Hipotezin yayımlanmış akademik eleştirileri var ve basındaki 'efsane doğrulandı' çerçevesiyle aynı görünürlüğü almadı.",
+        "id": "yazarlar-aktarimi-kesinlestirmiyor",
+        "text": "2022 yanıtında kazı ekibi hiçbir Waun Mawn taşının Stonehenge’e ulaşmamış olabileceğini kabul eder. Ocakların son faaliyet tarihleri doğrudan Stonehenge’e taşıma olasılığıyla da uyumludur; zorunlu 300–500 yıllık bekleme çıkarılamaz.",
         "citations": [
           {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "Tartışma ortamı",
+            "source_ref": "parker-pearson-2022-waun-mawn-response",
+            "locator": "Stonehenge Stage 1 tartışmasının sonu; Conclusions, PDF s. 8–9",
             "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "eksik-taslar-bilinmiyor",
+        "text": "Sökülmüş sekiz taşın litolojisi ve sökülme tarihi bilinmez; olumsuz eşleşme her olası taş aktarımını tek başına dışlamaz.",
+        "citations": [
+          {
+            "source_ref": "bevins-2022-waun-mawn-dolerites",
+            "locator": "§8 Conclusions, PDF s. 20–21 (metin satırları 581–603)",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Kanıtların hepsi hipotezi sunan makaleden geldiği için claim-origin yazıldı - kayıt onları doğrulanmış olgu gibi sunuyordu. Bu kayıttaki bütün kanıt satırları HİPOTEZİ SUNAN çalışmadan geliyor; bağımsız bir doğrulama hattı yok. Bu yüzden hepsi claim-origin olarak işaretlendi."
+      "notes": "2 Ekim 2026: 2021 önerisi, 2022 jeokimya sonucu, Darvill’in eleştirisi ve kazı ekibinin yanıtı ayrıldı. 2006/2012 kitaplarına bağlanan sonraki tartışma ve medya görünürlüğü hükümleri çıkarıldı. Yanlış thermoluminescence yöntemi OSL olarak düzeltildi; önerilen yapım ile kesin olmayan söküm tarihi ayrıldı. Seçilmiş yayınların içerik denetimidir; uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "stonehenge-sunak-tasi-insan-tasimasi",
-    "claim": "Sunak Taşı insan eliyle taşındı; Son Buzul Çağı buz akışı modelleri kaynak bölgeden Stonehenge'e doğrudan bir buzul güzergâhı öngörmüyor.",
-    "status": "established",
+    "claim": "2026 Geç Devensiyen modellemesindeki Sunak Taşı senaryoları önemli bir insan taşıması aşaması gerektiriyor; bu, bütün yolun veya bütün buzul dönemlerinin çözüldüğü anlamına gelmiyor.",
+    "status": "contested",
     "confidence": "medium",
     "topic": [
       "stonehenge",
@@ -3809,15 +3792,15 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Stonehenge'in taşlarını buzullar getirdi, insanlar sadece yerde bulduklarını dikti.",
-    "divergence": "Buzul taşıması gerçek bir olgu ve uzun süredir savunulan bir azınlık görüşü. 2026 modellemesi ise kaynak bölgeden doğrudan bir buz güzergâhı bulamıyor - bu, insan taşımasını GEREKTİRİYOR. Ama araştırmacılar buzul ihtimalini tümüyle dışlayamadıklarını da açıkça yazıyor.",
+    "divergence": "Eski metin, sınırlı bir modelin sonucunu kesin taşıma geçmişi gibi sunuyordu. Kaynağın bölgesi, olası buzul katkısı ve insanların kullandığı rota ayrı sorulardır.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "open_questions": [
-      "Taşıma güzergâhı neresiydi?",
-      "Kaynak lokasyon kuzeydoğu İskoçya içinde daraltılabilir mi?"
+      "İnsan taşımasının gerçek rotası ve yöntemi neydi?",
+      "Daha eski buzullaşmaların olası katkısı sınanabilir mi?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "volatile": true,
     "used_in": [
       "stonehenge"
@@ -3827,105 +3810,71 @@
       {
         "id": "clarke-2026-highlands-to-henge",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Clarke, Anthony J. I.",
-          "Veness, Rachel"
+          "Veness, Remy L. J.",
+          "Kirkland, Christopher L.",
+          "Clark, Chris D.",
+          "Gandy, Niall",
+          "Emery, Andy",
+          "Bradley, Sarah L.",
+          "Ely, Jeremy C.",
+          "Ádám, Ignéczi"
         ],
         "year": 2026,
         "title": "From Highlands to Henge: Refining the Provenance and Transport Pathways of Stonehenge's Altar Stone",
         "container": "Journal of Quaternary Science",
         "doi": "10.1002/jqs.70080",
         "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jqs.70080",
-        "note": "Dosyada yazarsız duruyordu; crossref künyesi alındı."
-      },
-      {
-        "id": "clarke-2024-sunak-tasi-iskocya",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Clarke, Anthony J. I.",
-          "Kirkland, Christopher L.",
-          "Bevins, Richard E.",
-          "Ixer, Rob A."
-        ],
-        "year": 2024,
-        "title": "A Scottish provenance for the Altar Stone of Stonehenge",
-        "container": "Nature",
-        "doi": "10.1038/s41586-024-07652-1",
-        "url": "https://www.nature.com/articles/s41586-024-07652-1",
-        "note": "Taşın ağırlığı (~6.000 kg) ve mesafe (~700 km) için künye kaynağı; insan eliyle taşıma çıkarımı bu iki ölçüye dayanıyor."
+        "note": "41(6), 888–895; ilk çevrimiçi yayın 4 Haziran 2026. Yayıncı HTML tam metnindeki yöntem, tartışma ve sonuçlar kontrol edildi. Yazar adları yayıncı ve Crossref kaydındaki biçimiyle korundu; eski Rachel Veness atfı yanlıştı."
       }
     ],
     "evidence": [
       {
-        "id": "buz-guzergahi-yok",
-        "text": "Son Buzul Çağı buz akışı modelleri kuzeydoğu İskoçya'dan Salisbury Ovası'na doğrudan güzergâh öngörmüyor.",
+        "id": "model-kapsami",
+        "text": "Model, 30.000–15.000 yıl öncesinin buz akışını kullanır; haritalar gerçekleşmiş bir yolculuğu değil, olası bırakılma alanlarını gösterir.",
         "citations": [
           {
             "source_ref": "clarke-2026-highlands-to-henge",
-            "locator": "Buz akışı modellemesi",
+            "locator": "Methods → Glacial erratic modelling; fig. 4 açıklaması",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "asamali-tasima",
-        "text": "Taşın aşamalı taşındığı öneriliyor: karadan çekme ile nehir ve kıyı taşımacılığının birleşimi.",
+        "id": "insan-tasimasi-cikarimi",
+        "text": "İncelenen senaryoların Stonehenge’e ulaşan son aşaması önemli ölçüde insan taşıması gerektirir.",
         "citations": [
           {
             "source_ref": "clarke-2026-highlands-to-henge",
-            "locator": "Taşıma senaryosu",
+            "locator": "Conclusions, son dört paragraf; fig. 5",
             "support_type": "inference"
-          }
-        ]
-      },
-      {
-        "id": "6000kg-700km",
-        "text": "Taş ~6.000 kg ve mesafe ~700 km.",
-        "citations": [
-          {
-            "source_ref": "clarke-2024-sunak-tasi-iskocya",
-            "locator": "Taşın özellikleri ve provenans",
-            "support_type": "direct"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "buzul-dislanamiyor",
-        "text": "Çalışmanın kendisi buzul taşımasını kesin olarak dışlayamadığını belirtiyor.",
+        "id": "kismi-buzul-katkisi",
+        "text": "Dogger Bank üzerinden kısmi buzul katkısı dışlanmaz; arazi taşın Stonehenge’e yerleştirilmesinden binyıllar önce su altında kaldığından senaryo uzun bir ara bekleme gerektirir.",
         "citations": [
           {
             "source_ref": "clarke-2026-highlands-to-henge",
-            "locator": "Sınırlar bölümü",
+            "locator": "Discussion → Human and ice transport?; fig. 5; Conclusions",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "dogrudan-kanit-yok",
-        "text": "Taşıma güzergâhı ve yöntemi için doğrudan arkeolojik kanıt yok - senaryo modellemeden çıkarılıyor, buluntudan değil.",
+        "id": "anglian-model-disi",
+        "text": "Yaklaşık 450.000 yıl önceki Anglian buzullaşması, yeterli çözünürlüklü model bulunmadığı için sayısal analize alınmadı.",
         "citations": [
           {
             "source_ref": "clarke-2026-highlands-to-henge",
-            "locator": "Kanıt durumu",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "model-rekonstruksiyon",
-        "text": "Buz akışı modelleri bir REKONSTRÜKSİYONDUR; buzul güzergâhlarının bilinmemesi, olmadığını kanıtlamaz.",
-        "citations": [
-          {
-            "source_ref": "clarke-2026-highlands-to-henge",
-            "locator": "Model sınırları",
+            "locator": "Methods → Glacial erratic modelling, son paragraf; fig. 4",
             "support_type": "counter"
           }
         ]
@@ -3933,14 +3882,14 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu değil ama künyeler eksikti: iki makale de yazarsız duruyordu, crossref künyeleri alındı."
+      "notes": "1 Ekim 2026: tam metinle sınırlı model sonucu ile tarihsel rota ayrıldı; established etiketi contested olarak düzeltildi. Dogger Bank senaryosu gerçekleşmiş taşınma kanıtı değildir. Uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "stonehenge-islevi-bilinmiyor",
-    "claim": "Stonehenge'in ne amaçla inşa edildiği bilinmemektedir.",
-    "status": "unknown",
+    "claim": "Stonehenge’de kremasyon gömüleriyle belgelenen mezarlık kullanımı vardır; bu, bütün evrelerin tek bir amacını belirlemez.",
+    "status": "established",
     "confidence": "high",
     "topic": [
       "stonehenge",
@@ -3970,92 +3919,55 @@
       "arkeoloji",
       "antropoloji"
     ],
-    "popular_claim": "Stonehenge bir güneş takvimi / tapınak / gözlemevidir.",
-    "divergence": "Öne sürülen işlevlerin hepsi makul ve hiçbiri kanıtlanabilir değil. Yazısız bir toplumun NİYETİNİ soruyoruz ve niyeti taşıyan hiçbir kayıt yok. Maddi sorular (kaynak, mesafe, tarih) cevaplandı; anlam sorusu duruyor. Hizalanmanın ÖLÇÜLEBİLİR olması, kasıtlı olduğunu kanıtlamaz - ama burada kasıt için ayrıca güçlü gerekçeler var; bu kayıt hizalanmayı değil, ondan çıkarılan AMACI tartışıyor.",
+    "popular_claim": "Yazılı belge olmadığı için Stonehenge’in hiçbir işlevi kanıtlanamaz.",
+    "divergence": "Yazının eski “hiçbiri kanıtlanamaz” cümlesi, maddi gömü kanıtını belirsiz amaç yorumlarıyla eşitliyordu. Belgelenen kullanım ile bütün inşa evrelerinin niyetini açıklamak farklıdır.",
     "divergence_type": [
-      "kategori-hatasi",
-      "medya-abartisi"
+      "kategori-hatasi"
     ],
     "open_questions": [
-      "Bu soru muhtemelen hiç kapanmayacak - yazısız niyet doğrudan erişilemez."
+      "Mezarlık kullanımı diğer uygulamalarla nasıl birleşiyordu?",
+      "İşlev ve anlam inşa evreleri arasında nasıl değişti?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "used_in": [
       "stonehenge"
     ],
     "sources": [
       {
-        "id": "parker-pearson-2012-stonehenge",
+        "id": "willis-2016-dead-of-stonehenge",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
         "authors": [
+          "Willis, Christie",
+          "Marshall, Peter",
+          "McKinley, Jacqueline",
+          "Pitts, Mike",
+          "Pollard, Joshua",
+          "Richards, Colin",
+          "Richards, Julian",
+          "Thomas, Julian",
+          "Waldron, Tony",
+          "Welham, Kate",
           "Parker Pearson, Mike"
         ],
-        "year": 2012,
-        "title": "Stonehenge: Exploring the Greatest Stone Age Mystery",
-        "publisher": "Simon & Schuster",
-        "isbn": "9780857207326",
-        "note": "'Stonehenge inşa evreleri ve işlev tartışması literatürü' diye yazılmış YER TUTUCUNUN yerine kondu. İlk denediğim ISBN başka bir kitaba çıktı; bu künye Open Library başlık aramasından alındı."
-      },
-      {
-        "id": "darvill-2006-stonehenge",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Darvill, Timothy"
-        ],
-        "year": 2006,
-        "title": "Stonehenge: The Biography of a Landscape",
-        "publisher": "Tempus",
-        "isbn": "9780752436418",
-        "note": "İşlev tartışmasında Parker Pearson'dan farklı bir okuma sunar; ikisi bilerek yan yana kondu."
+        "year": 2016,
+        "title": "The dead of Stonehenge",
+        "container": "Antiquity",
+        "doi": "10.15184/aqy.2016.26",
+        "url": "https://www.cambridge.org/core/journals/antiquity/article/dead-of-stonehenge/AEC55EB48AE3BE005591EE90B78AFE40",
+        "note": "90(350), 337–356. Yayıncı HTML metnindeki Abstract, Introduction, Stonehenge’s human remains ve Conclusion bölümleri kontrol edildi; bu turda tarihleme modeli yeniden hesaplanmadı."
       }
     ],
     "evidence": [
       {
-        "id": "gundonumu-ekseni",
-        "text": "Yapı gündönümü ekseniyle hizalanmış - bu ölçülebilir bir olgu.",
+        "id": "kremasyon-mezarligi",
+        "text": "İnsan kalıntıları ve tarihleme, yaklaşık MÖ 3000–2500 arasında kremasyon gömülerinin bırakıldığını destekler.",
         "citations": [
           {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "Yönelim bölümü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "insa-evreleri",
-        "text": "İnşa evreleri MÖ ~3000'den ~1500'e uzanıyor; işlev de değişmiş olabilir.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "İnşa evreleri",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "gomu-kalintilari",
-        "text": "Sitede gömü kalıntıları var, ama tek başına işlevi belirlemiyor.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "Gömüler bölümü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "farkli-okumalar",
-        "text": "Farklı araştırmacılar aynı kalıntılardan farklı işlevler okuyor - Parker Pearson atalar/ölüler alanı, Darvill şifa merkezi. İkisi de aynı veriye bakıyor.",
-        "citations": [
-          {
-            "source_ref": "darvill-2006-stonehenge",
-            "locator": "Şifa merkezi yorumu",
+            "source_ref": "willis-2016-dead-of-stonehenge",
+            "locator": "s. 337, Abstract; Conclusion, ilk iki paragraf",
             "support_type": "direct"
           }
         ]
@@ -4063,31 +3975,20 @@
     ],
     "counter_evidence": [
       {
-        "id": "hicbiri-dislanmadi",
-        "text": "Tapınak, takvim, mezarlık, şifa merkezi ve siyasi birleşme anıtı - hepsi öne sürüldü, hiçbiri dışlanamadı.",
+        "id": "kullanim-ve-anlam",
+        "text": "Makale mezarlık kullanımından hareketle atalarla ilişki kuran bir yorum geliştirir; bu anlam yorumu gömülerin varlığıyla aynı doğrudanlıkta bir gözlem değildir.",
         "citations": [
           {
-            "source_ref": "darvill-2006-stonehenge",
-            "locator": "Yorum dökümü",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "yazisiz-toplum",
-        "text": "Toplum yazısız; niyeti doğrudan aktaran kaynak yok.",
-        "citations": [
-          {
-            "source_ref": "parker-pearson-2012-stonehenge",
-            "locator": "Kanıt sınırı",
-            "support_type": "counter"
+            "source_ref": "willis-2016-dead-of-stonehenge",
+            "locator": "Conclusion, özellikle son paragraf; Introduction, araştırma hipotezi",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ: 'Stonehenge inşa evreleri ve işlev tartışması literatürü' yerine iki gerçek kitap. İkisi bilerek FARKLI yorum sahibi - kaydın iddiası zaten 'tek cevap yok'."
+      "notes": "1 Ekim 2026: eski bilinmezlik iddiası mezarlık kullanımına ilişkin olumlu ve dar bir iddiaya dönüştürüldü; kimlik bağlantıları korunsun diye kayıt ID’si değiştirilmedi. Önceki iki kitabın ilgili pasajları bu turda okunmadı ve bu hükmün kanıtı olarak kullanılmadı. Uzman incelemesi yapılmadı."
     }
   },
   {
