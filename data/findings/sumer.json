@@ -1141,152 +1141,80 @@
       }
     ],
     "popular_claim": "Sümer tabletleri Nibiru'dan gelen Anunnaki adlı uzaylı bir ırkı anlatır.",
-    "divergence": "İddia 1976 tarihli popüler bir kitaptan gelir, çivi yazısından değil. İki kelime de gerçek ama anlamları başka: Anunna(ki) 'An'ın soyu' demektir ve Sümer panteonunun genelini karşılar - yani tanrılar, ziyaretçiler değil. Nibiru ise Babil astronomi metinlerinde bir GÖK KONUMU / geçiş noktasıdır. Gerçek kelimeleri alıp anlamlarını değiştirmek, uydurmaktan daha ikna edici görünür; iddianın gücü de buradan geliyor.",
+    "divergence": "Anunna/Anunnaki, Mezopotamya metin geleneğinde bir tanrı grubudur; grubun kapsamı dönem ve metne göre değişir. Neberu/Nibiru’yu yalnız bir gök konumu saymak da eksiktir: SAA 8 147’de Marduk’un yıldızı için konumuna göre verilen adlardan biridir ve Jüpiter ile ilişkilidir. Bu metin uzaylıların geldiği 3.600 yıllık yörüngeli bir gezegeni anlatmaz. Bütün çivi yazılı külliyatın tarandığı iddia edilmiyor.",
     "divergence_type": [
       "medya-abartisi",
       "ideolojik-secim"
     ],
     "sources": [
       {
-        "id": "sitchin-1976-12th-planet",
+        "id": "brisch-2019-anunna",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "unreliable",
-        "type": "book",
-        "authors": [
-          "Sitchin, Zecharia"
-        ],
-        "year": 1976,
-        "title": "The 12th Planet",
-        "publisher": "Stein and Day",
-        "note": "İddianın KAYNAĞI. Bu kayıtta kanıt olarak değil, çürütülen iddianın çıkış noktası olarak duruyor.",
-        "isbn": "9780812819397"
-      },
-      {
-        "id": "black-george-postgate-2000-cda",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Black, Jeremy",
-          "George, Andrew",
-          "Postgate, Nicholas"
-        ],
-        "year": 2000,
-        "title": "A Concise Dictionary of Akkadian",
-        "publisher": "Harrassowitz Verlag",
-        "isbn": "9783447042642",
-        "note": "Akadca standart sözlük. Bu dosyada 'anunna(ki)' ve 'nibiru' kelimelerinin sözlük anlamı için dayanak."
-      },
-      {
-        "id": "epsd-sumer-sozlugu",
-        "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-09-30",
         "tier": "institutional",
-        "type": "database",
-        "title": "The Pennsylvania Sumerian Dictionary (ePSD)",
-        "institution": "University of Pennsylvania Museum",
-        "url": "https://psd.museum.upenn.edu/",
-        "note": "Sümerce sözlük projesi; kelime anlamlarının açık erişimli kontrol yolu."
+        "type": "webpage",
+        "authors": [
+          "Brisch, Nicole"
+        ],
+        "year": 2019,
+        "title": "Anunna (Anunnaku, Anunnaki) (a group of gods)",
+        "institution": "ORACC: Ancient Mesopotamian Gods and Goddesses",
+        "url": "https://oracc.museum.upenn.edu/amgg/listofdeities/anunna/index.html",
+        "note": "Functions bölümü arama dizininde kontrol edildi. Canlı sayfa web aracıyla açılamadı; dizin üzerinden görülen bölüm tüm sayfanın canlı okunması olarak sunulmuyor."
       },
       {
-        "id": "hunger-pingree-1989-mul-apin",
+        "id": "hunger-1992-saa-8-147",
         "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-09-30",
         "tier": "primary",
         "type": "edition",
         "authors": [
-          "Hunger, Hermann",
-          "Pingree, David"
+          "Hunger, Hermann"
         ],
-        "year": 1989,
-        "title": "MUL.APIN: An Astronomical Compendium in Cuneiform",
-        "container": "Archiv für Orientforschung, Beiheft 24",
-        "publisher": "F. Berger, Horn",
-        "note": "Babil astronomi derlemesinin standart edisyonu. KÜNYE DOĞRULANDI AMA İLGİLİ PASAJ DOĞRULANMADI: bu eserin 'nibiru' hakkında tam olarak ne dediği bu turda kontrol edilmedi. Atıf corpus düzeyindedir, pasaj düzeyinde değil."
+        "year": 1992,
+        "title": "Astrological Reports to Assyrian Kings: SAA 8 147 (P336421)",
+        "container": "State Archives of Assyria 8",
+        "institution": "ORACC / State Archives of Assyria online",
+        "url": "https://oracc.museum.upenn.edu/asbp/P336421",
+        "note": "Nabû-mušēṣi raporunun İngilizce çevirisi ve satır numaraları arama dizinindeki edisyondan kontrol edildi. Özgün tablet yeniden okunmadı; bütün astronomi külliyatı taranmadı."
       }
     ],
-    "evidence": [
-      {
-        "id": "iddianin-kaynagi-1976",
-        "text": "İddianın kaynağı 1976 tarihli popüler bir kitaptır, herhangi bir çivi yazılı metin değil.",
-        "citations": [
-          {
-            "source_ref": "sitchin-1976-12th-planet",
-            "locator": "Kitabın tezi",
-            "support_type": "claim-origin"
-          }
-        ]
-      }
-    ],
+    "evidence": [],
     "counter_evidence": [
       {
         "id": "anunna-anlami",
-        "text": "Anunna(ki) 'An'ın soyu' demektir ve tanrılar topluluğunu, yani Sümer panteonunun genelini karşılar.",
+        "text": "ORACC maddesi Anunna’yı bir tanrı grubu olarak tanımlar; kapsamın tarihsel olarak değiştiğini açıklar. Sabit bir uzaylı ırk tanımı değildir.",
         "citations": [
           {
-            "source_ref": "epsd-sumer-sozlugu",
-            "locator": "anunna maddesi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "cda-anunnaku",
-        "text": "Kelimenin Akadca sözlükteki karşılığı da aynı yöndedir; 'uzaylı ırk' okuması sözlük düzeyinde karşılıksızdır.",
-        "citations": [
-          {
-            "source_ref": "black-george-postgate-2000-cda",
-            "locator": "anunnakū maddesi",
+            "source_ref": "brisch-2019-anunna",
+            "locator": "Functions başlıklı bölüm",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "nibiru-gok-konumu",
-        "text": "Nibiru, Babil astronomi metinlerinde bir gök konumu / geçiş noktasıdır ve farklı metinlerde farklı gök cisimleriyle ilişkilendirilir.",
+        "text": "SAA 8 147, Marduk’un yıldızına görünüş ve konumuna göre Šulpa’e, Sagmegar ve Neberu adlarını verir; pasaj Jüpiter hakkındadır. Neberu yalnız soyut bir koordinat değildir.",
         "citations": [
           {
-            "source_ref": "hunger-pingree-1989-mul-apin",
-            "locator": "Babil astronomi derlemesi - corpus düzeyi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "3600-yillik-yorunge-yok",
-        "text": "3.600 yıllık yörüngeli bir gezegen fikrinin çivi yazılı hiçbir dayanağı yok.",
-        "citations": [
-          {
-            "source_ref": "hunger-pingree-1989-mul-apin",
-            "locator": "Derlemenin içeriği - corpus düzeyi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "ceviriler-tek-tek-karsilastirilmadi",
-        "text": "İddia sahibinin çevirileri çivi yazılı metinlerle örtüşmüyor; ama bu kayıtta çevirilerin TEK TEK karşılaştırması yapılmadı - ifade alan genelinin değerlendirmesine dayanıyor.",
-        "citations": [
-          {
-            "source_ref": "sitchin-1976-12th-planet",
-            "locator": "Çeviri iddiaları",
+            "source_ref": "hunger-1992-saa-8-147",
+            "locator": "P336421, ön yüz satır 7–8 ve arka yüz satır 1",
             "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "MUL.APIN'de nibiru'nun geçtiği satırlar künyelenmeli - şu an atıf corpus düzeyinde."
+      "Sitchin’in belirli çeviri iddiaları, dayandırdığı tablet ve satırlarla tek tek karşılaştırılmalı.",
+      "MUL.APIN’in ilgili pasajları bu turda okunmadı; 3.600 yıllık yörünge iddiası için bütün külliyatı kapsayan yokluk sonucu verilmedi."
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-09-30",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Akadca ve Sümerce sözlük külliyatı') CDA, ePSD ve MUL.APIN künyeleriyle değiştirildi. MUL.APIN'in ilgili pasajının doğrulanmadığı açıkça yazıldı ve açık soruya taşındı - 'refuted' bir kayıtta dayanağı gevşek bırakmak özellikle sakıncalı. KAYIT DÜZEYİ SINIRI: MUL.APIN'in nibiru hakkında tam olarak ne dediği bu turda DOĞRULANMADI. Künye teyit edildi, ilgili pasaj değil. Bir kaydın 'refuted' olması, çürütmenin dayanağını gevşek bırakmak için gerekçe değildir - pasaj düzeyinde locator bulunmalı."
+      "notes": "30 Eylül düzeltmesi: “yalnız gök konumu”, “panteonun genel adı” ve bütün çivi yazılı metinleri kapsayan yokluk ifadeleri geri çekildi. Doğrulanmamış CDA, ePSD, MUL.APIN ve Sitchin kitap atıfları bu kayıttan çıkarılıp kapsam açığı olarak belirtildi. Refuted, tanrı grubunun uzaylı ırk olarak çevrilmesine karşı eldeki tanıklara dayanır; bütün külliyatın eksiksiz tarandığını söylemez."
     }
   },
   {

@@ -52,8 +52,8 @@
     "limit": "Kazılmamış alanlar ve çelişen atama tarihleri genellemeyi sınırlar. Bir yapının boyutu veya işlevi, bütün bölge için tek başına temsil ölçüsü değildir."
   },
   "machu-picchu": {
-    "summary": "Machu Picchu dosyası yerleşimin kayıp olduğu, bugünkü adını taşıdığı, bir şehir olduğu ve Bingham’ın aradığı yer olduğu iddialarını ayrı ayrı inceler. Saha notları, arşiv kayıtları ve DNA bulguları; adlandırma, işlev, Vilcabamba arayışı ve burada yaşayan insanlar hakkında farklı soruları yanıtlar.",
-    "limit": "Sonraki adlandırmalar ve eksik arşiv, işlev ile terk edilme yorumlarını kısmi bırakır. Bir kaynağın geç tarihli olması, içeriğini otomatik olarak geçersiz kılmaz; bağımsızlık ayrıca değerlendirilmelidir."
+    "summary": "Machu Picchu dosyası keşif, özgün ad, kraliyet malikânesi işlevi ve Vilcabamba arayışını ayrı sorular olarak inceler. 2023 DNA verilerinde 34 mezar bireyi, ayrıntılı soy modellerinde 30 birey yer alır. Soy profili etnik kimlikle eşitlenmez; yanacona ve eski aclla yorumu mitma gruplarından ayrılır. 2021 AMS çalışması yaklaşık 1420–1532 kullanım aralığı önerir, tek bir inşa yılı değil.",
+    "limit": "DNA örneklemi bütün nüfusun temsili sayımı değildir. Burger’in AMS çalışması ile Lipa’nın Sacsayhuaman duvar modelinin yalnız yayıncı özetleri okundu. Drenaj emeğinin yaklaşık %60 olduğu anlatısının özgün kitap hesabı ve Vilcabamba kazı kitabının tam pasajları bu denetimde doğrulanamadı. Kayıtlar konu uzmanı incelemesi bekliyor."
   },
   "chichen-itza": {
     "summary": "Chichén Itzá’da DNA ve iskelet bulgularının kurbanların kimliğine ilişkin anlatıları nasıl sınadığı, akustik ve astronomi yorumlarıyla karşılaştırılır. Bir etkinin bugün ölçülebilmesi ile yapının o amaçla tasarlandığının gösterilmesi ayrı kanıt sorularıdır.",
@@ -96,12 +96,12 @@
     "limit": "Döngüyü göstermek dış kanıtın yerini tutmaz. Sonuç, bağımsız kaynak ve ölçülebilir destek bulunup bulunmadığıyla sınırlıdır."
   },
   "calinan-ates": {
-    "summary": "Ateş hırsızlığı dosyası Yunan titanını, Polinezya hilebazını ve Kuzey Amerika kuzgununu aynı motif içinde yan yana koyar; her anlatının işlevinin farklı olduğunu gösterir. Ateşin her toplum için beklenebilir bir ihtiyaç olması, ortak köken iddiasına karşı bağımsız açıklamayı güçlendirir.",
-    "limit": "Motif benzerliği tek başına ortak kökeni seçmez. Aktarım yolları ve tarihleme eksik kaldığında bağımsız ortaya çıkma ihtimali açık tutulur."
+    "summary": "Hesiodos, Grey’in derlediği Māori anlatısı ve Sealaska’nın Tlingit uyarlaması yan yana okunur. Ateş veya ışığın el değiştirmesi benzerliği ve farklı sonuçlar, belirli metin tanıklarıyla karşılaştırılır; Prometheus’un etimolojisi tartışmalı olarak ele alınır.",
+    "limit": "Üç seçilmiş sürüm, küresel bir motif envanteri veya soy ağacı değildir. Ortak soy, kültürel aktarım ve bağımsız oluşum bu yazıda ayırt edilmedi; yorumlama çerçevesi doğrulanmış bir köken ölçümü sayılmaz."
   },
   "herkesin-saati": {
-    "summary": "Hesiodos’un Ülker’e göre orak ve saban zamanını belirlemesi, And Dağları’nda patates ekiminde aynı kümenin izlenmesi ve modern uydu verileriyle birlikte ele alınır. Gökyüzünün ortak sinyali, benzer tarım saatlerinin ortak köken olmadan da kurulabileceğini gösterir.",
-    "limit": "Takvim eşleşmesi ortak köken veya aynı uygulama anlamına gelmez. Yerel pratikler ve verilerin zaman çözünürlüğü karşılaştırmayı sınırlar."
+    "summary": "Hesiodos’un Ülker’e göre orak ve saban zamanını belirlemesi, And Dağları’ndaki ekim uygulamaları ve uydu verileri birlikte ele alınır. Takvim kullanımı ile anlatı ayrıntıları farklı sorular olarak karşılaştırılır.",
+    "limit": "Benzer gökyüzü koşulları, belirli geleneklerin bağımsız ortaya çıktığını kanıtlamaz. Ortak soy, kültürel aktarım ve bağımsız oluşumu ayırmak için tarihli tanıklar gerekir; yorumlama çerçevesi doğrulanmış bir bilgi değeri ölçümü değildir."
   },
   "yilin-iki-kapisi": {
     "summary": "Yılın İki Kapısı, Anadolu halk takvimindeki 6 Mayıs ve 8 Kasım eşiklerini iki yarım ve dört dilim içinde, aynı yıldız kümesinin görünürlük işaretleriyle karşılaştırır. Takvim tarihleri donmuş bir kural gibi değil, gökyüzü, mevsim ve yerel gelenek katmanlarının kesişimi olarak okunur.",

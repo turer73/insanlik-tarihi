@@ -1336,8 +1336,8 @@
     "schema_version": 2,
     "id": "misir-kayip-elektrik-teknolojisi",
     "claim": "Eski Mısır'da kullanılmış, sonradan kaybolmuş bir elektrik teknolojisi vardı.",
-    "status": "refuted",
-    "confidence": "high",
+    "status": "unknown",
+    "confidence": "medium",
     "topic": [
       "kayip-teknoloji",
       "sozdebilim",
@@ -1370,111 +1370,67 @@
       "felsefe"
     ],
     "popular_claim": "Atalarımız elektriği biliyordu; teknoloji sonradan kayboldu.",
-    "divergence": "Üretim-iletim-kullanım zincirinin hiçbir halkası (kaynak, kablo, cihaz, kayıt) yokken, ayrı ayrı zayıf iddialar birbirine 'destek' sayılır. Kayıp teknoloji anlatıları, kanıt yokluğunu gerekçeye çeviren tekrarlı bir kalıp izler.",
+    "divergence": "Bu üst çerçeve kaydının önceki “Mısır’da tek cihaz, kablo veya yazılı söz yok” karşı kanıtı, kaynakta doğrulanmış bir envantere dayanmıyordu ve geri çekildi. Bu, kayıp elektrik teknolojisine yeni kanıt bulunduğu anlamına gelmez. Dendera, Bağdat ve piramit iddiaları kendi nesne, tarih ve deney kayıtlarıyla incelenmeli. Silüriyen hipotezi ise çok daha eski jeolojik kayıtlarda sanayi izlerinin saptanabilirliğini soran bilimsel bir araştırmadır; Eski Mısır elektriğinin kanıtı veya çürütmesi değildir.",
     "divergence_type": [
       "hayatta-kalma-yanliligi",
       "kategori-hatasi"
     ],
     "sources": [
       {
-        "id": "fagan2006",
+        "id": "schmidt-frank-2018-silurian",
+        "language": "en",
+        "accessed": "2026-09-30",
         "tier": "peer-reviewed",
-        "type": "book",
-        "title": "Archaeological Fantasies: How Pseudoarchaeology Misrepresents the Past and Misleads the Public",
+        "type": "article",
         "authors": [
-          "Fagan, Garrett G."
+          "Schmidt, Gavin A.",
+          "Frank, Adam"
         ],
-        "year": 2006,
-        "publisher": "Routledge",
-        "isbn": "9780415305938",
-        "language": "en",
-        "note": "Zayıf iddiaların toplanarak güçlü bir iddia üretmediği ilkesi için dayanak; her bulgunun kendi kaydıyla değerlendirilmesi gerektiği buradan."
-      },
-      {
-        "id": "arkeofili-siluriyen",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Silüriyen Hipotezi: Bizden Önce Gelişmiş Bir Uygarlık Var mıydı?",
-        "year": 2025,
-        "institution": "Arkeofili",
-        "url": "https://arkeofili.com/siluriyen-hipotezi-bizden-once-gelismis-bir-uygarlik-var-miydi/",
-        "language": "tr",
-        "accessed": "2026-09-09",
-        "note": "Türkçe ara kaynak; 'kayıp ileri uygarlık' hipotez ailesinin güncel bir örneği olarak bağlam. Mısır iddiasının doğrudan kanıtı ya da çürütmesi değil."
-      },
-      {
-        "id": "dunn1998",
-        "tier": "popular",
-        "type": "book",
-        "title": "The Giza Power Plant: Technologies of Ancient Egypt",
-        "authors": [
-          "Dunn, Christopher"
-        ],
-        "year": 1998,
-        "publisher": "Bear & Company",
-        "isbn": "9781879181502",
-        "language": "en",
-        "note": "İddia kökeni. Mühendislik temelli popüler kitap; hakemli değil."
+        "year": 2018,
+        "title": "The Silurian Hypothesis: Would it be possible to detect an industrial civilization in the geological record?",
+        "container": "International Journal of Astrobiology",
+        "doi": "10.1017/S1473550418000095",
+        "url": "https://arxiv.org/html/1804.03748",
+        "note": "Yazarların 2018 tarihli ön baskısının tam metni okundu. Makalenin kapsamı insanlık öncesi, milyonlarca yıllık jeolojik kayıtlardır; Firavun dönemi Mısır için doğrudan kanıt içermez."
       }
     ],
     "evidence": [
       {
-        "id": "cerceve-birbirinden-bagimsiz-buluntulari-dendera-bagdat-tek",
-        "text": "Çerçeve, birbirinden bağımsız buluntuları (Dendera, Bağdat) tek bir 'antik elektrik' anlatısında birleştirir.",
+        "id": "siluriyen-kapsam",
+        "text": "Schmidt ve Frank, önceki sanayi uygarlıklarının jeokimyasal izlerinin saptanabilirliğini araştırır; kapsamı yaklaşık 400–4 milyon yıl önceyle sınırlar.",
         "citations": [
           {
-            "source_ref": "dunn1998",
-            "locator": "Kitap bütünü",
-            "support_type": "claim-origin"
+            "source_ref": "schmidt-frank-2018-silurian",
+            "locator": "§1.4 Scope of this paper",
+            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "misir-arkeolojik-kaydi-elektrigin-uc-halkasindan-hicbirini-i",
-        "text": "Mısır arkeolojik kaydı elektriğin üç halkasından hiçbirini içermez: üretim cihazı, iletim kablosu, kullanım aleti veya yazılı söz.",
+        "id": "olumlu-kanit-geregi",
+        "text": "Yazarlar, geçmiş sanayi uygarlığı için olumlu kanıt gerektiğini ve başka açıklama bulunmamasının hipotezi olası yapmadığını belirtir; kendileri de böyle bir uygarlığın varlığından güçlü biçimde kuşkuludur.",
         "citations": [
           {
-            "source_ref": "fagan2006",
-            "locator": "Kayıt yokluğu değerlendirmesi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "kayip-ileri-uygarlik-kalibi-arkeolojik-yontemin-disindaki-bi",
-        "text": "'Kayıp ileri uygarlık' kalıbı, arkeolojik yöntemin dışındaki bir hipotez ailesidir; jeolojik izi sorgulanan Silüriyen hipotezi tartışması bunun güncel örneğidir.",
-        "citations": [
-          {
-            "source_ref": "arkeofili-siluriyen",
-            "locator": "Hipotez değerlendirmesi",
+            "source_ref": "schmidt-frank-2018-silurian",
+            "locator": "§4 Discussion and testable hypotheses, sonuca bağlanan paragraflar",
             "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "zayif-iddialarin-toplami-guclu-iddia-uretmez-her-bulgu-kendi",
-        "text": "Zayıf iddiaların toplamı güçlü iddia üretmez; her bulgu kendi kaydıyla değerlendirilir.",
-        "citations": [
-          {
-            "source_ref": "fagan2006",
-            "locator": "Sözde-arkeoloji eleştiri çerçevesi",
-            "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "Teknolojinin 'kaybolması' kalıbının kültürel çekiciliği ayrı bir inceleme konusu; bu yazının kapsamında kayıt sorusuyla sınırlı."
+      "Firavun dönemi üretim, iletim ve kullanım zinciri iddiasını sınamak için hangi belirli nesne ve metinler incelenmeli?",
+      "Fagan 2006’da Mısır elektriğine ilişkin doğrulanabilir hangi pasajlar var? Bu turda kitabın tam metni okunmadı."
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-09-30",
     "used_in": [
       "piramit-santrali"
     ],
     "review": {
       "status": "draft",
-      "notes": "Üst çerçeve kaydı; Silüriyen hipotezi Arkeofili üzerinden bağlandı."
+      "notes": "30 Eylül düzeltmesi: kaynaksız genel yokluk karşı kanıtı çıkarıldı ve yüksek güvenli refuted sınıflandırması kaldırıldı. Unknown yalnız bu kaydın kanıt açığını bildirir; Mısır’da elektrik bulunduğu veya tarihsel olasılığının arttığı anlamına gelmez. Fagan ve Dunn kitaplarında konumu doğrulanmamış atıflar kaldırıldı. Silüriyen çalışmasını bilimsel yöntem dışı sayan cümle geri çekilip özgün makaleyle bağlam düzeltildi."
     }
   },
   {

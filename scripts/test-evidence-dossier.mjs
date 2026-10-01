@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { renderEvidenceIntro, renderEvidenceDossier } from "./lib/evidence-dossier.mjs";
+import { yerTutucuMu } from './lib/locator.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const bundle = JSON.parse(await readFile(path.join(root, "data/findings.bundle.json"), "utf8"));
@@ -35,7 +36,11 @@ function assertV2References(findings, html, label) {
         assert.ok(citation.locator?.trim(), `${label}/${finding.id}: atıf sayfa/pasaj konumu içermeli`);
         const source = sourceById.get(citation.source_ref);
         assert.ok(html.includes(escapeHTML(source.title)), `${label}/${finding.id}: kaynak başlığı render kaybı olmadan görünmeli`);
-        assert.ok(html.includes(escapeHTML(citation.locator)), `${label}/${finding.id}: sayfa/pasaj metni render kaybı olmadan görünmeli`);
+        if (yerTutucuMu(citation.locator)) {
+          assert.ok(html.includes('bu atıf pasaj düzeyinde doğrulanamıyor'), `${label}/${finding.id}: yer tutucu gerçek konum olarak sunulmamalı`);
+        } else {
+          assert.ok(html.includes(escapeHTML(citation.locator)), `${label}/${finding.id}: sayfa/pasaj metni render kaybı olmadan görünmeli`);
+        }
       }
     }
   }
@@ -138,6 +143,22 @@ for (const slug of allSlugs) {
 }
 const articleFindings = bundle.filter((finding) => finding.used_in?.some((slug) => allSlugs.includes(slug)));
 assert.equal(renderedFindingIds.size, new Set(articleFindings.map((finding) => finding.id)).size, "makaleye bağlı her bulgu 27 yazı kapsamına girmeli");
+
+const locatorFixture = locator => renderEvidenceDossier({ title: 'Konum denetimi' }, [{
+  id: 'konum', claim: 'Örnek iddia', status: 'unknown',
+  sources: [{ id: 'kaynak', title: 'Örnek kaynak' }],
+  evidence: [{ text: 'Örnek kanıt', citations: [{ source_ref: 'kaynak', locator, support_type: 'direct' }] }],
+}]);
+const placeholder = locatorFixture('Soyutlama düzeyi');
+assert.match(placeholder, /pasaj düzeyinde doğrulanamıyor/);
+assert.doesNotMatch(placeholder, /Soyutlama düzeyi/);
+assert.match(placeholder, /href="#kaynak-konum-kaynak"/);
+assert.match(locatorFixture(''), /pasaj düzeyinde doğrulanamıyor/);
+assert.doesNotMatch(locatorFixture('s. 12-14'), /pasaj düzeyinde doğrulanamıyor/);
+assert.match(locatorFixture('s. 12-14'), /s\. 12-14/);
+// Gerçek bölüm adı, kesin konum kadar ayrıntılı olmasa da yer tutucu değildir.
+assert.match(locatorFixture('Sonuçlar'), /Sonuçlar/);
+assert.doesNotMatch(locatorFixture('Sonuçlar'), /pasaj düzeyinde doğrulanamıyor/);
 
 const unsafe = renderEvidenceDossier({ title: "<img>" }, [{
   id: "kotu\"><img src=x onerror=1>",

@@ -2350,9 +2350,9 @@
   {
     "schema_version": 2,
     "id": "ates-hirsizligi-zorunlu-motif",
-    "claim": "Ateşin insanlara başka birinden geçmesi motifinin yaygınlığı, ortak köken kanıtı değildir.",
+    "claim": "Ateş hırsızlığı motifinin yaygınlığı, tek başına ortak kökeni kanıtlamaz.",
     "status": "established",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "mitoloji",
       "ates-hirsizligi",
@@ -2360,7 +2360,7 @@
       "yontem"
     ],
     "subject": {
-      "site": "Yunan, Polinezya, Kuzeybatı Kıyısı, Vedik gelenekler",
+      "site": "Hesiodos, Grey ve Sealaska’da seçilmiş üç anlatı",
       "region": "küresel",
       "modern_country": "çok uluslu"
     },
@@ -2386,104 +2386,113 @@
       "dilbilim"
     ],
     "popular_claim": "Ateş hırsızlığı anlatısı dünyanın her yerinde var; bu, hepsinin ortak bir kökenden geldiğini gösterir.",
-    "divergence": "Motif gerçekten yaygın ama BİLGİLENDİRİCİ DEĞİL, çünkü zorunlu uçta duruyor. Ateşin gündelik gerçeği şudur: ateş yoktan yaratılmaz, ELDE EDİLİR - yıldırımdan alınır, başka kamptan getirilir, sürtmeyle çıkarılır. Dolayısıyla 'ateş başlangıçta bizde değildi, birinden alındı' anlatısı ateşle yaşayan her toplulukta kendiliğinden makuldür. Ortak ata gerekmiyor, ateşin fiziği yetiyor. Üç anlatının paylaştığı şey bir hikâye değil, bir CÜMLE ŞABLONUDUR.",
+    "divergence": "Üç seçilmiş metinde bir şeyin el değiştirmesi benzerliği var; alınan şey ve sonuçları farklı. Bu karşılaştırma ortak kökeni, kültürler arası aktarımı veya bağımsız oluşumu ayırt edecek bir tarihsel çözümleme değildir. Ateşin fiziksel özelliklerinden motifin her toplumda zorunlu olarak doğacağı sonucu da çıkmaz. “Tek başına kanıtlamaz” burada editoryal yöntem çıkarımıdır; “ortak köken yoktur” demek değildir.",
     "divergence_type": [
       "kategori-hatasi",
       "medya-abartisi"
     ],
     "open_questions": [
-      "Motifin bölgesel alt-desenleri nelerdir? Asıl iş orada, bu kayıt genel motif düzeyinde kaldı."
+      "Bu üç gelenek arasındaki aktarım yolları ve tarihli varyantlar sistematik olarak incelendi mi? Bu kayıtta incelenmedi.",
+      "Birincil anlatıları seçme ölçütü ve motifin yaygınlığı için daha geniş örneklem nasıl kurulmalı?",
+      "Vedik Mātariśvan örneğinin hangi metin ve dizelere dayandığı ayrıca doğrulanmalı."
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-09-30",
     "used_in": [
       "calinan-ates"
     ],
     "sources": [
       {
         "id": "hesiodos-prometheus",
-        "language": "grc",
-        "accessed": "2026-09-12",
+        "language": "en",
+        "accessed": "2026-09-30",
         "tier": "primary",
         "type": "edition",
         "authors": [
           "Hesiodos"
         ],
-        "title": "Theogonia ve İşler ve Günler (Prometheus anlatısı)",
-        "note": "Birincil metnin kendisi; ateş hırsızlığı motifinin Yunan örneği. Kaydın iddiası motifin yaygınlığının ortak köken kanıtı olmadığı."
+        "year": 1914,
+        "title": "Theogonia (H. G. Evelyn-White çevirisi)",
+        "container": "The Homeric Hymns and Homerica",
+        "publisher": "William Heinemann",
+        "url": "https://www.theoi.com/Text/HesiodTheogony.html",
+        "note": "İngilizce çeviri okundu; bu kayıtta yalnız belirtilen dizeler kullanıldı. Antik eserin tarihi ile çevirinin yayın yılı ayrıdır."
       },
       {
-        "id": "tehrani-2023-cultural-transmission-folk-narratives",
+        "id": "grey-1885-maui-mahuika",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-09-30",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Grey, George"
+        ],
+        "year": 1885,
+        "title": "Polynesian Mythology and Ancient Traditional History of the New Zealand Race",
+        "publisher": "H. Brett, Auckland",
+        "pages": "27–30",
+        "url": "https://teara.govt.nz/sites/default/files/d-3802-enz_0.pdf",
+        "note": "İkinci baskıdan İngilizce bölümün Te Ara sunumu okundu (PDF s. 1–2). Grey bir derleyicidir; bu metin bütün Māori veya Polinezya varyantlarını temsil etmez. PDF s. 3–4 ayrı bir Māori edisyonundan gelir ve burada dilsel karşılaştırma yapılmadı."
+      },
+      {
+        "id": "sealaska-kuzgun-isik",
+        "language": "en",
+        "accessed": "2026-09-30",
+        "tier": "primary",
+        "type": "report",
+        "title": "How Raven Stole the Sun: Teacher Resources",
+        "institution": "Sealaska Heritage Institute / Juneau School District",
+        "url": "https://sealaskaheritage.org/wp-content/uploads/2024/03/SHI_Edu_Tli_GK-5_HowRavenStoletheSun_TeacherResources.pdf",
+        "note": "Maria Williams anlatısına bağlı öğretim uyarlaması. Retelling sentences – version 1, PDF s. 39–41 okundu. Belge 2004–2006 öğretim projesine ait; URL içindeki 2024 tarihi yayın yılı sayılmadı. Bütün Kuzgun geleneklerine genellenmez."
+      },
+      {
+        "id": "tehrani-2013-red-riding-hood",
+        "language": "en",
+        "accessed": "2026-09-30",
         "tier": "peer-reviewed",
-        "type": "chapter",
+        "type": "article",
         "authors": [
           "Tehrani, Jamshid J."
         ],
-        "year": 2023,
-        "title": "The Cultural Transmission and Evolution of Folk Narratives",
-        "container": "The Oxford Handbook of Cultural Evolution",
-        "publisher": "Oxford University Press",
-        "doi": "10.1093/oxfordhb/9780198869252.013.39",
-        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
-      },
-      {
-        "id": "radin-1956-trickster",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Radin, Paul"
-        ],
-        "year": 1956,
-        "title": "The Trickster: A Study in American Indian Mythology",
-        "publisher": "Schocken Books",
-        "isbn": "9780805203516",
-        "note": "Hilebaz kategorisinin kurucu incelemesi; kategorinin nasıl tanımlandığını gösteren kaynak."
+        "year": 2013,
+        "title": "The Phylogeny of Little Red Riding Hood",
+        "container": "PLOS ONE",
+        "volume": "8(11)",
+        "pages": "e78871",
+        "doi": "10.1371/journal.pone.0078871",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3827309/",
+        "note": "Tam metin okundu. Kırmızı Başlıklı Kız varyantlarını inceler; ateş mitleri, Ülker veya hilebaz kategorisinin tarihçesi hakkında doğrudan sonuç vermez. Bu kayıtta yalnız yöntem bağlamı olarak kullanılır."
       }
     ],
     "evidence": [
       {
         "id": "prometheus-ceza",
-        "text": "Prometheus tanrılardan ateşi ÇALAR ve sonsuza kadar cezalandırılır.",
+        "text": "Prometheus ateşi çalar. Kartalın verdiği işkenceyi Herakles, Zeus’un rızasıyla sona erdirir; bu pasaj “sonsuz işkence” özetini desteklemez.",
         "citations": [
           {
             "source_ref": "hesiodos-prometheus",
-            "locator": "Theogonia, Prometheus bölümü",
+            "locator": "Theogonia, satır 521–534 ve 565–569",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "maui-cezasiz",
-        "text": "Māui ateşi Mahuika'dan tırnak tırnak ALIR ve tüketir; kaçar, cezalandırılmaz; ateş ağaçlara sığınır ve bu, sürtmeyle ateş yakmayı açıklar.",
+        "text": "Grey’in seçilmiş Māori anlatısında Māui aldığı ateşleri söndürür; Mahuika’nın yangınından yağmur yardımıyla kurtulur ve kalan kıvılcımlar ağaçlarda korunur.",
         "citations": [
           {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Motif varyantları",
+            "source_ref": "grey-1885-maui-mahuika",
+            "locator": "2. baskı, s. 27–30; Te Ara PDF s. 1–2",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "kuzgun-isik",
-        "text": "Kuzgun anlatısının çekirdeği ateş değil IŞIK hırsızlığıdır; ateş yalnızca bazı anlatımlarda geçer.",
+        "text": "Seçilmiş Tlingit öğretim anlatısında Kuzgun yıldız, ay ve güneşi kutulardan serbest bırakır; kaçarken tüyleri isle kararır.",
         "citations": [
           {
-            "source_ref": "radin-1956-trickster",
-            "locator": "Kuzgun döngüsü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "soyut-ortaklik",
-        "text": "Ortak olan yalnızca en soyut düzeyde: ateş başlangıçta insanlarda değil, birinde var, kurnaz bir figür alıyor, insanlar kullanabiliyor.",
-        "citations": [
-          {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Soyutlama düzeyi",
+            "source_ref": "sealaska-kuzgun-isik",
+            "locator": "Retelling sentences – version 1, bölümün s. 1–3; PDF s. 39–41",
             "support_type": "direct"
           }
         ]
@@ -2492,37 +2501,26 @@
     "counter_evidence": [
       {
         "id": "alt-desenler-incelenmedi",
-        "text": "Bölgesel alt-desenler bilgilendirici OLABİLİR: belirli bir bölgede paylaşılan keyfî ayrıntılar temas ya da yerel ortak köken gösterebilir. Bu kayıt o düzeye inmemiştir.",
+        "text": "Tehrani’nin çalışması anlatı özelliklerini birlikte karşılaştırır; ortak soy, benzeşme ve kültürler arası aktarım alternatiflerini sınar.",
         "citations": [
           {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Alt-desen çözümlemesi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "basliklar-kaba",
-        "text": "'Polinezya' ve 'Kuzeybatı Kıyısı' başlıkları çok sayıda ayrı geleneği kapsar.",
-        "citations": [
-          {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Gruplama sorunu",
-            "support_type": "counter"
+            "source_ref": "tehrani-2013-red-riding-hood",
+            "locator": "Introduction: filogenetik yaklaşımın üç yararı; Discussion",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Hesiodos, Tehrani 2023 ve Radin 1956 künyelendi. Vedik örneğin kaynaksız olduğu işaretlendi. Vedik Mātariśvan örneği bu kayıtta AYRI BİR KAYNAĞA bağlanmadı."
+      "notes": "30 Eylül düzeltmesi: sonsuz ceza, cezasız Māui ve bütün Kuzgun anlatılarını kapsayan çekirdek genellemeleri kaldırıldı. Üç belirli sürüm doğrudan bağlandı. Radin ve Tehrani 2023’e yüklenen doğrulanmamış özgül anlatı atıfları çıkarıldı. Statü yöntem iddiasına aittir; üç anlatının tarihsel akrabalığının çözüldüğü anlamına gelmez."
     }
   },
   {
     "schema_version": 2,
     "id": "prometheus-pramantha-etimolojisi",
     "claim": "Prometheus adı Sanskritçe pramantha (ateş burgusu) sözcüğünden gelir ve bu, Hint-Avrupa ortak kökeninin kanıtıdır.",
-    "status": "refuted",
+    "status": "contested",
     "confidence": "medium",
     "topic": [
       "mitoloji",
@@ -2553,16 +2551,8 @@
       "filoloji",
       "antropoloji"
     ],
-    "people": [
-      {
-        "name": "Müller, Max",
-        "role": "proposer",
-        "year": 1870,
-        "lifespan": "1823-1900"
-      }
-    ],
     "popular_claim": "Prometheus adının Sanskritçe ateş burgusu pramantha ile aynı kökten geldiği kanıtlanmıştır.",
-    "divergence": "İddia 19. yüzyılda önerildi ve o günden beri 'kesin kanıt' olarak dolaşıyor. Çekici çünkü hem ses hem anlam uyuyor gibi. Ama biçimsel olarak oturmuyor; Yunanca içi türetme ise sorunsuz çalışıyor ve kardeş adı Epimetheus ile bir çift oluşturuyor.",
+    "divergence": "Prometheus adının tarihsel etimolojisi tartışmalıdır. Sanskritçe ile önerilen bağlantıyı kesin sonuç saymak da Yunanca “önceden düşünen” açıklamasını sorunsuz bir tarihsel türetme saymak da bu kayıtla gerekçelendirilemez. Pronk, Narten ve Watkins’in önerisini tartışıp biçimsel ve kronolojik güçlükler saptar; adın etimolojisini çözümsüz bırakır. Adlar arasında bir bağlantı kurulsa bile anlatıların ortak kökeni ayrıca incelenmelidir.",
     "divergence_type": [
       "eski-ceviri",
       "guncellenmemis",
@@ -2570,94 +2560,68 @@
     ],
     "sources": [
       {
-        "id": "etymonline-prometheus",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Prometheus - Etymology, Origin & Meaning",
-        "container": "Online Etymology Dictionary",
-        "institution": "Online Etymology Dictionary",
-        "url": "https://www.etymonline.com/word/prometheus",
+        "id": "pronk-2019-pie-a",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Sözlük maddesi; Yunanca içi türetme ve alternatif öneri için kullanıldı."
-      },
-      {
-        "id": "cybalist-pramantha",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Pramantha/Prometheus: a false etymology?",
-        "institution": "Cybalist dilbilim listesi arşivi",
-        "url": "https://wrdingham.co.uk/cybalist/msg/169/75.html",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Dilbilim tartışma arşivi; biçimsel uyuşmazlık gerekçesi için kullanıldı. Hakemli değil - bu yüzden yalnız dayanak değil."
+        "accessed": "2026-09-30",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Pronk, Tijmen"
+        ],
+        "year": 2019,
+        "title": "Proto-Indo-European *a",
+        "container": "Indo-European Linguistics",
+        "volume": "7(1)",
+        "pages": "122–163",
+        "doi": "10.1163/22125892-00701002",
+        "url": "https://brill.com/view/journals/ieul/7/1/article-p122_4.xml",
+        "note": "§3.19 (*math-) yayıncı tarafından indekslenen tam metin parçasından kontrol edildi. Canlı HTML 403 döndü, PDF indirimi okunabilir dosya vermedi; bütün makalenin doğrudan erişimi doğrulanmadı."
       }
     ],
     "evidence": [
       {
-        "id": "yunanca-turetme",
-        "text": "Ad antik dönemden beri 'önceden düşünen' olarak yorumlanır: pro- (önce) + mathein/mēthos (öğrenmek, düşünmek).",
+        "id": "calmak-onerisi",
+        "text": "Pronk, Narten’in Prometheus ile Sanskritçe “çalmak” fiilini ilişkilendiren önerisini ve Watkins’in bunu kabul edişini aktarır. Bu öneri, ateş burgusu sözcüğünden doğrudan türetme ile aynı değildir.",
         "citations": [
           {
-            "source_ref": "etymonline-prometheus",
-            "locator": "Madde gövdesi",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "bicimsel-uyusmazlik",
-        "text": "Sanskritçe pramantha 'ateş burgusu' demektir ve 'şiddetle karıştırmak' anlamındaki bir kökten gelir, ancak Yunanca Promētheus ile biçimsel olarak tam örtüşmez.",
-        "citations": [
-          {
-            "source_ref": "cybalist-pramantha",
-            "locator": "Tartışma iletisi gövdesi",
-            "support_type": "counter"
+            "source_ref": "pronk-2019-pie-a",
+            "locator": "§3.19, *math- (Narten 1960; Oettinger 2017)",
+            "support_type": "claim-origin"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "calmak-onerisi",
-        "text": "Alternatif bir öneri ikinci öğenin 'çalmak' anlamındaki bir kökten gelebileceğini savunur; bu da tartışmalıdır.",
+        "id": "bicimsel-uyusmazlik",
+        "text": "Pronk önerinin ses karşılıkları ve Vedik biçimin yaşı bakımından güçlükleri olduğunu belirtir; Prometheus ve Epimetheus adlarının tarihsel etimolojisini çözülmüş saymaz.",
         "citations": [
           {
-            "source_ref": "etymonline-prometheus",
-            "locator": "Madde gövdesi, alternatif öneri",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "kapsam-siniri",
-        "text": "Bu kayıt Sanskritçe bağlantısının yerleşik olmadığını söyler; kesin olarak imkânsız olduğunu değil.",
-        "citations": [
-          {
-            "source_ref": "cybalist-pramantha",
-            "locator": "Tartışma iletisi gövdesi",
-            "support_type": "context"
+            "source_ref": "pronk-2019-pie-a",
+            "locator": "§3.19, *math- (Narten 1960; Oettinger 2017)",
+            "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "İkinci öğenin kökeni kesin olarak belirlendi mi? Hayır."
+      "Önerilen farklı kökler ve ses karşılıkları uzman dilbilim incelemesinde nasıl değerlendiriliyor?",
+      "Adın antik yorumuyla tarihsel türetmesini ayıran sözlük ve metin tanıkları ayrıca incelenmeli."
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-09-30",
     "used_in": [
       "calinan-ates"
     ],
     "review": {
       "status": "draft",
-      "notes": "Locator'lar sayfa gövdesi düzeyindedir. Hakemli dilbilim kaynağıyla değiştirilmeli; cybalist arşivi hakemli değildir ve tek dayanak olarak kullanılmamıştır."
+      "notes": "30 Eylül düzeltmesi: “Yunanca türetme sorunsuz” cümlesi geri çekildi. Etymonline ve hakemli olmayan Cybalist yerine Pronk’un hakemli tartışması bağlandı. Refuted yerine contested: önerinin kabul edildiğini veya kesin olarak imkânsız olduğunu söyleyen bir uzman uzlaşısı bu kayıtta gösterilmedi. Max Müller’e verilen 1870 tarihli öneri burada birincil metniyle kontrol edilmedi."
     }
   },
   {
     "schema_version": 2,
     "id": "hilebaz-kategorisi-uretilmis",
     "claim": "'Hilebaz' / 'kültür kahramanı' kategorisi doğal bir mitolojik türdür.",
-    "status": "contested",
+    "status": "unknown",
     "confidence": "medium",
     "topic": [
       "mitoloji",
@@ -2683,102 +2647,103 @@
       "filoloji"
     ],
     "popular_claim": "Hilebaz figürü tüm dünya mitolojilerinde bulunan evrensel bir arketiptir.",
-    "divergence": "Kategori gerçek bir düzenliliği yakalıyor OLABİLİR - sınırları çiğneyen, kurnazlıkla iş gören, insanlığa bir şey kazandıran figür. Ama uyarı gerekiyor: 'hilebaz' kategorisi 19.-20. yüzyıl antropolojisinin ürünüdür ve TANIMLANDIKTAN SONRA her yerde bulunmuştur - monomit vakasındaki mekanizmanın aynısı. Kategoriye koymak bir bulgu değil, bir İŞLEMDİR. Bulgu olması için kategorinin dışında kalan vakaların da gösterilmesi gerekir; gösterildiğinde kategori daralır: Māui cezalandırılmaz, Kuzgun ateş değil ışık getirir, Mātariśvan hilebaz değildir. Bu kayıt kategorinin işe yaramaz olduğunu söylemez; 'yaygın olması ortak kökene kanıttır' çıkarımını reddeder. İkisi ayrı iddialardır.",
+    "divergence": "“Hilebaz” ve “kültür kahramanı” bu karşılaştırmada kullanılan analitik başlıklardır. Aynı başlık altında toplamak tarihsel akrabalığı kanıtlamaz; kategorinin kullanışsız olduğunu da göstermez. Seçilmiş üç anlatı ortak eylemler ve farklı sonuçlar taşır. Evrensel bir tür olup olmadığını değerlendirecek örneklem veya kategorinin kuruluş tarihini doğrulayan birincil inceleme bu kayıtta bulunmuyor.",
     "divergence_type": [
       "kategori-hatasi",
       "somurge-anlatisi"
     ],
     "open_questions": [
-      "Kategorinin dışında kalan vakalar sistematik olarak sayıldı mı? Bu yapılmadan yaygınlık iddiası sınanamaz."
+      "Kategori üyeliği için açık ölçütler ve uymayan örnekler hangi örneklemle değerlendirilmeli?",
+      "Hilebaz kategorisinin araştırma tarihi Radin ve önceki yayınların belirli sayfaları üzerinden ayrıca incelenmeli."
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-09-30",
     "used_in": [
       "calinan-ates"
     ],
     "sources": [
       {
-        "id": "radin-1956-trickster",
+        "id": "hesiodos-prometheus",
         "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-09-30",
+        "tier": "primary",
+        "type": "edition",
         "authors": [
-          "Radin, Paul"
+          "Hesiodos"
         ],
-        "year": 1956,
-        "title": "The Trickster: A Study in American Indian Mythology",
-        "publisher": "Schocken Books",
-        "isbn": "9780805203516",
-        "note": "Hilebaz kategorisinin kurucu incelemesi; kategorinin nasıl tanımlandığını gösteren kaynak."
+        "year": 1914,
+        "title": "Theogonia (H. G. Evelyn-White çevirisi)",
+        "container": "The Homeric Hymns and Homerica",
+        "publisher": "William Heinemann",
+        "url": "https://www.theoi.com/Text/HesiodTheogony.html",
+        "note": "İngilizce çeviri okundu; bu kayıtta yalnız belirtilen dizeler kullanıldı. Antik eserin tarihi ile çevirinin yayın yılı ayrıdır."
       },
       {
-        "id": "tehrani-2023-cultural-transmission-folk-narratives",
+        "id": "grey-1885-maui-mahuika",
         "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "chapter",
+        "accessed": "2026-09-30",
+        "tier": "primary",
+        "type": "edition",
         "authors": [
-          "Tehrani, Jamshid J."
+          "Grey, George"
         ],
-        "year": 2023,
-        "title": "The Cultural Transmission and Evolution of Folk Narratives",
-        "container": "The Oxford Handbook of Cultural Evolution",
-        "publisher": "Oxford University Press",
-        "doi": "10.1093/oxfordhb/9780198869252.013.39",
-        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
+        "year": 1885,
+        "title": "Polynesian Mythology and Ancient Traditional History of the New Zealand Race",
+        "publisher": "H. Brett, Auckland",
+        "pages": "27–30",
+        "url": "https://teara.govt.nz/sites/default/files/d-3802-enz_0.pdf",
+        "note": "İkinci baskıdan İngilizce bölümün Te Ara sunumu okundu (PDF s. 1–2). Grey bir derleyicidir; bu metin bütün Māori veya Polinezya varyantlarını temsil etmez. PDF s. 3–4 ayrı bir Māori edisyonundan gelir ve burada dilsel karşılaştırma yapılmadı."
+      },
+      {
+        "id": "sealaska-kuzgun-isik",
+        "language": "en",
+        "accessed": "2026-09-30",
+        "tier": "primary",
+        "type": "report",
+        "title": "How Raven Stole the Sun: Teacher Resources",
+        "institution": "Sealaska Heritage Institute / Juneau School District",
+        "url": "https://sealaskaheritage.org/wp-content/uploads/2024/03/SHI_Edu_Tli_GK-5_HowRavenStoletheSun_TeacherResources.pdf",
+        "note": "Maria Williams anlatısına bağlı öğretim uyarlaması. Retelling sentences – version 1, PDF s. 39–41 okundu. Belge 2004–2006 öğretim projesine ait; URL içindeki 2024 tarihi yayın yılı sayılmadı. Bütün Kuzgun geleneklerine genellenmez."
       }
     ],
     "evidence": [
       {
-        "id": "ayni-baslik-altinda",
-        "text": "Prometheus, Māui, Kuzgun ve Çakal genellikle aynı başlık altında toplanır.",
+        "id": "prometheus-ceza",
+        "text": "Prometheus ateşi çalar. Kartalın verdiği işkenceyi Herakles, Zeus’un rızasıyla sona erdirir; bu pasaj “sonsuz işkence” özetini desteklemez.",
         "citations": [
           {
-            "source_ref": "radin-1956-trickster",
-            "locator": "Kategori tanımı",
-            "support_type": "claim-origin"
-          }
-        ]
-      },
-      {
-        "id": "kategori-tanimlandi",
-        "text": "Kategori 19.-20. yüzyıl antropolojisinde tanımlandı ve sonra evrensel olarak 'bulundu'.",
-        "citations": [
-          {
-            "source_ref": "radin-1956-trickster",
-            "locator": "Kategorinin tarihçesi",
+            "source_ref": "hesiodos-prometheus",
+            "locator": "Theogonia, satır 521–534 ve 565–569",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "vakalar-ayrisiyor",
-        "text": "Kategoriye alınan vakalar temel özelliklerde ayrışıyor: ceza, alınan şey, alanın türü.",
+        "id": "maui-cezasiz",
+        "text": "Grey’in seçilmiş Māori anlatısında Māui aldığı ateşleri söndürür; Mahuika’nın yangınından yağmur yardımıyla kurtulur ve kalan kıvılcımlar ağaçlarda korunur.",
         "citations": [
           {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Vaka karşılaştırması",
+            "source_ref": "grey-1885-maui-mahuika",
+            "locator": "2. baskı, s. 27–30; Te Ara PDF s. 1–2",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "kuzgun-isik",
+        "text": "Seçilmiş Tlingit öğretim anlatısında Kuzgun yıldız, ay ve güneşi kutulardan serbest bırakır; kaçarken tüyleri isle kararır.",
+        "citations": [
+          {
+            "source_ref": "sealaska-kuzgun-isik",
+            "locator": "Retelling sentences – version 1, bölümün s. 1–3; PDF s. 39–41",
             "support_type": "direct"
           }
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "sosyolojik-duzenlilik",
-        "text": "Kültür kahramanı figürünün yaygınlığı gerçek bir SOSYOLOJİK düzenlilik olabilir ve insan topluluklarının anlatı ihtiyaçları hakkında bir şey söyleyebilir.",
-        "citations": [
-          {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Alternatif okuma",
-            "support_type": "counter"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "review": {
       "status": "draft",
-      "notes": "Radin 1956 künyelendi - kategorinin kurucu incelemesi artık claim-origin olarak bağlı."
+      "notes": "30 Eylül düzeltmesi: Radin ve Tehrani’ye verilen okunmamış kategori/vaka pasajları çıkarıldı. Kategorinin “tanımlandıktan sonra her yerde bulunduğu” genellemesi geri çekildi. Unknown, bir kategori veya ortak köken lehine kanıt değildir; kayıt bu soruyu çözmüyor."
     }
   },
   {
@@ -3316,7 +3281,7 @@
     "schema_version": 2,
     "id": "zorunlu-keyfi-ekseni",
     "claim": "Bir mitolojik benzerliğin bilgi değeri, yaygınlığıyla değil, ayrıntının ne kadar keyfî olduğuyla belirlenir.",
-    "status": "established",
+    "status": "unknown",
     "confidence": "high",
     "topic": [
       "mitoloji",
@@ -3343,105 +3308,57 @@
       "astronomi"
     ],
     "popular_claim": "Bir motif ne kadar çok kültürde varsa, ortak köken kanıtı o kadar güçlüdür.",
-    "divergence": "Sezgi ters çalışıyor. Doğanın dayattığı benzerlikler YAYGIN oldukları için etkileyici görünür ama hiçbir şey söylemez: fırtına ve yılan her yerde vardır, ateş her yerde alınarak elde edilir, Ülker her yerde aynı mevsimde doğar. Seçilmiş ayrıntılardaki benzerlikler ise NADİR ve DAĞINIK oldukları için zayıf görünür ama tek bilgi taşıyan onlardır: yedi yıldıza ayı demek, altı görünen kümeye yedi demek. Ölçüt şudur: DOĞA NEYİ DAYATIYOR, NE SEÇİLMİŞ.",
+    "divergence": "“Zorunlu–keyfî ekseni” bu yayının yorumlamaya yardımcı önerisidir; doğrulanmış bir ölçüm veya köken belirleme yöntemi değildir. Doğal koşullar, ayrıntı kümeleri, örneklem ve aktarım yolları birlikte incelenebilir. Ancak “yalnız keyfî ayrıntı bilgi taşır” ve “yaygın benzerlik hiçbir şey söylemez” sonuçları burada gösterilmedi. Tehrani’nin çalışması bu ekseni veya ateş/Ülker örneklerini sınamaz.",
     "divergence_type": [
       "kategori-hatasi",
       "medya-abartisi"
     ],
     "open_questions": [
-      "'Keyfîlik' niceliksel olarak tanımlanabilir mi? Tanımlanabilirse yöntem ciddi biçimde güçlenir."
+      "“Doğal” ve “keyfî” ayrıntılar bağımsız değerlendiricilerce tekrarlanabilir biçimde nasıl kodlanacak?",
+      "Önerinin ortak soy, benzeşme ve aktarımı ayırma başarısı hangi veriyle sınanacak?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-09-30",
     "used_in": [
       "calinan-ates",
       "herkesin-saati"
     ],
     "sources": [
       {
-        "id": "tehrani-dhuy-2016-phylogenetics-folklore",
+        "id": "tehrani-2013-red-riding-hood",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-09-30",
         "tier": "peer-reviewed",
-        "type": "chapter",
-        "authors": [
-          "Tehrani, Jamshid J.",
-          "d'Huy, Julien"
-        ],
-        "year": 2016,
-        "title": "Phylogenetics Meets Folklore: Bioinformatics Approaches to the Study of International Folktales",
-        "container": "Understanding Complex Systems",
-        "publisher": "Springer",
-        "doi": "10.1007/978-3-319-39445-9_6",
-        "note": "Yöntemin kendi sunumu. Bu dosyada hem yöntemin tarifi hem de sınırlarının kaynağı olarak kullanılıyor."
-      },
-      {
-        "id": "tehrani-2023-cultural-transmission-folk-narratives",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "chapter",
+        "type": "article",
         "authors": [
           "Tehrani, Jamshid J."
         ],
-        "year": 2023,
-        "title": "The Cultural Transmission and Evolution of Folk Narratives",
-        "container": "The Oxford Handbook of Cultural Evolution",
-        "publisher": "Oxford University Press",
-        "doi": "10.1093/oxfordhb/9780198869252.013.39",
-        "note": "Alanın güncel değerlendirmesi; aktarım, örneklem ve kategori sorunları için dayanak."
+        "year": 2013,
+        "title": "The Phylogeny of Little Red Riding Hood",
+        "container": "PLOS ONE",
+        "volume": "8(11)",
+        "pages": "e78871",
+        "doi": "10.1371/journal.pone.0078871",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3827309/",
+        "note": "Tam metin okundu. Kırmızı Başlıklı Kız varyantlarını inceler; ateş mitleri, Ülker veya hilebaz kategorisinin tarihçesi hakkında doğrudan sonuç vermez. Bu kayıtta yalnız yöntem bağlamı olarak kullanılır."
       }
     ],
     "evidence": [
       {
-        "id": "zorunlu-uc",
-        "text": "Zorunlu uçtaki örnekler: fırtına tanrısının yılanı öldürmesi, ateşin başkasından alınması, Ülker'in takvim olarak kullanılması. Üçü de yaygın, üçü de bilgilendirici değil.",
+        "id": "birlikte-karsilastirma",
+        "text": "Tehrani’nin örneğinde tek motif yerine birden çok anlatı özelliği karşılaştırılır; çalışmanın örneklemi Kırmızı Başlıklı Kız ve ilgili anlatılardır.",
         "citations": [
           {
-            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
-            "locator": "Motif bilgi değeri",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "keyfi-uc",
-        "text": "Keyfî uçtaki örnekler: Büyük Ayı'nın avlanan hayvan olması, Ülker'in 'yedi kız kardeş, biri kayıp' anlatısı. İkisi de dağınık, ikisi de açıklanmayı hak ediyor.",
-        "citations": [
-          {
-            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
-            "locator": "Keyfî ayrıntı ölçütü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "ulker-iki-uc",
-        "text": "Aynı nesne (Ülker) ekseni iki ucundan birden gösteriyor: kullanımı zorunlu, sayımı keyfî.",
-        "citations": [
-          {
-            "source_ref": "tehrani-2023-cultural-transmission-folk-narratives",
-            "locator": "Ölçüt uygulaması",
-            "support_type": "inference"
+            "source_ref": "tehrani-2013-red-riding-hood",
+            "locator": "Introduction: filogenetik yaklaşımın üç yararı; The present study",
+            "support_type": "context"
           }
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "keyfi-nicel-degil",
-        "text": "'Keyfî' ölçütü niceliksel değildir; neyin keyfî sayılacağı yorumcuya bağlıdır ve bu, ölçütün en zayıf noktasıdır.",
-        "citations": [
-          {
-            "source_ref": "tehrani-dhuy-2016-phylogenetics-folklore",
-            "locator": "Ölçüt tartışması",
-            "support_type": "counter"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "review": {
       "status": "draft",
-      "notes": "Eksenin formülasyonunun bu projeye ait olduğu açıkça yazıldı - kayıt onu literatürden alınmış gibi sunuyordu. Ekseni bu biçimde formüle eden ayrı bir yayın bu kayıtta künyelenmedi; formülasyon bu projenin kendi derlemesidir."
+      "notes": "30 Eylül düzeltmesi: projenin kendi ölçütü established/high olarak sunuluyordu; ampirik doğrulama gösterilmediği için unknown yapıldı. Confidence sınıflandırmaya güveni belirtir, iddianın olasılığını değil. Tehrani–d’Huy 2016 ve Tehrani 2023’e verilen doğrulanmamış ölçüt uygulamaları kaldırıldı; doğrudan kanıt gibi sunulmuyor."
     }
   },
   {

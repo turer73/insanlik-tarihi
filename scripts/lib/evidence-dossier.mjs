@@ -3,6 +3,8 @@
 // Bu modül veri yazmaz, DOM'a dokunmaz ve bulguların epistemik durumunu
 // değiştirmez. build-site, yalnızca dönen HTML'i uygun yere yerleştirir.
 
+import { yerTutucuMu } from './locator.mjs';
+
 const STATUS_LABELS = {
   established: "Yerleşik görüş",
   contested: "Tartışmalı",
@@ -118,7 +120,12 @@ function citationHTML(citation, model, paragraphId) {
   }
   source.backLinks.push(paragraphId);
   const title = sourceTitle(source.source, source.sourceIndex + 1);
-  return `<a class="ka-citation" href="#${escapeHTML(source.sourceId)}">${escapeHTML(title)}${locator ? `, ${escapeHTML(locator)}` : ""} <span class="ka-citation-type">(${escapeHTML(support)})</span></a>`;
+  const missingLocator = yerTutucuMu(locator);
+  const location = locator && !missingLocator ? `, ${escapeHTML(locator)}` : '';
+  const warning = missingLocator
+    ? ' <span class="ka-metadata-missing">Kaynak içindeki konum belirtilmemiş; bu atıf pasaj düzeyinde doğrulanamıyor.</span>'
+    : '';
+  return `<a class="ka-citation" href="#${escapeHTML(source.sourceId)}">${escapeHTML(title)}${location} <span class="ka-citation-type">(${escapeHTML(support)})</span></a>${warning}`;
 }
 
 function renderEvidenceList(model, field, title, idPrefix) {

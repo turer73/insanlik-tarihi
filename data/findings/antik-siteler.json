@@ -558,7 +558,7 @@
   {
     "schema_version": 2,
     "id": "machu-picchu-gercek-adi",
-    "claim": "İnkaların siteye verdiği ad büyük olasılıkla Huayna Picchu'ydu; Machu Picchu adı Bingham'ın seçimiyle yerleşti.",
+    "claim": "Amado Gonzales ve Bauer, arşiv belgelerine dayanarak Machu Picchu yerleşiminin İnka dönemindeki adının Picchu veya daha olası Huayna Picchu olduğunu öneriyor.",
     "status": "contested",
     "confidence": "high",
     "topic": [
@@ -568,7 +568,6 @@
     ],
     "subject": {
       "site": "Machu Picchu",
-      "site_native": "Huayna Picchu",
       "region": "Urubamba Vadisi, And Dağları",
       "modern_country": "Peru",
       "coordinates": {
@@ -578,7 +577,7 @@
     },
     "period": {
       "earliest": 1420,
-      "latest": 1540,
+      "latest": 1532,
       "era_label": "İnka İmparatorluğu",
       "precision": "approximate",
       "dating_method": [
@@ -617,12 +616,12 @@
       }
     ],
     "popular_claim": "Site adı İnkalardan gelir ve Bingham kayıp şehri keşfetmiştir.",
-    "divergence": "Bingham'ın rehberinden aldığı ad en yüksek dağın adıydı. Ayrıca 'keşif' yoktu: yerel halk siteyi biliyor ve tarım için kullanıyordu, ad Bingham gelmeden yedi yıl önce bir atlasta geçiyordu. 'Machu Picchu' adı bugün yerleşmiş durumda; kayıt adın DEĞİŞTİRİLMESİNİ değil, nereden geldiğini söylüyor.",
+    "divergence": "Bugünkü yerleşim adıyla komşu dağların adları karıştırılmamalı. 1904 atlası ile 1911–1912 tanıklıkları adın kullanıldığını gösterir; tek başlarına İnka dönemine kadar sürekliliğini kanıtlamaz. Özgün ad önerisi erken sömürge belgeleriyle birlikte yapılan tarihsel bir yorumdur.",
     "divergence_type": [
       "somurge-anlatisi",
       "guncellenmemis"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "used_in": [
       "ayni-cumlede",
       "machu-picchu"
@@ -631,75 +630,53 @@
       {
         "id": "amado-bauer-2021-huayna-picchu",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Amado Gonzales, Donato",
           "Bauer, Brian S."
         ],
-        "year": 2021,
+        "year": 2022,
         "title": "The Ancient Inca Town Named Huayna Picchu",
         "container": "Ñawpa Pacha: Journal of Andean Archaeology",
         "volume": "42(1):17-31",
         "doi": "10.1080/00776297.2021.1949833",
-        "note": "TARİH DÜZELTMESİ: dosya bu makaleyi 2022 yazıyordu, crossref künyesi 2021. Dosyada ayrıca iki ayrı kayıt olarak duruyordu (biri 'Ñawpa Pacha', biri tam dergi adıyla); birleştirildi."
-      },
-      {
-        "id": "uic-2022-machu-picchu-adi",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "press-release",
-        "year": 2022,
-        "title": "Study reconsiders name of Peru's Machu Picchu",
-        "institution": "University of Illinois Chicago",
-        "url": "https://www.newswise.com/articles/study-reconsiders-name-of-peru-s-machu-picchu",
-        "note": "Kurumsal duyuru; ad tartışmasının hakemli yayını değil. Bulgunun kamuya nasıl sunulduğunu kaydeder."
+        "note": "Yazarın yüklediği tam metin okundu. Çevrimiçi yayın 13 Ağustos 2021; cilt 42(1), s. 17–31, 2022. DOI ve kalıcı kaynak kimliğindeki 2021 çevrimiçi tarihi korur; dergi sayısının yılıyla aynı değildir. Arşiv belgeleri ve Cisneros atlası bu makaledeki aktarım üzerinden kontrol edildi, özgün belgeler ayrıca okunmadı.",
+        "url": "https://www.researchgate.net/publication/359388175_The_Ancient_Inca_Town_Named_Huayna_Picchu"
       }
     ],
     "evidence": [
       {
         "id": "arsiv-taramasi",
-        "text": "Bingham'ın saha notları, dönem haritaları ve yüzyıllık arazi kayıtları tarandı.",
+        "text": "Çalışma erken sömürge kayıtlarında Picchu adını ve 1588 belgesinde Huayna Picchu yerleşimine dönme isteğini değerlendirir.",
         "citations": [
           {
             "source_ref": "amado-bauer-2021-huayna-picchu",
-            "locator": "Arşiv taraması",
+            "locator": "s. 24–27, Archival Documents ve Conclusions",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "1904-atlasi",
-        "text": "1904 tarihli bir atlasta 'Huayna Picchu' adlı İnka yerleşimi geçiyor.",
+        "text": "Çalışma Cisneros’un 1904 atlasında Huayna Picchu adlı yerleşimin arkeolojik alanlar arasında anıldığını aktarır.",
         "citations": [
           {
             "source_ref": "amado-bauer-2021-huayna-picchu",
-            "locator": "1904 atlası",
+            "locator": "s. 24; Cisneros 1904:41 aktarımı",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "1912-ogul-ifadesi",
-        "text": "Bingham'a Cusco'dan ayrılmadan önce harabelerin yerini söylediler; 1912'de bir arazi sahibinin oğlu adı Huayna Picchu olarak verdi.",
+        "text": "1911 Quevedo tanıklığı ve 1912 Ferro’nun verdiği ad, çalışmada Huayna Picchu önerisini destekleyen yakın dönem kayıtları olarak değerlendirilir.",
         "citations": [
           {
             "source_ref": "amado-bauer-2021-huayna-picchu",
-            "locator": "Saha notları",
+            "locator": "s. 18–19 ve s. 26–27",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "kurumsal-duyuru-ad",
-        "text": "Bulgu kurumsal duyuruda 'sitenin adı yeniden değerlendiriliyor' başlığıyla sunuldu.",
-        "citations": [
-          {
-            "source_ref": "uic-2022-machu-picchu-adi",
-            "locator": "Duyuru",
-            "support_type": "context"
           }
         ]
       }
@@ -707,11 +684,11 @@
     "counter_evidence": [
       {
         "id": "yazit-yok",
-        "text": "Kanıt arşiv belgelerine dayanıyor; yerinde bir yazıt yok, dolayısıyla kesinlik sınırlı.",
+        "text": "Yazarlar 1904 ve 1911–1912 adlandırmalarının İnka döneminden yüzlerce yıl sonraya ait olduğunu ve modern yer adları olabileceğini açıkça belirtir.",
         "citations": [
           {
             "source_ref": "amado-bauer-2021-huayna-picchu",
-            "locator": "Sınırlar",
+            "locator": "s. 26–27, Conclusions",
             "support_type": "counter"
           }
         ]
@@ -719,13 +696,13 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "TARİH DÜZELTMESİ: makale 2022 değil 2021. Dosyada iki ayrı kaynak kaydı olarak duruyordu, birleştirildi."
+      "notes": "Özgün ad olasılık olarak korundu. 2021 çevrimiçi tarih ile 2022 dergi sayısı yılı ayrıldı; önceki “2022 yanlış” notu geri çekildi. Tam makale okundu; özgün arşiv belgeleri ve atlas ayrıca görülmedi. Kanıt kimlikleri korunuyor; “yazit-yok” kimliği artık doğrulanmış tarih sınırını taşıyor. Dönem sınırı yeni machu-picchu-ams-kullanim-araligi kaydındaki yaklaşık kullanım modeline göre yazıldı."
     }
   },
   {
     "schema_version": 2,
     "id": "machu-picchu-kayip-degildi",
-    "claim": "Machu Picchu hiçbir zaman kayıp değildi; yerel halk siteyi biliyor ve kullanıyordu.",
+    "claim": "Bingham’ın 1911 ziyaretinden önce Machu Picchu’yu bilen ve sırtta tarım yapan belirli yöre sakinleri vardı.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -742,10 +719,10 @@
       }
     },
     "period": {
-      "earliest": 1911,
+      "earliest": 1902,
       "latest": 1912,
-      "era_label": "Modern keşif dönemi",
-      "precision": "exact",
+      "era_label": "Modern ziyaret kayıtları",
+      "precision": "range",
       "dating_method": [
         "historical-record"
       ]
@@ -759,11 +736,11 @@
       "arkeoloji"
     ],
     "popular_claim": "Bingham 1911'de cangılda kaybolmuş bir şehri keşfetti.",
-    "divergence": "Yerli bilgiye 'keşif' demek, o bilgiyi yok saymanın kibar biçimi. Aynı kalıp Angkor ve Petra için de kullanıldı. 'Kayıp' kelimesi akademik anlamda 'dış dünyanın literatüründe kayıtlı değil' demek olarak savunulabilir; kayıt bu okumayı değil, popüler 'kimse bilmiyordu' okumasını reddediyor.",
+    "divergence": "1911 öncesinde kimsenin bilmediği yer anlatısı, kayıtlı ziyaretler ve rehberlikle uyuşmaz. Bu, yerleşimin hiçbir dönemde unutulmadığını veya yörede herkes tarafından bilindiğini göstermez. Bingham’ın uluslararası tanınmadaki rolü, yerel bilgiyle ayrı değerlendirilmelidir.",
     "divergence_type": [
       "somurge-anlatisi"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "used_in": [
       "ayni-cumlede",
       "machu-picchu"
@@ -772,19 +749,20 @@
       {
         "id": "amado-bauer-2021-huayna-picchu",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Amado Gonzales, Donato",
           "Bauer, Brian S."
         ],
-        "year": 2021,
+        "year": 2022,
         "title": "The Ancient Inca Town Named Huayna Picchu",
         "container": "Ñawpa Pacha: Journal of Andean Archaeology",
         "volume": "42(1):17-31",
         "doi": "10.1080/00776297.2021.1949833",
-        "note": "TARİH DÜZELTMESİ: dosya bu makaleyi 2022 yazıyordu, crossref künyesi 2021. Dosyada ayrıca iki ayrı kayıt olarak duruyordu (biri 'Ñawpa Pacha', biri tam dergi adıyla); birleştirildi."
+        "note": "Yazarın yüklediği tam metin okundu. Çevrimiçi yayın 13 Ağustos 2021; cilt 42(1), s. 17–31, 2022. DOI ve kalıcı kaynak kimliğindeki 2021 çevrimiçi tarihi korur; dergi sayısının yılıyla aynı değildir. Arşiv belgeleri ve Cisneros atlası bu makaledeki aktarım üzerinden kontrol edildi, özgün belgeler ayrıca okunmadı.",
+        "url": "https://www.researchgate.net/publication/359388175_The_Ancient_Inca_Town_Named_Huayna_Picchu"
       },
       {
         "id": "bingham-1948-lost-city",
@@ -799,59 +777,71 @@
         "title": "Lost City of the Incas",
         "publisher": "Weidenfeld & Nicolson",
         "isbn": "9781842125854",
-        "note": "DÖNEM KAYNAĞI, doğrulayıcı değil: 'kayıp şehir' unvanının Machu Picchu'ya yapıştığı metin budur. Dosyada '1911-1912 Peru sefer kayıtları' diye başlıksız duruyordu."
+        "note": "1948 özgün eserin yılıdır; listelenen Weidenfeld & Nicolson ve ISBN daha sonraki yeniden basımı tanımlar. Bu denetimde kitap pasajları okunmadı; yalnız başlık, keşif anlatısının çerçevesi olarak tutuluyor. Yerel rehber ve tarım kanıtları Amado Gonzales ve Bauer’in belge incelemesine bağlandı."
       }
     ],
     "evidence": [
       {
         "id": "yerel-rehber",
-        "text": "Yerinde rehberlik eden kişi bölgede yaşayan bir çiftçiydi.",
+        "text": "Çiftçi Melchor Arteaga, daha önce bildiği harabelere Bingham’ı götürmeyi kabul etti; sırttaki bir çocuk son bölümde yol gösterdi.",
         "citations": [
           {
-            "source_ref": "bingham-1948-lost-city",
-            "locator": "Sefer anlatısı",
+            "source_ref": "amado-bauer-2021-huayna-picchu",
+            "locator": "s. 19, Bingham’s 1911 Visit to Machu Picchu",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "tarim-kullanimi",
-        "text": "Site tarım için kullanılıyordu.",
+        "text": "Bingham’ın ziyaret ettiği sırtta tarım yapan iki aileden ve Lizárraga’nın 1902 tarihli ziyaret izinden söz edilir.",
         "citations": [
           {
-            "source_ref": "bingham-1948-lost-city",
-            "locator": "Sefer anlatısı, yerleşim durumu",
+            "source_ref": "amado-bauer-2021-huayna-picchu",
+            "locator": "s. 19–20 ve Fig. 1",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "yedi-yil-once",
-        "text": "Ad, Bingham'dan yedi yıl önce yayımlanmış bir atlasta geçiyor.",
+        "text": "1904 atlasının yerleşim kaydı Bingham’ın 1911 ziyaretinden yedi yıl öncedir.",
         "citations": [
           {
             "source_ref": "amado-bauer-2021-huayna-picchu",
-            "locator": "1904 atlası",
+            "locator": "s. 24; Cisneros 1904:41 aktarımı",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "unvanin-kaynagi",
-        "text": "'Kayıp şehir' unvanının kaynağı Bingham'ın kendi kitabının başlığıdır.",
+        "text": "Bingham’ın Lost City of the Incas başlığı, kayıp şehir anlatısının kendi kitabındaki çerçevesidir.",
         "citations": [
           {
             "source_ref": "bingham-1948-lost-city",
-            "locator": "Kitap başlığı ve çerçevesi",
+            "locator": "Kitap başlığı: Lost City of the Incas",
             "support_type": "claim-origin"
           }
         ]
       }
     ],
-    "counter_evidence": [],
+    "counter_evidence": [
+      {
+        "id": "bilginin-yayginligi",
+        "text": "Araştırmanın sonuç bölümüne göre harabeleri az sayıda kişi biliyordu; dağ adlarının yaygın bilinmesi yerleşimin de yaygın bilindiğini göstermez.",
+        "citations": [
+          {
+            "source_ref": "amado-bauer-2021-huayna-picchu",
+            "locator": "s. 26, Conclusions",
+            "support_type": "counter"
+          }
+        ]
+      }
+    ],
     "review": {
       "status": "draft",
-      "notes": "Bu kaydın hiç karşı kanıtı yoktu; ikisi yazıldı. Bingham künyelendi ve kendi anlatısının taraflı olduğu işaretlendi. Bingham'ın kendi anlatısı DÖNEM KAYNAĞIDIR ve kendi seferini yücelten bir çerçeve taşır; yerel varlığa dair ayrıntılar ona RAĞMEN metinde durduğu için değerli."
+      "notes": "“Hiçbir zaman kayıp değildi” genellemesi geri çekildi. Tam makaledeki belirli ziyaretler kontrol edildi; Bingham kitabının tam metni bu turda okunmadı. Önceki “iki karşı kanıt yazıldı” notu veriyle uyuşmuyordu; gerçek sınır maddesi eklendi."
     }
   },
   {
@@ -5273,18 +5263,18 @@
   {
     "schema_version": 2,
     "id": "machu-picchu-dna-cok-kokenli-hizmetliler",
-    "claim": "Machu Picchu'ya gömülü hizmetliler İnka İmparatorluğu'nun her yanından ve Amazon havzasından gelen soy hatları taşıyor; farklı kökenlerden bireyler birlikte çocuk sahibi olmuş ve birlikte gömülmüş.",
+    "claim": "Machu Picchu’dan seçilmiş 34 mezar bireyinin DNA verileri, ayrıntılı modellenebilen 30 bireyde And, kıyı ve Amazonya bağlantılı farklı soy profilleri gösteriyor.",
     "status": "established",
     "confidence": "high",
     "topic": [
       "machu-picchu",
       "inka",
       "antik-dna",
-      "mitma"
+      "yanacona",
+      "aclla"
     ],
     "subject": {
       "site": "Machu Picchu",
-      "site_native": "Huayna Picchu",
       "region": "Urubamba Vadisi, And Dağları",
       "modern_country": "Peru",
       "coordinates": {
@@ -5294,9 +5284,9 @@
     },
     "period": {
       "earliest": 1420,
-      "latest": 1540,
+      "latest": 1532,
       "era_label": "İnka İmparatorluğu",
-      "precision": "range",
+      "precision": "approximate",
       "dating_method": [
         "radiocarbon",
         "isotopic"
@@ -5318,16 +5308,17 @@
         "year": 2023
       }
     ],
-    "popular_claim": "Machu Picchu bir İnka şehriydi ve orada İnkalar yaşıyordu.",
-    "divergence": "Site etnik olarak İnka bir yerleşim değildi. 34 bireyin genom verisi, hizmetli (yanacona) topluluğunun son derece heterojen olduğunu gösteriyor - And yaylaları, Peru kıyıları, ve Peru/Kolombiya/Ekvador Amazon bölgeleri. Bu, İnka mitma uygulamasının (nüfusların bilinçli yer değiştirmesi) maddi kanıtı. Genetik köken ile ETNİK KİMLİK aynı şey değil; veri nereden gelindiğini söyler, insanların kendilerini ne saydığını söylemez.",
+    "popular_claim": "DNA, Machu Picchu’da yaşayan herkesin etnik kimliğini ve topluluğun mitma yoluyla taşındığını doğrudan belirler.",
+    "divergence": "Genetik soy, kişinin etnik kimliğini veya toplumsal görevini doğrudan ölçmez. Makale, mezar topluluğunu tarihsel/arkeolojik bağlamla yanacona ve eski aclla olarak yorumlar; mitimaes ile eşitlemez. Karışık soy da bütün karışımların Machu Picchu’da oluştuğunu veya evlilik yapıldığını doğrudan kanıtlamaz.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
     ],
     "open_questions": [
-      "Kraliyet ailesi nereye gömülüyordu?"
+      "Örneklenmeyen bölgeler alternatif soy modellerini nasıl değiştirir?",
+      "Her bireyin atalarındaki karışım hangi yerde ve dönemde oluştu?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "used_in": [
       "machu-picchu"
     ],
@@ -5335,86 +5326,89 @@
       {
         "id": "salazar-2023-machu-picchu-dna",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Salazar, Lucy",
-          "Burger, Richard L."
+          "Burger, Richard L.",
+          "Forst, Janine",
+          "Barquera, Rodrigo",
+          "Nesbitt, Jason",
+          "Calero, Jorge",
+          "Washburn, Eden",
+          "Verano, John",
+          "Zhu, Kimberly",
+          "Sop, Korey",
+          "Kassadjikova, Kalina",
+          "Ibarra Asencios, Bebel",
+          "Davidson, Roberta",
+          "Bradley, Brenda",
+          "Krause, Johannes",
+          "Fehren-Schmitz, Lars"
         ],
         "year": 2023,
         "title": "Insights into the genetic histories and lifeways of Machu Picchu's occupants",
         "container": "Science Advances",
         "doi": "10.1126/sciadv.adg3377",
         "url": "https://www.science.org/doi/10.1126/sciadv.adg3377",
-        "note": "Genom analizinin hakemli yayını. Örneklem 34 birey ve YALNIZCA hizmetli mezarlarından; kraliyet ailesi buraya gömülmüyordu. Genetik köken ile etnik kimlik aynı şey değildir."
-      },
-      {
-        "id": "ucsc-2023-machu-picchu-dna",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "press-release",
-        "year": 2023,
-        "title": "First DNA analysis of Machu Picchu residents offers insight into Inca society",
-        "institution": "UC Santa Cruz",
-        "url": "https://news.ucsc.edu/2023/07/machu-picchu-genomics/",
-        "note": "Kurumsal duyuru; hakemli yayının kendisi değil, bulgunun kamuya sunumunu kaydeder."
+        "note": "Tam metin Max Planck kurumsal arşivinden okundu: https://pure.mpg.de/rest/items/item_3524132/component/file_3524137/content . 34 bireyden genom genelinde veri, 30 birey için ayrıntılı soy modeli var. Hizmet grubu yorumu arkeolojik/tarihsel bağlama dayanır; DNA meslek veya etnik kimlik ölçmez. Makale topluluğu yanacona ve eski aclla ile ilişkilendirir, mitimaes ile eşitlemez.",
+        "volume": "9(30):eadg3377"
       }
     ],
     "evidence": [
       {
         "id": "34-birey",
-        "text": "34 bireyin genom çapında verisi üretildi.",
+        "text": "34 bireyden genom genelinde DNA verisi üretildi; 30 birey ayrıntılı soy modelleri için yeterli veriye sahipti.",
         "citations": [
           {
             "source_ref": "salazar-2023-machu-picchu-dna",
-            "locator": "Örneklem ve yöntem",
+            "locator": "s. 3–4, Results; Fig. 4",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "ucte-bir-amazon",
-        "text": "Hizmetlilerin yaklaşık üçte biri belirgin ölçüde Amazon soyu taşıyor.",
+        "text": "Soy modellerinde Amazonya bağlantılı profiller hem tek başına hem başka soylarla birlikte görülür; bütün personelin oranı bu seçilmiş örneklemden hesaplanamaz.",
         "citations": [
           {
             "source_ref": "salazar-2023-machu-picchu-dna",
-            "locator": "Soy analizi",
+            "locator": "s. 4–6; Fig. 4",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "birlikte-gomulme",
-        "text": "Farklı soy gruplarından bireyler birlikte çocuk sahibi olmuş ve yan yana gömülmüş.",
+        "text": "Tek bir birinci derece akraba çifti MP4b–MP4f saptanır; yazarlar bunu muhtemel anne–kız çifti olarak yorumlar. Diğer bireylerde yakın akrabalık saptanmaz.",
         "citations": [
           {
             "source_ref": "salazar-2023-machu-picchu-dna",
-            "locator": "Akrabalık analizi",
+            "locator": "s. 7, Implications for daily life at Machu Picchu",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "dort-bolge",
-        "text": "Soy hatları en az dört ayrı coğrafi bölgeye uzanıyor.",
+        "text": "And yaylaları, Peru kıyıları ve Amazonya bağlantılı profiller bulunur. Makale, Orta Şili/Batı Arjantin sınır bölgesinin temsil edilmediğini belirtir.",
         "citations": [
           {
             "source_ref": "salazar-2023-machu-picchu-dna",
-            "locator": "Coğrafi köken dağılımı",
+            "locator": "s. 6; Fig. 4",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "kurumsal-duyuru-dna",
-        "text": "Bulgu kurumsal duyuruda İnka toplumuna dair içgörü olarak sunuldu.",
+        "id": "hizmet-grubu-yorumu",
+        "text": "Yazarlar gözlenen çeşitliliği, birlikte taşınan mitimaes gruplarıyla eşitlemek yerine yanacona ve eski aclla mezar topluluğu yorumuyla uyumlu bulur.",
         "citations": [
           {
-            "source_ref": "ucsc-2023-machu-picchu-dna",
-            "locator": "Duyuru",
-            "support_type": "context"
+            "source_ref": "salazar-2023-machu-picchu-dna",
+            "locator": "s. 6, genetik çeşitlilik ve mitimaes karşılaştırması",
+            "support_type": "direct"
           }
         ]
       }
@@ -5422,22 +5416,33 @@
     "counter_evidence": [
       {
         "id": "sadece-hizmetli-mezarlari",
-        "text": "Örneklem 34 birey ve YALNIZCA hizmetli mezarlarından geliyor; kraliyet ailesi buraya gömülmüyordu.",
+        "text": "Mezarlar hizmet gruplarıyla ilişkilendirilir; seçilmiş bireyler malikânenin bütün nüfusunu, kraliyet ailesini ve ziyaretçileri temsil etmez.",
         "citations": [
           {
             "source_ref": "salazar-2023-machu-picchu-dna",
-            "locator": "Örneklem sınırları",
+            "locator": "s. 2–3, örnekleme; s. 7, günlük yaşam yorumları",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "genellenemez",
-        "text": "Sonuçlar malikâne personeli için güçlü, İnka toplumunun geneli için genellenemez.",
+        "text": "Genetik soyun, kişinin yaşadığı veya tanımladığı kimliği zorunlu olarak yansıtmadığı makalede açıkça belirtilir.",
         "citations": [
           {
             "source_ref": "salazar-2023-machu-picchu-dna",
-            "locator": "Genelleme sınırı",
+            "locator": "s. 7, Implications for daily life at Machu Picchu",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "karisimin-yeri",
+        "text": "Bazı karışık profiller örneklenmemiş bölgelerin soylarını temsil edebilir; karışımın Machu Picchu’da gerçekleştiği her birey için belirlenemez.",
+        "citations": [
+          {
+            "source_ref": "salazar-2023-machu-picchu-dna",
+            "locator": "s. 5–6, alternatif soy modelleri",
             "support_type": "counter"
           }
         ]
@@ -5445,15 +5450,15 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Künye zaten sağlamdı; kanıt-alıntı bağı kuruldu ve köken/kimlik ayrımı eklendi."
+      "notes": "Tam makale ve şekil 4 kontrol edildi. 34 veri/30 model ayrımı, tek yakın akraba çifti ve kimlik sınırı eklendi. Yanacona/eski aclla topluluğunun mitma kanıtı olduğu yönündeki önceki ifade kaynakla ters düşüyordu ve düzeltildi. “ucte-bir-amazon” kalıcı kimliği korunuyor; eski oran iddiası yerine modellerin kapsamı yazıldı. Konu uzmanı incelemesi kayıtlı değildir. Dönem sınırı yeni machu-picchu-ams-kullanim-araligi kaydındaki yaklaşık kullanım modeline göre yazıldı."
     }
   },
   {
     "schema_version": 2,
     "id": "machu-picchu-kayip-sehir-unvani-yanlis",
-    "claim": "\"İnkaların Kayıp Şehri\" unvanı Machu Picchu'ya aittir.",
+    "claim": "Machu Picchu, Bingham’ın 1911’de aradığı İnka direniş merkezi Vilcabamba ile aynı yerleşimdir.",
     "status": "refuted",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "machu-picchu",
       "vilcabamba",
@@ -5496,20 +5501,70 @@
       }
     ],
     "popular_claim": "Machu Picchu, İnkaların İspanyollardan sakladığı kayıp başkentti.",
-    "divergence": "Unvan Vilcabamba'ya aittir - İnkaların İspanyollara karşı son direniş merkezi. Bingham'ın aradığı da oydu ve gerçek Vilcabamba'yı (Espíritu Pampa) gördü ama önemsiz bularak geçti. Unvanı yanlış siteye verdi ve ad yapıştı.",
+    "divergence": "Bir popüler unvanın “doğru sahibi” olgusal bir kimlik ölçütü değildir. Bingham’ın Vitcos/Vilcabamba arayışı, Machu Picchu’nun kraliyet malikânesi yorumu ve Vilcabamba bölgesindeki direniş ayrı sorulardır. Bu denetimde Bingham’ın Espíritu Pampa’yı “önemsiz bulduğu” anlatısının özgün kitap pasajı kontrol edilemedi.",
     "divergence_type": [
       "somurge-anlatisi",
       "guncellenmemis"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "used_in": [
       "machu-picchu"
     ],
     "sources": [
       {
+        "id": "amado-bauer-2021-huayna-picchu",
+        "language": "en",
+        "accessed": "2026-10-01",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Amado Gonzales, Donato",
+          "Bauer, Brian S."
+        ],
+        "year": 2022,
+        "title": "The Ancient Inca Town Named Huayna Picchu",
+        "container": "Ñawpa Pacha: Journal of Andean Archaeology",
+        "volume": "42(1):17-31",
+        "doi": "10.1080/00776297.2021.1949833",
+        "note": "Yazarın yüklediği tam metin okundu. Çevrimiçi yayın 13 Ağustos 2021; cilt 42(1), s. 17–31, 2022. DOI ve kalıcı kaynak kimliğindeki 2021 çevrimiçi tarihi korur; dergi sayısının yılıyla aynı değildir. Arşiv belgeleri ve Cisneros atlası bu makaledeki aktarım üzerinden kontrol edildi, özgün belgeler ayrıca okunmadı.",
+        "url": "https://www.researchgate.net/publication/359388175_The_Ancient_Inca_Town_Named_Huayna_Picchu"
+      },
+      {
+        "id": "salazar-2023-machu-picchu-dna",
+        "language": "en",
+        "accessed": "2026-10-01",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Salazar, Lucy",
+          "Burger, Richard L.",
+          "Forst, Janine",
+          "Barquera, Rodrigo",
+          "Nesbitt, Jason",
+          "Calero, Jorge",
+          "Washburn, Eden",
+          "Verano, John",
+          "Zhu, Kimberly",
+          "Sop, Korey",
+          "Kassadjikova, Kalina",
+          "Ibarra Asencios, Bebel",
+          "Davidson, Roberta",
+          "Bradley, Brenda",
+          "Krause, Johannes",
+          "Fehren-Schmitz, Lars"
+        ],
+        "year": 2023,
+        "title": "Insights into the genetic histories and lifeways of Machu Picchu's occupants",
+        "container": "Science Advances",
+        "doi": "10.1126/sciadv.adg3377",
+        "url": "https://www.science.org/doi/10.1126/sciadv.adg3377",
+        "note": "Tam metin Max Planck kurumsal arşivinden okundu: https://pure.mpg.de/rest/items/item_3524132/component/file_3524137/content . 34 bireyden genom genelinde veri, 30 birey için ayrıntılı soy modeli var. Hizmet grubu yorumu arkeolojik/tarihsel bağlama dayanır; DNA meslek veya etnik kimlik ölçmez. Makale topluluğu yanacona ve eski aclla ile ilişkilendirir, mitimaes ile eşitlemez.",
+        "volume": "9(30):eadg3377"
+      },
+      {
         "id": "bauer-2015-vilcabamba",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
         "type": "book",
         "authors": [
@@ -5520,8 +5575,9 @@
         "year": 2015,
         "title": "Vilcabamba and the Archaeology of Inca Resistance",
         "publisher": "Cotsen Institute of Archaeology Press, UCLA",
-        "isbn": "9781938770623",
-        "note": "'Espíritu Pampa kazıları ve Vilcabamba tarihi literatürü' YER TUTUCUSUNUN yerine kondu. İlk denediğim ISBN bir Rus bozkırı kitabına çıktı; bu künye Open Library başlık aramasından alındı."
+        "isbn": "9781938770036",
+        "note": "Yayıncı sayfasındaki künye ve kitap açıklaması kontrol edildi; ISBN basılı baskıya göre düzeltildi. Açık erişim kitap bağlantısı robot doğrulamasında kaldı; tam kitaptaki pasajlar bu turda okunamadı. Yayıncı açıklaması yalnız bağlam olarak kullanılıyor.",
+        "url": "https://ioa.ucla.edu/node/663"
       },
       {
         "id": "bingham-1948-lost-city",
@@ -5536,50 +5592,28 @@
         "title": "Lost City of the Incas",
         "publisher": "Weidenfeld & Nicolson",
         "isbn": "9781842125854",
-        "note": "DÖNEM KAYNAĞI, doğrulayıcı değil: 'kayıp şehir' unvanının Machu Picchu'ya yapıştığı metin budur. Dosyada '1911-1912 Peru sefer kayıtları' diye başlıksız duruyordu."
+        "note": "1948 özgün eserin yılıdır; listelenen Weidenfeld & Nicolson ve ISBN daha sonraki yeniden basımı tanımlar. Bu denetimde kitap pasajları okunmadı; yalnız başlık, keşif anlatısının çerçevesi olarak tutuluyor. Yerel rehber ve tarım kanıtları Amado Gonzales ve Bauer’in belge incelemesine bağlandı."
       }
     ],
     "evidence": [
       {
         "id": "aradigi-vilcabamba",
-        "text": "Bingham'ın aradığı yer Vilcabamba'ydı - İnkaların İspanyollara karşı son direniş merkezi.",
+        "text": "Bingham’ın 1911 araştırmasının hedefi Vitcos ve Vilcabamba’yı bulmaktı.",
         "citations": [
           {
-            "source_ref": "bingham-1948-lost-city",
-            "locator": "Seferin amacı",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "espiritu-pampa-gecti",
-        "text": "Bingham gerçek Vilcabamba'yı (Espíritu Pampa) gördü ama önemsiz bularak geçti.",
-        "citations": [
-          {
-            "source_ref": "bauer-2015-vilcabamba",
-            "locator": "Araştırma tarihçesi",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "kazilar-dogruladi",
-        "text": "Espíritu Pampa'daki kazılar sitenin İnka direniş merkezi olduğunu doğruladı.",
-        "citations": [
-          {
-            "source_ref": "bauer-2015-vilcabamba",
-            "locator": "Kazı sonuçları",
+            "source_ref": "amado-bauer-2021-huayna-picchu",
+            "locator": "s. 18–19, Bingham’s 1911 Visit to Machu Picchu",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "unvan-yapisti",
-        "text": "Unvan yanlış siteye verildi ve yapıştı: kitabın başlığı 'Lost City of the Incas' Machu Picchu'yu anlatıyor.",
+        "text": "Lost City of the Incas, Bingham’ın kitabının başlığıdır; başlık bir yerleşimin tarihsel kimliği için tek başına kanıt değildir.",
         "citations": [
           {
             "source_ref": "bingham-1948-lost-city",
-            "locator": "Kitap başlığı",
+            "locator": "Kitap başlığı: Lost City of the Incas",
             "support_type": "claim-origin"
           }
         ]
@@ -5587,48 +5621,37 @@
     ],
     "counter_evidence": [
       {
-        "id": "ispanyol-kayitlari",
-        "text": "Vilcabamba İspanyol kayıtlarında belgelidir ve Espíritu Pampa'daki sonraki kazılar onu doğruladı.",
-        "citations": [
-          {
-            "source_ref": "bauer-2015-vilcabamba",
-            "locator": "Tarihsel kayıtlar",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "zaten-terk-edilmisti",
-        "text": "Machu Picchu İspanyol istilası sırasında zaten terk edilmişti; direniş merkezi değildi.",
-        "citations": [
-          {
-            "source_ref": "bauer-2015-vilcabamba",
-            "locator": "Kronoloji",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
         "id": "kraliyet-malikanesi",
-        "text": "Machu Picchu bir şehir değil, Pachacuti için yapılmış kraliyet malikânesiydi.",
+        "text": "Genetik çalışmanın girişinde Machu Picchu, Pachacuti ile ilişkilendirilen kraliyet malikânesi olarak ele alınır; kent sözcüğünün kullanımı bu işlevle çelişmek zorunda değildir.",
+        "citations": [
+          {
+            "source_ref": "salazar-2023-machu-picchu-dna",
+            "locator": "s. 1–2, Introduction",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "ispanyol-kayitlari",
+        "text": "Yayıncı açıklaması, Vitcos ve Espíritu Pampa araştırmalarını Vilcabamba bölgesindeki 1536–1572 direniş bağlamına yerleştirir.",
         "citations": [
           {
             "source_ref": "bauer-2015-vilcabamba",
-            "locator": "Site tipolojisi",
-            "support_type": "counter"
+            "locator": "Yayıncı kitap açıklaması; ilk iki paragraf",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ: iki kaynak da başlıksız/künyesizdi. Kaydın hiç kanıtı yoktu - yalnız karşı kanıt vardı; dördü yazıldı."
+      "notes": "“Unvan şuraya aittir” yerine test edilebilir yerleşim kimliği iddiası yazıldı. Bingham’ın Espíritu Pampa’yı önemsiz bulduğu, kesin terk yılı ve şehir/malikâne karşıtlığı önceki kanıt maddelerinden çıkarıldı. Bauer ve diğerleri 2015 tam kitap erişimi bu turda sağlanamadı; kazıların tamamı denetlenmiş sayılmıyor. İşlev, araştırma hedefi ve yayıncı bağlamı ayrıldı. Uzman incelemesi kayıtlı değildir."
     }
   },
   {
     "schema_version": 2,
     "id": "machu-picchu-gorunmeyen-insaat",
-    "claim": "Machu Picchu'daki inşaat emeğinin büyük bölümü drenaj, temel ve teras dolgusu olarak yer altında kaldı.",
+    "claim": "Machu Picchu’nun Plaza Principal ve yakın teraslarında jeofizik inceleme, yüzey altında drenaj ve dolgu düzenlemelerine ilişkin bulgular gösteriyor.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -5647,9 +5670,9 @@
     },
     "period": {
       "earliest": 1420,
-      "latest": 1540,
+      "latest": 1532,
       "era_label": "İnka İmparatorluğu",
-      "precision": "range",
+      "precision": "approximate",
       "dating_method": [
         "radiocarbon",
         "stratigraphy"
@@ -5660,36 +5683,20 @@
       "arkeoloji"
     ],
     "popular_claim": "Machu Picchu'nun etkileyici tarafı taş duvarlarıdır.",
-    "divergence": "Site dik, çok yağış alan ve sismik olarak aktif bir sırtta. Asıl mühendislik sorunu duvar örmek değil, yapının kaymasını ve suyun temelleri oymasını engellemek. Teraslar tarım için değil öncelikle YAMACI TUTMAK için; altlarında kaba taş, çakıl ve kum katmanlarından oluşan drenaj yatakları var. 'Ayakta kalması iyi mühendisliği kanıtlar' HAYATTA KALMA YANLILIĞIDIR: yıkılan İnka yapıları ziyaret edilmiyor. Bu kayıt sağlamlık iddiasını drenaj kanıtına dayandırıyor, ayakta kalmaya değil.",
+    "divergence": "Gömülü yapıların tespiti, toplam inşaat emeğinin yüzdesini ölçmez. Makaledeki yaklaşık %60 anlatısı önceki kitaba atıftır. Bir yapının ayakta kalması da bütün yapıların dayanımı için tek başına kanıt değildir.",
     "divergence_type": [
       "hayatta-kalma-yanliligi",
       "turizm-kopyalamasi"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "used_in": [
       "machu-picchu"
     ],
     "sources": [
       {
-        "id": "wright-2000-machu-picchu-muhendislik",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Wright, Kenneth R.",
-          "Valencia Zegarra, Alfredo"
-        ],
-        "year": 2000,
-        "title": "Machu Picchu: A Civil Engineering Marvel",
-        "publisher": "ASCE Press",
-        "isbn": "9780784404447",
-        "note": "'Machu Picchu su ve inşaat sistemleri üzerine mühendislik incelemeleri' YER TUTUCUSUNUN yerine kondu."
-      },
-      {
         "id": "masini-2023-machu-picchu-yeralti",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -5701,51 +5708,41 @@
         "title": "Non invasive subsurface imaging to investigate the site evolution of Machu Picchu",
         "container": "Scientific Reports",
         "doi": "10.1038/s41598-023-43361-x",
-        "note": "Yüzey altını ölçen bağımsız hat: mühendislik akıl yürütmesini jeofizik gözlemle destekliyor."
+        "note": "Tam metin okundu. Plaza Principal ve bitişik terasların yüzey altı ölçümü drenaj ve dolgu düzenlemelerini destekler. Tartışmadaki yaklaşık %60 değeri önceki Wright ve Valencia Zegarra kitabından aktarılır; bu makalenin bağımsız emek ölçümü değildir.",
+        "url": "https://www.nature.com/articles/s41598-023-43361-x"
       }
     ],
     "evidence": [
       {
         "id": "drenaj-kanallari",
-        "text": "Sitede yüzlerce drenaj kanalı ve yüzey suyu tahliye noktası bulunuyor.",
+        "text": "Jeofizik yorum, Plaza Principal altında doğal su toplama alanının drenaj düzenlemeleriyle dönüştürüldüğünü destekler.",
         "citations": [
           {
-            "source_ref": "wright-2000-machu-picchu-muhendislik",
-            "locator": "Drenaj sistemi bölümü",
+            "source_ref": "masini-2023-machu-picchu-yeralti",
+            "locator": "Discussion; Fig. 7–8",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "teras-yataklari",
-        "text": "Terasların altında kaba taş, çakıl ve kum katmanlarından oluşan drenaj yatakları var.",
+        "text": "İnceleme Plaza Principal ile bitişik terasları kapsar; yüzey altı yapı ve dolgu düzenlemeleri yorumlanır.",
         "citations": [
           {
-            "source_ref": "wright-2000-machu-picchu-muhendislik",
-            "locator": "Teras kesitleri",
+            "source_ref": "masini-2023-machu-picchu-yeralti",
+            "locator": "Results ve Discussion; Fig. 7–8",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "yuzey-alti-goruntuleme",
-        "text": "Yüzey altı görüntüleme, sitenin yapım evrelerini ve zemin hazırlığını yüzeye dokunmadan gösteriyor.",
+        "text": "Birden fazla ölçüm yöntemi, çalışma alanında farklı yapım evrelerini ve gömülü drenaj havzasını araştırır.",
         "citations": [
           {
             "source_ref": "masini-2023-machu-picchu-yeralti",
-            "locator": "Jeofizik görüntüleme sonuçları",
+            "locator": "Discussion; Fig. 8",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "bes-yuz-yil-ayakta",
-        "text": "Yapı beş yüz yıldır dik ve yağışlı bir yamaçta ayakta.",
-        "citations": [
-          {
-            "source_ref": "wright-2000-machu-picchu-muhendislik",
-            "locator": "Değerlendirme",
-            "support_type": "inference"
           }
         ]
       }
@@ -5753,22 +5750,22 @@
     "counter_evidence": [
       {
         "id": "yuzde-60-tahmin",
-        "text": "Yer altı emeğinin oranı için verilen ~%60 değeri bir mühendislik TAHMİNİDİR, sayım değil.",
+        "text": "Tartışma bölümündeki yaklaşık %60 değeri, havzanın drenaj için yeniden düzenlenmesi emeğine ilişkin önceki Wright ve Valencia Zegarra kaynağına atıfla aktarılır.",
         "citations": [
           {
-            "source_ref": "wright-2000-machu-picchu-muhendislik",
-            "locator": "Tahmin yöntemi",
-            "support_type": "counter"
+            "source_ref": "masini-2023-machu-picchu-yeralti",
+            "locator": "Discussion; reference 6 (Wright ve Valencia Zegarra 2000)",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "oran-mi-yon-mu",
-        "text": "Oranın kesinliği tartışmalı; yönü (görünmeyenin görünenden büyük olduğu) daha sağlam.",
+        "text": "Çalışmanın ölçümleri gömülü yapı ve evreleri araştırır; bütün sitenin iş gücü dağılımına ilişkin bağımsız bir sayım sunmaz.",
         "citations": [
           {
-            "source_ref": "wright-2000-machu-picchu-muhendislik",
-            "locator": "Sonuçların güvenilirliği",
+            "source_ref": "masini-2023-machu-picchu-yeralti",
+            "locator": "Methods; Discussion; Fig. 7–8",
             "support_type": "counter"
           }
         ]
@@ -5776,13 +5773,13 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ. Masini 2023 eklendi: kayıt tek bir mühendislik incelemesine dayanıyordu, şimdi jeofizik ölçüm hattı da var."
+      "notes": "Masini makalesinin tam metni okundu. “Yüzlerce drenaj kanalı”, “her teras aynı katmanlarda” ve “emeğin çoğu kesin yer altında” genellemeleri geri çekildi. Önceki Wright ve Valencia Zegarra 2000 kitabı (ISBN 9780784404447) bu turda okunmadı; oran hesabının yöntemi doğrulanamadı. Kitap bu makalenin reference 6 atfında izlenebilir; okunmuş bağımsız kanıt olarak listelenmiyor. Dönem sınırı yeni machu-picchu-ams-kullanim-araligi kaydındaki yaklaşık kullanım modeline göre yazıldı."
     }
   },
   {
     "schema_version": 2,
     "id": "machu-picchu-harcsiz-duvar-sismik",
-    "claim": "İnka harçsız taş duvarları deprem sırasında kırılmak yerine yer değiştirip yeniden oturarak enerji harcar.",
+    "claim": "Lipa ve diğerleri, Sacsayhuaman’daki bir İnka taş duvarının sismik davranışını rijit cisim dinamiğiyle modeller; bu Machu Picchu’daki bütün duvarlar için dayanım garantisi değildir.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -5791,13 +5788,9 @@
       "sismik-tasarim"
     ],
     "subject": {
-      "site": "Machu Picchu",
-      "region": "And Dağları",
-      "modern_country": "Peru",
-      "coordinates": {
-        "lat": -13.1631,
-        "lon": -72.545
-      }
+      "site": "Sacsayhuaman (Machu Picchu ile karşılaştırılan model)",
+      "region": "Cusco, And Dağları",
+      "modern_country": "Peru"
     },
     "period": {
       "earliest": 1420,
@@ -5814,92 +5807,47 @@
       "mimarlik",
       "arkeoloji"
     ],
-    "popular_claim": "İnkalar taşları kesme teknolojisini bilinmeyen bir yöntemle elde etti.",
-    "divergence": "Duvarlar demir aletlerle değil, daha sert taş çekiçler ve aşındırmayla şekillendirildi. Cevap gizemli teknoloji değil, zaman ve iş gücü. Sismik davranış ise tasarımın sonucu: harçsız örgü rijit değil, bloklar birbirine göre az miktarda hareket edip enerjiyi sürtünmeyle harcıyor. 'Yineleyerek optimuma yaklaşma' bir ÇIKARIMDIR; İnka inşaatçılarının bu süreci böyle yürüttüğüne dair doğrudan kayıt yok.",
+    "popular_claim": "Harçsız İnka duvarları bütün depremlerde kırılmadan hareket edip yeniden yerlerine oturur.",
+    "divergence": "Yayıncı özeti bir duvarın dinamik modelini ve olası göçme mekanizmalarının değerlendirilmesini anlatır. Bu, farklı yerleşimlerdeki bütün duvarların hasarsız kaldığı veya blokların her sarsıntıdan sonra eski konumuna döndüğü anlamına gelmez. Yinelemeyle optimuma ulaşıldığı da bu kaynaktan çıkan ölçülmüş sonuç değildir.",
     "divergence_type": [
       "medya-abartisi"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-01",
     "used_in": [
       "machu-picchu"
     ],
     "sources": [
       {
-        "id": "protzen-1993-inka-tas-isciligi",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Protzen, Jean-Pierre"
-        ],
-        "year": 1993,
-        "title": "Inca Architecture and Construction at Ollantaytambo",
-        "publisher": "Oxford University Press",
-        "isbn": "9780195070699",
-        "note": "'İnka taş işçiliği ve sismik davranış literatürü' YER TUTUCUSUNUN yerine kondu. Protzen taş çekiçle şekillendirmeyi deneysel olarak yeniden üretmiştir - 'bilinmeyen teknoloji' iddiasına doğrudan cevap."
-      },
-      {
         "id": "lipa-2023-inka-duvar-sismik",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-01",
         "tier": "peer-reviewed",
         "type": "chapter",
         "authors": [
           "Lipa, Leonel",
           "Tarque, Nicola",
-          "Pelà, Luca"
+          "Pelà, Luca",
+          "Goicolea, José María"
         ],
-        "year": 2023,
+        "year": 2024,
         "title": "Evaluation of the Seismic Behaviour of an Inca Stone Wall Using Rigid Body Dynamic Methods",
-        "container": "RILEM Bookseries",
+        "container": "Structural Analysis of Historical Constructions, RILEM Bookseries 47",
         "publisher": "Springer",
         "doi": "10.1007/978-3-031-39603-8_88",
-        "note": "Sismik davranışın SAYISAL modellemesi. Kaydın 'ölçüm sınırlı' itirazı bu çalışmayla kısmen karşılanıyor ama tümüyle değil."
+        "note": "Yalnız yayıncı özeti ve künye kontrol edildi; tam bölüm okunmadı. Çevrimiçi tarih 4 Eylül 2023, yayıncı Cite this paper künyesi 2024. Modelin sahası Sacsayhuaman’dır; Machu Picchu değildir. Kalıcı kaynak kimliği 2023 olarak korunuyor.",
+        "volume": "s. 1102–1113",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-39603-8_88"
       }
     ],
     "evidence": [
       {
-        "id": "tas-cekic-deneyi",
-        "text": "Taşlar demir aletlerle değil, daha sert taş çekiçlerle ve aşındırmayla şekillendirildi; yöntem deneysel olarak yeniden üretildi.",
-        "citations": [
-          {
-            "source_ref": "protzen-1993-inka-tas-isciligi",
-            "locator": "Deneysel arkeoloji bölümü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "ice-egimli-yamuk",
-        "text": "Duvarlar hafifçe içe eğimli; kapı ve pencereler yamuk - ikisi de yatay sarsıntıda devrilme eğilimini azaltır.",
-        "citations": [
-          {
-            "source_ref": "protzen-1993-inka-tas-isciligi",
-            "locator": "Duvar geometrisi",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
         "id": "yer-degistirme",
-        "text": "Harçsız örgüde kırılma yerine yer değiştirme oluyor; bloklar birbirine göre hareket edip enerjiyi sürtünmeyle harcıyor.",
+        "text": "Özet, Sacsayhuaman’daki bir duvarın bloklarını düzensiz şekilleriyle rijit cisimler; temaslarını normal ve kayma rijitliği arayüzleri olarak modeller.",
         "citations": [
           {
             "source_ref": "lipa-2023-inka-duvar-sismik",
-            "locator": "Rijit cisim dinamiği modellemesi",
+            "locator": "Yayıncı Abstract; ikinci ve üçüncü paragraf",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "yineleyerek-optimum",
-        "text": "Deprem kuşağında yüzyıllarca inşa eden bir toplum, ayakta kalan çözümleri tutup yıkılanları bırakıyor - yineleyerek optimuma yaklaşma.",
-        "citations": [
-          {
-            "source_ref": "protzen-1993-inka-tas-isciligi",
-            "locator": "Değerlendirme",
-            "support_type": "inference"
           }
         ]
       }
@@ -5907,22 +5855,22 @@
     "counter_evidence": [
       {
         "id": "model-varsayimi",
-        "text": "Sismik davranışın niceliksel ölçümü sınırlı; modelleme gerçek bir deprem kaydı değil, rijit cisim varsayımına dayanan bir simülasyondur.",
+        "text": "Yayıncı özeti yöntemin olası göçme mekanizmalarını incelemeye yararlı olduğunu belirtir; hasarsızlık veya her depremde eski konuma dönüş garantisi vermez.",
         "citations": [
           {
             "source_ref": "lipa-2023-inka-duvar-sismik",
-            "locator": "Model varsayımları",
+            "locator": "Yayıncı Abstract; son paragraf",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "site-farki",
-        "text": "Ollantaytambo'da ölçülen taş işçiliği Machu Picchu'ya doğrudan aktarılamaz; iki sitede işçilik kalitesi ve taş türü farklı.",
+        "text": "Özette incelenen saha Sacsayhuaman’dır. Machu Picchu için ölçülmüş bir gerçek deprem kaydı raporlanmaz.",
         "citations": [
           {
-            "source_ref": "protzen-1993-inka-tas-isciligi",
-            "locator": "Kapsam",
+            "source_ref": "lipa-2023-inka-duvar-sismik",
+            "locator": "Yayıncı Abstract; ikinci paragraf",
             "support_type": "counter"
           }
         ]
@@ -5930,7 +5878,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ. Protzen'in deneysel yeniden üretimi 'bilinmeyen teknoloji' iddiasına doğrudan cevap; Lipa 2023 sismik modellemeyi getiriyor."
+      "notes": "Erişim yalnız yayıncı özetiyle sınırlı. Tam bölüm sonuçları ve model varsayımlarının ayrıntıları doğrulanamadı; özetten daha ileri sayısal iddia yapılmıyor. Önceki Protzen 1993 (ISBN 9780195070699) kitabı bu turda okunmadı; taş alet, geometri ve yineleme maddeleri bu modelin doğrudan kanıtı olarak tutulmadı. İlk metindeki bütün duvarlara dayanım aktarımı geri çekildi."
     }
   },
   {
@@ -7632,6 +7580,143 @@
     "review": {
       "status": "draft",
       "notes": "Birincil hakemli kaynağa dayanıyor ama yalnızca özet okundu; tam metin incelemesi bekliyor. Bu kayıtta makalenin yalnızca özeti okunmuştur; tam metindeki gerekçelendirme ve stratigrafik kanıt incelenmemiştir."
+    }
+  },
+  {
+    "schema_version": 2,
+    "id": "machu-picchu-ams-kullanim-araligi",
+    "claim": "Burger ve diğerlerinin 2021 AMS çalışması, Machu Picchu’nun kullanımı için yaklaşık MS 1420–1532 aralığı önerir; bu bütün yapıların kesin inşa yılı değildir.",
+    "status": "established",
+    "confidence": "high",
+    "topic": [
+      "machu-picchu",
+      "inka",
+      "kronoloji"
+    ],
+    "subject": {
+      "site": "Machu Picchu",
+      "region": "Urubamba Vadisi",
+      "modern_country": "Peru",
+      "coordinates": {
+        "lat": -13.1631,
+        "lon": -72.545
+      }
+    },
+    "period": {
+      "earliest": 1420,
+      "latest": 1532,
+      "era_label": "İnka dönemi kullanım modeli",
+      "precision": "approximate",
+      "dating_method": [
+        "radiocarbon"
+      ]
+    },
+    "disciplines": [
+      "arkeoloji",
+      "tarih"
+    ],
+    "used_in": [
+      "machu-picchu",
+      "ayni-cumlede"
+    ],
+    "checked": "2026-10-01",
+    "popular_claim": "Machu Picchu’nun tamamı yaklaşık 1450 yılında inşa edildi.",
+    "divergence": "Mezar bireylerini tarihleyen bir kullanım modeli, her binanın yapımını aynı yıla yerleştirmez. Makalenin önerdiği aralık, kesin bir ilk inşa veya toplu terk günü olarak sunulmuyor.",
+    "sources": [
+      {
+        "id": "burger-2021-machu-picchu-ams",
+        "language": "en",
+        "accessed": "2026-10-01",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Burger, Richard L.",
+          "Salazar, Lucy C.",
+          "Nesbitt, Jason",
+          "Washburn, Eden",
+          "Fehren-Schmitz, Lars"
+        ],
+        "year": 2021,
+        "title": "New AMS dates for Machu Picchu: results and implications",
+        "container": "Antiquity",
+        "volume": "95(383):1265–1279",
+        "doi": "10.15184/aqy.2021.99",
+        "url": "https://doi.org/10.15184/aqy.2021.99",
+        "note": "Yalnız Cambridge yayıncı özeti ve künye kontrol edildi; tam tarih modelinin yöntem ve ek verileri bu turda okunmadı. 26 mezar bireyinin AMS tarihlenmesi ayrıca Salazar 2023 tam metninde anlatılıyor."
+      },
+      {
+        "id": "salazar-2023-machu-picchu-dna",
+        "language": "en",
+        "accessed": "2026-10-01",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Salazar, Lucy",
+          "Burger, Richard L.",
+          "Forst, Janine",
+          "Barquera, Rodrigo",
+          "Nesbitt, Jason",
+          "Calero, Jorge",
+          "Washburn, Eden",
+          "Verano, John",
+          "Zhu, Kimberly",
+          "Sop, Korey",
+          "Kassadjikova, Kalina",
+          "Ibarra Asencios, Bebel",
+          "Davidson, Roberta",
+          "Bradley, Brenda",
+          "Krause, Johannes",
+          "Fehren-Schmitz, Lars"
+        ],
+        "year": 2023,
+        "title": "Insights into the genetic histories and lifeways of Machu Picchu's occupants",
+        "container": "Science Advances",
+        "doi": "10.1126/sciadv.adg3377",
+        "url": "https://www.science.org/doi/10.1126/sciadv.adg3377",
+        "note": "Tam metin Max Planck kurumsal arşivinden okundu: https://pure.mpg.de/rest/items/item_3524132/component/file_3524137/content . 34 bireyden genom genelinde veri, 30 birey için ayrıntılı soy modeli var. Hizmet grubu yorumu arkeolojik/tarihsel bağlama dayanır; DNA meslek veya etnik kimlik ölçmez. Makale topluluğu yanacona ve eski aclla ile ilişkilendirir, mitimaes ile eşitlemez.",
+        "volume": "9(30):eadg3377"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "ams-araligi",
+        "text": "Yayıncı özeti yerleşimin yaklaşık MS 1420–1532 arasında kullanıldığını önerir.",
+        "citations": [
+          {
+            "source_ref": "burger-2021-machu-picchu-ams",
+            "locator": "Yayıncı Abstract: “occupied from c. AD 1420–1532”",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "26-mezar-bireyi",
+        "text": "2023 DNA çalışması, daha önce 26 Machu Picchu bireyinin doğrudan AMS ile tarihlendiğini anlatır.",
+        "citations": [
+          {
+            "source_ref": "salazar-2023-machu-picchu-dna",
+            "locator": "s. 3, The burial populations from Machu Picchu and Cusco",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "insaat-tarihi-degil",
+        "text": "Mezar bireylerinin tarihlendirilmesinden bütün yapıların aynı yılda inşa edildiği sonucu çıkmaz.",
+        "citations": [
+          {
+            "source_ref": "salazar-2023-machu-picchu-dna",
+            "locator": "s. 3, 26 mezar bireyinin doğrudan tarihlenmesi",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": "Yeni ve bağımsız kronoloji kaydı. 2021 çalışmasının yalnız yayıncı özeti okundu; ayrıntılı modelin tam metni doğrulanamadı. İnşa yılıyla kullanım aralığı ayrıldı; konu uzmanı incelemesi kayıtlı değildir."
     }
   }
 ]
