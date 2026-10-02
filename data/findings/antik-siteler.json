@@ -955,9 +955,9 @@
   {
     "schema_version": 2,
     "id": "petra-hazine-bir-mezar",
-    "claim": "Petra'nın 'Hazine' adıyla bilinen yapısı bir anıt mezardır ve ünlü kayaya oyulmuş cepheler esasen nekropolü oluşturur.",
+    "claim": "El-Hazne cenaze anıtı olarak yorumlanır; Petra’da kayaya oyulmuş anıtlar ile serbest duran kent yapıları birlikte bulunur.",
     "status": "established",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "petra",
       "nabatiler",
@@ -974,15 +974,10 @@
       }
     },
     "period": {
-      "earliest": -100,
-      "latest": 106,
-      "era_label": "Nabati doruğu - Roma ilhakı",
-      "precision": "range",
-      "dating_method": [
-        "typology",
-        "historical-record",
-        "epigraphic"
-      ]
+      "earliest": 1,
+      "latest": 100,
+      "era_label": "ACOR 2020’nin aktardığı MS 1. yüzyıl önerisi; mezar sahibinin kimliği değil",
+      "precision": "range"
     },
     "languages": [
       "Nabatice",
@@ -991,135 +986,147 @@
     ],
     "disciplines": [
       "arkeoloji",
-      "mimarlik",
-      "epigrafi"
+      "mimarlik"
     ],
-    "people": [
-      {
-        "name": "Burckhardt, Johann Ludwig",
-        "role": "discoverer",
-        "affiliation": "-",
-        "year": 1812,
-        "lifespan": "1784-1817"
-      }
-    ],
-    "popular_claim": "Petra kayalara oyulmuş bir şehirdir ve Hazine bir hazine binasıdır.",
-    "divergence": "Ad, tepedeki urnada firavun hazinesi saklandığına dair Bedevi anlatısından geliyor (urnadaki kurşun izleri o denemelerden). Şehrin kendisi - sütunlu cadde, tapınaklar, evler - serbest duran yapılardan oluşuyordu; ziyaretçiler nekropolü gezip şehri gördüğünü sanıyor.",
+    "popular_claim": "El-Hazne bir hazine binasıdır; Petra’nın kayaya oyulmuş kısmı yalnızca mezarlıktır.",
+    "divergence": "El-Hazne’nin cenaze anıtı yorumu ile onu yaptıran veya oraya gömülen kişinin kimliği ayrı sorulardır. IV. Aretas’ın dönemine tarihleme önerisi kişisel mezar atfı değildir. Kent yalnız nekropolden oluşmaz: kayaya oyulmuş tiyatro ve serbest duran tapınaklar da korunur. Urna ve kurşun izleri anlatısının ayrıntıları bu denetimde doğrulanmadı.",
     "divergence_type": [
       "turizm-kopyalamasi",
       "hayatta-kalma-yanliligi"
     ],
     "open_questions": [
-      "El-Hazne'nin kime ait olduğu kesinleşmedi.",
-      "Petra'nın su sistemi kapasitesi ve nüfus tahmini hâlâ tartışmalı."
+      "El-Hazne’yi yaptıran ve anıtta anılan kişi veya kişiler nasıl belirlenebilir?",
+      "Avlu mezarlarının tarihlenmesi ile anıtın yapım ve kullanım evreleri nasıl ilişkilendiriliyor?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "used_in": [
       "ayni-cumlede",
       "petra"
     ],
     "sources": [
       {
-        "id": "mckenzie-1990-petra-mimarisi",
+        "id": "taylor-2020-my-petra",
+        "title": "My Petra",
+        "url": "https://publications.acorjordan.org/2020/12/17/my-petra/",
+        "institution": "American Center of Research (ACOR)",
+        "note": "El-Hazne bezemeleri, 2003 avlu kazısı ve tarih önerisi pasajları okundu. Bu bir fotoğraf denemesidir; kazının ham raporu değildir. IV. Aretas’ın hükümdarlık dönemine tarihleme önerisi, onun mezar sahibi olduğunu göstermez.",
+        "tier": "institutional",
+        "type": "webpage",
         "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-02",
         "authors": [
-          "McKenzie, Judith"
+          "Taylor, Jane"
         ],
-        "year": 1990,
-        "title": "The Architecture of Petra",
-        "publisher": "Oxford University Press (British Academy adına)",
-        "isbn": "9780197270004",
-        "note": "'Nabati arkeolojisi ve Petra mimarisi literatürü' YER TUTUCUSUNUN yerine kondu. İlk denediğim ISBN 'Excavations at Carthage' adlı başka bir kitaba çıktı; bu künye Open Library başlık aramasından alındı."
+        "year": 2020
+      },
+      {
+        "id": "acor-2024-petra-62c",
+        "title": "Petra “Expedition Unknown” Episodes—Learn More",
+        "url": "https://acorjordan.org/exu-learn-more/",
+        "institution": "American Center of Research (ACOR)",
+        "note": "17 Kasım 2024 açıklamasının ilk beş paragrafı okundu. 62C’nin 2003’te bulunduğu, 2005’te kazıldığı ve 2024’te çalışmanın sürdürüldüğü ayrıldı. TV haberindeki “ilk keşif” anlatımı kullanılmadı. Ham analiz verileri okunmadı.",
+        "tier": "institutional",
+        "type": "webpage",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "year": 2024
+      },
+      {
+        "id": "acor-petra-kent-yapilari",
+        "title": "About the Temple — Petra ve Nabatiler",
+        "url": "https://acorjordan.org/twlcrm-initiative/petra-nabataeans-twlcrm/",
+        "institution": "American Center of Research (ACOR)",
+        "note": "Kanatlı Aslanlar Tapınağı projesinin kent tanımı okundu: kayaya oyulmuş tiyatro, sütunlu cadde ve korunmuş Qasr al-Bint. Sayfada yayın tarihi belirtilmediğinden yıl eklenmedi.",
+        "tier": "institutional",
+        "type": "webpage",
+        "language": "en",
+        "accessed": "2026-10-02"
       },
       {
         "id": "unesco-petra",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "year": 1985,
         "title": "Petra - Dünya Mirası kaydı",
-        "institution": "UNESCO",
         "url": "https://whc.unesco.org/en/list/326/",
-        "note": "'Petra Arkeolojik Parkı sel yönetimi kayıtları' YER TUTUCUSUNUN yerine kondu - o kayıtlara ulaşılamadı, bu ulaşılabilir olan."
+        "institution": "UNESCO",
+        "note": "Tanım, Criterion (iii)–(iv) ve Integrity bölümleri okundu. 1985 alanın listeye giriş yılıdır; bu sayfanın yayın tarihi olarak kullanılmadı. Modern barajın 1964 tarihine kaynak değildir.",
+        "tier": "institutional",
+        "type": "webpage",
+        "language": "en",
+        "accessed": "2026-10-02"
       }
     ],
     "evidence": [
       {
-        "id": "hazne-anit-mezar",
-        "text": "El-Hazne'nin mimari tipolojisi anıt mezardır; muhtemelen kral IV. Aretas için yapılmıştır.",
+        "id": "hazne-cenaze-sembolleri",
+        "text": "Taylor, El-Hazne cephesindeki figürleri cenaze sembolleri olarak açıklar; avludaki önceki mezarları yeni cenaze anıtının yapımından ayırır.",
         "citations": [
           {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "Anıt mezarlar tipolojisi",
+            "source_ref": "taylor-2020-my-petra",
+            "locator": "My Petra, El-Hazne bezemeleri ve 2003 kazısı pasajları; Castor and Pollux ve “Spooling forward” paragrafları",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "serbest-duran-yapilar",
-        "text": "Şehrin kendisi - sütunlu cadde, tapınaklar, evler - serbest duran yapılardan oluşuyordu; kayaya oyulmuş olanlar ağırlıklı olarak mezarlardır.",
+        "id": "avlu-mezarlarinin-kazi-sirasi",
+        "text": "ACOR’un açıklaması, ön avludaki 62C mezarının 2003 keşfi, 2005 kazısı ve 2024 devam çalışmasını ayırır. Bu mezar ile cephenin sahibi aynı bilgi değildir.",
         "citations": [
           {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "Kent planı ve serbest duran yapılar",
-            "support_type": "direct"
+            "source_ref": "acor-2024-petra-62c",
+            "locator": "17 Kasım 2024 açıklaması, ilk 5 paragraf",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "kaya-cepheleriyle-taniniyor",
-        "text": "Site bugün de kaya cepheleriyle tanınıyor; serbest duran yapılar büyük ölçüde ayakta değil.",
+        "id": "kent-yapilari-birlikte",
+        "text": "UNESCO, Petra’yı inşa edilmiş ve kayaya oyulmuş yapıları bir arada barındıran yerleşim olarak tanımlar; serbest duran tapınakları ve geniş arkeolojik kalıntıları listeler.",
         "citations": [
           {
             "source_ref": "unesco-petra",
-            "locator": "Kayıt tanımı",
-            "support_type": "context"
+            "locator": "Tanım; Criterion (iii); Integrity",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "tiyatro-kayaya-oyulmus",
+        "text": "ACOR kent tanımı, tiyatronun kumtaşı ana kayasına doğrudan oyulduğunu ve Qasr al-Bint’in iyi korunduğunu belirtir.",
+        "citations": [
+          {
+            "source_ref": "acor-petra-kent-yapilari",
+            "locator": "About the Temple, tiyatro paragrafı ve sacred quarter paragrafı",
+            "support_type": "direct"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "burckhardt-kaynak-sinirli",
-        "text": "Bedeviler siteyi biliyor ve kullanıyordu; Burckhardt'ın 1812'de yaptığı Avrupa'ya haber vermekti. Bu satır bu kayıtta AYRI BİR KAYNAĞA bağlanmadı.",
+        "id": "donem-sahip-degil",
+        "text": "Taylor’ın MS 1. yüzyıl ve muhtemel IV. Aretas dönemi önerisi, mezarın IV. Aretas’a ait olduğu sonucuyla eş tutulamaz.",
         "citations": [
           {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "Araştırma tarihçesi",
+            "source_ref": "taylor-2020-my-petra",
+            "locator": "2003 avlu kazısı pasajı, “Their upper carvings” paragrafı",
             "support_type": "context"
           }
         ]
       },
       {
-        "id": "aretas-atfi-kesin-degil",
-        "text": "Hazine'nin kime ait olduğu KESİN değil; IV. Aretas atfı en yaygın öneridir, kanıtlanmış değildir.",
+        "id": "yeni-kazi-kimligi-cozmez",
+        "text": "ACOR, 2024 buluntularının bilimsel analizinin sürmesi gerektiğini belirtir. Bu açıklama bütün kimlik ve evre sorularının çözüldüğü sonucuna dayanak değildir.",
         "citations": [
           {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "Tarihleme tartışması",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "hepsi-mezar-degil",
-        "text": "Kayaya oyulmuş yapıların hepsi mezar değil; bazıları tören ve toplanma işlevi taşımış olabilir.",
-        "citations": [
-          {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "İşlev tartışması",
-            "support_type": "counter"
+            "source_ref": "acor-2024-petra-62c",
+            "locator": "İlk 5 paragraf, bilimsel örnekler ve gelecekteki analizler pasajı",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ: 'Nabati arkeolojisi ve Petra mimarisi literatürü' yerine McKenzie 1990. Karşı kanıtı yoktu; dördü yazıldı ve iki satırın kaynaksız olduğu işaretlendi. Urnadaki kurşun izlerinin Bedevi ateş denemelerinden geldiği yaygın anlatıdır; bu kayıtta kaynağa bağlanmadı."
+      "notes": "2 Ekim 2026 devam denetimi: okunmamış McKenzie 1990 atıfları kaldırıldı; okunan ACOR/UNESCO pasajları eklendi. Cenaze anıtı yorumu korundu, IV. Aretas dönemi ile mezar sahibinin kimliği ayrıldı. Kayaya oyulmamış tiyatro ve yalnız nekropol genellemeleri düzeltildi. Urna/kurşun efsanesi ve bütün ziyaretçilere ilişkin hükümler doğrulanmış sayılmadı. Ham kazı raporu ve bağımsız konu uzmanı kabulü yok."
     }
   },
   {
@@ -2727,7 +2734,7 @@
   {
     "schema_version": 2,
     "id": "petra-sel-baraji-yeniden-kuruldu",
-    "claim": "Siq girişindeki modern sel barajı, 1963'teki ölümcül ani selden sonra Nabati barajının temeli üzerine yeniden inşa edildi.",
+    "claim": "PDTRA’nın kaydı, Siq girişindeki bugünkü barajın 1964’te eski Nabati barajının yerinde inşa edildiğini belirtir; bu, kesintisiz antik işleyişin kanıtı değildir.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -2745,13 +2752,12 @@
       }
     },
     "period": {
-      "earliest": -100,
+      "earliest": 1964,
       "latest": 1964,
-      "era_label": "Nabati tasarımından modern yeniden inşaya",
-      "precision": "range",
+      "era_label": "Kurum kaydındaki modern barajın yapım yılı; antik barajın tarihlemesi değil",
+      "precision": "exact",
       "dating_method": [
-        "historical-record",
-        "stratigraphy"
+        "historical-record"
       ]
     },
     "disciplines": [
@@ -2759,23 +2765,36 @@
       "arkeoloji"
     ],
     "popular_claim": "Siq girişindeki baraj, Nabatilerin iki bin yıl önce yaptığı ve hâlâ çalışan sel kontrol yapısıdır.",
-    "divergence": "Nabati barajı gerçekten vardı ve temeli hâlâ yerinde. Ama ziyaretçinin gördüğü yapı 1963'teki ölümcül selden SONRA o temel üzerine yeniden inşa edildi. 'Hâlâ çalışıyor' ifadesi iki bin yıllık kesintisiz işleyiş çağrıştırıyor; gerçekte sistem bir noktada devre dışı kalmış, felaket yaşanmış ve modern mühendislikle yeniden kurulmuştur.",
+    "divergence": "1964 yapım tarihi ve eski barajla konum ilişkisi PDTRA’nın resmî tanımına bağlandı. UNESCO kaydı bu yeniden inşa ayrıntısına kaynak değildir. Modern yapı eski yapıyla özdeş veya iki bin yıldır kesintisiz çalışan bir baraj sayılmaz; eski boyut, müdahale ve bakım geçmişi ayrıca incelenmelidir.",
     "divergence_type": [
       "turizm-kopyalamasi",
       "hayatta-kalma-yanliligi"
     ],
     "open_questions": [
-      "1963 selindeki can kaybı sayısı kaynaklarda değişiyor; kesin rakam doğrulanmadı."
+      "1964 müdahalesinin çizimleri, antik temel kesitleri ve daha sonraki onarımlar ne gösteriyor?",
+      "1963 selindeki can kaybı farklı kaynaklarda nasıl belgeleniyor? Bu turda tek bir kesin sayı kabul edilmedi.",
+      "Baraj, tünel ve aşağı havza kanallarının bugünkü kapasite ve bakım sınırları neler?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "used_in": [
       "petra"
     ],
     "sources": [
       {
+        "id": "pdtra-siq-modern-baraj",
+        "title": "The Dam",
+        "url": "https://padc.pdtra.gov.jo/en/sitesdtls/16/The-Dam",
+        "institution": "Petra Development and Tourism Region Authority (PDTRA)",
+        "note": "The Dam başlığı altındaki iki açıklama paragrafı okundu. 1964 yeniden inşasını ve eski barajın daha büyük olduğunu belirtir. Kurum tanımıdır; mühendislik çizimi veya arkeolojik temel kesiti değildir.",
+        "tier": "institutional",
+        "type": "webpage",
+        "language": "en",
+        "accessed": "2026-10-02"
+      },
+      {
         "id": "ortloff-2020-petra-hidrolik",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -2784,72 +2803,86 @@
         "year": 2020,
         "title": "Hydraulic Engineering at 100 BC-AD 300 Nabataean Petra (Jordan)",
         "container": "Water",
-        "volume": "12(12):3498",
+        "volume": "12(12)",
+        "pages": "1–33; makale 3498",
         "doi": "10.3390/w12123498",
-        "url": "https://www.mdpi.com/2073-4441/12/12/3498",
-        "note": "Dosyada İKİ ayrı kayıt olarak duruyordu, biri DOI'siz; birleştirildi ve DOI eklendi."
+        "url": "https://mdpi-res.com/d_attachment/water/water-12-03498/article_deploy/water-12-03498.pdf",
+        "note": "2020 yayıncı PDF’si §2, s. 4–6 ve şekil 3: antik sel yönlendirme barajı/tüneli ve bugünkü sediment birikimi okundu. Bu pasaj modern barajın yapım yılını belgelemek için kullanılmadı. CFD yeniden çalıştırılmadı."
       },
       {
         "id": "alkuisi-2024-petra-sel",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Al Kuisi, Mustafa",
           "Al Azzam, Naheel",
-          "Hyarat, Tasneem"
+          "Hyarat, Tasneem",
+          "Farhan, Ibrahim"
         ],
         "year": 2024,
         "title": "Flood Hazard and Risk Assessment of Flash Floods for Petra Catchment Area Using Hydrological and Analytical Hierarchy (AHP) Modeling",
         "container": "Water",
-        "volume": "16(16):2283",
+        "volume": "16(16)",
+        "pages": "1–28; makale 2283",
         "doi": "10.3390/w16162283",
-        "note": "Sel tehlikesinin bugünkü ölçümü. Nabati barajının NEYE karşı yapıldığını ölçülebilir kılıyor."
+        "url": "https://mdpi-res.com/d_attachment/water/water-16-02283/article_deploy/water-16-02283.pdf",
+        "note": "Yayıncı PDF’sinin s. 1–3 ve 6–7 pasajları okundu. 1963 seli, sedimentle dolan baraj ve günümüz risk modelinin kapsamı ayrıldı. Eksik dördüncü yazar Ibrahim Farhan eklendi. Hidrolojik/AHP model yeniden çalıştırılmadı; tarihsel sel bilgisi makalenin aktardığı kayıttır."
       },
       {
         "id": "unesco-petra",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "year": 1985,
         "title": "Petra - Dünya Mirası kaydı",
-        "institution": "UNESCO",
         "url": "https://whc.unesco.org/en/list/326/",
-        "note": "'Petra Arkeolojik Parkı sel yönetimi kayıtları' YER TUTUCUSUNUN yerine kondu - o kayıtlara ulaşılamadı, bu ulaşılabilir olan."
+        "institution": "UNESCO",
+        "note": "Tanım, Criterion (iii)–(iv) ve Integrity bölümleri okundu. 1985 alanın listeye giriş yılıdır; bu sayfanın yayın tarihi olarak kullanılmadı. Modern barajın 1964 tarihine kaynak değildir.",
+        "tier": "institutional",
+        "type": "webpage",
+        "language": "en",
+        "accessed": "2026-10-02"
       }
     ],
     "evidence": [
       {
-        "id": "baraj-bypass-tuneli",
-        "text": "Nabatiler Siq'e giren seli yan vadiye çeviren baraj ve bypass tüneli yapmıştı.",
+        "id": "modern-baraj-1964",
+        "text": "PDTRA, bugünkü barajın 1964’te önceki Nabati barajının üzerinde kurulduğunu ve eski yapının daha büyük olduğunu belirtir.",
+        "citations": [
+          {
+            "source_ref": "pdtra-siq-modern-baraj",
+            "locator": "The Dam, ikinci açıklama paragrafı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "antik-sel-yonlendirmesi",
+        "text": "Ortloff, baraj ve tünelin suyu Siq girişinden Wadi Mataha yönüne saptıran antik sistemdeki rolünü açıklar.",
         "citations": [
           {
             "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Sel yönetimi yapıları",
+            "locator": "§2, s. 4, diversion dam and tunnel paragrafı; s. 6, şekil 3",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "sel-riski-bugun",
-        "text": "Petra havzası bugün de ani sel riski taşıyor; risk modellemesi bunu ölçüyor.",
+        "id": "1963-sel-ve-sediment",
+        "text": "2024 makalesinin tarihsel özeti, 1963 selinde sedimentle dolan Siq barajından suyun aşıp geçide girdiğini bildirir. Bu bilgi, aynı makalenin yeni risk modelinden ölçülmüş bir tarihsel sonuç değildir.",
         "citations": [
           {
             "source_ref": "alkuisi-2024-petra-sel",
-            "locator": "Tehlike değerlendirmesi",
-            "support_type": "direct"
+            "locator": "§1, s. 2, Table 1 ve ardından gelen Siq dam paragrafı",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "1963-sonrasi-yeniden",
-        "text": "Baraj 1963 selinden sonra Nabati temeli üzerine yeniden kuruldu.",
+        "id": "surekli-bakim-geregi",
+        "text": "UNESCO, sel yönlendirme sisteminin sürekli izlenmesi, onarımı ve bakımı yapılmazsa anıtların ani sellere açık olduğunu belirtir.",
         "citations": [
           {
             "source_ref": "unesco-petra",
-            "locator": "Koruma ve müdahale tarihçesi",
+            "locator": "Integrity, flash flooding ve diversion system paragrafı",
             "support_type": "direct"
           }
         ]
@@ -2857,23 +2890,23 @@
     ],
     "counter_evidence": [
       {
-        "id": "tasarim-ayni-mi",
-        "text": "Bugünkü barajın Nabati tasarımını ne ölçüde izlediği belirsiz; 'temel üzerine kuruldu' ile 'aynı tasarım' aynı şey değil.",
+        "id": "modern-antik-ozdes-degil",
+        "text": "PDTRA’nın eski yapının daha büyük olduğu bilgisi, güncel yapı ile antik tasarımın özdeş sayılmasını sınırlar.",
         "citations": [
           {
-            "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Yeniden inşa",
+            "source_ref": "pdtra-siq-modern-baraj",
+            "locator": "The Dam, ikinci açıklama paragrafı",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "bugunku-kosullar",
-        "text": "Modern sel riski modellemesi bugünkü havza koşullarını ölçer; MÖ 1. yüzyıl koşullarına doğrudan uygulanamaz.",
+        "id": "model-bugunun-havzasi",
+        "text": "2024 çalışması güncel havza, arazi kullanımı ve tehlike/kırılganlık göstergeleriyle model kurar. Bu çalışmadan antik dönemin sel koşulları doğrudan ölçülmüş sayılamaz.",
         "citations": [
           {
             "source_ref": "alkuisi-2024-petra-sel",
-            "locator": "Model kapsamı",
+            "locator": "§2, s. 3; §6–7, s. 6–7, Land Use and Land Cover ve model yöntemi",
             "support_type": "context"
           }
         ]
@@ -2881,7 +2914,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ ('Petra Arkeolojik Parkı sel yönetimi kayıtları' - o kayıtlara ulaşılamadı). Karşı kanıtı yoktu; üçü yazıldı. 1963 ölüm sayısının kaynaksız olduğu işaretlendi. 1963 selindeki ölüm sayısı bu kayıtta kaynağa bağlanmadı; 'çok sayıda ziyaretçi' ifadesi belgelenmiş bir rakam değildir."
+      "notes": "2 Ekim 2026 devam denetimi: 1964 yeniden yapımı fiilen okunan PDTRA kurum kaydına bağlandı; UNESCO’ya hatalı yeniden inşa atfı kaldırıldı. established etiketi daraltılmış kurum kaydı için korunuyor. Antik temel ayrıntısı, tasarım özdeşliği ve kesintisiz işleyiş kabul edilmedi. Al Kuisi 2024 künyesine Ibrahim Farhan eklendi. Can kaybı için tek kesin rakam, ham yapım dosyası ve modelin bağımsız doğrulaması bu denetimde yok."
     }
   },
   {
