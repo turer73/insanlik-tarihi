@@ -338,7 +338,7 @@ __OZET__
       });
       if(!record.review || record.review.status === "draft") drafts += 1;
     });
-    var items = [[D.length,"şema v2 kayıt"],[evidence,"kimlikli kanıt"],[citationsCount,"konumlu atıf"],[drafts,"uzman incelemesi bekleyen"]];
+    var items = [[D.length,"şema v2 kayıt"],[evidence,"kimlikli kanıt"],[citationsCount,"konumlu atıf"],[drafts,"taslak kayıt"]];
     document.getElementById("stats").innerHTML = items.map(function(item){
       return "<div class=\"stat\"><b>" + item[0] + "</b><span>" + esc(item[1]) + "</span></div>";
     }).join("");
