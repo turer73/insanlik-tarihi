@@ -779,9 +779,9 @@
   {
     "schema_version": 2,
     "id": "angkor-lidar-nufus",
-    "claim": "LiDAR taramaları Angkor'un doruk nüfusunu 100-200 binden 750-900 bine çıkardı; sanayi öncesi dünyanın bilinen en büyük yerleşim kompleksidir.",
+    "claim": "2021 nüfus modeli, yaklaşık 3.000 km² Greater Angkor bölgesinin 13. yüzyıldaki doruk nüfusunu 700.000–900.000 kişi olarak tahmin eder; bu alan 2012 LiDAR taramasının 370 km² kapsamından farklıdır.",
     "status": "established",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "angkor",
       "guneydogu-asya",
@@ -797,14 +797,14 @@
       }
     },
     "period": {
-      "earliest": 802,
-      "latest": 1431,
-      "era_label": "Kmer İmparatorluğu",
-      "precision": "range",
+      "earliest": 1201,
+      "latest": 1300,
+      "era_label": "2021 modelinin 13. yüzyıl doruk tahmini",
+      "precision": "century",
       "dating_method": [
-        "historical-record",
         "radiocarbon",
-        "typology"
+        "typology",
+        "historical-record"
       ]
     },
     "languages": [
@@ -817,23 +817,29 @@
     ],
     "people": [
       {
-        "name": "Evans, Damian",
+        "name": "Klassen, Sarah",
+        "role": "analyst",
+        "affiliation": "University of British Columbia / University of Oregon",
+        "year": 2021
+      },
+      {
+        "name": "Evans, Damian H.",
         "role": "surveyor",
-        "affiliation": "École française d'Extrême-Orient",
+        "affiliation": "University of Sydney",
         "year": 2012
       }
     ],
-    "popular_claim": "Angkor Wat cangılda unutulmuş bir tapınaktır.",
-    "divergence": "Angkor hiç kaybolmadı - Budist manastırı olarak sürekli kullanıldı, 16.-17. yy'da Portekizli ve Japon ziyaretçi kayıtları var. 'Unutulmuş tapınak' anlatısı 19. yy Fransız sömürge keşif edebiyatının ürünü. Ayrıca görünen tapınak, şehrin küçük ve dayanıklı bir parçası. AYRICA (2026-09-07 denetimi): 'en büyük' superlatifi, Angkor için taranan peyzajı ölçer; karşılaştırıldığı yerleşimler için aynı ölçütün kullanıldığı doğrulanmamıştır.",
+    "popular_claim": "LiDAR, Angkor nüfusunun 100–200 binden 750–900 bine çıktığını doğrudan ölçtü.",
+    "divergence": "2013 tarama yayını ile 2021 nüfus modeli karıştırılmıştı. Model LiDAR, kazı, tarihleme ve hane varsayımlarını birleştirir; 3.000 km² bölge, nüfus ve kompakt kent çekirdeği aynı ölçüt değildir. Daha eski büyük ölçekli haritalama da 2012’den önce yapılmıştı.",
     "divergence_type": [
-      "somurge-anlatisi",
-      "hayatta-kalma-yanliligi"
+      "kategori-hatasi",
+      "medya-abartisi"
     ],
     "open_questions": [
-      "Nüfus tahmininin aralığı geniş; hane yoğunluğu varsayımlarına duyarlı.",
-      "Superlatif karşılaştırmada öteki yerleşimler için hangi alan ölçülüyor? İki taraf aynı ölçütle karşılaştırılmadan 'en büyük' iddiası kapanmaz."
+      "Hane büyüklüğü ve yerleşim yoğunluğu farklı bağlamlarda nasıl değişiyordu?",
+      "Farklı yerleşimlerin alan ve nüfus karşılaştırmaları aynı mekânsal tanımla yapılabilir mi?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "used_in": [
       "ayni-cumlede",
       "angkor"
@@ -841,115 +847,152 @@
     "volatile": true,
     "sources": [
       {
-        "id": "evans-2013-angkor-lidar",
-        "language": "en",
-        "accessed": "2026-09-12",
+        "id": "klassen-2021-angkor-nufus",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
-          "Evans, Damian",
-          "Fletcher, Roland"
+          "Klassen, Sarah",
+          "Carter, Alison K.",
+          "Evans, Damian H.",
+          "Ortman, Scott",
+          "Stark, Miriam T.",
+          "Loyless, Alyssa A.",
+          "Polkinghorne, Martin",
+          "Heng, Piphal",
+          "Hill, Michael",
+          "Wijker, Pelle",
+          "Niles-Weed, Jonathan",
+          "Marriner, Gary P.",
+          "Pottier, Christophe",
+          "Fletcher, Roland J."
+        ],
+        "year": 2021,
+        "title": "Diachronic modeling of the population within the medieval Greater Angkor Region settlement complex",
+        "container": "Science Advances 7(19), eabf8441",
+        "doi": "10.1126/sciadv.abf8441",
+        "url": "https://doi.org/10.1126/sciadv.abf8441",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Tam makale University of Oregon açık arşivinden okundu: https://scholarsbank.uoregon.edu/server/api/core/bitstreams/a1be8e1b-6d8b-490a-a74c-432c957c77a7/content . 3.000 km² model alanı ve 700.000–900.000 tahmini, salt LiDAR sayımı değildir."
+      },
+      {
+        "id": "evans-2013-angkor-lidar",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Evans, Damian H.",
+          "Fletcher, Roland J.",
+          "Pottier, Christophe",
+          "Chevance, Jean-Baptiste",
+          "Soutif, Dominique",
+          "Tan, Boun Suy",
+          "Im, Sokrithy",
+          "Ea, Darith",
+          "Tin, Tina",
+          "Kim, Samnang",
+          "Cromarty, Christopher",
+          "De Greef, Stéphane",
+          "Hanus, Kasper",
+          "Baty, Pierre",
+          "Kuszinger, Robert",
+          "Shimoda, Ichita",
+          "Boornazian, Glenn"
         ],
         "year": 2013,
         "title": "Uncovering archaeological landscapes at Angkor using lidar",
-        "container": "PNAS",
+        "container": "PNAS 110(31), 12595–12600",
         "doi": "10.1073/pnas.1306539110",
         "url": "https://www.pnas.org/doi/10.1073/pnas.1306539110",
-        "note": "LiDAR nüfus tahmininin hakemli yayını. Ölçtüğü şey yayılmış, düşük yoğunluklu bir kentleşmedir; yoğun kent çekirdeğiyle alan üzerinden karşılaştırma bu yayının iddiası değil - o karşılaştırma kayıtta karşı kanıt olarak ayrıca işaretli."
-      },
-      {
-        "id": "evans-2007-angkor-harita",
         "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Evans, Damian"
-        ],
-        "year": 2007,
-        "title": "A comprehensive archaeological map of the world's largest preindustrial settlement complex at Angkor, Cambodia",
-        "container": "PNAS",
-        "doi": "10.1073/pnas.0702525104",
-        "note": "'En büyük' superlatifi bu makalenin BAŞLIĞINDAN geliyor; kayıt superlatifi kanıt değil, incelenen iddia olarak kullanıyor."
+        "accessed": "2026-10-02",
+        "note": "Özgün makalenin açık PDF kopyası okundu: https://cdn.angkordatabase.asia/libs/docs/2013_Uncovering_archaeological_landscape.pdf (6 sayfa, erken çevrimiçi sürüm). 2012 tarama kapsamı 370 km²; Greater Angkor araştırma alanı ve 2021 nüfus modeli bu sayıyla aynı değildir."
       },
       {
-        "id": "zhou-daguan-1297",
-        "language": "zh",
-        "accessed": "2026-09-12",
-        "tier": "primary",
-        "type": "edition",
-        "authors": [
-          "Zhou Daguan"
-        ],
-        "year": 1297,
-        "title": "A Record of Cambodia: The Land and Its People",
-        "publisher": "Silkworm Books (Peter Harris çevirisi, 2007)",
-        "isbn": "9789749511244",
-        "note": "Angkor'u yaşarken gören tek ayrıntılı dış tanıklık (1296-97 elçilik ziyareti). DÖNEM KAYNAĞI: Çinli bir elçinin gözüyle ve kendi kategorileriyle yazılmıştır."
+        "id": "nasa-2007-angkor-harita",
+        "tier": "institutional",
+        "type": "article",
+        "year": 2007,
+        "title": "Angkor, Cambodia",
+        "institution": "NASA Earth Observatory",
+        "url": "https://science.nasa.gov/earth/earth-observatory/angkor-cambodia-8170/",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "31 Ekim 2007 tarihli kurumsal araştırma tanıtımı. Evans ve diğerlerinin 2007 makalesini, radar/uydu/hava fotoğrafı/arazi gözlemi ve 2.848 km² inceleme alanıyla açıklar. Makalenin yerine bağımsız saha kanıtı olarak sayılmaz."
       }
     ],
     "evidence": [
       {
-        "id": "lidar-3000km2",
-        "text": "2012 ve sonrası LiDAR taramaları 3.000 km2'den fazla alanı haritaladı.",
+        "id": "doruk-nufus-modeli",
+        "text": "Model, 13. yüzyıl doruğu için Greater Angkor bölgesinde yaklaşık 700.000–900.000 kişi önerir.",
         "citations": [
           {
-            "source_ref": "evans-2013-angkor-lidar",
-            "locator": "Tarama kapsamı",
+            "source_ref": "klassen-2021-angkor-nufus",
+            "locator": "s. 1, Abstract; s. 3, Results, doruk nüfus paragrafı",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "kentsel-yayilma",
-        "text": "Tapınakların çevresinde yollar, kanallar, havuzlar ve konut alanlarından oluşan kentsel yayılma ortaya çıktı.",
+        "id": "arastirma-alani",
+        "text": "Modelin araştırma alanı yaklaşık 3.000 km²’dir; sınır nehirlerin havzalarıyla ilişkilendirilmiştir.",
         "citations": [
           {
-            "source_ref": "evans-2013-angkor-lidar",
-            "locator": "Sonuçlar",
+            "source_ref": "klassen-2021-angkor-nufus",
+            "locator": "s. 5, Materials and Methods / Dating the landscape",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "zhou-daguan-tanikligi",
-        "text": "Angkor'u yaşarken gören bir dış tanık var: 1296-97'de gelen Çinli elçi kenti kalabalık ve işler hâlde anlatıyor.",
+        "id": "lidar-370km2",
+        "text": "2012 LiDAR veri ediniminin toplam alanı 370 km²’dir.",
         "citations": [
           {
-            "source_ref": "zhou-daguan-1297",
-            "locator": "Kent ve halk bölümleri",
+            "source_ref": "evans-2013-angkor-lidar",
+            "locator": "PDF s. 2, 370 km² tarama paragrafı; PDF s. 5, Materials and Methods / Data Acquisition",
             "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "lidar-oncesi-haritalama",
+        "text": "2007 çalışması radar, uydu, hava fotoğrafı ve arazi gözlemlerini birleştirerek büyük yerleşim ağını incelemişti.",
+        "citations": [
+          {
+            "source_ref": "nasa-2007-angkor-harita",
+            "locator": "2007 study used satellite images ile başlayan yöntem paragrafı",
+            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "olcum-kategorisi-uyarisi",
-        "text": "ÖLÇÜM KATEGORİSİ UYARISI: 'en büyük yerleşim kompleksi' iddiasında Angkor için ölçülen şey LiDAR ile TARANAN PEYZAJDIR, kompakt bir kent çekirdeği değil. Karşılaştırıldığı yerleşimler için hangi alanın ölçüldüğü tutarlı biçimde belirtilmez.",
+        "id": "model-varsayimlari",
+        "text": "Hane alanı, hane başına kişi sayısı ve bent/kanal kenarı yerleşim yoğunluğu varsayımları nüfus sonucunu etkiler; tahmin antik sayım değildir.",
         "citations": [
           {
-            "source_ref": "evans-2007-angkor-harita",
-            "locator": "Başlıktaki superlatif ve yöntem",
-            "support_type": "claim-origin"
+            "source_ref": "klassen-2021-angkor-nufus",
+            "locator": "s. 6–7, Estimating population in the CCCs / AMA / BANKs",
+            "support_type": "counter"
           }
         ]
       },
       {
-        "id": "yogunluk-ayri-olcut",
-        "text": "Yayılmış, düşük yoğunluklu bir kentleşme ile yoğun bir kent çekirdeğini alan üzerinden karşılaştırmak kategori hatasına açıktır; nüfus yoğunluğu ve yapı yoğunluğu ayrı ölçütlerdir.",
+        "id": "alan-nufus-ayrimi",
+        "text": "Kent çekirdekleri, tarımsal metropol alanı ve altyapı kenarları ayrı kategorilerdir; bölgenin yüzölçümü nüfus sıralaması olarak okunamaz.",
         "citations": [
           {
-            "source_ref": "evans-2013-angkor-lidar",
-            "locator": "Yoğunluk tartışması",
-            "support_type": "counter"
+            "source_ref": "klassen-2021-angkor-nufus",
+            "locator": "s. 4, Discussion; Table 1, CCCs / AMA / BANKs ayrımı",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "'17. yy Japon çizimi' satırı kaynaksızdı; kanıttan çıkarılıp sınır olarak işaretlendi. Zhou Daguan eklendi - Angkor'u yaşarken gören tek ayrıntılı dış tanıklık. 17. yüzyıl Japon çizimi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; satır kaynaksız olduğu için kanıttan karşı kanıda alındı."
+      "notes": "Kaynak kapsamı ve sayı atfı düzeltildi; uzman kabulü değildir. 2021 modelinin yayımlanmış tahmini yerleşik bulgu/orta güven olarak kaydedildi; gerçek nüfusun kesin sayımı kabul edilmez. 2007 özgün makale tam okunmadı; NASA özeti yalnız önceki haritalamayı bağlamlandırır."
     }
   },
   {
@@ -4038,8 +4081,8 @@
   {
     "schema_version": 2,
     "id": "angkor-cokus-nedensellik-yonu",
-    "claim": "Angkor'un idari çekirdeğindeki gerileme, sözde çöküşten yüz yıldan fazla önce başlamıştı; altyapı çöktüğü için gitmediler, gittikleri için altyapı çöktü.",
-    "status": "established",
+    "claim": "Angkor’da su altyapısı, kent seçkinleri önceden ayrıldığı için bozulmuştur.",
+    "status": "unknown",
     "confidence": "medium",
     "topic": [
       "angkor",
@@ -4082,17 +4125,18 @@
         "year": 2019
       }
     ],
-    "popular_claim": "Angkor 1431'de Ayutthaya istilasıyla veya su sisteminin çökmesiyle aniden terk edildi.",
-    "divergence": "Sediment karotları yanma, orman tahribatı ve erozyon göstergelerinin 14. yüzyılın ilk on yıllarından itibaren azaldığını gösteriyor. Angkor Thom hendeği 14. yüzyıl sonunda artık bakılmıyor. Yani 1431 istilası zaten büyük ölçüde boşalmış bir merkeze geldi. Çöküş anlatısı bir tarih ve tek bir fail istiyor; kanıt yavaş bir kayma veriyor.",
+    "popular_claim": "Önceki site metni, 2019 çalışmasının göç-bakım önerisini kesin neden-sonuç ilişkisi gibi sunuyordu.",
+    "divergence": "Güney hendekteki göstergeler erken 14. yüzyıldan başlayan faaliyet azalmasını ve yüzyıl sonundaki bakım kesintisi yorumunu destekler. Yazarların seçkinlerin önce ayrılmış olabileceği önerisi, doğrudan göç sayımı veya bütün su ağının nedeninin kanıtı değildir. İklim, altyapı ve siyasi değişimin göreli katkısı açık kalır.",
     "divergence_type": [
       "medya-abartisi",
       "kategori-hatasi"
     ],
     "open_questions": [
-      "Seçkinler neden gitti?",
-      "Çevre yerleşimde nüfus ne zaman azaldı?"
+      "Seçkinlerin yer değiştirmesi ile altyapı hasarı hangi noktalarda bağımsız tarihlenebilir?",
+      "Hendek çevresindeki faaliyet azalması bölgenin hangi kesimlerinde aynı anda görülür?",
+      "İklim, ticaret ve siyasi baskıların göreli katkıları ayrıştırılabilir mi?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "angkor"
@@ -4100,153 +4144,160 @@
     "sources": [
       {
         "id": "penny-2019-angkor-kademeli",
-        "language": "en",
-        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Penny, Dan",
-          "Hall, Tegan"
+          "Hall, Tegan",
+          "Evans, Damian",
+          "Polkinghorne, Martin"
         ],
         "year": 2019,
         "title": "Geoarchaeological evidence from Angkor, Cambodia, reveals a gradual decline rather than a catastrophic 15th-century collapse",
-        "container": "PNAS",
+        "container": "PNAS 116(11), 4871–4876",
         "doi": "10.1073/pnas.1821460116",
         "url": "https://www.pnas.org/doi/10.1073/pnas.1821460116",
-        "note": "Kademeli gerilemenin hakemli yayını. Kanıt TEK BİR hendekten geliyor ve kentin idari çekirdeğini temsil ediyor; çevredeki geniş yerleşime genellenemez."
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Tam makale Flinders University açık arşivindeki PDF üzerinden okundu: https://researchnow-admin.flinders.edu.au/ws/portalfiles/portal/21598157/Penny_Geoarchaeological_P2019.pdf . Güney hendekte tek örnekleme alanından dört karot; ayrıntılı kronoloji AT/01/04/B üzerinden. Nedensellik yönü sonuç bölümünde olasılık olarak önerilir."
       },
       {
-        "id": "sydney-2019-angkor",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "press-release",
-        "year": 2019,
-        "title": "New research casts doubt on cause of Angkor's collapse",
-        "institution": "University of Sydney",
-        "url": "https://www.sydney.edu.au/news-opinion/news/2019/02/26/new-research-casts-doubt-on-cause-of-angkor-s-collapse.html",
-        "note": "Kurumsal duyuru; hakemli yayının kendisi değil. Bulgunun 'çöküşün sebebine kuşku' başlığıyla sunulduğunu kaydeder."
-      },
-      {
-        "id": "evans-2023-angkor-cokus-degerlendirme",
-        "language": "en",
-        "accessed": "2026-09-12",
+        "id": "penny-2018-angkor-ag-modeli",
         "tier": "peer-reviewed",
-        "type": "chapter",
+        "type": "article",
         "authors": [
+          "Penny, Dan",
+          "Zachreson, Cameron",
+          "Fletcher, Roland",
+          "Lau, David",
+          "Lizier, Joseph T.",
+          "Fischer, Nicholas",
           "Evans, Damian",
-          "Polkinghorne, Martin",
-          "Fletcher, Roland"
+          "Pottier, Christophe",
+          "Prokopenko, Mikhail"
         ],
-        "year": 2023,
-        "title": "Perspectives on the 'Collapse' of Angkor and the Khmer Empire",
-        "container": "The Angkorian World",
-        "publisher": "Routledge",
-        "doi": "10.4324/9781351128940-37",
-        "note": "'Angkor sonrası Kamboçya ve ziyaretçi kayıtları literatürü' YER TUTUCUSUNUN yerine kondu. Alanın kendi toplu değerlendirmesi; 'çöküş' kelimesini tırnak içinde kullanması kaydın iddiasıyla aynı yönde."
+        "year": 2018,
+        "title": "The demise of Angkor: Systemic vulnerability of urban infrastructure to climatic variations",
+        "container": "Science Advances 4(10), eaau4029",
+        "doi": "10.1126/sciadv.aau4029",
+        "url": "https://doi.org/10.1126/sciadv.aau4029",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Bu denetimde yalnız PubMed yayıncı özeti ve künye okundu: https://pubmed.ncbi.nlm.nih.gov/30345363/ . Sayısal modelin taşkında zincirleme hasar üretebilmesini bağlam olarak destekler; belirli antik olayın tarihi veya tek nedeni değildir. Tam model ve ek veriler incelenmedi."
+      },
+      {
+        "id": "carter-2019-angkor-wat-kullanim",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Carter, Alison K.",
+          "Stark, Miriam T.",
+          "Quintus, Seth",
+          "Zhuang, Yijie",
+          "Wang, Hong",
+          "Heng, Piphal",
+          "Chhay, Rachna"
+        ],
+        "year": 2019,
+        "title": "Temple occupation and the tempo of collapse at Angkor Wat, Cambodia",
+        "container": "PNAS 116(25), 12226–12231",
+        "doi": "10.1073/pnas.1821879116",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1821879116",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Tam metin https://pmc.ncbi.nlm.nih.gov/articles/PMC6589680/ üzerinden okundu. Tapınak çevresindeki konut höyükleri ile tapınağın dinî işlevi ayrıdır. 16 radyokarbon tarihin modelinde boşluk vardır. Ziyaretçi/kitabe/plan verileri makalenin literatür değerlendirmesinden aktarılır; özgün tarihsel edisyonlar ayrıca okunmadı."
       }
     ],
     "evidence": [
       {
-        "id": "sondaj-karotlari",
-        "text": "Angkor Thom hendeğinden alınan sondaj karotlarının paleoekolojik analizi yapıldı.",
+        "id": "ornekleme-alani",
+        "text": "Güney hendekte bir örnekleme alanından dört komşu karot alındı; radyokarbon kronolojisi AT/01/04/B karotundan kuruldu.",
         "citations": [
           {
             "source_ref": "penny-2019-angkor-kademeli",
-            "locator": "Yöntem",
+            "locator": "s. 4875, Materials and Methods, dört karot ve dokuz tarihleme örneği paragrafları",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "gostergeler-dusuyor",
-        "text": "Yanma izleri, orman tahribatı ve toprak erozyonu göstergeleri 14. yüzyıl başından itibaren düşüyor.",
+        "id": "faaliyet-azalmasi",
+        "text": "Yanma, bitki örtüsü ve erozyon göstergeleri erken 14. yüzyıldan itibaren yerel arazi kullanımının azaldığına işaret eder.",
         "citations": [
           {
             "source_ref": "penny-2019-angkor-kademeli",
-            "locator": "Sonuçlar",
+            "locator": "s. 4874, Decline Versus Collapse, ilk paragraf; Fig. 3",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "hendek-bakimsiz",
-        "text": "Hendek 14. yüzyıl sonunda bakımsız kalıyor - bakım örgütlenmesi artık işlemiyor.",
+        "id": "bakim-yorumu",
+        "text": "Güney hendeğin yüzyıl sonunda bitkiyle kaplanması, bakımın sona erdiği biçiminde yorumlanır.",
         "citations": [
           {
             "source_ref": "penny-2019-angkor-kademeli",
-            "locator": "Hendek bakımı",
-            "support_type": "direct"
+            "locator": "s. 4874, Decline Versus Collapse, güney hendek paragrafı",
+            "support_type": "inference"
           }
         ]
       },
       {
-        "id": "orgutlu-emek",
-        "text": "Su ağı otomatik çalışmaz; kanal temizliği ve bent onarımı sürekli örgütlü emek ister.",
+        "id": "nedensellik-onerisi",
+        "text": "Yazarlar seçkinlerin önce ayrılmış olmasının bakım eksikliğini açıklayabileceğini bir olasılık olarak önerir.",
         "citations": [
           {
-            "source_ref": "evans-2023-angkor-cokus-degerlendirme",
-            "locator": "Altyapı ve emek",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "kurumsal-duyuru-angkor",
-        "text": "Bulgu kurumsal duyuruda 'çöküşün sebebine kuşku' başlığıyla sunuldu.",
-        "citations": [
-          {
-            "source_ref": "sydney-2019-angkor",
-            "locator": "Duyuru",
-            "support_type": "context"
+            "source_ref": "penny-2019-angkor-kademeli",
+            "locator": "s. 4875, Materials and Methods öncesindeki sonuç paragrafı",
+            "support_type": "inference"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "tek-hendek",
-        "text": "Kanıt TEK BİR HENDEKTEN geliyor ve kentin idari çekirdeğini temsil ediyor; çevredeki geniş yerleşimde nüfusun ne zaman azaldığı ayrı bir soru.",
+        "id": "kent-geneli-siniri",
+        "text": "Aynı makale, çekirdekteki gerilemenin geniş tarımsal çevrede aynı anda gerçekleştiğinin varsayılamayacağını tartışır.",
         "citations": [
           {
             "source_ref": "penny-2019-angkor-kademeli",
-            "locator": "Örneklem sınırı",
+            "locator": "s. 4874–4875, Decline Versus Collapse, tarımsal çevre ve eşzamansız değişim paragrafları",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "sebep-bilinmiyor",
-        "text": "Seçkinlerin neden gittiği bilinmiyor - deniz ticareti, siyasi kayma ve dinî değişim öne sürülüyor, hiçbiri kanıtlanmadı.",
+        "id": "tasarim-ile-tarih-ayri",
+        "text": "2018 modelinin yayıncı özeti, taşkınların su ağında zincirleme hasar üretebileceğini bildirir. Bu sonuç göç-bakım ilişkisini tek neden hâline getirmez.",
         "citations": [
           {
-            "source_ref": "evans-2023-angkor-cokus-degerlendirme",
-            "locator": "Açıklama önerileri",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "cokus-kelimesi-tartismali",
-        "text": "'Çöküş' kelimesinin kendisi alanda tartışmalı; toplu değerlendirme onu tırnak içinde kullanıyor.",
-        "citations": [
-          {
-            "source_ref": "evans-2023-angkor-cokus-degerlendirme",
-            "locator": "Başlık ve kavram tartışması",
+            "source_ref": "penny-2018-angkor-ag-modeli",
+            "locator": "PubMed Abstract, numerical model ve cascading damage cümleleri",
             "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "yerel-kronoloji-ayri",
+        "text": "Angkor Wat çevresindeki yerleşim kronolojisi değişim, tarihleme boşluğu ve yeniden kullanımı gösterir; bütün bölge için tek terk tarihi kurulamaz.",
+        "citations": [
+          {
+            "source_ref": "carter-2019-angkor-wat-kullanim",
+            "locator": "Analysis and Discussion, radyokarbon boşluğu ve yeniden kullanım paragrafları; Conclusions",
+            "support_type": "counter"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Evans 2023 toplu değerlendirmesi eklendi: kayıt tek bir makaleye ve onun basın duyurusuna dayanıyordu."
+      "notes": "Kesin nedensellik hükmü unknown/medium olarak daraltıldı. Kanıtlanmış veriler, makale yorumları ve açık soru ayrıldı. Evans 2023 bölüm başlığından kurulmuş kanıt ve basın duyurusunu ayrı doğrulama sayan maddeler kaldırıldı. 2018 çalışmasının yalnız özeti okundu; model yeniden çalıştırılmadı. Uzman incelemesi bekleniyor."
     }
   },
   {
     "schema_version": 2,
     "id": "angkor-kuraklik-agac-halkalari",
-    "claim": "14. ve 15. yüzyıllarda Angkor bölgesini iki büyük kuraklık ve aralarında şiddetli muson dönemleri vurdu.",
+    "claim": "Güney Vietnam ağaç halkalarından kurulan 1250–2008 erken muson PDSI kaydı, geç 14. ve erken 15. yüzyıllarda iki uzun kurak dönem ve bazı çok yağışlı yıllar gösterir; Angkor için bölgesel vekil göstergedir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -4285,144 +4336,155 @@
       }
     ],
     "popular_claim": "Kuraklık Angkor'un çöküşüne sebep oldu.",
-    "divergence": "Kuraklıklar ölçülmüş ve gerçek. Ama çalışmanın kendi yazarı iklimi tek sebep saymayı reddediyor: şehir zaten toplumsal, ekonomik ve siyasi baskı altındaydı. Popüler aktarım bu ihtiyatı düşürüyor.",
+    "divergence": "Kuraklık sinyali ile Angkor’da doğrudan yağış ölçümü aynı şey değildir. Kaynak iklimi diğer baskılarla birlikte değerlendirir; tek çöküş nedeni sonucuna ulaşmaz. Önceki kuraklıkta silt birikimi zinciri, makaledeki taşkın dolgusu ve aşınma açıklamasıyla düzeltilmiştir.",
     "divergence_type": [
       "medya-abartisi"
     ],
     "open_questions": [
       "Kuraklıkların çöküşteki payı ne kadar - ağırlık belirlenemiyor."
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "used_in": [
       "angkor"
     ],
     "sources": [
       {
         "id": "buckley-2010-angkor-iklim",
-        "language": "en",
-        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
-          "Buckley, Brendan M."
+          "Buckley, Brendan M.",
+          "Anchukaitis, Kevin J.",
+          "Penny, Daniel",
+          "Fletcher, Roland",
+          "Cook, Edward R.",
+          "Sano, Masaki",
+          "Nam, Le Canh",
+          "Wichienkeeo, Aroonrut",
+          "Minh, Ton That",
+          "Hong, Truong Mai"
         ],
         "year": 2010,
         "title": "Climate as a contributing factor in the demise of Angkor, Cambodia",
-        "container": "PNAS",
+        "container": "PNAS 107(15), 6748–6752",
         "doi": "10.1073/pnas.0910827107",
         "url": "https://www.pnas.org/doi/10.1073/pnas.0910827107",
-        "note": "Başlıktaki 'contributing factor' ifadesi kaydın itirazını zaten taşıyor: yazarlar iklimi TEK sebep saymıyor."
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Tam metin https://pmc.ncbi.nlm.nih.gov/articles/PMC2872380/ üzerinden okundu. 979 yıllık halka kronolojisi ile 759 yıllık erken muson PDSI yeniden kurgusu ayrıdır. Güney Vietnam verisi Angkor’da doğrudan ölçülen yağış değildir; kanal dolgusu şiddetli akışla ilişkilendirilir."
       },
       {
         "id": "penny-2019-angkor-kademeli",
-        "language": "en",
-        "accessed": "2026-09-12",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Penny, Dan",
-          "Hall, Tegan"
+          "Hall, Tegan",
+          "Evans, Damian",
+          "Polkinghorne, Martin"
         ],
         "year": 2019,
         "title": "Geoarchaeological evidence from Angkor, Cambodia, reveals a gradual decline rather than a catastrophic 15th-century collapse",
-        "container": "PNAS",
+        "container": "PNAS 116(11), 4871–4876",
         "doi": "10.1073/pnas.1821460116",
         "url": "https://www.pnas.org/doi/10.1073/pnas.1821460116",
-        "note": "Bu kayıtta karşı kanıt olarak kullanılıyor: sediment kronolojisi gerilemenin kuraklıklardan ÖNCE başladığını gösteriyor, dolayısıyla kuraklığın payı belirlenemiyor."
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Tam makale Flinders University açık arşivindeki PDF üzerinden okundu: https://researchnow-admin.flinders.edu.au/ws/portalfiles/portal/21598157/Penny_Geoarchaeological_P2019.pdf . Güney hendekte tek örnekleme alanından dört karot; ayrıntılı kronoloji AT/01/04/B üzerinden. Nedensellik yönü sonuç bölümünde olasılık olarak önerilir."
       }
     ],
     "evidence": [
       {
-        "id": "agac-halkasi-750yil",
-        "text": "Güney Vietnam servi ağacı halkalarından ~750 yıllık hidroiklim yeniden kurgusu yapıldı.",
+        "id": "hidroiklim-759yil",
+        "text": "979 yıllık halka kronolojisinden 1250–2008 için 759 yıllık Mart–Mayıs PDSI yeniden kurgusu üretildi.",
         "citations": [
           {
             "source_ref": "buckley-2010-angkor-iklim",
-            "locator": "Yöntem ve veri",
+            "locator": "s. 6749, Results, ilk paragraf",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "14yy-kurakligi",
-        "text": "14. yüzyıl ortasındaki kuraklık bölgede sekiz yüzyılın en uzun süreli kuraklığı.",
+        "id": "uzun-kurak-donem",
+        "text": "Geç 14. yüzyıl kuraklığı yeniden kurgudaki en uzun sürekli kurak dönemdir; erken 15. yüzyılda daha kısa, yer yer daha şiddetli bir dönem görülür.",
         "citations": [
           {
             "source_ref": "buckley-2010-angkor-iklim",
-            "locator": "Sonuçlar",
+            "locator": "s. 6749, Results, iki kuraklık ve en düşük PDSI değerleri paragrafı",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "1403-en-kurak",
-        "text": "15. yüzyıl başındaki ikinci kuraklık daha kısa ama daha sert; kayıttaki en kurak yıl 1403.",
+        "id": "1403-pdsi",
+        "text": "1403, bu yeniden kurgudaki en düşük PDSI yılıdır (−7,20); bu kayıt Angkor’da tutulmuş bir yağış günlüğü değildir.",
         "citations": [
           {
             "source_ref": "buckley-2010-angkor-iklim",
-            "locator": "Sonuçlar",
+            "locator": "s. 6749, Results, 1403 ve PDSI −7.20 cümlesi",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "silt-muson-mekanizmasi",
-        "text": "Mekanizma önerisi: kuraklıkta kanallar siltle tıkanır, ardından gelen sert muson yılları su kontrol yapılarına zarar verir.",
+        "id": "taskin-dolgusu",
+        "text": "Makale, kum-çakıl kanal dolgusunu hızlı ve yüksek enerjili akışla ilişkilendirir; radyokarbon örneği dolgunun altındaki organik katmandandır.",
         "citations": [
           {
             "source_ref": "buckley-2010-angkor-iklim",
-            "locator": "Mekanizma tartışması",
-            "support_type": "inference"
+            "locator": "s. 6750, Discussion / Climate and Societal Vulnerability at Angkor, kanal dolgusu ve 1270–1430 tarihlemesi paragrafları",
+            "support_type": "direct"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "tek-sebep-degil",
-        "text": "Çalışmanın kendi başlığı 'katkıda bulunan etken' diyor; yazarlar iklimi tek sebep saymıyor.",
+        "id": "vekil-gosterge",
+        "text": "Ağaçlar Güney Vietnam’daki Bidoup Nui Ba bölgesindedir; sonuç bölgesel PDSI yeniden kurgusudur ve doğrudan Angkor yağış ölçümü değildir.",
         "citations": [
           {
             "source_ref": "buckley-2010-angkor-iklim",
-            "locator": "Başlık ve sonuç bölümü",
+            "locator": "s. 6749, Results; Fig. 1; s. 6751, Materials and Methods",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "gerileme-once-basladi",
-        "text": "2019 sediment kanıtı gerilemenin kuraklıklardan ÖNCE başladığını gösteriyor; kuraklığın payı belirlenemiyor.",
+        "id": "tek-sebep-yok",
+        "text": "Yazarlar iklimi altyapısal, ekonomik ve jeopolitik baskılara ek bir etken olarak değerlendirir.",
+        "citations": [
+          {
+            "source_ref": "buckley-2010-angkor-iklim",
+            "locator": "s. 6750–6751, Discussion / Climate and Societal Vulnerability at Angkor, son paragraflar",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yerel-gerileme-once",
+        "text": "2019 güney hendek göstergelerindeki faaliyet azalması, bu kurak dönemlerden önce başlar; bu kronoloji iklim etkisini ortadan kaldırmaz.",
         "citations": [
           {
             "source_ref": "penny-2019-angkor-kademeli",
-            "locator": "Kronoloji",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "vekil-gosterge",
-        "text": "Ağaç halkası kaydı Güney Vietnam'dan; Angkor havzasının yerel yağışına doğrudan ölçüm değil, bölgesel bir vekil göstergedir.",
-        "citations": [
-          {
-            "source_ref": "buckley-2010-angkor-iklim",
-            "locator": "Veri kaynağı",
-            "support_type": "counter"
+            "locator": "s. 4874–4875, Decline Versus Collapse",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Kaydın kendi itirazı ('yazar iklimi tek sebep saymıyor') artık makalenin başlığına bağlı. Vekil gösterge sınırı eklendi."
+      "notes": "Tam metin okundu; kurak yıl ve süre iddiaları belirli PDSI kaydına sınırlandı. Doğrulanmamış doğrudan alıntı ve kuraklıkta silt birikimi zinciri kaldırıldı. İklimin göreli nedensel ağırlığı belirlenmedi; uzman kabulü değildir."
     }
   },
   {
     "schema_version": 2,
     "id": "angkor-hic-kaybolmadi",
-    "claim": "Angkor Wat hiçbir zaman terk edilmedi; Budist manastırı olarak sürekli kullanıldı ve 16.-17. yüzyıl ziyaretçi kayıtları mevcut.",
+    "claim": "Angkor Wat çevresindeki bazı yerleşim alanları geç 14.–erken 15. yüzyıldan 17.–18. yüzyıla kadar yeniden kullanılmıştır; tapınak başkentin gerilemesinden sonra da dinî önemini korumuştur.",
     "status": "established",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "angkor",
       "kesif-anlatisi",
@@ -4438,11 +4500,13 @@
       }
     },
     "period": {
-      "earliest": 1150,
-      "latest": 1900,
-      "era_label": "Kesintisiz kullanımdan sömürge keşif anlatısına",
+      "earliest": 1301,
+      "latest": 1800,
+      "era_label": "Geç Angkor ve sonraki kullanım evreleri",
       "precision": "range",
       "dating_method": [
+        "radiocarbon",
+        "stratigraphy",
         "historical-record"
       ]
     },
@@ -4455,114 +4519,107 @@
       "tarih",
       "arkeoloji"
     ],
-    "popular_claim": "Angkor Wat cangılda unutulmuş, 19. yüzyılda Fransızlar tarafından keşfedilmiş bir tapınaktır.",
-    "divergence": "Anlatı 19. yüzyıl Fransız sömürge keşif edebiyatının ürünü. Yerli bir bilgiye keşif demek, o bilgiyi yok saymanın kibar biçimi - aynı kalıp Petra ve Machu Picchu için de kullanıldı. 'Hiç kaybolmadı' ile 'hiç gerilemedi' aynı şey değil: kent gerçekten büyük ölçüde boşaldı. Bu kayıt SÜREKLİ KULLANIMI savunuyor, gerilemeyi reddetmiyor.",
+    "popular_claim": "Angkor Wat bütünüyle unutulmuş, 19. yüzyılda yeniden bulunmuştur.",
+    "divergence": "Sonraki yerleşim ve dinî kullanım verileri, herkesin unutması anlatısını desteklemez. Bununla birlikte bütün alanın her yıl kesintisiz kullanıldığı sonucu da kazılardan çıkarılamaz; konut alanındaki tarihleme boşluğu tapınak kullanımının bütünüyle yokluğu değildir.",
     "divergence_type": [
       "somurge-anlatisi"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "used_in": [
       "angkor",
       "ayni-cumlede"
     ],
     "sources": [
       {
-        "id": "zhou-daguan-1297",
-        "language": "zh",
-        "accessed": "2026-09-12",
-        "tier": "primary",
-        "type": "edition",
-        "authors": [
-          "Zhou Daguan"
-        ],
-        "year": 1297,
-        "title": "A Record of Cambodia: The Land and Its People",
-        "publisher": "Silkworm Books (Peter Harris çevirisi, 2007)",
-        "isbn": "9789749511244",
-        "note": "Angkor'u yaşarken gören tek ayrıntılı dış tanıklık (1296-97 elçilik ziyareti). DÖNEM KAYNAĞI: Çinli bir elçinin gözüyle ve kendi kategorileriyle yazılmıştır."
-      },
-      {
-        "id": "evans-2023-angkor-cokus-degerlendirme",
-        "language": "en",
-        "accessed": "2026-09-12",
+        "id": "carter-2019-angkor-wat-kullanim",
         "tier": "peer-reviewed",
-        "type": "chapter",
+        "type": "article",
         "authors": [
-          "Evans, Damian",
-          "Polkinghorne, Martin",
-          "Fletcher, Roland"
+          "Carter, Alison K.",
+          "Stark, Miriam T.",
+          "Quintus, Seth",
+          "Zhuang, Yijie",
+          "Wang, Hong",
+          "Heng, Piphal",
+          "Chhay, Rachna"
         ],
-        "year": 2023,
-        "title": "Perspectives on the 'Collapse' of Angkor and the Khmer Empire",
-        "container": "The Angkorian World",
-        "publisher": "Routledge",
-        "doi": "10.4324/9781351128940-37",
-        "note": "'Angkor sonrası Kamboçya ve ziyaretçi kayıtları literatürü' YER TUTUCUSUNUN yerine kondu. Alanın kendi toplu değerlendirmesi; 'çöküş' kelimesini tırnak içinde kullanması kaydın iddiasıyla aynı yönde."
-      },
-      {
-        "id": "unesco-angkor",
+        "year": 2019,
+        "title": "Temple occupation and the tempo of collapse at Angkor Wat, Cambodia",
+        "container": "PNAS 116(25), 12226–12231",
+        "doi": "10.1073/pnas.1821879116",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1821879116",
         "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "year": 1992,
-        "title": "Angkor - Dünya Mirası kaydı",
-        "institution": "UNESCO",
-        "url": "https://whc.unesco.org/en/list/668/",
-        "note": "Sitenin 1992 Dünya Mirası kaydında yaşayan bir dinî merkez olarak tanımlanması için bağlam kaynağı. Terk edilmediği iddiasının tek dayanağı değil."
+        "accessed": "2026-10-02",
+        "note": "Tam metin https://pmc.ncbi.nlm.nih.gov/articles/PMC6589680/ üzerinden okundu. Tapınak çevresindeki konut höyükleri ile tapınağın dinî işlevi ayrıdır. 16 radyokarbon tarihin modelinde boşluk vardır. Ziyaretçi/kitabe/plan verileri makalenin literatür değerlendirmesinden aktarılır; özgün tarihsel edisyonlar ayrıca okunmadı."
       }
     ],
     "evidence": [
       {
-        "id": "manastir-kullanimi",
-        "text": "Yapı Budist manastırı olarak sürekli kullanıldı; hac ziyaretleri kesilmedi.",
+        "id": "yeniden-kullanim",
+        "text": "Kazı ve 16 radyokarbon tarihin modeli, incelenen konut alanlarının geç 14.–erken 15. yüzyıldan 17.–18. yüzyıla kadar yeniden kullanıldığını destekler.",
         "citations": [
           {
-            "source_ref": "evans-2023-angkor-cokus-degerlendirme",
-            "locator": "Angkor sonrası kullanım",
+            "source_ref": "carter-2019-angkor-wat-kullanim",
+            "locator": "Analysis and Discussion, Fig. 3 ve yeniden kullanım paragrafı; Conclusions",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "1297-dis-taniklik",
-        "text": "Angkor'u yaşarken gören Çinli elçi 1296-97'de kenti ayrıntılı biçimde tarif ediyor - yani 19. yüzyıldan yüzyıllar önce dış dünyada biliniyordu.",
+        "id": "dini-merkez-ve-ziyaretler",
+        "text": "Makalenin tarihsel değerlendirmesi, 16. yüzyıl Avrupa ziyaretlerini ve 17. yüzyıl Japon hacı kitabeleri ile planını aktarır.",
         "citations": [
           {
-            "source_ref": "zhou-daguan-1297",
-            "locator": "Elçilik anlatısı",
-            "support_type": "direct"
+            "source_ref": "carter-2019-angkor-wat-kullanim",
+            "locator": "Angkor Wat: Background, 16.–17. yüzyıl ziyaretçi ve kitabe paragrafı; kaynaklar 34, 48",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "portekizli-japon-kayitlari",
-        "text": "16. ve 17. yüzyıllarda Portekizli ve Japon ziyaretçilerin kayıtları var.",
+        "id": "baskent-sonrasi",
+        "text": "Makale, 15. yüzyıl siyasal merkez kaymasının bölgenin tamamen terk edilmesi ve unutulması anlamına gelmediği sonucuna varır.",
         "citations": [
           {
-            "source_ref": "evans-2023-angkor-cokus-degerlendirme",
-            "locator": "Ziyaretçi kayıtları",
+            "source_ref": "carter-2019-angkor-wat-kullanim",
+            "locator": "Conclusions, son paragraf",
             "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "konut-tarihleme-boslugu",
+        "text": "Geç 12.–erken 13. yüzyıl ile geç 14.–erken 15. yüzyıl arasında konut alanlarının radyokarbon dizisinde boşluk vardır; yeniden düzenleme veya kullanım azalması önerilir.",
+        "citations": [
+          {
+            "source_ref": "carter-2019-angkor-wat-kullanim",
+            "locator": "Analysis and Discussion, Fig. 3 sonrası chronometric gap ve mound reorganization paragrafları",
+            "support_type": "counter"
           }
         ]
       },
       {
-        "id": "unesco-yasayan-merkez",
-        "text": "Site 1992'de Dünya Mirası listesine alındığında da yaşayan bir dinî merkez olarak tanımlandı.",
+        "id": "tapinak-ve-konut-ayrimi",
+        "text": "Araştırma tapınağın bütün ritüellerini her yıl ölçmez; konut alanı tarihlemesiyle hac ziyaretlerinin hiç kesilmediği kanıtlanamaz. Bu sınır kaydın yorumudur.",
         "citations": [
           {
-            "source_ref": "unesco-angkor",
-            "locator": "Kayıt gerekçesi",
+            "source_ref": "carter-2019-angkor-wat-kullanim",
+            "locator": "Timing and Tempo of Collapse, where people live açıklaması; Analysis and Discussion, konut alanı ve dinî işlev ayrımı",
             "support_type": "context"
           }
         ]
       }
     ],
-    "counter_evidence": [],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ. Bu kaydın hiç karşı kanıtı yoktu; ikisi yazıldı - biri kaydın kendi sınırı (boşalma ile kaybolma ayrı şeyler). 17. yüzyıldan kalma Japon çizimi bu kayıtta AYRI BİR KAYNAĞA bağlanmadı; satır kaynaksızdır."
-    }
+      "notes": "Kesintisiz kullanım iddiası yerel yeniden kullanım ve sonraki dinî önemle sınırlandı; orta güven. Zhou Daguan’ın 1297 tarihi 2007 edisyon yılı gibi kullanılmıştı; okunmamış edisyon ve UNESCO güncel sayfasını 1992 raporu sayan atıf bu kayıttan çıkarıldı. Japon planı ve ziyaret bilgisi Carter 2019 üzerinden bağlamdır; özgün edisyonlar okunmadı. Uzman incelemesi bekleniyor."
+    },
+    "open_questions": [
+      "Tarihleme boşluğu hangi alanlarda kullanım kesintisini, hangi alanlarda yeniden düzenlemeyi gösterir?",
+      "Sonraki ritüel ve ziyaret evreleri özgün kitabe ve plan edisyonlarıyla nasıl ayrıntılandırılır?"
+    ]
   },
   {
     "schema_version": 2,

@@ -44,8 +44,8 @@
     "limit": "Arşivler seçici ve korunma koşullarına bağlıdır; yazı öncesi uygulamalar ile işaretlerin anlamı da ayrıntıda tartışmalıdır. Bu nedenle genelleme, mevcut tablet grubuyla sınırlıdır."
   },
   "angkor": {
-    "summary": "Angkor’un su ağının çöküşüyle bittiği standart anlatı, LiDAR ve uzun dönemli yerleşim izleriyle tersinden sınanır. Bulgular, insanların çekilmesinin altyapının bozulmasına yol açmış olabileceğini de hesaba katar; tapınaklar şehrin yalnız küçük bir parçasıdır.",
-    "limit": "Uzaktan algılama ve su ağı izleri peyzaj değişimini gösterir, fakat tek başına bütün çöküş nedenlerini sıralamaz. Kronoloji ve nedenlerin göreli ağırlığı açık sorulardır."
+    "summary": "Angkor’un geniş yerleşim ağı; LiDAR, nüfus modeli, bölgesel iklim kaydı ve yerel kazılar üzerinden incelenir. Kademeli faaliyet azalması ile göçün altyapı bozulmasına yol açtığı önerisi ayrılır; başkentin gerilemesi sonraki kullanımların bütünüyle sona ermesi değildir.",
+    "limit": "3.000 km² araştırma alanı, 370 km² LiDAR kapsamı ve nüfus tahmini farklı ölçülerdir. Güney hendek ve Angkor Wat kazıları bütün bölgeye otomatik genellenemez; kesin nedensellik ve her yıl kesintisiz kullanım kanıtlanmış değildir."
   },
   "tas-tepeler": {
     "summary": "Taş Tepeler, Göbekli Tepe ve Karahan Tepe’de alanların yalnız küçük bir bölümünün açılmış olmasının yorumları nasıl sınırladığını inceler. Kazı çatıları, alan büyüklüğü ve değişen kronoloji atamaları, bulunan kadar bulunmayan verinin de hesaba katılmasını gerektirir.",
