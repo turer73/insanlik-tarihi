@@ -1,7 +1,7 @@
 {
   "iskenderiye": {
     "summary": "İskenderiye Kütüphanesi’nin sonunu tek bir yangına bağlayan anlatı, farklı dönemlere ait olayları birleştirir. Bu dosya yangın öykülerini, Mouseion’a ilişkin tanıklıkları ve metinlerin yeniden kopyalanma sürecini ayrı ayrı ele alır. Antik bir metnin günümüze ulaşması ile bir kurumun ayakta kalması aynı soru değildir. Aşağıdaki kanıt dosyası, bu yazıda kullanılan iddiaları ve kaynak konumlarını incelemenizi sağlar.",
-    "limit": "Strabon’un Mouseion tasviri, kitap koleksiyonunun yangından ne ölçüde etkilendiğini tek başına göstermez. Kayıtların konu uzmanı incelemesi bekleniyor."
+    "limit": "Strabon’un Mouseion tasviri, kitap koleksiyonunun yangından ne ölçüde etkilendiğini tek başına göstermez. Bağımsız uzman incelemesi yapılmadı."
   },
   "kapadokya": {
     "summary": "Kapadokya’nın yer altı yerleşimleri hakkında yapının ilk oyulması, sonraki kullanımları ve mühendislik kapasitesi ayrı sorular gerektirir. Bir kullanım dönemine ilişkin kayıt, bütün yapının başlangıcını tarihlemez. Bu dosya, tünel bağlantısı ve nüfus kapasitesi gibi yaygın iddiaları, hangi ölçümün veya kaynağın gerektiğini belirterek ele alır. Kaynak bağlantısı eksik kayıtlar da aşağıda açıkça işaretlenmiştir.",
@@ -29,7 +29,7 @@
   },
   "petra": {
     "summary": "Petra, oyulmuş anıtları, serbest duran kent yapıları ve su altyapısıyla birlikte okunur. El-Hazne’nin işlev yorumu ile sahibinin kimliği; boru kalıntısı ile akış modeli; antik sel yönlendirmesi ile 1964 modern barajı ayrı kanıtlardır.",
-    "limit": "Dört kayıt seçilmiş Ortloff 2020, ACOR, UNESCO, PDTRA ve Al Kuisi 2024 pasajlarıyla denetlendi; uzman incelemesi bekleyen taslaklardır. IV. Aretas dönemi önerisi mezar sahibini belirlemez. Modern baraj antik yapıyla özdeş veya kesintisiz çalışan yapı sayılmaz. CFD/AHP yeniden çalıştırılmadı; gerçek nüfus, ham kazı/yapım dosyaları ve bütün literatür ayrıca incelenmelidir."
+    "limit": "Dört kayıt seçilmiş Ortloff 2020, ACOR, UNESCO, PDTRA ve Al Kuisi 2024 pasajlarıyla denetlendi; kayıtlar taslaktır ve bağımsız uzman incelemesi yapılmadı. IV. Aretas dönemi önerisi mezar sahibini belirlemez. Modern baraj antik yapıyla özdeş veya kesintisiz çalışan yapı sayılmaz. CFD/AHP yeniden çalıştırılmadı; gerçek nüfus, ham kazı/yapım dosyaları ve bütün literatür ayrıca incelenmelidir."
   },
   "shushtar": {
     "summary": "Şuşter’in su ağı, eski yerel birikim ile Roma etkisinin birlikte değerlendirildiği bir teknoloji aktarımı örneğidir. Yapı tekniği, esir işçi anlatısı ve farklı yapım evreleri ayrı kanıtlar gerektirir.",
@@ -53,7 +53,7 @@
   },
   "machu-picchu": {
     "summary": "Machu Picchu dosyası keşif, özgün ad, kraliyet malikânesi işlevi ve Vilcabamba arayışını ayrı sorular olarak inceler. 2023 DNA verilerinde 34 mezar bireyi, ayrıntılı soy modellerinde 30 birey yer alır. Soy profili etnik kimlikle eşitlenmez; yanacona ve eski aclla yorumu mitma gruplarından ayrılır. 2021 AMS çalışması yaklaşık 1420–1532 kullanım aralığı önerir, tek bir inşa yılı değil.",
-    "limit": "DNA örneklemi bütün nüfusun temsili sayımı değildir. Burger’in AMS çalışması ile Lipa’nın Sacsayhuaman duvar modelinin yalnız yayıncı özetleri okundu. Drenaj emeğinin yaklaşık %60 olduğu anlatısının özgün kitap hesabı ve Vilcabamba kazı kitabının tam pasajları bu denetimde doğrulanamadı. Kayıtlar konu uzmanı incelemesi bekliyor."
+    "limit": "DNA örneklemi bütün nüfusun temsili sayımı değildir. Burger’in AMS çalışması ile Lipa’nın Sacsayhuaman duvar modelinin yalnız yayıncı özetleri okundu. Drenaj emeğinin yaklaşık %60 olduğu anlatısının özgün kitap hesabı ve Vilcabamba kazı kitabının tam pasajları bu denetimde doğrulanamadı. Bağımsız uzman incelemesi yapılmadı."
   },
   "chichen-itza": {
     "summary": "Chichén Itzá’da DNA ve iskelet bulgularının kurbanların kimliğine ilişkin anlatıları nasıl sınadığı, akustik ve astronomi yorumlarıyla karşılaştırılır. Bir etkinin bugün ölçülebilmesi ile yapının o amaçla tasarlandığının gösterilmesi ayrı kanıt sorularıdır.",
@@ -117,6 +117,6 @@
   },
   "amoc": {
     "summary": "Atlantik devrilme akıntısı hakkında hem çöküş uyarısı yapan hem düşüş bulmayan hakemli çalışmalar var ve ikisi de aynı veriye bakıyor. Bu dosya farkın nereden geldiğini ayırır: kesintisiz ölçüm yirmi iki yıllık, ayırt edilmesi gereken doğal salınım ise yaklaşık yetmiş yıllık. Basında dolaşan rakamların çoğu yanlış değil, yanlış büyüklüğe ait. Aşağıdaki kanıt dosyası bu yazıdaki iddiaları ve kaynak konumlarını tek tek incelemenizi sağlar.",
-    "limit": "Kaynakların biri açık erişim olmadığı için özet düzeyinde okundu ve ilgili satırlar böyle işaretlendi. Avrupa soğuması gibi senaryosuz dolaşan rakamlar dosyaya alınmadı. Kayıtların uzman incelemesi bekleniyor."
+    "limit": "Kaynakların biri açık erişim olmadığı için özet düzeyinde okundu ve ilgili satırlar böyle işaretlendi. Avrupa soğuması gibi senaryosuz dolaşan rakamlar dosyaya alınmadı. Bağımsız uzman incelemesi yapılmadı."
   }
 }

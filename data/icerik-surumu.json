@@ -2,17 +2,17 @@
   "not": "İçerik özetine dayalı tarih kaydı. Özet aynıysa tarih korunur; yalnız METİN değiştiğinde yenilenir. style/script blokları özete girmez.",
   "kayitlar": {
     "articles/amoc.html": {
-      "ozet": "bebd2714f78fd431",
-      "lastmod": "2026-09-27",
+      "ozet": "3b91d5d9d08d09f7",
+      "lastmod": "2026-10-02",
       "published": "2026-09-12"
     },
     "articles/angkor.html": {
-      "ozet": "d49881eed8f1f4db",
+      "ozet": "4b14b5988100bad5",
       "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
     "articles/ayni-cumlede.html": {
-      "ozet": "e5264005b31d39d3",
+      "ozet": "4c332fd08fa9dda7",
       "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
@@ -42,8 +42,8 @@
       "published": "2026-09-07"
     },
     "articles/hatirlamadigimiz-felaketler.html": {
-      "ozet": "6ac1e2cb524a7ac5",
-      "lastmod": "2026-09-27",
+      "ozet": "b5d0239bcc13adf2",
+      "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
     "articles/herkesin-saati.html": {
@@ -57,8 +57,8 @@
       "published": "2026-09-07"
     },
     "articles/iskenderiye.html": {
-      "ozet": "b7af2730ce4e6ec2",
-      "lastmod": "2026-09-19",
+      "ozet": "30ec17af23418864",
+      "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
     "articles/kapadokya.html": {
@@ -72,13 +72,13 @@
       "published": "2026-09-07"
     },
     "articles/machu-picchu.html": {
-      "ozet": "dad4315e2d976271",
-      "lastmod": "2026-10-01",
+      "ozet": "65b45db57ce904c9",
+      "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
     "articles/milankovic.html": {
-      "ozet": "664619e07d822be3",
-      "lastmod": "2026-09-19",
+      "ozet": "f097803be85ebb22",
+      "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
     "articles/mit-ve-sicil.html": {
@@ -97,7 +97,7 @@
       "published": "2026-09-07"
     },
     "articles/petra.html": {
-      "ozet": "c4e95f4220057791",
+      "ozet": "c79703e39d03f66b",
       "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
@@ -157,17 +157,17 @@
       "published": "2026-09-09"
     },
     "dist/bulgu-veri-tabani.html": {
-      "ozet": "794e37e659fcf073",
+      "ozet": "1ace0c476ed41e45",
       "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
     "dist/kanit-denetimi.html": {
-      "ozet": "a5516f8c34dda106",
+      "ozet": "35e65da873baf1df",
       "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
     "dist/zaman-cizelgesi.html": {
-      "ozet": "fd7c3a32ddcb0235",
+      "ozet": "b4ea11f2cf6f02c7",
       "lastmod": "2026-10-02",
       "published": "2026-09-07"
     },
