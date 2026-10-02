@@ -1323,7 +1323,7 @@
     "id": "gobekli-karahan-kronoloji",
     "claim": "Göbekli Tepe ile Karahan Tepe arasındaki kronolojik öncelik belirlenmiştir.",
     "status": "unknown",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "gobekli-tepe",
       "karahan-tepe",
@@ -1339,10 +1339,10 @@
       }
     },
     "period": {
-      "earliest": -9750,
-      "latest": -8000,
-      "era_label": "Çanak Çömleksiz Neolitik A-B",
-      "precision": "disputed",
+      "earliest": -9600,
+      "latest": -7750,
+      "era_label": "Göbekli Tepe genel kullanım aralığı; kesin kuruluş kıyası değil",
+      "precision": "approximate",
       "dating_method": [
         "radiocarbon",
         "stratigraphy"
@@ -1364,20 +1364,19 @@
         "name": "Karul, Necmi",
         "role": "excavator",
         "affiliation": "İstanbul Üniversitesi / Taş Tepeler",
-        "year": 2021
+        "year": 2019
       }
     ],
-    "popular_claim": "Göbekli Tepe dünyanın en eski tapınağı ve bölgedeki benzersiz yapıdır.",
-    "divergence": "Karahan Tepe yüzey alanı olarak daha büyük ve kronoloji çözülmemiş. Göbekli Tepe'nin özel konumu kronolojik ya da boyutsal değil, arkeolojik: 1995'te ilk kazılan olduğu için modelin kırıldığı yer orası oldu.",
+    "popular_claim": "Karahantepe’nin Göbekli Tepe’den kesin daha eski olduğu biliniyor.",
+    "divergence": "Proje yazısı Göbekli Tepe için yaklaşık MÖ 9600–7750 kalibre aralığını verir. Karul 2021 Karahantepe yapılarını geç PPNA/erken PPNB olarak değerlendirir; 2025 açıklaması yaklaşık MÖ 9400 başlangıcı bildirir. Bunlar eş kapsamlı kuruluş tarihleri ve ortak bir istatistiksel öncelik sınaması değildir.",
     "divergence_type": [
       "guncellenmemis",
       "turizm-kopyalamasi"
     ],
     "open_questions": [
-      "Hangi site daha eski?",
-      "Kesin öncelik birincil tarihleme yayınıyla belirlenmelidir."
+      "İlk kuruluş evrelerinin numune bağlamları ve kalibre olasılık aralıkları ortak bir modelde nasıl karşılaştırılabilir?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "ayni-cumlede",
@@ -1385,9 +1384,24 @@
     ],
     "sources": [
       {
-        "id": "karul-2021-karahantepe",
+        "id": "tastepeler-gobeklitepe",
         "language": "tr",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
+        "tier": "institutional",
+        "type": "webpage",
+        "authors": [
+          "Clare, Lee",
+          "Breuers, Jonas"
+        ],
+        "title": "Göbeklitepe",
+        "institution": "Taş Tepeler araştırma projesi",
+        "url": "https://tastepeler.org/yerlesmeler/gobeklitepe",
+        "note": "Tarihsiz güncel proje yazısı; erişim tarihi yayın yılı yerine kullanılmıyor."
+      },
+      {
+        "id": "karul-2021-karahantepe",
+        "language": "en",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1395,122 +1409,81 @@
         ],
         "year": 2021,
         "title": "Buried Buildings at Pre-Pottery Neolithic Karahantepe",
-        "container": "Arkeoloji ve Etnografya Dergisi",
-        "publisher": "İstanbul Üniversitesi",
-        "url": "https://dergipark.org.tr/tr/pub/arkeolojiveetnografya/issue/63476/909296",
-        "note": "Karahan Tepe'nin kazı yöneticisinin hakemli yayını. Dosyada bu sitenin kaynağı WIKIPEDIA'ydı ve notunda 'birincil kazı yayınlarıyla değiştirilmeli' yazıyordu; değiştirildi. DOI'si yok, DergiPark kalıcı adresi kullanıldı."
+        "container": "Türk Arkeoloji ve Etnografya Dergisi",
+        "volume": "82",
+        "pages": "21–31",
+        "publisher": "T.C. Kültür ve Turizm Bakanlığı, Kültür Varlıkları ve Müzeler Genel Müdürlüğü",
+        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/article/909296",
+        "note": "Tam metnin ilgili yapı, alan ve dolgu bölümleri incelendi. İngilizce yayın; İstanbul Üniversitesi yazarın kurumudur, derginin yayıncısı değildir. PDF: https://dergipark.org.tr/en/download/article-file/1683122"
       },
       {
-        "id": "karul-2020-guneydogu-neolitik",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
+        "id": "aa-karul-yapi-2025",
+        "language": "tr",
+        "accessed": "2026-10-02",
+        "tier": "popular",
         "type": "article",
         "authors": [
-          "Karul, Necmi"
+          "Ayaydın, Eşber"
         ],
-        "year": 2020,
-        "title": "The Beginning of the Neolithic in Southeast Anatolia",
-        "container": "Documenta Praehistorica",
-        "volume": "47:76-95",
-        "doi": "10.4312/dp.47.5",
-        "note": "Bölgesel çerçeve: Göbekli Tepe'nin benzersiz değil, bir site kümesinin parçası olduğunu ortaya koyan hakemli hat."
-      },
-      {
-        "id": "tas-tepeler-projesi",
-        "language": "tr",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "title": "Taş Tepeler projesi",
-        "institution": "T.C. Kültür ve Turizm Bakanlığı",
-        "url": "https://tastepeler.org/"
+        "year": 2025,
+        "title": "Karahantepe’de amfi tiyatroyu andıran Neolitik mimari yapı ortaya çıkarıldı",
+        "container": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/kultur/karahantepede-amfi-tiyatroyu-andiran-neolitik-mimari-yapi-ortaya-cikarildi/3754601",
+        "note": "26 Kasım 2025. Kazı başkanı Necmi Karul’un doğrudan açıklaması; bağımsız ölçüm veya hakemli kazı raporu yerine kullanılmıyor."
       }
     ],
     "evidence": [
       {
-        "id": "12-cagdas-site",
-        "text": "Taş Tepeler projesi bölgede ~12 çağdaş site tespit etti.",
+        "id": "gobekli-genel-aralik",
+        "text": "Göbekli Tepe proje yazısının genel kullanım aralığı yaklaşık MÖ 9600–7750’dir.",
         "citations": [
           {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Proje kapsamı",
+            "source_ref": "tastepeler-gobeklitepe",
+            "locator": "Konumu ve çevresel özellikleri; kalibre MÖ tarihleri",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "site-kumesi",
-        "text": "Bölgenin Neolitik başlangıcı tek bir siteyle değil, bir site kümesiyle anlatılıyor.",
-        "citations": [
-          {
-            "source_ref": "karul-2020-guneydogu-neolitik",
-            "locator": "Bölgesel çerçeve",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "karul-yapi-tanimi",
-        "text": "Karahan Tepe'nin kazı yöneticisinin hakemli yayını sitenin yapılarını ve gömülme durumunu tarif ediyor.",
+        "id": "karahan-goreli-evre",
+        "text": "2019–2020’de kazılan Karahantepe yapıları geç PPNA/erken PPNB evresine bağlanır.",
         "citations": [
           {
             "source_ref": "karul-2021-karahantepe",
-            "locator": "Yapı tanımları",
+            "locator": "s. 23, The Buildings",
             "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "karul-tarih-beyani",
+        "text": "Karul 2025 açıklamasında yerleşimin yaklaşık MÖ 9400’lerde başlayıp 8000’li yıllara sürdüğünü bildirir.",
+        "citations": [
+          {
+            "source_ref": "aa-karul-yapi-2025",
+            "locator": "26 Kasım 2025, Hayvan heykellerinden insan heykellerine geçiş; ilk Karul açıklaması",
+            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "celiskili-alan-degerleri",
-        "text": "Kaynaklarda Karahan Tepe alanı için 10 ile 32,5 hektar arasında çelişkili değerler dolaşıyor; çoğu tur ve haber sitesi.",
-        "citations": [
-          {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Alan bilgisi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "yuzde-5-kazilmis",
-        "text": "İki site de yaklaşık %5 oranında kazılmış - karşılaştırma iki buzdağının görünen uçlarını ölçmek gibi.",
+        "id": "kurulus-kapsami",
+        "text": "Genel kullanım özetleri ve yapı evreleri, iki bütün yerleşimin ilk kuruluşunu eş yöntemle karşılaştıran ölçümler değildir.",
         "citations": [
           {
             "source_ref": "karul-2021-karahantepe",
-            "locator": "Kazı kapsamı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "celiskili-tarihler",
-        "text": "Bazı kaynaklar Karahan'ı MÖ 9750'ye koyup Göbekli'den eski sayıyor, bazıları tersini söylüyor.",
-        "citations": [
-          {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Tarihleme aktarımları",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "karbon-cagdaslik",
-        "text": "GÜNCELLEME (2026-09-07): Karahan Tepe için verilen karbon aralığı (MÖ 9400-9200) Göbekli Tepe'nin erken evresinin içine düşüyor; veriler çağdaşlığa işaret ediyor.",
-        "citations": [
-          {
-            "source_ref": "karul-2020-guneydogu-neolitik",
-            "locator": "Kronoloji",
-            "support_type": "counter"
+            "locator": "s. 23, yapıların evre ve kot ilişkisi",
+            "support_type": "context",
+            "note": "Kaynak yapı bağlamını verir; karşılaştırma sınırı bu arşivin çıkarımıdır."
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Wikipedia kaynağı kazı yöneticisinin hakemli yayınıyla değiştirildi - dosyanın kendi notu bunu zaten istiyordu. KAYNAK DÜZELTMESİ: bu kaydın Karahan Tepe kaynağı WIKIPEDIA'ydı ve kendi notunda 'birincil kazı yayınlarıyla değiştirilmeli' yazıyordu. Değiştirildi."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. Yaklaşık başlangıç özetinin Göbekli Tepe için daha erken olması gizlenmiyor; bütün site önceliğinin kesin kanıtı sayılmıyor. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
@@ -4642,10 +4615,10 @@
       }
     },
     "period": {
-      "earliest": -9500,
-      "latest": -8000,
-      "era_label": "Çanak Çömleksiz Neolitik A-B",
-      "precision": "range",
+      "earliest": -9600,
+      "latest": -7750,
+      "era_label": "Göbekli Tepe genel kullanım aralığı; kesin kuruluş kıyası değil",
+      "precision": "approximate",
       "dating_method": [
         "radiocarbon",
         "stratigraphy"
@@ -4666,143 +4639,91 @@
         "name": "Karul, Necmi",
         "role": "excavator",
         "affiliation": "İstanbul Üniversitesi / Taş Tepeler",
-        "year": 2021
+        "year": 2019
       }
     ],
     "popular_claim": "Göbekli Tepe dünyanın ilk tapınağıdır; önce tapınak geldi, sonra şehir.",
-    "divergence": "Bu 1990'ların yorumuydu ve kazının kendisi tarafından zayıflatıldı. 2014 sonrası sarnıçlar, çok sayıda öğütme taşı ve konut olabilecek yapılar bulundu; 2025-26'da kuzey kesimde iç düzenleri konut gibi okunan yapılar açıldı. Popüler aktarım eski cümleyi tekrarlamaya devam ediyor.",
+    "divergence": "Güncel proje metni Göbekli Tepe’de bazı yapıları konut olarak yorumlar. Karahantepe sayfası kamusal ve domestik yapıları ayırır. Bu bulgular yerleşim ile ritüeli birbirini dışlayan kategoriler sayan anlatıyı desteklemez; bütün yapılar aynı işlevde sayılmaz.",
     "divergence_type": [
       "guncellenmemis",
       "turizm-kopyalamasi"
     ],
     "open_questions": [
-      "Yerleşim ve tören işlevlerinin oranı nedir?"
+      "Konut yorumu yapılan yapılar hangi mevsimlerde ve hangi evrelerde kullanıldı?",
+      "Kamusal yapıların kullanımında farklı grupların rolleri neydi?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "tas-tepeler"
     ],
     "sources": [
       {
-        "id": "banning-2011-so-fair-a-house",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Banning, E. B."
-        ],
-        "year": 2011,
-        "title": "So Fair a House: Göbekli Tepe and the Identification of Temples in the Pre-Pottery Neolithic of the Near East",
-        "container": "Current Anthropology",
-        "volume": "52(5):619-660",
-        "doi": "10.1086/661207",
-        "note": "'Tapınak mı yerleşim mi' tartışmasının hakemli ekseni. 'Göbekli Tepe dolgu oluşumu üzerine tartışma literatürü' YER TUTUCUSUNUN yerine de bu kondu - ilk denediğim DOI (10.1086/659477) 404 verdi, doğrusu crossref başlık aramasından alındı."
-      },
-      {
-        "id": "tas-tepeler-projesi",
+        "id": "tastepeler-gobeklitepe",
         "language": "tr",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "title": "Taş Tepeler projesi",
-        "institution": "T.C. Kültür ve Turizm Bakanlığı",
-        "url": "https://tastepeler.org/"
-      },
-      {
-        "id": "dai-tepe-telegrams",
-        "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Tepe Telegrams - Göbekli Tepe Araştırma Projesi",
-        "institution": "Alman Arkeoloji Enstitüsü (DAI)",
-        "url": "https://www.dainst.blog/the-tepe-telegrams/",
-        "note": "Kazı ekibinin kendi yayın kanalı. Hakemli değil ama ekibin güncel konumunu birinci elden veriyor."
+        "authors": [
+          "Clare, Lee",
+          "Breuers, Jonas"
+        ],
+        "title": "Göbeklitepe",
+        "institution": "Taş Tepeler araştırma projesi",
+        "url": "https://tastepeler.org/yerlesmeler/gobeklitepe",
+        "note": "Tarihsiz güncel proje yazısı; erişim tarihi yayın yılı yerine kullanılmıyor."
+      },
+      {
+        "id": "tastepeler-karahantepe",
+        "language": "tr",
+        "accessed": "2026-10-02",
+        "tier": "institutional",
+        "type": "webpage",
+        "authors": [
+          "Karul, Necmi"
+        ],
+        "title": "Karahantepe",
+        "institution": "Taş Tepeler araştırma projesi",
+        "url": "https://tastepeler.org/yerlesmeler/karahantepe",
+        "note": "Tarihsiz güncel proje yazısı; AD ve AB ile kamusal/domestik yapılar ayrı başlıklarda anlatılıyor."
       }
     ],
-    "evidence": [
-      {
-        "id": "2011-itirazi",
-        "text": "'Önce tapınak, sonra şehir' yorumuna hakemli itiraz 2011'de yayımlandı: yapıların konut olarak okunabileceği savunuldu.",
-        "citations": [
-          {
-            "source_ref": "banning-2011-so-fair-a-house",
-            "locator": "Ana argüman",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "sarnic-ogutme-tasi",
-        "text": "Sarnıçlar ve yoğun öğütme taşı buluntusu gündelik yaşam göstergesidir.",
-        "citations": [
-          {
-            "source_ref": "banning-2011-so-fair-a-house",
-            "locator": "Gündelik yaşam kanıtları",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "2025-26-kuzey-yapilar",
-        "text": "2025-26 sezonunda ana alanın kuzeyinde iç düzenleri konut gibi okunan yapılar açıldı; erozyon üst duvarları aşındırdığı için plana hızla ulaşıldı.",
-        "citations": [
-          {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Sezon duyurusu",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "jeofizik-kuzey",
-        "text": "Jeofizik kuzey alanda daha çok yapı gösteriyor.",
-        "citations": [
-          {
-            "source_ref": "dai-tepe-telegrams",
-            "locator": "Jeofizik sonuçları",
-            "support_type": "direct"
-          }
-        ]
-      }
-    ],
+    "evidence": [],
     "counter_evidence": [
       {
-        "id": "yalnizca-yerlesim-degil",
-        "text": "Anıtsal çevreler açıkça tören işlevi taşıyor; 'yalnızca yerleşim' de doğru değil.",
+        "id": "gobekli-konut",
+        "text": "T biçimli sütun içermeyen bazı Göbekli Tepe yapıları konut olarak yorumlanır.",
         "citations": [
           {
-            "source_ref": "banning-2011-so-fair-a-house",
-            "locator": "Karşı görüşlerin tartışması",
+            "source_ref": "tastepeler-gobeklitepe",
+            "locator": "Arkeolojik araştırmalar; T biçimli sütun içermeyen yapılar",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "yayin-gelmedi",
-        "text": "Yeni kesimlerin ayrıntılı bilimsel yayını henüz gelmedi; yorum ön niteliktedir.",
+        "id": "karahan-domestik",
+        "text": "Karahantepe’de domestik yapılar ile kamusal yapılar ayrı incelenir; bu, bölgesel karşılaştırma bağlamıdır.",
         "citations": [
           {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Yayın durumu",
-            "support_type": "counter"
+            "source_ref": "tastepeler-karahantepe",
+            "locator": "Domestik Yapılar ve Kamusal Yapılar",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ: kayıt yalnızca duyurulara ve kaynaksız bir 'haberler' girdisine dayanıyordu. Banning 2011 hakemli ekseni getirdi; yeni bulguların hakemli dayanağının olmadığı işaretlendi. KAYNAK DÜZEYİ: bu kaydın yeni bulgulara dair satırları sezon duyuruları ve kazı ekibinin kendi kanalına dayanıyor. Hakemli dayanak yalnızca 2011 tarihli itiraz; 2025-26 bulguları için hakemli kaynak yok."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. 2011 tarihli Banning yayınına 2014 sonrası veya 2025–2026 bulguları atfedilmiyor. Bu turda doğrulanmayan yeni kuzey kesim ayrıntıları çıkarıldı. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "karahan-tepe-basamakli-yapi",
-    "claim": "Karahan Tepe'de merkezî bir odak çevresinde üç sıra basamaklı taş sekilikten oluşan, ~17 m çapında dairesel bir yapı açığa çıkarıldı.",
-    "status": "established",
-    "confidence": "low",
+    "claim": "Karahantepe’de yaklaşık 17 m çaplı, odak noktası karşısında üç basamaklı geniş sekileri bulunan bir yapı açığa çıkarıldı.",
+    "status": "unknown",
+    "confidence": "medium",
     "topic": [
       "karahan-tepe",
       "tas-tepeler",
@@ -4817,16 +4738,6 @@
         "lon": 39.29
       }
     },
-    "period": {
-      "earliest": -9750,
-      "latest": -8000,
-      "era_label": "Çanak Çömleksiz Neolitik",
-      "precision": "disputed",
-      "dating_method": [
-        "radiocarbon",
-        "stratigraphy"
-      ]
-    },
     "disciplines": [
       "arkeoloji",
       "mimarlik"
@@ -4836,29 +4747,44 @@
         "name": "Karul, Necmi",
         "role": "excavator",
         "affiliation": "İstanbul Üniversitesi",
-        "year": 2025
+        "year": 2019
       }
     ],
     "popular_claim": "Karahan Tepe'de 11.000 yıllık bir amfitiyatro bulundu.",
-    "divergence": "Yapı gerçek ve basamaklı düzeni belgeli. 'Amfitiyatro' ise bir BENZETMEDİR, tanımlama değil: terim Roma dünyasının gösteri mimarisine ait bir kategoriyi Neolitik bir yapıya taşıyor ve işlevi baştan varsaymış oluyor. Kazı henüz ayrıntılı yayın vermedi; yapının ne için kullanıldığı bilinmiyor.",
+    "divergence": "17 m ve üç basamak bilgisi, Karul’un 26 Kasım 2025 doğrudan basın açıklamasında bulunur. Amfitiyatro/odeon benzetmesi bir kullanım yorumudur. 2021’de yayımlanan AD’nin 23 m ölçüsü bu yeni yapının bilimsel ölçüm raporu değildir.",
     "divergence_type": [
       "kategori-hatasi",
       "medya-abartisi"
     ],
     "open_questions": [
-      "Yapının işlevi nedir?",
-      "Ayrıntılı yayın ne zaman gelecek?"
+      "2025 yapısının ayrıntılı planı, yapı kodu, ölçüm raporu ve kullanım tabakaları hangi yayında belgeleniyor?",
+      "Oturma düzeninin somut kullanımını hangi buluntular ayırt eder?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "tas-tepeler"
     ],
     "sources": [
       {
-        "id": "karul-2021-karahantepe",
+        "id": "aa-karul-yapi-2025",
         "language": "tr",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
+        "tier": "popular",
+        "type": "article",
+        "authors": [
+          "Ayaydın, Eşber"
+        ],
+        "year": 2025,
+        "title": "Karahantepe’de amfi tiyatroyu andıran Neolitik mimari yapı ortaya çıkarıldı",
+        "container": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/kultur/karahantepede-amfi-tiyatroyu-andiran-neolitik-mimari-yapi-ortaya-cikarildi/3754601",
+        "note": "26 Kasım 2025. Kazı başkanı Necmi Karul’un doğrudan açıklaması; bağımsız ölçüm veya hakemli kazı raporu yerine kullanılmıyor."
+      },
+      {
+        "id": "karul-2021-karahantepe",
+        "language": "en",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -4866,101 +4792,49 @@
         ],
         "year": 2021,
         "title": "Buried Buildings at Pre-Pottery Neolithic Karahantepe",
-        "container": "Arkeoloji ve Etnografya Dergisi",
-        "publisher": "İstanbul Üniversitesi",
-        "url": "https://dergipark.org.tr/tr/pub/arkeolojiveetnografya/issue/63476/909296",
-        "note": "Karahan Tepe'nin kazı yöneticisinin hakemli yayını. Dosyada bu sitenin kaynağı WIKIPEDIA'ydı ve notunda 'birincil kazı yayınlarıyla değiştirilmeli' yazıyordu; değiştirildi. DOI'si yok, DergiPark kalıcı adresi kullanıldı."
-      },
-      {
-        "id": "tas-tepeler-projesi",
-        "language": "tr",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "title": "Taş Tepeler projesi",
-        "institution": "T.C. Kültür ve Turizm Bakanlığı",
-        "url": "https://tastepeler.org/"
+        "container": "Türk Arkeoloji ve Etnografya Dergisi",
+        "volume": "82",
+        "pages": "21–31",
+        "publisher": "T.C. Kültür ve Turizm Bakanlığı, Kültür Varlıkları ve Müzeler Genel Müdürlüğü",
+        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/article/909296",
+        "note": "Tam metnin ilgili yapı, alan ve dolgu bölümleri incelendi. İngilizce yayın; İstanbul Üniversitesi yazarın kurumudur, derginin yayıncısı değildir. PDF: https://dergipark.org.tr/en/download/article-file/1683122"
       }
     ],
     "evidence": [
       {
-        "id": "ana-kayaya-oyulmus",
-        "text": "Taban doğrudan ana kayaya oyulmuş.",
+        "id": "2025-yapi-beyani",
+        "text": "Kazı başkanı yeni yapının yaklaşık çapını ve üç basamaklı geniş sekilerini bildirir.",
         "citations": [
           {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Sezon bulguları",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "uc-sira-sekilik",
-        "text": "Merkezî odak çevresinde üç sıra basamaklı sekilik - tiyatro oturma düzenini andırıyor.",
-        "citations": [
-          {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Sezon bulguları",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "insan-yuzu-tasvirleri",
-        "text": "Karahan Tepe, Neolitik dünyada bilinen en yoğun insan yüzü tasvirlerinden birini barındırıyor.",
-        "citations": [
-          {
-            "source_ref": "karul-2021-karahantepe",
-            "locator": "Buluntu tanımları",
-            "support_type": "direct"
+            "source_ref": "aa-karul-yapi-2025",
+            "locator": "26 Kasım 2025, Karul’un 17 metre ile başlayan açıklaması",
+            "support_type": "claim-origin"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "hakemli-yayin-yok",
-        "text": "Bulgu sezon duyuruları ve haber aktarımları üzerinden dolaşıyor; ayrıntılı hakemli yayın henüz yok.",
-        "citations": [
-          {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Yayın durumu",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "amfitiyatro-benzetmesi",
-        "text": "Ölçüler ve 'amfitiyatro' benzetmesi ön niteliktedir; yayın çıktığında değişebilir.",
-        "citations": [
-          {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Ön değerlendirme",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "islev-bilinmiyor",
-        "text": "Yapının işlevi bilinmiyor - toplanma, tören ve karar alma önerileri var, hiçbiri kanıtlanmadı.",
+        "id": "ad-ayri-kaynak",
+        "text": "2021 makalesinin AD tanımı 23 m ve iki basamaklı sekiler içerir; bu eski yapı tanımı 2025 bulgusunu doğrulayan bağımsız veri sayılamaz.",
         "citations": [
           {
             "source_ref": "karul-2021-karahantepe",
-            "locator": "İşlev tartışması",
-            "support_type": "counter"
+            "locator": "s. 23, Str. AD",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Künyesiz popüler kaynak çıkarıldı. Basamaklı yapının kendisi hâlâ yalnız sezon duyurularına dayanıyor - bu açıkça yazıldı, kaynak yükseltilmiş gibi gösterilmedi. KAYNAK DEĞİŞİKLİĞİ: bu kayıt 'Karahan Tepe basamaklı yapı aktarımları' adlı, künyesi olmayan bir popüler girdiye dayanıyordu. O kaynak çıkarıldı; yerine kazı yöneticisinin hakemli yayını ve proje sayfası kondu."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. Açık soru sınıflaması, açıklamanın bulunamadığı veya yapının yok olduğu anlamında kullanılmıyor: fiziksel ölçü/işlevi bağımsız denetleyebilecek ayrıntılı kazı raporu bu turda doğrulanamadı. Beyan açıkça bildirilen bulgu olarak aktarılıyor. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "gobekli-tepe-kasitli-gomulme",
-    "claim": "Göbekli Tepe'nin yapıları kasten toprakla doldurulup gömüldü.",
+    "claim": "Göbekli Tepe’nin bütün anıtsal yapıları aynı kasıtlı gömme süreciyle kapatıldı.",
     "status": "contested",
     "confidence": "medium",
     "topic": [
@@ -4978,13 +4852,13 @@
       }
     },
     "period": {
-      "earliest": -9500,
-      "latest": -8000,
-      "era_label": "Çanak Çömleksiz Neolitik",
-      "precision": "range",
+      "earliest": -9600,
+      "latest": -7750,
+      "era_label": "Göbekli Tepe genel kullanım aralığı; kesin kuruluş kıyası değil",
+      "precision": "approximate",
       "dating_method": [
-        "stratigraphy",
-        "radiocarbon"
+        "radiocarbon",
+        "stratigraphy"
       ]
     },
     "disciplines": [
@@ -4992,111 +4866,61 @@
       "jeoarkeoloji"
     ],
     "popular_claim": "Yapılar bilerek gömüldüğü için bu kadar iyi korundu.",
-    "divergence": "Kasıtlı doldurma uzun süre standart açıklamaydı ve popüler anlatıya yerleşti. Sonraki çalışmalar yamaç erozyonu ve doğal dolgu ihtimalini ciddi biçimde gündeme getirdi.",
+    "divergence": "Topografya çalışması çökme, erozyonla taşınan dolgular ve insan müdahalesinin yapılar arasında değişebileceğini tartışır. Tüm yapılar için tek kapatma senaryosu kurulamaz; bu, her kasıtlı doldurma ihtimalinin reddi de değildir.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "open_questions": [
-      "Dolgu kasıtlı mı doğal mı - ayrıştırılabilir mi?"
+      "Her yapıda dolgu evreleri ve insan müdahalesinin payı nasıl ayrılabilir?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "tas-tepeler"
     ],
     "sources": [
       {
-        "id": "banning-2011-so-fair-a-house",
+        "id": "kinzel-clare-sonmez-topografya",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
-          "Banning, E. B."
+          "Kinzel, Moritz",
+          "Clare, Lee",
+          "Sönmez, Devrim"
         ],
-        "year": 2011,
-        "title": "So Fair a House: Göbekli Tepe and the Identification of Temples in the Pre-Pottery Neolithic of the Near East",
-        "container": "Current Anthropology",
-        "volume": "52(5):619-660",
-        "doi": "10.1086/661207",
-        "note": "'Tapınak mı yerleşim mi' tartışmasının hakemli ekseni. 'Göbekli Tepe dolgu oluşumu üzerine tartışma literatürü' YER TUTUCUSUNUN yerine de bu kondu - ilk denediğim DOI (10.1086/659477) 404 verdi, doğrusu crossref başlık aramasından alındı."
-      },
-      {
-        "id": "dai-tepe-telegrams",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Tepe Telegrams - Göbekli Tepe Araştırma Projesi",
-        "institution": "Alman Arkeoloji Enstitüsü (DAI)",
-        "url": "https://www.dainst.blog/the-tepe-telegrams/",
-        "note": "Kazı ekibinin kendi yayın kanalı. Hakemli değil ama ekibin güncel konumunu birinci elden veriyor."
-      },
-      {
-        "id": "tas-tepeler-projesi",
-        "language": "tr",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "title": "Taş Tepeler projesi",
-        "institution": "T.C. Kültür ve Turizm Bakanlığı",
-        "url": "https://tastepeler.org/"
+        "year": 2024,
+        "title": "Built on Rock – Towards a Reconstruction of the ›Neolithic‹ Topography of Göbekli Tepe",
+        "container": "Istanbuler Mitteilungen",
+        "volume": "70 (2020)",
+        "pages": "9–45",
+        "doi": "10.34780/n42qpb15",
+        "url": "https://publications.dainst.org/journals/istmitt/article/view/4708",
+        "note": "Çevrimiçi yayın 26 Kasım 2024; basılı cilt yılı 2020. Topografya, dolgu ve sonuç bölümleri incelendi; ham ölçümler yeniden analiz edilmedi."
       }
     ],
     "evidence": [
       {
-        "id": "dolgu-icinde-korunmus",
-        "text": "Yapıların dolgu içinde ve iyi korunmuş hâlde bulunması, kasıtlı doldurma yorumunun çıkış noktasıydı.",
+        "id": "eski-gomme-yorumu",
+        "text": "Makale önceki ritüel gömme açıklamasını tartışmaya açar.",
         "citations": [
           {
-            "source_ref": "banning-2011-so-fair-a-house",
-            "locator": "Dolgu tartışması",
+            "source_ref": "kinzel-clare-sonmez-topografya",
+            "locator": "s. 10–11, araştırma çerçevesi",
             "support_type": "claim-origin"
-          }
-        ]
-      },
-      {
-        "id": "ekip-konumu-guncellendi",
-        "text": "Kazı ekibi dolgu oluşumu konusundaki konumunu kendi yayın kanalında güncelledi.",
-        "citations": [
-          {
-            "source_ref": "dai-tepe-telegrams",
-            "locator": "Dolgu yazıları",
-            "support_type": "direct"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "erozyon-ayni-sonucu-uretir",
-        "text": "Yamaç erozyonu ve doğal dolgu aynı sonucu üretebilir.",
+        "id": "farkli-dolgu-gecmisleri",
+        "text": "Sonuçta bazı yapılar için çökme ve erozyon, farklı örneklerde insan müdahalesi ile karma dolgu süreçleri önerilir.",
         "citations": [
           {
-            "source_ref": "banning-2011-so-fair-a-house",
-            "locator": "Oluşum süreçleri",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "erozyon-gozlendi",
-        "text": "2025-26'da kuzey kesimde erozyonun üst duvarları zaten aşındırdığı gözlendi.",
-        "citations": [
-          {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Sezon gözlemi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "tartisma-acik",
-        "text": "Tartışma kapanmış değil; iki açıklama da sahada birlikte iş görmüş olabilir.",
-        "citations": [
-          {
-            "source_ref": "dai-tepe-telegrams",
-            "locator": "Tartışmanın durumu",
+            "source_ref": "kinzel-clare-sonmez-topografya",
+            "locator": "s. 34–36, Conclusion; özellikle s. 36, maddeler 8–9",
             "support_type": "counter"
           }
         ]
@@ -5104,15 +4928,15 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "YER TUTUCU DEĞİŞTİ ama TAM DEĞİL: dolgu oluşumuna ADANMIŞ hakemli bir kaynak bulunamadı. Konan kaynağın neyi karşılayıp neyi karşılamadığı kayda yazıldı - yer tutucuyu gerçek kaynak gibi göstermek daha kötü olurdu. KAYNAK DÜZEYİ: 'Göbekli Tepe dolgu oluşumu üzerine tartışma literatürü' diye yazılmış YER TUTUCUNUN yerine Banning 2011 kondu. Banning doğrudan dolgu oluşumu makalesi değil; tapınak yorumunu sorgularken dolguyu da ele alan hakemli eksendir. Dolgu oluşumuna adanmış hakemli bir kaynak bu turda bulunamadı."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. Çevrimiçi 2024 tarihli makalenin cilt yılı 2020’dir. Olası doğal süreçler tüm sitenin yalnız doğal gömüldüğü kesin sonucuna çevrilmiyor. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "gobekli-tepe-43-sutun-kuyruklu-yildiz",
     "claim": "Göbekli Tepe'nin 43 numaralı sütunundaki kabartmalar MÖ ~10.950'de bir kuyruklu yıldız çarpmasını kaydeder.",
-    "status": "refuted",
-    "confidence": "high",
+    "status": "contested",
+    "confidence": "medium",
     "topic": [
       "gobekli-tepe",
       "sozde-arkeoloji",
@@ -5128,13 +4952,13 @@
       }
     },
     "period": {
-      "earliest": -9500,
-      "latest": 2017,
-      "era_label": "Yapının tarihi ve modern iddia",
-      "precision": "range",
+      "earliest": -9600,
+      "latest": -7750,
+      "era_label": "Göbekli Tepe genel kullanım aralığı; kesin kuruluş kıyası değil",
+      "precision": "approximate",
       "dating_method": [
         "radiocarbon",
-        "historical-record"
+        "stratigraphy"
       ]
     },
     "disciplines": [
@@ -5142,19 +4966,19 @@
       "astronomi"
     ],
     "popular_claim": "Akbaba Taşı bir kuyruklu yıldız çarpmasının astronomik kaydıdır.",
-    "divergence": "2017'de öne sürüldü ve popüler yapımlarda kanıtlanmış gibi dolaşıyor. Sitenin kendi kazı ekibi yayımlanmış bir yanıt verdi.",
+    "divergence": "Hayvan figürlerinden tarih okuma önerisine kronoloji, seçilmiş figürler ve kültürler arası takımyıldız eşleştirmesi üzerinden itiraz edilir. Önerinin yazarları istatistik yorumunu ve geçmiş olay hafızasını savunur. Eleştiri, kesin yanlışlama veya genel Younger Dryas nedenlerinin çözümü sayılmıyor.",
     "divergence_type": [
       "medya-abartisi"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "used_in": [
       "tas-tepeler"
     ],
     "sources": [
       {
-        "id": "sweatman-2017-gobekli-arkeoastronomi",
+        "id": "sweatman-tsikritsis-2017",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -5164,103 +4988,100 @@
         "year": 2017,
         "title": "Decoding Göbekli Tepe with Archaeoastronomy: What Does the Fox Say?",
         "container": "Mediterranean Archaeology and Archaeometry",
-        "volume": "17(1):233-250",
+        "volume": "17(1)",
+        "pages": "233–250",
         "doi": "10.5281/zenodo.400780",
-        "note": "İDDİANIN KAYNAĞI, kanıt değil. DOI Zenodo'dadır (DataCite), crossref'te görünmez - ilk doğrulama turunda tam bu yüzden '404' diye düştü. OpenAlex başlık ve yazarla eşleşmeyi doğruladı."
+        "url": "https://zenodo.org/records/400780",
+        "note": "Bu turda özgün öneri Zenodo’daki yazar özetinden kontrol edildi; makalenin tam istatistik hesabı yeniden incelenmedi."
       },
       {
-        "id": "notroff-2017-akbaba-yaniti",
+        "id": "notroff-etal-2017",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Notroff, Jens",
           "Dietrich, Oliver",
-          "Dietrich, Laura"
+          "Dietrich, Laura",
+          "Tvetmarken, Cecilie Lelek",
+          "Kinzel, Moritz",
+          "Schlindwein, Jonas",
+          "Sönmez, Devrim",
+          "Clare, Lee"
         ],
         "year": 2017,
-        "title": "More Than a Vulture: A Response to Sweatman and Tsikritsis",
+        "title": "More than a Vulture: A Response to Sweatman and Tsikritsis",
         "container": "Mediterranean Archaeology and Archaeometry",
         "volume": "17(2)",
+        "pages": "57–63",
         "doi": "10.5281/zenodo.581724",
-        "note": "Kazı ekibinin yayımlanmış yanıtı. 'Göbekli Tepe kazı ekibinin yayımlanmış yanıtı' YER TUTUCUSUNUN yerine kondu."
+        "url": "https://jensnotroff.com/wp-content/uploads/2017/06/ii-17_37_maa-172_response-to-sweatman.pdf",
+        "note": "S. 57–74 numaralı ortak Matters Arising dosyasındaki ilk katkı s. 57–63’tür; dosyanın tamamı tek makale veya tek yazar grubu sayılmıyor."
+      },
+      {
+        "id": "sweatman-tsikritsis-yanit-2017",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Sweatman, Martin B.",
+          "Tsikritsis, Dimitrios"
+        ],
+        "year": 2017,
+        "title": "Comment on “More than a Vulture: A Response to Sweatman and Tsikritsis”",
+        "container": "Mediterranean Archaeology and Archaeometry",
+        "volume": "17(2)",
+        "pages": "63–67",
+        "url": "https://jensnotroff.com/wp-content/uploads/2017/06/ii-17_37_maa-172_response-to-sweatman.pdf",
+        "note": "Aynı Matters Arising dosyasında ayrı yazar yanıtı. S. 64–66 tartışması incelendi; ilk katkının DOI’si bu yanıta ayrıca atanmıyor."
       }
     ],
     "evidence": [
       {
-        "id": "2017-iddiasi",
-        "text": "İddia 2017'de arkeoastronomi çerçevesiyle öne sürüldü: Akbaba Taşı'ndaki hayvan figürleri takımyıldızlara eşlenip bir çarpma tarihi okundu.",
+        "id": "ozgun-oneri",
+        "text": "Yazar özeti 43 numaralı sütunu MÖ 10.950 ±250 için bir tarih işareti olarak yorumlar.",
         "citations": [
           {
-            "source_ref": "sweatman-2017-gobekli-arkeoastronomi",
-            "locator": "Ana argüman",
+            "source_ref": "sweatman-tsikritsis-2017",
+            "locator": "Zenodo Description; makalenin yazar özeti",
             "support_type": "claim-origin"
           }
         ]
       },
       {
-        "id": "ekip-yaniti",
-        "text": "Sitenin kendi kazı ekibi yayımlanmış bir yanıt verdi.",
+        "id": "yazar-yaniti",
+        "text": "Yazar yanıtı istatistiksel yorumu savunur ve daha eski olayın hatırlanabileceğini ileri sürer.",
         "citations": [
           {
-            "source_ref": "notroff-2017-akbaba-yaniti",
-            "locator": "Yanıtın kendisi",
-            "support_type": "direct"
+            "source_ref": "sweatman-tsikritsis-yanit-2017",
+            "locator": "s. 64, Introduction; s. 65, Comments 2–4",
+            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "eslestirme-keyfi",
-        "text": "Hayvan-takımyıldız eşleştirmesi keyfîdir; hangi figürün hangi takımyıldıza karşılık geldiği önceden belirlenmiş bir kurala dayanmıyor.",
+        "id": "arkeolojik-itirazlar",
+        "text": "Kazı ekibinin yanıtı, yapı kronolojisi ve figür seçimi ile takımyıldızların kültürler boyunca sabit kabul edilmesini sorgular.",
         "citations": [
           {
-            "source_ref": "notroff-2017-akbaba-yaniti",
-            "locator": "Eşleştirme eleştirisi",
+            "source_ref": "notroff-etal-2017",
+            "locator": "s. 59–61; özellikle s. 60, maddeler 2–4",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "yapi-sonraya-ait",
-        "text": "Sütunun bulunduğu yapı iddia edilen tarihten sonraya aittir.",
-        "citations": [
-          {
-            "source_ref": "notroff-2017-akbaba-yaniti",
-            "locator": "Tarihleme itirazı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "yontem-yanlislanamaz",
-        "text": "Yöntem hemen hemen her kabartma kümesine uygulanıp bir sonuç üretebilir - yani yanlışlanamaz.",
-        "citations": [
-          {
-            "source_ref": "notroff-2017-akbaba-yaniti",
-            "locator": "Yöntem eleştirisi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "tartisma-karsilikli",
-        "text": "Tartışma karşılıklı devam etti: iddia sahipleri yanıta da cevap verdi. Bu kayıt tartışmayı kapanmış saymıyor, ağırlığın nerede olduğunu söylüyor.",
-        "citations": [
-          {
-            "source_ref": "sweatman-2017-gobekli-arkeoastronomi",
-            "locator": "Tartışmanın seyri",
-            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "İki YER TUTUCU da gerçek künyeyle değişti. Zenodo DOI'leri crossref'te görünmediği için ilk turda yanlışlıkla elenmişlerdi; OpenAlex doğruladı."
-    }
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. Kesin yanlışlama hükmü, orta güvenli tartışmalı yorum olarak daraltıldı. Özgün istatistik hesabı ve Younger Dryas nedenlerinin bütün literatürü yeniden analiz edilmedi. Notroff katkısının sekiz yazarı, ilgili katkının s. 57–63 aralığı ve ayrı yazar yanıtı ayrıldı. Bağımsız uzman incelemesi yapılmadı."
+    },
+    "open_questions": [
+      "Eşleştirme yöntemi seçilmemiş figürler ve bağımsız bağlamlarla nasıl sınanabilir?"
+    ]
   },
   {
     "schema_version": 2,
@@ -6905,7 +6726,7 @@
     "schema_version": 2,
     "id": "gobekli-karahan-alan-karsilastirmasi",
     "claim": "Karahan Tepe yüzey alanı olarak Göbekli Tepe'den büyüktür.",
-    "status": "refuted",
+    "status": "unknown",
     "confidence": "medium",
     "topic": [
       "gobekli-tepe",
@@ -6924,9 +6745,9 @@
     },
     "period": {
       "earliest": -9600,
-      "latest": -8000,
-      "era_label": "Çanak Çömleksiz Neolitik A-B",
-      "precision": "range",
+      "latest": -7750,
+      "era_label": "Göbekli Tepe genel kullanım aralığı; kesin kuruluş kıyası değil",
+      "precision": "approximate",
       "dating_method": [
         "radiocarbon",
         "stratigraphy"
@@ -6941,94 +6762,91 @@
       "jeoloji"
     ],
     "popular_claim": "Karahan Tepe Göbekli Tepe'den daha büyüktür.",
-    "divergence": "Bu proje de aynı hatayı yaptı ve kaydı düzeltiyor. Karahan Tepe için dolaşan dört farklı rakam (10 / 13-14 / 15 / 32,5 ha) tabloya konup 'hangisi neyi sayıyor' diye soruldu - doğru bir uyarı. Ama AYNI SORU GÖBEKLİ TEPE İÇİN SORULMADI: Karahan'ın değişken aralığı, Göbekli'nin tek ve denetlenmemiş bir rakamıyla karşılaştırıldı. Göbekli Tepe'nin rakamları da oynuyor: höyük ~9 ha, geniş site ~12 ha, koruma alanı çok daha büyük. Karahan Tepe yerleşimi ~10 ha, taş ocaklarıyla ~15 ha. İKİSİ AYNI MERTEBEDE. Bir karşılaştırmada şüpheyi tek tarafa uygulamak, hiç uygulamamaktan daha tehlikelidir: titiz görünür ve yanlıştır.",
+    "divergence": "Göbekli Tepe proje yazısı yaklaşık 9 ha tarih öncesi yerleşim verir. Karul 2021 yaklaşık 10 ha arkeolojik dolgu ve ek 5 ha taş ocağı tanımlar. 2025 açıklaması toplam 14 ha ve yaklaşık dörtte bir ocak payı bildirir. Yaklaşık aynı mertebede olmak bir alan sıralamasını yanlışlamaz; ortak ölçüm tanımı ve tarih olmadan kesin hüküm kurulmuyor.",
     "divergence_type": [
       "kategori-hatasi",
       "turizm-kopyalamasi"
     ],
     "sources": [
       {
-        "id": "karahan-tepe-wikipedia-en",
+        "id": "tastepeler-gobeklitepe",
+        "language": "tr",
+        "accessed": "2026-10-02",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Karahan Tepe",
-        "institution": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Karahan_Tepe",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; alan ve kazılan oran rakamları için."
+        "authors": [
+          "Clare, Lee",
+          "Breuers, Jonas"
+        ],
+        "title": "Göbeklitepe",
+        "institution": "Taş Tepeler araştırma projesi",
+        "url": "https://tastepeler.org/yerlesmeler/gobeklitepe",
+        "note": "Tarihsiz güncel proje yazısı; erişim tarihi yayın yılı yerine kullanılmıyor."
       },
       {
-        "id": "gobekli-tepe-wikipedia-en",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Göbekli Tepe",
-        "institution": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe",
+        "id": "karul-2021-karahantepe",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; höyük ve site alanı rakamları için."
-      },
-      {
-        "id": "yetmen-ates-2021",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
-          "Yetmen, H.",
-          "Ateş, D."
+          "Karul, Necmi"
         ],
         "year": 2021,
-        "title": "Göbekli Tepe ile Karahan Tepe'nin Jeomorfolojisi ve Doğal Ortam Koşullarının Erken Neolitik Dönem Yaşamı Üzerindeki Etkileri",
-        "container": "Akademik Sosyal Araştırmalar Dergisi",
-        "volume": "9(123)",
-        "pages": "121-141",
-        "url": "https://www.researchgate.net/publication/357329428",
+        "title": "Buried Buildings at Pre-Pottery Neolithic Karahantepe",
+        "container": "Türk Arkeoloji ve Etnografya Dergisi",
+        "volume": "82",
+        "pages": "21–31",
+        "publisher": "T.C. Kültür ve Turizm Bakanlığı, Kültür Varlıkları ve Müzeler Genel Müdürlüğü",
+        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/article/909296",
+        "note": "Tam metnin ilgili yapı, alan ve dolgu bölümleri incelendi. İngilizce yayın; İstanbul Üniversitesi yazarın kurumudur, derginin yayıncısı değildir. PDF: https://dergipark.org.tr/en/download/article-file/1683122"
+      },
+      {
+        "id": "aa-karul-alan-2025",
         "language": "tr",
-        "accessed": "2026-09-07",
-        "note": "Türkçe hakemli çalışma. Locator'lar başlık ve konu kapsamı düzeyindedir; tam metin sayfa doğrulaması yapılmamıştır."
+        "accessed": "2026-10-02",
+        "tier": "popular",
+        "type": "article",
+        "authors": [
+          "Ayaydın, Eşber"
+        ],
+        "year": 2025,
+        "title": "Karahantepe kazıları 12 bin yıllık yerleşim geleneğini gün yüzüne çıkarıyor",
+        "container": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/kultur/karahantepe-kazilari-12-bin-yillik-yerlesim-gelenegini-gun-yuzune-cikariyor/3726411",
+        "note": "25 Ekim 2025; güncelleme 26 Ekim. Karul’un alan tanımını aktaran beyan; iki yerleşim için ortak ölçüm protokolü sunmaz."
       }
     ],
     "evidence": [
       {
-        "id": "gobekli-alan",
-        "text": "Göbekli Tepe höyüğü yaklaşık 9 hektar, ~300 m çapında ve ~15 m yüksekliğinde; geniş site tahmini bazı kaynaklarda ~12 hektar.",
+        "id": "gobekli-yerlesim-alani",
+        "text": "Proje yazısı Göbekli Tepe tarih öncesi yerleşimini yaklaşık 9 ha olarak tanımlar.",
         "citations": [
           {
-            "source_ref": "gobekli-tepe-wikipedia-en",
-            "locator": "Site ve boyut bölümü",
+            "source_ref": "tastepeler-gobeklitepe",
+            "locator": "Konumu ve çevresel özellikleri; 9 hektar",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "karahan-alan",
-        "text": "Karahan Tepe yaklaşık 10 hektarlık bir alan kaplıyor; buna ~5 hektarlık taş ocağı bölgeleri ekleniyor.",
+        "id": "karahan-dolgu-ocak",
+        "text": "2021 yayınında yaklaşık 10 ha arkeolojik dolguya ek 5 ha T sütun ocağı alanı verilir.",
         "citations": [
           {
-            "source_ref": "karahan-tepe-wikipedia-en",
-            "locator": "Site tanımı bölümü",
+            "source_ref": "karul-2021-karahantepe",
+            "locator": "s. 22, ilk alan tanımı",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "kazilan-oran",
-        "text": "2023 itibarıyla Karahan Tepe'nin yüzey alanının yaklaşık %5'i kazılmıştır.",
+        "id": "2025-alan-beyani",
+        "text": "Karul 2025 açıklamasında toplam 14 ha alanın yaklaşık dörtte birinin ocaklar olduğunu söyler.",
         "citations": [
           {
-            "source_ref": "karahan-tepe-wikipedia-en",
-            "locator": "Kazı durumu bölümü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "turkce-karsilastirma",
-        "text": "İki sitenin jeomorfolojisi ve doğal ortam koşulları Türkçe hakemli literatürde karşılaştırmalı olarak ele alınmıştır.",
-        "citations": [
-          {
-            "source_ref": "yetmen-ates-2021",
-            "locator": "Başlık ve çalışma kapsamı",
+            "source_ref": "aa-karul-alan-2025",
+            "locator": "25 Ekim 2025, Karul’un toplam alan açıklaması",
             "support_type": "context"
           }
         ]
@@ -7036,45 +6854,35 @@
     ],
     "counter_evidence": [
       {
-        "id": "kapsam-siniri",
-        "text": "Bu kayıt 'Göbekli daha büyük' demiyor: iki sitenin aynı mertebede olduğunu ve mevcut veriyle temiz bir sıralama yapılamayacağını söylüyor.",
+        "id": "es-zamanli-kullanim",
+        "text": "2021 yayını farklı yapıların aynı anda kullanılmış olduğunun henüz söylenemeyeceğini belirtir; yüzey alanı doğrudan eşzamanlı nüfus ölçüsü değildir.",
         "citations": [
           {
-            "source_ref": "karahan-tepe-wikipedia-en",
-            "locator": "Site tanımı bölümü",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "alan-yeterli-degil",
-        "text": "'Daha büyük yerleşim' demek için alan yetmez; nüfus, çağdaş kullanım ve yapı yoğunluğu gerekir ve hiçbiri elde yoktur.",
-        "citations": [
-          {
-            "source_ref": "yetmen-ates-2021",
-            "locator": "Doğal ortam koşulları ve yerleşim bölümü",
-            "support_type": "context"
+            "source_ref": "karul-2021-karahantepe",
+            "locator": "s. 26, Conclusions; yapıların eşzamanlı kullanımı",
+            "support_type": "context",
+            "note": "Kaynak yapı bağlamını verir; karşılaştırma sınırı bu arşivin çıkarımıdır."
           }
         ]
       }
     ],
     "open_questions": [
-      "Kazı ekibinin yayımladığı resmî alan ölçümleri nedir? Ara kaynaklarla değiştirilmelidir."
+      "Aynı tarih ve aynı alan tanımıyla iki yerleşimin sınırları nasıl karşılaştırılabilir?"
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "tas-tepeler"
     ],
     "review": {
       "status": "draft",
-      "notes": "Bu kayıt projenin kendi hatasını düzeltmek için açıldı. Alan rakamları ara kaynaklıdır; birincil kazı yayınıyla doğrulanmalıdır. Alan rakamları ara kaynaklardan gelmektedir; kazı ekibinin ölçüm yayınıyla doğrulanmamıştır."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. Yanlışlandı yerine açık soru: eş yöntemli karşılaştırma eksikliği ters sıralamayı kanıtlamaz. Wikipedia kurumsal kaynak sayılmıyor; 32,5 ha için koruma sınırı tahmini ve hesaplanmamış hata payı hükmü kaldırıldı. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "tas-tepeler-kurumsal-cerceve",
-    "claim": "Taş Tepeler, Kültür ve Turizm Bakanlığı'nın Şanlıurfa Neolitik Çağ Araştırma Projesi'nin kısa adıdır ve kazıları Necmi Karul koordine eder.",
+    "claim": "Taş Tepeler, Bakanlığın 2021–2024 ilk etabında Şanlıurfa’da 12 kazı çalışmasını kapsayan araştırma programı olarak duyuruldu.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -7092,15 +6900,6 @@
         "lon": 38.9224
       }
     },
-    "period": {
-      "earliest": 2016,
-      "latest": 2026,
-      "era_label": "Projenin kurumsallaşma dönemi",
-      "precision": "exact",
-      "dating_method": [
-        "historical-record"
-      ]
-    },
     "languages": [
       "Türkçe"
     ],
@@ -7113,105 +6912,111 @@
         "name": "Karul, Necmi",
         "role": "excavator",
         "affiliation": "İstanbul Üniversitesi",
-        "year": 2021
+        "year": 2019
       }
     ],
     "popular_claim": "Göbekli Tepe ve Karahan Tepe ayrı ayrı kazılan, birbirinden bağımsız sitelerdir.",
-    "divergence": "İkisi de aynı araştırma çatısı altındadır. Taş Tepeler, Kültür ve Turizm Bakanlığı'nın başlattığı Şanlıurfa Neolitik Çağ Araştırma Projesi'nin kısa adıdır. Bu, bulguların nasıl okunacağını belirler: elimizdeki verinin büyük bölümü SON BEŞ-ALTI YILIN ürünüdür ve hâlâ akmaktadır. Beş yıllık bir kazıdan otuz yıllık kesinlikte cümle çıkmaz.",
+    "divergence": "Program kapsamındaki 12 çalışma, bütün alanların aynı anda keşfi veya bütün yapılarının çağdaşlığı anlamına gelmez. Göbekli Tepe ve Karahantepe’nin kazı başlangıcı ile araştırma yönetimi ve proje takvimi ayrılıyor.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "sources": [
       {
-        "id": "tas-tepeler-projesi",
-        "tier": "institutional",
-        "type": "report",
-        "title": "Taş Tepeler — Şanlıurfa Neolitik Çağ Araştırma Projesi",
-        "institution": "T.C. Kültür ve Turizm Bakanlığı",
-        "publisher": "T.C. Kültür ve Turizm Bakanlığı",
+        "id": "ktb-tas-tepeler-2021",
         "language": "tr",
-        "note": "Proje çatısı ve yürütücü bilgisi için. Kazı raporu değildir.",
-        "url": "https://tastepeler.org/"
+        "accessed": "2026-10-02",
+        "tier": "institutional",
+        "type": "press-release",
+        "year": 2021,
+        "title": "Taş Tepeler Tanıtım Toplantısı Şanlıurfa’da Yapıldı",
+        "institution": "T.C. Kültür ve Turizm Bakanlığı",
+        "url": "https://basin.ktb.gov.tr/TR-294077/tas-tepeler-tanitim-toplantisi-sanliurfa39da-yapildi.html",
+        "note": "2021–2024 ilk etabında planlanan 12 kazı ile duyuru sırasındaki yedi aktif alan ayrılıyor."
       },
       {
-        "id": "turkiye-turizm-ansiklopedisi-karahantepe",
+        "id": "tastepeler-gobeklitepe",
+        "language": "tr",
+        "accessed": "2026-10-02",
         "tier": "institutional",
         "type": "webpage",
-        "title": "Karahantepe",
-        "institution": "Türkiye Turizm Ansiklopedisi",
-        "url": "https://turkiyeturizmansiklopedisi.com/karahantepe",
+        "authors": [
+          "Clare, Lee",
+          "Breuers, Jonas"
+        ],
+        "title": "Göbeklitepe",
+        "institution": "Taş Tepeler araştırma projesi",
+        "url": "https://tastepeler.org/yerlesmeler/gobeklitepe",
+        "note": "Tarihsiz güncel proje yazısı; erişim tarihi yayın yılı yerine kullanılmıyor."
+      },
+      {
+        "id": "tastepeler-karahantepe",
         "language": "tr",
-        "accessed": "2026-09-07",
-        "note": "Türkçe ansiklopedik ara kaynak. Karbon tarihleri ve Havuzlu Yapı betimlemesi buradan alındı; birincil kazı yayınıyla değiştirilmelidir."
+        "accessed": "2026-10-02",
+        "tier": "institutional",
+        "type": "webpage",
+        "authors": [
+          "Karul, Necmi"
+        ],
+        "title": "Karahantepe",
+        "institution": "Taş Tepeler araştırma projesi",
+        "url": "https://tastepeler.org/yerlesmeler/karahantepe",
+        "note": "Tarihsiz güncel proje yazısı; AD ve AB ile kamusal/domestik yapılar ayrı başlıklarda anlatılıyor."
       }
     ],
     "evidence": [
       {
-        "id": "proje-adi",
-        "text": "Taş Tepeler, Kültür ve Turizm Bakanlığı'nca başlatılan Şanlıurfa Neolitik Çağ Araştırma Projesi'nin kısa adıdır.",
+        "id": "2021-program-kapsami",
+        "text": "Duyuru yedi devam eden alanı ve ilk etapta planlanan beş ek alanı, toplam 12 kazı çalışması içinde sayar.",
         "citations": [
           {
-            "source_ref": "tas-tepeler-projesi",
-            "locator": "Proje tanımı",
+            "source_ref": "ktb-tas-tepeler-2021",
+            "locator": "Bakan Ersoy açıklaması; 12 kazı çalışması ve 2021–2024 ilk etap paragrafları",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "karul-gorevleri",
-        "text": "Necmi Karul 2016'da Göbekli Tepe, 2021'de Karahan Tepe kazı başkanlığına getirildi ve proje koordinatörlüğünü yürütüyor.",
+        "id": "gobekli-yonetim",
+        "text": "Proje sayfası Karul yönetimini 2019’a, Clare’in DAI araştırma sorumluluğunu 2014 sonbaharına bağlar.",
         "citations": [
           {
-            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
-            "locator": "Kazı tarihçesi bölümü",
+            "source_ref": "tastepeler-gobeklitepe",
+            "locator": "Keşif ve araştırma geçmişi",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "kazi-takvimi",
-        "text": "Karahan Tepe'de 2017'de iki yıllık yüzey araştırması başladı; sistemli kazı 2019'da açıldı.",
+        "id": "karahan-baslangic",
+        "text": "Karahantepe’de sistemli araştırmaların başlangıcı 2019 olarak verilir.",
         "citations": [
           {
-            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
-            "locator": "Kazı tarihçesi bölümü",
+            "source_ref": "tastepeler-karahantepe",
+            "locator": "Araştırma Tarihçesi",
             "support_type": "direct"
           }
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "atama-tarihi-celiskisi",
-        "text": "TARİH ÇELİŞKİSİ (2026-09-07): Karul'un kazı başkanlığına ne zaman geldiği kaynaklarda tutarsız - bir kaynak Göbekli Tepe 2016 / Karahan Tepe 2021 derken, başka bir kaynak ikisi için de 2020 verir. Bu kayıt çelişkiyi gizlemiyor; resmî atama belgesiyle çözülmelidir.",
-        "citations": [
-          {
-            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
-            "locator": "Kazı tarihçesi bölümü",
-            "support_type": "counter",
-            "note": "Bu kaynak 2016/2021 verir; başka bir Türkçe haber kaynağı ikisi için de 2020 der."
-          }
-        ]
-      }
-    ],
-    "checked": "2026-09-07",
+    "counter_evidence": [],
+    "checked": "2026-10-02",
     "used_in": [
       "tas-tepeler"
     ],
     "review": {
       "status": "draft",
-      "notes": "Ara kaynak düzeyinde; resmî proje yayınlarıyla doğrulanmalı. Kurumsal bilgi ara kaynaklardan derlenmiştir; Bakanlık ve kazı ekibinin resmî yayınlarıyla doğrulanmalıdır."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. 2016/2020/2021 atama tarihleri çelişkisi, farklı görevler ve proje/kazı başlangıcını karıştıran kaynakların karşılaştırmasıydı; okunmuş proje kayıtlarına bağlandı. 12 sayısı güncel envanter veya eşzamanlı yapı sayısı değildir. Bağımsız uzman incelemesi yapılmadı."
     },
     "open_questions": [
-      "Karul'un atama tarihleri nedir? Kaynaklar çelişiyor."
+      "Programın güncel kapsamı ve her alanın evreleri hangi tarihli raporda birlikte gösteriliyor?"
     ]
   },
   {
     "schema_version": 2,
     "id": "karahan-tepe-karbon-tarihleri",
-    "claim": "Karahan Tepe için verilen karbon tarihleri (MÖ 9400-9200) Göbekli Tepe'nin erken evresinin içine düşer; iki site çağdaştır.",
-    "status": "contested",
-    "confidence": "low",
+    "claim": "Karahantepe’nin MÖ 9400–9200 karbon-14 aralığı, numune bağlamı ve kalibrasyon bilgisiyle bu kayıtta doğrulanmıştır.",
+    "status": "unknown",
+    "confidence": "medium",
     "topic": [
       "karahan-tepe",
       "gobekli-tepe",
@@ -7230,11 +7035,9 @@
     "period": {
       "earliest": -9400,
       "latest": -9200,
-      "era_label": "Çanak Çömleksiz Neolitik A",
-      "precision": "range",
-      "dating_method": [
-        "radiocarbon"
-      ]
+      "era_label": "Önceki iddianın doğrulanmamış C14 aralığı",
+      "precision": "disputed",
+      "dating_method": []
     },
     "languages": [
       "Türkçe"
@@ -7243,89 +7046,88 @@
       "arkeoloji"
     ],
     "popular_claim": "Karahan Tepe Göbekli Tepe'den daha eskidir.",
-    "divergence": "Türkçe popüler içerikte 'Karahan Tepe daha eski' cümlesi yaygın. Verilen karbon aralığı (MÖ 9400-9200) Göbekli Tepe'nin erken evresinin (yaklaşık MÖ 9500-8000) İÇİNE düşüyor - yani veriler ÇAĞDAŞ olduklarına işaret ediyor, biri ötekinden belirgin biçimde eski değil. Ancak bu rakam ikincil Türkçe kaynaktan alınmıştır ve birincil tarihleme yayınıyla doğrulanmamıştır; bu yüzden kayıt tartışmalı ve düşük güvenle tutulmaktadır.",
+    "divergence": "İncelenen 2021 yayınında göreli geç PPNA/erken PPNB değerlendirmesi bulunur; MÖ 9400–9200 aralığının numune/laboratuvar tablosu bulunmadı. Karul’un 2025 yerleşim kronolojisi açıklaması bu özel ölçüm aralığını doğrulamaz.",
     "divergence_type": [
       "medya-abartisi",
       "guncellenmemis"
     ],
     "sources": [
       {
-        "id": "turkiye-turizm-ansiklopedisi-karahantepe",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Karahantepe",
-        "institution": "Türkiye Turizm Ansiklopedisi",
-        "url": "https://turkiyeturizmansiklopedisi.com/karahantepe",
-        "language": "tr",
-        "accessed": "2026-09-07",
-        "note": "Türkçe ansiklopedik ara kaynak. Karbon tarihleri ve Havuzlu Yapı betimlemesi buradan alındı; birincil kazı yayınıyla değiştirilmelidir."
+        "id": "karul-2021-karahantepe",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Karul, Necmi"
+        ],
+        "year": 2021,
+        "title": "Buried Buildings at Pre-Pottery Neolithic Karahantepe",
+        "container": "Türk Arkeoloji ve Etnografya Dergisi",
+        "volume": "82",
+        "pages": "21–31",
+        "publisher": "T.C. Kültür ve Turizm Bakanlığı, Kültür Varlıkları ve Müzeler Genel Müdürlüğü",
+        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/article/909296",
+        "note": "Tam metnin ilgili yapı, alan ve dolgu bölümleri incelendi. İngilizce yayın; İstanbul Üniversitesi yazarın kurumudur, derginin yayıncısı değildir. PDF: https://dergipark.org.tr/en/download/article-file/1683122"
       },
       {
-        "id": "karahan-tepe-wikipedia-en",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Karahan Tepe",
-        "institution": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Karahan_Tepe",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; alan ve kazılan oran rakamları için."
+        "id": "aa-karul-yapi-2025",
+        "language": "tr",
+        "accessed": "2026-10-02",
+        "tier": "popular",
+        "type": "article",
+        "authors": [
+          "Ayaydın, Eşber"
+        ],
+        "year": 2025,
+        "title": "Karahantepe’de amfi tiyatroyu andıran Neolitik mimari yapı ortaya çıkarıldı",
+        "container": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/kultur/karahantepede-amfi-tiyatroyu-andiran-neolitik-mimari-yapi-ortaya-cikarildi/3754601",
+        "note": "26 Kasım 2025. Kazı başkanı Necmi Karul’un doğrudan açıklaması; bağımsız ölçüm veya hakemli kazı raporu yerine kullanılmıyor."
       }
     ],
     "evidence": [
       {
-        "id": "c14-araligi",
-        "text": "Karahan Tepe için verilen karbon tarihleri MÖ 9400-9200 aralığındadır ve site Göbekli Tepe ile çağdaş kabul edilir.",
+        "id": "2021-goreli-evre",
+        "text": "Makale kazılan yapıları geç PPNA/erken PPNB aralığına yerleştirir.",
         "citations": [
           {
-            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
-            "locator": "Tarihleme bölümü",
-            "support_type": "direct"
+            "source_ref": "karul-2021-karahantepe",
+            "locator": "s. 23, The Buildings",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "terk-donemi-kullanim",
-        "text": "Karahan Tepe'nin, Göbekli Tepe'nin terk edildiği dönemde kullanımda kalmış olabileceği ileri sürülmektedir.",
+        "id": "2025-genel-tarih",
+        "text": "2025 açıklamasında yaklaşık MÖ 9400 başlangıcı ve 8000’li yıllara süren kullanım bildirilir; haberde bu özel 9400–9200 ölçüm aralığı ve örnek tablosu yoktur.",
         "citations": [
           {
-            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
-            "locator": "Tarihleme bölümü",
-            "support_type": "inference"
+            "source_ref": "aa-karul-yapi-2025",
+            "locator": "26 Kasım 2025, Hayvan heykellerinden insan heykellerine geçiş; yerleşim tarihi",
+            "support_type": "context"
           }
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "orneklem-sorunu",
-        "text": "Her iki sitede de kazılan kesim küçüktür (~%5); 'en eski' iddiası hangi kesimin kazıldığına bağlı kalmaktadır.",
-        "citations": [
-          {
-            "source_ref": "karahan-tepe-wikipedia-en",
-            "locator": "Kazı durumu bölümü",
-            "support_type": "counter"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
-      "Kazı ekibinin birincil karbon tarihleme yayını nedir ve verilen aralık nedir?"
+      "9400–9200 aralığı hangi numuneye, laboratuvar koduna ve kalibre olasılık düzeyine aittir?"
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "tas-tepeler"
     ],
     "review": {
       "status": "draft",
-      "notes": "İkincil kaynaklı karbon aralığı. Birincil yayınla doğrulanana kadar düşük güvenle tutulmalı. Rakam ikincil Türkçe kaynaktan alınmıştır; kazı ekibinin birincil tarihleme yayınıyla doğrulanmamıştır."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. Bu turda ölçüm kökeni doğrulanamadı. Bu sınırlılık hiçbir tarihleme çalışmasının yayımlanmadığı veya iki yerleşimin çağdaş kullanılamadığı iddiası değildir. Önceki kayıtta ikincil kaynakların sayıları birincil C14 ölçümü gibi kullanılmıştı. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "karahan-tepe-havuzlu-yapi",
-    "claim": "Karahan Tepe'nin Havuzlu Yapısı ana kayaya oyulmuştur; sütunları getirilip dikilmemiş, kayanın içinden çıkarılmıştır.",
+    "claim": "Karahantepe AB yapısında on sütun ana kayadan biçimlendirilmiş, on birinci sütun şekillendirilmiş yassı levhanın sığ yatağa yerleştirilmesiyle oluşturulmuştur.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -7342,16 +7144,6 @@
         "lon": 39.3
       }
     },
-    "period": {
-      "earliest": -9400,
-      "latest": -9200,
-      "era_label": "Çanak Çömleksiz Neolitik A",
-      "precision": "approximate",
-      "dating_method": [
-        "radiocarbon",
-        "stratigraphy"
-      ]
-    },
     "languages": [
       "Türkçe"
     ],
@@ -7364,18 +7156,20 @@
         "name": "Karul, Necmi",
         "role": "excavator",
         "affiliation": "İstanbul Üniversitesi",
-        "year": 2021
+        "year": 2019
       }
     ],
     "popular_claim": "Karahan Tepe 'ikinci Göbekli Tepe'dir.",
-    "divergence": "Yapım mantığı FARKLIDIR ve bu, 'ikinci Göbekli Tepe' nitelemesini yanıltıcı kılar. Göbekli Tepe'nin T biçimli dikilitaşları serbest durur - getirilip dikilmiştir. Karahan Tepe'nin Havuzlu Yapısı ise ana kayaya oyulmuştur: oval planlı, iç yüzeyinde fallik biçimli kabartma sütunlar ve üst kenarda mekâna bakan bir insan başı/büst heykeli. Sütunlar kayanın içinden çıkarılmıştır. Yapı inşa edilmemiş, OYULMUŞTUR. ADLANDIRMA NOTU: popüler kaynaklarda 'Havuzlu Yapı' denen mekân, kazı başkanının yayınında 'AB yapısı' olarak geçer; iki ad aynı yapıyı işaret eder.",
+    "divergence": "Sütunların tamamının getirilmeden ana kayadan oyulduğu anlatımı yanlıştı. Ana kayadan biçimlendirme ile levha yerleştirme aynı yapıda birlikte bulunur; AB adı kesin su işlevi veya ritüel anlam göstermez.",
     "divergence_type": [
       "medya-abartisi",
       "turizm-kopyalamasi"
     ],
     "sources": [
       {
-        "id": "karul-2021-buried-buildings",
+        "id": "karul-2021-karahantepe",
+        "language": "en",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -7385,78 +7179,67 @@
         "title": "Buried Buildings at Pre-Pottery Neolithic Karahantepe",
         "container": "Türk Arkeoloji ve Etnografya Dergisi",
         "volume": "82",
-        "pages": "21-31",
-        "publisher": "T.C. Kültür ve Turizm Bakanlığı",
-        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/issue/63476/909296",
-        "language": "tr",
-        "accessed": "2026-09-07",
-        "note": "Kazı başkanının kendi hakemli yayını. ISSN 1302-9231. Bu kayıtta makalenin ÖZETİ okunmuştur, tam metni değil; locator'lar özet düzeyindedir."
+        "pages": "21–31",
+        "publisher": "T.C. Kültür ve Turizm Bakanlığı, Kültür Varlıkları ve Müzeler Genel Müdürlüğü",
+        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/article/909296",
+        "note": "Tam metnin ilgili yapı, alan ve dolgu bölümleri incelendi. İngilizce yayın; İstanbul Üniversitesi yazarın kurumudur, derginin yayıncısı değildir. PDF: https://dergipark.org.tr/en/download/article-file/1683122"
       },
       {
-        "id": "turkiye-turizm-ansiklopedisi-karahantepe",
+        "id": "tastepeler-karahantepe",
+        "language": "tr",
+        "accessed": "2026-10-02",
         "tier": "institutional",
         "type": "webpage",
+        "authors": [
+          "Karul, Necmi"
+        ],
         "title": "Karahantepe",
-        "institution": "Türkiye Turizm Ansiklopedisi",
-        "url": "https://turkiyeturizmansiklopedisi.com/karahantepe",
-        "language": "tr",
-        "accessed": "2026-09-07",
-        "note": "Türkçe ansiklopedik ara kaynak."
+        "institution": "Taş Tepeler araştırma projesi",
+        "url": "https://tastepeler.org/yerlesmeler/karahantepe",
+        "note": "Tarihsiz güncel proje yazısı; AD ve AB ile kamusal/domestik yapılar ayrı başlıklarda anlatılıyor."
       }
     ],
     "evidence": [
       {
-        "id": "ab-yapisi-yayinda",
-        "text": "Kazı başkanının yayını, yerleşimdeki gömülü yapıları sunarken özellikle AB yapısına odaklanır.",
+        "id": "on-arti-bir",
+        "text": "Makale on ana kaya sütununu ve yerleştirilmiş on birinci levhayı açıkça ayırır.",
         "citations": [
           {
-            "source_ref": "karul-2021-buried-buildings",
-            "locator": "Özet",
+            "source_ref": "karul-2021-karahantepe",
+            "locator": "s. 24, The building was made by carving into the bedrock ile başlayan paragraf",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "havuzlu-yapi-tanimi",
-        "text": "Havuzlu Yapı ana kayaya oyulmuş, oval planlıdır; iç yüzeyi fallik biçimli sütunlarla bezeli ve üst kenarında bir baş/büst heykeli bulunur.",
+        "id": "ab-mimari",
+        "text": "Proje sayfası AB’yi ana kayaya oyulmuş yaklaşık 7 × 6 m mekân ve on ana kaya sütunuyla anlatır.",
         "citations": [
           {
-            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
-            "locator": "Havuzlu Yapı bölümü",
+            "source_ref": "tastepeler-karahantepe",
+            "locator": "Kamusal Yapılar; AB Yapısı",
             "support_type": "direct"
           }
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "yorum-siniri",
-        "text": "'Fallik' bir biçim betimlemesidir, işlev yorumu değildir; sütunların ne anlattığı bilinmemektedir.",
-        "citations": [
-          {
-            "source_ref": "turkiye-turizm-ansiklopedisi-karahantepe",
-            "locator": "Havuzlu Yapı bölümü",
-            "support_type": "context"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "open_questions": [
-      "'Havuzlu Yapı' ile 'AB yapısı' adlandırmaları literatürde nasıl ayrışıyor?"
+      "Sütun ve insan başı düzeni hangi kullanım eylemleriyle ilişkiliydi?"
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-02",
     "used_in": [
       "tas-tepeler"
     ],
     "review": {
       "status": "draft",
-      "notes": "Birincil yayın eklendi ama yalnızca özet okundu; ayrıntılı betimleme hâlâ ara kaynaklı. Yapının ayrıntılı betimlemesi hâlâ ara kaynaklıdır; birincil yayının yalnızca özeti okunmuştur."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. 2021 tam metni ve proje sayfası kontrol edildi. Popüler Havuzlu Yapı adı işlev kanıtı sayılmıyor; önceki tüm sütunlar oyuldu hükmü düzeltildi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "karahantepe-kasitli-doldurma",
-    "claim": "Karahantepe'de açığa çıkarılan yapılar kasten doldurulmuştur; kazı başkanı bunları 'özel yapı' olarak tanımlar.",
+    "claim": "Karul’un 2021 yayını Karahantepe AB yapısının dolgu ve taş düzenini kasıtlı kapatma lehine yorumlar.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -7474,16 +7257,6 @@
         "lon": 39.3
       }
     },
-    "period": {
-      "earliest": -9400,
-      "latest": -8000,
-      "era_label": "Çanak Çömleksiz Neolitik",
-      "precision": "range",
-      "dating_method": [
-        "radiocarbon",
-        "stratigraphy"
-      ]
-    },
     "languages": [
       "Türkçe"
     ],
@@ -7495,17 +7268,19 @@
         "name": "Karul, Necmi",
         "role": "excavator",
         "affiliation": "İstanbul Üniversitesi",
-        "year": 2021
+        "year": 2019
       }
     ],
     "popular_claim": "Neolitik yapılar zamanla toprak altında kalmıştır.",
-    "divergence": "Karahantepe'de doldurma DOĞAL BİRİKİM DEĞİL, kasıtlı bir uygulamadır. Kazı başkanının hakemli yayınında yerleşimdeki açığa çıkarılmış yapıların tamamı, KASTEN DOLDURULMUŞ olmaları bakımından 'özel yapı' olarak tanımlanır. Makale AB yapısına odaklanır ve bulguları, Yakın Doğu ve Anadolu'da erken Neolitik'ten geç Neolitik'e uzanan 'yapı gömme' tartışmasına bağlar.",
+    "divergence": "AB’de gözlenen katman ve taş düzeni, yazarın kasıtlı kapatma yorumunun dayanağıdır. Bu örneğin nedeni, bütün sitenin tek törenle kapanması ve tüm yapıların aynı anda kullanılması aynı iddia değildir.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "sources": [
       {
-        "id": "karul-2021-buried-buildings",
+        "id": "karul-2021-karahantepe",
+        "language": "en",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -7515,73 +7290,48 @@
         "title": "Buried Buildings at Pre-Pottery Neolithic Karahantepe",
         "container": "Türk Arkeoloji ve Etnografya Dergisi",
         "volume": "82",
-        "pages": "21-31",
-        "publisher": "T.C. Kültür ve Turizm Bakanlığı",
-        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/issue/63476/909296",
-        "language": "tr",
-        "accessed": "2026-09-07",
-        "note": "Kazı başkanının kendi hakemli yayını. ISSN 1302-9231. Bu kayıtta makalenin ÖZETİ okunmuştur, tam metni değil; locator'lar özet düzeyindedir."
+        "pages": "21–31",
+        "publisher": "T.C. Kültür ve Turizm Bakanlığı, Kültür Varlıkları ve Müzeler Genel Müdürlüğü",
+        "url": "https://dergipark.org.tr/en/pub/arkeolojiveetnografya/article/909296",
+        "note": "Tam metnin ilgili yapı, alan ve dolgu bölümleri incelendi. İngilizce yayın; İstanbul Üniversitesi yazarın kurumudur, derginin yayıncısı değildir. PDF: https://dergipark.org.tr/en/download/article-file/1683122"
       }
     ],
     "evidence": [
       {
-        "id": "kasitli-doldurma-tanimi",
-        "text": "Kazı başkanının yayınında, yerleşimde açığa çıkarılan yapıların tamamı kasten doldurulmuş olmaları bakımından 'özel yapı' olarak tanımlanır.",
+        "id": "ab-dolgu-duzeni",
+        "text": "Dolgunun yapı sınırında kalması, düzenlenmiş büyük taşlar ve arka sütunların üzerine yerleştirilen taşlar kasıtlı doldurma yorumunun gerekçeleridir.",
         "citations": [
           {
-            "source_ref": "karul-2021-buried-buildings",
-            "locator": "Özet",
+            "source_ref": "karul-2021-karahantepe",
+            "locator": "s. 24–25, AB dolgu süreci; Fig. 8–10",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "ab-yapisi-odak",
-        "text": "Makale, yeni açığa çıkarılan gömülü yapıları sunar ve özellikle AB yapısına odaklanır.",
-        "citations": [
-          {
-            "source_ref": "karul-2021-buried-buildings",
-            "locator": "Özet",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "bolgesel-tartisma",
-        "text": "Bulgular, Yakın Doğu ve Anadolu'da erken Neolitik'ten geç Neolitik'e uzanan yapı gömme tartışmasına bağlanır.",
-        "citations": [
-          {
-            "source_ref": "karul-2021-buried-buildings",
-            "locator": "Özet",
-            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "gobekli-icin-gecerli-degil",
-        "text": "Bu kayıt KARAHANTEPE hakkındadır. Göbekli Tepe'de kasıtlı gömme hâlâ tartışmalıdır (bkz. gobekli-tepe-kasitli-gomulme); bir sitedeki uygulama ötekini kanıtlamaz.",
+        "id": "kapatma-kapsami",
+        "text": "Makale 2019–2020 Batı Terası örneklerini anlatır; yapıların çağdaş kullanıldığının henüz söylenemeyeceğini belirtir.",
         "citations": [
           {
-            "source_ref": "karul-2021-buried-buildings",
-            "locator": "Özet, karşılaştırmalı bölüm",
+            "source_ref": "karul-2021-karahantepe",
+            "locator": "s. 23, The Buildings; s. 26, Conclusions",
             "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Doldurmanın gerekçesi nedir - tören, kapatma, yeniden inşa hazırlığı? Tam metin incelenmeli.",
-      "Göbekli Tepe'deki durum Karahantepe'dekiyle aynı mı? Ayrı soru, ayrı kanıt gerekir."
+      "Kapatmanın amacı ve süresi hangi ek kanıtlarla ayırt edilebilir?"
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-02",
     "used_in": [
       "tas-tepeler"
     ],
     "review": {
       "status": "draft",
-      "notes": "Birincil hakemli kaynağa dayanıyor ama yalnızca özet okundu; tam metin incelemesi bekliyor. Bu kayıtta makalenin yalnızca özeti okunmuştur; tam metindeki gerekçelendirme ve stratigrafik kanıt incelenmemiştir."
+      "notes": "2026-10-02 seçilmiş kaynak kontrolü. Özetin yerine ilgili tam metin bölümleri incelendi. Yerleşik görüş sınıflaması, yayımdaki açık yorumun belgelendiğini anlatır; kapatma töreninin amacı veya tüm sitenin tarihi için bağımsız uzlaşı iddiası değildir. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
