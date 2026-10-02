@@ -1095,7 +1095,7 @@
   {
     "schema_version": 2,
     "id": "hristiyanlik-313-380-ayrimi",
-    "claim": "313 Milano fermanı Hristiyanlığı serbest bıraktı; devlet dini yapan 380 Selanik fermanıdır. Arada 67 yıl vardır.",
+    "claim": "313 tarihli din seçme serbestliği ve mal iadesi metni ile 380 tarihli Cunctos populos’un belirli Hristiyan inancını emretmesi, 67 yıl arayla çıkarılmış ayrı düzenlemelerdir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -1110,10 +1110,10 @@
       "modern_country": "çok uluslu"
     },
     "period": {
-      "earliest": 313,
+      "earliest": 311,
       "latest": 392,
       "era_label": "Geç Roma İmparatorluğu",
-      "precision": "exact",
+      "precision": "range",
       "dating_method": [
         "textual",
         "historical-record"
@@ -1146,124 +1146,122 @@
       }
     ],
     "popular_claim": "Constantinus 313'te Hristiyanlığı Roma'nın devlet dini yaptı.",
-    "divergence": "313 tüm dinlere serbestlik tanıyan bir HOŞGÖRÜ metnidir; Hristiyanlığa ayrıcalık değil, yasağın kaldırılmasıdır. Devlet dini ilanı 380'de I. Theodosius döneminde gelir - 67 yıl sonra ve farklı bir imparatorla. Pagan kurbanının yasaklanması 391-392'yi bulur. Popüler anlatı üç ayrı olayı tek bir karara indirger.",
+    "divergence": "311’de Galerius’un hoşgörü metni vardır; 313 ilk serbest bırakma diye sunulamaz. Geleneksel olarak Milano fermanı denen metni Lactantius, Licinius’un Nikomedia’da yayımlattığı valiye talimat olarak aktarır. 380 metni Konstantinopolis halkına hitap eder ve Damasus ile İskenderiyeli Petrus’un temsil ettiği Üçleme inancını emreder. Bu yasa, nüfusun aynı anda din değiştirdiğinin veya bütün pagan ritüellerinin o gün yasaklandığının kanıtı değildir. Constantinus’un kiliseye desteği, hoşgörü metninden ayrı belgelerle görülür.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
     ],
     "open_questions": [
-      "Constantinus'un kişisel inancı samimi bir dönüşüm müydü, siyasi bir hesap mıydı? Niyet sorusu ölçülemez."
+      "Bu düzenlemeler farklı bölgelerde ne ölçüde ve hangi tarihlerde uygulandı? Hukuki emir ile fiilî dinî pratik nasıl karşılaştırılabilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-hristiyanlik"
     ],
     "sources": [
       {
-        "id": "lactantius-de-mortibus",
-        "language": "la",
-        "accessed": "2026-09-09",
+        "id": "lactantius-galerius-311",
         "tier": "primary",
-        "type": "book",
+        "type": "edition",
+        "title": "De mortibus persecutorum, 34–35 — Galerius’un hoşgörü metni",
+        "url": "https://ccel.org/ccel/lactantius/persecutors/anf07.iii.v.xxxiv.html",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "34. bölümdeki izin ve kamu düzeni koşulu; 35. bölümde 30 Nisan yayımlanma anlatısı okundu. 311 olay yılıdır; okunmuş metin ANF İngilizce çevirisidir, özgün el yazması değildir.",
         "authors": [
           "Lactantius"
         ],
-        "title": "De mortibus persecutorum",
-        "note": "313 metninin içeriğini aktaran kaynak; ayrıca Hierocles'in zulümdeki rolüne değinir."
+        "container": "Ante-Nicene Fathers",
+        "volume": "7"
+      },
+      {
+        "id": "lactantius-de-mortibus",
+        "tier": "primary",
+        "type": "edition",
+        "title": "De mortibus persecutorum, 48 — 313 talimatı",
+        "url": "https://ccel.org/ccel/lactantius/persecutors/anf07.iii.v.xlviii.html",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Lactantius’un aktardığı Nikomedia yayımlanma anlatısı, Milano görüşmesi, din seçme serbestliği ve mal iadesi hükümleri okundu. 313 olay yılı; kullanılan metin ANF İngilizce çevirisidir.",
+        "authors": [
+          "Lactantius"
+        ],
+        "container": "Ante-Nicene Fathers",
+        "volume": "7"
       },
       {
         "id": "codex-theodosianus-16-1-2",
-        "language": "la",
-        "accessed": "2026-09-09",
-        "tier": "primary",
-        "type": "manuscript",
-        "year": 380,
-        "title": "Codex Theodosianus XVI.1.2 (Cunctos populos)",
-        "note": "İznik inancını imparatorluğun resmî dini ilan eden 380 tarihli yasa."
-      },
-      {
-        "id": "pharr-1952-theodosian-code",
-        "language": "en",
-        "accessed": "2026-09-09",
         "tier": "primary",
         "type": "edition",
-        "authors": [
-          "Pharr, Clyde"
-        ],
-        "year": 1952,
-        "title": "The Theodosian Code and Novels and the Sirmondian Constitutions",
-        "publisher": "Princeton University Press",
-        "isbn": "9781584771463",
-        "note": "Codex Theodosianus'un standart İngilizce çevirisi; 380 tarihli Cunctos populos metnine erişim yolu."
+        "title": "Codex Theodosianus XVI — seçilmiş din yasaları",
+        "url": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+        "language": "la",
+        "accessed": "2026-10-02",
+        "note": "Latince çevrimiçi metinde XVI.1.2 pr.–1 (27 Şubat 380), XVI.10.10–12 (391–392) okundu. Kodun derlenme yılı 438, tek tek yasaların tarihi değildir. Pharr çevirisi veya özgün el yazması incelenmiş sayılmaz.",
+        "year": 438
       },
       {
-        "id": "jones-1964-later-roman-empire",
+        "id": "eusebius-church-history-10",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Church History, Book X — A. C. McGiffert çevirisi",
+        "url": "https://www.newadvent.org/fathers/250110.htm",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-02",
+        "note": "X.6.1–4 ve X.7.1–2: Caecilianus’a para tahsisi ve onun kilisesinin ruhbanına kamu yükümlülüklerinden muafiyet. İngilizce NPNF II.1 edisyonu okundu; bütün imparatorlukta aynı anda aynı uygulama varsayılmadı.",
         "authors": [
-          "Jones, A. H. M."
+          "Eusebios (Kaisareia)"
         ],
-        "year": 1964,
-        "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
-        "publisher": "Johns Hopkins University Press",
-        "isbn": "9780801833540",
-        "note": "Geç Roma idaresinin standart başvuru eseri."
+        "year": 1890,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "1"
+      },
+      {
+        "id": "eusebius-life-constantine-4",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Life of Constantine, Book IV — vaftiz ve ölüm anlatısı",
+        "url": "https://www.newadvent.org/fathers/25024.htm",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "IV.61–64 İngilizce çevirisinde hastalık, Nikomedia yakınında vaftiz ve ölüm anlatısı okundu. İmparatoru öven dinî anlatı, kişinin önceki inancını doğrudan ölçmez.",
+        "authors": [
+          "Eusebios (Kaisareia)"
+        ],
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "1"
       }
     ],
     "evidence": [
       {
         "id": "313-metni-lactantius",
-        "text": "313 metninin içeriği Lactantius'un De mortibus persecutorum 48. bölümünde aktarılır ve 'Hristiyanlara ve herkese' dinini seçme serbestliği tanır.",
+        "text": "Lactantius, Licinius’un 13 Haziran’da Nikomedia’da yayımlattığı talimatta Hristiyanlara ve başkalarına din seçme serbestliğini; Hristiyan cemaatlerinin el konulmuş mallarının karşılıksız iadesini aktarır.",
         "citations": [
           {
             "source_ref": "lactantius-de-mortibus",
-            "locator": "48. bölüm",
+            "locator": "Bölüm 48, ilk paragraf ve When we, Constantine and Licinius ile başlayan talimatın din seçimi / mal iadesi paragrafları",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "380-cunctos-populos",
-        "text": "Codex Theodosianus XVI.1.2 (Cunctos populos, 380) İznik inancını imparatorluğun resmî dini ilan eder.",
+        "text": "27 Şubat 380 tarihli yasa Konstantinopolis halkına hitap eder. Damasus ve İskenderiyeli Petrus’un inancını, Baba–Oğul–Kutsal Ruh için eşit yücelikte tek tanrılığı emreder; uyanları katolik Hristiyan, diğerlerini heretik olarak adlandırır.",
         "citations": [
           {
             "source_ref": "codex-theodosianus-16-1-2",
-            "locator": "XVI.1.2",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "pharr-cevirisi",
-        "text": "Metnin standart çevirisi bu okumayı verir.",
-        "citations": [
-          {
-            "source_ref": "pharr-1952-theodosian-code",
-            "locator": "XVI.1.2 çevirisi",
+            "locator": "XVI.1.2 pr.–1, edictum ad populum urbis constantinopolitanae başlığı, inanç ve yaptırım hükümleri",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "391-392-yasaklar",
-        "text": "391-392 tarihli yasalar pagan kurbanını ve tapınak ziyaretini yasaklar - hoşgörüden zorunluluğa geçişin son adımı.",
+        "text": "391 yasaları kurban ve tapınakta tapınmayı; 392 yasası kurbanın yanında tütsü, ışık ve ev içi kült uygulamalarını da hedefler. Metinler farklı görevlilere yöneltilmiştir; bu düzenlemelerin varlığı uygulamanın her yerde tamamlandığını ölçmez.",
         "citations": [
           {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "391-392 yasaları",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "olum-dosegi-vaftizi",
-        "text": "Constantinus 337'de ölüm döşeğinde vaftiz edildi; vaftizi yapan Nikomedialı Eusebios, İznik'te mahkûm edilen Arius'un görüşüne yakın bir piskopostu.",
-        "citations": [
-          {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "Constantinus'un son yılları",
+            "source_ref": "codex-theodosianus-16-1-2",
+            "locator": "XVI.10.10 (24 Şubat 391), XVI.10.11 (16 Haziran 391), XVI.10.12 pr.–4 (8 Kasım 392)",
             "support_type": "direct"
           }
         ]
@@ -1271,37 +1269,48 @@
     ],
     "counter_evidence": [
       {
-        "id": "fiili-imtiyaz",
-        "text": "313'ten sonra kiliseye tanınan vergi muafiyetleri ve bağışlar hukuken 'devlet dini' olmasa da fiilî bir imtiyaz yaratmıştır; ayrımın keskinliği idari uygulamada bulanıklaşır.",
+        "id": "galerius-311",
+        "text": "Galerius’un daha önceki hoşgörü metni, Hristiyanların yeniden Hristiyan olmasına ve kamu düzenini bozmadan toplanmasına izin verir. Bu nedenle hukuki serbestlik yalnız 313’te başlamış değildir.",
         "citations": [
           {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "Kilise imtiyazları",
+            "source_ref": "lactantius-galerius-311",
+            "locator": "Bölüm 34, After the publication ile başlayan izin paragrafı; bölüm 35, yayımlanma tarihi anlatısı",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "milano-fermani-adlandirmasi",
-        "text": "'Milano fermanı' adlandırması tartışmalıdır: metin bir edictum değil, valilere gönderilen bir talimat mektubudur ve Galerius'un 311 hoşgörü fermanının devamı sayılabilir.",
+        "id": "fiili-imtiyaz",
+        "text": "Eusebios’un aktardığı ayrı Constantinus mektupları Caecilianus’a para tahsisini ve onun kilisesinin ruhbanına kamu yükümlülüklerinden muafiyeti kaydeder. Din seçme serbestliği metni, imparatorun bütün politikasının ayrıcalıksız olduğu sonucunu vermez.",
         "citations": [
           {
-            "source_ref": "lactantius-de-mortibus",
-            "locator": "Metnin biçimi",
+            "source_ref": "eusebius-church-history-10",
+            "locator": "X.6.1–4; X.7.1–2, para tahsisi ve muafiyet mektupları",
             "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "olum-dosegi-vaftizi",
+        "text": "Eusebios’un anlatısında Constantinus yaşamının sonunda hastayken vaftiz olur; aynı anlatı ona dinî bağlılık atfeder. Geç vaftiz, önceki yıllarda Hristiyan inancının bulunmadığını tek başına kanıtlamaz.",
+        "citations": [
+          {
+            "source_ref": "eusebius-life-constantine-4",
+            "locator": "IV.61–64, hastalık / vaftiz / ölüm; IV.62’deki dinî bağlılık anlatısı",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucular Pharr 1952 ve Jones 1964 ile karşılandı; birincil metinler ayrı künyelendi."
+      "notes": "313 ilk serbestlik, 380 bütün toplumun ani dönüşümü ve 391–392 tamamlanmış geçiş genellemeleri daraltıldı. 311 belgesi ile 313 valiye talimatın biçimi eklendi. Pharr ve Jones’un okunmamış pasajlarına belirsiz atıflar kaldırıldı. Seçilmiş Latince çevrimiçi yasa metni ve İngilizce antik metin çevirileri okundu; yasaların bütün bölgelerde uygulanması, özgün el yazmaları ve bütün literatür incelenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "iznik-kanonu-belirlemedi",
-    "claim": "325 İznik Konsili'nde Kutsal Kitap kanonunun tartışıldığına dair hiçbir kayıt yoktur.",
+    "claim": "325 İznik Konsili’nin korunmuş yirmi disiplin kuralı ve sinodal mektubu, 27 kitaplık Yeni Ahit listesini belirleyen bir karar içermez.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -1350,122 +1359,82 @@
         "role": "editor",
         "year": 367,
         "lifespan": "y. 296-373"
-      },
-      {
-        "name": "Metzger, Bruce M.",
-        "role": "analyst",
-        "year": 1987,
-        "lifespan": "1914-2007"
       }
     ],
     "popular_claim": "İznik Konsili'nde hangi İncillerin kutsal kitaba gireceği oylandı, dışarıda kalanlar yakıldı.",
-    "divergence": "Konsilin belgelenmiş gündemi: Arius tartışması, İznik inanç bildirgesi, Paskalya'nın tarihi ve yaklaşık yirmi idari kanon. Kanon - yani hangi kitapların Kutsal Kitap'a gireceği - bu gündemde yoktur. Konsile katılan ve ayrıntılı yazan görgü tanıkları (Eusebios, Athanasios) böyle bir karardan hiç söz etmez.",
+    "divergence": "İznik inanç bildirgesi, kilise disiplini ve Paskalya uzlaşması belgelenir; bu metinlerde 27 kitaplık Yeni Ahit seçimi yoktur. Ancak bütün konuşmaların tam tutanağı varmış gibi hiçbir kutsal kitap konusu anılmadı denemez: Jerome daha sonra Judith’i İznik ile ilişkilendirir. Sokrates’in aktardığı Arius yazılarını yakma emri de bütün kanon dışı metinlerin İznik’te seçilip yakıldığı iddiasından ayrılmalıdır.",
     "divergence_type": [
       "medya-abartisi",
       "kategori-hatasi"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-hristiyanlik"
     ],
     "sources": [
       {
         "id": "iznik-konsili-kanonlari",
-        "language": "grc",
-        "accessed": "2026-09-09",
         "tier": "primary",
-        "type": "manuscript",
-        "year": 325,
-        "title": "İznik Konsili kanonları (20 kanon)",
-        "note": "Konsilden çıkan metinlerin tamamı; hiçbiri kutsal metin listesi içermez."
+        "type": "edition",
+        "title": "First Council of Nicaea (A.D. 325) — bildirge, yirmi kural, sinodal mektup",
+        "url": "https://www.newadvent.org/fathers/3801.htm",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Henry Percival çevirisi, NPNF II.14 (1900). Korunmuş bu metinler okundu; tüm toplantı konuşmalarının eksiksiz tutanağı değildir. 325 konsil yılı, 1900 çeviri edisyonunun yılıdır.",
+        "year": 1900,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "14"
       },
       {
-        "id": "metzger-1987-canon-new-testament",
+        "id": "jerome-preface-judith",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Prologue to Judith — Kevin P. Edgecomb çevirisi",
+        "url": "https://ccel.org/ccel/pearse/morefathers/files/jerome_preface_judith_e.htm",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-02",
+        "note": "İznik’ten sonra yazılmış önsözün Judith’i konsile bağlayan paragrafı okundu. 2006 çevrimiçi İngilizce çeviri yılıdır; önsözün antik yazım tarihi değildir. Judith atfı, 27 kitaplık Yeni Ahit oylama listesi içermez.",
         "authors": [
-          "Metzger, Bruce M."
+          "Jerome (Hieronymus)"
         ],
-        "year": 1987,
-        "title": "The Canon of the New Testament: Its Origin, Development, and Significance",
-        "publisher": "Oxford University Press",
-        "isbn": "9780198269540",
-        "note": "Kanon tarihinin standart eseri."
+        "year": 2006
       },
       {
-        "id": "kelly-1972-early-christian-creeds",
+        "id": "socrates-church-history-1",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Church History, Book I — A. C. Zenos çevirisi",
+        "url": "https://www.newadvent.org/fathers/26011.htm",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-02",
+        "note": "5. yüzyılda yazılmış kilise tarihinin NPNF II.2 (1890) İngilizce çevirisi. I.9’da aktarılan Constantinus emri okundu; bu, İznik’te Yeni Ahit kitaplarının seçilmesini veya bütün emrin fiilî uygulanmasını göstermez.",
         "authors": [
-          "Kelly, J. N. D."
+          "Sokrates (Scholasticus)"
         ],
-        "year": 1972,
-        "title": "Early Christian Creeds",
-        "publisher": "Longman",
-        "isbn": "9780582492196",
-        "note": "İznik bildirgesinin ve konsil gündeminin standart incelemesi."
-      },
-      {
-        "id": "ehrman-2003-lost-christianities",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Ehrman, Bart D."
-        ],
-        "year": 2003,
-        "title": "Lost Christianities: The Battles for Scripture and the Faiths We Never Knew",
-        "publisher": "Oxford University Press",
-        "isbn": "9780195141832",
-        "note": "Kanon dışı metinlerin akıbeti ve 'imha' anlatısının değerlendirmesi."
+        "year": 1890,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "2"
       }
     ],
     "evidence": [
       {
         "id": "yirmi-kanon-idari",
-        "text": "Konsilden çıkan yirmi kanon metni elimizdedir ve tamamı kilise yönetimine ilişkindir - kutsal metin listesi içermez.",
+        "text": "Korunmuş yirmi kural ruhban, yetki, tövbe, komünyon ve dua gibi konuları düzenler; Yeni Ahit kitap listesi vermez. Buradaki kanon sözcüğü disiplin kuralı anlamındadır.",
         "citations": [
           {
             "source_ref": "iznik-konsili-kanonlari",
-            "locator": "Yirmi kanon",
+            "locator": "The Canons, kanon 1–20; özellikle yetki için 4–7, komünyon için 13/18, dua için 20",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "eusebios-bahsetmiyor",
-        "text": "Konsilde bulunan Eusebios, İznik'i ayrıntılı anlatır ve kanon kararından bahsetmez.",
+        "id": "belgelenmis-gundem",
+        "text": "İnanç bildirgesi Oğul’un Baba ile aynı özden olduğunu belirtir; yaratılmış olduğunu söyleyen görüşü mahkûm eder. Sinodal mektup Arius, Meletius ve Paskalya uzlaşmasını anlatır; 27 kitaplık bir seçme kararı içermez.",
         "citations": [
           {
-            "source_ref": "kelly-1972-early-christian-creeds",
-            "locator": "Konsil kaynakları",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "tartisma-konusu",
-        "text": "Tartışmanın konusu İsa'nın ilahiliği DEĞİL, ilahiliğinin Baba ile ilişkisiydi: taraflardan hiçbiri İsa'nın ilahi olmadığını savunmuyordu.",
-        "citations": [
-          {
-            "source_ref": "kelly-1972-early-christian-creeds",
-            "locator": "Arius tartışması",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "367-sonra-gelmesi",
-        "text": "Konsilden 42 yıl SONRA yazan Athanasios'un 367 tarihli mektubu, elimizdeki ilk 27 kitaplık listedir - İznik'te bir liste kabul edilmiş olsaydı bu gereksiz olurdu.",
-        "citations": [
-          {
-            "source_ref": "metzger-1987-canon-new-testament",
-            "locator": "Athanasios'un mektubu",
+            "source_ref": "iznik-konsili-kanonlari",
+            "locator": "The Creed son paragraf/anatema; The Synodal Letter, Arius, Meletius ve Easter paragrafları",
             "support_type": "direct"
           }
         ]
@@ -1473,23 +1442,23 @@
     ],
     "counter_evidence": [
       {
-        "id": "sessizlikten-cikarim",
-        "text": "Sessizlikten çıkarım genelde zayıf bir kanıt biçimidir; burada gücü, sessiz kalan kişilerin tam da o toplantıda bulunup ayrıntılı yazmış olmasından gelir.",
+        "id": "jerome-judith-atfi",
+        "text": "Jerome’un Judith önsözü, konsilin bu kitabı kutsal yazılar arasında saydığını söyler. Bu geç tanıklık, İznik ile hiçbir kutsal kitap atfı yoktur genellemesini sınırlar; fakat 27 kitaplık Yeni Ahit seçimini belgeleyen karar değildir.",
         "citations": [
           {
-            "source_ref": "metzger-1987-canon-new-testament",
-            "locator": "Yöntem notu",
-            "support_type": "context"
+            "source_ref": "jerome-preface-judith",
+            "locator": "Önsöz, But because this book ile başlayan 2. paragraf",
+            "support_type": "counter"
           }
         ]
       },
       {
-        "id": "yakma-kaniti-yok",
-        "text": "'Dışarıda kalanlar yakıldı' anlatısının arkeolojik ya da metinsel kanıtı yoktur; kanon dışı metinlerin bir kısmı elimizdedir.",
+        "id": "ariusa-ait-yakma-emri",
+        "text": "5. yüzyıl tarihçisi Sokrates, Constantinus’un Arius’a ait eserleri yakmayı ve saklayanları cezalandırmayı emreden bir mektubunu aktarır. Emir kanıtı ile fiilî uygulamanın kapsamı, ayrıca Arius’un yazıları ile bütün kanon dışı kitaplar ayrı tutulmalıdır.",
         "citations": [
           {
-            "source_ref": "ehrman-2003-lost-christianities",
-            "locator": "Kayıp metinlerin akıbeti",
+            "source_ref": "socrates-church-history-1",
+            "locator": "I.9, Another Epistle of Constantine; Victor Constantine Maximus Augustus ile başlayan mektubun son 2 paragrafı",
             "support_type": "counter"
           }
         ]
@@ -1497,13 +1466,16 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu Metzger, Kelly ve Ehrman ile karşılandı. 'Yakıldı' anlatısının çürütülmesi ayrı bir kaynağa bağlandı."
-    }
+      "notes": "Hiçbir kayıt yoktur iddiası belirli korunmuş konsil metinlerinin içeriğine daraltıldı. Jerome’un Judith tanıklığı ve Sokrates’teki Arius yazılarını yakma emri karşı sınırlar olarak eklendi. 367’de liste bulunması, önceki bir kararın gereksizliğini kanıtlayan mantık olarak kullanılmadı. Metzger, Kelly ve Ehrman’ın okunmamış pasajlarına atıflar kaldırıldı. Belirtilen çeviriler okundu; tam konsil tutanağı, özgün el yazmaları, imha emrinin bütün uygulaması veya bütün literatür incelenmedi. Bağımsız uzman incelemesi yapılmadı."
+    },
+    "open_questions": [
+      "Jerome’un Judith ile İznik’i ilişkilendiren geç atfı hangi erken belge veya tartışmaya dayanıyordu?"
+    ]
   },
   {
     "schema_version": 2,
     "id": "kanon-367-athanasios-listesi",
-    "claim": "Bugünkü 27 kitaplık Yeni Ahit listesinin bilinen ilk tam hâli, Athanasios'un 367 tarihli Paskalya mektubudur.",
+    "claim": "Athanasios’un 367 tarihli 39. Paskalya mektubunun korunmuş kitap listesi, bugünkü 27 Yeni Ahit kitabını sayar.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -1522,12 +1494,12 @@
     },
     "period": {
       "earliest": 367,
-      "latest": 397,
+      "latest": 367,
       "era_label": "Geç Roma İmparatorluğu",
       "precision": "exact",
       "dating_method": [
         "textual",
-        "paleography"
+        "historical-record"
       ]
     },
     "languages": [
@@ -1545,112 +1517,102 @@
         "role": "editor",
         "year": 367,
         "lifespan": "y. 296-373"
-      },
-      {
-        "name": "Metzger, Bruce M.",
-        "role": "analyst",
-        "year": 1987
       }
     ],
     "popular_claim": "Kanon bir konsilde tepeden ilan edildi; dışarıda kalan metinler imha edildi.",
-    "divergence": "Kanon bir kararla kurulmadı, kullanımla oluştu: hangi metinlerin okunmaya, kopyalanmaya ve öğretilmeye devam ettiğiyle. Athanasios'un kendisi yeni bir kanon KURDUĞUNU düşünmüyordu - zaten geniş kabul gören kitapları onaylıyordu. Sonraki bölgesel konsiller bu listeyi teyit etti. Sıra: kullanım -> uzlaşı -> onay. Dışarıda kalanlar yakılarak değil, ÇOĞALTILMAYARAK kayboldu - İskenderiye Kütüphanesi'ndeki mekanizmanın aynısı.",
+    "divergence": "Mektup 27 kitabı açıkça sayar. Athanasios bunları kendisine aktarılmış kitaplar olarak sunarken ekleme ve çıkarma yasağı da koyar; kanonik kitaplar, öğretim için okunabilen başka kitaplar ve reddettiği apokrifler arasında sınır çizer. Bu hem aktarım hem otoriteyle sınırlama dilidir; yalnız kendiliğinden aşağıdan oluşmuş evrensel uzlaşı diye sunulamaz. Liste dışında kalmak her metnin yalnız kopyalanmadığı için kaybolduğunu kanıtlamaz.",
     "divergence_type": [
       "medya-abartisi",
       "hayatta-kalma-yanliligi"
     ],
     "open_questions": [
-      "Kanon dışında kalan metinlerin ne kadarı kayıp? Kopyalanma oranına dayalı tahminler var ama ölçülemiyor."
+      "Farklı cemaatlerin belirli kitapları ne zaman kabul ettiğini gösteren listeler ve kullanım izleri nasıl karşılaştırılabilir?",
+      "Belirli bir kayıp metin için kopyalama eksikliği, fiziki kayıp ve imha ayrı belgelerle nasıl değerlendirilebilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-hristiyanlik"
     ],
     "sources": [
       {
         "id": "athanasios-39-paskalya-mektubu",
-        "language": "grc",
-        "accessed": "2026-09-09",
         "tier": "primary",
-        "type": "manuscript",
+        "type": "edition",
+        "title": "From Letter 39 (For 367) — R. Payne-Smith çevirisi",
+        "url": "https://www.newadvent.org/fathers/2806039.htm",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Korunmuş mektup parçalarının 2–7. paragrafları, NPNF II.4 (1892) İngilizce edisyonundan okundu. 367 mektup tarihi; 1892 edisyon yılıdır. Bu tek belgeden bütün kanon tarihinin ilk örneği veya bütün kiliselerin kabulü çıkarılmadı.",
         "authors": [
           "Athanasios (İskenderiye)"
         ],
-        "year": 367,
-        "title": "39. Paskalya Mektubu (Festal Letter)",
-        "note": "Bugünkü 27 kitabı tam listeleyen bilinen ilk belge."
+        "year": 1892,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "4"
       },
       {
-        "id": "metzger-1987-canon-new-testament",
+        "id": "eusebius-church-history-3",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Church History, Book III — A. C. McGiffert çevirisi",
+        "url": "https://www.newadvent.org/fathers/250103.htm",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-02",
+        "note": "III.25.1–7 İngilizce NPNF II.1 (1890) çevirisinden okundu. Eusebios’un kabul edilen, tartışmalı ve reddedilen metinler sınıflaması; her bölgenin tam envanteri veya güncel kilise kanonları değildir.",
         "authors": [
-          "Metzger, Bruce M."
+          "Eusebios (Kaisareia)"
         ],
-        "year": 1987,
-        "title": "The Canon of the New Testament: Its Origin, Development, and Significance",
-        "publisher": "Oxford University Press",
-        "isbn": "9780198269540",
-        "note": "Kanon tarihinin standart eseri."
+        "year": 1890,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "1"
       },
       {
-        "id": "ehrman-2003-lost-christianities",
+        "id": "socrates-church-history-1",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Church History, Book I — A. C. Zenos çevirisi",
+        "url": "https://www.newadvent.org/fathers/26011.htm",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-02",
+        "note": "5. yüzyılda yazılmış kilise tarihinin NPNF II.2 (1890) İngilizce çevirisi. I.9’da aktarılan Constantinus emri okundu; bu, İznik’te Yeni Ahit kitaplarının seçilmesini veya bütün emrin fiilî uygulanmasını göstermez.",
         "authors": [
-          "Ehrman, Bart D."
+          "Sokrates (Scholasticus)"
         ],
-        "year": 2003,
-        "title": "Lost Christianities: The Battles for Scripture and the Faiths We Never Knew",
-        "publisher": "Oxford University Press",
-        "isbn": "9780195141832",
-        "note": "Kanon dışı metinlerin akıbeti ve 'imha' anlatısının değerlendirmesi."
+        "year": 1890,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "2"
       }
     ],
     "evidence": [
       {
-        "id": "367-ilk-tam-liste",
-        "text": "367 tarihli 39. Paskalya mektubu, bugünkü 27 kitabı tam olarak listeleyen bilinen ilk belgedir.",
+        "id": "367-tam-liste",
+        "text": "Mektubun 5. paragrafı dört İncil, Elçilerin İşleri, yedi genel mektup, İbraniler dahil on dört Pavlus mektubu ve Yuhanna’nın Vahyi’ni sayar: toplam 27 kitap.",
         "citations": [
           {
             "source_ref": "athanasios-39-paskalya-mektubu",
-            "locator": "Kitap listesi",
+            "locator": "39. Paskalya mektubu, paragraf 5, Again it is not tedious ile başlayan Yeni Ahit listesi",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "onaylayici-dil",
-        "text": "Mektubun dili onaylayıcıdır, kurucu değil: geniş kabul gören kitapları teyit eder.",
+        "id": "aktarim-ve-sinir",
+        "text": "Athanasios 3. paragrafta kitapları aktarılmış olarak tanımlar; 6. paragrafta ekleme ve çıkarma yapılmamasını ister. Sınır koyan ikinci hüküm, yalnız pasif onay diline indirgenemez.",
         "citations": [
           {
-            "source_ref": "metzger-1987-canon-new-testament",
-            "locator": "Mektubun değerlendirmesi",
+            "source_ref": "athanasios-39-paskalya-mektubu",
+            "locator": "Paragraf 3, aktarılmış/kanona dahil kitaplar; paragraf 6, ekleme ve çıkarma yasağı",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "konsiller-teyit-etti",
-        "text": "4. yüzyıl sonundaki Kuzey Afrika bölgesel konsilleri aynı listeyi teyit etti - yani liste konsilden önce vardı.",
+        "id": "okuma-ile-kanon-ayrimi",
+        "text": "7. paragraf Didache ve Çoban gibi bazı kitapları yeni katılanlara öğretim için okunabilecekler arasında sayar, fakat kanona dahil etmez. Kanon dışında kalan bütün kitaplar aynı kategoriye konulmaz.",
         "citations": [
           {
-            "source_ref": "metzger-1987-canon-new-testament",
-            "locator": "Bölgesel konsiller",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "nag-hammadi",
-        "text": "Kanon dışı metinlerin bir kısmı elimizdedir (Nag Hammadi buluntuları, 1945); sistematik bir imha kampanyasının kanıtı yoktur.",
-        "citations": [
-          {
-            "source_ref": "ehrman-2003-lost-christianities",
-            "locator": "Nag Hammadi ve kayıp metinler",
+            "source_ref": "athanasios-39-paskalya-mektubu",
+            "locator": "Paragraf 7, okunabilen kitapların listesi ve apokriflerle karşılaştırma",
             "support_type": "direct"
           }
         ]
@@ -1659,22 +1621,22 @@
     "counter_evidence": [
       {
         "id": "tartismali-kitaplar",
-        "text": "Bazı kitapların (İbraniler, Vahiy, Yakup) kabulü bölgeden bölgeye uzun süre farklılık gösterdi; 367 bir 'kapanış' değil, bir uzlaşının ilk yazılı kaydıdır.",
+        "text": "Eusebios farklı bir sınıflama kaydeder: Yakup, Yahuda, ikinci Petrus ve ikinci/üçüncü Yuhanna tartışmalıdır; Vahiy için farklı görüşler aktarılır. Athanasios’un listesi bütün topluluklarda tek anda aynı kabulün oluştuğunu ölçmez.",
         "citations": [
           {
-            "source_ref": "metzger-1987-canon-new-testament",
-            "locator": "Tartışmalı kitaplar",
+            "source_ref": "eusebius-church-history-3",
+            "locator": "III.25.1–7; özellikle 2–4, Vahiy ve tartışmalı mektuplar",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "evrensel-liste-yok",
-        "text": "Süryani ve Etiyopya kiliseleri farklı kanonlar kullanmaya devam etti; tek bir evrensel liste hiçbir zaman olmadı.",
+        "id": "imha-ve-kopyalama",
+        "text": "Sokrates’in Arius eserleri için aktardığı yakma emri, hiçbir metin imha edilmedi genellemesini sınırlar. Bu emir bütün kanon dışı metinlerin akıbetini açıklamaz; korunmuş başka bir metnin varlığı da imha yapılmadığını kanıtlamaz.",
         "citations": [
           {
-            "source_ref": "metzger-1987-canon-new-testament",
-            "locator": "Doğu kanonları",
+            "source_ref": "socrates-church-history-1",
+            "locator": "I.9, Another Epistle of Constantine, Arius eserlerini yakma / saklamayı cezalandırma hükümleri",
             "support_type": "counter"
           }
         ]
@@ -1682,7 +1644,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Metzger ve Ehrman künyeleri bağlandı; 'çoğaltılmayarak kayboldu' savı Nag Hammadi kanıtına dayandırıldı."
+      "notes": "İddia mektubun 27 kitaplık içeriğine daraltıldı; ilk ve evrensel liste hükmü bu tur doğrulanmış gibi kullanılmadı. Athanasios’un aktarım dili, sınır koyması ve öğretim için başka kitaplara izni birlikte gösterildi. Yalnız kopyalanmama açıklaması ve Nag Hammadi’nin imha yokluğunu kanıtladığı çıkarımı kaldırıldı. Metzger/Ehrman kitapları ve Kuzey Afrika konsil edisyonları bu incelemede okunmadığı için bu kaydın kanıtları arasından çıkarıldı. Seçilmiş İngilizce antik metin çevirileri kontrol edildi; özgün el yazmaları ve bütün kanon tarihi incelenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
