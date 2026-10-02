@@ -2920,9 +2920,9 @@
   {
     "schema_version": 2,
     "id": "shushtar-band-e-kaisar-teknoloji-transferi",
-    "claim": "Roma yapı tekniği 3. yüzyılda Sasani İran'a aktarıldı ve Band-e Kaisar'da kullanıldı; aktarım vakayinamelerle değil, tekniğin kendisiyle kanıtlanır.",
-    "status": "established",
-    "confidence": "high",
+    "claim": "Band-e Kaisar’daki Roma teknoloji aktarımı, vakayinamelerden bağımsız olarak yalnız yapı tekniğiyle kesin biçimde kanıtlanabilir.",
+    "status": "unknown",
+    "confidence": "medium",
     "topic": [
       "shushtar",
       "iran",
@@ -2940,10 +2940,10 @@
       }
     },
     "period": {
-      "earliest": 260,
-      "latest": 270,
-      "era_label": "Sasani dönemi, I. Şapur",
-      "precision": "approximate",
+      "earliest": 201,
+      "latest": 300,
+      "era_label": "Sasani evresi; 3. yüzyıla atfedilen ana düzen",
+      "precision": "century",
       "dating_method": [
         "historical-record",
         "typology"
@@ -2958,8 +2958,8 @@
       "arkeoloji",
       "tarih"
     ],
-    "popular_claim": "Antik teknoloji aktarımı ancak yazılı kayıtla kanıtlanabilir.",
-    "divergence": "Burada aktarımın kanıtı YAZI DEĞİL, TEKNİĞİN KENDİSİDİR. Band-e Kaisar, İran'da bent ile köprüyü birleştiren ilk yapıdır ve bilinen en doğudaki Roma köprüsü ve Roma bendidir. Yapım gücü, I. Şapur'un Valerianus'u yendiği savaştan sonra esir alınan Roma askerleridir. Yani teknik, kitapla değil ESİR MÜHENDİSLE taşındı - ve yapının kendisi bu aktarımın belgesidir.",
+    "popular_claim": "Roma betonu tek başına esir mühendislerin Band-e Kaisar’ı yaptığını kanıtlar.",
+    "divergence": "UNESCO ve ICOMOS Roma etkisini kabul eder; bu, bütün bileşenlerin aynı işçi grubunca yapıldığını veya aktarımın yalnız malzemeyle kanıtlandığını göstermez. Esirlerin Şâdorvân şantiyesindeki varlığı ICOMOS’ta geç bir tarihsel kaynağa bağlanır. Teknik, yazılı gelenek ve onarım evreleri birlikte değerlendirilmelidir; önceki yüksek güvenli kesin hüküm daraltıldı.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -2972,87 +2972,128 @@
         "institution": "UNESCO World Heritage Centre",
         "url": "https://whc.unesco.org/en/list/1315/",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "2009'da Dünya Mirası listesine alındı (İran'ın 10. alanı). Resmî tescil metni."
+        "accessed": "2026-10-02",
+        "note": "Kısa tanıtım ile Outstanding Universal Value / Brief Synthesis, Criterion (ii), Integrity and Authenticity bölümleri okundu. Tescil tarihi 2009; bu tarih sayfanın güncelleme tarihi değildir. Ayrıntılı yapım kaydı veya malzeme analizi değildir."
+      },
+      {
+        "id": "icomos-shushtar-2009",
+        "tier": "institutional",
+        "type": "report",
+        "title": "Shushtar Hydraulic System (Iran), No 1315: Advisory Body Evaluation",
+        "institution": "ICOMOS",
+        "year": 2009,
+        "url": "https://whc.unesco.org/document/152341",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "UNESCO yayımlı özgün değerlendirme: basılı s. 61–65 (PDF s. 1–5) içindeki betimleme, tarihçe, özgünlük ve ölçütler okundu. Rapor onayı 10 Mart 2009, UNESCO belge tarihi 22 Haziran 2009. Adaylık dosyasından ayrı bir değerlendirme; özgün kazı veya harç analiz raporu değildir."
+      },
+      {
+        "id": "iranica-bridges-huff-kleiss-1989",
+        "tier": "institutional",
+        "type": "article",
+        "authors": [
+          "Huff, Dietrich",
+          "Kleiss, Wolfram"
+        ],
+        "title": "Bridges",
+        "container": "Encyclopaedia Iranica, Vol. IV, Fasc. 5, pp. 449–455",
+        "institution": "Encyclopaedia Iranica",
+        "year": 1989,
+        "url": "https://www.iranicaonline.org/articles/bridges/",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Özellikle Dietrich Huff imzalı i. Pre-Islamic Bridges bölümü okundu. Sasani köprülerinin yapı özelliklerini değerlendirir; bu kayıttaki malzeme sınırlaması Band-e Kaisar için yeni bir laboratuvar analizi değildir. İlk yayın 15 Aralık 1989; çevrimiçi güncelleme 24 Temmuz 2015."
       }
     ],
     "evidence": [
       {
-        "id": "en-dogudaki-roma-yapisi",
-        "text": "Band-e Kaisar, İran'da bent ile köprüyü birleştiren ilk yapıdır ve bilinen en doğudaki Roma köprüsü ve Roma bendidir.",
+        "id": "roma-etkisi-sentez",
+        "text": "UNESCO ölçüt (ii), Roma teknisyenlerinin etkisini Elam, Mezopotamya ve Nabatî birikimiyle birlikte değerlendirir.",
         "citations": [
           {
             "source_ref": "unesco-1315-shushtar",
-            "locator": "Tescil açıklaması",
+            "locator": "Outstanding Universal Value, Criterion (ii), Roma teknisyenlerine ilişkin paragraf",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "roma-esirleri",
-        "text": "Yapım gücü, I. Şapur'un imparator Valerianus'u yendiği savaştan sonra esir alınan Roma askerleridir.",
+        "id": "roma-etkisi-ve-tarihsel-atfi",
+        "text": "ICOMOS, özellikle Büyük Bent üzerindeki Roma etkisini kabul eder; esirlerin şantiyedeki varlığı ve olası Romalı mimar ayrı bir tarihsel atıftır.",
         "citations": [
           {
-            "source_ref": "unesco-1315-shushtar",
-            "locator": "Tarihçe bölümü",
+            "source_ref": "icomos-shushtar-2009",
+            "locator": "s. 62, History and development; s. 65, Criterion (ii)",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "kanal-ve-bentler",
-        "text": "Roma mühendisleri Ab-i Gargar kanalını ve Band-e Kaisar ile Band-e Mizan bentlerini kurarak Karun'un suyunu yapay kanala yönlendirdi.",
+        "id": "huzistan-tarihsel-baglami",
+        "text": "Huff, Roma esirlerinin Huzistan’daki inşa işlerinde kullanıldığını tarihsel kaynaklarla ilişkilendirir.",
         "citations": [
           {
-            "source_ref": "unesco-1315-shushtar",
-            "locator": "Sistem bileşenleri",
+            "source_ref": "iranica-bridges-huff-kleiss-1989",
+            "locator": "i. Pre-Islamic Bridges, Valerianus’un 260 yenilgisiyle başlayan Sasani inşa programı paragrafı; basılı s. 449–455",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "unesco-tescili",
-        "text": "Sistem UNESCO tarafından 'yaratıcı dehanın başyapıtı' olarak nitelendirilmiş ve 2009'da Dünya Mirası listesine alınmıştır.",
-        "citations": [
-          {
-            "source_ref": "unesco-1315-shushtar",
-            "locator": "Tescil gerekçesi",
-            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "ayrintilar-cikarim",
-        "text": "Aktarımın ayrıntıları - hangi tekniklerin hangi ölçüde aktarıldığı, yerel geleneğin payı - yapıdan çıkarımdır, belgeli değildir.",
+        "id": "malzeme-tek-basina-yeterli-degil",
+        "text": "Huff, belgelenmiş kesin Sasani köprülerinin sınırlı olduğunu ve kesme taş ile harcın her durumda tek başına tanısal özellik sayılamayacağını belirtir.",
         "citations": [
           {
-            "source_ref": "unesco-1315-shushtar",
-            "locator": "Tescil açıklaması",
+            "source_ref": "iranica-bridges-huff-kleiss-1989",
+            "locator": "i. Pre-Islamic Bridges, Sasani köprülerinin sınırlı belgelenmesi ve yapı malzemesinin tanısal değeri üzerine son paragraflar; basılı s. 449–455",
             "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "esir-atfinin-siniri",
+        "text": "ICOMOS’taki esir atfı 12. yüzyıl Farsça kaynağına dayanır; bu rapor çağdaş bir şantiye işçi listesi sunmaz. Malzemeden belirli kişileri çıkarmanın sınırı bu kaydın yorumudur.",
+        "citations": [
+          {
+            "source_ref": "icomos-shushtar-2009",
+            "locator": "s. 62, History and development, Roma esirleri ve Andimeshk atfı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "onarim-evreleri",
+        "text": "Yapı topluluğunun sonraki onarımları bugünkü malzemeyi doğrudan ilk yapım evresiyle eşitlemeyi sınırlar.",
+        "citations": [
+          {
+            "source_ref": "icomos-shushtar-2009",
+            "locator": "s. 63, History and development; s. 63–64, Authenticity",
+            "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Hakemli kaynağın tam künyesi nedir? Doğrulanmalı.",
-      "Yerel Elam-Sasani hidrolik geleneğinin payı ne kadar?"
+      "Band-e Kaisar’ın özgün harcı ve sonraki tamir harçları yayımlı analizlerle nasıl ayrılıyor?",
+      "Hangi yapı özellikleri aktarımı, hangi kaynaklar belirli işçi veya mimar atfını destekliyor?",
+      "Roma katkısı ile daha eski yerel birikim hangi evrelerde ayrıştırılabiliyor?"
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-02",
     "used_in": [
       "shushtar"
     ],
     "review": {
       "status": "draft",
-      "notes": "UNESCO tescil metnine bağlandı. Hakemli kaynağın künyesi eksik ve bu, kayıtta açıkça işaretlendi. Bu kayıttaki hakemli kaynağın künyesi eksiktir: yazar, yıl ve kapsayıcı yayın doğrulanmamıştır. Birincil künye ile değiştirilmelidir."
+      "notes": "Kaynak okuması tamamlandı; uzman kabulü değildir. Kesin ve yalnız malzemeye dayalı aktarım hükmü açık soruya indirildi; Roma etkisi reddedilmedi. Özgün mühendislik monografileri, erken teknik makaleler ve tarihsel metinlerin edisyonları okunmadı; Band-e Kaisar harç analizi doğrulanmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "shushtar-darius-kokeni",
-    "claim": "Şuşter hidrolik sistemi Büyük Darius döneminde, MÖ 5. yüzyılda kuruldu.",
-    "status": "contested",
+    "claim": "Şuşter’de bugün görülen hidrolik yapı topluluğunun bütünü Büyük Darius döneminde, MÖ 5. yüzyılda kurulmuştur.",
+    "status": "unknown",
     "confidence": "medium",
     "topic": [
       "shushtar",
@@ -3071,12 +3112,11 @@
     },
     "period": {
       "earliest": -500,
-      "latest": 300,
-      "era_label": "Ahameniş'ten Sasani'ye - önerilen aralık",
-      "precision": "disputed",
+      "latest": -401,
+      "era_label": "İddia edilen Ahameniş başlangıcı; bütün yapıların tarihi değildir",
+      "precision": "century",
       "dating_method": [
-        "historical-record",
-        "typology"
+        "historical-record"
       ]
     },
     "languages": [
@@ -3087,20 +3127,8 @@
       "muhendislik",
       "tarih"
     ],
-    "people": [
-      {
-        "name": "I. Darius",
-        "role": "proposer",
-        "year": -500
-      },
-      {
-        "name": "I. Şapur",
-        "role": "excavator",
-        "year": 260
-      }
-    ],
     "popular_claim": "Şuşter sistemi 2.500 yıllıktır; Büyük Darius tarafından kurulmuştur.",
-    "divergence": "Darius atfı bir ARKEOLOJİK BULGU DEĞİL, GELENEKSEL BİR ATIFTIR - ve kaynakların dili bunu ele veriyor: 'dayandığı düşünülüyor', 'muhtemelen', 'olabilir'. Bugün görülen yapının BİÇİMİ 3. yüzyıla, Sasani dönemine aittir. Ahameniş dönemine bağlanabilecek olan, Daryoon kanalı gibi daha erken bir çekirdektir; sistemin bütünü değil. Dahası çevredeki Part (Aşkani) dönemi buluntuları daha eski bir kullanımı da akla getiriyor. Yani ortada tek bir kuruluş tarihi yok, ÜST ÜSTE BİNMİŞ EVRELER var - ve 'MÖ 5. yüzyılda kuruldu' cümlesi bu evreleri tek bir tarihe indirgiyor.",
+    "divergence": "Erken Dâriun/Daryoon kanalı Darius’a atfedilir ve ICOMOS kanal yakınındaki kalıntıları bu atıf lehine anar. Bu yüzden arkeolojik dayanağın bütünüyle yok olduğu söylenemez. UNESCO ana düzeni 3. yüzyıla, eski temelleri olasılıkla MÖ 5. yüzyıla bağlar; ICOMOS sonraki yenilemeleri de kaydeder. Bütün bileşenlere tek kuruluş tarihi uygulanamaz; bu inceleme evreleri bağımsız kazı verisiyle yeniden tarihlemedi.",
     "divergence_type": [
       "turizm-kopyalamasi",
       "guncellenmemis"
@@ -3114,80 +3142,92 @@
         "institution": "UNESCO World Heritage Centre",
         "url": "https://whc.unesco.org/en/list/1315/",
         "language": "en",
-        "accessed": "2026-09-07",
-        "note": "2009'da Dünya Mirası listesine alındı (İran'ın 10. alanı). Resmî tescil metni."
+        "accessed": "2026-10-02",
+        "note": "Kısa tanıtım ile Outstanding Universal Value / Brief Synthesis, Criterion (ii), Integrity and Authenticity bölümleri okundu. Tescil tarihi 2009; bu tarih sayfanın güncelleme tarihi değildir. Ayrıntılı yapım kaydı veya malzeme analizi değildir."
+      },
+      {
+        "id": "icomos-shushtar-2009",
+        "tier": "institutional",
+        "type": "report",
+        "title": "Shushtar Hydraulic System (Iran), No 1315: Advisory Body Evaluation",
+        "institution": "ICOMOS",
+        "year": 2009,
+        "url": "https://whc.unesco.org/document/152341",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "UNESCO yayımlı özgün değerlendirme: basılı s. 61–65 (PDF s. 1–5) içindeki betimleme, tarihçe, özgünlük ve ölçütler okundu. Rapor onayı 10 Mart 2009, UNESCO belge tarihi 22 Haziran 2009. Adaylık dosyasından ayrı bir değerlendirme; özgün kazı veya harç analiz raporu değildir."
       }
     ],
     "evidence": [
       {
-        "id": "darius-atfi",
-        "text": "Sistem, Ahameniş kralı Büyük Darius dönemine, MÖ 5. yüzyıla bağlanır.",
+        "id": "darius-atfi-ve-olasilik",
+        "text": "UNESCO kısa tanıtımı Darius kökenini anar; ayrıntılı sentez eski temeller için olasılık dili kullanır.",
         "citations": [
           {
             "source_ref": "unesco-1315-shushtar",
-            "locator": "Tescil açıklaması, tarihçe",
+            "locator": "Description, ilk paragraf; Outstanding Universal Value, Brief Synthesis, ilk paragraf",
             "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "dariun-kalintilari",
+        "text": "ICOMOS, Dâriun kanalını Darius’a atfeder ve yakınındaki arkeolojik kalıntıları destekleyici görür.",
+        "citations": [
+          {
+            "source_ref": "icomos-shushtar-2009",
+            "locator": "s. 62, History and development, Darius ve Dâriun kanalı paragrafı",
+            "support_type": "direct"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "bugunku-bicim-3-yuzyil",
-        "text": "Sistemin BUGÜNKÜ BİÇİMİ 3. yüzyıla aittir; MÖ 5. yüzyıl yalnızca olası bir temel olarak anılır.",
+        "id": "ana-duzen-3-yuzyil",
+        "text": "UNESCO, ana sistem düzenini MS 3. yüzyıla bağlar; bu cümle her mevcut duvarın aynı tarihte yapıldığını söylemez.",
         "citations": [
           {
             "source_ref": "unesco-1315-shushtar",
-            "locator": "Tescil açıklaması, tarihçe",
+            "locator": "Outstanding Universal Value, Brief Synthesis, ilk paragraf",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "temkinli-dil",
-        "text": "Kaynakların dili temkinlidir: 'dayandığı düşünülüyor', 'muhtemelen', 'olabilir'. Bu, kesin bir tarihleme değil geleneksel bir atıftır.",
+        "id": "sonraki-gelisim",
+        "text": "ICOMOS, değirmen ve tünel alanının 15. yüzyıla ve yeniden 19.–20. yüzyıllara uzanan gelişimini kaydeder.",
         "citations": [
           {
-            "source_ref": "unesco-1315-shushtar",
-            "locator": "Tescil açıklaması",
+            "source_ref": "icomos-shushtar-2009",
+            "locator": "s. 63, History and development, İslam dönemi bakım ve geliştirme paragrafı",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "daryoon-cekirdek",
-        "text": "Ahameniş dönemine bağlanabilecek olan Daryoon kanalı gibi erken bir çekirdektir; yenileme ve genişletmenin büyük bölümü Sasani dönemindedir.",
+        "id": "kurulus-ile-mevcut-doku",
+        "text": "Eski temeller için ihtiyat, Darius atfının çürütülmesi anlamına gelmez; kuruluş ile bugün korunan doku ayrılmalıdır. Bu ayrım kaydın yorumudur.",
         "citations": [
           {
-            "source_ref": "unesco-1315-shushtar",
-            "locator": "Sistem bileşenleri",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "part-buluntulari",
-        "text": "Çevredeki Part dönemi buluntuları daha erken bir kullanımı akla getirir; bu da tek bir kuruluş tarihi fikrini zayıflatır.",
-        "citations": [
-          {
-            "source_ref": "unesco-1315-shushtar",
-            "locator": "Bağlam",
+            "source_ref": "icomos-shushtar-2009",
+            "locator": "s. 62, History and development; s. 63–64, Authenticity",
             "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Ahameniş evresinin arkeolojik kanıtı nedir? Kanal izi mi, yazıt mı, tabaka mı - kaynaklarda gösterilmiyor.",
-      "Evreler stratigrafik olarak ayrıştırıldı mı?"
+      "Dâriun yakınındaki destekleyici kalıntıların özgün kazı raporu ve tarihleme yöntemi nedir?",
+      "Bugünkü değirmen, tünel ve bentlerde eski çekirdek ile sonraki onarımlar hangi verilerle ayrılıyor?"
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-02",
     "used_in": [
       "shushtar"
     ],
     "review": {
       "status": "draft",
-      "notes": "Tek kaynaklı kalmaya devam ediyor (UNESCO). Farsça ve İngilizce hakemli hidrolik arkeoloji literatürü taranmadı; bu, kaydın başlıca zayıflığıdır."
+      "notes": "İki kurumsal metnin ilgili bölümleri okundu; ciddi uzmanlar arasında belgelenmiş bir anlaşmazlık gösterilmediği için contested yerine unknown seçildi. Darius bir hipotez yazarı, Şapur bir kazıcı değildir; yanlış araştırmacı rolleri kaldırıldı. Özgün kazı/harç raporu ve bütün evrelerin bağımsız tarihlemesi bu denetimde doğrulanmadı."
     }
   },
   {
