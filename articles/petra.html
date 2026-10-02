@@ -96,7 +96,7 @@ section:last-of-type{border-bottom:0}
 .fill{width:100%;background:var(--water-soft);border-top:2px solid var(--water)}
 .tube.full .fill{height:100%;background:var(--accent-soft);border-top-color:var(--accent)}
 .tube.part .fill{height:62%}
-.tube.crit .fill{height:52%}
+.tube.crit .fill{height:85%}
 .tube__note{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.04em;color:var(--ink-2)}
 .tube.full .tube__note{color:var(--accent-ink)}
@@ -147,11 +147,11 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <span class="series">İnceleme 06 · Nabatiler</span>
     <p class="eyebrow">Hidrolik mühendislik · kayaya oyma mimari · ticaret yolları</p>
     <h1>Petra: Görünmeyen Şehir</h1>
-    <p class="hero__lede">Petra'nın fotoğrafı çekilen yüzü bir <strong>mezarlıktır</strong>. Asıl şehir ayakta değil — ve asıl başarısı da hiç görünmüyor: yılda 150 milimetre yağış alan bir çölde <strong>otuz bin kişiyi yaşatan bir su sistemi.</strong></p>
+    <p class="hero__lede">Petra'nın anıtsal cepheleri kadar su altyapısı da dikkat çekici. Kaynaklardan su getiren, mevsimlik yağışı depolayan ve selleri yönlendiren sistem, kurak bir çevrede kentsel yaşamı destekliyordu. <strong>Boru kalıntıları, akış modeli ve nüfus tahmini</strong> bu hikâyenin farklı kanıtlarıdır.</p>
 
     <div class="stats">
-      <div class="stat"><span class="stat__num w">150 mm</span><span class="stat__lbl">yıllık yağış — küçük bir köye ancak yeter</span></div>
-      <div class="stat"><span class="stat__num">~30.000</span><span class="stat__lbl">kesintisiz su verilen nüfus (tahmin)</span></div>
+      <div class="stat"><span class="stat__num w">3 hat</span><span class="stat__lbl">2020 hidrolik çalışmasında inceleniyor</span></div>
+      <div class="stat"><span class="stat__num">~20.000</span><span class="stat__lbl">Ortloff 2020'de kullanılan nüfus değeri; kesin sayı değil</span></div>
       <div class="stat"><span class="stat__num w">~2 km</span><span class="stat__lbl">Siq boyunca uzanan seramik boru hattı</span></div>
       <div class="stat"><span class="stat__num w">~10.000 m³</span><span class="stat__lbl">Zurraba deposunun kapasitesi</span></div>
     </div>
@@ -163,10 +163,10 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <a href="#mezarlik">Mezarlığı şehir sanmak</a>
     <a href="#hazne">Hazine bir mezar</a>
     <a href="#su">Asıl başarı</a>
-    <a href="#yaridolu">Yarı dolu boru</a>
+    <a href="#yaridolu">Kısmi akış</a>
     <a href="#uc-sistem">Üç sistem</a>
     <a href="#sel">Sel</a>
-    <a href="#teorisiz">Teorisiz mühendislik</a>
+    <a href="#teorisiz">Bilginin sınırı</a>
     <a href="#neden">Neden burada</a>
     <a href="#sonuc">Sonuç</a>
     <a href="#acik">Açık sorular</a>
@@ -224,80 +224,80 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 <section id="su" class="wrap">
   <div class="sec__head">
     <p class="eyebrow">03 — Asıl mesele</p>
-    <h2>Yılda 150 milimetre yağışta otuz bin kişi</h2>
-    <p class="kicker">Petra'nın gerçek başarısı taş oymacılığı değil. Onu ayakta tutan şey, görünmeyen ve büyük ölçüde toprak altında olan bir su altyapısıydı.</p>
+    <h2>Kurak çevrede bir kent için su</h2>
+    <p class="kicker">Su altyapısının kapasitesi ile kentin gerçek nüfusu ayrı sorulardır.</p>
   </div>
 
   <div class="prose">
-    <p>Rakamı bir yere oturtalım: <b>yılda 150 mm yağış</b>, küçük bir köyü zorlanarak besleyecek miktardır. Konya Ovası'nın yarısı, İstanbul'un beşte biri kadar. Petra bu iklimde on binlerce kişilik, kesintisiz su verilen bir kent yönetti — üstelik su yalnızca içme için değil, hamamlar ve süs havuzları için de kullanılıyordu.</p>
-    <p>Bunu mümkün kılan şey <b>tek bir icat değil</b>, birlikte çalışan bir sistemdi: uzaktaki kaynaklardan boru hatları, mevsimlik yağmuru yakalayan kanallar, yüzlerce sarnıç, barajlar ve seli şehirden uzaklaştıran bypass tünelleri. Yani hem <b>getirme</b>, hem <b>depolama</b>, hem de <b>fazlasından korunma</b> aynı anda çözülmüştü.</p>
+    <p><a href="https://doi.org/10.3390/w12123498">Ortloff'un 2020 çalışması</a>, Petra için yaklaşık <b>20.000 kişilik</b> sürekli nüfus değeri kullanır. Bu, makalenin verdiği yuvarlak bir değerdir; boru modelinin ölçtüğü bir nüfus sonucu değildir. Kervanların geçici su ihtiyacı ve kurak dönemlerdeki depolama da çalışmanın ele aldığı konular arasındadır.</p>
+    <p>Birlikte çalışan altyapı; uzaktaki kaynaklardan gelen boru hatlarını, mevsimlik yağışı toplayan kanalları, sarnıçları, depoları ve sel yönlendirme yapılarını içeriyordu. <a href="https://whc.unesco.org/en/list/326/">UNESCO'nun Petra tanımı</a> da su yönetiminin kurak çevrede geniş yerleşimi desteklediğini belirtir. Yalnız yıllık yağış miktarından kaç kişinin beslenebileceği çıkarılamaz; toplama alanı, kaynak debisi ve tüketim de gerekir.</p>
   </div>
 </section>
 
 <section id="yaridolu" class="wrap">
   <div class="sec__head">
     <p class="eyebrow">04 — Kilit fikir</p>
-    <h2>Boruyu neden bilerek yarı dolu akıttılar?</h2>
-    <p class="kicker">Petra'nın hidrolik mühendisliğinin en zarif kararı, sezgiye ters gelen bir tercihte saklı.</p>
+    <h2>Siq borusunda kısmi akış: kalıntı ve model</h2>
+    <p class="kicker">Tam dolmayan bir boru, mutlaka yarısına kadar dolu değildir. Tasarım niyeti de akışın doğrudan gözlenmesiyle aynı kanıt değildir.</p>
   </div>
 
   <div class="prose">
-    <p>Ain Musa kaynağından şehre uzanan seramik boru hattı, Siq'in kuzey duvarı boyunca yükseltilmiş bir kanalda taşınıyordu ve <b>iki kilometreden uzundu</b>. İlk sezgi şu olur: boruyu tıka basa doldur, maksimum su gelsin.</p>
-    <p>Nabatiler bunu yapmadı — ve haklıydılar.</p>
+    <p>2020 makalesi, Siq içindeki boru bölümünü yaklaşık <b>2 kilometre</b> olarak tanımlar; bunu Ain Musa'dan gelen daha uzun besleme hattıyla karıştırmamak gerekir. Bazı açılmış borularda mineral birikintileri tabanda yoğunlaşır, yan duvarların yaklaşık yarısına doğru azalır. Yazar, bu izi en azından bazı bölümlerde <b>kısmi akışı destekleyen gözlem</b> olarak yorumlar.</p>
+    <p>Akışın hızı, derinliği ve kararlılığı ise hesaplarla ve <b>hesaplamalı akışkanlar dinamiği (CFD)</b> modelleriyle incelenir. Ortloff, Siq bölümlerinde kritik akışa yakın bir düzenin yüksek debiyi destekleyip basınçlı ek yeri sızıntısını azaltabileceğini savunur. Bu, kalıntılardan geliştirilen bir mühendislik yorumudur.</p>
   </div>
 
   <div class="flow">
-    <div class="hd">Aynı boru, üç farklı akış rejimi</div>
-    <p class="sub">Su seviyesi ve eğim değiştikçe borunun içindeki davranış değişir. Nabati hattı, farklı bölümlerde farklı rejimler kullanacak biçimde tasarlanmıştı.</p>
+    <div class="hd">Doluluk ile kritik akış farklı özelliklerdir</div>
+    <p class="sub">Şema kavramları karşılaştırır; bir CFD çıktısı veya ölçülmüş tarihsel su seviyesi değildir. Kritik akış da kısmi dolu olabilir.</p>
 
     <div class="pipes">
       <div class="pipe">
         <div class="pipe__lbl"><b>Tam dolu</b><span>basınçlı</span></div>
-        <div class="tube full"><div class="fill"></div><span class="tube__note">her ekten sızıntı · basınç dalgalanması</span></div>
+        <div class="tube full"><div class="fill"></div><span class="tube__note">basınç, ek yeri sızıntısını artırabilir</span></div>
       </div>
       <div class="pipe">
-        <div class="pipe__lbl"><b>Yarı dolu</b><span>serbest yüzeyli</span></div>
-        <div class="tube part"><div class="fill"></div><span class="tube__note">basınç atmosferik · ek yerleri güvende</span></div>
+        <div class="pipe__lbl"><b>Kısmi dolu</b><span>serbest yüzeyli</span></div>
+        <div class="tube part"><div class="fill"></div><span class="tube__note">su yüzeyinin üstünde hava boşluğu</span></div>
       </div>
       <div class="pipe">
-        <div class="pipe__lbl"><b>Kritik akış</b><span>Fr = 1</span></div>
-        <div class="tube crit"><div class="fill"></div><span class="tube__note">verilen eğimde maksimum debi</span></div>
+        <div class="pipe__lbl"><b>Kritiğe yakın model</b><span>Fr ≈ 1</span></div>
+        <div class="tube crit"><div class="fill"></div><span class="tube__note">Siq hesabında derinlik / çap ≈ 0,8–0,9</span></div>
       </div>
     </div>
 
-    <p class="legend"><b>Mantık şu:</b> tam dolu bir boru basınç altındadır ve her ek yerinden sızar — üstelik seramik borularda basınç dalgalanması eki patlatır. Yarı dolu akan boruda ise içerideki basınç <b>atmosferik</b> kalır; ek yerleri zorlanmaz, sızıntı düşer. Ama sadece azaltmakla kalmadılar: eğimi ve su seviyesini, akışın <b>kritik noktaya</b> geldiği yerde tuttular — o noktada verilen eğimden elde edilebilecek <b>en yüksek debi</b> alınır. Yani hem sızıntıyı en aza indirip hem de taşınan suyu en üste çıkardılar.</p>
+    <p class="legend"><b>Makaledeki yorum:</b> kısmi akışın üstündeki atmosfer basınçlı hava boşluğu, tam dolu ve basınçlı bir tasarıma göre ek yerlerindeki sızıntı riskini azaltabilir. Siq için yaklaşık 14 cm iç çap ve bölüm eğimleriyle yapılan hesap, kritik derinliği <b>çapın yaklaşık %80–90'ı</b> olarak verir. Bu “yarı dolu” demek değildir. Yüksek debi yorumu makalenin bu hat için kullandığı eğim, pürüzlülük ve besleme koşullarına bağlıdır; bütün borulara uygulanabilecek tek bir kural olarak okunmamalıdır.</p>
   </div>
 
-  <p class="note w" style="margin-top:1.5rem">Bu değerlendirmenin kaynağı önemli: hattın iç davranışı doğrudan ölçülmedi, <b>hesaplamalı akışkanlar dinamiği (CFD)</b> ile yeniden kuruldu. Yani elimizdeki şey bir model — güçlü bir model, ama Nabati mühendisin zihnine doğrudan erişim değil.</p>
+  <p class="note w" style="margin-top:1.5rem"><b>Kaynak ve sınır:</b> Ortloff 2020, §3, s. 9 ve 12–15. Mineral birikimi bir kalıntı gözlemidir; akış hesabı ve tasarım niyeti yorumu bundan ayrı değerlendirilir. Antik hattın iç akışı bugün ölçülmüş değildir; model bu denetimde yeniden çalıştırılmadı.</p>
 </section>
 
 <section id="uc-sistem" class="wrap">
   <div class="sec__head">
     <p class="eyebrow">05 — Çeşitlilik</p>
     <h2>Üç hat, üç ayrı çözüm</h2>
-    <p class="kicker">Aynı şablonu tekrar etmediler. Her hat kendi arazi koşuluna göre farklı bir hidrolik teknoloji kullanıyor.</p>
+    <p class="kicker">Ortloff 2020, Siq, Ain Braq ve Wadi Mataha hatlarını farklı arazi koşulları için geliştirilen çözümler olarak inceler.</p>
   </div>
 
   <div class="grid3">
     <div class="card">
       <span class="tag">Siq hattı</span>
       <div class="hd">Ain Musa'dan şehre</div>
-      <p>Kaynaktan gelen suyu, kanyonun kuzey duvarı boyunca yükseltilmiş kanalda taşıyıp Sütunlu Cadde'ye ulaştırır. Uzunluğu iki kilometreyi aşar ve kaynağın <b>debisinin ancak bir bölümünü</b> alacak şekilde boyutlandırılmıştır — fazlası hattı zorlardı.</p>
+      <p>Kanyonun kuzey duvarındaki yaklaşık iki kilometrelik bölüm, Ain Musa'dan gelen beslemeyi şehre iletir. Makale, hattın <b>kaynak debisinin önemli bir bölümünü</b> aktarabilmesini eğim, pürüzlülük ve ara havuzlarla birlikte modeller. Bu bölümün uzunluğu bütün besleme güzergâhının uzunluğu değildir.</p>
     </div>
     <div class="card">
       <span class="tag">Ain Braq hattı</span>
       <div class="hd">Farklı arazi, farklı rejim</div>
-      <p>Ayrı bir kaynak, ayrı bir güzergâh ve akış kontrolü için farklı bir çözüm. Üç hattın <b>aynı sorunu üç farklı yöntemle</b> çözmesi, tek bir usta reçetesinin kopyalanmadığını gösteriyor.</p>
+      <p>Ayrı bir kaynak ve güzergâh. Makale, bu hattaki bir yan havuzun akış kararlılığındaki olası rolünü inceler. Bu turda bu hattın bütün CFD hesapları bağımsız olarak denetlenmedi.</p>
     </div>
     <div class="card">
       <span class="tag">Wadi Mataha hattı</span>
-      <div class="hd">Tasarım kararları izlenebiliyor</div>
-      <p>Bu hat üzerinde yapılan çalışma, mühendislerin <b>hangi seçenekler arasında karar verdiğini</b> yeniden kurmaya çalışıyor: eğim, kesit, malzeme ve sızıntı arasında yapılan ödünleşimler.</p>
+      <div class="hd">Tasarım seçeneklerini modellemek</div>
+      <p>Makale, farklı eğimlerdeki akışları karşılaştırarak tasarım seçeneklerini yorumlar. Hesaplanan alternatifler, antik mühendislerin bıraktığı <b>karar tutanakları değildir.</b></p>
     </div>
   </div>
 
   <div class="prose" style="margin-top:1.75rem">
-    <p>Depolama tarafında ise ölçek büyüyor: <b>Zurraba deposu tek başına yaklaşık 10.000 m³</b> kapasiteli. Bunun yanında şehre dağılmış yüzlerce sarnıç, kayaya oyulmuş su hazneleri ve yamaçlardaki yağmur toplama kanalları var. Sistem, yağışın olduğu kısa mevsimde <b>alabildiğince çok yakalayıp</b> yılın geri kalanına yaymak üzerine kurulu.</p>
+    <p>Depolama tarafında, makale ana <b>Zurraba deposu için yaklaşık 10.000 m³</b> kapasite verir (§3, s. 13). Kaynak suları ile mevsimlik akışın depolanması, kurak dönemler ve bakım duruşları için önemlidir. Bütün depo ve boru bağlantıları korunmadığından, kentin toplam su kapasitesi aynı kesinlikte bilinmiyor.</p>
   </div>
 </section>
 
@@ -308,7 +308,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="prose">
-    <p>Petra'nın girişi olan <b>Siq</b>, yer yer birkaç metreye daralan, yüksek duvarlı bir yarıktır. Kışın ani sağanaklar yukarıdaki geniş havzadan toplanan suyu bu dar kanala boşaltır. Yılda 150 mm yağış alan bir yer, o yağışın büyük kısmını <b>birkaç saatte</b> alabilir.</p>
+    <p>Petra'nın girişi olan <b>Siq</b>, yer yer birkaç metreye daralan, yüksek duvarlı bir yarıktır. Ani sağanaklar yukarıdaki havzadan toplanan suyu bu dar geçide yöneltebilir. UNESCO, sel yönlendirme sisteminin bakımını alanın korunması için gerekli görür.</p>
     <p>Nabatiler bu yüzden yalnızca su toplamadı, <b>suyu şehirden uzaklaştırdı</b>: Siq girişine baraj yapıp seli yan bir vadiye çeviren bir <b>bypass tüneli</b> açtılar. Yani aynı mühendislik zihniyeti, hem kıtlığı hem de fazlalığı çözüyordu.</p>
     <p>Bu tasarımın ne kadar gerekli olduğunu modern bir olay gösterdi: <b>1963'te Siq'te yaşanan bir ani sel</b> çok sayıda ziyaretçinin ölümüne yol açtı. Sonrasında girişteki baraj yeniden inşa edildi — <b>Nabati barajının temeli üzerine.</b> İki bin yıl sonra, aynı sorun için aynı çözüm yeniden kuruldu.</p>
   </div>
@@ -319,14 +319,13 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 <section id="teorisiz" class="wrap">
   <div class="sec__head">
     <p class="eyebrow">07 — Nasıl</p>
-    <h2>Akışkanlar mekaniği teorisi olmadan optimuma yaklaşmak</h2>
+    <h2>Model, antik bilgi hakkında ne söyleyebilir?</h2>
   </div>
 
   <div class="prose">
-    <p>Yukarıda anlatılan "kritik akış" kavramı modern hidroliğin diliyle tanımlanır ve dayandığı ölçüt <b>19. yüzyılda</b> formüle edilmiştir. Nabatilerin böyle bir teorisi yoktu. Boyutsuz sayı yoktu, denklem yoktu, laboratuvar yoktu.</p>
-    <p>O hâlde nasıl?</p>
-    <p><b>Yineleyerek.</b> Bir hat döşenir, sızıntı görülür, eğim değiştirilir, kesit daraltılır, tekrar bakılır. Bir kuşak boyunca bu döngü yeterince tekrarlanırsa, çözüm teorik optimuma <b>yaklaşır</b> — çünkü arazi ve malzeme, işe yaramayan her denemeyi acımasızca eler. Aynı süreç Kapadokya'nın havalandırma bacalarında da işledi: kimse baca etkisini hesaplamadı, cereyanı hissedip devam etti.</p>
-    <p>Bu, "antik insanlar bizim bilmediğimiz bir bilgiye sahipti" demek <b>değil</b>. Tam tersini söylüyor: teorisiz ama disiplinli deneme, uzun sürede teorinin vardığı yere varabilir. Etkileyici olan gizli bilgi değil, <b>biriken emek.</b></p>
+    <p>“Kritik akış” ve Froude sayısı burada <b>modern analizin dili</b> olarak kullanılıyor. Boruların korunmuş biçimi, antik ustaların aynı kavramları hangi sözcüklerle düşündüğünü söylemez.</p>
+    <p>Ortloff, çözümleri deneyime dayalı hidrolik bilgi olarak yorumlar. Ancak sonuç bölümünde sınırlı kazı verisini ve Nabati hidrolik bilgi birikimini açıklayan korunmuş yazılı literatürün yokluğunu da belirtir (§6, s. 29–30).</p>
+    <p>Deneme ve düzeltmeyle öğrenme, bu yorumun olası bir parçasıdır. <b>Kaç deneme yapıldığı, kaç kuşak sürdüğü ve hangi kararın nasıl alındığı</b> bu modelden belirlenemez. Kalıntıların gösterdiği çözüm ile onu üreten öğrenme sürecini ayrı tutmak gerekir.</p>
   </div>
 </section>
 
@@ -378,7 +377,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <p class="eyebrow">Sonuç</p>
     <h3>Görünen şey mezarlar; şehri ayakta tutan şey borular</h3>
     <p>Petra'nın ünü <b>oyulmuş cephelerden</b> geliyor, ve o cepheler büyük ölçüde mezar. Şehrin kendisi — yaşanan, çalışan, ticaret yapan kısım — inşa edilmişti ve gitti.</p>
-    <p>Onu mümkün kılan şey ise ne taş işçiliğiydi ne de mimari: <b>çölde suyu getiren, depolayan ve fazlasını uzaklaştıran bir altyapı.</b> Yarı dolu akan seramik borular, kritik eğimde tutulmuş hatlar, on bin metreküplük depolar, seli yan vadiye çeviren tüneller.</p>
+    <p>Su getirme, depolama ve sel yönlendirme altyapısı, kurak çevrede kentsel yaşamın önemli bir koşuluydu. <b>Boru ve depo kalıntıları maddi kanıt sunar;</b> kısmi/kritik akışın işleyişi ve tasarım amacı ise hidrolik hesaplarla yorumlanır. Bu yorumlar, kentin gerçek nüfusunu veya ustaların bütün kararlarını belirlemez.</p>
     <p>Ve bunların hiçbiri fotoğrafa girmiyor. <b>Petra'nın en etkileyici tarafı, tam da görünmeyen tarafı.</b></p>
   </div>
 </section>
@@ -391,8 +390,8 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
   <div class="open">
     <div class="oq">
-      <p class="oq__q">Nüfus gerçekten 30.000 miydi?</p>
-      <p class="oq__a">Yaygın olarak verilen rakam bu, ama <b>bir tahmin</b> — su sistemi kapasitesi ve yerleşim alanı üzerinden hesaplanıyor, sayım kaydı yok. Literatürde daha düşük değerler de savunuluyor.</p>
+      <p class="oq__q">Nüfus gerçekten kaç kişiydi?</p>
+      <p class="oq__a">Ortloff 2020 yaklaşık <b>20.000</b> kişilik sürekli nüfus değeri kullanır; önceki 30.000 sayısı bu makaleyle uyuşmuyordu. Bu değer tek başına gerçek nüfusu doğrulamaz. Ayrı bir demografik çalışma, dönem ve yöntem karşılaştırması gerekir.</p>
     </div>
     <div class="oq">
       <p class="oq__q">El-Hazne kimin mezarı?</p>
@@ -400,11 +399,11 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     </div>
     <div class="oq">
       <p class="oq__q">Hatların iç akışı gerçekten böyle miydi?</p>
-      <p class="oq__a">Akış rejimleri doğrudan ölçümle değil, <b>CFD modelleriyle</b> yeniden kuruldu. Model sonuçları tutarlı ama bir yeniden kurgudur; boruların hangi bölümünün ne zaman döşendiği de tam olarak tarihlenemiyor.</p>
+      <p class="oq__a">Mineral birikimi bazı bölümlerde kısmi akışı destekler. Derinlik, hız ve kararlılık için <b>modern hidrolik hesaplar ve CFD</b> kullanılır. Sonuçlar boru çapı, eğim, pürüzlülük ve besleme koşullarına bağlıdır; bu turda modeller yeniden çalıştırılmadı.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Sistem kaç kuşakta gelişti?</p>
-      <p class="oq__a">"Yineleyerek optimuma yaklaşma" açıklaması makul ama <b>süreç doğrudan belgelenmiş değil</b> — elimizde bitmiş sistem var, taslakları yok.</p>
+      <p class="oq__a">Deneyime dayalı öğrenme, makalenin yorumudur. <b>Denemelerin sırası ve sayısı belgelenmiş değil;</b> mevcut çözümden belirli bir kuşak sayısı çıkarılamaz.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Şehrin ne kadarı kazıldı?</p>
@@ -418,7 +417,8 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 <footer class="foot">
   <div class="wrap">
     <p><b>Bu yazı özgün derlemedir</b> — herhangi bir yabancı metnin çevirisi değildir. Hidrolik bölümü, Petra su sistemleri üzerine hakemli mühendislik literatürüne dayanır; başlıca kaynak Charles R. Ortloff'un Nabati boru hatları ve depolama sistemleri üzerine çalışmalarıdır.</p>
-    <p><b>Sayılar yaklaşıktır ve bir kısmı tahmindir.</b> Nüfus (~30.000), depo kapasitesi (~10.000 m³) ve hat uzunlukları literatürde verilen değerlerdir; nüfus özellikle tartışmalıdır. Akış rejimlerine dair sonuçlar hesaplamalı modellerden gelir, doğrudan ölçümden değil — bu ayrım yazının içinde de belirtilmiştir.</p>
+    <p><b>2 Ekim 2026 düzeltmesi:</b> Kaynak makaleyle uyuşmayan 30.000 nüfus değeri kaldırıldı; Ortloff 2020'nin kullandığı yaklaşık 20.000 sayısı tahmin sınırıyla aktarıldı. “Yarı dolu” yerine kısmi akış, kalıntı gözlemi ve model hesabı ayrıldı. Genel maksimum debi ve kesin tasarım niyeti hükümleri daraltıldı. <a href="../duzeltmeler.html">Düzeltme günlüğü</a> değişikliği kaydeder.</p>
+    <p><b>Denetim kapsamı:</b> İki hidrolik/nüfus kaydı için Ortloff 2020'nin giriş, altyapı, Siq analizi ve sonuç bölümlerindeki ilgili pasajlar okundu. <a href="https://mdpi-res.com/d_attachment/water/water-12-03498/article_deploy/water-12-03498.pdf">Yayıncı PDF'si</a>, s. 1–3, 6–9, 12–15 ve 29–30. CFD yeniden çalıştırılmadı; bağımsız nüfus çalışması yapılmadı. El-Hazne'nin işlevi ve modern barajın yeniden kurulmasına ilişkin iki kaydın ayrıntılı denetimi bu turda tamamlanmadı. Dört kayıt uzman incelemesi bekleyen taslaktır.</p>
     <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil: Şehir ve Sembol · Aynı Cümlede Anılanlar.</p>
   </div>
 </footer>

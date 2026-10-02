@@ -2442,8 +2442,8 @@
   {
     "schema_version": 2,
     "id": "petra-yari-dolu-boru-tasarimi",
-    "claim": "Petra'nın seramik boru hatları bilerek yarı dolu ve kritik akışa yakın çalışacak biçimde tasarlandı; bu sızıntıyı en aza indirirken verilen eğimde debiyi en üste çıkarır.",
-    "status": "established",
+    "claim": "Petra’nın Siq hattındaki bazı bölümler kısmi ve kritiğe yakın akışla çalışmış olabilir; bu, mineral birikimleriyle desteklenen bir hidrolik model yorumudur.",
+    "status": "unknown",
     "confidence": "medium",
     "topic": [
       "petra",
@@ -2487,15 +2487,17 @@
       }
     ],
     "popular_claim": "Petra'nın su sistemi basitçe kanallar ve sarnıçlardan ibaretti.",
-    "divergence": "Popüler anlatı sistemi 'su topluyorlardı' düzeyinde bırakıyor. Hakemli hidrolik literatürü ise farklı bölümlerde farklı akış rejimleri (Fr<1, Fr=1, Fr>1) kullanan bilinçli bir tasarım gösteriyor.",
+    "divergence": "Kısmi doluluk tam yarı doluluk demek değildir. Ortloff 2020, bazı borulardaki mineral birikimini kısmi akış kanıtı olarak yorumlar; Siq için kritik derinlik/çap oranını yaklaşık 0,8–0,9 hesaplar. Tasarım amacı ve yüksek debi, belirli hat koşullarının modern analiziyle çıkarılır; antik niyetin doğrudan belgesi sayılmaz.",
     "divergence_type": [
       "turizm-kopyalamasi",
       "guncellenmemis"
     ],
     "open_questions": [
-      "Sistem kaç kuşakta gelişti - bitmiş sistem elimizde, taslakları yok."
+      "Kısmi akış hattın hangi bölümlerinde, hangi besleme koşullarında vardı?",
+      "Korunan kalıntılarla model girdileri ne ölçüde bağımsız sınanabilir?",
+      "Nabati ustalarının öğrenme süreci ve kararları nasıl belgelenebilir?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "used_in": [
       "petra"
     ],
@@ -2503,7 +2505,7 @@
       {
         "id": "ortloff-2020-petra-hidrolik",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -2512,93 +2514,89 @@
         "year": 2020,
         "title": "Hydraulic Engineering at 100 BC-AD 300 Nabataean Petra (Jordan)",
         "container": "Water",
-        "volume": "12(12):3498",
+        "volume": "12(12)",
+        "pages": "1–33; makale 3498",
         "doi": "10.3390/w12123498",
-        "url": "https://www.mdpi.com/2073-4441/12/12/3498",
-        "note": "Dosyada İKİ ayrı kayıt olarak duruyordu, biri DOI'siz; birleştirildi ve DOI eklendi."
-      },
-      {
-        "id": "ortloff-2005-petra-su-sistemi",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Ortloff, Charles R."
-        ],
-        "year": 2005,
-        "title": "The Water Supply and Distribution System of the Nabataean City of Petra (Jordan), 300 BC-AD 300",
-        "container": "Cambridge Archaeological Journal",
-        "volume": "15(1):93-109",
-        "doi": "10.1017/S0959774305000053",
-        "note": "Dosyada DOI'siz duruyordu; crossref künyesi alındı."
+        "url": "https://mdpi-res.com/d_attachment/water/water-12-03498/article_deploy/water-12-03498.pdf",
+        "note": "Yayıncı PDF’sindeki giriş, altyapı, Siq analizi ve sonuç pasajları kontrol edildi (s. 1–3, 6–9, 12–15, 29–30). Kısmi akış kalıntısı, hidrolik model ve tasarım niyeti yorumu ayrıldı. CFD yeniden çalıştırılmadı; makalenin bütün hat analizleri ve bağımsız nüfus literatürü bu denetimin kapsamı değil."
       }
     ],
     "evidence": [
       {
-        "id": "ain-musa-hatti",
-        "text": "Ain Musa kaynağından şehre uzanan hat 2 km'yi aşıyor ve Siq'in kuzey duvarında yükseltilmiş kanalda taşınıyor.",
+        "id": "siq-hat-bolumu",
+        "text": "Makale Siq içindeki boruyu yaklaşık 2 km olarak tanımlar. Bu bölüm, Ain Musa’dan gelen daha uzun besleme hattının tamamı değildir.",
         "citations": [
           {
-            "source_ref": "ortloff-2005-petra-su-sistemi",
-            "locator": "Hat güzergâhı",
-            "support_type": "direct"
+            "source_ref": "ortloff-2020-petra-hidrolik",
+            "locator": "§2, s. 6–7, fig. 4; §3, s. 9 ve 12–13",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "debi-boyutlandirmasi",
-        "text": "Hat, kaynağın debisinin yalnızca bir bölümünü alacak biçimde boyutlandırılmış - fazlası hattı zorlardı.",
+        "id": "mineral-birikimi",
+        "text": "Bazı açılmış borularda tabandaki mineral birikimi yan duvarların yaklaşık yarısına doğru azalır. Yazar bu izi en azından bazı bölümlerde kısmi akışın dayanağı olarak yorumlar.",
         "citations": [
           {
             "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Boyutlandırma analizi",
-            "support_type": "direct"
+            "locator": "§3, s. 9, son paragraf",
+            "support_type": "inference"
           }
         ]
       },
       {
-        "id": "uc-hat-farkli",
-        "text": "Siq, Ain Braq ve Wadi Mataha hatlarının üçü de farklı hidrolik çözümler kullanıyor.",
+        "id": "kritik-derinlik",
+        "text": "14 cm iç çap ve Siq bölüm eğimleriyle yapılan hesap, kritiğe yakın akışta derinlik/çap oranını yaklaşık 0,8–0,9 verir. Bu, yarı dolu akış değildir.",
         "citations": [
           {
             "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Hat karşılaştırması",
-            "support_type": "direct"
+            "locator": "§3, s. 13 son paragraf–14 ilk paragraf",
+            "support_type": "inference"
+          }
+        ]
+      },
+      {
+        "id": "model-debi-sizinti",
+        "text": "Makale, kısmi akışın üstündeki hava boşluğunun basınçlı sızıntı riskini azaltmasını ve yüksek debiyi model koşullarıyla açıklar; pürüzlülük, eğim, besleme ve ara havuzlar hesaba katılır.",
+        "citations": [
+          {
+            "source_ref": "ortloff-2020-petra-hidrolik",
+            "locator": "§3, s. 12–15; fig. 10–11",
+            "support_type": "inference"
           }
         ]
       },
       {
         "id": "zurraba-10000m3",
-        "text": "Zurraba deposunun kapasitesi yaklaşık 10.000 m3.",
+        "text": "Makale ana Zurraba deposu için yaklaşık 10.000 m³ kapasite verir; bakım, kuraklık ve kervan ihtiyaçları için depolamayı tartışır.",
         "citations": [
           {
-            "source_ref": "ortloff-2005-petra-su-sistemi",
-            "locator": "Depolama",
-            "support_type": "direct"
+            "source_ref": "ortloff-2020-petra-hidrolik",
+            "locator": "§3, s. 13, ilk paragraf",
+            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "cfd-model",
-        "text": "Akış rejimleri doğrudan ölçülmedi; hesaplamalı akışkanlar dinamiği (CFD) ile yeniden kuruldu - güçlü ama bir model.",
+        "id": "tam-hat-yari-dolu-degil",
+        "text": "Makale uzun besleme hattının düşük eğim ve pürüzlülük nedeniyle çoğunlukla tam dolu/subkritik olabileceğini belirtir. Kısmi akış yorumunu bütün Petra borularına genellemek doğru değildir.",
         "citations": [
           {
             "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Yöntem sınırları",
+            "locator": "§3, s. 12 son paragraf; s. 13 ara havuzlar tartışması",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "dosenme-tarihleri",
-        "text": "Boru bölümlerinin döşenme tarihleri kesin ayrıştırılamıyor.",
+        "id": "niyet-ve-bilgi-siniri",
+        "text": "Sonuç, sınırlı kazı verisine ve Nabati hidrolik bilgi birikimini açıklayan korunmuş literatürün yokluğuna işaret eder. Modern hesaplar antik düşünce sürecinin yorumu için kullanılır.",
         "citations": [
           {
-            "source_ref": "ortloff-2005-petra-su-sistemi",
-            "locator": "Tarihleme",
+            "source_ref": "ortloff-2020-petra-hidrolik",
+            "locator": "§6, s. 29–30",
             "support_type": "counter"
           }
         ]
@@ -2606,13 +2604,13 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Kaydın iki kaynağının da aynı yazara ait olduğu işaretlendi - kayıt bunu görünür kılmıyordu. Bu kaydın iki kaynağı da AYNI YAZARA ait; bağımsız bir doğrulama hattı yok."
+      "notes": "2 Ekim 2026: established → unknown; antik işletme/niyet sorusu tek yazarın modern modeliyle yerleşik uzlaşı sayılmadı. Kalıntı gözlemi korunarak literal yarı doluluk ve genel maksimum debi hükümleri daraltıldı. 2005 makalesi okunmuş sayılmadı ve bu kaydın kanıt listesinden çıkarıldı. Bağımsız konu uzmanı kabulü yok."
     }
   },
   {
     "schema_version": 2,
     "id": "petra-nufus-tahmini",
-    "claim": "Petra'nın nüfusu yaklaşık 30.000 kişiydi.",
+    "claim": "Petra’nın belirli bir evredeki gerçek nüfusu bu hidrolik çalışmadan belirlenemiyor; Ortloff 2020 yaklaşık 20.000 kişilik sürekli nüfus değeri kullanıyor.",
     "status": "unknown",
     "confidence": "medium",
     "topic": [
@@ -2630,27 +2628,25 @@
     },
     "period": {
       "earliest": -100,
-      "latest": 106,
-      "era_label": "Nabati doruğu",
-      "precision": "range",
-      "dating_method": [
-        "stratigraphy",
-        "historical-record"
-      ]
+      "latest": 300,
+      "era_label": "Çalışmanın ele aldığı Nabati–Erken Roma bağlamı; nüfusun kesin tarihi değil",
+      "precision": "range"
     },
     "disciplines": [
       "arkeoloji",
       "tarih"
     ],
     "popular_claim": "Petra'da 30.000 kişi yaşıyordu.",
-    "divergence": "Rakam sayım kaydına değil, su sistemi kapasitesi ve yerleşim alanı üzerinden yapılan hesaba dayanıyor. Popüler kaynaklarda tahmin olduğu belirtilmeden veriliyor. Su kapasitesi bir ÜST SINIR verir: sistem şu kadar kişiyi besleyebilirdi demek, şu kadar kişi yaşıyordu demek değildir.",
+    "divergence": "Önceki 30.000 değeri kaynak gösterilen 2020 makalesiyle uyuşmuyordu. Makalenin girişinde yaklaşık 20.000 sürekli sakin değeri kullanılır. Okunan pasajlar bunu bir nüfus sayımı veya su kapasitesinden yeniden hesaplanmış demografik sonuç olarak sunmak için yeterli değildir.",
     "divergence_type": [
       "turizm-kopyalamasi"
     ],
     "open_questions": [
-      "Kazı ilerledikçe tahmin nasıl değişecek?"
+      "Nüfus değeri hangi evreye, yerleşim sınırına ve demografik yönteme dayanıyor?",
+      "Bağımsız nüfus çalışmalarındaki tahminler ve belirsizlikler neler?",
+      "Sürekli sakinler ile geçici kervan nüfusunun su talebi nasıl ayrılabilir?"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "petra"
@@ -2659,7 +2655,7 @@
       {
         "id": "ortloff-2020-petra-hidrolik",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -2668,81 +2664,56 @@
         "year": 2020,
         "title": "Hydraulic Engineering at 100 BC-AD 300 Nabataean Petra (Jordan)",
         "container": "Water",
-        "volume": "12(12):3498",
+        "volume": "12(12)",
+        "pages": "1–33; makale 3498",
         "doi": "10.3390/w12123498",
-        "url": "https://www.mdpi.com/2073-4441/12/12/3498",
-        "note": "Dosyada İKİ ayrı kayıt olarak duruyordu, biri DOI'siz; birleştirildi ve DOI eklendi."
-      },
-      {
-        "id": "mckenzie-1990-petra-mimarisi",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "McKenzie, Judith"
-        ],
-        "year": 1990,
-        "title": "The Architecture of Petra",
-        "publisher": "Oxford University Press (British Academy adına)",
-        "isbn": "9780197270004",
-        "note": "'Nabati arkeolojisi ve Petra mimarisi literatürü' YER TUTUCUSUNUN yerine kondu. İlk denediğim ISBN 'Excavations at Carthage' adlı başka bir kitaba çıktı; bu künye Open Library başlık aramasından alındı."
+        "url": "https://mdpi-res.com/d_attachment/water/water-12-03498/article_deploy/water-12-03498.pdf",
+        "note": "Yayıncı PDF’sindeki giriş, altyapı, Siq analizi ve sonuç pasajları kontrol edildi (s. 1–3, 6–9, 12–15, 29–30). Kısmi akış kalıntısı, hidrolik model ve tasarım niyeti yorumu ayrıldı. CFD yeniden çalıştırılmadı; makalenin bütün hat analizleri ve bağımsız nüfus literatürü bu denetimin kapsamı değil."
       }
     ],
     "evidence": [
       {
-        "id": "su-kapasitesi",
-        "text": "Su sistemi kapasitesi bu büyüklükte bir nüfusu kesintisiz besleyebilecek düzeyde.",
+        "id": "makaledeki-nufus",
+        "text": "Girişte Petra için yaklaşık 20.000 sürekli sakin değeri kullanılır; kuraklık rezervleri ve büyük kervanların gelişi ayrıca ele alınır.",
         "citations": [
           {
             "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Kapasite hesabı",
-            "support_type": "inference"
+            "locator": "§1, s. 1 son paragraf–2 ilk paragraf",
+            "support_type": "direct"
           }
         ]
       },
       {
-        "id": "hesap-yontemi",
-        "text": "Rakam bir SAYIM kaydına değil, su kapasitesi ve yerleşim alanı üzerinden yapılan hesaba dayanıyor.",
+        "id": "su-talebi-baglami",
+        "text": "Siq analizinde mevsimsel kaynak debisi, depolama takviyesi, bakım duruşları ve kervan ihtiyacı tartışılır. Su debisi, aynı anda kentte yaşamış kişi sayısının doğrudan ölçümü değildir.",
         "citations": [
           {
             "source_ref": "ortloff-2020-petra-hidrolik",
-            "locator": "Tahmin yöntemi",
-            "support_type": "direct"
+            "locator": "§3, s. 13, ilk paragraf",
+            "support_type": "inference"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "sayim-yok",
-        "text": "Nüfus sayımı kaydı yok.",
+        "id": "tahminin-yontemi-acik",
+        "text": "Okunan giriş pasajı nüfus değerini bağlam olarak verir; aynı pasajdan bir nüfus sayımı veya yerleşim alanı/su kapasitesi hesabının yöntemi çıkarılamaz.",
         "citations": [
           {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "Kaynak durumu",
+            "source_ref": "ortloff-2020-petra-hidrolik",
+            "locator": "§1, s. 1–2",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "daha-dusuk-degerler",
-        "text": "Literatürde daha düşük değerler de savunuluyor.",
+        "id": "ag-eksik",
+        "text": "Altyapı bölümü, bilinen hat haritasını ilk yaklaşım sayar; eksik, gömülü ve henüz bulunmamış bağlantılar toplam sistemi yeniden kurmayı sınırlar. Bu sınır gerçek nüfusun sayıldığı anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "Nüfus tartışması",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "kazilmadi",
-        "text": "Şehrin büyük bölümü hâlâ kazılmadı; yerleşim alanı tahmini eksik veriye dayanıyor.",
-        "citations": [
-          {
-            "source_ref": "mckenzie-1990-petra-mimarisi",
-            "locator": "Kazı durumu",
+            "source_ref": "ortloff-2020-petra-hidrolik",
+            "locator": "§2, s. 3, hat haritası ve eksik bağlantılar tartışması",
             "support_type": "counter"
           }
         ]
@@ -2750,7 +2721,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Kapasite-nüfus çıkarımının üst sınır olduğu açıkça yazıldı - kayıt bu farkı ima ediyordu ama söylemiyordu."
+      "notes": "2 Ekim 2026: 30.000 yerine kaynak makalenin kullandığı yaklaşık 20.000 değeri bağlamıyla verildi. unknown etiketi korunuyor; bağımsız demografik doğrulama yapılmadı. Okunmamış McKenzie 1990 pasajlarına bağlı sayım yokluğu, düşük tahminler ve hesap yöntemi hükümleri çıkarıldı. Kapasiteyi kendiliğinden doğrulanmış nüfus veya sayısal üst sınır saymıyoruz."
     }
   },
   {

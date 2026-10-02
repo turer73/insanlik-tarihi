@@ -28,8 +28,8 @@
     "limit": "Benzerlik tek başına ortak kökeni veya doğrudan aktarımı kurmaz. Kaynakların tarihlenmesi, seçimi ve bağlantısı açık kaldığında sonuç sınırlıdır."
   },
   "petra": {
-    "summary": "Petra’nın fotoğraflanan yüzünün büyük ölçüde nekropol olduğu, asıl kentin ise su sistemiyle okunması gerektiği gösterilir. Yılda yaklaşık 150 milimetre yağış alan çölde on binlerce kişiyi yaşatma iddiası, borular, depolar ve dağıtım düzeniyle sınanır.",
-    "limit": "Kalan yapılar bazı altyapı çıkarımlarını destekler, ancak kentin tüm nüfusunu ve işlevlerini yeniden kurmaz. Tarih ve kullanım atamaları kanıtın kapsamına bağlıdır."
+    "summary": "Petra’nın su altyapısı; kaynaklardan gelen hatlar, depolama ve sel yönlendirme yapılarıyla ele alınır. Siq borularındaki mineral birikimi ile modern akış modeli ayrı kanıtlardır; nüfus değeri bu modelin ölçtüğü bir sonuç değildir.",
+    "limit": "İki hidrolik/nüfus kaydı Ortloff 2020’nin ilgili pasajlarıyla denetlendi. Makale yaklaşık 20.000 sürekli sakin değeri kullanır; gerçek nüfus ayrıca araştırılmalıdır. Kısmi akış, literal yarı doluluk ve kesin antik niyet anlamına gelmez. CFD yeniden çalıştırılmadı; El-Hazne ve modern baraj kayıtlarının ayrıntılı denetimi tamamlanmadı. Dört kayıt taslaktır."
   },
   "shushtar": {
     "summary": "Şuşter, Petra’daki kıtlık çözümünün tersine bolluk ve gücü yöneten hidrolik mühendisliği üzerinden teknoloji aktarımını inceler. Band-e Kaisar’ın köprü mü bent mi olduğu ve tasarımın kökeni, “belgelenmiş aktarım” iddiasının somut sınırlarını gösterir.",
