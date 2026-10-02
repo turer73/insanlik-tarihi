@@ -2,7 +2,7 @@
   {
     "schema_version": 2,
     "id": "roma-buz-karotu-ekonomi",
-    "claim": "Roma ekonomisinin yükseliş ve krizleri Grönland buz karotlarındaki kurşun kirliliğinde yıllık çözünürlükte okunabilir.",
+    "claim": "Grönland NGRIP2 buzundaki kurşun kaydı, antik Avrupa’nın kurşun-gümüş üretimi için yıllık çözünürlüklü bir göstergedir; tarihsel olaylarla karşılaştırılması bütün ekonominin doğrudan ölçümü değildir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -12,7 +12,7 @@
       "yontem"
     ],
     "subject": {
-      "site": "Kuzey Grönland buz karotu",
+      "site": "Kuzey Grönland NGRIP2 buz karotu",
       "region": "Arktik / Akdeniz havzası",
       "modern_country": "Grönland (Danimarka)",
       "coordinates": {
@@ -23,12 +23,10 @@
     "period": {
       "earliest": -1100,
       "latest": 800,
-      "era_label": "Geç Demir Çağı'ndan erken Ortaçağ'a",
+      "era_label": "2018 çalışmasının MÖ 1100–MS 800 tarihsel karşılaştırma aralığı",
       "precision": "range",
       "dating_method": [
-        "isotopic",
-        "stratigraphy",
-        "historical-record"
+        "stratigraphy"
       ]
     },
     "disciplines": [
@@ -45,99 +43,81 @@
       }
     ],
     "popular_claim": "Antik ekonomiler hakkında bilgimiz yalnızca yazılı kaynaklara dayanır.",
-    "divergence": "Kurşun kaydı tarihsel metinlerden BAĞIMSIZ bir ekonomik göstergedir. Tarihçilerin anlatısına, vergi kayıtlarına veya bir yazarın abartısına dayanmaz - fiziksel bir kayıttır ve tarihçilerin anlattığı krizlerle örtüşür.",
+    "divergence": "Fiziksel ölçüm buzda biriken kurşundur. Avrupa’daki metal üretimi atmosferik taşınım modeliyle, tarihsel olaylarla ilişkisi ise tarihlenmiş kaynaklarla karşılaştırılarak yorumlanır.",
     "divergence_type": [
       "guncellenmemis"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-etki"
     ],
     "sources": [
       {
-        "id": "gronland-buz-karotu",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "primary",
-        "type": "dataset",
-        "title": "Kuzey Grönland buz karotu (423 m)",
-        "institution": "Desert Research Institute",
-        "note": "Yıllık katman sayımıyla tarihlenmiş fiziksel kayıt."
-      },
-      {
         "id": "mcconnell-2018-lead-greenland",
         "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "McConnell, Joseph R.",
-          "Wilson, Andrew I."
+          "Wilson, Andrew I.",
+          "Stohl, Andreas",
+          "Arienzo, Monica M.",
+          "Chellman, Nathan J.",
+          "Eckhardt, Sabine",
+          "Thompson, Elisabeth M.",
+          "Pollard, A. Mark",
+          "Steffensen, Jørgen Peder"
         ],
         "year": 2018,
         "title": "Lead pollution recorded in Greenland ice indicates European emissions tracked plagues, wars, and imperial expansion during antiquity",
         "container": "Proceedings of the National Academy of Sciences",
         "doi": "10.1073/pnas.1721818115",
-        "note": "Buz karotu kurşun kaydının Roma ekonomisiyle örtüşmesini kuran çalışma."
-      },
-      {
-        "id": "hong-1994-greenland-lead",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Hong, Sungmin",
-          "Candelone, Jean-Pierre"
-        ],
-        "year": 1994,
-        "title": "Greenland ice evidence of hemispheric lead pollution two millennia ago by Greek and Roman civilizations",
-        "container": "Science",
-        "doi": "10.1126/science.265.5180.1841",
-        "note": "Yarımküre ölçeğinde kirliliği ilk gösteren çalışma; kıta ölçeği iddiasının temeli."
+        "url": "https://archaia.yale.edu/sites/default/files/files/McConnell%20Lead%202018.pdf",
+        "note": "Yale arşivindeki altı sayfalık makalenin karot, tarihleme, emisyon modeli ve tarihsel karşılaştırma bölümleri okundu. Konumlar bu PDF’nin sayfa numaralarıdır; ek dosyalar ve ham veriler yeniden analiz edilmedi."
       }
     ],
     "evidence": [
       {
         "id": "karot-tarihlemesi",
-        "text": "423 metrelik buz karotu yıllık katman sayımıyla tarihlendi; kayıt MÖ 1100'den MS 800'e uzanıyor.",
+        "text": "2018 çalışması 423 m NGRIP2 karotunda yıl altı ölçümler ve yıllık katman sayımı kullanır; antik tarihlemenin toplam belirsizliği yaklaşık 1–2 yıldır.",
         "citations": [
           {
-            "source_ref": "gronland-buz-karotu",
-            "locator": "Karot tanımı",
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Yale PDF s. 1, High-Resolution Record of Greenland Lead Pollution; s. 3–4, Materials and Methods",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "izabe-mekanizmasi",
-        "text": "Kurşun, gümüş üretimi için yapılan kurşun cevheri izabesinden atmosfere salınıyor.",
+        "text": "Kurşun-gümüş cevherinin yüksek sıcaklıkta işlenmesi atmosferik kurşun salımına yol açar.",
         "citations": [
           {
             "source_ref": "mcconnell-2018-lead-greenland",
-            "locator": "Kaynak mekanizması",
+            "locator": "Yale PDF s. 2, Lead Pollution Provenance and Estimated Emissions, ilk paragraf",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "refahla-yukselis",
-        "text": "Kirlilik refah dönemlerinde yükseliyor - Fenike yayılması, sonra Roma; zirve imparatorluk döneminde.",
+        "text": "Tahmini emisyonlar Fenike yayılması ve İberya madenciliğiyle artar; ilk iki imparatorluk yüzyılında yüksek kalır.",
         "citations": [
           {
             "source_ref": "mcconnell-2018-lead-greenland",
-            "locator": "Kronoloji ve zirve",
+            "locator": "Yale PDF s. 2–3, Historical Linkages; Fig. 3",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "savas-salgin-dususu",
-        "text": "Savaşlar ve büyük salgınlar eğride düşüş olarak görünüyor.",
+        "text": "Bazı emisyon düşüşleri savaş ve Antoninus/Kiprianus salgınlarıyla aynı dönemdedir; bu eşleşme tarihsel karşılaştırmadır.",
         "citations": [
           {
             "source_ref": "mcconnell-2018-lead-greenland",
-            "locator": "Savaş ve salgın dönemleri",
+            "locator": "Yale PDF s. 2–3, Historical Linkages; Fig. 3",
             "support_type": "direct"
           }
         ]
@@ -146,33 +126,33 @@
     "counter_evidence": [
       {
         "id": "gosterge-kismi",
-        "text": "Gösterge kısmidir: gümüş üretimiyle ilişkisi güçlü ama tarım, tekstil ve hizmetler bu kayıtta görünmez.",
+        "text": "Kaynak göstergeyi kurşun-gümüş üretimine bağlar; bütün ekonominin performansına geçiş vekil gösterge yorumudur.",
         "citations": [
           {
             "source_ref": "mcconnell-2018-lead-greenland",
-            "locator": "Göstergenin kapsamı",
-            "support_type": "counter"
+            "locator": "Yale PDF s. 2, Lead Pollution Provenance and Estimated Emissions, ekonomik gösterge paragrafı",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "kaynak-atfi-dolayli",
-        "text": "Kurşun taşınımı atmosferik koşullara bağlıdır; kaynak bölge ayrıştırması dolaylıdır.",
+        "text": "Avrupa emisyonlarına dönüşüm atmosferik modele bağlıdır; genel emisyon büyüklüğünde yaklaşık iki katlık belirsizlik bildirilir.",
         "citations": [
           {
-            "source_ref": "hong-1994-greenland-lead",
-            "locator": "Taşınım ve kaynak atfı",
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Yale PDF s. 2; s. 4–5, Estimation of Ancient Lead Emissions",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "yarimkure-sinyali",
-        "text": "Karot KUZEY YARIMKÜRE sinyalidir; Roma'ya atıf izotop ve kronoloji üzerinden yapılan bir ÇIKARIMDIR, doğrudan ölçüm değil.",
+        "text": "Buzdaki çökelme ölçülür; Avrupa kaynaklarına atıf model ve izotop karşılaştırmasıdır. Emisyon eğrisi 11 yıllık medyan filtreyle yorumlanır.",
         "citations": [
           {
-            "source_ref": "hong-1994-greenland-lead",
-            "locator": "Yarımküre ölçeği",
+            "source_ref": "mcconnell-2018-lead-greenland",
+            "locator": "Yale PDF s. 2, Lead Pollution Provenance and Estimated Emissions; s. 4, Fig. 3",
             "support_type": "context"
           }
         ]
@@ -180,14 +160,18 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu künyeler DOI'lerle tamamlandı. Karotun yarımküre sinyali olduğu ve Roma atfının çıkarım olduğu eklendi."
-    }
+      "notes": "2018 makalesinin ilgili bölümleri okundu; ayrı bir veri setiymiş gibi gösterilen doğrulanmamış karot künyesi kaldırıldı. Ham kayıt MÖ 1235–MS 1257, tarihsel karşılaştırma MÖ 1100–MS 800 aralığıdır. Ekonomi genellemesi daraltıldı. Bağımsız uzman incelemesi yapılmadı; ham veri ve ek dosyalar yeniden analiz edilmedi."
+    },
+    "open_questions": [
+      "Kurşun-gümüş üretimi dışındaki ekonomik faaliyetler bu göstergeyle nasıl birlikte değerlendirilebilir?",
+      "Emisyon büyüklüğü ve tarihsel neden yorumu farklı taşınım varsayımlarına ne kadar duyarlıdır?"
+    ]
   },
   {
     "schema_version": 2,
     "id": "roma-kursun-kita-olcegi-zehirlenme",
-    "claim": "Roma dönemi madencilik ve izabesi Avrupa çapında atmosferik kurşun kirliliğine ve yükselmiş kan kurşun düzeylerine yol açtı.",
-    "status": "contested",
+    "claim": "Roma dönemi metal üretimi Avrupa’da atmosferik kurşun kirliliği bıraktı; çocukların kan kurşununa ve bilişsel işlevlerine etkisi 2025 çalışmasında modelle tahmin edilmiştir.",
+    "status": "established",
     "confidence": "medium",
     "topic": [
       "roma",
@@ -199,12 +183,11 @@
       "modern_country": "Avrupa geneli"
     },
     "period": {
-      "earliest": -100,
-      "latest": 200,
-      "era_label": "Roma İmparatorluğu doruğu",
+      "earliest": -500,
+      "latest": 600,
+      "era_label": "2025 buz kaydının kapsamı; sağlık modeli Pax Romana’ya odaklanır",
       "precision": "range",
       "dating_method": [
-        "isotopic",
         "stratigraphy"
       ]
     },
@@ -214,99 +197,113 @@
       "antropoloji"
     ],
     "popular_claim": "Roma'nın mirası yollar, hukuk ve mühendisliktir.",
-    "divergence": "Aynı buz karotu hem Roma'nın ekonomik zirvesini hem de bıraktığı kıta ölçekli kurşun kirliliğini kaydediyor. Bir ekonominin başarı göstergesi ile biraktigi hasar cogu zaman ayni egridir.",
+    "divergence": "Arktik buzda kurşun ölçümü, Avrupa havası için taşınım hesabı ve çocukların sağlık etkisi için epidemiyolojik tahmin ayrı aşamalardır. Model çıktıları antik insanlarda doğrudan kan veya IQ ölçümü gibi sunulamaz.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "open_questions": [
-      "Bilişsel etkinin büyüklüğü nasıl doğrulanabilir?"
+      "Bölgesel maruziyet, diş minesi ölçümleri ve bireylerin tarihlenmesiyle ne ölçüde doğrulanabilir?",
+      "Modern epidemiyolojik ilişkiler ve farklı antik nüfus dağılımları sağlık tahminini nasıl değiştirir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "volatile": true,
     "used_in": [
       "roma-etki"
     ],
     "sources": [
       {
-        "id": "hong-1994-greenland-lead",
+        "id": "mcconnell-2025-roman-lead-cognition",
         "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
-          "Hong, Sungmin",
-          "Candelone, Jean-Pierre"
+          "McConnell, Joseph R.",
+          "Chellman, Nathan J.",
+          "Plach, Andreas",
+          "Wensman, Sophia M.",
+          "Plunkett, Gill",
+          "Stohl, Andreas",
+          "Smith, Nicole-Kristine",
+          "Vinther, Bo Møllesøe",
+          "Dahl-Jensen, Dorthe",
+          "Steffensen, Jørgen Peder",
+          "Fritzsche, Diedrich",
+          "Brugger, Sandra O.",
+          "McDonald, Brandon T.",
+          "Wilson, Andrew"
         ],
-        "year": 1994,
-        "title": "Greenland ice evidence of hemispheric lead pollution two millennia ago by Greek and Roman civilizations",
-        "container": "Science",
-        "doi": "10.1126/science.265.5180.1841",
-        "note": "Yarımküre ölçeğinde kirliliği ilk gösteren çalışma; kıta ölçeği iddiasının temeli."
+        "year": 2025,
+        "title": "Pan-European atmospheric lead pollution, enhanced blood lead levels, and cognitive decline from Roman-era mining and smelting",
+        "container": "Proceedings of the National Academy of Sciences",
+        "doi": "10.1073/pnas.2419630121",
+        "url": "https://pureadmin.qub.ac.uk/ws/portalfiles/portal/631956462/merge_4.pdf",
+        "note": "Queen’s University Belfast arşivindeki kabul edilmiş metnin ana yöntem ve sonuç bölümleri okundu. Konumlar kapak dahil 35 sayfalık PDF’nin sayfaları ve metindeki basılı satırlardır. Sonuçlar model tahminidir; model, ham veriler ve diş minesi çalışmasının özgün verileri yeniden analiz edilmedi."
       },
       {
         "id": "delile-2014-rome-city-waters",
         "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Delile, Hugo",
-          "Blichert-Toft, Janne"
+          "Blichert-Toft, Janne",
+          "Goiran, Jean-Philippe",
+          "Keay, Simon",
+          "Albarède, Francis"
         ],
         "year": 2014,
         "title": "Lead in ancient Rome's city waters",
         "container": "Proceedings of the National Academy of Sciences",
         "doi": "10.1073/pnas.1400097111",
-        "note": "Roma'nın şebeke suyundaki kurşunun ölçümü. Sonucu ölçek düzeltir: musluk suyu doğal suya göre yüksek ama akut zehirlenme eşiğinin çok altında."
-      },
-      {
-        "id": "mcconnell-2018-lead-greenland",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "McConnell, Joseph R.",
-          "Wilson, Andrew I."
-        ],
-        "year": 2018,
-        "title": "Lead pollution recorded in Greenland ice indicates European emissions tracked plagues, wars, and imperial expansion during antiquity",
-        "container": "Proceedings of the National Academy of Sciences",
-        "doi": "10.1073/pnas.1721818115",
-        "note": "Buz karotu kurşun kaydının Roma ekonomisiyle örtüşmesini kuran çalışma."
+        "url": "https://eprints.soton.ac.uk/364568/",
+        "note": "Bu tur yalnız Southampton kurum kaydındaki özet okundu; tam metne erişilemedi. Liman sedimentlerinin izotoplarından su kirliliği çıkarımı yapar. Kan kurşunu, IQ veya belirli bir akut zehirlenme eşiği için destek olarak kullanılmaz."
       }
     ],
     "evidence": [
       {
         "id": "avrupa-capinda-kursun",
-        "text": "Buz karotu ölçümleri Roma döneminde Avrupa çapında yükselmiş atmosferik kurşun gösteriyor.",
+        "text": "Üç Arktik buz kaydı Avrupa’daki emisyon ve hava kurşunu hesabını kısıtlar; kıta haritası FLEXPART modelinin çıktısıdır.",
         "citations": [
           {
-            "source_ref": "hong-1994-greenland-lead",
-            "locator": "Ölçüm sonuçları",
+            "source_ref": "mcconnell-2025-roman-lead-cognition",
+            "locator": "Kabul edilmiş metin, PDF s. 6–8, satır 119–183; s. 10–11, satır 260–291",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "sebeke-suyu-kursun",
-        "text": "Roma'nın şebeke suyunda kurşun ölçülmüştür; musluk suyu doğal kaynak suyuna göre belirgin biçimde yüksektir.",
+        "text": "Delile 2014 özeti, liman sedimentlerindeki kurşun izotoplarından Roma suyunda doğal arka plana göre iki büyüklük mertebesine varan artış çıkarır.",
         "citations": [
           {
             "source_ref": "delile-2014-rome-city-waters",
-            "locator": "Ölçüm sonuçları",
-            "support_type": "direct"
+            "locator": "Southampton özeti, kurşun izotopları ve boruların etkisini açıklayan dördüncü ve beşinci cümle",
+            "support_type": "direct",
+            "note": "Yalnız kurum özeti okundu; antik musluk suyu veya kan örneği ölçümü değildir."
           }
         ]
       },
       {
         "id": "norotoksin",
-        "text": "Kurşun bir nörotoksindir; yeterli düzeyde özellikle çocuklarda bilişsel etkiye yol açar.",
+        "text": "2025 çalışması çocukluk maruziyetinin bilişsel etkilerini modern epidemiyolojik ilişkilerle tahmin eder.",
         "citations": [
           {
-            "source_ref": "delile-2014-rome-city-waters",
-            "locator": "Sağlık bağlamı",
-            "support_type": "context"
+            "source_ref": "mcconnell-2025-roman-lead-cognition",
+            "locator": "Kabul edilmiş metin, PDF s. 14, satır 363–376",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "bilissel-etki-tahmini",
+        "text": "Model, 1–5 yaş çocukluk maruziyeti için imparatorluğun büyük bölümünde yaklaşık 2,5–3 IQ puanı ek kayıp tahmin eder.",
+        "citations": [
+          {
+            "source_ref": "mcconnell-2025-roman-lead-cognition",
+            "locator": "Kabul edilmiş metin, PDF s. 9, satır 219–228; Fig. 2",
+            "support_type": "direct"
           }
         ]
       }
@@ -314,44 +311,55 @@
     "counter_evidence": [
       {
         "id": "bilissel-etki-model",
-        "text": "Bilişsel etkinin büyüklüğü MODELLENMİŞ bir tahmindir, doğrudan ölçüm değil - ve tartışmalıdır.",
+        "text": "Kan kurşunu ve IQ büyüklükleri modern ilişkilerden türetilir; antik insanlarda doğrudan ölçülmüş değerler değildir.",
         "citations": [
           {
-            "source_ref": "delile-2014-rome-city-waters",
-            "locator": "Sonuçların yorumu",
-            "support_type": "counter"
+            "source_ref": "mcconnell-2025-roman-lead-cognition",
+            "locator": "Kabul edilmiş metin, PDF s. 14, satır 363–376",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "akut-esigin-altinda",
-        "text": "Ölçüm sonucu ölçeği DÜZELTİR: Roma musluk suyundaki kurşun doğal suya göre yüksekti ama akut zehirlenme eşiğinin çok altındaydı.",
+        "id": "su-ve-kan-ayrimi",
+        "text": "Su araştırmasının özeti, kirliliğin Roma halk sağlığını ne ölçüde etkilediğinin bilinmediğini söyler; bir akut zehirlenme eşiği vermez.",
         "citations": [
           {
             "source_ref": "delile-2014-rome-city-waters",
-            "locator": "Sonuçların yorumu",
-            "support_type": "counter"
+            "locator": "Southampton özeti, “public health in the city is unknown”",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "modern-sanayiden-dusuk",
-        "text": "Roma dönemi kurşun düzeyleri modern sanayi çağının çok altındadır; bulgunun anlamı 'antik dünya bugünden kirliydi' değil.",
+        "text": "Çalışmadaki modern karşılaştırma Arktik buz kirliliğine aittir; bütün antik ve modern maruziyet yollarını eşitlemez.",
         "citations": [
           {
-            "source_ref": "hong-1994-greenland-lead",
-            "locator": "Karşılaştırmalı düzeyler",
-            "support_type": "counter"
+            "source_ref": "mcconnell-2025-roman-lead-cognition",
+            "locator": "Kabul edilmiş metin, PDF s. 5, satır 97–103",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "iskelet-dogrulamasi-sinirli",
-        "text": "Kan kurşun düzeyi tahminleri atmosferik veriden türetilir; iskelet ölçümleriyle bölgesel doğrulama sınırlıdır.",
+        "text": "Yayımlanmış diş minesi verileriyle karşılaştırma yapılır; bireylerin gömülme tarihlerinin eksikliği hepsini Pax Romana’ya bağlamayı sınırlar.",
         "citations": [
           {
-            "source_ref": "mcconnell-2018-lead-greenland",
-            "locator": "Yöntem sınırı",
+            "source_ref": "mcconnell-2025-roman-lead-cognition",
+            "locator": "Kabul edilmiş metin, PDF s. 8–9, satır 203–218",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "model-varsayimlari",
+        "text": "Bölgesel tahminler iki emisyon senaryosuna, modern meteorolojiye ve eşit nüfus dağılımı varsayımına bağlıdır; belirsizlik ayrı hesaplanır.",
+        "citations": [
+          {
+            "source_ref": "mcconnell-2025-roman-lead-cognition",
+            "locator": "Kabul edilmiş metin, PDF s. 7–8, satır 152–183; s. 12, satır 293–322; s. 14–15, satır 374–403",
             "support_type": "counter"
           }
         ]
@@ -359,7 +367,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Pan-European atmospheric lead') üç künyeyle değiştirildi. Delile 2014 eklendi ve sonucun ölçeği DÜZELTTİĞİ yazıldı - kayıt yalnızca 'yükselmiş kurşun' diyordu."
+      "notes": "İddia ölçülen kirlilik ile yayımlanmış model tahminini ayıracak biçimde daraltıldı; established/medium bu dar iddiaya aittir, antik kan kurşunu veya IQ büyüklüğünün doğrudan doğrulandığı anlamına gelmez. Asıl 2025 kaynağı eklendi. Delile 2014 yalnız kurum özetinin desteklediği su bağlamında kullanılır; yanlış bilişsel etki ve akut eşik atıfları kaldırıldı. Bağımsız uzman incelemesi yapılmadı. Ham veriler, model ve diş minesi çalışmasının özgün verileri yeniden analiz edilmedi."
     }
   },
   {
