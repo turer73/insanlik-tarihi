@@ -2573,9 +2573,9 @@
   {
     "schema_version": 2,
     "id": "tacitus-procurator-anakronizmi",
-    "claim": "Tacitus'un Pilatus'a yanlış unvan (procurator) vermesi, pasajın sonradan eklenmediğini gösteren bir kanıttır.",
+    "claim": "Tacitus, Annales 15.44.3’te Pilatus’u procurator diye anar; Kayseriye yazıtındaki unvan praefectus Iudaeae olarak tamamlanır. Bu fark tek başına pasajın özgünlüğünü veya bilginin kaynağını belirlemez.",
     "status": "established",
-    "confidence": "medium",
+    "confidence": "high",
     "topic": [
       "isa",
       "tacitus",
@@ -2583,17 +2583,16 @@
       "yontem"
     ],
     "subject": {
-      "site": "Annales elyazması geleneği",
-      "region": "Roma İmparatorluğu",
+      "site": "Annales 15.44 ve Kayseriye yazıtı",
+      "region": "Roma İmparatorluğu / Yahudiye",
       "modern_country": "çok uluslu"
     },
     "period": {
-      "earliest": 116,
-      "latest": 1100,
-      "era_label": "Yazımdan Codex Mediceus'a",
+      "earliest": 26,
+      "latest": 120,
+      "era_label": "Yazıtın görev dönemi ile daha sonraki Annales anlatısı",
       "precision": "range",
       "dating_method": [
-        "paleography",
         "epigraphic",
         "textual"
       ]
@@ -2616,102 +2615,80 @@
       }
     ],
     "popular_claim": "Tacitus'un pasajı sonradan Hristiyanlarca eklenmiştir.",
-    "divergence": "Pasajın içindeki HATA, ekleme tezinin aleyhine çalışıyor. Tacitus Pilatus'u 'procurator' diye anıyor; Kayseriye yazıtı unvanın 'praefectus' olduğunu gösteriyor. Bir Roma arşiv kaydından kopyalansaydı doğru unvan yazılırdı. Yanlış unvan, yazarın kendi döneminin dilini kullandığını gösteriyor. İkinci iz: en eski elyazmasında sözcük 'chrestianos' yazılmış, sonradan düzeltilmiş - adı tam bilmeyen birinin yazımı.",
+    "divergence": "Doğrulanan şey iki metindeki unvan farkıdır. Valilik işlevi ile teknik unvan karıştırılmaz. Bir hata, düşmanca sözler veya bir kopyadaki yazım farkı tek başına yazarın kimliğini, arşiv kullanımını ya da sonradan ekleme bulunmadığını göstermez. Tacitus’un bilgi aktarım zinciri bu seçilmiş pasajlardan kurulamaz.",
     "divergence_type": [
       "kategori-hatasi"
     ],
     "sources": [
       {
-        "id": "tacitus-annales-15-44",
+        "id": "owen-gildenhard-2013-tacitus-15-44",
         "tier": "primary",
         "type": "edition",
         "authors": [
           "Tacitus, Publius Cornelius"
         ],
-        "year": 116,
-        "title": "Annales 15.44",
-        "publisher": "—",
+        "year": 2013,
+        "title": "Annales 15.44 — Owen ve Gildenhard edisyonu",
+        "publisher": "Open Book Publishers / Dickinson College Commentaries",
+        "url": "https://dcc.dickinson.edu/tacitus-annals/15-44",
         "language": "la",
-        "note": "Bağımsız Roma kaydı."
+        "accessed": "2026-10-02",
+        "note": "Mathew Owen ve Ingo Gildenhard, Tacitus, Annals 15.20–23, 33–45 (2013); DCC edisyonu 2016. Latince 15.44.2–3 doğrudan okundu. procurator, idam bildirimi ve küçümseyici sözler metinde bulunur; bu ifadeler bilgi kaynağının bağımsızlığını veya pasajın bütün aktarım tarihini tek başına kanıtlamaz. Modern açıklamaların bütün kaynakları ve el yazmaları bu tur incelenmedi."
       },
       {
-        "id": "pilatus-yaziti-caesarea",
+        "id": "brown-iip-caes0043",
         "tier": "primary",
         "type": "inscription",
-        "year": 30,
-        "title": "Pilatus yazıtı (Caesarea Maritima)",
-        "publisher": "—",
+        "title": "Pilatus yazıtı — IIP caes0043, EpiDoc metni",
+        "institution": "Brown University Library, Inscriptions of Israel/Palestine",
+        "url": "https://raw.githubusercontent.com/Brown-University-Library/iip-texts/master/epidoc-files/caes0043.xml",
         "language": "la",
-        "note": "1961'de Antonio Frova başkanlığındaki İtalyan heyetince bulundu; İsrail Müzesi."
+        "accessed": "2026-10-02",
+        "note": "Projenin yayımladığı XML kaydında transcription/translation, origin/provenance ve commentary bölümleri okundu. supplied ve unclear işaretleri korunan harfle tamamlamayı ayırır. Katalog 31–36 tarih aralığını önerir; bu, taşta okunmuş kesin bir yıl değildir. XML bibliyografyasındaki bütün yayınlar okunmuş sayılmadı."
       },
       {
-        "id": "ehrman-2012-did-jesus-exist",
+        "id": "alfoldy-1999-pilatus-tiberieum",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
         "authors": [
-          "Ehrman, Bart D."
+          "Alföldy, Géza"
         ],
-        "year": 2012,
-        "title": "Did Jesus Exist? The Historical Argument for Jesus of Nazareth",
-        "publisher": "HarperOne",
-        "isbn": "9780062204608",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Yazar agnostiktir ve mitçi konumu doğrudan ele alır. Künye doğrulandı, tam metin okunmadı."
-      },
-      {
-        "id": "tacitus-on-jesus-wikipedia",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Tacitus on Jesus",
-        "institution": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Tacitus_on_Jesus",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; alanın uzlaşı durumunun özeti."
+        "year": 1999,
+        "title": "Pontius Pilatus und das Tiberieum von Caesarea Maritima",
+        "container": "Scripta Classica Israelica",
+        "volume": "18",
+        "pages": "85–108",
+        "doi": "10.71043/sci.v18i.4067",
+        "url": "https://scriptaclassica.org/index.php/sci/article/view/4067",
+        "language": "de",
+        "accessed": "2026-10-02",
+        "note": "s. 85–89 ve s. 95’teki tarihleme paragrafı kontrol edildi; s. 86’daki Tafel I fotoğrafı ve satır dökümü görüntüden de karşılaştırıldı. 2020 dijital yükleme tarihi, özgün 1999 yayın yılı değildir. Buluntu, eksik harfler ve yorum ayrımı için kullanıldı; bütün makale ve sonraki epigrafi literatürü denetlenmiş sayılmaz."
       }
     ],
     "evidence": [
       {
         "id": "procurator-unvani",
-        "text": "Tacitus, Annales 15.44'te Pilatus'un unvanını 'procurator' olarak verir.",
+        "text": "Annales 15.44.3, Christus’un Tiberius döneminde Pontius Pilatus aracılığıyla idam edildiğini bildirirken procuratorem sözcüğünü kullanır.",
         "citations": [
           {
-            "source_ref": "tacitus-annales-15-44",
-            "locator": "15. kitap, 44. bölüm",
+            "source_ref": "owen-gildenhard-2013-tacitus-15-44",
+            "locator": "15.44.3, auctor nominis eius Christus ile başlayan cümle",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "praefectus-yaziti",
-        "text": "Kayseriye yazıtı Pilatus'un unvanının 'praefectus' olduğunu gösterir - farklı bir idari sınıf.",
+        "text": "Yazıtın ad ve unvan satırları Pontius Pilatus ile praefectus Iudaeae olarak okunur; kayıp harfler edisyonlarda köşeli parantezle veya supplied etiketiyle işaretlenir.",
         "citations": [
           {
-            "source_ref": "pilatus-yaziti-caesarea",
-            "locator": "Yazıt metni",
+            "source_ref": "brown-iip-caes0043",
+            "locator": "caes0043.transcription, 2–3. satırlar; supplied/unclear etiketleri",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "dusmanca-uslup",
-        "text": "Pasajın üslubu Hristiyanlara açıkça düşmancadır; bir Hristiyan eklemesinden beklenmez.",
-        "citations": [
+          },
           {
-            "source_ref": "tacitus-on-jesus-wikipedia",
-            "locator": "Üslup ve sahihlik bölümü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "sahihlik-kabulu",
-        "text": "Pasajın sahihliği ve bağımsız bir Roma kaydı olarak değeri alanda geniş kabul görür.",
-        "citations": [
-          {
-            "source_ref": "ehrman-2012-did-jesus-exist",
-            "locator": "Hristiyan olmayan kaynaklar bölümü",
+            "source_ref": "alfoldy-1999-pilatus-tiberieum",
+            "locator": "s. 85–86, satır dökümü ve Tafel I",
             "support_type": "direct"
           }
         ]
@@ -2719,55 +2696,45 @@
     ],
     "counter_evidence": [
       {
-        "id": "kolaylik-ihtimali",
-        "text": "Tacitus'un anakronizmi kasıtsız bir kolaylık da olabilir; Romalı yazarlar geçmiş dönem unvanlarını kendi dönemlerinin terimleriyle vermeye eğilimliydi.",
+        "id": "belirtilmeyen-bilgi-zinciri",
+        "text": "Tacitus’un seçilmiş cümlesi bir arşiv belgesi veya bu bilgi için bir tanık adı vermez. Unvan farkından bilginin kökenine ya da sonradan ekleme ihtimaline kesin hüküm çıkarmamak, burada projenin yöntem sınırıdır.",
         "citations": [
           {
-            "source_ref": "tacitus-on-jesus-wikipedia",
-            "locator": "Anakronizm tartışması",
-            "support_type": "counter"
+            "source_ref": "owen-gildenhard-2013-tacitus-15-44",
+            "locator": "15.44.2–3; cümlenin bildirdiği bilgi ile belirtmediği kaynak zinciri karşılaştırması",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "kaynak-belirsiz",
-        "text": "Tacitus'un bilgisinin kaynağı belirsizdir: Roma arşivi mi, kendi döneminde bilinenler mi? Büyük olasılıkla ikincisi - bu durumda pasaj bağımsız kanıt değil, 2. yüzyıl başında bilinenin kaydıdır.",
+        "id": "uslup-sahihlik-ayrimi",
+        "text": "Metindeki küçümseyici dil doğrudan okunabilir; böyle bir dilin tek başına Hristiyan eklemesini imkânsız kıldığı sonucu metinde verilmez.",
         "citations": [
           {
-            "source_ref": "ehrman-2012-did-jesus-exist",
-            "locator": "Tacitus değerlendirmesi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "tek-elyazmasi",
-        "text": "Elimizdeki metin tek bir elyazması koluna dayanır.",
-        "citations": [
-          {
-            "source_ref": "tacitus-on-jesus-wikipedia",
-            "locator": "Elyazması geleneği",
-            "support_type": "counter"
+            "source_ref": "owen-gildenhard-2013-tacitus-15-44",
+            "locator": "15.44.3, exitiabilis superstitio ve originem eius mali; üsluptan özgünlüğe geçiş proje çıkarımıdır",
+            "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Tacitus bilgiyi nereden aldı? Roma arşivi olduğuna dair kanıt yok."
+      "Tacitus bu bilgiyi hangi kişi veya belgeden aldı; kaynaklar arasındaki bağımlılık nasıl sınanabilir?",
+      "Pasajın aktarım tarihi, eleştirel edisyon ve el yazması karşılaştırmasıyla nasıl değerlendirilir? Bu tur doğrudan el yazması incelemesi yapılmadı."
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-02",
     "used_in": [
       "isa-tarihsellik"
     ],
     "review": {
       "status": "draft",
-      "notes": "Hakemli çıpa eklendi; tam metin okunmadı."
+      "notes": "İddia metinlerdeki unvan farkına ve bu farkın tek başına özgünlük kanıtı olmayışına daraltıldı. Yüksek güven, kaynak bağımsızlığına veya müdahalesiz aktarımına verilmiş değildir. Okunmamış Ehrman kitabına ve Wikipedia özetine belirsiz atıflar kaldırıldı. Bir Hristiyan kopyacının yazım hatası yapamayacağı ve arşiv kullananın mutlaka doğru unvan yazacağı hükümleri çıkarıldı. Latin pasaj, IIP XML kaydı ve Alföldy’nin seçilmiş sayfaları denetlendi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "pilatus-yaziti-kayseriye",
-    "claim": "Pontius Pilatus'un varlığını ve unvanını doğrudan belgeleyen tek çağdaş fiziksel kanıt, 1961'de Kayseriye'de bulunan taş yazıttır.",
+    "claim": "1961’de Kayseriye tiyatrosunda yeniden kullanımda bulunan yazıt, Pontius Pilatus adını ve praefectus Iudaeae unvanını belgeler; korunan metin İsa’yı veya idamını anmaz.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -2814,79 +2781,82 @@
       }
     ],
     "popular_claim": "Pontius Pilatus yalnızca İncillerden bilinen, tarihsel varlığı belirsiz bir figürdür.",
-    "divergence": "Yazıt, İncil metinlerinden TAMAMEN BAĞIMSIZ bir fiziksel kanıttır ve Pilatus'un hem varlığını hem unvanını doğrudan belgeler. Ayrıca metinlerin verdiği 'procurator' unvanının yanlış, doğrusunun 'praefectus' olduğunu göstererek kaynak eleştirisinde ikinci bir iş yapar.",
+    "divergence": "Taş üzerindeki kayıt Pilatus’un adı ve görevi için metinsel bir belgedir; İsa’nın yaşamını veya idamını ayrıca belgeleyen bir anlatı değildir. Tek çağdaş fiziksel kanıt hükmü kaldırıldı: bu tur bütün maddi buluntuların dökümü yapılmadı. Korunan harfler, kayıp harflerin tamamlaması ve Tiberieum’un ne olduğu konusundaki yorum ayrı tutulur.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "sources": [
       {
-        "id": "pilatus-yaziti-caesarea",
+        "id": "brown-iip-caes0043",
         "tier": "primary",
         "type": "inscription",
-        "year": 30,
-        "title": "Pilatus yazıtı (Caesarea Maritima)",
-        "publisher": "—",
+        "title": "Pilatus yazıtı — IIP caes0043, EpiDoc metni",
+        "institution": "Brown University Library, Inscriptions of Israel/Palestine",
+        "url": "https://raw.githubusercontent.com/Brown-University-Library/iip-texts/master/epidoc-files/caes0043.xml",
         "language": "la",
-        "note": "1961'de Antonio Frova başkanlığındaki İtalyan heyetince bulundu; İsrail Müzesi."
+        "accessed": "2026-10-02",
+        "note": "Projenin yayımladığı XML kaydında transcription/translation, origin/provenance ve commentary bölümleri okundu. supplied ve unclear işaretleri korunan harfle tamamlamayı ayırır. Katalog 31–36 tarih aralığını önerir; bu, taşta okunmuş kesin bir yıl değildir. XML bibliyografyasındaki bütün yayınlar okunmuş sayılmadı."
       },
       {
-        "id": "ehrman-2012-did-jesus-exist",
+        "id": "alfoldy-1999-pilatus-tiberieum",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
         "authors": [
-          "Ehrman, Bart D."
+          "Alföldy, Géza"
         ],
-        "year": 2012,
-        "title": "Did Jesus Exist? The Historical Argument for Jesus of Nazareth",
-        "publisher": "HarperOne",
-        "isbn": "9780062204608",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Yazar agnostiktir ve mitçi konumu doğrudan ele alır. Künye doğrulandı, tam metin okunmadı."
-      },
-      {
-        "id": "pilate-stone-wikipedia",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Pilate stone",
-        "institution": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Pilate_stone",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; birincil epigrafik yayınla değiştirilmeli."
+        "year": 1999,
+        "title": "Pontius Pilatus und das Tiberieum von Caesarea Maritima",
+        "container": "Scripta Classica Israelica",
+        "volume": "18",
+        "pages": "85–108",
+        "doi": "10.71043/sci.v18i.4067",
+        "url": "https://scriptaclassica.org/index.php/sci/article/view/4067",
+        "language": "de",
+        "accessed": "2026-10-02",
+        "note": "s. 85–89 ve s. 95’teki tarihleme paragrafı kontrol edildi; s. 86’daki Tafel I fotoğrafı ve satır dökümü görüntüden de karşılaştırıldı. 2020 dijital yükleme tarihi, özgün 1999 yayın yılı değildir. Buluntu, eksik harfler ve yorum ayrımı için kullanıldı; bütün makale ve sonraki epigrafi literatürü denetlenmiş sayılmaz."
       }
     ],
     "evidence": [
       {
         "id": "ikincil-kullanim",
-        "text": "Yazıt, Kayseriye tiyatrosunda ikincil kullanımda bir basamak taşı olarak bulundu - özgün bağlamından çıkarılıp sonradan yeniden kullanılmış.",
+        "text": "Alföldy, yazıtın 1961’de Kayseriye tiyatrosunda geç antik yeniden kullanımda bulunduğunu bildirir; IIP kataloğu onu tiyatro basamağı olarak kaydeder.",
         "citations": [
           {
-            "source_ref": "pilate-stone-wikipedia",
-            "locator": "Buluntu bağlamı",
+            "source_ref": "alfoldy-1999-pilatus-tiberieum",
+            "locator": "s. 85, ilk paragraf; s. 89, yeniden kullanım ve hasar açıklaması",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "brown-iip-caes0043",
+            "locator": "teiHeader/sourceDesc/msDesc/history/origin, tiyatro basamağı; commentary, yeniden kullanım",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "yazit-metni",
-        "text": "Korunan metin Tiberius'a adanmış bir yapıyı ve Pilatus'un adını ve unvanını içerir; unvan 'praefectus' okunur.",
+        "text": "IIP’nin satır dökümü Tiberieum, Pontius Pilatus ve praefectus Iudaeae okumasını verir. Adın ve unvanın başlangıcındaki harfler kısmen tamamlanır; tam metin korunmuş gibi sunulmaz.",
         "citations": [
           {
-            "source_ref": "pilatus-yaziti-caesarea",
-            "locator": "Yazıt metni",
+            "source_ref": "brown-iip-caes0043",
+            "locator": "caes0043.transcription, 1–3. satırlar; supplied/unclear ayrımı",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "alfoldy-1999-pilatus-tiberieum",
+            "locator": "s. 85–86, 2–3. satırlar ve Tafel I",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "tartisma-disi",
-        "text": "Pilatus'un tarihselliği, tarihsel İsa literatüründe tartışma konusu değildir.",
+        "id": "belgelemenin-siniri",
+        "text": "Edisyonlarda korunan yazıt metni İsa’yı veya idamını anmaz. Pilatus’un adını ve görevini belgelemek, başka bir kaynaktaki olay anlatısının bütününü doğrulamakla aynı şey değildir.",
         "citations": [
           {
-            "source_ref": "ehrman-2012-did-jesus-exist",
-            "locator": "Arka plan bölümü",
-            "support_type": "context"
+            "source_ref": "brown-iip-caes0043",
+            "locator": "caes0043.transcription ve caes0043.translation, metnin tamamı",
+            "support_type": "inference"
           }
         ]
       }
@@ -2894,35 +2864,44 @@
     "counter_evidence": [
       {
         "id": "kirik-yazit",
-        "text": "Yazıt kırık ve eksiktir; okumanın bazı bölümleri tamamlamaya dayanır.",
+        "text": "Alföldy ilk ve son satırın tamamlamalarını ve Tiberieum’un niteliğini tartışma konusu olarak sıralar. Pilatus’un adının ve unvanının okuması bu yapı yorumuyla eşitlenmez.",
         "citations": [
           {
-            "source_ref": "pilate-stone-wikipedia",
-            "locator": "Okuma ve tamamlama",
+            "source_ref": "alfoldy-1999-pilatus-tiberieum",
+            "locator": "s. 85–89; özellikle s. 87–88, tartışılan tamamlamalar",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "ozgun-konum-belirsiz",
-        "text": "İkincil kullanımda bulunduğu için özgün konumu ve tam tarihi kesin değildir.",
+        "id": "tarih-ve-yeniden-kullanim",
+        "text": "Alföldy s. 95’te 26–36 görev dönemi aralığını kullanır; IIP kataloğu 31–36 önerir. Bunlar kesin bir yazıt yılı değildir; tiyatrodaki yeniden kullanım da ilk yerleştirme bağlamını tek başına göstermez.",
         "citations": [
           {
-            "source_ref": "pilate-stone-wikipedia",
-            "locator": "Buluntu bağlamı",
-            "support_type": "counter"
+            "source_ref": "alfoldy-1999-pilatus-tiberieum",
+            "locator": "s. 95, zwischen 26 und 36 ifadesinin bulunduğu paragraf",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "brown-iip-caes0043",
+            "locator": "history/origin/date, notBefore=0031 ve notAfter=0036; origin açıklaması",
+            "support_type": "context"
           }
         ]
       }
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-02",
     "used_in": [
       "isa-tarihsellik"
     ],
     "review": {
       "status": "draft",
-      "notes": "Birincil epigrafik yayın hâlâ görülmedi; ara kaynak düzeyinde. Yazıtın epigrafik yayını bu kayıtta doğrudan görülmemiştir; ara kaynak üzerinden kullanılmıştır."
-    }
+      "notes": "1961 buluntu bildirimi, yeniden kullanım, ad/unvan ve eksik harfler yayımlı EpiDoc kaydı ile epigrafik makalenin seçilmiş sayfalarına bağlandı. Tek çağdaş fiziksel kanıt ve yazıtın İsa’nın idamını belgelediği çıkarımları kullanılmıyor. Tarih aralığı kesin yıl sayılmıyor; Tiberieum kesin tapınak olarak çevrilmiyor. Pilatus’a atfedilen bütün maddi buluntular, kazının özgün 1961 yayını ve sonraki tam literatür bu tur denetlenmedi. Kayıt taslaktır; bağımsız uzman incelemesi yapılmadı."
+    },
+    "open_questions": [
+      "Yazıtın ilk yerleştirildiği yapının niteliği ve eksik ilk/son satır nasıl tamamlanabilir?",
+      "Kesin yazım tarihi hangi bağımsız bağlam veya belgelerle daraltılabilir? Katalog tarihi ile taşta okunan tarih ayrı tutulmalıdır."
+    ]
   },
   {
     "schema_version": 2,
