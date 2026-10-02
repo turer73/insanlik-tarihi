@@ -755,7 +755,7 @@
   {
     "schema_version": 2,
     "id": "roma-bati-maddi-gerileme",
-    "claim": "Batı Roma topraklarında 5.-7. yüzyıllarda ölçülebilir bir maddi gerileme yaşandı.",
+    "claim": "Batı Roma’nın bazı bölgelerinde, özellikle Roma sonrası Britanya’da, 5.–7. yüzyıllarda çömlek ve kiremit üretiminde daralma ve yerelleşme görülür.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -764,8 +764,8 @@
       "maddi-kultur"
     ],
     "subject": {
-      "region": "Batı Roma toprakları, özellikle Britanya",
-      "modern_country": "Batı Avrupa"
+      "region": "Eski Batı Roma topraklarından seçilmiş bölgeler, özellikle Britanya",
+      "modern_country": "Batı Avrupa / Kuzey Afrika"
     },
     "period": {
       "earliest": 400,
@@ -774,8 +774,7 @@
       "precision": "range",
       "dating_method": [
         "stratigraphy",
-        "typology",
-        "radiocarbon"
+        "typology"
       ]
     },
     "disciplines": [
@@ -783,121 +782,84 @@
       "tarih"
     ],
     "popular_claim": "Roma'nın sonunda çöküş değil dönüşüm yaşandı; 'karanlık çağ' diye bir şey yoktu.",
-    "divergence": "Bu yaklaşim bazi yonlerden duzelticidir ama maddi gostergeler Bati'da gercek bir dususu gosterir. Gostergeler metinlere degil NESNELERE dayanir: sayilan comlek parcasi, olculen kemik, tarihlenen batik. Bu bulgu, sonraki bin yılın 'karanlık' sayılıp sayılamayacağı sorusundan AYRI bir sorudur; ikisi karıştırılmamalıdır.",
+    "divergence": "Çömlek üretiminin yerelleşmesi bazı bölgelerde somut bir değişimdir. Bunun kapsamı ve zamanı bölgeye göre ayrılmalıdır: Kuzey Afrika ihracatı ve bazı çarklı üretimler sürmüştür. Batık sayısı ticaret hacmi, bütün maddi göstergeler de tek bir uygarlık puanı değildir. Gerileme ile dönüşüm farklı süreçleri anlatabilir; sonraki bin yılı topluca nitelemek bu dar bulgudan çıkmaz.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "open_questions": [
-      "Bölgesel farklar nasıl ölçülür - tek bir Batı eğrisi çizilebilir mi?"
+      "Bölgesel üretim, dağıtım ve tüketim serileri, tarihleme ve örneklem farkları gözetilerek nasıl karşılaştırılabilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-etki"
     ],
     "sources": [
       {
-        "id": "ward-perkins-2005-fall-of-rome",
+        "id": "historic-england-2018-pottery-tile",
+        "tier": "institutional",
+        "type": "report",
+        "title": "Roman and Medieval Pottery and Tile Production: Introductions to Heritage Assets",
         "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-10-02",
+        "authors": [
+          "Pearson, Trevor"
+        ],
+        "year": 2018,
+        "institution": "Historic England",
+        "url": "https://historicengland.org.uk/images-books/publications/iha-roman-medieval-pottery-tile-production/heag228-roman-medieval-pottery-tile-production/",
+        "note": "Ekim 2018 baskısı. Yazar ve editörler künye sayfasından; üretim değişimi basılı s. 3 ve 6’dan (PDF s. 5 ve 8) kontrol edildi. İngiltere kapsamı bütün Batı Roma’ya genellenmez."
+      },
+      {
+        "id": "ward-perkins-2005-fall-of-rome",
         "tier": "peer-reviewed",
         "type": "book",
+        "title": "The Fall of Rome and the End of Civilization",
+        "language": "en",
+        "accessed": "2026-10-02",
         "authors": [
           "Ward-Perkins, Bryan"
         ],
         "year": 2005,
-        "title": "The Fall of Rome and the End of Civilization",
         "publisher": "Oxford University Press",
-        "isbn": "9780192807281",
-        "note": "Maddi göstergelerle ÇÖKÜŞ tezinin savunusu. Bu kayıtta tartışmanın bir tarafıdır, hakemi değil."
+        "url": "https://blog.oup.com/2005/09/the_end_of_comp/",
+        "note": "Bu incelemede kitabın tamamı değil, yayınevinin 15 Eylül 2005 tarihli The End of Complexity alıntısı okundu. Bölgesel çömlek örnekleri ve yazarın yorumu ayrıldı; toplam parça sayısının kesin kanıtlanmasının güç olduğu uyarısı korundu."
       },
       {
-        "id": "mccormick-2001-origins-european-economy",
+        "id": "wilson-2014-economic-proxies",
+        "tier": "primary",
+        "type": "chapter",
+        "title": "Quantifying Roman economic performance by means of proxies: pitfalls and potential",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-02",
         "authors": [
-          "McCormick, Michael"
+          "Wilson, Andrew"
         ],
-        "year": 2001,
-        "title": "Origins of the European Economy: Communications and Commerce, AD 300-900",
-        "publisher": "Cambridge University Press",
-        "isbn": "9780521661027",
-        "note": "Ticaret ve iletişim ağlarının niceliksel incelemesi; batık ve dolaşım verilerinin dayanağı."
-      },
-      {
-        "id": "wickham-2005-framing-early-middle-ages",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Wickham, Chris"
-        ],
-        "year": 2005,
-        "title": "Framing the Early Middle Ages: Europe and the Mediterranean 400-800",
-        "publisher": "Oxford University Press",
-        "isbn": "9780199264490",
-        "note": "Tartışmanın ÖTEKİ tarafı: bölgesel çeşitliliği ve dönüşümü vurgular. DeepSeek turu bunu Ward-Perkins'le birlikte 'kanıt' olarak önermişti; ikisini aynı kutuya koymak tartışmayı gizlerdi. Burada karşı kanıt tarafına bağlandı."
-      },
-      {
-        "id": "mcconnell-2018-lead-greenland",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "McConnell, Joseph R.",
-          "Wilson, Andrew I."
-        ],
-        "year": 2018,
-        "title": "Lead pollution recorded in Greenland ice indicates European emissions tracked plagues, wars, and imperial expansion during antiquity",
-        "container": "Proceedings of the National Academy of Sciences",
-        "doi": "10.1073/pnas.1721818115",
-        "note": "Buz karotu kurşun kaydının Roma ekonomisiyle örtüşmesini kuran çalışma."
+        "year": 2014,
+        "container": "Quantifying the Greco-Roman Economy and Beyond",
+        "publisher": "Edipuglia",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A0f38ea6b-c273-42b1-b2fb-a21f2d95f94b/files/m52ce3fa4bc3f0d115ddbc7857daf693f",
+        "note": "Oxford arşivindeki özgün bölümün giriş ve bölüm 1’i okundu; batık grafiklerinin tarihleme ve görünürlük sorunları basılı s. 150–155’te (PDF s. 6–11). 2009 Approaches to Quantifying Roman Trade bölümüyle karıştırılmadı."
       }
     ],
     "evidence": [
       {
-        "id": "batik-sayisi-dususu",
-        "text": "Akdeniz batık gemi sayısı MÖ 1. - MS 1. yüzyıl zirvesinden sonra belirgin düşüyor - ticaret hacminin daralması.",
-        "citations": [
-          {
-            "source_ref": "mccormick-2001-origins-european-economy",
-            "locator": "Deniz ticareti verileri",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
         "id": "comlekcilik-gerilemesi",
-        "text": "Standart çarkta üretilmiş kaliteli sofra çömleği ortadan kalkıyor; yer yer çarksız el yapımına dönülüyor.",
+        "text": "Historic England, İngiltere’de Roma dönemi üretim merkezlerinin 5. yüzyılda uzun süre devam etmediğini; sonraki yüzyıllarda çömlek ve kiremit kullanımının azalmasıyla üretimin yerel zanaata daraldığını bildirir.",
         "citations": [
           {
-            "source_ref": "ward-perkins-2005-fall-of-rome",
-            "locator": "Çömlekçilik göstergeleri",
+            "source_ref": "historic-england-2018-pottery-tile",
+            "locator": "2 Chronology, basılı s. 6 (PDF s. 8), Crambeck ve sonraki yüzyıllar paragrafları",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "kiremit-ve-kemik",
-        "text": "Çatı kiremidi bazı bölgelerde tamamen kayboluyor; sığır kemiklerinde boyut küçülmesi görülüyor.",
+        "id": "bolgesel-comlek-ornekleri",
+        "text": "Ward-Perkins’in yayınevi alıntısı, Britanya’da çarksız kapları ve kuzey İtalya’da kap türlerinin azalmasını örnekler. Bu arkeolojik sentez, her bölge için aynı büyüklükte üretim kaybı ölçmüş tek bir veri serisi değildir.",
         "citations": [
           {
             "source_ref": "ward-perkins-2005-fall-of-rome",
-            "locator": "Maddi kültür göstergeleri",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "kursun-toparlanmasi",
-        "text": "Kurşun kirliliğinin Roma düzeyine dönüşü yüzyıllar sürüyor.",
-        "citations": [
-          {
-            "source_ref": "mcconnell-2018-lead-greenland",
-            "locator": "Toparlanma süresi",
+            "locator": "OUPblog, The End of Complexity, alıntı girişinden sonraki 1. paragraf, Britanya ve kuzey İtalya örnekleri",
             "support_type": "direct"
           }
         ]
@@ -905,37 +867,53 @@
     ],
     "counter_evidence": [
       {
-        "id": "bolgesel-farklar",
-        "text": "Düşüş her yerde aynı değil - Britanya'da sert, İtalya ve Akdeniz'de daha ılımlı. Tek bir 'Batı' eğrisi yanıltıcı olur.",
+        "id": "batik-sayisi-dususu",
+        "text": "Batık grafiğinin biçimi tarihleme aralığının işlenmesine göre değişir. Fıçıların daha az görünür olması, Kuzey Afrika kıyılarının eksik temsili ve batma riskini değiştiren limanlar gibi olası etkiler, batık sayısını doğrudan ticaret hacmine çevirmeyi sınırlar.",
         "citations": [
           {
-            "source_ref": "wickham-2005-framing-early-middle-ages",
-            "locator": "Bölgesel çeşitlilik çözümlemesi",
+            "source_ref": "wilson-2014-economic-proxies",
+            "locator": "Bölüm 1, basılı s. 150–154 (PDF s. 6–10), Parker grafiği ve Şekil 2–7",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "iki-taraf",
-        "text": "TARTIŞMANIN İKİ TARAFI VAR ve bu kayıt ikisini de taşıyor: Ward-Perkins maddi göstergelerle çöküşü savunur, Wickham dönüşümü ve bölgesel çeşitliliği vurgular. Kayıt birinciyi 'kanıt', ikinciyi 'karşı kanıt' olarak ayırıyor.",
+        "id": "bolgesel-farklar",
+        "text": "Kuzey Afrika’da sofra seramiği üretimi ve ihracatı 7. yüzyılın ikinci yarısına kadar; güney İtalya ve Ren bölgesinde bazı çarklı üretimler 5.–7. yüzyıllarda sürdü. Aynı yazarın bu örnekleri, bütün Batı’da aynı anda üretimin bittiği anlatısını sınırlar.",
         "citations": [
           {
-            "source_ref": "wickham-2005-framing-early-middle-ages",
-            "locator": "Tartışmanın konumu",
-            "support_type": "context"
+            "source_ref": "ward-perkins-2005-fall-of-rome",
+            "locator": "OUPblog, The End of Complexity, alıntının 2. paragrafı, Kuzey Afrika / güney İtalya / Rhineland",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "orneklem-ve-miktar",
+        "text": "Ward-Perkins toplam çömlek miktarındaki düşüşü kesin olarak göstermenin güç olduğunu belirtir. Wilson farklı kazı hacimleri ve buluntu örneklemlerinin karşılaştırılmasını ayrıca tartışır; parça sayıları tek başına bütün ekonomi veya kişi başına refah değildir.",
+        "citations": [
+          {
+            "source_ref": "ward-perkins-2005-fall-of-rome",
+            "locator": "OUPblog, The End of Complexity, alıntının son paragrafı, miktar düşüşünü kanıtlama uyarısı",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "wilson-2014-economic-proxies",
+            "locator": "Bölüm 1, basılı s. 155 (PDF s. 11), kazı hacmi ve mutlak buluntu sayısı paragrafı",
+            "support_type": "counter"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "DENETİM NOTU: DeepSeek turu Ward-Perkins, McCormick ve Wickham'ı birlikte 'kanıt' olarak önerdi. Wickham tam da kaydın karşı kanıt satırının kaynağıdır; ikisini aynı kutuya koymak tartışmayı gizlerdi. Taraflar ayrıldı."
+      "notes": "İddia bütün Batı’nın yaşam düzeyinden bölgesel çömlek/kiremit üretimine daraltıldı. Yerelleşme için bağımsız arkeolojik sentezler kullanıldı; geniş çöküş yorumunun uzman uzlaşısı olduğu ileri sürülmedi. McCormick ve Wickham kitaplarına okunmuş gibi verilen belirsiz atıflar, bu kayıttaki kurşun toparlanma süresi ve sığır boyutu iddiaları kaldırıldı. Kiremidin tamamen yokluğu yerine kurumsal raporun kullanım/üretim azalması kullanıldı. Historic England ilgili bölümleri, Ward-Perkins yayınevi alıntısı ve Wilson 2014 bölüm 1 kontrol edildi; ham veriler yeniden sayılmadı, bütün literatür veya bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "roma-476-uzlasimdir",
-    "claim": "Roma İmparatorluğu 476'da yıkıldı.",
+    "claim": "Roma İmparatorluğu’nun bütünü, Batı ve Doğu birlikte, 476’da sona erdi.",
     "status": "refuted",
     "confidence": "high",
     "topic": [
@@ -950,8 +928,8 @@
     "period": {
       "earliest": 476,
       "latest": 1453,
-      "era_label": "Batı'da imparatorluğun sonundan Konstantinopolis'in düşüşüne",
-      "precision": "exact",
+      "era_label": "476’daki İtalya olayından Konstantinopolis’in 1453’te alınmasına",
+      "precision": "range",
       "dating_method": [
         "historical-record"
       ]
@@ -960,90 +938,147 @@
       "tarih"
     ],
     "popular_claim": "Roma 476'da yıkıldı ve uygarlık çöktü.",
-    "divergence": "476'da Batı'daki son imparator tahttan indirildi - gerçek bir olay ama dönemin insanları için 'bir uygarlığın sonu' değil. Doğu Roma İmparatorluğu 1453'e kadar yaşadı; kendilerine Romalı diyorlardı ve hukukları Roma hukukuydu. 476 kesiği Batı Avrupa'dan bakan bir bölümlemedir - kullanışlı ama nötr değil.",
+    "divergence": "476’da Romulus Augustulus’un İtalya’da tahttan indirilmesi gerçek siyasi olaydır. Julius Nepos’un iddiası 480’e kadar sürdü; Doğu’daki Roma devleti 476’da sona ermedi. Batı’nın siyasi sonu için kullanılan tarih, bütün imparatorluğun ve maddi kültürün tek anda sonu değildir. Erken tarihçiler de 476’ya son anlamı yüklemiştir; bütün çağdaşların aynı algıya sahip olduğu veya bu tarihin yalnız modern Batı’da icat edildiği ileri sürülmez.",
     "divergence_type": [
-      "kategori-hatasi",
-      "ideolojik-secim"
+      "kategori-hatasi"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-etki"
     ],
     "sources": [
       {
-        "id": "ostrogorsky-1969-byzantine-state",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Ostrogorsky, George"
-        ],
-        "year": 1969,
-        "title": "History of the Byzantine State",
-        "publisher": "Rutgers University Press",
-        "isbn": "9780813511986",
-        "note": "Doğu Roma'nın 1453'e kadar süren varlığının standart anlatımı."
+        "id": "berlin-romulus-18200564",
+        "tier": "institutional",
+        "type": "database",
+        "title": "Romulus (Augustulus) 475–476 n. Chr., Objektnummer 18200564",
+        "language": "de",
+        "accessed": "2026-10-02",
+        "institution": "Münzkabinett der Staatlichen Museen zu Berlin",
+        "url": "https://ikmk.smb.museum/object?id=18200564&lang=de&view=vs",
+        "note": "Weitere Informationen bölümündeki olay anlatımı ile Datierung alanı okundu. 4 Eylül 476 sürgün tarihi katalog açıklamasıdır; sikkenin üzerinde bu olay yazmaz."
       },
       {
-        "id": "jones-1964-later-roman-empire",
-        "language": "en",
-        "accessed": "2026-09-09",
+        "id": "croke-1983-turning-point",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
+        "title": "A.D. 476: The Manufacture of a Turning Point",
+        "language": "en",
+        "accessed": "2026-10-02",
         "authors": [
-          "Jones, A. H. M."
+          "Croke, Brian"
         ],
-        "year": 1964,
-        "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
-        "publisher": "Johns Hopkins University Press",
-        "isbn": "9780801833540",
-        "note": "Geç Roma idaresinin standart başvuru eseri."
+        "year": 1983,
+        "container": "Chiron",
+        "volume": "13",
+        "pages": "81–120",
+        "doi": "10.34780/6478-7wo2",
+        "url": "https://publications.dainst.org/journals/chiron/article/view/1273",
+        "note": "1983 makalesinin DAI arşivindeki dijital metninde s. 81–85, 113 ve 117–119 kontrol edildi. 2017 dijital künye/telif tarihi yayın yılı değildir. Antik kronikler bu kayıtta ayrı edisyonlarından değil Croke’un alıntı ve tartışmasından okundu."
+      },
+      {
+        "id": "berlin-nepos-18309954",
+        "tier": "institutional",
+        "type": "database",
+        "title": "Iulius Nepos 477–480 n. Chr., Object number 18309954",
+        "language": "de",
+        "accessed": "2026-10-02",
+        "institution": "Münzkabinett der Staatlichen Museen zu Berlin",
+        "url": "https://ikmk.smb.museum/object?id=18309954&lang=en",
+        "note": "Milan darplı sikkenin Date, Authority, Obverse ve Publications alanları okundu. Müzenin 477–480 tarihlemesi ve Nepos adı, İtalya’da doğrudan fiilî yönetimin kanıtı değildir."
+      },
+      {
+        "id": "brooks-2009-byzantium",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Byzantium (ca. 330–1453)",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "authors": [
+          "Brooks, Sarah T."
+        ],
+        "year": 2009,
+        "institution": "The Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/essays/byzantium-ca-330-1453",
+        "note": "İlk yayın Ekim 2001, revizyon Ekim 2009. The Period of the Latin Occupation bölümündeki 1204–1261 ve Konstantinopolis’in 1453’te alınması kullanıldı; bütün geç Bizans topraklarının aynı tarihte bittiği sonucu çıkarılmadı."
+      },
+      {
+        "id": "met-2004-faith-power",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Byzantium: Faith and Power (1261–1557)",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "year": 2004,
+        "institution": "The Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/exhibitions/listings/2004/byzantium-faith-and-power",
+        "note": "Exhibition Overview, 1. ve 4. paragraflar: Empire of the Romans adı ve 1261 restorasyonu. Serginin 1557 bitişi, devletin o tarihe kadar yaşadığı iddiası değildir."
       }
     ],
     "evidence": [
       {
         "id": "476-olayi",
-        "text": "476'da Batı'daki son imparator tahttan indirildi; bu gerçek bir olaydır.",
+        "text": "Odoacer 476’da İtalya’da Romulus Augustulus’u tahttan indirip sürgüne gönderdi. Bu siyasi olayın gerçekliği, bütün Roma dünyasının aynı tarihte sona erdiği sonucunu vermez.",
         "citations": [
           {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "476 olayı",
-            "support_type": "direct"
+            "source_ref": "berlin-romulus-18200564",
+            "locator": "Weitere Informationen, Romulus’un 4.9.476 tarihinde Campania sürgününe gönderilmesi paragrafı",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "croke-1983-turning-point",
+            "locator": "Bölüm I, basılı s. 85 (PDF s. 6), Romulus’un devrilmesi ve Zeno’ya elçilikler",
+            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "dogu-roma-1453",
-        "text": "Doğu Roma bin yıl daha sürdü; kendilerine Romalı diyorlardı ve hukukları Roma hukukuydu.",
+        "id": "nepos-480",
+        "text": "Zeno Julius Nepos’un taht iddiasını tanıdı; Nepos 480’e kadar tanınmaya devam etti. Berlin kataloğu Milano’da onun adına basılmış bir sikkeyi 477–480’e tarihler. Bu, onun İtalya’da fiilen hükmettiği anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "ostrogorsky-1969-byzantine-state",
-            "locator": "İmparatorluğun sürekliliği",
+            "source_ref": "croke-1983-turning-point",
+            "locator": "Basılı s. 85 ve 113 (PDF s. 6 ve 34), Zeno’nun tanıması ve Nepos adına para",
             "support_type": "counter"
+          },
+          {
+            "source_ref": "berlin-nepos-18309954",
+            "locator": "Object number 18309954, Date 477–480; Authority Iulius Nepos; Mint Milan; Obverse yazıtı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "dogu-roma-1453",
+        "text": "Doğu’daki Roma devleti 476’da bitmedi. Geç dönem devleti kendisini Romalıların İmparatorluğu olarak adlandırdı; Konstantinopolis 1453’te alındı.",
+        "citations": [
+          {
+            "source_ref": "met-2004-faith-power",
+            "locator": "Exhibition Overview, 1. paragraf, Empire of the Romans ve 1453 cümleleri",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "1204-1261-kesintisi",
+        "text": "Konstantinopolis 1204–1261’de Latin yönetimindeydi; Bizans siyasi yapıları başka merkezlerde devam etti. Şehirde Bizans yönetimi 1261’de yeniden kuruldu; süreklilik değişmeyen sınırlar ve kesintisiz aynı başkent demek değildir.",
+        "citations": [
+          {
+            "source_ref": "brooks-2009-byzantium",
+            "locator": "The Period of the Latin Occupation, ilk 3 paragraf, 1204–1261 ve Nicaea",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "476-tek-kirilma-degil",
-        "text": "Batı'da imparatorluk zaten uzun süredir parçalanıyordu; 476 tek bir kırılma noktası değil.",
+        "text": "Croke, Marcellinus ve başka erken tarihçilerin 476’yı Batı’daki imparatorluğun sonu olarak anlatmasını ve bu tarihin sonraki aktarımını inceler. Bu nedenle 476 yalnız modern Batı’nın icadı veya bütün çağdaşlar için önemsiz olay diye sunulamaz.",
         "citations": [
           {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "Batı'nın çözülmesi",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "merkeze-gore-degisir",
-        "text": "Hangi bölgeyi merkeze aldığınıza göre 'son' başka bir tarihe düşer.",
-        "citations": [
-          {
-            "source_ref": "ostrogorsky-1969-byzantine-state",
-            "locator": "Dönemlendirme sorunu",
+            "source_ref": "croke-1983-turning-point",
+            "locator": "Basılı s. 81–83 ve 117–119 (PDF s. 2–4 ve 38–40), dönemlendirme ve Bizans kronik geleneği",
             "support_type": "counter"
           }
         ]
@@ -1051,8 +1086,11 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu Ostrogorsky ve Jones ile değiştirildi. Kayıtta hiç evidence yoktu - 476 olayının kendisi doğrudan kanıt olarak bağlandı."
-    }
+      "notes": "Yanlışlanan iddia açıkça bütün imparatorluğun 476’da sonuna daraltıldı; Batı’daki siyasi dönüm noktası reddedilmedi. Son imparator ifadesinin Nepos sorunu, erken kroniklerde 476’nın anlamı ve Konstantinopolis’te 1204–1261 kesintisi ayrıldı. Jones ve Ostrogorsky kitaplarına belirsiz atıflar yerine okunan Croke bölümleri ve müze kayıtları kullanıldı. Croke’un dönemlendirme kökeni yorumu tek ve kesin uzman uzlaşısı sayılmadı. Kronikler özgün edisyonlarından yeniden incelenmedi; bağımsız uzman incelemesi yapılmadı."
+    },
+    "open_questions": [
+      "Siyasi makam, bölgesel yönetim, hukuk ve maddi kültür için kullanılan son tarihlerinin gerekçeleri nasıl ayrı gösterilebilir?"
+    ]
   },
   {
     "schema_version": 2,
