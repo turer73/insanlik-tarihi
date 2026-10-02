@@ -145,13 +145,24 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .row.dim{opacity:.22}
 .row.dim .row__lbl b{font-weight:500}
 
-.coincide{border:1px solid var(--bad);background:var(--bad-bg);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.55rem}
-.coincide h3{font-size:1.02rem}
+.coincide.det{width:min(920px,calc(100% - 2rem));border-color:var(--bad);overflow:hidden}
+.coincide[open]{display:flex;flex-direction:column}
+.coincide .det__header,.coincide .det__footer{flex-shrink:0}
+.coincide .det__body{min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.det__footer{padding:.65rem 1.2rem;border-top:1px solid var(--rule);background:var(--surface)}
 .coincide .yr{font-family:var(--mono);font-weight:700;color:var(--bad)}
-.coincide ul{margin:0;padding-left:1.1rem;display:flex;flex-direction:column;gap:.3rem;font-size:.9rem;color:var(--ink-2);max-height:220px;overflow:auto}
+.coincide ul{margin:0;padding:0;list-style:none;font-size:.92rem;color:var(--ink-2)}
+.coincide li{padding:.85rem 0;border-bottom:1px solid var(--rule-soft)}
+.coincide li:first-child{padding-top:0}.coincide li:last-child{border-bottom:0;padding-bottom:0}
 .coincide li b{color:var(--ink)}
-.coincide li span{font-family:var(--mono);font-size:.68rem;color:var(--ink-3)}
-.coincide .close{align-self:flex-start;font-family:var(--mono);font-size:.68rem;color:var(--ink-3);text-decoration:underline;text-underline-offset:3px}
+.coincide li span{display:block;margin-top:.35rem;font-family:var(--mono);font-size:.68rem;color:var(--ink-3)}
+.coincide .guide-remove{align-self:flex-start;color:var(--bad)}
+.chart-meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1rem;min-height:44px}
+.guide-show{min-height:44px;padding:.5rem .7rem;border:1px solid var(--rule);background:var(--surface);
+  font-family:var(--mono);font-size:.7rem;color:var(--accent-ink)}
+.guide-show:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+.guide-show:disabled{color:var(--ink-3);cursor:default;opacity:.65}
+.dialog-label{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bad)}
 .hint{font-family:var(--mono);font-size:.68rem;color:var(--ink-3)}
 
 .row{display:grid;grid-template-columns:230px 1fr;border-bottom:1px solid var(--rule-soft)}
@@ -199,7 +210,7 @@ body.detail-open{overflow:hidden}
 .det .close:hover{border-color:var(--accent);color:var(--accent-ink);background:var(--accent-soft)}
 .det .close span{font-family:var(--body);font-size:1.25rem;line-height:1}
 @media(max-width:480px){.det{width:calc(100% - 1.5rem);max-height:calc(100vh - 1.5rem);max-height:calc(100dvh - 1.5rem)}
-  .det__header{padding:.5rem .9rem}.det__body{padding:1rem .9rem}.det .arts a{width:100%}}
+  .coincide.det{width:calc(100% - 1.5rem)}.det__header,.det__footer{padding:.5rem .9rem}.det__body{padding:1rem .9rem}.det .arts a{width:100%}}
 
 .legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-family:var(--mono);font-size:.68rem;color:var(--ink-3);align-items:center}
 .legend .k{display:inline-flex;align-items:center;gap:.3rem}
@@ -289,14 +300,17 @@ body.detail-open{overflow:hidden}
   </div>
 
   <div class="warn" id="scalewarn" hidden></div>
-  <div class="count" id="count"></div>
-  <p class="hint">Kayda veya çubuğa tıkla → bilgi kartı açılır. Çubuk dışında bir yere tıkla → <b>dikey kılavuz</b> kilitlenir ve o tarihte çakışan bulgular kalır.</p>
-  <div class="coincide" id="coincide" hidden></div>
+  <div class="chart-meta">
+    <div class="count" id="count"></div>
+    <button type="button" class="guide-show" id="guide-show" data-show-guide="1" aria-haspopup="dialog" aria-controls="coincide" disabled>Çakışan bulguları göster</button>
+  </div>
+  <p class="hint">Kayda veya çubuğa tıkla → bilgi kartı açılır. Çubuk dışında bir yere tıkla → <b>dikey kılavuz</b> kilitlenir ve o tarihte çakışan bulgular bir pencerede açılır.</p>
+  <dialog class="det coincide" id="coincide" aria-labelledby="coincide-title"></dialog>
   <dialog class="det" id="det" aria-labelledby="det-title"></dialog>
 
   <div class="chart">
     <div class="chartin">
-      <div class="plot" id="plot">
+      <div class="plot" id="plot" tabindex="-1" aria-label="Zaman çizelgesi">
         <div class="guide" id="guide" hidden></div>
         <div class="guidelbl" id="guidelbl" hidden></div>
         <div class="axis"><div class="axis__pad"></div><div class="axis__scale" id="axis"></div></div>
@@ -493,40 +507,58 @@ body.detail-open{overflow:hidden}
   var S = {scale:'civ', sort:'time', status:new Set(), region:new Set(), sel:null, guide:null};
   var detailTrigger = null;
   var detailDialog = document.getElementById('det');
-  var backdropPressed = false;
+  var guideDialog = document.getElementById('coincide');
+  var guideShow = document.getElementById('guide-show');
 
   function closeDetail(){
     if(detailDialog.open) detailDialog.close();
   }
-  function outsideDetail(e){
-    var box = detailDialog.getBoundingClientRect();
-    return e.clientX < box.left || e.clientX > box.right || e.clientY < box.top || e.clientY > box.bottom;
+  function closeGuide(){
+    if(guideDialog.open) guideDialog.close();
   }
-  detailDialog.addEventListener('pointerdown', function(e){
-    backdropPressed = e.target === detailDialog && outsideDetail(e);
-  });
-  detailDialog.addEventListener('click', function(e){
-    var dismiss = backdropPressed && e.target === detailDialog && outsideDetail(e);
-    backdropPressed = false;
-    if(dismiss) closeDetail();
-  });
-  detailDialog.addEventListener('cancel', function(e){
-    e.preventDefault();
-    closeDetail();
-  });
-  detailDialog.addEventListener('keydown', function(e){
-    if(e.key !== 'Tab') return;
-    var buttons = detailDialog.querySelectorAll('button, a[href]');
-    var first = buttons[0], last = buttons[buttons.length - 1];
-    var active = document.activeElement;
-    if(active === detailDialog.querySelector('#det-title') ||
-        (e.shiftKey && active === first) || (!e.shiftKey && active === last)){
-      e.preventDefault();
-      (e.shiftKey ? last : first).focus();
+  function setupDialog(dialog, titleId, onClose){
+    var backdropPressed = false;
+    function outside(e){
+      var box = dialog.getBoundingClientRect();
+      return e.clientX < box.left || e.clientX > box.right || e.clientY < box.top || e.clientY > box.bottom;
     }
-  });
-  detailDialog.addEventListener('close', function(){
-    document.body.classList.remove('detail-open');
+    dialog.addEventListener('pointerdown', function(e){
+      backdropPressed = e.target === dialog && outside(e);
+    });
+    dialog.addEventListener('click', function(e){
+      var dismiss = backdropPressed && e.target === dialog && outside(e);
+      backdropPressed = false;
+      if(dismiss) dialog.close();
+    });
+    dialog.addEventListener('cancel', function(e){
+      e.preventDefault();
+      dialog.close();
+    });
+    dialog.addEventListener('keydown', function(e){
+      if(e.key !== 'Tab') return;
+      var buttons = dialog.querySelectorAll('button, a[href]');
+      var first = buttons[0], last = buttons[buttons.length - 1];
+      var active = document.activeElement;
+      if(active === dialog.querySelector('#'+titleId) ||
+          (e.shiftKey && active === first) || (!e.shiftKey && active === last)){
+        e.preventDefault();
+        (e.shiftKey ? last : first).focus();
+      }
+    });
+    dialog.addEventListener('close', function(){
+      document.body.classList.toggle('detail-open', detailDialog.open || guideDialog.open);
+      onClose();
+    });
+  }
+  function openGuide(){
+    if(S.guide === null || guideDialog.open) return;
+    document.body.classList.add('detail-open');
+    guideDialog.showModal();
+    guideDialog.scrollTop = 0;
+    guideDialog.querySelector('.det__body').scrollTop = 0;
+    guideDialog.querySelector('#coincide-title').focus({preventScroll:true});
+  }
+  setupDialog(detailDialog, 'det-title', function(){
     S.sel = null;
     draw();
     // draw() yenilerken eski düğme DOM'dan çıkar; aynı kaydın yeni düğmesine dön.
@@ -538,6 +570,10 @@ body.detail-open{overflow:hidden}
     });
     var button = row ? row.querySelector(trigger.selector) : document.getElementById('f-scale').querySelector('button');
     if(button) button.focus({preventScroll:true});
+  });
+  setupDialog(guideDialog, 'coincide-title', function(){
+    var target = guideShow.disabled ? document.getElementById('plot') : guideShow;
+    target.focus({preventScroll:true});
   });
 
   // ---- kılavuz: konum -> yıl (pos'un tersi) ----
@@ -711,7 +747,12 @@ body.detail-open{overflow:hidden}
 
   function guideUI(list){
     var g = document.getElementById('guide'), gl = document.getElementById('guidelbl'), co = document.getElementById('coincide');
-    if(S.guide === null){ g.hidden = true; gl.hidden = true; co.hidden = true; return; }
+    guideShow.disabled = S.guide === null;
+    if(S.guide === null){
+      g.hidden = true; gl.hidden = true;
+      guideShow.setAttribute('aria-label', 'Çakışan bulguları göster');
+      closeGuide(); return;
+    }
     var p = clamp(pos(S.guide, S.scale));
     g.hidden = false; gl.hidden = false;
     g.classList.add('lock');
@@ -721,15 +762,17 @@ body.detail-open{overflow:hidden}
     gl.textContent = fmtY(S.guide);
 
     var hit = list.filter(function(r){ return spans(r, S.guide); });
-    co.hidden = false;
-    co.innerHTML = '<h3>Bu tarihte çakışan bulgular — <span class="yr">'+esc(fmtY(S.guide))+'</span> · '+hit.length+' kayıt</h3>'
+    guideShow.setAttribute('aria-label', 'Çakışan bulguları göster: '+fmtY(S.guide)+' · '+hit.length+' kayıt');
+    co.innerHTML = '<div class="det__header"><span class="dialog-label">Tarih bulguları</span>'
+      + '<button type="button" class="close" data-close-guide="1" aria-label="Çakışan bulgular penceresini kapat"><span aria-hidden="true">×</span> Kapat</button></div>'
+      + '<div class="det__body"><h3 id="coincide-title" tabindex="-1">Bu tarihte çakışan bulgular — <span class="yr">'+esc(fmtY(S.guide))+'</span> · '+hit.length+' kayıt</h3>'
       + (hit.length
         ? '<ul>'+hit.map(function(r){
             return '<li><b>'+esc((r.subject&&r.subject.site)||r.topic[0])+'</b> — '+esc(r.claim)
-              + '<br><span>'+esc(fmtY(r.period.earliest))+(r.period.latest!==r.period.earliest?' – '+esc(fmtY(r.period.latest)):'')
+              + '<span>'+esc(fmtY(r.period.earliest))+(r.period.latest!==undefined && r.period.latest!==r.period.earliest?' – '+esc(fmtY(r.period.latest)):'')
               + ' · '+esc(r.period.era_label||'')+'</span></li>'; }).join('')+'</ul>'
         : '<p style="margin:0;font-size:.9rem;color:var(--ink-2)">Bu tarihte aktif bulgu yok.</p>')
-      + '<button class="close" data-unguide="1">kılavuzu kaldır</button>';
+      + '</div><div class="det__footer"><button type="button" class="close guide-remove" data-unguide="1">Kılavuzu kaldır</button></div>';
   }
 
   function chipHtml(k,v,lbl,cls,n){
@@ -802,6 +845,8 @@ body.detail-open{overflow:hidden}
       draw(); return;
     }
     if(e.target.closest('[data-close]')){ closeDetail(); return; }
+    if(e.target.closest('[data-close-guide]')){ closeGuide(); return; }
+    if(e.target.closest('[data-show-guide]')){ openGuide(); return; }
     if(e.target.dataset.unguide){ S.guide=null; draw(); return; }
     if(e.target.closest('.det') || e.target.closest('.coincide')) return;
 
@@ -815,7 +860,7 @@ body.detail-open{overflow:hidden}
     var track = e.target.closest('.row__track, .hist__plot, .axis__scale');
     if(track){
       var y = trackYear(e);
-      if(y !== null){ S.guide = (S.guide === y ? null : y); draw(); }
+      if(y !== null){ S.guide = (S.guide === y ? null : y); draw(); openGuide(); }
       return;
     }
     var lbl = e.target.closest('.row__lbl');
@@ -828,7 +873,7 @@ body.detail-open{overflow:hidden}
   });
 
   document.addEventListener('keydown', function(e){
-    if(detailDialog.open) return;
+    if(detailDialog.open || guideDialog.open) return;
     if(e.key === 'Escape' && S.guide !== null){ S.guide = null; draw(); }
   });
 

@@ -7,6 +7,7 @@ import vm from 'node:vm';
 const template = readFileSync(fileURLToPath(new URL('../tools/timeline.template.html', import.meta.url)), 'utf8');
 const source = [...template.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
 assert.match(template, /<dialog class="det" id="det" aria-labelledby="det-title">/);
+assert.match(template, /<dialog class="det coincide" id="coincide" aria-labelledby="coincide-title">/);
 
 class Element {
   constructor(dataset = {}) {
@@ -33,6 +34,7 @@ class Element {
   }
   querySelectorAll() { return []; }
   querySelector() { return null; }
+  setAttribute(name, value) { (this.attributes ||= {})[name] = String(value); }
   closest(selector) { return this.matches?.[selector] || null; }
   getBoundingClientRect() { return { left: 100, right: 860, top: 100, bottom: 600, width: 760 }; }
   focus() { document.activeElement = this; }
@@ -45,7 +47,7 @@ class Element {
 }
 
 const ids = ['data', 'articles', 'det', 'rows', 'plot', 'axis', 'hist', 'count', 'scalewarn',
-  'f-scale', 'f-sort', 'f-status', 'f-region', 'guide', 'guidelbl', 'coincide'];
+  'f-scale', 'f-sort', 'f-status', 'f-region', 'guide', 'guidelbl', 'coincide', 'guide-show'];
 const elements = Object.fromEntries(ids.map(id => [id, new Element()]));
 elements.data.textContent = JSON.stringify([{
   id: 'sample', claim: 'Örnek <iddia>', status: 'unknown', topic: ['iklim'],
@@ -76,6 +78,16 @@ elements.det.querySelector = selector => selector === '#det-title' ? title : nul
 const modalClose = new Element();
 const modalLinks = [new Element(), new Element()];
 elements.det.querySelectorAll = selector => selector === 'button, a[href]' ? [modalClose, ...modalLinks] : [];
+const guideDialog = elements.coincide;
+const guideTitle = new Element();
+const guideBody = new Element();
+const guideClose = new Element({ closeGuide: '1' });
+const guideRemove = new Element({ unguide: '1' });
+guideClose.matches = { '[data-close-guide]': guideClose };
+guideDialog.querySelector = selector => selector === '#coincide-title' ? guideTitle : selector === '.det__body' ? guideBody : null;
+guideDialog.querySelectorAll = selector => selector === 'button, a[href]' ? [guideClose, guideRemove] : [];
+const guideShow = elements['guide-show'];
+guideShow.matches = { '[data-show-guide]': guideShow };
 const scaleButton = new Element();
 elements['f-scale'].querySelector = () => scaleButton;
 const document = new Element();
@@ -87,6 +99,8 @@ vm.runInNewContext(source, {
 
 const dialog = elements.det;
 assert.equal(dialog.open, false, 'sayfa açılırken kart kapalı olmalı');
+assert.equal(guideDialog.open, false, 'sayfa açılırken tarih listesi kapalı olmalı');
+assert.equal(guideShow.disabled, true, 'tarih seçilmeden yeniden açma düğmesi pasif olmalı');
 const click = target => document.dispatch('click', { target });
 const open = kind => {
   const oldTrigger = renderedRows[0][kind];
@@ -110,6 +124,16 @@ const track = new Element();
 track.matches = { '.row__track, .hist__plot, .axis__scale': track };
 document.dispatch('click', { target: track, clientX: 400 });
 assert.equal(elements.guide.hidden, false);
+assert.equal(guideDialog.open, true, 'çizelgeden tarih seçimi listeyi modal açmalı');
+assert.equal(document.activeElement, guideTitle);
+assert.match(guideDialog.innerHTML, /1 kayıt/);
+assert.match(guideDialog.innerHTML, /Örnek &lt;iddia&gt;/);
+document.dispatch('keydown', { key: 'Escape' });
+assert.equal(elements.guide.hidden, false, 'liste açıkken Escape kılavuzu silmemeli');
+guideDialog.dispatch('cancel');
+assert.equal(guideDialog.open, false);
+assert.equal(document.activeElement, guideShow, 'liste kapanınca yeniden açma düğmesi odaklanmalı');
+assert.equal(document.body.classes.has('detail-open'), false);
 open('label');
 document.dispatch('keydown', { key: 'Escape' });
 assert.equal(elements.guide.hidden, false, 'modal açıkken Escape kılavuzu silmemeli');
@@ -149,4 +173,49 @@ expectClosed('label');
 open('bar');
 dialog.close();
 expectClosed('bar');
-console.log('zaman çizelgesi modalı: açma, kapatma, kılavuz ve odak dönüşü tamam');
+
+// Liste kapanınca çizelgeyi yeniden çizmek pencereyi kendiliğinden açmamalı.
+document.dispatch('click', { target: track, clientX: 420 });
+click(guideClose);
+assert.equal(guideDialog.open, false);
+open('label');
+dialog.close();
+assert.equal(guideDialog.open, false, 'bilgi kartı kapanırken tarih listesi yeniden açılmamalı');
+assert.equal(elements.guide.hidden, false);
+guideBody.scrollTop = 500;
+click(guideShow);
+assert.equal(guideDialog.open, true, 'seçili tarihin listesi tekrar açılabilmeli');
+assert.equal(guideBody.scrollTop, 0, 'yeniden açılan uzun liste başlangıçtan okunmalı');
+assert.equal(document.body.classes.has('detail-open'), true);
+guideDialog.dispatch('keydown', { key: 'Tab' });
+assert.equal(document.activeElement, guideClose);
+guideDialog.dispatch('keydown', { key: 'Tab', shiftKey: true });
+assert.equal(document.activeElement, guideRemove);
+guideDialog.dispatch('keydown', { key: 'Tab' });
+assert.equal(document.activeElement, guideClose, 'liste de klavye odağını içinde tutmalı');
+guideDialog.dispatch('pointerdown', { clientX: 150, clientY: 150 });
+guideDialog.dispatch('click', { clientX: 150, clientY: 150 });
+assert.equal(guideDialog.open, true, 'liste içine tıklama kapatmamalı');
+guideDialog.dispatch('pointerdown', { clientX: 5, clientY: 5 });
+guideDialog.dispatch('click', { clientX: 5, clientY: 5 });
+assert.equal(guideDialog.open, false, 'dışarı tıklama listeyi kapatmalı');
+assert.equal(elements.guide.hidden, false, 'dışarı tıklama tarih seçimini korumalı');
+assert.equal(document.body.classes.has('detail-open'), false);
+
+// Filtrelerden sonra eşleşmeyen tarih için boş durum gösterilmeli.
+const filter = new Element({ k: 'status', v: 'established' });
+filter.matches = { '.chip': filter };
+click(filter);
+assert.equal(guideDialog.open, false, 'filtre değişimi kapalı listeyi açmamalı');
+click(guideShow);
+assert.match(guideDialog.innerHTML, /0 kayıt/);
+assert.match(guideDialog.innerHTML, /Bu tarihte aktif bulgu yok/);
+click(guideRemove);
+assert.equal(guideDialog.open, false, 'Kılavuzu kaldır pencereyi de kapatmalı');
+assert.equal(elements.guide.hidden, true);
+assert.equal(guideShow.disabled, true);
+assert.equal(document.activeElement, elements.plot, 'kılavuz kalkınca odak çizelgeye dönmeli');
+assert.equal(document.body.classes.has('detail-open'), false);
+click(guideShow);
+assert.equal(guideDialog.open, false, 'seçim kaldırıldıktan sonra boş pencere açılmamalı');
+console.log('zaman çizelgesi modalları: açma, kapatma, kılavuz, filtre ve odak dönüşü tamam');
