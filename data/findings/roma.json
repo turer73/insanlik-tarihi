@@ -1650,9 +1650,9 @@
   {
     "schema_version": 2,
     "id": "hristiyan-buyume-orani-modeli",
-    "claim": "Hristiyanlığın 300'e kadarki yayılışı, on yılda %40'lık sıradan bir büyüme oranıyla açıklanabilir - olağandışı bir varsayım gerekmez.",
-    "status": "contested",
-    "confidence": "medium",
+    "claim": "MS 40’ta 1.000 kişi varsayıldığında, on yılda %40 sabit bileşik artış modeli MS 300 için yaklaşık 6,3 milyon kişi üretir; bu sonuç tarihsel nüfus ölçümü değildir.",
+    "status": "established",
+    "confidence": "high",
     "topic": [
       "hristiyanlik",
       "demografi",
@@ -1665,7 +1665,7 @@
     },
     "period": {
       "earliest": 40,
-      "latest": 350,
+      "latest": 300,
       "era_label": "Erken Roma İmparatorluğu'ndan geç antikçağa",
       "precision": "range",
       "dating_method": [
@@ -1687,169 +1687,112 @@
       }
     ],
     "popular_claim": "Hristiyanlık Constantinus sayesinde yayıldı; imparator olmasaydı marjinal bir mezhep kalırdı.",
-    "divergence": "Model, MS 40'ta ~1.000 kişiden başlayıp on yılda %40 büyümeyle 300 yılında ~6 milyona ulaşıldığını gösterir - modern dinî hareketlerde gözlenen, olağanüstü olmayan bir hız. Sonuç şu: Constantinus sahneye çıktığında Hristiyanlık zaten imparatorluk nüfusunun kayda değer bir bölümüydü. İmparator bir azınlığı çoğunluk yapmadı; büyümekte olan bir kitleyle ittifak kurdu. Nedensellik oku popüler anlatının gösterdiği yönde değil.",
+    "divergence": "Doğrulanan şey koşullu hesap ve modelin ölçümden ayrılmasıdır. Başlangıç sayısı ve sabit oran varsayımdır. Bu hesap yayılmanın nedenini, Constantinus’un etkisini veya gerçek nüfus payını belirlemez. Stark’ın modelinin kökeni Hopkins’in atıfları üzerinden izlenmiştir; Stark’ın kitabının kendisi bu tur okunmuş sayılmadı.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "open_questions": [
-      "Salgın döneminde bakımın hayatta kalma oranına etkisi niceliksel olarak ölçülebilir mi? Şu an ölçülemiyor.",
-      "Cemaatlerdeki kadın oranı ne kadar yüksekti? Sayısal veri yok, çıkarım metinsel."
+      "Farklı yer ve dönemlerde üyelik, katılım ve kendini Hristiyan sayma ölçütleri nasıl karşılaştırılabilir?",
+      "Salgın bakımının ölüm oranı veya yeni katılımlar üzerindeki etkisi hangi bağımsız verilerle sınanabilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "volatile": false,
     "used_in": [
       "roma-hristiyanlik"
     ],
     "sources": [
       {
-        "id": "stark-1996-rise-of-christianity",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Stark, Rodney"
-        ],
-        "year": 1996,
-        "title": "The Rise of Christianity: A Sociologist Reconsiders History",
-        "publisher": "Princeton University Press",
-        "isbn": "9780691027494",
-        "note": "Büyüme oranı modelinin KAYNAĞI. Bu kayıtta doğrulayıcı değil, iddianın çıkış noktası."
-      },
-      {
         "id": "hopkins-1998-christian-number",
-        "language": "en",
-        "accessed": "2026-09-09",
         "tier": "peer-reviewed",
         "type": "article",
+        "title": "Christian Number and Its Implications — Cambridge yeniden basımı",
+        "url": "https://gwern.net/doc/philosophy/religion/1998-hopkins.pdf",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "İlk yayın: JECS 6 (1998), s. 185–226, DOI 10.1353/earl.1998.0035. Okunan metin Cambridge yeniden basımı, s. 432–487 (DOI 10.1017/CBO9781139093552.014); bu edisyonun sayfalarıyla atıf verilir. s. 432–433, 439–442 ve 453–455 kontrol edildi, Tablo 12.1 görüntüden de karşılaştırıldı. Stark 1996, s. 5–7 atıfları Hopkins üzerinden izlendi; Stark kitabının kendisi okunmadı.",
         "authors": [
           "Hopkins, Keith"
         ],
         "year": 1998,
-        "title": "Christian Number and Its Implications",
-        "container": "Journal of Early Christian Studies",
-        "doi": "10.1353/earl.1998.0035",
-        "note": "Sayı tahminlerinin ve büyüme aritmetiğinin eleştirel değerlendirmesi. Kaydın 'tahminler geniş aralıkta' ifadesinin dayanağı."
+        "container": "Journal of Early Christian Studies / Sociological Studies in Roman History (yeniden basım)",
+        "doi": "10.1353/earl.1998.0035"
       },
       {
-        "id": "macmullen-1984-christianizing",
+        "id": "eusebius-church-history-7",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Church History, Book VII — A. C. McGiffert çevirisi",
+        "url": "https://www.newadvent.org/fathers/250107.htm",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-02",
+        "note": "VII.22.1, 7–10: Eusebios’un aktardığı İskenderiyeli Dionysios mektubunda salgında bakım ve bakım verenlerin ölümü. İngilizce çeviri okundu; anlatı imparatorluk çapında ölüm oranı ölçmez.",
         "authors": [
-          "MacMullen, Ramsay"
+          "Eusebios (Kaisareia)"
         ],
-        "year": 1984,
-        "title": "Christianizing the Roman Empire (A.D. 100-400)",
-        "publisher": "Yale University Press",
-        "isbn": "9780300036428",
-        "note": "Yayılmanın toplumsal mekanizmalarının incelemesi."
+        "year": 1890,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "1"
       }
     ],
     "evidence": [
       {
         "id": "buyume-aritmetigi",
-        "text": "Bileşik büyüme aritmetiği: %40/on yıl, 260 yılda 1.000'i yaklaşık 6 milyona çıkarır.",
+        "text": "Projenin koşullu hesabı: N(t)=1.000 × 1,4^((t−40)/10). t=300 için 6.299.831’ye yuvarlanır. Hopkins’in aktardığı başlangıç tahmini ve yaklaşık toplam, bu tür eğrinin tarihsel sayım olmadığını gösterir.",
         "citations": [
           {
-            "source_ref": "stark-1996-rise-of-christianity",
-            "locator": "Büyüme modeli",
-            "support_type": "claim-origin"
-          }
-        ]
-      },
-      {
-        "id": "oran-olagandisi-degil",
-        "text": "Kullanılan oran, modern dinî hareketlerde belgelenmiş büyüme hızlarıyla aynı mertebededir - uydurulmuş bir sayı değildir.",
-        "citations": [
-          {
-            "source_ref": "stark-1996-rise-of-christianity",
-            "locator": "Karşılaştırmalı oranlar",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "salgin-bakimi",
-        "text": "Salgın dönemlerinde Hristiyan cemaatlerinin şehirde kalıp hastalara bakması, temel bakım yoluyla hayatta kalma oranını yükseltmiş olabilir.",
-        "citations": [
-          {
-            "source_ref": "stark-1996-rise-of-christianity",
-            "locator": "Salgın bölümü",
+            "source_ref": "hopkins-1998-christian-number",
+            "locator": "Cambridge yeniden basımı s. 440–442, başlangıç/son tahminleri; Şekil 12.1, Tablo 12.1 ve not 17. Buradaki %40 formülü proje hesabıdır.",
             "support_type": "inference"
           }
         ]
       },
       {
-        "id": "toplumsal-mekanizmalar",
-        "text": "Yayılmanın toplumsal mekanizmaları ayrıca incelenmiştir.",
+        "id": "modelin-kokeni",
+        "text": "Hopkins, çizdiği tahmini eğriyi Stark 1996, s. 7, Tablo 1.1 ile ilişkilendirir; başlangıç tahmini için s. 5’e atıf yapar.",
         "citations": [
           {
-            "source_ref": "macmullen-1984-christianizing",
-            "locator": "Dönüşüm mekanizmaları",
-            "support_type": "context"
+            "source_ref": "hopkins-1998-christian-number",
+            "locator": "Cambridge yeniden basımı s. 440 not 14; s. 441 not 16; s. 442 not 17",
+            "support_type": "claim-origin"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "imkan-kaniti",
-        "text": "Bu bir İMKÂN KANITIDIR, ölçüm değil: başlangıç sayısı, büyüme oranı ve 300 yılındaki toplam - üçü de tahmindir.",
+        "id": "olcum-ve-nedensellik",
+        "text": "Hopkins bu yöntemi nüfusu kesin ölçmek veya yayılmayı açıklamak için kullanmadığını belirtir; sabit eğri farklı büyüme yollarının yerine geçen bir varsayımdır.",
         "citations": [
           {
             "source_ref": "hopkins-1998-christian-number",
-            "locator": "Sayı tahminlerinin değerlendirmesi",
+            "locator": "Cambridge yeniden basımı s. 441, ilk paragraf ve Şekil 12.1; s. 442, a–c büyüme olasılıkları",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "tahmin-araligi",
-        "text": "Tarihçiler arasında 300 yılı için verilen toplam nüfus tahminleri geniş bir aralıkta değişir; 6 milyon üst uçlardan biridir.",
+        "id": "bakim-anlatisinin-siniri",
+        "text": "Dionysios’un mektubu hastalara bakan Hristiyanları över; bakım verirken ölenleri de anlatır. Bu yerel ve dinî tanıklık, bakımın sayısal sağkalım avantajını veya büyüme hızını ölçmez.",
         "citations": [
           {
-            "source_ref": "hopkins-1998-christian-number",
-            "locator": "Tahmin aralığı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "sabit-oran-varsayimi",
-        "text": "Sabit oran varsayımı gerçekçi değildir; büyüme bölgeden bölgeye ve dönemden döneme değişmiş olmalıdır.",
-        "citations": [
-          {
-            "source_ref": "hopkins-1998-christian-number",
-            "locator": "Model varsayımları",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "taraf-kaynaklar",
-        "text": "Salgın bakımı ve kadın demografisi açıklamaları aritmetikten çok daha zayıf desteklidir ve kaynakların önemli kısmı Hristiyan yazarların kendi anlatılarından gelir - taraf olan kaynak.",
-        "citations": [
-          {
-            "source_ref": "macmullen-1984-christianizing",
-            "locator": "Kaynak eleştirisi",
-            "support_type": "counter"
+            "source_ref": "eusebius-church-history-7",
+            "locator": "VII.22.1, 7–10, mektup aktarımı ve bakım verenlerin ölümü",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "DENETİM NOTU: kayıt 'tahminler geniş aralıkta değişir' diyordu ama hiçbir tahmini künyelemiyordu. Hopkins 1998 (DOI doğrulandı) Stark'ın aritmetiğine cevap veren çalışmadır; karşı kanıt tarafına bağlandı."
+      "notes": "İddia koşullu aritmetiğe daraltıldı; yüksek güven gerçek tarihsel %40 oranı için değil, belirtilen girdilerle hesap ve ölçüm ayrımı içindir. Modern hareketlerle oran benzerliği, 6 milyonun üst uç olduğu, Constantinus etkisinin tersine çevrildiği ve kadın oranı/doğurganlığının ölçülmüş olduğu hükümleri kaldırıldı. Hopkins’in yeniden basımındaki seçilmiş sayfalar ve Dionysios’un İngilizce mektup aktarımı okundu. Stark ve MacMullen kitapları okunmuş gibi kanıt olarak kullanılmadı. Özgün el yazmaları, bütün demografi literatürü ve bağımsız niceliksel veri denetlenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "hristiyan-zulmu-olcegi",
-    "claim": "Hristiyanlara yönelik zulüm gerçekti ama üç yüz yıl boyunca kesintisiz ve imparatorluk çapında değildi; dönemsel, bölgesel ve çoğunlukla kısa süreliydi.",
-    "status": "contested",
-    "confidence": "medium",
+    "claim": "Plinius–Traianus yazışmasının Hristiyanları aramama fakat suçlananları cezalandırma usulü, 303’te aktarılan baskı emirleri ve 311 hoşgörü metni farklı politikaları belgeler; aynı kesintisiz zulüm politikasını göstermez.",
+    "status": "established",
+    "confidence": "high",
     "topic": [
       "hristiyanlik",
       "roma",
@@ -1861,8 +1804,8 @@
       "modern_country": "çok uluslu"
     },
     "period": {
-      "earliest": 64,
-      "latest": 313,
+      "earliest": 110,
+      "latest": 311,
       "era_label": "Roma İmparatorluğu",
       "precision": "range",
       "dating_method": [
@@ -1878,132 +1821,133 @@
       "tarih",
       "metin-elestirisi"
     ],
-    "people": [
-      {
-        "name": "de Ste. Croix, G. E. M.",
-        "role": "analyst",
-        "affiliation": "University of Oxford",
-        "year": 1963,
-        "lifespan": "1910-2000"
-      },
-      {
-        "name": "Moss, Candida",
-        "role": "critic",
-        "affiliation": "University of Birmingham",
-        "year": 2013
-      }
-    ],
     "popular_claim": "Hristiyanlar üç yüz yıl boyunca aralıksız kitlesel katliama uğradı; sayısız şehit verildi.",
-    "divergence": "Sistematik ve imparatorluk çapında zulüm, 3. yüzyıl ortası ve başındaki iki büyük dalgada yoğunlaşır. Geri kalan zaman büyük ölçüde yerel yargıçların takdirine bağlı, düzensiz uygulamalardan oluşur. Bu bir küçümseme değil, ÖLÇEK DÜZELTMESİDİR - ve şu açıdan önemlidir: Roma Hristiyanlığı bir yönetim aracı olarak kendisi uydurmuş olsaydı, kendi uydurduğu inancın mensuplarını dönem dönem idam etmesi açıklanması güç bir davranış olurdu.",
+    "divergence": "Plinius’un mektubu infaz ve işkenceyi bildirir; Traianus aktif aramayı ve anonim ihbarı reddederken suçlanan ve Hristiyanlıkta ısrar edenlerin cezalandırılmasını onaylar. Eusebios 303’te kiliselerin yıkılması ve kitapların yakılması emirlerini aktarır. 311 hoşgörü metni başka bir aşamadır. Bu örnekler zararları inkâr etmez; üç yüzyılı tek politika veya çoğunlukla kısa iki dalga diye ölçmeye yetmez. Zulüm, bir inancın kökeni hakkında tek başına nedensel kanıt değildir.",
     "divergence_type": [
       "medya-abartisi",
       "ideolojik-secim"
     ],
     "open_questions": [
-      "Zulmün toplam ölçeği - kaç kişi, hangi dönemde - sayısal olarak bilinmiyor ve muhtemelen bilinemez."
+      "Her dönemde, farklı bölgelerde kaç kişi ve hangi işlemlerle cezalandırıldı? Seçilmiş bu metinler toplam kurban sayısını ölçmez.",
+      "İmparatorluk emri ile yerel uygulama arasındaki fark hangi bağımsız belgelerle izlenebilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-hristiyanlik"
     ],
     "sources": [
       {
-        "id": "ste-croix-1963-why-persecuted",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "article",
+        "id": "pliny-letters-10-96",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Plinius, Epistulae X.96 — Traianus’a mektup",
+        "url": "https://dcc.dickinson.edu/pliny-letters/10-96",
+        "language": "la",
+        "accessed": "2026-10-02",
+        "note": "Dickinson College Commentaries, Ashley Roman Francese edisyonu: Latince X.96.1–10 ve ilgili dil açıklamaları okundu. Genellikle yaklaşık 112’ye tarihlenen yazışma; bütün imparatorluk için nüfus veya ölüm sayımı değildir.",
         "authors": [
-          "de Ste. Croix, G. E. M."
-        ],
-        "year": 1963,
-        "title": "Why Were the Early Christians Persecuted?",
-        "container": "Past & Present",
-        "volume": "26",
-        "doi": "10.1093/past/26.1.6",
-        "note": "Zulmün hukuki ve idari mantığının klasik incelemesi."
+          "Plinius (Genç)"
+        ]
       },
       {
-        "id": "moss-2013-myth-of-persecution",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "id": "trajan-pliny-10-97",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Traianus’un Plinius’a cevabı, Epistulae X.97",
+        "url": "https://dcc.dickinson.edu/pliny-letters/10-97",
+        "language": "la",
+        "accessed": "2026-10-02",
+        "note": "Dickinson College Commentaries Latince edisyonunda X.97.1–2: usulün onayı, aktif aramama, suçlananları cezalandırma ve anonim ihbarı reddetme hükümleri okundu.",
         "authors": [
-          "Moss, Candida R."
+          "Traianus"
+        ]
+      },
+      {
+        "id": "eusebius-church-history-8",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Church History, Book VIII — A. C. McGiffert çevirisi",
+        "url": "https://www.newadvent.org/fathers/250108.htm",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "VIII.2.1–5: görüldüğü söylenen yıkım/yakma olayları, anlatıcının seçim ilkesi, ilk ve sonraki emirler. İngilizce çeviri okundu; seçici kilise tarihi anlatısı bütün bölgeleri veya toplam kurban sayısını temsil eden sayım değildir.",
+        "authors": [
+          "Eusebios (Kaisareia)"
         ],
-        "year": 2013,
-        "title": "The Myth of Persecution: How Early Christians Invented a Story of Martyrdom",
-        "publisher": "HarperOne",
-        "isbn": "9780062104526",
-        "note": "Şehitlik anlatılarının edebî oluşumunu inceleyen çalışma. Alanda TARTIŞMALIDIR; kayıt bunu ayrıca işaretliyor."
+        "year": 1890,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "1"
+      },
+      {
+        "id": "lactantius-galerius-311",
+        "tier": "primary",
+        "type": "edition",
+        "title": "De mortibus persecutorum, 34 — Galerius’un hoşgörü metni",
+        "url": "https://ccel.org/ccel/lactantius/persecutors/anf07.iii.v.xxxiv.html",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "34. bölümde Hristiyanların yeniden Hristiyan olmasına ve kamu düzenini bozmadan toplanmasına izin veren metin okundu. Kullanılan metin ANF İngilizce çevirisidir; izin, her yerde hemen uygulanmış sayılmadı.",
+        "authors": [
+          "Lactantius"
+        ],
+        "container": "Ante-Nicene Fathers",
+        "volume": "7"
       }
     ],
     "evidence": [
       {
-        "id": "kilise-mulkleri-vardi",
-        "text": "3. yüzyılda birçok şehirde açıkça bilinen kilise binaları ve mülkleri vardı; 313'te bunların İADESİ emredilmesi, önceden var olduklarını gösterir.",
+        "id": "trajan-usulu",
+        "text": "Traianus Hristiyanların aranmasını ve anonim ihbarların kullanılmasını reddeder; usulün uygun olduğunu belirtir ve suçlananların cezalandırılmasını, inancı reddedip tanrılara tapınanların bağışlanmasını ister.",
         "citations": [
           {
-            "source_ref": "ste-croix-1963-why-persecuted",
-            "locator": "Zulüm dönemlerinin yapısı",
+            "source_ref": "trajan-pliny-10-97",
+            "locator": "X.97.1–2, Conquirendi non sunt / si deferantur et arguantur / sine auctore hükümleri",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "yerel-yargic-takdiri",
-        "text": "Zulüm yasalarının uygulaması eyaletten eyalete büyük farklılık gösterir; merkezî emir olmadan yerel yargıç takdiri belirleyicidir.",
+        "id": "303-emirleri",
+        "text": "Eusebios kilise yıkımı, kutsal yazıların yakılması ve statü kaybını öngören ilk emri; ardından kilise yöneticilerinin hapsedilip kurban vermeye zorlanmasını emreden düzenlemeleri aktarır.",
         "citations": [
           {
-            "source_ref": "ste-croix-1963-why-persecuted",
-            "locator": "Hukuki uygulama",
+            "source_ref": "eusebius-church-history-8",
+            "locator": "VIII.2.4–5, ilk ve sonraki emirler",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "sehitlik-anlatilari-gec",
-        "text": "Şehitlik anlatılarının önemli bir kısmı olaylardan çok sonra yazılmış edebî derlemelerdir ve tarihsel değerleri tartışmalıdır.",
+        "id": "311-izin",
+        "text": "Galerius’un Lactantius’ta aktarılan metni, Hristiyanların yeniden Hristiyan olmasına ve düzeni bozmadan toplanmasına izin verir. Önceki baskıyı geri alan hükmün varlığı, politikaların değişebildiğini gösterir.",
         "citations": [
           {
-            "source_ref": "moss-2013-myth-of-persecution",
-            "locator": "Şehitlik metinlerinin oluşumu",
-            "support_type": "direct"
+            "source_ref": "lactantius-galerius-311",
+            "locator": "Bölüm 34, After the publication ile başlayan izin paragrafı",
+            "support_type": "inference"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "zulum-gercekti",
-        "text": "Ölçek düzeltmesi, zulmün gerçekliğini veya şiddetini ortadan kaldırmaz; belgelenmiş idamlar ve mülk müsaderesi vardır.",
+        "id": "infaz-ve-iskence",
+        "text": "Plinius ısrar edenlerin infazını emrettiğini, Roma vatandaşlarını Roma’ya gönderilmek üzere ayırdığını ve iki kadın köleyi işkenceyle sorguladığını bildirir. Aramama hükmü, suçlananların güvende olduğu anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "ste-croix-1963-why-persecuted",
-            "locator": "Belgelenmiş vakalar",
+            "source_ref": "pliny-letters-10-96",
+            "locator": "X.96.3–4 ve 8, perseverantes duci iussi / cives Romani / per tormenta",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "moss-tezi-tartismali",
-        "text": "'Şehitlik anlatıları abartılıdır' tezi alanda TARTIŞMALIDIR; bazı tarihçiler erken şehitlik metinlerinin çekirdek tarihselliğini savunur.",
+        "id": "secici-anlati",
+        "text": "Eusebios yaşanan yıkım ve yakmayı gördüğünü söyler; aynı bölümde tarihine hangi olayları seçtiğini açıklar. Bu anlatı toplam kurban sayısı veya tüm yerel uygulamalar için eksiksiz kayıt değildir.",
         "citations": [
           {
-            "source_ref": "moss-2013-myth-of-persecution",
-            "locator": "Tezin konumu",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "iki-yonlu-kaynak-sorunu",
-        "text": "Kaynak sorunu iki yönlüdür: hem şehitlik anlatıları hem de onları eleştiren yeniden değerlendirmeler ideolojik okumaya açıktır.",
-        "citations": [
-          {
-            "source_ref": "moss-2013-myth-of-persecution",
-            "locator": "Yöntem notu",
+            "source_ref": "eusebius-church-history-8",
+            "locator": "VIII.2.1–3, görgü iddiası ve olayları seçme ilkesi",
             "support_type": "context"
           }
         ]
@@ -2011,13 +1955,13 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "de Ste. Croix DOI ile, Moss ISBN ile bağlandı. Moss tezinin alanda tartışmalı olduğu ayrıca işaretlendi."
+      "notes": "İddia farklı belge ve politikalara daraltıldı. Çoğunlukla kısa süreli iki dalga, bütün ara dönemlerin yerel takdire bağlı olduğu ve zulmün Hristiyanlığın kökenini kanıtladığı çıkarımları kaldırıldı. de Ste. Croix ve Moss’un okunmamış eserleri, ayrıca Moss eleştirisini Moss’un kendi kitabına bağlayan dairesel atıf çıkarıldı. Latince mektuplar ve seçilmiş İngilizce antik metin çevirileri kontrol edildi; bütün zulüm tarihi, özgün el yazmaları, şehitlik metinlerinin tamamı veya kurban sayıları denetlenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "kilise-roma-idari-mirasi",
-    "claim": "Kilise, Roma'nın idari biçimini devraldı: piskoposluk bölgeleri imparatorluk idari birimlerinden, kilise binası mahkeme salonundan, kilise dili ve hukuk mantığı imparatorluktan geldi.",
+    "claim": "325 İznik’in 4–6. kuralları kilise yetkisini eyalet düzeyinde düzenler; 451 Kalkedon’un 17. ve 28. kuralları kent örgütlenmesi ile başkent statüsünü kilise düzeniyle ilişkilendirir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -2027,18 +1971,17 @@
       "mimarlik"
     ],
     "subject": {
-      "site": "Roma İmparatorluğu / Batı kilisesi",
-      "region": "Akdeniz havzası ve Batı Avrupa",
+      "site": "Roma İmparatorluğu / geç antikçağ kiliseleri",
+      "region": "Akdeniz havzası",
       "modern_country": "çok uluslu"
     },
     "period": {
-      "earliest": 300,
-      "latest": 800,
-      "era_label": "Geç antikçağdan erken Ortaçağ'a",
+      "earliest": 325,
+      "latest": 451,
+      "era_label": "Geç antikçağ",
       "precision": "range",
       "dating_method": [
         "textual",
-        "typology",
         "historical-record"
       ]
     },
@@ -2052,154 +1995,116 @@
       "hukuk",
       "sanat-tarihi"
     ],
-    "people": [
-      {
-        "name": "Jones, A. H. M.",
-        "role": "analyst",
-        "affiliation": "University of Cambridge",
-        "year": 1964,
-        "lifespan": "1904-1970"
-      },
-      {
-        "name": "Krautheimer, Richard",
-        "role": "analyst",
-        "year": 1965,
-        "lifespan": "1897-1994"
-      }
-    ],
     "popular_claim": "Hristiyanlık Roma İmparatorluğu'nu ele geçirdi ve dönüştürdü.",
-    "divergence": "Uzun vadede daha belirleyici olan akış ters yöndedir: Roma, Hristiyanlığa kendi biçimini verdi. Kilise imparatorluğu ele geçirmedi - imparatorluğun BİÇİMİNİ GİYDİ. Batı'da devlet çözülürken ayakta kalan kurumun kilise olmasının sebebi de budur: Roma'nın idari iskeletini içinde taşıyordu.",
+    "divergence": "Kilise ile imparatorluk örgütlenmesi arasındaki ilişki belirli konsil kurallarında gösterilebilir. Kurallar, bütün piskoposluk sınırlarının aynen vergi haritasından geldiğini, bütün kilise planlarının mahkeme salonu olduğunu veya kilisenin Batı’da kalmasının tek nedenini kanıtlamaz. Dil, hukuk ve unvanların tüm tarihini tek köken çizgisine indirgemek bu belgelerin kapsamını aşar.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-hristiyanlik"
     ],
     "sources": [
       {
-        "id": "jones-1964-later-roman-empire",
+        "id": "iznik-konsili-kanonlari",
+        "tier": "primary",
+        "type": "edition",
+        "title": "First Council of Nicaea (A.D. 325) — yirmi kural",
+        "url": "https://www.newadvent.org/fathers/3801.htm",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Jones, A. H. M."
-        ],
-        "year": 1964,
-        "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
-        "publisher": "Johns Hopkins University Press",
-        "isbn": "9780801833540",
-        "note": "Geç Roma idaresinin standart başvuru eseri."
+        "accessed": "2026-10-02",
+        "note": "Henry Percival, NPNF II.14 (1900) İngilizce edisyonunda 4–6. kurallar okundu. Eyalet, metropolit ve eski yetki gelenekleri düzenlenir; bu bir bütün sınırların uygulanma haritası değildir.",
+        "year": 1900,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "14"
       },
       {
-        "id": "krautheimer-1986-early-christian-architecture",
+        "id": "chalcedon-canons-17-28",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Council of Chalcedon (A.D. 451) — 17. ve 28. kurallar",
+        "url": "https://www.newadvent.org/fathers/3811.htm",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Krautheimer, Richard"
-        ],
-        "year": 1986,
-        "title": "Early Christian and Byzantine Architecture",
-        "publisher": "Yale University Press",
-        "isbn": "9780300052947",
-        "note": "Bazilika planının kilise mimarisine geçişinin standart incelemesi. KÜNYE 4. BASKIYA GÖRE (1986); kayıttaki people alanı ilk baskıyı (1965) anıyor."
+        "accessed": "2026-10-02",
+        "note": "Henry Percival, NPNF II.14 (1900) İngilizce edisyonunda 17. ve 28. kurallar okundu. 17. kural mevcut otuz yıllık yetkiyi ve yeni kentlerin örgütlenmesini; 28. kural başkent statüsünü yetki gerekçesi olarak sunar. Konsil normu, uygulamanın eksiksiz kaydı değildir.",
+        "year": 1900,
+        "container": "Nicene and Post-Nicene Fathers, Second Series",
+        "volume": "14"
       },
       {
-        "id": "brown-2012-eye-of-a-needle",
-        "language": "en",
-        "accessed": "2026-09-09",
+        "id": "leon-angelo-silver-2024-dura",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
+        "title": "Debating the domus ecclesiae at Dura-Europos: the Christian Building in context",
+        "url": "https://doi.org/10.1017/S1047759424000126",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "note": "Hakemli özgün makalenin tam PDF’sinde s. 264–268 ve 298 seçilerek okundu. Evden dönüştürülen yapının daha sonra konut niteliği taşıdığı kabulü eleştirilir; tek örnek bütün kilise mimarisini açıklamaz. Başlangıç yapısının 232/233 tarihlemesinin sınırı ile 254–256 kapanış aralığı ayrı tutuldu.",
         "authors": [
-          "Brown, Peter"
+          "Camille Leon Angelo",
+          "Joshua Silver"
         ],
-        "year": 2012,
-        "title": "Through the Eye of a Needle: Wealth, the Fall of Rome, and the Making of Christianity in the West",
-        "publisher": "Princeton University Press",
-        "isbn": "9780691152905",
-        "note": "Kilisenin Batı'da kurumsallaşması ve servetle ilişkisi."
+        "year": 2024,
+        "container": "Journal of Roman Archaeology",
+        "volume": "37",
+        "doi": "10.1017/S1047759424000126"
       }
     ],
     "evidence": [
       {
-        "id": "diocesis-devralindi",
-        "text": "Piskoposluk bölgeleri (diocesis) imparatorluğun idari bölünmesini hem adıyla hem sınırlarıyla devraldı.",
+        "id": "eyalet-duzeni",
+        "text": "İznik’in 4. kuralı piskopos tayininde eyalet piskoposlarının katılımı ve metropolit onayını; 5. kural eyalet sinodlarını; 6. kural İskenderiye, Roma ve Antakya dahil eski yetki geleneklerini düzenler.",
         "citations": [
           {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "İdari yapı ve kilise",
+            "source_ref": "iznik-konsili-kanonlari",
+            "locator": "325 İznik, kurallar 4–6, eyalet / metropolit / eski gelenek hükümleri",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "bazilika-plani",
-        "text": "Kiliseler pagan TAPINAK planında değil, Roma BAZİLİKASI planında yapıldı; sebep, cemaatin içeride toplanması gereğidir. Pagan tapınağında ayin dışarıda yapılırdı.",
+        "id": "kent-ve-kilise",
+        "text": "Kalkedon’un 17. kuralı, imparatorluk otoritesiyle yeni kent kurulduğunda kilise bölgelerinin siyasi ve belediye örgütlenmesini izlemesini ister.",
         "citations": [
           {
-            "source_ref": "krautheimer-1986-early-christian-architecture",
-            "locator": "Bazilika planının benimsenmesi",
+            "source_ref": "chalcedon-canons-17-28",
+            "locator": "451 Kalkedon, kural 17, And if any city ile başlayan son cümle",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "latince-korundu",
-        "text": "Batı kilisesi imparatorluğun idari dili Latince'yi benimsedi ve bin yıldan uzun süre korudu.",
+        "id": "baskent-gerekcesi",
+        "text": "Kalkedon’un 28. kuralı, Yeni Roma’nın hükümdarlık ve senato statüsünü Konstantinopolis’e kilise ayrıcalıkları tanımak için gerekçe gösterir. Bu, kuralın kendi yetki gerekçesidir.",
         "citations": [
           {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "İdari dil",
+            "source_ref": "chalcedon-canons-17-28",
+            "locator": "451 Kalkedon, kural 28, royal city / Sovereignty and the Senate gerekçeleri",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "hukuk-mantigi",
-        "text": "Kilise uyuşmazlıkları Roma hukuk mantığıyla çözmeye başladı: yazılı kural, içtihat, yetki hiyerarşisi.",
-        "citations": [
-          {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "Kilise idaresi",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "kurumsallasma",
-        "text": "Kilisenin Batı'da kurumsallaşması ve servetle ilişkisi ayrıca incelenmiştir.",
-        "citations": [
-          {
-            "source_ref": "brown-2012-eye-of-a-needle",
-            "locator": "Kurumsallaşma",
-            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "cift-yonlu-etkilesim",
-        "text": "Etkileşim çift yönlüdür: kilise Roma biçimlerini alırken içeriklerini de değiştirdi; bazilika planı ayin ihtiyacına göre dönüştürüldü (apsis, transept).",
+        "id": "kurallar-harita-degil",
+        "text": "Kalkedon’un 17. kuralı mevcut otuz yıllık yetkiyi korur ve uyuşmazlıkların çözümünü düzenler. Böyle bir norm tek başına bütün sınırların her yerde aynı olduğunu göstermez.",
         "citations": [
           {
-            "source_ref": "krautheimer-1986-early-christian-architecture",
-            "locator": "Planın dönüşümü",
-            "support_type": "counter"
+            "source_ref": "chalcedon-canons-17-28",
+            "locator": "451 Kalkedon, kural 17, ilk iki cümle ve başvuru usulü",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "sinir-sapmalari",
-        "text": "Piskoposluk sınırlarının idari sınırlarla örtüşmesi her yerde tam değildir; özellikle Doğu'da ve sınır bölgelerinde sapmalar vardır.",
+        "id": "mimari-tek-cizgi-degil",
+        "text": "Dura-Europos Hristiyan yapısı evden dönüştürülmüştür. 2024 çalışması, dönüşümden sonraki mekânı hâlâ konut saymayı ve bütün mimariyi evden bazilikaya tek çizgide açıklamayı eleştirir.",
         "citations": [
           {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "Sınır sapmaları",
+            "source_ref": "leon-angelo-silver-2024-dura",
+            "locator": "s. 264–265, araştırma sorusu; s. 267–268, tarihleme ve dönüşüm; s. 298, Conclusion",
             "support_type": "counter"
           }
         ]
@@ -2207,8 +2112,12 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Jones, Krautheimer ve Brown künyelendi. Pontifex maximus satırının kaynaksız olduğu işaretlendi - kayıt onu doğrudan kanıt gibi sunuyordu. 'Pontifex maximus unvanının papalığa geçişi' satırı bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; unvanın tarihçesi tartışmalıdır."
-    }
+      "notes": "Geniş miras iddiası okunmuş konsil kurallarına daraltıldı. Vergi ve piskoposluk sınırlarının aynılığı, bütün kiliselerin mahkeme planında olması, Latin dilinin yalnız kilise sayesinde yaşaması, kanon hukukunun tek kökeni, Pontifex maximus aktarımı ve kilisenin kalmasının tek nedeni çıkarıldı. Jones, Krautheimer ve Brown kitapları okunmuş gibi kullanılmadı. Dura-Europos için 2024 makalesinin seçilmiş sayfaları okundu; eski konutun dönüştürülmesi ile dönüşüm sonrası konut olarak kullanılması ayrıldı. Bütün mimarlık literatürü, konsil kurallarının fiilî uygulamaları ve özgün el yazmaları incelenmedi. Bağımsız uzman incelemesi yapılmadı."
+    },
+    "open_questions": [
+      "Konsil kuralları farklı bölgelerde nasıl uygulandı; idari sınırlardan ayrılan kilise bölgeleri nasıl belgelendi?",
+      "Kilise mimarisinin yerel biçimleri ve kullanım değişimleri hangi kazı verileriyle karşılaştırılabilir?"
+    ]
   },
   {
     "schema_version": 2,

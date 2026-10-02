@@ -166,9 +166,9 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <a href="#tarihler">Belgelenmiş tarihler</a>
     <a href="#iznik">İznik ne yaptı</a>
     <a href="#kanon">Kanon nasıl oluştu</a>
-    <a href="#neden">Neden yayıldı</a>
-    <a href="#mekanizma">Destekleyici mekanizmalar</a>
-    <a href="#tersine">Ters yön</a>
+    <a href="#neden">Büyüme modeli</a>
+    <a href="#mekanizma">Tanıklık ve zulüm</a>
+    <a href="#tersine">Kurumsal düzen</a>
     <a href="#sonuc">Sonuç</a>
     <a href="#acik">Açık sorular</a>
   </div>
@@ -219,105 +219,55 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 </section>
 
 <section id="neden" class="wrap">
-  <div class="sec__head">
-    <p class="eyebrow">04 — Asıl soru</p>
-    <h2>Neden yayıldı? Aritmetik yeterli</h2>
-    <p class="kicker">En çok merak edilen soru bu, ve cevabın büyük kısmı <b>mucize de imparator da gerektirmiyor.</b></p>
-  </div>
-
+  <div class="sec__head"><p class="eyebrow">04 — Demografi</p><h2>Bir büyüme modeli neyi hesaplar?</h2><p class="kicker">Sabit oranla çizilen bir eğri, <b>gerçek nüfusu veya yayılmanın nedenini tek başına ölçmez.</b></p></div>
   <div class="grow">
-    <div class="hd">On yılda %40 büyüme — bileşik artışın gücü</div>
-    <p class="sub">Bir sosyolog, Hristiyanlığın yayılmasını <b>demografik bir modelle</b> ele aldı. Başlangıç: MS 40'ta yaklaşık bin kişi. Oran: on yılda %40 — modern dinî hareketlerde gözlenen, olağanüstü olmayan bir hız.</p>
-    <div class="gr">
-      <div class="gl"><b>MS 40</b><span class="n">~1.000</span><span class="bar" style="width:1%"></span></div>
-      <div class="gl"><b>100</b><span class="n">~7.500</span><span class="bar" style="width:2%"></span></div>
-      <div class="gl"><b>150</b><span class="n">~40.000</span><span class="bar" style="width:4%"></span></div>
-      <div class="gl"><b>200</b><span class="n">~215.000</span><span class="bar" style="width:9%"></span></div>
-      <div class="gl"><b>250</b><span class="n">~1,1 milyon</span><span class="bar" style="width:26%"></span></div>
-      <div class="gl last"><b>300</b><span class="n">~6 milyon</span><span class="bar" style="width:100%"></span></div>
+    <div class="hd">Varsayım: her on yılda %40 bileşik artış</div>
+    <p class="sub">Başlangıç <b>MS 40’ta 1.000 kişi</b> seçilsin. Buradaki değerler <b>N(t) = 1.000 × 1,4<sup>(t−40)/10</sup></b> formülüyle yeniden hesaplandı ve tam sayıya yuvarlandı. Bunlar <b>sayım sonucu değildir.</b> Çubuklar doğrusal ölçekte MS 300 değerine oranlıdır.</p>
+    <div class="gr" aria-label="Varsayımsal bileşik artış hesabı">
+      <div class="gl"><b>MS 40</b><span class="n">1.000</span><span class="bar" aria-hidden="true" style="width:0.0159%"></span></div>
+      <div class="gl"><b>MS 100</b><span class="n">7.530</span><span class="bar" aria-hidden="true" style="width:0.1195%"></span></div>
+      <div class="gl"><b>MS 150</b><span class="n">40.496</span><span class="bar" aria-hidden="true" style="width:0.6428%"></span></div>
+      <div class="gl"><b>MS 200</b><span class="n">217.795</span><span class="bar" aria-hidden="true" style="width:3.4572%"></span></div>
+      <div class="gl"><b>MS 250</b><span class="n">1.171.356</span><span class="bar" aria-hidden="true" style="width:18.5934%"></span></div>
+      <div class="gl last"><b>MS 300</b><span class="n">6.299.831</span><span class="bar" aria-hidden="true" style="width:100.0000%"></span></div>
     </div>
-    <p class="leg"><b>Modelin sınırı:</b> bu tablo varsayılan başlangıç sayısı ve oranla hesaplanan büyümeyi gösterir. Constantinus’un etkisini veya gerçek nüfus payını bu aritmetik tek başına ölçmez. Modelin kaynakları ve varsayımları ayrıca denetlenmelidir.</p>
+    <p class="leg"><b>Kaynak ve hesap ayrımı:</b> <a href="https://gwern.net/doc/philosophy/religion/1998-hopkins.pdf#page=10">Hopkins’in yeniden basımı, s. 440–442</a>, Stark’ın başlangıç tahminini ve tablosunu aktarır; kendi eğrisinin de varsayımsal olduğunu belirtir. Yukarıdaki tam değerler bu sayfadaki %40 formülünün hesabıdır; Hopkins’in yuvarlanmış Tablo 12.1 değerlerinin aynısı değildir.</p>
   </div>
-
-  <p class="note r" style="margin-top:1.5rem"><b>Dürüstlük payı:</b> bu bir <b>imkân kanıtıdır, ölçüm değil.</b> Başlangıç sayısı, büyüme oranı ve 300 yılındaki toplam — üçü de tahmindir. Modelin gösterdiği şey "böyle oldu" değil, <b>"olağandışı bir şey varsaymadan da bu sayıya ulaşılabilir."</b> Bu, kendi başına önemli bir sonuç: <b>açıklama için mucize gerekmiyor.</b></p>
+  <p class="note r" style="margin-top:1.5rem"><b>Yaklaşık 6,3 milyon bir model çıktısıdır.</b> Başlangıç sayısı veya oran değişirse sonuç da değişir. Bu hesap Constantinus’un etkisini, bir dinin doğruluğunu veya Hristiyanlığın neden yayıldığını belirlemez.</p>
 </section>
 
 <section id="mekanizma" class="wrap">
-  <div class="sec__head">
-    <p class="eyebrow">05 — Destekleyiciler</p>
-    <h2>Oranı besleyen mekanizmalar</h2>
-    <p class="kicker">Aritmetik <i>nasıl</i> mümkün olduğunu gösteriyor. <b>Neden</b> o oranda büyüdüğü ayrı bir soru — ve cevaplar aritmetikten daha yumuşak.</p>
-  </div>
-
+  <div class="sec__head"><p class="eyebrow">05 — Tanıklık ve politika</p><h2>Bakım anlatısı ve zulüm belgeleri</h2><p class="kicker">Bir mektup davranışı anlatabilir. <b>Davranışın nüfusa etkisi için ayrı veri gerekir.</b></p></div>
   <div class="grid3">
-    <div class="card">
-      <span class="tag">Salgın</span>
-      <div class="hd">Kalıp bakmak</div>
-      <p>2. ve 3. yüzyıldaki büyük salgınlarda, kaçabilenler şehirleri terk etti. Hristiyan cemaatleri <b>kalıp hastalara baktı.</b> Temel bakım — su, yiyecek, sıcaklık — tek başına hayatta kalma oranını ciddi biçimde yükseltir.</p>
-    </div>
-    <div class="card">
-      <span class="tag">Demografi</span>
-      <div class="hd">Kadınların oranı ve konumu</div>
-      <p>Cemaatlerde kadın oranı daha yüksekti. Bunun bir sonucu <b>pagan erkeklerle evlilikler</b> — yani yeni hane halklarına giriş — ve daha yüksek doğurganlıktı.</p>
-    </div>
-    <div class="card r">
-      <span class="tag">Uyarı</span>
-      <div class="hd">Bunlar aritmetik kadar sağlam değil</div>
-      <p>Bakım ve demografi açıklamaları <b>makul sosyolojidir</b> ama aritmetik kadar doğrudan gösterilemez. Kaynaklar sınırlı ve çoğu Hristiyan yazarların kendi anlatılarından geliyor — <b>taraf olan kaynak.</b></p>
-    </div>
+    <div class="card"><span class="tag">Salgın tanıklığı</span><div class="hd">İskenderiyeli Dionysios’un mektubu</div><p><a href="https://www.newadvent.org/fathers/250107.htm">Eusebios, VII.22.7–10</a>, hastalara bakan Hristiyanları öven mektubu aktarır. Mektup <b>bakım verirken ölenleri de anlatır.</b> Bu, sayısal bir sağkalım karşılaştırması değildir.</p></div>
+    <div class="card"><span class="tag">Veri sınırı</span><div class="hd">Üyelik ve nüfus aynı soru değil</div><p>Bir topluluğa katılmak, düzenli ibadet etmek ve kendini Hristiyan saymak farklı ölçütler olabilir. <b>Kadın oranı, doğurganlık ve yeni katılımlar</b>, sabit büyüme hesabından çıkarılamaz.</p></div>
+    <div class="card r"><span class="tag">Kaynak eleştirisi</span><div class="hd">Tanıklığın bağlamı</div><p>Kendi cemaatini öven bir mektup, bütün Hristiyanların veya diğer toplulukların davranışını temsil eden örneklem değildir. <b>Yerel anlatı, genel demografik etkiyi tek başına doğrulamaz.</b></p></div>
   </div>
-
   <div class="prose" style="margin-top:1.7rem">
-    <p>Bir de <b>zulüm</b> meselesi var ve dikkatli olmak gerekiyor. Zulüm gerçekti — ama <b>üç yüz yıl boyunca kesintisiz, imparatorluk çapında bir kıyım değildi.</b> Dönemsel, bölgesel ve çoğunlukla kısa süreliydi; iki büyük ve sistematik dalga 3. yüzyıl ortası ve 4. yüzyıl başında yoğunlaşır.</p>
-    <p>Bu bir küçümseme değil, <b>ölçek düzeltmesidir</b> — ve şu açıdan önemli: eğer Roma Hristiyanlığı bir yönetim aracı olarak <b>kendisi uydurmuş</b> olsaydı, kendi uydurduğu inancın mensuplarını dönem dönem idam etmesi açıklanması güç bir davranış olurdu.</p>
+    <p><b>Plinius–Traianus yazışması:</b> <a href="https://dcc.dickinson.edu/pliny-letters/10-96">X.96.3–4 ve 8</a>, inancında ısrar edenlerin infazını ve iki kadın kölenin işkenceyle sorgulanmasını bildirir. <a href="https://dcc.dickinson.edu/pliny-letters/10-97">X.97.1–2</a> Hristiyanları aramamayı ve anonim ihbarı reddetmeyi ister; suçlananların cezalandırılmasını da onaylar. <b>Aramama, güvence altında olmak demek değildir.</b></p>
+    <p><b>303 ve 311:</b> <a href="https://www.newadvent.org/fathers/250108.htm">Eusebios, VIII.2.4–5</a>, kiliseleri yıkma, kutsal yazıları yakma ve ardından yöneticileri hapsedip kurban vermeye zorlama emirlerini aktarır. <a href="https://ccel.org/ccel/lactantius/persecutors/anf07.iii.v.xxxiv.html">Lactantius, bölüm 34</a>, 311’de yeniden toplanmaya izin veren hoşgörü metnini verir. Bunlar <b>farklı politikaların belgeleridir.</b></p>
+    <p>Bu örnekler zulmün gerçek zararlarını gösterir; bütün üç yüzyılı kesintisiz tek politika, “çoğunlukla kısa” dönemler veya yalnız iki dalga olarak ölçmez. <b>Toplam kurban sayısı bu metinlerden hesaplanamaz.</b> Zulüm belgeleri, bir inancın kökenine ilişkin iddiayı da tek başına çözmez.</p>
   </div>
 </section>
 
 <section id="tersine" class="wrap">
-  <div class="sec__head">
-    <p class="eyebrow">06 — Ters yön</p>
-    <h2>Asıl hikâye: Roma Hristiyanlığı biçimlendirdi</h2>
-    <p class="kicker">Soru genelde "Hristiyanlık Roma'yı nasıl değiştirdi" diye sorulur. <b>Ters yöndeki akış daha somut ve daha ölçülebilir.</b></p>
-  </div>
-
+  <div class="sec__head"><p class="eyebrow">06 — Kurumsal düzen</p><h2>Konsil kuralları, kentler ve yerel yapılar</h2><p class="kicker">Roma örgütlenmesiyle ilişki <b>belirli kurallarda</b> gösterilebilir. Bütün kurumların tek kökeni bu örneklerden çıkarılamaz.</p></div>
   <div class="inh">
-    <div class="ih">
-      <span class="ih__from">İdari birim</span>
-      <span class="ih__to">Piskoposluk bölgesi</span>
-      <p>Kilisenin coğrafi örgütlenmesi, imparatorluğun idari bölünmesini <b>hem adıyla hem sınırlarıyla</b> devraldı. Bugünkü kilise haritası, bir imparatorluk vergi haritasının izini taşıyor.</p>
-    </div>
-    <div class="ih">
-      <span class="ih__from">Yapı biçimi</span>
-      <span class="ih__to">Bazilika</span>
-      <p>Kiliseler <b>tapınak biçiminde değil, mahkeme salonu biçiminde</b> yapıldı. Roma bazilikası bir kamu binasıydı — adalet ve ticaret için. Cemaatin <b>içeride toplanması</b> gerektiği için pagan tapınak planı işe yaramadı.</p>
-    </div>
-    <div class="ih">
-      <span class="ih__from">Dil</span>
-      <span class="ih__to">Latince</span>
-      <p>Batı kilisesi imparatorluğun idari dilini benimsedi ve <b>bin yıldan uzun süre</b> korudu. Latince, imparatorluk çöktükten sonra da <b>kilise sayesinde</b> yaşadı.</p>
-    </div>
-    <div class="ih">
-      <span class="ih__from">Hukuk aklı</span>
-      <span class="ih__to">Kanon hukuku</span>
-      <p>Kilise, uyuşmazlıkları <b>Roma hukuk mantığıyla</b> çözmeye başladı: yazılı kural, içtihat, yetki hiyerarşisi. Sonraki kanon hukuku bu kalıptan doğdu.</p>
-    </div>
-    <div class="ih">
-      <span class="ih__from">Unvan</span>
-      <span class="ih__to">Pontifex maximus</span>
-      <p>Roma'nın <b>pagan başrahip</b> unvanı, imparatorlar tarafından taşınıyordu. Zamanla papalık unvanları arasına geçti — <b>kurumsal sürekliliğin en çıplak örneği.</b></p>
-    </div>
+    <div class="ih"><span class="ih__from">Eyalet</span><span class="ih__to">Piskopos ve metropolit</span><p><a href="https://www.newadvent.org/fathers/3801.htm">İznik, kurallar 4–6</a>, tayin, eyalet sinodları ve eski yetki geleneklerini düzenler. Bunlar <b>bütün sınırların aynen devralındığı bir harita değildir.</b></p></div>
+    <div class="ih"><span class="ih__from">Yeni kent</span><span class="ih__to">Kilise bölgesinin düzeni</span><p><a href="https://www.newadvent.org/fathers/3811.htm">Kalkedon, kural 17</a>, imparatorluk otoritesiyle kurulan yeni kentlerde kilise bölgelerinin siyasi ve belediye düzenini izlemesini ister; <b>mevcut yetki ve uyuşmazlık usulünü</b> de düzenler.</p></div>
+    <div class="ih"><span class="ih__from">Başkent statüsü</span><span class="ih__to">Konstantinopolis’in yetkisi</span><p><a href="https://www.newadvent.org/fathers/3811.htm">Kalkedon, kural 28</a>, hükümdarlık ve senato statüsünü Yeni Roma’ya kilise ayrıcalıkları tanımanın gerekçesi olarak sunar. <b>Bu, kuralın kendi yetki savunusudur.</b></p></div>
+    <div class="ih"><span class="ih__from">Yerel mimari</span><span class="ih__to">Dura-Europos örneği</span><p><a href="https://doi.org/10.1017/S1047759424000126">Leon Angelo ve Silver, 2024, s. 267–268 ve 298</a>, evden dönüştürülen Hristiyan yapısını inceler. Dönüşüm sonrası kullanımın konut niteliği taşıdığı yorumunu sorgular. <b>Kilise mimarisi tek bir mahkeme planına indirgenemez.</b></p></div>
   </div>
-
-  <p class="note" style="margin-top:1.5rem"><b>Toplamı şu:</b> Hristiyanlık imparatorluğu ele geçirmedi; <b>imparatorluğun biçimini giydi.</b> Ve Batı'da devlet çözülürken ayakta kalan kurum kilise oldu — çünkü <b>Roma'nın idari iskeletini içinde taşıyordu.</b></p>
+  <p class="note" style="margin-top:1.5rem"><b>Kural ve uygulama ayrı izlenir:</b> Konsil metni bir düzen öngörür; o düzenin her yerde uygulanmış olduğunu tek başına kanıtlamaz. Dil, hukuk, unvanlar ve kilisenin Batı’daki devamlılığının bütün tarihi bu seçilmiş belgelerle açıklanmış sayılmaz.</p>
 </section>
 
 <section id="sonuc" class="wrap">
   <div class="sec__head"><p class="eyebrow">07 — Sonuç</p><h2>Belge ile genellemeyi ayırmak</h2></div>
-  <div class="verdictbox"><p class="eyebrow">Denetlenen üç kayıt</p><h3>Hoşgörü, inanç emri ve kitap listesi ayrı belgelerdir</h3>
+  <div class="verdictbox"><p class="eyebrow">Altı kaydın seçilmiş kaynak denetimi</p><h3>Hoşgörü, inanç emri ve kitap listesi ayrı belgelerdir</h3>
     <p><b>Kronoloji:</b> 311’deki hoşgörü, 313’te din seçme serbestliği ve mal iadesi, 380’de belirli bir Hristiyan inancının emredilmesi birbirinden ayrılır. Yasa metni, bütün toplumun aynı anda dönüşümünü ölçmez.</p>
     <p><b>İznik:</b> korunmuş yirmi kural ve sinodal mektupta 27 kitaplık Yeni Ahit kararı yoktur. Jerome’un Judith atfı ile Arius yazılarına yönelik yakma emri de gözden çıkarılamaz.</p>
     <p><b>367:</b> Athanasios’un listesi 27 kitabı sayar; aktarım diliyle birlikte ekleme ve çıkarma yasağı koyar. Kanon tarihini yalnız serbest kullanım, metin kaybını yalnız kopyalanmama açıklamaz.</p>
-    <p>Büyüme modeli, zulmün ölçeği ve kurumsal miras bölümleri bu üç belgeden çıkan sonuçlar değildir; bunların bağlı kayıtlarının ayrıntılı kaynak denetimi henüz tamamlanmadı.</p>
+    <p><b>Model, zulüm ve kurumlar:</b> koşullu büyüme hesabı nüfus sayımı değildir. Zulüm belgeleri farklı politikaları; konsil kuralları kent ve eyalet düzeniyle belirli ilişkileri gösterir. Bunlar tek başına toplam kurban sayısını, imparatorun demografik etkisini veya kurumların bütün kökenini açıklamaz.</p>
   </div>
 </section>
 
@@ -330,7 +280,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="open">
     <div class="oq">
       <p class="oq__q">Büyüme oranı gerçekten %40 mıydı?</p>
-      <p class="oq__a">Model bir <b>imkân kanıtıdır, ölçüm değil.</b> Başlangıç sayısı, oran ve 300 yılındaki toplam üçü de tahmindir. Gösterdiği şey "böyle oldu" değil, "olağandışı bir şey varsaymadan da bu sayıya ulaşılır."</p>
+      <p class="oq__a"><b>%40 bu tablonun varsayımıdır.</b> Belirtilen girdilerle yaklaşık 6,3 milyon hesaplanır; gerçek büyüme oranı veya gerçek MS 300 nüfusu bu işlemle ölçülmüş olmaz.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Constantinus'un kişisel inancı neydi?</p>
@@ -338,11 +288,11 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     </div>
     <div class="oq">
       <p class="oq__q">Salgın bakımının etkisi ne kadardı?</p>
-      <p class="oq__a">Mekanizma makul ama <b>niceliksel kanıt zayıf.</b> Kaynakların önemli kısmı Hristiyan yazarlardan geliyor — taraf olan kaynak.</p>
+      <p class="oq__a">Dionysios’un aktarılan mektubu hem bakımı hem bakım verirken ölenleri anlatır. <b>Bu metin sağkalım avantajını veya yeni katılımların miktarını ölçmez.</b> Böyle bir sonuç için karşılaştırılabilir bağımsız veriler gerekir.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Zulmün ölçeği neydi?</p>
-      <p class="oq__a">Zulüm gerçek ama <b>dönemsel ve bölgesel.</b> Toplam ölçeği tartışmalıdır; şehitlik anlatılarının önemli bir kısmı sonraki edebî derlemelerdir. Bu, alanda <b>tartışılan</b> bir konudur.</p>
+      <p class="oq__a">Plinius infaz ve işkenceyi; Eusebios baskı emirlerini bildirir. <b>Bu seçilmiş belgeler toplam kurban sayısını vermez.</b> Yerel uygulama, dönem ve belgenin seçici anlatımı birlikte incelenmelidir.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Kanon dışında kalan metinlere ne oldu?</p>
@@ -356,9 +306,10 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 <footer class="foot">
   <div class="wrap">
     <p id="duzeltme-roma-tarih-kanon"><b>2 Ekim 2026 düzeltmesi:</b> 311–313–380 ayrımı, İznik’in korunmuş belgeleri, Jerome’un Judith atfı ve Athanasios’un 367 listesi ilgili çevirilerle karşılaştırıldı. <a href="../duzeltmeler.html#roma-tarih-kanon-20261002">Düzeltme günlüğü</a>.</p>
-    <p><b>İnceleme sınırı:</b> Yazıya bağlı altı kaydın üçü seçilmiş kaynaklarla denetlendi. Demografik model, zulmün ölçeği ve kurumsal mirasa bağlı üç kaydın ayrıntılı denetimi tamamlanmadı. Özgün el yazmaları, yasaların bütün bölgelerde uygulanması, bütün kanon tarihi ve imha emirlerinin uygulama kapsamı incelenmedi. Kayıtlar taslaktır; bağımsız uzman incelemesi yapılmadı.</p>
+    <p id="duzeltme-roma-model-kurum"><b>2 Ekim 2026 ek düzeltmesi:</b> Büyüme hesabı, zulüm politikaları ve kurumsal düzenle ilgili üç kayıt seçilmiş metin ve makale pasajlarıyla karşılaştırıldı. <a href="../duzeltmeler.html#roma-model-kurum-20261002">Düzeltme günlüğü</a>.</p>
+    <p><b>İnceleme sınırı:</b> Yazıya bağlı altı kaydın seçilmiş kaynak denetimi tamamlandı. Özgün el yazmaları, bütün demografi ve mimarlık literatürü, yasaların ve konsil kurallarının bütün bölgelerde uygulanması, toplam kurban sayısı veya bütün kanon tarihi incelenmedi. Kayıtlar taslaktır; bağımsız uzman incelemesi yapılmadı.</p>
     <p><b>Bu yazı bir inanç değerlendirmesi yapmıyor.</b> Ele aldığı şeyler tarihlenebilir olaylar, belgelenebilir kurumsal yapılar ve test edilebilir demografik modellerdir. İnancın doğruluğu bu yazının konusu değildir ve bu yazıdan böyle bir sonuç çıkarılamaz.</p>
-    <p><b>Büyüme modeli bir imkân kanıtıdır.</b> Girdilerin hepsi tahmindir; modelin gösterdiği şey, seçilen varsayımlarla tahmin edilen toplamların hesaplanabileceğidir. Salgın bakımı ve demografi açıklamaları aritmetikten daha zayıf desteklidir ve metinde öyle işaretlenmiştir.</p>
+    <p><b>Modelin kesinliği girdilerinin doğruluğu değildir.</b> Formülün hesabı denetlenebilir; tarihsel başlangıç sayısı, sabit oran ve bakımın demografik etkisi ayrıca sınanmalıdır. Stark’ın kitabının kendisi bu tur okunmuş sayılmadı; modelin aktarımı Hopkins üzerinden izlendi.</p>
     <p><b>Serinin ilgili yazıları:</b> Roma: Bakılan Miras · İskenderiye: Yanmadı, Kopyalanmadı · Ölü Deniz Parşömenleri.</p>
   </div>
 </footer>
