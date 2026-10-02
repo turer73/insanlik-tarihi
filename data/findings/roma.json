@@ -373,9 +373,9 @@
   {
     "schema_version": 2,
     "id": "roma-yollari-modern-refah",
-    "claim": "MS 117'deki Roma yol yoğunluğu, günümüz yol yoğunluğunu ve 2010-2020 ekonomik etkinliğini öngörür - ama yalnızca yolların kullanılmaya devam ettiği bölgelerde.",
+    "claim": "Dalgaard ve diğerlerinin çalışmasında Roma yol yoğunluğu, Avrupa örnekleminde modern yollar ve ekonomik etkinlik göstergeleriyle ilişkilidir; Orta Doğu ve Kuzey Afrika örnekleminde modern ilişkiler istatistiksel olarak anlamlı değildir.",
     "status": "established",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "roma",
       "altyapi",
@@ -421,11 +421,11 @@
       }
     ],
     "popular_claim": "Roma yolları etkileyici mühendislik eserleriydi.",
-    "divergence": "Asıl bulgu mühendislikte değil KALICILIKTA - ve kalıcılığın koşullu olmasında. Çalışmanın içinde bir DOĞAL DENEY var: tekerlekli araç kullanımının birinci binyıldan modern döneme kadar bırakıldığı bölgelerde (taşımacılık deve kervanlarına geçti) yollar bakılmadı ve kalıcılık etkisi anlamsızlığa kadar zayıflıyor. Aynı imparatorluk, aynı güzergâh seçimi, farklı sonuç.",
+    "divergence": "Kalıcılık, eski bir yapının yalnızca ayakta kalması değildir. Araştırmacıların doğal deney olarak yorumladığı karşılaştırma, tekerlekli taşımacılığın sürdüğü Avrupa ile deve kervanlarının ağırlık kazandığı Orta Doğu ve Kuzey Afrika örneklemlerini ayırır. Sonuçlar yol ağının sürdürülmesi açıklamasıyla uyumludur; rastgele atanmış gruplar veya her güzergâh için doğrudan bakım ölçümü değildir.",
     "divergence_type": [
       "guncellenmemis"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-etki"
     ],
@@ -433,7 +433,7 @@
       {
         "id": "dalgaard-2022-roman-roads",
         "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -446,50 +446,76 @@
         "title": "Roman roads to prosperity: Persistence and non-persistence of public infrastructure",
         "container": "Journal of Comparative Economics",
         "doi": "10.1016/j.jce.2022.05.003",
-        "note": "Yol yoğunluğu ile modern ekonomik etkinlik arasındaki örtüşme ve tekerleğin bırakıldığı bölgelerdeki doğal deney."
+        "note": "Yayımlanmış 2022 makalesinin künyesi ve özeti üniversite portalından kontrol edildi. Ayrıntılı yöntem ve tablo atıfları ayrı künyelenen 30 Kasım 2021 yazar sürümünedir; yayınevi son dizgisi okunmuş sayılmaz.",
+        "volume": "50",
+        "pages": "896–916",
+        "url": "https://researchprofiles.ku.dk/en/publications/roman-roads-to-prosperity-persistence-and-non-persistence-of-publ-2/"
+      },
+      {
+        "id": "dalgaard-2021-roman-roads-author-version",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "tier": "primary",
+        "type": "report",
+        "title": "Roman Roads to Prosperity: Persistence and Non-Persistence of Public Infrastructure — 30 November 2021 author version",
+        "authors": [
+          "Dalgaard, Carl-Johan",
+          "Kaarsen, Nicolai",
+          "Olsson, Ola",
+          "Selaya, Pablo"
+        ],
+        "year": 2021,
+        "institution": "University of Copenhagen",
+        "url": "https://web.econ.ku.dk/pabloselaya/publications/RomanRoads_JCE2022.pdf",
+        "note": "2022 makalesinin yazar sitesindeki açık sürümü. Bağımsız ikinci çalışma değildir. Basılı sayfalar ile PDF sayfaları ayrılmıştır; Tablo 5 başlığı ile veri bölümü arasındaki tarih tutarsızlığında bölüm 2.5 ve tablo notu esas alındı."
       }
     ],
     "evidence": [
       {
         "id": "yol-refah-ortusmesi",
-        "text": "Yüksek Roma yol yoğunluğu, yüksek modern yol yoğunluğu ve 2010-2020'de daha fazla ekonomik etkinlikle örtüşüyor.",
+        "text": "Modern ekonomik etkinlik doğrudan gelirle ölçülmez. Açık yazar sürümü 2013–2020 ortalama gece ışıkları ve 2010 nüfus yoğunluğu kullanır; antik yol verileri, MS 117 imparatorluk sınırları içindeki atlas ağıyla sınırlandırılır.",
         "citations": [
           {
-            "source_ref": "dalgaard-2022-roman-roads",
-            "locator": "Ana sonuçlar",
+            "source_ref": "dalgaard-2021-roman-roads-author-version",
+            "locator": "30 Kasım 2021 yazar sürümü, bölüm 2.2–2.5; basılı s. 9, 12–13 (PDF s. 10, 13–14)",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "dalgaard-2022-roman-roads",
+            "locator": "Üniversite araştırma portalı, Abstract, 2.–3. cümleler",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "500ce-yerlesim",
-        "text": "500 CE'de daha fazla yerleşim oluşumu ile de örtüşüyor.",
+        "text": "MS 500’de var olduğu kaydedilen büyük yerleşimlerin sayısı ekonomik etkinlik göstergesi olarak kullanılır; bu, yalnız o yılda kurulan yeni yerleşimlerin sayısı değildir.",
         "citations": [
           {
-            "source_ref": "dalgaard-2022-roman-roads",
-            "locator": "Yerleşim verileri",
+            "source_ref": "dalgaard-2021-roman-roads-author-version",
+            "locator": "Bölüm 2.4, basılı s. 12 (PDF s. 13); Tablo 2",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "pazar-kasabalari",
-        "text": "Erken ortaçağ ve modern dönemde pazar kasabalarının ortaya çıkışı, etkiyi sürdüren mekanizma olarak belirlendi.",
+        "text": "Almanya’daki tarihsel Roma sınırı çevresinde pazar ayrıcalığı verilen kasabaların dağılımı, yol ağı üzerinden kalıcılık açıklamasını destekler. Bu alt analiz bütün imparatorluğun bakım geçmişini ölçmez.",
         "citations": [
           {
-            "source_ref": "dalgaard-2022-roman-roads",
-            "locator": "Mekanizma çözümlemesi",
+            "source_ref": "dalgaard-2021-roman-roads-author-version",
+            "locator": "Bölüm 4.4, basılı s. 32–33 (PDF s. 33–34); Tablo 7",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "tekerlek-dogal-deneyi",
-        "text": "KONTROL GRUBU: tekerleğin bırakıldığı bölgelerde kalıcılık kayboluyor - etkiyi taşıyan şey Romalıların yer seçimi değil, sonraki kuşakların bakımı.",
+        "text": "Avrupa örnekleminde modern yol, gece ışığı ve nüfus ilişkileri anlamlıdır; Orta Doğu ve Kuzey Afrika örnekleminde aynı modern ilişkiler anlamlı değildir. Anlamlı olmayan katsayı, etkinin kesin sıfır olduğu anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "dalgaard-2022-roman-roads",
-            "locator": "Doğal deney",
+            "source_ref": "dalgaard-2021-roman-roads-author-version",
+            "locator": "Bölüm 4.3.2, basılı s. 30 (PDF s. 31); Tablo 5, sütun 3–8, basılı s. 45 (PDF s. 46)",
             "support_type": "direct"
           }
         ]
@@ -498,36 +524,28 @@
     "counter_evidence": [
       {
         "id": "tekerlek-rastgele-degil",
-        "text": "Tekerleğin bırakılması rastgele bir olay değil; o bölgelerin başka farkları da olabilir.",
+        "text": "Yazarlar gözlenmeyen yapısal ve coğrafi özelliklerin sonuçları etkileyebileceğini tartışır. Bölgesel alt örneklemler ve kontroller bu açıklamayı sınar; tarihsel karşılaştırma rastgele atanmış bir deney değildir.",
         "citations": [
           {
-            "source_ref": "dalgaard-2022-roman-roads",
-            "locator": "Tanımlama stratejisi sınırı",
+            "source_ref": "dalgaard-2021-roman-roads-author-version",
+            "locator": "Bölüm 4.3–4.3.1, basılı s. 26–29 (PDF s. 27–30)",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "tek-calisma",
-        "text": "Kayıt TEK BİR ÇALIŞMAYA dayanıyor; bulguyu bağımsız olarak yeniden üreten bir yayın burada künyelenmedi.",
-        "citations": [
-          {
-            "source_ref": "dalgaard-2022-roman-roads",
-            "locator": "Kaynak bağımsızlığı",
-            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Künye DOI ile tamamlandı. Kaydın tek çalışmaya dayandığı işaretlendi."
-    }
+      "notes": "Dar iddia tek çalışmada raporlanan istatistiksel ilişkiyi kapsar; genel nedensellik uzlaşısı ileri sürülmez. Güven orta düzeye çekildi. 2022 yayın özeti ve 2021 yazar sürümü ayrı tutuldu. Veri bölümünde ve Tablo 5 notunda gece ışıkları 2013–2020 iken tablo başlığında 2010–2013 yazmaktadır. Ham veriler ve kod yeniden çalıştırılmadı; bağımsız yeniden üretim taraması veya uzman incelemesi yapılmadı. Eski Kaynak bağımsızlığı atfı yayın içi kanıt olmadığı için inceleme notuna taşındı."
+    },
+    "open_questions": [
+      "Yol ağının sürmesiyle ilişkili bakım, ticaret, coğrafya ve kurum etkileri başka veri ve bağımsız çalışmalarda nasıl ayrılabilir?"
+    ]
   },
   {
     "schema_version": 2,
     "id": "roma-hukuk-kesintili-zincir",
-    "claim": "Roma hukuku Batı'ya kesintisiz aktarılmadı; beş yüzyıl kullanım dışı kaldıktan sonra 11. yüzyılda yeniden bulunup öğretilmeye başlandı.",
+    "claim": "Roma hukukunun Batı’daki aktarımı bütün metinlerin beş yüzyıl kaybolması şeklinde açıklanamaz: erken Ortaçağda seçilmiş metin ve özetler kullanıldı; Bologna’da 11. yüzyıl sonu–12. yüzyılda Justinianus metinlerinin sistemli öğretimi güçlendi.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -563,72 +581,151 @@
       "filoloji"
     ],
     "popular_claim": "Roma hukuku Roma'dan bugüne kesintisiz aktarıldı.",
-    "divergence": "Zincirin ortasında beş yüz yıllık bir boşluk var. Metin Batı'da fiilen işlemedi; bir kopyası ayakta kaldığı ve 11. yüzyılda birileri onu yeniden OKUMAYA, ÖĞRETMEYE ve UYGULAMAYA karar verdiği için geri döndü. Miras düz bir çizgiyle gelmedi - kaybolup yeniden seçildi.",
+    "divergence": "Aktarım metne, bölgeye ve döneme göre değişir. El yazmaları ve özetler kullanım izleri taşır; bu, antik bir hukuk okulunun Bologna’ya kadar kesintisiz yaşadığını da kanıtlamaz. Bologna’daki yeniden yorumlama ile modern kanunların iktibası, tek ve değişmeden gelen bir zincir gibi okunmamalıdır.",
     "divergence_type": [
       "guncellenmemis"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-02",
     "used_in": [
       "roma-etki"
     ],
     "sources": [
       {
-        "id": "stein-1999-roman-law-european-history",
+        "id": "yale-2010-justinian-fragment",
         "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-10-02",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Medieval Manuscripts in Law Book Bindings, no. 16",
+        "authors": [
+          "Widener, Michael"
+        ],
+        "year": 2010,
+        "institution": "Yale Law School, Lillian Goldman Law Library",
+        "url": "https://library.law.yale.edu/news/medieval-manuscripts-law-book-bindings-no-16",
+        "note": "16 Şubat 2010 kurumsal el yazması tanıtımı; metin notları Benjamin Yousey-Hindes’e atfedilir. 529–534 çekirdek derlemeler ve Bologna öğretim canlanması için kullanılır; erken Ortaçağdaki bütün kullanımların yokluğu için kullanılmaz."
+      },
+      {
+        "id": "loschiavo-2015-roman-legal-culture",
+        "language": "en",
+        "accessed": "2026-10-02",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
+        "title": "Was Rome still a Centre of Legal Culture between the 6th and 8th Centuries? Chasing the Manuscripts",
+        "authors": [
+          "Loschiavo, Luca"
+        ],
+        "year": 2015,
+        "container": "Rechtsgeschichte – Legal History",
+        "volume": "23",
+        "pages": "83–108",
+        "doi": "10.12946/rg23/083-108",
+        "url": "https://rg.lhlt.mpg.de/index.php/rg/article/download/765/3694?inline=1",
+        "note": "Açık tam metinde bölüm 10–12 ve girişteki okul sürekliliği tartışması okundu. Yazarın Roma’nın merkez rolüne ilişkin hipotezi, kesin okul sürekliliği olarak sunulmaz."
+      },
+      {
+        "id": "bologna-studium-history",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "The birth of the Studium and the Commune",
+        "institution": "University of Bologna",
+        "url": "https://www.unibo.it/en/university/who-we-are/our-history/nine-centuries-of-history/the-birth-of-the-studium-and-the-commune",
+        "note": "11.–12. yüzyıl öğretimi, öğrencilerin kendiliğinden örgütlenmesi ve Irnerius’un rolü için kurumsal tarihçe."
+      },
+      {
+        "id": "bologna-conventional-1088",
+        "language": "it",
+        "accessed": "2026-10-02",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Nove secoli di storia",
+        "institution": "Università di Bologna",
+        "url": "https://www.unibo.it/it/ateneo/chi-siamo/la-nostra-storia/nove-secoli-di-storia-1",
+        "note": "XI-XII secolo bölümünde kesin kuruluş tarihinin saptanamadığı ve 1088 yıldönümünün geleneksel niteliği açıklanır."
+      },
+      {
+        "id": "stein-1994-tradition-roman-law",
+        "language": "en",
+        "accessed": "2026-10-02",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "title": "The tradition of Roman law in Europe",
         "authors": [
           "Stein, Peter"
         ],
-        "year": 1999,
-        "title": "Roman Law in European History",
-        "publisher": "Cambridge University Press",
-        "isbn": "9780521643726",
-        "note": "Roma hukukunun kesintili aktarımının standart özeti."
+        "year": 1994,
+        "container": "European Review",
+        "volume": "2",
+        "pages": "289–294",
+        "doi": "10.1017/S1062798700001228",
+        "note": "Yayıncı sayfasında yalnız Abstract okundu. 2009 çevrimiçi tarih, 1994 basılı yayın yılı yerine kullanılmadı. 1999 kitabının tüm bölümleri okunmuş sayılmadı."
+      },
+      {
+        "id": "tbmm-2001-medeni-kanun-gorusmesi",
+        "language": "tr",
+        "accessed": "2026-10-02",
+        "tier": "primary",
+        "type": "edition",
+        "title": "TBMM Tutanak Dergisi, 21. Dönem, 4. Yasama Yılı, Cilt 73, 11. Birleşim, 24 Ekim 2001",
+        "year": 2001,
+        "institution": "Türkiye Büyük Millet Meclisi",
+        "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/21/4/11/20fbcbdf-6efb-47de-a5ad-055beb53d6f7.html",
+        "note": "Türk Medenî Kanunu Tasarısının tümü üzerindeki görüşmede Ali Günay’ın tarihsel iktibas anlatımı. 1926 kabul ve yürürlük tarihleriyle İsviçre bağlantısını destekler; Roma’dan Türkiye’ye değişmeyen tek zinciri kanıtlamaz."
       }
     ],
     "evidence": [
       {
         "id": "corpus-juris-529",
-        "text": "Corpus Juris Civilis 529-534'te Justinianus döneminde derlendi.",
+        "text": "Codex, Digesta ve Institutiones’in çekirdek derlemeleri Justinianus döneminde 529–534’te yayımlandı. Bu tarih aralığı sonraki bütün hukuk düzenlemelerinin bitiş tarihi değildir.",
         "citations": [
           {
-            "source_ref": "stein-1999-roman-law-european-history",
-            "locator": "Justinianus derlemesi",
-            "support_type": "direct"
+            "source_ref": "yale-2010-justinian-fragment",
+            "locator": "Codex Iustiniani görselinden sonraki tanıtım paragrafı, üç derlemenin 529–534’te yayımlanmasına ilişkin cümle",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "bes-yuzyil-bosluk",
-        "text": "6.-11. yüzyıllarda Batı'da büyük ölçüde kullanım dışı kaldı.",
+        "text": "Erken Ortaçağda Epitome Iuliani gibi özetler ve seçilmiş Justinianus metinleri pratik kullanım ile yorum izleri taşır. Bütün Roma hukukunun beş yüzyıl kullanım dışı kaldığı sonucu çıkarılamaz.",
         "citations": [
           {
-            "source_ref": "stein-1999-roman-law-european-history",
-            "locator": "Karanlık dönem",
+            "source_ref": "loschiavo-2015-roman-legal-culture",
+            "locator": "Bölüm 10–12, s. 94–99; Epitome Iuliani, summaria ve Berlin lat. fol. 269 tartışmaları",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "bologna-1088",
-        "text": "~1070'lerde İtalya'da Digesta nüshası yeniden bulundu ve incelenmeye başlandı; 1088'de Bologna'da hukuk öğretimi kurumsallaştı.",
+        "text": "Bologna’da Justinianus metinlerinin sistemli öğretimi 11. yüzyıl sonu–12. yüzyılda gelişti. 1088 geleneksel yıldönümüdür; kesin bir kuruluş anı saptanmış değildir.",
         "citations": [
           {
-            "source_ref": "stein-1999-roman-law-european-history",
-            "locator": "Bologna ve yeniden keşif",
-            "support_type": "direct"
+            "source_ref": "bologna-studium-history",
+            "locator": "The birth of the Studium and the Commune, öğrencilerin örgütlenmesi ve Irnerius paragrafları",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "bologna-conventional-1088",
+            "locator": "XI-XII secolo - La nascita dello Studio e del Comune, Carducci ve kesin kuruluş tarihi paragrafları",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "modern-kodlamalar",
-        "text": "Fransız (1804) ve Alman (1900) medeni kanunları bu gelenekten kodlandı; Türk Medeni Kanunu (1926) İsviçre Medeni Kanunu esas alınarak kabul edildi.",
+        "text": "Ortaçağ yorumcuları Roma hukukunu ius commune geleneğinde dönüştürdü; modern ulusal hukuklar bunu farklı ölçülerde aldı. Türkiye’de 1926 kanunu İsviçre metni esas alınarak bazı değişikliklerle hazırlandı; 17 Şubat’ta kabul edilip 4 Ekim’de yürürlüğe girdi.",
         "citations": [
           {
-            "source_ref": "stein-1999-roman-law-european-history",
-            "locator": "Modern kodlamalar",
+            "source_ref": "stein-1994-tradition-roman-law",
+            "locator": "Yayıncı sayfası, Abstract, yorumcular ve ulusal hukuklara reception cümlesi",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "tbmm-2001-medeni-kanun-gorusmesi",
+            "locator": "Türk Medenî Kanunu Tasarısı (S. Sayısı: 723), tümü üzerindeki görüşme, Ali Günay konuşması; İsviçre metninin çevirisi ve 17 Şubat/4 Ekim 1926 paragrafı",
             "support_type": "direct"
           }
         ]
@@ -637,11 +734,11 @@
     "counter_evidence": [
       {
         "id": "turetilmis-yapi",
-        "text": "Bologna sonrası yüzyıllar metni yalnızca aktarmadı, yeniden yorumladı; bugünkü medeni hukuk Roma hukuku değil, ondan TÜRETİLMİŞ bir yapıdır.",
+        "text": "Metinlerin korunması ve kullanılması, hukuk okullarının antikçağdan Bologna’ya kesintisiz kurumsal sürekliliğini göstermez. Okulun varlığı, yeri ve etkisi el yazmalarının kökeniyle birlikte tartışılır.",
         "citations": [
           {
-            "source_ref": "stein-1999-roman-law-european-history",
-            "locator": "Yorum geleneği",
+            "source_ref": "loschiavo-2015-roman-legal-culture",
+            "locator": "Bölüm 1, s. 83–84; Fitting’in okul sürekliliği tezi ve eleştiriler",
             "support_type": "counter"
           }
         ]
@@ -649,8 +746,11 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu Stein 1999 ile değiştirildi. Türkiye halkasının ayrı kaynağı olmadığı işaretlendi. Türk Medeni Kanunu'na uzanan halka bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; İsviçre üzerinden aktarım genel bilgi olarak alınmıştır."
-    }
+      "notes": "Beş yüzyıllık tam kullanım yokluğu ve ~1070 tek nüsha keşfi anlatısı kaldırıldı. Loschiavo 2015’in ilgili tam metin bölümleri, Bologna kurumsal tarihçeleri, Yale el yazması tanıtımı ve 2001 TBMM tutanağı okundu; Stein 1994 için yalnız yayıncı özeti kullanıldı. Erişilemeyen Stein 1999 kitabına ilişkin belirsiz bölüm atıfları kaldırıldı; ayrı kaynakla doğrulanmayan Fransız/Alman kanun tarihleri yerine ulusal reception dar iddiası kullanıldı. Kapsam bütün hukuk literatürünün taraması veya bağımsız uzman incelemesi değildir."
+    },
+    "open_questions": [
+      "Erken Ortaçağda hangi metinlerin nerede ve ne ölçüde uygulandığı, el yazması kökenleri ve hukuk öğretiminin kurumları hakkında hangi yeni kanıtlar vardır?"
+    ]
   },
   {
     "schema_version": 2,
