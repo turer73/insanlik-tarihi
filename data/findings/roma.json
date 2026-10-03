@@ -3076,7 +3076,7 @@
   {
     "schema_version": 2,
     "id": "apollonius-kaynak-durumu",
-    "claim": "Tyanalı Apollonius hakkında bilinenlerin tamamı, ölümünden ~125 yıl sonra saray hamiliğinde yazılmış tek bir esere dayanır.",
+    "claim": "Philostratos, Apollonius anlatısı için birden çok kaynak kullandığını söyler; Lukianos da Apollonius’u anar. Bu metinler bütün bilginin tek eserden geldiği veya kesin 125 yıllık boşluk bulunduğu hükmünü desteklemez.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -3116,94 +3116,87 @@
     "people": [
       {
         "name": "Philostratos (Atinalı)",
-        "role": "editor",
-        "year": 220,
-        "lifespan": "y. 170-250"
+        "role": "editor"
       },
       {
-        "name": "Julia Domna",
-        "role": "editor",
-        "year": 217,
-        "lifespan": "y. 160-217"
+        "name": "Lukianos",
+        "role": "critic"
       }
     ],
     "popular_claim": "Tyanalı Apollonius, İsa ile birebir aynı mucizeleri gerçekleştirmiş bir çağdaşıdır; anlatılar birbirinin kopyasıdır.",
-    "divergence": "Karşılaştırma meşru bir yöntem sorusu doğuruyor ama popüler biçimi iki yönden de hatalı. (a) 'Birebir kopya' listeleri abartılı: Philostratos'un diriltme sahnesinde yazarın kendisi çekince koyar, kızda bir yaşam kıvılcımı kalmış olabileceğini söyler. (b) Kanıt durumu aynı değil: Apollonius için elimizdeki tek kaynak ~125 yıl sonra ve İMPARATORİÇE ISMARLAMASIYLA yazılmış; iddia edilen birinci el kaynağı (Ninovalı Damis'in anıları) çoğunluk görüşüne göre edebî kurgudur. Fark VARLIK sorusundadır; mucize iddiaları ikisi için de aynı derecede tarih yönteminin dışındadır.",
+    "divergence": "Philostratos’un kaynak ve Julia Domna anlatısı, yazarın kendi aktarım beyanıdır; saydığı belgelerin gerçekliği ayrıca sınanmalıdır. Lukianos’un kısa anması, kapsamlı yaşamöyküsüyle aynı türden değildir ve otomatik olarak bağımsız olay doğrulaması sayılmaz. IV.45’te anlatıcı kızın tamamen ölü mü yoksa hâlâ canlı mı olduğuna karar veremediğini belirtir. VIII.29–30 farklı yaş ve ölüm anlatıları verir; sabit bir ölüm yılı üzerinden hesaplanan 125 yıllık çubuk kaldırıldı. Bu pasajlar iki figürün tarihsel kanıtlarını tek bir puanla sıralamaz.",
     "divergence_type": [
       "medya-abartisi",
       "provenans-yoklugu"
     ],
     "open_questions": [
-      "Damis gerçekten var mıydı? Çoğunluk hayır diyor ama kesin değil.",
-      "Philostratos'un elinde daha erken bir kaynak var mıydı?"
+      "Damis’e atfedilen anıların ve diğer kaynakların gerçekliği, ilişkisi ve aktarımı hangi bağımsız belgelerle sınanabilir?",
+      "Apollonius’un yaşam ve ölüm tarihleri farklı gelenekler arasında ne kadar daraltılabilir?",
+      "Lukianos’un anmasının bilgi kaynağı ve diğer anlatılardan bağımsızlığı nasıl belirlenebilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "used_in": [
       "isa-tarihsellik"
     ],
     "sources": [
       {
-        "id": "philostratus-2005-life-of-apollonius",
-        "language": "grc",
-        "accessed": "2026-09-09",
+        "id": "philostratus-conybeare-1912-life",
         "tier": "primary",
         "type": "edition",
         "authors": [
-          "Philostratus"
+          "Philostratos"
         ],
-        "year": 2005,
-        "title": "The Life of Apollonius of Tyana",
-        "container": "Loeb Classical Library",
-        "publisher": "Harvard University Press",
-        "isbn": "9780674996137",
-        "note": "Apollonius hakkındaki tek kapsamlı kaynağın eleştirel edisyonu ve çevirisi."
+        "title": "Life of Apollonius — Conybeare çevirisi",
+        "url": "https://www.livius.org/sources/content/philostratus-life-of-apollonius/philostratus-life-of-apollonius-1.1-5/",
+        "language": "en",
+        "accessed": "2026-10-03",
+        "note": "F. C. Conybeare’ın 1912 İngilizce çevirisinden I.2–3, IV.45 ve VIII.29–30 okundu. Livius’un modern dipnotları antik metinden ayrıldı; Damis hakkında dipnottaki modern görüş, antik yazarın sözü veya bu tur saptanmış alan uzlaşısı sayılmadı. Grekçe el yazmaları, Damis’e atfedilen metnin gerçekliği ve bütün modern literatür incelenmedi.",
+        "year": 1912
       },
       {
-        "id": "dzielska-1986-apollonius",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "id": "lucian-alexander-5-english",
+        "tier": "primary",
+        "type": "edition",
         "authors": [
-          "Dzielska, Maria"
+          "Lukianos"
         ],
-        "year": 1986,
-        "title": "Apollonius of Tyana in Legend and History",
-        "publisher": "L'Erma di Bretschneider",
-        "isbn": "9788870625998",
-        "note": "Apollonius efsanesinin oluşumu ve Hierocles polemiğinin tarihsel incelemesi."
+        "title": "Alexander the Oracle-monger — §5",
+        "url": "https://sacred-texts.com/cla/luc/wl2/wl218.htm",
+        "language": "en",
+        "accessed": "2026-10-03",
+        "note": "Yayımlı İngilizce çevirinin §5’i okundu: Aleksandros’un Tyanalı öğretmeni Apollonius’un çevresine bağlanır. Bu kısa ve eleştirel anma, kapsamlı bir yaşamöyküsü veya bütün olayları doğrulayan bağımsız tanıklık olarak kullanılmadı. Grekçe edisyon karşılaştırması yapılmadı."
       }
     ],
     "evidence": [
       {
-        "id": "ana-kaynak-philostratos",
-        "text": "Ana kaynak Philostratos'un sekiz kitaplık Apollonius'un Yaşamı; y. 220'lerde, imparatoriçe Julia Domna'nın isteğiyle yazıldı.",
+        "id": "yazarin-kaynak-beyani",
+        "text": "Philostratos I.2–3’te kentleri, tapınakları, mektupları ve başkalarının anlatılarını kaynak gösterir; Damis, Maximus ve bir vasiyetten söz eder, Moeragenes’i ise reddeder. Julia Domna’nın kendisinden Damis’e atfedilen metni yeniden işlemesini istediğini söyler.",
         "citations": [
           {
-            "source_ref": "philostratus-2005-life-of-apollonius",
-            "locator": "Giriş ve eserin bağlamı",
+            "source_ref": "philostratus-conybeare-1912-life",
+            "locator": "I.2–3; I.3, Damis / Julia / Maximus / Moeragenes paragrafları",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "damis-kurgu",
-        "text": "Philostratos kaynağı olarak Ninovalı Damis'in anılarını gösteriyor; 'bulunmuş elyazması' antik bir anlatı hilesidir ve Damis çoğunluk görüşünde kurgu sayılır.",
+        "id": "lukianos-anmasi",
+        "text": "Lukianos, Aleksandros §5’te Aleksandros’un Tyanalı öğretmenini Apollonius’un çevresinden biri olarak anlatır. Apollonius’un anıldığı korunmuş metinler Philostratos’un eseriyle sınırlı değildir.",
         "citations": [
           {
-            "source_ref": "dzielska-1986-apollonius",
-            "locator": "Damis sorunu",
+            "source_ref": "lucian-alexander-5-english",
+            "locator": "Alexander §5, öğretmen ve Apollonius anması",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "bagimsiz-izler-zayif",
-        "text": "Bağımsız izler zayıf ve dolaylı: Cassius Dio'da kısa bir anma, Tyana'da sikke ve tapınak izleri.",
+        "id": "diriltme-anlatisinin-cekincesi",
+        "text": "Philostratos IV.45, düğün günü ölü sanılan kızın canlandığını anlatır; sonunda fark edilmemiş bir yaşam belirtisi mi yoksa ölüme müdahale mi olduğunu kendisinin ve oradakilerin belirleyemediğini söyler.",
         "citations": [
           {
-            "source_ref": "dzielska-1986-apollonius",
-            "locator": "Bağımsız tanıklar",
+            "source_ref": "philostratus-conybeare-1912-life",
+            "locator": "IV.45, son paragraf; bağlantılı bölüm: https://www.livius.org/sources/content/philostratus-life-of-apollonius/philostratus-life-of-apollonius-4.41-45/",
             "support_type": "direct"
           }
         ]
@@ -3211,34 +3204,28 @@
     ],
     "counter_evidence": [
       {
-        "id": "varligi-degil-ayrintilar",
-        "text": "Apollonius'un yaşamış olması muhtemeldir; kaynak sorunu varlığını değil, AYRINTILARI ulaşılamaz kılıyor.",
+        "id": "kaynak-beyaninin-siniri",
+        "text": "Bir yazarın Damis gibi bir kaynak adı vermesi, o belgenin özgünlüğünü kendi başına doğrulamaz. Lukianos’un kısa anması da Philostratos’un bütün olay anlatısını doğrulayan ikinci bir yaşamöyküsü değildir.",
         "citations": [
           {
-            "source_ref": "dzielska-1986-apollonius",
-            "locator": "Tarihsel çekirdek",
-            "support_type": "counter"
+            "source_ref": "philostratus-conybeare-1912-life",
+            "locator": "I.2–3, kaynak listesi ve aktarım beyanı",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "lucian-alexander-5-english",
+            "locator": "Alexander §5",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "yasam-tarihleri-guvenilmez",
-        "text": "Geleneksel yaşam tarihleri (y. MÖ 3 - y. MS 97) güvenilir değildir.",
+        "id": "olum-anlatilarinin-cesitliligi",
+        "text": "Philostratos VIII.29, Damis’in ölüm biçimini ve yaşı aktarmadığını söyler; seksen, doksanı aşan ve yüzü aşan yaş söylentileri verir. VIII.30’da Ephesos, Lindos ve Girit anlatıları sıralanır. Bu seçilmiş pasajlar kesin bir ölüm yılı sağlamaz.",
         "citations": [
           {
-            "source_ref": "dzielska-1986-apollonius",
-            "locator": "Kronoloji sorunu",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "rakip-figur-tezi-azinlik",
-        "text": "Philostratos'un kasıtlı olarak Hristiyanlığa rakip bir figür kurguladığı tezi alanda azınlıkta kalır; anti-Hristiyan kullanım sonradan gelmiştir.",
-        "citations": [
-          {
-            "source_ref": "dzielska-1986-apollonius",
-            "locator": "Rakip figür tezi",
+            "source_ref": "philostratus-conybeare-1912-life",
+            "locator": "VIII.29–30; bağlantılı bölüm: https://www.livius.org/sources/content/philostratus-life-of-apollonius/philostratus-life-of-apollonius-8.26-31/",
             "support_type": "counter"
           }
         ]
@@ -3246,13 +3233,13 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu Loeb edisyonu ve Dzielska 1986 ile değiştirildi."
+      "notes": "3 Ekim 2026: seçilmiş birincil metinlerin yayımlı İngilizce çevirileri okundu. Okunmamış Dzielska ve 2005 Loeb bölümlerine belirsiz atıflar, tek kaynak ve kesin 125 yıl hükümleri kaldırıldı. Grekçe edisyon ve bütün literatür taraması yapılmadı; bağımsız uzman incelemesi yok."
     }
   },
   {
     "schema_version": 2,
     "id": "hierocles-apollonius-polemigi",
-    "claim": "Apollonius-İsa karşılaştırması modern değildir: ~303'te bir Roma valisi tarafından zulüm sırasında polemik silahı olarak kuruldu ve bize yalnızca karşı tarafın alıntıları üzerinden ulaştı.",
+    "claim": "Eusebios, Hierocles’e atfettiği Apollonius–İsa karşılaştırmasını alıntılar; Lactantius da benzer polemiği aktarır. Lactantius’un ana metni karşıt yazarı adlandırmaz; Hierocles teşhisi edisyon notunda yer alır.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -3267,17 +3254,17 @@
       "modern_country": "Türkiye"
     },
     "period": {
-      "earliest": 303,
+      "earliest": 300,
       "latest": 340,
-      "era_label": "Diocletianus zulmü ve Eusebios'un reddiyesi",
+      "era_label": "Antik polemik ve Hristiyan cevap metinleri; kesin yazım yılı bu tur belirlenmedi",
       "precision": "approximate",
       "dating_method": [
-        "textual",
-        "historical-record"
+        "textual"
       ]
     },
     "languages": [
-      "Grekçe"
+      "Grekçe",
+      "Latince"
     ],
     "disciplines": [
       "tarih",
@@ -3286,134 +3273,129 @@
     ],
     "people": [
       {
-        "name": "Sossianus Hierocles",
-        "role": "proposer",
-        "affiliation": "Roma eyalet valisi",
-        "year": 303
+        "name": "Hierocles",
+        "role": "proposer"
       },
       {
         "name": "Eusebios (Kaisareia)",
-        "role": "refuter",
-        "year": 310,
-        "lifespan": "y. 260-339"
+        "role": "refuter"
+      },
+      {
+        "name": "Lactantius",
+        "role": "refuter"
       }
     ],
     "popular_claim": "Apollonius-İsa paraleli modern bir şüphecilik bulgusudur.",
-    "divergence": "Paralel 4. yüzyıl başında, Diocletianus zulmünün yöneticilerinden biri tarafından, zulmü meşrulaştırmak için kuruldu. Yani argüman doğduğu anda siyasi bir araçtı. Ve bugün onu yalnızca EUSEBIOS'UN AKTARDIĞI KADARIYLA okuyabiliyoruz - Hierocles'in metni bağımsız olarak korunmadı. Bir polemiği sadece karşı tarafın alıntıları üzerinden okumak, bu serinin hayatta kalma yanlılığı omurgasının ders kitabı örneğidir.",
+    "divergence": "Eusebios I–III ve Lactantius V.2–3, karşılaştırmanın antik polemikte bulunduğunu gösterir. Sadece Eusebios’tan bilindiği hükmü kaldırıldı. İki Hristiyan cevap metni, Hierocles’in bütün eserinin veya bütün olayların bağımsız doğrulamasının yerini tutmaz. Lactantius’taki adı verilmeyen yazarı Hierocles diye tanımlamak ana metin ile editör notunu karıştırmamalıdır. İlk kez kesin 303’te kurulduğu ve tek amacı zulmü meşrulaştırmak olduğu bu seçilmiş pasajlarla saptanmadı.",
     "divergence_type": [
       "hayatta-kalma-yanliligi",
       "ideolojik-secim"
     ],
     "open_questions": [
-      "Hierocles'in özgün argümanı Eusebios'un aktardığından ne kadar farklıydı? Ölçülemez."
+      "Eusebios ve Lactantius’un aktarımları hangi ortak veya ayrı kaynaklardan geliyor?",
+      "Hierocles’in tam metni olmadan, seçilen alıntı ve özetlerin bütün argümanı ne ölçüde temsil ettiği nasıl sınanabilir?",
+      "Kesin yazım tarihi ve siyasi bağlam, bu pasajların dışındaki hangi belgelerle daraltılabilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-03",
     "used_in": [
       "isa-tarihsellik"
     ],
     "sources": [
       {
-        "id": "eusebios-contra-hieroclem",
-        "language": "grc",
-        "accessed": "2026-09-09",
+        "id": "eusebios-conybeare-1912-hierocles",
         "tier": "primary",
-        "type": "book",
+        "type": "edition",
         "authors": [
           "Eusebios (Kaisareia)"
         ],
-        "title": "Contra Hieroclem (Hierocles'e Karşı)",
-        "note": "Hierocles'in metnine erişimin TEK yolu. Taraf bir aktarıcıdır ve bunu kontrol edecek bağımsız metin yok."
+        "title": "Against Hierocles — I–III",
+        "url": "https://www.tertullian.org/fathers/eusebius_against_hierocles.htm",
+        "language": "en",
+        "accessed": "2026-10-03",
+        "note": "F. C. Conybeare’ın 1912 İngilizce çevirisinde I–III okundu. II’deki sözler Eusebios tarafından Hierocles’e atfedilir; özgün Philalethes kitabının tamamı okunmuş sayılmaz. I’deki tek karşılaştırıcı hükmü Eusebios’un kendi polemik iddiasıdır. Grekçe el yazmaları ve modern tarihleme literatürü incelenmedi.",
+        "year": 1912
       },
       {
-        "id": "lactantius-de-mortibus",
-        "language": "la",
-        "accessed": "2026-09-09",
+        "id": "lactantius-divine-institutes-v-2-3",
         "tier": "primary",
-        "type": "book",
+        "type": "edition",
         "authors": [
           "Lactantius"
         ],
-        "title": "De mortibus persecutorum",
-        "note": "313 metninin içeriğini aktaran kaynak; ayrıca Hierocles'in zulümdeki rolüne değinir."
-      },
-      {
-        "id": "dzielska-1986-apollonius",
+        "title": "Divine Institutes — V.2–3",
+        "url": "https://ccel.org/ccel/lactantius/institutes/anf07.iii.ii.v.ii.html",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Dzielska, Maria"
-        ],
-        "year": 1986,
-        "title": "Apollonius of Tyana in Legend and History",
-        "publisher": "L'Erma di Bretschneider",
-        "isbn": "9788870625998",
-        "note": "Apollonius efsanesinin oluşumu ve Hierocles polemiğinin tarihsel incelemesi."
+        "accessed": "2026-10-03",
+        "note": "CCEL’deki Ante-Nicene Fathers İngilizce çevirisinden V.2–3 ve 933/940 numaralı açıklama notları okundu. Ana metin ikinci karşıt yazarı adlandırmaz; Hierocles adı edisyon notunda verilir. Antik yazarın sözleri ile sonraki editörün teşhisi ayrı tutuldu. Latince edisyonlar ve aktarım bağımsızlığı bu tur incelenmedi."
       }
     ],
     "evidence": [
       {
-        "id": "hierocles-argumani",
-        "text": "Hierocles, Philalethes (Hakikat Dostu) adlı metinde Apollonius'un da benzer şeyler yaptığını, paganların onu tanrılaştırmadığını savundu.",
+        "id": "eusebiosun-atfettigi-sozler",
+        "text": "Eusebios II, Hierocles’in Apollonius’un mucizeleriyle İsa’yı karşılaştırdığını, Apollonius’u tanrı değil tanrıları hoşnut eden kişi diye sunduğunu aktarır ve sözleri Philalethes’e atfeder.",
         "citations": [
           {
-            "source_ref": "eusebios-contra-hieroclem",
-            "locator": "Aktarılan argüman",
+            "source_ref": "eusebios-conybeare-1912-hierocles",
+            "locator": "II, alıntılar ve bölümün son cümlesi",
             "support_type": "claim-origin"
           }
         ]
       },
       {
-        "id": "eusebios-reddiyesi",
-        "text": "Eusebios, Hierocles'e Karşı adlı bir reddiye yazdı ve bu reddiye korundu.",
+        "id": "lactantiusun-ikinci-yazari",
+        "text": "Lactantius V.2, adını vermediği ikinci yazarı bir yargı görevlisi ve zulüm destekçisi olarak sunar. V.3, aynı kişinin Apollonius’un eşit veya daha büyük işler yaptığını savunduğunu aktarır. Hierocles adı ana metinde değil, 933/940 numaralı edisyon notlarındadır.",
         "citations": [
           {
-            "source_ref": "eusebios-contra-hieroclem",
-            "locator": "Metnin kendisi",
+            "source_ref": "lactantius-divine-institutes-v-2-3",
+            "locator": "V.2, Another ile başlayan paragraf ve not 933; V.3, The same man paragrafı ve not 940; https://ccel.org/ccel/lactantius/institutes/anf07.iii.ii.v.iii.html",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "hierocles-zulum-yoneticisi",
-        "text": "Hierocles zulmün yöneticilerinden biriydi; argüman doğduğu anda siyasi bir araçtı.",
+        "id": "ilklik-iddiasinin-kaynagi",
+        "text": "Eusebios I, Hristiyanlara saldıran yazarlar içinde Hierocles’in Apollonius’u bu karşılaştırma için seçmekte tek olduğunu ileri sürer. Bu, Eusebios’un kendi ifadesidir; bütün önceki karşılaştırmaların bu tur tarandığı anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "lactantius-de-mortibus",
-            "locator": "16. bölüm",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "polemik-baglami",
-        "text": "Polemiğin tarihsel bağlamı ayrıca incelenmiştir.",
-        "citations": [
-          {
-            "source_ref": "dzielska-1986-apollonius",
-            "locator": "Hierocles bölümü",
-            "support_type": "context"
+            "source_ref": "eusebios-conybeare-1912-hierocles",
+            "locator": "I, son cümle",
+            "support_type": "claim-origin"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "eusebios-taraf-aktarici",
-        "text": "Eusebios taraf bir aktarıcıdır; Hierocles'in argümanını eksik veya çarpıtarak vermiş olabilir - ve bunu kontrol edecek bağımsız bir metin yok.",
+        "id": "cevap-metinlerinin-siniri",
+        "text": "Eusebios I–III ve Lactantius V.2–3 kendi inançlarını savunan cevap metinleridir. Benzer bir argümanın ikisinde görünmesi, kaynaklarının birbirinden bağımsızlığını veya kayıp metnin eksiksiz aktarıldığını kanıtlamaz.",
         "citations": [
           {
-            "source_ref": "eusebios-contra-hieroclem",
-            "locator": "Aktarımın tek yönlülüğü",
-            "support_type": "counter"
+            "source_ref": "eusebios-conybeare-1912-hierocles",
+            "locator": "I–III, cevabın kapsamı ve alıntılar",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "lactantius-divine-institutes-v-2-3",
+            "locator": "V.2–3, karşıt yazarın sunumu ve cevabı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "editor-notunun-siniri",
+        "text": "Lactantius’un ana metnindeki görev ve zulüm suçlaması, adı açıkça verilmiş tarafsız bir resmî kayıt değildir. Edisyon notunun yazar teşhisi, antik metindeki bir ad olarak gösterilmez.",
+        "citations": [
+          {
+            "source_ref": "lactantius-divine-institutes-v-2-3",
+            "locator": "V.2, ikinci yazar paragrafı / not 933; V.3, not 940",
+            "support_type": "context"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "DeepSeek turunda aday gelmemişti; kayıt zaten iki birincil kaynağa dayanıyordu. Dzielska 1986 bağlam olarak eklendi ve Lactantius'un da taraf olduğu işaretlendi. Lactantius da taraf bir kaynaktır; Hierocles'i zulmün mimarlarından biri olarak sunması onun kendi polemik çerçevesi içindedir."
+      "notes": "3 Ekim 2026: Against Hierocles I–III ve Divine Institutes V.2–3 yayımlı İngilizce çevirilerden okundu. Lactantius’un ana metni ile edisyon notundaki Hierocles teşhisi ayrıldı. De mortibus 16’ya uygunsuz atıf ve okunmamış Dzielska bölümüne atıf kaldırıldı. Kayıp Philalethes, Grekçe/Latince edisyonlar ve bütün literatür incelenmedi; bağımsız uzman incelemesi yok."
     }
   },
   {
