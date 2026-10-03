@@ -66,6 +66,7 @@ export async function icerikGirdileri(root, { articles, hubs }) {
       JSON.stringify(sorular[a.slug] ?? null),
       JSON.stringify(tartisma[a.slug] ?? null),
       JSON.stringify(bulguKumesi.get(a.slug) ?? null),
+      ...(a.seoTitle ? [a.seoTitle] : []),
     ].join("\n");
   }
 

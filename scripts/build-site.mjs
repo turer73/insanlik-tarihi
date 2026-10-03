@@ -10,6 +10,7 @@ import { renderEvidenceIntro, renderEvidenceDossier } from './lib/evidence-dossi
 import { loadHubs, loadEvidence, primaryHub, validateHubs, renderHubIndex, renderHubPage } from './lib/hubs.mjs';
 import { renderKaynakca } from './lib/kaynakca.mjs';
 import { renderSearchQuestion, renderRelated, renderAttribution, renderContribution, renderNewsletter } from './lib/article-extras.mjs';
+import { siteRows } from './lib/site-urls.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'site');
@@ -293,6 +294,8 @@ function articleJsonLd(article) {
     '@type': 'Article',
     headline: article.title,
     description: article.summary,
+    datePublished: ilkYayin(TARIH, `articles/${article.slug}.html`),
+    dateModified: sonDegisiklik(TARIH, `articles/${article.slug}.html`),
     inLanguage: 'tr-TR',
     mainEntityOfPage: `${ORIGIN}/articles/${article.slug}.html`,
     isPartOf: { '@type': 'WebSite', name: 'Kanıt Atlası', url: `${ORIGIN}/` },
@@ -318,7 +321,7 @@ function wrapArticle(source, article, pilot = null, context = {}) {
   headFragment = headFragment
     .replace(/<!doctype[^>]*>/gi, '')
     .replace(/<\/?(?:html|head)[^>]*>/gi, '')
-    .replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(article.title)} — Kanıt Atlası</title>`)
+    .replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(article.seoTitle ?? article.title)} — Kanıt Atlası</title>`)
     .trim();
   bodyFragment = bodyFragment
     // Fragment IDs may start with a digit (for example #476); they are not CSS selectors.
@@ -341,6 +344,13 @@ function wrapArticle(source, article, pilot = null, context = {}) {
     bodyFragment = bodyFragment.replace(/<h1([^>]*)>[\s\S]*?<\/h1>/i, (match) => `${match}\n${renderSearchQuestion(searchQuestion)}`);
   }
 
+  const published = ilkYayin(TARIH, `articles/${article.slug}.html`);
+  const modified = sonDegisiklik(TARIH, `articles/${article.slug}.html`);
+  const formatDate = value => value.split('-').reverse().join('.');
+  const dates = `<p class="ka-article-dates">İlk yayın: <time datetime="${published}">${formatDate(published)}</time> · Güncelleme: <time datetime="${modified}">${formatDate(modified)}</time></p>`;
+  const datesTarget = searchQuestion ? /(<p class="ka-search-question">[\s\S]*?<\/p>)/ : /(<h1[^>]*>[\s\S]*?<\/h1>)/i;
+  bodyFragment = addOrReplace(bodyFragment, datesTarget, `$1\n${dates}`, `görünür yayın tarihleri: ${article.slug}`);
+
   const canonical = `${ORIGIN}/articles/${article.slug}.html`;
   return `<!doctype html>
 <html lang="tr">
@@ -355,7 +365,9 @@ function wrapArticle(source, article, pilot = null, context = {}) {
   <meta property="og:locale" content="tr_TR">
   <meta property="og:site_name" content="Kanıt Atlası">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="${escapeHtml(article.title)} — Kanıt Atlası">
+  <meta property="article:published_time" content="${published}">
+  <meta property="article:modified_time" content="${modified}">
+  <meta property="og:title" content="${escapeHtml(article.seoTitle ?? article.title)} — Kanıt Atlası">
   <meta property="og:description" content="${escapeHtml(article.summary)}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${ORIGIN}/${article.cover}">
@@ -364,7 +376,7 @@ function wrapArticle(source, article, pilot = null, context = {}) {
   <meta property="og:image:alt" content="${escapeHtml(article.title)} — temsili editoryal illüstrasyon">
   <meta name="twitter:image:alt" content="${escapeHtml(article.title)} — temsili editoryal illüstrasyon">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${escapeHtml(article.title)} — Kanıt Atlası">
+  <meta name="twitter:title" content="${escapeHtml(article.seoTitle ?? article.title)} — Kanıt Atlası">
   <meta name="twitter:description" content="${escapeHtml(article.summary)}">
   <meta name="twitter:image" content="${ORIGIN}/${article.cover}">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -469,11 +481,18 @@ function rss(articles) {
 
 async function brandToolPages() {
   const directory = path.join(OUT, 'dist');
+  const toolRows = new Map((await siteRows(ROOT)).filter(row => row.kategori === 'Araç').map(row => [path.basename(new URL(row.url).pathname), row]));
   if (!(await exists(directory))) return;
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     if (!entry.isFile() || !entry.name.endsWith('.html')) continue;
     const file = path.join(directory, entry.name);
     let content = await readFile(file, 'utf8');
+    const row = toolRows.get(entry.name);
+    if (!row) throw new Error(`Araç URL envanterinde yok: ${entry.name}`);
+    content = addOrReplace(content, /<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(row.meta)}</title>`, `araç arama başlığı: ${entry.name}`);
+    content = addOrReplace(content, /<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${escapeHtml(row.meta)}">`, `araç sosyal başlığı: ${entry.name}`);
+    content = addOrReplace(content, /<meta name="twitter:title" content="[^"]*">/, `<meta name="twitter:title" content="${escapeHtml(row.meta)}">`, `araç Twitter başlığı: ${entry.name}`);
+    content = content.replace(/<meta name="robots"[^>]*>\s*/g, '').replace('</head>', '  <meta name="robots" content="index,follow,max-image-preview:large">\n</head>');
     content = content
       .replace('</head>', '<link rel="icon" href="../favicon.svg" type="image/svg+xml"></head>')
       .replace('</body>', '<script src="../assets/site-shell.js"></script>\n</body>')

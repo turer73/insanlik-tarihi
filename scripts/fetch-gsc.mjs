@@ -23,6 +23,7 @@ import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { siteRows } from './lib/site-urls.mjs';
+import { readSnapshot, mergeSnapshot } from './lib/gsc-snapshot.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const KLIPPER = process.env.KLIPPER_API ?? 'http://100.84.251.49:8420';
@@ -33,6 +34,7 @@ const PROPERTY = 'sc-domain:kanitatlasi.com';
 // alıyor (~1 sn), sonra URL başına ~3 sn harcıyor; 8'li yığın 30 sn'yi aştı
 // ve 500 döndü. 3 güvenli sınır.
 const YIGIN = Number(process.env.GSC_YIGIN ?? 3);
+if (!Number.isInteger(YIGIN) || YIGIN < 1 || YIGIN > 3) throw new Error('GSC_YIGIN 1–3 aralığında olmalı.');
 
 if (!ANAHTAR) {
   console.error('KLIPPER_MEMORY_KEY tanımlı değil - Search Console sorgusu yapılamaz.');
@@ -57,7 +59,10 @@ for u in ${JSON.stringify(urls)}:
             d = json.loads(r.read())["inspectionResult"]["indexStatusResult"]
         out[u] = {"karar": d.get("verdict"), "durum": d.get("coverageState"),
                   "robots": d.get("robotsTxtState"), "sonTarama": d.get("lastCrawlTime"),
-                  "sitemap": bool(d.get("sitemap"))}
+                  "sitemap": bool(d.get("sitemap")),
+                  "kullaniciCanonical": d.get("userCanonical"), "googleCanonical": d.get("googleCanonical"),
+                  "sayfaGetirme": d.get("pageFetchState"), "dizineIzin": d.get("indexingState"),
+                  "tarayan": d.get("crawledAs")}
     except Exception as e:
         out[u] = {"hata": str(e)}
 print("<<<JSON>>>" + json.dumps(out, ensure_ascii=False))
@@ -83,6 +88,8 @@ async function klipperCalistir(kod) {
   return JSON.parse(c.stdout.slice(im + 10));
 }
 
+const snapshotFile = path.join(ROOT, 'data', 'gsc-index.json');
+const previous = await readSnapshot(snapshotFile);
 const rows = await siteRows(ROOT);
 const urls = rows.map(r => r.url);
 console.log(`${urls.length} URL, ${PROPERTY} mülkünde sorgulanıyor...`);
@@ -107,32 +114,20 @@ if (basarisiz.length) {
   for (const b of basarisiz) console.warn(`  ${b.sebep}\n    ${b.urls.join('\n    ')}`);
 }
 
-for (const k of Object.values(sonuc)) k.olculdu = olculdu;
-
 // BAŞARISIZ KOŞU ESKİ ÖLÇÜMÜ SİLMEMELİ. İlk sürüm yalnızca bu koşunun
 // sonucunu yazıyordu; klipper erişilemediğinde (2026-09-11'de oldu) bütün
 // yığınlar düştü ve 39 URL'lik anlık görüntü BOŞ veriyle ezildi. Ölçüm
 // yapılamaması, önceki ölçümü geçersiz kılmaz - o yüzden eski kayıt
 // korunuyor ve üstüne yalnızca YENİ ölçümler yazılıyor.
-let onceki = {};
-try { onceki = JSON.parse(readFileSync(join(ROOT, 'data', 'gsc-index.json'), 'utf8')).urls ?? {}; } catch { /* ilk üretim */ }
-
-if (!Object.keys(sonuc).length) {
+const errors = Object.fromEntries(basarisiz.flatMap(batch => batch.urls.map(url => [url, batch.sebep])));
+const govde = mergeSnapshot(previous, sonuc, { property: PROPERTY, measuredAt: olculdu, errors });
+if (!govde) {
   console.error('\nHİÇBİR ÖLÇÜM ALINAMADI - anlık görüntü DEĞİŞTİRİLMEDİ.');
   console.error('Önceki kayıt korunuyor; "ölçemedim" ile "ölçtüm, sonuç boş" aynı şey değildir.');
   process.exit(1);
 }
 
-const birlesik = { ...onceki, ...sonuc };
-const govde = {
-  property: PROPERTY,
-  olculdu,
-  not:
-    'URL Inspection cevabı. Salt okunur sorgu; anlık görüntüdür, canlı veri değil. ' +
-    'Her kaydın kendi olculdu alanı vardır: bir koşuda ölçülemeyen URL eski ölçümüyle kalır.',
-  urls: Object.fromEntries(Object.keys(birlesik).sort().map(k => [k, birlesik[k]])),
-};
-await writeFile(path.join(ROOT, 'data', 'gsc-index.json'), `${JSON.stringify(govde, null, 2)}\n`, 'utf8');
+await writeFile(snapshotFile, `${JSON.stringify(govde, null, 2)}\n`, 'utf8');
 
 const say = {};
 for (const v of Object.values(sonuc)) {

@@ -63,6 +63,15 @@ const farklar = (a, b) => Object.keys(a).filter((k) => a[k] !== b[k]).sort();
 
 /* --- yalıtım --- */
 
+await t("arama başlığı değişince yalnız ilgili yazının tarihi etkilenir", async () => {
+  const kok = depo([]);
+  const before = await ozetler(kok);
+  const articles = YAZILAR.map(a => a.slug === 'alfa' ? { ...a, seoTitle: 'Alfa: Antik Kaynaklar' } : a);
+  const inputs = await icerikGirdileri(kok, { articles, hubs: Object.values(MERKEZLER) });
+  const after = Object.fromEntries(Object.entries(inputs).map(([key, value]) => [key, hashla(metinOzu(value))]));
+  assert.deepEqual(farklar(before, after), ['articles/alfa.html']);
+});
+
 await t("yazı anahtarı KENDİ bulgusunu içerir, ötekininkini içermez", async () => {
   const kok = depo([bulgu("alfa-bir", ["alfa"], "alfa notu"), bulgu("beta-bir", ["beta"], "beta notu")]);
   const g = await icerikGirdileri(kok, { articles: YAZILAR, hubs: Object.values(MERKEZLER) });

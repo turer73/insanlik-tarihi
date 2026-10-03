@@ -41,7 +41,7 @@ export async function siteRows(ROOT) {
       no: String(article.no).padStart(2, '0'),
       baslik: article.cardTitle ?? article.title,
       url: `${ORIGIN}/articles/${article.slug}.html`,
-      meta: `${article.title} — Kanıt Atlası`,
+      meta: `${article.seoTitle ?? article.title} — Kanıt Atlası`,
       aciklama: article.summary,
       kategori: article.category,
       kaynak: `articles/${article.slug}.html`,

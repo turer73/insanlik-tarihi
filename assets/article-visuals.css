@@ -2,6 +2,7 @@
    yuklenmedigi icin kural burada, kendi kendine yeterli degerlerle. */
 .skip-link{position:fixed;left:1rem;top:-5rem;z-index:999;padding:.8rem 1rem;border-radius:10px;background:var(--accent,#165f50);color:var(--surface,#fbf9f3);text-decoration:none;font-weight:800}
 .skip-link:focus{top:1rem}
+.ka-article-dates{font-family:var(--body,Arial,sans-serif);font-size:.85rem;line-height:1.6;color:var(--ink-2,#4e4644);margin:.3rem 0;max-width:65ch}
 /* Kanıt Atlası — DALL·E editoryal makale görsel katmanı */
 html{scrollbar-gutter:stable}
 body{margin:0}
