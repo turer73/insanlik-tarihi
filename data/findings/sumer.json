@@ -2,7 +2,7 @@
   {
     "schema_version": 2,
     "id": "sumer-yazi-muhasebe-icin",
-    "claim": "Yazı muhasebe için icat edildi; bilinen en eski tabletlerin ezici çoğunluğu idari kayıttır ve ilk edebî metinler yaklaşık 700 yıl sonra görülür.",
+    "claim": "Bilinen Geç Uruk tabletlerinin çoğu idari kayıttır; aynı arşivde sözcük listeleri de bulunur. Bu dağılım, yazının tek icat amacını veya edebiyatın kesin başlangıcını tek başına belirlemez.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -21,137 +21,196 @@
       }
     },
     "period": {
-      "earliest": -3300,
-      "latest": -2600,
-      "era_label": "Uruk IV - Erken Hanedanlar",
+      "earliest": -3350,
+      "latest": -3000,
+      "era_label": "Uruk IV–III; Englund 2006 Fig. 1 yaklaşık kronolojisi",
       "precision": "range",
       "dating_method": [
         "stratigraphy",
-        "paleography",
-        "radiocarbon"
+        "paleography"
       ]
     },
-    "languages": [
-      "Sümerce"
-    ],
     "disciplines": [
       "filoloji",
       "arkeoloji",
       "epigrafi"
     ],
-    "popular_claim": "Yazı destanları, duaları ve kutsal metinleri kaydetmek için icat edildi.",
-    "divergence": "En erken tabletlerde tanrı, kral övgüsü veya anlatı yok; miktar, mal ve sorumlu kişi adı var. İçerik dağılımı sayılabilir bir olgudur ve yayımlanmış külliyat açıktır. Alanın standart çözümlemesi bunu daha da keskin söyler: en erken tabletlerin amacı DİLİ kaydetmek değil, sayısal bir sistemle yerel ekonominin yönetimini izlemekti.",
+    "popular_claim": "En eski tabletlerin hepsi makbuzdur; yazı yalnız muhasebe için icat edildi ve edebiyat tam 700 yıl sonra başladı.",
+    "divergence": "İdari ağırlık ile tek bir icat amacı farklı hükümlerdir. Sözcük listeleri, eğitim ve sınıflandırma işlevlerini de görünür kılar; edebiyatın başlangıcı kullanılan tür tanımına bağlıdır.",
     "divergence_type": [
       "kategori-hatasi",
       "guncellenmemis"
     ],
     "sources": [
       {
-        "id": "nissen-damerow-englund-1993-archaic-bookkeeping",
+        "id": "englund-2011-accounting",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "chapter",
         "authors": [
-          "Nissen, Hans J.",
-          "Damerow, Peter",
           "Englund, Robert K."
         ],
-        "year": 1993,
-        "title": "Archaic Bookkeeping: Early Writing and Techniques of Economic Administration in the Ancient Near East",
-        "publisher": "University of Chicago Press",
-        "isbn": "9780226586595",
-        "pages": "xi+169",
+        "year": 2011,
+        "title": "Accounting in Proto-Cuneiform",
+        "container": "The Oxford Handbook of Cuneiform Culture",
+        "publisher": "Oxford University Press",
+        "pages": "32–50",
+        "url": "https://cdli.earth/files-up/publications/englund2011a.pdf",
         "language": "en",
-        "note": "Proto-çivi yazısı külliyatının standart çözümlemesi. Ana tezi doğrudan bu kaydın konusu: en erken tabletlerin amacı DİLİ kaydetmek değil, sayısal bir sistemle yerel ekonominin yönetimini izlemekti. Paul Larsen çevirisi. Önceki sürümde bu kaynağın yerinde 'Proto-çivi yazısı ve erken Mezopotamya idaresi literatürü' yazan bir YER TUTUCU vardı."
+        "accessed": "2026-10-04",
+        "note": "CDLI kopyasında basılı s. 32–38 ve 40–41 ilgili pasajları okundu; s. 35 oran paragrafı görselden de kontrol edildi. Oranlar yazarın verdiği tarihsel külliyat ortalamalarıdır; güncel veri tabanı yeniden sayılmadı. Bölümün tamamı ve ham tabletler yeniden incelenmedi."
+      },
+      {
+        "id": "dcclt-archaic-lexical-corpus",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "The Archaic Lexical Corpus",
+        "institution": "Digital Corpus of Cuneiform Lexical Texts (DCCLT), University of California, Berkeley / ORACC",
+        "url": "https://oracc.museum.upenn.edu/dcclt/intro/arch_intro.html",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Giriş, §1 An Example, §2 Lexical Lists and the Archaic Administrative Corpus ve §4 The Nature of the Archaic Lexical Lists okundu. W 11986,a örneğinde okumaların sonraki metinlerden geriye taşınmasının sınırı açıklanır; tabletler doğrudan yeniden okunmadı."
+      },
+      {
+        "id": "jagersma-2010-sumerian-grammar",
+        "tier": "institutional",
+        "type": "thesis",
+        "authors": [
+          "Jagersma, Abraham Hendrik"
+        ],
+        "year": 2010,
+        "title": "A Descriptive Grammar of Sumerian",
+        "institution": "Universiteit Leiden",
+        "url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A2961989/download",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Leiden açık erişim tam metninde yalnız §1.2.2 Sources, basılı s. 4–5 (PDF s. 31–32) okundu; s. 4 görselden kontrol edildi. Sümerce lehindeki görüş ve Englund ile ayrılık yazarın aktarımıdır; atıf yaptığı Wilcke 2005 ayrıca okunmadı. Tezin bütünü okunmadı."
+      },
+      {
+        "id": "englund-2006-textual-witnesses",
+        "tier": "peer-reviewed",
+        "type": "chapter",
+        "authors": [
+          "Englund, Robert K."
+        ],
+        "year": 2006,
+        "title": "An Examination of the “Textual” Witnesses to Late Uruk World Systems",
+        "container": "A Collection of Papers on Ancient Civilizations of Western Asia, Asia Minor and North Africa",
+        "url": "https://cdli.earth/files-up/publications/englund2006a.pdf",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "CDLI taramasında basılı s. 1–3, özellikle s. 2 giriş ve Fig. 1 görselden okundu (PDF s. 1–2). IVa 3350–3200 ve III 3200–3000 yaklaşık kronolojisi bu yazarın şemasıdır; dilin bilinmediği ifadesi onun değerlendirmesidir. Yazının tamamı okunmadı."
       }
     ],
     "evidence": [
       {
         "id": "idari-kayit-turleri",
-        "text": "Uruk IV tabletleri teslimat, sayım ve tayın kayıtlarıdır: arpa, bira, koyun, işçi payı.",
+        "text": "Basit hesap belgeleri miktar, nesne ve işlemdeki kişi ya da makamları kaydeder.",
         "citations": [
           {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "İdari metin türleri bölümü",
+            "source_ref": "englund-2011-accounting",
+            "locator": "s. 36, The categories of administrative documents, ilk paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "oran-evreye-bagli",
+        "text": "Englund’un %85 idari / %15 sözcük listesi oranı ortalamadır; liste payı Uruk IV’te %1’den az, Uruk III’te yaklaşık %20’dir.",
+        "citations": [
+          {
+            "source_ref": "englund-2011-accounting",
+            "locator": "s. 35, Fig. 2.2 altındaki oran paragrafı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sozcuk-listeleri",
+        "text": "DCCLT, erken listeleri eğitim araçları olarak yorumlar; bazıları meslek, kuş ve balık gibi alanları sınıflandırır.",
+        "citations": [
+          {
+            "source_ref": "dcclt-archaic-lexical-corpus",
+            "locator": "Giriş; §1 An Example; §4 The Nature of the Archaic Lexical Lists",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "nesneye-bagli-sayi-sistemi",
-        "text": "En erken sayı sistemi saydığı şeye göre değişir - tahıl ve hayvan için ayrı düzenler; soyut sayı fikri henüz yok.",
+        "text": "Aynı sayı işaretinin değeri kullanılan sayım veya ölçü sistemine göre değişebilir.",
         "citations": [
           {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Sayı sistemleri çözümlemesi",
+            "source_ref": "englund-2011-accounting",
+            "locator": "s. 38, Numerical and metrological systems, N14 örneği",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "amac-dil-degil-yonetim",
-        "text": "Tabletlerin amacı dili kaydetmek değil, sayısal bir sistemle yerel ekonominin yönetimini izlemekti.",
+        "id": "evre-kronolojisi",
+        "text": "Kullanılan yaklaşık kronoloji Englund’un IVa (MÖ 3350–3200) ve III (MÖ 3200–3000) şemasıdır; evre sınırları kesin gün veya yıl değildir.",
         "citations": [
           {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Kitabın ana tezi",
+            "source_ref": "englund-2006-textual-witnesses",
+            "locator": "s. 2, Fig. 1: Chronology of Early Babylonia",
             "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "ilk-edebi-metinler-2600",
-        "text": "İlk edebî metinler (Şuruppak Öğütleri, Keş Tapınak İlahisi) ~MÖ 2600'e tarihlenir.",
-        "citations": [
-          {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Kronolojik çerçeve",
-            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "yayimlanmis-kulliyat-siniri",
-        "text": "'Ezici çoğunluk idari' ifadesi YAYIMLANMIŞ külliyata dayanır. Kazılmamış ve yayımlanmamış malzemenin dağılımı bilinmiyor; oran bir örneklem oranıdır.",
+        "id": "amac-ile-dagilim-ayri",
+        "text": "Korunmuş türlerin dağılımından tek bir icat amacı çıkarmak, kaynak verisini aşan bir yorumdur.",
         "citations": [
           {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Külliyatın kapsamı",
-            "support_type": "counter"
+            "source_ref": "englund-2011-accounting",
+            "locator": "s. 32, girişte arkeolojik/epigrafik veriyi aşırı basitleştirme uyarısı",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "dcclt-archaic-lexical-corpus",
+            "locator": "§4 The Nature of the Archaic Lexical Lists, idari işlevi aşan yorumlar",
+            "support_type": "context"
           }
         ]
       },
       {
-        "id": "korunma-yanliligi",
-        "text": "İdari tabletlerin daha iyi korunmuş olması da mümkündür: pişmiş kil arşivler yangınla sertleşir, başka ortamlardaki kayıtlar korunmaz. Dağılım kısmen hayatta kalma yanlılığı olabilir.",
+        "id": "edebiyat-tanimi",
+        "text": "Jagersma yaklaşık MÖ 2600 Fara döneminde çeşitli edebî metinler bildirir; Englund daha erken listeler arasında da edebiyat sayılabilecek örnekler önerir.",
         "citations": [
           {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Korunma koşulları",
+            "source_ref": "jagersma-2010-sumerian-grammar",
+            "locator": "§1.2.2 Sources, s. 4–5; Fara dönemi paragrafı",
             "support_type": "context"
+          },
+          {
+            "source_ref": "englund-2011-accounting",
+            "locator": "s. 35, oran paragrafının ilk cümleleri",
+            "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "Yayımlanmamış Uruk külliyatının tür dağılımı yayımlanmışla aynı mı?"
+      "Edebiyat hangi tür ölçütüyle tanımlanıyor?",
+      "Korunmuş ve yayımlanmış tabletlerin dağılımı bütün eski yazı uygulamalarını ne ölçüde temsil ediyor?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu kaynak ('...literatürü') gerçek künyeyle değiştirildi. Boş olan counter_evidence dolduruldu - örneklem ve korunma yanlılığı işaretlendi. Bu kaydın kaynağının TAM METNİ OKUNMADI; locator'lar bölüm düzeyinde, sayfa düzeyinde değil."
+      "notes": "4 Ekim 2026: İdari ağırlığa daraltılmış iddia established/high; tek amaç ve kesin 700 yıl hükmü kaldırıldı. %85 ortalamasının evre farkı belirtildi. Nissen–Damerow–Englund 1993 kitabı okunmadığı için belirsiz bölüm atıfları çıkarıldı. Yalnız seçilmiş pasajlar denetlendi; külliyat yeniden sayılmadı, C14 numuneleri ve tabletler doğrudan incelenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "sumer-uruk-iv-dili",
     "claim": "En eski Uruk IV tabletleri Sümerce yazılmıştır.",
-    "status": "unknown",
-    "confidence": "high",
+    "status": "contested",
+    "confidence": "medium",
     "topic": [
       "sumer",
       "proto-civi-yazisi",
@@ -167,9 +226,9 @@
       }
     },
     "period": {
-      "earliest": -3300,
-      "latest": -3100,
-      "era_label": "Uruk IV",
+      "earliest": -3350,
+      "latest": -3200,
+      "era_label": "Uruk IVa; Englund 2006 Fig. 1 yaklaşık kronolojisi",
       "precision": "approximate",
       "dating_method": [
         "stratigraphy",
@@ -182,37 +241,72 @@
       "epigrafi"
     ],
     "popular_claim": "Dünyanın en eski yazısı Sümerce'dir.",
-    "divergence": "Sistemin sonradan Sümerce yazmak için kullanıldığı kesin. Ama en erken tabletlerdeki işaretlerin SES DEĞERİ oturmamıştır ve metinlerin hangi dili kaydettiği doğrudan gösterilemez. Sorun kanıtın azlığı değil, KAYDIN TÜRÜ: sayı ve mal işaretlerinden oluşan bir muhasebe notu, hangi dilde düşünüldüğünü ele vermez.",
+    "divergence": "En eski proto-çivi yazısı metinlerinin Sümerceyle ilişkilendirilmesinde görüş ayrılığı vardır. Englund temkinlidir; Jagersma Sümerce lehindeki okumaları aktarır. İşaretlerin sonraki ses değerleri, erken her örnek için otomatik kanıt değildir.",
     "divergence_type": [
       "kategori-hatasi"
     ],
     "sources": [
       {
-        "id": "nissen-damerow-englund-1993-archaic-bookkeeping",
+        "id": "englund-2006-textual-witnesses",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "chapter",
         "authors": [
-          "Nissen, Hans J.",
-          "Damerow, Peter",
           "Englund, Robert K."
         ],
-        "year": 1993,
-        "title": "Archaic Bookkeeping: Early Writing and Techniques of Economic Administration in the Ancient Near East",
-        "publisher": "University of Chicago Press",
-        "isbn": "9780226586595",
-        "pages": "xi+169",
+        "year": 2006,
+        "title": "An Examination of the “Textual” Witnesses to Late Uruk World Systems",
+        "container": "A Collection of Papers on Ancient Civilizations of Western Asia, Asia Minor and North Africa",
+        "url": "https://cdli.earth/files-up/publications/englund2006a.pdf",
         "language": "en",
-        "note": "Proto-çivi yazısı külliyatının standart çözümlemesi. Ana tezi doğrudan bu kaydın konusu: en erken tabletlerin amacı DİLİ kaydetmek değil, sayısal bir sistemle yerel ekonominin yönetimini izlemekti. Paul Larsen çevirisi. Önceki sürümde bu kaynağın yerinde 'Proto-çivi yazısı ve erken Mezopotamya idaresi literatürü' yazan bir YER TUTUCU vardı."
+        "accessed": "2026-10-04",
+        "note": "CDLI taramasında basılı s. 1–3, özellikle s. 2 giriş ve Fig. 1 görselden okundu (PDF s. 1–2). IVa 3350–3200 ve III 3200–3000 yaklaşık kronolojisi bu yazarın şemasıdır; dilin bilinmediği ifadesi onun değerlendirmesidir. Yazının tamamı okunmadı."
+      },
+      {
+        "id": "jagersma-2010-sumerian-grammar",
+        "tier": "institutional",
+        "type": "thesis",
+        "authors": [
+          "Jagersma, Abraham Hendrik"
+        ],
+        "year": 2010,
+        "title": "A Descriptive Grammar of Sumerian",
+        "institution": "Universiteit Leiden",
+        "url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A2961989/download",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Leiden açık erişim tam metninde yalnız §1.2.2 Sources, basılı s. 4–5 (PDF s. 31–32) okundu; s. 4 görselden kontrol edildi. Sümerce lehindeki görüş ve Englund ile ayrılık yazarın aktarımıdır; atıf yaptığı Wilcke 2005 ayrıca okunmadı. Tezin bütünü okunmadı."
+      },
+      {
+        "id": "dcclt-archaic-lexical-corpus",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "The Archaic Lexical Corpus",
+        "institution": "Digital Corpus of Cuneiform Lexical Texts (DCCLT), University of California, Berkeley / ORACC",
+        "url": "https://oracc.museum.upenn.edu/dcclt/intro/arch_intro.html",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Giriş, §1 An Example, §2 Lexical Lists and the Archaic Administrative Corpus ve §4 The Nature of the Archaic Lexical Lists okundu. W 11986,a örneğinde okumaların sonraki metinlerden geriye taşınmasının sınırı açıklanır; tabletler doğrudan yeniden okunmadı."
       }
     ],
     "evidence": [
       {
-        "id": "dil-tasimak-uzere-tasarlanmamis",
-        "text": "En erken tabletlerin işlevi dili kaydetmek değil, sayısal bir sistemle ekonomiyi izlemekti - yani metinler dil taşımak üzere tasarlanmamıştı.",
+        "id": "sumerce-lehindeki-okuma",
+        "text": "Jagersma, erken metinlerde Sümerceyi tanıyan yaklaşımı aktarır ve Englund’un daha temkinli tutumuyla karşılaştırır.",
         "citations": [
           {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Kitabın ana tezi",
+            "source_ref": "jagersma-2010-sumerian-grammar",
+            "locator": "§1.2.2 Sources, s. 4; Uruk III/IV paragrafı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "sonraki-ur-tanigi",
+        "text": "Aynı bölüm yaklaşık MÖ 2800 Ur metinlerinde dilbilgisel öğelerin açık yazımlarını belirtir; bu daha geç tanık, Uruk IV’ün kendisiyle eşitlenemez.",
+        "citations": [
+          {
+            "source_ref": "jagersma-2010-sumerian-grammar",
+            "locator": "§1.2.2 Sources, s. 4; Ur metinleri cümlesi",
             "support_type": "direct"
           }
         ]
@@ -220,49 +314,39 @@
     ],
     "counter_evidence": [
       {
-        "id": "resim-yazi-ses-degeri-sonra",
-        "text": "En erken işaretler büyük ölçüde resim-yazıdır; ses değeri sonradan gelişir.",
+        "id": "englundun-temkini",
+        "text": "Englund 2006, dördüncü binyıl sakinlerinin dilsel bağlılığının bilinmediğini söyler. Bu, tek ve tartışmasız alan hükmü olarak sunulmaz.",
         "citations": [
           {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "İşaret sistemi gelişimi",
+            "source_ref": "englund-2006-textual-witnesses",
+            "locator": "s. 2, girişin ilk paragrafı",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "dilbilgisi-isaretleyicisi-yok",
-        "text": "İdari listelerde dilbilgisi işaretleyicisi neredeyse yok - dil tespiti için gereken yapı bulunmuyor.",
+        "id": "geriye-tasinan-okumalar",
+        "text": "DCCLT’nin W 11986,a örneğinde erken işaretlerin okuma ve çevirileri büyük ölçüde daha geç metinlere dayanır; geriye taşımanın kesinliği sınırlıdır.",
         "citations": [
           {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Metin yapısı çözümlemesi",
+            "source_ref": "dcclt-archaic-lexical-corpus",
+            "locator": "§1 An Example, transliterasyon sonrası iki paragraf",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "sumerce-degil-demiyoruz",
-        "text": "Bu kayıt 'Sümerce DEĞİLDİR' demiyor; 'gösterilemez' diyor. Sonraki dönemde sistemin Sümerce yazdığı kesin olduğuna göre sürekliliğin Sümerce olması makul bir olasılıktır - ama olasılık kanıt değildir.",
-        "citations": [
-          {
-            "source_ref": "nissen-damerow-englund-1993-archaic-bookkeeping",
-            "locator": "Süreklilik tartışması",
-            "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Uruk IV metinlerinin dili belirlenebilir mi?"
+      "Uruk IV ile III tanıkları ve önerilen fonetik okumalar ayrı ayrı nasıl değerlendirilmeli?",
+      "Wilcke 2005 ve diğer dil tanıma çalışmalarının doğrudan pasajları ne gösteriyor?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Kayıt hiç evidence taşımıyordu - yalnızca karşı kanıtla duruyordu. Kaynağın ana tezi doğrudan kanıt olarak bağlandı."
+      "notes": "4 Ekim 2026: unknown/high → contested/medium. Önceki kayıt Englund’un temkinli yorumunu dilin hiçbir biçimde tanınamayacağı sonucu gibi genelliyordu. Jagersma 2010 §1.2.2 ve ORACC örneğiyle görüş ayrılığı görünür kılındı. Jagersma’nın çoğunluk değerlendirmesi bağımsız bir güncel uzlaşı sayımı değildir; Wilcke 2005 okunmadı. Özgün tabletler ve bütün dil literatürü denetlenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
