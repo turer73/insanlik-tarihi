@@ -121,25 +121,6 @@ section:last-of-type{border-bottom:0}
 .src p b{color:var(--ink)}
 .src q{font-family:var(--display);font-style:italic;color:var(--ink);quotes:"“" "”"}
 
-/* stacked consensus bar */
-.cons{border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem;margin-top:1.5rem}
-.cons .hd{font-size:1.04rem;margin-bottom:.25rem}
-.cons .sub{font-size:.88rem;color:var(--ink-3);margin:0 0 1.05rem;max-width:66ch}
-.stack{display:flex;height:44px;border:1px solid var(--rule);overflow:hidden}
-.stack div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.68rem;font-weight:700;overflow:hidden;border-right:1px solid var(--rule)}
-.stack div:last-child{border-right:0}
-.s1{flex:0 0 7.7%;background:var(--ok);color:#fff}
-.s2{flex:0 0 11.5%;background:var(--ok-soft);color:var(--ok)}
-.s3{flex:0 0 38.5%;background:var(--accent);color:var(--raised)}
-.s4{flex:0 0 17.3%;background:var(--accent-soft);color:var(--accent-ink)}
-.s5{flex:0 0 25%;background:var(--flag);color:#fff}
-.conskey{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-top:0;font-size:.87rem}
-.ck{background:var(--bg);padding:.5rem .8rem;display:grid;grid-template-columns:auto 1fr;gap:.2rem .8rem;align-items:baseline}
-.ck b{font-family:var(--mono);font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;min-width:2.4ch}
-.ck span{color:var(--ink-2)}
-.cons p.leg{margin:1.05rem 0 0;font-size:.92rem;color:var(--ink-2);max-width:68ch}
-.cons p.leg b{color:var(--ink)}
-
 /* comparison table */
 .tblwrap{overflow-x:auto;border:1px solid var(--rule);margin-top:1.5rem;background:var(--raised)}
 table{border-collapse:collapse;width:100%;min-width:620px;font-size:.9rem}
@@ -193,12 +174,12 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
       <div class="sp yes">
         <span class="badge">Bu yazının sorusu</span>
         <p class="q">1. yüzyılda Yahudiye'de, Pilatus tarafından idam edilmiş böyle bir kişi yaşadı mı?</p>
-        <p class="a">Tarihsel bir soru. Kaynakları var, yöntemi var, cevabı var.</p>
+        <p class="a">Tarihsel bir soru. Bu yazı, cevabı değerlendirirken kullanılan metinleri ve onların sınırlarını gösterir.</p>
       </div>
       <div class="sp no">
         <span class="badge">Bu yazının sorusu değil</span>
         <p class="q">Ona atfedilen mucizeler gerçekleşti mi? Anlatılanlar doğru mu?</p>
-        <p class="a">Tarih yöntemi bu soruya ulaşmaz. Bu yazıdan buna dair bir sonuç çıkarılamaz — <b>iki soruyu birleştirmek her iki taraftaki tartışmanın da en yaygın hatasıdır.</b></p>
+        <p class="a">Bir anlatının varlığı, anlattığı olayın gerçekleştiği anlamına gelmez. <b>Bu yazı mucize iddialarının doğruluğunu değerlendirmez.</b></p>
       </div>
     </div>
   </div>
@@ -223,14 +204,13 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 <section id="esik" class="wrap">
   <div class="sec__head">
     <p class="eyebrow">01 — Yöntem</p>
-    <h2>Önce eşiği belirlemek gerekiyor</h2>
-    <p class="kicker">"Kanıt yeterli mi" diye sormadan önce şunu sormak lazım: <b>1. yüzyılda taşrada yaşamış, seçkin olmayan bir kişi için normalde ne kadar kanıt olur?</b></p>
+    <h2>Hangi iddia için hangi kanıt?</h2>
+    <p class="kicker">Bir kişinin varlığı, bir görüşmenin anlatılması ve bir idamın kayda geçirilmesi <b>aynı iddia değildir.</b></p>
   </div>
-
   <div class="prose">
-    <p>Cevap rahatsız edici: <b>neredeyse hiç.</b> Roma İmparatorluğu'nun 60 milyon civarındaki nüfusundan geriye adı kalmış insan sayısı, toplamın binde birinin çok altındadır. Yazı bilen azınlıktı; yazdığı korunan daha da azınlık. Bir taşra vaizinin adının herhangi bir yerde geçmesi <b>beklenmedik</b> bir durumdur, beklenen değil.</p>
-    <p>Bu yüzden "çağdaş bir Roma kaydı yok" itirazı, kulağa güçlü gelse de <b>yanlış eşiği kullanır.</b> Aynı ölçüt uygulandığında Hillel, Honi, Vaftizci Yahya, Theudas ve döneminde ün kazanmış diğer figürlerin çoğu da "yok" sayılmak zorunda kalır. Bir imparator için beklenen kanıt düzeyini bir taşralıdan istemek, ölçüm hatasıdır.</p>
-    <p>Doğru soru şu: <b>bu kişi hakkındaki kayıtlar, aynı dönemin benzer figürleriyle karşılaştırıldığında nerede duruyor?</b> Ve bunu ölçmenin en dürüst yolu tek bir değişkeni kullanmak: <b>kaynak, anlattığı olaydan kaç yıl sonra yazılmış?</b></p>
+    <p>Çağdaş bir kayıt bulunmamasından doğrudan “bu kişi yaşamadı” sonucu çıkmaz. Daha sonraki bir metnin varlığı da anlattığı her olayı doğrulamaz. <b>Önce metnin tam olarak ne söylediğini, sonra o bilgiye nasıl ulaşmış olabileceğini</b> sormak gerekir.</p>
+    <p>Aşağıda Pavlus’un görüşme beyanı, Josephus’un Yakup tanımı ve Tacitus’un idam bildirimi ayrı okunuyor. İlkinde yazar kendi görüşmesini anlatır; diğerleri tarih anlatısıdır. <b>Üç farklı yazar, kendiliğinden üç bağımsız görgü tanığı demek değildir.</b></p>
+    <p>Zaman mesafesi karşılaştırmaya yardımcı olur; <b>tek bir doğruluk puanı değildir.</b> Belge türü, aktarım zinciri, kaynak bağımlılığı ve korunmuş metnin özgünlüğü de değerlendirilmelidir. Bu tur bütün benzer taşra figürleri için bir kayıt dökümü veya nüfus hesabı yapılmadı.</p>
   </div>
 </section>
 
@@ -256,7 +236,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
       <div class="lrow">
         <div class="lrow__lbl"><b>Pavlus'un mektupları</b><span>y. 50-60 · Grekçe</span></div>
-        <div class="lrow__track"><div class="lbar" style="width:19%"><em>~23 yıl</em></div><div class="lnote" style="left:calc(19% + .6rem)">birinci ağızdan tanıklık</div></div>
+        <div class="lrow__track"><div class="lbar" style="width:20%"><em>~25 yıl</em></div><div class="lnote" style="left:calc(20% + .6rem)">Yakup ile görüşme beyanı</div></div>
       </div>
       <div class="lrow">
         <div class="lrow__lbl"><b>Markos</b><span>y. 70 · anlatı</span></div>
@@ -268,15 +248,15 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
       </div>
       <div class="lrow">
         <div class="lrow__lbl"><b>Josephus, Ant. 20</b><span>93-94 · Yahudi tarihçi</span></div>
-        <div class="lrow__track"><div class="lbar" style="width:51%"><em>~63 yıl</em></div><div class="lnote" style="left:calc(51% + .6rem)">taraf değil · az tartışmalı</div></div>
+        <div class="lrow__track"><div class="lbar" style="width:51%"><em>~63 yıl</em></div><div class="lnote" style="left:calc(51% + .6rem)">Yakup tanımı · ayrı pasaj</div></div>
       </div>
       <div class="lrow">
         <div class="lrow__lbl"><b>Josephus, Ant. 18</b><span>93-94 · Testimonium</span></div>
-        <div class="lrow__track"><div class="lbar" style="width:51%"><em>~63 yıl</em></div><div class="lnote" style="left:calc(51% + .6rem)">müdahale görmüş — aşağıda</div></div>
+        <div class="lrow__track"><div class="lbar" style="width:51%"><em>~63 yıl</em></div><div class="lnote" style="left:calc(51% + .6rem)">özgünlük tartışması — aşağıda</div></div>
       </div>
       <div class="lrow">
         <div class="lrow__lbl"><b>Yuhanna</b><span>y. 90-110 · anlatı</span></div>
-        <div class="lrow__track"><div class="lbar" style="width:60%"><em>~70 yıl</em></div><div class="lnote" style="left:calc(60% + .6rem)">teolojik olarak en gelişmiş</div></div>
+        <div class="lrow__track"><div class="lbar" style="width:60%"><em>~70 yıl</em></div><div class="lnote" style="left:calc(60% + .6rem)">yaşam anlatısı</div></div>
       </div>
       <div class="lrow">
         <div class="lrow__lbl"><b>Genç Plinius</b><span>y. 112 · vali mektubu</span></div>
@@ -284,7 +264,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
       </div>
       <div class="lrow">
         <div class="lrow__lbl"><b>Tacitus, Annales 15.44</b><span>y. 116 · Romalı tarihçi</span></div>
-        <div class="lrow__track"><div class="lbar" style="width:69%"><em>~86 yıl</em></div><div class="lnote" style="left:calc(69% + .6rem)">bağımsız Roma kaydı</div></div>
+        <div class="lrow__track"><div class="lbar" style="width:69%"><em>~86 yıl</em></div><div class="lnote" style="left:calc(69% + .6rem)">sonraki Roma anlatısı</div></div>
       </div>
       <div class="lrow">
         <div class="lrow__lbl"><b>Suetonius, Claudius 25</b><span>y. 121 · "Chrestus"</span></div>
@@ -295,7 +275,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="lkey">
-    <span class="k"><i class="sw" style="background:var(--accent)"></i>iddiaya doğrudan tanıklık eden kayıt</span>
+    <span class="k"><i class="sw" style="background:var(--accent)"></i>kişi veya olay hakkında metin</span>
     <span class="k"><i class="sw" style="background:var(--ink-3)"></i>dolaylı veya zayıf</span>
   </div>
 
@@ -312,37 +292,35 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="srcs">
     <div class="src">
       <div class="src__l">
-        <b>Pavlus, Galatyalılar 1:19</b>
-        <span class="yr">y. 50'ler · ~23 yıl sonra</span>
-        <span class="w w-strong">en güçlü tekil kayıt</span>
+        <b>Pavlus, Galatyalılar 1:18–19</b>
+        <span class="yr">y. 50–60 · yaklaşık yazım aralığı</span>
+        <span class="w w-strong">görüşme beyanı</span>
       </div>
       <div>
-        <p>Pavlus, Kudüs'e gittiğini ve <q>Rab'bin kardeşi Yakup</q> ile görüştüğünü <b>birinci ağızdan</b> yazıyor. Bu, hem bir Hristiyan kaynağı hem de bir <b>tanışma beyanı</b>: yazar, konusu olan kişinin kardeşiyle oturduğunu söylüyor.</p>
-        <p>Değerini yükselten şey mesafenin kısalığı ve iddianın türü: bu bir mucize anlatısı değil, <b>sıradan bir biyografik ayrıntı</b> — ve uydurulması hâlinde onu tanıyan insanlar hayattayken çürütülebilecek bir ayrıntı.</p>
+        <p><a href="https://www.biblegateway.com/passage/?search=Galatians+1%3A18-19&amp;version=NRSVUE" target="_blank" rel="noopener">Galatyalılar 1:18–19 ↗</a>, Kefas ile on beş gün kaldığını ve <q>Rab’bin kardeşi Yakup</q> diye tanımladığı kişiyi gördüğünü söyler. Birinci ağızdan beyanın konusu <b>bu görüşmedir.</b></p>
+        <p>Bu pasaj, Pavlus’un İsa’yı hayattayken gördüğünü veya idamına tanık olduğunu söylemez. “Kardeş” ifadesinin bütün yorumları ve mektubun kesin tarihi bu kısa kontrolle çözülmüş sayılmıyor.</p>
       </div>
     </div>
-
     <div class="src">
       <div class="src__l">
         <b>Josephus, Eskiçağ Tarihi 20.200</b>
-        <span class="yr">93-94 · ~63 yıl sonra</span>
-        <span class="w w-strong">az tartışmalı</span>
+        <span class="yr">93–94 · yaklaşık eser tarihi</span>
+        <span class="w w-mid">Yakup pasajı</span>
       </div>
       <div>
-        <p>Yahudi tarihçi, MS 62'de idam edilen bir Yakup'tan söz ederken onu <q>Mesih denilen İsa'nın kardeşi</q> diye tanımlıyor. Kısa, geçerken söylenmiş, <b>övgü içermeyen</b> bir ifade.</p>
-        <p>Tam da bu yüzden güçlü: bir Hristiyan müdahalesi olsaydı <b>bundan çok daha fazlasını söylerdi.</b> Aşağıdaki tartışmalı pasajın aksine, bu satır alanda geniş kabul görür.</p>
+        <p><a href="https://www.ccel.org/ccel/josephus/works/files/ant-20.htm" target="_blank" rel="noopener">Whiston 20.9.1 çevirisi ↗</a>, Ananus’un yargılattığı Yakup’u <q>Mesih denilen İsa’nın kardeşi</q> diye tanımlar. Bu, Testimonium’dan <b>ayrı bir pasajdır.</b></p>
+        <p>Kısa ve övgüsüz olması, bir kopyacının müdahale edemeyeceğini kanıtlamaz. Bu tur pasaj ve bağlamı okundu; el yazmaları veya özgünlük tartışmasının tamamı karşılaştırılmadı.</p>
       </div>
     </div>
-
     <div class="src">
       <div class="src__l">
-        <b>Josephus, Eskiçağ Tarihi 18.63</b>
-        <span class="yr">93-94 · Testimonium Flavianum</span>
-        <span class="w w-weak">müdahale görmüş</span>
+        <b>Josephus, Eskiçağ Tarihi 18.63–64</b>
+        <span class="yr">93–94 · Testimonium Flavianum</span>
+        <span class="w w-weak">özgünlük tartışması</span>
       </div>
       <div>
-        <p>Uzun ve övgü dolu bir pasaj. Sorun açık: bir Yahudi tarihçinin kaleminden <q>O, Mesih'ti</q> cümlesi çıkmaz. Bu cümlenin sonradan eklendiği <b>neredeyse evrensel olarak kabul edilir.</b></p>
-        <p>Asıl tartışma pasajın <b>tamamının</b> mı yoksa bir kısmının mı eklendiği. Bunu aşağıda sayılarla açıyoruz — çünkü bu tartışma, "bilimsel uzlaşı" denen şeyin gerçekte neye benzediğinin iyi bir örneği.</p>
+        <p><a href="https://www.ccel.org/j/josephus/works/ant-18.htm" target="_blank" rel="noopener">Whiston 18.3.3 çevirisi ↗</a>, Mesih tanımlamasını, Pilatus’un çarmıh hükmünü ve üçüncü gün canlı görünme anlatısını içerir.</p>
+        <p><b>Korunmuş metni okumak, ilk yazılan biçimi belirlemek değildir.</b> Kısmi müdahale ile bütün pasajın sonradan eklenmesi ayrı sorulardır; aşağıda aktarım ve araştırmacı yorumu ayrılıyor.</p>
       </div>
     </div>
 
@@ -366,7 +344,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
       </div>
       <div>
         <p>Bitinya valisi Plinius, Hristiyanlara ne yapacağını Traianus'a soruyor; onların şafakta toplanıp <b>Christus'a bir tanrıya söyler gibi ilahi söylediklerini</b> aktarıyor.</p>
-        <p>Bu belge <b>Hristiyanların varlığını</b> ve ibadet biçimini kanıtlar; İsa'nın tarihselliğine dair bağımsız bir tanıklık <b>değildir.</b> Sık sık yanlış yerde kullanılır — burada doğru yerine koyuyoruz.</p>
+        <p><a href="https://dcc.dickinson.edu/pliny-letters/10-96">10.96.7–8 ↗</a> topluluk ve ibadet aktarımı için belgedir; <b>İsa’nın yaşamına veya idamına görgü tanıklığı içermez.</b> İbadet beyanı ile yaşamöyküsü aynı kanıt türü değildir.</p>
       </div>
     </div>
 
@@ -386,33 +364,25 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <section id="josephus" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">04 — Uzlaşı neye benzer</p>
-    <h2>Testimonium: bir tartışmayı sayılarla görmek</h2>
-    <p class="kicker">"Bilim insanları hemfikir" cümlesi çok kullanılıyor. Bu pasaj, o cümlenin altını açmak için iyi bir vaka.</p>
+    <p class="eyebrow">04 — Metin ve aktarım</p>
+    <h2>Testimonium: hangi metin, hangi yorum?</h2>
+    <p class="kicker">Bir çevirideki farklı okuma, tek başına müdahale öncesi özgün metnin bulunması değildir.</p>
   </div>
-
-  <div class="cons">
-    <div class="hd">Bir literatür taramasında değerlendirilen 52 akademisyenin dağılımı</div>
-    <p class="sub">Josephus'un 18. kitaptaki pasajı hakkında alınan pozisyonlar. Bu bir <b>anket değil</b>, yayımlanmış görüşlerin bir derlemesi — yani alanın tamamının sayımı sayılamaz.</p>
-    <div class="stack">
-      <div class="s1">4</div>
-      <div class="s2">6</div>
-      <div class="s3">20</div>
-      <div class="s4">9</div>
-      <div class="s5">13</div>
-    </div>
-    <div class="conskey">
-      <div class="ck"><b>4</b><span>Pasaj tamamen özgün</span></div>
-      <div class="ck"><b>6</b><span>Büyük ölçüde özgün</span></div>
-      <div class="ck"><b>20</b><span>Özgün, <b>bazı</b> eklemelerle</span></div>
-      <div class="ck"><b>9</b><span>Özgün, <b>birçok</b> eklemeyle</span></div>
-      <div class="ck"><b>13</b><span>Tamamı sonradan eklenmiş</span></div>
-    </div>
-    <p class="leg"><b>Okunuşu:</b> ortadaki iki grup (29 kişi, %56) bir <b>özgün çekirdek + Hristiyan müdahalesi</b> modelinde birleşiyor. Ama %25'lik bir azınlık pasajın tamamının sahte olduğunu savunuyor — <b>ve bu azınlık küçümsenecek kadar küçük değil.</b> "Uzlaşı" burada oybirliği değil, <b>bir eğilim</b> demek.</p>
-    <p class="leg">Çekirdek modelini destekleyen somut bir bulgu var: <b>9.-10. yüzyıla ait Arapça ve Süryanice aktarımlar</b> pasajı büyük ölçüde aynı biçimde veriyor ama en şüpheli iki ifadeyi — <q>O, Mesih'ti</q> ve <q>eğer ona insan denebilirse</q> — <b>içermiyor.</b> Yani metnin müdahaleden önceki hâline dair bağımsız bir iz var.</p>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th scope="col">Dayanak</th><th scope="col">Ne gösteriyor?</th><th scope="col">Nerede durmalı?</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><a href="https://www.ccel.org/j/josephus/works/ant-18.htm">Korunmuş pasaj ↗</a></th><td>Whiston 18.3.3 çevirisi, Mesih ve dirilme ifadelerini içerir.</td><td>Metnin bugünkü içeriği ile <b>özgünlüğü</b> ayrı sorulardır.</td></tr>
+        <tr><th scope="row"><a href="https://doi.org/10.1017/S0028688508000301">Whealey 2008 ↗</a></th><td>Agapius’un 10. ve Michael’ın 12. yüzyıl aktarımlarını Eusebios’un Süryanice çevirisine bağlar; Mesih sayılma okumasını savunur.</td><td>Bu bir aktarım çözümlemesidir; <b>iki bağımsız özgün metin</b> olarak sayılamaz. Seçilmiş sayfalar okundu.</td></tr>
+        <tr><th scope="row"><a href="https://doi.org/10.1017/S0028688524000274">Hansen 2025 ↗</a></th><td>Yayıncı özeti, özgün metnin olumsuz olduğu yorumuna itiraz eder; hangi ifadelerin özgün olduğu sorununu açık bırakır.</td><td>Yalnız <b>özet</b> okundu; ana metnin bütün gerekçeleri denetlenmiş sayılmıyor.</td></tr>
+      </tbody>
+    </table>
   </div>
-
-  <p class="note f" style="margin-top:1.5rem"><b>Dürüstlük payı:</b> bu alanda <b>kurumsal bir yanlılık riski</b> vardır — Yeni Ahit çalışmaları akademisyenlerinin önemli bir bölümü dinî kurumlarda çalışır. Bunu görmezden gelmek yanlış olur. Ama itiraz burada <b>soyut kalmıyor, sınanabiliyor:</b> varlık maddesinde hemfikir olan iki standart eserden birinin yazarı <b>Katolik rahiptir</b> (John P. Meier, <i>A Marginal Jew</i>, cilt 1, Doubleday 1991), ötekininki <b>agnostiktir</b> (Bart D. Ehrman, <i>Did Jesus Exist?</i>, HarperOne 2012) — ve ikincisi kitabını doğrudan <b>varlığı reddeden konuma cevap olarak</b> yazmıştır. İnanç konumu uçtan uca değişiyor, varlık maddesindeki sonuç değişmiyor. Yanlılık argümanı bu maddeyi tek başına düşürmüyor.</p>
+  <p class="note f" style="margin-top:1.5rem"><b>Önceki yüzde grafiği kaldırıldı.</b> 52 kişilik derlemenin asıl kaynağı ve örneklemi doğrulanamadı. Bu nedenle %56/%25 oranları alanın görüş dağılımı olarak kullanılmıyor; bunların yerine yeni bir sayısal uzlaşı iddiası konmadı.</p>
+  <div class="prose" style="margin-top:1.5rem">
+    <p>Bir Yahudi yazarın belirli bir ifadeyi <b>yazamayacağı</b> veya kısa ve övgüsüz bir pasajın <b>eklenemeyeceği</b> varsayımıyla metin tarihi kurulamaz. Araştırmacının önerdiği yeniden kurma ile doğrulanmış ilk metin ayrı tutulmalıdır.</p>
+    <p>Bu tur Arapça, Süryanice ve Grekçe el yazmaları doğrudan karşılaştırılmadı. Bir araştırmacının inanç konumundan da alanın bütününde yanlılık bulunmadığı sonucu çıkarılmıyor.</p>
+  </div>
 </section>
 
 <section id="tacitus" class="wrap">
@@ -441,32 +411,28 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <section id="oyun" class="wrap">
   <div class="sec__head">
-    <p class="eyebrow">06 — İddia</p>
-    <h2>"Roma'nın uydurması" tezi</h2>
-    <p class="kicker">Ciddiye alınması gereken bir soru, çünkü Roma'nın dini siyaseten kullandığı <b>doğru.</b> Ama tezin üç somut sorunu var — ve üçü de test edilebilir.</p>
+    <p class="eyebrow">06 — İddianın sınanması</p>
+    <h2>“Roma icat etti” derken hangi Roma?</h2>
+    <p class="kicker">Bir icat iddiası <b>aktör, tarih, üretilen metin ve aktarım zinciri</b> belirtmelidir. Sonraki devlet düzenlemeleri tek başına köken açıklaması değildir.</p>
   </div>
-
   <div class="claims">
     <div class="cl">
-      <div class="cl__h"><span class="cl__n">Sorun 1</span><div class="hd">Kronoloji ters işliyor</div></div>
-      <p>Roma'nın Hristiyanlıkla ittifakı <b>313</b>'te başlar, devlet dini ilanı <b>380</b>'dedir. Hareket o tarihte zaten <b>yaklaşık üç yüz yıllıktır</b> ve imparatorluk nüfusunun kayda değer bir bölümünü kapsamaktadır.</p>
-      <p class="ans">Bir yönetim aracı olarak uydurulmuş olsaydı, <b>uyduranın onu üç yüz yıl boyunca kullanmaması</b> gerekirdi. Roma bir kitle yaratmadı; var olan bir kitleye katıldı.</p>
+      <div class="cl__h"><span class="cl__n">Belge 1</span><div class="hd">313 öncesinde mevcut topluluk</div></div>
+      <p><a href="https://dcc.dickinson.edu/pliny-letters/10-96">Plinius 10.96.3 ve 7 ↗</a>, yaklaşık 112’de infaz emrini ve Christus’a ilahi söylendiğinin kendisine aktarılmasını kaydeder. <a href="https://dcc.dickinson.edu/pliny-letters/10-97">Traianus’un cevabı ↗</a> arayıp bulmayı ve anonim suçlamaları reddeder; suçlanıp kanıtlananlar için ceza öngörür.</p>
+      <p class="ans">Bu yazışma, <b>hareketin 313’te ilk kez kurulduğu</b> iddiasıyla uyuşmaz. Fakat bütün imparatorlukta üç yüzyıl boyunca tek ve değişmez bir zulüm düzenini göstermez.</p>
     </div>
-
     <div class="cl">
-      <div class="cl__h"><span class="cl__n">Sorun 2</span><div class="hd">Kendi uydurduğunu neden idam etsin?</div></div>
-      <p>Roma, bu dönem boyunca Hristiyanlara <b>dönem dönem zulmetti</b> — mülk müsaderesi, idam, sistematik dalgalar. Ölçeği tartışmalı ama gerçekliği değil.</p>
-      <p class="ans">Bir devletin, kontrol amacıyla kendi imal ettiği inancın mensuplarını yüzyıllarca kovuşturması <b>açıklanması güç bir davranıştır.</b> Tez bunu açıklamak zorunda ve açıklamıyor.</p>
+      <div class="cl__h"><span class="cl__n">Belge 2</span><div class="hd">311 ve 313: serbestlik ile mal iadesi</div></div>
+      <p>Lactantius’un aktardığı <a href="https://ccel.org/ccel/lactantius/persecutors/anf07.iii.v.xxxiv.html">311 metni ↗</a> yeniden Hristiyan olma ve toplantı yerlerini kurma izni verir. <a href="https://ccel.org/ccel/lactantius/persecutors/anf07.iii.v.xlviii.html">313 talimatı ↗</a> din seçimi serbestliği ve topluluklara mülk iadesini düzenler.</p>
+      <p class="ans">313’ü <b>ilk serbestlik</b> veya dinin kuruluş yılı saymak bu belgelerle uyuşmaz. Burada Lactantius’un aktarımı okunuyor; özgün resmî nüshaların kendisi gösterilmiyor.</p>
     </div>
-
     <div class="cl">
-      <div class="cl__h"><span class="cl__n">Sorun 3</span><div class="hd">Uydurulan hikâye bu olmazdı</div></div>
-      <p>Merkezdeki figür <b>bir Roma valisi tarafından çarmıha gerilmiş</b> bir taşralıdır. Çarmıh, Roma'nın <b>asilere ve kölelere</b> ayırdığı, kasıtlı olarak aşağılayıcı bir infaz biçimiydi.</p>
-      <p class="ans">Roma'nın itaat üretmek için tasarlayacağı bir anlatının merkezine, <b>kendi idam ettiği bir mahkûmu</b> koyması beklenmez. Bu ayrıntı uydurmacılığın aleyhine çalışır — çünkü <b>uyduran taraf için utanç vericidir.</b></p>
+      <div class="cl__h"><span class="cl__n">Belge 3</span><div class="hd">380: belirli bir inancın hukukî tanımı</div></div>
+      <p><a href="https://www.thelatinlibrary.com/theodosius/theod16.shtml">Codex Theodosianus XVI.1.2 ↗</a>, Konstantinopolis halkına hitap eder; Damasus ve İskenderiyeli Petrus’un izlediği Teslis inancını tanımlar, diğerlerini heretik sayar.</p>
+      <p class="ans">Bu, <b>inanç ve yaptırım düzenlemesidir.</b> Bütün nüfusun aynı anda dönüştüğü veya hareketin ilk kez kurulduğu anlamına gelmez.</p>
     </div>
   </div>
-
-  <p class="note f" style="margin-top:1.5rem"><b>Ne diyoruz, ne demiyoruz:</b> "Roma uydurdu" tezi akademik literatürde <b>kabul görmüyor</b> ve yukarıdaki üç sorunu çözmüyor. Bu, Roma'nın Hristiyanlığı sonradan <b>biçimlendirmediği</b> anlamına gelmez — tersine, bir önceki yazının bütün tezi Roma'nın onu derinlemesine biçimlendirdiğidir. <b>Sonradan biçimlendirmek</b> ile <b>baştan icat etmek</b> aynı şey değildir; tez tam bu ikisini karıştırıyor.</p>
+  <p class="note f" style="margin-top:1.5rem"><b>Genel hüküm daraltıldı.</b> “Devlet kendi icadına zulmedemez” ve “utanç verici bir anlatı uydurulamaz” önermeleri zorunlu yanlışlamalar değildir. Birinci yüzyılda belirli bir Roma üretimi iddiası, bu sonraki belgelerle tek başına çözülmez. Kaydın <b>unknown/medium</b> olması, icat tezine destek bulunduğu anlamına gelmez; önceki kesin reddin bu kayıtta yeterince kurulamadığını gösterir.</p>
 </section>
 
 <section id="kontrol" class="wrap">
@@ -501,18 +467,14 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 </section>
 
 <section id="sonuc" class="wrap">
-  <div class="sec__head">
-    <p class="eyebrow">08 — Sonuç</p>
-    <h2>Ne söylenebilir</h2>
-  </div>
-
+  <div class="sec__head"><p class="eyebrow">08 — Sonuç</p><h2>Ne söylenebilir</h2></div>
   <div class="verdictbox">
     <p class="eyebrow">Bu yazının sonucu</p>
-    <h3>Varlık sorusu cevaplanabilir; içerik sorusu cevaplanamaz</h3>
-    <p><b>Varlık:</b> 1. yüzyılda Yahudiye'de yaşamış ve Pilatus döneminde idam edilmiş böyle bir kişinin varlığı, sıradan tarihsel eşikte <b>karşılanmıştır.</b> En yakın kayıt ~23 yıl uzaklıkta ve birinci ağızdan; Josephus ve Tacitus gibi başka kaynaklar da değerlendirmeye katılır. <b>Tacitus’un unvan kullanımından pasajın sonradan eklenmediği sonucu çıkarılmıyor;</b> bu kaynakların birbirinden bağımsızlığı ayrıca incelenmelidir.</p>
-    <p><b>Ölçek:</b> Bu, dönemin seçkin olmayan figürlerinin <b>çok üstünde</b>, herhangi bir imparatorun <b>çok altında</b> bir kanıt düzeyidir. İkisiyle de karıştırılmamalı.</p>
-    <p><b>Cevaplanamayan:</b> Anlatılan olayların ne kadarının gerçekleştiği. Mucize iddiaları tarih yönteminin <b>kapsamı dışındadır</b> — bu yazı onlar hakkında ne olumlu ne olumsuz bir şey söylüyor.</p>
-    <p><b>"Roma'nın oyunu"</b> tezi, kronoloji, zulüm ve çarmıh ayrıntısı olmak üzere <b>üç ayrı yerden</b> kırılıyor. Ama bir önceki yazının tezi hâlâ geçerli: <b>Roma onu icat etmedi, sonradan biçimlendirdi.</b> Farkı görmek bu bloğun bütün meselesi.</p>
+    <h3>Belgenin söylediği ile çıkarım ayrı tutulmalı</h3>
+    <p><b>Tarihsellik için dayanak:</b> Pavlus’un Yakup ile görüşme beyanı, Josephus’un Yakup tanımı ve Tacitus’un idam bildirimi değerlendirilebilir metinlerdir. Bu belgeler <b>üç çağdaş görgü tanığı</b> olarak sayılamaz; metin özgünlüğü ve bilgi kaynaklarının ilişkisi ayrıca incelenmelidir.</p>
+    <p><b>Testimonium:</b> Kaynaksız görüş dağılımı geri çekildi. Geç dil aktarımları, ilk metnin birbirinden bağımsız kopyaları gibi sunulmuyor; özgün metnin yeniden kurulması tartışma olarak kalıyor.</p>
+    <p><b>Roma ve din:</b> 313 öncesi topluluk ile sonraki hoşgörü ve inanç düzenlemeleri ayrılabilir. Sonradan siyasî müdahale, tek başına baştan icat kanıtı değildir. Buna karşılık zulüm ve utanç varsayımları da <b>genel bir icat tezinin kesin yanlışlaması</b> sayılamaz.</p>
+    <p><b>Kapsam:</b> Bu yazı mucize iddialarını veya bütün yaşam ayrıntılarını doğrulamaz. Zaman mesafesi, kaynak sayısı ve yazarın inancı tek bir güvenilirlik puanına dönüştürülmüyor.</p>
   </div>
 </section>
 
@@ -529,23 +491,23 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     </div>
     <div class="oq">
       <p class="oq__q">Testimonium'un özgün hâli neydi?</p>
-      <p class="oq__a"><b>Bilinmiyor.</b> Arapça ve Süryanice aktarımlar müdahaleden önceki hâle dair bir iz veriyor, ama kesin metin elde yok. %25'lik bir azınlık pasajın tamamının sahte olduğunu savunuyor ve bu görüş yaşayan bir görüş.</p>
+      <p class="oq__a">Bu tur kesin bir ilk metin kurulmadı. Geç dil aktarımları ve araştırmacıların önerileri karşılaştırma için kullanılabilir; kaynaksız %25 hükmü kaldırıldı.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Anlatılar ne kadar bağımsız?</p>
-      <p class="oq__a">Matta ve Luka Markos'u kaynak alıyor — yani "dört bağımsız tanık" ifadesi <b>yanlıştır.</b> Kaç ayrı geleneğin izini sürebildiğimiz alanda tartışmalıdır.</p>
+      <p class="oq__a">Yazarların ayrı olması, bilgi kaynaklarının bağımsız olduğunu kanıtlamaz. Matta, Markos ve Luka arasındaki metinsel ilişkilerin ayrıntılı çözümlemesi bu seçilmiş pasaj kontrolünde yapılmadı; dört anlatı dört bağımsız tanık olarak sayılmıyor.</p>
     </div>
     <div class="oq">
       <p class="oq__q">İdam yılı hangisi?</p>
-      <p class="oq__a">30 veya 33 — <b>kesinleşmedi.</b> Bu yazıdaki mesafe hesapları ~30 kabul edilerek yapılmıştır; 33 alınırsa her çubuk üç yıl kısalır, sıralama değişmez.</p>
+      <p class="oq__a">Bu seçilmiş pasajlar kesin bir yıl sağlamaz. Çizelge karşılaştırma amacıyla yaklaşık 30’u başlangıç kabul eder; bu bir kesin tarih tespiti değildir.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Alan yanlı mı?</p>
-      <p class="oq__a">Kurumsal yanlılık riski <b>gerçektir</b> ve bu yazı onu saklamıyor. Ama varlık maddesinde uzlaşan iki standart eserin yazarlarından biri <b>Katolik rahip</b> (Meier), öteki <b>agnostiktir</b> (Ehrman); inanç konumu uçtan uca değişirken sonuç değişmiyor. Yanlılık argümanı bu maddeyi tek başına düşürmez — ama <b>tamamen de ortadan kalkmaz.</b></p>
+      <p class="oq__a">Bu tur kurumlar veya araştırmacıların inanç dağılımı için veri toplanmadı. İki yazarın farklı inanç konumu, kurumsal yanlılığı çözen bir ölçüm değildir; somut iddialar ve kaynaklar ayrı denetlenmelidir.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Neden çağdaş bir kayıt yok?</p>
-      <p class="oq__a">Çünkü dönemin <b>hiçbir</b> taşra figürü için yok. Doğru soru "neden yok" değil, <b>"bu dönem için normal olan nedir"</b> — ve normal olan, hiç kayıt olmamasıdır.</p>
+      <p class="oq__a">Kayıtların korunma koşulları araştırılmalıdır. Bütün taşra figürleri için hiçbir kayıt bulunmadığı veya kayıtsızlığın herkes için normal olduğu bu tur doğrulanmadı.</p>
     </div>
   </div>
 </section>
@@ -554,10 +516,9 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
 <footer class="foot">
   <div class="wrap">
-    <p><b>3 Ekim 2026 denetim kapsamı:</b> Bu yazıya bağlı yedi kaydın dördü seçilmiş kaynaklarla denetlendi: Tacitus, Kayseriye yazıtı, Apollonius kaynakları ve Hierocles polemiği. Varlık eşiği, Testimonium dağılımı ve Roma’nın icat ettiği teziyle ilgili üç kaydın ayrıntılı denetimi açık. Bu güncelleme yazının tamamının doğrulandığı anlamına gelmez; kayıtlar taslak, bağımsız uzman incelemesi yapılmadı.</p>
-    <p><b>Bu yazı özgün derlemedir</b> ve bir inanç değerlendirmesi yapmaz. Ele aldığı şey yalnızca <b>kaynak eleştirisidir</b>: hangi metin ne zaman yazıldı, kim yazdı, ne kadar müdahale gördü. Bu tur Philostratos, Lukianos, Eusebios ve Lactantius’un seçilmiş pasajları yayımlı İngilizce çevirilerden okundu ve Türkçe özetlendi. Grekçe/Latince edisyonlar doğrudan karşılaştırılmadı; modern dipnotlar antik metinden ayrıldı.</p>
-    <p><b>Sayısal dağılım bir anket değildir.</b> Testimonium bölümündeki 52 kişilik dağılım, yayımlanmış görüşlerin bir literatür derlemesinden gelir; alanın tamamının sayımı olarak okunamaz ve metinde böyle işaretlenmiştir.</p>
-    <p><b>Tarihler yaklaşıktır.</b> Mesafe hesapları idam yılı ~30 kabul edilerek yapılmıştır; metinlerin yazım tarihleri de alanda aralıklarla verilir. Çubukların gösterdiği şey kesin yıllar değil, <b>büyüklük mertebesi ve sıralamadır.</b></p>
+    <p><b>4 Ekim 2026 denetim kapsamı:</b> Yedi bağlı kayıt seçilmiş kaynaklarla denetlendi. Bu tur varlık eşiği, Testimonium aktarımı ve Roma icadı kaydı ele alındı; önceki turlar Tacitus, Pilatus yazıtı, Apollonius kaynakları ve Hierocles polemiğini kapsıyordu. <b>Kayıtlar taslaktır; bağımsız uzman incelemesi yapılmadı.</b> Bu, yazının bütün cümlelerinin veya alanın bütün literatürünün doğrulanması değildir.</p>
+    <p><b>Okunan kaynakların sınırı:</b> Pavlus ve Josephus için yayımlı İngilizce çeviriler; Tacitus, Plinius/Traianus ve 380 yasası için yayımlı Latin metinler kullanıldı. Lactantius’un seçilmiş bölümleri çeviriden okundu. Whealey 2008’in s. 573–574 ve 586–588’i, Hansen 2025’in yalnız yayıncı özeti denetlendi. Grekçe, Arapça ve Süryanice el yazmaları doğrudan karşılaştırılmadı.</p>
+    <p><b>Tarihler yaklaşıktır.</b> Çizelge olay için ~30, Pavlus için ~55 gibi karşılaştırma değerleri kullanır. Bunlar kesin yazım veya idam tarihi değildir. Anlatıların bütün tarihleme literatürü bu tur denetlenmedi; kısa çubuk tek başına doğruluk ölçüsü değildir.</p>
     <p><b>Serinin ilgili yazıları:</b> Hristiyanlık ve Roma: Kim Kimi Dönüştürdü · Roma: Bakılan Miras · İskenderiye: Yanmadı, Kopyalanmadı · Persepolis: Arşiv Konuşunca.</p>
   </div>
 </footer>

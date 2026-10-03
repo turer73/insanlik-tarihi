@@ -2122,7 +2122,7 @@
   {
     "schema_version": 2,
     "id": "isa-tarihsellik-esigi",
-    "claim": "1. yüzyılda Yahudiye'de yaşamış ve Pilatus döneminde idam edilmiş bir İsa'nın varlığı, sıradan tarihsel eşikte karşılanmıştır.",
+    "claim": "Galatyalılar 1:18–19, Josephus 20.200 ve Tacitus 15.44, İsa’nın tarihselliği için farklı türde metinsel dayanaklar içerir; bunlar üç çağdaş görgü tanıklığı değildir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -2142,77 +2142,30 @@
     },
     "period": {
       "earliest": 30,
-      "latest": 121,
-      "era_label": "Olaydan kaynakların yazımına",
+      "latest": 116,
+      "era_label": "Yaklaşık olay tarihi ile metinlerin yazımı arasındaki karşılaştırma",
       "precision": "range",
       "dating_method": [
         "textual",
-        "historical-record",
-        "paleography"
+        "historical-record"
       ]
     },
     "languages": [
       "Grekçe",
-      "Latince",
-      "Aramice"
+      "Latince"
     ],
     "disciplines": [
       "tarih",
       "metin-elestirisi",
       "filoloji"
     ],
-    "people": [
-      {
-        "name": "Meier, John P.",
-        "role": "analyst",
-        "affiliation": "University of Notre Dame",
-        "year": 1991
-      },
-      {
-        "name": "Ehrman, Bart D.",
-        "role": "analyst",
-        "affiliation": "University of North Carolina at Chapel Hill",
-        "year": 2012
-      }
-    ],
+    "people": [],
     "popular_claim": "İsa hakkında çağdaş hiçbir kayıt yoktur; dolayısıyla var olduğu söylenemez.",
-    "divergence": "İtiraz yanlış EŞİĞİ kullanıyor: 1. yüzyılda seçkin olmayan bir taşra figürü için normal olan, HİÇ kayıt olmamasıdır. Doğru soru 'çağdaş kayıt var mı' değil, 'benzer figürlerle karşılaştırıldığında bu kayıtlar nerede duruyor'. VE KURUMSAL YANLILIK İTİRAZI BURADA SOMUT OLARAK KARŞILANIR: varlık maddesinde hemfikir olan iki standart eserden birinin yazarı KATOLİK RAHİP, ötekininki AGNOSTİKTİR. İkincisi kitabını doğrudan varlığı reddeden konuma cevap olarak yazmıştır. Yani uzlaşı tek bir inanç çevresinin ürünü değildir.",
+    "divergence": "Çağdaş bir kayıt bulunmaması tek başına varlığı reddetmeye yetmez; daha sonraki her kayıt da eşit güçte değildir. Bu üç pasajda tanışma beyanı, kısa kimlik tanımı ve sonraki tarih anlatısı ayrı değerlendirilir. Zaman mesafesi tek güvenilirlik ölçütü sayılamaz. Metinlerin farklı yazarlardan gelmesi bilginin birbirinden bağımsız aktarıldığını kendiliğinden kanıtlamaz. Bu dar metin denetimi, bütün tarihsel İsa literatürünün veya mucize iddialarının değerlendirmesi değildir.",
     "divergence_type": [
       "kategori-hatasi"
     ],
     "sources": [
-      {
-        "id": "meier-1991-marginal-jew-1",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Meier, John P."
-        ],
-        "year": 1991,
-        "title": "A Marginal Jew: Rethinking the Historical Jesus, Volume 1: The Roots of the Problem and the Person",
-        "publisher": "Doubleday",
-        "container": "Anchor Bible Reference Library",
-        "isbn": "9780385264259",
-        "pages": "x+484",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Tarihsel İsa yöntembiliminin standart başvuru eseri. Yazar Katolik rahiptir. Künye doğrulandı, tam metin okunmadı."
-      },
-      {
-        "id": "ehrman-2012-did-jesus-exist",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Ehrman, Bart D."
-        ],
-        "year": 2012,
-        "title": "Did Jesus Exist? The Historical Argument for Jesus of Nazareth",
-        "publisher": "HarperOne",
-        "isbn": "9780062204608",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Yazar agnostiktir ve mitçi konumu doğrudan ele alır. Künye doğrulandı, tam metin okunmadı."
-      },
       {
         "id": "pavlus-galatyalilar-1-19",
         "tier": "primary",
@@ -2221,10 +2174,12 @@
           "Pavlus"
         ],
         "year": 55,
-        "title": "Galatyalılara Mektup 1:18-19",
-        "publisher": "—",
-        "language": "grc",
-        "note": "Birinci ağızdan tanışma beyanı; en erken kayıt."
+        "title": "Galatyalılara Mektup 1:18–19 — NRSVUE çevirisi",
+        "publisher": "National Council of Churches / Bible Gateway",
+        "url": "https://www.biblegateway.com/passage/?search=Galatians+1%3A18-19&version=NRSVUE",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "1:18–19 yayımlı İngilizce NRSVUE çevirisinden okundu. Yakup ve Kefas ile görüşme beyanıdır; İsa ile karşılaşma veya idamını görme beyanı değildir. 55 yaklaşık yazım tarihi olarak kullanılır; çevirinin telif yılı 2021’dir. Bu pasaj tek başına kesin yazım tarihini veya kardeş teriminin bütün yorumlarını çözmez; Grekçe el yazmaları karşılaştırılmadı."
       },
       {
         "id": "josephus-ant-20-200",
@@ -2234,88 +2189,59 @@
           "Flavius Josephus"
         ],
         "year": 93,
-        "title": "Antiquitates Judaicae 20.200",
-        "publisher": "—",
-        "language": "grc",
-        "note": "Yakup pasajı; Testimonium'un aksine geniş kabul görür."
+        "title": "Antiquitates Judaicae 20.200 — Whiston 20.9.1 çevirisi",
+        "publisher": "Christian Classics Ethereal Library",
+        "url": "https://www.ccel.org/ccel/josephus/works/files/ant-20.htm",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "William Whiston’un yayımlı İngilizce çevirisinde 20.9.1 ve bağlamı okundu. Bölüm 20.200’deki Yakup tanımını içerir; el yazması kolasyonu veya tüm özgünlük literatürü denetlenmedi. 93–94 yaklaşık eser tarihidir; pasajın anlattığı olayla aynı tarih değildir."
       },
       {
-        "id": "tacitus-annales-15-44",
+        "id": "owen-gildenhard-2013-tacitus-15-44",
         "tier": "primary",
         "type": "edition",
         "authors": [
           "Tacitus, Publius Cornelius"
         ],
-        "year": 116,
-        "title": "Annales 15.44",
-        "publisher": "—",
+        "year": 2013,
+        "title": "Annales 15.44 — Owen ve Gildenhard edisyonu",
+        "publisher": "Open Book Publishers / Dickinson College Commentaries",
+        "url": "https://dcc.dickinson.edu/tacitus-annals/15-44",
         "language": "la",
-        "note": "Bağımsız Roma kaydı."
-      },
-      {
-        "id": "tacitus-on-jesus-wikipedia",
-        "tier": "institutional",
-        "type": "webpage",
-        "title": "Tacitus on Jesus",
-        "institution": "Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Tacitus_on_Jesus",
-        "language": "en",
-        "accessed": "2026-09-07",
-        "note": "Ara kaynak; alanın uzlaşı durumunun özeti."
+        "accessed": "2026-10-04",
+        "note": "Mathew Owen ve Ingo Gildenhard, Tacitus, Annals 15.20–23, 33–45 (2013); DCC edisyonu 2016. Latince 15.44.2–3 doğrudan okundu. procurator, idam bildirimi ve küçümseyici sözler metinde bulunur; bu ifadeler bilgi kaynağının bağımsızlığını veya pasajın bütün aktarım tarihini tek başına kanıtlamaz. Modern açıklamaların bütün kaynakları ve el yazmaları bu tur incelenmedi."
       }
     ],
     "evidence": [
       {
-        "id": "meier-yontem",
-        "text": "Tarihsel İsa yöntembiliminin standart başvuru eseri, sağlam tarihsel bilginin sınırlı olduğunu kabul ederek farklı inançlardan insanların temel tarihsel olgularda uzlaşabileceğini savunur.",
-        "citations": [
-          {
-            "source_ref": "meier-1991-marginal-jew-1",
-            "locator": "Cilt 1, yöntem bölümü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "ehrman-cevap",
-        "text": "Agnostik bir metin eleştirmeni, varlığı reddeden konuma doğrudan cevap veren bir kitap yazmış ve tarihsel İsa'yı savunmuştur.",
-        "citations": [
-          {
-            "source_ref": "ehrman-2012-did-jesus-exist",
-            "locator": "Kitabın tezi",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
         "id": "pavlus-tanisma",
-        "text": "En yakın kayıt Pavlus'un mektuplarıdır (y. 50'ler, ~23 yıl sonra) ve BİRİNCİ AĞIZDANDIR: 'Rab'bin kardeşi Yakup' ile görüştüğünü yazar - mucize değil, sıradan biyografik ayrıntı.",
+        "text": "Pavlus, Kefas ile on beş gün kaldığını ve Rab’bin kardeşi diye tanımladığı Yakup’u gördüğünü söyler. Birinci ağızdan beyanın konusu bu görüşmedir.",
         "citations": [
           {
             "source_ref": "pavlus-galatyalilar-1-19",
-            "locator": "Galatyalılar 1:18-19",
+            "locator": "Galatyalılar 1:18–19",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "josephus-yakup",
-        "text": "Josephus, 93-94'te Yakup'u 'Mesih denilen İsa'nın kardeşi' diye tanımlar; kısa, geçerken söylenmiş, övgüsüz.",
+        "text": "Whiston çevirisi, Ananus’un yargılattığı Yakup’u Mesih denilen İsa’nın kardeşi olarak tanımlar. Bu, 18.63–64’teki Testimonium’dan ayrı bir pasajdır.",
         "citations": [
           {
             "source_ref": "josephus-ant-20-200",
-            "locator": "Kitap 20, 200. paragraf",
+            "locator": "20.200; Whiston 20.9.1",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "tacitus-kaydi",
-        "text": "Tacitus, y. 116'da Tiberius döneminde vali Pontius Pilatus tarafından idam edildiğini yazar; bağımsız ve açıkça küçümseyici bir Roma kaydıdır.",
+        "text": "Annales 15.44.3, Christus’un Tiberius döneminde Pilatus aracılığıyla idam edildiğini bildirir; cümle bilginin alındığı tanığı veya arşivi belirtmez.",
         "citations": [
           {
-            "source_ref": "tacitus-annales-15-44",
-            "locator": "15. kitap, 44. bölüm",
+            "source_ref": "owen-gildenhard-2013-tacitus-15-44",
+            "locator": "Annales 15.44.3",
             "support_type": "direct"
           }
         ]
@@ -2323,69 +2249,48 @@
     ],
     "counter_evidence": [
       {
-        "id": "dort-tanik-yanlis",
-        "text": "Anlatılar tam bağımsız değildir: Matta ve Luka Markos'u kaynak alır. 'Dört bağımsız tanık' ifadesi YANLIŞTIR.",
+        "id": "pavlus-taniklik-siniri",
+        "text": "Galatyalılar 1:18–19, İsa’yı hayattayken gördüğü veya idamına tanık olduğu iddiasını içermez. Yakup ile görüşme beyanı bu tür bir görgü tanıklığına genişletilemez.",
         "citations": [
           {
-            "source_ref": "ehrman-2012-did-jesus-exist",
-            "locator": "Kaynak bağımlılığı tartışması",
+            "source_ref": "pavlus-galatyalilar-1-19",
+            "locator": "Galatyalılar 1:18–19",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "taraf-kaynaklar",
-        "text": "Bütün erken kaynaklar taraf olan kaynaklardır; taraf olmayan iki kayıt olaydan 60-90 yıl sonradır.",
+        "id": "tacitus-bilgi-kaynagi",
+        "text": "Tacitus’un kısa idam bildirimi, haberin bağımsız bir resmî arşivden alındığını açıkça söylemez.",
         "citations": [
           {
-            "source_ref": "tacitus-on-jesus-wikipedia",
-            "locator": "Tarihlendirme bölümü",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "yanlilik-riski",
-        "text": "Yeni Ahit çalışmaları alanında kurumsal yanlılık riski gerçektir; bu kayıt onu Katolik/agnostik eşleşmesiyle karşılar ama tamamen ortadan kaldırmaz.",
-        "citations": [
-          {
-            "source_ref": "meier-1991-marginal-jew-1",
-            "locator": "Yöntem ve sınırlar",
-            "support_type": "context"
-          }
-        ]
-      },
-      {
-        "id": "yil-belirsiz",
-        "text": "İdam yılı 30 mu 33 mü kesinleşmemiştir.",
-        "citations": [
-          {
-            "source_ref": "tacitus-on-jesus-wikipedia",
-            "locator": "Kronoloji",
+            "source_ref": "owen-gildenhard-2013-tacitus-15-44",
+            "locator": "Annales 15.44.3",
             "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "Anlatılarda kaç ayrı bağımsız geleneğin izi sürülebilir? Alanda tartışmalı.",
-      "İdam yılı 30 mu 33 mü?"
+      "Bu metinler arasındaki aktarım ilişkileri ve özgünlük tartışmaları için hangi ek belgeler gerekir?",
+      "Galatyalılar’daki kardeş ifadesinin yorumu ve mektubun kesin tarihlemesi bu seçilmiş pasaj kontrolünün ötesindedir.",
+      "İdam yılı bu pasajlarla 30 veya 33 olarak kesinleştirilmez."
     ],
-    "checked": "2026-09-07",
+    "checked": "2026-10-04",
     "used_in": [
       "isa-tarihsellik"
     ],
     "review": {
       "status": "draft",
-      "notes": "İki hakemli çıpa eklendi; Katolik/agnostik eşleşmesi yanlılık itirazına somut cevap. Tam metinler okunmadı. Bu kayıtta iki standart eserin de tam metni okunmamıştır; künyeler ve tezler doğrulanmıştır."
+      "notes": "4 Ekim 2026: üç seçilmiş pasaj denetlendi; metinsel dayanak iddiası daraltıldı. Kesin ~23 yıl, bütün taşra figürleri için kayıt yokluğu, nüfus/binde bir hesabı ve Katolik/agnostik eşleşmesini yanlılık çözümü sayan hükümler kaldırıldı. Okunmamış Meier/Ehrman kitapları ve Wikipedia’ya belirsiz atıflar çıkarıldı. Güven yüksekliği dar pasaj içeriği içindir; bütün tarihsellik tartışmasının veya bütün kaynakların bağımsızlığının doğrulanması değildir. Yayımlı İngilizce çeviriler ve Tacitus’un Latin edisyonu kullanıldı; Grekçe el yazmaları, modern kitapların tam metni ve alanın tamamı denetlenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "testimonium-flavianum-mudahale",
-    "claim": "Josephus'un Eskiçağ Tarihi 18.63'teki pasajı Hristiyan müdahalesi görmüştür; özgün bir çekirdeğin var olup olmadığı tartışmalıdır.",
+    "claim": "Josephus’un Antiquitates 18.63–64 pasajının özgün biçimi ve sonradan müdahalenin kapsamı tartışmalıdır; geç dil aktarımları kendiliğinden bağımsız bir özgün metin sağlamaz.",
     "status": "contested",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "isa",
       "josephus",
@@ -2399,12 +2304,12 @@
     },
     "period": {
       "earliest": 93,
-      "latest": 1000,
-      "era_label": "Yazımdan Arapça/Süryanice aktarımlara",
+      "latest": 1199,
+      "era_label": "Yaklaşık eser tarihinden Agapius ve Michael’ın kroniklerine",
       "precision": "range",
       "dating_method": [
-        "paleography",
-        "textual"
+        "textual",
+        "historical-record"
       ]
     },
     "languages": [
@@ -2417,25 +2322,19 @@
       "filoloji",
       "tarih"
     ],
-    "people": [
-      {
-        "name": "Flavius Josephus",
-        "role": "editor",
-        "year": 93,
-        "lifespan": "y. 37-100"
-      }
-    ],
+    "people": [],
     "popular_claim": "Josephus İsa hakkında yazmıştır ve bu, tarihselliğin tartışmasız kanıtıdır. (Karşı popüler iddia: pasajın tamamı sahtedir, dolayısıyla Josephus hiçbir şey söylememiştir.)",
-    "divergence": "İki popüler iddia da alanın gerçek durumunu yanlış aktarıyor. 'O, Mesih'ti' cümlesinin sonradan eklendiği neredeyse evrensel kabul görür - yani pasaj olduğu gibi kullanılamaz. Ama tamamının sahte olduğu da uzlaşı değil, güçlü bir azınlık görüşüdür. Bir literatür taramasında değerlendirilen 52 akademisyenin dağılımı: 4 tamamen özgün, 6 büyük ölçüde özgün, 20 bazı eklemelerle özgün, 9 birçok eklemeyle özgün, 13 tamamı sonradan eklenmiş. Yani %56'lık orta grup 'özgün çekirdek + müdahale' modelinde birleşiyor, %25'lik azınlık tamamen reddediyor.",
+    "divergence": "Korunmuş pasajın Mesih ve dirilme ifadelerini içermesi, bunların her birinin özgünlüğünü çözmez. Bir Yahudi yazarın böyle yazamayacağı varsayımı tek başına metin tarihi kurmaz. Önceki 52 kişilik dağılımın örneklemi ve asıl derlemesi doğrulanamadığı için sayılar, yüzdeler ve grafik kaldırıldı. Kısmi müdahale ile bütün pasajın sonradan eklenmesi ayrı seçeneklerdir; bu denetim bunların alan içindeki oranını ölçmez. Farklı dilde aktarımlar da otomatik olarak bağımsız tanık sayılamaz.",
     "divergence_type": [
       "ideolojik-secim",
       "medya-abartisi"
     ],
     "open_questions": [
-      "Pasajın özgün hâli neydi? Kesin metin elde yok.",
-      "Arapça ve Süryanice aktarımlar gerçekten bağımsız mı?"
+      "Özgün bir çekirdek varsa hangi sözleri içeriyordu? Bu denetim kesin bir ilk metin kurmaz.",
+      "Kısmi müdahale ve bütün pasajın eklenmesi görüşlerinin güncel dağılımı nedir? Doğrulanmış örneklem yok.",
+      "Arapça, Süryanice, Grekçe ve Latince tanıkların tam kolasyonu bu tur yapılmadı."
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "volatile": true,
     "used_in": [
       "isa-tarihsellik"
@@ -2443,88 +2342,86 @@
     "sources": [
       {
         "id": "josephus-antiquitates-18-63",
-        "language": "grc",
-        "accessed": "2026-09-09",
         "tier": "primary",
-        "type": "manuscript",
+        "type": "edition",
         "authors": [
           "Flavius Josephus"
         ],
-        "title": "Antiquitates Judaicae 18.63 (Testimonium Flavianum)",
-        "note": "Tartışmanın konusu olan pasaj. Elimizdeki bütün Grekçe elyazmaları Hristiyan kopyalama geleneğinden gelir."
+        "year": 93,
+        "title": "Antiquitates Judaicae 18.63–64 — Whiston 18.3.3 çevirisi",
+        "publisher": "Christian Classics Ethereal Library",
+        "url": "https://www.ccel.org/j/josephus/works/ant-18.htm",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Whiston çevirisinde 18.3.3 ve çevresindeki anlatı okundu. Bu, korunmuş pasajın yayımlı çevirisidir; müdahale öncesi metnin keşfi veya doğrudan el yazması incelemesi değildir."
       },
       {
-        "id": "meier-1991-marginal-jew-1",
-        "language": "en",
-        "accessed": "2026-09-09",
+        "id": "whealey-2008-testimonium-syriac-arabic",
         "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Meier, John P."
-        ],
-        "year": 1991,
-        "title": "A Marginal Jew: Rethinking the Historical Jesus, Volume 1",
-        "publisher": "Doubleday",
-        "isbn": "9780385264259",
-        "note": "Testimonium'un 'özgün çekirdek + müdahale' okumasının standart savunusu."
-      },
-      {
-        "id": "whealey-2003-josephus-on-jesus",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
         "authors": [
           "Whealey, Alice"
         ],
-        "year": 2003,
-        "title": "Josephus on Jesus: The Testimonium Flavianum Controversy from Late Antiquity to Modern Times",
-        "publisher": "Peter Lang",
-        "isbn": "9780820452418",
-        "note": "Tartışmanın tarihçesi ve Arapça/Süryanice aktarımların değerlendirmesi."
+        "year": 2008,
+        "title": "The Testimonium Flavianum in Syriac and Arabic",
+        "container": "New Testament Studies",
+        "volume": "54",
+        "pages": "573–590",
+        "doi": "10.1017/S0028688508000301",
+        "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/testimonium-flavianum-in-syriac-and-arabic/B4DEE97CBF8CFE997C9C9CA6C4E583AC",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Yayıncı özeti ve yayımlı makalenin açık PDF kopyasında s. 573–574, 586–588 seçilmiş pasajları okundu: https://barnascha.narod.ru/books/whealey2.pdf . Agapius 10., Michael 12. yüzyıldır. Eusebios’un Süryanice çevirisinden ortak türeme ve Mesih ifadesinin yeniden kurulması yazarın savları olarak aktarılır; bağımsız olay tanıklığı sayılmaz. Arapça/Süryanice el yazmaları doğrudan okunmadı; ekin yazı sistemi karşılaştırılmadı."
+      },
+      {
+        "id": "hansen-2025-negative-testimonium",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Hansen, Chrissy"
+        ],
+        "year": 2025,
+        "title": "A Negative Testimonium?: A Response to Fernando Bermejo-Rubio",
+        "container": "New Testament Studies",
+        "volume": "71",
+        "pages": "56–63",
+        "doi": "10.1017/S0028688524000274",
+        "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/negative-testimonium-a-response-to-fernando-bermejorubio/0B51F1B109832C74010B9228C058BA35",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Yalnız yayıncı özeti ve künye okundu; makalenin ana metni ve atıf verdiği yayınlar bütünüyle okunmadı. Özet, özgün metni olumsuz sayan çözümlemeye itiraz eder ve hangi ifadelerin özgün olduğuna karar verme sorununu açık bırakır. Bir görüş dağılımı veya alan sayımı değildir."
       }
     ],
     "evidence": [
       {
-        "id": "mesih-cumlesi-eklendi",
-        "text": "Bir Yahudi tarihçinin kaleminden 'O, Mesih'ti' cümlesi çıkmaz; bu ifadenin eklendiği neredeyse evrensel kabul görür.",
-        "citations": [
-          {
-            "source_ref": "meier-1991-marginal-jew-1",
-            "locator": "Testimonium çözümlemesi",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
         "id": "pasaj-metni",
-        "text": "Pasajın kendisi Antiquitates 18.63'tedir.",
+        "text": "Whiston’un 18.3.3 çevirisi, Mesih tanımlamasını, Pilatus’un çarmıh hükmünü ve üçüncü gün canlı görünme anlatısını içerir. Tartışılan pasaj 18.63–64’ün tamamıdır.",
         "citations": [
           {
             "source_ref": "josephus-antiquitates-18-63",
-            "locator": "18.63",
-            "support_type": "claim-origin"
-          }
-        ]
-      },
-      {
-        "id": "arapca-suryanice-aktarim",
-        "text": "9.-10. yüzyıla ait Arapça ve Süryanice aktarımlar pasajı büyük ölçüde aynı biçimde veriyor AMA en şüpheli iki ifadeyi içermiyor. Müdahale öncesi hâle dair bağımsız bir iz.",
-        "citations": [
-          {
-            "source_ref": "whealey-2003-josephus-on-jesus",
-            "locator": "Arapça ve Süryanice aktarımlar",
+            "locator": "18.63–64; Whiston 18.3.3",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "yakup-pasaji-karsilastirmasi",
-        "text": "Aynı eserin 20.200'ündeki Yakup pasajı kısa ve övgüsüz; bir Hristiyan kopyacının orada da müdahale etmiş olması beklenirdi, etmemiş.",
+        "id": "aktarim-tarihleri",
+        "text": "Whealey, Agapius’un Arapça kroniğini 10., Michael’ın Süryanice kroniğini 12. yüzyıla yerleştirir.",
         "citations": [
           {
-            "source_ref": "meier-1991-marginal-jew-1",
-            "locator": "Yakup pasajı karşılaştırması",
+            "source_ref": "whealey-2008-testimonium-syriac-arabic",
+            "locator": "s. 573",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "whealey-ortak-aktarim",
+        "text": "Whealey bu iki aktarımı Eusebios’un Historia Ecclesiastica’sının Süryanice çevirisine bağlar; Michael’daki Mesih sayılma ifadesinin daha eski bir okumayı yansıttığını savunur.",
+        "citations": [
+          {
+            "source_ref": "whealey-2008-testimonium-syriac-arabic",
+            "locator": "s. 586–588, Conclusion",
             "support_type": "direct"
           }
         ]
@@ -2532,34 +2429,23 @@
     ],
     "counter_evidence": [
       {
-        "id": "azinlik-gorusu-yasiyor",
-        "text": "%25'lik azınlık (13/52) pasajın TAMAMININ eklendiğini savunuyor ve bu görüş yaşayan bir görüştür - küçümsenerek geçilemez.",
-        "citations": [
-          {
-            "source_ref": "whealey-2003-josephus-on-jesus",
-            "locator": "Görüş dağılımı",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "grekce-tanik-yok",
-        "text": "Elimizdeki tüm Grekçe elyazmaları Hristiyan kopyalama geleneğinden gelir; müdahale öncesi bir Grekçe tanık yoktur.",
-        "citations": [
-          {
-            "source_ref": "josephus-antiquitates-18-63",
-            "locator": "Elyazması geleneği",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
         "id": "aktarim-bagimsizligi",
-        "text": "Arapça/Süryanice aktarımların bağımsızlığı da tartışmalıdır; ortak bir ara kaynaktan gelmiş olabilirler.",
+        "text": "Whealey’nin ortak kaynak çözümlemesi, Agapius ve Michael’ı Josephus’un özgün metninin iki bağımsız doğrulaması olarak saymaya izin vermez.",
         "citations": [
           {
-            "source_ref": "whealey-2003-josephus-on-jesus",
-            "locator": "Aktarım bağımsızlığı",
+            "source_ref": "whealey-2008-testimonium-syriac-arabic",
+            "locator": "s. 586–588, Conclusion",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ozgunluk-acik-sorusu",
+        "text": "Hansen’in yayıncı özeti, özgün metnin olumsuz olduğu yorumuna itiraz eder ve hangi ifadelerin özgün olduğunu belirleme sorununu açık bırakır.",
+        "citations": [
+          {
+            "source_ref": "hansen-2025-negative-testimonium",
+            "locator": "Yayıncı özeti (Abstract); yalnız özet okundu",
             "support_type": "counter"
           }
         ]
@@ -2567,7 +2453,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu Meier ve Whealey ile değiştirildi. 52 akademisyenlik dağılımın kaynağının künyelenmediği açıkça işaretlendi. Sayısal dağılım bir ANKET değil, yayımlanmış görüşlerin derlemesidir; alanın tamamının sayımı sayılamaz. Derlemenin kendisi bu kayıtta ayrıca künyelenmedi."
+      "notes": "4 Ekim 2026: kaynaksız 52 kişi, %56/%25 dağılımı ve iki ifadenin bütün geç aktarımlarda bulunmadığı hükmü kaldırıldı. Whiston 18.3.3, Whealey 2008’in s. 573–574 ve 586–588 seçilmiş pasajları ile Hansen 2025’in yalnız yayıncı özeti denetlendi. 9.–10. yüzyıl genellemesi Agapius 10./Michael 12. yüzyıl olarak düzeltildi. Whealey’nin özgün metin önerisi bir araştırmacı yorumu olarak gösterilir; ortak aktarım kökeni, tamamı sonradan eklenmiş tezini kendiliğinden kanıtlamaz. Meier 1991 ve Whealey 2003 kitaplarının tam metinleri bu tur okunmadığı için onlara bağlanan belirsiz kanıt atıfları çıkarıldı. Bütün özgünlük literatürü, Grekçe/Arapça/Süryanice el yazmaları ve Hansen’in ana metni denetlenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
@@ -2907,8 +2793,8 @@
     "schema_version": 2,
     "id": "roma-hristiyanligi-uydurdu-tezi",
     "claim": "Hristiyanlık, Roma tarafından bir yönetim aracı olarak icat edilmiştir.",
-    "status": "refuted",
-    "confidence": "high",
+    "status": "unknown",
+    "confidence": "medium",
     "topic": [
       "isa",
       "roma",
@@ -2921,13 +2807,13 @@
       "modern_country": "çok uluslu"
     },
     "period": {
-      "earliest": 30,
+      "earliest": 112,
       "latest": 380,
-      "era_label": "Hareketin doğuşundan devlet dini ilanına",
+      "era_label": "Seçilmiş yazışmalardan geç imparatorluk yasasına",
       "precision": "range",
       "dating_method": [
-        "historical-record",
-        "textual"
+        "textual",
+        "historical-record"
       ]
     },
     "languages": [
@@ -2939,138 +2825,153 @@
       "metin-elestirisi"
     ],
     "popular_claim": "İsa ve Hristiyanlık, Roma'nın itaat üretmek için tasarladığı bir kurgudur.",
-    "divergence": "Tez üç ayrı yerden kırılıyor ve üçü de test edilebilir. (1) KRONOLOJİ: Roma'nın ittifakı 313, devlet dini ilanı 380 - hareket o tarihte zaten ~300 yıllık. Uyduran taraf onu üç yüz yıl kullanmamış olamaz. (2) ZULÜM: Roma bu dönemde Hristiyanlara dönem dönem zulmetti; bir devletin kendi imal ettiği inancın mensuplarını yüzyıllarca kovuşturması açıklanamaz. (3) ÇARMIH: merkezdeki figür bir Roma valisince çarmıha gerilmiş bir taşralıdır; çarmıh asilere ve kölelere ayrılmış, kasıtlı olarak aşağılayıcı bir infaz biçimiydi. İtaat üretmek için tasarlanan bir anlatının merkezine devletin kendi idam ettiği bir mahkûm konmaz - bu ayrıntı uyduran taraf için utanç vericidir. Roma'nın Hristiyanlığı SONRADAN biçimlendirdiği doğrudur (piskoposluk bölgeleri, bazilika planı, Latince, hukuk mantığı) - ama sonradan biçimlendirmek ile baştan icat etmek aynı şey değildir. Tez tam bu ikisini karıştırıyor.",
+    "divergence": "Plinius’un yazışmaları, 313’ten önce mevcut bir Hristiyan topluluğunu gösterir; sonraki hoşgörü ve inanç düzenlemeleri hareketin o tarihlerde icat edildiği iddiasından ayrılır. Ancak “Roma”nın hangi aktörü, hangi tarihte, hangi metni ürettiği belirtilmeden genel baştan icat tezi test edilebilir tek bir önerme değildir. Zulmün varlığından “devlet kendi kurduğuna zulmedemez”, çarmıh anlatısından “kimse utanç verici bir kurgu yazamaz” sonucu zorunlu olarak çıkmaz. Bu turda genel refuted/high hükmü unknown/medium yapıldı; bu, icat tezine yeni destek bulunduğu anlamına gelmez.",
     "divergence_type": [
       "medya-abartisi",
       "ideolojik-secim"
     ],
     "open_questions": [
-      "313 sonrası imparatorluk müdahalesinin doktrini ne ölçüde şekillendirdiği ayrı ve meşru bir sorudur - bu kayıt onu değil, 'baştan icat' tezini reddediyor."
+      "İcat iddiası hangi yönetici, üretim tarihi, metin ve aktarım zincirini öne sürüyor? Bunlar belirtilmeden tek bir genel yanlışlama kurulamaz.",
+      "Belirli bir 1. yüzyıl Roma üretimi hipotezi bu 4. yüzyıl hukuk metinleriyle tek başına çözülmez.",
+      "Sonraki imparatorluk müdahalelerinin doktrin üzerindeki etkisi ayrı kaynak denetimi gerektirir."
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "isa-tarihsellik"
     ],
     "sources": [
       {
-        "id": "codex-theodosianus-16-1-2",
-        "language": "la",
-        "accessed": "2026-09-09",
+        "id": "plinius-dcc-10-96",
         "tier": "primary",
-        "type": "manuscript",
+        "type": "edition",
+        "authors": [
+          "Genç Plinius"
+        ],
+        "year": 112,
+        "title": "Epistulae 10.96 — Dickinson College Commentaries edisyonu",
+        "publisher": "Dickinson College Commentaries",
+        "url": "https://dcc.dickinson.edu/pliny-letters/10-96",
+        "language": "la",
+        "accessed": "2026-10-04",
+        "note": "Yayımlı Latin metin 10.96.2–8 okundu. Yargılama, infaz emri, ibadet aktarımı ve işkence anlatısı ayrı tutulur. Yaklaşık 112, mektubun geleneksel tarihlemesidir; bu kayıt bütün imparatorlukta sürekli tek bir usulü kanıtlamaz."
+      },
+      {
+        "id": "traianus-dcc-10-97",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Traianus"
+        ],
+        "year": 112,
+        "title": "Plinius’a cevap, Epistulae 10.97 — DCC edisyonu",
+        "publisher": "Dickinson College Commentaries",
+        "url": "https://dcc.dickinson.edu/pliny-letters/10-97",
+        "language": "la",
+        "accessed": "2026-10-04",
+        "note": "Yayımlı Latin 10.97.1–2 okundu. Arayıp bulma yasağı, suçlanıp kanıtlanırsa ceza, inkâr/ibadetle af ve anonim suçlamaların reddi bu cevabın sınırlarıdır."
+      },
+      {
+        "id": "lactantius-persecutors-34",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Lactantius"
+        ],
+        "title": "De mortibus persecutorum XXXIV — aktarılan 311 hoşgörü metni",
+        "publisher": "Christian Classics Ethereal Library",
+        "url": "https://ccel.org/ccel/lactantius/persecutors/anf07.iii.v.xxxiv.html",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Yayımlı İngilizce çevirideki bölüm okundu. Lactantius’un aktardığı metin, resmî belgenin günümüze kalan özgün nüshası olarak sunulmaz. Hoşgörü veya mal iadesi, dinin ilk kez o tarihte kurulduğunu göstermez."
+      },
+      {
+        "id": "lactantius-persecutors-48",
+        "tier": "primary",
+        "type": "edition",
+        "authors": [
+          "Lactantius"
+        ],
+        "title": "De mortibus persecutorum XLVIII — aktarılan 313 hoşgörü metni",
+        "publisher": "Christian Classics Ethereal Library",
+        "url": "https://ccel.org/ccel/lactantius/persecutors/anf07.iii.v.xlviii.html",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Yayımlı İngilizce çevirideki bölüm okundu. Lactantius’un aktardığı metin, resmî belgenin günümüze kalan özgün nüshası olarak sunulmaz. Hoşgörü veya mal iadesi, dinin ilk kez o tarihte kurulduğunu göstermez."
+      },
+      {
+        "id": "codex-theodosianus-16-1-2",
+        "tier": "primary",
+        "type": "edition",
         "year": 380,
-        "title": "Codex Theodosianus XVI.1.2 (Cunctos populos)",
-        "note": "İznik inancını imparatorluğun resmî dini ilan eden 380 tarihli yasa."
-      },
-      {
-        "id": "ste-croix-1963-why-persecuted",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "de Ste. Croix, G. E. M."
-        ],
-        "year": 1963,
-        "title": "Why Were the Early Christians Persecuted?",
-        "container": "Past & Present",
-        "volume": "26",
-        "doi": "10.1093/past/26.1.6",
-        "note": "Zulmün hukuki ve idari mantığının klasik incelemesi."
-      },
-      {
-        "id": "jones-1964-later-roman-empire",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Jones, A. H. M."
-        ],
-        "year": 1964,
-        "title": "The Later Roman Empire 284-602: A Social, Economic and Administrative Survey",
-        "publisher": "Johns Hopkins University Press",
-        "isbn": "9780801833540",
-        "note": "Geç Roma idaresinin standart başvuru eseri."
-      },
-      {
-        "id": "ehrman-2012-did-jesus-exist",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Ehrman, Bart D."
-        ],
-        "year": 2012,
-        "title": "Did Jesus Exist? The Historical Argument for Jesus of Nazareth",
-        "publisher": "HarperOne",
-        "isbn": "9780062204608",
-        "note": "Varlığı reddeden konuma doğrudan cevap; 'Roma uydurdu' tezinin de değerlendirmesi."
+        "title": "Codex Theodosianus XVI.1.2 — Cunctos populos",
+        "publisher": "The Latin Library",
+        "url": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+        "language": "la",
+        "accessed": "2026-10-04",
+        "note": "Yayımlı Latin XVI.1.2pr–1 okundu. Metin Konstantinopolis halkına hitap eder, Damasus ve İskenderiyeli Petrus’un izlediği inancı ve Teslis eşitliğini tanımlar; diğerlerini heretik sayar. 27 Şubat 380 hukukî tarihidir. Tek cümlelik devlet dini veya bütün nüfusun aynı anda dönüşümü özeti yerine muhatap, içerik ve yaptırım ayrıldı."
       }
     ],
     "evidence": [
       {
-        "id": "cikis-noktasi-bos-degil",
-        "text": "Roma'nın dini siyaseten kullandığı doğrudur; tezin çıkış noktası bu bakımdan boş değildir.",
+        "id": "plinius-mevcut-topluluk",
+        "text": "Plinius 10.96.3’te ısrar edenleri infaza gönderdiğini, 10.96.7’de Christus’a ilahi söylendiğinin kendisine aktarıldığını bildirir. Bu yazışma 313 öncesi topluluk ve yönetim ilişkisi için belgedir.",
         "citations": [
           {
-            "source_ref": "jones-1964-later-roman-empire",
-            "locator": "Din ve devlet",
-            "support_type": "context"
+            "source_ref": "plinius-dcc-10-96",
+            "locator": "Epistulae 10.96.3, 7",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "traianus-usul-siniri",
+        "text": "Traianus 10.97’de Hristiyanların aranıp bulunmamasını, suçlanıp suçları kanıtlanırsa cezalandırılmasını ve anonim suçlamaların kabul edilmemesini ister.",
+        "citations": [
+          {
+            "source_ref": "traianus-dcc-10-97",
+            "locator": "Epistulae 10.97.1–2",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "311-hosgoru-metni",
+        "text": "Lactantius’un XXXIV’te aktardığı 311 metni, Hristiyanların yeniden Hristiyan olmasına ve toplantı yerlerini kurmasına izin verir.",
+        "citations": [
+          {
+            "source_ref": "lactantius-persecutors-34",
+            "locator": "De mortibus persecutorum XXXIV",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "313-serbestlik-iade",
+        "text": "Lactantius’un XLVIII’de aktardığı 313 talimatı din seçimi serbestliği ve Hristiyan topluluklarına mülk iadesini düzenler.",
+        "citations": [
+          {
+            "source_ref": "lactantius-persecutors-48",
+            "locator": "De mortibus persecutorum XLVIII",
+            "support_type": "direct"
           }
         ]
       },
       {
         "id": "kronoloji-380",
-        "text": "Devlet dini ilanı 380'dedir; hareket o tarihte zaten ~300 yıllıktır.",
+        "text": "27 Şubat 380 tarihli XVI.1.2, Konstantinopolis halkına hitaben belirli bir Teslis inancını tanımlar ve diğerlerini heretik sayar. Bu bir inanç düzenlemesidir; hareketin ilk kuruluş belgesi değildir.",
         "citations": [
           {
             "source_ref": "codex-theodosianus-16-1-2",
-            "locator": "XVI.1.2",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "zulum-celiskisi",
-        "text": "Roma bu dönemde Hristiyanlara dönem dönem zulmetti; bir devletin kendi imal ettiği inancın mensuplarını yüzyıllarca kovuşturması açıklanamaz.",
-        "citations": [
-          {
-            "source_ref": "ste-croix-1963-why-persecuted",
-            "locator": "Zulüm dönemleri",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "carmih-utanc",
-        "text": "Merkezdeki figür bir Roma valisince çarmıha gerilmiş bir taşralıdır; çarmıh asilere ve kölelere ayrılmış, kasıtlı olarak aşağılayıcı bir infaz biçimiydi.",
-        "citations": [
-          {
-            "source_ref": "ehrman-2012-did-jesus-exist",
-            "locator": "Çarmıh ve utanç ölçütü",
+            "locator": "XVI.1.2pr–1",
             "support_type": "direct"
           }
         ]
       }
     ],
-    "counter_evidence": [
-      {
-        "id": "saray-hamiligi-yok",
-        "text": "En erken metinler iktidar dışı bir çevreden gelir; saray hamiliği kaydı yoktur. Karşılaştırma: Philostratos'un Apollonius'u doğrudan imparatoriçe Julia Domna'nın isteğiyle yazılmıştır.",
-        "citations": [
-          {
-            "source_ref": "ehrman-2012-did-jesus-exist",
-            "locator": "Erken metinlerin çevresi",
-            "support_type": "counter"
-          }
-        ]
-      }
-    ],
+    "counter_evidence": [],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu Ehrman 2012 ile karşılandı; 'tez akademik literatürde kabul görmüyor' ifadesi künyeli kaynağa bağlandı."
+      "notes": "4 Ekim 2026: DCC 10.96.2–8 ve 10.97.1–2 Latin metinleri, Lactantius XXXIV/XLVIII İngilizce çevirileri ve The Latin Library XVI.1.2pr–1 kontrol edildi. 313’ü ilk serbestlik, 380’i ani ve eksiksiz dönüşüm sayan özetler kaldırıldı. Üç yüz yıl kullanmama, kendi icadına zulmedememe, çarmıh utancından kesin yanlışlama ve bütün saray hamiliğinin yokluğu hükümleri çıkarıldı. Okunmamış Jones, de Ste. Croix ve Ehrman eserlerine belirsiz atıflar kaldırıldı. unknown/medium, bu kaydın genel icat tezini yanlışlamak için yeterli tanımlı hedef ve kanıt taşımamasını gösterir; tezin desteklendiği veya bütün seçeneklerin eşit olasılıklı olduğu anlamına gelmez. Bütün zulüm tarihi, bütün erken Hristiyan metinlerinin kökeni ve sonraki doktrin siyaseti denetlenmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
