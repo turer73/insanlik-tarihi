@@ -9,6 +9,10 @@ const decode = value => value.replaceAll('&amp;', '&').replaceAll('&quot;', '"')
 const rows = await siteRows(root);
 const dates = JSON.parse(await read('data/icerik-surumu.json')).kayitlar;
 const titles = new Set();
+const index = await read('site/index.html');
+assert.ok(index.includes('<a href="#top">Ana Sayfa</a>'), 'Ana sayfa menüsü yerel sayfa başına dönmeli');
+assert.ok(index.includes('<a class="is-active" href="#yazilar" aria-current="page">Yazılar</a>'), 'Windows/Linux aynı arşiv bağlantısını üretmeli');
+assert.ok(index.includes('id="yazilar"'), 'Arşiv bağlantısının hedefi bulunmalı');
 const sitemap = await read('site/sitemap.xml');
 const entries = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].map(([, entry]) => ({
   url: entry.match(/<loc>(.*?)<\/loc>/)[1], date: entry.match(/<lastmod>(.*?)<\/lastmod>/)[1],

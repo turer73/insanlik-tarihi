@@ -61,7 +61,9 @@ function addOrReplace(source, pattern, replacement, label) {
 }
 
 function brandIndex(source, articles, bulten = null) {
-  let html = source;
+  // Windows checkout'ları CRLF kullanabilir; çok satırlı dönüşümler her
+  // ortamda aynı menüyü üretmeli.
+  let html = source.replaceAll('\r\n', '\n');
   // Yazi sayisi index.html'de ELLE yazilmisti ve her yeni yazida geride
   // kaliyordu. JS calisma aninda duzeltiyor, yani hata yalniz JS'siz
   // gorunumde ve kaynakta kaliyordu - ama yine de yanlisti ve iki kez

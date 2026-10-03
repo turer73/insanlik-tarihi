@@ -2,13 +2,14 @@
 
 Bu tablo sitemap'teki bütün URL'leri tek tek izler. **Betik tarafından üretilir** (`node scripts/audit-urls.mjs`).
 
-- **İlk yayın / Son değişiklik:** git geçmişinden üretilir; derleme günü değil, gerçek içerik tarihidir.
-- **Açıklama:** makalenin `<meta name="description">` içeriği.
+- **İlk yayın / Son değişiklik:** git geçmişiyle tohumlanan içerik özetlerinden üretilir; derleme günü değil, ilgili sayfanın içerik tarihidir.
+- **Açıklama:** makalenin `<meta name="description">` içeriğinin ilk 140 karakteri.
 - **İndeks:** Google Search Console **URL Inspection** cevabından gelir — tahmin değil, ölçüm. Anlık görüntü `data/gsc-index.json`; tazelemek için `node scripts/fetch-gsc.mjs`. Anlık görüntü yoksa sütun boş kalır.
 - **Not:** elle doldurulur ve yeniden üretimde URL eşleşmesiyle **korunur**.
+- **Son denetim:** 2026-10-03T10:32:28.817Z. Her URL'nin ölçüm tarihi anlık görüntüde ayrı tutulur; son tarama tarihiyle aynı değildir.
 
-| No | Yazı | URL | Meta başlık | Açıklama | Kategori | İlk yayın | Son değişiklik | İndeks | Not |
-|---|---|---|---|---|---|---|---|---|---|
+| No | Yazı / URL | Meta başlık | Açıklama | Kategori | İlk yayın | Son değişiklik | İndeks | Not |
+|---|---|---|---|---|---|---|---|---|
 | — | [Ana sayfa (arşiv)](https://kanitatlasi.com/) | Kanıt Atlası — İnsanlık Tarihi Araştırma Arşivi | Geçmişi değil, kanıtı izleyin. Arkeoloji, tarih, bilim ve inanç üzerine kaynak odaklı araştırma dosyaları. | — | 2026-09-07 | 2026-09-10 | evet · 2026-09-20 |  |
 | 01 | [Ölü Deniz Parşömenleri](https://kanitatlasi.com/articles/olu-deniz-parsomenleri.html) | Ölü Deniz Parşömenleri — Kanıt Atlası | Metinlerin keşfi, tarihlendirilmesi ve tarihsel bağlamına dair kanıt odaklı inceleme. | Metin & İnanç | 2026-09-07 | 2026-09-27 | bilinmiyor |  |
 | 02 | [Tufan Bilmecesi](https://kanitatlasi.com/articles/tufan-bilmecesi.html) | Tufan Bilmecesi — Kanıt Atlası | Tufan anlatılarını jeoloji, arkeoloji ve metin tarihiyle sınayan karşılaştırmalı dosya. | İklim & Felaket | 2026-09-07 | 2026-09-27 | tarandı, eklenmedi |  |
@@ -66,9 +67,10 @@ Değerlerin anlamı:
 | Değer | Ne demek |
 |---|---|
 | `evet · TARİH` | Dizine eklendi; tarih son tarama günü |
-| `keşfedildi, taranmadı` | Google URL'yi biliyor ama henüz taramadı — **bekleme, sorun değil** |
+| `keşfedildi, taranmadı` | Google URL'yi biliyor ama henüz taramadı; bu durum tek başına bir tarama engeli göstermez |
 | `tarandı, eklenmedi` | Tarandı ama dizine alınmadı — sebebi `Not` sütununa yazılmalı |
-| `bilinmiyor` | Google'ın haberi yok; sitemap henüz yeniden okunmamış olabilir |
+| `bilinmiyor` | URL Inspection’da bilinen bir kayıt yok; sitemap kaydı tek başına dizine eklenmeyi garanti etmez |
+| `ölçülemedi` | Denetim isteği hata verdi; dizin durumu hakkında sonuç çıkarılamaz |
 | (boş) | Anlık görüntü yok ya da bu URL ölçülmedi |
 
 `Not` sütunu elle yazılır ve yeniden üretimde kaybolmaz.
