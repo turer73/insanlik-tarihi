@@ -116,7 +116,7 @@
     "limit": "Kayıtlar arkeolojik yüzey araştırması, kazı ve geç dönem metin kopyalarına dayanır; nüfus ve alan rakamları model tahminidir. Erken metinlerin çoğu geç nüshalardan bilinir; bu yazı iddiaların mevcut kayıtla taşınıp taşınmadığını ölçer, kesin 'ilk'lik hükmü vermez."
   },
   "amoc": {
-    "summary": "AMOC hakkında gözlem, geçmiş rekonstrüksiyonu ve geleceğe dönük model tahmini farklı soruları yanıtlar. Gulf Stream ile AMOC’un ilişkisini, RAPID’ın 26,5°K kesitindeki ölçüm kapsamını ve IPCC’nin 2021 değerlendirmesini ayrı ele alıyoruz. 60 yıl evrensel saptama eşiği değildir; 2023 çöküş tahmininin 2025 yazar düzeltmesi de kaynak notunda gösterilir. Aşağıdaki kanıt dosyasında her hükmün kaynak konumunu inceleyebilirsiniz.",
-    "limit": "4 Ekim 2026 turu üç kaydın seçilmiş pasajlarını kapsar: akıntı ayrımı, ölçüm süresi ve AR6 2021 değerlendirmesi. Diğer yedi kayıt bu tur içerik bakımından denetlenmedi; birindeki ortak kaynak künyeleri güncellendi. 2026’ya kadar eksiksiz RAPID dizisi, kod ve bütün literatür doğrulanmadı. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı."
+    "summary": "AMOC için tam kesit ölçümü, derin batı devrilme ölçüsü ve model tahmini farklı büyüklüklerdir. 26,5°K rakamları ölçü ve dönemleriyle verilir; 2018’deki toparlanmanın ardından 2021’deki yeniden düşüş de gösterilir. İklim deneylerinin model sayısı ve süresi, takvimdeki kesin çöküş tarihi veya risk güvencesi değildir. IPCC AR6 2021, yazar düzeltmeleri ve ön baskılar kendi kapsamlarıyla okunur.",
+    "limit": "4 Ekim 2026’da iki turda toplam altı kaydın seçilmiş pasajları denetlendi: akıntı ayrımı, ölçüm süresi, AR6 2021, rakam/ölçü ayrımı, modelde çöküş tanımı ve 2011–2021 duraklama. Diğer dört kaydın içerik denetimi tamamlanmadı; birindeki ortak künyeler güncellendi. Güncel RAPID dizisi, kod ve bütün literatür doğrulanmadı. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı."
   }
 }

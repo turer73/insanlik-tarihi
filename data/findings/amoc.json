@@ -215,7 +215,7 @@
   {
     "schema_version": 2,
     "id": "amoc-basindaki-rakam-tam-amoc-degil",
-    "claim": "Basında dolaşan 'on yılda 2,6 Sv' düşüşü tam AMOC'a değil, onun batı sınırı bileşenine aittir; makale bu ölçünün eğilimi abarttığını kendisi söyler.",
+    "claim": "Xing 2026’da 26,5°K için 2004–2023 derin batı devrilme ölçüsü T26’nın düşüşü 0,26 ± 0,07 Sv/yıl, tam RAPID AMOC ölçüsünün düşüşü ise 0,09 ± 0,08 Sv/yıldır; bunlar aynı büyüklük değildir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -227,16 +227,15 @@
       "iklim-bilimi"
     ],
     "popular_claim": "AMOC 2004'ten beri 20 Sv'den 15 Sv'ye düştü; on yılda 2,6 Sv kaybediyor.",
-    "divergence": "Rakam yanlış değil, YANLIŞ ŞEYE ait. Xing ve arkadaşları 26,5°N'de TAM AMOC için 0,09 ± 0,08 Sv/yıl veriyor - yani on yılda ~0,9 Sv ve belirsizlik neredeyse eğilim kadar. Batı sınırının kendi katkısı 0,21 ± 0,08 Sv/yıl. Aradaki farkı doğu sınırı kapatıyor: orası TERS yönde gücleniyor (-0,16 ± 0,06). Makale bunu açıkça yazıyor: batı sınırı ölçüsü AMOC eğiliminin işaretini yakalar ama büyüklüğünü AŞAR. Manşet, makalenin kendi uyarısını atlamış.",
+    "divergence": "On yılda 2,6 Sv, makaledeki 0,26 Sv/yıl T26 eğiliminin birim dönüşümüdür; tam AMOC eğilimi olarak kullanılamaz. T26, 1000–4000 m katmanındaki derin batı devrilme ölçüsüdür ve DWBC akıntı taşınımıyla da özdeş değildir. Yeniden hesaplanan RAPID batı katkısı 0,21 ± 0,08, doğu katkısı −0,16 ± 0,06 Sv/yıldır. Doğu katkısı düşüşü kısmen dengeler; bu serilerin ikisinde de değişken Ekman katkısı bulunduğu için eğilimler doğrudan toplanamaz. Belirli bir medya yazısının sayıyı nereden aldığı bu tur araştırılmadı. Lee 2024’teki 2021 yeniden düşüşü atlayan ve 20→15 ikilisini yalnız 2009’a bağlayan önceki yorum geri çekildi.",
     "divergence_type": [
-      "medya-abartisi",
       "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "xing-2026-bati-siniri-dususu",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -252,12 +251,13 @@
         "container": "Science Advances",
         "volume": "12(15)",
         "doi": "10.1126/sciadv.adz7738",
-        "note": "Dört demirli dizi, 16,5°N-42,5°N. TAM METİN OKUNDU. Makale, bu ölçünün AMOC eğilimini ABARTTIĞINI kendisi söylüyor ve insan kaynaklı zorlamaya atıf yapmaktan açıkça kaçınıyor."
+        "note": "Bu tur resmi PMC HTML’de özet, Results’ın üç alt bölümü ve Discussion okundu. T26, tam RAPID AMOC ve yeniden hesaplanan batı/doğu katkıları ayrıldı. Dört enlemdeki yön tutarlılığı, üç enlemdeki anlamlılıkla eşitlenmedi. Kod ve ek malzemenin tamamı yeniden doğrulanmadı.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13060603/"
       },
       {
         "id": "lee-2024-duraklama",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -275,73 +275,63 @@
         "container": "Nature Communications",
         "volume": "15:10642",
         "doi": "10.1038/s41467-024-54903-w",
-        "note": "TAM METİN OKUNDU. RAPID kaydının yıl yıl değerlerini veren kaynak; basındaki '20 Sv → 15 Sv' ikilisinin nereden çıktığını açıklıyor."
+        "note": "Bu tur Introduction, Results/Fig. 1, Discussion’ın sınırlamaları ve Methods/RAPID veri kapsamı okundu. 2021’de yeniden düşüş ve farklı trend pencereleri gösterildi. Model ayrımı ayrı ölçülmüş doğal ve insan kaynaklı sinyaller değildir; medya ifadesinin kökeni kaynakta belirlenmiş sayılmadı.",
+        "url": "https://www.nature.com/articles/s41467-024-54903-w"
       }
     ],
     "evidence": [
       {
-        "id": "20-15-dip-noktasi",
-        "text": "Basındaki '20 Sv'den 15 Sv'ye' ikilisinin kaynağı büyük olasılıkla RAPID kaydının 2009 DİP NOKTASIDIR: seri 2005'te 19,2 Sv, 2009'da 14,6 Sv, 2018'de yeniden 18,0 Sv. Yani dip nokta bugünkü durum gibi aktarılıyor.",
-        "citations": [
-          {
-            "source_ref": "lee-2024-duraklama",
-            "locator": "Sonuçlar, gözlem serisi",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
         "id": "tam-amoc-009",
-        "text": "26,5°N'de tam AMOC eğilimi 0,09 ± 0,08 Sv/yıl (2004-2023).",
+        "text": "2004–2023, 26,5°K: TRAPID düşüşü 0,09 ± 0,08 Sv/yıl; derin batı ölçüsü T26 düşüşü 0,26 ± 0,07 Sv/yıldır. Makale belirsizlikleri 2-σ aralıkları olarak bildirir.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Sonuçlar, RAPID karşılaştırması",
+            "locator": "Results, Deep western overturning transport versus AMOC; Fig. 2A",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "bati-021",
-        "text": "Aynı enlemde batı sınırı katkısı 0,21 ± 0,08 Sv/yıl ile daha hızlı düşüyor.",
+        "text": "Doğu dinamik yüksekliği ortalamada sabit tutularak hesaplanan TRAPID_W düşüşü 0,21 ± 0,08 Sv/yıldır; T26 ile aynı tanım değildir.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Sonuçlar, batı sınırı",
+            "locator": "Results, Deep western overturning transport versus AMOC; Fig. 2A",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "dogu-gucleniyor",
-        "text": "Doğu sınırı katkısı TERS yönde, -0,16 ± 0,06 Sv/yıl ile gücleniyor ve farkı kapatıyor.",
+        "text": "TRAPID_E’nin −0,16 ± 0,06 Sv/yıl eğilimi güçlenmeyi gösterir. Batı ve doğu serileri Ekman katkısını ikişer kez saymadan birleştirilmelidir; basit toplam tam AMOC eğilimini vermez.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Sonuçlar, doğu sınırı",
+            "locator": "Results, Deep western overturning transport versus AMOC; Fig. 2A",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "makale-abartiyor-diyor",
-        "text": "Makale, batı sınırı ölçüsünün eğilimin işaretini yakaladığını ama büyüklüğünü aştığını kendi ifadesiyle belirtiyor.",
+        "text": "Yazarlar 26,5°K’de T26’nın AMOC eğiliminin işaretini yakaladığını, doğu sınırının dengelemesi nedeniyle büyüklüğünü aştığını belirtir.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Tartışma, sınırlar",
+            "locator": "Results, Deep western overturning transport versus AMOC; Fig. 2A",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "derinlik-referansi",
-        "text": "Referans derinliğin sabit 1000 m alınması da eğilimi etkiliyor; düzeltilince 26,5°N değeri 0,22 ± 0,07'ye iniyor.",
+        "text": "Üst referans derinliği gözlenen sığlaşmaya uygun olarak 1000’den 970 m’ye değiştirildiğinde T26 eğilimi 0,22 ± 0,07 Sv/yıla iner. Bu, tam AMOC için düzeltilmiş eğilim değildir.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Yöntem, derinlik referansı",
-            "support_type": "context"
+            "locator": "Results, The impact of depth limits; Fig. 4 ve fig. S3",
+            "support_type": "direct"
           }
         ]
       }
@@ -349,47 +339,49 @@
     "counter_evidence": [
       {
         "id": "dusus-gercek",
-        "text": "Düşüşün KENDİSİ dört enlemde tutarlı ve anlamlı; bu kayıt düşüşü değil, aktarılan BÜYÜKLÜĞÜ düzeltiyor.",
+        "text": "Dört enlemde düşüş yönü tutarlıdır; kendi dönemlerinde anlamlılık üç enlemde vardır. 42,5°K, 2008–2014 için 0,10 ± 0,17 Sv/yıl eğilimi anlamlı değildir. Dört dizinin tarih aralıkları farklıdır.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Sonuçlar",
+            "locator": "Results, General decline of deep western overturning transport; Fig. 1A–D; Discussion ilk paragraf",
             "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "atif-yok",
-        "text": "Makale insan kaynaklı zorlamaya atıf yapmıyor; ne bu kaydın ne de basının 'iklim değişikliği yüzünden' demeye dayanağı var.",
-        "citations": [
-          {
-            "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Atıf bölümü yokluğu",
-            "support_type": "context"
           }
         ]
       },
       {
         "id": "dogu-mekanizma-bilinmiyor",
-        "text": "Doğu sınırındaki ters eğilimin bütün Kuzey Atlantik'te tutarlı olup olmadığı ve mekanizması bilinmiyor.",
+        "text": "Doğu katkısının karşıt eğiliminin bütün Kuzey Atlantik’e yayılıp yayılmadığı ve mekanizması bu çalışmada açık soru kalır.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Tartışma, açık sorular",
+            "locator": "Discussion ikinci paragraf; Fig. 2A ve fig. S1",
             "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "20-15-dip-noktasi",
+        "text": "Lee 2024, RAPID için 2005’te 19,2; 2009’da 14,6; 2018’de 18,0 ve 2021’de 15,3 Sv verir. Dolayısıyla yalnız 2018’e bakarak toparlanmanın sürdüğü veya 15 Sv’nin mutlaka 2009’dan alındığı söylenemez.",
+        "citations": [
+          {
+            "source_ref": "lee-2024-duraklama",
+            "locator": "Introduction, yıllık gözlem değerleri; Fig. 7e, RAPID dizisi",
+            "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Doğu sınırındaki güçlenme başka enlemlerde de var mı?"
+      "İncelenecek belirli medya metni hangi ölçüyü, dönemi ve birimi aktarıyor? Bu tur medya örnekleri taranmadı.",
+      "Doğu ve batı katkılarının karşıt eğilimi başka enlemlerde de görülüyor mu?",
+      "İnsan kaynaklı zorlamanın bu eğilimdeki payı bu tur hesaplanmadı; gözlenen eğilimin kendisi neden atfı değildir."
     ],
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Xing ve ark. 2026 tam metni (PMC13060603) okundu; rakamlar oradan alındı."
+      "notes": "Xing resmi PMC HTML’de özet, Results’ın üç alt bölümü ve Discussion okundu; Lee güncel Introduction ve Fig. 7e bağlamı kontrol edildi. Ek veriler, kod ve ölçümler yeniden hesaplanmadı. Kaynaktaki genel anlamlılık ifadesi 3/4 enlemle sınırlandı; medya kökeni varsayımı geri çekildi. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ]
@@ -575,7 +567,7 @@
   {
     "schema_version": 2,
     "id": "amoc-cokmez-sonucu-tanima-bagli",
-    "claim": "Baker ve arkadaşlarının 'çöküş olası değil' sonucu, çöküşün 6 Sv altına inmek olarak tanımlanmasına dayanır; aynı modellerde AMOC ortalama %54 zayıflar.",
+    "claim": "Baker 2025’in düzeltilmiş sonuç cümlesi 21. yüzyıl çöküşünü 6 Sv altı olarak tanımlar; 34 modelin ani 4×CO₂ deneyinde 90. yıldaki zayıflama %20–81, ortalama %54’tür.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -587,16 +579,15 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Yeni araştırma AMOC'un çökmeyeceğini gösterdi; endişeye gerek yok.",
-    "divergence": "Sonuç doğru aktarılıyor ama tanımı düşüyor. Baker ve arkadaşları çöküşü '6 Sv altına inmek' diye tanımlıyor. AYNI modellerde AMOC %20-81 arasında (ortalama %54) zayıflıyor. ~17 Sv'lik bir AMOC'un yarıya inmesi bu tanıma göre 'çöküş değil' - ama küçük bir olay da değil. Dahası bu tanım ilk basımda metinde YOKTU; Mayıs 2025 yazar düzeltmesiyle parantez içinde eklendi.",
+    "divergence": "Yazarların sonuç cümlesindeki 6 Sv eşiği, bütün makaledeki her çöküş kullanımının tek tanımı sayılmamalı: Main kısmı tam çöküşü sıfıra zayıflama veya tersine dönme diye açıklar. 34 model ani 4×CO₂ koşulunda incelenir; 0,3 Sv tatlı su deneyinde yalnız yedi model vardır. %54, 4×CO₂ altında 90. yıldaki model ortalamasıdır; bugünkü ölçülmüş AMOC kaybı değildir. Düzeltme 17 Nisan 2025’te çevrim içi yayımlandı, sayı tarihi 8 Mayıs’tır. Koşullu model sonucu, genel bir risk yokluğu güvencesine çevrilmedi; belirli haber aktarımı bu tur incelenmedi.",
     "divergence_type": [
-      "medya-abartisi",
       "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "baker-2025-cokmez",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -612,12 +603,13 @@
         "container": "Nature",
         "volume": "638(8052):987-994",
         "doi": "10.1038/s41586-024-08544-0",
-        "note": "TAM METİN OKUNDU. 34 model. 'Çökmez' sonucu, çöküşün 6 Sv altı olarak tanımlanmasına dayanıyor."
+        "note": "Bu tur düzeltilmiş resmi Nature HTML’de seçilmiş özet, deney, sonuç ve yöntem pasajları okundu. Ani 4×CO₂ 34 model, 0,3 Sv tatlı su 7 model; %54 90. yıl model ortalamasıdır. 6 Sv eşiği sonuç cümlesindedir, Main’de tam çöküş sıfır/tersine dönme olarak açıklanır. Kod ve bütün ek veriler doğrulanmadı.",
+        "url": "https://www.nature.com/articles/s41586-024-08544-0"
       },
       {
         "id": "baker-2025-yazar-duzeltmesi",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -633,61 +625,62 @@
         "container": "Nature",
         "volume": "641(8062):E2",
         "doi": "10.1038/s41586-025-08977-1",
-        "note": "Mayıs 2025. '6 Sv altı' çöküş tanımını metne EKLEYEN düzeltme; ayrıca 'PMOC oluşmuyor' ifadesi 'oluşmuyor ya da genel olarak zayıf kalıyor' olarak yumuşatıldı."
+        "note": "Düzeltme gövdesi ve yayın tarihleri okundu: çevrim içi 17 Nisan 2025, sayı 8 Mayıs 2025. 6 Sv açıklaması ve PMOC ifadesi düzeltilmiştir. 4 Haziran 2025 güncellemesi, ek şekil 5 renk düzeni düzeltmesinin notunu ekler; yazarlar sonuçların değişmediğini belirtir. Kod veya şekil verileri yeniden doğrulanmadı.",
+        "url": "https://www.nature.com/articles/s41586-025-08977-1"
       }
     ],
     "evidence": [
       {
         "id": "6sv-tanimi",
-        "text": "Çöküş, açıkça '6 Sv altına zayıflamak' olarak tanımlanıyor.",
+        "text": "Future fate of the AMOC’ın sonuç cümlesi çöküşü 6 Sv altına zayıflama diye tanımlar; Main kısmı tam çöküş için sıfıra zayıflama veya tersine dönmeyi kullanır.",
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Future fate of the AMOC bölümü",
+            "locator": "Main, ilk araştırma paragrafı; Future fate of the AMOC, sonuç paragrafı: “weakening to below 6 Sv”",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "yuzde-54-zayiflama",
-        "text": "Aynı modellerde AMOC 4xCO2 altında %20-81 (ortalama %54) zayıflıyor.",
+        "text": "34 modelin ani 4×CO₂ deneyinde 90. yıl civarındaki zayıflama %20–81, ortalama %54’tür.",
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Sonuçlar, zayıflama aralığı",
+            "locator": "Changes in the overturning circulation; Fig. 2a; Methods, Models and experiments",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "tatlisu-yuzde-61",
-        "text": "Tatlı su zorlaması altında zayıflama %50-80 (ortalama %61) aralığında.",
+        "text": "0,3 Sv Kuzey Atlantik tatlı su deneyinde yedi model bulunur; zayıflama %50–80, ortalama %61’dir. Bu sonuç 34 modelin tamamına genellenmez.",
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Sonuçlar, tatlı su deneyi",
+            "locator": "Experiments and AMOC upwelling pathways; Fig. 2e ve Extended Data Table 1",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "tanim-sonradan-eklendi",
-        "text": "6 Sv tanımı metne ilk basımda değil, Mayıs 2025 yazar düzeltmesiyle eklendi.",
+        "text": "17 Nisan 2025 çevrim içi yazar düzeltmesi, sonuç cümlesine 6 Sv tanımının açıklık için eklendiğini bildirir; dergi sayı tarihi 8 Mayıs’tır.",
         "citations": [
           {
             "source_ref": "baker-2025-yazar-duzeltmesi",
-            "locator": "Düzeltme metni",
+            "locator": "Düzeltme gövdesi, ikinci paragraf: “weakening to below 6 Sv”; About this article, yayın ve sayı tarihleri",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "pmoc-ifadesi-yumusatildi",
-        "text": "Aynı düzeltme 'PMOC oluşmuyor' ifadesini 'oluşmuyor ya da genel olarak zayıf kalıyor' olarak yumuşattı.",
+        "text": "Aynı düzeltme gerçekçi senaryolardaki PMOC ifadesine oluşmama yanında genel olarak zayıf kalmayı, risk koşuluna ise güçlü PMOC oluşumunu ekler.",
         "citations": [
           {
             "source_ref": "baker-2025-yazar-duzeltmesi",
-            "locator": "Düzeltme metni",
+            "locator": "Düzeltme gövdesi, ilk paragraf: “does not develop or remains generally weak”",
             "support_type": "direct"
           }
         ]
@@ -696,44 +689,44 @@
     "counter_evidence": [
       {
         "id": "mekanizma-gercek",
-        "text": "Mekanizma gerçek ve savunulabilir: Güney Okyanusu yükselimini dengeleyecek kadar güçlü bir Pasifik devrilmesi modellerde oluşmuyor. Bu kayıt sonucu değil, aktarımını düzeltiyor.",
+        "text": "Denenen modellerde Güney Okyanusu yükselimi zayıflamış AMOC’u sürdürür; PMOC çoğu modelde oluşur fakat yükselimin tamamını dengeleyecek güçte değildir. Bu, model içinde önerilen mekanizmadır.",
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Mekanizma bölümü",
+            "locator": "Abstract; AMOC resilience under extreme forcing; Fig. 2 ve Fig. 6",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "model-yanliligi-riski",
-        "text": "Yazarlar kendi sınırlarını yazıyor: modeller güçlü bir Pasifik devrilmesi olasılığını hafife alıyorsa, çöküş riskini de hafife alıyor olabilirler.",
+        "text": "Yazarlar güçlü PMOC oluşumunu hafife alan modellerin gelecek AMOC çöküş riskini de hafife alabileceğini belirtir.",
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Sınırlar bölümü",
+            "locator": "Future fate of the AMOC, model yanlılığı paragrafı; Fig. 6",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "asiri-senaryo",
-        "text": "Denenen zorlamalar aşırı senaryolardır (CO2'nin ani dörde katlanması); yazarlar daha büyük zorlamaların AMOC'u daha da zayıflatabileceğini belirtiyor.",
+        "text": "Denenen zorlamalar ani 4×CO₂ ve 0,3 Sv tatlı sudur; yazarlar daha güçlü zorlamaların, ilgili dolaşım koşulları altında daha fazla zayıflama üretebileceğini tartışır.",
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Sınırlar bölümü",
+            "locator": "Methods, Models and experiments; Fig. 2; Future fate of the AMOC",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "2100-sonrasi-yok",
-        "text": "Sonuç yalnızca 21. yüzyıl içindir; 2100 sonrası için analiz yapılmamıştır.",
+        "text": "CO₂ deneyi 150 yıl, tatlı su deneyi en az 100 yıl sürer; karşılaştırılan gelecek durum 90. yıl çevresindeki 20 yıllık ortalamadır. Bu deney süreleri takvimde yalnız 2100’e kadar analiz yapıldığı iddiasını desteklemez.",
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Kapsam",
+            "locator": "Methods, Models and experiments ve Variables; Fig. 2 zaman ekseni",
             "support_type": "context"
           }
         ]
@@ -742,11 +735,15 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Baker 2025 tam metni (PMC11864975) ve yazar düzeltmesi (PMC12058520) okundu."
+      "notes": "Düzeltilmiş Nature HTML’nin özet/Main, deneyler, Changes in the overturning circulation, Future fate of the AMOC ve Methods/Models and experiments–Variables pasajları ile yazar düzeltmesinin gövde ve tarihleri okundu. 34/7 model kapsamı, 90/150/en az 100 yıllık deney süreleri ayrıldı. Kod, model çalıştırmaları ve bütün ek veriler doğrulanmadı. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
+    ],
+    "open_questions": [
+      "Modellerde güçlü PMOC oluşumunun gerçekçi senaryolar için olasılığı ve model yanlılığı nasıl sınanır?",
+      "Bu aşırı zorlamalar ve göreli deney yılları, gerçek emisyon ve erime yollarına nasıl aktarılabilir?"
     ]
   },
   {
@@ -850,7 +847,7 @@
       {
         "id": "baker-2025-cokmez",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -866,7 +863,8 @@
         "container": "Nature",
         "volume": "638(8052):987-994",
         "doi": "10.1038/s41586-024-08544-0",
-        "note": "TAM METİN OKUNDU. 34 model. 'Çökmez' sonucu, çöküşün 6 Sv altı olarak tanımlanmasına dayanıyor."
+        "note": "Bu tur düzeltilmiş resmi Nature HTML’de seçilmiş özet, deney, sonuç ve yöntem pasajları okundu. Ani 4×CO₂ 34 model, 0,3 Sv tatlı su 7 model; %54 90. yıl model ortalamasıdır. 6 Sv eşiği sonuç cümlesindedir, Main’de tam çöküş sıfır/tersine dönme olarak açıklanır. Kod ve bütün ek veriler doğrulanmadı.",
+        "url": "https://www.nature.com/articles/s41586-024-08544-0"
       },
       {
         "id": "rahmstorf-caesar-2026-gorus",
@@ -921,7 +919,7 @@
       {
         "id": "lee-2024-duraklama",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -939,7 +937,8 @@
         "container": "Nature Communications",
         "volume": "15:10642",
         "doi": "10.1038/s41467-024-54903-w",
-        "note": "TAM METİN OKUNDU. RAPID kaydının yıl yıl değerlerini veren kaynak; basındaki '20 Sv → 15 Sv' ikilisinin nereden çıktığını açıklıyor."
+        "note": "Bu tur Introduction, Results/Fig. 1, Discussion’ın sınırlamaları ve Methods/RAPID veri kapsamı okundu. 2021’de yeniden düşüş ve farklı trend pencereleri gösterildi. Model ayrımı ayrı ölçülmüş doğal ve insan kaynaklı sinyaller değildir; medya ifadesinin kökeni kaynakta belirlenmiş sayılmadı.",
+        "url": "https://www.nature.com/articles/s41467-024-54903-w"
       }
     ],
     "evidence": [
@@ -1675,8 +1674,8 @@
   {
     "schema_version": 2,
     "id": "amoc-2010-sonrasi-duraklama",
-    "claim": "RAPID kaydında AMOC zayıflaması 2010'ların başından beri fiilen durmuştur; 2011-2021 eğilimi on yılda -0,1 Sv'dir.",
-    "status": "contested",
+    "claim": "Lee 2024, RAPID’ın 26,5°K kesitinde 2011–2021 eğilimini −0,1 Sv/on yıl olarak bildirir; bu dönem sonucu 2026’da duraklamanın sürdüğünü göstermez.",
+    "status": "established",
     "confidence": "medium",
     "topic": [
       "amoc",
@@ -1687,16 +1686,16 @@
       "iklim-bilimi"
     ],
     "popular_claim": "AMOC 2004'ten beri kesintisiz zayıflıyor.",
-    "divergence": "Kesintisiz değil. RAPID kaydı 2005'te 19,2 Sv, 2009'da 14,6 Sv, 2018'de yeniden 18,0 Sv. Yani 2000'lerin sonundaki sert düşüş TOPARLANDI ve 2011-2021 eğilimi on yılda -0,1 Sv, yani neredeyse düz. Basında dolaşan '20 Sv'den 15 Sv'ye' ikilisi büyük olasılıkla 2009 DİP NOKTASININ bugünkü durum gibi aktarılmasıdır. Yazarlar bunu 'zayıflamanın durması' değil, doğal ve insan kaynaklı sinyallerin birbirini dengelemesi olarak açıklıyor.",
+    "divergence": "Lee’nin verdiği yıllık değerler 2018’de toparlanma, 2021’de yeniden düşüş içerir. Makalenin 2011–2021 eğilimi yaklaşık düzken 2005–2021 eğilimi negatiftir; bir pencerenin sonucu bütün tarihlere taşınamaz. Doğal ve dışsal zorlanan bileşen ayrımı doğrudan ayrı ayrı ölçüm değil, model ve gözlemlerin birlikte yorumudur. 2000–2020’de −2,6/+1,0/net −1,6 Sv ile 2010–2020’de −1,3/+1,1 Sv değişimleri farklı karşılaştırmalardır; tek bir duraklama hesabı diye birleştirilmez. Artık 20→15 ifadesinin medya kökeni yalnız 2009 olarak varsayılmıyor.",
     "divergence_type": [
-      "medya-abartisi",
-      "guncellenmemis"
+      "guncellenmemis",
+      "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "lee-2024-duraklama",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1714,12 +1713,13 @@
         "container": "Nature Communications",
         "volume": "15:10642",
         "doi": "10.1038/s41467-024-54903-w",
-        "note": "TAM METİN OKUNDU. RAPID kaydının yıl yıl değerlerini veren kaynak; basındaki '20 Sv → 15 Sv' ikilisinin nereden çıktığını açıklıyor."
+        "note": "Bu tur Introduction, Results/Fig. 1, Discussion’ın sınırlamaları ve Methods/RAPID veri kapsamı okundu. 2021’de yeniden düşüş ve farklı trend pencereleri gösterildi. Model ayrımı ayrı ölçülmüş doğal ve insan kaynaklı sinyaller değildir; medya ifadesinin kökeni kaynakta belirlenmiş sayılmadı.",
+        "url": "https://www.nature.com/articles/s41467-024-54903-w"
       },
       {
         "id": "xing-2026-bati-siniri-dususu",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1735,50 +1735,51 @@
         "container": "Science Advances",
         "volume": "12(15)",
         "doi": "10.1126/sciadv.adz7738",
-        "note": "Dört demirli dizi, 16,5°N-42,5°N. TAM METİN OKUNDU. Makale, bu ölçünün AMOC eğilimini ABARTTIĞINI kendisi söylüyor ve insan kaynaklı zorlamaya atıf yapmaktan açıkça kaçınıyor."
+        "note": "Bu tur resmi PMC HTML’de özet, Results’ın üç alt bölümü ve Discussion okundu. T26, tam RAPID AMOC ve yeniden hesaplanan batı/doğu katkıları ayrıldı. Dört enlemdeki yön tutarlılığı, üç enlemdeki anlamlılıkla eşitlenmedi. Kod ve ek malzemenin tamamı yeniden doğrulanmadı.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13060603/"
       }
     ],
     "evidence": [
       {
         "id": "rapid-yil-yil",
-        "text": "RAPID 26,5°N: 2005'te 19,2 Sv, 2009'da 14,6 Sv, 2018'de 18,0 Sv.",
+        "text": "26,5°K yıllık değerleri: 2005’te 19,2; 2009’da 14,6; 2018’de 18,0; 2021’de 15,3 Sv. Son iki değer yeniden düşüşü de gösterir.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Sonuçlar, gözlem serisi",
+            "locator": "Introduction, yıllık gözlem değerleri; Fig. 7e, RAPID dizisi",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "2011-2021-duz",
-        "text": "2011-2021 eğilimi on yılda yalnızca -0,1 Sv; seri fiilen düz.",
+        "text": "Lee 2024, 2011–2021 için −0,1 Sv/on yıl, 2005–2021 için −1,1 Sv/on yıl eğilimi verir. Kayıt bu raporlanan aralıklarla sınırlıdır.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Sonuçlar, eğilim",
+            "locator": "Introduction, dönem eğilimleri; Fig. 7e, RAPID dizisi",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "baslangic-etkisi",
-        "text": "2005-2021 için on yılda -1,1 Sv çıkan eğilim, büyük ölçüde kaydın başındaki yüksek değerlerden geliyor.",
+        "text": "İlk iki yıl çıkarıldığında 2007–2021 eğilimi −0,2 Sv/on yıl olur. Bu, seçilen başlangıç yılının etkisini gösterir; bütün dönemlerde düşüş yokluğu değildir.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Sonuçlar, eğilim",
+            "locator": "Introduction, başlangıç yılı karşılaştırması; Fig. 7e, RAPID dizisi",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "dogal-zorlanan-ayrimi",
-        "text": "Dışsal zorlanan bileşen 2000-2020 arasında -2,6 Sv düşerken doğal bileşen +1,0 Sv artmış; net düşüş -1,6 Sv.",
+        "text": "Model temelli ayrımda 2000–2020 dışsal zorlanan değişim −2,6, artık bileşen +1,0 ve net değişim −1,6 Sv’dir. 2010–2020 karşılaştırmasında dışsal değişim −1,3, artık bileşen +1,1 Sv’dir.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Ayrıştırma",
+            "locator": "Results, Interdecadal variations of the AMOC components at 26.5°N; Fig. 1a–b",
             "support_type": "direct"
           }
         ]
@@ -1787,58 +1788,59 @@
     "counter_evidence": [
       {
         "id": "gecici-dengeleme",
-        "text": "Duraklama, zayıflamanın bittiği anlamına gelmiyor: yazarlar doğal bileşenin insan kaynaklı düşüşü GEÇİCİ olarak dengelediğini savunuyor.",
+        "text": "Artık bileşen, gerçekçi model koşulunda doğal değişkenliği temsil edebilir; yazarlar bu bileşenin model eksikliklerini de içerdiğini açıklar. Bu, ayrı ölçülmüş saf doğal bileşen değildir.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Yorum",
+            "locator": "Results, Interdecadal variation of the residual AMOC component; Fig. 1 ve Fig. 6",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "bati-siniri-dusuyor",
-        "text": "Aynı dönemde batı sınırı bileşeni düşmeye devam ediyor; hangi ölçünün AMOC'u temsil ettiği tartışmalı.",
+        "text": "Xing’in 26,5°K’deki 2004–2023 eğilimleri farklı pencere ve ölçüler kullanır. Bu karşılaştırma Lee’nin 2011–2021 tam AMOC eğilimini aynı tanımla yanlışlamaz.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Sonuçlar",
-            "support_type": "counter"
+            "locator": "Results, Deep western overturning transport versus AMOC; Fig. 2A",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "dogrusal-ayirma-varsayimi",
-        "text": "Doğal ve zorlanan bileşenlerin doğrusal olarak ayrılabildiği varsayımı gerçekte tutmayabilir; yazarlar bunu kendi sınırları arasında sayıyor.",
+        "text": "Lee’nin Discussion kısmı doğal ve dışsal bileşenleri doğrusal ve bağımsız ayırma varsayımını açıklar; gerçek etkileşimlerin doğrusal olmayan kısmı da olabileceğini belirtir.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Sınırlar",
+            "locator": "Discussion, “linearly separable and thus independent” varsayımını açıklayan paragraf",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "2004-oncesi-yok",
-        "text": "2004 öncesi doğrudan AMOC gözlemi yok; o dönem için model vekil gösterge olarak kullanılıyor.",
+        "text": "Bu çalışmadaki RAPID dizisi Nisan 2004–Şubat 2022’dir; daha önceki AMOC için OMIP2 modelleri vekil olarak kullanılır. Sürekli diziden önce hiçbir doğrudan ölçüm yapılmadığı sonucu çıkarılmaz.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Sınırlar",
+            "locator": "Methods, RAPID & ERA5 datasets and OMIP2 models; Fig. 7",
             "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Duraklama sürüyor mu? 2021 sonrası RAPID verisiyle sınanmalı."
+      "Duraklama veya yeniden düşüş 2021 sonrası hangi dönemlerde görülüyor? Güncel RAPID verisi bu tur yeniden analiz edilmedi.",
+      "Artık bileşende doğal değişkenlik ile model eksikliklerinin payı nasıl ayrılır?"
     ],
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Lee ve ark. 2024 TAM METİNDEN okundu (PMC11624277)."
+      "notes": "Lee resmi HTML’de Introduction, Results/Fig. 1, Discussion’ın sınırlama paragrafları ve Methods/RAPID veri kapsamı okundu. Xing Fig. 2A pencere ve ölçü farkı için bağlam olarak kullanıldı. Yıllık değerler, kaybolmuş medya metninin kökenini belirlemez. Güncel veri, kod ve ek tablolar yeniden hesaplanmadı. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ]
