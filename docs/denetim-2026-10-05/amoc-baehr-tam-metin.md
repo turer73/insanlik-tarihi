@@ -1,0 +1,10 @@
+# AMOC — Baehr 2007 tam metin kontrolü
+
+Tarih: 5 Ekim 2026. Kaynak: [Baehr ve arkadaşları, *Journal of Climate* 20:5827–5841 (2007), yayımlanmış PDF](https://pure.mpg.de/rest/items/item_994276_6/component/file_1626191/content), DOI: 10.1175/2007JCLI1686.1. Max Planck kurum arşivindeki 15 sayfalık kopyanın özeti, Tablo 1'i, tartışması ve sonuçları okundu; ilgili tablo sayfası ayrıca görsel olarak denetlendi. [4 Ekim notu](../denetim-2026-10-04/amoc-baehr-ve-gulf-ozgun-kaynak.md) yalnız yayıncı özetine erişebildiği tarihteki sınırı kaydediyordu.
+
+- **Saptama süresi:** Özet (s. 5827) 1700–3100 m yoğunluk gradyanı ve 0,01 kg/m³ rastgele gözlem hatası için yaklaşık 30 yıl der. Tablo 1 (s. 5838) derinlik aralığını 1700–3070 m olarak listeler; aynı hata sütununda üç A1B koşusunun %95 üst güven sınırı saptama süreleri sırasıyla **29, 11 ve 30 yıldır**. Yaklaşık 30 yıl her koşunun ayrı sonucu veya gözlemler için evrensel eşik değildir.
+- **Koşula duyarlılık:** Aynı hata sütununda 100–5720 m derinlik aralığı 59/48/11 yıl verir. §5 (s. 5839) sürelerin seçilen derinlik aralığına büyük ölçüde bağlı olduğunu ve aralıkların biçimsel sinyal/gürültü optimizasyonuyla değil, fiziksel sezgiyle seçildiğini belirtir.
+- **Belirsizlik ve genelleme:** §5 (s. 5839), doğal değişkenliğin sabit uzamsal deseninin kestirimine gözlemsel belirsizliğin dahil edilmediğini söyler. Üç koşu tek bir model ailesindedir; yazarlar başka modellerde ve nihayet yalnız gözlemlerle yeniden sınama gerektiğini belirtir. Dolayısıyla makale bugünkü insan etkisi payını ölçmez.
+- **Tarihsel gözlemler:** Özet ve §6 (s. 5827, 5839), 1957–2004 arasındaki beş hidrografi kesitinde incelenen derinlik aralıkları için anlamlı eğilim bulunmadığını rapor eder. Bu, bugünkü AMOC eğiliminin veya insan etkisinin yokluğunu gösteren güncel test sayılamaz.
+
+Yalnız yayımlanmış metnin belirtilen pasajları ve tablo değerleri denetlendi. Simülasyonlar, kontrol koşusu, yöntem kodu ve ham gözlemler yeniden çalıştırılmadı. On AMOC bulgusunun `review.status` değeri `draft`; bağımsız alan uzmanı incelemesi yapılmadı. Carlson 2007 ve Boers 2024 tam metin erişim sınırı ayrıca sürüyor.

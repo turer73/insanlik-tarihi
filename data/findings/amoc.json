@@ -199,7 +199,7 @@
       {
         "id": "baehr-2007-yogunluk-saptama",
         "language": "en",
-        "accessed": "2026-10-04",
+        "accessed": "2026-10-05",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -215,8 +215,8 @@
         "container": "Journal of Climate",
         "volume": "20(23):5827–5841",
         "doi": "10.1175/2007JCLI1686.1",
-        "url": "https://journals.ametsoc.org/view/journals/clim/20/23/2007jcli1686.1.xml",
-        "note": "Yayıncıda dizinlenen özgün özet okundu; tam metin doğrudan açılamadı. 1700–3100 m yoğunluk gradyanı ve 0,01 kg/m³ rastgele hata için yaklaşık 30 yıl, incelenen model ve senaryoya bağlıdır."
+        "url": "https://pure.mpg.de/rest/items/item_994276_6/component/file_1626191/content",
+        "note": "Max Planck kurum arşivindeki yayımlanmış PDF'nin s. 5827 özeti, s. 5838 Tablo 1'i ve s. 5839 tartışma/sonuç bölümleri okundu. Özetteki 1700–3100 m yuvarlaması Tablo 1'de 1700–3070 m'dir; 0,01 kg/m³ gözlem hatasında üç A1B gerçekleşiminin %95 üst güven sınırı saptama süreleri sırasıyla 29, 11 ve 30 yıldır. Derinlik seçimi, sabit doğal değişkenlik desenindeki gözlemsel belirsizlik ve tek model sınırı önemlidir; model ve kod yeniden çalıştırılmadı."
       },
       {
         "id": "ipcc-ar6-wg1-bolum9",
@@ -292,11 +292,11 @@
     "counter_evidence": [
       {
         "id": "derin-bilgi-sure",
-        "text": "Baehr 2007'nin yayıncı özetinde, 1700–3100 m derinlikteki boylamsal yoğunluk gradyanı ve 0,01 kg/m³ rastgele gözlem hatası kullanıldığında, incelenen model ve iklim senaryosunda %95 güvenilir saptama yaklaşık 30 yıl sürer. Bu başka bir değişken ve hata koşuludur.",
+        "text": "Baehr 2007'nin yayımlanmış metninde, 1700–3100 m (Tablo 1'de 1700–3070 m) boylamsal yoğunluk gradyanı ve 0,01 kg/m³ rastgele gözlem hatası için yaklaşık 30 yıl özetlenir. Tablo 1'de üç A1B gerçekleşiminin %95 üst güven sınırı saptama süreleri 29, 11 ve 30 yıldır; seçilen derinliğe göre süre belirgin değişir. Bu farklı bir saptama değişkenidir, gözlenen AMOC eğilimi veya evrensel süre değildir.",
         "citations": [
           {
             "source_ref": "baehr-2007-yogunluk-saptama",
-            "locator": "Abstract, “For a random observation error of 0.01 kg” cümlesi; 1700–3100 m sonucu",
+            "locator": "s. 5827, Abstract; s. 5838, Tablo 1 (1700–3070 m, 0,01 kg/m³ sütunu); s. 5839, §5–6",
             "support_type": "counter"
           },
           {
@@ -336,9 +336,9 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Resmî v2024.1a README s.1–2 ve s.5–6 seçilmiş pasajları okundu; ASCII bitişi ve eksik filtre uçları kontrol edildi. Baehr 2008 özgün PDF'sinin seçilmiş pasajları ve Baehr 2007 yayıncı özeti okundu; 2007 tam metni açılamadı. Güncel atıf/eğilim testi veya sensör düzeltmelerinin etkisi hesaplanmadı. Bağımsız uzman incelemesi yok."
+      "notes": "Resmî v2024.1a README s.1–2 ve s.5–6 seçilmiş pasajları okundu; ASCII bitişi ve eksik filtre uçları kontrol edildi. Baehr 2008 özgün PDF'sinin seçilmiş pasajları ile Baehr 2007'nin Max Planck arşivindeki yayımlanmış tam metninin özeti, Tablo 1'i ve §5–6 bölümleri okundu. 2007 Tablo 1'de 0,01 kg/m³ ve 1700–3070 m için üç koşu 29/11/30 yıldır. Güncel atıf/eğilim testi, 2007 model ve kodu veya sensör düzeltmelerinin etkisi hesaplanmadı. Bağımsız uzman incelemesi yok."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-05",
     "used_in": [
       "amoc"
     ]
