@@ -2,8 +2,8 @@
   {
     "schema_version": 2,
     "id": "amoc-gulf-stream-kategori-hatasi",
-    "claim": "Gulf Stream ile AMOC aynı şey değildir; rüzgârla sürülen Gulf Stream durmaz, tartışılan AMOC'un yoğunlukla sürülen devrilme bileşenidir.",
-    "status": "refuted",
+    "claim": "Gulf Stream, hem AMOC’un hem Kuzey Atlantik subtropikal döngüsünün parçasıdır; AMOC ile özdeş değildir.",
+    "status": "established",
     "confidence": "high",
     "topic": [
       "amoc",
@@ -14,28 +14,27 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Gulf Stream duruyor; Avrupa'yı ısıtan akıntı kesiliyor.",
-    "divergence": "İki ayrı olgu tek adla anılıyor. Gulf Stream RÜZGÂRLA sürülür ve rüzgâr estiği sürece durmaz. AMOC ise sıcaklık ve tuzluluk farkının sürüklediği DEVRİLME bileşenidir; zayıflayabilen ve tartışılan budur. İkisi Kuzey Amerika kıyısında yan yana aktığı için karışıyor. 'Gulf Stream duruyor' cümlesi fiziksel olarak yanlış. Gulf Stream AMOC sisteminin bir parçasıdır; tümüyle bağımsız değillerdir. Bu kayıt ikisinin ilişkisiz olduğunu değil, AYNI ŞEY OLMADIĞINI söylüyor.",
+    "divergence": "IPCC FAQ 9.3, Gulf Stream’i iki dolaşım örüntüsünün ortak parçası olarak tanımlar. AMOC’un çökmesiyle Gulf Stream’in bütünüyle durması aynı hüküm değildir: model ve kurama dayalı değerlendirmede rüzgârla sürülen subtropikal döngü katkısı sürer. Bu, akıntının gücünün değişmeyeceği veya her koşulda aynı kalacağı garantisi değildir. AMOC da yalnız yoğunluk farkına indirgenemez; rüzgâr, karışım ve derin su oluşumu birlikte ele alınır.",
     "divergence_type": [
-      "kategori-hatasi",
-      "medya-abartisi"
+      "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "ucl-2024-gulf-stream-ruzgar",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "institutional",
         "type": "press-release",
         "year": 2024,
         "title": "The Gulf Stream is wind-powered and could weaken from climate change",
         "institution": "University College London",
         "url": "https://www.ucl.ac.uk/news/2024/jul/gulf-stream-wind-powered-and-could-weaken-climate-change",
-        "note": "Kurumsal duyuru; hakemli yayının kendisi değil. Gulf Stream'in rüzgârla sürüldüğü ayrımı için kullanıldı. Aynı duyuru akıntının zayıflayabileceğini de söylüyor; kayıt 'durmaz' ile 'zayıflamaz' ifadelerini ayrı tutuyor."
+        "note": "10 Temmuz 2024 tarihli kurumsal duyurunun ilgili paragrafları okundu; duyurunun bağlı olduğu özgün Nature makalesi bu tur okunmadı. Rüzgârın zayıflamasıyla Gulf Stream’in zayıflayabileceği olasılığı için kullanıldı."
       },
       {
         "id": "ipcc-ar6-wg1-bolum9",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "institutional",
         "type": "report",
         "year": 2021,
@@ -43,28 +42,28 @@
         "institution": "IPCC (Hükümetlerarası İklim Değişikliği Paneli)",
         "publisher": "Cambridge University Press",
         "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/",
-        "note": "Değerlendirilmiş uzlaşı konumu. Alıntılar bölüm metninden alındı, basın özetinden değil."
+        "note": "Bu tur Yönetici Özeti/Ocean Circulation, §9.2.3.1 ve FAQ 9.3 resmi HTML metninden okundu. Değerlendirme 2021 tarihlidir; 2026 literatürünün tamamı veya güncel ölçüm dizisi yeniden denetlenmedi."
       }
     ],
     "evidence": [
       {
-        "id": "ruzgarla-surulur",
-        "text": "Gulf Stream rüzgârla sürülür; rüzgâr sistemi yerinde durdukça akıntı durmaz.",
+        "id": "ipcc-amoc-ayri",
+        "text": "Gulf Stream hem AMOC’un hem rüzgârla sürülen Kuzey Atlantik subtropikal döngüsünün parçasıdır.",
         "citations": [
           {
-            "source_ref": "ucl-2024-gulf-stream-ruzgar",
-            "locator": "Duyuru metni",
+            "source_ref": "ipcc-ar6-wg1-bolum9",
+            "locator": "§9, FAQ 9.3, ilk iki paragraf; Gulf Stream’in iki dolaşım örüntüsündeki yeri",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "ipcc-amoc-ayri",
-        "text": "IPCC değerlendirmesi AMOC'u ayrı bir sistem olarak ele alır ve zayıflama öngörüsünü ona bağlar, Gulf Stream'e değil.",
+        "id": "ruzgarla-surulur",
+        "text": "IPCC, model ve kurama dayanarak AMOC çökse bile Gulf Stream’in bütünüyle durmayacağını belirtir; rüzgârla sürülen döngü katkısı devam eder.",
         "citations": [
           {
             "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "9. bölüm, AMOC değerlendirmesi",
+            "locator": "§9, FAQ 9.3, ilk üç paragraf; AMOC çöküşü ile Gulf Stream ayrımı",
             "support_type": "direct"
           }
         ]
@@ -73,24 +72,24 @@
     "counter_evidence": [
       {
         "id": "zayiflayabilir",
-        "text": "Gulf Stream'in kendisi de iklim değişikliğiyle zayıflayabilir; durmaması zayıflamayacağı anlamına gelmiyor.",
+        "text": "UCL’nin 2024 duyurusu, iklim değişikliğinde rüzgâr değişiminin Gulf Stream’i zayıflatabileceğini anlatır. Akıntının sürmesi sabit güçte kalması anlamına gelmez.",
         "citations": [
           {
             "source_ref": "ucl-2024-gulf-stream-ruzgar",
-            "locator": "Duyuru metni",
+            "locator": "Duyuru, Jack Wharton açıklaması; \"For example, if in the future winds are weaker\" ile başlayan cümle",
             "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "Rüzgârla sürülen ve yoğunlukla sürülen bileşenlerin gözlemde ayrıştırılması ne kadar güvenilir?"
+      "Rüzgârla sürülen döngü ve devrilme katkılarının gelecekteki değişimi bölgesel akıntı hızlarına nasıl yansıyacak?"
     ],
     "review": {
       "status": "draft",
-      "notes": "Kurumsal duyuru ve IPCC bölümüne dayanıyor; özgün hakemli makale bağlanmadı."
+      "notes": "IPCC FAQ 9.3 ve UCL duyurusunun ilgili paragraflarıyla sınırlı kaynak denetimi. Olumlu tanım cümlesinin refuted etiketi established olarak düzeltildi. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ]
@@ -98,9 +97,9 @@
   {
     "schema_version": 2,
     "id": "amoc-olcum-suresi-iddiadan-kisa",
-    "claim": "Kesintisiz AMOC ölçümü 2004'te başladı; insan kaynaklı eğilimi doğal salınımdan ayırmak için gereken süreye henüz ulaşılmadı.",
-    "status": "unmeasurable",
-    "confidence": "high",
+    "claim": "RAPID’ın 26,5°K kesitindeki sürekli AMOC izleme dizisi 2004’te başladı; Worthington 2021’in aktardığı 60 yıl tahmini evrensel bir saptama eşiği değildir.",
+    "status": "established",
+    "confidence": "medium",
     "topic": [
       "amoc",
       "olcum-suresi",
@@ -110,16 +109,15 @@
       "iklim-bilimi"
     ],
     "popular_claim": "AMOC'un zayıfladığı ölçüldü.",
-    "divergence": "Ölçüldüğü doğru; ne kadarının insan kaynaklı olduğu ölçülmedi. Kesintisiz doğrudan ölçüm 22 yıllık. Ayırt edilmesi gereken Atlantik çok on yıllık salınımı ise ~70 yıllık. Worthington ve arkadaşları gereken seri uzunluğunu AÇIKÇA veriyor: en az 60 yıl. Bu kayıt, dosyanın omurgasıdır - hem 'çöküyor' hem 'bir şey yok' diyenler aynı kısa seriye bakıyor.",
+    "divergence": "2004, bütün Atlantik’in her enlemde kesintisiz ölçülmesinin başlangıcı değildir; burada RAPID’ın 26,5°K kesiti kastedilir. Worthington §4, en az 60 yıllık dizi tahminini Baehr ve arkadaşları 2008’e atfeder; aynı bölüm derin yoğunluk bilgisinin gereken süreyi azaltabileceğini de aktarır. Bu iki pasaj birlikte, 60 yılın her veri ve yöntem için zorunlu eşik sayılmasını desteklemez. Güncel insan etkisinin payı bu tur hesaplanmadı; sabit 70 yıllık doğal saat veya bütün çalışmaların aynı veriyi kullandığı hükmü kurulmadı.",
     "divergence_type": [
-      "kategori-hatasi",
-      "medya-abartisi"
+      "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "worthington-2021-dusus-yok",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -136,33 +134,12 @@
         "volume": "17(1):285-299",
         "doi": "10.5194/os-17-285-2021",
         "url": "https://os.copernicus.org/articles/17/285/2021/",
-        "note": "TAM METİN OKUNDU. 1981-2016 rekonstrüksiyonu. Başlığı doğrudan 'düşüş göstermiyor' diyor."
-      },
-      {
-        "id": "xing-2026-bati-siniri-dususu",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Xing, Qianjiang",
-          "Elipot, Shane",
-          "Johns, William E.",
-          "Smeed, David A.",
-          "Moat, Ben I.",
-          "Loder, John W."
-        ],
-        "year": 2026,
-        "title": "Meridionally consistent decline in the observed western boundary contribution to the Atlantic Meridional Overturning Circulation",
-        "container": "Science Advances",
-        "volume": "12(15)",
-        "doi": "10.1126/sciadv.adz7738",
-        "note": "Dört demirli dizi, 16,5°N-42,5°N. TAM METİN OKUNDU. Makale, bu ölçünün AMOC eğilimini ABARTTIĞINI kendisi söylüyor ve insan kaynaklı zorlamaya atıf yapmaktan açıkça kaçınıyor."
+        "note": "Bu tur §4 Discussion’ın ilk iki paragrafı ve §5 Conclusions okundu. 60 yıl tahmini §4’te Baehr ve arkadaşları 2008’e atfedilir; özgün Baehr çalışmaları okunmadı. Rekonstrüksiyonun yöntem ve dönem kapsamı, bütün AMOC çalışmalarının sonucu sayılmadı."
       },
       {
         "id": "ipcc-ar6-wg1-bolum9",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "institutional",
         "type": "report",
         "year": 2021,
@@ -170,39 +147,28 @@
         "institution": "IPCC (Hükümetlerarası İklim Değişikliği Paneli)",
         "publisher": "Cambridge University Press",
         "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/",
-        "note": "Değerlendirilmiş uzlaşı konumu. Alıntılar bölüm metninden alındı, basın özetinden değil."
+        "note": "Bu tur Yönetici Özeti/Ocean Circulation, §9.2.3.1 ve FAQ 9.3 resmi HTML metninden okundu. Değerlendirme 2021 tarihlidir; 2026 literatürünün tamamı veya güncel ölçüm dizisi yeniden denetlenmedi."
       }
     ],
     "evidence": [
       {
-        "id": "60-yil-gerekli",
-        "text": "Antropojenik AMOC değişimini saptamak için en az 60 yıllık bir seri gerekir.",
-        "citations": [
-          {
-            "source_ref": "worthington-2021-dusus-yok",
-            "locator": "Tartışma, saptanabilirlik",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
         "id": "seriler-kisa",
-        "text": "Gözlem serileri, simülasyon ve rekonstrüksiyonlara kıyasla kısadır; on yıllık salınım ile iklim değişikliği kaynaklı düşüşü ayırt etmeyi zorlaştırır.",
-        "citations": [
-          {
-            "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Giriş ve tartışma",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "ipcc-dusuk-guven",
-        "text": "IPCC 20. yüzyıl için güveni DÜŞÜK buluyor, çünkü rekonstrüksiyonlar ve modeller sayısal eğilimde birbirini tutmuyor.",
+        "text": "IPCC 2021, RAPID’ın 26,5°K kesitindeki doğrudan izleme başlangıcını 2004 olarak verir.",
         "citations": [
           {
             "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "9. bölüm, 20. yüzyıl değerlendirmesi",
+            "locator": "§9.2.3.1, “The strength of AMOC has been measured directly since 2004” ile başlayan paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "60-yil-gerekli",
+        "text": "Worthington §4, uzun dönemli ısınma sinyalinin saptanması için en az 60 yıllık dizi tahminini Baehr ve arkadaşları 2008’den aktarır; bu çalışmanın yeni bir evrensel eşiği değildir.",
+        "citations": [
+          {
+            "source_ref": "worthington-2021-dusus-yok",
+            "locator": "§4 Discussion, ilk paragraf; Baehr et al. (2008) atfı",
             "support_type": "direct"
           }
         ]
@@ -210,37 +176,38 @@
     ],
     "counter_evidence": [
       {
-        "id": "olcum-var-atif-yok",
-        "text": "Kısa seri, 'hiçbir şey bilinmiyor' demek değildir: 2000'lerden bu yana dört enlemde tutarlı bir düşüş ölçülmüştür. Kayıt ölçümü değil, ATIF iddiasını sınırlıyor.",
+        "id": "derin-bilgi-sure",
+        "text": "Aynı bölüm, Baehr ve arkadaşları 2007’ye dayanarak derin yoğunluk bilgisinin gereken dizi süresini azaltabileceğini belirtir.",
         "citations": [
           {
-            "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Sonuçlar",
+            "source_ref": "worthington-2021-dusus-yok",
+            "locator": "§4 Discussion, ikinci paragraf; Baehr et al. (2007) atfı",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "vekiller-var",
-        "text": "Vekil göstergeler doğrudan ölçümden geriye uzanır; bu kayıt onları yok saymaz, aralarındaki uyuşmazlığı gösterir.",
+        "text": "IPCC 2021 geçmiş rekonstrüksiyonları ve doğrudan gözlemleri ayrı ele alır; bu kayıt yalnız RAPID süresinden hareketle bütün başka kanıtları dışlamaz.",
         "citations": [
           {
-            "source_ref": "worthington-2021-dusus-yok",
-            "locator": "Vekil karşılaştırması",
+            "source_ref": "ipcc-ar6-wg1-bolum9",
+            "locator": "§9.2.3.1, geçmiş değişimler ve doğrudan 2004 sonrası gözlemler",
             "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Doğu ve batı sınırlarındaki ters yönlü eğilimler tüm Kuzey Atlantik boyunca tutarlı mı?"
+      "Güncel RAPID verisinin bitiş tarihi ve boşlukları nedir? Bu tur 2026’ya kadar eksiksiz bir ölçüm dizisi doğrulanmadı.",
+      "İnsan kaynaklı eğilimin payı, hangi enlem, veri, model ve saptama yöntemi altında hesaplanabilir?"
     ],
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Worthington ve Xing tam metinden okundu; IPCC bölüm metninden alıntılandı."
+      "notes": "IPCC §9.2.3.1/FAQ 9.3 ve Worthington §4 ilk iki paragraf/§5 ile sınırlı. Baehr özgün metinleri ve Xing 2026 bu tur okunmadı; Xing atıfları bu dar yöntem kaydından çıkarıldı, başka kayıtlardaki sonuçları yanlışlanmış sayılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ]
@@ -430,7 +397,7 @@
   {
     "schema_version": 2,
     "id": "amoc-ipcc-cumlesinin-iki-yarisi",
-    "claim": "IPCC aynı değerlendirmede hem zayıflamanın çok olası olduğunu hem de 2100'den önce ani çöküş olmayacağına orta güven duyulduğunu söyler.",
+    "claim": "IPCC AR6’nın 2021 değerlendirmesi, 21. yüzyılda AMOC zayıflamasını çok olası bulur ve 2100’den önce ani çöküş olmayacağına orta güven bildirir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -442,16 +409,15 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Bilim insanları AMOC'un çökeceği konusunda uyarıyor.",
-    "divergence": "Değerlendirilmiş uzlaşı iki cümleden oluşuyor ve popüler aktarım ilkini alıp ikincisini düşürüyor: zayıflama 'çok olası', ani çöküş ise 'olmayacağına ORTA GÜVEN' var. Üçüncü bir cümle daha var ve hiç geçmiyor: 20. yüzyıl için güven DÜŞÜK, çünkü rekonstrüksiyonlar ve modeller birbirini tutmuyor. 'Orta güven' bir teminat değil, bir belirsizlik ifadesidir - ama 'çöküyor' da değildir.",
+    "divergence": "Bu iki hüküm 2021 tarihli aynı değerlendirmededir; biri zayıflama, diğeri ani çöküş hakkındadır. §9.2.3.1 model sınırlamalarını da açıklar ve 20. yüzyılın nicel değişimine düşük güven bildirir. Sonraki yayınlar değerlendirmeye geriye dönük eklenmiş sayılamaz. Bu kayıt, belirli medya yazıları incelenmeden bütün basının hangi cümleyi seçtiğini ileri sürmez; orta güveni kesin bir güvenceye veya çöküş kanıtına dönüştürmez.",
     "divergence_type": [
-      "medya-abartisi",
-      "ideolojik-secim"
+      "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "ipcc-ar6-wg1-bolum9",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "institutional",
         "type": "report",
         "year": 2021,
@@ -459,12 +425,12 @@
         "institution": "IPCC (Hükümetlerarası İklim Değişikliği Paneli)",
         "publisher": "Cambridge University Press",
         "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/",
-        "note": "Değerlendirilmiş uzlaşı konumu. Alıntılar bölüm metninden alındı, basın özetinden değil."
+        "note": "Bu tur Yönetici Özeti/Ocean Circulation, §9.2.3.1 ve FAQ 9.3 resmi HTML metninden okundu. Değerlendirme 2021 tarihlidir; 2026 literatürünün tamamı veya güncel ölçüm dizisi yeniden denetlenmedi."
       },
       {
         "id": "ditlevsen-2023-erken-uyari",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -476,14 +442,15 @@
         "container": "Nature Communications",
         "volume": "14(1)",
         "doi": "10.1038/s41467-023-39810-w",
-        "note": "2025-2095 aralığının kaynağı. KÜNYE UYARISI: crossref başlık araması bu makalenin Research Square ÖNBASKISINI döndürüyor (10.21203/rs.3.rs-2034845/v1, 2022); yayımlanmış sürüm budur."
+        "note": "Düzeltilmiş resmi HTML’nin özeti ve girişi okundu. 21 Ağustos 2025 yazar düzeltmesi (10.1038/s41467-025-63201-y) sonrasında girişteki %95 geçiş aralığı 2037–2109’dur. Eski 2025–2095 aralığı kullanılmamalı. Tahmin seçilen vekil ve model varsayımlarına koşulludur; kod ve matematiksel yöntemin tamamı yeniden denetlenmedi.",
+        "url": "https://www.nature.com/articles/s41467-023-39810-w"
       },
       {
         "id": "rahmstorf-caesar-2026-gorus",
         "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
+        "accessed": "2026-10-04",
+        "tier": "primary",
+        "type": "manuscript",
         "authors": [
           "Rahmstorf, Stefan",
           "Caesar, Levke"
@@ -492,39 +459,58 @@
         "title": "Opinion: The AMOC is weakening — time to take the evidence seriously",
         "container": "EGUsphere (önbaskı)",
         "doi": "10.5194/egusphere-2026-2110",
-        "note": "ÖNBASKI, hakem süreci tamamlanmadı. Açık hakem değerlendirmesinde seçici literatür kullanımı ve kanıt hatlarının bağımsızlığı eleştirildi. Kayıtta iddianın kökeni olarak kullanılıyor."
+        "note": "Yazarların birincil görüş metni, ÖN BASKI. 4 Ekim 2026’da EGUsphere sayfası yayını [preprint], tartışma durumunu “final response (author comments only)” olarak gösteriyor; tamamlanmış hakemli yayın olarak sunulmuyor. Bu tur yalnız künye, özet ve yayın durumu okundu; iddianın kökeni olarak kullanılıyor.",
+        "url": "https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2110/"
+      },
+      {
+        "id": "ditlevsen-2025-yazar-duzeltmesi",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ditlevsen, Peter",
+          "Ditlevsen, Susanne"
+        ],
+        "year": 2025,
+        "title": "Author Correction: Warning of a forthcoming collapse of the Atlantic meridional overturning circulation",
+        "container": "Nature Communications",
+        "volume": "16:7794",
+        "doi": "10.1038/s41467-025-63201-y",
+        "url": "https://www.nature.com/articles/s41467-025-63201-y",
+        "note": "Yayımlanmış düzeltmenin kod hataları ve bunların sonuçlarına ilişkin gövdesi resmi HTML’den okundu. Kod yeniden çalıştırılmadı; güncel tarih aralığı düzeltilmiş ana makaleden kontrol edildi."
       }
     ],
     "evidence": [
       {
         "id": "cok-olasi-zayiflama",
-        "text": "AMOC'un 21. yüzyıl boyunca bütün senaryolarda zayıflaması ÇOK OLASI.",
+        "text": "AR6 2021 Yönetici Özeti, AMOC’un bütün SSP senaryolarında 21. yüzyıl boyunca zayıflamasını çok olası bulur.",
         "citations": [
           {
             "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "9. bölüm, gelecek projeksiyonları",
+            "locator": "§9 Yönetici Özeti, Ocean Circulation; §9.2.3.1 gelecek projeksiyonları",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "orta-guven-cokus-yok",
-        "text": "Bu düşüşün 2100'den önce ani bir çöküş içermeyeceğine ORTA GÜVEN duyuluyor.",
+        "text": "AR6 2021, 2100’den önce ani AMOC çöküşü olmayacağına orta güven bildirir.",
         "citations": [
           {
             "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "9. bölüm, ani değişim",
+            "locator": "§9.2.3.1, son paragraf; ani değişim ve model sınırlamaları",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "dusuk-guven-20yy",
-        "text": "20. yüzyıl için rekonstrüksiyon ve model değişimlerine DÜŞÜK GÜVEN var; sayısal eğilimlerde uyuşma az.",
+        "text": "AR6 2021, 20. yüzyıldaki AMOC değişiminin nicel rekonstrüksiyon ve model sonuçlarına düşük güven bildirir.",
         "citations": [
           {
             "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "9. bölüm, geçmiş değişimler",
+            "locator": "§9.2.3.1, geçmiş değişimler; low confidence değerlendirmesi",
             "support_type": "direct"
           }
         ]
@@ -533,34 +519,45 @@
     "counter_evidence": [
       {
         "id": "ar6-2021-tarihli",
-        "text": "IPCC AR6 2021 tarihli; sonrasında hem çöküşü öngören hem de dışlayan hakemli çalışmalar yayımlandı. Değerlendirme güncel literatürün tamamını kapsamıyor.",
+        "text": "Ditlevsen 2023, doğrudan RAPID dizisi yerine 1870–2020 yüzey sıcaklığı vekiliyle ve seçilen model varsayımları altında bir geçiş tahmini kurar. 2025 yazar düzeltmesinden sonraki metin %95 aralığı 2037–2109 verir; bu, koşulsuz çöküş tarihi veya AR6’nın 2021’de ne söylediğine karşı kanıt değildir.",
         "citations": [
           {
             "source_ref": "ditlevsen-2023-erken-uyari",
-            "locator": "Yayın tarihi",
-            "support_type": "counter"
+            "locator": "Introduction, Fig. 1e; model varsayımları ve güncellenmiş %95 aralığı",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "duzeltilmis-tahmin",
+        "text": "21 Ağustos 2025 düzeltmesi iki kod hatasını bildirir; tahminler, güven aralıkları, şekiller ve tablo güncellenmiştir. Eski 2025–2095 aralığı düzeltilmiş sürümün sonucu sayılmamalıdır.",
+        "citations": [
+          {
+            "source_ref": "ditlevsen-2025-yazar-duzeltmesi",
+            "locator": "Düzeltme gövdesi, “two errors in the code” açıklaması ve 1–2 numaralı maddeler",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "fazla-ihtiyatli-elestirisi",
-        "text": "Alanın bir bölümü değerlendirmenin fazla ihtiyatlı olduğunu savunuyor ve birden çok bağımsız hattın zayıflamaya işaret ettiğini öne sürüyor.",
+        "text": "Rahmstorf ve Caesar’ın 2026 ön baskısının özeti, birden çok kanıt hattının geçmiş ve süren insan kaynaklı yavaşlamayı desteklediğini savunur. Bu, yazarların görüşüdür; tamamlanmış hakemli yayın etiketiyle sunulmaz.",
         "citations": [
           {
             "source_ref": "rahmstorf-caesar-2026-gorus",
-            "locator": "Ana argüman",
+            "locator": "Abstract, “the balance of multiple lines of evidence” ile başlayan sonuç cümlesi",
             "support_type": "claim-origin"
           }
         ]
       },
       {
         "id": "orta-guven-teminat-degil",
-        "text": "'Orta güven' ifadesi, çöküşün OLMAYACAĞININ kanıtlandığı anlamına gelmez; belirsizliğin adıdır.",
+        "text": "§9.2.3.1’in model sınırlamaları ve orta güven ifadesi birlikte okunduğunda, ani çöküşün imkânsızlığının kanıtlandığı sonucu çıkmaz.",
         "citations": [
           {
             "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "Güven dili tanımı",
-            "support_type": "context"
+            "locator": "§9.2.3.1, son paragraf; Grönland erimesi ve model kararlılığı sınırlamaları",
+            "support_type": "inference"
           }
         ]
       }
@@ -568,9 +565,9 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Alıntılar bölüm metninden alındı, basın özetinden değil."
+      "notes": "IPCC Yönetici Özeti/§9.2.3.1/FAQ 9.3; Ditlevsen güncel özet ve giriş; 2025 yazar düzeltmesi; EGUsphere künye, Abstract ve yayın durumu okundu. Matematiksel yöntem, kod ve ön baskının tam metni yeniden denetlenmedi. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ]
@@ -817,7 +814,7 @@
       {
         "id": "ditlevsen-2023-erken-uyari",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -829,7 +826,8 @@
         "container": "Nature Communications",
         "volume": "14(1)",
         "doi": "10.1038/s41467-023-39810-w",
-        "note": "2025-2095 aralığının kaynağı. KÜNYE UYARISI: crossref başlık araması bu makalenin Research Square ÖNBASKISINI döndürüyor (10.21203/rs.3.rs-2034845/v1, 2022); yayımlanmış sürüm budur."
+        "note": "Düzeltilmiş resmi HTML’nin özeti ve girişi okundu. 21 Ağustos 2025 yazar düzeltmesi (10.1038/s41467-025-63201-y) sonrasında girişteki %95 geçiş aralığı 2037–2109’dur. Eski 2025–2095 aralığı kullanılmamalı. Tahmin seçilen vekil ve model varsayımlarına koşulludur; kod ve matematiksel yöntemin tamamı yeniden denetlenmedi.",
+        "url": "https://www.nature.com/articles/s41467-023-39810-w"
       },
       {
         "id": "vanwesten-2024-devrilme-yolunda",
@@ -873,9 +871,9 @@
       {
         "id": "rahmstorf-caesar-2026-gorus",
         "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
+        "accessed": "2026-10-04",
+        "tier": "primary",
+        "type": "manuscript",
         "authors": [
           "Rahmstorf, Stefan",
           "Caesar, Levke"
@@ -884,7 +882,8 @@
         "title": "Opinion: The AMOC is weakening — time to take the evidence seriously",
         "container": "EGUsphere (önbaskı)",
         "doi": "10.5194/egusphere-2026-2110",
-        "note": "ÖNBASKI, hakem süreci tamamlanmadı. Açık hakem değerlendirmesinde seçici literatür kullanımı ve kanıt hatlarının bağımsızlığı eleştirildi. Kayıtta iddianın kökeni olarak kullanılıyor."
+        "note": "Yazarların birincil görüş metni, ÖN BASKI. 4 Ekim 2026’da EGUsphere sayfası yayını [preprint], tartışma durumunu “final response (author comments only)” olarak gösteriyor; tamamlanmış hakemli yayın olarak sunulmuyor. Bu tur yalnız künye, özet ve yayın durumu okundu; iddianın kökeni olarak kullanılıyor.",
+        "url": "https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2110/"
       },
       {
         "id": "chen-tung-2024-kanit-yok",
