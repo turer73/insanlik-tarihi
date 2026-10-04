@@ -116,7 +116,7 @@
     "limit": "Kayıtlar arkeolojik yüzey araştırması, kazı ve geç dönem metin kopyalarına dayanır; nüfus ve alan rakamları model tahminidir. Erken metinlerin çoğu geç nüshalardan bilinir; bu yazı iddiaların mevcut kayıtla taşınıp taşınmadığını ölçer, kesin 'ilk'lik hükmü vermez."
   },
   "amoc": {
-    "summary": "AMOC için tam kesit ölçümü, derin batı devrilme ölçüsü ve model tahmini farklı büyüklüklerdir. 26,5°K rakamları ölçü ve dönemleriyle verilir; 2018’deki toparlanmanın ardından 2021’deki yeniden düşüş de gösterilir. İklim deneylerinin model sayısı ve süresi, takvimdeki kesin çöküş tarihi veya risk güvencesi değildir. IPCC AR6 2021, yazar düzeltmeleri ve ön baskılar kendi kapsamlarıyla okunur.",
-    "limit": "4 Ekim 2026’da iki turda toplam altı kaydın seçilmiş pasajları denetlendi: akıntı ayrımı, ölçüm süresi, AR6 2021, rakam/ölçü ayrımı, modelde çöküş tanımı ve 2011–2021 duraklama. Diğer dört kaydın içerik denetimi tamamlanmadı; birindeki ortak künyeler güncellendi. Güncel RAPID dizisi, kod ve bütün literatür doğrulanmadı. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı."
+    "summary": "AMOC için tam kesit ölçümü, derin batı devrilme ölçüsü, sıcaklık vekili ve model tahmini farklı sorulara yanıt verir. 26,5°K rakamları dönemleriyle, erken uyarılar model ve vekil sınırlarıyla okunur. Heinrich Stadial 1’de zayıflayıp süren devrilme yorumu bütün geçmiş olaylara yayılmaz; Genç Dryas güzergâh deneyi gerçek taşkın yolunu kanıtlamaz. Buzul döngüsü ile buzul dönemi içindeki hızlı iklim olayları ayrı zaman ölçeklerindedir.",
+    "limit": "4 Ekim 2026’da üç turda on AMOC kaydının seçilmiş kaynak pasajları denetlendi. Bradtmiller 2014, Caesar 2018 ve Chen–Boers 2024 için yalnız yayımlanmış özet/abonelik önizlemesi okunabildi. Bütün tam metinler, ek veri, kod, matematiksel yöntem, medya örnekleri ve güncel RAPID dizisi doğrulanmadı. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı."
   }
 }

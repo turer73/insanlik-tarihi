@@ -749,9 +749,9 @@
   {
     "schema_version": 2,
     "id": "amoc-alan-ici-celiski",
-    "claim": "AMOC'un şu anda zayıflayıp zayıflamadığı konusunda hakemli literatür kendi içinde çelişir; 'düşüş yok' sonucu veren çalışmalar popüler aktarımda görünmez.",
-    "status": "contested",
-    "confidence": "high",
+    "claim": "Worthington 2021’in 1981–2016 çok katmanlı rekonstrüksiyonu genel düşüş bulmaz; Caesar 2018’in deniz yüzeyi sıcaklığı parmak izi ise 20. yüzyıl zayıflaması önerir. Bu yöntem ve dönem farkı tek başına güncel AMOC eğilimini karara bağlamaz.",
+    "status": "established",
+    "confidence": "medium",
     "topic": [
       "amoc",
       "literatur",
@@ -761,16 +761,15 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Bilim insanları AMOC'un zayıfladığı konusunda hemfikir.",
-    "divergence": "Hemfikir değiller ve anlaşmazlık yayımlanmış durumda: Nature Climate Change'de bir itiraz yazısı ile ona verilen yanıt yan yana duruyor. Worthington ve arkadaşlarının 30 yıllık rekonstrüksiyonunun BAŞLIĞI doğrudan 'düşüş göstermiyor' diyor ve çöküş anlatısını aktaran popüler içerikte neredeyse hiç geçmiyor. Anlatıya uymayan hakemli sonucun görünmez kalması, seçici aktarımın tanımıdır.",
+    "divergence": "Bir çalışmanın regresyonla tahmin edilmiş 26°K kesit dizisi, ötekinin modelle kalibre edilmiş yüzey sıcaklığı parmak iziyle aynı gözlem değildir. Worthington’ın sonucu 1981–2016 döneminin kendi modeline, Caesar’ınki daha uzun bir sıcaklık desenine aittir. Chen–Tung 2024 ile Boers 2024 arasındaki yayımlanmış itiraz ve yanıt AMOC gücünün yıllık eğilimini değil, erken uyarı göstergesinin yorumunu tartışır. Van Westen 2024’ün tatlı su zorlamalı CESM deneyi ve yeniden analizleri de bir çöküş tarihi ölçmez. Belirli popüler medya örnekleri bu tur taranmadı; seçici yayın/ideolojik niyet hükmü kaldırıldı.",
     "divergence_type": [
-      "ideolojik-secim",
-      "medya-abartisi"
+      "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "worthington-2021-dusus-yok",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -787,26 +786,28 @@
         "volume": "17(1):285-299",
         "doi": "10.5194/os-17-285-2021",
         "url": "https://os.copernicus.org/articles/17/285/2021/",
-        "note": "TAM METİN OKUNDU. 1981-2016 rekonstrüksiyonu. Başlığı doğrudan 'düşüş göstermiyor' diyor."
+        "note": "Resmi Ocean Science HTML’de Abstract, Methods 2.1–2.2, Results 3.3/Fig. 9 ve Discussion–Conclusions seçilmiş pasajları okundu. Dizi 1981–2016 için regresyon tahminidir; 2004 öncesi sürekli doğrudan RAPID dizisi değildir."
       },
       {
         "id": "caesar-2018-parmak-izi",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
           "Caesar, Levke",
           "Rahmstorf, Stefan",
           "Robinson, Alexander",
-          "Feulner, Georg"
+          "Feulner, Georg",
+          "Saba, Vincent S."
         ],
         "year": 2018,
         "title": "Observed fingerprint of a weakening Atlantic Ocean overturning circulation",
         "container": "Nature",
         "volume": "556(7700):191-196",
         "doi": "10.1038/s41586-018-0006-5",
-        "note": "Deniz yüzeyi sıcaklığı parmak izi yöntemi. KÜNYE UYARISI: crossref başlık araması makalenin kendisini değil hakkındaki bir değerlendirmeyi döndürüyor; doğru kayıt budur."
+        "note": "Nature resmî özet/şekil başlıkları okundu; abonelik engeli nedeniyle yöntem ve sonuçların tam metni okunmadı. 20. yüzyıl zayıflaması deniz yüzeyi sıcaklığı parmak izi ve model kalibrasyonu üzerinden önerilir.",
+        "url": "https://www.nature.com/articles/s41586-018-0006-5"
       },
       {
         "id": "ditlevsen-2023-erken-uyari",
@@ -823,13 +824,13 @@
         "container": "Nature Communications",
         "volume": "14(1)",
         "doi": "10.1038/s41467-023-39810-w",
-        "note": "Düzeltilmiş resmi HTML’nin özeti ve girişi okundu. 21 Ağustos 2025 yazar düzeltmesi (10.1038/s41467-025-63201-y) sonrasında girişteki %95 geçiş aralığı 2037–2109’dur. Eski 2025–2095 aralığı kullanılmamalı. Tahmin seçilen vekil ve model varsayımlarına koşulludur; kod ve matematiksel yöntemin tamamı yeniden denetlenmedi.",
+        "note": "Düzeltilmiş Nature Communications özeti/girişi önceki turda okundu; bu tur yöntem yeniden çalıştırılmadı. Erken uyarı yorumu, gözlenen yıllık AMOC gücü eğilimiyle eşitlenmez.",
         "url": "https://www.nature.com/articles/s41467-023-39810-w"
       },
       {
         "id": "vanwesten-2024-devrilme-yolunda",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -842,7 +843,8 @@
         "container": "Science Advances",
         "volume": "10(6)",
         "doi": "10.1126/sciadv.adk1189",
-        "note": "Bu kayıtta doğrulayıcı değil, 'devrilme yolunda' konumunun KAYNAĞI olarak kullanılıyor: alan içi çelişkinin bir ucu. Karşı uçtaki çalışmalar aynı kayıtta listeli."
+        "note": "Resmi PMC HTML’de Abstract, AMOC collapse, FovS göstergesi ve Discussion seçilmiş pasajları okundu. İdealize tatlı su zorlamalı CESM deneyi ve 1980–2022 yeniden analizi ayrıldı; güncel çöküş tarihi verilmez.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10857529/"
       },
       {
         "id": "baker-2025-cokmez",
@@ -863,30 +865,13 @@
         "container": "Nature",
         "volume": "638(8052):987-994",
         "doi": "10.1038/s41586-024-08544-0",
-        "note": "Bu tur düzeltilmiş resmi Nature HTML’de seçilmiş özet, deney, sonuç ve yöntem pasajları okundu. Ani 4×CO₂ 34 model, 0,3 Sv tatlı su 7 model; %54 90. yıl model ortalamasıdır. 6 Sv eşiği sonuç cümlesindedir, Main’de tam çöküş sıfır/tersine dönme olarak açıklanır. Kod ve bütün ek veriler doğrulanmadı.",
+        "note": "Önceki turda Nature düzeltilmiş HTML’nin seçilmiş özet, deney, sonuç ve yöntem pasajları okundu. 34 model ani 4×CO₂ deneyine aittir; gerçek dünya için koşulsuz tarih değildir.",
         "url": "https://www.nature.com/articles/s41586-024-08544-0"
-      },
-      {
-        "id": "rahmstorf-caesar-2026-gorus",
-        "language": "en",
-        "accessed": "2026-10-04",
-        "tier": "primary",
-        "type": "article",
-        "authors": [
-          "Rahmstorf, Stefan",
-          "Caesar, Levke"
-        ],
-        "year": 2026,
-        "title": "Opinion: The AMOC is weakening — time to take the evidence seriously",
-        "container": "EGUsphere (önbaskı)",
-        "doi": "10.5194/egusphere-2026-2110",
-        "note": "Yazarların birincil görüş metni, ÖN BASKI. 4 Ekim 2026’da EGUsphere sayfası yayını [preprint], tartışma durumunu “final response (author comments only)” olarak gösteriyor; tamamlanmış hakemli yayın olarak sunulmuyor. Bu tur yalnız künye, özet ve yayın durumu okundu; iddianın kökeni olarak kullanılıyor.",
-        "url": "https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2110/"
       },
       {
         "id": "chen-tung-2024-kanit-yok",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -898,12 +883,13 @@
         "container": "Nature Climate Change",
         "volume": "14:40-42",
         "doi": "10.1038/s41558-023-01877-0",
-        "note": "Boers 2021'in erken uyarı sinyali yorumuna yayımlanmış itiraz."
+        "note": "Nature Climate Change abonelik önizlemesindeki giriş/özet paragrafı okundu. Sekiz vekilin gözlem kapsamı ve işaretine itiraz bu yazarların görüşüdür; tam metin okunmadı.",
+        "url": "https://www.nature.com/articles/s41558-023-01877-0"
       },
       {
         "id": "boers-2024-yanit",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -914,7 +900,8 @@
         "container": "Nature Climate Change",
         "volume": "14:43-47",
         "doi": "10.1038/s41558-023-01878-z",
-        "note": "Chen ve Tung'un itirazına yayımlanmış yanıt. İkisi birlikte, alanın anlaşmazlığının hakemli kaydıdır."
+        "note": "Nature Climate Change abonelik önizlemesindeki yanıt paragrafı okundu. İşaret ve gözlem kapsamı eleştirilerine yanıt bu yazarın görüşüdür; tam metin okunmadı.",
+        "url": "https://www.nature.com/articles/s41558-023-01878-z"
       },
       {
         "id": "lee-2024-duraklama",
@@ -937,107 +924,96 @@
         "container": "Nature Communications",
         "volume": "15:10642",
         "doi": "10.1038/s41467-024-54903-w",
-        "note": "Bu tur Introduction, Results/Fig. 1, Discussion’ın sınırlamaları ve Methods/RAPID veri kapsamı okundu. 2021’de yeniden düşüş ve farklı trend pencereleri gösterildi. Model ayrımı ayrı ölçülmüş doğal ve insan kaynaklı sinyaller değildir; medya ifadesinin kökeni kaynakta belirlenmiş sayılmadı.",
+        "note": "Önceki turda Nature Communications giriş, seçilmiş sonuç, tartışma ve veri kapsamı pasajları okundu. 2011–2021 −0,1 Sv/on yıl, bu tarih penceresine ait raporlanan eğilimdir.",
         "url": "https://www.nature.com/articles/s41467-024-54903-w"
       }
     ],
     "evidence": [
       {
         "id": "genel-dusus-yok",
-        "text": "1981-2016 rekonstrüksiyonu genel bir AMOC düşüşü göstermiyor; 2008-2012 zayıflaması 1980'lerin ortasından beri en düşük değer ama eğilim değil.",
+        "text": "Worthington’ın 1981–2016, yaklaşık yıllık çözünürlüklü dört katmanlı regresyon rekonstrüksiyonu genel AMOC eğilimi bulmaz; 2008–2012 zayıflaması kendi döneminde 1980’lerin ortasından beri en düşük kesittir.",
         "citations": [
           {
             "source_ref": "worthington-2021-dusus-yok",
-            "locator": "Sonuçlar",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "ic-degiskenlik",
-        "text": "Aynı çalışma, 2008-2012 düşüşünün antropojenik bir eğilimden çok iç değişkenlik olmasının daha olası olduğunu söylüyor.",
-        "citations": [
-          {
-            "source_ref": "worthington-2021-dusus-yok",
-            "locator": "Tartışma",
+            "locator": "Abstract; Methods 2.1–2.2; Results, Fig. 9; Discussion ve Conclusions",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "sst-parmak-izi",
-        "text": "Deniz yüzeyi sıcaklığı parmak izi yöntemi ise 20. yüzyıl boyunca zayıflama buluyor.",
+        "text": "Caesar ve arkadaşlarının 2018 özeti, modelle kalibre edilen deniz yüzeyi sıcaklığı deseninden 20. yüzyıl ortasından beri yaklaşık 3 ± 1 Sv zayıflama çıkarır; bu doğrudan akıntı ölçümü değildir.",
         "citations": [
           {
             "source_ref": "caesar-2018-parmak-izi",
-            "locator": "Sonuçlar",
+            "locator": "Abstract, ilk iki paragraf; Fig. 1 ve Fig. 5 başlıkları",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "erken-uyari-iddiasi",
-        "text": "Erken uyarı sinyali yöntemleri devrilme yolunda olunduğunu öne sürüyor.",
+        "text": "Ditlevsen ve Ditlevsen’in 2023 çalışması seçilen yüzey sıcaklığı vekili ve istatistiksel yönteme dayalı erken uyarı yorumu sunar; tam kesit AMOC eğilimi ölçmez.",
         "citations": [
           {
             "source_ref": "ditlevsen-2023-erken-uyari",
-            "locator": "Ana argüman",
+            "locator": "Düzeltilmiş Abstract ve Introduction",
             "support_type": "claim-origin"
           }
         ]
       },
       {
         "id": "fizik-temelli-uyari",
-        "text": "Fizik temelli bir erken uyarı sinyali de aynı yönde sonuç veriyor.",
+        "text": "Van Westen ve arkadaşları idealize tatlı su zorlamalı CESM çöküş deneyinden FovS göstergesi önerir; tarihsel yeniden analiz dizisinin henüz eşik uzaklığını ölçmek için yetersiz olduğunu belirtir.",
         "citations": [
           {
             "source_ref": "vanwesten-2024-devrilme-yolunda",
-            "locator": "Ana argüman",
+            "locator": "AMOC collapse; Fig. 1 ve Fig. 6; Discussion son dört paragraf",
             "support_type": "claim-origin"
           }
         ]
       },
       {
         "id": "34-model-cokmez",
-        "text": "34 modelli çalışma ise bu yüzyıl içinde çöküşü olası bulmuyor.",
+        "text": "Baker ve arkadaşlarının 34 model sonucu ani 4×CO₂ deneyine özgüdür; bugünkü akıntının doğrudan ölçümü veya bütün senaryoların ortak hükmü değildir.",
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Sonuç",
-            "support_type": "counter"
+            "locator": "Experiments and AMOC upwelling pathways; Future fate of the AMOC",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "yayimlanmis-tartisma",
-        "text": "Anlaşmazlık yayımlanmış bir alışverişe dönüştü: erken uyarı sinyali yorumuna itiraz eden bir yazı ve ona verilen yanıt aynı dergide yan yana duruyor.",
+        "text": "Chen ve Tung’un Nature Climate Change 2024 önizlemesi, erken uyarı vekillerinin işareti ve artan gözlem kapsamına itiraz eder.",
         "citations": [
           {
             "source_ref": "chen-tung-2024-kanit-yok",
-            "locator": "Ana argüman",
-            "support_type": "counter"
+            "locator": "Matters Arising önizlemesi, giriş/özet paragrafı",
+            "support_type": "claim-origin"
           }
         ]
       },
       {
         "id": "boers-yaniti",
-        "text": "Yanıt, itirazı kabul etmiyor ve erken uyarı sinyali yorumunu savunuyor.",
+        "text": "Boers’un aynı dergideki yanıtı işaret ve gözlem kapsamı itirazlarını kabul etmeyip erken uyarı yorumunu savunur.",
         "citations": [
           {
             "source_ref": "boers-2024-yanit",
-            "locator": "Yanıt metni",
+            "locator": "Reply önizlemesi, ilk üç paragraf",
             "support_type": "claim-origin"
           }
         ]
       },
       {
         "id": "gozlemde-de-anlasmazlik",
-        "text": "Gözlem tarafında da anlaşmazlık var: RAPID kaydında 2011-2021 eğilimi neredeyse düz.",
+        "text": "Lee 2024, 26,5°K için 2011–2021 eğilimini −0,1 Sv/on yıl olarak raporlar; daha uzun pencerenin eğilimi farklıdır.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Sonuçlar",
-            "support_type": "counter"
+            "locator": "Introduction, dönem eğilimleri; Fig. 7e",
+            "support_type": "context"
           }
         ]
       }
@@ -1045,33 +1021,27 @@
     "counter_evidence": [
       {
         "id": "yontem-farki",
-        "text": "Çelişki yöntem farkından doğuyor: doğrudan mooring ölçümü, vekil rekonstrüksiyon ve model simülasyonu aynı büyüklüğü ölçmüyor. 'Uyuşmuyorlar' ile 'biri yanlış' aynı şey değil.",
+        "text": "Yüzey sıcaklığı parmak izi, 26°K katmanlı regresyonu, RAPID gözlemi ve idealize zorlamalı model aynı ölçü ve dönemi paylaşmaz; yan yana dizilmesi yöntemler arası anlaşmazlığın nedenini tek başına kanıtlamaz.",
         "citations": [
           {
             "source_ref": "worthington-2021-dusus-yok",
-            "locator": "Yöntem karşılaştırması",
+            "locator": "Introduction, önceki vekil yöntemleri; Discussion, model kapsamı",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "caesar-2018-parmak-izi",
+            "locator": "Abstract, SST deseni ve model kalibrasyonu",
             "support_type": "context"
           }
         ]
       },
       {
         "id": "yokluk-kaniti-degil",
-        "text": "Worthington ve arkadaşları da kendi sonuçlarının antropojenik değişimin YOKLUĞUNU kanıtlamadığını söylüyor; seri bunun için çok kısa.",
+        "text": "Worthington’ın kendi dönemi için düşüş bulmaması, başka dönemlerde veya yöntemlerde insan kaynaklı değişimin yokluğunu kanıtlamaz; yöntem belirsizliği yaklaşık ±2,5 Sv’dir.",
         "citations": [
           {
             "source_ref": "worthington-2021-dusus-yok",
-            "locator": "Tartışma, sınırlar",
-            "support_type": "counter"
-          }
-        ]
-      },
-      {
-        "id": "gorus-yazisi-elestirildi",
-        "text": "Zayıflamayı savunan taraf da birden çok bağımsız hattın birlikte değerlendirilmesi gerektiğini öne sürüyor; bu görüş yazısı açık hakem sürecinde seçici literatür kullanımı nedeniyle eleştirildi.",
-        "citations": [
-          {
-            "source_ref": "rahmstorf-caesar-2026-gorus",
-            "locator": "Açık hakem değerlendirmesi",
+            "locator": "Discussion, model uncertainty ve Conclusions",
             "support_type": "counter"
           }
         ]
@@ -1080,17 +1050,21 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Worthington ve Baker tam metinden; diğerleri künye ve özet düzeyinde."
+      "notes": "Worthington’ın seçilmiş tam metin pasajları, van Westen’in seçilmiş tam metni ve Chen/Boers/Caesar abonelik önizlemeleri kontrol edildi. Sonuçlar ayrı değişken, dönem ve deney koşullarıyla verildi; kod ve güncel RAPID yeniden incelenmedi. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
+    ],
+    "open_questions": [
+      "Güncel RAPID dizisi ve farklı vekil yöntemleri ortak dönem, enlem ve belirsizlik tanımıyla karşılaştırılınca sonuç ne olur?",
+      "Belirli medya örnekleri ve bu çalışmaların aktarım sıklığı ayrıca taranmalıdır."
     ]
   },
   {
     "schema_version": 2,
     "id": "amoc-gecmiste-zayifladi-durmadi",
-    "claim": "AMOC geçmişte defalarca ve hızla zayıfladı; en güçlü olaylarda bile tümüyle durduğuna dair vekil gösterge kanıtı yoktur.",
+    "claim": "Bradtmiller 2014’ün yayımlanan özeti, Heinrich Stadial 1’de belirgin AMOC zayıflaması ama tümüyle durma olmadığını 231Pa/230Th vekilinden çıkarır; bu tek olay bütün geçmiş AMOC olayları için yokluk kanıtı değildir.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -1115,16 +1089,15 @@
       ]
     },
     "popular_claim": "AMOC geçmişte durdu ve dünyayı buzul çağına soktu.",
-    "divergence": "Zayıflama gerçek ve tekrarlı; DURMA kanıtlanmış değil. Protaktinyum-toryum oranları Heinrich Stadial 1 için 'zayıflamış AMA SÜREN' bir sirkülasyon gösteriyor - makalenin başlığı bunu birebir söylüyor. Genç Dryas için de aynı: 'zayıflamış AMOC'un sürdürülmesi'. 'Durdu' cümlesi vekil göstergelerin verdiğinden fazlasını iddia ediyor. 'Durmadı' ile 'durmaz' aynı şey değil: geçmiş olaylar buzul dünyasında, bugünkünden farklı sınır koşullarında yaşandı.",
+    "divergence": "Bradtmiller’ın açık özeti Heinrich Stadial 1 için zayıflamış fakat süren devrilme yorumunu taşır; yerel parçacık etkisi tekil 231Pa/230Th kayıtlarını saptırabilir. Bu sonuç “geçmişte hiçbir durma olmadı” veya “gelecekte duramaz” hükmüne genişletilemez. You 2026’nın Genç Dryas için iki evreli zayıflama önerisi vekil kayıt ve model yorumudur. Fohlmeister 2023’ün dikit derlemesi atmosfer ve yağış göstergelerindeki geniş coğrafi deseni inceler, bütün kıtaların aynı sıcaklıkta değiştiğini ölçmez. He 2021’de yaklaşık 6 °C HS1 soğuması izotoplu model çıktısıdır; buz çekirdeği δ18O’sundaki eksik sinyali açıklayan bir hipotezdir.",
     "divergence_type": [
-      "medya-abartisi",
       "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "bradtmiller-2014-path-heinrich",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1137,12 +1110,13 @@
         "container": "Nature Communications",
         "volume": "5(1)",
         "doi": "10.1038/ncomms6817",
-        "note": "Başlığın kendisi kaydın sonucudur: zayıflamış AMA SÜREN. TAM METİN OKUNAMADI - Nature Communications'un 2014 sayısı açık erişim değil, Europe PMC de kapalı olduğunu bildiriyor. Kayıtlar ÖZET düzeyindedir; özet, sonucu ve başlıca çekinceyi (yerel parçacık etkileri) kendi cümleleriyle taşıdığı için kullanıldı."
+        "note": "Nature Communications abonelik önizlemesindeki Abstract ve şekil başlıkları okundu; tam metin erişilebilir değildi. HS1 yorumu yerel parçacık etkisi çekincesiyle ve yalnız bu olay için verildi.",
+        "url": "https://www.nature.com/articles/ncomms6817"
       },
       {
         "id": "you-2026-genc-dryas-tatlanma",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1156,12 +1130,13 @@
         "container": "Science Advances",
         "volume": "12(1)",
         "doi": "10.1126/sciadv.adv6220",
-        "note": "TAM METİN OKUNDU (PMC12757042). Baffin Körfezi SL170 ve Labrador Denizi MSM12/2-05-01 karotları; IP25, dinosterol, alkenon ve Mg/Ca. Agassiz taşkınının TEK BAŞINA yetmediğini savunan iki evreli hipotez."
+        "note": "Resmi PMC HTML’de Abstract, Introduction ve Discussion’ın Genç Dryas orta/geç evreleri ile Fig. 3–4 açıklamaları okundu. İki evreli tatlı su yorumu, veri ve modelin koşullu hipotezidir.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12757042/"
       },
       {
         "id": "fohlmeister-2023-do-donguleri",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1175,12 +1150,13 @@
         "container": "Proceedings of the National Academy of Sciences",
         "volume": "120(36)",
         "doi": "10.1073/pnas.2302283120",
-        "note": "TAM METİN OKUNDU (PMC10483664). 67 mağaradan 111 dikit; Antarktika dışında bütün kıtalar. 120-15 bin yıl önce."
+        "note": "Resmi PMC HTML’de Significance, Abstract, Introduction, Materials and Methods/veri kümesi, Results ve Discussion seçilmiş pasajları okundu. 111 dikit/67 mağara örneklemidir; 16,5 °C girişte başka buz çekirdeği çalışmasına atfedilir.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10483664/"
       },
       {
         "id": "he-2021-heinrich-gronland",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1194,72 +1170,73 @@
         "container": "Science Advances",
         "volume": "7(25)",
         "doi": "10.1126/sciadv.abh1007",
-        "note": "TAM METİN OKUNDU (PMC8208719). Soğumanın OLDUĞUNU ama Grönland δ18O'sunun kaydetmediğini gösteriyor: kış deniz buzu genişleyince kış yağışı kayboluyor ve izotopik zenginleşme soğuma sinyalini siliyor."
+        "note": "Resmi PMC HTML’de Abstract, Introduction, model sonucu ve kış yağışı/deniz buzu mekanizması pasajları okundu. Yaklaşık 6 °C model çıktısıdır, bağımsız termometre ölçümü değildir.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8208719/"
       }
     ],
     "evidence": [
       {
         "id": "path-zayif-ama-suren",
-        "text": "Heinrich Stadial 1'de (y. 17.500 yıl önce) 231Pa/230Th oranları neredeyse bütün derinliklerde buzul değerlerini aşıyor: devrilmede belirgin bir azalma var ama DURMA yok.",
+        "text": "Bradtmiller’ın yayımlanan özeti, HS1’de 231Pa/230Th oranlarının neredeyse tüm incelenen derinliklerde buzul dönemi değerlerini aştığını; bunu belirgin devrilme azalması fakat tam durma olmaması diye yorumladığını bildirir.",
         "citations": [
           {
             "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Özet ve sonuçlar",
+            "locator": "Abstract, son iki cümle; Fig. 2 başlığı",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "durma-gerekmiyor",
-        "text": "Aynı çalışma sonucu şöyle bağlıyor: ani iklim salınımları devrilmenin tümüyle durmasını GEREKTİRMİYOR.",
+        "text": "Aynı özet, ani iklim salınımlarının AMOC’un tamamen durmasını zorunlu kılmadığı sonucunu çıkarır; bütün olaylarda duruşun dışlandığını söylemez.",
         "citations": [
           {
             "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Özet, sonuç cümlesi",
+            "locator": "Abstract, sonuç cümlesi",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "genc-dryas-suren",
-        "text": "Geç Genç Dryas'ta da zayıflamış ama süren bir AMOC bulunuyor; iki evreli bir düşüş deseni var.",
+        "text": "You ve arkadaşları Genç Dryas ortasında kısmi toparlanma, sonunda ikinci zayıflama yorumu sunar; bunun dayanağı vekil kayıtlar ve modeldir.",
         "citations": [
           {
             "source_ref": "you-2026-genc-dryas-tatlanma",
-            "locator": "Sonuçlar",
-            "support_type": "direct"
+            "locator": "Abstract; Discussion, mid-YD rebound ve late-YD freshwater; Fig. 3E ve Fig. 4",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "do-16-5-derece",
-        "text": "Dansgaard-Oeschger geçişlerinde Grönland'da birkaç on yıl içinde 16,5 °C'ye varan ani ısınma yaşanıyor.",
+        "text": "Fohlmeister’ın girişi, Grönland buz çekirdeği çalışmalarına dayanarak bazı Dansgaard–Oeschger geçişlerinde birkaç on yılda 16,5 °C’ye varan ısınma aktarır.",
         "citations": [
           {
             "source_ref": "fohlmeister-2023-do-donguleri",
-            "locator": "Giriş ve sonuçlar",
-            "support_type": "direct"
+            "locator": "Introduction, ilk paragraf ve atıf 17",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "111-dikit",
-        "text": "Bu desen 67 mağaradan 111 dikitte, Antarktika dışında bütün kıtalarda izlenebiliyor; olay Kuzey Atlantik'e sıkışmış değil, küresel.",
+        "text": "Fohlmeister’ın 111 dikit/67 mağara örneklemi Antarktika dışındaki kıtalarda yağış δ18O örüntülerini inceler; geniş atmosferik yeniden düzenlenme, her yerde aynı sıcaklık değişimi demek değildir.",
         "citations": [
           {
             "source_ref": "fohlmeister-2023-do-donguleri",
-            "locator": "Veri kümesi",
+            "locator": "Introduction, SISAL örneklemi; Abstract; Results, Fig. 2",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "6-derece-soguma",
-        "text": "Heinrich Stadial 1 başlangıcında modelde yıllık ortalama ~6 °C'lik ani bir soğuma var ve bu, Bølling-Allerød ile Genç Dryas geçişlerinin yarısından fazlası.",
+        "text": "He ve arkadaşlarının izotoplu modelinde HS1 başlangıcında Grönland yıllık ortalama sıcaklığı yaklaşık 6 °C düşer; aynı modelin δ18O çıktısı belirgin düşüşü kaydetmez.",
         "citations": [
           {
             "source_ref": "he-2021-heinrich-gronland",
-            "locator": "Sonuçlar",
+            "locator": "Results, iTRACE model and Fig. 1B–C; Abstract",
             "support_type": "direct"
           }
         ]
@@ -1268,57 +1245,58 @@
     "counter_evidence": [
       {
         "id": "vekil-dolayli",
-        "text": "Vekil göstergeler sirkülasyonu doğrudan ölçmez; makalenin kendi özeti 'yerel parçacık etkilerinin tek tek rekonstrüksiyonları saptırabileceğini' söylüyor.",
+        "text": "231Pa/230Th dolaylı bir dolaşım göstergesidir; Bradtmiller özeti tekil kayıtlarda yerel parçacık etkisinin sapma yaratabileceğini belirtir.",
         "citations": [
           {
             "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Özet, yöntem çekincesi",
+            "locator": "Abstract, ilk üç cümle",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "gronland-izi",
-        "text": "Grönland buz çekirdeği izotopları Heinrich Stadial 1 soğumasını KAYDETMİYOR: kış deniz buzu genişleyince kış yağışı kayboluyor ve izotopik zenginleşme soğuma sinyalini siliyor.",
+        "text": "He’nin izotoplu modelinde kış deniz buzu genişlemesi kış yağışını azaltır; mevsimsel δ18O zenginleşmesi HS1 soğuma sinyalini dengeler.",
         "citations": [
           {
             "source_ref": "he-2021-heinrich-gronland",
-            "locator": "Ana argüman",
+            "locator": "Abstract; Results, winter sea ice ve precipitation-seasonality paragrafları; Fig. 2–3",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "ayirt-edemiyor",
-        "text": "Aynı nedenle Grönland δ18O'su Heinrich duraklarını sıradan Dansgaard-Oeschger duraklarından AYIRT EDEMİYOR ve buzul koşullarında sıcaklık değişkenliğini olduğundan az gösterebiliyor.",
+        "text": "He’nin girişi, Grönland δ18O dizisinde Heinrich ve sıradan Dansgaard–Oeschger soğuk evrelerinin benzer göründüğünü; diğer vekillerin ayrım gösterebildiğini belirtir.",
         "citations": [
           {
             "source_ref": "he-2021-heinrich-gronland",
-            "locator": "Sonuçlar ve çıkarımlar",
-            "support_type": "counter"
+            "locator": "Introduction, ilk paragraf",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "olay-oldu-vekil-kaydetmedi",
-        "text": "Bu, soğumanın olmadığı anlamına GELMİYOR; yazarlar soğumanın gerçekleştiğini, yalnız vekil göstergenin onu kaydetmediğini vurguluyor.",
+        "text": "Yaklaşık 6 °C rakamı ölçülmüş sıcaklık değil; model ve bağımsız vekillerin birlikte yorumudur. Çalışma zayıf δ18O sinyalini soğuma yokluğu diye okumamayı önerir.",
         "citations": [
           {
             "source_ref": "he-2021-heinrich-gronland",
-            "locator": "Sonuç",
+            "locator": "Abstract; Results, model–proxy karşılaştırması",
             "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Heinrich olaylarında AMOC ne kadar zayıfladı? Vekil göstergeler nicel bir değer vermiyor."
+      "HS1 dışında farklı paleookyanus vekilleri AMOC’un tam durup durmadığı konusunda ne söyler?",
+      "231Pa/230Th’de yerel parçacık etkileri ve mekânsal örneklem nasıl ayrılır?"
     ],
     "review": {
       "status": "draft",
-      "notes": "You, Fohlmeister ve He TAM METİNDEN okundu; Bradtmiller açık erişim olmadığı için özet düzeyinde kaldı. KAYNAK DÜZEYİ: bu kayıttaki dört makalenin üçü tam metinden okundu. Bradtmiller ve ark. 2014 açık erişim değil; o kaynağın locator'ları ÖZET düzeyindedir."
+      "notes": "Bradtmiller için yalnız yayımlanmış özet/şekil başlıkları; You, Fohlmeister ve He için seçilmiş resmi PMC tam metin pasajları okundu. “Hiç durmadı” evrensel hükmü geri çekildi. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ]
@@ -1326,9 +1304,9 @@
   {
     "schema_version": 2,
     "id": "amoc-buzul-cagini-baslatmaz",
-    "claim": "Buzul çağlarının ritmini yörünge zorlaması sürer; AMOC olayları buzul durumunun İÇİNDE yaşanan yüzyıl ölçekli salınımlardır.",
+    "claim": "Yörünge ritimleriyle bağlantılı buzul döngüleri ile son buzul dönemindeki Dansgaard–Oeschger/Heinrich değişimleri farklı zaman ölçeklerindedir; bu örnekler AMOC zayıflamasının tek başına yeni bir buzul çağı başlattığını göstermez.",
     "status": "established",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "amoc",
       "buzul-cagi",
@@ -1341,16 +1319,15 @@
       "jeoloji"
     ],
     "popular_claim": "AMOC çökerse yeni bir buzul çağı başlar.",
-    "divergence": "İki ayrı zaman ölçeği ve iki ayrı mekanizma birbirine karışıyor. Buzul çağları on binlerce yıllık yörünge döngüleriyle geliyor (bkz. [[felaket-milankovic-donguleri]]). AMOC olayları ise on yıllar ile yüzyıllar arasında, ZATEN var olan bir iklim durumunun içinde yaşanıyor - Dansgaard-Oeschger ve Heinrich olaylarının hepsi son buzul döneminin İÇİNDE. AMOC bir yükseltici ve yeniden dağıtıcıdır, buzullaşmanın tetikleyicisi değil. AMOC zayıflamasının bölgesel etkileri ciddi olabilir; bu kayıt etkiyi küçümsemiyor, 'buzul çağı' adlandırmasını reddediyor. Yörünge zorlaması ile buzul döngüleri arasındaki bağın kendisi de tam çözülmüş değil; 100 bin yıllık ritmin fiziksel açıklaması üzerinde uzlaşı yok. Bkz. [[milankovic-100bin-yil-problemi]] Buzullaşmayı tetiklemese de AMOC geri beslemelerle buzul döngülerine katkıda bulunuyor olabilir; 'tetikleyici değil' ile 'ilgisiz' aynı şey değil.",
+    "divergence": "Hays–Imbrie–Shackleton 1976 deniz tabanı kaydındaki yaklaşık 23, 42 ve 100 bin yıllık ritimleri yörünge değişimleriyle ilişkilendirir; yaklaşık 100 bin yıllık eşleşme basit doğrusal yanıttan fazlasını gerektirir. Fohlmeister 2023, Dansgaard–Oeschger geçişlerini zaten mevcut son buzul dönemi içinde inceler. Bradtmiller 2014 de HS1’i son buzul sonlanması bağlamında ele alır. Bu olaylar “AMOC zayıflarsa yeni buzul çağı başlar” önermesine örnek değildir. Fakat olayların bu dönemde gerçekleşmiş olması tek başına AMOC’un hiçbir koşulda buzul büyümesini etkileyemeyeceğinin kanıtı değildir; ısı, yağış ve buz örtüsü geri beslemeleri ayrıca incelenmelidir.",
     "divergence_type": [
-      "kategori-hatasi",
-      "medya-abartisi"
+      "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "fohlmeister-2023-do-donguleri",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1364,12 +1341,13 @@
         "container": "Proceedings of the National Academy of Sciences",
         "volume": "120(36)",
         "doi": "10.1073/pnas.2302283120",
-        "note": "TAM METİN OKUNDU (PMC10483664). 67 mağaradan 111 dikit; Antarktika dışında bütün kıtalar. 120-15 bin yıl önce."
+        "note": "Resmi PMC HTML’de Significance, Abstract, Introduction, Materials and Methods/veri kümesi ve Results seçilmiş pasajları okundu. DO geçişleri son buzul dönemi içinde; dikit δ18O’su atmosferik/yağış değişimidir.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10483664/"
       },
       {
         "id": "bradtmiller-2014-path-heinrich",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1382,66 +1360,86 @@
         "container": "Nature Communications",
         "volume": "5(1)",
         "doi": "10.1038/ncomms6817",
-        "note": "Başlığın kendisi kaydın sonucudur: zayıflamış AMA SÜREN. TAM METİN OKUNAMADI - Nature Communications'un 2014 sayısı açık erişim değil, Europe PMC de kapalı olduğunu bildiriyor. Kayıtlar ÖZET düzeyindedir; özet, sonucu ve başlıca çekinceyi (yerel parçacık etkileri) kendi cümleleriyle taşıdığı için kullanıldı."
+        "note": "Nature Communications abonelik önizlemesindeki Abstract okundu; Heinrich Stadial 1 ve buzul dönemi karşılaştırmasıyla sınırlıdır. Tam metin okunmadı.",
+        "url": "https://www.nature.com/articles/ncomms6817"
       },
       {
-        "id": "ipcc-ar6-wg1-bolum9",
+        "id": "hays-1976-orbital-rhythm",
         "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "institutional",
-        "type": "report",
-        "year": 2021,
-        "title": "Climate Change 2021: The Physical Science Basis — Bölüm 9: Ocean, Cryosphere and Sea Level Change",
-        "institution": "IPCC (Hükümetlerarası İklim Değişikliği Paneli)",
-        "publisher": "Cambridge University Press",
-        "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/",
-        "note": "Değerlendirilmiş uzlaşı konumu. Alıntılar bölüm metninden alındı, basın özetinden değil."
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Hays, James D.",
+          "Imbrie, John",
+          "Shackleton, Nicholas J."
+        ],
+        "year": 1976,
+        "title": "Variations in the Earth's Orbit: Pacemaker of the Ice Ages",
+        "container": "Science",
+        "volume": "194(4270):1121–1132",
+        "doi": "10.1126/science.194.4270.1121",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17790893/",
+        "note": "PubMed’de özgün makalenin özeti okundu: 23/42/yaklaşık 100 bin yıl tepeleri ve doğrusal olmayan 100 bin yıl uyarısı. Özetin insan etkisini dışarıda bırakan eski gelecek tahmini kullanılmadı."
       }
     ],
     "evidence": [
       {
+        "id": "yorunge-ritmi",
+        "text": "Hays ve arkadaşlarının 450 bin yıllık deniz tabanı kaydı, 23 bin, 42 bin ve yaklaşık 100 bin yıllık üç spektral tepeyi yörünge periyotlarıyla ilişkilendirir; 100 bin yıllık bileşenin açıklaması doğrusal ilişkiden fazlasını gerektirir.",
+        "citations": [
+          {
+            "source_ref": "hays-1976-orbital-rhythm",
+            "locator": "PubMed Abstract, maddeler 1–6",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
         "id": "do-buzul-icinde",
-        "text": "Dansgaard-Oeschger olayları son buzul döneminin içinde, 120-15 bin yıl önce aralığında ve birkaç on yıl ölçeğinde yaşanan geçişlerdir.",
+        "text": "Dansgaard–Oeschger geçişleri, Fohlmeister’ın incelediği yaklaşık 120–15 bin yıl önceki son buzul dönemi içinde tekrarlanan soğuk–ılık evre değişimleridir.",
         "citations": [
           {
             "source_ref": "fohlmeister-2023-do-donguleri",
-            "locator": "Veri kümesi ve dönem",
+            "locator": "Introduction, ilk paragraf; Fig. 1; Significance",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "heinrich-buzul-icinde",
-        "text": "Heinrich olayları da buzul dönemine ait; buzul tabakasının kendisi buz dağı boşaltımının ön koşuludur.",
+        "text": "Bradtmiller’ın HS1 vekil verileri Holosen ve Son Buzul Maksimumu kayıtlarıyla karşılaştırılır; bu olay mevcut buzul-sonlanma döneminin içindedir.",
         "citations": [
           {
             "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Bağlam",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "isi-yeniden-dagitir",
-        "text": "AMOC ısıyı yeniden dağıtır; IPCC değerlendirmesi de onu küresel ortalama sıcaklığın sürücüsü değil, bölgesel iklim üzerinde etkili bir sistem olarak ele alır.",
-        "citations": [
-          {
-            "source_ref": "ipcc-ar6-wg1-bolum9",
-            "locator": "9. bölüm, AMOC etkileri",
-            "support_type": "direct"
+            "locator": "Abstract, dönemler ve yaklaşık 17.500 yıl bağlamı",
+            "support_type": "context"
           }
         ]
       }
     ],
-    "counter_evidence": [],
+    "counter_evidence": [
+      {
+        "id": "etki-ayri",
+        "text": "Fohlmeister’ın DO çalışması buzul evresi içinde AMOC değişimiyle ilişkili geniş atmosferik/yağış değişimleri anlatır; buzul çağını başlatmama hükmü etkisizlik anlamına gelmez.",
+        "citations": [
+          {
+            "source_ref": "fohlmeister-2023-do-donguleri",
+            "locator": "Abstract; Introduction, AMOC ve DO geçişleri; Discussion",
+            "support_type": "context"
+          }
+        ]
+      }
+    ],
     "open_questions": [
-      "AMOC geri beslemeleri buzul döngülerinin genliğine ne kadar katkı yapıyor?"
+      "AMOC’un ısı ve yağış geri beslemeleri uzun dönemli buz örtüsü büyümesinin genliğini ne kadar değiştirir?",
+      "Yaklaşık 100 bin yıllık ritim için hangi doğrusal olmayan buz–iklim mekanizmaları destekleniyor?"
     ],
     "review": {
       "status": "draft",
-      "notes": "Dosyadaki Milanković kayıtlarıyla bağ kuruldu; o kayıtlar bu iddiayı zaten taşıyor."
+      "notes": "Hays 1976 için PubMed özeti; Fohlmeister için seçilmiş resmi PMC pasajları; Bradtmiller için abonelik önizlemesindeki Abstract okundu. Bu kaynaklardan günümüz için kesin glasyasyon takvimi çıkarılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ]
@@ -1449,7 +1447,7 @@
   {
     "schema_version": 2,
     "id": "genc-dryas-eriyik-su-guzergahi-tartismali",
-    "claim": "Genç Dryas'ı başlatan eriyik suyun hangi güzergâhtan aktığı tartışmalıdır; klasik St. Lawrence güzergâhı modelde iddia edilen etkiyi üretmiyor.",
+    "claim": "Condron–Winsor 2012’nin modern başlangıç koşullu, 25 yıllık modelinde St. Lawrence taşkını AMOC’u %14, Mackenzie güzergâhı koşulları %27–32 zayıflatır; deney hangi yolun gerçekten kullanıldığını kanıtlamaz.",
     "status": "contested",
     "confidence": "medium",
     "topic": [
@@ -1473,16 +1471,15 @@
       ]
     },
     "popular_claim": "Agassiz Gölü'nün St. Lawrence'tan boşalması AMOC'u durdurdu ve Genç Dryas'ı başlattı.",
-    "divergence": "Klasik anlatı modellemede tutmuyor. 18 km çözünürlüklü bir modelde St. Lawrence'tan boşalan tatlı su AMOC'u %14 zayıflatıyor (19 Sv'den 14,6 Sv'ye), çünkü derin su oluşum bölgelerinin çok güneyine gidiyor. Mackenzie Vadisi güzergâhı ise %27-32 zayıflatıyor. Yani yaygın anlatının güzergâhı, iddia ettiği etkiyi en zayıf biçimde üretiyor. Ayrı bir çalışma da Agassiz taşkınının TEK BAŞINA bin yıllık bir zayıflamayı sürdürmeye yetmeyeceğini savunuyor.",
+    "divergence": "Model üç koşulu karşılaştırır: bir yıl 5 Sv tatlı su, modern okyanus başlangıcı ve 25 yıllık koşular. St. Lawrence için %14/14,6 Sv; Mackenzie için takımadalar açık %27/12,4 Sv ve kapalı %32/11,5 Sv bulunur. Bu deneyde St. Lawrence tatlı suyu derin su oluşum alanlarının yaklaşık 3000 km güneyindeki subtropikal döngüye taşınır. Ancak yazarlar derin su oluşum alanı daha güneye kaymış olsaydı doğu çıkışının etkisinin artabileceğini söyler. Jeolojik güzergâh kanıtı ve 1200 yıllık Genç Dryas’ın tüm mekanizması ayrı sorulardır. You 2026 geç Genç Dryas için ikinci tatlı su darbesini olası açıklama olarak önerir; aynı tartışma uygun eşiklerde tek zorlamayla uzun kapanmayı veren modelin de bulunduğunu belirtir. “Tek taşkın kesinlikle yetmez” ve “Mackenzie kullanıldı” sonuçları çıkarılamaz.",
     "divergence_type": [
-      "guncellenmemis",
-      "medya-abartisi"
+      "kategori-hatasi"
     ],
     "sources": [
       {
         "id": "condron-winsor-2012-eriyik-su-yolu",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1494,12 +1491,13 @@
         "container": "Proceedings of the National Academy of Sciences",
         "volume": "109(49):19928-19933",
         "doi": "10.1073/pnas.1207381109",
-        "note": "TAM METİN OKUNDU (PMC3523838). MITgcm, 1/6° (~18 km), 50 düşey seviye. 1 yıl boyunca 5 Sv tatlı su, 25 yıllık iki koşu. Yazarlar Genç Dryas'ın tam iklim etkisini yeniden üretmeyi AMAÇLAMADIKLARINI açıkça yazıyor."
+        "note": "Resmi PMC HTML’de Abstract, Introduction/provenans, Results/Fig. 2–4/Table 1, Discussion, Conclusion ve Methods’ın ilgili pasajları okundu. Üç koşul modern başlangıçlı 25 yıllık idealize deneydir; yolun tarihsel kullanımı kanıtlanmadı.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3523838/"
       },
       {
         "id": "you-2026-genc-dryas-tatlanma",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1513,80 +1511,63 @@
         "container": "Science Advances",
         "volume": "12(1)",
         "doi": "10.1126/sciadv.adv6220",
-        "note": "TAM METİN OKUNDU (PMC12757042). Baffin Körfezi SL170 ve Labrador Denizi MSM12/2-05-01 karotları; IP25, dinosterol, alkenon ve Mg/Ca. Agassiz taşkınının TEK BAŞINA yetmediğini savunan iki evreli hipotez."
-      },
-      {
-        "id": "bradtmiller-2014-path-heinrich",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "article",
-        "authors": [
-          "Bradtmiller, Louisa I.",
-          "McManus, Jerry F.",
-          "Robinson, Laura F."
-        ],
-        "year": 2014,
-        "title": "231Pa/230Th evidence for a weakened but persistent Atlantic meridional overturning circulation during Heinrich Stadial 1",
-        "container": "Nature Communications",
-        "volume": "5(1)",
-        "doi": "10.1038/ncomms6817",
-        "note": "Başlığın kendisi kaydın sonucudur: zayıflamış AMA SÜREN. TAM METİN OKUNAMADI - Nature Communications'un 2014 sayısı açık erişim değil, Europe PMC de kapalı olduğunu bildiriyor. Kayıtlar ÖZET düzeyindedir; özet, sonucu ve başlıca çekinceyi (yerel parçacık etkileri) kendi cümleleriyle taşıdığı için kullanıldı."
+        "note": "Resmi PMC HTML’de Abstract, Introduction ve Discussion/mid-YD ile late-YD pasajları, Fig. 3–4 açıklamaları okundu. Ek tatlı su darbesi olası hipotezdir; tek zorlamalı kalıcı kapanma modelini de anıyor.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12757042/"
       }
     ],
     "evidence": [
       {
         "id": "st-lawrence-yuzde-14",
-        "text": "St. Lawrence güzergâhı AMOC'u %14 zayıflatıyor: 25 yıllık koşunun sonunda 14,6 Sv.",
+        "text": "St. Lawrence koşulunda modelin 25. yıl sonucu AMOC’ta %14 azalma ve 14,6 Sv’dir; bu idealize deney sonucu tarihsel akıntı ölçümü değildir.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Sonuçlar, deneylerin karşılaştırması",
+            "locator": "Results, AMOC and heat transport paragrafı; Fig. 4; Table 1",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "mackenzie-yuzde-27-32",
-        "text": "Mackenzie güzergâhı, Kanada Takımadaları açıkken %27 (12,4 Sv), kapalıyken %32 (11,5 Sv) zayıflatıyor.",
+        "text": "Mackenzie koşullarında takımadalar açıkken %27/12,4 Sv, kapalıyken %32/11,5 Sv bulunur; bunlar aynı zorlamanın iki coğrafi konfigürasyonudur.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Sonuçlar, deneylerin karşılaştırması",
+            "locator": "Results, AMOC and heat transport paragrafı; Fig. 4; Table 1",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "isi-tasinimi",
-        "text": "Kuzeye ısı taşınımı St. Lawrence'ta %13, Mackenzie'de %23-29 azalıyor.",
+        "text": "Kuzeye ısı taşınımındaki model azalması St. Lawrence koşulunda %13, Mackenzie açık/kapalı koşullarında %23/%29’dur.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Sonuçlar, ısı taşınımı",
+            "locator": "Results, AMOC and heat transport paragrafı; Table 1",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "deney-kurulumu",
-        "text": "Deney kurulumu: MITgcm, 1/6° (~18 km), 50 düşey seviye; 1 yıl boyunca 5 Sv tatlı su; iki ayrı 25 yıllık koşu.",
+        "text": "MITgcm okyanus–deniz buzu modeli yaklaşık 18 km ve 50 düşey katman kullanır; bir yıl 5 Sv tatlı su uygulanır, her koşul 25 yıl izlenir.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Yöntem",
+            "locator": "Introduction, experiment setup paragrafları; Methods, ilk paragraf",
             "support_type": "context"
           }
         ]
       },
       {
         "id": "iki-evreli-hipotez",
-        "text": "Geç Genç Dryas'ta Hudson Boğazı'ndan buz dağı boşalımı ve Heinrich Olayı 0 saptanıyor; Agassiz taşkını tek başına bin yıllık zayıflamayı sürdürmeye yetmiyor.",
+        "text": "You ve arkadaşları, orta Genç Dryas’ta kısmi AMOC toparlanması ve geç evrede HE0 ile ilişkili ikinci tatlı su darbesiyle zayıflama olasılığını önerir; bu kesin tek neden saptaması değildir.",
         "citations": [
           {
             "source_ref": "you-2026-genc-dryas-tatlanma",
-            "locator": "İki evreli tatlı su hipotezi",
-            "support_type": "direct"
+            "locator": "Abstract; Discussion, mid-YD rebound/late-YD freshwater; Fig. 3E–G ve Fig. 4",
+            "support_type": "claim-origin"
           }
         ]
       }
@@ -1594,79 +1575,80 @@
     "counter_evidence": [
       {
         "id": "amac-tam-yd-degil",
-        "text": "Yazarlar Genç Dryas'ın tam iklim etkisini yeniden üretmeyi AMAÇLAMADIKLARINI açıkça yazıyor; karşılaştırdıkları tek şey iki güzergâhın göreli etkisi.",
+        "text": "Condron–Winsor’un deneyleri yolun göreli taşınım etkisini sınar; bütün Genç Dryas iklim koşullarını yeniden üretmez.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Kapsam beyanı",
+            "locator": "Introduction, model aim ve experiment setup; Conclusion",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "saha-kaniti-ayri",
-        "text": "Sonuç 'Mackenzie güzergâhı kullanıldı' demiyor, 'kullanılsaydı daha etkili olurdu' diyor. Saha kanıtı ayrı bir sorudur ve tartışmalıdır.",
+        "text": "Makale çeşitli jeolojik güzergâh bulgularını tartışır; modelde Mackenzie’nin daha etkili çıkması o yolun tarihsel olarak kesin kullanıldığını göstermez.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Tartışma, provenans",
+            "locator": "Introduction, eastern/northern route proxy discussion; Fig. 1",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "25-yil-kisa",
-        "text": "Koşular hesaplama sınırı yüzünden yalnız 25 yıl; Genç Dryas'ın neden 1.200 yıl sürdüğünü açıklamak için bin yıllık bağlaşık modeller gerektiğini yazarlar kendileri söylüyor.",
+        "text": "Yazarlar hesaplama sınırının koşuları 25 yılla tuttuğunu ve 1200 yıllık dönemi açıklamak için çok daha uzun bağlaşık koşular gerektiğini belirtir.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Sınırlar",
+            "locator": "Methods, son paragraf; Conclusion, paleoclimate paragrafı",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "taskin-suresi-varsayim",
-        "text": "1 yıllık taşkın süresi bir varsayımdır; yazarlar eriyik suyun Genç Dryas boyunca akmış olabileceğini dışlayamadıklarını belirtiyor.",
+        "text": "Bir yıllık 5 Sv taşkın seçimi varsayımdır; yazarlar uzun süren eriyik su akışını dışlamaz.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Sınırlar",
+            "locator": "Introduction, one-year flood duration paragrafı",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "modern-baslangic",
-        "text": "Model modern iklim koşullarından başlatıldı; Genç Dryas başlangıcındaki AMOC gücü farklı olabilir.",
+        "text": "Model modern sıcaklık/tuzluluk koşullarından başlatılmıştır. Yazarlar derin su oluşum alanları daha güneyde olsaydı St. Lawrence etkisinin artabileceğini söyler.",
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Sınırlar, başlangıç koşulları",
+            "locator": "Introduction, modern-day starting state; Discussion, southern convection caveat",
             "support_type": "context"
           }
         ]
       },
       {
-        "id": "carpma-hipotezi-disinda",
-        "text": "Bu kayıt Genç Dryas Çarpma Hipotezi ile İLGİLİ DEĞİLDİR; o ayrı bir iddiadır ve burada ele alınmamıştır.",
+        "id": "tek-darbe-olasiligi",
+        "text": "You 2026, tek tatlı su zorlaması için uygun güç/süre eşiklerinde yaklaşık bin yıllık kapanmayı veren başka bir modelin de bulunduğunu belirtir; ikinci darbeyi gerekli koşul saymaz.",
         "citations": [
           {
-            "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Kapsam dışı",
-            "support_type": "context"
+            "source_ref": "you-2026-genc-dryas-tatlanma",
+            "locator": "Discussion, mid-YD rebound paragrafından sonraki tek-darbe model çekincesi",
+            "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "Eriyik suyun Mackenzie güzergâhından aktığına dair saha kanıtı ne kadar güçlü?"
+      "Başlangıçtaki gerçek taşkın yolu ve süresi farklı jeolojik vekillerle ne kadar sınanabilir?",
+      "Buzul dönemi başlangıç koşulları ve çok daha uzun bağlaşık deneyler, güzergâhların göreli etkisini nasıl değiştirir?"
     ],
     "review": {
       "status": "draft",
-      "notes": "Condron & Winsor ve You ve ark. TAM METİNDEN okundu; rakamlar oradan."
+      "notes": "Condron–Winsor ve You için seçilmiş resmi PMC tam metin pasajları okundu. Jeolojik provenans, alternatif başlangıç koşulları ve model kodu bağımsızca yeniden çözülmedi. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ]
