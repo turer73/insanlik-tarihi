@@ -93,6 +93,7 @@ section:last-of-type{border-bottom:0}
 
 /* timeline compact */
 .tl{display:grid;grid-template-columns:minmax(88px,auto) 1fr;gap:0 1.2rem;margin-top:1.4rem;max-width:820px}
+.tl__row{display:contents}
 .tl__date{font-family:var(--mono);font-size:.78rem;font-weight:600;color:var(--ink-2);padding:.65rem 0 .1rem;text-align:right;font-variant-numeric:tabular-nums;border-top:1px solid var(--rule-soft)}
 .tl__body{padding:.65rem 0 .7rem;border-top:1px solid var(--rule-soft);border-left:2px solid var(--rule);padding-left:1.2rem;position:relative}
 .tl__body::before{content:"";position:absolute;left:-5px;top:1.05rem;width:8px;height:8px;border-radius:50%;background:var(--accent)}
@@ -148,7 +149,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
       <div class="stat"><span class="stat__num">~MÖ 3300</span><span class="stat__lbl">Uruk'ta ilk yazılı tabletler</span></div>
       <div class="stat"><span class="stat__num l">~%85</span><span class="stat__lbl">Geç Uruk arşivi için 2011’de verilen idari ortalama</span></div>
       <div class="stat"><span class="stat__num">~MÖ 2600</span><span class="stat__lbl">Fara döneminde çeşitli edebî metinler</span></div>
-      <div class="stat"><span class="stat__num l">1869</span><span class="stat__lbl">"Sümerce" adının konduğu yıl</span></div>
+      <div class="stat"><span class="stat__num l">1869</span><span class="stat__lbl">Oppert’in modern “Sümerce” terimini önerdiği yıl</span></div>
     </div>
   </div>
 </header>
@@ -187,29 +188,16 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="sec__head">
     <p class="eyebrow">02 — Yöntem</p>
     <h2>Ölü bir dili, akrabası olmadan okumak</h2>
-    <p class="kicker">Sümerce bir <b>dil izolatıdır</b> — bilinen hiçbir dille akraba değil. Peki nasıl okunuyor?</p>
+    <p class="kicker">Sümerce bir <b>dil izolatıdır</b> — bilinen bir dil akrabası saptanmamıştır. Akrabalık bilinmezliği, metinlerin okunmasını nasıl etkiler?</p>
   </div>
 
   <div class="tl">
-    <div class="tl__row">
-      <div class="tl__date">~MÖ 520</div>
-      <div class="tl__body"><div class="hd">Behistun Yazıtı kazınıyor</div><p>I. Darius, kayaya <b>üç dilde</b> aynı metni yazdırıyor: Eski Farsça, Elamca ve Babilce (Akadca). Amaç propaganda; sonucu, iki bin üç yüz yıl sonra bir şifre anahtarı.</p></div>
-    </div>
-    <div class="tl__row">
-      <div class="tl__date">1835–47</div>
-      <div class="tl__body"><div class="hd">Rawlinson yazıtı kopyalıyor</div><p>Uçurumdaki metin ipe asılarak kopyalanıyor. Eski Farsça çözülünce, karşılıklı metin üzerinden <b>Akadca</b> da çözülüyor.</p></div>
-    </div>
-    <div class="tl__row">
-      <div class="tl__date">1850'ler</div>
-      <div class="tl__body l"><div class="hd">Ortada fazladan bir dil var</div><p>Akadca metinlerin arasında, Akadca <b>olmayan</b> ama aynı yazıyla yazılmış metinler fark ediliyor. Babilli kâtiplerin kendi hazırladığı <b>iki dilli sözlük listeleri</b> anahtarı veriyor: Sümerce kelime, karşısında Akadca karşılığı.</p></div>
-    </div>
-    <div class="tl__row">
-      <div class="tl__date">1869</div>
-      <div class="tl__body l"><div class="hd">Dile ad veriliyor</div><p>Bu dile <b>"Sümerce"</b> adı konuyor. Yani Sümerler, kendi adlarını bize bırakmadılar — biz onlara sonradan bir ad verdik.</p></div>
-    </div>
+    <div class="tl__row"><div class="tl__date">19. yüzyıl</div><div class="tl__body"><div class="hd">Farklı metinler birlikte çözülüyor</div><p><a href="https://isac-assets.s3.amazonaws.com/isac-publications/nn256.pdf?VersionId=XHwkmRp.H9gDxNLib7Zib.s0c_ZUi_ly#page=10" target="_blank" rel="noopener">Herrera’nın tarihçesinde (s. 10–12)</a> Persepolis ve Behistun’un Eski Farsça, Elamca ve Akadca metinleri; Mezopotamya buluntuları ve işaret listeleri birlikte rol oynar. Çözümleme <b>tek kişinin başarısı veya otomatik üç adımlı bir zincir</b> değildir.</p></div></div>
+    <div class="tl__row"><div class="tl__date">1856</div><div class="tl__body l"><div class="hd">İki dilli listelerin anahtarı</div><p>Hincks’in yayımladığı dokuz iki dilli parçanın sekizi <b>Legal Phrasebook</b> listesindendir. Sümerce ifadeler Akadca karşılıklarla okunur; ilk çeviriler sonraki okumalarla düzeltilir (<a href="https://isac-assets.s3.amazonaws.com/isac-publications/nn256.pdf?VersionId=XHwkmRp.H9gDxNLib7Zib.s0c_ZUi_ly#page=14" target="_blank" rel="noopener">s. 12–14, Tablo 2</a>).</p></div></div>
+    <div class="tl__row"><div class="tl__date">1869</div><div class="tl__body l"><div class="hd">Modern terim öneriliyor</div><p><a href="https://isac-assets.s3.amazonaws.com/isac-publications/sumerians.pdf?VersionId=uz4oGrMGRZ5wEhNBEr6TNUvfaMl8wQFo#page=35" target="_blank" rel="noopener">Kramer’in s. 21 tarihçesine göre</a> Oppert, “Sumerian” adını antik <b>“Sümer ve Akad kralı”</b> unvanına dayanarak önerir. Modern terimin tarihi, antik Sümer adının yokluğu değildir; terim hemen herkesçe benimsenmez.</p></div></div>
   </div>
 
-  <p class="note" style="margin-top:1.4rem"><b>Kilit nokta:</b> Sümerce doğrudan çözülmedi. <b>Akadca üzerinden</b> okundu — çünkü Sümerce ölürken Babilli kâtipler onu klasik dil olarak öğrenmeye devam etti ve kendileri için sözlükler yazdı. Bugün Sümerce okuyabiliyorsak, sebebi bir Babilli öğrencinin dört bin yıl önce kelime ezberlemek zorunda kalmasıdır.</p>
+  <p class="note" style="margin-top:1.4rem"><b>Kilit nokta:</b> <a href="https://oracc.museum.upenn.edu/dcclt/intro/lexical_intro.html" target="_blank" rel="noopener">DCCLT’nin giriş, §1.2 ve §2 açıklamaları</a>, listelerin modern Sümerce okumalarında temel kaynak olduğunu gösterir. Fakat <b>hepsi iki dilli öğrenci ödevi değildir</b>: Eski Babil sözcük listeleri çoğunlukla Sümerce tek dillidir; sonraki listeler hem eğitim hem bilimsel yorum için kullanılır. <b>Düzeltme · 4 Ekim 2026:</b> “Sümerler kendi adlarını bırakmadı” ve tek bir öğrencinin ödevine indirgenen çözülme anlatısı geri çekildi.</p>
 </section>
 
 <section id="yazitlar" class="wrap">
@@ -337,7 +325,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
         <dt>Diller</dt><dd>Eski Farsça · Elamca · Akadca</dd>
       </dl>
       <p class="says">I. Darius tahta nasıl çıktığını, isyanları nasıl bastırdığını anlatıyor — üç dilde, aynı metin.</p>
-      <p class="why">Sümer'e ait değil ama <b>Sümer'i okumamızı sağlayan belge</b>. Çivi yazısının anahtarı buradan çıktı.</p>
+      <p class="why">Ahameniş dönemine ait bu üç dilli yazıt, <b>çivi yazısının çözümleme tarihindeki önemli tanıklardan biridir</b>. Sümerce'nin okunması ayrıca iki dilli listelere ve birçok araştırmacının metin karşılaştırmalarına dayanır; <a href="https://isac-assets.s3.amazonaws.com/isac-publications/nn256.pdf?VersionId=XHwkmRp.H9gDxNLib7Zib.s0c_ZUi_ly#page=10" target="_blank" rel="noopener">Herrera'nın tarihçesi (s. 10–12)</a> bu katkıları birlikte ele alır.</p>
       <p class="caveat"><b>Dikkat:</b> Metin bir <b>propaganda belgesidir</b>; anlattığı olayların tarihsel doğruluğu ayrı bir tartışmadır. Şifre anahtarı olması, içeriğinin doğru olduğu anlamına gelmez.</p>
     </article>
 
@@ -388,17 +376,17 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="sec__head">
     <p class="eyebrow">06 — Düzeltme</p>
     <h2>Sümer üzerine en çok dolaşan yanlışlar</h2>
-    <p class="kicker">Türkçe internette Sümer, sözde-arkeolojinin en yoğun alanı. Kaynak metinlere bakınca hepsi çözülüyor.</p>
+    <p class="kicker">Seçilmiş kaynak tanıkları, Sümer hakkındaki bazı yaygın iddiaların hangi noktaları aşırı genellediğini gösterir.</p>
   </div>
 
   <div class="deb">
     <div class="db">
       <p class="db__c">"Anunnaki, Nibiru'dan gelen uzaylı bir ırktı."</p>
-      <p class="db__r"><b>İncelenen tanıklar bu okumayı desteklemiyor.</b> <a href="https://oracc.museum.upenn.edu/amgg/listofdeities/anunna/index.html" target="_blank" rel="noopener">ORACC'ın Anunna maddesi</a> bir <b>tanrı grubunu</b> tanımlar; kapsamı dönemlere göre değişir. <span class="mono">Nibiru / Neberu</span> yalnız bir gök konumu değildir: <a href="https://oracc.museum.upenn.edu/asbp/P336421" target="_blank" rel="noopener">SAA 8 147</a> raporunda (ön yüz 7–8, arka yüz 1), Jüpiter ile ilişkili Marduk yıldızının konumuna göre aldığı adlardan biridir. Pasaj, uzaylıların geldiği 3.600 yıllık yörüngeli bir gezegeni anlatmaz. <b>Düzeltme · 30 Eylül 2026:</b> önceki “yalnız gök konumu” ifadesi ve bütün çivi yazılı külliyatı kapsayan yokluk genellemesi geri çekildi; külliyatın tümü bu turda taranmadı.</p>
+      <p class="db__r"><b>İncelenen tanıklar bu okumayı desteklemiyor.</b> <a href="https://oracc.museum.upenn.edu/amgg/listofdeities/anunna/index.html" target="_blank" rel="noopener">ORACC'ın Anunna maddesi</a> bir <b>tanrı grubunu</b> tanımlar; kapsamı dönemlere göre değişir. <span class="mono">Nibiru / Neberu</span> yalnız bir gök konumu değildir: <a href="https://oracc.museum.upenn.edu/asbp/P336421" target="_blank" rel="noopener">SAA 8 147</a> raporunda (ön yüz 7–8, arka yüz 1), Jüpiter ile ilişkili Marduk yıldızının konumuna göre aldığı adlardan biridir. Pasaj, uzaylıların geldiği 3.600 yıllık yörüngeli bir gezegeni anlatmaz. <b>Düzeltme · 30 Eylül 2026:</b> önceki “yalnız gök konumu” ifadesi ve bütün çivi yazılı külliyatı kapsayan yokluk genellemesi geri çekildi; külliyatın tümü bu turda taranmadı. <b>Erişim kontrolü · 4 Ekim 2026:</b> iki ORACC sayfası bu kez canlı tarayıcıda açıldı; Anunna’nın dönem farkları ve SAA 8 147’nin ön yüz 3–8 / arka yüz 1 satırları ile Neberu lemması doğrudan görüldü. Kayıttaki çürütme hükmü bu iki tanığın içeriğiyle sınırlandı.</p>
     </div>
     <div class="db">
       <p class="db__c">"Sümerler birdenbire ortaya çıktı."</p>
-      <p class="db__r"><b>Çıkmadılar.</b> Uruk döneminden önce bölgede <b>Ubeyd dönemi</b> yerleşimleri var ve arkeolojik olarak <b>süreklilik</b> gösteriyorlar: aynı bölgelerde, giderek büyüyen yerleşimler, gelişen çömlekçilik, büyüyen tapınak yapıları. Ani bir kopuş yok; <b>kademeli bir ölçek artışı</b> var.</p>
+      <p class="db__r"><b>Uruk’un öncesi var; gelişimin hızı ayrı bir soru.</b> <a href="https://isac-assets.s3.amazonaws.com/isac-publications/heartland_of_cities.pdf?VersionId=r_2aJmT2zad7D7XIYEHLCD_97BDR3V97#page=74" target="_blank" rel="noopener">Adams (s. 54–55)</a> Ubeyd yerleşimlerini Uruk’tan önceye yerleştirir. Ancak <a href="https://isac-assets.s3.amazonaws.com/isac-publications/heartland_of_cities.pdf?VersionId=r_2aJmT2zad7D7XIYEHLCD_97BDR3V97#page=89" target="_blank" rel="noopener">s. 69–70 ve Tablo 3</a>, Nippur–Adab çevresinde hızlı büyümeyi ve kuzey/güney farkını gösterir; göç ile yerleşikleşme olasılıkları tartışılır. <b>Düzeltme · 4 Ekim 2026:</b> bütün bölgeleri kesintisiz, yavaş büyüyen tek bir çizgiye indiren çömlekçilik ve tapınak genellemeleri kaldırıldı. Yüzey araştırması insanların dilini veya etnik kimliğini tek başına belirlemez.</p>
     </div>
     <div class="db">
       <p class="db__c">"Sümer tabletleri gelişmiş teknoloji tarif ediyor."</p>
@@ -420,7 +408,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="open">
     <div class="oq">
       <p class="oq__q">Sümerler nereden geldi?</p>
-      <p class="oq__a">Sümerce bilinen hiçbir dille akraba değil — bir <b>izolat</b>. Arkeoloji yerel süreklilik gösteriyor, dil ise dışarıdan bir bağ vermiyor. Bu ikisi tam olarak uzlaştırılamadı; <b>"Sümer sorunu" açık.</b></p>
+      <p class="oq__a"><a href="https://scholarlypublications.universiteitleiden.nl/access/item%3A2961989/download#page=29" target="_blank" rel="noopener">Jagersma (§1.2.1, s. 2–4)</a> Sümerce için bilinen bir dil akrabası saptanmadığını, yazı öncesi yerleşim sakinlerinin dilinin ise bilinmediğini belirtir. <b>Dil izolatı olmak, dışarıdan gelmenin kanıtı değildir.</b> <a href="https://isac-assets.s3.amazonaws.com/isac-publications/heartland_of_cities.pdf?VersionId=r_2aJmT2zad7D7XIYEHLCD_97BDR3V97#page=90" target="_blank" rel="noopener">Adams’ın olası göç/yerleşikleşme yorumu (s. 70)</a> da belirli bir Sümerce topluluğun çıkış yerini saptamaz. Arkeoloji ve dilbilim birbiriyle çelişen iki cevap gibi sunulamaz; seçilmiş kaynaklar kesin bir köken veya güzergâh vermez. Arkeogenetik yayınlar bu denetimde taranmadı.</p>
     </div>
     <div class="oq">
       <p class="oq__q">Enheduanna gerçekten yazdı mı?</p>
@@ -451,7 +439,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <div class="wrap">
     <p><b>Bu yazı özgün derlemedir.</b> Araştırmacı yorumları ve müze yazıt açıklamaları kaynak bağlantılarıyla özetlenir. Bu tur özgün Sümerce tabletlerin yeni bir edisyonu veya bağımsız çevirisi hazırlanmadı.</p>
     <p><b>Her kartın altındaki "Dikkat" satırı süs değildir.</b> Bu alanda buluntunun kendisi ile ona yüklenen anlam sık sık birbirine karışır: Ur Sancağı'nın adı bir tahmindir, Kral Listesi bir takvim değildir, Enheduanna’nın tarihsel varlığı ile ilahilerin yazarlığı farklı tanıklardır, Uruk IV tabletlerinin dili hakkında farklı yorumlar vardır. Bunlar zayıflık değil, <b>kaydın gerçek durumudur.</b></p>
-    <p><b>Son kaynak denetimi · 4 Ekim 2026:</b> Erken yazı, Uruk IV dili, Enheduanna’nın yazarlığı, Ur’daki ölüm yorumu, Ur-Nammu, Kral Listesi, Sümerce Gılgamış ve Ur Sancağı için sekiz kayıt seçilmiş pasajlarla karşılaştırıldı. Enheduanna’da Helle ve Zgoll’un yöntemleri ayrıldı; Ur’da yalnız 2011 yayıncı özeti ve belirtilen diğer araştırma pasajları okundu. Ur-Nammu için kataloglar, Molina s. 265–269 ve Hammurabi §§196–201; Kral Listesi için Jacobsen’in seçilmiş sayfaları, Ashmolean ve ETCSL çevirisi incelendi. 1993 kitabı, Wilcke 2005, Helle 2023, Woolley 1934 ve Ur-Nammu özgün edisyonları bu denetimde okunmadı. Özgün tabletler ve CT verileri yeniden incelenmedi; külliyatlar yeniden sayılmadı. Gılgamış için ETCSL’nin seçilmiş İngilizce çeviri pasajları ve British Museum açıklamaları; Ur Sancağı için British Museum 121201 kaydı okundu. George 2003 tam edisyonu, Zettler–Horne 1998 ve Collon 1995 okunmadı; antik metinler yeniden çevrilmedi. Diğer dört bağlı kayıt ve yazının her cümlesi bu denetimle doğrulanmış sayılmaz. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı.</p>
+    <p><b>Son kaynak denetimi · 4 Ekim 2026:</b> Erken yazı, Uruk IV dili, Enheduanna’nın yazarlığı, Ur’daki ölüm yorumu, Ur-Nammu, Kral Listesi, Sümerce Gılgamış ve Ur Sancağı için önce sekiz kayıt seçilmiş pasajlarla karşılaştırıldı. Enheduanna’da Helle ve Zgoll’un yöntemleri ayrıldı; Ur’da yalnız 2011 yayıncı özeti ve belirtilen diğer araştırma pasajları okundu. Ur-Nammu için kataloglar, Molina s. 265–269 ve Hammurabi §§196–201; Kral Listesi için Jacobsen’in seçilmiş sayfaları, Ashmolean ve ETCSL çevirisi incelendi. 1993 kitabı, Wilcke 2005, Helle 2023, Woolley 1934 ve Ur-Nammu özgün edisyonları bu denetimde okunmadı. Özgün tabletler ve CT verileri yeniden incelenmedi; külliyatlar yeniden sayılmadı. Gılgamış için ETCSL’nin seçilmiş İngilizce çeviri pasajları ve British Museum açıklamaları; Ur Sancağı için British Museum 121201 kaydı okundu. George 2003 tam edisyonu, Zettler–Horne 1998 ve Collon 1995 okunmadı; antik metinler yeniden çevrilmedi. Kalan çözülme, Ubeyd–Uruk gelişimi, köken ve Anunnaki/Nibiru kayıtları da Herrera s. 10–14, Kramer s. 20–21, DCCLT’nin belirtilen bölümleri, Adams s. 53–55/69–70, Jagersma §1.2.1 ve iki canlı ORACC kaydıyla karşılaştırıldı. Böylece on iki bağlı kaydın tümü seçilmiş pasajlarla denetlendi; yazının her cümlesi ve bütün literatür doğrulanmış sayılmaz. Daniels–Bright 1996, Pollock 1999, Matthews 2003, Bottéro 1992, Sitchin kitabı ve Hincks 1856 özgün yayını okunmadı; arkeogenetik yayınlar taranmadı. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı.</p>
     <p><b>Tarihler yaklaşıktır</b> ve nüsha tarihleri ile metnin kökeni farklı şeylerdir — bu ayrım metin içinde korunmuştur.</p>
     <p><b>Serinin diğer yazıları:</b> Ölü Deniz Parşömenleri · Tufan Bilmecesi · Hatırlamadığımız Felaketler · Babil · Aynı Cümlede Anılanlar · Petra · Şuşter · Stonehenge.</p>
   </div>

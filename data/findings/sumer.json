@@ -352,7 +352,7 @@
   {
     "schema_version": 2,
     "id": "sumer-akadca-uzerinden-cozuldu",
-    "claim": "Sümerce doğrudan değil, Akadca üzerinden ve Babilli kâtiplerin hazırladığı iki dilli sözlük listeleri sayesinde okunabildi.",
+    "claim": "Sümerce’nin okunmasında Sümerce–Akadca iki dilli listeler temel kaynaklardan biridir; çivi yazısının çözülmesi tek kişiyle veya yalnız Behistun Yazıtı’yla açıklanamaz.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -362,22 +362,15 @@
       "bilim-tarihi"
     ],
     "subject": {
-      "site": "Behistun Yazıtı",
-      "region": "Kermanşah, Zagros",
-      "modern_country": "İran",
-      "coordinates": {
-        "lat": 34.3881,
-        "lon": 47.4361
-      }
+      "region": "Mezopotamya metinleri ve 19. yüzyıl filolojisi"
     },
     "period": {
-      "earliest": -520,
+      "earliest": 1846,
       "latest": 1869,
-      "era_label": "Behistun'dan Sümerce'nin adlandırılmasına",
+      "era_label": "Seçilmiş modern çözümleme ve adlandırma adımları",
       "precision": "range",
       "dating_method": [
-        "historical-record",
-        "epigraphic"
+        "historical-record"
       ]
     },
     "languages": [
@@ -393,54 +386,54 @@
     ],
     "people": [
       {
-        "name": "Rawlinson, Henry",
+        "name": "Hincks, Edward",
         "role": "translator",
-        "year": 1847,
-        "lifespan": "1810-1895"
+        "year": 1856
       },
       {
         "name": "Oppert, Jules",
         "role": "proposer",
-        "year": 1869,
-        "lifespan": "1825-1905"
+        "year": 1869
       }
     ],
     "popular_claim": "Sümerce, tabletler bulununca okundu.",
-    "divergence": "Sümerce'yi okumamızı sağlayan şey Sümerlerin kendisi değil, ONLARDAN SONRA GELENLERİN ÖDEVLERİ oldu. Babilli kâtipler Sümerce'yi ölü bir okul dili olarak öğrenirken kendileri için iki dilli sözlük listeleri hazırladılar; anahtar bu listelerde. Zincir üç adımlı: Behistun'un üç dilliliği Eski Farsça'yı verdi, o Akadca'yı açtı, Akadca da Sümerce'yi. Dilin adı bile bize ait - 'Sümerce' 1869'da kondu; Sümerler kendi adlarını bize bırakmadı.",
+    "divergence": "Akadca karşılıklar ve hece/işaret listeleri Sümerce’nin okunmasına yardım eder. Ancak listelerin hepsi iki dilli öğrenci ödevi değildir: Eski Babil sözcük listeleri çoğunlukla Sümerce tek dillidir; sonraki listeler eğitim yanında bilimsel yorum için de kullanılır. Behistun önemli bir tanıktır, fakat çözümleme birçok araştırmacının farklı metinleri karşılaştırmasıyla ilerledi. Oppert’in 1869 önerisi antik Sümer adına dayanır; bu tarih, antik adlandırmaların bulunmadığı anlamına gelmez.",
     "divergence_type": [
       "kategori-hatasi"
     ],
     "sources": [
       {
-        "id": "behistun-yaziti",
-        "language": "peo",
-        "accessed": "2026-09-09",
-        "tier": "primary",
-        "type": "inscription",
-        "title": "Behistun Yazıtı",
-        "note": "y. MÖ 520. Aynı metni Eski Farsça, Elamca ve Akadca veren üç dilli kaya yazıtı - çivi yazısının çözülmesinin anahtarı."
+        "id": "herrera-2024-civi-yazisi-cozulmesi",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "institutional",
+        "type": "article",
+        "authors": [
+          "Díaz Herrera, Marta"
+        ],
+        "year": 2024,
+        "title": "The Decipherment of Cuneiform Writing and the Contribution of Lexical Lists",
+        "container": "News & Notes 256 (Winter/Spring 2024)",
+        "institution": "University of Chicago, ISAC",
+        "url": "https://isac-assets.s3.amazonaws.com/isac-publications/nn256.pdf?VersionId=XHwkmRp.H9gDxNLib7Zib.s0c_ZUi_ly",
+        "note": "s. 10–14, Tablo 2 ve şekil açıklamaları okundu. Kurumsal araştırma özeti; Hincks 1856 özgün yayını ve kaynakçada sayılan çalışmalar doğrudan okunmadı."
       },
       {
-        "id": "daniels-bright-1996-worlds-writing-systems",
+        "id": "dcclt-lexical-list-introduction",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Daniels, Peter T.",
-          "Bright, William"
-        ],
-        "year": 1996,
-        "title": "The World's Writing Systems",
-        "publisher": "Oxford University Press",
-        "isbn": "9780195079937",
-        "note": "Yazı sistemlerinin standart başvuru eseri; çivi yazısının çözülme tarihçesi ve Sümerce'nin adlandırılması için dayanak."
+        "accessed": "2026-10-04",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Introduction: What is a Lexical List?",
+        "institution": "ORACC / Digital Corpus of Cuneiform Lexical Texts",
+        "url": "https://oracc.museum.upenn.edu/dcclt/intro/lexical_intro.html",
+        "note": "Canlı sayfa tarayıcıda okundu: giriş, §1.2 Word Lists ve §2 School Tablets and Library Tablets. Hepsi iki dilli veya yalnız öğrenci ödevi olan tek tür listeler varsayılmadı."
       },
       {
         "id": "kramer-1963-the-sumerians",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
+        "accessed": "2026-10-04",
+        "tier": "institutional",
         "type": "book",
         "authors": [
           "Kramer, Samuel Noah"
@@ -448,51 +441,41 @@
         "year": 1963,
         "title": "The Sumerians: Their History, Culture, and Character",
         "publisher": "University of Chicago Press",
-        "isbn": "9780226452388",
-        "note": "Alanın klasik genel eseri. 1963 tarihlidir; köken tartışmasının sonraki altmış yılını kapsamaz - bu, kullanıldığı yerlerde işaretlendi."
+        "institution": "University of Chicago, ISAC açık erişim yayını",
+        "url": "https://isac-assets.s3.amazonaws.com/isac-publications/sumerians.pdf?VersionId=uz4oGrMGRZ5wEhNBEr6TNUvfaMl8wQFo",
+        "note": "Yalnız s. 20–21 (PDF 34–35) çözülme/adlandırma tarihçesi okundu. Oppert’in 1869 önerisi ve antik krallık unvanı için kullanıldı; eski Turanî akrabalık yorumu güncel dil akrabalığı kanıtı sayılmadı; kitabın tümü okunmadı."
       }
     ],
     "evidence": [
       {
-        "id": "behistun-uc-dilli",
-        "text": "Behistun Yazıtı (~MÖ 520) aynı metni Eski Farsça, Elamca ve Akadca verir; Eski Farsça çözülünce Akadca da çözüldü.",
+        "id": "cok-kaynakli-cozumleme",
+        "text": "Herrera, çivi yazısının çözülmesini tek kişiye bağlamaz; Eski Farsça, Elamca ve Akadca yazıtlar, Mezopotamya buluntuları ve sözlük listeleri farklı adımlarda kullanılmıştır.",
         "citations": [
           {
-            "source_ref": "behistun-yaziti",
-            "locator": "Üç dilli metin",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "farkli-dil-fark-edildi",
-        "text": "1850'lerde Akadca metinler arasında aynı yazıyla yazılmış farklı bir dil fark edildi.",
-        "citations": [
-          {
-            "source_ref": "daniels-bright-1996-worlds-writing-systems",
-            "locator": "Çivi yazısının çözülmesi bölümü",
+            "source_ref": "herrera-2024-civi-yazisi-cozulmesi",
+            "locator": "s. 10–12; Behistun ve Hincks’in karşılaştırdığı metinler",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "iki-dilli-listeler",
-        "text": "Babilli kâtiplerin kendi eğitimleri için hazırladığı Sümerce-Akadca sözlük listeleri anahtarı verdi.",
+        "text": "Hincks’in 1856’da yayımladığı dokuz iki dilli parçanın sekizi Legal Phrasebook’tandır; Herrera bu listeleri Sümerce’nin çözülmesinin temel tanıkları arasında gösterir.",
         "citations": [
           {
-            "source_ref": "kramer-1963-the-sumerians",
-            "locator": "Kâtip eğitimi ve sözlük listeleri",
+            "source_ref": "herrera-2024-civi-yazisi-cozulmesi",
+            "locator": "s. 12, son paragraf; s. 14, Tablo 2",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "1869-adlandirma",
-        "text": "Dile 'Sümerce' adı 1869'da kondu - Sümerler kendi adlarını bize bırakmadı.",
+        "text": "Kramer, Oppert’in 17 Ocak 1869’da “Sumerian” adını antik “Sümer ve Akad kralı” unvanına dayanarak önerdiğini ve terimin hemen herkesçe benimsenmediğini bildirir.",
         "citations": [
           {
-            "source_ref": "daniels-bright-1996-worlds-writing-systems",
-            "locator": "Adlandırma tarihçesi",
+            "source_ref": "kramer-1963-the-sumerians",
+            "locator": "s. 21, ilk iki paragraf (PDF 35)",
             "support_type": "direct"
           }
         ]
@@ -500,27 +483,49 @@
     ],
     "counter_evidence": [
       {
-        "id": "babilli-anlayisi-tasiyor",
-        "text": "İki dilli listeler BABİLLİLERİN Sümerce anlayışını taşır; onlar için de Sümerce ölü bir dildi. Yani anahtar, dilin son konuşurlarından değil sonraki öğrencilerinden geliyor ve bu, aktarımda kayıp ihtimalini açık bırakıyor.",
+        "id": "hepsi-iki-dilli-degil",
+        "text": "DCCLT’ye göre Eski Babil sözcük listelerinin hemen hepsi Sümerce tek dillidir; Akadca karşılıkların yazılı ikinci sütuna eklenmesi zamanla yaygınlaşmıştır.",
         "citations": [
           {
-            "source_ref": "kramer-1963-the-sumerians",
-            "locator": "Sözlük listelerinin niteliği",
+            "source_ref": "dcclt-lexical-list-introduction",
+            "locator": "§1.2 Word Lists, son paragraf",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "yalniz-ogrenci-odevi-degil",
+        "text": "DCCLT, sonraki listelerin öğrenci eğitimi yanında kraliyet veya meslek kütüphanelerinde bilimsel metin yorumuna hizmet ettiğini belirtir.",
+        "citations": [
+          {
+            "source_ref": "dcclt-lexical-list-introduction",
+            "locator": "§2 School Tablets and Library Tablets, son paragraf",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "ilk-okumalar-kusursuz-degil",
+        "text": "Herrera’nın Tablo 2 karşılaştırması Hincks’in ilk biçim ve çevirilerinin kusursuz olmadığını gösterir. Liste kullanımı, her okumanın otomatik olarak kesinleşmesi değildir.",
+        "citations": [
+          {
+            "source_ref": "herrera-2024-civi-yazisi-cozulmesi",
+            "locator": "s. 14, Tablo 2 ve sol sütun ikinci paragraf",
             "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "İki dilli listelerin Sümerce anlayışı ne kadar güvenilir - Babilli kâtiplerin hataları izlenebiliyor mu?"
+      "Belirli bir Sümerce kelimenin anlamı, farklı liste nüshaları ve metin bağlamlarıyla ne ölçüde doğrulanıyor? Bu kayıtta tek tek bütün okumalar sınanmadı."
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Çivi yazısının çözülmesi ve Asirbilim tarihi literatürü') iki gerçek künyeyle değiştirildi. Kayıt popular_claim/divergence olmadan duruyordu; kuruldu. Kramer 1963 tarihlidir; çözülme tarihçesinin sonraki altmış yıldaki değerlendirmesi bu kayıtta taranmadı."
+      "notes": "Seçilmiş Herrera 2024 s. 10–14, DCCLT giriş/§1.2/§2 ve Kramer 1963 s. 20–21 karşılaştırıldı. “Sümerler kendi adlarını bırakmadı”, tek kişi/üç adımlı otomatik çözülme ve bütün listeleri iki dilli öğrenci ödevi sayan ifadeler geri çekildi. Daniels–Bright 1996 ve Hincks 1856 özgün yayını okunmadı; Behistun yeniden çevrilmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
@@ -1428,7 +1433,7 @@
   {
     "schema_version": 2,
     "id": "sumer-anunnaki-nibiru",
-    "claim": "Anunnaki, Nibiru adlı bir gezegenden gelen dünya dışı bir ırktır.",
+    "claim": "ORACC’ın Anunna maddesi ve SAA 8 147, Anunnaki’nin Nibiru’dan gelen dünya dışı bir ırk olduğunu anlatır.",
     "status": "refuted",
     "confidence": "high",
     "topic": [
@@ -1441,13 +1446,10 @@
       "modern_country": "Irak"
     },
     "period": {
-      "earliest": -2500,
-      "latest": 1976,
-      "era_label": "Metin geleneği ve modern iddia",
-      "precision": "range",
+      "era_label": "Anunna’nın metin geleneği ve SAA 8 147; farklı dönem tanıkları",
+      "precision": "unknown",
       "dating_method": [
-        "textual",
-        "historical-record"
+        "textual"
       ]
     },
     "languages": [
@@ -1459,16 +1461,8 @@
       "astronomi",
       "dilbilim"
     ],
-    "people": [
-      {
-        "name": "Sitchin, Zecharia",
-        "role": "proposer",
-        "year": 1976,
-        "lifespan": "1920-2010"
-      }
-    ],
     "popular_claim": "Sümer tabletleri Nibiru'dan gelen Anunnaki adlı uzaylı bir ırkı anlatır.",
-    "divergence": "Anunna/Anunnaki, Mezopotamya metin geleneğinde bir tanrı grubudur; grubun kapsamı dönem ve metne göre değişir. Neberu/Nibiru’yu yalnız bir gök konumu saymak da eksiktir: SAA 8 147’de Marduk’un yıldızı için konumuna göre verilen adlardan biridir ve Jüpiter ile ilişkilidir. Bu metin uzaylıların geldiği 3.600 yıllık yörüngeli bir gezegeni anlatmaz. Bütün çivi yazılı külliyatın tarandığı iddia edilmiyor.",
+    "divergence": "İncelenen iki kaynak bu okumayı taşımaz: Anunna maddesi dönemlere göre kapsamı değişen bir tanrı grubunu, SAA 8 147 ise Jüpiter ile ilişkili adları anlatır. Raporda Neberu, Marduk yıldızının göğün ortasında bulunduğunda aldığı addır; yalnız soyut bir gök konumu değildir. İki kaynakta yapılan bu karşılaştırma, bütün çivi yazılı külliyatın veya modern Nibiru literatürünün taranması değildir.",
     "divergence_type": [
       "medya-abartisi",
       "ideolojik-secim"
@@ -1477,7 +1471,7 @@
       {
         "id": "brisch-2019-anunna",
         "language": "en",
-        "accessed": "2026-09-30",
+        "accessed": "2026-10-04",
         "tier": "institutional",
         "type": "webpage",
         "authors": [
@@ -1487,12 +1481,12 @@
         "title": "Anunna (Anunnaku, Anunnaki) (a group of gods)",
         "institution": "ORACC: Ancient Mesopotamian Gods and Goddesses",
         "url": "https://oracc.museum.upenn.edu/amgg/listofdeities/anunna/index.html",
-        "note": "Functions bölümü arama dizininde kontrol edildi. Canlı sayfa web aracıyla açılamadı; dizin üzerinden görülen bölüm tüm sayfanın canlı okunması olarak sunulmuyor."
+        "note": "Canlı ORACC sayfası tarayıcıda okundu: giriş, Functions ve Time Periods Attested. Önceki arama diziniyle sınırlı erişim notu güncellendi; kaynakçadaki bütün edisyonlar ayrıca okunmadı."
       },
       {
         "id": "hunger-1992-saa-8-147",
         "language": "en",
-        "accessed": "2026-09-30",
+        "accessed": "2026-10-04",
         "tier": "primary",
         "type": "edition",
         "authors": [
@@ -1503,45 +1497,62 @@
         "container": "State Archives of Assyria 8",
         "institution": "ORACC / State Archives of Assyria online",
         "url": "https://oracc.museum.upenn.edu/asbp/P336421",
-        "note": "Nabû-mušēṣi raporunun İngilizce çevirisi ve satır numaraları arama dizinindeki edisyondan kontrol edildi. Özgün tablet yeniden okunmadı; bütün astronomi külliyatı taranmadı."
+        "note": "Canlı edisyonun İngilizce çevirisi, satırları ve lemmaları tarayıcıda görüldü: özellikle ön yüz 3–8 ve arka yüz 1. SAA 8 147 başlığı “Jupiter and Scorpius in Lunar Halo”dur. Özgün tablet veya Hunger 1992 kitabının tümü yeniden okunmadı."
       }
     ],
-    "evidence": [],
-    "counter_evidence": [
+    "evidence": [
       {
         "id": "anunna-anlami",
-        "text": "ORACC maddesi Anunna’yı bir tanrı grubu olarak tanımlar; kapsamın tarihsel olarak değiştiğini açıklar. Sabit bir uzaylı ırk tanımı değildir.",
+        "text": "ORACC Anunna maddesi, terimi Mezopotamya panteonundaki bir tanrı grubu olarak tanımlar; üyeler ve kullanım dönem/metne göre değişebilir.",
         "citations": [
           {
             "source_ref": "brisch-2019-anunna",
-            "locator": "Functions başlıklı bölüm",
-            "support_type": "counter"
+            "locator": "Anunna (Anunnaku, Anunnaki) (a group of gods), giriş; Functions, ilk iki paragraf",
+            "support_type": "direct"
           }
         ]
       },
       {
         "id": "nibiru-gok-konumu",
-        "text": "SAA 8 147, Marduk’un yıldızına görünüş ve konumuna göre Šulpa’e, Sagmegar ve Neberu adlarını verir; pasaj Jüpiter hakkındadır. Neberu yalnız soyut bir koordinat değildir.",
+        "text": "SAA 8 147’nin ön yüz 7–8 / arka yüz 1 satırlarında Marduk yıldızının konumuna göre Šulpa’e, Sagmegar ve Neberu adları verilir. Ön yüz 3’te Sagmegar, Jüpiter olarak çevrilir; Neberu lemması da Jüpiter’in bir adı olarak açıklanır.",
         "citations": [
           {
             "source_ref": "hunger-1992-saa-8-147",
+            "locator": "P336421, ön yüz satır 3, 5, 7–8 ve arka yüz satır 1; Neberu lemması",
+            "support_type": "direct"
+          }
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "id": "taniklarin-kapsami",
+        "text": "ORACC maddesi terimin dönemler arasında değiştiğini ve kapsamlı yeni çalışmanın eksikliğini belirtir. SAA 8 147’deki adlandırma, bütün dönemlerde her Nibiru kullanımının aynı nesneyi göstermesi için yeterli değildir.",
+        "citations": [
+          {
+            "source_ref": "brisch-2019-anunna",
+            "locator": "Functions, ilk paragraf",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "hunger-1992-saa-8-147",
             "locator": "P336421, ön yüz satır 7–8 ve arka yüz satır 1",
-            "support_type": "counter"
+            "support_type": "context",
+            "note": "İkinci cümle tek tanığın kapsamından yapılan yöntem çıkarımıdır; külliyatın tamamı taranmadı."
           }
         ]
       }
     ],
     "open_questions": [
-      "Sitchin’in belirli çeviri iddiaları, dayandırdığı tablet ve satırlarla tek tek karşılaştırılmalı.",
-      "MUL.APIN’in ilgili pasajları bu turda okunmadı; 3.600 yıllık yörünge iddiası için bütün külliyatı kapsayan yokluk sonucu verilmedi."
+      "Neberu’nun farklı metinlerdeki kullanımları nasıl değişir? Bu kayıtta bütün astronomi edisyonları karşılaştırılmadı."
     ],
-    "checked": "2026-09-30",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "30 Eylül düzeltmesi: “yalnız gök konumu”, “panteonun genel adı” ve bütün çivi yazılı metinleri kapsayan yokluk ifadeleri geri çekildi. Doğrulanmamış CDA, ePSD, MUL.APIN ve Sitchin kitap atıfları bu kayıttan çıkarılıp kapsam açığı olarak belirtildi. Refuted, tanrı grubunun uzaylı ırk olarak çevrilmesine karşı eldeki tanıklara dayanır; bütün külliyatın eksiksiz tarandığını söylemez."
+      "notes": "İki ORACC kaynağı canlı tarayıcıda yeniden kontrol edildi; önceki yalnız arama dizini erişim sınırı kaldırıldı. Refuted/high hükmünün iddiası yalnız bu iki tanığın içeriğiyle sınırlandı. SAA 8 147 ön yüz 3–8/arka yüz 1 ve Neberu lemması, Anunna giriş/Functions/Time Periods Attested okundu. Kaynaksız MÖ 2500 başlangıcı ve modern 1976 ile antik tanıkları birleştiren dönem kaldırıldı. Sitchin kitabı, bütün antik edisyonlar ve özgün tabletler okunmadı; bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
@@ -1560,13 +1571,9 @@
       "modern_country": "Irak"
     },
     "period": {
-      "earliest": -6500,
-      "latest": -3100,
-      "era_label": "Ubeyd - Uruk",
-      "precision": "range",
+      "era_label": "Ubeyd ve Uruk; bölgeye göre farklı yerleşim evreleri",
+      "precision": "unknown",
       "dating_method": [
-        "stratigraphy",
-        "radiocarbon",
         "typology"
       ]
     },
@@ -1574,7 +1581,7 @@
       "arkeoloji"
     ],
     "popular_claim": "Sümerler hiçbir öncülü olmadan, gelişmiş bir uygarlık olarak birdenbire belirdi.",
-    "divergence": "Uruk döneminden önce bölgede Ubeyd dönemi yerleşimleri var ve arkeolojik olarak SÜREKLİLİK gösteriyorlar. Ani kopuş yok, kademeli ölçek artışı var.",
+    "divergence": "Uruk’tan önce Ubeyd yerleşimleri vardır; bu, uygarlığın hiçbir öncülü olmadan belirdiği tezini desteklemez. Bununla birlikte Adams’ın yüzey araştırması, Uruk büyümesini her yerde yavaş ve kesintisiz bir süreç saymaz: Nippur–Adab çevresinde hızlı artış, sonraki evrede kuzey/güney farkı ve olası göç veya yerleşikleşme tartışılır. Yerleşim verileri tek başına konuşulan dili veya etnik kökeni belirlemez.",
     "divergence_type": [
       "medya-abartisi"
     ],
@@ -1582,8 +1589,8 @@
       {
         "id": "adams-1981-heartland-of-cities",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
+        "accessed": "2026-10-04",
+        "tier": "primary",
         "type": "book",
         "authors": [
           "Adams, Robert McC."
@@ -1591,55 +1598,29 @@
         "year": 1981,
         "title": "Heartland of Cities: Surveys of Ancient Settlement and Land Use on the Central Floodplain of the Euphrates",
         "publisher": "University of Chicago Press",
-        "isbn": "9780226005447",
-        "note": "Güney Mezopotamya yerleşim örüntüsünün yüzey araştırmasına dayanan klasik çalışması; süreklilik savının ana dayanağı."
-      },
-      {
-        "id": "pollock-1999-ancient-mesopotamia",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Pollock, Susan"
-        ],
-        "year": 1999,
-        "title": "Ancient Mesopotamia: The Eden that Never Was",
-        "publisher": "Cambridge University Press",
-        "isbn": "9780521575683",
-        "note": "Ubeyd-Uruk geçişinin toplumsal arkeoloji açısından değerlendirmesi."
+        "url": "https://isac-assets.s3.amazonaws.com/isac-publications/heartland_of_cities.pdf?VersionId=r_2aJmT2zad7D7XIYEHLCD_97BDR3V97",
+        "note": "Üniversitenin açık PDF sürümünde seçilmiş s. 53–55 ve 69–70, Tablo 3 okundu. Yüzey araştırması verileri ve yazarın göç/yerleşikleşme yorumu ayrılır; bütün kitap, kazı kayıtları ve ham veriler yeniden denetlenmedi."
       }
     ],
     "evidence": [
       {
-        "id": "buyuyen-yerlesimler",
-        "text": "Aynı bölgelerde giderek büyüyen yerleşimler; yüzey araştırmaları bunu örüntü düzeyinde gösteriyor.",
+        "id": "ubeyd-onculleri",
+        "text": "Adams, Ubeyd ve daha erken yerleşimleri Uruk’tan önceye yerleştirir; Uruk çevresindeki beş alanın yeniden araştırılmasında iki alanda önceden fark edilmeyen Ubeyd izleri bulunmuştur.",
         "citations": [
           {
             "source_ref": "adams-1981-heartland-of-cities",
-            "locator": "Yerleşim örüntüsü çözümlemesi",
+            "locator": "s. 54–55, Onset of Alluvial Settlement; Warka yeniden araştırması",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "comlekcilik-surekliligi",
-        "text": "Çömlekçilikte kesintisiz tipolojik gelişim.",
+        "id": "bolgesel-oruntu",
+        "text": "Adams’ın Tablo 3’ü, Erken-Orta ve Geç Uruk için Uruk çevresi ile Nippur–Adab çevresinde farklı yerleşim alanı eğilimleri verir; bunları tek bir büyüme çizgisine birleştirmez.",
         "citations": [
           {
-            "source_ref": "pollock-1999-ancient-mesopotamia",
-            "locator": "Ubeyd-Uruk maddi kültürü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "tapinak-kademeli-buyume",
-        "text": "Tapınak yapılarında kademeli büyüme - küçük odadan anıtsal yapıya.",
-        "citations": [
-          {
-            "source_ref": "pollock-1999-ancient-mesopotamia",
-            "locator": "Anıtsal mimarinin gelişimi",
+            "source_ref": "adams-1981-heartland-of-cities",
+            "locator": "s. 69, Tablo 3 ve önceki paragraf; s. 70, sağ sütun",
             "support_type": "direct"
           }
         ]
@@ -1647,38 +1628,40 @@
     ],
     "counter_evidence": [
       {
-        "id": "maddi-kultur-nufus-degil",
-        "text": "Süreklilik MADDİ KÜLTÜRDE gösteriliyor; bu, Ubeyd nüfusuyla Uruk nüfusunun aynı olduğunu kanıtlamaz. Çömlek geleneği devam ederken nüfus değişebilir.",
+        "id": "buyume-yavas-degil",
+        "text": "Adams, Nippur–Adab çevresinde Erken-Orta Uruk başındaki artışı çok hızlı olarak niteler; s. 70’te göç, yerleşikleşme veya ikisinin birlikte etkisini olası açıklamalar olarak tartışır.",
         "citations": [
           {
-            "source_ref": "pollock-1999-ancient-mesopotamia",
-            "locator": "Süreklilik yorumu",
+            "source_ref": "adams-1981-heartland-of-cities",
+            "locator": "s. 69, Tablo 3 sonrası; s. 70, sol sütun ilk iki paragraf",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "olcek-artisinin-hizi",
-        "text": "Uruk döneminde ölçek artışının HIZI ayrı bir tartışma konusudur; 'kademeli' nitelemesi bu hızı hafifletiyor olabilir.",
+        "id": "tarama-siniri",
+        "text": "Gömülmüş küçük yerleşimler, değişen yüzey araştırması koşulları ve çok evreli merkezler, bulunma oranını ve evreye göre alan tahminini belirsizleştirir. Veri eksikliği bütün bölgelerde kesintisiz devam veya hiç göç olmadığı hükmünü taşımaz.",
         "citations": [
           {
             "source_ref": "adams-1981-heartland-of-cities",
-            "locator": "Kentleşme hızı",
-            "support_type": "context"
+            "locator": "s. 53, veri görünürlüğü; s. 54, ilk paragraf; s. 55, bölgesel tarama farkları",
+            "support_type": "context",
+            "note": "Son cümle seçilmiş verinin kapsamından çıkarılan yöntem sınırıdır; etnik kimlik veya göçün kesin yokluğu ölçülmedi."
           }
         ]
       }
     ],
     "open_questions": [
-      "Uruk kentleşmesinin hızı hangi çözünürlükte ölçülebiliyor?"
+      "Bölgeye ve evreye göre hızlı büyümede göç ile yerleşikleşmenin payı nasıl ayrılabilir?",
+      "Yüzey buluntuları ile evreye göre yerleşim alanı arasında hangi belirsizlikler bulunuyor?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu iki gerçek künyeyle değiştirildi. Maddi kültür sürekliliğinin nüfus sürekliliği demek olmadığı eklendi - kayıt bu ikisini ayırmıyordu."
+      "notes": "Adams 1981 seçilmiş s. 53–55, 69–70 ve Tablo 3 okundu. “Çömlekçilikte kesintisiz gelişim”, “bütün tapınaklarda kademeli büyüme” ve “ani kopuş yok” genellemeleri çıkarıldı; Pollock 1999 bu tur okunmadığı için belirsiz atıfları geri çekildi. Sayısal evre sınırları ve doğrudan radyokarbon etiketi kullanılmadı. Refuted/high, yalnız “hiçbir öncül yok” iddiasına karşı korunur; bütün gelişimin yavaş olduğu anlamına gelmez. Ham yüzey verileri yeniden analiz edilmedi; bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
@@ -1697,13 +1680,11 @@
       "modern_country": "Irak"
     },
     "period": {
-      "earliest": -6500,
-      "latest": -3000,
-      "era_label": "Ubeyd - Erken Uruk",
-      "precision": "range",
+      "era_label": "Yazı öncesi yerleşimler ve Sümerce’nin dil akrabalığı sorunu",
+      "precision": "unknown",
       "dating_method": [
-        "stratigraphy",
-        "typology"
+        "typology",
+        "textual"
       ]
     },
     "languages": [
@@ -1711,35 +1692,34 @@
     ],
     "disciplines": [
       "dilbilim",
-      "arkeoloji",
-      "genetik"
+      "arkeoloji"
     ],
     "popular_claim": "Sümerler Orta Asya'dan (ya da başka bir yerden) gelmiş bir halktır.",
-    "divergence": "İki kanıt türü FARKLI YÖNLERE işaret ediyor ve bu, henüz uzlaştırılmadı. Arkeoloji Ubeyd'den Uruk'a yerel süreklilik gösteriyor - dışarıdan ani bir geliş izi yok. Dilbilim ise Sümerce'yi bilinen hiçbir dile bağlayamıyor; bir dil izolatı. 'Köken belirlendi' diyen her cevap, bu iki kanıttan birini seçip ötekini görmezden geliyor. Kaydın durumu bu yüzden 'unknown' - eksiklik değil, iki kanıt türünün henüz birleştirilememesi.",
+    "divergence": "Dil akrabalığı ile nüfusun coğrafi kökeni farklı sorulardır. Jagersma Sümerce’yi bir dil izolatı olarak tanımlar; bilinen akraba yokluğu, bu dilin hiç akrabası olmadığı veya mutlaka dışarıdan geldiği demek değildir. Yazı öncesi sakinlerin dili bilinmez. Adams ise bazı Uruk bölgelerinde göç/yerleşikleşme olasılığını tartışır; maddi kültür ne göçün yokluğunu ne de gelenlerin dilini tek başına kanıtlar. Seçilmiş kaynaklar Sümerlerin belirli bir çıkış yeri veya göç güzergâhını kesinleştirmez.",
     "divergence_type": [
       "kategori-hatasi"
     ],
     "sources": [
       {
-        "id": "matthews-2003-archaeology-mesopotamia",
+        "id": "jagersma-2010-sumerian-grammar",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
+        "accessed": "2026-10-04",
+        "tier": "institutional",
+        "type": "thesis",
         "authors": [
-          "Matthews, Roger"
+          "Jagersma, Abraham Hendrik"
         ],
-        "year": 2003,
-        "title": "The Archaeology of Mesopotamia: Theories and Approaches",
-        "publisher": "Routledge",
-        "isbn": "9780415253178",
-        "note": "Alanın kuram ve yöntem tartışması; 'Sümer sorunu'nun nasıl kurulduğuna dair güncel değerlendirme."
+        "year": 2010,
+        "title": "A Descriptive Grammar of Sumerian",
+        "institution": "Universiteit Leiden",
+        "url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A2961989/download",
+        "note": "§1.2.1, s. 2–4 (PDF 29–31) okundu. Dil akrabalığı, temas ve yazı öncesi dil manzarasının bilinmezliği için kullanıldı. Doktora tezidir; bütün gramer veya köken literatürü taranmadı."
       },
       {
         "id": "adams-1981-heartland-of-cities",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
+        "accessed": "2026-10-04",
+        "tier": "primary",
         "type": "book",
         "authors": [
           "Adams, Robert McC."
@@ -1747,95 +1727,82 @@
         "year": 1981,
         "title": "Heartland of Cities: Surveys of Ancient Settlement and Land Use on the Central Floodplain of the Euphrates",
         "publisher": "University of Chicago Press",
-        "isbn": "9780226005447",
-        "note": "Güney Mezopotamya yerleşim örüntüsünün yüzey araştırmasına dayanan klasik çalışması; süreklilik savının ana dayanağı."
-      },
-      {
-        "id": "bottero-1992-mesopotamia",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Bottéro, Jean"
-        ],
-        "year": 1992,
-        "title": "Mesopotamia: Writing, Reasoning, and the Gods",
-        "publisher": "University of Chicago Press",
-        "isbn": "9780226067278",
-        "note": "Mezopotamya kültürünün genel değerlendirmesi."
+        "url": "https://isac-assets.s3.amazonaws.com/isac-publications/heartland_of_cities.pdf?VersionId=r_2aJmT2zad7D7XIYEHLCD_97BDR3V97",
+        "note": "Üniversitenin açık PDF sürümünde seçilmiş s. 53–55 ve 69–70, Tablo 3 okundu. Yüzey araştırması verileri ve yazarın göç/yerleşikleşme yorumu ayrılır; bütün kitap, kazı kayıtları ve ham veriler yeniden denetlenmedi."
       }
     ],
     "evidence": [
       {
-        "id": "arkeolojik-sureklilik",
-        "text": "Arkeoloji Ubeyd'den Uruk'a yerel süreklilik gösteriyor - dışarıdan ani bir gelişe işaret yok.",
+        "id": "dil-izolati",
+        "text": "Jagersma Sümerce’yi dil izolatı olarak tanımlar; büyük zaman aralığı ve kaybolmuş komşu dil kayıtları karşılaştırmalı yöntemi sınırlar.",
+        "citations": [
+          {
+            "source_ref": "jagersma-2010-sumerian-grammar",
+            "locator": "§1.2.1 Genetic and areal relationships, s. 2–3",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "yazi-oncesi-dil-bilinmiyor",
+        "text": "Jagersma, MÖ 3. binyıl öncesi Mezopotamya’nın dil manzarası hakkında sağlam bilgi bulunmadığını ve erken yerleşim sakinlerinin hangi dili konuştuğunun bilinmediğini belirtir.",
+        "citations": [
+          {
+            "source_ref": "jagersma-2010-sumerian-grammar",
+            "locator": "§1.2.1, s. 4, “Nothing firm is known” paragrafı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "goc-ve-yerlesiklesme-olasiligi",
+        "text": "Adams, hızlı Uruk büyümesini göç ve yerleşikleşme olasılıklarıyla tartışır; bu pasaj bir Sümerce konuşur topluluğun kesin çıkış yerini saptamaz.",
         "citations": [
           {
             "source_ref": "adams-1981-heartland-of-cities",
-            "locator": "Yerleşim sürekliliği",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "dil-izolati",
-        "text": "Sümerce bilinen hiçbir dille akraba değildir; bir dil izolatıdır.",
-        "citations": [
-          {
-            "source_ref": "bottero-1992-mesopotamia",
-            "locator": "Dil ve yazı bölümü",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "sorunun-kurulusu",
-        "text": "'Sümer sorunu'nun kendisi bir araştırma tarihi konusudur: sorunun nasıl kurulduğu, verilen cevapları biçimlendiriyor.",
-        "citations": [
-          {
-            "source_ref": "matthews-2003-archaeology-mesopotamia",
-            "locator": "Kuram ve yaklaşımlar",
-            "support_type": "context"
+            "locator": "s. 70, sol sütun ilk iki paragraf",
+            "support_type": "context",
+            "note": "Göç/yerleşikleşme araştırmacının yorumudur; belirli dil veya etnik kimlik bu yüzey araştırması pasajında ölçülmez."
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "izolat-disaridan-gelme",
-        "text": "Dil izolatı olması, dilin bölgeye dışarıdan gelmiş olabileceği ihtimalini açık bırakıyor.",
+        "id": "izolat-goc-kaniti-degil",
+        "text": "Bilinen dil akrabası bulunmaması, yerel gelişim ile göç arasında tek başına seçim yaptırmaz. Jagersma’nın yazı öncesi dil ve kayıt kaybı uyarıları, önceki “dil dışarıya, arkeoloji içeriye işaret ediyor” anlatısını taşımıyor.",
         "citations": [
           {
-            "source_ref": "bottero-1992-mesopotamia",
-            "locator": "Dilin konumu",
-            "support_type": "counter"
+            "source_ref": "jagersma-2010-sumerian-grammar",
+            "locator": "§1.2.1, s. 2–4",
+            "support_type": "context",
+            "note": "Bu, seçilmiş pasajların kapsamından yapılan yöntem çıkarımıdır; dil izolatının göçün kanıtı sayılmasına itiraz eder."
           }
         ]
       },
       {
-        "id": "uzlastirilamadi",
-        "text": "Arkeolojik süreklilik ile dilbilimsel yalıtılmışlık tam olarak uzlaştırılamadı.",
+        "id": "maddi-kultur-goc-yoklugu-degil",
+        "text": "“Arkeolojide dışarıdan geliş izi yok” cümlesi Adams’ın olası göç açıklamasıyla bağdaşmaz. Yüzey araştırmasındaki alan ve nüfus tahminleri dil veya genetik ölçümü değildir.",
         "citations": [
           {
-            "source_ref": "matthews-2003-archaeology-mesopotamia",
-            "locator": "Köken tartışması",
+            "source_ref": "adams-1981-heartland-of-cities",
+            "locator": "s. 69, Tablo 3 sonrası; s. 70, sol sütun",
             "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "Dil ve maddi kültür farklı yönlere işaret ederken köken nasıl belirlenir?",
-      "Güney Mezopotamya için arkeogenetik veri var mı? Bu kayıtta taranmadı."
+      "Belirli bir köken veya göç güzergâhı savı hangi tarihli dil, yerleşim ve nüfus tanıklarıyla kurulabilir?",
+      "Bu kayıtta arkeogenetik yayınlar taranmadı; böyle bir çalışma varsa hangi yer, tarih ve örneklemle sınırlıdır?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu üç künyeyle değiştirildi. Kayıt 'genetik' disiplinini sayarken hiç genetik kaynak taşımıyordu; bu boşluk açıkça yazıldı. Kayıt 'genetik' disiplinini sayıyor ama bu turda hiçbir arkeogenetik çalışma künyelenmedi; o kanıt türü burada TEMSİL EDİLMİYOR."
+      "notes": "Jagersma 2010 §1.2.1 s. 2–4 ve Adams 1981 s. 53–55, 69–70 karşılaştırıldı. Dil izolatını dışarıdan geliş göstergesi, arkeolojiyi göçün kesin yokluğu ve ikisini birbiriyle çelişen kanıt sayan çerçeve geri çekildi. Matthews 2003 ve Bottéro 1992 bu tur okunmadı; belirsiz atıfları çıkarıldı. Arkeogenetik kanıt temsil edilmediğinden genetik disiplin etiketi çıkarıldı; kaynakların eksikliği kökenin hiçbir zaman belirlenemeyeceği iddiası değildir. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
