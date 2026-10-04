@@ -1871,7 +1871,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "AMOC 2004'ten beri kesintisiz zayıflıyor.",
-    "divergence": "Lee’nin verdiği yıllık değerler 2018’de toparlanma, 2021’de yeniden düşüş içerir. Makalenin 2011–2021 eğilimi yaklaşık düzken 2005–2021 eğilimi negatiftir; bir pencerenin sonucu bütün tarihlere taşınamaz. Doğal ve dışsal zorlanan bileşen ayrımı doğrudan ayrı ayrı ölçüm değil, model ve gözlemlerin birlikte yorumudur. 2000–2020’de −2,6/+1,0/net −1,6 Sv ile 2010–2020’de −1,3/+1,1 Sv değişimleri farklı karşılaştırmalardır; tek bir duraklama hesabı diye birleştirilmez. Artık 20→15 ifadesinin medya kökeni yalnız 2009 olarak varsayılmıyor. Resmî RAPID v2024.1a ASCII dizisinin moc_mar_hc10 sütunundan tam takvim yılları için basit aritmetik ortalama 2021’de 15,9, 2022’de 15,2 ve 2023’te 16,0 Sv’dir. Bu hesap yeni bir eğilim veya insan etkisi testi değildir. Lee 2024’ün yöntem ve kaynakçası v2022.1 RAPID dizisini belirtir; makaledeki 2021 değeri 15,3 Sv’dir. Eski ham serinin aynı takvim yılı ortalaması ve makalenin yıllık değer üretme adımları yeniden hesaplanmadığından 0,6 Sv farkın kaynağı belirlenmedi. 2022–2023 alet ve kablo ikameleri 2021 farkına neden olarak gösterilemez.",
+    "divergence": "Lee’nin verdiği yıllık değerler 2018’de toparlanma, 2021’de yeniden düşüş içerir. Makalenin 2011–2021 eğilimi yaklaşık düzken 2005–2021 eğilimi negatiftir; bir pencerenin sonucu bütün tarihlere taşınamaz. Doğal ve dışsal zorlanan bileşen ayrımı doğrudan ayrı ayrı ölçüm değil, model ve gözlemlerin birlikte yorumudur. 2000–2020’de −2,6/+1,0/net −1,6 Sv ile 2010–2020’de −1,3/+1,1 Sv değişimleri farklı karşılaştırmalardır; tek bir duraklama hesabı diye birleştirilmez. Artık 20→15 ifadesinin medya kökeni yalnız 2009 olarak varsayılmıyor. RAPID v2022.1 ham ASCII dizisinde 2021’in 730 yarım günlük moc_mar_hc10 örneğinin basit takvim yılı ortalaması 15,320753 Sv’dir; Lee 2024’ün 15,3 Sv değeriyle bir ondalıkta eşleşir. v2024.1a dizisinde aynı 730 zaman damgasının ortalaması 15,922495 Sv’dir; 0,601742 Sv fark aynı örneklerin sürümler arası değer farkıdır. v2024.1a’da 2022 ve 2023 ortalamaları 15,2 ve 16,0 Sv’dir. Yazarların hesap kodu ve veri revizyonunun hangi işlem adımından kaynaklandığı doğrulanmadı. Basit ortalamalar yeni eğilim veya insan etkisi testi değildir; 2022–2023 alet ve kablo ikameleri 2021 farkına neden olarak gösterilemez.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
@@ -1898,7 +1898,7 @@
         "container": "Nature Communications",
         "volume": "15:10642",
         "doi": "10.1038/s41467-024-54903-w",
-        "note": "Bu tur Introduction, Results/Fig. 1, Discussion’ın sınırlamaları, Methods/RAPID veri kapsamı ve kaynakça 22 okundu. Yöntem Nisan 2004–Şubat 2022 dizisini, kaynakça v2022.1 sürümünü belirtir. 2021’de yeniden düşüş ve farklı trend pencereleri gösterildi. Yıllık değerin ham seriden üretimi yeniden yapılmadı. Model ayrımı ayrı ölçülmüş doğal ve insan kaynaklı sinyaller değildir; medya ifadesinin kökeni kaynakta belirlenmiş sayılmadı.",
+        "note": "Introduction, Results/Fig. 1, Discussion’ın sınırlamaları, Methods/RAPID veri kapsamı ve kaynakça 22 okundu. Yöntem Nisan 2004–Şubat 2022 dizisini, kaynakça v2022.1 sürümünü belirtir. Makaledeki 2005/2009/2018/2021 yıllık değerleri v2022.1 ASCII basit takvim yılı ortalamalarıyla bir ondalıkta eşleşti; yazarların hesap kodu çalıştırılmadı. Model ayrımı ayrı ölçülmüş doğal ve insan kaynaklı sinyaller değildir; medya ifadesinin kökeni kaynakta belirlenmiş sayılmadı.",
         "url": "https://www.nature.com/articles/s41467-024-54903-w"
       },
       {
@@ -1947,7 +1947,30 @@
         "container": "British Oceanographic Data Centre / NERC",
         "doi": "10.5285/48d0bf43-0598-ceb2-e063-7086abc062f1",
         "url": "https://rapid.ac.uk/node/10",
-        "note": "Resmî RAPID v2024.1a ASCII dosyası https://rapid.ac.uk/sites/default/files/rapid_data/moc_transports.ascii üzerinden 4 Ekim 2026’da okundu. SHA-256 847c169cba6b2461a2ca33870b7c06d6c9073ac389b333006abc6709437b08ac. README sütun 14 moc_mar_hc10; -99999 eksik değerleri atılıp 2021–2023 tam takvim yılları ikişer günlük örnek değil 12 saatlik örneklerle aritmetik ortalandı (her yıl 730 örnek). RAPID indirme sayfası v2022.1’i önceki sürümler arasında listeler; bu eski serinin ham dosyası okunmadı. 2024 kısmi yıl; eğilim/anlamlılık testi yapılmadı."
+        "note": "Resmî RAPID v2024.1a ASCII dosyası https://rapid.ac.uk/sites/default/files/rapid_data/moc_transports.ascii üzerinden 4 Ekim 2026’da okundu. SHA-256 847c169cba6b2461a2ca33870b7c06d6c9073ac389b333006abc6709437b08ac. README sütun 14 moc_mar_hc10; -99999 eksik değerleri atılıp 2021–2023 tam takvim yılları 12 saatlik örneklerle aritmetik ortalandı (her yıl 730 örnek). v2022.1 ile aynı 2021 zaman damgaları karşılaştırıldı. 2024 kısmi yıl; eğilim/anlamlılık testi yapılmadı."
+      },
+      {
+        "id": "rapid-v2022-1-veri",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "primary",
+        "type": "dataset",
+        "authors": [
+          "Moat, Ben I.",
+          "Smeed, David A.",
+          "Rayner, Darren",
+          "Johns, William E.",
+          "Smith, Ryan",
+          "Volkov, Denis",
+          "Baringer, Molly O.",
+          "Collins, Julie"
+        ],
+        "year": 2023,
+        "title": "Atlantic meridional overturning circulation observed by the RAPID-MOCHA-WBTS array at 26N from 2004 to 2022 (v2022.1)",
+        "container": "British Oceanographic Data Centre / NERC",
+        "doi": "10.5285/04c79ece-3186-349a-e063-6c86abc0158c",
+        "url": "https://www.bodc.ac.uk/data/published_data_library/catalogue/10.5285/04c79ece-3186-349a-e063-6c86abc0158c/",
+        "note": "BODC DOI sayfasının hazırladığı arşiv indirildi. ZIP SHA-256 ac1bedc9ba4b1d535b5cd9301abd6069795783bf5f51c9d893c8912cdf0a4940; moc_transports_200404_2022215.ascii SHA-256 619313d25295d4f1f492cd163904fa1a9fb6627c37b561978ec0638b807cc41b. Birlikte verilen moc_transports_supporting_information_2022.pdf s. 2 sürüm değişiklikleri ve s. 4 ASCII sütun sırası/12 saatlik filtre okundu. Sütun 14'ten 2021'in 730 geçerli örneği yeniden ortalandı; ham cihaz verisi ve işlem kodu incelenmedi."
       },
       {
         "id": "rapid-v2024-1a-kilavuz",
@@ -2027,6 +2050,27 @@
             "support_type": "context"
           }
         ]
+      },
+      {
+        "id": "rapid-2021-surum-farki",
+        "text": "Aynı 730 yarım günlük 2021 zaman damgasında v2022.1 moc_mar_hc10 ortalaması 15,320753, v2024.1a ortalaması 15,922495 Sv’dir; sürümler arası örnek değeri farkının ortalaması 0,601742 Sv’dir. Eski sürümün 2005, 2009, 2018 ve 2021 basit yıllık ortalamaları Lee 2024’te yayımlanan dört değere bir ondalıkta eşleşir.",
+        "citations": [
+          {
+            "source_ref": "rapid-v2022-1-veri",
+            "locator": "moc_transports_200404_2022215.ascii, YY sütun 2 ve moc_mar_hc10 sütun 14; 2005/2009/2018/2021 satırları; SHA-256 619313d2…07cc41b; supporting_information_2022.pdf s. 4",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "rapid-v2024-1a-veri",
+            "locator": "moc_transports.ascii, aynı 2021 zaman damgaları ve sütun 14; SHA-256 847c169c…9437b08ac",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "lee-2024-duraklama",
+            "locator": "Introduction, 2005/2009/2018/2021 yıllık değerleri; kaynakça 22, v2022.1",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "counter_evidence": [
@@ -2076,7 +2120,7 @@
       },
       {
         "id": "son-surum-karsilastirma-siniri",
-        "text": "Lee 2024’ün yöntem ve kaynakçası v2022.1 RAPID dizisini belirtir; 2021 için verilen 15,3 Sv ile v2024.1a’dan hesaplanan 15,9 Sv farklı sürümlerdedir. v2022.1 ham dizisinin aynı takvim yılı ortalaması ve Lee’nin yıllık değer üretme adımları yeniden hesaplanmadı; 0,6 Sv farkın nedeni bilinmiyor. 2021 sonrasındaki doğu sınırı ve Florida kablo ikameleri 2021 farkına gerekçe sayılamaz. Basit yıllık ortalamadan eğilim anlamlılığı veya nedensel pay çıkarılmaz.",
+        "text": "Lee 2024’ün 2021 için verdiği 15,3 Sv, v2022.1 ham serisinin 15,320753 Sv basit takvim yılı ortalamasıyla bir ondalıkta eşleşir. v2024.1a’daki aynı 730 zaman damgası 15,922495 Sv verir; hesaplanan 0,601742 Sv fark sürümler arası örnek değeri farkıdır. Ancak hangi veri işleme revizyonunun bunu yarattığı ve Lee’nin özgün hesap kodu doğrulanmadı. 2021 sonrasındaki alet ikameleri farkın nedeni sayılamaz; bu ortalamalar eğilim anlamlılığı veya nedensel payı ölçmez.",
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
@@ -2085,7 +2129,12 @@
           },
           {
             "source_ref": "rapid-v2024-1a-veri",
-            "locator": "RAPID Data Download, Previous releases, v2022.1 ve v2024.1a künyeleri; eski ham dosya bu tur okunmadı",
+            "locator": "moc_transports.ascii, 2021 sütun 14 ve aynı 730 zaman damgası; README s. 5–6",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "rapid-v2022-1-veri",
+            "locator": "moc_transports_200404_2022215.ascii, 2021 sütun 14 ve aynı 730 zaman damgası; supporting_information_2022.pdf s. 2 ve s. 4",
             "support_type": "context"
           },
           {
@@ -2097,14 +2146,14 @@
       }
     ],
     "open_questions": [
-      "v2022.1 ham dizisinden 2021 tam takvim yılı ortalaması ve Lee 2024’ün yıllık değer üretimi yeniden hesaplandığında 15,3–15,9 Sv farkı nasıl ayrışır?",
+      "2021’de aynı zaman damgalarında görülen 0,601742 Sv sürüm farkını hangi veri işleme revizyonları yarattı?",
       "v2024.1a için otokorelasyon ve sürüm revizyonları gözetilerek 2011–2023 eğiliminin belirsizliği nedir? Bu tur yalnız takvim yılı ortalamaları hesaplandı.",
       "Artık bileşende doğal değişkenlik ile model eksikliklerinin payı nasıl ayrılır?"
     ],
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Lee 2024’ün seçilmiş giriş/sonuç/yöntem pasajları ile kaynakça 22 okundu; v2022.1 sürümü saptandı. RAPID v2024.1a resmî README ve ham ASCII sütun 14 okundu; SHA-256 sabitlendi, 2021–2023 tam takvim yılı basit ortalamaları Python ve Node ile eşleştirildi. Eski v2022.1 ham dosyasına ulaşılamadı; Lee 2021 sayısı yeniden üretilmedi. Kablo/alet ikamelerinin sayısal etkisi, eğilim anlamlılığı ve bağımsız uzman incelemesi yapılmadı."
+      "notes": "Lee 2024’ün seçilmiş giriş/sonuç/yöntem pasajları ile kaynakça 22 okundu. RAPID v2022.1 BODC ZIP'indeki ASCII ve açıklama PDF'si ile v2024.1a ASCII karşılaştırıldı; iki dosyanın SHA-256 değeri sabitlendi. 2021'in aynı 730 yarım günlük örneğinin iki sürümdeki ortalaması Node ve bağımsız Python hesabıyla eşleşti. v2022.1'de 2005/2009/2018/2021 yılları makalenin bir ondalık değerlerini yeniden üretti. Hangi veri işleme adımının farkı yarattığı, Lee'nin hesap kodu, eğilim anlamlılığı ve bağımsız uzman incelemesi doğrulanmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
