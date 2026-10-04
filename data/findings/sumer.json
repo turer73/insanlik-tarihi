@@ -1210,7 +1210,7 @@
   {
     "schema_version": 2,
     "id": "sumer-gilgamis-sumerce-tufan-yok",
-    "claim": "Sümerce Gılgamış şiirlerinde tufan anlatısı yoktur; tufan destana Akadca gelenekten girer.",
+    "claim": "Sümerce Gılgamış’ın Ölümü, tufanı ve Ziusudra’yı anmaktadır; bu pasaj, Akadca destanın XI. tabletindeki ayrıntılı tufan öyküsüyle aynı anlatı değildir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -1224,12 +1224,9 @@
       "modern_country": "Irak"
     },
     "period": {
-      "earliest": -2100,
-      "latest": -1200,
-      "era_label": "Ur III / Eski Babil nüshalardan Standart Babil sürümüne",
-      "precision": "range",
+      "era_label": "Sümerce tanıklar ile Akadca XI. tablet ayrı tarihlenir; K.3375 MÖ 7. yüzyıl nüshasıdır, metnin oluşum tarihi değildir",
+      "precision": "unknown",
       "dating_method": [
-        "paleography",
         "textual"
       ]
     },
@@ -1241,67 +1238,126 @@
       "filoloji",
       "metin-elestirisi"
     ],
-    "people": [
-      {
-        "name": "George, Andrew R.",
-        "role": "editor",
-        "affiliation": "SOAS, University of London",
-        "year": 2003
-      }
-    ],
     "popular_claim": "Gılgamış Destanı Sümer eseridir ve tufan anlatısını içerir.",
-    "divergence": "Sümerce gelenek beş ayrı, bağımsız ve kısa şiirden oluşur - bütünlüklü bir destan değil. Bilinen Gılgamış Destanı bir AKAD eseridir ve tufan bölümü Atrahasis geleneğinden gelir. 'Sümer destanı' ifadesi iki ayrı geleneği tek esere indirgiyor.",
+    "divergence": "Sümerce Gılgamış anlatıları ile Akadca destan ayrı metinlerdir; fakat Sümerce şiirlerde tufan hiç yoktur genellemesi yanlıştır. Gılgamış’ın Ölümü’nün Me-Turan sürümünde tufan ve Ziusudra açıkça anılır. Ayrı Sümerce Tufan Öyküsü de vardır. Gönderme, ayrıntılı öykü ve gelenekler arası aktarım ayrı sorulardır.",
     "divergence_type": [
       "kategori-hatasi",
       "guncellenmemis"
     ],
     "sources": [
       {
-        "id": "george-2003-babylonian-gilgamesh",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "George, Andrew R."
-        ],
-        "year": 2003,
-        "title": "The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts",
-        "publisher": "Oxford University Press",
-        "isbn": "9780198149224",
-        "volume": "2 cilt",
+        "id": "oxford-etcsl-gilgamis-olumu-1813",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "The death of Gilgamesh: translation (ETCSL 1.8.1.3)",
+        "institution": "University of Oxford, Electronic Text Corpus of Sumerian Literature",
+        "url": "https://etcsl.orinst.ox.ac.uk/section1/tr1813.htm",
         "language": "en",
-        "note": "Bilinen bütün çivi yazılı kaynakları bir araya getiren eleştirel edisyon; xxxiv+977 sayfa ve 147 levha. Bu kayıtta EDİSYON OLARAK DEĞİL, ÇÖZÜMLEME OLARAK kullanılıyor: Sümerce şiirlerin ayrı ayrı korunduğu ve tufan bölümünün Akadca gelenekten geldiği George'un tespitidir, metnin kendisi değil. Tier ayrımı bu yüzden peer-reviewed."
+        "accessed": "2026-10-04",
+        "note": "İngilizce bileşik çeviride seçilmiş Me-Turan Segment F 1–22, 23–37 ve 116–130 okundu. Tufan ve Ziusudra pasajları, soru işaretleri ve eksikler korunarak değerlendirildi. Sümerce özgün tabletler yeniden okunmadı; bütün şiir nüshaları karşılaştırılmadı."
+      },
+      {
+        "id": "oxford-etcsl-tufan-174",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "The Flood story: translation (ETCSL 1.7.4)",
+        "institution": "University of Oxford, Electronic Text Corpus of Sumerian Literature",
+        "url": "https://etcsl.orinst.ox.ac.uk/section1/tr174.htm",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "İngilizce çeviride seçilmiş Segment C 1–27, D 1–11 ve E 3–11 okundu. Ziusudra, tufan ve ölümsüzlük ayrı bir kompozisyonda yer alır. Metindeki büyük boşluklar aktarım zincirini veya tarihsel bir taşkını tek başına belirlemez."
+      },
+      {
+        "id": "oxford-etcsl-gilgamis-katalog",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "ETCSL catalogue: narrative and mythological compositions",
+        "institution": "University of Oxford, Electronic Text Corpus of Sumerian Literature",
+        "url": "https://etcsl.orinst.ox.ac.uk/catalogue/catalogue1.htm",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Yalnız Gilgamesh altındaki 1.8.1.1–1.8.1.5.1 kayıtları ve ayrı 1.7.4 Tufan Öyküsü kaydı kontrol edildi. Huwawa A/B ayrı varyantlardır; bütün katalogdaki metinler okunmadı."
+      },
+      {
+        "id": "british-museum-tufan-tableti-k3375",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "The Flood Tablet: K.3375 (Gilgamesh XI)",
+        "institution": "British Museum",
+        "url": "https://www.britishmuseum.org/collection/object/W_K-3375",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Description, Production date, Findspot ve genişletilmiş Curator’s comments tarayıcıda okundu. MÖ 7. yüzyıl müze nüshası ile eserin oluşumu ayrıldı. Tablet doğrudan yeniden çevrilmedi; katalogdaki George 2003 edisyonu okunmadı."
+      },
+      {
+        "id": "british-museum-gilgamis-akadca",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Three hours at the Museum — 19. The Flood Tablet",
+        "institution": "British Museum",
+        "url": "https://www.britishmuseum.org/visit/object-trails/three-hours-museum",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Yalnız 19. The Flood Tablet bölümündeki Akadca destan ve XI. tabletteki Utnapiştim açıklaması okundu. Sayfanın başka nesneleri veya görsel altyazıları dayanak alınmadı."
       }
     ],
     "evidence": [
       {
-        "id": "sumerce-siirler-ayri",
-        "text": "Sümerce şiirler ayrı ayrı korunmuştur: Gılgamış ve Huvava, Gılgamış ve Gök Boğası, Gılgamış'ın Ölümü ve diğerleri.",
+        "id": "sumerce-olum-tufan",
+        "text": "Me-Turan sürümü, tanrıların tufanla insanlığı yok etme kararını ve Ziusudra’nın hayatta kalışını anarak Gılgamış’ın ölümsüzlük isteğini tartışır.",
         "citations": [
           {
-            "source_ref": "george-2003-babylonian-gilgamesh",
-            "locator": "Giriş: Sümerce şiirler bölümü",
+            "source_ref": "oxford-etcsl-gilgamis-olumu-1813",
+            "locator": "A version from Me-Turan, Segment F, satır 23–37; tekrar 116–130",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "standart-babil-gec-derleme",
-        "text": "Standart Babil sürümü çok daha geç derlenmiş ve bütünlenmiştir.",
+        "id": "ziusudra-ziyareti",
+        "text": "Aynı sürüm, Gılgamış’ın Ziusudra’nın bulunduğu yere ulaştığını bildirir; bu yüzden Ziusudra’yla bağlantı yalnız Akadca destana ait değildir.",
         "citations": [
           {
-            "source_ref": "george-2003-babylonian-gilgamesh",
-            "locator": "Giriş: metnin oluşum tarihi",
+            "source_ref": "oxford-etcsl-gilgamis-olumu-1813",
+            "locator": "A version from Me-Turan, Segment F, satır 1–22",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "tufan-atrahasis-baglantisi",
-        "text": "Tufan bölümü Atrahasis anlatısıyla doğrudan ilişkilidir.",
+        "id": "ayri-sumerce-tufan",
+        "text": "ETCSL 1.7.4 ayrı bir Sümerce Tufan Öyküsü’dür; Ziusudra’nın gemisi, tufan ve tanrıların verdiği sürekli yaşam anlatılır.",
         "citations": [
           {
-            "source_ref": "george-2003-babylonian-gilgamesh",
-            "locator": "Tufan bölümü çözümlemesi",
+            "source_ref": "oxford-etcsl-tufan-174",
+            "locator": "Segment C, satır 1–27; D 1–11; E 3–11",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "katalogda-ayri-kompozisyonlar",
+        "text": "ETCSL, Gılgamış anlatılarını ayrı kompozisyonlar altında listeler; Huwawa’nın A ve B varyantlarını ayrıca gösterir.",
+        "citations": [
+          {
+            "source_ref": "oxford-etcsl-gilgamis-katalog",
+            "locator": "Narratives featuring heroes > Gilgamesh, 1.8.1.1–1.8.1.5.1; “Gilgamesh and Aga”",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "akadca-on-birinci-tablet",
+        "text": "British Museum, Akadca Gılgamış Destanı’nın XI. tabletinde Utnapiştim’in gemi, tufan ve kurtuluş öyküsünü anlattığını açıklar. K.3375 MÖ 7. yüzyıldan bir Ninova nüshasıdır.",
+        "citations": [
+          {
+            "source_ref": "british-museum-gilgamis-akadca",
+            "locator": "19. The Flood Tablet; tablet XI",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "british-museum-tufan-tableti-k3375",
+            "locator": "K.3375, tablet XI; Description; Production date; Findspot; Curator’s comments",
             "support_type": "direct"
           }
         ]
@@ -1309,28 +1365,64 @@
     ],
     "counter_evidence": [
       {
-        "id": "ziusudra-ayrimi",
-        "text": "'Sümerce gelenekte tufan yok' ifadesi ELİMİZDEKİ metinler için geçerlidir. Sümerce bir tufan anlatısı ayrıca vardır (Ziusudra); söylenen şey, GILGAMIŞ şiirlerinde bulunmadığıdır - bu iki cümle karıştırılmamalı.",
+        "id": "gonderme-ile-oyku-ayri",
+        "text": "Gılgamış’ın Ölümü’ndeki ölümsüzlük tartışması ve XI. tabletteki ayrıntılı kurtuluş öyküsü birbirinin aynısı değildir. Bu karşılaştırma, bütün gelenekler için eksiksiz bir aktarım şeması değildir.",
         "citations": [
           {
-            "source_ref": "george-2003-babylonian-gilgamesh",
-            "locator": "Gelenekler arası ilişki",
-            "support_type": "counter"
+            "source_ref": "oxford-etcsl-gilgamis-olumu-1813",
+            "locator": "Me-Turan, Segment F, satır 23–37; 116–130",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "british-museum-tufan-tableti-k3375",
+            "locator": "K.3375, tablet XI; Curator’s comments, Ea–Utu-napishtim öyküsü",
+            "support_type": "context",
+            "note": "İki seçilmiş açıklamayı ayırmak sitenin karşılaştırmalı çıkarımıdır."
+          }
+        ]
+      },
+      {
+        "id": "ceviri-ve-nusha-siniri",
+        "text": "ETCSL çevirisi farklı nüsha ve eksiklerden oluşur; soru işaretli okumalar vardır. Bir motifin varlığı metinlerin tamamının aynı olduğunu veya gerçek bir evrensel tufanı kanıtlamaz.",
+        "citations": [
+          {
+            "source_ref": "oxford-etcsl-gilgamis-olumu-1813",
+            "locator": "A version from Me-Turan; Segment F, satır 23–37 ve 116–130, soru işaretleri",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "oxford-etcsl-tufan-174",
+            "locator": "Segment C, satır 1–27; D, satır 1–11; E, satır 3–11 ve eksik satır notları",
+            "support_type": "context",
+            "note": "Kaynak bağlamından çıkarılan yöntemsel sınırdır; kaynağın bütün literatür hakkında doğrudan hükmü değildir."
+          }
+        ]
+      },
+      {
+        "id": "nusha-olusum-ayrimi",
+        "text": "K.3375’in MÖ 7. yüzyıla tarihlenmesi, destanın o yüzyılda oluşturulduğunu veya tufan bölümünün ne zaman eklendiğini tek başına göstermez.",
+        "citations": [
+          {
+            "source_ref": "british-museum-tufan-tableti-k3375",
+            "locator": "K.3375, tablet XI; Production date: 7thC BC",
+            "support_type": "context",
+            "note": "Kaynak bağlamından çıkarılan yöntemsel sınırdır; kaynağın bütün literatür hakkında doğrudan hükmü değildir."
           }
         ]
       }
     ],
     "open_questions": [
-      "Sümerce Ziusudra anlatısı ile Akadca Atrahasis arasındaki aktarım nasıl işledi?"
+      "Atrahasis, Sümerce Ziusudra metni ve Gılgamış XI arasındaki aktarım hangi somut metin karşılaştırmalarıyla kurulabilir?",
+      "Gılgamış’ın Ölümü’nün farklı nüshalarında bu pasajların korunması ve okunması nasıl değişir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer",
       "tufan-bilmecesi"
     ],
     "review": {
       "status": "draft",
-      "notes": "George künyesi yayıncı ve ISBN ile tamamlandı. Boş olan counter_evidence dolduruldu: Ziusudra ayrımı eklendi - kayıt 'Sümerce gelenekte tufan yok' gibi okunabiliyordu, oysa söylenen yalnızca Gılgamış şiirleri için geçerli. Bu kaydın kaynağının tam metni okunmadı; George'un edisyonu iki cilt ve yaklaşık bin sayfadır, locator'lar bölüm düzeyindedir."
+      "notes": "4 Ekim 2026: established/high, tufan yokluğu hükmünden doğrudan görülen tufan/Ziusudra pasajına daraltıldı. Yalnız seçilmiş ETCSL İngilizce çeviri pasajları, katalog ve British Museum açıklamaları okundu. George 2003 tam edisyonu okunmadığı için belirsiz kitap locator atıfları çıkarıldı. George 2007 için SOAS künye/özeti görüldü, PDF indirilemedi; içerik atfı yapılmadı. Önceki MÖ 2100–1200 aralığı tek gelenek tarihi gibi sunulmadı; sayısal aralık kaldırıldı, K.3375 nüsha tarihi açıklandı. Atrahasis aktarımı bu tur ayrıca denetlenmedi; metinler ve antik tabletler özgün dillerinden yeniden çevrilmedi. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
@@ -1975,12 +2067,11 @@
       }
     },
     "period": {
-      "earliest": -2600,
-      "latest": -2500,
-      "era_label": "Erken Hanedanlar III",
-      "precision": "approximate",
+      "earliest": -2550,
+      "latest": -2400,
+      "era_label": "British Museum 121201 katalog tarihi; Erken Hanedanlar III",
+      "precision": "range",
       "dating_method": [
-        "stratigraphy",
         "typology"
       ]
     },
@@ -1992,106 +2083,69 @@
       {
         "name": "Woolley, Leonard",
         "role": "excavator",
-        "affiliation": "British Museum / Penn Museum",
-        "year": 1934,
         "lifespan": "1880-1960"
       }
     ],
     "popular_claim": "Ur Sancağı bir savaş sancağıdır.",
-    "divergence": "'Sancak' adı kazıcının tahminidir; nesnenin işlevi bilinmiyor. Ad, tahminin zamanla gerçeğe dönüşmesinin tipik örneği.",
+    "divergence": "British Museum nesnenin amacını bilinmiyor diye açıklar. Woolley’in buluntu konumuna dayanan sancak yorumu bir olasılıktır; dekoratif mezar kakmaları olasılığı da açıktır. Nesnenin adı, işlevinin kanıtı değildir.",
     "divergence_type": [
       "turizm-kopyalamasi",
       "guncellenmemis"
     ],
     "sources": [
       {
-        "id": "woolley-1934-ur-kral-mezarligi",
-        "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "primary",
-        "type": "report",
-        "authors": [
-          "Woolley, Leonard"
-        ],
-        "year": 1934,
-        "title": "Ur Excavations II: The Royal Cemetery",
-        "publisher": "British Museum - University Museum, Philadelphia",
-        "note": "Kazı raporu. 'Sancak' adlandırması buradan gelir - kazıcının tahmini, kaydın konusu olan ad."
-      },
-      {
-        "id": "zettler-horne-1998-treasures-ur",
-        "language": "en",
-        "accessed": "2026-09-09",
+        "id": "british-museum-ur-sancagi-121201",
         "tier": "institutional",
-        "type": "book",
-        "authors": [
-          "Zettler, Richard L.",
-          "Horne, Lee"
-        ],
-        "year": 1998,
-        "title": "Treasures from the Royal Tombs of Ur",
-        "institution": "University of Pennsylvania Museum of Archaeology and Anthropology",
-        "publisher": "University of Pennsylvania Museum",
-        "isbn": "9780924171550",
-        "note": "Nesneyi elinde tutan müzenin sergi ve katalog kitabı; Ur Sancağı'nın tanımı ve malzeme dökümü için dayanak."
-      },
-      {
-        "id": "collon-1995-ancient-near-eastern-art",
+        "type": "webpage",
+        "title": "The Standard of Ur: British Museum 121201 / 1928,1010.3",
+        "institution": "British Museum",
+        "url": "https://www.britishmuseum.org/collection/object/W_1928-1010-3",
         "language": "en",
-        "accessed": "2026-09-09",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Collon, Dominique"
-        ],
-        "year": 1995,
-        "title": "Ancient Near Eastern Art",
-        "publisher": "University of California Press",
-        "isbn": "9780520203075",
-        "note": "Yakındoğu sanatının standart girişi; nesnenin ikonografik değerlendirmesi."
+        "accessed": "2026-10-04",
+        "note": "Description, Production date, Materials, Condition ve genişletilmiş Curator’s comments tarayıcıda okundu. Müze açıkça işlevi belirsiz bırakır; direk/alayı ve dekoratif mezar öğelerini olası görür. Rekonstrüksiyon belirsizliği özellikle kısa yan paneller için belirtilir. Woolley 1934, Zettler–Horne 1998, Collon 1995 ve doğrudan konservasyon dosyaları bu tur okunmadı."
       }
     ],
     "evidence": [
       {
-        "id": "adlandirma-kazicidan",
-        "text": "'Sancak' adlandırması kazı raporundan gelir; nesnenin bir direğe takıldığına dair bir bulgu değil, kazıcının yorumudur.",
+        "id": "adlandirma-ve-buluntu",
+        "text": "Müze, PG 779’da bir erkek iskeletinin omuz ve kafatası yakınındaki buluntu konumunu Woolley’in sancak yorumunun bağlamı olarak aktarır; kazı raporu bu tur doğrudan okunmadı.",
         "citations": [
           {
-            "source_ref": "woolley-1934-ur-kral-mezarligi",
-            "locator": "Nesnenin tanımı",
+            "source_ref": "british-museum-ur-sancagi-121201",
+            "locator": "BM 121201; Curator’s comments, purpose/findspot paragrafı",
             "support_type": "claim-origin"
           }
         ]
       },
       {
-        "id": "iki-panel-sahneler",
-        "text": "İki panelde savaş ve barış sahneleri var: arabalar, esirler, ziyafet, mal getiren insanlar.",
+        "id": "savas-ve-ziyafet",
+        "text": "İki büyük panelde savaş ve ardından ziyafet, ganimet ya da haraç taşıyan insanlar gösterilir. Barış adı, sahnenin tartışmasız gerçek amacı sayılmaz.",
         "citations": [
           {
-            "source_ref": "zettler-horne-1998-treasures-ur",
-            "locator": "Nesne tanımı",
+            "source_ref": "british-museum-ur-sancagi-121201",
+            "locator": "BM 121201; Description; Curator’s comments, war side ve celebratory ritual banquet paragrafları",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "lapis-afganistan",
-        "text": "Lapis lazuli, kırmızı kireçtaşı ve deniz kabuğuyla kakma; lapis Afganistan'dan geliyor - uzun mesafeli ticaretin kanıtı.",
+        "id": "malzeme-dokumu",
+        "text": "Kakmalar deniz kabuğu, kırmızı kireçtaşı ve lapis lazuliden oluşur; bitüm içinde yerleştirilmiştir. Nesnenin ahşabı kazı sırasında tamamen dağılmış durumdaydı.",
         "citations": [
           {
-            "source_ref": "zettler-horne-1998-treasures-ur",
-            "locator": "Malzeme dökümü",
+            "source_ref": "british-museum-ur-sancagi-121201",
+            "locator": "BM 121201; Materials; Curator’s comments, ilk paragraf",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "islevi-belirsiz-yapit",
-        "text": "Nesne, Yakındoğu sanatının standart başvuru eserlerinde işlevi belirsiz bir yapıt olarak ele alınır.",
+        "id": "katalog-kimligi-tarihi",
+        "text": "British Museum 121201 nesnesi Erken Hanedanlar III ve MÖ 2550–2400 olarak tarihlenir; kayıt Ur Kral Mezarlığı buluntu yerini verir.",
         "citations": [
           {
-            "source_ref": "collon-1995-ancient-near-eastern-art",
-            "locator": "Erken Hanedanlar dönemi yapıtları",
+            "source_ref": "british-museum-ur-sancagi-121201",
+            "locator": "BM 121201; Museum number; Cultures/periods; Production date; Findspot",
             "support_type": "direct"
           }
         ]
@@ -2099,38 +2153,52 @@
     ],
     "counter_evidence": [
       {
-        "id": "rakip-yorumlar",
-        "text": "Kutu, çalgı gövdesi ve mobilya parçası dahil rakip yorumlar var; hiçbiri kanıtlanmadı.",
+        "id": "amac-belirsiz",
+        "text": "Müze, nesnenin amacını açıkça bilinmiyor diye belirtir. Direkte taşınan sancak ve mezardaki dekoratif öğeler olasılıklar olarak kalır.",
         "citations": [
           {
-            "source_ref": "collon-1995-ancient-near-eastern-art",
-            "locator": "Yorum tartışması",
+            "source_ref": "british-museum-ur-sancagi-121201",
+            "locator": "BM 121201; Curator’s comments, purpose/findspot paragrafı",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "yeniden-kurgu",
-        "text": "Nesne mezardan PARÇALANMIŞ olarak çıktı ve bugünkü biçimi bir yeniden kurgudur; yani 'işlev' tartışması, kurgunun kendisi tartışmalıyken yürüyor.",
+        "id": "yeniden-kurgu-siniri",
+        "text": "Nesne ezilip parçalanmış halde bulunmuş ve restore edilmiştir. Müze özellikle kısa yan panellerde kakmaların dağılması nedeniyle görüntü rekonstrüksiyonunun belirsiz olduğunu söyler; bu, bütün büyük panellerin keyfî kurgu olduğu anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "woolley-1934-ur-kral-mezarligi",
-            "locator": "Buluntu durumu",
+            "source_ref": "british-museum-ur-sancagi-121201",
+            "locator": "BM 121201; Condition; Curator’s comments, trapezoid-shaped end panels paragrafı",
             "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "maden-kokeni-siniri",
+        "text": "Malzeme listesi tek başına lapis lazulinin bu nesnedeki kesin madenini veya ticaret rotasını belirlemez; önceki Afganistan atfının dayandığı katalog pasajı bu tur okunmadı.",
+        "citations": [
+          {
+            "source_ref": "british-museum-ur-sancagi-121201",
+            "locator": "BM 121201; Materials; Curator’s comments, ilk paragraf",
+            "support_type": "context",
+            "note": "Kaynak bağlamından çıkarılan yöntemsel sınırdır; kaynağın bütün literatür hakkında doğrudan hükmü değildir."
           }
         ]
       }
     ],
     "open_questions": [
-      "Yeniden kurgunun kendisi ne kadar güvenilir - parçaların özgün dizilimi belgeli mi?"
+      "Direkte taşınma ile mezar süslemesi önerilerini hangi ilave buluntu veya konservasyon verileri ayırabilir?",
+      "Özellikle yan panellerin özgün dizilişi konservasyon kayıtlarında nasıl belgelenir?",
+      "Lapis lazulinin kesin kökeni ve geliş rotası nesneye özgü hangi analizle sınanabilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Ur Sancağı kayıt bilgisi') iki künyeyle değiştirildi. Nesnenin parçalanmış çıkıp yeniden kurgulandığı eklendi - kayıt bunu hiç anmıyordu ve işlev tartışmasının zeminini değiştiriyor. Zettler & Horne müzenin kendi yayınıdır; nesneyi elinde tutan kurumun tanımı bu tartışmada nötr değildir."
+      "notes": "4 Ekim 2026: unknown/high korundu. Kaynaklar nesnenin sahibi British Museum 121201 kaydına bağlandı; Penn Museum katalog kitabını nesneyi elinde tutan kurum sayan not düzeltildi. İşlev belirsizliği, sancak olasılığının hâlâ açık olması ve yan panel rekonstrüksiyonu sınırı ayrı gösterildi. Tarih müzenin MÖ 2550–2400 aralığına uyarlandı. Kesin Afganistan kökeni, mobilya parçası alternatifi ve bütün yeniden kurguyu toptan şüpheli gösteren hükümler bu kaynakta doğrulanmadığından kaldırıldı; yanlışlandıkları söylenmiyor. Woolley 1934, Zettler–Horne 1998, Collon 1995 ve konservasyon dosyaları okunmadı. Bağımsız uzman incelemesi yapılmadı."
     }
   }
 ]
