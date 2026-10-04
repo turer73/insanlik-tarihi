@@ -1708,7 +1708,7 @@
         "volume": "104(16):6556–6561",
         "doi": "10.1073/pnas.0611313104",
         "url": "https://pubmed.ncbi.nlm.nih.gov/17420461/",
-        "note": "Resmî PubMed özeti ve Şekil 3 açıklaması ile PMC arama dizininde görünen Results/Discussion pasajları karşılaştırıldı. Başlangıçtaki +0,06 ± 0,02 Sv, mutlak akış değil taban deşarjındaki tahmini artıştır; sonraki +0,06 ± 0,01 Sv ek artışla başlangıç öncesine göre toplam +0,12 ± 0,02 Sv olur. Tam metin doğrudan açılamadı; ham karotlar, ek yöntem ve iklim nedenselliği bağımsızca çözülmedi."
+        "note": "Resmî PubMed özeti ve Şekil 3 açıklaması ile PMC arama dizininde görünen Results/Discussion pasajları karşılaştırıldı. Başlangıçtaki +0,06 ± 0,02 Sv, üç jeokimyasal tahminin 2σ belirsizlikli ortalamasıdır; mutlak akış değil taban deşarjındaki tahmini artıştır. Sonraki +0,06 ± 0,01 Sv ek artışla başlangıç öncesine göre toplam +0,12 ± 0,02 Sv olur. Tam metin doğrudan açılamadı; ham karotlar, ek yöntem ve iklim nedenselliği bağımsızca çözülmedi."
       },
       {
         "id": "suefke-2022-mackenzie-pb",
@@ -1813,7 +1813,7 @@
       },
       {
         "id": "st-lawrence-jeokimya",
-        "text": "Carlson ve arkadaşlarının St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekilleri erken Genç Dryas’ta batı Kanada kaynaklı doğu akışını destekler. Model, 0,07 Sv başlangıç akışı varsayarak önce +0,06 ± 0,02 Sv, sonra +0,06 ± 0,01 Sv ek artış; başlangıç öncesine göre toplam +0,12 ± 0,02 Sv artış çıkarır. Bunlar mutlak debi ölçümü değildir.",
+        "text": "Carlson ve arkadaşlarının St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekilleri erken Genç Dryas’ta batı Kanada kaynaklı doğu akışını destekler. Model, 0,07 Sv başlangıç akışı varsayarak önce +0,06 ± 0,02 Sv (üç tahminin ortalaması; belirsizlik 2σ), sonra +0,06 ± 0,01 Sv ek artış; başlangıç öncesine göre toplam +0,12 ± 0,02 Sv artış çıkarır. Bunlar mutlak debi ölçümü değildir.",
         "citations": [
           {
             "source_ref": "carlson-2007-st-lawrence",
