@@ -20,16 +20,46 @@
     ],
     "sources": [
       {
-        "id": "ucl-2024-gulf-stream-ruzgar",
+        "id": "wharton-2024-buzul-dongusu",
         "language": "en",
         "accessed": "2026-10-04",
-        "tier": "institutional",
-        "type": "press-release",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Wharton, Jack H.",
+          "Renoult, Martin",
+          "Gebbie, Geoffrey",
+          "Keigwin, Lloyd D.",
+          "Marchitto, Thomas M.",
+          "Maslin, Mark A.",
+          "Oppo, Delia W.",
+          "Thornalley, David J. R."
+        ],
         "year": 2024,
-        "title": "The Gulf Stream is wind-powered and could weaken from climate change",
-        "institution": "University College London",
-        "url": "https://www.ucl.ac.uk/news/2024/jul/gulf-stream-wind-powered-and-could-weaken-climate-change",
-        "note": "10 Temmuz 2024 tarihli kurumsal duyurunun ilgili paragrafları okundu; duyurunun bağlı olduğu özgün Nature makalesi bu tur okunmadı. Rüzgârın zayıflamasıyla Gulf Stream’in zayıflayabileceği olasılığı için kullanıldı."
+        "title": "Deeper and stronger North Atlantic Gyre during the Last Glacial Maximum",
+        "container": "Nature",
+        "volume": "632:95–100",
+        "doi": "10.1038/s41586-024-07655-y",
+        "url": "https://www.nature.com/articles/s41586-024-07655-y",
+        "note": "Özgün açık metnin özeti, giriş, bulgular ve tartışması okundu. Son Buzul Maksimumu'na ilişkin vekil ve model çıkarımıdır; tek başına gelecek Gulf Stream eğilimini vermez."
+      },
+      {
+        "id": "asbjornsen-arthun-2023-gulf-projeksiyon",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Asbjørnsen, Helene",
+          "Årthun, Marius"
+        ],
+        "year": 2023,
+        "title": "Deconstructing Future AMOC Decline at 26.5°N",
+        "container": "Geophysical Research Letters",
+        "volume": "50(14):e2023GL103515",
+        "doi": "10.1029/2023GL103515",
+        "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL103515",
+        "note": "Özgün açık metnin yöntem, §3 ve §4 bölümleri okundu. SSP5-8.5 altında 14 modelin yüzyıl sonu projeksiyonu; rüzgâr bileşeni için veri sağlayan 10 model kullanılır, gözlenen güncel eğilim değildir."
       },
       {
         "id": "ipcc-ar6-wg1-bolum9",
@@ -71,12 +101,23 @@
     ],
     "counter_evidence": [
       {
-        "id": "zayiflayabilir",
-        "text": "UCL’nin 2024 duyurusu, iklim değişikliğinde rüzgâr değişiminin Gulf Stream’i zayıflatabileceğini anlatır. Akıntının sürmesi sabit güçte kalması anlamına gelmez.",
+        "id": "buzul-dongusu-degisimi",
+        "text": "Wharton ve arkadaşları, Son Buzul Maksimumu'nda subtropikal döngünün ve Gulf Stream'in daha derin ve güçlü olduğunu vekil kayıtlarıyla çıkarır; rüzgâr ve su yoğunluğu etkilerini birlikte tartışır. Bu tarihsel çıkarım gelecek eğilimin doğrudan ölçüsü değildir.",
         "citations": [
           {
-            "source_ref": "ucl-2024-gulf-stream-ruzgar",
-            "locator": "Duyuru, Jack Wharton açıklaması; \"For example, if in the future winds are weaker\" ile başlayan cümle",
+            "source_ref": "wharton-2024-buzul-dongusu",
+            "locator": "Özet, Fig. 3–4 ve Discussion; buzul dönemi döngü derinliği, rüzgâr ve yüzey yoğunluğu yorumu",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "zayiflayabilir",
+        "text": "Asbjørnsen ve Årthun'un SSP5-8.5 altındaki 14 CMIP6 modelinde, 26,5°K Gulf Stream taşınımı yüzyıl sonunda ortalama %29 azalır; rüzgâr katkısı için gereken değişkenler yalnız 10 modelde mevcuttur. Çalışma, rüzgâr değişimiyle açıklanan payı yaklaşık üçte bir olarak hesaplar. Bu koşullu projeksiyon, akıntının sürmesinin sabit güçte kalma garantisi olmadığını gösterir.",
+        "citations": [
+          {
+            "source_ref": "asbjornsen-arthun-2023-gulf-projeksiyon",
+            "locator": "§2 Model and Methods ve §3 Results, Fig. 1–2; 14 modelde %29 Gulf Stream azalması, 10 modelde rüzgâr payı",
             "support_type": "counter"
           }
         ]
@@ -87,7 +128,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "IPCC FAQ 9.3 ve UCL duyurusunun ilgili paragraflarıyla sınırlı kaynak denetimi. Olumlu tanım cümlesinin refuted etiketi established olarak düzeltildi. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "IPCC FAQ 9.3, Wharton 2024'ün seçilmiş açık tam metni ve Asbjørnsen–Årthun 2023'ün yöntem/sonuç bölümleri okundu. Paleoklimat çıkarımı ile koşullu gelecek modeli ayrıldı; gözlenen güncel Gulf Stream eğilimi hesaplanmadı. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
@@ -97,7 +138,7 @@
   {
     "schema_version": 2,
     "id": "amoc-olcum-suresi-iddiadan-kisa",
-    "claim": "RAPID’ın 26,5°K AMOC izleme dizisi 2004’te başladı; 4 Ekim 2026’da resmî v2024.1a sürümü 27 Mart 2024’e kadardır. Bu süre, Worthington 2021’in aktardığı 60 yılı evrensel eşik yapmaz.",
+    "claim": "RAPID’ın 26,5°K AMOC izleme dizisi 2004’te başladı; 4 Ekim 2026’da resmî v2024.1a sürümü 27 Mart 2024’e kadardır. Baehr 2008’in yaklaşık 60 yıllık saptama süresi belirli bir model ve gözlem hatası varsayımına bağlıdır, evrensel eşik değildir.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -109,7 +150,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "AMOC'un zayıfladığı ölçüldü.",
-    "divergence": "RAPID’ın 26,5°K kesiti bütün Atlantik enlemleri değildir. 29 Ocak 2026 tarihli resmî v2024.1a kılavuzu 2 Nisan 2004–27 Mart 2024 kapsamını verir; 2026’ya kadar yayımlanmış eksiksiz gözlem dizisi değildir. Son beş gün 10 günlük filtre nedeniyle dosyada eksik değerdir. Derin doğu sınırı aletleri Şubat 2022’de çıkarıldığından aylık klimatoloji kullanılır; Kasım 2023’ten beri Florida kablo verisi yoktur, açıklar basınç ölçeri ve altimetriyle doldurulur. İkame, dizinin bütünüyle doğrudan ve boşluksuz sensör kaydı olarak anlatılmasını engeller. Worthington §4’ün Baehr 2008’den aktardığı 60 yıl tahmini veri ve yönteme özgüdür; güncel insan etkisinin payı burada hesaplanmadı.",
+    "divergence": "RAPID’ın 26,5°K kesiti bütün Atlantik enlemleri değildir. 29 Ocak 2026 tarihli resmî v2024.1a kılavuzu 2 Nisan 2004–27 Mart 2024 kapsamını verir; 2026’ya kadar yayımlanmış eksiksiz gözlem dizisi değildir. Son beş gün 10 günlük filtre nedeniyle dosyada eksik değerdir. Derin doğu sınırı aletleri Şubat 2022’de çıkarıldığından aylık klimatoloji kullanılır; Kasım 2023’ten beri Florida kablo verisi yoktur, açıklar basınç ölçeri ve altimetriyle doldurulur. İkame, dizinin bütünüyle doğrudan ve boşluksuz sensör kaydı olarak anlatılmasını engeller. Baehr 2008'de 60 yıl, ECHAM5/MPI-OM A1B simülasyonu, 1 Sv rastgele gözlem hatası ve %95 saptama güvenirliği koşullarında bulunur; 3 Sv hatada yaklaşık 90 yıla çıkar. Baehr 2007, farklı yoğunluk gradyanı değişkeniyle kendi modelinde yaklaşık 30 yıl bulur. Güncel insan etkisinin payı burada hesaplanmadı.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -134,7 +175,48 @@
         "volume": "17(1):285-299",
         "doi": "10.5194/os-17-285-2021",
         "url": "https://os.copernicus.org/articles/17/285/2021/",
-        "note": "Bu tur §4 Discussion’ın ilk iki paragrafı ve §5 Conclusions okundu. 60 yıl tahmini §4’te Baehr ve arkadaşları 2008’e atfedilir; özgün Baehr çalışmaları okunmadı. Rekonstrüksiyonun yöntem ve dönem kapsamı, bütün AMOC çalışmalarının sonucu sayılmadı."
+        "note": "§4 Discussion’ın ilk iki paragrafı ve §5 Conclusions okundu. 60 yıl tahmini §4’te Baehr ve arkadaşları 2008’e atfedilir; özgün 2008 PDF'si ve 2007 yayıncı özeti bu tur ayrıca denetlendi. Rekonstrüksiyonun yöntem ve dönem kapsamı, bütün AMOC çalışmalarının sonucu sayılmadı."
+      },
+      {
+        "id": "baehr-2008-saptama-suresi",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Baehr, Johanna",
+          "Keller, Klaus",
+          "Marotzke, Jochem"
+        ],
+        "year": 2008,
+        "title": "Detecting potential changes in the meridional overturning circulation at 26°N in the Atlantic",
+        "container": "Climatic Change",
+        "volume": "91:11–27",
+        "doi": "10.1007/s10584-006-9153-z",
+        "url": "https://link.springer.com/content/pdf/10.1007/s10584-006-9153-z.pdf",
+        "note": "Özgün PDF'nin özeti (s. 11), §3.2.2 ve Tablo 1 (s. 19–21) ile sonuç (s. 24) okundu. 26°K'de ECHAM5/MPI-OM A1B modelindeki 1 ve 3 Sv gözlem hataları için saptama süreleri; gözlenen bugünkü veriye uygulanmış eşik değildir."
+      },
+      {
+        "id": "baehr-2007-yogunluk-saptama",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Baehr, Johanna",
+          "Haak, Helmuth",
+          "Alderson, Steven",
+          "Cunningham, Stuart A.",
+          "Jungclaus, Johann H.",
+          "Marotzke, Jochem"
+        ],
+        "year": 2007,
+        "title": "Timely Detection of Changes in the Meridional Overturning Circulation at 26°N in the Atlantic",
+        "container": "Journal of Climate",
+        "volume": "20(23):5827–5841",
+        "doi": "10.1175/2007JCLI1686.1",
+        "url": "https://journals.ametsoc.org/view/journals/clim/20/23/2007jcli1686.1.xml",
+        "note": "Yayıncıda dizinlenen özgün özet okundu; tam metin doğrudan açılamadı. 1700–3100 m yoğunluk gradyanı ve 0,01 kg/m³ rastgele hata için yaklaşık 30 yıl, incelenen model ve senaryoya bağlıdır."
       },
       {
         "id": "ipcc-ar6-wg1-bolum9",
@@ -181,8 +263,13 @@
       },
       {
         "id": "60-yil-gerekli",
-        "text": "Worthington §4, uzun dönemli ısınma sinyalinin saptanması için en az 60 yıllık dizi tahminini Baehr ve arkadaşları 2008’den aktarır; bu çalışmanın yeni bir evrensel eşiği değildir.",
+        "text": "Baehr 2008'in 26°K'deki ECHAM5/MPI-OM A1B simülasyonunda, 1 Sv rastgele gözlem hatası altında yaklaşık 60 yıl sürekli izleme, p<0,05 anlamlılıkta %95 güvenilir saptama verir; 3 Sv hata için süre yaklaşık 90 yıldır. Worthington 2021 bu sonuçlardan 60 yılı aktarır; sayı evrensel eşik değildir.",
         "citations": [
+          {
+            "source_ref": "baehr-2008-saptama-suresi",
+            "locator": "Özet, s. 11; §3.2.2 ve Tablo 1, s. 19–21; sonuç, s. 24",
+            "support_type": "direct"
+          },
           {
             "source_ref": "worthington-2021-dusus-yok",
             "locator": "§4 Discussion, ilk paragraf; Baehr et al. (2008) atfı",
@@ -205,8 +292,13 @@
     "counter_evidence": [
       {
         "id": "derin-bilgi-sure",
-        "text": "Aynı bölüm, Baehr ve arkadaşları 2007’ye dayanarak derin yoğunluk bilgisinin gereken dizi süresini azaltabileceğini belirtir.",
+        "text": "Baehr 2007'nin yayıncı özetinde, 1700–3100 m derinlikteki boylamsal yoğunluk gradyanı ve 0,01 kg/m³ rastgele gözlem hatası kullanıldığında, incelenen model ve iklim senaryosunda %95 güvenilir saptama yaklaşık 30 yıl sürer. Bu başka bir değişken ve hata koşuludur.",
         "citations": [
+          {
+            "source_ref": "baehr-2007-yogunluk-saptama",
+            "locator": "Abstract, “For a random observation error of 0.01 kg” cümlesi; 1700–3100 m sonucu",
+            "support_type": "counter"
+          },
           {
             "source_ref": "worthington-2021-dusus-yok",
             "locator": "§4 Discussion, ikinci paragraf; Baehr et al. (2007) atfı",
@@ -244,7 +336,7 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Resmî v2024.1a README s.1–2 ve s.5–6 seçilmiş pasajları okundu; ASCII bitişi ve eksik filtre uçları kontrol edildi. Güncel atıf/eğilim testi veya sensör düzeltmelerinin etkisi hesaplanmadı. Baehr özgün metinleri ve bağımsız uzman incelemesi yok."
+      "notes": "Resmî v2024.1a README s.1–2 ve s.5–6 seçilmiş pasajları okundu; ASCII bitişi ve eksik filtre uçları kontrol edildi. Baehr 2008 özgün PDF'sinin seçilmiş pasajları ve Baehr 2007 yayıncı özeti okundu; 2007 tam metni açılamadı. Güncel atıf/eğilim testi veya sensör düzeltmelerinin etkisi hesaplanmadı. Bağımsız uzman incelemesi yok."
     },
     "checked": "2026-10-04",
     "used_in": [
