@@ -1708,7 +1708,7 @@
         "volume": "104(16):6556–6561",
         "doi": "10.1073/pnas.0611313104",
         "url": "https://pubmed.ncbi.nlm.nih.gov/17420461/",
-        "note": "Resmî PubMed özeti okundu. St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekillerinden erken Genç Dryas batı Kanada akışı ve +0,06 ± 0,02 Sv taban deşarjı yazar yorumudur; ham karot, ek yöntem ve kesin iklim nedenselliği yeniden çözümlenmedi."
+        "note": "Resmî PubMed özeti ve Şekil 3 açıklaması ile PMC arama dizininde görünen Results/Discussion pasajları karşılaştırıldı. Başlangıçtaki +0,06 ± 0,02 Sv, mutlak akış değil taban deşarjındaki tahmini artıştır; sonraki +0,06 ± 0,01 Sv ek artışla başlangıç öncesine göre toplam +0,12 ± 0,02 Sv olur. Tam metin doğrudan açılamadı; ham karotlar, ek yöntem ve iklim nedenselliği bağımsızca çözülmedi."
       },
       {
         "id": "suefke-2022-mackenzie-pb",
@@ -1813,11 +1813,11 @@
       },
       {
         "id": "st-lawrence-jeokimya",
-        "text": "Carlson ve arkadaşlarının St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekilleri erken Genç Dryas’ta batı Kanada kaynaklı doğu akışını destekler; +0,06 ± 0,02 Sv taban deşarjı vekil/karışım modelinden çıkarılır.",
+        "text": "Carlson ve arkadaşlarının St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekilleri erken Genç Dryas’ta batı Kanada kaynaklı doğu akışını destekler. Model, 0,07 Sv başlangıç akışı varsayarak önce +0,06 ± 0,02 Sv, sonra +0,06 ± 0,01 Sv ek artış; başlangıç öncesine göre toplam +0,12 ± 0,02 Sv artış çıkarır. Bunlar mutlak debi ölçümü değildir.",
         "citations": [
           {
             "source_ref": "carlson-2007-st-lawrence",
-            "locator": "PubMed Abstract, geochemical proxies ve freshwater flux cümleleri",
+            "locator": "PubMed Abstract ve Fig. 3 açıklaması; PMC arama dizinindeki Results ve Discussion artış pasajları",
             "support_type": "claim-origin"
           }
         ]
@@ -1925,11 +1925,11 @@
       },
       {
         "id": "farkli-akis-buyuklukleri",
-        "text": "Carlson’ın +0,06 ± 0,02 Sv taban deşarjı vekil/karışım tahmini, Condron–Winsor’un bir yıllık 5 Sv idealize taşkın zorlamasıyla nicel bir gerçek-dünya senaryo eşlemesi değildir.",
+        "text": "Carlson’ın +0,06 ± 0,02 Sv ilk ve +0,12 ± 0,02 Sv toplam taban deşarjı artışı vekil/karışım tahminleri, Condron–Winsor’un bir yıllık 5 Sv idealize taşkın zorlamasıyla nicel bir gerçek-dünya senaryo eşlemesi değildir.",
         "citations": [
           {
             "source_ref": "carlson-2007-st-lawrence",
-            "locator": "PubMed Abstract, 0.06 ± 0.02 Sv cümlesi",
+            "locator": "PubMed Abstract ve Fig. 3 açıklaması; PMC arama dizinindeki Discussion artış pasajı",
             "support_type": "context"
           },
           {
@@ -1947,7 +1947,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Condron–Winsor ve You seçilmiş PMC tam metin pasajları önceki turda; bu tur Carlson 2007 PubMed özeti, Süfke 2022 resmî açık tam metin seçilmiş Introduction/Discussion/Fig. 4–5, Norris 2021'in Wiley'deki yayımlanmış tam metninin ilgili yöntem/sonuç/tartışma bölümleri okundu. Karot yaş modelleri, ham ölçümler, Norris ekleri ve modellerin kodu bağımsızca yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Condron–Winsor ve You seçilmiş PMC tam metin pasajları önceki turda; bu tur Carlson 2007 PubMed özeti/Şekil 3 açıklaması ve PMC arama dizinindeki seçilmiş Results/Discussion pasajları, Süfke 2022 resmî açık tam metin seçilmiş Introduction/Discussion/Fig. 4–5, Norris 2021'in Wiley'deki yayımlanmış tam metninin ilgili yöntem/sonuç/tartışma bölümleri okundu. Carlson tam metni doğrudan açılamadı. Karot yaş modelleri, ham ölçümler, Norris ekleri ve modellerin kodu bağımsızca yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [

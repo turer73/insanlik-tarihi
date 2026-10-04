@@ -2,7 +2,7 @@
   "not": "İçerik özetine dayalı tarih kaydı. Özet aynıysa tarih korunur; yalnız METİN değiştiğinde yenilenir. style/script blokları özete girmez.",
   "kayitlar": {
     "articles/amoc.html": {
-      "ozet": "c377bc5abc7c8e3a",
+      "ozet": "ac38338050975fda",
       "lastmod": "2026-10-04",
       "published": "2026-09-12"
     },
@@ -157,17 +157,17 @@
       "published": "2026-09-09"
     },
     "dist/bulgu-veri-tabani.html": {
-      "ozet": "8aefbd613e046c5d",
+      "ozet": "5fa0e4da32b78520",
       "lastmod": "2026-10-04",
       "published": "2026-09-07"
     },
     "dist/kanit-denetimi.html": {
-      "ozet": "0dce41587770dc39",
+      "ozet": "4b534da38e8fd93a",
       "lastmod": "2026-10-04",
       "published": "2026-09-07"
     },
     "dist/zaman-cizelgesi.html": {
-      "ozet": "d0a036c4f526fd36",
+      "ozet": "26059ff89558090d",
       "lastmod": "2026-10-04",
       "published": "2026-09-07"
     },
@@ -177,7 +177,7 @@
       "published": "2026-09-07"
     },
     "kaynakca.html": {
-      "ozet": "dc5c2f5c0390b4c8",
+      "ozet": "b28d9b3da686e974",
       "lastmod": "2026-10-04",
       "published": "2026-09-12"
     },
