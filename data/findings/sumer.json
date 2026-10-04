@@ -528,7 +528,7 @@
     "id": "sumer-enheduanna-yazarligi",
     "claim": "Enheduanna kendisine atfedilen ilahileri gerçekten yazmıştır ve tarihte adı bilinen ilk yazardır.",
     "status": "contested",
-    "confidence": "high",
+    "confidence": "medium",
     "topic": [
       "sumer",
       "enheduanna",
@@ -545,18 +545,17 @@
       }
     },
     "period": {
-      "earliest": -2285,
-      "latest": -2250,
-      "era_label": "Akad, Sargon dönemi",
-      "precision": "approximate",
+      "earliest": -2300,
+      "latest": -2201,
+      "era_label": "MÖ 23. yüzyıl, Eski Akad dönemi",
+      "precision": "century",
       "dating_method": [
         "epigraphic",
         "historical-record"
       ]
     },
     "languages": [
-      "Sümerce",
-      "Akadca"
+      "Sümerce"
     ],
     "disciplines": [
       "filoloji",
@@ -567,17 +566,21 @@
       {
         "name": "Enheduanna",
         "role": "proposer",
-        "affiliation": "Ur, Nanna tapınağı en-rahibesi",
-        "year": -2285
+        "affiliation": "Ur, Nanna tapınağı en-rahibesi"
       },
       {
         "name": "Helle, Sophus",
-        "role": "editor",
-        "year": 2023
+        "role": "analyst",
+        "year": 2020
+      },
+      {
+        "name": "Zgoll, Annette",
+        "role": "analyst",
+        "year": 2024
       }
     ],
     "popular_claim": "Enheduanna tarihte adı bilinen ilk yazardır ve eserleri elimizdedir.",
-    "divergence": "Varlığı ve makamı sağlam: Ur'da bulunan kalker disk onu Sargon'un kızı ve Nanna'nın en-rahibesi olarak adlandırıyor ve çağdaştır. Ama ilahilerin ELİMİZDEKİ NÜSHALARI yaklaşık 500 yıl sonrasına (Eski Babil dönemi) aittir ve yazarlık atfı uzmanlar arasında tartışmalıdır. İfade bir atıf geleneğine dayanıyor, imzalı bir elyazmasına değil. ÜÇÜNCÜ BİR KONUM DA VAR: sorunun kendisinin çağdışı olduğu - metinlerin tek bir kişiye bağlanması, kolektif üretilen bir geleneğe modern bir yazarlık kalıbı giydirmek olabilir.",
+    "divergence": "Disk Enheduanna’nın tarihsel varlığını belgeler; şiirlerin kendisi değildir. En eski korunmuş şiir nüshaları Eski Babil dönemindendir; yaklaşık beş yüzyıllık mesafe, tek başına geç bir icadı kanıtlamaz. Helle yazar figürünün kuruluşunu, Zgoll ise Nin-me-şara’nın tarihsel ve ritüel bağlamını farklı biçimlerde yorumlar. Zgoll yazarlık lehinde güçlü bir sonuç savunur. Bu yorum, bütün ilahilerin tek kişinin değişmeden korunmuş metinleri olduğunu göstermez.",
     "divergence_type": [
       "guncellenmemis",
       "medya-abartisi"
@@ -587,57 +590,127 @@
         "id": "enheduanna-diski",
         "tier": "primary",
         "type": "inscription",
-        "title": "Enheduanna Diski (kalker adak diski, Ur)",
-        "language": "akk",
-        "note": "Çağdaş buluntu. Enheduanna'yı adıyla, 'Nanna'nın en-rahibesi' unvanıyla ve Sargon'un kızı olarak tanımlar. Varlığın kanıtı budur - yazarlığın değil."
+        "title": "Enheduanna Diski — Penn Museum B16665 (Ur, yaklaşık MÖ 2300)",
+        "url": "https://collections.penn.museum/collections/object/293415",
+        "language": "sux",
+        "accessed": "2026-10-04",
+        "note": "Antik yazıtın müze envanteri. Tarih ve buluntu bağlamı katalogdan; Sümerce yazıt çevirisi Tamur 2022’den kontrol edildi. Antik yüzey bu tur bağımsız olarak yeniden okunmadı. Disk şiirlerin yazarlığını tek başına doğrulamaz."
       },
       {
-        "id": "helle-2023-enheduana",
+        "id": "tamur-2022-enheduanna",
+        "tier": "institutional",
+        "type": "article",
+        "authors": [
+          "Tamur, Erhan"
+        ],
+        "year": 2022,
+        "title": "Goddesses, Mothers, Rulers",
+        "container": "Expedition",
+        "volume": "64(2)",
+        "url": "https://www.penn.museum/sites/expedition/goddesses-mothers-rulers/",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Yalnız Enheduanna bölümü ve B16665’in arka yüzü açıklaması okundu. Yazıt dili açıkça Sümerce olarak verilir; metin onu Nanna’yla ilişkili rahibe ve Sargon’un kızı olarak tanımlar. Kurumsal çeviri, özgün yazıtın bağımsız çözümü değildir.",
+        "institution": "Penn Museum"
+      },
+      {
+        "id": "helle-2020-yazar-figuru",
         "tier": "peer-reviewed",
-        "type": "book",
+        "type": "article",
         "authors": [
           "Helle, Sophus"
         ],
-        "year": 2023,
-        "title": "Enheduana: The Complete Poems of the World's First Author",
-        "publisher": "Yale University Press",
-        "url": "https://sophushelle.com/category/enheduana/",
+        "year": 2020,
+        "title": "The birth of the author: Co-creating authorship in Enheduana’s Exaltation",
+        "container": "Orbis Litterarum",
+        "volume": "75",
+        "pages": "55–72",
+        "doi": "10.1111/oli.12250",
+        "url": "https://sophushelle.com/wp-content/uploads/2020/05/helle-2020-the-birth-of-the-author.pdf",
         "language": "en",
-        "accessed": "2026-09-09",
-        "note": "Şiirlerin tam çevirisi ve yazarlık tartışmasının güncel değerlendirmesi. Helle atıf tartışmasını hem dikkat dağıtıcı hem çağdışı bulur. ISBN DOĞRULANAMADI; künye iki bağımsız aramayla teyit edildi ama URL olarak yazarın kendi sayfası kullanıldı - yayıncı kaydı kadar güçlü bir çıpa değil."
+        "accessed": "2026-10-04",
+        "note": "Seçilmiş s. 55–60, 65–67 okundu. Nüsha ve atıf sınırı s. 57–58; s. 56’daki yöntem açıklaması, gerçek besteciyi değil metindeki yazar figürünü incelediğini belirtir. Makalenin bütün argümanları ve aktardığı diğer yayınlar denetlenmedi."
+      },
+      {
+        "id": "helle-enheduana-authorship",
+        "tier": "primary",
+        "type": "webpage",
+        "authors": [
+          "Helle, Sophus"
+        ],
+        "title": "Authorship — Enheduana",
+        "url": "https://enheduana.org/authorship/",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "Araştırmacının kendi değerlendirmesi. Açılıştaki dört paragraf okundu; dil değişiklikleri ve sözlü/kayıp yazılı aktarım olasılıkları tartışılır. Civil ve Foster’ın özgün çalışmaları bu tur okunmadı; görüşleri Helle üzerinden aktarılır."
+      },
+      {
+        "id": "zgoll-2024-enheduanna",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Zgoll, Annette"
+        ],
+        "year": 2024,
+        "title": "En-ḫedu-ana: The birth of literature through the goddess",
+        "container": "IRAQ",
+        "volume": "86",
+        "pages": "153–179",
+        "doi": "10.1017/irq.2024.22",
+        "url": "https://www.cambridge.org/core/journals/iraq/article/enheduana-the-birth-of-literature-through-the-goddess/3B1A7705D84B732E39EDFEC6B1233B6F",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "2024 sayısı; çevrimiçi yayın 17 Mart 2025. Seçilmiş §1–2, §4.2–4.4, §5.2.1’in aktarım paragrafı/Tablo 4 ve §6 okundu. §6 s. 173 yazarlık lehinde güçlü sonuç savunur. Bu sonuç araştırmacının tarihsel ve ritüel rekonstrüksiyonudur; bütün ilahilere veya çağdaş şiir tabletinin bulunduğuna genişletilemez."
       }
     ],
     "evidence": [
       {
         "id": "disk-cagdas-buluntu",
-        "text": "Enheduanna Diski çağdaş bir buluntudur ve onu adıyla, unvanıyla ve babasıyla tanımlar.",
+        "text": "B16665, Eski Akad dönemine ve yaklaşık MÖ 2300’e tarihlenir. Sümerce yazıt Enheduanna’yı Nanna’yla ilişkili rahibe ve Sargon’un kızı olarak tanımlar.",
         "citations": [
           {
             "source_ref": "enheduanna-diski",
-            "locator": "Adak yazıtı",
+            "locator": "B16665; Details: Period, Date Made, Description",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "tamur-2022-enheduanna",
+            "locator": "B16665 arka yüz açıklaması: “Cuneiform inscription in Sumerian”",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "atfedilen-eserler",
-        "text": "Nin-me-şara (İnanna'nın Yüceltilmesi) ve Tapınak İlahileri geleneksel olarak ona atfedilir.",
+        "text": "Nin-me-şara ve Tapınak İlahileri ona atfedilen eserler arasındadır; atıf, şiirlerin çağdaş özgün nüshalarının korunduğu anlamına gelmez.",
         "citations": [
           {
-            "source_ref": "helle-2023-enheduana",
-            "locator": "Şiirlerin derlemi ve atıf geleneği",
+            "source_ref": "helle-2020-yazar-figuru",
+            "locator": "§2 The First Author, s. 57–58 (PDF 3–4)",
             "support_type": "claim-origin"
           }
         ]
       },
       {
         "id": "birinci-tekil-anlatici",
-        "text": "Metinlerde birinci tekil şahıs anlatıcı ve kişisel bir ses var.",
+        "text": "Nin-me-şara’nın 67. satırında anlatıcı kendisini Enheduanna ve başrahibe olarak tanıtır. Bu metin içi kimlik, tarihsel bestecinin kimliğiyle ayrıca karşılaştırılmalıdır.",
         "citations": [
           {
-            "source_ref": "helle-2023-enheduana",
-            "locator": "Metin çevirileri",
+            "source_ref": "helle-2020-yazar-figuru",
+            "locator": "s. 57 ve §3, s. 58–60; NMS satır 67",
             "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "zgoll-tarihsel-rituel-yazarlik",
+        "text": "Zgoll, Nin-me-şara’nın ritüel ve tarihsel bağlamı ile çağdaş belgeleri birleştirerek Enheduanna’nın yazarlığını güçlü biçimde savunur. Disk yazıtının Eski Babil kopyası uzun aktarımın mümkün olduğuna analoji sağlar; şiirin çağdaş nüshası değildir.",
+        "citations": [
+          {
+            "source_ref": "zgoll-2024-enheduanna",
+            "locator": "§4.4 s. 166; §5.2.1 s. 168, Tablo 4; §6 s. 173",
+            "support_type": "direct",
+            "note": "Araştırmacının yorumu; site tarafından bağımsız kanıtlanmış sonuç olarak sunulmaz."
           }
         ]
       }
@@ -645,60 +718,71 @@
     "counter_evidence": [
       {
         "id": "nushalar-500-yil-sonra",
-        "text": "Bilinen nüshaların hiçbiri çağdaş değil; hepsi ~500 yıl sonrasına, Eski Babil dönemine ait.",
+        "text": "Helle en eski korunmuş şiir nüshalarını Eski Babil dönemine tarihler. Yaklaşık beş yüzyıllık boşluk özgün yazarlık için sınırdır; her nüshanın aynı tarihte üretildiği veya şiirin o sırada icat edildiği sonucu çıkmaz.",
         "citations": [
           {
-            "source_ref": "helle-2023-enheduana",
-            "locator": "Nüsha tarihlemesi",
+            "source_ref": "helle-2020-yazar-figuru",
+            "locator": "§2, s. 57–58 (PDF 3–4)",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "gec-donem-atif-gelenegi",
-        "text": "Mezopotamya'da geç dönem atıfları yaygın bir gelenektir; bir metni ünlü bir figüre bağlamak sık görülür. Alandan somut itiraz: 'Kâtipler neden geriye bakıp bir başrahibeyi seçsin? Çok sayıda başrahibe vardı. Neden o?'",
+        "text": "Helle’nin değerlendirmesinde geç dil özellikleri hem geç kompozisyonu hem sonraki kâtip uyarlamalarını yansıtabilir. Korunmamış yazılı veya sözlü aktarım da mümkündür; bu seçenekler kesin çözüm değildir.",
         "citations": [
           {
-            "source_ref": "helle-2023-enheduana",
-            "locator": "Yazarlık tartışmasının değerlendirmesi",
+            "source_ref": "helle-enheduana-authorship",
+            "locator": "Authorship, açılış paragrafları 1–4",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "anlatici-kisilestirme-olabilir",
-        "text": "Birinci tekil anlatıcı, yazarın kendisi olmayabilir - edebî bir kişileştirme de olabilir.",
+        "text": "Tarihsel kişi, anlatıcı ve metindeki yazar figürü ayrı sorulardır. Helle’nin çalışması gerçek besteciyi belirlemeyi kapsam dışında bırakır.",
         "citations": [
           {
-            "source_ref": "helle-2023-enheduana",
-            "locator": "Anlatıcı sesi tartışması",
+            "source_ref": "helle-2020-yazar-figuru",
+            "locator": "§1 s. 56; §2 s. 58",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "helle-ucuncu-konum",
-        "text": "Helle'nin kendi konumu ikisinden de farklı: yazarlık tartışmasını hem dikkat dağıtıcı hem çağdışı buluyor. Yazarlığın 'çok iplikli bir dokuma' olduğunu, kişi ile metin arasında birebir karşılık aramanın meseleyi kaçırdığını savunuyor.",
+        "text": "Helle’nin ortak yaratım analizi yazar figürünün tanrıça, icracı ve kâtiplerle birlikte kurulmasını inceler. Şiirin fiilen birden çok kişi tarafından yazıldığının kanıtı değildir.",
         "citations": [
           {
-            "source_ref": "helle-2023-enheduana",
-            "locator": "Yazarlık kavramı tartışması",
+            "source_ref": "helle-2020-yazar-figuru",
+            "locator": "§1 s. 56; s. 60; §6–7 s. 65–67",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "sarki-ve-yazma-ayrimi",
+        "text": "Zgoll’a göre Nin-me-şara, yazı yazmaktan çok ritüelde şarkıyı yaratıp söylemeyi anlatır. Yazarlığı modern anlamda bizzat tablet yazımıyla eşitlemek ve bu sonucu bütün atfedilen ilahilere taşımak doğru olmaz.",
+        "citations": [
+          {
+            "source_ref": "zgoll-2024-enheduanna",
+            "locator": "§4.2–4.4 s. 164–166; §6 s. 173",
             "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Atıf tartışması yeni bir buluntu olmadan kapanabilir mi?",
-      "'İlk yazar' sorusu, yazarlık kavramının kendisi bu döneme uymuyorsa anlamlı mı?"
+      "Nin-me-şara’nın tarihsel kompozisyonu ile sonraki aktarım ve eklemeler nasıl ayrılabilir?",
+      "Tapınak İlahileri ve diğer atfedilen eserler için yazarlık ayrı ayrı ne kadar izlenebilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu kaynak ('Enheduanna atfı üzerine Asirbilim tartışması') Helle 2023 ile değiştirildi. Helle'nin üçüncü konumu kayda eklendi - önceki sürümde tartışma yalnızca iki taraflı görünüyordu. Bu kaydın kaynağının TAM METNİ OKUNMADI ve ISBN'i doğrulanamadı; künye iki bağımsız aramayla teyit edildi."
+      "notes": "4 Ekim 2026: yalnız belirtilen müze kaydı ve seçilmiş Helle/Tamur/Zgoll pasajları denetlendi. Disk dili akk → sux; dar ve doğrulanmamış yaşam aralığı yerine MÖ 23. yüzyıl kullanıldı. Contested korundu, güven medium yapıldı; Zgoll’un güçlü yazarlık savunusu da gösterildi. Helle 2023 kitabı ve atıf yapılan eski çalışmalar okunmadı; kitap üzerindeki belirsiz locator’lar çıkarıldı. Özgün tabletlerin tamamı, nüsha külliyatı ve bütün literatür karşılaştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
@@ -1599,7 +1683,7 @@
     "schema_version": 2,
     "id": "sumer-ur-hizmetliler-olum-bicimi",
     "claim": "Ur Kral Mezarlığı'ndaki hizmetliler gönüllü olarak zehir içip öldü.",
-    "status": "refuted",
+    "status": "contested",
     "confidence": "medium",
     "topic": [
       "sumer",
@@ -1619,11 +1703,7 @@
       "earliest": -2600,
       "latest": -2450,
       "era_label": "Erken Hanedanlar III",
-      "precision": "range",
-      "dating_method": [
-        "stratigraphy",
-        "radiocarbon"
-      ]
+      "precision": "range"
     },
     "disciplines": [
       "arkeoloji",
@@ -1642,26 +1722,34 @@
         "role": "critic",
         "affiliation": "University of Pennsylvania",
         "year": 2011
+      },
+      {
+        "name": "Sołtysiak, Arkadiusz",
+        "role": "critic",
+        "year": 2024
       }
     ],
     "popular_claim": "Maiyet efendisiyle birlikte gömülmek için gönüllü olarak zehir içti; ölüm sakin ve törenseldi.",
-    "divergence": "Woolley'in yorumu 1920'lerin imkânlarıyla makuldü - iskeletleri açmadan içeriden görüntüleme yoktu. Tomografi taramaları ölüm anına yakın künt travma kırıkları gösterdi; hizmetliler büyük olasılıkla öldürüldü. Çalışma ayrıca cesetlerin ısıtılıp cıvayla muhafaza edildiğini, giydirilip sıralar hâlinde yatırıldığını öne sürüyor - yani sahnedeki düzen ölüm anının sakinliğinden değil, SONRADAN YAPILAN DÜZENLEMEDEN geliyor.",
+    "divergence": "Gönüllü zehir içme, gömü düzeninden çıkarılmış bir yorumdur. Baadsgaard ve çalışma arkadaşları iki kafatasının CT incelemesinden öldürme ve ceset koruma senaryosu önerir. Sołtysiak ise kırıkların kazara oluşmuş olabileceğini tartışır; gömü düzenini ölümden sonra yerleştirme lehinde değerlendirir. Ölüm yöntemi, bütün refakatçilerin aynı biçimde ölmesi ve gönüllülük ayrı sorulardır. İki kafatası bütün mezarlık için kesin hüküm vermez.",
     "divergence_type": [
       "guncellenmemis"
     ],
     "sources": [
       {
-        "id": "woolley-1934-ur-kral-mezarligi",
+        "id": "baadsgaard-2007-ur-ct",
         "tier": "primary",
-        "type": "report",
+        "type": "article",
         "authors": [
-          "Woolley, Leonard"
+          "Baadsgaard, Aubrey"
         ],
-        "year": 1934,
-        "title": "Ur Excavations II: The Royal Cemetery",
-        "publisher": "British Museum - University Museum, Philadelphia",
+        "year": 2007,
+        "title": "Imaging Ur’s Sacrificial Dead: An Archaeological CAT Scan",
+        "container": "Expedition",
+        "volume": "49(2)",
+        "url": "https://www.penn.museum/sites/expedition/imaging-urs-sacrificial-dead-an-archaeological-cat-scan/",
         "language": "en",
-        "note": "Kazı raporu. Hizmetli gömülerinin sayısı ve düzeni buradan bilinir; ölüm biçimi yorumu ise 1920'lerin imkânlarına dayanır - iskeletleri açmadan içeriden görüntüleme yoktu."
+        "accessed": "2026-10-04",
+        "note": "Araştırmacının ilk CT çalışmasını aktardığı kısa makale okundu. 15 Nisan 2007, PG 1237 Body 53 ve PG 789’dan erkek kafatası belirtilir. Bu erken yazı testlerin başladığını bildirir; 2011 sonuçlarının yerine kullanılamaz."
       },
       {
         "id": "baadsgaard-2011-ur-insan-kurbani",
@@ -1677,32 +1765,52 @@
         "title": "Human sacrifice and intentional corpse preservation in the Royal Cemetery of Ur",
         "container": "Antiquity",
         "volume": "85(327)",
-        "pages": "27-42",
+        "pages": "27–42",
         "doi": "10.1017/S0003598X00067417",
+        "url": "https://www.cambridge.org/core/journals/antiquity/article/abs/human-sacrifice-and-intentional-corpse-preservation-in-the-royal-cemetery-of-ur/E44F1731C922EF9FF43E0B5D2DF67AC1",
         "language": "en",
-        "accessed": "2026-09-09",
-        "note": "Ur Kral Mezarlığı'ndan İKİ kafatasının tomografi incelemesi. Kurbanların keskin bir aletle indirildiğini, sonra ısıtılıp cıvayla muhafaza edildiğini, giydirilip sıralar hâlinde yatırıldığını öne sürer - yani 'zehir içip sakin biçimde öldüler' varsayımını sarsar. DOI adresi canlı kontrol edildi."
+        "accessed": "2026-10-04",
+        "note": "Yalnız yayıncı Extract özeti ve künye doğrudan kontrol edildi; yayımlanmış tam PDF’ye erişilemedi. Keskin aletle öldürme, ısıtma, cıvayla koruma ve sonradan dizme yazarların önerisidir. ResearchGate’te editör soruları taşıyan taslak pasajlar görüldü; yayımlanmış tam metin okunmuş sayılmadı. Travma eleştirisi için Sołtysiak s. 83 ayrıca okundu."
+      },
+      {
+        "id": "soltysiak-2024-ur-travma",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Sołtysiak, Arkadiusz"
+        ],
+        "year": 2024,
+        "title": "Bioarchaeological evidence of violence in ancient Mesopotamia",
+        "container": "Bioarchaeology of the Near East",
+        "volume": "18",
+        "pages": "63–113",
+        "doi": "10.47888/bne-1804",
+        "url": "https://anthropology.uw.edu.pl/18/bne-18-04.pdf",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "note": "2024 sayısı, çevrimiçi yayın 23 Mart 2025. Yalnız s. 82–83’teki bağlam ve Royal graves in Ur bölümü (PDF 20–21) okundu. İki kafatasındaki travma yorumuna kazara hasar itirazını içerir. Bağımsız CT yeniden analizi yapılmadı; Vidale 2011 ve Woolley 1934 bu tur okunmadı."
       }
     ],
     "evidence": [
       {
         "id": "coklu-hizmetli-gomusu",
-        "text": "Ana mezarların yanında çok sayıda hizmetli gömüsü bulundu.",
+        "text": "Kraliyet gömülerinin bazılarında ek bedenler bulunur; PG 1237’de 74 refakatçi bildirilir. Bu, hepsinin nasıl öldüğünü veya gönüllü olduklarını kendi başına göstermez.",
         "citations": [
           {
-            "source_ref": "woolley-1934-ur-kral-mezarligi",
-            "locator": "Kral Mezarlığı gömü planları",
-            "support_type": "direct"
+            "source_ref": "soltysiak-2024-ur-travma",
+            "locator": "Royal graves in Ur, s. 83 (PDF 21)",
+            "support_type": "direct",
+            "note": "Kazı raporu bu tur doğrudan okunmadı; sayı araştırmacının aktarımıdır."
           }
         ]
       },
       {
         "id": "yorumun-kaynagi-woolley",
-        "text": "Popüler anlatının kaynağı kazı raporunun kendisidir: sahnenin sakinliği, gönüllü ve zehirle ölüm yorumunu doğurdu.",
+        "text": "Baadsgaard, Woolley’in küçük kaplar ve gömü düzeninden gönüllü zehir içme senaryosu geliştirdiğini aktarır. Bu bir ölüm nedeni testi değildir.",
         "citations": [
           {
-            "source_ref": "woolley-1934-ur-kral-mezarligi",
-            "locator": "Yorum bölümü",
+            "source_ref": "baadsgaard-2007-ur-ct",
+            "locator": "Açılış paragrafı: Woolley’in zehir yorumu",
             "support_type": "claim-origin"
           }
         ]
@@ -1711,49 +1819,72 @@
     "counter_evidence": [
       {
         "id": "perimortem-kunt-travma",
-        "text": "Tomografi taramaları ölüm anına yakın (perimortem) künt travma kırıkları gösterdi; kurbanların keskin bir aletle indirildiği öne sürülüyor.",
+        "text": "Baadsgaard vd. iki kafatasından öldürme önerir. Sołtysiak, bir erkek ve bir kadındaki üç lezyonun künt travma olarak yorumlandığını aktarır; aynı yerde düzensiz kırıkların kazara hasar olabileceğini belirtir.",
         "citations": [
           {
             "source_ref": "baadsgaard-2011-ur-insan-kurbani",
-            "locator": "Tomografi bulguları",
+            "locator": "Extract — yayıncı özeti",
+            "support_type": "counter"
+          },
+          {
+            "source_ref": "soltysiak-2024-ur-travma",
+            "locator": "Royal graves in Ur, s. 83 (PDF 21)",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "civayla-muhafaza",
-        "text": "Cesetlerin ısıtılıp cıvayla muhafaza edildiği, giydirilip sıralar hâlinde yatırıldığı öne sürülüyor - sahnedeki düzen sonradan yapılmış olabilir.",
+        "text": "Isıtma, cıvayla koruma ve bedenlerin sonradan sıralanması 2011 makalesinin özetindeki öneridir. Bu tur yayımlanmış ana metindeki analiz ve ölçümler kontrol edilemedi; kesinleşmiş bir mumyalama reçetesi olarak sunulamaz.",
         "citations": [
           {
             "source_ref": "baadsgaard-2011-ur-insan-kurbani",
-            "locator": "Ceset işleme çözümlemesi",
-            "support_type": "counter"
+            "locator": "Extract — ceset koruma ve yerleştirme önerisi",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "yalnizca-iki-kafatasi",
-        "text": "Bulgu YALNIZCA İKİ kafatasından geliyor; bütün mezarlığa genelleme yapılamaz. Bu kaydın 'refuted' durumu da bu iki kafataslık tabana dayanıyor - yani çürütmenin kendisi de dar.",
+        "text": "İlk CT incelemesi iki kafatasına uygulanmıştır. Bu örneklem ve travma yorumuna itiraz, bütün mezarlık için kesin çürütme hükmünü sınırlar. Ölüm mekanizması ayrıca gönüllülüğü ölçmez.",
         "citations": [
           {
-            "source_ref": "baadsgaard-2011-ur-insan-kurbani",
-            "locator": "Örneklem büyüklüğü",
+            "source_ref": "baadsgaard-2007-ur-ct",
+            "locator": "15 Nisan 2007 incelemesi; PG 1237 Body 53 ve PG 789 kafatası",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "soltysiak-2024-ur-travma",
+            "locator": "Royal graves in Ur, s. 83 (PDF 21)",
+            "support_type": "counter",
+            "note": "Bütün mezarlığa genelleme ve gönüllülük sınırı sitenin yöntemsel çıkarımıdır."
+          }
+        ]
+      },
+      {
+        "id": "gomuden-once-olum",
+        "text": "Sołtysiak, PG 1332’deki beden düzeni ve iki katmanı gömüden önce öldürme lehinde güçlü bir gerekçe olarak değerlendirir. Bu ayrı bağlamsal argüman, kesin aleti veya zehir kullanımını belirlemez.",
+        "citations": [
+          {
+            "source_ref": "soltysiak-2024-ur-travma",
+            "locator": "Royal graves in Ur, s. 83; Vidale 2011 üzerinden aktarım",
             "support_type": "counter"
           }
         ]
       }
     ],
     "open_questions": [
-      "Daha çok iskelet taranırsa sonuç genellenebilir mi?",
-      "İki kafataslık örneklem 'refuted' demek için yeterli mi, yoksa 'contested' mi daha doğru?"
+      "Travmatik ölüm ile kazı/gömü sonrası hasar, korunmuş kalıntılarda nasıl daha sağlam ayrılabilir?",
+      "Farklı mezarlarda ölüm yöntemleri ve ritüel düzen aynı mıydı?",
+      "Isıtma ve cıva önerisinin yayımlanmış analizleri ve gönüllülük yorumu nasıl ayrıca sınanabilir?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu ('Ur kafataslarında tomografi çalışması') gerçek künyeyle değiştirildi: Baadsgaard vd. 2011, Antiquity, DOI canlı kontrol edildi. Örneklem darlığının çürütmenin KENDİSİNİ de sınırladığı açıkça yazıldı ve açık soruya taşındı."
+      "notes": "4 Ekim 2026: Baadsgaard 2007 kısa araştırma yazısı, 2011 yayıncı özeti ve Sołtysiak 2024 sayısı/2025 çevrimiçi yayının s. 82–83’ü okundu. Refuted → contested; güven medium korundu. 2011 yayımlanmış tam metni, Woolley 1934 ve Vidale 2011 okunmadı; bunların belirsiz veya doğrudanmış gibi duran atıfları çıkarıldı. Kayıtta belirli bir radyokarbon numunesi doğrulanmadığından yöntem etiketi kaldırıldı; yaklaşık MÖ 2600–2450 aralığı Sołtysiak üzerinden korunur. Ham CT verileri yeniden yorumlanmadı. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
