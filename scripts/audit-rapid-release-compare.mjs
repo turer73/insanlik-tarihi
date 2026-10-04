@@ -1,7 +1,8 @@
 // Compare the same 2021 RAPID samples across the archived v2022.1 and v2024.1a ASCII releases.
 // v2022.1: https://www.bodc.ac.uk/data/published_data_library/catalogue/10.5285/04c79ece-3186-349a-e063-6c86abc0158c/
 // v2024.1a: https://rapid.ac.uk/node/10
-// Both release guides define column 14 as moc_mar_hc10 and a 12-hour, 10-day low-pass series.
+// Both release guides define columns 11-14 as Florida, Ekman, upper mid-ocean,
+// and MOC transport in a 12-hour, 10-day low-pass series.
 // Usage: node scripts/audit-rapid-release-compare.mjs old.ascii current.ascii
 import fs from 'node:fs';
 import crypto from 'node:crypto';
@@ -16,6 +17,12 @@ if (releases.some(release => !release.path)) {
 }
 
 const mean = values => values.reduce((sum, value) => sum + value, 0) / values.length;
+const columns = [
+  { name: 't_gs10', index: 10 },
+  { name: 't_ek10', index: 11 },
+  { name: 't_umo10', index: 12 },
+  { name: 'moc_mar_hc10', index: 13 },
+];
 for (const release of releases) {
   const raw = fs.readFileSync(release.path);
   const hash = crypto.createHash('sha256').update(raw).digest('hex');
@@ -33,23 +40,35 @@ for (const release of releases) {
     if (moc === -99999) continue;
     if (release.publishedYears.has(year)) release.publishedYears.get(year).push(moc);
     if (year !== 2021) continue;
+    if (columns.some(({ index }) => fields[index] === -99999)) {
+      throw new Error(`${release.label}: missing 2021 component in a valid MOC row`);
+    }
     const timestamp = fields.slice(1, 5).join('-');
     if (release.samples.has(timestamp)) throw new Error(`${release.label}: repeated ${timestamp}`);
-    release.samples.set(timestamp, moc);
+    release.samples.set(timestamp, fields);
   }
   if (release.samples.size !== 730) throw new Error(`${release.label}: expected 730 2021 samples`);
-  console.log(`${release.label} 2021: ${mean([...release.samples.values()]).toFixed(6)} Sv (${release.samples.size} samples)`);
+  console.log(`${release.label} 2021 MOC: ${mean([...release.samples.values()].map(row => row[13])).toFixed(6)} Sv (${release.samples.size} samples)`);
 }
 
 const [old, current] = releases;
 if ([...old.samples.keys()].some(timestamp => !current.samples.has(timestamp))) {
   throw new Error('2021 timestamps do not match between releases');
 }
-const differences = [...old.samples].map(([timestamp, value]) => current.samples.get(timestamp) - value);
-console.log(`Same-timestamp delta: ${mean(differences).toFixed(6)} Sv; changed samples: ${differences.filter(value => value !== 0).length}`);
+const componentDeltas = [];
+for (const { name, index } of columns) {
+  const oldValues = [...old.samples.values()].map(row => row[index]);
+  const currentValues = [...old.samples.keys()].map(timestamp => current.samples.get(timestamp)[index]);
+  const differences = currentValues.map((value, i) => value - oldValues[i]);
+  if (name !== 'moc_mar_hc10') componentDeltas.push(mean(differences));
+  console.log(`${name}: ${mean(oldValues).toFixed(6)} -> ${mean(currentValues).toFixed(6)} Sv; same-timestamp delta: ${mean(differences).toFixed(6)} Sv; changed samples: ${differences.filter(value => value !== 0).length}`);
+}
+const mocDelta = mean([...old.samples].map(([timestamp, row]) => current.samples.get(timestamp)[13] - row[13]));
+const residual = mocDelta - componentDeltas.reduce((sum, value) => sum + value, 0);
+console.log(`MOC delta minus sum of component deltas: ${residual.toFixed(6)} Sv (MOC is a maximum-overturning measure; these are not an exact additive attribution)`);
 for (const year of [2005, 2009, 2018]) {
   const values = old.publishedYears.get(year);
   if (values.length !== 730) throw new Error(`v2022.1: expected 730 ${year} samples`);
   console.log(`v2022.1 ${year}: ${mean(values).toFixed(6)} Sv (${values.length} samples)`);
 }
-console.log('Simple calendar-year means only; no trend, significance, or cause of data revision computed.');
+console.log('Simple calendar-year means only; no trend, significance, or processing-step attribution computed.');
