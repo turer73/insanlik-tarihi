@@ -15,4 +15,4 @@ Tarih: 5 Ekim 2026. Önceki [masa başı denetiminin](../denetim-2026-10-04/amoc
 
 ## Açık sınır
 
-On AMOC bulgusunun `review.status` değeri hâlâ `draft`. Carlson 2007 ve Boers 2024 gibi erişilemeyen tam metinler; ham veri/kod yeniden üretimi; RAPID sürüm farkının işlem nedeni; belirli haberlerin aktarımı ve bağımsız alan uzmanı incelemesi açık kalır. Baehr 2007 tam metni sonradan kurum arşivinden okundu; ayrıntılar [5 Ekim tam metin notunda](amoc-baehr-tam-metin.md). “Sıfır zayıf konum” bu ayrı işleri kapatmaz.
+On AMOC bulgusunun `review.status` değeri hâlâ `draft`. Boers 2024’ün erişilemeyen tam metni; ham veri/kod yeniden üretimi; RAPID sürüm farkının işlem nedeni; belirli haberlerin aktarımı ve bağımsız alan uzmanı incelemesi açık kalır. Baehr 2007 tam metni sonradan kurum arşivinden, Carlson 2007’nin yazar yüklemesi de açık metinden okundu; ayrıntılar [Baehr](amoc-baehr-tam-metin.md) ve [Carlson](amoc-carlson-yazar-metin.md) notlarında. “Sıfır zayıf konum” bu ayrı işleri kapatmaz.

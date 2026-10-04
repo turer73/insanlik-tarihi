@@ -1818,7 +1818,7 @@
       {
         "id": "carlson-2007-st-lawrence",
         "language": "en",
-        "accessed": "2026-10-04",
+        "accessed": "2026-10-05",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -1835,8 +1835,8 @@
         "container": "Proceedings of the National Academy of Sciences",
         "volume": "104(16):6556–6561",
         "doi": "10.1073/pnas.0611313104",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/17420461/",
-        "note": "Resmî PubMed özeti ve Şekil 3 açıklaması ile PMC arama dizininde görünen Results/Discussion pasajları karşılaştırıldı. Başlangıçtaki +0,06 ± 0,02 Sv, üç jeokimyasal tahminin 2σ belirsizlikli ortalamasıdır; mutlak akış değil taban deşarjındaki tahmini artıştır. Sonraki +0,06 ± 0,01 Sv ek artışla başlangıç öncesine göre toplam +0,12 ± 0,02 Sv olur. Tam metin doğrudan açılamadı; ham karotlar, ek yöntem ve iklim nedenselliği bağımsızca çözülmedi."
+        "url": "https://www.researchgate.net/publication/6403184_From_the_Cover_Geochemical_proxies_of_North_American_freshwater_routing_during_the_Younger_Dryas_cold_event",
+        "note": "ResearchGate'de Carlson tarafından yüklenen yayımlanmış tam metnin s. 6557–6560 Results/Discussion/Methods ve Şekil 2–3 açıklamaları okundu; DOI/PubMed künyesi karşılaştırıldı. Model 0,07 Sv Genç Dryas öncesi akış ve günümüzdekine benzer nehir kimyası varsayar. Başlangıçtaki +0,06 ± 0,02 Sv üç jeokimyasal tahminin 2σ belirsizlikli ortalamasıdır; sonraki +0,06 ± 0,01 Sv ile başlangıç öncesine göre toplam +0,12 ± 0,02 Sv artış çıkar. Geç evre artışı bütün vekillerde görülmez; ΔMg/Ca temelli akış artışını sıcaklık düzeltmesi nedeniyle üst tahmin sayarlar. Yaş kontrolü yaklaşık 430 yıl aralıklıdır. Ek yöntemler, ham karotlar, yaş modeli ve iklim nedenselliği yeniden hesaplanmadı."
       },
       {
         "id": "suefke-2022-mackenzie-pb",
@@ -1941,11 +1941,11 @@
       },
       {
         "id": "st-lawrence-jeokimya",
-        "text": "Carlson ve arkadaşlarının St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekilleri erken Genç Dryas’ta batı Kanada kaynaklı doğu akışını destekler. Model, 0,07 Sv başlangıç akışı varsayarak önce +0,06 ± 0,02 Sv (üç tahminin ortalaması; belirsizlik 2σ), sonra +0,06 ± 0,01 Sv ek artış; başlangıç öncesine göre toplam +0,12 ± 0,02 Sv artış çıkarır. Bunlar mutlak debi ölçümü değildir.",
+        "text": "Carlson ve arkadaşlarının St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekilleri erken Genç Dryas’ta batı Kanada kaynaklı doğu akışını destekler. Model, 0,07 Sv başlangıç akışı ve günümüzdekine benzer nehir kimyası varsayarak önce +0,06 ± 0,02 Sv (üç tahminin ortalaması; belirsizlik 2σ), sonra +0,06 ± 0,01 Sv ek artış; başlangıç öncesine göre toplam +0,12 ± 0,02 Sv artış çıkarır. Geç artış bütün vekillerde görünmez ve yaş kontrolü yaklaşık 430 yıl aralıklıdır. Bunlar mutlak debi ölçümü değildir.",
         "citations": [
           {
             "source_ref": "carlson-2007-st-lawrence",
-            "locator": "PubMed Abstract ve Fig. 3 açıklaması; PMC arama dizinindeki Results ve Discussion artış pasajları",
+            "locator": "s. 6557–6559, Results ve Discussion ilk paragraf; Şekil 2–3; s. 6560, Methods yaş kontrolü",
             "support_type": "claim-origin"
           }
         ]
@@ -2057,7 +2057,7 @@
         "citations": [
           {
             "source_ref": "carlson-2007-st-lawrence",
-            "locator": "PubMed Abstract ve Fig. 3 açıklaması; PMC arama dizinindeki Discussion artış pasajı",
+            "locator": "s. 6558, Discussion ilk paragraf, üç vekilin 2σ ortalaması ve iki aşamalı artış; Şekil 3",
             "support_type": "context"
           },
           {
@@ -2075,9 +2075,9 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Condron–Winsor ve You seçilmiş PMC tam metin pasajları önceki turda; bu tur Carlson 2007 PubMed özeti/Şekil 3 açıklaması ve PMC arama dizinindeki seçilmiş Results/Discussion pasajları, Süfke 2022 resmî açık tam metin seçilmiş Introduction/Discussion/Fig. 4–5, Norris 2021'in Wiley'deki yayımlanmış tam metninin ilgili yöntem/sonuç/tartışma bölümleri okundu. Carlson tam metni doğrudan açılamadı. Karot yaş modelleri, ham ölçümler, Norris ekleri ve modellerin kodu bağımsızca yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Condron–Winsor ve You seçilmiş PMC tam metin pasajları; Süfke 2022 resmî açık metninin seçilmiş bölümleri ve Norris 2021 Wiley tam metninin ilgili yöntem/sonuç/tartışması önceki denetimlerde okundu. Carlson 2007'nin yazarca ResearchGate'e yüklenen yayımlanmış metninde s. 6557–6560, Şekil 2–3, Discussion ve Methods yaş kontrolü 5 Ekim'de okundu. Geç evredeki vekil uyumsuzluğu ve ΔMg/Ca sıcaklık düzeltmesi sınırı görüldü. Ek yöntemler, karot yaş modelleri, ham ölçümler, Norris ekleri ve modellerin kodu yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-05",
     "used_in": [
       "amoc"
     ]
