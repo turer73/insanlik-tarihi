@@ -2236,7 +2236,7 @@
         "volume": "15:7780",
         "doi": "10.1038/s41467-024-51879-5",
         "url": "https://www.nature.com/articles/s41467-024-51879-5",
-        "note": "Açık tam metnin Results/Corrected estimates ve Implications, Discussion, Methods pasajları okundu. 2000–2023 Florida kablo kaydı jeomanyetik değişim için düzeltilip gemi kesitlerine göre yeniden kalibre edilir; yazarlar 2004–2022 AMOC hesabını da yeniler. Bu işlem RAPID sürüm farkıyla uyumludur fakat 2021'deki 0,601742 Sv farkın adım adım nedensel ayrıştırması değildir. 2025 yazar düzeltmesi yalnız telif/lisans bilgisini değiştirir. Makalenin analiz kodu çalıştırılmadı."
+        "note": "Açık tam metnin Results/Corrected estimates ve Implications, Discussion, Methods pasajları okundu. 2000–2023 Florida kablo kaydı jeomanyetik değişim için düzeltilip gemi kesitlerine göre yeniden kalibre edilir; yazarlar 2004–2022 AMOC hesabını da yeniler. Fig. 7'de mevsimsellik çıkarılmış, iki yıllık filtreli serinin eğilimi düzeltme öncesi −1,3 ± 0,7, sonrası −0,8 ± 0,7 Sv/on yıldır. Bu işlem RAPID sürüm farkıyla uyumludur fakat 2021'deki 0,601742 Sv farkın adım adım nedensel ayrıştırması değildir. 2025 yazar düzeltmesi yalnız telif/lisans bilgisini değiştirir. Makalenin analiz kodu çalıştırılmadı."
       }
     ],
     "evidence": [
@@ -2344,6 +2344,17 @@
             "source_ref": "volkov-2024-florida-duzeltme",
             "locator": "Results, Corrected estimates of the Florida Current volume transport ve Implications for the Atlantic Meridional overturning circulation; Fig. 6–7",
             "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "florida-duzeltmesi-2004-2022-egilimi",
+        "text": "Volkov ve arkadaşları 2024, Nisan 2004–Şubat 2022 RAPID AMOC serisini Florida kablo taşınımını jeomanyetik değişim için düzelterek yeniden hesaplar. Şekil 7'de aynı dönem için eski serinin eğilimi −1,3 ± 0,7, düzeltilmiş serinin eğilimi −0,8 ± 0,7 Sv/on yıldır. Bu, Lee 2024'ün 2011–2021 penceresi veya iki RAPID sürümünün 2021 takvim ortalamalarıyla aynı hesap değildir.",
+        "citations": [
+          {
+            "source_ref": "volkov-2024-florida-duzeltme",
+            "locator": "Results, Implications for the Atlantic Meridional overturning circulation, Fig. 7 açıklaması ve 2004–2022 eğilim paragrafı",
+            "support_type": "direct"
           }
         ]
       }

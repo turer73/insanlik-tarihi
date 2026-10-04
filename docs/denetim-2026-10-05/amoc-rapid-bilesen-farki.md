@@ -24,4 +24,6 @@ Bu, farkın Florida ve üst okyanus sütunlarında görüldüğünü belirler. �
 
 [Volkov ve arkadaşları 2024](https://www.nature.com/articles/s41467-024-51879-5), 2000–2023 Florida kablo gerilimini jeomanyetik değişime göre düzeltip gemi kesitleriyle yeniden kalibre eder. Results/Corrected estimates ve Fig. 6–7, düzeltmenin Florida ve 2004–2022 RAPID AMOC hesabını etkilediğini gösterir. Makalenin 2025 [yazar düzeltmesi](https://www.nature.com/articles/s41467-025-58976-z) bilimsel sonuç değil, telif ve lisans düzeltmesidir.
 
+Makalenin Results/Implications bölümünde Nisan 2004–Şubat 2022 AMOC eğilimi, eski Florida taşınımıyla −1,3 ± 0,7; düzeltilmiş taşınımla −0,8 ± 0,7 Sv/on yıl olarak verilir. Şekil 7 açıklamasına göre mevsim döngüsü çıkarılıp iki yıllık alçak geçiren filtre kullanılmıştır. Bu yayımlanmış iki eğilim, yukarıdaki 2021 takvim ortalaması farkından hesaplanmış değildir ve Lee 2024'ün 2011–2021 aralığıyla karıştırılmamalıdır.
+
 Bu kaynaklar Florida bileşenindeki fark için belirli bir işlem yolunu gösterir; fakat yayımlanan iki nihai sürümün karşılaştırılması jeomanyetik düzeltmenin, yeniden kalibrasyonun ve diğer RAPID işlem değişikliklerinin 2021'deki sayısal payını tek tek ayırmaz. İşlem kodları ve ara sürümler çalıştırılmadı. Lee 2024'ün özgün hesap kodu, yeni sürümle eğilim anlamlılığı ve bağımsız uzman incelemesi de açık kalır.
