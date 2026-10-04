@@ -352,7 +352,9 @@ for (const record of all) {
           errors.push(`${citationPath}.source_ref: '${citation.source_ref}' sources içinde bulunamadı`);
         }
         if (field === "counter_evidence"
-            && !["counter", "context", "claim-origin"].includes(citation.support_type)) {
+            // Kaynak verisinden çıkarılan bir itiraz da inference olarak
+            // kalmalı; uyarıyı susturmak için doğrudan karşı kanıt sayılmaz.
+            && !["counter", "context", "claim-origin", "inference"].includes(citation.support_type)) {
           warnings.push(`${citationPath}.support_type: karşı kanıt için '${citation.support_type}' beklenmedik`);
         }
       });

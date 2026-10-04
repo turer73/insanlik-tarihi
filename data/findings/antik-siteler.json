@@ -1799,7 +1799,7 @@
   {
     "schema_version": 2,
     "id": "antik-kanon-turizm-kategorisi",
-    "claim": "'Dünyanın en etkileyici antik yapıları' listeleri bir arkeoloji kategorisi değil, turizm kategorisidir.",
+    "claim": "İncelenen Biletall ve Gezimaris gezi listeleri Machu Picchu ile Stonehenge’i birlikte anar; bu tekrar tek başına ortak bir arkeolojik kategori kurmaz.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -1808,9 +1808,9 @@
       "bilim-iletisimi"
     ],
     "period": {
-      "earliest": 1800,
-      "latest": 2026,
-      "era_label": "Modern kanon oluşumu",
+      "earliest": 2017,
+      "latest": 2025,
+      "era_label": "İncelenen iki gezi listesinin yayın tarihleri",
       "precision": "range",
       "dating_method": [
         "historical-record"
@@ -1822,127 +1822,123 @@
       "antropoloji"
     ],
     "popular_claim": "Bu yapılar ortak bir 'antik gizem' kategorisine aittir.",
-    "divergence": "Seçkiyi üç şey belirliyor: erişilebilirlik, 19. yüzyıl keşif rotaları ve fotojeniklik. Aralarında 11.000 yıl var; Machu Picchu matbaaya Stonehenge'den yakın. Kanona girmiş olmak siteleri önemsiz yapmaz; kayıt sitelerin değerini değil, bir arada anılmalarının GEREKÇESİNİ sorguluyor.",
+    "divergence": "İki gezi yazısında aynı yerlerin anılması, ortak tarihsel köken veya aynı arkeolojik sınıf için yeterli değildir. Bu kayıt iki örnekle sınırlıdır; bütün Türkçe listelerin aynı yerleri seçtiği, birbirinden kopyalandığı veya seçimi üç belirli etkenin açıkladığı sonucunu kurmaz.",
     "divergence_type": [
-      "kategori-hatasi",
-      "somurge-anlatisi",
-      "turizm-kopyalamasi"
+      "kategori-hatasi"
     ],
-    "checked": "2026-09-12",
+    "checked": "2026-10-04",
     "used_in": [
       "ayni-cumlede"
     ],
     "sources": [
       {
-        "id": "urry-1990-tourist-gaze",
-        "language": "en",
-        "accessed": "2026-09-12",
-        "tier": "peer-reviewed",
-        "type": "book",
-        "authors": [
-          "Urry, John"
-        ],
-        "year": 1990,
-        "title": "The Tourist Gaze",
-        "publisher": "Sage",
-        "isbn": "9780803981829",
-        "note": "Turistik bakışın kanon oluşturma mekanizması. Dosyada ISBN'siz duruyordu."
+        "id": "turkce-seyahat-listeleri",
+        "language": "tr",
+        "accessed": "2026-10-04",
+        "tier": "unreliable",
+        "type": "webpage",
+        "title": "Dünyanın En Önemli 10 Antik Kenti",
+        "institution": "Biletall Blog",
+        "year": 2017,
+        "url": "https://blog.biletall.com/dunyanin-en-onemli-10-antik-kenti",
+        "note": "Başlık, 9 Eylül 2017 / 26 Temmuz 2019 tarihleri, giriş, içerik listesi ve Palmira bölümü okundu. Genel bir Türkçe liste derlemi yerine tek somut örnek kaydedildi. Arkeolojik bilgi veya güncel seyahat koşulları için değil, incelenen liste ve gezi sunumu için kullanılır."
+      },
+      {
+        "id": "gezimaris-2025-gizemli-yerler",
+        "language": "tr",
+        "accessed": "2026-10-04",
+        "tier": "unreliable",
+        "type": "webpage",
+        "title": "Dünya’nın En Gizemli Yerleri",
+        "institution": "Gezimaris",
+        "year": 2025,
+        "url": "https://gezimaris.com/dunyanin-en-gizemli-yerleri/",
+        "note": "20 Ocak 2025 tarihi, Seyahat İpuçları kategorisi, başlık listesi, Machu Picchu ve Stonehenge bölümleri ile son gezi çağrısı okundu. Metindeki arkeolojik ve gizem iddiaları doğrulanmış bilgi olarak aktarılmadı; kaynak yalnız incelenen liste örneğidir."
       },
       {
         "id": "unesco-listeleme-kriterleri",
         "language": "en",
-        "accessed": "2026-09-12",
+        "accessed": "2026-10-04",
         "tier": "institutional",
-        "type": "report",
-        "title": "Dünya Mirası listeleme kriterleri ve coğrafi dengesizlik tartışması",
-        "institution": "UNESCO",
-        "url": "https://whc.unesco.org/en/criteria/",
-        "note": "Kanon eleştirisinin ölçütü olarak kullanılıyor ama kendisi de nötr değil: aynı kaynak UNESCO listesinin coğrafi dengesizliğini de tartışıyor. Kayıt iki yönü birlikte taşıyor."
-      },
-      {
-        "id": "turkce-seyahat-listeleri",
-        "language": "tr",
-        "accessed": "2026-09-12",
-        "tier": "unreliable",
         "type": "webpage",
-        "title": "Türkçe seyahat ve içerik sitelerindeki antik yapı listeleri",
-        "note": "Kanıt olarak değil, incelenen olgunun kendisi olarak kaydedildi."
+        "title": "The Criteria for Selection",
+        "institution": "UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/criteria/",
+        "note": "Giriş, Selection criteria (i)–(x) ve protection / management / authenticity / integrity paragrafı okundu. Dünya Mirası seçim ölçütleri için bağlamdır; gezi listelerinin neden oluştuğu veya coğrafi dengesizlik için kanıt sayılmaz."
       }
     ],
     "evidence": [
       {
-        "id": "turistik-bakis-mekanizmasi",
-        "text": "Turistik bakış, görülmeye değer olanı önceden belirleyen ve kendi kanonunu üreten bir mekanizmadır.",
-        "citations": [
-          {
-            "source_ref": "urry-1990-tourist-gaze",
-            "locator": "Turistik bakış kavramı",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "erisilebilirlik-filtresi",
-        "text": "Listedeki her site bugün turistik olarak erişilebilir; savaş bölgelerindekiler kanona girmiyor (Babil ancak 2019'da UNESCO listesine girdi).",
-        "citations": [
-          {
-            "source_ref": "unesco-listeleme-kriterleri",
-            "locator": "Coğrafi dengesizlik tartışması",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "kesif-anlatisi-tarihleri",
-        "text": "Petra 1812, Angkor 1860'lar, Machu Picchu 1911 - hepsi Avrupa'nın keşif anlatısına girdiklerinde ünlendi.",
-        "citations": [
-          {
-            "source_ref": "urry-1990-tourist-gaze",
-            "locator": "Keşif anlatısı ve turizm",
-            "support_type": "direct"
-          }
-        ]
-      },
-      {
-        "id": "turkce-listeler",
-        "text": "Türkçe seyahat ve içerik sitelerindeki listeler aynı altı-yedi siteyi tekrarlıyor.",
+        "id": "biletall-liste-ornegi",
+        "text": "Biletall’ın on antik kent başlıklı yazısı Machu Picchu ile Stonehenge’i aynı listede sunar; giriş gezi çağrısı yapar.",
         "citations": [
           {
             "source_ref": "turkce-seyahat-listeleri",
-            "locator": "Liste içerikleri",
+            "locator": "“Bu İçerikte Neler Var?” listesi: Machu Picchu ve Stonehenge; girişin iki paragrafı",
             "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "gezimaris-liste-ornegi",
+        "text": "Gezimaris’in Seyahat İpuçları kategorisindeki gizemli yerler yazısında da Machu Picchu ile Stonehenge birlikte yer alır.",
+        "citations": [
+          {
+            "source_ref": "gezimaris-2025-gizemli-yerler",
+            "locator": "Başlıklar listesi 4 ve 7; “Machu Picchu (Peru)” ve Stonehenge bölümleri; 20.01.2025 tarih satırı",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "resmi-miras-olcutleri",
+        "text": "UNESCO Dünya Mirası seçimi üstün evrensel değer ve on ölçütten en az birini arar; gezi listesindeki birlikte anılma bu değerlendirmeyle eşitlenemez.",
+        "citations": [
+          {
+            "source_ref": "unesco-listeleme-kriterleri",
+            "locator": "Girişin ilk paragrafı; “Selection criteria” (i)–(x); son protection / management / authenticity / integrity paragrafı",
+            "support_type": "context"
           }
         ]
       }
     ],
     "counter_evidence": [
       {
-        "id": "fotojeniklik-olculmedi",
-        "text": "Altısı da tek fotoğrafta anlaşılıyor; dağınık yerleşimler ve höyükler listelerde yok. Bu satır bu kayıtta ölçülmedi - gözlemdir, sayım değildir.",
+        "id": "palmira-karsi-ornegi",
+        "text": "Biletall listesinde Palmira–Suriye de vardır. Önceki kayıttaki savaş bölgelerinin listelere hiç girmediği genellemesi bu örnekle korunamaz; liste güncel ziyaret edilebilirliği doğrulamaz.",
         "citations": [
           {
-            "source_ref": "urry-1990-tourist-gaze",
-            "locator": "Fotojeniklik",
-            "support_type": "context"
+            "source_ref": "turkce-seyahat-listeleri",
+            "locator": "İçerik listesi ve “Palmira – Suriye” başlığı altındaki paragraf",
+            "support_type": "counter"
           }
         ]
       },
       {
-        "id": "unesco-de-notr-degil",
-        "text": "UNESCO listesinin kendisi de eleştiriliyor; kriterler ve coğrafi dağılım dengesiz. Yani kanon eleştirisi için kullanılan ölçüt de nötr değil.",
+        "id": "orneklem-siniri",
+        "text": "İki listede tekrar görmek bütün Türkçe listelerin dağılımını, kopyalama ilişkisini veya erişilebilirlik, fotojeniklik ve keşif tarihinin etkisini ölçmez. Ortak bir arkeolojik sınıf için ayrıca dönem, işlev ve bağlam ölçütleri gerekir.",
         "citations": [
           {
-            "source_ref": "unesco-listeleme-kriterleri",
-            "locator": "Dengesizlik tartışması",
-            "support_type": "counter"
+            "source_ref": "turkce-seyahat-listeleri",
+            "locator": "“Bu İçerikte Neler Var?” listesi",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "gezimaris-2025-gizemli-yerler",
+            "locator": "Başlıklar listesi; “Machu Picchu (Peru)” bölümü",
+            "support_type": "inference"
           }
         ]
       }
     ],
     "review": {
       "status": "draft",
-      "notes": "Bu kaydın hiç karşı kanıtı yoktu; üçü yazıldı. Fotojeniklik satırının ölçüm değil gözlem olduğu işaretlendi."
-    }
+      "notes": "4 Ekim 2026: yalnız Biletall ve Gezimaris listelerinin belirtilen bölümleri ile UNESCO seçim ölçütleri okundu. Belirsiz liste kaynağı somut iki örnekle değiştirildi; Urry’nin bu tur okunmayan kitabına belirsiz atıflar çıkarıldı. Savaş bölgesi, kopyalama, keşif rotası ve fotojeniklik genellemeleri geri çekildi; yanlışlanan ile ölçülmeyen ayrıldı. Bütün yazı veya literatür denetlenmedi; bağımsız uzman incelemesi yapılmadı."
+    },
+    "open_questions": [
+      "Daha geniş ve tarihleri kaydedilmiş bir liste örnekleminde hangi yerler ne sıklıkla birlikte anılıyor?",
+      "Erişilebilirlik, fotoğraf kullanımı ve yayınlar arası aktarım hangi bağımsız verilerle ölçülebilir?"
+    ]
   },
   {
     "schema_version": 2,

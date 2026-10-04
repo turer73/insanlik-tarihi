@@ -1260,7 +1260,7 @@
       {
         "id": "allen-burns-sargent-1986-cataclysms",
         "language": "en",
-        "accessed": "2026-09-09",
+        "accessed": "2026-10-04",
         "tier": "popular",
         "type": "book",
         "authors": [
@@ -1269,10 +1269,11 @@
           "Sargent, Sam C."
         ],
         "year": 1986,
-        "title": "Cataclysms on the Columbia: The Great Missoula Floods",
+        "title": "Cataclysms on the Columbia: A Layman's Guide to the Features Produced by the Catastrophic Bretz Floods in the Pacific Northwest",
         "publisher": "Timber Press",
         "isbn": "9780881920673",
-        "note": "TİCARİ POPÜLER BİLİM KİTABI - hakemli literatür değil. DeepSeek turunda tier 'peer-reviewed' önerilmişti, düzeltildi. Yalnızca anlatı bağlamı için kullanılıyor; kaydın dayanağı Bretz'in kendi yayınıdır."
+        "note": "TİCARİ POPÜLER BİLİM KİTABI - hakemli literatür değil. DeepSeek turunda tier 'peer-reviewed' önerilmişti, düzeltildi. Yalnızca anlatı bağlamı için kullanılıyor; kaydın dayanağı Bretz'in kendi yayınıdır. Katalogdaki 1986 Timber Press baskısı (ISBN 0881920673) ile eşleştirildi; sonraki baskının Great Missoula Floods alt başlığı karışıklığı giderildi. 4 Ekim 2026: yalnız bibliyografik kayıt / tanıtım sayfası ve erişim bağlantısı kontrol edildi; kitabın ilgili pasajları veya tamamı bu tur okunmadı. Bu bağlantı içerik hükmünün yeni doğrulaması değildir.",
+        "url": "https://openlibrary.org/books/OL2460980M"
       }
     ],
     "evidence": [
