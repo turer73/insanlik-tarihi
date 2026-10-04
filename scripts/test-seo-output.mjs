@@ -10,6 +10,8 @@ const rows = await siteRows(root);
 const dates = JSON.parse(await read('data/icerik-surumu.json')).kayitlar;
 const titles = new Set();
 const index = await read('site/index.html');
+assert.equal(JSON.parse(await read('package.json')).license, 'AGPL-3.0-only');
+assert.match(await read('LICENSE-CONTENT.md'), /^# İçerik lisansı — CC BY-SA 4\.0/m);
 assert.ok(index.includes('<a href="#top">Ana Sayfa</a>'), 'Ana sayfa menüsü yerel sayfa başına dönmeli');
 assert.ok(index.includes('<a class="is-active" href="#yazilar" aria-current="page">Yazılar</a>'), 'Windows/Linux aynı arşiv bağlantısını üretmeli');
 assert.ok(index.includes('id="yazilar"'), 'Arşiv bağlantısının hedefi bulunmalı');
@@ -22,6 +24,7 @@ assert.deepEqual(new Set(entries.map(entry => entry.url)), new Set(rows.map(row 
 for (const row of rows) {
   const pathname = new URL(row.url).pathname;
   const html = await read(`site/${pathname === '/' ? 'index.html' : pathname.slice(1)}`);
+  assert.doesNotMatch(html, /creativecommons\.org\/licenses\/by\/4\.0|>MIT<\/a>/, `${row.url}: eski lisans bağlantısı görünmemeli`);
   const titleTags = [...html.matchAll(/<title>([\s\S]*?)<\/title>/gi)];
   assert.equal(titleTags.length, 1, `${row.url}: tek title`);
   const title = decode(titleTags[0][1]);
@@ -46,6 +49,7 @@ for (const row of rows) {
     await access(path.join(root, 'site', new URL(src).pathname));
   }
   if (pathname.startsWith('/articles/')) {
+    assert.match(html, /class="ka-attribution"[\s\S]*?creativecommons\.org\/licenses\/by-sa\/4\.0\/deed\.tr/, `${row.url}: güncel içerik lisansı`);
     const article = schemas.find(schema => schema['@type'] === 'Article');
     assert.ok(article, `${row.url}: Article şeması`);
     const contentDates = dates[pathname.slice(1)];
@@ -64,6 +68,11 @@ for (const row of rows) {
     assert.deepEqual(meta('og:title', 'property').map(decode), [title]);
     assert.deepEqual(meta('twitter:title').map(decode), [title]);
   }
+}
+for (const page of ['index.html', 'hakkinda.html', 'yeniden-yayin.html', 'duzeltmeler.html', 'kaynakca.html']) {
+  const html = await read(`site/${page}`);
+  assert.match(html, /CC BY-SA 4\.0/, `${page}: içerik lisansı`);
+  assert.match(html, /AGPL-3\.0-only/, `${page}: kod lisansı`);
 }
 const robots = await read('site/robots.txt');
 assert.match(robots, /Allow: \/\s/);

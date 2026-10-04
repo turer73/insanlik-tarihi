@@ -54,6 +54,6 @@ export async function siteRows(ROOT) {
     { no: 'S0', baslik: 'Kaynakça', url: `${ORIGIN}/kaynakca.html`, meta: 'Kaynakça — Kanıt Atlası', aciklama: 'Bulgu kayıtlarının arkasındaki bütün kaynak künyeleri; her biri Türkçe kullanım notu ve erişim bağlantısıyla.', kategori: 'Sayfa', kaynak: 'kaynakca.html' },
     { no: 'S1', baslik: 'Hakkında ve Yöntem', url: `${ORIGIN}/hakkinda.html`, meta: 'Hakkında ve Yöntem — Kanıt Atlası', aciklama: 'Kanıt Atlası yayın kimliği, araştırma yöntemi, inceleme durumu, düzeltme süreci ve lisans bilgisi.', kategori: 'Sayfa', kaynak: 'pages/hakkinda.html' },
     { no: 'S2', baslik: 'Düzeltme Günlüğü', url: `${ORIGIN}/duzeltmeler.html`, meta: 'Düzeltme Günlüğü — Kanıt Atlası', aciklama: 'Kanıt Atlası içerik düzeltmelerinin açık günlüğü.', kategori: 'Sayfa', kaynak: 'pages/duzeltmeler.html' },
-    { no: 'S3', baslik: 'Yeniden Yayımlama Kiti', url: `${ORIGIN}/yeniden-yayin.html`, meta: 'Yeniden Yayımlama Kiti — Kanıt Atlası', aciklama: 'CC BY 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi.', kategori: 'Sayfa', kaynak: 'pages/yeniden-yayin.html' },
+    { no: 'S3', baslik: 'Yeniden Yayımlama Kiti', url: `${ORIGIN}/yeniden-yayin.html`, meta: 'Yeniden Yayımlama Kiti — Kanıt Atlası', aciklama: 'CC BY-SA 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi.', kategori: 'Sayfa', kaynak: 'pages/yeniden-yayin.html' },
   ];
 }

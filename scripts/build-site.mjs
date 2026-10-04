@@ -195,14 +195,14 @@ const STATIC_PAGES = [
   {
     file: 'yeniden-yayin.html',
     title: 'Yeniden Yayımlama Kiti',
-    description: 'Kanıt Atlası içeriğini CC BY 4.0 ile yeniden yayımlamak için atıf biçimi, kapaklar ve dürüstlük koşulu.',
+    description: 'Kanıt Atlası içeriğini CC BY-SA 4.0 ile yeniden yayımlamak için atıf ve aynı lisansla paylaşım koşulları.',
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
       name: 'Kanıt Atlası — Yeniden Yayımlama Kiti',
       url: `${ORIGIN}/yeniden-yayin.html`,
       inLanguage: 'tr-TR',
-      description: 'CC BY 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi.',
+      description: 'CC BY-SA 4.0 lisansı altında içeriğin yeniden yayımlanma koşulları ve atıf biçimi.',
       isPartOf: { '@type': 'WebSite', name: 'Kanıt Atlası', url: `${ORIGIN}/` }
     }
   },

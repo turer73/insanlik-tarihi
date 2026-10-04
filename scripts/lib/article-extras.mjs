@@ -54,14 +54,14 @@ export function renderRelated(article, articles, hubs, allArticles) {
   return `<section class="ka-related" aria-labelledby="ilgili-dosyalar-baslik"><h2 class="ka-related-heading" id="ilgili-dosyalar-baslik">İlgili dosyalar</h2><ul>${items}</ul>${hubLink}</section>`;
 }
 
-/** CC BY 4.0 atıf bloğu: önerilen atıf, özet ve kapak bağlantısı. */
+/** Güncel içerik lisansı için atıf bloğu: önerilen atıf, özet ve kapak bağlantısı. */
 export function renderAttribution(article) {
   const url = `${ORIGIN}/articles/${article.slug}.html`;
   return `<section class="ka-attribution" aria-labelledby="yeniden-yayim-baslik">
   <h2 class="ka-related-heading" id="yeniden-yayim-baslik">Bu dosyayı yeniden yayımlayın</h2>
-  <p>İçerik <a href="https://creativecommons.org/licenses/by/4.0/deed.tr" rel="license noopener" target="_blank">CC BY 4.0</a> lisanslıdır; atıf vererek ve kaynak bağlantılarını koruyarak çoğaltabilirsiniz. Önerilen atıf:</p>
-  <blockquote class="ka-attribution-cite">Kanıt Atlası. «${escapeHTML(article.title)}.» Kanıt Atlası, <a href="${url}">${url}</a> (CC BY 4.0).</blockquote>
-  <p class="ka-attribution-meta">Özet: ${escapeHTML(article.summary)} Kapak görseli temsili editoryal illüstrasyondur: <a href="${ORIGIN}/${article.cover}">${ORIGIN}/${article.cover}</a></p>
+  <p>İçerik <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr" rel="license noopener" target="_blank">CC BY-SA 4.0</a> lisanslıdır; atıf ve lisans bağlantısını verin, değişiklikleri belirtin, uyarlamaları aynı lisansla paylaşın. Önerilen atıf:</p>
+  <blockquote class="ka-attribution-cite">Kanıt Atlası (turer73). «${escapeHTML(article.title)}.» Kanıt Atlası, <a href="${url}">${url}</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</blockquote>
+  <p class="ka-attribution-meta">Özet: ${escapeHTML(article.summary)} Kapak görseli temsili editoryal illüstrasyondur: <a href="${ORIGIN}/${article.cover}">${ORIGIN}/${article.cover}</a>. Görselin yeniden kullanım koşullarını ayrıca doğrulayın.</p>
   <p><a class="ka-attribution-kit" href="../yeniden-yayin.html">Yeniden yayımlama kiti →</a></p>
 </section>`;
 }
