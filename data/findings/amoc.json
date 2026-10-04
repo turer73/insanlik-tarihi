@@ -967,7 +967,7 @@
         "container": "Nature",
         "volume": "556(7700):191-196",
         "doi": "10.1038/s41586-018-0006-5",
-        "note": "Nature özetine ek olarak Woods Hole Oceanographic Institution arşivindeki yayımlanmış tam PDF (https://www.whoi.edu/fileserver.do?id=289704&p=279389&pt=2; SHA-256 1c580c8efc2d2c96336f82a1813ee04b78e30c0bff87783a52c98332c373f07c) s. 1, 4–5 ve Methods s. 7–8 okundu. Kasım–Mayıs HadISST vekili, 12 CMIP5 modelinin 3,8 Sv/K kalibrasyonu, 1870–2016 doğrusal 2,3 Sv ile 20 yıllık yumuşatılmış eğrinin yüzyıl ortası sonrası yaklaşık 3 ± 1 Sv tahmini ayrıldı. Ham SST/model verileri ve analiz kodu yeniden çalıştırılmadı.",
+        "note": "Nature özetine ek olarak 4 Ekim 2026'da Woods Hole Oceanographic Institution arşivinden alınmış yayımlanmış tam PDF'nin (SHA-256 1c580c8efc2d2c96336f82a1813ee04b78e30c0bff87783a52c98332c373f07c) s. 1, 4–5 ve Methods s. 7–8 pasajları okundu. Önceki WHOI dosya bağlantısı 5 Ekim'de kurumun sayfa bulunamadı ekranına yönlendiği için yayındaki bağlantı, yazarın https://www.pik-potsdam.de/~caesar/AMOC_slowdown/ açık veri ve şekil açıklamaları sayfasıyla değiştirildi; bu sayfa tam metnin yerine geçirilmedi. Kasım–Mayıs HadISST vekili, 12 CMIP5 modelinin 3,8 Sv/K kalibrasyonu, 1870–2016 doğrusal 2,3 Sv ile 20 yıllık yumuşatılmış eğrinin yüzyıl ortası sonrası yaklaşık 3 ± 1 Sv tahmini ayrıldı. Ham SST/model verileri ve analiz kodu yeniden çalıştırılmadı.",
         "url": "https://www.nature.com/articles/s41586-018-0006-5"
       },
       {
