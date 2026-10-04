@@ -896,7 +896,7 @@
         "institution": "Musée du Louvre",
         "url": "https://www.louvre.fr/le-code-de-hammurabi",
         "language": "fr",
-        "note": "A monument du droit ancien ve Hammurabi, puissant souverain bölümleri; yaklaşık MÖ 1750 tarihi ve §196’nın aynı statü koşulu okundu. Misillemenin tarihsel başlangıcını kanıtlayan bir tarama değildir."
+        "note": "Un monument du droit ancien ve Œil pour œil, dent pour dent bölümleri; yaklaşık MÖ 1750 tarihi ve §196’nın aynı statü koşulu okundu. Misillemenin tarihsel başlangıcını kanıtlayan bir tarama değildir."
       },
       {
         "id": "yale-avalon-hammurabi-ceviri",
@@ -952,7 +952,7 @@
         "citations": [
           {
             "source_ref": "louvre-hammurabi-kod-aciklamasi",
-            "locator": "A monument du droit ancien; Hammurabi, puissant souverain: §196",
+            "locator": "Un monument du droit ancien; Œil pour œil, dent pour dent: §196",
             "support_type": "direct"
           },
           {
