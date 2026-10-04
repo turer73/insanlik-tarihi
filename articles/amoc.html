@@ -143,7 +143,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
     <div class="stats">
       <div class="stat"><span class="stat__num">2004</span><span class="stat__lbl">RAPID, 26,5°K izleme başlangıcı</span></div>
-      <div class="stat"><span class="stat__num s">2021</span><span class="stat__lbl">bu yazıda ele alınan IPCC değerlendirmesi</span></div>
+      <div class="stat"><span class="stat__num s">2024</span><span class="stat__lbl">RAPID v2024.1a verisinin son yılı; Mart'ta biter</span></div>
       <div class="stat"><span class="stat__num">−0,1 Sv</span><span class="stat__lbl">2011–2021 eğilimi, on yılda</span></div>
       <div class="stat"><span class="stat__num s">%54</span><span class="stat__lbl">ani 4×CO₂ · 34 model · 90. yılda ortalama zayıflama</span></div>
     </div>
@@ -208,7 +208,8 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <div class="prose">
-    <p><b>RAPID'ın 26,5°K kesitindeki sürekli AMOC izlemesi 2004'te başladı.</b> Bu, bütün Atlantik'in her enlemde aynı tarihten beri kesintisiz ölçüldüğü anlamına gelmez. Başlıkta geçen yirmi iki yıl, 2004 ile 2026 arasındaki takvim süresidir; bu tur 2026'ya kadar eksiksiz bir ölçüm dizisi doğrulanmadı.</p>
+    <p><b>RAPID'ın 26,5°K kesitindeki AMOC izlemesi 2004'te başladı.</b> Bu, bütün Atlantik'in her enlemde aynı tarihten beri ölçüldüğü anlamına gelmez. Başlıkta geçen yirmi iki yıl, 2004 ile 2026 arasındaki takvim süresidir; <a href="https://rapid.ac.uk/node/10">4 Ekim 2026'da listelenen son resmî veri sürümü v2024.1a</a> ise yalnız <b>27 Mart 2024'e</b> kadar uzanır. 2026'ya kadar yayımlanmış eksiksiz bir RAPID dizisi olarak okunmamalıdır.</p>
+    <p><a href="https://rapid.ac.uk/sites/default/files/rapid_data/README.pdf">RAPID'in 29 Ocak 2026 tarihli veri kılavuzu</a>, bu dizideki ikameleri de açıklar: derin doğu sınırı aletleri Şubat 2022'de kaldırıldığı için aylık klimatoloji kullanılır. Kasım 2023'ten beri Florida kablosu verisi yoktur; eksikler basınç ölçeri ve altimetriyle doldurulur. Ölçüm dizisi sürer, fakat her değeri aynı sensörlerden gelen kesintisiz ham kayıt diye anlatamayız.</p>
     <p><a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/">IPCC 2021, §9.2.3.1 ve FAQ 9.3</a>, o tarihteki kısa gözlem kaydını doğal değişkenlik ile uzun dönemli eğilimi ayırmanın sınırı olarak tartışır. Bu tarihli değerlendirme, bütün bugünkü yöntemlerin insan etkisini ölçemeyeceği hükmüne dönüştürülemez. Sabit yetmiş yıllık bir doğal saat varsayımı da burada kullanılmıyor.</p>
     <p><a href="https://os.copernicus.org/articles/17/285/2021/">Worthington ve arkadaşları 2021, §4 Discussion</a>, önceki bir çalışmanın süre tahminini aktarır; hemen sonraki paragraf ek derinlik bilgisinin etkisini ele alır:</p>
   </div>
@@ -242,7 +243,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
 
   <div class="prose">
     <p><b>Doğu katkısı batıdaki düşüşü kısmen dengeler.</b> Makale, T26'nın tam AMOC eğiliminin işaretini yakalayıp büyüklüğünü aşabileceğini belirtir. TRAPID_W ve TRAPID_E değişken Ekman katkısını da içerdiği için eğilimleri <b>doğrudan toplanamaz</b>; aksi hâlde bu katkı iki kez sayılır. T26 ayrıca derin batı sınır akıntısının (DWBC) taşınımıyla özdeş değildir.</p>
-    <p><a href="https://www.nature.com/articles/s41467-024-54903-w">Lee ve arkadaşları 2024'ün girişindeki</a> yıllık RAPID değerleri ise hem toparlanmayı hem sonraki düşüşü gösterir:</p>
+    <p><a href="https://www.nature.com/articles/s41467-024-54903-w">Lee ve arkadaşları 2024'ün girişindeki</a> kendi veri pencerelerine ait yıllık RAPID değerleri ise hem toparlanmayı hem sonraki düşüşü gösterir:</p>
   </div>
 
   <div class="rows">
@@ -253,6 +254,19 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
 
   <p class="note">Bu yıllık değerlerden, herhangi bir haberin “20→15” ifadesini mutlaka 2009'dan aldığı sonucu çıkmaz. <b>Bu tur belirli medya metinlerinin kökeni araştırılmadı.</b> 2021 değeri atlanarak toparlanmanın hâlâ sürdüğü de söylenemez; bu tablo 2026'nın güncel ölçümü değildir.</p>
+
+  <div class="sec__head" style="margin-top:2.4rem">
+    <h3>Yeni veri sürümünde hangi yıllar var?</h3>
+  </div>
+  <div class="prose">
+    <p><a href="https://rapid.ac.uk/node/10">RAPID–MOCHA–WBTS v2024.1a</a> (Moat ve arkadaşları 2026; NERC, NSF ve NOAA desteği), 26,5°K dizisini Mart 2024'e kadar yayımlar. <a href="https://rapid.ac.uk/sites/default/files/rapid_data/README.pdf">Kılavuzdaki</a> <code>moc_mar_hc10</code> sütununun 12 saatlik, 10 günlük filtrelenmiş değerlerinden eksikler çıkarılarak <b>tam takvim yılı için basit aritmetik ortalama</b> hesaplandı:</p>
+  </div>
+  <div class="rows">
+    <div class="rw"><b>2021</b><span><b>15,9 Sv</b> — v2024.1a, 730 geçerli örnek</span></div>
+    <div class="rw"><b>2022</b><span><b>15,2 Sv</b> — v2024.1a, 730 geçerli örnek</span></div>
+    <div class="rw"><b>2023</b><span><b>16,0 Sv</b> — v2024.1a, 730 geçerli örnek</span></div>
+  </div>
+  <p class="note">Bunlar bu dosya için yapılan tanımlayıcı hesaplamalardır; <b>yeni bir eğilim, anlamlılık veya insan etkisi testi değildir.</b> 2024 yalnız Mart'a kadar uzandığı için tam yıl ortalaması verilmedi. Lee 2024'ün yukarıdaki 2021 değeriyle sürüm ve ortalama tanımı eşlenmedi; 15,3 ile 15,9 arasındaki farkın nedeni burada belirlenmedi. Son yıllardaki sensör ikameleri de sonuç okunurken gözetilmelidir.</p>
   <div class="prose">
     <p>Lee 2024, <b>2011–2021 eğilimini −0,1 Sv/on yıl</b>, 2005–2021 eğilimini −1,1 Sv/on yıl verir. Başlangıç yılı değişince 2007–2021 eğilimi −0,2 Sv/on yıl olur. Yaklaşık düz pencere, her dönem için düşüş yokluğu değildir.</p>
     <p>Model temelli bileşen ayrımında <b>2000–2020</b> değişimi dışsal zorlanma için −2,6 Sv, artık bileşen için +1,0 Sv, net olarak −1,6 Sv'dir. <b>2010–2020</b> karşılaştırmasında ise dışsal bileşen −1,3 Sv, artık bileşen +1,1 Sv değişir. Bu farklı pencereler, 2011–2021 gözlem eğilimiyle tek bir hesap gibi birleştirilemez.</p>
@@ -410,7 +424,18 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
     <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12757042/">You ve arkadaşları 2026</a>, orta Genç Dryas'ta kısmi toparlanma ve geç evrede Hudson Boğazı'ndan buz dağı boşalımıyla ilişkili <b>ikinci bir tatlı su darbesi olasılığını</b> öne sürer. Aynı tartışma, uygun eşiklerde tek zorlamayla uzun süreli kapanma veren başka bir modeli de anıyor. İkinci darbe zorunlu koşul olarak kanıtlanmış değildir.</p>
   </div>
 
-  <p class="note">Bu 25 yıllık deney, yaklaşık 1200 yıllık Genç Dryas'ın tüm nedenini ve taşkının gerçekten hangi yoldan aktığını çözmez. <b>Mackenzie'nin bu modelde daha etkili olması, tarihsel güzergâhın kesin kanıtı değildir.</b> Başlangıç iklimi, taşkının süresi ve saha verileri ayrıca sınanmalıdır.</p>
+  <div class="sec__head" style="margin-top:2.4rem">
+    <h3>Saha kayıtları hangi yolları destekliyor?</h3>
+  </div>
+  <div class="rows">
+    <div class="rw"><b>St. Lawrence</b><span><a href="https://pubmed.ncbi.nlm.nih.gov/17420461/">Carlson ve arkadaşları 2007</a> · haliç ağzı foraminifer jeokimyası, erken Genç Dryas'ta batı Kanada akışı yorumu</span></div>
+    <div class="rw"><b>Mackenzie</b><span><a href="https://www.nature.com/articles/s43247-022-00428-3">Süfke ve arkadaşları 2022</a> · Beaufort Denizi tortusunda kurşun izotopu; büyük işaret yaş modelinde başlangıçtan önce</span></div>
+    <div class="rw"><b>kuzeybatı çıkışı</b><span><a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2021GL093919">Norris ve arkadaşları 2021</a> · jeomorfoloji ve taşkın modelleri; 6–9 aylık akış mümkün, tam başlama zamanı belirsiz</span></div>
+  </div>
+  <div class="prose">
+    <p>Carlson ve arkadaşlarının <b>+0,06 ± 0,02 Sv</b> taban deşarjı, jeokimyasal vekil ve karışım modelinden çıkarılır. Condron–Winsor'un <b>bir yıl 5 Sv</b> zorlaması ise ayrı, idealize bir taşkın deneyidir; bu iki sayı aynı gerçek taşkının ölçümü gibi karşılaştırılamaz. Süfke ve arkadaşlarının kurşun izotopu Agassiz–Mackenzie akışını desteklerken St. Lawrence yolunun payını açık bırakır. Norris ve arkadaşları da kuzeybatı çıkışının elverişliliğini gösterir, taşkını kesin olarak soğumanın ilk gününe tarihlemez.</p>
+  </div>
+  <p class="note">Saha vekilleri farklı yer ve zamanların izini taşır; hiçbirinin tek başına AMOC değişiminin ve Genç Dryas soğumasının <b>tek nedeni</b> olduğunu göstermesi gerekmez. 25 yıllık model güzergâhların göreli etkisini sınar; yaklaşık 1200 yıllık olayın tam kronolojisini ve gerçek su hacmini çözmez.</p>
 </section>
 
 <section id="sonuc" class="wrap">
@@ -446,7 +471,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
   <div class="oq">
     <div class="oq__q">2011–2021'in yaklaşık düz eğilimi sonraki yıllarda da görülüyor mu?</div>
-    <div class="oq__a">Güncel RAPID verisiyle ayrıca sınanmalı. Lee'nin 2021 yıllık değeri yeniden düşüşü de içerir; bir dönem eğilimi, her sonraki yılın aynı gittiği anlamına gelmez. Güncel dizi bu tur yeniden analiz edilmedi.</div>
+    <div class="oq__a">v2024.1a, Mart 2024'e kadar erişilebilir. Bu tur 2021–2023 tam takvim yılı basit ortalamaları hesaplandı; otokorelasyon, veri ikameleri ve sürüm farkları gözetilerek eğilim/anlamlılık testi yapılmadı. Lee'nin 2011–2021 sonucu sonraki döneme otomatik taşınamaz.</div>
   </div>
   <div class="oq">
     <div class="oq__q">Heinrich olaylarında AMOC ne kadar zayıfladı?</div>
@@ -454,14 +479,14 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
   <div class="oq">
     <div class="oq__q">Eriyik suyun Mackenzie güzergâhından aktığına dair saha kanıtı ne kadar güçlü?</div>
-    <div class="oq__a">Modern başlangıçlı model, aynı taşkın varsayımı altında güzergâhların göreli etkisini gösterir. Gerçek yol ve süre için jeolojik kanıt gerekir.</div>
+    <div class="oq__a">St. Lawrence ağzı jeokimyası doğu akışını, Beaufort kurşun izotopu ve kuzeybatı çıkışı jeomorfolojisi Mackenzie yönünü destekler. Ancak yaş modelleri, akış hacimleri ve bu yolların Genç Dryas başlangıcındaki göreli payı netleşmedi; model bunların yerine geçmez.</div>
   </div>
   <div class="oq">
     <div class="oq__q">Avrupa'da kaç derece soğuma?</div>
     <div class="oq__a">Basında 10–15 °C rakamı dolaşıyor. Hangi senaryoya, hangi modele ve hangi bölgeye ait olduğu belirtilmeden aktarıldığı için <b>bu dosyaya alınmadı.</b></div>
   </div>
 
-  <p class="note" style="margin-top:1.8rem"><b>4 Ekim 2026 denetiminin sınırı:</b> üç turda on AMOC kaydının seçilmiş kaynak pasajları kontrol edildi. Bradtmiller 2014, Caesar 2018 ve Chen–Boers 2024 için yalnız yayımlanan özet/abonelik önizlemesi okunabildi. Bütün makalelerin tam metni, ek veriler, kod, matematiksel yöntemler, medya örnekleri ve güncel RAPID dizisi doğrulanmış sayılmıyor. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı.</p>
+  <p class="note" style="margin-top:1.8rem"><b>4 Ekim 2026 denetiminin sınırı:</b> on AMOC kaydının seçilmiş kaynak pasajları kontrol edildi. RAPID v2024.1a ham ASCII dizisinde üç tam takvim yılı için basit ortalama çıkarıldı; eğilim, anlamlılık, sürüm farkının nedeni ve insan etkisi yeniden hesaplanmadı. Bradtmiller 2014, Caesar 2018, Chen–Boers 2024, Carlson 2007 ve Norris 2021 için yalnız yayımlanan özet/abonelik önizlemesi okunabildi. Bütün tam metinler, ek veriler, kod, matematiksel yöntemler, medya örnekleri ve karot yaş modelleri doğrulanmış sayılmıyor. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı.</p>
 </section>
 
 </main>

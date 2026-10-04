@@ -97,7 +97,7 @@
   {
     "schema_version": 2,
     "id": "amoc-olcum-suresi-iddiadan-kisa",
-    "claim": "RAPID’ın 26,5°K kesitindeki sürekli AMOC izleme dizisi 2004’te başladı; Worthington 2021’in aktardığı 60 yıl tahmini evrensel bir saptama eşiği değildir.",
+    "claim": "RAPID’ın 26,5°K AMOC izleme dizisi 2004’te başladı; 4 Ekim 2026’da resmî v2024.1a sürümü 27 Mart 2024’e kadardır. Bu süre, Worthington 2021’in aktardığı 60 yılı evrensel eşik yapmaz.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -109,7 +109,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "AMOC'un zayıfladığı ölçüldü.",
-    "divergence": "2004, bütün Atlantik’in her enlemde kesintisiz ölçülmesinin başlangıcı değildir; burada RAPID’ın 26,5°K kesiti kastedilir. Worthington §4, en az 60 yıllık dizi tahminini Baehr ve arkadaşları 2008’e atfeder; aynı bölüm derin yoğunluk bilgisinin gereken süreyi azaltabileceğini de aktarır. Bu iki pasaj birlikte, 60 yılın her veri ve yöntem için zorunlu eşik sayılmasını desteklemez. Güncel insan etkisinin payı bu tur hesaplanmadı; sabit 70 yıllık doğal saat veya bütün çalışmaların aynı veriyi kullandığı hükmü kurulmadı.",
+    "divergence": "RAPID’ın 26,5°K kesiti bütün Atlantik enlemleri değildir. 29 Ocak 2026 tarihli resmî v2024.1a kılavuzu 2 Nisan 2004–27 Mart 2024 kapsamını verir; 2026’ya kadar yayımlanmış eksiksiz gözlem dizisi değildir. Son beş gün 10 günlük filtre nedeniyle dosyada eksik değerdir. Derin doğu sınırı aletleri Şubat 2022’de çıkarıldığından aylık klimatoloji kullanılır; Kasım 2023’ten beri Florida kablo verisi yoktur, açıklar basınç ölçeri ve altimetriyle doldurulur. İkame, dizinin bütünüyle doğrudan ve boşluksuz sensör kaydı olarak anlatılmasını engeller. Worthington §4’ün Baehr 2008’den aktardığı 60 yıl tahmini veri ve yönteme özgüdür; güncel insan etkisinin payı burada hesaplanmadı.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -148,6 +148,23 @@
         "publisher": "Cambridge University Press",
         "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/",
         "note": "Bu tur Yönetici Özeti/Ocean Circulation, §9.2.3.1 ve FAQ 9.3 resmi HTML metninden okundu. Değerlendirme 2021 tarihlidir; 2026 literatürünün tamamı veya güncel ölçüm dizisi yeniden denetlenmedi."
+      },
+      {
+        "id": "rapid-v2024-1a-kilavuz",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "institutional",
+        "type": "report",
+        "authors": [
+          "Moat, Ben I.",
+          "Smeed, David A.",
+          "Rayner, Darren"
+        ],
+        "year": 2026,
+        "title": "RAPID-MOC time series April 2004 to March 2024 (v2024.1a), README",
+        "institution": "National Oceanography Centre / RAPID",
+        "url": "https://rapid.ac.uk/sites/default/files/rapid_data/README.pdf",
+        "note": "29 Ocak 2026 tarihli resmî kılavuzda s.1 sürüm ve DOI; s.2 değişiklik günlüğü, WB2/Florida kablosu/doğu sınırı ikameleri; s.5–6 ASCII sütunları, 10 günlük alçak geçiren filtre ve kapsama seçilmiş pasajları okundu."
       }
     ],
     "evidence": [
@@ -169,6 +186,17 @@
           {
             "source_ref": "worthington-2021-dusus-yok",
             "locator": "§4 Discussion, ilk paragraf; Baehr et al. (2008) atfı",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "rapid-2024-1a-kapsam",
+        "text": "RAPID’in 29 Ocak 2026 tarihli v2024.1a kılavuzu 26,5°K MOC dizisini 2 Nisan 2004–27 Mart 2024 olarak tanımlar; son beş gündeki filtre uçları ASCII dosyasında eksik işaretlidir.",
+        "citations": [
+          {
+            "source_ref": "rapid-v2024-1a-kilavuz",
+            "locator": "s. 1 sürüm ve tarih; s. 5–6 moc_transports kapsamı ve uç filtre açıklaması",
             "support_type": "direct"
           }
         ]
@@ -196,16 +224,27 @@
             "support_type": "context"
           }
         ]
+      },
+      {
+        "id": "rapid-ikame-sinir",
+        "text": "Resmî değişiklik günlüğü Şubat 2022 sonrası derin doğu sınırı için aylık klimatoloji, Kasım 2023 sonrası eksik Florida kablo verisi için basınç ölçeri ve altimetri ikamesi kullanıldığını bildirir.",
+        "citations": [
+          {
+            "source_ref": "rapid-v2024-1a-kilavuz",
+            "locator": "s. 2, September 2025 ve September 2024 değişiklikleri",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Güncel RAPID verisinin bitiş tarihi ve boşlukları nedir? Bu tur 2026’ya kadar eksiksiz bir ölçüm dizisi doğrulanmadı.",
+      "Mart 2024 sonrası bir RAPID sürümü yayımlandığında kapsama ve sensör ikameleri nasıl değişir?",
       "İnsan kaynaklı eğilimin payı, hangi enlem, veri, model ve saptama yöntemi altında hesaplanabilir?"
     ],
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "IPCC §9.2.3.1/FAQ 9.3 ve Worthington §4 ilk iki paragraf/§5 ile sınırlı. Baehr özgün metinleri ve Xing 2026 bu tur okunmadı; Xing atıfları bu dar yöntem kaydından çıkarıldı, başka kayıtlardaki sonuçları yanlışlanmış sayılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Resmî v2024.1a README s.1–2 ve s.5–6 seçilmiş pasajları okundu; ASCII bitişi ve eksik filtre uçları kontrol edildi. Güncel atıf/eğilim testi veya sensör düzeltmelerinin etkisi hesaplanmadı. Baehr özgün metinleri ve bağımsız uzman incelemesi yok."
     },
     "checked": "2026-10-04",
     "used_in": [
@@ -1447,7 +1486,7 @@
   {
     "schema_version": 2,
     "id": "genc-dryas-eriyik-su-guzergahi-tartismali",
-    "claim": "Condron–Winsor 2012’nin modern başlangıç koşullu, 25 yıllık modelinde St. Lawrence taşkını AMOC’u %14, Mackenzie güzergâhı koşulları %27–32 zayıflatır; deney hangi yolun gerçekten kullanıldığını kanıtlamaz.",
+    "claim": "St. Lawrence ve Mackenzie yolları için farklı saha vekilleri vardır; 2012 modelinde Mackenzie koşulu daha güçlü AMOC tepkisi verse de gerçek taşkının yolu, zamanı ve Genç Dryas nedenselliği tek çalışma ile kesinleşmez.",
     "status": "contested",
     "confidence": "medium",
     "topic": [
@@ -1471,7 +1510,7 @@
       ]
     },
     "popular_claim": "Agassiz Gölü'nün St. Lawrence'tan boşalması AMOC'u durdurdu ve Genç Dryas'ı başlattı.",
-    "divergence": "Model üç koşulu karşılaştırır: bir yıl 5 Sv tatlı su, modern okyanus başlangıcı ve 25 yıllık koşular. St. Lawrence için %14/14,6 Sv; Mackenzie için takımadalar açık %27/12,4 Sv ve kapalı %32/11,5 Sv bulunur. Bu deneyde St. Lawrence tatlı suyu derin su oluşum alanlarının yaklaşık 3000 km güneyindeki subtropikal döngüye taşınır. Ancak yazarlar derin su oluşum alanı daha güneye kaymış olsaydı doğu çıkışının etkisinin artabileceğini söyler. Jeolojik güzergâh kanıtı ve 1200 yıllık Genç Dryas’ın tüm mekanizması ayrı sorulardır. You 2026 geç Genç Dryas için ikinci tatlı su darbesini olası açıklama olarak önerir; aynı tartışma uygun eşiklerde tek zorlamayla uzun kapanmayı veren modelin de bulunduğunu belirtir. “Tek taşkın kesinlikle yetmez” ve “Mackenzie kullanıldı” sonuçları çıkarılamaz.",
+    "divergence": "Model üç koşulu karşılaştırır: bir yıl 5 Sv tatlı su, modern okyanus başlangıcı ve 25 yıllık koşular. St. Lawrence için %14/14,6 Sv; Mackenzie için takımadalar açık %27/12,4 Sv ve kapalı %32/11,5 Sv bulunur. Bu deneyde St. Lawrence tatlı suyu derin su oluşum alanlarının yaklaşık 3000 km güneyindeki subtropikal döngüye taşınır. Ancak yazarlar derin su oluşum alanı daha güneye kaymış olsaydı doğu çıkışının etkisinin artabileceğini söyler. Jeolojik güzergâh kanıtı ve 1200 yıllık Genç Dryas’ın tüm mekanizması ayrı sorulardır. You 2026 geç Genç Dryas için ikinci tatlı su darbesini olası açıklama olarak önerir; aynı tartışma uygun eşiklerde tek zorlamayla uzun kapanmayı veren modelin de bulunduğunu belirtir. “Tek taşkın kesinlikle yetmez” ve “Mackenzie kullanıldı” sonuçları çıkarılamaz. Saha kayıtları da tek yönlü değildir: Carlson 2007, St. Lawrence ağzı jeokimyasından erken Genç Dryas’ta batı Kanada kaynaklı akış yorumlar; +0,06 ± 0,02 Sv uzun dönemli taban deşarjı tahmini Condron–Winsor’un bir yıllık 5 Sv taşkın zorlamasıyla aynı deney/ölçü değildir. Süfke 2022, Beaufort Denizi Pb izotopundan Agassiz–Mackenzie yolunu geç Bølling–Allerød/Genç Dryas geçişine yerleştirir; büyük işaret kendi yaş modelinde Genç Dryas başlangıcından öncedir ve doğu yolunun payı açık kalır. Norris 2021 jeomorfolojik/hidrolik model kuzeybatı çıkışını 6–9 aylık taşkına elverişli bulur, fakat olayın tam başlangıçta olup olmadığını belirleyemez. Bu ayrı kayıtlar güzergâhı veya tek nedensel tetikleyiciyi kesinleştirmez.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -1513,6 +1552,73 @@
         "doi": "10.1126/sciadv.adv6220",
         "note": "Resmi PMC HTML’de Abstract, Introduction ve Discussion/mid-YD ile late-YD pasajları, Fig. 3–4 açıklamaları okundu. Ek tatlı su darbesi olası hipotezdir; tek zorlamalı kalıcı kapanma modelini de anıyor.",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12757042/"
+      },
+      {
+        "id": "carlson-2007-st-lawrence",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Carlson, Anders E.",
+          "Clark, Peter U.",
+          "Haley, Brian A.",
+          "Klinkhammer, Gary P.",
+          "Simmons, Kathleen",
+          "Brook, Edward J.",
+          "Meissner, Katrin J."
+        ],
+        "year": 2007,
+        "title": "Geochemical proxies of North American freshwater routing during the Younger Dryas cold event",
+        "container": "Proceedings of the National Academy of Sciences",
+        "volume": "104(16):6556–6561",
+        "doi": "10.1073/pnas.0611313104",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17420461/",
+        "note": "Resmî PubMed özeti okundu. St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekillerinden erken Genç Dryas batı Kanada akışı ve +0,06 ± 0,02 Sv taban deşarjı yazar yorumudur; ham karot, ek yöntem ve kesin iklim nedenselliği yeniden çözümlenmedi."
+      },
+      {
+        "id": "suefke-2022-mackenzie-pb",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Süfke, Finn",
+          "Gutjahr, Marcus",
+          "Keigwin, Lloyd D.",
+          "Reilly, Brendan",
+          "Giosan, Liviu",
+          "Lippold, Jörg"
+        ],
+        "year": 2022,
+        "title": "Arctic drainage of Laurentide Ice Sheet meltwater throughout the past 14,700 years",
+        "container": "Communications Earth & Environment",
+        "volume": "3:98",
+        "doi": "10.1038/s43247-022-00428-3",
+        "url": "https://www.nature.com/articles/s43247-022-00428-3",
+        "note": "Resmî açık tam metinde Introduction güzergâh çekinceleri, JPC-15/27 otijenik Pb tartışması/Fig. 4 ve sonuçların Fig. 5 bağlamı okundu. Yazarlar Agassiz–Mackenzie akışını geç Bølling–Allerød/Genç Dryas geçişine yerleştirir; ilk büyük işaret kendi yaş modelinde Genç Dryas başlangıcından önce gelir. St. Lawrence payı açık sorudur."
+      },
+      {
+        "id": "norris-2021-kuzeybati-cikis",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Norris, S. L.",
+          "Garcia-Castellanos, D.",
+          "Jansen, J. D.",
+          "Carling, P. A.",
+          "Margold, M.",
+          "Woywitka, R. J.",
+          "Froese, D. G."
+        ],
+        "year": 2021,
+        "title": "Catastrophic Drainage From the Northwestern Outlet of Glacial Lake Agassiz During the Younger Dryas",
+        "container": "Geophysical Research Letters",
+        "doi": "10.1029/2021GL093919",
+        "url": "https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2021GL093919",
+        "note": "Wiley resmî makale özeti okundu; jeomorfoloji/hidrolik iki model kuzeybatı çıkışından 6–9 ayda boşalmanın mümkün olduğunu, ama Genç Dryas başlangıcına denk gelip gelmediğinin belirsiz kaldığını söyler. Tam yöntem ve ek veri okunmadı."
       }
     ],
     "evidence": [
@@ -1567,6 +1673,39 @@
           {
             "source_ref": "you-2026-genc-dryas-tatlanma",
             "locator": "Abstract; Discussion, mid-YD rebound/late-YD freshwater; Fig. 3E–G ve Fig. 4",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "st-lawrence-jeokimya",
+        "text": "Carlson ve arkadaşlarının St. Lawrence ağzı foraminifer Mg/Ca, U/Ca ve 87Sr/86Sr vekilleri erken Genç Dryas’ta batı Kanada kaynaklı doğu akışını destekler; +0,06 ± 0,02 Sv taban deşarjı vekil/karışım modelinden çıkarılır.",
+        "citations": [
+          {
+            "source_ref": "carlson-2007-st-lawrence",
+            "locator": "PubMed Abstract, geochemical proxies ve freshwater flux cümleleri",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "mackenzie-pb-izotop",
+        "text": "Süfke ve arkadaşlarının JPC-15/27 otijenik Pb izotop kaydı Mackenzie yoluyla Agassiz kaynaklı su yorumunu destekler; en belirgin işaret kendi yaş modelinde Genç Dryas başlangıcından önce gelir.",
+        "citations": [
+          {
+            "source_ref": "suefke-2022-mackenzie-pb",
+            "locator": "Introduction, kuzeybatı/doğu kanıt çekincesi; Discussion, JPC-15/27 ve Fig. 4; Results/Fig. 5, 13.1–12.4 ka evresi",
+            "support_type": "claim-origin"
+          }
+        ]
+      },
+      {
+        "id": "kuzeybati-taskan-olasiligi",
+        "text": "Norris ve arkadaşlarının kuzeybatı çıkışı jeomorfoloji/hidrolik çalışması 6–9 aylık büyük boşalmayı mümkün bulur; olayın Genç Dryas’ın tam başlangıcında olup olmadığı belirsizdir.",
+        "citations": [
+          {
+            "source_ref": "norris-2021-kuzeybati-cikis",
+            "locator": "Wiley Abstract, discharge/volume and 6–9 month timing cümleleri",
             "support_type": "claim-origin"
           }
         ]
@@ -1638,15 +1777,32 @@
             "support_type": "counter"
           }
         ]
+      },
+      {
+        "id": "farkli-akis-buyuklukleri",
+        "text": "Carlson’ın +0,06 ± 0,02 Sv taban deşarjı vekil/karışım tahmini, Condron–Winsor’un bir yıllık 5 Sv idealize taşkın zorlamasıyla nicel bir gerçek-dünya senaryo eşlemesi değildir.",
+        "citations": [
+          {
+            "source_ref": "carlson-2007-st-lawrence",
+            "locator": "PubMed Abstract, 0.06 ± 0.02 Sv cümlesi",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "condron-winsor-2012-eriyik-su-yolu",
+            "locator": "Introduction, 5 Sv one-year idealized forcing; Methods",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Başlangıçtaki gerçek taşkın yolu ve süresi farklı jeolojik vekillerle ne kadar sınanabilir?",
-      "Buzul dönemi başlangıç koşulları ve çok daha uzun bağlaşık deneyler, güzergâhların göreli etkisini nasıl değiştirir?"
+      "St. Lawrence ve Mackenzie akışlarının Genç Dryas başlangıcındaki kesin kronolojisi ve göreli hacmi nedir?",
+      "Saha vekilleriyle uyumlu taşkın şiddeti ve buzul dönemi başlangıcı kullanıldığında AMOC tepkisi nasıl değişir?",
+      "Tatlı su akışı, AMOC değişimi ve iklim soğuması arasındaki nedensel sıralama hangi bağımsız kayıtlarla sınanabilir?"
     ],
     "review": {
       "status": "draft",
-      "notes": "Condron–Winsor ve You için seçilmiş resmi PMC tam metin pasajları okundu. Jeolojik provenans, alternatif başlangıç koşulları ve model kodu bağımsızca yeniden çözülmedi. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Condron–Winsor ve You seçilmiş PMC tam metin pasajları önceki turda; bu tur Carlson 2007 PubMed özeti, Süfke 2022 resmî açık tam metin seçilmiş Introduction/Discussion/Fig. 4–5, Norris 2021 Wiley özeti okundu. Karot yaş modelleri, ham ölçümler, Norris ekleri ve modellerin kodu bağımsızca yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
@@ -1668,7 +1824,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "AMOC 2004'ten beri kesintisiz zayıflıyor.",
-    "divergence": "Lee’nin verdiği yıllık değerler 2018’de toparlanma, 2021’de yeniden düşüş içerir. Makalenin 2011–2021 eğilimi yaklaşık düzken 2005–2021 eğilimi negatiftir; bir pencerenin sonucu bütün tarihlere taşınamaz. Doğal ve dışsal zorlanan bileşen ayrımı doğrudan ayrı ayrı ölçüm değil, model ve gözlemlerin birlikte yorumudur. 2000–2020’de −2,6/+1,0/net −1,6 Sv ile 2010–2020’de −1,3/+1,1 Sv değişimleri farklı karşılaştırmalardır; tek bir duraklama hesabı diye birleştirilmez. Artık 20→15 ifadesinin medya kökeni yalnız 2009 olarak varsayılmıyor.",
+    "divergence": "Lee’nin verdiği yıllık değerler 2018’de toparlanma, 2021’de yeniden düşüş içerir. Makalenin 2011–2021 eğilimi yaklaşık düzken 2005–2021 eğilimi negatiftir; bir pencerenin sonucu bütün tarihlere taşınamaz. Doğal ve dışsal zorlanan bileşen ayrımı doğrudan ayrı ayrı ölçüm değil, model ve gözlemlerin birlikte yorumudur. 2000–2020’de −2,6/+1,0/net −1,6 Sv ile 2010–2020’de −1,3/+1,1 Sv değişimleri farklı karşılaştırmalardır; tek bir duraklama hesabı diye birleştirilmez. Artık 20→15 ifadesinin medya kökeni yalnız 2009 olarak varsayılmıyor. Resmî RAPID v2024.1a ASCII dizisinin moc_mar_hc10 sütunundan tam takvim yılları için basit aritmetik ortalama 2021’de 15,9, 2022’de 15,2 ve 2023’te 16,0 Sv’dir. Bu hesap yeni bir eğilim veya insan etkisi testi değildir. Lee’nin 2021 için aktardığı 15,3 Sv değeri farklı sürüm/ortalama tanımıyla yeniden eşlenmedi; farkın kökeni burada belirlenmedi. Kılavuz 2023’te alet ve kablo ikameleri bildirir.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
@@ -1719,6 +1875,49 @@
         "doi": "10.1126/sciadv.adz7738",
         "note": "Bu tur resmi PMC HTML’de özet, Results’ın üç alt bölümü ve Discussion okundu. T26, tam RAPID AMOC ve yeniden hesaplanan batı/doğu katkıları ayrıldı. Dört enlemdeki yön tutarlılığı, üç enlemdeki anlamlılıkla eşitlenmedi. Kod ve ek malzemenin tamamı yeniden doğrulanmadı.",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13060603/"
+      },
+      {
+        "id": "rapid-v2024-1a-veri",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "primary",
+        "type": "dataset",
+        "authors": [
+          "Moat, Ben I.",
+          "Smeed, David A.",
+          "Rayner, Darren",
+          "Johns, William E.",
+          "Smith, Ryan",
+          "Volkov, Denis",
+          "Elipot, Shane",
+          "Petit, Tillys",
+          "Kajtar, Jules",
+          "Baringer, Molly O.",
+          "Collins, Julie"
+        ],
+        "year": 2026,
+        "title": "Atlantic meridional overturning circulation observed by the RAPID-MOCHA-WBTS array at 26N from 2004 to 2024 (v2024.1a)",
+        "container": "British Oceanographic Data Centre / NERC",
+        "doi": "10.5285/48d0bf43-0598-ceb2-e063-7086abc062f1",
+        "url": "https://rapid.ac.uk/node/10",
+        "note": "Resmî RAPID v2024.1a ASCII dosyası https://rapid.ac.uk/sites/default/files/rapid_data/moc_transports.ascii üzerinden 4 Ekim 2026’da okundu. SHA-256 847c169cba6b2461a2ca33870b7c06d6c9073ac389b333006abc6709437b08ac. README sütun 14 moc_mar_hc10; -99999 eksik değerleri atılıp 2021–2023 tam takvim yılları ikişer günlük örnek değil 12 saatlik örneklerle aritmetik ortalandı (her yıl 730 örnek). 2024 kısmi yıl; eğilim/anlamlılık testi yapılmadı."
+      },
+      {
+        "id": "rapid-v2024-1a-kilavuz",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "institutional",
+        "type": "report",
+        "authors": [
+          "Moat, Ben I.",
+          "Smeed, David A.",
+          "Rayner, Darren"
+        ],
+        "year": 2026,
+        "title": "RAPID-MOC time series April 2004 to March 2024 (v2024.1a), README",
+        "institution": "National Oceanography Centre / RAPID",
+        "url": "https://rapid.ac.uk/sites/default/files/rapid_data/README.pdf",
+        "note": "29 Ocak 2026 tarihli resmî kılavuzda s.1 sürüm ve DOI; s.2 değişiklik günlüğü, WB2/Florida kablosu/doğu sınırı ikameleri; s.5–6 ASCII sütunları, 10 günlük alçak geçiren filtre ve kapsama seçilmiş pasajları okundu."
       }
     ],
     "evidence": [
@@ -1763,6 +1962,22 @@
             "source_ref": "lee-2024-duraklama",
             "locator": "Results, Interdecadal variations of the AMOC components at 26.5°N; Fig. 1a–b",
             "support_type": "direct"
+          }
+        ]
+      },
+      {
+        "id": "rapid-2021-2023-takvim-ortalamalari",
+        "text": "RAPID v2024.1a ASCII moc_mar_hc10 sütununda -99999 eksikler çıkarılarak 12 saatlik, 10 günlük filtrelenmiş 730’ar örneğin basit tam takvim yılı ortalaması 2021: 15,9; 2022: 15,2; 2023: 16,0 Sv hesaplandı. Bu yayımlanmış ayrı bir trend analizi değildir.",
+        "citations": [
+          {
+            "source_ref": "rapid-v2024-1a-veri",
+            "locator": "moc_transports.ascii, sütun 14 moc_mar_hc10; YY sütun 2; 2021–2023 satırları; SHA-256 847c169c…9437b08ac",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "rapid-v2024-1a-kilavuz",
+            "locator": "s. 5–6, ASCII sütun sırası, 12 saatlik/10 günlük filtre ve eksik değer tanımı",
+            "support_type": "context"
           }
         ]
       }
@@ -1811,16 +2026,32 @@
             "support_type": "context"
           }
         ]
+      },
+      {
+        "id": "son-surum-karsilastirma-siniri",
+        "text": "Lee 2024’ün 2021 için verdiği 15,3 Sv ve yeni sürümden hesaplanan 15,9 Sv aynı yayın sürümü/yıllık pencere olarak doğrulanmadı. Yeni sürümde 2023 WB2 ve Florida kablosu ikameleri de vardır; basit yıllık ortalamadan eğilim anlamlılığı veya nedensel pay çıkarılmaz.",
+        "citations": [
+          {
+            "source_ref": "lee-2024-duraklama",
+            "locator": "Introduction, yıllık 2021 değeri; Methods, RAPID veri penceresi",
+            "support_type": "context"
+          },
+          {
+            "source_ref": "rapid-v2024-1a-kilavuz",
+            "locator": "s. 2 değişiklik günlüğü, September 2025; s. 5–6 veri yapısı",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "Duraklama veya yeniden düşüş 2021 sonrası hangi dönemlerde görülüyor? Güncel RAPID verisi bu tur yeniden analiz edilmedi.",
+      "v2024.1a için otokorelasyon ve sürüm revizyonları gözetilerek 2011–2023 eğiliminin belirsizliği nedir? Bu tur yalnız takvim yılı ortalamaları hesaplandı.",
       "Artık bileşende doğal değişkenlik ile model eksikliklerinin payı nasıl ayrılır?"
     ],
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Lee resmi HTML’de Introduction, Results/Fig. 1, Discussion’ın sınırlama paragrafları ve Methods/RAPID veri kapsamı okundu. Xing Fig. 2A pencere ve ölçü farkı için bağlam olarak kullanıldı. Yıllık değerler, kaybolmuş medya metninin kökenini belirlemez. Güncel veri, kod ve ek tablolar yeniden hesaplanmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Lee 2024’ün seçilmiş giriş/sonuç/yöntem pasajları önceki turda okundu. Bu tur RAPID v2024.1a resmî README ve ham ASCII sütun 14 okundu; SHA-256 sabitlendi, 2021–2023 tam takvim yılı basit ortalamaları Python ve Node ile eşleştirildi. Kablo/alet ikamelerinin sayısal etkisi, eğilim anlamlılığı, Lee 2021 farkı ve bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
