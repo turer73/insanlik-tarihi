@@ -193,12 +193,13 @@ Depo ikiye ayrılmıştır, çünkü tek lisans buraya oturmuyor:
 
 | Ne | Lisans | Nerede |
 |---|---|---|
-| **Kod** — `scripts/`, `tools/`, `schema/`, `assets/`, derleme yapılandırması | MIT | [`LICENSE`](LICENSE) |
-| **İçerik** — `articles/`, `data/`, proje belgeleri | CC BY 4.0 | [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) |
+| **Kod** — `scripts/`, `tools/`, `schema/`, `assets/`, derleme yapılandırması | AGPL-3.0-only | [`LICENSE`](LICENSE) |
+| **İçerik** — `articles/`, `data/`, proje belgeleri | CC BY-SA 4.0 | [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) |
 
-Gerekçe kısaca: bir derleme betiğini kullanmak için atıf gerekmiyor, ama bir
-iddiayı ve kaynak zincirini başka yere taşıyan birinin nereden aldığını
-söylemesi gerekiyor. Atıf şartı bu projenin savunduğu şeyin kendisidir.
+Gerekçe kısaca: iki lisans da alan kişiden aldığını ve değiştirdiğini aynı
+koşullarla açmasını ister. Kaynak zincirinin ileriye doğru da açık kalması bu
+projenin savunduğu şeyin kendisidir. 2026-10-04 öncesi sürümler MIT ve CC BY 4.0
+ile alınmıştır ve o lisanslarla kullanılmaya devam edebilir.
 
 Alıntılanan eserlerin kendi metinleri kendi telif sahiplerine aittir; bu depo
 onları yeniden yayımlamaz. Ayrıntı ve atıf biçimi için
