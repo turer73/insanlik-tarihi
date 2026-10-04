@@ -1103,7 +1103,7 @@
   {
     "schema_version": 2,
     "id": "amoc-gecmiste-zayifladi-durmadi",
-    "claim": "Bradtmiller 2014’ün yayımlanan özeti, Heinrich Stadial 1’de belirgin AMOC zayıflaması ama tümüyle durma olmadığını 231Pa/230Th vekilinden çıkarır; bu tek olay bütün geçmiş AMOC olayları için yokluk kanıtı değildir.",
+    "claim": "Bradtmiller 2014’ün yayımlanan özeti Heinrich Stadial 1’de belirgin zayıflama ama tümüyle durma olmadığı yorumunu verir; Ng 2018’in karot karşılaştırması batıdaki güçlü azalmaya karşın doğuda süren derin su taşınımı işareti bulur. Bu tek olay bütün geçmiş AMOC olayları için yokluk kanıtı değildir.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -1128,7 +1128,7 @@
       ]
     },
     "popular_claim": "AMOC geçmişte durdu ve dünyayı buzul çağına soktu.",
-    "divergence": "Bradtmiller’ın açık özeti Heinrich Stadial 1 için zayıflamış fakat süren devrilme yorumunu taşır; yerel parçacık etkisi tekil 231Pa/230Th kayıtlarını saptırabilir. Bu sonuç “geçmişte hiçbir durma olmadı” veya “gelecekte duramaz” hükmüne genişletilemez. You 2026’nın Genç Dryas için iki evreli zayıflama önerisi vekil kayıt ve model yorumudur. Fohlmeister 2023’ün dikit derlemesi atmosfer ve yağış göstergelerindeki geniş coğrafi deseni inceler, bütün kıtaların aynı sıcaklıkta değiştiğini ölçmez. He 2021’de yaklaşık 6 °C HS1 soğuması izotoplu model çıktısıdır; buz çekirdeği δ18O’sundaki eksik sinyali açıklayan bir hipotezdir.",
+    "divergence": "Bradtmiller’ın açık özeti Heinrich Stadial 1 için zayıflamış fakat süren devrilme yorumunu taşır. Ng 2018’in açık tam metninde batı ve derin kuzey Atlantik sahalarındaki yüksek 231Pa/230Th oranları güçlü azalmayla, doğudaki Sierra Leone Rise sahasında düşük kalan oran ise süren derin taşınımla ilişkilendirilir. Bu coğrafi ayrım her kesimde aynı akışın sürdüğü anlamına gelmez; yerel parçacık etkisi tekil kayıtları saptırabilir. Bu sonuç “geçmişte hiçbir durma olmadı” veya “gelecekte duramaz” hükmüne genişletilemez. You 2026’nın Genç Dryas için iki evreli zayıflama önerisi vekil kayıt ve model yorumudur. Fohlmeister 2023’ün dikit derlemesi atmosfer ve yağış göstergelerindeki geniş coğrafi deseni inceler, bütün kıtaların aynı sıcaklıkta değiştiğini ölçmez. He 2021’de yaklaşık 6 °C HS1 soğuması izotoplu model çıktısıdır; buz çekirdeği δ18O’sundaki eksik sinyali açıklayan bir hipotezdir.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -1151,6 +1151,30 @@
         "doi": "10.1038/ncomms6817",
         "note": "Nature Communications abonelik önizlemesindeki Abstract ve şekil başlıkları okundu; tam metin erişilebilir değildi. HS1 yorumu yerel parçacık etkisi çekincesiyle ve yalnız bu olay için verildi.",
         "url": "https://www.nature.com/articles/ncomms6817"
+      },
+      {
+        "id": "ng-2018-atlantik-dogu-bati",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ng, Hong Chin",
+          "Robinson, Laura F.",
+          "McManus, Jerry F.",
+          "Mohamed, Kais J.",
+          "Jacobel, Allison W.",
+          "Ivanovic, Ruza F.",
+          "Gregoire, Lauren J.",
+          "Chen, Tianyu"
+        ],
+        "year": 2018,
+        "title": "Coherent deglacial changes in western Atlantic Ocean circulation",
+        "container": "Nature Communications",
+        "volume": "9:2947",
+        "doi": "10.1038/s41467-018-05312-3",
+        "note": "Yayınevinin açık tam metninde Introduction, Results, Discussion ve Methods'in seçilmiş pasajları okundu. 33 kayıt derlendi, parçacık ilişkisi ve derinlik koşullarından sonra 13 kayıt ana yoruma alındı. Sierra Leone Rise yorumu tek bir doğu derin saha kaydıdır; ham veri, ek dosyalar ve yaş modelleri yeniden hesaplanmadı.",
+        "url": "https://www.nature.com/articles/s41467-018-05312-3"
       },
       {
         "id": "you-2026-genc-dryas-tatlanma",
@@ -1237,6 +1261,17 @@
         ]
       },
       {
+        "id": "hs1-dogu-bati-ayrimi",
+        "text": "Ng 2018 derlemesinde HS1 boyunca batı ve derin kuzey Atlantik karotlarında 231Pa/230Th üretim oranına yaklaşır veya onu aşar; doğudaki Sierra Leone Rise karotunda düşük kalır. Yazarlar genel AMOC zayıflamasına karşın doğu alçak enlemlerinde süren derin su taşınımı olabileceği sonucunu çıkarır.",
+        "citations": [
+          {
+            "source_ref": "ng-2018-atlantik-dogu-bati",
+            "locator": "Results, Coherent signal ve LGM-deglacial contrast; Fig. 2a,c; Discussion, son dört paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
         "id": "genc-dryas-suren",
         "text": "You ve arkadaşları Genç Dryas ortasında kısmi toparlanma, sonunda ikinci zayıflama yorumu sunar; bunun dayanağı vekil kayıtlar ve modeldir.",
         "citations": [
@@ -1294,6 +1329,17 @@
         ]
       },
       {
+        "id": "tek-saha-ve-parcacik-siniri",
+        "text": "Ng 2018, bütün 33 kayıt yerine parçacık etkisi ve derinlik seçiminin ardından 13 kaydı ana yorumda kullanır. Doğu Atlantik'te HS1 sırasında süren taşınım yorumu Sierra Leone Rise sahasıyla sınırlıdır; yazarlar doğu-batı farkı için daha çok yüksek çözünürlüklü karot ister. 231Pa/230Th mutlak AMOC gücünün doğrudan ölçümü değildir.",
+        "citations": [
+          {
+            "source_ref": "ng-2018-atlantik-dogu-bati",
+            "locator": "Introduction, 231Pa/230Th yöntemi ve 33 kayıt/13 kayıt seçimi; Discussion, Sierra Leone Rise ve gelecek çalışma ihtiyacı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
         "id": "gronland-izi",
         "text": "He’nin izotoplu modelinde kış deniz buzu genişlemesi kış yağışını azaltır; mevsimsel δ18O zenginleşmesi HS1 soğuma sinyalini dengeler.",
         "citations": [
@@ -1329,11 +1375,12 @@
     ],
     "open_questions": [
       "HS1 dışında farklı paleookyanus vekilleri AMOC’un tam durup durmadığı konusunda ne söyler?",
-      "231Pa/230Th’de yerel parçacık etkileri ve mekânsal örneklem nasıl ayrılır?"
+      "231Pa/230Th’de yerel parçacık etkileri ve mekânsal örneklem nasıl ayrılır?",
+      "Doğu Atlantik'teki ek yüksek çözünürlüklü karotlar, HS1 sırasındaki süren derin su taşınımı yorumunu destekler mi?"
     ],
     "review": {
       "status": "draft",
-      "notes": "Bradtmiller için yalnız yayımlanmış özet/şekil başlıkları; You, Fohlmeister ve He için seçilmiş resmi PMC tam metin pasajları okundu. “Hiç durmadı” evrensel hükmü geri çekildi. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Bradtmiller için yalnız yayımlanmış özet/şekil başlıkları; Ng için seçilmiş açık yayınevi tam metin bölümleri; You, Fohlmeister ve He için seçilmiş resmi PMC tam metin pasajları okundu. Ng'nin ek verileri ve yaş modelleri yeniden hesaplanmadı. “Hiç durmadı” evrensel hükmü geri çekildi. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
