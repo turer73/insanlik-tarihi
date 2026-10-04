@@ -788,7 +788,7 @@
   {
     "schema_version": 2,
     "id": "sumer-ur-nammu-tazminat",
-    "claim": "Bilinen en eski yasa derlemesi olan Ur-Nammu Yasaları bedensel zararlara tazminat öngörür; misilleme ilkesi ('göze göz') daha sonra gelir.",
+    "claim": "Ur-Nammu Yasaları göz yaralanması için gümüş ödeme öngörür; derlemede ölüm cezaları da bulunduğundan bütün cezalar tazminat değildir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -797,7 +797,7 @@
       "ur-nammu"
     ],
     "subject": {
-      "site": "Nippur ve Ur tabletleri",
+      "site": "Ur-Nammu yasa nüshaları; Nippur tableti Ni 3191",
       "region": "Güney Mezopotamya",
       "modern_country": "Irak",
       "coordinates": {
@@ -807,11 +807,10 @@
     },
     "period": {
       "earliest": -2100,
-      "latest": -2050,
-      "era_label": "Ur III",
+      "latest": -2000,
+      "era_label": "Ur III metin geleneği; Ni 3191 nüshası Eski Babil döneminden",
       "precision": "approximate",
       "dating_method": [
-        "paleography",
         "textual"
       ]
     },
@@ -827,45 +826,50 @@
       {
         "name": "Kramer, Samuel Noah",
         "role": "editor",
-        "affiliation": "University of Pennsylvania",
-        "year": 1952,
-        "lifespan": "1897-1990"
+        "year": 1954
       },
       {
-        "name": "Kraus, F. R.",
-        "role": "excavator",
-        "affiliation": "İstanbul Arkeoloji Müzeleri",
-        "year": 1952
+        "name": "Molina, Manuel",
+        "role": "analyst",
+        "year": 2026
       }
     ],
     "popular_claim": "En eski hukuk 'göze göz, dişe diş' ilkesine dayanıyordu ve zamanla yumuşadı.",
-    "divergence": "Tam tersi. Daha eski olan Ur-Nammu gümüş tazminat öngörür; misilleme ilkesi ~300 yıl SONRAKİ Hammurabi'de belirir. Hukuk tarihinin 'sertten yumuşağa' doğru ilerlediği varsayımı bu örnekte tutmuyor. AMA ELDEKİ METİN ÇOK KÜÇÜK: nüshanın korunma durumu yüzünden yalnızca uzun önsöz ve BEŞ madde okunabilmiştir. Yani 'derleme tazminat esaslıdır' hükmü beş maddeden çıkarılan bir genellemedir.",
+    "divergence": "Göz yaralanmasındaki gümüş ödeme bütün derlemeyi yumuşak veya yalnız tazminat esaslı yapmaz. Hammurabi’de de yaptırım statüye göre değişir; bu karşılaştırma misillemenin tarihte ilk kez ne zaman ortaya çıktığını belirlemez. Eski beş madde sınırı bugünkü metin için geçerli değildir.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
     ],
     "sources": [
       {
-        "id": "kramer-1952-ur-nammu-yasalari",
-        "tier": "primary",
-        "type": "edition",
-        "authors": [
-          "Kramer, Samuel Noah"
-        ],
-        "year": 1952,
-        "title": "Ur-Nammu Yasaları: Nippur tableti (Ni 3191) ilk yayını",
-        "language": "en",
-        "note": "Bilinen ilk nüshanın yayını. Tableti, İstanbul Arkeoloji Müzeleri'nde kurator olan F. R. Kraus iki parçayı birleştirerek tanımlamış ve Nippur koleksiyonunda 3191 numarayla kaydetmiştir; Kramer bunu Kraus'un mektubuyla öğrenip incelemiştir. Korunma durumu kötü olduğu için yalnızca uzun önsöz ve BEŞ madde okunabilmiştir."
-      },
-      {
-        "id": "istanbul-arkeoloji-nippur-ni3191",
+        "id": "schoyen-ms2064-ur-nammu",
         "tier": "institutional",
         "type": "database",
-        "title": "Nippur koleksiyonu, Ni 3191 - Ur-Nammu Yasaları tableti",
-        "institution": "İstanbul Arkeoloji Müzeleri, Çivi Yazılı Belgeler Arşivi",
-        "publisher": "İstanbul Arkeoloji Müzeleri",
-        "language": "tr",
-        "note": "Nesnenin bulunduğu kurum. Tablet açık kahverengi, yaklaşık 20x10 cm. BU KAYITTAKİ TÜRKÇE KURUM KAYNAĞI ZORLAMA DEĞİL: metnin bilinen ilk nüshası fiilen İstanbul'dadır ve tanımlanması da orada yapılmıştır. Kurumun çevrimiçi nesne kaydı bu turda DOĞRULANMADI; künye ikincil aktarımlara dayanıyor."
+        "title": "MS 2064: The Ur-Nammu Law Code",
+        "institution": "The Schøyen Collection",
+        "url": "https://www.schoyencollection.com/law/sumerian/ur-nammu-ms-2064",
+        "language": "en",
+        "note": "Yalnız katalog Description, Context, Commentary ve Published alanları okundu. Göz yaralanması için yarım mina gümüş örneği kullanıldı. Kataloğun Hammurabi’yi toptan acımasız sayan yorumu ve eski madde sayısı benimsenmedi; Civil 2011 tam edisyonu okunmadı."
+      },
+      {
+        "id": "cdli-ni3191-p226580",
+        "tier": "institutional",
+        "type": "database",
+        "title": "RIME 3/2.01.01.20, ex. 01 (P226580)",
+        "institution": "Cuneiform Digital Library Initiative",
+        "url": "https://cdli.earth/artifacts/226580",
+        "language": "en",
+        "note": "Museum Number, Period, Provenience, Language(s) ve References alanları okundu: Ist Ni 03191, Nippur, Sümerce, Eski Babil nüshası. Özgün tablet bağımsız okunmadı; İstanbul müzesinin kendi güncel kondisyon raporu görülmedi."
+      },
+      {
+        "id": "cdli-kramer-1954-kunye",
+        "tier": "institutional",
+        "type": "database",
+        "title": "Ur-Nammu Law Code: Kramer 1954 bibliyografik kaydı",
+        "institution": "Cuneiform Digital Library Initiative",
+        "url": "https://cdli.earth/publications/1669158",
+        "language": "en",
+        "note": "CDLI künyesi Orientalia NS 23(1), 1954, s. 40–51 verir. Bu kaynak yayının bibliyografik kimliğidir; Kramer’in tam makalesi veya Kraus mektubu okunmuş sayılmaz."
       },
       {
         "id": "molina-2026-ur-namma-hukuk-pratigi",
@@ -881,45 +885,80 @@
         "pages": "265-340",
         "doi": "10.13173/9783447124522.265",
         "language": "en",
-        "note": "Yasa maddelerini Ur III mahkeme kayıtlarıyla tek tek karşılaştıran güncel inceleme; 400'den fazla hukuk pratiği metnini tarıyor. Metnin bugünkü korunma durumu ve \"kod\" adlandırmasının tartışmalı oluşu için dayanak. Açık erişim (CC BY-SA)."
+        "note": "Yayıncı açık erişim PDF’sinde seçilmiş s. 265–269 okundu; s. 266 (PDF 279) görselden de kontrol edildi. Civil/Wilcke edisyonları yazar üzerinden aktarılır; özgün edisyonlar ve 400’den fazla hukuk belgesi tek tek yeniden incelenmedi.",
+        "url": "https://www.harrassowitz-verlag.de/ddo/artikel/90366/978-3-447-12452-2_Free%20Open%20Access%20Download.pdf#page=278"
+      },
+      {
+        "id": "louvre-hammurabi-kod-aciklamasi",
+        "tier": "institutional",
+        "type": "webpage",
+        "title": "Le Code de Hammurabi",
+        "institution": "Musée du Louvre",
+        "url": "https://www.louvre.fr/le-code-de-hammurabi",
+        "language": "fr",
+        "note": "A monument du droit ancien ve Hammurabi, puissant souverain bölümleri; yaklaşık MÖ 1750 tarihi ve §196’nın aynı statü koşulu okundu. Misillemenin tarihsel başlangıcını kanıtlayan bir tarama değildir."
+      },
+      {
+        "id": "yale-avalon-hammurabi-ceviri",
+        "tier": "primary",
+        "type": "edition",
+        "title": "Code of Hammurabi: L. W. King translation",
+        "authors": [
+          "King, L. W."
+        ],
+        "institution": "Yale Law School, Avalon Project",
+        "url": "https://avalon.law.yale.edu/ancient/hamcode.asp",
+        "language": "en",
+        "note": "Yalnız §§196–201 İngilizce çevirisi okundu. Eski çevirinin statü terimleri ve altın/para karşılıkları modern edisyonlarla doğrulanmadığından metal veya modern sınıf eşlemesi çıkarılmadı. Stelin kendisi yeniden okunmadı."
       }
     ],
     "evidence": [
       {
         "id": "gumus-tazminat",
-        "text": "Maddeler bedensel zarar için gümüş tartılarak ödenen tazminat belirler.",
+        "text": "MS 2064 katalog açıklaması, bir başkasının gözünü çıkarma için yarım mina gümüş ödemeyi aktarır.",
         "citations": [
           {
-            "source_ref": "kramer-1952-ur-nammu-yasalari",
-            "locator": "Okunabilen maddeler",
-            "support_type": "direct"
-          },
-          {
-            "source_ref": "molina-2026-ur-namma-hukuk-pratigi",
-            "locator": "s. 268 — \"mostly punishable by fines, compensation for damage or loss\"",
+            "source_ref": "schoyen-ms2064-ur-nammu",
+            "locator": "MS 2064, Commentary: göz yaralanması örneği",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "ni3191-istanbulda",
-        "text": "Metin 1952'de Nippur tabletinden yayımlandı; tablet İstanbul Arkeoloji Müzeleri'nin Nippur koleksiyonunda Ni 3191 numarasıyla kayıtlıdır.",
+        "text": "CDLI, Nippur’dan Sümerce Ni 3191’i İstanbul Arkeoloji Müzeleri koleksiyonunda bir Eski Babil nüshası olarak kaydeder.",
         "citations": [
           {
-            "source_ref": "istanbul-arkeoloji-nippur-ni3191",
-            "locator": "Nesne kaydı",
+            "source_ref": "cdli-ni3191-p226580",
+            "locator": "P226580, Museum Number / Period / Provenience / Language(s) alanları",
             "support_type": "direct"
           }
         ]
       },
       {
-        "id": "kraus-birlestirmesi",
-        "text": "Tableti, müzede kurator olan F. R. Kraus iki parçayı birleştirerek tanımlamış; Kramer bunu Kraus'un mektubuyla öğrenip incelemiştir.",
+        "id": "kramer-1954-yayin",
+        "text": "Ni 3191’in bilimsel yayın künyesi Kramer 1954, Orientalia NS 23(1), s. 40–51’dir; 1952 ilk yayın tarihi olarak kullanılmadı.",
         "citations": [
           {
-            "source_ref": "kramer-1952-ur-nammu-yasalari",
-            "locator": "Yayının buluntu tarihçesi",
+            "source_ref": "cdli-kramer-1954-kunye",
+            "locator": "Cite this Publication: Kramer1954OrNS23",
             "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "hammurabi-karsilastirmasi",
+        "text": "Yaklaşık MÖ 1750 tarihli Hammurabi §196 aynı statüde göz misillemesi içerir; §§198–199 farklı statüde ödeme düzenler.",
+        "citations": [
+          {
+            "source_ref": "louvre-hammurabi-kod-aciklamasi",
+            "locator": "A monument du droit ancien; Hammurabi, puissant souverain: §196",
+            "support_type": "direct"
+          },
+          {
+            "source_ref": "yale-avalon-hammurabi-ceviri",
+            "locator": "§§196–201",
+            "support_type": "direct"
           }
         ]
       }
@@ -927,71 +966,77 @@
     "counter_evidence": [
       {
         "id": "yalnizca-bes-madde",
-        "text": "Kramer'in 1952'de yayımladığı Nippur tabletinden yalnızca uzun önsöz ve BEŞ madde okunabilmişti. Metin o tarihten sonra büyük ölçüde yeniden kuruldu: bugün 96 madde korunmuş durumda, altısı parçalı olduğu için anlaşılmıyor.",
+        "text": "Molina 2026, 96 korunmuş madde ve parçalı durum nedeniyle anlaşılamayan altı madde bildirir; beş madde bugünkü sınır değildir.",
         "citations": [
           {
-            "source_ref": "kramer-1952-ur-nammu-yasalari",
-            "locator": "1952 yayınında okunabilen kısım",
-            "support_type": "counter"
-          },
-          {
             "source_ref": "molina-2026-ur-namma-hukuk-pratigi",
-            "locator": "s. 266 — \"In all, 96 laws are currently preserved\"",
+            "locator": "s. 266, Introduction; dipnot 3–8",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "ur-nammu-mu-sulgi-mi",
-        "text": "Yasanın Ur-Nammu'ya mı oğlu Şulgi'ye mi ait olduğu kesin değildir.",
+        "id": "olum-cezasi-da-var",
+        "text": "Molina’nın dökümünde öldürme (§1) ve yağma (§2) için ölüm cezası vardır; gümüş ödeme bütün suçlara genellenemez.",
         "citations": [
           {
-            "source_ref": "kramer-1952-ur-nammu-yasalari",
-            "locator": "Atıf tartışması",
+            "source_ref": "molina-2026-ur-namma-hukuk-pratigi",
+            "locator": "s. 268, §2.1 Crimes and offences; s. 269, §2.1.4 Robbery",
             "support_type": "counter"
           }
         ]
       },
       {
         "id": "uygulanan-hukuk-mu",
-        "text": "Bu metinlerin fiilen uygulanan hukuk mu yoksa ideal bir derleme mi olduğu genel olarak tartışmalıdır.",
+        "text": "Modern anlamda kanun kitabı ile tarihsel hukuk pratiği aynı şey değildir; Molina bu ilişkiyi ayrıca inceler.",
         "citations": [
           {
             "source_ref": "molina-2026-ur-namma-hukuk-pratigi",
-            "locator": "s. 266 — metnin \"kod\" olarak adlandırılmasının tartışmalı oluşu",
-            "support_type": "counter"
+            "locator": "s. 266–267, Introduction",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "yasada-ayrintili-duzenlenen-bedensel-zarar-ur-iii-mahkeme-kayitlarinda-yok",
-        "text": "Yasa bedensel zararı ayrıntılı biçimde düzenlese de Ur III mahkeme kayıtlarında bu türden tek bir dava yoktur; yasanın öngördüğü ile uygulandığı görülen arasında fark vardır.",
+        "text": "Molina, incelediği hukuk pratiği külliyatında bu yaralanma türlerine ilişkin dava bulunmadığını belirtir. Bu, yaralanmaların yaşanmadığını göstermez.",
         "citations": [
           {
             "source_ref": "molina-2026-ur-namma-hukuk-pratigi",
-            "locator": "§ 2.1.3 Injuries — \"no cases dealing with this type of offence are represented\"",
+            "locator": "s. 267, külliyat tanımı; s. 269, §2.1.3 Injuries",
             "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "sonraki-nushalar",
+        "text": "Molina metnin Geç Ur III ve Eski Babil kopyalarıyla aktarıldığını belirtir; bu nüshalar özgün metinle özdeş kabul edilmedi.",
+        "citations": [
+          {
+            "source_ref": "molina-2026-ur-namma-hukuk-pratigi",
+            "locator": "s. 266, Introduction",
+            "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Beş maddeden derlemenin bütününe genelleme ne kadar güvenli?",
-      "Ni 3191'in müze kaydı ve güncel durumu nedir? Kurumun çevrimiçi kataloğu taranmalı."
+      "Korunmuş nüshalardaki hangi hükümler başlangıç metnine, hangileri sonraki eklemelere aittir?",
+      "Ni 3191’in kurum tarafından yayımlanmış güncel kondisyon ve konservasyon kaydı var mı?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Tabletin İstanbul Arkeoloji Müzeleri'nde olduğu ve Kraus tarafından tanımlandığı eklendi - kayıt bunu hiç söylemiyordu. 'Yalnızca beş madde okunabildi' sınırı da eklendi; iddianın dayanağı bu kadar dardı ve kayıt bunu göstermiyordu. Hammurabi karşılaştırması bu kayıtta AYRI BİR KAYNAKLA desteklenmiyor; Hammurabi Yasaları'nın misilleme öngördüğü genel bilgi olarak alınmıştır. İstanbul Arkeoloji Müzeleri'nin çevrimiçi nesne kaydı bu turda DOĞRULANMADI; Ni 3191 künyesi ikincil aktarımlara dayanıyor."
+      "notes": "Seçilmiş katalog alanları, Molina s. 265–269 ve Hammurabi §§196–201 karşılaştırıldı. İddia göz yaralanması hükmüne daraltıldı; established/high bu sınırlı metin içeriğine aittir, bütün hukuk pratiğine veya ilk misilleme tarihine değil. Yanlış 1952 yayın künyesi, Kraus’un kazıcı rolü ve okunmamış Kramer edisyonuna atıflar kaldırıldı. Şulgi alternatifine eski belirsiz atıf da kaldırıldı; metnin kökeni ile kopya tarihi ayrıldı. Ni 3191 için CDLI katalog kaydı müzenin kendi kondisyon raporu değildir. Özgün tabletler, Civil 2011 ve Wilcke 2014 edisyonları yeniden okunmadı; bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
     "schema_version": 2,
     "id": "sumer-kral-listesi-tarihsel-degil",
-    "claim": "Sümer Kral Listesi tarihsel bir kayıt değil, tek ve devredilen krallık fikrini savunan siyasi bir meşruiyet belgesidir.",
+    "claim": "Sümer Kral Listesi tarihsel bilgi ile krallık meşruiyeti anlatısını birleştirir; hanedan sırası ve saltanat süreleri doğrudan kesintisiz bir takvim olarak okunamaz.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -1005,13 +1050,10 @@
       "modern_country": "Irak"
     },
     "period": {
-      "earliest": -1900,
-      "latest": -1700,
-      "era_label": "Eski Babil (nüshalar)",
-      "precision": "approximate",
-      "dating_method": [
-        "paleography"
-      ]
+      "earliest": -1800,
+      "latest": -1800,
+      "era_label": "WB 444 / AN1923.444 nüshası; yaklaşık MÖ 1800",
+      "precision": "approximate"
     },
     "languages": [
       "Sümerce"
@@ -1028,7 +1070,7 @@
       }
     ],
     "popular_claim": "Sümer Kral Listesi tufan öncesinde on binlerce yıl süren saltanatlar kaydeder.",
-    "divergence": "Liste eşzamanlı hanedanları ardışıkmış gibi sıralar ve tufan öncesi saltanatlara sembolik rakamlar verir. Takvim olarak kullanılamaz; türü yanlış anlaşılıyor. Belge bir kronoloji değil, BİR TEZ savunuyor: krallık tektir ve sırayla şehirden şehre geçer.",
+    "divergence": "On binlerce yıllık saltanatların metinde yazılması, bu sürelerin gerçek tarih olduğunu doğrulamaz. Tek krallığın şehirler arasında devri anlatısı eşzamanlı hanedanları ardışık gösterir. Bununla birlikte liste tarihsel bilgi de taşır; tümünü tarih dışı saymak aşırı bir hükümdür.",
     "divergence_type": [
       "kategori-hatasi",
       "ideolojik-secim"
@@ -1045,59 +1087,79 @@
         "title": "The Sumerian King List",
         "publisher": "Oriental Institute, University of Chicago",
         "language": "en",
-        "note": "Listenin editio princeps'i; hâlâ standart edisyon. Seri numarası (Assyriological Studies 11 olarak anılır) bu turda TEYİT EDİLMEDİ, bu yüzden yazılmadı."
+        "note": "Seçilmiş s. 1–3, 139, 165–167 okundu; s. 165 (PDF 181) görselden de kontrol edildi. 1939 edisyonu ilk yayın değildir: s. 1 daha erken yayınları listeler. Tarihsel kaynak değerine dair ayrım kullanıldı; kitabın bütün kronoloji rekonstrüksiyonu güncel uzlaşı sayılmadı.",
+        "container": "Assyriological Studies 11",
+        "pages": "xvi + 216",
+        "doi": "10.83354/58x4-jk87",
+        "url": "https://isac.uchicago.edu/publications/sumerian-king-list"
       },
       {
         "id": "weld-blundell-prizmasi-wb444",
+        "tier": "institutional",
+        "type": "database",
+        "title": "Sumerian King List: AN1923.444 / Weld-Blundell prism",
+        "institution": "Ashmolean Museum, University of Oxford",
+        "url": "https://www.ashmolean.org/sumerian-king-list",
+        "language": "en",
+        "note": "Nesne kimliği, yaklaşık MÖ 1800 tarihi, dört yüz/iki sütun, Sin-magir bitişi ve müzenin mit–efsane–tarihsel bilgi ayrımı okundu. Kurum açıklamasıdır; prizmanın bağımsız yeni edisyonu değildir."
+      },
+      {
+        "id": "oxford-etcsl-kral-listesi-211",
         "tier": "primary",
-        "type": "inscription",
-        "title": "Weld-Blundell Prizması (WB 444)",
-        "institution": "Ashmolean Museum, Oxford",
-        "language": "sux",
-        "note": "Kral Listesi'nin en tam nüshası: dört yüzlü, yaklaşık 20x9 cm, her yüzde iki sütun. Tufan öncesi hükümdarlarla başlar, İsin hanedanından Suen-magir ile biter. Yaklaşık 25 kadar başka nüsha/parça daha bilinir."
+        "type": "edition",
+        "title": "The Sumerian king list: translation (ETCSL 2.1.1)",
+        "institution": "University of Oxford, Electronic Text Corpus of Sumerian Literature",
+        "url": "https://etcsl.orinst.ox.ac.uk/section2/tr211.htm",
+        "language": "en",
+        "note": "Editoryal giriş ve seçilmiş satır 1–39, 40–94, 341–377 okundu. Nüsha varyantları içeren bileşik İngilizce çeviridir; bütün satırlar tek WB 444 prizmasına ait değildir. Açıkça belirtilmeyen sayılar WB tanığından alınır. Özgün Sümerce tabletler yeniden okunmadı."
       }
     ],
     "evidence": [
       {
         "id": "tek-krallik-tezi",
-        "text": "Metnin tezi açık: krallık tektir ve sırayla şehirden şehre geçer.",
+        "text": "ETCSL satır 1–39 krallığın gökten inmesini ve şehirler arasında devrini anlatır; tek krallık yorumu Jacobsen ve Ashmolean tarafından açıklanır.",
         "citations": [
           {
-            "source_ref": "weld-blundell-prizmasi-wb444",
-            "locator": "Metnin yapısı ve geçiş formülleri",
+            "source_ref": "oxford-etcsl-kral-listesi-211",
+            "locator": "ETCSL 2.1.1, satır 1–39",
             "support_type": "direct"
+          },
+          {
+            "source_ref": "jacobsen-1939-sumerian-king-list",
+            "locator": "s. 139, Basic Ideas in the King List",
+            "support_type": "context"
           }
         ]
       },
       {
         "id": "eszamanli-hanedanlar-ardisik",
-        "text": "Bağımsız kaynaklardan eşzamanlı oldukları bilinen hanedanlar listede ardışık gösterilir.",
+        "text": "Jacobsen, hanedanları ardışık düzenlemenin eşzamanlılıkları bozduğunu tarihsel kaynak değeri tartışmasında açıklar.",
         "citations": [
           {
             "source_ref": "jacobsen-1939-sumerian-king-list",
-            "locator": "Giriş çözümlemesi",
+            "locator": "s. 2–3; s. 165, Relative Values of Features in the King List",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "tufan-oncesi-saltanatlar",
-        "text": "Tufan öncesi saltanat süreleri on binlerce yıla ulaşır.",
+        "text": "ETCSL satır 1–39 Alulim için 28.800 yıl verir. Bu, metindeki rakamdır; gerçek saltanat süresinin bağımsız doğrulaması değildir.",
         "citations": [
           {
-            "source_ref": "weld-blundell-prizmasi-wb444",
-            "locator": "Tufan öncesi hükümdarlar bölümü",
+            "source_ref": "oxford-etcsl-kral-listesi-211",
+            "locator": "ETCSL 2.1.1, satır 1–39",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "isin-hanedaninda-bitiyor",
-        "text": "Prizma tufan öncesi hükümdarlarla başlar ve İsin hanedanından Suen-magir ile biter - yani anlatı, yazıldığı dönemin hanedanına kadar getirilir.",
+        "text": "Ashmolean AN1923.444 yaklaşık MÖ 1800’e tarihlenir ve İsin kralı Sin-magir ile biter; müze bunu İsin’in meşruiyet anlatısıyla ilişkilendirir.",
         "citations": [
           {
             "source_ref": "weld-blundell-prizmasi-wb444",
-            "locator": "Metnin başı ve sonu",
+            "locator": "AN1923.444, açıklama paragrafı 3 ve nesne tarih alanı",
             "support_type": "direct"
           }
         ]
@@ -1106,38 +1168,43 @@
     "counter_evidence": [
       {
         "id": "tamamen-tarihsel-degil-degil",
-        "text": "'Tarihsel değil' fazla keskin olabilir: liste geç dönem hanedanlar için bağımsız kaynaklarla örtüşen bilgi de taşır. Sorun türünün kronoloji sanılmasıdır, içinde hiç tarihsel bilgi olmaması değil.",
+        "text": "Ashmolean listeyi mit, efsane ve tarihsel bilginin birleşimi olarak tanımlar. Jacobsen de hanedan düzeni ile kaynak malzemesinin değerini ayırır.",
         "citations": [
           {
+            "source_ref": "weld-blundell-prizmasi-wb444",
+            "locator": "AN1923.444, açıklama paragrafı 2–3",
+            "support_type": "counter"
+          },
+          {
             "source_ref": "jacobsen-1939-sumerian-king-list",
-            "locator": "Kaynak değeri tartışması",
+            "locator": "s. 165–167, Historical Value",
             "support_type": "counter"
           }
         ]
       },
       {
-        "id": "yirmi-bes-nusha",
-        "text": "WB 444 en tam nüshadır ama tek nüsha değildir; yaklaşık 25 kadar başka nüsha ve parça bilinir ve aralarında farklar vardır.",
+        "id": "nusha-varyantlari",
+        "text": "ETCSL bileşik metninde farklı süreler ve P5’te Sin-magir’den sonra Damiq-ilisu eklemesi vardır. Bir nüshanın bitişi bütün metin geleneğinin bitişi değildir.",
         "citations": [
           {
-            "source_ref": "weld-blundell-prizmasi-wb444",
-            "locator": "Nüsha durumu",
+            "source_ref": "oxford-etcsl-kral-listesi-211",
+            "locator": "ETCSL 2.1.1, editoryal giriş; satır 40–94 ve 355–377",
             "support_type": "context"
           }
         ]
       }
     ],
     "open_questions": [
-      "Nüshalar arası farklar 'tek krallık' tezini ne kadar tutarlı taşıyor?",
-      "1939'dan sonraki yayınlar Jacobsen'in çözümlemesini değiştirdi mi?"
+      "Hanedanlar için hangi eşzamanlılıklar çağdaş yazıtlarla ayrıca doğrulanabilir?",
+      "Yeni yayımlanan nüshalar 1939 edisyonunun hangi metin ve kronoloji önerilerini değiştiriyor?"
     ],
-    "checked": "2026-09-09",
+    "checked": "2026-10-04",
     "used_in": [
       "sumer"
     ],
     "review": {
       "status": "draft",
-      "notes": "Yer tutucu yerine Jacobsen 1939 ve WB 444 künyelendi. Boş counter_evidence dolduruldu; 'tarihsel değil' ifadesinin fazla keskin olabileceği eklendi. Jacobsen'in edisyonu 1939 tarihlidir; sonraki seksen yılda yayımlanan nüshalar bu kayıtta taranmadı."
+      "notes": "İddia tarihsel bilgi yokluğu hükmünden kaynak türü ve kronoloji sınırına daraltıldı; established/high yalnız bu ayrımı kapsar. Jacobsen’in seri, DOI ve yayın kimliği doğrulandı; editio princeps iddiası kaldırıldı. Ashmolean nesne açıklaması ile ETCSL bileşik çevirisi ayrı tanıklar olarak gösterildi. Kaynaksız yaklaşık 25 nüsha sayısı ve rakamların belirli sembolik anlamı olduğu hükmü kaldırıldı. Yalnız seçilmiş pasajlar okundu; sonraki bütün araştırmalar, nüshalar ve özgün tabletler karşılaştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     }
   },
   {
