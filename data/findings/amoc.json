@@ -956,7 +956,7 @@
         "container": "Nature Climate Change",
         "volume": "14:43-47",
         "doi": "10.1038/s41558-023-01878-z",
-        "note": "Nature Climate Change abonelik önizlemesindeki ilk üç yanıt paragrafı okundu. Boers, işaretin istikrar analizini etkilemediğini, karşı tarafın kapsam testini hatalı bulduğunu ve göstergelerin değişen kapsama karşı dayanıklı olduğunu savunur; bunlar yazarın iddiasıdır, tam metin ve kod yeniden incelenmedi.",
+        "note": "Nature Climate Change abonelik önizlemesi, Springer'in ResearchGate'deki ilk sayfa önizlemesi ve Şekil 1 açıklaması okundu. Boers, altkutup tuzluluk vekillerinin eksi işaret gerekçesini belirsiz bulurken işaret çevirmenin CSD göstergelerini değiştirmediğini savunur. Chen–Tung'un kapsam testini hatalı sayar; EN4 varyans artışı için boşluk doldurma çekincesi koyar. Tam metin açılamadı; açık kod yeniden çalıştırılmadı.",
         "url": "https://www.nature.com/articles/s41558-023-01878-z"
       },
       {
@@ -1078,11 +1078,11 @@
       },
       {
         "id": "boers-yaniti",
-        "text": "Boers'un aynı dergideki yanıtının yayıncı önizlemesi, işaretin istikrar hesabını etkilemediğini ve artan gözlem kapsamına yönelik karşı testin hatalı olduğunu savunur; tam metin ve hesaplar bağımsız incelenmedi.",
+        "text": "Boers yanıtında, altkutup tuzluluk vekillerine uygulanan eksi işaretin gerekçesini belirsiz bulur; işaret çevrilse de varyans, otokorelasyon ve geri dönüş katsayısı (λ) gibi CSD göstergelerinin değişmediğini savunur. Chen–Tung'un kapsam testini hatalı sayar, fakat EN4 tuzluluk varyansı artışına boşluk doldurma çekincesi koyar. Tam metin ve hesaplar bağımsız incelenmedi.",
         "citations": [
           {
             "source_ref": "boers-2024-yanit",
-            "locator": "Reply önizlemesi, ilk üç paragraf; üç itiraz ve yazarın yanıtı",
+            "locator": "Nature yayıncı önizlemesi giriş; Springer önizlemesi s. 43, sign bölümü; Fig. 1 açıklaması",
             "support_type": "claim-origin"
           }
         ]
@@ -1153,7 +1153,7 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Worthington ve van Westen'in seçilmiş açık tam metinleri, Caesar'ın WHOI arşivindeki tam PDF'sinin yöntem/sonuç bölümleri, Chen–Tung'un arXiv yazar sürümü, Boers'un yalnız yayıncı önizlemesi ve Ben-Yami 2023'ün açık tam metnindeki ilgili bölümler okundu. Chen yazar sürümü yayımlanan tam metinle satır satır karşılaştırılmadı. Caesar'ın doğrusal 2,3 Sv ve yumuşatılmış yaklaşık 3 ± 1 Sv sonuçları ayrıldı; kaynakların kodu ve verileri ortak yöntemle yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Worthington ve van Westen'in seçilmiş açık tam metinleri, Caesar'ın WHOI arşivindeki tam PDF'sinin yöntem/sonuç bölümleri, Chen–Tung'un arXiv yazar sürümü, Boers'un yayıncı önizlemesi/Şekil 1 açıklaması ve Ben-Yami 2023'ün açık tam metnindeki ilgili bölümler okundu. Chen yazar sürümü yayımlanan tam metinle satır satır karşılaştırılmadı. Caesar'ın doğrusal 2,3 Sv ve yumuşatılmış yaklaşık 3 ± 1 Sv sonuçları ayrıldı; kaynakların kodu ve verileri ortak yöntemle yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
