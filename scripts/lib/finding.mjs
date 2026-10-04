@@ -88,7 +88,7 @@ export function ev(text, cites, opts = {}) {
   return item;
 }
 
-const COUNTER_TYPES = new Set(["counter", "context", "claim-origin"]);
+const COUNTER_TYPES = new Set(["counter", "context", "claim-origin", "inference"]);
 
 /**
  * Sürüm 2 kaydı kurar ve tutarlılığını yerinde doğrular.

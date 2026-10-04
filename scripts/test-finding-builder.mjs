@@ -110,6 +110,12 @@ reddetmeli(
   }),
 );
 
+kabulEtmeli("finding: karşı çıkarım inference olarak kabul edilir", () => finding({
+  id: "t-karsi-cikarim", claim: "Bir iddia.", status: "contested", topic: ["t"], checked: "2026-09-07",
+  sources: [s1],
+  counter_evidence: [ev("Kaynak verisi bu genelleme için yeterli değildir.", cite("kaynak-bir", "s. 3", "inference"))],
+}));
+
 reddetmeli(
   "finding: yalnızca zayıf kaynak yakalanır",
   "iddia desteklenmiyor",
