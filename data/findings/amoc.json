@@ -800,7 +800,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Bilim insanları AMOC'un zayıfladığı konusunda hemfikir.",
-    "divergence": "Bir çalışmanın regresyonla tahmin edilmiş 26°K kesit dizisi, ötekinin modelle kalibre edilmiş yüzey sıcaklığı parmak iziyle aynı gözlem değildir. Worthington’ın sonucu 1981–2016 döneminin kendi modeline, Caesar’ınki daha uzun bir sıcaklık desenine aittir. Chen–Tung 2024 ile Boers 2024 arasındaki yayımlanmış itiraz ve yanıt AMOC gücünün yıllık eğilimini değil, erken uyarı göstergesinin yorumunu tartışır. Van Westen 2024’ün tatlı su zorlamalı CESM deneyi ve yeniden analizleri de bir çöküş tarihi ölçmez. Belirli popüler medya örnekleri bu tur taranmadı; seçici yayın/ideolojik niyet hükmü kaldırıldı.",
+    "divergence": "Bir çalışmanın regresyonla tahmin edilmiş 26°K kesit dizisi, ötekinin modelle kalibre edilmiş yüzey sıcaklığı parmak iziyle aynı gözlem değildir. Worthington’ın sonucu 1981–2016 döneminin kendi modeline aittir. Caesar’ın 1870–2016 doğrusal hesabı 2,3 Sv, 20 yıllık yumuşatılmış eğriden yüzyıl ortası sonrası tahmini yaklaşık 3 ± 1 Sv'dir; bu iki özet bile aynı hesap değildir. Chen–Tung 2024 ile Boers 2024 arasındaki yayımlanmış itiraz ve yanıt AMOC gücünün yıllık eğilimini değil, erken uyarı göstergesinin yorumunu tartışır. Van Westen 2024’ün tatlı su zorlamalı CESM deneyi ve yeniden analizleri de bir çöküş tarihi ölçmez. Belirli popüler medya örnekleri bu tur taranmadı; seçici yayın/ideolojik niyet hükmü kaldırıldı.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -845,7 +845,7 @@
         "container": "Nature",
         "volume": "556(7700):191-196",
         "doi": "10.1038/s41586-018-0006-5",
-        "note": "Nature resmî özet/şekil başlıkları okundu; abonelik engeli nedeniyle yöntem ve sonuçların tam metni okunmadı. 20. yüzyıl zayıflaması deniz yüzeyi sıcaklığı parmak izi ve model kalibrasyonu üzerinden önerilir.",
+        "note": "Nature özetine ek olarak Woods Hole Oceanographic Institution arşivindeki yayımlanmış tam PDF (https://www.whoi.edu/fileserver.do?id=289704&p=279389&pt=2; SHA-256 1c580c8efc2d2c96336f82a1813ee04b78e30c0bff87783a52c98332c373f07c) s. 1, 4–5 ve Methods s. 7–8 okundu. Kasım–Mayıs HadISST vekili, 12 CMIP5 modelinin 3,8 Sv/K kalibrasyonu, 1870–2016 doğrusal 2,3 Sv ile 20 yıllık yumuşatılmış eğrinin yüzyıl ortası sonrası yaklaşık 3 ± 1 Sv tahmini ayrıldı. Ham SST/model verileri ve analiz kodu yeniden çalıştırılmadı.",
         "url": "https://www.nature.com/articles/s41586-018-0006-5"
       },
       {
@@ -922,8 +922,25 @@
         "container": "Nature Climate Change",
         "volume": "14:40-42",
         "doi": "10.1038/s41558-023-01877-0",
-        "note": "Nature Climate Change abonelik önizlemesindeki giriş/özet paragrafı okundu. Sekiz vekilin gözlem kapsamı ve işaretine itiraz bu yazarların görüşüdür; tam metin okunmadı.",
+        "note": "Nature Climate Change abonelik önizlemesindeki giriş/özet paragrafı okundu. Ayrı kaynak olarak kaydedilen arXiv:2312.13568v1 yazar sürümü okundu; yayımlanmış tam metinle satır satır karşılaştırılmadı. Sekiz vekilin gözlem kapsamı ve işaretine itiraz yazarların görüşüdür.",
         "url": "https://www.nature.com/articles/s41558-023-01877-0"
+      },
+      {
+        "id": "chen-tung-2023-yazar-surumu",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "primary",
+        "type": "manuscript",
+        "authors": [
+          "Chen, Xianyao",
+          "Tung, Ka-Kit"
+        ],
+        "year": 2023,
+        "title": "Evidence lacking for a pending collapse of the Atlantic Meridional Overturning Circulation — yazar sürümü",
+        "container": "arXiv",
+        "doi": "10.48550/arXiv.2312.13568",
+        "url": "https://arxiv.org/abs/2312.13568",
+        "note": "21 Aralık 2023 tarihli arXiv v1, Nature Climate Change 2024 itirazıyla bağlantılı altı sayfalık yazar metnidir; PDF SHA-256 4165f2143afd5e8079d9a821a1f9bc10c4bcb89806c80508a933d5decdc09b10. Yayımlanmış sürümle özdeş olduğu varsayılmadı. s. 1–3'te EN4 gözlem kapsamı, altörnekleme deneyleri ve iki altkutup tuzluluk vekilinin işareti incelendi. Hakemli yayın kaynağı ayrı tutuldu; kod, veri ve sonuçlar bağımsız yeniden üretilmedi."
       },
       {
         "id": "boers-2024-yanit",
@@ -939,7 +956,7 @@
         "container": "Nature Climate Change",
         "volume": "14:43-47",
         "doi": "10.1038/s41558-023-01878-z",
-        "note": "Nature Climate Change abonelik önizlemesindeki yanıt paragrafı okundu. İşaret ve gözlem kapsamı eleştirilerine yanıt bu yazarın görüşüdür; tam metin okunmadı.",
+        "note": "Nature Climate Change abonelik önizlemesindeki ilk üç yanıt paragrafı okundu. Boers, işaretin istikrar analizini etkilemediğini, karşı tarafın kapsam testini hatalı bulduğunu ve göstergelerin değişen kapsama karşı dayanıklı olduğunu savunur; bunlar yazarın iddiasıdır, tam metin ve kod yeniden incelenmedi.",
         "url": "https://www.nature.com/articles/s41558-023-01878-z"
       },
       {
@@ -981,11 +998,11 @@
       },
       {
         "id": "sst-parmak-izi",
-        "text": "Caesar ve arkadaşlarının 2018 özeti, modelle kalibre edilen deniz yüzeyi sıcaklığı deseninden 20. yüzyıl ortasından beri yaklaşık 3 ± 1 Sv zayıflama çıkarır; bu doğrudan akıntı ölçümü değildir.",
+        "text": "Caesar 2018, Kasım–Mayıs deniz yüzeyi sıcaklığı vekilini 12 CMIP5 modeliyle kalibre eder. 1870–2016 doğrusal hesabı 2,3 Sv; 20 yıllık yumuşatılmış eğrinin yüzyıl ortası sonrası değişimi yaklaşık 3 ± 1 Sv'dir. Bu doğrudan akıntı ölçümü değildir.",
         "citations": [
           {
             "source_ref": "caesar-2018-parmak-izi",
-            "locator": "Abstract, ilk iki paragraf; Fig. 1 ve Fig. 5 başlıkları",
+            "locator": "WHOI tam PDF s. 4–5, Fig. 5 ve AMOC time evolution; Methods s. 7–8, index ve calibration",
             "support_type": "direct"
           }
         ]
@@ -1025,22 +1042,27 @@
       },
       {
         "id": "yayimlanmis-tartisma",
-        "text": "Chen ve Tung’un Nature Climate Change 2024 önizlemesi, erken uyarı vekillerinin işareti ve artan gözlem kapsamına itiraz eder.",
+        "text": "Chen ve Tung'un hakemli itirazıyla bağlantılı yazar sürümü, sekiz erken uyarı vekilinde artan gözlem kapsamının yapay varyans üretebildiğini ve iki altkutup tuzluluk vekilinin işaretinin ters kullanıldığını savunur; bu sonuçlar bu denetimde bağımsız yeniden hesaplanmadı.",
         "citations": [
           {
             "source_ref": "chen-tung-2024-kanit-yok",
-            "locator": "Matters Arising önizlemesi, giriş/özet paragrafı",
+            "locator": "Matters Arising yayıncı önizlemesi, giriş/özet paragrafı",
+            "support_type": "claim-origin"
+          },
+          {
+            "source_ref": "chen-tung-2023-yazar-surumu",
+            "locator": "arXiv:2312.13568v1, s. 1–3; EN4 coverage, subsampling ve sign",
             "support_type": "claim-origin"
           }
         ]
       },
       {
         "id": "boers-yaniti",
-        "text": "Boers’un aynı dergideki yanıtı işaret ve gözlem kapsamı itirazlarını kabul etmeyip erken uyarı yorumunu savunur.",
+        "text": "Boers'un aynı dergideki yanıtının yayıncı önizlemesi, işaretin istikrar hesabını etkilemediğini ve artan gözlem kapsamına yönelik karşı testin hatalı olduğunu savunur; tam metin ve hesaplar bağımsız incelenmedi.",
         "citations": [
           {
             "source_ref": "boers-2024-yanit",
-            "locator": "Reply önizlemesi, ilk üç paragraf",
+            "locator": "Reply önizlemesi, ilk üç paragraf; üç itiraz ve yazarın yanıtı",
             "support_type": "claim-origin"
           }
         ]
@@ -1069,7 +1091,7 @@
           },
           {
             "source_ref": "caesar-2018-parmak-izi",
-            "locator": "Abstract, SST deseni ve model kalibrasyonu",
+            "locator": "WHOI tam PDF s. 4–5, Fig. 5–6; Methods s. 7–8",
             "support_type": "context"
           }
         ]
@@ -1089,14 +1111,15 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Worthington’ın seçilmiş tam metin pasajları, van Westen’in seçilmiş tam metni ve Chen/Boers/Caesar abonelik önizlemeleri kontrol edildi. Sonuçlar ayrı değişken, dönem ve deney koşullarıyla verildi; kod ve güncel RAPID yeniden incelenmedi. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Worthington ve van Westen'in seçilmiş açık tam metinleri, Caesar'ın WHOI arşivindeki tam PDF'sinin yöntem/sonuç bölümleri, Chen–Tung'un arXiv yazar sürümü ve Boers'un yalnız yayıncı önizlemesi okundu. Chen yazar sürümü yayımlanan tam metinle satır satır karşılaştırılmadı. Caesar'ın doğrusal 2,3 Sv ve yumuşatılmış yaklaşık 3 ± 1 Sv sonuçları ayrıldı; kaynakların kodu ve verileri ortak yöntemle yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
       "amoc"
     ],
     "open_questions": [
-      "Güncel RAPID dizisi ve farklı vekil yöntemleri ortak dönem, enlem ve belirsizlik tanımıyla karşılaştırılınca sonuç ne olur?",
+      "Güncel RAPID dizisi ve farklı vekil yöntemleri ortak dönem, enlem ve belirsizlik tanımıyla yeniden analiz edilince sonuç ne olur?",
+      "Chen–Tung ile Boers'un veri ve kodları aynı gözlem kapsamı testiyle yeniden çalıştırılınca hangi yorum desteklenir?",
       "Belirli medya örnekleri ve bu çalışmaların aktarım sıklığı ayrıca taranmalıdır."
     ]
   },
