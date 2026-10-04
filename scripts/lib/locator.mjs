@@ -28,6 +28,8 @@ const META_ETIKET = /düzey(i|leri)?(\s|$)|^kaynak konumu$|^kayıt yokluğu değ
 
 const SAYFA = /(^|[\s(—–,;])(s|pp?|sf|col)\.?\s*\d|sayfa\s*\d/i;
 const SATIR = /satır\s*\d|\blines?\s*\d/i;
+// Makinece okunabilir tablolarda sütun numarası da denetlenebilir konumdur.
+const SUTUN = /(?:^|[\s,;])(?:sütun|column)\s*\d+/i;
 const ALINTI = /["“”«»„][^"“”«»„]{12,}["“”«»„]/;
 const KIMLIK = new RegExp([
   "\\b(Q\\d{6}|P\\d{6})\\b",            // CDLI bileşik metin / nesne
@@ -36,6 +38,7 @@ const KIMLIK = new RegExp([
   "Taf\\.|Tafel|Levha|\\bPl\\.|Plate",     // levha
   "§\\s*\\d", "\\bNr\\.\\s*\\d", "\\bNo\\.\\s*\\d",
   "\\bfig\\.\\s*\\d", "\\bAbb\\.\\s*\\d",
+  "Şekil\\s*\\d", "\\b(Figure|Table|Tablo)\\.?\\s*\\d",
   "\\b\\d+:\\d+",                          // bölüm:ayet
   "\\bt\\.\\d", "\\bc\\.\\d\\.\\d",          // ETCSL metin numarası
   "tablet\\s*[IVX]+\\b", "\\b[IVX]+\\.\\s*tablet", "ayet\\s*\\d",
@@ -43,7 +46,7 @@ const KIMLIK = new RegExp([
 
 export function gucluMu(locator) {
   const l = String(locator ?? "");
-  return SAYFA.test(l) || SATIR.test(l) || ALINTI.test(l) || KIMLIK.test(l);
+  return SAYFA.test(l) || SATIR.test(l) || SUTUN.test(l) || ALINTI.test(l) || KIMLIK.test(l);
 }
 
 export function yerTutucuMu(locator) {

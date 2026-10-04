@@ -2,8 +2,8 @@
   "not": "İçerik özetine dayalı tarih kaydı. Özet aynıysa tarih korunur; yalnız METİN değiştiğinde yenilenir. style/script blokları özete girmez.",
   "kayitlar": {
     "articles/amoc.html": {
-      "ozet": "39edb9dcb65be6ee",
-      "lastmod": "2026-10-04",
+      "ozet": "ce9c1084c05b6de4",
+      "lastmod": "2026-10-05",
       "published": "2026-09-12"
     },
     "articles/angkor.html": {
@@ -162,8 +162,8 @@
       "published": "2026-09-07"
     },
     "dist/kanit-denetimi.html": {
-      "ozet": "0cc88007d8cd24ad",
-      "lastmod": "2026-10-04",
+      "ozet": "b55a2b2381d5a3c5",
+      "lastmod": "2026-10-05",
       "published": "2026-09-07"
     },
     "dist/zaman-cizelgesi.html": {
@@ -177,8 +177,8 @@
       "published": "2026-09-07"
     },
     "kaynakca.html": {
-      "ozet": "5c521df82d771d0b",
-      "lastmod": "2026-10-04",
+      "ozet": "1254dd815ff82f78",
+      "lastmod": "2026-10-05",
       "published": "2026-09-12"
     },
     "konular/dinler-tarihi.html": {

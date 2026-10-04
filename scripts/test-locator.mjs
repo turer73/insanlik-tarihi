@@ -49,10 +49,19 @@ t("CDLI künye alanı yer tutucu değil", () =>
 t("sayfa numarası güçlü", () => assert.ok(gucluMu("s. 210 — the face of a composite image")));
 t("sayfa aralığı güçlü", () => assert.ok(gucluMu("s. 194-195")));
 t("satır güçlü", () => assert.ok(gucluMu("satır 1-39 — kentten kente hanedan sıralaması")));
+t("veri tablosunda numaralı sütun güçlü", () => {
+  assert.ok(gucluMu("moc_transports.ascii, sütun 14, 2021 satırları"));
+  assert.ok(gucluMu("moc_transports.ascii, column 14, 2021 rows"));
+});
 t("alıntı güçlü", () => assert.ok(gucluMu('Özet — "Our analytical results challenge traditional interpretations"')));
 t("CDLI bileşik metin güçlü", () => assert.ok(gucluMu("Q000371 satır 106-115")));
 t("kazı numarası güçlü", () => assert.ok(gucluMu("Marmorkopf W 17878")));
 t("levha güçlü", () => assert.ok(gucluMu("Tafel 32 a, b")));
+t("numaralı şekil ve tablo güçlü", () => {
+  for (const locator of ["Şekil 1–2", "Figure 4", "Table 1", "Tablo 3"]) {
+    assert.ok(gucluMu(locator), locator);
+  }
+});
 t("§ güçlü", () => assert.ok(gucluMu("§ 3.4.1 Precursors to writing")));
 t("bölüm:ayet güçlü", () => assert.ok(gucluMu("Tekvin 10:10")));
 
@@ -62,6 +71,12 @@ t("'Özet' zayıf", () => assert.ok(!gucluMu("Özet")));
 t("konu etiketi zayıf", () => assert.ok(!gucluMu("Hendek bakımı")));
 t("kısa tırnak alıntı sayılmaz", () => assert.ok(!gucluMu('Giriş — "kral"')));
 t("'Sahnenin' içindeki s alıntı sayılmaz", () => assert.ok(!gucluMu("Sahnenin genel okuması")));
+t("numarasız şekil ve tablo zayıf", () => {
+  for (const locator of ["Şekil açıklaması", "Table summary", "Tablo notu"]) {
+    assert.ok(!gucluMu(locator), locator);
+  }
+});
+t("numarasız sütun zayıf", () => assert.ok(!gucluMu("veri sütun açıklaması")));
 
 // --- doğrulayıcı entegrasyonu
 function kayitDosyasi(locator) {

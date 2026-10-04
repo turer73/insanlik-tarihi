@@ -710,7 +710,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Yeni araştırma AMOC'un çökmeyeceğini gösterdi; endişeye gerek yok.",
-    "divergence": "Yazarların sonuç cümlesindeki 6 Sv eşiği, bütün makaledeki her çöküş kullanımının tek tanımı sayılmamalı: Main kısmı tam çöküşü sıfıra zayıflama veya tersine dönme diye açıklar. 34 model ani 4×CO₂ koşulunda incelenir; 0,3 Sv tatlı su deneyinde yalnız yedi model vardır. %54, 4×CO₂ altında 90. yıldaki model ortalamasıdır; bugünkü ölçülmüş AMOC kaybı değildir. Düzeltme 17 Nisan 2025’te çevrim içi yayımlandı, sayı tarihi 8 Mayıs’tır. Koşullu model sonucu, genel bir risk yokluğu güvencesine çevrilmedi; belirli haber aktarımı bu tur incelenmedi.",
+    "divergence": "Yazarların sonuç cümlesindeki 6 Sv eşiği, bütün makaledeki her çöküş kullanımının tek tanımı sayılmamalı: Main kısmı tam çöküşü sıfıra zayıflama veya tersine dönme diye açıklar. 34 model ani 4×CO₂ koşulunda incelenir; 0,3 Sv tatlı su deneyinde yalnız yedi model vardır. %54, 4×CO₂ altında 90. yıldaki model ortalamasıdır; bugünkü ölçülmüş AMOC kaybı değildir. Sun ve Thompson'ın 2026'daki tek CESM2 analizi, kalan enlemler arası akışın Kuzey Atlantik derin su oluşumunun sürmesine tek başına kanıt olmadığını gösterir; 34 modelin sayılarını yeniden hesaplamaz. Düzeltme 17 Nisan 2025’te çevrim içi yayımlandı, sayı tarihi 8 Mayıs’tır. Koşullu model sonucu, genel bir risk yokluğu güvencesine çevrilmedi; belirli haber aktarımı bu tur incelenmedi.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -758,6 +758,24 @@
         "doi": "10.1038/s41586-025-08977-1",
         "note": "Düzeltme gövdesi ve yayın tarihleri okundu: çevrim içi 17 Nisan 2025, sayı 8 Mayıs 2025. 6 Sv açıklaması ve PMOC ifadesi düzeltilmiştir. 4 Haziran 2025 güncellemesi, ek şekil 5 renk düzeni düzeltmesinin notunu ekler; yazarlar sonuçların değişmediğini belirtir. Kod veya şekil verileri yeniden doğrulanmadı.",
         "url": "https://www.nature.com/articles/s41586-025-08977-1"
+      },
+      {
+        "id": "sun-thompson-2026-gecici-devrilme",
+        "language": "en",
+        "accessed": "2026-10-05",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Sun, Shantong",
+          "Thompson, Andrew F."
+        ],
+        "year": 2026,
+        "title": "Transient Global Overturning Following the Shutdown of North Atlantic Deep Water Formation",
+        "container": "AGU Advances",
+        "volume": "7(5):e2026AV002462",
+        "doi": "10.1029/2026AV002462",
+        "note": "Yayıncının açık tam metninde özet, §1, §2.1, §4 ve §6 okundu. Tek CESM2 4×CO₂ deneyinde derin su oluşumu durduktan sonra süren devrilme geçici tabakalaşma ayarlamasıyla açıklanıyor; bu, Baker'ın 34 model niceliğini yeniden hesaplamaz. Kod ve model çıktısı yeniden çalıştırılmadı.",
+        "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026AV002462"
       }
     ],
     "evidence": [
@@ -830,6 +848,17 @@
         ]
       },
       {
+        "id": "gecici-devrilme-yorumu",
+        "text": "Sun ve Thompson'ın tek CESM2 4×CO₂ deneyinde Kuzey Atlantik derin su oluşumu dururken enlemler arası Atlantik devrilmesi yüzyıllarca sürer. Yazarlar kalan akışı geçici tabakalaşma ayarlaması olarak yorumlar ve bunun derin su oluşumunun devamına kanıt sayılamayacağını belirtir. Bu çalışma Baker'ın 34 model sonucunu yeniden hesaplamaz; çöküş olasılığı veya zamanı da vermez.",
+        "citations": [
+          {
+            "source_ref": "sun-thompson-2026-gecici-devrilme",
+            "locator": "§1 Introduction, Fig. 1; §2.1 CESM2 deneyi; §4 uzun dönem; §6 Summary and Conclusion, tek model ve olasılık sınırı",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
         "id": "model-yanliligi-riski",
         "text": "Yazarlar güçlü PMOC oluşumunu hafife alan modellerin gelecek AMOC çöküş riskini de hafife alabileceğini belirtir.",
         "citations": [
@@ -866,15 +895,16 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Düzeltilmiş Nature HTML’nin özet/Main, deneyler, Changes in the overturning circulation, Future fate of the AMOC ve Methods/Models and experiments–Variables pasajları ile yazar düzeltmesinin gövde ve tarihleri okundu. 34/7 model kapsamı, 90/150/en az 100 yıllık deney süreleri ayrıldı. Kod, model çalıştırmaları ve bütün ek veriler doğrulanmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Düzeltilmiş Nature HTML’nin özet/Main, deneyler, Changes in the overturning circulation, Future fate of the AMOC ve Methods/Models and experiments–Variables pasajları ile yazar düzeltmesinin gövde ve tarihleri okundu. 34/7 model kapsamı, 90/150/en az 100 yıllık deney süreleri ayrıldı. Sun ve Thompson 2026'nın yayıncı metninde tek CESM2 deneyi, §4 ve §6'daki geçici devrilme yorumu ile kapsam sınırı okundu. Kod, model çalıştırmaları ve bütün ek veriler doğrulanmadı. Bağımsız uzman incelemesi yapılmadı."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-05",
     "used_in": [
       "amoc"
     ],
     "open_questions": [
       "Modellerde güçlü PMOC oluşumunun gerçekçi senaryolar için olasılığı ve model yanlılığı nasıl sınanır?",
-      "Bu aşırı zorlamalar ve göreli deney yılları, gerçek emisyon ve erime yollarına nasıl aktarılabilir?"
+      "Bu aşırı zorlamalar ve göreli deney yılları, gerçek emisyon ve erime yollarına nasıl aktarılabilir?",
+      "Tek CESM2 koşusunda görülen geçici tabakalaşma ayarlaması diğer modellerin kalan devrilme akışında ne kadar yaygındır?"
     ]
   },
   {
@@ -1125,7 +1155,7 @@
         "citations": [
           {
             "source_ref": "ditlevsen-2023-erken-uyari",
-            "locator": "Düzeltilmiş Abstract ve Introduction",
+            "locator": "Düzeltilmiş Abstract; Introduction, Fig. 1e, yüzey sıcaklığı vekilinin açıklaması",
             "support_type": "claim-origin"
           }
         ]
@@ -1147,7 +1177,7 @@
         "citations": [
           {
             "source_ref": "baker-2025-cokmez",
-            "locator": "Experiments and AMOC upwelling pathways; Future fate of the AMOC",
+            "locator": "Experiments and AMOC upwelling pathways, Extended Data Table 1; Future fate of the AMOC",
             "support_type": "context"
           }
         ]
@@ -1209,7 +1239,7 @@
         "citations": [
           {
             "source_ref": "worthington-2021-dusus-yok",
-            "locator": "Introduction, önceki vekil yöntemleri; Discussion, model kapsamı",
+            "locator": "§1 Introduction, önceki vekil yöntemleri; §4 Discussion, dört katmanlı model karşılaştırması",
             "support_type": "context"
           },
           {
@@ -1236,7 +1266,7 @@
         "citations": [
           {
             "source_ref": "worthington-2021-dusus-yok",
-            "locator": "Discussion, model uncertainty ve Conclusions",
+            "locator": "§4 Discussion, yaklaşık ±2,5 Sv model belirsizliği; §5 Conclusions",
             "support_type": "counter"
           }
         ]
@@ -1340,10 +1370,13 @@
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
-          "You, Di",
+          "You, Defang",
           "Stein, Ruediger",
           "Lohmann, Gerrit",
-          "Masoum, Ahmadreza"
+          "Masoum, Ahmadreza",
+          "Fahl, Kirsten",
+          "Wu, Junjie",
+          "Jackson, Rebecca"
         ],
         "year": 2026,
         "title": "Surface freshening in the subpolar North Atlantic sustaining the weakened AMOC during the late Younger Dryas",
@@ -1445,7 +1478,7 @@
         "citations": [
           {
             "source_ref": "fohlmeister-2023-do-donguleri",
-            "locator": "Introduction, ilk paragraf ve atıf 17",
+            "locator": "Introduction, ilk paragraf ve atıf 17: “rapid warming with an amplitude of up to 16.5 °C”",
             "support_type": "context"
           }
         ]
@@ -1513,7 +1546,7 @@
         "citations": [
           {
             "source_ref": "ng-2018-atlantik-dogu-bati",
-            "locator": "Introduction, 231Pa/230Th yöntemi ve 33 kayıt/13 kayıt seçimi; Discussion, Sierra Leone Rise ve gelecek çalışma ihtiyacı",
+            "locator": "Introduction, 231Pa/230Th yöntemi; Fig. 2c ve Fig. 4, 33 kayıttan 13 seçimi ve Sierra Leone Rise; Discussion, gelecek kayıt ihtiyacı",
             "support_type": "counter"
           }
         ]
@@ -1535,7 +1568,7 @@
         "citations": [
           {
             "source_ref": "he-2021-heinrich-gronland",
-            "locator": "Introduction, ilk paragraf",
+            "locator": "Introduction, ilk paragraf: “fails to differentiate the DO and Heinrich stadials”",
             "support_type": "context"
           }
         ]
@@ -1546,7 +1579,7 @@
         "citations": [
           {
             "source_ref": "he-2021-heinrich-gronland",
-            "locator": "Abstract; Results, model–proxy karşılaştırması",
+            "locator": "Abstract: “substantial HS1 cooling onset did indeed occur over the Arctic in winter”; Results, model–proxy karşılaştırması",
             "support_type": "context"
           }
         ]
@@ -1655,7 +1688,7 @@
         "citations": [
           {
             "source_ref": "hays-1976-orbital-rhythm",
-            "locator": "PubMed Abstract, maddeler 1–6",
+            "locator": "PubMed Abstract, maddeler 1–6: “three discrete spectral peaks”",
             "support_type": "direct"
           }
         ]
@@ -1690,7 +1723,7 @@
         "citations": [
           {
             "source_ref": "fohlmeister-2023-do-donguleri",
-            "locator": "Abstract; Introduction, AMOC ve DO geçişleri; Discussion",
+            "locator": "Abstract; Introduction, AMOC ve DO geçişleri; Fig. 1A,C,F,G; Discussion",
             "support_type": "context"
           }
         ]
@@ -1766,10 +1799,13 @@
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
-          "You, Di",
+          "You, Defang",
           "Stein, Ruediger",
           "Lohmann, Gerrit",
-          "Masoum, Ahmadreza"
+          "Masoum, Ahmadreza",
+          "Fahl, Kirsten",
+          "Wu, Junjie",
+          "Jackson, Rebecca"
         ],
         "year": 2026,
         "title": "Surface freshening in the subpolar North Atlantic sustaining the weakened AMOC during the late Younger Dryas",
@@ -1887,7 +1923,7 @@
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Introduction, experiment setup paragrafları; Methods, ilk paragraf",
+            "locator": "s. 19929, Introduction, 5 Sv zorlama; s. 19932, Methods, 18 km/50 katman/25 yıl",
             "support_type": "context"
           }
         ]
@@ -1944,7 +1980,7 @@
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Introduction, model aim ve experiment setup; Conclusion",
+            "locator": "s. 19929, Introduction, model amacı ve deney kurgusu; s. 19932, Conclusion",
             "support_type": "counter"
           }
         ]
@@ -1966,7 +2002,7 @@
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Methods, son paragraf; Conclusion, paleoclimate paragrafı",
+            "locator": "s. 19932, Methods, hesaplama sınırı; Conclusion, 1200 yıllık Genç Dryas için daha uzun koşu gereği",
             "support_type": "counter"
           }
         ]
@@ -1977,7 +2013,7 @@
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Introduction, one-year flood duration paragrafı",
+            "locator": "s. 19929, Introduction, bir yıllık taşkın süresi varsayımı",
             "support_type": "counter"
           }
         ]
@@ -1988,7 +2024,7 @@
         "citations": [
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Introduction, modern-day starting state; Discussion, southern convection caveat",
+            "locator": "s. 19929, Introduction, modern başlangıç koşulu; s. 19932, güneydeki konveksiyon çekincesi",
             "support_type": "context"
           }
         ]
@@ -1999,7 +2035,7 @@
         "citations": [
           {
             "source_ref": "you-2026-genc-dryas-tatlanma",
-            "locator": "Discussion, mid-YD rebound paragrafından sonraki tek-darbe model çekincesi",
+            "locator": "Discussion, orta Genç Dryas toparlanması sonrası: “under specific thresholds of freshwater forcing strength and duration”",
             "support_type": "counter"
           }
         ]
@@ -2026,7 +2062,7 @@
           },
           {
             "source_ref": "condron-winsor-2012-eriyik-su-yolu",
-            "locator": "Introduction, 5 Sv one-year idealized forcing; Methods",
+            "locator": "s. 19929, Introduction, bir yıllık 5 Sv idealize zorlama; s. 19932, Methods",
             "support_type": "context"
           }
         ]
@@ -2257,7 +2293,7 @@
           },
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Introduction, 2005/2009/2018/2021 yıllık değerleri; kaynakça 22, v2022.1",
+            "locator": "Introduction: “strong in 2005 (19.2 Sv)”; 2009/2018/2021 yıllık değerleri; kaynakça 22, v2022.1",
             "support_type": "context"
           }
         ]
@@ -2314,7 +2350,7 @@
         "citations": [
           {
             "source_ref": "lee-2024-duraklama",
-            "locator": "Introduction, yıllık 2021 değeri; Methods, RAPID & ERA5 datasets, Nisan 2004–Şubat 2022; kaynakça 22, v2022.1",
+            "locator": "Introduction: “weakened again until 2021 (15.3 Sv)”; Methods, RAPID & ERA5 datasets, Nisan 2004–Şubat 2022; kaynakça 22, v2022.1",
             "support_type": "context"
           },
           {
