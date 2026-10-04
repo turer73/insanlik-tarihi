@@ -1,0 +1,9 @@
+# AMOC erken uyarı belirsizlik denetimi — 4 Ekim 2026
+
+Birincil kaynak: Maya Ben-Yami, Vanessa Skiba, Sebastian Bathiany ve Niklas Boers, “Uncertainties in critical slowing down indicators of observation-based fingerprints of the Atlantic Overturning Circulation”, *Nature Communications* 14:8344 (2023), DOI [10.1038/s41467-023-44046-9](https://www.nature.com/articles/s41467-023-44046-9). Açık HTML tam metninin özet, sonuç, tartışma ve EN4 yönteminin ilgili bölümleri okundu.
+
+- **Gözlem ve işleme etkisi:** Özet ve sonuçlar, değişen veri kapsamı ile boşluk doldurmanın kimi sahte kritik yavaşlama göstergeleri yaratabileceğini bildirir. EN4.2.2 tuzluluk verisindeki varyans artışı, doldurma yönteminin etkisi temsili dizilere katıldığında anlamlı kalmaz (Results, *Global significance estimation with surrogates*, Fig. 5 ve ek şekil 12).
+- **Kalan sinyal:** Daha korumacı test, Boers 2021'e göre anlamlı geri dönüş katsayısı (λ) artışı görülen coğrafi alanı küçültür. HadISST1, HadCRUT5, ERSSTv5 ve EN4.2.2 analizlerinde Kuzey Atlantik'in belirli bölgelerinde işaretler kalır (Results, Fig. 4–6; Discussion). Bu, bütün Atlantik'te eşit anlamlılık demek değildir.
+- **Yorum sınırı:** Yazarlar bu işaretlerin büyük ölçekli AMOC'un gerçekten istikrarsızlaştığını gösterip göstermediğini çalışma kapsamının dışında bırakır; altkutup döngüsünün ayrı bir geçişi de olasıdır (Discussion, Fig. 6 sonrası). EN4.2.2'nin bütün gözlem belirsizliği hesaplanamamıştır (Discussion, son bölüm).
+
+Ben-Yami 2023, Chen–Tung 2024 itirazı ile Boers 2024 yanıtının tam metin karşılaştırmasının yerini tutmaz. Boers yanıtında yalnız abonelik önizlemesi erişilebildi; [PIK kurumsal kaydı](https://publications.pik-potsdam.de/pubman/item/item_29273) da kamuya açık tam metin sunmuyor. Bu tur istatistik, ham veri ve kod yeniden çalıştırılmadı. Kayıt taslak; bağımsız uzman incelemesi yapılmadı.

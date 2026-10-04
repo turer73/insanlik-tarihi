@@ -800,7 +800,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "Bilim insanları AMOC'un zayıfladığı konusunda hemfikir.",
-    "divergence": "Bir çalışmanın regresyonla tahmin edilmiş 26°K kesit dizisi, ötekinin modelle kalibre edilmiş yüzey sıcaklığı parmak iziyle aynı gözlem değildir. Worthington’ın sonucu 1981–2016 döneminin kendi modeline aittir. Caesar’ın 1870–2016 doğrusal hesabı 2,3 Sv, 20 yıllık yumuşatılmış eğriden yüzyıl ortası sonrası tahmini yaklaşık 3 ± 1 Sv'dir; bu iki özet bile aynı hesap değildir. Chen–Tung 2024 ile Boers 2024 arasındaki yayımlanmış itiraz ve yanıt AMOC gücünün yıllık eğilimini değil, erken uyarı göstergesinin yorumunu tartışır. Van Westen 2024’ün tatlı su zorlamalı CESM deneyi ve yeniden analizleri de bir çöküş tarihi ölçmez. Belirli popüler medya örnekleri bu tur taranmadı; seçici yayın/ideolojik niyet hükmü kaldırıldı.",
+    "divergence": "Bir çalışmanın regresyonla tahmin edilmiş 26°K kesit dizisi, ötekinin modelle kalibre edilmiş yüzey sıcaklığı parmak iziyle aynı gözlem değildir. Worthington’ın sonucu 1981–2016 döneminin kendi modeline aittir. Caesar’ın 1870–2016 doğrusal hesabı 2,3 Sv, 20 yıllık yumuşatılmış eğriden yüzyıl ortası sonrası tahmini yaklaşık 3 ± 1 Sv'dir; bu iki özet bile aynı hesap değildir. Chen–Tung 2024 ile Boers 2024 arasındaki yayımlanmış itiraz ve yanıt AMOC gücünün yıllık eğilimini değil, erken uyarı göstergesinin yorumunu tartışır. Ben-Yami 2023 daha korumacı testte bazı işaretlerin kaldığını, fakat büyük ölçekli AMOC istikrarsızlaşması sonucunun kurulmadığını gösterir. Van Westen 2024’ün tatlı su zorlamalı CESM deneyi ve yeniden analizleri de bir çöküş tarihi ölçmez. Belirli popüler medya örnekleri bu tur taranmadı; seçici yayın/ideolojik niyet hükmü kaldırıldı.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -960,6 +960,26 @@
         "url": "https://www.nature.com/articles/s41558-023-01878-z"
       },
       {
+        "id": "ben-yami-2023-belirsizlik",
+        "language": "en",
+        "accessed": "2026-10-04",
+        "tier": "peer-reviewed",
+        "type": "article",
+        "authors": [
+          "Ben-Yami, Maya",
+          "Skiba, Vanessa",
+          "Bathiany, Sebastian",
+          "Boers, Niklas"
+        ],
+        "year": 2023,
+        "title": "Uncertainties in critical slowing down indicators of observation-based fingerprints of the Atlantic Overturning Circulation",
+        "container": "Nature Communications",
+        "volume": "14:8344",
+        "doi": "10.1038/s41467-023-44046-9",
+        "note": "Açık tam metinde Abstract, Results: Uncertainty ensembles ve Global significance estimation with surrogates, Discussion ve EN4.2.2 Methods pasajları okundu. Korumacı test anlamlı alanı küçültür; bazı λ işaretleri kalır, EN4 varyans artışı işlem etkisi hesaba katıldığında anlamlı değildir. Çalışma geniş ölçekli AMOC istikrarsızlaşması sonucunu kurmaz; veri ve kod yeniden çalıştırılmadı.",
+        "url": "https://www.nature.com/articles/s41467-023-44046-9"
+      },
+      {
         "id": "lee-2024-duraklama",
         "language": "en",
         "accessed": "2026-10-04",
@@ -1068,6 +1088,17 @@
         ]
       },
       {
+        "id": "belirsizlik-korumaci-test",
+        "text": "Ben-Yami ve arkadaşları 2023, Boers 2021'deki erken uyarı analizine daha korumacı belirsizlik ve anlamlılık testleri uygular: anlamlı λ artışı gösteren alan küçülür fakat Kuzey Atlantik'in bazı bölgelerinde kalır. EN4.2.2 tuzluluk verisindeki varyans artışı, veri işleme etkisiyle uyarlanmış testte anlamlı kalmaz.",
+        "citations": [
+          {
+            "source_ref": "ben-yami-2023-belirsizlik",
+            "locator": "Results: Global significance estimation with surrogates, Fig. 4–6; Discussion, ilk iki paragraf",
+            "support_type": "direct"
+          }
+        ]
+      },
+      {
         "id": "gozlemde-de-anlasmazlik",
         "text": "Lee 2024, 26,5°K için 2011–2021 eğilimini −0,1 Sv/on yıl olarak raporlar; daha uzun pencerenin eğilimi farklıdır.",
         "citations": [
@@ -1097,6 +1128,17 @@
         ]
       },
       {
+        "id": "erken-uyari-buyuk-olcek-siniri",
+        "text": "Ben-Yami 2023, anlamlı erken uyarı göstergelerinin büyük ölçekli AMOC istikrarsızlaşmasının açık kanıtı olup olmadığını inceleme kapsamı dışında bırakır; altkutup döngüsü ayrı bir geçiş yaşıyor olabilir. EN4.2.2'nin bütün gözlem belirsizliği hesaplanamamıştır.",
+        "citations": [
+          {
+            "source_ref": "ben-yami-2023-belirsizlik",
+            "locator": "Discussion, Fig. 6 sonrası AMOC fingerprint, SPG ve EN4 belirsizliği paragrafları",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
         "id": "yokluk-kaniti-degil",
         "text": "Worthington’ın kendi dönemi için düşüş bulmaması, başka dönemlerde veya yöntemlerde insan kaynaklı değişimin yokluğunu kanıtlamaz; yöntem belirsizliği yaklaşık ±2,5 Sv’dir.",
         "citations": [
@@ -1111,7 +1153,7 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Worthington ve van Westen'in seçilmiş açık tam metinleri, Caesar'ın WHOI arşivindeki tam PDF'sinin yöntem/sonuç bölümleri, Chen–Tung'un arXiv yazar sürümü ve Boers'un yalnız yayıncı önizlemesi okundu. Chen yazar sürümü yayımlanan tam metinle satır satır karşılaştırılmadı. Caesar'ın doğrusal 2,3 Sv ve yumuşatılmış yaklaşık 3 ± 1 Sv sonuçları ayrıldı; kaynakların kodu ve verileri ortak yöntemle yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Worthington ve van Westen'in seçilmiş açık tam metinleri, Caesar'ın WHOI arşivindeki tam PDF'sinin yöntem/sonuç bölümleri, Chen–Tung'un arXiv yazar sürümü, Boers'un yalnız yayıncı önizlemesi ve Ben-Yami 2023'ün açık tam metnindeki ilgili bölümler okundu. Chen yazar sürümü yayımlanan tam metinle satır satır karşılaştırılmadı. Caesar'ın doğrusal 2,3 Sv ve yumuşatılmış yaklaşık 3 ± 1 Sv sonuçları ayrıldı; kaynakların kodu ve verileri ortak yöntemle yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
