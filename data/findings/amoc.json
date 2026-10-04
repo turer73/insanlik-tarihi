@@ -1644,7 +1644,7 @@
       ]
     },
     "popular_claim": "Agassiz Gölü'nün St. Lawrence'tan boşalması AMOC'u durdurdu ve Genç Dryas'ı başlattı.",
-    "divergence": "Model üç koşulu karşılaştırır: bir yıl 5 Sv tatlı su, modern okyanus başlangıcı ve 25 yıllık koşular. St. Lawrence için %14/14,6 Sv; Mackenzie için takımadalar açık %27/12,4 Sv ve kapalı %32/11,5 Sv bulunur. Bu deneyde St. Lawrence tatlı suyu derin su oluşum alanlarının yaklaşık 3000 km güneyindeki subtropikal döngüye taşınır. Ancak yazarlar derin su oluşum alanı daha güneye kaymış olsaydı doğu çıkışının etkisinin artabileceğini söyler. Jeolojik güzergâh kanıtı ve 1200 yıllık Genç Dryas’ın tüm mekanizması ayrı sorulardır. You 2026 geç Genç Dryas için ikinci tatlı su darbesini olası açıklama olarak önerir; aynı tartışma uygun eşiklerde tek zorlamayla uzun kapanmayı veren modelin de bulunduğunu belirtir. “Tek taşkın kesinlikle yetmez” ve “Mackenzie kullanıldı” sonuçları çıkarılamaz. Saha kayıtları da tek yönlü değildir: Carlson 2007, St. Lawrence ağzı jeokimyasından erken Genç Dryas’ta batı Kanada kaynaklı akış yorumlar; +0,06 ± 0,02 Sv uzun dönemli taban deşarjı tahmini Condron–Winsor’un bir yıllık 5 Sv taşkın zorlamasıyla aynı deney/ölçü değildir. Süfke 2022, Beaufort Denizi Pb izotopundan Agassiz–Mackenzie yolunu geç Bølling–Allerød/Genç Dryas geçişine yerleştirir; büyük işaret kendi yaş modelinde Genç Dryas başlangıcından öncedir ve doğu yolunun payı açık kalır. Norris 2021 jeomorfolojik/hidrolik model kuzeybatı çıkışını 6–9 aylık taşkına elverişli bulur, fakat olayın tam başlangıçta olup olmadığını belirleyemez. Bu ayrı kayıtlar güzergâhı veya tek nedensel tetikleyiciyi kesinleştirmez.",
+    "divergence": "Model üç koşulu karşılaştırır: bir yıl 5 Sv tatlı su, modern okyanus başlangıcı ve 25 yıllık koşular. St. Lawrence için %14/14,6 Sv; Mackenzie için takımadalar açık %27/12,4 Sv ve kapalı %32/11,5 Sv bulunur. Bu deneyde St. Lawrence tatlı suyu derin su oluşum alanlarının yaklaşık 3000 km güneyindeki subtropikal döngüye taşınır. Ancak yazarlar derin su oluşum alanı daha güneye kaymış olsaydı doğu çıkışının etkisinin artabileceğini söyler. Jeolojik güzergâh kanıtı ve 1200 yıllık Genç Dryas’ın tüm mekanizması ayrı sorulardır. You 2026 geç Genç Dryas için ikinci tatlı su darbesini olası açıklama olarak önerir; aynı tartışma uygun eşiklerde tek zorlamayla uzun kapanmayı veren modelin de bulunduğunu belirtir. “Tek taşkın kesinlikle yetmez” ve “Mackenzie kullanıldı” sonuçları çıkarılamaz. Saha kayıtları da tek yönlü değildir: Carlson 2007, St. Lawrence ağzı jeokimyasından erken Genç Dryas’ta batı Kanada kaynaklı akış yorumlar; +0,06 ± 0,02 Sv uzun dönemli taban deşarjı tahmini Condron–Winsor’un bir yıllık 5 Sv taşkın zorlamasıyla aynı deney/ölçü değildir. Süfke 2022, Beaufort Denizi Pb izotopundan Agassiz–Mackenzie yolunu geç Bølling–Allerød/Genç Dryas geçişine yerleştirir; büyük işaret kendi yaş modelinde Genç Dryas başlangıcından öncedir ve doğu yolunun payı açık kalır. Norris 2021'in jeomorfolojik/hidrolik modelleri kuzeybatı çıkışında yaklaşık 21.000 km³ hacimli, tepe debisi 1,8–2,5 Sv olan taşkın önerir; üçgen akış eğrisi varsayımıyla asgari süreyi 6–9 ay hesaplar. Olayın Genç Dryas'ın tam başlangıcında olup olmadığı belirsizdir. Yazarlar bu tek boşalmanın bin yılı aşan AMOC etkisini tek başına sürdürmesini düşük olasılıklı bulur; daha uzun akış olasılığını ayrıca tartışır. Bu ayrı kayıtlar güzergâhı veya tek nedensel tetikleyiciyi kesinleştirmez.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -1751,8 +1751,8 @@
         "title": "Catastrophic Drainage From the Northwestern Outlet of Glacial Lake Agassiz During the Younger Dryas",
         "container": "Geophysical Research Letters",
         "doi": "10.1029/2021GL093919",
-        "url": "https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2021GL093919",
-        "note": "Wiley resmî makale özeti okundu; jeomorfoloji/hidrolik iki model kuzeybatı çıkışından 6–9 ayda boşalmanın mümkün olduğunu, ama Genç Dryas başlangıcına denk gelip gelmediğinin belirsiz kaldığını söyler. Tam yöntem ve ek veri okunmadı."
+        "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021GL093919",
+        "note": "Wiley'deki yayımlanmış açık tam metnin Methods §3.1–3.2, Results §4, Discussion §5.1–5.3 ve Conclusion §6 bölümleri okundu. 1D/0D modelleri yaklaşık 21.000 km³ hacim ve 1,8–2,5 Sv tepe debisi önerir; 6–9 ay basit üçgen akış eğrisi altında asgari süredir. Başlangıç kronolojisi ve bin yıllık AMOC etkisi çözülmez. Ek bilgi, LiDAR ham verisi ve model kodu yeniden çalıştırılmadı."
       }
     ],
     "evidence": [
@@ -1835,12 +1835,12 @@
       },
       {
         "id": "kuzeybati-taskan-olasiligi",
-        "text": "Norris ve arkadaşlarının kuzeybatı çıkışı jeomorfoloji/hidrolik çalışması 6–9 aylık büyük boşalmayı mümkün bulur; olayın Genç Dryas’ın tam başlangıcında olup olmadığı belirsizdir.",
+        "text": "Norris ve arkadaşlarının 1D/0D modelleri kuzeybatı çıkışında yaklaşık 21.000 km³ taşkın hacmi ve 1,8–2,5 Sv tepe debisi önerir. Basit üçgen akış eğrisi varsayımıyla 6–9 ay asgari süredir; olayın Genç Dryas’ın tam başlangıcında olup olmadığı belirsizdir.",
         "citations": [
           {
             "source_ref": "norris-2021-kuzeybati-cikis",
-            "locator": "Wiley Abstract, discharge/volume and 6–9 month timing cümleleri",
-            "support_type": "claim-origin"
+            "locator": "Methods §3.1–3.2; Results §4, Fig. 3–4; Discussion §5.2; Conclusion §6",
+            "support_type": "direct"
           }
         ]
       }
@@ -1913,6 +1913,17 @@
         ]
       },
       {
+        "id": "norris-tek-bosalma-siniri",
+        "text": "Norris 2021, modellerdeki yaklaşık 21.000 km³'lük tek taşkının bin yılı aşan AMOC etkisini tek başına sürdürmesini düşük olasılıklı bulur; daha uzun eriyik su ve yağış akışını olası ek etken sayar. Bu, başka kurulumlardaki tek-zorlama modellerine genel çürütme değildir.",
+        "citations": [
+          {
+            "source_ref": "norris-2021-kuzeybati-cikis",
+            "locator": "Discussion §5.3, Implications for Ocean Circulation, son iki paragraf; Conclusion",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
         "id": "farkli-akis-buyuklukleri",
         "text": "Carlson’ın +0,06 ± 0,02 Sv taban deşarjı vekil/karışım tahmini, Condron–Winsor’un bir yıllık 5 Sv idealize taşkın zorlamasıyla nicel bir gerçek-dünya senaryo eşlemesi değildir.",
         "citations": [
@@ -1936,7 +1947,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Condron–Winsor ve You seçilmiş PMC tam metin pasajları önceki turda; bu tur Carlson 2007 PubMed özeti, Süfke 2022 resmî açık tam metin seçilmiş Introduction/Discussion/Fig. 4–5, Norris 2021 Wiley özeti okundu. Karot yaş modelleri, ham ölçümler, Norris ekleri ve modellerin kodu bağımsızca yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Condron–Winsor ve You seçilmiş PMC tam metin pasajları önceki turda; bu tur Carlson 2007 PubMed özeti, Süfke 2022 resmî açık tam metin seçilmiş Introduction/Discussion/Fig. 4–5, Norris 2021'in Wiley'deki yayımlanmış tam metninin ilgili yöntem/sonuç/tartışma bölümleri okundu. Karot yaş modelleri, ham ölçümler, Norris ekleri ve modellerin kodu bağımsızca yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
