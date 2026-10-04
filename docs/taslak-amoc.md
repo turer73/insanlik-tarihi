@@ -170,15 +170,19 @@ Bunlar kayıtlara **girmedi.**
 
 ---
 
-## Geçmişte oldu mu — evet, ama "durma" değil
+## Heinrich Stadial 1 — zayıflama, tam duruş hükmü değil
 
-**Beş paleo makalesinin dördü tam metinden okundu.** Bradtmiller ve arkadaşları
-açık erişim değil; Europe PMC de kapalı olduğunu bildiriyor, o kaynak özet
-düzeyinde kaldı.
+**4 Ekim 2026 kaynak güncellemesi:** Bradtmiller ve arkadaşlarının yayımlanmış
+sekiz sayfalık metni [Columbia Academic Commons arşivinde](https://academiccommons.columbia.edu/doi/10.7916/D8DZ0726)
+bulundu ve okundu. Önceki “özet düzeyinde kaldı” notu artık geçerli değil.
+Yazarların 25 karotlu karşılaştırmasında HS1 oranı 22 karotta buzul dönemi
+oranına eşit ya da ondan yüksektir; ancak tüm havza ortalamaları arasındaki
+fark %95 düzeyinde anlamlı değildir. %20/%28 protaktinyum ihracı tahminleri
+AMOC hızının yüzde değişimi olarak kullanılamaz. Ek veriler yeniden hesaplanmadı.
 
 | olay | ne bulundu | kaynak |
 |---|---|---|
-| Heinrich Stadial 1 (y. 17.500 yıl önce) | 231Pa/230Th neredeyse bütün derinliklerde buzul değerlerini aşıyor: belirgin azalma, **durma yok** | Bradtmiller ve ark. 2014 |
+| Heinrich Stadial 1 (y. 17.500 yıl önce) | 25 karotun 22'sinde 231Pa/230Th oranı buzul dönemi değerine eşit veya daha yüksek: yazarların yorumu belirgin ama sonlu azalma; tüm havza ortalamaları arasındaki fark %95 düzeyinde anlamlı değil | Bradtmiller ve ark. 2014 |
 | aynı olay, sıcaklık | modelde yıllık ortalama **~6 °C** ani soğuma | He ve ark. 2021 |
 | Dansgaard-Oeschger | Grönland'da birkaç on yılda **16,5 °C**'ye varan ani ısınma | Fohlmeister ve ark. 2023 |
 | Geç Genç Dryas | zayıflamış ama süren AMOC, iki evreli düşüş | You ve ark. 2026 |

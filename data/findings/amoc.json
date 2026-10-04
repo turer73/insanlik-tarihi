@@ -1126,7 +1126,7 @@
   {
     "schema_version": 2,
     "id": "amoc-gecmiste-zayifladi-durmadi",
-    "claim": "Bradtmiller 2014’ün yayımlanan özeti Heinrich Stadial 1’de belirgin zayıflama ama tümüyle durma olmadığı yorumunu verir; Ng 2018’in karot karşılaştırması batıdaki güçlü azalmaya karşın doğuda süren derin su taşınımı işareti bulur. Bu tek olay bütün geçmiş AMOC olayları için yokluk kanıtı değildir.",
+    "claim": "Bradtmiller 2014’ün 25 karotlu karşılaştırması Heinrich Stadial 1’de zayıflamış fakat süren taşınım yorumunu verir; Ng 2018 batıdaki güçlü azalmaya karşın doğuda süren derin su taşınımı işareti bulur. Bu vekiller AMOC hızının yüzdesini veya bütün geçmiş olayların durumunu ölçmez.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -1151,7 +1151,7 @@
       ]
     },
     "popular_claim": "AMOC geçmişte durdu ve dünyayı buzul çağına soktu.",
-    "divergence": "Bradtmiller’ın açık özeti Heinrich Stadial 1 için zayıflamış fakat süren devrilme yorumunu taşır. Ng 2018’in açık tam metninde batı ve derin kuzey Atlantik sahalarındaki yüksek 231Pa/230Th oranları güçlü azalmayla, doğudaki Sierra Leone Rise sahasında düşük kalan oran ise süren derin taşınımla ilişkilendirilir. Bu coğrafi ayrım her kesimde aynı akışın sürdüğü anlamına gelmez; yerel parçacık etkisi tekil kayıtları saptırabilir. Bu sonuç “geçmişte hiçbir durma olmadı” veya “gelecekte duramaz” hükmüne genişletilemez. You 2026’nın Genç Dryas için iki evreli zayıflama önerisi vekil kayıt ve model yorumudur. Fohlmeister 2023’ün dikit derlemesi atmosfer ve yağış göstergelerindeki geniş coğrafi deseni inceler, bütün kıtaların aynı sıcaklıkta değiştiğini ölçmez. He 2021’de yaklaşık 6 °C HS1 soğuması izotoplu model çıktısıdır; buz çekirdeği δ18O’sundaki eksik sinyali açıklayan bir hipotezdir.",
+    "divergence": "Bradtmiller 2014'ün yayımlanmış tam metninde HS1 oranı, üç dönemi de kapsayan 25 karotun 22'sinde buzul dönemi oranına eşit ya da ondan yüksektir. Yazarlar bunu zayıflamış fakat süren devrilme olarak yorumlar; buna karşılık tüm havza HS1 ve buzul dönemi ortalamaları arasındaki fark %95 güven düzeyinde anlamlı değildir. Hesaplanan 231Pa ihracı yüzdesi AMOC hızındaki yüzde değişim değildir. Ng 2018’in tam metninde batı ve derin kuzey Atlantik sahalarındaki yüksek 231Pa/230Th oranları güçlü azalmayla, doğudaki Sierra Leone Rise sahasında düşük kalan oran ise süren derin taşınımla ilişkilendirilir. Bu coğrafi ayrım her kesimde aynı akışın sürdüğü anlamına gelmez; yerel parçacık etkisi tekil kayıtları saptırabilir. Bu sonuç “geçmişte hiçbir durma olmadı” veya “gelecekte duramaz” hükmüne genişletilemez. You 2026’nın Genç Dryas için iki evreli zayıflama önerisi vekil kayıt ve model yorumudur. Fohlmeister 2023’ün dikit derlemesi atmosfer ve yağış göstergelerindeki geniş coğrafi deseni inceler, bütün kıtaların aynı sıcaklıkta değiştiğini ölçmez. He 2021’de yaklaşık 6 °C HS1 soğuması izotoplu model çıktısıdır; buz çekirdeği δ18O’sundaki eksik sinyali açıklayan bir hipotezdir.",
     "divergence_type": [
       "kategori-hatasi"
     ],
@@ -1172,8 +1172,8 @@
         "container": "Nature Communications",
         "volume": "5(1)",
         "doi": "10.1038/ncomms6817",
-        "note": "Nature Communications abonelik önizlemesindeki Abstract ve şekil başlıkları okundu; tam metin erişilebilir değildi. HS1 yorumu yerel parçacık etkisi çekincesiyle ve yalnız bu olay için verildi.",
-        "url": "https://www.nature.com/articles/ncomms6817"
+        "note": "Columbia Academic Commons arşivinden yayımlanmış sekiz sayfalık tam metin okundu (arşiv DOI: 10.7916/D8DZ0726). Results, Discussion, Methods ve Fig. 1–4 denetlendi; ek veri tabloları ve karot yaş modelleri yeniden hesaplanmadı.",
+        "url": "https://academiccommons.columbia.edu/doi/10.7916/D8DZ0726"
       },
       {
         "id": "ng-2018-atlantik-dogu-bati",
@@ -1263,22 +1263,22 @@
     "evidence": [
       {
         "id": "path-zayif-ama-suren",
-        "text": "Bradtmiller’ın yayımlanan özeti, HS1’de 231Pa/230Th oranlarının neredeyse tüm incelenen derinliklerde buzul dönemi değerlerini aştığını; bunu belirgin devrilme azalması fakat tam durma olmaması diye yorumladığını bildirir.",
+        "text": "Bradtmiller’ın 25 karotlu karşılaştırmasında HS1 231Pa/230Th oranı 22 karotta buzul dönemi oranına eşit ya da ondan yüksektir; yazarlar bunu belirgin devrilme azalması fakat tam durma olmaması diye yorumlar.",
         "citations": [
           {
             "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Abstract, son iki cümle; Fig. 2 başlığı",
+            "locator": "s. 2, 25 karot seçimi; s. 4, 22/25 karşılaştırması ve Şekil 3b",
             "support_type": "direct"
           }
         ]
       },
       {
         "id": "durma-gerekmiyor",
-        "text": "Aynı özet, ani iklim salınımlarının AMOC’un tamamen durmasını zorunlu kılmadığı sonucunu çıkarır; bütün olaylarda duruşun dışlandığını söylemez.",
+        "text": "Makale HS1 sırasında Atlantik genelinde 231Pa açığını süren dışarıya taşınımla uyumlu yorumlar; ani iklim salınımlarının AMOC’un tamamen durmasını zorunlu kılmadığı sonucunu çıkarır.",
         "citations": [
           {
             "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Abstract, sonuç cümlesi",
+            "locator": "s. 1, özet; s. 4, Spatial averages; s. 5, alternatif kapanma senaryosu",
             "support_type": "direct"
           }
         ]
@@ -1342,11 +1342,33 @@
     "counter_evidence": [
       {
         "id": "vekil-dolayli",
-        "text": "231Pa/230Th dolaylı bir dolaşım göstergesidir; Bradtmiller özeti tekil kayıtlarda yerel parçacık etkisinin sapma yaratabileceğini belirtir.",
+        "text": "231Pa/230Th dolaylı bir dolaşım göstergesidir; tekil kayıtlar yerel parçacık etkilerinden etkilenebilir ve karotların derinlik dağılımı havza ortalamasını sınırlar.",
         "citations": [
           {
             "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Abstract, ilk üç cümle",
+            "locator": "s. 1–2, parçacık etkisi; s. 4, Spatial averages; s. 6, Averages and weightings",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "hs1-havza-ortalamasi-anlamsiz",
+        "text": "HS1 için 0,074 ± 0,009 (n=26) ve Son Buzul Maksimumu için 0,065 ± 0,005 (n=79) havza ortalamaları arasındaki fark, makaleye göre %95 güven düzeyinde anlamlı değildir.",
+        "citations": [
+          {
+            "source_ref": "bradtmiller-2014-path-heinrich",
+            "locator": "s. 4, Spatial averages; s. 6, Averages and weightings",
+            "support_type": "counter"
+          }
+        ]
+      },
+      {
+        "id": "pa-ihraci-amoc-hizi-degil",
+        "text": "Yalnız 4,6 km derinliğe kadar temsil edilen alan için hesaplanan %20 (HS1) ve %28 (Son Buzul Maksimumu) 231Pa ihracı göreli karşılaştırmadır; makale bunların toplam ihracın kesin tahmini olmadığını ve net devrilmeyle doğrusal ölçeklenmeyebileceğini söyler.",
+        "citations": [
+          {
+            "source_ref": "bradtmiller-2014-path-heinrich",
+            "locator": "s. 5, Discussion, 4,6 km sınırı ve %20/%28 hesabı; Şekil 4",
             "support_type": "counter"
           }
         ]
@@ -1403,7 +1425,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Bradtmiller için yalnız yayımlanmış özet/şekil başlıkları; Ng için seçilmiş açık yayınevi tam metin bölümleri; You, Fohlmeister ve He için seçilmiş resmi PMC tam metin pasajları okundu. Ng'nin ek verileri ve yaş modelleri yeniden hesaplanmadı. “Hiç durmadı” evrensel hükmü geri çekildi. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Bradtmiller'ın Columbia arşivindeki yayımlanmış tam metninin Results, Discussion, Methods bölümleri ve Fig. 1–4; Ng'nin seçilmiş açık yayınevi tam metin bölümleri; You, Fohlmeister ve He'nin seçilmiş resmi PMC pasajları okundu. Bradtmiller'ın ek veri tabloları, Ng'nin ek verileri ve karot yaş modelleri yeniden hesaplanmadı. “Hiç durmadı” evrensel hükmü geri çekildi. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
@@ -1469,8 +1491,8 @@
         "container": "Nature Communications",
         "volume": "5(1)",
         "doi": "10.1038/ncomms6817",
-        "note": "Nature Communications abonelik önizlemesindeki Abstract okundu; Heinrich Stadial 1 ve buzul dönemi karşılaştırmasıyla sınırlıdır. Tam metin okunmadı.",
-        "url": "https://www.nature.com/articles/ncomms6817"
+        "note": "Columbia Academic Commons arşivindeki yayımlanmış tam metin okundu (arşiv DOI: 10.7916/D8DZ0726). HS1 ve Son Buzul Maksimumu karşılaştırması bugünkü glasyasyon takvimi vermez.",
+        "url": "https://academiccommons.columbia.edu/doi/10.7916/D8DZ0726"
       },
       {
         "id": "hays-1976-orbital-rhythm",
@@ -1521,7 +1543,7 @@
         "citations": [
           {
             "source_ref": "bradtmiller-2014-path-heinrich",
-            "locator": "Abstract, dönemler ve yaklaşık 17.500 yıl bağlamı",
+            "locator": "s. 1–2, Introduction ve Results, dönem pencereleri: HS1 14,7–17,5 bin yıl, Son Buzul Maksimumu 18–25 bin yıl",
             "support_type": "context"
           }
         ]
@@ -1546,7 +1568,7 @@
     ],
     "review": {
       "status": "draft",
-      "notes": "Hays 1976 için PubMed özeti; Fohlmeister için seçilmiş resmi PMC pasajları; Bradtmiller için abonelik önizlemesindeki Abstract okundu. Bu kaynaklardan günümüz için kesin glasyasyon takvimi çıkarılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "notes": "Hays 1976 için PubMed özeti; Fohlmeister için seçilmiş resmi PMC pasajları; Bradtmiller için Columbia arşivindeki yayımlanmış tam metnin giriş, sonuç ve dönem tanımları okundu. Bu kaynaklardan günümüz için kesin glasyasyon takvimi çıkarılmadı. Bağımsız uzman incelemesi yapılmadı."
     },
     "checked": "2026-10-04",
     "used_in": [
