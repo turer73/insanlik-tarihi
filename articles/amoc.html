@@ -270,7 +270,23 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   <p class="note s"><b>Ara sürüm denetimi:</b> <a href="https://www.bodc.ac.uk/data/published_data_library/catalogue/10.5285/223b34a3-2dc5-c945-e063-7086abc0f274/">BODC v2023.1 arşivinde</a> aynı 730 örneğin ortalaması <b>15,934909 Sv</b>; v2022.1'e göre değişim <b>+0,614156 Sv</b>. <a href="https://www.bodc.ac.uk/data/published_data_library/catalogue/10.5285/33826d6e-801c-b0a7-e063-7086abc0b9db/">v2023.1a</a> ölçümleri 2021 için yuvarlama hassasiyeti içinde aynı kaldı. Sonraki <b>−0,012414 Sv</b> değişim <a href="https://www.bodc.ac.uk/data/published_data_library/catalogue/10.5285/3f24651e-2d44-dee3-e063-7086abc0395e/">v2024.1</a> geçişinde görüldü; v2024.1 ile v2024.1a taşıma dosyaları bayt bayt aynı. Ana sıçrama ilk geçiştedir. Sürüm karşılaştırması her veri işleme adımının sayısal payını ayırmaz.</p>
   <p class="note"><a href="https://www.nature.com/articles/s41467-024-51879-5">Volkov ve arkadaşlarının 2024 çalışmasında, Şekil 7</a>, Florida düzeltmesiyle yeniden hesaplanan <b>Nisan 2004–Şubat 2022</b> RAPID AMOC eğilimini de karşılaştırır: düzeltme öncesi <b>−1,3 ± 0,7 Sv/on yıl</b>, sonrası <b>−0,8 ± 0,7 Sv/on yıl</b>. Yazarlar mevsim döngüsünü çıkarıp iki yıllık alçak geçiren filtre uygular. Bu yayımlanmış karşılaştırma, Lee'nin <b>2011–2021</b> eğilimiyle aynı pencere değildir; buradaki basit 2021 ortalamalarından türetilmiş yeni bir eğilim testi de değildir.</p>
   <div class="prose">
-    <p>Lee 2024, <b>2011–2021 eğilimini −0,1 Sv/on yıl</b>, 2005–2021 eğilimini −1,1 Sv/on yıl verir. Başlangıç yılı değişince 2007–2021 eğilimi −0,2 Sv/on yıl olur. Yaklaşık düz pencere, her dönem için düşüş yokluğu değildir.</p>
+    <p>Lee 2024, <b>2011–2021 eğilimini −0,1 Sv/on yıl</b>, 2005–2021 eğilimini −1,1 Sv/on yıl verir. Başlangıç yılı değişince 2007–2021 eğilimi −0,2 Sv/on yıl olur. Makale ayrıca Florida kablo kaydının güncellenmesiyle 2005–2021 eğiliminin <b>−0,6 Sv/on yıla</b> indiğini bildirir. Yaklaşık düz pencere, her dönem için düşüş yokluğu değildir.</p>
+  </div>
+  <div class="sec__head" style="margin-top:2.4rem">
+    <h3>Aynı yöntem, iki veri sürümü</h3>
+  </div>
+  <div class="prose">
+    <p>Bu denetimde tam takvim yılı ortalamalarına, her yıla eşit ağırlık veren <b>doğrusal eğilim</b> uyduruldu. v2022.1 sonuçları Lee'nin üç eski eğilimini bir ondalıkta yeniden üretiyor. Güncel sürüm aynı dönemlerde farklı değerler veriyor; 2023'e uzatmak da sonucu değiştiriyor:</p>
+  </div>
+  <div class="rows">
+    <div class="rw"><b>2005–2021</b><span>v2022.1: <b>−1,148</b> · v2024.1a: <b>−0,641 Sv/on yıl</b></span></div>
+    <div class="rw"><b>2007–2021</b><span>v2022.1: <b>−0,212</b> · v2024.1a: <b>+0,218 Sv/on yıl</b></span></div>
+    <div class="rw"><b>2011–2021</b><span>v2022.1: <b>−0,083</b> · v2024.1a: <b>+0,001 Sv/on yıl</b></span></div>
+    <div class="rw"><b>2011–2023</b><span>v2024.1a: <b>−0,795 Sv/on yıl</b> · 13 yıllık ortalama</span></div>
+  </div>
+  <p class="note"><b>Belirsizlik denetimi:</b> 2011–2023 için yıllar arasındaki bağımlılığa duyarlı HAC hesabı, bir ve iki yıllık gecikmede yaklaşık %95 aralığı sırasıyla <b>−2,223 ile +0,634</b> ve <b>−2,230 ile +0,641 Sv/on yıl</b> verir. İki aralık da sıfırı içerir; bu hesapla sıfırdan farklı eğilim saptanmadı. Bu, değişim olmadığı kanıtı değildir. Küçük örneklemli bu duyarlılık hesabı sensör ikamelerinin, boşluk doldurmanın ve sürüm değişikliklerinin toplam belirsizliğini kapsamaz; insan etkisini de ayırmaz. <a href="https://github.com/turer73/insanlik-tarihi/blob/main/docs/denetim-2026-10-05/amoc-son-kapanis.md">Veri özetleri ve hesap yöntemi</a> açıktır.</p>
+  <p class="note s"><b>Özgün kod sınırı:</b> <a href="https://repository.library.noaa.gov/view/noaa/66707/noaa_66707_DS1.pdf#page=11">Lee 2024'ün “Code availability” bölümü</a>, NCL yazılımının indirme sayfasına bağlantı verir; çalışmaya özgü analiz betiklerini burada paylaşmaz. Yukarıdaki hesap bu denetimde yazılan ayrı bir betiktir; yazarların model ve insan etkisi analizinin yeniden üretimi değildir.</p>
+  <div class="prose">
     <p>Model temelli bileşen ayrımında <b>2000–2020</b> değişimi dışsal zorlanma için −2,6 Sv, artık bileşen için +1,0 Sv, net olarak −1,6 Sv'dir. <b>2010–2020</b> karşılaştırmasında ise dışsal bileşen −1,3 Sv, artık bileşen +1,1 Sv değişir. Bu farklı pencereler, 2011–2021 gözlem eğilimiyle tek bir hesap gibi birleştirilemez.</p>
     <p>Artık bileşen, model koşulları gerçekçiyse doğal değişkenliği temsil edebilir; yazarlar model eksikliklerini de içerdiğini belirtir. Doğal ve dışsal bileşenlerin bağımsız, doğrusal ayrılması bir <b>yöntem varsayımıdır</b>; ikisi ayrı ayrı doğrudan ölçülmüş sayılmaz.</p>
   </div>
@@ -478,7 +494,7 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
   <div class="oq">
     <div class="oq__q">2011–2021'in yaklaşık düz eğilimi sonraki yıllarda da görülüyor mu?</div>
-    <div class="oq__a">v2024.1a, Mart 2024'e kadar erişilebilir. Bu tur 2021–2023 tam takvim yılı basit ortalamaları hesaplandı; otokorelasyon, veri ikameleri ve sürüm farkları gözetilerek eğilim/anlamlılık testi yapılmadı. Lee'nin 2011–2021 sonucu sonraki döneme otomatik taşınamaz.</div>
+    <div class="oq__a">Güncel v2024.1a verisinde, eşit ağırlıklı yıllık ortalamalar 2011–2021 için yaklaşık sıfır, 2011–2023 için −0,795 Sv/on yıl verir. İkinci hesabın iki HAC güven aralığı da sıfırı içerir. Kısa kayıt ve toplam ölçüm belirsizliği nedeniyle buradan kalıcı duraklama veya gelecekteki çöküş tarihi çıkarılamaz; 2024 yalnız kısmi yıldır.</div>
   </div>
   <div class="oq">
     <div class="oq__q">Heinrich olaylarında AMOC ne kadar zayıfladı?</div>
@@ -490,10 +506,10 @@ html{scroll-behavior:smooth;scroll-padding-top:4rem}
   </div>
   <div class="oq">
     <div class="oq__q">Avrupa'da kaç derece soğuma?</div>
-    <div class="oq__a">Basında 10–15 °C rakamı dolaşıyor. Hangi senaryoya, hangi modele ve hangi bölgeye ait olduğu belirtilmeden aktarıldığı için <b>bu dosyaya alınmadı.</b></div>
+    <div class="oq__a">Bölge, mevsim, dönem ve model senaryosu belirtilmeden Avrupa için tek soğuma sayısı verilemez. Bu dosyada böyle bir bölgesel hesap yapılmadı ve medya örnekleri karşılaştırılmadı; belirli bir sıcaklık düşüşü doğrulanmış sonuç olarak sunulmuyor.</div>
   </div>
 
-  <p class="note" style="margin-top:1.8rem"><b>4–5 Ekim 2026 denetiminin sınırı:</b> on AMOC kaydının seçilmiş kaynak pasajları kontrol edildi. RAPID v2022.1 ve v2023.1 ASCII, v2023.1a NetCDF ve v2024.1 ile v2024.1a ASCII dosyalarında 2021 için aynı 730 zaman damgası karşılaştırıldı; v2024.1a'da 2022–2023 tam takvim yılı basit ortalamaları da çıkarıldı. 2021 sürüm farklarının geçişleri ve bileşen sütunları hesaplandı; işlem adımlarının ayrı sayısal payları, yeni eğilim/anlamlılık ve insan etkisi bu denetimde hesaplanmadı; Lee 2024'ün hesap kodu çalıştırılmadı. Baehr 2008'in açık PDF'sindeki özet, saptama sonuçları ve sonuç bölümü; Baehr 2007'nin kurum arşivindeki yayımlanmış PDF'sinde özet, Tablo 1 ve §5–6; Wharton 2024'ün açık metnindeki giriş, bulgular ve tartışma ile Asbjørnsen–Årthun 2023'ün açık metnindeki yöntem ve sonuçlar okundu. Bradtmiller 2014'ün Columbia arşivindeki yayımlanmış tam metni; Ng 2018'in seçilmiş açık tam metin bölümleri, Caesar 2018'in tam metnindeki yöntem ve sonuçlar, Chen–Tung'un yazarca yüklenen yayımlanmış metninin ana argüman, Şekil 1–2 ve yöntem bölümleri ile arXiv v1'in karşılık gelen pasajları ve Ben-Yami 2023'ün açık tam metnindeki sonuç/tartışma bölümleri okundu. Chen–Tung sürümleri satır satır karşılaştırılmadı. Norris 2021'in yayımlanmış tam metninin ilgili yöntem, sonuç ve tartışma bölümleri okundu; Boers 2024'ün yayıncı önizlemesi ve Şekil 1–2 açıklamaları; Carlson 2007'nin yazarca yüklenen yayımlanmış tam metninin sonuç, tartışma ve yaş modeli pasajları okundu. Boers 2024 yanıtının tam metni doğrudan incelenemedi. Ek veriler, kod, matematiksel yöntemler, medya örnekleri ve karot yaş modelleri bağımsız olarak yeniden hesaplanmadı. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı.</p>
+  <p class="note" style="margin-top:1.8rem"><b>4–5 Ekim 2026 denetiminin kapsamı:</b> on AMOC kaydının seçilmiş kaynak pasajları, beş RAPID sürümündeki 2021 örnekleri ve iki sürümün yıllık eğilimleri kontrol edildi. <a href="https://github.com/turer73/insanlik-tarihi/blob/main/docs/denetim-2026-10-05/amoc-son-kapanis.md">Kapanış kaydı</a> okunan kaynakları ve hesap sınırlarını listeler. Boers yanıtının tam metni açılamadı; bütün iklim modelleri, ham karotlar, yaş modelleri ve medya aktarım zincirleri yeniden incelenmedi. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı.</p>
 </section>
 
 </main>

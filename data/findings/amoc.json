@@ -2106,7 +2106,7 @@
       {
         "id": "lee-2024-duraklama",
         "language": "en",
-        "accessed": "2026-10-04",
+        "accessed": "2026-10-05",
         "tier": "peer-reviewed",
         "type": "article",
         "authors": [
@@ -2124,7 +2124,7 @@
         "container": "Nature Communications",
         "volume": "15:10642",
         "doi": "10.1038/s41467-024-54903-w",
-        "note": "Introduction, Results/Fig. 1, Discussion’ın sınırlamaları, Methods/RAPID veri kapsamı ve kaynakça 22 okundu. Yöntem Nisan 2004–Şubat 2022 dizisini, kaynakça v2022.1 sürümünü belirtir. Makaledeki 2005/2009/2018/2021 yıllık değerleri v2022.1 ASCII basit takvim yılı ortalamalarıyla bir ondalıkta eşleşti; yazarların hesap kodu çalıştırılmadı. Model ayrımı ayrı ölçülmüş doğal ve insan kaynaklı sinyaller değildir; medya ifadesinin kökeni kaynakta belirlenmiş sayılmadı.",
+        "note": "Introduction, Results/Fig. 1, Discussion’ın sınırlamaları, Methods/RAPID veri kapsamı, Data/Code availability ve kaynakça 22 okundu; NOAA arşivindeki yayımlanmış PDF s. 1–2, 11–12 de kontrol edildi. Yıllık 2005/2009/2018/2021 değerleri ve 2005–2021, 2007–2021, 2011–2021 eğilimleri, v2022.1 tam takvim yılı ortalamaları ve eşit yıllık ağırlıklı doğrusal eğilimle bir ondalıkta yeniden üretildi. Giriş, Florida güncellemesiyle 2005–2021 eğiliminin −1,1’den −0,6 Sv/on yıla indiğini ayrıca bildirir. Code availability yalnız NCL yazılımının https://www.ncl.ucar.edu/Download sayfasına bağlantı verir; burada çalışmaya özgü analiz betiği bulunmaz. Bizim betiğimiz yazarların özgün kodu değildir; modeller ve insan etkisi ayrımı yeniden üretilmedi. Medya aktarım zinciri incelenmedi.",
         "url": "https://www.nature.com/articles/s41467-024-54903-w"
       },
       {
@@ -2152,7 +2152,7 @@
       {
         "id": "rapid-v2024-1a-veri",
         "language": "en",
-        "accessed": "2026-10-04",
+        "accessed": "2026-10-05",
         "tier": "primary",
         "type": "dataset",
         "authors": [
@@ -2173,7 +2173,7 @@
         "container": "British Oceanographic Data Centre / NERC",
         "doi": "10.5285/48d0bf43-0598-ceb2-e063-7086abc062f1",
         "url": "https://rapid.ac.uk/node/10",
-        "note": "Resmî RAPID v2024.1a ASCII dosyası https://rapid.ac.uk/sites/default/files/rapid_data/moc_transports.ascii üzerinden 4 Ekim 2026’da okundu. SHA-256 847c169cba6b2461a2ca33870b7c06d6c9073ac389b333006abc6709437b08ac. README sütun 14 moc_mar_hc10; -99999 eksik değerleri atılıp 2021–2023 tam takvim yılları 12 saatlik örneklerle aritmetik ortalandı (her yıl 730 örnek). v2022.1 ile aynı 2021 zaman damgaları karşılaştırıldı. 2024 kısmi yıl; eğilim/anlamlılık testi yapılmadı."
+        "note": "Resmî RAPID v2024.1a ASCII dosyası https://rapid.ac.uk/sites/default/files/rapid_data/moc_transports.ascii üzerinden 4 Ekim 2026’da okundu. SHA-256 847c169cba6b2461a2ca33870b7c06d6c9073ac389b333006abc6709437b08ac. README sütun 14 moc_mar_hc10, 12 saatlik/10 günlük filtrelenmiş seri. 2005–2023 tam takvim yıllarında eksiksiz 730/732 yarım günlük örnek doğrulandı. 5 Ekim’de eşit ağırlıklı yıllık ortalamalarla doğrusal eğilim ve bir/iki yıllık Bartlett HAC duyarlılığı hesaplandı. 2005–2021’de eski sürümle aynı 12.418 zaman damgası vardır. Sensör, boşluk doldurma ve sürüm belirsizliği bütünüyle modellenmedi; 2024 kısmi yıl olduğundan eğilime katılmadı."
       },
       {
         "id": "rapid-v2022-1-veri",
@@ -2196,7 +2196,7 @@
         "container": "British Oceanographic Data Centre / NERC",
         "doi": "10.5285/04c79ece-3186-349a-e063-6c86abc0158c",
         "url": "https://www.bodc.ac.uk/data/published_data_library/catalogue/10.5285/04c79ece-3186-349a-e063-6c86abc0158c/",
-        "note": "BODC DOI sayfasının hazırladığı arşiv indirildi. ZIP SHA-256 ac1bedc9ba4b1d535b5cd9301abd6069795783bf5f51c9d893c8912cdf0a4940; moc_transports_200404_2022215.ascii SHA-256 619313d25295d4f1f492cd163904fa1a9fb6627c37b561978ec0638b807cc41b. Birlikte verilen moc_transports_supporting_information_2022.pdf s. 2 sürüm değişiklikleri ve s. 4 ASCII sütun sırası/12 saatlik filtre okundu. Sütun 14'ten 2021'in 730 geçerli örneği yeniden ortalandı; ham cihaz verisi ve işlem kodu incelenmedi."
+        "note": "BODC DOI sayfasının hazırladığı arşiv indirildi. ZIP SHA-256 ac1bedc9ba4b1d535b5cd9301abd6069795783bf5f51c9d893c8912cdf0a4940; moc_transports_200404_2022215.ascii SHA-256 619313d25295d4f1f492cd163904fa1a9fb6627c37b561978ec0638b807cc41b. Birlikte verilen moc_transports_supporting_information_2022.pdf s. 2 sürüm değişiklikleri ve s. 4 ASCII sütun sırası/12 saatlik filtre okundu. Sütun 14'ten 2021'in 730 geçerli örneği yeniden ortalandı; ham cihaz verisi ve işlem kodu incelenmedi. 5 Ekim’de 2005–2021 tam yıllarındaki 12.418 zaman damgası yeni sürümle eşleştirildi; takvim ortalamalarından hesaplanan üç doğrusal eğilim Lee’nin bir ondalık sonuçlarını yeniden üretti."
       },
       {
         "id": "rapid-v2023-1-veri",
@@ -2315,6 +2315,20 @@
         "doi": "10.1038/s41467-024-51879-5",
         "url": "https://www.nature.com/articles/s41467-024-51879-5",
         "note": "Açık tam metnin Results/Corrected estimates ve Implications, Discussion, Methods pasajları okundu. 2000–2023 Florida kablo kaydı jeomanyetik değişim için düzeltilip gemi kesitlerine göre yeniden kalibre edilir; yazarlar 2004–2022 AMOC hesabını da yeniler. Fig. 7'de mevsimsellik çıkarılmış, iki yıllık filtreli serinin eğilimi düzeltme öncesi −1,3 ± 0,7, sonrası −0,8 ± 0,7 Sv/on yıldır. Bu işlem RAPID sürüm farkıyla uyumludur fakat 2021'deki 0,601742 Sv farkın adım adım nedensel ayrıştırması değildir. 2025 yazar düzeltmesi yalnız telif/lisans bilgisini değiştirir. Makalenin analiz kodu çalıştırılmadı."
+      },
+      {
+        "id": "statsmodels-hac-yontemi",
+        "language": "en",
+        "accessed": "2026-10-05",
+        "tier": "institutional",
+        "type": "report",
+        "authors": [
+          "statsmodels geliştirme ekibi"
+        ],
+        "title": "RegressionResults.get_robustcov_results: HAC covariance options",
+        "institution": "statsmodels",
+        "url": "https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.RegressionResults.get_robustcov_results.html",
+        "note": "Notes/HAC: maxlags, Bartlett kernel, use_correction ve use_t seçenekleri okundu. Yerel hesap statsmodels 0.14.5 ile yapıldı; canlı belge 0.15.0 başlığını taşır. Bir ve iki yıllık gecikme, küçük örneklem düzeltmesi ve n−2 serbestlik dereceli Student t kullanımı kendi yöntem seçimimizdir. Bu belge AMOC hakkındaki bilimsel iddiaya kanıt değil, hesap yönteminin açıklamasıdır."
       }
     ],
     "evidence": [
@@ -2466,6 +2480,49 @@
             "support_type": "direct"
           }
         ]
+      },
+      {
+        "id": "yillik-egilim-eski-surum-yeniden-hesap",
+        "text": "v2022.1 sütun 14 moc_mar_hc10 için eksiksiz takvim yılı ortalamalarına eşit yıllık ağırlıklı doğrusal eğilim uyduruldu: 2005–2021 −1,147715; 2007–2021 −0,211840; 2011–2021 −0,082712 Sv/on yıl. Bunlar Lee 2024’ün −1,1/−0,2/−0,1 değerlerini bir ondalıkta yeniden üretir. Yazarın özgün betiği veya model ayrımı çalıştırılmış değildir.",
+        "citations": [
+          {
+            "source_ref": "rapid-v2022-1-veri",
+            "locator": "moc_transports_200404_2022215.ascii, YY sütun 2, moc_mar_hc10 sütun 14; 2005–2021 tam yılları, 12.418 örnek; SHA-256 619313d2…07cc41b",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "lee-2024-duraklama",
+            "locator": "Introduction, s. 2: 2011–2021/2005–2021/2007–2021 doğrusal eğilimleri; kaynakça 22",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "guncel-surum-yillik-egilim-hac",
+        "text": "Aynı eşit yıllık ağırlıklı yöntem v2024.1a için 2005–2021 −0,640782; 2007–2021 +0,218071; 2011–2021 +0,000610 ve 2011–2023 −0,794514 Sv/on yıl verir. Son pencere 13 yıllık ortalamadır. Bartlett HAC, bir ve iki yıllık gecikme, n/(n−2) düzeltmesi ve n−2 serbestlik dereceli Student t ile yaklaşık %95 aralıklar sırasıyla [−2,223049; +0,634021] ve [−2,229650; +0,640623] Sv/on yıldır. İkisi de sıfırı içerir; iki yönlü p sırasıyla 0,246 ve 0,249’dur. Bunlar küçük örneklemli duyarlılık hesaplarıdır; toplam sensör, ikame, boşluk doldurma ve sürüm belirsizliğini veya insan etkisini kapsamaz. Sıfır eğilimin kanıtı sayılmaz.",
+        "citations": [
+          {
+            "source_ref": "rapid-v2024-1a-veri",
+            "locator": "moc_transports.ascii, YY sütun 2, moc_mar_hc10 sütun 14; 2005–2023 tam takvim yılları, yıl başına 730/732 örnek; SHA-256 847c169c…9437b08ac",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "statsmodels-hac-yontemi",
+            "locator": "Notes, HAC alt başlığı: maxlags, Bartlett kernel, use_correction, “If true, use small sample correction”; Parameters, use_t; kendi hesap betiği scripts/audit-rapid-annual-trends.py",
+            "support_type": "context"
+          }
+        ]
+      },
+      {
+        "id": "lee-guncellenmis-kablo-yillik-egilim",
+        "text": "Lee 2024 girişte, Florida kablo kaydının güncellenmesinin 2005–2021 yıllık AMOC eğilimini yaklaşık %40 azaltarak −1,1’den −0,6 Sv/on yıla indirdiğini bildirir. Bu yayımlanmış sayı Volkov’un farklı Nisan 2004–Şubat 2022 ve filtreli seri hesabıyla aynı pencere değildir.",
+        "citations": [
+          {
+            "source_ref": "lee-2024-duraklama",
+            "locator": "Introduction, s. 2, “A recent update of the submarine cable measurement record” paragrafı ve kaynakça 24",
+            "support_type": "direct"
+          }
+        ]
       }
     ],
     "counter_evidence": [
@@ -2538,17 +2595,28 @@
             "support_type": "context"
           }
         ]
+      },
+      {
+        "id": "ozgun-kod-erisim-siniri",
+        "text": "Yayımlanmış metnin Code availability bölümü NCL yazılımının genel indirme sayfasını gösterir; o bölümde çalışmaya özgü analiz betikleri paylaşılmaz. Bu denetimde yazılan yıllık eğilim betiği yazarların özgün kodu değildir. Gözlem eğiliminin dar yeniden hesabı, iklim modellerinin veya insan etkisi ayrımının bağımsız yeniden üretimi sayılmaz.",
+        "citations": [
+          {
+            "source_ref": "lee-2024-duraklama",
+            "locator": "Code availability, s. 11; Data availability; NCL Download bağlantısı",
+            "support_type": "context"
+          }
+        ]
       }
     ],
     "open_questions": [
-      "2021’de Florida ve üst okyanus sütunlarında görülen sürüm farklarının jeomanyetik düzeltme, yeniden kalibrasyon ve diğer işlem adımlarına ayrı ayrı sayısal payları nedir?",
-      "v2024.1a için otokorelasyon ve sürüm revizyonları gözetilerek 2011–2023 eğiliminin belirsizliği nedir? Bu tur yalnız takvim yılı ortalamaları hesaplandı.",
+      "2021 sürüm farklarının jeomanyetik düzeltme, yeniden kalibrasyon ve diğer işlem adımlarına ayrı sayısal payları nedir?",
+      "2011–2023 için sensör ikameleri, boşluk doldurma ve sürüm belirsizliği birlikte modellenirse eğilimin toplam belirsizliği nasıl değişir? Burada yalnız yıllık OLS ve iki HAC duyarlılık aralığı hesaplandı.",
       "Artık bileşende doğal değişkenlik ile model eksikliklerinin payı nasıl ayrılır?"
     ],
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Lee 2024’ün seçilmiş giriş/sonuç/yöntem pasajları ile kaynakça 22 okundu. RAPID v2022.1 ve v2023.1 BODC ZIP'lerindeki ASCII ve açıklama PDF'leri, v2023.1a BODC NetCDF, v2024.1 BODC ASCII ve v2024.1a RAPID ASCII karşılaştırıldı; beş üyenin SHA-256 değerleri sabitlendi. Büyük v2023.1a/v2024.1 ZIP'lerinin yalnız gerekli başlangıç bölümleri alındı; üyelerin boyutu ve CRC32 doğrulandı, ZIP bütünü doğrulanmadı. 2021'in aynı 730 yarım günlük örneğinin MOC ve üç bileşen ortalaması karşılaştırıldı. v2023.1→v2023.1a örnek farkları en çok 0,0000005 Sv; v2024.1→v2024.1a taşıma ASCII dosyaları bayt bayt aynıdır. v2023.1 PDF'sinin Eylül 2024 işlem günlüğü ile Volkov 2024'ün Florida düzeltmesi okundu; ayrıntılar docs/denetim-2026-10-05/amoc-rapid-bilesen-farki.md. v2022.1'de 2005/2009/2018/2021 yılları makalenin bir ondalık değerlerini yeniden üretti. İşlem adımlarının ayrı sayısal payı, Lee'nin hesap kodu, eğilim anlamlılığı ve bağımsız uzman incelemesi doğrulanmadı."
+      "notes": "Lee 2024’ün seçilmiş giriş/sonuç/yöntem pasajları ile kaynakça 22 okundu. RAPID v2022.1 ve v2023.1 BODC ZIP'lerindeki ASCII ve açıklama PDF'leri, v2023.1a BODC NetCDF, v2024.1 BODC ASCII ve v2024.1a RAPID ASCII karşılaştırıldı; beş üyenin SHA-256 değerleri sabitlendi. Büyük v2023.1a/v2024.1 ZIP'lerinin yalnız gerekli başlangıç bölümleri alındı; üyelerin boyutu ve CRC32 doğrulandı, ZIP bütünü doğrulanmadı. 2021'in aynı 730 yarım günlük örneğinin MOC ve üç bileşen ortalaması karşılaştırıldı. v2023.1→v2023.1a örnek farkları en çok 0,0000005 Sv; v2024.1→v2024.1a taşıma ASCII dosyaları bayt bayt aynıdır. v2023.1 PDF'sinin Eylül 2024 işlem günlüğü ile Volkov 2024'ün Florida düzeltmesi okundu; ayrıntılar docs/denetim-2026-10-05/amoc-rapid-bilesen-farki.md. v2022.1'de 2005/2009/2018/2021 yılları makalenin bir ondalık değerlerini yeniden üretti. İşlem adımlarının ayrı sayısal payı, Lee'nin özgün hesap kodu ve bağımsız uzman incelemesi doğrulanmadı. Son kapanış: NOAA yayımlanmış Lee PDF s. 2 ve 11 üzerinden güncellenmiş yıllık eğilim ve Code availability kontrol edildi. scripts/audit-rapid-annual-trends.py, eski üç eğilimi bir ondalıkta yeniden üretir; yeni sürümde aynı pencereleri ve 2011–2023 için Bartlett HAC 1/2 yıllık gecikme duyarlılığını hesaplar. OLS eğimi merkezlenmiş toplam formülüyle, HAC standart hatası ve t aralığı elle yazılan formülle statsmodels 0.14.5’e karşı kontrol edildi. Bu sayısal kontrol toplam veri belirsizliği veya model/insan etkisi yeniden üretimi değildir; uzman incelemesi yapılmadı. Güncel kapsam docs/denetim-2026-10-05/amoc-son-kapanis.md."
     },
     "checked": "2026-10-05",
     "used_in": [
