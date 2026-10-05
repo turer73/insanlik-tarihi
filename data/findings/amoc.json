@@ -2097,7 +2097,7 @@
       "iklim-bilimi"
     ],
     "popular_claim": "AMOC 2004'ten beri kesintisiz zayıflıyor.",
-    "divergence": "Lee’nin verdiği yıllık değerler 2018’de toparlanma, 2021’de yeniden düşüş içerir. Makalenin 2011–2021 eğilimi yaklaşık düzken 2005–2021 eğilimi negatiftir; bir pencerenin sonucu bütün tarihlere taşınamaz. Doğal ve dışsal zorlanan bileşen ayrımı doğrudan ayrı ayrı ölçüm değil, model ve gözlemlerin birlikte yorumudur. 2000–2020’de −2,6/+1,0/net −1,6 Sv ile 2010–2020’de −1,3/+1,1 Sv değişimleri farklı karşılaştırmalardır; tek bir duraklama hesabı diye birleştirilmez. Artık 20→15 ifadesinin medya kökeni yalnız 2009 olarak varsayılmıyor. RAPID v2022.1 ham ASCII dizisinde 2021’in 730 yarım günlük moc_mar_hc10 örneğinin basit takvim yılı ortalaması 15,320753 Sv’dir; Lee 2024’ün 15,3 Sv değeriyle bir ondalıkta eşleşir. Aynı 730 zaman damgası v2023.1'de 15,934909 Sv, v2024.1a'da 15,922495 Sv verir. v2022.1→v2023.1 farkı +0,614156 Sv, sonraki birleşik geçiş −0,012414 Sv, ilk ve son sürüm arasındaki net fark +0,601742 Sv'dir. Bu, ana sürüm sıçramasını Eylül 2024 v2023.1'e tarihler; tekil işlem değişikliklerinin sayısal payını açıklamaz. v2024.1a’da 2022 ve 2023 ortalamaları 15,2 ve 16,0 Sv’dir. Yazarların hesap kodu çalıştırılmadı. Basit ortalamalar yeni eğilim veya insan etkisi testi değildir; 2022–2023 alet ve kablo ikameleri 2021 farkına neden olarak gösterilemez.",
+    "divergence": "Lee’nin verdiği yıllık değerler 2018’de toparlanma, 2021’de yeniden düşüş içerir. Makalenin 2011–2021 eğilimi yaklaşık düzken 2005–2021 eğilimi negatiftir; bir pencerenin sonucu bütün tarihlere taşınamaz. Doğal ve dışsal zorlanan bileşen ayrımı doğrudan ayrı ayrı ölçüm değil, model ve gözlemlerin birlikte yorumudur. 2000–2020’de −2,6/+1,0/net −1,6 Sv ile 2010–2020’de −1,3/+1,1 Sv değişimleri farklı karşılaştırmalardır; tek bir duraklama hesabı diye birleştirilmez. Artık 20→15 ifadesinin medya kökeni yalnız 2009 olarak varsayılmıyor. RAPID v2022.1 ham ASCII dizisinde 2021’in 730 yarım günlük moc_mar_hc10 örneğinin basit takvim yılı ortalaması 15,320753 Sv’dir; Lee 2024’ün 15,3 Sv değeriyle bir ondalıkta eşleşir. Aynı 730 zaman damgası v2023.1 ve v2023.1a'da 15,934909 Sv; v2024.1 ve v2024.1a'da 15,922495 Sv verir. v2022.1→v2023.1 farkı +0,614156 Sv, v2023.1a→v2024.1 farkı −0,012414 Sv, ilk ve son sürüm arasındaki net fark +0,601742 Sv'dir. v2023.1→v2023.1a değerleri yuvarlama hassasiyeti içinde; v2024.1→v2024.1a taşıma ASCII dosyaları ise bayt bayt aynıdır. Bu, ana sürüm sıçramasını Eylül 2024 v2023.1'e tarihler; tekil işlem değişikliklerinin sayısal payını açıklamaz. v2024.1a’da 2022 ve 2023 ortalamaları 15,2 ve 16,0 Sv’dir. Yazarların hesap kodu çalıştırılmadı. Basit ortalamalar yeni eğilim veya insan etkisi testi değildir; 2022–2023 alet ve kablo ikameleri 2021 farkına neden olarak gösterilemez.",
     "divergence_type": [
       "guncellenmemis",
       "kategori-hatasi"
@@ -2225,6 +2225,58 @@
         "note": "BODC DOI API'sinin hazırladığı ZIP indirildi; SHA-256 8f0559efe535444b50322a4bdc8e550330bb39a63d87f1e95096e8b062f64c5e. moc_transports_200404_2023211.ascii SHA-256 fff4022d10b0239b482a99fd7b46bdb3db1d57b3e1d0b73a4456dea1184dd8a0; 2021'in 730 örneği eski ve yeni sürümlerle bire bir zaman eşleştirilip ortalandı. Birlikte verilen 18 Eylül 2024 tarihli moc_transports_supporting_information.pdf s. 2 Eylül 2024 değişikliklerini, s. 4–5 sütun ve filtre tanımını açıklar. PDF SHA-256 c68c7cf8ec6c78d2de549123cd9f1271a5d603cc2e912c98eba081b0f6abad91."
       },
       {
+        "id": "rapid-v2023-1a-veri",
+        "language": "en",
+        "accessed": "2026-10-05",
+        "tier": "primary",
+        "type": "dataset",
+        "authors": [
+          "Moat, Ben I.",
+          "Smeed, David A.",
+          "Rayner, Darren",
+          "Johns, William E.",
+          "Smith, Ryan",
+          "Volkov, Denis",
+          "Elipot, Shane",
+          "Petit, Tillys",
+          "Kajtar, Jules",
+          "Baringer, Molly O.",
+          "Collins, Julie"
+        ],
+        "year": 2025,
+        "title": "Atlantic meridional overturning circulation observed by the RAPID-MOCHA-WBTS array at 26N from 2004 to 2023 (v2023.1a)",
+        "container": "British Oceanographic Data Centre / NERC",
+        "doi": "10.5285/33826d6e-801c-b0a7-e063-7086abc0b9db",
+        "url": "https://www.bodc.ac.uk/data/published_data_library/catalogue/10.5285/33826d6e-801c-b0a7-e063-7086abc0b9db/",
+        "note": "BODC'nin hazırladığı büyük ZIP'in başlangıcından moc_transports_200404_2023211.nc çıkarıldı; üyenin ZIP CRC32 ve boyutu doğrulandı. NetCDF sürüm/DOI/zaman öznitelikleri kontrol edildi; üye SHA-256 1927f0e4b558f3bd15b272b8315737cbf415360c4e89cdfd0e9cbeb74aec23e0. 2021'in 730 örneği eşlendi; v2023.1 ASCII'ye göre tüm bileşenlerin en büyük örnek farkı 0,0000005 Sv veya altındadır. Arşivin tamamı indirilmedi; ZIP bütünü için SHA-256 doğrulaması yoktur."
+      },
+      {
+        "id": "rapid-v2024-1-veri",
+        "language": "en",
+        "accessed": "2026-10-05",
+        "tier": "primary",
+        "type": "dataset",
+        "authors": [
+          "Moat, Ben I.",
+          "Smeed, David A.",
+          "Rayner, Darren",
+          "Johns, William E.",
+          "Smith, Ryan",
+          "Volkov, Denis",
+          "Elipot, Shane",
+          "Petit, Tillys",
+          "Kajtar, Jules",
+          "Baringer, Molly O.",
+          "Collins, Julie"
+        ],
+        "year": 2025,
+        "title": "Atlantic meridional overturning circulation observed by the RAPID-MOCHA-WBTS array at 26N from 2004 to 2024 (v2024.1)",
+        "container": "British Oceanographic Data Centre / NERC",
+        "doi": "10.5285/3f24651e-2d44-dee3-e063-7086abc0395e",
+        "url": "https://www.bodc.ac.uk/data/published_data_library/catalogue/10.5285/3f24651e-2d44-dee3-e063-7086abc0395e/",
+        "note": "BODC'nin hazırladığı büyük ZIP'in başlangıcından moc_transports_200404_2024327.ascii çıkarıldı; üyenin ZIP CRC32 ve boyutu doğrulandı. Üye SHA-256 847c169cba6b2461a2ca33870b7c06d6c9073ac389b333006abc6709437b08ac, RAPID v2024.1a taşıma ASCII dosyasıyla bayt bayt aynıdır. Arşivin tamamı indirilmedi; ZIP bütünü için SHA-256 doğrulaması yoktur."
+      },
+      {
         "id": "rapid-v2024-1a-kilavuz",
         "language": "en",
         "accessed": "2026-10-04",
@@ -2349,7 +2401,7 @@
       },
       {
         "id": "rapid-2021-ara-surum-gecisi",
-        "text": "Aynı 730 yarım günlük 2021 zaman damgasında v2022.1 MOC ortalaması 15,320753, v2023.1 ortalaması 15,934909, v2024.1a ortalaması 15,922495 Sv'dir. v2022.1→v2023.1 artışı +0,614156 Sv; v2023.1→v2024.1a birleşik değişimi −0,012414 Sv'dir. Eylül 2024 v2023.1 kılavuzu jeomanyetik düzeltilmiş Florida serisini ve başka işlem değişikliklerini birlikte listeler; bu sürüm karşılaştırması değişikliklerin ayrı nedensel payını hesaplamaz.",
+        "text": "Aynı 730 yarım günlük 2021 zaman damgasında v2022.1 MOC ortalaması 15,320753, v2023.1 ve v2023.1a ortalaması 15,934909, v2024.1 ve v2024.1a ortalaması 15,922495 Sv'dir. v2022.1→v2023.1 artışı +0,614156 Sv; v2023.1→v2023.1a değerleri ASCII yuvarlama hassasiyeti içinde aynıdır; v2023.1a→v2024.1 değişimi −0,012414 Sv'dir. v2024.1 ve v2024.1a taşıma ASCII dosyaları bayt bayt aynıdır. Eylül 2024 v2023.1 kılavuzu jeomanyetik düzeltilmiş Florida serisini ve başka işlem değişikliklerini birlikte listeler; bu sürüm karşılaştırması değişikliklerin ayrı nedensel payını hesaplamaz.",
         "citations": [
           {
             "source_ref": "rapid-v2022-1-veri",
@@ -2359,6 +2411,16 @@
           {
             "source_ref": "rapid-v2023-1-veri",
             "locator": "moc_transports_200404_2023211.ascii, aynı 730 zaman damgası ve sütun 14; SHA-256 fff4022d…18ddd8a0; supporting_information.pdf s. 2 ve s. 4–5",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "rapid-v2023-1a-veri",
+            "locator": "moc_transports_200404_2023211.nc, time ve moc_mar_hc10 dizileri, satır 12237–12966 (1-tabanlı 2021 kayıtları); SHA-256 1927f0e4…74aec23e0; ZIP üye CRC32 ve sürüm/DOI öznitelikleri",
+            "support_type": "inference"
+          },
+          {
+            "source_ref": "rapid-v2024-1-veri",
+            "locator": "moc_transports_200404_2024327.ascii, aynı 730 zaman damgası ve sütun 14; SHA-256 847c169c…9437b08ac; ZIP üye CRC32",
             "support_type": "inference"
           },
           {
@@ -2486,7 +2548,7 @@
     "volatile": true,
     "review": {
       "status": "draft",
-      "notes": "Lee 2024’ün seçilmiş giriş/sonuç/yöntem pasajları ile kaynakça 22 okundu. RAPID v2022.1 ve v2023.1 BODC ZIP'lerindeki ASCII ve açıklama PDF'leri ile v2024.1a ASCII karşılaştırıldı; üç ASCII dosyasının SHA-256 değeri sabitlendi. 2021'in aynı 730 yarım günlük örneğinin MOC ve üç bileşen ortalaması Node ve bağımsız Python hesabıyla eşleşti. v2023.1 PDF'sinin Eylül 2024 işlem günlüğü ile Volkov 2024'ün Florida düzeltmesi okundu; ayrıntılar docs/denetim-2026-10-05/amoc-rapid-bilesen-farki.md. v2022.1'de 2005/2009/2018/2021 yılları makalenin bir ondalık değerlerini yeniden üretti. v2023.1a ve v2024.1 ara sürümleri ayrı karşılaştırılmadı. İşlem adımlarının ayrı sayısal payı, Lee'nin hesap kodu, eğilim anlamlılığı ve bağımsız uzman incelemesi doğrulanmadı."
+      "notes": "Lee 2024’ün seçilmiş giriş/sonuç/yöntem pasajları ile kaynakça 22 okundu. RAPID v2022.1 ve v2023.1 BODC ZIP'lerindeki ASCII ve açıklama PDF'leri, v2023.1a BODC NetCDF, v2024.1 BODC ASCII ve v2024.1a RAPID ASCII karşılaştırıldı; beş üyenin SHA-256 değerleri sabitlendi. Büyük v2023.1a/v2024.1 ZIP'lerinin yalnız gerekli başlangıç bölümleri alındı; üyelerin boyutu ve CRC32 doğrulandı, ZIP bütünü doğrulanmadı. 2021'in aynı 730 yarım günlük örneğinin MOC ve üç bileşen ortalaması karşılaştırıldı. v2023.1→v2023.1a örnek farkları en çok 0,0000005 Sv; v2024.1→v2024.1a taşıma ASCII dosyaları bayt bayt aynıdır. v2023.1 PDF'sinin Eylül 2024 işlem günlüğü ile Volkov 2024'ün Florida düzeltmesi okundu; ayrıntılar docs/denetim-2026-10-05/amoc-rapid-bilesen-farki.md. v2022.1'de 2005/2009/2018/2021 yılları makalenin bir ondalık değerlerini yeniden üretti. İşlem adımlarının ayrı sayısal payı, Lee'nin hesap kodu, eğilim anlamlılığı ve bağımsız uzman incelemesi doğrulanmadı."
     },
     "checked": "2026-10-05",
     "used_in": [
