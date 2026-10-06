@@ -2,8 +2,8 @@
   "not": "İçerik özetine dayalı tarih kaydı. Özet aynıysa tarih korunur; yalnız METİN değiştiğinde yenilenir. style/script blokları özete girmez.",
   "kayitlar": {
     "articles/amoc.html": {
-      "ozet": "49bc23b2b5949282",
-      "lastmod": "2026-10-05",
+      "ozet": "c2c76341a0cf7b3b",
+      "lastmod": "2026-10-06",
       "published": "2026-09-12"
     },
     "articles/angkor.html": {
@@ -157,18 +157,18 @@
       "published": "2026-09-09"
     },
     "dist/bulgu-veri-tabani.html": {
-      "ozet": "047cb4ff8119455d",
-      "lastmod": "2026-10-05",
+      "ozet": "7c58a158bbf31c10",
+      "lastmod": "2026-10-06",
       "published": "2026-09-07"
     },
     "dist/kanit-denetimi.html": {
-      "ozet": "ce4e7b45533add58",
-      "lastmod": "2026-10-05",
+      "ozet": "665bb7bd75e26f2d",
+      "lastmod": "2026-10-06",
       "published": "2026-09-07"
     },
     "dist/zaman-cizelgesi.html": {
-      "ozet": "018459e5998431ca",
-      "lastmod": "2026-10-05",
+      "ozet": "b2ee1bba5a70bcc3",
+      "lastmod": "2026-10-06",
       "published": "2026-09-07"
     },
     "index.html": {
@@ -202,8 +202,8 @@
       "published": "2026-09-12"
     },
     "pages/duzeltmeler.html": {
-      "ozet": "c638c198534dcf8e",
-      "lastmod": "2026-10-05",
+      "ozet": "879fee72f4d8dc12",
+      "lastmod": "2026-10-06",
       "published": "2026-09-08"
     },
     "pages/hakkinda.html": {

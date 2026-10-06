@@ -117,6 +117,6 @@
   },
   "amoc": {
     "summary": "AMOC’un ölçülmüş gücü, sıcaklık vekilleri ve model tahminleri farklı sorulara yanıt verir. Güncel RAPID sürümünde 2011–2023 yıllık eğilimi yaklaşık −0,79 Sv/on yıl; iki otokorelasyon düzeltmesinin güven aralığı da sıfırı içerir. Bu sonuç değişim olmadığını kanıtlamaz; eski 2011–2021 duraklaması da bugüne taşınamaz. Geçmiş vekiller ve gelecek modelleri, AMOC’un hangi tarihte çökeceğini kesinleştirmez.",
-    "limit": "On bağlı kaydın seçilmiş kaynak pasajları, beş RAPID sürümünün 2021 örnekleri ve iki sürümün yıllık eğilimleri denetlendi. HAC aralıkları toplam ölçüm ve sürüm belirsizliğini kapsamaz; insan etkisi ayrımı yeniden hesaplanmadı. Boers yanıtının tam metni açılamadı; bütün iklim modelleri ve karot yaş modelleri yeniden çalıştırılmadı. Kayıtlar taslak; bağımsız uzman incelemesi yapılmadı."
+    "limit": "On bağlı bulgu, 6 Ekim 2026’da Codex (OpenAI, yapay zekâ) tarafından iddia, kaynak konumu, karşı kanıt ve açık sorular açısından editoryal olarak incelendi. RAPID yıllık eğilim hesabı yeniden üretildi; HAC aralıkları toplam ölçüm ve sürüm belirsizliğini kapsamaz. Boers yanıtının tam metnine erişilemedi; ham karotlar, yaş modelleri, bütün iklim modelleri ve insan etkisi ayrımı yeniden çalıştırılmadı. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
   }
 }

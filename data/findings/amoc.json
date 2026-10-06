@@ -127,10 +127,14 @@
       "Rüzgârla sürülen döngü ve devrilme katkılarının gelecekteki değişimi bölgesel akıntı hızlarına nasıl yansıyacak?"
     ],
     "review": {
-      "status": "draft",
-      "notes": "IPCC FAQ 9.3, Wharton 2024'ün seçilmiş açık tam metni ve Asbjørnsen–Årthun 2023'ün yöntem/sonuç bölümleri okundu. Paleoklimat çıkarımı ile koşullu gelecek modeli ayrıldı; gözlenen güncel Gulf Stream eğilimi hesaplanmadı. Bağımsız uzman incelemesi yapılmadı."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: IPCC FAQ 9.3 ile Gulf Stream/AMOC ayrımı; Wharton'ın buzul dönemi vekilleri ve Asbjørnsen–Årthun'un koşullu gelecek deneyleri karşılaştırıldı. Rüzgâr katkısı, akıntının değişmeyeceği sonucu olarak yorumlanmadı. Güncel Gulf Stream eğilimi yeniden hesaplanmadı. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ]
@@ -138,7 +142,7 @@
   {
     "schema_version": 2,
     "id": "amoc-olcum-suresi-iddiadan-kisa",
-    "claim": "RAPID’ın 26,5°K AMOC izleme dizisi 2004’te başladı; 4 Ekim 2026’da resmî v2024.1a sürümü 27 Mart 2024’e kadardır. Baehr 2008’in yaklaşık 60 yıllık saptama süresi belirli bir model ve gözlem hatası varsayımına bağlıdır, evrensel eşik değildir.",
+    "claim": "RAPID’ın 26,5°K AMOC izleme dizisi 2004’te başladı; 6 Ekim 2026’da resmî v2024.1a sürümü 27 Mart 2024’e kadardır. Baehr 2008’in yaklaşık 60 yıllık saptama süresi belirli bir model ve gözlem hatası varsayımına bağlıdır, evrensel eşik değildir.",
     "status": "established",
     "confidence": "medium",
     "topic": [
@@ -335,10 +339,14 @@
     ],
     "volatile": true,
     "review": {
-      "status": "draft",
-      "notes": "Resmî v2024.1a README s.1–2 ve s.5–6 seçilmiş pasajları okundu; ASCII bitişi ve eksik filtre uçları kontrol edildi. Baehr 2008 özgün PDF'sinin seçilmiş pasajları ile Baehr 2007'nin Max Planck arşivindeki yayımlanmış tam metninin özeti, Tablo 1'i ve §5–6 bölümleri okundu. 2007 Tablo 1'de 0,01 kg/m³ ve 1700–3070 m için üç koşu 29/11/30 yıldır. Güncel atıf/eğilim testi, 2007 model ve kodu veya sensör düzeltmelerinin etkisi hesaplanmadı. Bağımsız uzman incelemesi yok."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: RAPID v2024.1a kapsamı ve README, Baehr 2008'in koşullu saptama süresi, Baehr 2007 Tablo 1'in 29/11/30 yıllık model sonuçları kontrol edildi. Bu süreler evrensel gözlem eşiği değildir; model koşuları ve sensör işlem zinciri yeniden çalıştırılmadı. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-05",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ]
@@ -346,7 +354,7 @@
   {
     "schema_version": 2,
     "id": "amoc-basindaki-rakam-tam-amoc-degil",
-    "claim": "Xing 2026’da 26,5°K için 2004–2023 derin batı devrilme ölçüsü T26’nın düşüşü 0,26 ± 0,07 Sv/yıl, tam RAPID AMOC ölçüsünün düşüşü ise 0,09 ± 0,08 Sv/yıldır; bunlar aynı büyüklük değildir.",
+    "claim": "Xing 2026’da 26,5°K için Nisan 2004–Şubat 2023 derin batı devrilme ölçüsü T26’nın düşüşü 0,26 ± 0,07 Sv/yıl, tam RAPID AMOC ölçüsünün düşüşü ise 0,09 ± 0,08 Sv/yıldır; bunlar aynı büyüklük değildir.",
     "status": "established",
     "confidence": "high",
     "topic": [
@@ -413,7 +421,7 @@
     "evidence": [
       {
         "id": "tam-amoc-009",
-        "text": "2004–2023, 26,5°K: TRAPID düşüşü 0,09 ± 0,08 Sv/yıl; derin batı ölçüsü T26 düşüşü 0,26 ± 0,07 Sv/yıldır. Makale belirsizlikleri 2-σ aralıkları olarak bildirir.",
+        "text": "Nisan 2004–Şubat 2023, 26,5°K: TRAPID düşüşü 0,09 ± 0,08 Sv/yıl; derin batı ölçüsü T26 düşüşü 0,26 ± 0,07 Sv/yıldır. Makale belirsizlikleri 2-σ aralıkları olarak bildirir.",
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
@@ -474,7 +482,7 @@
         "citations": [
           {
             "source_ref": "xing-2026-bati-siniri-dususu",
-            "locator": "Results, General decline of deep western overturning transport; Fig. 1A–D; Discussion ilk paragraf",
+            "locator": "Results, General decline of deep western overturning transport; Fig. 1B–E; Discussion ilk paragraf",
             "support_type": "counter"
           }
         ]
@@ -509,10 +517,14 @@
     ],
     "volatile": true,
     "review": {
-      "status": "draft",
-      "notes": "Xing resmi PMC HTML’de özet, Results’ın üç alt bölümü ve Discussion okundu; Lee güncel Introduction ve Fig. 7e bağlamı kontrol edildi. Ek veriler, kod ve ölçümler yeniden hesaplanmadı. Kaynaktaki genel anlamlılık ifadesi 3/4 enlemle sınırlandı; medya kökeni varsayımı geri çekildi. Bağımsız uzman incelemesi yapılmadı."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: Xing'in özgün Results ve şekil açıklamalarında T26/tam AMOC, işaret, 2-σ belirsizlik ve dört enlemin farklı dönemleri kontrol edildi. Şekil 1 atfı B–E olarak düzeltildi; Şekil 2 karşılaştırması Nisan 2004–Şubat 2023 ile sınırlandı. Kod, ek veriler ve medya aktarım zinciri yeniden incelenmedi. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ]
@@ -687,10 +699,14 @@
     ],
     "volatile": true,
     "review": {
-      "status": "draft",
-      "notes": "IPCC Yönetici Özeti/§9.2.3.1/FAQ 9.3; Ditlevsen güncel özet ve giriş; 2025 yazar düzeltmesi; EGUsphere künye, Abstract ve yayın durumu okundu. Matematiksel yöntem, kod ve ön baskının tam metni yeniden denetlenmedi. Bağımsız uzman incelemesi yapılmadı."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: IPCC AR6'nın 2021 tarihli güven ifadeleri, Ditlevsen'in 2025 kod düzeltmesiyle değişen koşullu aralığı ve Rahmstorf–Caesar metninin ön baskı durumu kontrol edildi. Ön baskı görüşü IPCC uzlaşısı olarak sunulmadı; istatistik modeli ve özgün kod yeniden çalıştırılmadı. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ]
@@ -894,10 +910,14 @@
     ],
     "volatile": true,
     "review": {
-      "status": "draft",
-      "notes": "Düzeltilmiş Nature HTML’nin özet/Main, deneyler, Changes in the overturning circulation, Future fate of the AMOC ve Methods/Models and experiments–Variables pasajları ile yazar düzeltmesinin gövde ve tarihleri okundu. 34/7 model kapsamı, 90/150/en az 100 yıllık deney süreleri ayrıldı. Sun ve Thompson 2026'nın yayıncı metninde tek CESM2 deneyi, §4 ve §6'daki geçici devrilme yorumu ile kapsam sınırı okundu. Kod, model çalıştırmaları ve bütün ek veriler doğrulanmadı. Bağımsız uzman incelemesi yapılmadı."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: Baker'ın düzeltilmiş 6 Sv eşiği, 34/7 model kapsamı, zorlama ve süreleri ile Sun–Thompson'ın tek CESM2 deneyindeki geçici devrilme yorumu karşılaştırıldı. Baker düzeltmesinin 4 Haziran 2025 ek şekil renk notu da görüldü. Bu koşullar çöküş olasılığı hesabı değildir; model koşuları ve ek verilerin tamamı yeniden üretilmedi. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-05",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ],
@@ -1274,10 +1294,14 @@
     ],
     "volatile": true,
     "review": {
-      "status": "draft",
-      "notes": "Worthington ve van Westen'in seçilmiş açık tam metinleri, Caesar'ın WHOI arşivindeki tam PDF'sinin yöntem/sonuç bölümleri, Chen–Tung'un yazarca yüklenen yayımlanmış metninin ilgili ana metin/Şekil 1–2/Methods bölümleri ile arXiv v1'in karşılık gelen pasajları, Boers'un yayıncı önizlemesi/Şekil 1–2 açıklamaları ve Ben-Yami 2023'ün açık tam metnindeki ilgili bölümler okundu. Boers tam PDF'si PIK arşivinde özel erişimli; Chen sürümleri satır satır eşleştirilmedi. Caesar'ın doğrusal 2,3 Sv ve yumuşatılmış yaklaşık 3 ± 1 Sv sonuçları ayrıldı; kaynakların kodu ve verileri ortak yöntemle yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: Worthington, Caesar, Chen–Tung, Boers, Ben-Yami ve van Westen'in ilgili yöntem, dönem ve karşı görüşleri karşılaştırıldı. Caesar'ın doğrusal 2,3 Sv hesabı ile yumuşatılmış yaklaşık 3 ± 1 Sv sonucu ayrıldı. Boers'un yalnız yayıncı önizlemesine erişildi; tam yanıt ve kaynakların veri/kodları ortak yöntemle yeniden incelenmedi. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ],
@@ -1591,10 +1615,14 @@
       "Doğu Atlantik'teki ek yüksek çözünürlüklü karotlar, HS1 sırasındaki süren derin su taşınımı yorumunu destekler mi?"
     ],
     "review": {
-      "status": "draft",
-      "notes": "Bradtmiller'ın Columbia arşivindeki yayımlanmış tam metninin Results, Discussion, Methods bölümleri ve Fig. 1–4; Ng'nin seçilmiş açık yayınevi tam metin bölümleri; You, Fohlmeister ve He'nin seçilmiş resmi PMC pasajları okundu. Bradtmiller'ın ek veri tabloları, Ng'nin ek verileri ve karot yaş modelleri yeniden hesaplanmadı. “Hiç durmadı” evrensel hükmü geri çekildi. Bağımsız uzman incelemesi yapılmadı."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: Bradtmiller'ın yayımlanmış PDF'si ile Ng, You, Fohlmeister ve He'nin ilgili pasajları kontrol edildi. %95 düzeyinde anlamlı olmayan havza farkı, doğu/batı ayrımı ve protaktinyum ihracının AMOC hızına çevrilemeyeceği sınırı korundu. Ham karotlar, ek veri tabloları ve yaş modelleri yeniden hesaplanmadı. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ]
@@ -1734,10 +1762,14 @@
       "Yaklaşık 100 bin yıllık ritim için hangi doğrusal olmayan buz–iklim mekanizmaları destekleniyor?"
     ],
     "review": {
-      "status": "draft",
-      "notes": "Hays 1976 için PubMed özeti; Fohlmeister için seçilmiş resmi PMC pasajları; Bradtmiller için Columbia arşivindeki yayımlanmış tam metnin giriş, sonuç ve dönem tanımları okundu. Bu kaynaklardan günümüz için kesin glasyasyon takvimi çıkarılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: Hays'ın PubMed özeti ve Fohlmeister/Bradtmiller'ın ilgili pasajlarında yörünge döngüleri ile buzul içi hızlı değişimlerin farklı zaman ölçekleri karşılaştırıldı. Hays'ın tam metni incelenmedi; bu kayıt günümüz için glasyasyon takvimi veya yeni iklim modeli sonucu vermez. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-04",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ]
@@ -2074,10 +2106,14 @@
       "Tatlı su akışı, AMOC değişimi ve iklim soğuması arasındaki nedensel sıralama hangi bağımsız kayıtlarla sınanabilir?"
     ],
     "review": {
-      "status": "draft",
-      "notes": "Condron–Winsor ve You seçilmiş PMC tam metin pasajları; Süfke 2022 resmî açık metninin seçilmiş bölümleri ve Norris 2021 Wiley tam metninin ilgili yöntem/sonuç/tartışması önceki denetimlerde okundu. Carlson 2007'nin yazarca ResearchGate'e yüklenen yayımlanmış metninde s. 6557–6560, Şekil 2–3, Discussion ve Methods yaş kontrolü 5 Ekim'de okundu. Geç evredeki vekil uyumsuzluğu ve ΔMg/Ca sıcaklık düzeltmesi sınırı görüldü. Ek yöntemler, karot yaş modelleri, ham ölçümler, Norris ekleri ve modellerin kodu yeniden çalıştırılmadı. Bağımsız uzman incelemesi yapılmadı."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: Condron–Winsor'un erişilen yöntem/tablo pasajları, Carlson'ın yazarca yüklenen yayımlanmış metni ve Süfke, Norris, You'nun ilgili pasajları karşılaştırıldı. Koşullu güzergâh modeli, saha vekilleri ve taşkın süresi ayrı tutuldu. Condron'un bu tur tam metin indirmesi başarılı olmadı; ham ölçümler, ek yöntemler, yaş modelleri ve model kodları yeniden çalıştırılmadı. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-05",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ]
@@ -2615,10 +2651,14 @@
     ],
     "volatile": true,
     "review": {
-      "status": "draft",
-      "notes": "Lee 2024’ün seçilmiş giriş/sonuç/yöntem pasajları ile kaynakça 22 okundu. RAPID v2022.1 ve v2023.1 BODC ZIP'lerindeki ASCII ve açıklama PDF'leri, v2023.1a BODC NetCDF, v2024.1 BODC ASCII ve v2024.1a RAPID ASCII karşılaştırıldı; beş üyenin SHA-256 değerleri sabitlendi. Büyük v2023.1a/v2024.1 ZIP'lerinin yalnız gerekli başlangıç bölümleri alındı; üyelerin boyutu ve CRC32 doğrulandı, ZIP bütünü doğrulanmadı. 2021'in aynı 730 yarım günlük örneğinin MOC ve üç bileşen ortalaması karşılaştırıldı. v2023.1→v2023.1a örnek farkları en çok 0,0000005 Sv; v2024.1→v2024.1a taşıma ASCII dosyaları bayt bayt aynıdır. v2023.1 PDF'sinin Eylül 2024 işlem günlüğü ile Volkov 2024'ün Florida düzeltmesi okundu; ayrıntılar docs/denetim-2026-10-05/amoc-rapid-bilesen-farki.md. v2022.1'de 2005/2009/2018/2021 yılları makalenin bir ondalık değerlerini yeniden üretti. İşlem adımlarının ayrı sayısal payı, Lee'nin özgün hesap kodu ve bağımsız uzman incelemesi doğrulanmadı. Son kapanış: NOAA yayımlanmış Lee PDF s. 2 ve 11 üzerinden güncellenmiş yıllık eğilim ve Code availability kontrol edildi. scripts/audit-rapid-annual-trends.py, eski üç eğilimi bir ondalıkta yeniden üretir; yeni sürümde aynı pencereleri ve 2011–2023 için Bartlett HAC 1/2 yıllık gecikme duyarlılığını hesaplar. OLS eğimi merkezlenmiş toplam formülüyle, HAC standart hatası ve t aralığı elle yazılan formülle statsmodels 0.14.5’e karşı kontrol edildi. Bu sayısal kontrol toplam veri belirsizliği veya model/insan etkisi yeniden üretimi değildir; uzman incelemesi yapılmadı. Güncel kapsam docs/denetim-2026-10-05/amoc-son-kapanis.md."
+      "status": "editor-reviewed",
+      "reviewed_by": [
+        "Codex (OpenAI, yapay zekâ)"
+      ],
+      "reviewed_at": "2026-10-06",
+      "notes": "6 Ekim 2026 — Codex (OpenAI, yapay zekâ) ile editoryal inceleme: Lee ve Volkov'un yayımlanmış pasajları ile RAPID sürüm sınırları kontrol edildi. Sabit SHA-256'lı v2022.1/v2024.1a verilerinden yıllık eğilim betiği yeniden çalıştırıldı; eski üç eğilim, güncel pencereler ve elle yazılmış OLS/Bartlett HAC 1/2 kontrolleri yeniden üretildi. Beş sürümlü 2021 karşılaştırmasının önceki kanıtı korundu; toplam ölçüm belirsizliği, Lee'nin özgün kodu ve insan etkisi/model ayrımı yeniden üretilmedi. Büyük ara ZIP'lerin bütünlüğü yalnız üye boyutu/CRC sınırındadır. Bağımsız insan veya alan uzmanı incelemesi yapılmadı."
     },
-    "checked": "2026-10-05",
+    "checked": "2026-10-06",
     "used_in": [
       "amoc"
     ]
