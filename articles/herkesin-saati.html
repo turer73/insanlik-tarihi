@@ -8,10 +8,13 @@
    Butun renkler acikca boyanir, ana renk ortamdan devralinmaz. */
 :root{
   --bg:#0E1420; --surface:#141B29; --surface-2:#1D2637; --raised:#111826;
-  --ink:#E9EAF0; --ink-2:#A7AEC0; --ink-3:#767E93;
+  --ink:#E9EAF0; --ink-2:#A7AEC0; --ink-3:#98A4BA;
   --rule:#26314A; --rule-soft:#1C2537;
   --gold:#D6B15E; --gold-ink:#E4C480; --gold-soft:#241C0E;
   --sky:#6E96C8; --sky-ink:#8CB0DC; --sky-soft:#131E2E;
+  /* Ortak okuma ve katkı kartları da bu yazının gece paletini kullanır. */
+  --accent:var(--gold); --accent-ink:var(--gold-ink); --accent-soft:var(--gold-soft);
+  --line:var(--rule);
   --display:"Fraunces",Georgia,"Times New Roman",serif;
   --body:"Karla","Helvetica Neue",Arial,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
@@ -110,7 +113,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 .axis{border:1px solid var(--rule);background:var(--surface);padding:1.35rem 1.45rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.9rem}
 .axis .hd{font-size:1.08rem}
 .axbar{display:flex;border:1px solid var(--rule);overflow:hidden;min-height:78px}
-.axbar div{flex:1;display:flex;flex-direction:column;justify-content:center;padding:.6rem .8rem;border-right:1px solid var(--rule);gap:.2rem}
+.axbar div{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;padding:.6rem .8rem;border-right:1px solid var(--rule);gap:.2rem}
 .axbar div:last-child{border-right:0}
 .axbar b{font-family:var(--mono);font-size:.63rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
 .axbar span{font-size:.84rem;line-height:1.35;color:var(--ink-2)}
@@ -120,6 +123,12 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 .a3{background:var(--gold-soft)} .a3 b{color:var(--gold-ink)}
 .axis p{margin:0;font-size:.93rem;color:var(--ink-2);max-width:72ch}
 .axis p b{color:var(--ink)}
+@media(max-width:640px){
+  .axis{padding:1rem}
+  .axbar{flex-direction:column;overflow:visible}
+  .axbar div{border-right:0;border-bottom:1px solid var(--rule)}
+  .axbar div:last-child{border-bottom:0}
+}
 
 .verdictbox{border:1px solid var(--gold);background:var(--gold-soft);padding:1.6rem 1.7rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.85rem;max-width:74ch}
 .verdictbox .eyebrow{color:var(--gold-ink)}
